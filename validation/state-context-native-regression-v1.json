@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifactId": "confovhh-state-context-native-regression-v1",
+  "generatedAt": "2026-08-27T00:00:00.000Z",
+  "status": "public-native-context-coverage-inventory-only",
+  "dataRole": "regression",
+  "sourcePanel": "validation/mmcif-regression-manifest.v1.json",
+  "description": "Four native GPCR–VHH structures grouped into two receptor-context pairs. The entries anchor individual coordinate-audit regression only. No pair uses the same VHH across contexts, so this artifact cannot validate state discrimination or state-selective binding.",
+  "counts": {
+    "nativeComplexes": 4,
+    "nativeInterfacesDetected": 4,
+    "receptorContextPairs": 2,
+    "sameVhhCrossContextPairs": 0,
+    "pairedFeatureEligiblePairs": 0
+  },
+  "nativeComplexes": [
+    {
+      "pdb": "5C1M",
+      "sourceUrl": "https://www.rcsb.org/structure/5C1M",
+      "receptor": {
+        "name": "mu-opioid receptor",
+        "gene": "Oprm1",
+        "chain": "A"
+      },
+      "vhh": {
+        "name": "Nanobody 39",
+        "chain": "B",
+        "epitopeSide": "intracellular"
+      },
+      "depositorOrPublicationContextLabel": "agonist-bound active complex",
+      "contextLabelSource": "RCSB entry title and primary citation",
+      "cifBytes": 783145,
+      "cifSha256": "e561b0670e874a32fc07620e6fb44444d7b0102aff84b9826882eaa69c787096",
+      "nativeAuditRegression": {
+        "contactPairCount": 57,
+        "deltaSasaAngstrom2": 2380.942515,
+        "severeClashCount": 0,
+        "evidenceLevel": "supported",
+        "interfaceDetected": true
+      }
+    },
+    {
+      "pdb": "8QOT",
+      "sourceUrl": "https://www.rcsb.org/structure/8QOT",
+      "receptor": {
+        "name": "mu-opioid receptor",
+        "gene": "Oprm1",
+        "chain": "A"
+      },
+      "vhh": {
+        "name": "Nanobody E (NbE)",
+        "chain": "B",
+        "epitopeSide": "extracellular"
+      },
+      "depositorOrPublicationContextLabel": "antagonist nanobody complex",
+      "contextLabelSource": "RCSB entry title and primary citation",
+      "cifBytes": 892637,
+      "cifSha256": "698408564ac02831d217dceb9b9406dce6d322e58edf360994a495f4f2275c16",
+      "nativeAuditRegression": {
+        "contactPairCount": 49,
+        "deltaSasaAngstrom2": 2136.92674,
+        "severeClashCount": 0,
+        "evidenceLevel": "supported",
+        "interfaceDetected": true
+      }
+    },
+    {
+      "pdb": "6B73",
+      "sourceUrl": "https://www.rcsb.org/structure/6B73",
+      "receptor": {
+        "name": "kappa-opioid receptor",
+        "gene": "OPRK1",
+        "chain": "B"
+      },
+      "vhh": {
+        "name": "active-state-stabilizing nanobody",
+        "chain": "C",
+        "epitopeSide": "intracellular"
+      },
+      "depositorOrPublicationContextLabel": "agonist-bound active complex",
+      "contextLabelSource": "RCSB entry title and primary citation",
+      "cifBytes": 1223811,
+      "cifSha256": "91067fbc73dad614d074b4a399be8ff4e633775b9115e0c3631e1462b9574727",
+      "nativeAuditRegression": {
+        "contactPairCount": 56,
+        "deltaSasaAngstrom2": 2074.551615,
+        "severeClashCount": 0,
+        "evidenceLevel": "supported",
+        "interfaceDetected": true
+      }
+    },
+    {
+      "pdb": "6VI4",
+      "sourceUrl": "https://www.rcsb.org/structure/6VI4",
+      "receptor": {
+        "name": "kappa-opioid receptor",
+        "gene": "OPRK1",
+        "chain": "B"
+      },
+      "vhh": {
+        "name": "Nanobody 6 (Nb6)",
+        "chain": "C",
+        "epitopeSide": "intracellular allosteric site"
+      },
+      "depositorOrPublicationContextLabel": "ligand-dependent inactive complex",
+      "contextLabelSource": "RCSB entry title and primary citation",
+      "cifBytes": 685503,
+      "cifSha256": "88bc3a01fc1d3c72d0d71d001d5dcf6dd349825c1b141d3ff6be26edcb942cca",
+      "nativeAuditRegression": {
+        "contactPairCount": 29,
+        "deltaSasaAngstrom2": 1172.682242,
+        "severeClashCount": 1,
+        "evidenceLevel": "mixed",
+        "interfaceDetected": true
+      }
+    }
+  ],
+  "receptorContextPairs": [
+    {
+      "pairId": "OPRM1-5C1M-8QOT",
+      "receptor": "mu-opioid receptor",
+      "referencePdb": "5C1M",
+      "comparisonPdb": "8QOT",
+      "referenceVhh": "Nanobody 39",
+      "comparisonVhh": "Nanobody E (NbE)",
+      "sameVhh": false,
+      "pairedFeatureEligible": false,
+      "ineligibilityReason": "The paired feature requires exact equality of the observed VHH sequence; these entries contain different VHHs.",
+      "use": "receptor-context coverage inventory only"
+    },
+    {
+      "pairId": "OPRK1-6B73-6VI4",
+      "receptor": "kappa-opioid receptor",
+      "referencePdb": "6B73",
+      "comparisonPdb": "6VI4",
+      "referenceVhh": "active-state-stabilizing nanobody",
+      "comparisonVhh": "Nanobody 6 (Nb6)",
+      "sameVhh": false,
+      "pairedFeatureEligible": false,
+      "ineligibilityReason": "The paired feature requires exact equality of the observed VHH sequence; these entries contain different VHHs.",
+      "use": "receptor-context coverage inventory only"
+    }
+  ],
+  "claimFlags": {
+    "bindingValidated": false,
+    "affinityValidated": false,
+    "specificityValidated": false,
+    "functionalStateValidated": false,
+    "stateSelectivityValidated": false,
+    "sameVhhCrossContextValidated": false,
+    "membraneCompatibilityValidated": false,
+    "formalHoldoutEvaluated": false,
+    "hardDecoyProtocolCompleted": false,
+    "nearNativeRankingValidated": false,
+    "preliminaryNearNativeClaimAllowed": false
+  },
+  "limitations": [
+    "The four structures were selected from an existing public native-interface regression panel and are not an independent sample.",
+    "Context labels come from depositors or primary publications; ConfoVHH does not infer them from coordinates.",
+    "The two receptor-context pairings use different VHHs and are rejected by the paired feature's exact observed-VHH-sequence gate.",
+    "Native interface detection does not establish binding, affinity, specificity, function, membrane compatibility, or state selectivity.",
+    "No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated."
+  ]
+}

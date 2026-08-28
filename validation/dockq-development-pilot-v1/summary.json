@@ -1,0 +1,3476 @@
+{
+  "schemaVersion": "1.0.0",
+  "benchmarkId": "confovhh-dockq-local-se3-development-pilot-v1",
+  "title": "ConfoVHH local-SE(3) DockQ development pilot",
+  "status": "executed-development-only",
+  "dataRole": "development",
+  "protocolRelationship": "local-SE3-subset-not-formal-hard-decoy-execution",
+  "runStartedAt": "2026-08-27T04:02:04.139Z",
+  "runCompletedAt": "2026-08-27T04:04:46.500Z",
+  "frozenSpecification": {
+    "frozenAt": "2026-08-27T03:15:42.000Z",
+    "sha256": "110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc"
+  },
+  "software": {
+    "confovhhVersion": "0.4.0",
+    "dockqVersion": "2.1.3",
+    "nodeVersion": "24.19.0",
+    "pythonVersion": "Python 3.12.13",
+    "pythonEnvironment": {
+      "command": "python -m pip freeze --all",
+      "packageCount": 8,
+      "packages": [
+        "biopython==1.88",
+        "colorama==0.4.6",
+        "dockq==2.1.3",
+        "networkx==3.6.1",
+        "numpy==1.26.4",
+        "parallelbar==2.5",
+        "pip==25.0.1",
+        "tqdm==4.70.0"
+      ],
+      "sha256": "c5afce859e9895a9f97f45a1abebafc18dea80a80dd2d7b0cea95f6e95731d33"
+    },
+    "installedDockqDistribution": {
+      "name": "dockq",
+      "version": "2.1.3",
+      "fileCount": 18,
+      "combinedSha256": "803983856f6e3da346c1226d70e3328ae8c9ff412f9291ba6115227d36804b0a",
+      "files": [
+        {
+          "path": "../../../bin/DockQ",
+          "bytes": 246,
+          "sha256": "f7efc99c4d656f97e6c569dd976a49b45a4f10f138c9638754596cdd7a536a6d"
+        },
+        {
+          "path": "DockQ/DockQ.py",
+          "bytes": 36670,
+          "sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887"
+        },
+        {
+          "path": "DockQ/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "DockQ/__main__.py",
+          "bytes": 63,
+          "sha256": "a2dc944b6fdaeb5c4f3574c452519449505756abbb96e2261179a2b643b57df5"
+        },
+        {
+          "path": "DockQ/constants.py",
+          "bytes": 2509,
+          "sha256": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18"
+        },
+        {
+          "path": "DockQ/operations.c",
+          "bytes": 1215851,
+          "sha256": "2554a2e4a18cc376afb6fe5f9831e1588199b62518400ec35d378befd5eba629"
+        },
+        {
+          "path": "DockQ/operations.cpython-312-x86_64-linux-gnu.so",
+          "bytes": 1212928,
+          "sha256": "f57c1eea13aa4585f0e31b64b48d53bb8f9ee2846e387cdb021495bc6d0fb803"
+        },
+        {
+          "path": "DockQ/operations.pyx",
+          "bytes": 2744,
+          "sha256": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512"
+        },
+        {
+          "path": "DockQ/operations_nocy.py",
+          "bytes": 1643,
+          "sha256": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3"
+        },
+        {
+          "path": "DockQ/parsers.py",
+          "bytes": 22129,
+          "sha256": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/INSTALLER",
+          "bytes": 4,
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/METADATA",
+          "bytes": 11413,
+          "sha256": "f8241586d348b2740360f4e2a186925883f02578b5a82a241780313017f3117e"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/RECORD",
+          "bytes": 1729,
+          "sha256": "92c54cbf02e66ab0323352bd5d87f54cc0702765b2f559fb188950814e8b1d5c"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/REQUESTED",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/WHEEL",
+          "bytes": 104,
+          "sha256": "50a33ada4b03e2377733a93969c1406b0f021e741fa63b68fca9634576f2a4fd"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/entry_points.txt",
+          "bytes": 46,
+          "sha256": "41d30d6b08732681ff6fb00a39616cc3826a870fcada04068f9ae76dc81ca968"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/licenses/LICENSE",
+          "bytes": 1069,
+          "sha256": "1ac62f778ff853b0b7215565aa86a2b6fde946508552cb41b75a74e5e0c3df79"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/top_level.txt",
+          "bytes": 6,
+          "sha256": "3115f3aabad257c4325edcaea708b6d6bab29712838e70964536c70e16ca7a17"
+        }
+      ]
+    },
+    "implementation": {
+      "combinedSha256": "dc53e6d845205b9094f7cb150ff087c155977a5f99cc0ad1439384dbcf259b73",
+      "files": {
+        "lib/confovhh.ts": "788eb2203bb325d3acfb632be18976cabf7def546250c28b3e2615b89d5aa9c4",
+        "lib/mmcif.ts": "b9ce358c7fa42320666eb9c93904b0a45ec2b6b9f84013f97e467b02207968e0",
+        "lib/vhh-numbering.ts": "221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+        "package.json": "fa58278d774dec7c1663d91521a6e904c41e523ca857e15dd1cf282c8e4daeff",
+        "package-lock.json": "b8d6a6a1cc095fe10572e7868163c0b189cc64227ae08fe30c7cf028a338e19f",
+        "scripts/run-dockq-development-pilot.mjs": "a67af203faa4b6fd6ebe365c6b47ebba66d8199c9db6651fb2ea532f65d2170d",
+        "scripts/dockq-batch.py": "53a8981abea8c25724afa34b082d872dec52661fb234897f3c7c5939f85608e2",
+        "validation/dockq-development-pilot-v1/pilot-spec.json": "110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc",
+        "validation/dockq-development-pilot-v1/source-manifest.json": "d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176"
+      }
+    },
+    "gitBaseCommit": "b5353f84bc06bab77a7a370b85994fdc3d5a1542",
+    "workingTreeDirty": true
+  },
+  "poseAccounting": {
+    "targets": 5,
+    "generatedBeforeDeduplication": 360,
+    "retained": 360,
+    "excludedDuplicate": 0,
+    "excludedError": 0,
+    "capriClasses": {
+      "high": 55,
+      "medium": 76,
+      "acceptable": 98,
+      "incorrect": 131
+    },
+    "primaryPositiveCount": 229,
+    "primaryPositiveRate": 0.636111111111
+  },
+  "controls": {
+    "nativeSelfPassed": 5,
+    "farTranslationPassed": 5,
+    "cliCrossChecksRun": 10,
+    "cliCrossChecksPassed": 10,
+    "maximumCliAbsoluteDifference": 0,
+    "crossChecks": [
+      {
+        "poseId": "3P0G-A-B-rot0020-trans0005-rep1",
+        "batchDockq": 0.9755067951485316,
+        "cliDockq": 0.9755067951485316,
+        "absoluteDifference": 0,
+        "passed": true
+      },
+      {
+        "poseId": "3P0G-A-B-rot0800-trans0160-rep2",
+        "batchDockq": 0.0496485576975079,
+        "cliDockq": 0.0496485576975079,
+        "absoluteDifference": 0,
+        "passed": true
+      },
+      {
+        "poseId": "4XT1-A-C-rot0020-trans0005-rep1",
+        "batchDockq": 0.9615430629357364,
+        "cliDockq": 0.9615430629357364,
+        "absoluteDifference": 0,
+        "passed": true
+      },
+      {
+        "poseId": "4XT1-A-C-rot0800-trans0160-rep2",
+        "batchDockq": 0.053540979620971985,
+        "cliDockq": 0.053540979620971985,
+        "absoluteDifference": 0,
+        "passed": true
+      },
+      {
+        "poseId": "6DO1-A-C-rot0020-trans0005-rep1",
+        "batchDockq": 0.9893427902215325,
+        "cliDockq": 0.9893427902215325,
+        "absoluteDifference": 0,
+        "passed": true
+      },
+      {
+        "poseId": "6DO1-A-C-rot0800-trans0160-rep2",
+        "batchDockq": 0.08643469800050536,
+        "cliDockq": 0.08643469800050536,
+        "absoluteDifference": 0,
+        "passed": true
+      },
+      {
+        "poseId": "6O3C-A-B-rot0020-trans0005-rep1",
+        "batchDockq": 0.9393074627991749,
+        "cliDockq": 0.9393074627991749,
+        "absoluteDifference": 0,
+        "passed": true
+      },
+      {
+        "poseId": "6O3C-A-B-rot0800-trans0160-rep2",
+        "batchDockq": 0.04729203672855173,
+        "cliDockq": 0.04729203672855173,
+        "absoluteDifference": 0,
+        "passed": true
+      },
+      {
+        "poseId": "8QW4-A-B-rot0020-trans0005-rep1",
+        "batchDockq": 0.911724084918723,
+        "cliDockq": 0.911724084918723,
+        "absoluteDifference": 0,
+        "passed": true
+      },
+      {
+        "poseId": "8QW4-A-B-rot0800-trans0160-rep2",
+        "batchDockq": 0.09068098489888825,
+        "cliDockq": 0.09068098489888825,
+        "absoluteDifference": 0,
+        "passed": true
+      }
+    ]
+  },
+  "primaryAnalysis": {
+    "label": "DockQ >= 0.23",
+    "tiePolicy": {
+      "averagePrecision": "threshold-grouped non-interpolated AP; each complete tie block enters together",
+      "auroc": "Mann-Whitney formulation with 0.5 credit for positive-negative ties",
+      "kendall": "Kendall tau-b preserving score and DockQ ties",
+      "precisionAtK": "expected positive fraction when a boundary tie block crosses k",
+      "successAtK": "hypergeometric expected success when a boundary tie block crosses k",
+      "poseId": "display-only; never breaks metric ties"
+    },
+    "perTarget": {
+      "confovhh_evidence_v0_4": {
+        "3P0G-A-B": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.6938405797101449,
+          "averagePrecisionLift": 1.0860113421550095,
+          "auroc": 0.5760869565217391,
+          "precisionAt1": 1,
+          "precisionAt5": 1,
+          "precisionAt10": 0.8800000000000001,
+          "successAt1": 1,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 1.565217391304348,
+          "enrichmentFactor5Percent": 1.565217391304348,
+          "kendallTauB": 0.4136332606848038
+        },
+        "4XT1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.6847826086956522,
+          "averagePrecisionLift": 1.071833648393195,
+          "auroc": 0.5681438127090301,
+          "precisionAt1": 1,
+          "precisionAt5": 0.9,
+          "precisionAt10": 0.8603174603174603,
+          "successAt1": 1,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 1.565217391304348,
+          "enrichmentFactor5Percent": 1.4184782608695654,
+          "kendallTauB": 0.3852144177587076
+        },
+        "6DO1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 47,
+          "prevalence": 0.6527777777777778,
+          "averagePrecision": 0.7118794326241135,
+          "averagePrecisionLift": 1.0905387052965143,
+          "auroc": 0.5851063829787234,
+          "precisionAt1": 1,
+          "precisionAt5": 1,
+          "precisionAt10": 0.921875,
+          "successAt1": 1,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 1.5319148936170213,
+          "enrichmentFactor5Percent": 1.5319148936170213,
+          "kendallTauB": 0.34091742680802994
+        },
+        "6O3C-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.6743827160493827,
+          "averagePrecisionLift": 1.0790123456790124,
+          "auroc": 0.5707818930041152,
+          "precisionAt1": 1,
+          "precisionAt5": 0.9,
+          "precisionAt10": 0.8587301587301587,
+          "successAt1": 1,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 1.6,
+          "enrichmentFactor5Percent": 1.45,
+          "kendallTauB": 0.37861545557012155
+        },
+        "8QW4-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.6743827160493827,
+          "averagePrecisionLift": 1.0790123456790124,
+          "auroc": 0.5707818930041152,
+          "precisionAt1": 1,
+          "precisionAt5": 0.9,
+          "precisionAt10": 0.8587301587301587,
+          "successAt1": 1,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 1.6,
+          "enrichmentFactor5Percent": 1.45,
+          "kendallTauB": 0.3225242769671406
+        }
+      },
+      "contact_count": {
+        "3P0G-A-B": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.6973587285626297,
+          "averagePrecisionLift": 1.0915180099241162,
+          "auroc": 0.6810200668896321,
+          "precisionAt1": 0,
+          "precisionAt5": 0.4,
+          "precisionAt10": 0.6,
+          "successAt1": 0,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0,
+          "enrichmentFactor5Percent": 0.782608695652174,
+          "kendallTauB": 0.19497072251179667
+        },
+        "4XT1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.7098291993915329,
+          "averagePrecisionLift": 1.111037007743269,
+          "auroc": 0.6404682274247492,
+          "precisionAt1": 1,
+          "precisionAt5": 0.6,
+          "precisionAt10": 0.6,
+          "successAt1": 1,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 1.565217391304348,
+          "enrichmentFactor5Percent": 1.173913043478261,
+          "kendallTauB": 0.15868150679591972
+        },
+        "6DO1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 47,
+          "prevalence": 0.6527777777777778,
+          "averagePrecision": 0.6403540284718902,
+          "averagePrecisionLift": 0.9809678734037466,
+          "auroc": 0.5523404255319149,
+          "precisionAt1": 0,
+          "precisionAt5": 0.4,
+          "precisionAt10": 0.4,
+          "successAt1": 0,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0,
+          "enrichmentFactor5Percent": 0.7659574468085106,
+          "kendallTauB": 0.024342515537106434
+        },
+        "6O3C-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.6394740878671664,
+          "averagePrecisionLift": 1.0231585405874664,
+          "auroc": 0.5901234567901235,
+          "precisionAt1": 0,
+          "precisionAt5": 0.4,
+          "precisionAt10": 0.6,
+          "successAt1": 0,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0,
+          "enrichmentFactor5Percent": 0.4,
+          "kendallTauB": 0.03849204867821815
+        },
+        "8QW4-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.6796979934708106,
+          "averagePrecisionLift": 1.087516789553297,
+          "auroc": 0.6547325102880659,
+          "precisionAt1": 0,
+          "precisionAt5": 0.6,
+          "precisionAt10": 0.6,
+          "successAt1": 0,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0,
+          "enrichmentFactor5Percent": 0.8,
+          "kendallTauB": 0.2333530163994764
+        }
+      },
+      "delta_sasa": {
+        "3P0G-A-B": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.7674605156679181,
+          "averagePrecisionLift": 1.2012425462628284,
+          "auroc": 0.754180602006689,
+          "precisionAt1": 0,
+          "precisionAt5": 0.8,
+          "precisionAt10": 0.6,
+          "successAt1": 0,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0,
+          "enrichmentFactor5Percent": 1.173913043478261,
+          "kendallTauB": 0.3791821633916482
+        },
+        "4XT1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.9076415321547249,
+          "averagePrecisionLift": 1.4206563111986998,
+          "auroc": 0.8528428093645485,
+          "precisionAt1": 1,
+          "precisionAt5": 1,
+          "precisionAt10": 0.9,
+          "successAt1": 1,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 1.565217391304348,
+          "enrichmentFactor5Percent": 1.565217391304348,
+          "kendallTauB": 0.48826291079812206
+        },
+        "6DO1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 47,
+          "prevalence": 0.6527777777777778,
+          "averagePrecision": 0.7174502109944491,
+          "averagePrecisionLift": 1.0990726636510708,
+          "auroc": 0.6723404255319149,
+          "precisionAt1": 0,
+          "precisionAt5": 0.4,
+          "precisionAt10": 0.6,
+          "successAt1": 0,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0,
+          "enrichmentFactor5Percent": 0.7659574468085106,
+          "kendallTauB": 0.2809076682316119
+        },
+        "6O3C-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.7118690318889586,
+          "averagePrecisionLift": 1.1389904510223336,
+          "auroc": 0.7160493827160493,
+          "precisionAt1": 0,
+          "precisionAt5": 0.4,
+          "precisionAt10": 0.5,
+          "successAt1": 0,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0,
+          "enrichmentFactor5Percent": 0.8,
+          "kendallTauB": 0.31220657276995306
+        },
+        "8QW4-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.7592919083802963,
+          "averagePrecisionLift": 1.214867053408474,
+          "auroc": 0.7753086419753087,
+          "precisionAt1": 0,
+          "precisionAt5": 0.4,
+          "precisionAt10": 0.6,
+          "successAt1": 0,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0,
+          "enrichmentFactor5Percent": 0.8,
+          "kendallTauB": 0.44679186228482004
+        }
+      },
+      "clash_burden": {
+        "3P0G-A-B": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.5520598715456936,
+          "averagePrecisionLift": 0.864093711984564,
+          "auroc": 0.38461538461538464,
+          "precisionAt1": 0.14285714285714285,
+          "precisionAt5": 0.14285714285714285,
+          "precisionAt10": 0.3,
+          "successAt1": 0.1428571428571429,
+          "successAt5": 0.7142857142857143,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0.2236024844720497,
+          "enrichmentFactor5Percent": 0.2236024844720497,
+          "kendallTauB": -0.017511517202918766
+        },
+        "4XT1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.5722001110405017,
+          "averagePrecisionLift": 0.8956175651068723,
+          "auroc": 0.4352006688963211,
+          "precisionAt1": 0.16666666666666666,
+          "precisionAt5": 0.16666666666666669,
+          "precisionAt10": 0.32,
+          "successAt1": 0.16666666666666663,
+          "successAt5": 0.8333333333333334,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0.2608695652173913,
+          "enrichmentFactor5Percent": 0.2608695652173913,
+          "kendallTauB": 0.08758404223842929
+        },
+        "6DO1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 47,
+          "prevalence": 0.6527777777777778,
+          "averagePrecision": 0.6629032415135718,
+          "averagePrecisionLift": 1.0155113487016418,
+          "auroc": 0.5480851063829787,
+          "precisionAt1": 0.3333333333333333,
+          "precisionAt5": 0.6,
+          "precisionAt10": 0.65,
+          "successAt1": 0.33333333333333337,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0.5106382978723404,
+          "enrichmentFactor5Percent": 0.7659574468085106,
+          "kendallTauB": 0.20260717977927512
+        },
+        "6O3C-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.5949249893659321,
+          "averagePrecisionLift": 0.9518799829854914,
+          "auroc": 0.4872427983539095,
+          "precisionAt1": 0.4,
+          "precisionAt5": 0.4,
+          "precisionAt10": 0.3,
+          "successAt1": 0.4,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0.64,
+          "enrichmentFactor5Percent": 0.64,
+          "kendallTauB": 0.11458480759183741
+        },
+        "8QW4-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.5891995410557666,
+          "averagePrecisionLift": 0.9427192656892265,
+          "auroc": 0.4876543209876543,
+          "precisionAt1": 0.2,
+          "precisionAt5": 0.2,
+          "precisionAt10": 0.45,
+          "successAt1": 0.19999999999999996,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0.32,
+          "enrichmentFactor5Percent": 0.32,
+          "kendallTauB": 0.07246334630402497
+        }
+      },
+      "cdr_contact_share": {
+        "3P0G-A-B": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.6759290841776483,
+          "averagePrecisionLift": 1.0579759578432757,
+          "auroc": 0.6739130434782609,
+          "precisionAt1": 0.42857142857142855,
+          "precisionAt5": 0.42857142857142855,
+          "precisionAt10": 0.42857142857142855,
+          "successAt1": 0.4285714285714286,
+          "successAt5": 0.9720279720279721,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0.6708074534161491,
+          "enrichmentFactor5Percent": 0.6708074534161491,
+          "kendallTauB": 0.26421859781109064
+        },
+        "4XT1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.6573928076050726,
+          "averagePrecisionLift": 1.0289626553818527,
+          "auroc": 0.6153846153846154,
+          "precisionAt1": 0.4444444444444444,
+          "precisionAt5": 0.4444444444444445,
+          "precisionAt10": 0.5,
+          "successAt1": 0.4444444444444444,
+          "successAt5": 0.9920634920634921,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0.6956521739130435,
+          "enrichmentFactor5Percent": 0.6956521739130435,
+          "kendallTauB": 0.0990763367001772
+        },
+        "6DO1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 47,
+          "prevalence": 0.6527777777777778,
+          "averagePrecision": 0.6832499810684721,
+          "averagePrecisionLift": 1.0466808220623403,
+          "auroc": 0.6297872340425532,
+          "precisionAt1": 0,
+          "precisionAt5": 0.4,
+          "precisionAt10": 0.6,
+          "successAt1": 0,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0,
+          "enrichmentFactor5Percent": 0.3829787234042553,
+          "kendallTauB": 0.06972194394601867
+        },
+        "6O3C-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.695567092632509,
+          "averagePrecisionLift": 1.1129073482120144,
+          "auroc": 0.7139917695473251,
+          "precisionAt1": 0.3333333333333333,
+          "precisionAt5": 0.4,
+          "precisionAt10": 0.5,
+          "successAt1": 0.33333333333333337,
+          "successAt5": 1,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0.5333333333333333,
+          "enrichmentFactor5Percent": 0.4,
+          "kendallTauB": 0.25353343175085613
+        },
+        "8QW4-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.7265068483217213,
+          "averagePrecisionLift": 1.162410957314754,
+          "auroc": 0.7386831275720165,
+          "precisionAt1": 0.6111111111111112,
+          "precisionAt5": 0.611111111111111,
+          "precisionAt10": 0.611111111111111,
+          "successAt1": 0.6111111111111112,
+          "successAt5": 0.9975490196078431,
+          "successAt10": 1,
+          "enrichmentFactor1Percent": 0.9777777777777779,
+          "enrichmentFactor5Percent": 0.9777777777777779,
+          "kendallTauB": 0.30323210688473917
+        }
+      },
+      "random_all_tied": {
+        "3P0G-A-B": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.6388888888888888,
+          "averagePrecisionLift": 1,
+          "auroc": 0.5,
+          "precisionAt1": 0.6388888888888888,
+          "precisionAt5": 0.638888888888889,
+          "precisionAt10": 0.638888888888889,
+          "successAt1": 0.6388888888888888,
+          "successAt5": 0.9952985889191357,
+          "successAt10": 0.9999900939634491,
+          "enrichmentFactor1Percent": 1,
+          "enrichmentFactor5Percent": 1,
+          "kendallTauB": null
+        },
+        "4XT1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 46,
+          "prevalence": 0.6388888888888888,
+          "averagePrecision": 0.6388888888888888,
+          "averagePrecisionLift": 1,
+          "auroc": 0.5,
+          "precisionAt1": 0.6388888888888888,
+          "precisionAt5": 0.638888888888889,
+          "precisionAt10": 0.638888888888889,
+          "successAt1": 0.6388888888888888,
+          "successAt5": 0.9952985889191357,
+          "successAt10": 0.9999900939634491,
+          "enrichmentFactor1Percent": 1,
+          "enrichmentFactor5Percent": 1,
+          "kendallTauB": null
+        },
+        "6DO1-A-C": {
+          "poseCount": 72,
+          "positiveCount": 47,
+          "prevalence": 0.6527777777777778,
+          "averagePrecision": 0.6527777777777778,
+          "averagePrecisionLift": 1,
+          "auroc": 0.5,
+          "precisionAt1": 0.6527777777777778,
+          "precisionAt5": 0.6527777777777778,
+          "precisionAt10": 0.6527777777777778,
+          "successAt1": 0.6527777777777778,
+          "successAt5": 0.9962027064346866,
+          "successAt10": 0.9999939039775071,
+          "enrichmentFactor1Percent": 1,
+          "enrichmentFactor5Percent": 1,
+          "kendallTauB": null
+        },
+        "6O3C-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.625,
+          "averagePrecisionLift": 1,
+          "auroc": 0.5,
+          "precisionAt1": 0.625,
+          "precisionAt5": 0.625,
+          "precisionAt10": 0.625,
+          "successAt1": 0.625,
+          "successAt5": 0.9942300864007575,
+          "successAt10": 0.9999842668831249,
+          "enrichmentFactor1Percent": 1,
+          "enrichmentFactor5Percent": 1,
+          "kendallTauB": null
+        },
+        "8QW4-A-B": {
+          "poseCount": 72,
+          "positiveCount": 45,
+          "prevalence": 0.625,
+          "averagePrecision": 0.625,
+          "averagePrecisionLift": 1,
+          "auroc": 0.5,
+          "precisionAt1": 0.625,
+          "precisionAt5": 0.625,
+          "precisionAt10": 0.625,
+          "successAt1": 0.625,
+          "successAt5": 0.9942300864007575,
+          "successAt10": 0.9999842668831249,
+          "enrichmentFactor1Percent": 1,
+          "enrichmentFactor5Percent": 1,
+          "kendallTauB": null
+        }
+      }
+    },
+    "macro": {
+      "confovhh_evidence_v0_4": {
+        "averagePrecision": {
+          "value": 0.687853610626,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.676462694579,
+            "upper": 0.700772318726,
+            "finiteReplicates": 10000
+          }
+        },
+        "averagePrecisionLift": {
+          "value": 1.081281677441,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1.076104926603,
+            "upper": 1.086422488116,
+            "finiteReplicates": 10000
+          }
+        },
+        "auroc": {
+          "value": 0.574180187644,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.569726660886,
+            "upper": 0.579909983633,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt1": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt5": {
+          "value": 0.94,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.9,
+            "upper": 0.98,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt10": {
+          "value": 0.875930555556,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.859047619048,
+            "upper": 0.900871031746,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt1": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt5": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt10": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor1Percent": {
+          "value": 1.572469935245,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1.551896392229,
+            "upper": 1.593043478261,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor5Percent": {
+          "value": 1.483122109158,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1.437391304348,
+            "upper": 1.535513413506,
+            "finiteReplicates": 10000
+          }
+        },
+        "kendallTauB": {
+          "value": 0.368180967558,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.338740935094,
+            "upper": 0.395262162491,
+            "finiteReplicates": 10000
+          }
+        },
+        "coverage": {
+          "eligibleTargets": 5,
+          "minimumPosesPerEligibleTarget": 72,
+          "maximumPosesPerEligibleTarget": 72
+        }
+      },
+      "contact_count": {
+        "averagePrecision": {
+          "value": 0.673342807553,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.64787084523,
+            "upper": 0.698814769876,
+            "finiteReplicates": 10000
+          }
+        },
+        "averagePrecisionLift": {
+          "value": 1.058839644242,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1.015419833708,
+            "upper": 1.098525364978,
+            "finiteReplicates": 10000
+          }
+        },
+        "auroc": {
+          "value": 0.623736937385,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.585079198414,
+            "upper": 0.662394676356,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt1": {
+          "value": 0.2,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0,
+            "upper": 0.6,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt5": {
+          "value": 0.48,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.4,
+            "upper": 0.56,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt10": {
+          "value": 0.56,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.48,
+            "upper": 0.6,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt1": {
+          "value": 0.2,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0,
+            "upper": 0.6,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt5": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt10": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor1Percent": {
+          "value": 0.313043478261,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0,
+            "upper": 0.939130434783,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor5Percent": {
+          "value": 0.784495837188,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.55647826087,
+            "upper": 1.014061054579,
+            "finiteReplicates": 10000
+          }
+        },
+        "kendallTauB": {
+          "value": 0.129967961985,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.056870127045,
+            "upper": 0.203065796924,
+            "finiteReplicates": 10000
+          }
+        },
+        "coverage": {
+          "eligibleTargets": 5,
+          "minimumPosesPerEligibleTarget": 72,
+          "maximumPosesPerEligibleTarget": 72
+        }
+      },
+      "delta_sasa": {
+        "averagePrecision": {
+          "value": 0.772742639817,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.723586078829,
+            "upper": 0.840450828804,
+            "finiteReplicates": 10000
+          }
+        },
+        "averagePrecisionLift": {
+          "value": 1.214965805109,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1.135473755122,
+            "upper": 1.320440386176,
+            "finiteReplicates": 10000
+          }
+        },
+        "auroc": {
+          "value": 0.754144372319,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.706192043701,
+            "upper": 0.806322308931,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt1": {
+          "value": 0.2,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0,
+            "upper": 0.6,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt5": {
+          "value": 0.6,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.4,
+            "upper": 0.84,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt10": {
+          "value": 0.64,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.54,
+            "upper": 0.78,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt1": {
+          "value": 0.2,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0,
+            "upper": 0.6,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt5": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt10": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor1Percent": {
+          "value": 0.313043478261,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0,
+            "upper": 0.939130434783,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor5Percent": {
+          "value": 1.021017576318,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.786382978723,
+            "upper": 1.32710453284,
+            "finiteReplicates": 10000
+          }
+        },
+        "kendallTauB": {
+          "value": 0.381470235495,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.313082129079,
+            "upper": 0.449858341912,
+            "finiteReplicates": 10000
+          }
+        },
+        "coverage": {
+          "eligibleTargets": 5,
+          "minimumPosesPerEligibleTarget": 72,
+          "maximumPosesPerEligibleTarget": 72
+        }
+      },
+      "clash_burden": {
+        "averagePrecision": {
+          "value": 0.594257550904,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.56691573935,
+            "upper": 0.630021875327,
+            "finiteReplicates": 10000
+          }
+        },
+        "averagePrecisionLift": {
+          "value": 0.933964374894,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.889312794482,
+            "upper": 0.977332529272,
+            "finiteReplicates": 10000
+          }
+        },
+        "auroc": {
+          "value": 0.468559655847,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.42508361204,
+            "upper": 0.51333975728,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt1": {
+          "value": 0.248571428571,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.16380952381,
+            "upper": 0.34,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt5": {
+          "value": 0.301904761905,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.16380952381,
+            "upper": 0.468571428571,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt10": {
+          "value": 0.404,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.304,
+            "upper": 0.54,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt1": {
+          "value": 0.248571428571,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.16380952381,
+            "upper": 0.34,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt5": {
+          "value": 0.909523809524,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.795238095238,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt10": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor1Percent": {
+          "value": 0.391022069512,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.257788819876,
+            "upper": 0.538301572618,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor5Percent": {
+          "value": 0.4420858993,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.257788819876,
+            "upper": 0.63229496498,
+            "finiteReplicates": 10000
+          }
+        },
+        "kendallTauB": {
+          "value": 0.091945571742,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.026902720457,
+            "upper": 0.153573785576,
+            "finiteReplicates": 10000
+          }
+        },
+        "coverage": {
+          "eligibleTargets": 5,
+          "minimumPosesPerEligibleTarget": 72,
+          "maximumPosesPerEligibleTarget": 72
+        }
+      },
+      "cdr_contact_share": {
+        "averagePrecision": {
+          "value": 0.687729162761,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.668734919925,
+            "upper": 0.70920410142,
+            "finiteReplicates": 10000
+          }
+        },
+        "averagePrecisionLift": {
+          "value": 1.081787548163,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1.041852582546,
+            "upper": 1.125909165941,
+            "finiteReplicates": 10000
+          }
+        },
+        "auroc": {
+          "value": 0.674351958005,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.632851348467,
+            "upper": 0.715852567543,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt1": {
+          "value": 0.363492063492,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.174603174603,
+            "upper": 0.522222222222,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt5": {
+          "value": 0.456825396825,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.405714285714,
+            "upper": 0.535555555556,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt10": {
+          "value": 0.527936507937,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.471428571429,
+            "upper": 0.586666666667,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt1": {
+          "value": 0.363492063492,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.174603174603,
+            "upper": 0.522222222222,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt5": {
+          "value": 0.99232809674,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.981629481629,
+            "upper": 0.999509803922,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt10": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor1Percent": {
+          "value": 0.575514147688,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.273291925466,
+            "upper": 0.832463768116,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor5Percent": {
+          "value": 0.625443225702,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.447352980045,
+            "upper": 0.805797101449,
+            "finiteReplicates": 10000
+          }
+        },
+        "kendallTauB": {
+          "value": 0.197956483419,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.116423976534,
+            "upper": 0.277686968229,
+            "finiteReplicates": 10000
+          }
+        },
+        "coverage": {
+          "eligibleTargets": 5,
+          "minimumPosesPerEligibleTarget": 72,
+          "maximumPosesPerEligibleTarget": 72
+        }
+      },
+      "random_all_tied": {
+        "averagePrecision": {
+          "value": 0.636111111111,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.627777777778,
+            "upper": 0.644444444444,
+            "finiteReplicates": 10000
+          }
+        },
+        "averagePrecisionLift": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "auroc": {
+          "value": 0.5,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.5,
+            "upper": 0.5,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt1": {
+          "value": 0.636111111111,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.627777777778,
+            "upper": 0.644444444444,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt5": {
+          "value": 0.636111111111,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.627777777778,
+            "upper": 0.644444444444,
+            "finiteReplicates": 10000
+          }
+        },
+        "precisionAt10": {
+          "value": 0.636111111111,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.627777777778,
+            "upper": 0.644444444444,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt1": {
+          "value": 0.636111111111,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.627777777778,
+            "upper": 0.644444444444,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt5": {
+          "value": 0.995052011415,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.994443786904,
+            "upper": 0.995660235925,
+            "finiteReplicates": 10000
+          }
+        },
+        "successAt10": {
+          "value": 0.999988525134,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 0.999985432299,
+            "upper": 0.999991617969,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor1Percent": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "enrichmentFactor5Percent": {
+          "value": 1,
+          "eligibleTargets": 5,
+          "bootstrapDispersion95": {
+            "lower": 1,
+            "upper": 1,
+            "finiteReplicates": 10000
+          }
+        },
+        "kendallTauB": {
+          "value": null,
+          "eligibleTargets": 0,
+          "bootstrapDispersion95": {
+            "lower": null,
+            "upper": null,
+            "finiteReplicates": 0
+          }
+        },
+        "coverage": {
+          "eligibleTargets": 5,
+          "minimumPosesPerEligibleTarget": 72,
+          "maximumPosesPerEligibleTarget": 72
+        }
+      }
+    },
+    "pairedAveragePrecisionDifferenceVsAllTied": {
+      "confovhh_evidence_v0_4": {
+        "pointReference": "paired macro average-precision difference versus all-tied baseline",
+        "lower": 0.047987117552,
+        "upper": 0.055630075033,
+        "finiteReplicates": 10000
+      },
+      "contact_count": {
+        "pointReference": "paired macro average-precision difference versus all-tied baseline",
+        "lower": 0.00962863009,
+        "upper": 0.062703658765,
+        "finiteReplicates": 10000
+      },
+      "delta_sasa": {
+        "pointReference": "paired macro average-precision difference versus all-tied baseline",
+        "lower": 0.086330911398,
+        "upper": 0.204339717693,
+        "finiteReplicates": 10000
+      },
+      "clash_burden": {
+        "pointReference": "paired macro average-precision difference versus all-tied baseline",
+        "lower": -0.070716825747,
+        "upper": -0.013994820886,
+        "finiteReplicates": 10000
+      },
+      "cdr_contact_share": {
+        "pointReference": "paired macro average-precision difference versus all-tied baseline",
+        "lower": 0.026998487861,
+        "upper": 0.078778152686,
+        "finiteReplicates": 10000
+      }
+    },
+    "evidenceBandPositiveRates": {
+      "supported": {
+        "targetMacroPositiveRate": 1,
+        "eligibleTargets": 4,
+        "pooledPositiveRate": 1,
+        "pooledPoseCount": 4
+      },
+      "mixed": {
+        "targetMacroPositiveRate": 0.925,
+        "eligibleTargets": 5,
+        "pooledPositiveRate": 0.921052631579,
+        "pooledPoseCount": 38
+      },
+      "limited": {
+        "targetMacroPositiveRate": 0.614884792627,
+        "eligibleTargets": 5,
+        "pooledPositiveRate": 0.614886731392,
+        "pooledPoseCount": 309
+      },
+      "not-assessable": {
+        "targetMacroPositiveRate": 0,
+        "eligibleTargets": 5,
+        "pooledPositiveRate": 0,
+        "pooledPoseCount": 9
+      }
+    },
+    "supportedVersusOtherOddsRatio": {
+      "perTarget": {
+        "3P0G-A-B": {
+          "supportedPositive": 1,
+          "supportedNegative": 0,
+          "otherPositive": 45,
+          "otherNegative": 26,
+          "eligible": true,
+          "corrected": true,
+          "logOddsRatio": 0.5580446957033816
+        },
+        "4XT1-A-C": {
+          "supportedPositive": 1,
+          "supportedNegative": 0,
+          "otherPositive": 45,
+          "otherNegative": 26,
+          "eligible": true,
+          "corrected": true,
+          "logOddsRatio": 0.5580446957033816
+        },
+        "6DO1-A-C": {
+          "supportedPositive": 0,
+          "supportedNegative": 0,
+          "otherPositive": 47,
+          "otherNegative": 25,
+          "eligible": false,
+          "logOddsRatio": null,
+          "corrected": false
+        },
+        "6O3C-A-B": {
+          "supportedPositive": 1,
+          "supportedNegative": 0,
+          "otherPositive": 44,
+          "otherNegative": 27,
+          "eligible": true,
+          "corrected": true,
+          "logOddsRatio": 0.6173091041684409
+        },
+        "8QW4-A-B": {
+          "supportedPositive": 1,
+          "supportedNegative": 0,
+          "otherPositive": 44,
+          "otherNegative": 27,
+          "eligible": true,
+          "corrected": true,
+          "logOddsRatio": 0.6173091041684409
+        }
+      },
+      "macroOddsRatio": 1.799802433904,
+      "eligibleTargets": 4,
+      "correction": "0.5 Haldane-Anscombe correction applied only to eligible tables containing a zero cell"
+    }
+  },
+  "methodClarifications": {
+    "cdrZeroContactPolicy": {
+      "status": "clarified-after-initial-development-run-before-final-attested-rerun",
+      "policy": "A numbered pose with zero contacts receives CDR-contact-share score 0; a target is unavailable only when every retained pose is unnumbered.",
+      "rationale": "Prevents label-dependent row deletion and preserves the target-level denominator.",
+      "dockqFittingPerformed": false,
+      "unaffectedPrimaryArms": [
+        "confovhh_evidence_v0_4",
+        "delta_sasa"
+      ]
+    }
+  },
+  "sensitivityAnalysis": {
+    "dockqCutoffs": {
+      "0.21": {
+        "confovhh_evidence_v0_4": {
+          "averagePrecision": {
+            "value": 0.702657861377,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.07190093319,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.570926561005,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.94,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.879364010989,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 1.525809435708,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 1.439613205365,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.368180967558,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "contact_count": {
+          "averagePrecision": {
+            "value": 0.69105542378,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.054505140026,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.625422989457,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.48,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.58,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.313043478261,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.766165587419,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.129967961985,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "delta_sasa": {
+          "averagePrecision": {
+            "value": 0.780101282522,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.191521321712,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.745489956672,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.6,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.64,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.313043478261,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.994426456984,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.381470235495,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "clash_burden": {
+          "averagePrecision": {
+            "value": 0.612795991788,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 0.934747743827,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.469272329406,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.277142857143,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.330476190476,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.444,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.277142857143,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.957142857143,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.421292454077,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.472356283864,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.091945571742,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "cdr_contact_share": {
+          "averagePrecision": {
+            "value": 0.724975738585,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.105114318093,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.701410330287,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.45873015873,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.525396825397,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.596507936508,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.45873015873,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.997323101735,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.697793048764,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.724388793445,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.197956483419,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "random_all_tied": {
+          "averagePrecision": {
+            "value": 0.655555555556,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.5,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.655555555556,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.655555555556,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.655555555556,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.655555555556,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.996325666417,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 0.999994117338,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": null,
+            "eligibleTargets": 0
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        }
+      },
+      "0.23": {
+        "confovhh_evidence_v0_4": {
+          "averagePrecision": {
+            "value": 0.687853610626,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.081281677441,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.574180187644,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.94,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.875930555556,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 1.572469935245,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 1.483122109158,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.368180967558,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "contact_count": {
+          "averagePrecision": {
+            "value": 0.673342807553,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.058839644242,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.623736937385,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.48,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.56,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.313043478261,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.784495837188,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.129967961985,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "delta_sasa": {
+          "averagePrecision": {
+            "value": 0.772742639817,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.214965805109,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.754144372319,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.6,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.64,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.313043478261,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 1.021017576318,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.381470235495,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "clash_burden": {
+          "averagePrecision": {
+            "value": 0.594257550904,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 0.933964374894,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.468559655847,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.248571428571,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.301904761905,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.404,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.248571428571,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.909523809524,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.391022069512,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.4420858993,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.091945571742,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "cdr_contact_share": {
+          "averagePrecision": {
+            "value": 0.687729162761,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.081787548163,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.674351958005,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.363492063492,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.456825396825,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.527936507937,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.363492063492,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.99232809674,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.575514147688,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.625443225702,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.197956483419,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "random_all_tied": {
+          "averagePrecision": {
+            "value": 0.636111111111,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.5,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.636111111111,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.636111111111,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.636111111111,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.636111111111,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.995052011415,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 0.999988525134,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": null,
+            "eligibleTargets": 0
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        }
+      },
+      "0.25": {
+        "confovhh_evidence_v0_4": {
+          "averagePrecision": {
+            "value": 0.645001653354,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.090197287644,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.570500249612,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.975,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.895,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.829352258852,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.975,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 1.649256359069,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 1.520648466678,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.368180967558,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "contact_count": {
+          "averagePrecision": {
+            "value": 0.632303553179,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.06831040003,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.632814535537,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.4,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.48,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.678116551628,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.129967961985,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "delta_sasa": {
+          "averagePrecision": {
+            "value": 0.735465353509,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.244478562458,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.763419401976,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.52,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.6,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.931460541727,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.381470235495,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "clash_burden": {
+          "averagePrecision": {
+            "value": 0.548608057253,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 0.927570513969,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.464455483193,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.208571428571,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.261904761905,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.347,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.208571428571,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.909523809524,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.352465911853,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.408279865342,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.091945571742,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "cdr_contact_share": {
+          "averagePrecision": {
+            "value": 0.64245418321,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.085899678613,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.66857908392,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.304761904762,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.358095238095,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.451428571429,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.304761904762,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.974947601418,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.51701276602,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.572826719509,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.197956483419,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        },
+        "random_all_tied": {
+          "averagePrecision": {
+            "value": 0.591666666667,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.5,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.591666666667,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.591666666667,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.591666666667,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.591666666667,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.990734303519,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 0.999952414222,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": null,
+            "eligibleTargets": 0
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 72,
+            "maximumPosesPerEligibleTarget": 72
+          }
+        }
+      }
+    },
+    "excludeDockqBetween0_21And0_25": {
+      "perTarget": {
+        "confovhh_evidence_v0_4": {
+          "3P0G-A-B": {
+            "poseCount": 68,
+            "positiveCount": 44,
+            "prevalence": 0.6470588235294118,
+            "averagePrecision": 0.7032085561497325,
+            "averagePrecisionLift": 1.086776859504132,
+            "auroc": 0.5795454545454546,
+            "precisionAt1": 1,
+            "precisionAt5": 1,
+            "precisionAt10": 0.8819672131147541,
+            "successAt1": 1,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 1.5454545454545454,
+            "enrichmentFactor5Percent": 1.5454545454545454,
+            "kendallTauB": 0.4238979221749365
+          },
+          "4XT1-A-C": {
+            "poseCount": 67,
+            "positiveCount": 41,
+            "prevalence": 0.6119402985074627,
+            "averagePrecision": 0.668689074950451,
+            "averagePrecisionLift": 1.0927358054068346,
+            "auroc": 0.5787992495309568,
+            "precisionAt1": 1,
+            "precisionAt5": 0.9,
+            "precisionAt10": 0.8568965517241379,
+            "successAt1": 1,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 1.6341463414634148,
+            "enrichmentFactor5Percent": 1.4809451219512195,
+            "kendallTauB": 0.3990721683230595
+          },
+          "6DO1-A-C": {
+            "poseCount": 68,
+            "positiveCount": 43,
+            "prevalence": 0.6323529411764706,
+            "averagePrecision": 0.6922024623803009,
+            "averagePrecisionLift": 1.0946457544618713,
+            "auroc": 0.5813953488372093,
+            "precisionAt1": 1,
+            "precisionAt5": 1,
+            "precisionAt10": 0.8770491803278688,
+            "successAt1": 1,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 1.5813953488372094,
+            "enrichmentFactor5Percent": 1.5813953488372094,
+            "kendallTauB": 0.38833628942071663
+          },
+          "6O3C-A-B": {
+            "poseCount": 67,
+            "positiveCount": 43,
+            "prevalence": 0.6417910447761194,
+            "averagePrecision": 0.6903467160322418,
+            "averagePrecisionLift": 1.0756565110269816,
+            "auroc": 0.5726744186046512,
+            "precisionAt1": 1,
+            "precisionAt5": 0.9,
+            "precisionAt10": 0.8603448275862069,
+            "successAt1": 1,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 1.558139534883721,
+            "enrichmentFactor5Percent": 1.412063953488372,
+            "kendallTauB": 0.3916819429837436
+          },
+          "8QW4-A-B": {
+            "poseCount": 67,
+            "positiveCount": 42,
+            "prevalence": 0.6268656716417911,
+            "averagePrecision": 0.6711975835110163,
+            "averagePrecisionLift": 1.070719954648526,
+            "auroc": 0.5638095238095238,
+            "precisionAt1": 1,
+            "precisionAt5": 0.8857142857142858,
+            "precisionAt10": 0.8186440677966103,
+            "successAt1": 1,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 1.5952380952380951,
+            "enrichmentFactor5Percent": 1.4243197278911566,
+            "kendallTauB": 0.36633568210917644
+          }
+        },
+        "contact_count": {
+          "3P0G-A-B": {
+            "poseCount": 68,
+            "positiveCount": 44,
+            "prevalence": 0.6470588235294118,
+            "averagePrecision": 0.6957203300075161,
+            "averagePrecisionLift": 1.0752041463752522,
+            "auroc": 0.6699810606060606,
+            "precisionAt1": 0,
+            "precisionAt5": 0.4,
+            "precisionAt10": 0.6,
+            "successAt1": 0,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0,
+            "enrichmentFactor5Percent": 0.7727272727272727,
+            "kendallTauB": 0.15920788115106133
+          },
+          "4XT1-A-C": {
+            "poseCount": 67,
+            "positiveCount": 41,
+            "prevalence": 0.6119402985074627,
+            "averagePrecision": 0.6648324999753341,
+            "averagePrecisionLift": 1.086433597520668,
+            "auroc": 0.6294559099437148,
+            "precisionAt1": 1,
+            "precisionAt5": 0.4,
+            "precisionAt10": 0.6,
+            "successAt1": 1,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 1.6341463414634148,
+            "enrichmentFactor5Percent": 0.8170731707317074,
+            "kendallTauB": 0.19209969717691774
+          },
+          "6DO1-A-C": {
+            "poseCount": 68,
+            "positiveCount": 43,
+            "prevalence": 0.6323529411764706,
+            "averagePrecision": 0.6191692859676023,
+            "averagePrecisionLift": 0.9791514289720223,
+            "auroc": 0.5572093023255814,
+            "precisionAt1": 0,
+            "precisionAt5": 0.4,
+            "precisionAt10": 0.4,
+            "successAt1": 0,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0,
+            "enrichmentFactor5Percent": 0.39534883720930236,
+            "kendallTauB": 0.007048501921784209
+          },
+          "6O3C-A-B": {
+            "poseCount": 67,
+            "positiveCount": 43,
+            "prevalence": 0.6417910447761194,
+            "averagePrecision": 0.667444672978726,
+            "averagePrecisionLift": 1.0399719323156895,
+            "auroc": 0.6143410852713178,
+            "precisionAt1": 0,
+            "precisionAt5": 0.4,
+            "precisionAt10": 0.6,
+            "successAt1": 0,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0,
+            "enrichmentFactor5Percent": 0.38953488372093026,
+            "kendallTauB": 0.02225268359732617
+          },
+          "8QW4-A-B": {
+            "poseCount": 67,
+            "positiveCount": 42,
+            "prevalence": 0.6268656716417911,
+            "averagePrecision": 0.7033753423464874,
+            "averagePrecisionLift": 1.1220511413622536,
+            "auroc": 0.6938095238095238,
+            "precisionAt1": 0,
+            "precisionAt5": 0.6,
+            "precisionAt10": 0.6,
+            "successAt1": 0,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0,
+            "enrichmentFactor5Percent": 0.7976190476190476,
+            "kendallTauB": 0.2227849620651515
+          }
+        },
+        "delta_sasa": {
+          "3P0G-A-B": {
+            "poseCount": 68,
+            "positiveCount": 44,
+            "prevalence": 0.6470588235294118,
+            "averagePrecision": 0.7661544396211297,
+            "averagePrecisionLift": 1.184056861232655,
+            "auroc": 0.7443181818181818,
+            "precisionAt1": 0,
+            "precisionAt5": 0.8,
+            "precisionAt10": 0.6,
+            "successAt1": 0,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0,
+            "enrichmentFactor5Percent": 1.159090909090909,
+            "kendallTauB": 0.3578485267356419
+          },
+          "4XT1-A-C": {
+            "poseCount": 67,
+            "positiveCount": 41,
+            "prevalence": 0.6119402985074627,
+            "averagePrecision": 0.9019370701600019,
+            "averagePrecisionLift": 1.4738971634321982,
+            "auroc": 0.8611632270168855,
+            "precisionAt1": 1,
+            "precisionAt5": 1,
+            "precisionAt10": 0.9,
+            "successAt1": 1,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 1.6341463414634148,
+            "enrichmentFactor5Percent": 1.6341463414634148,
+            "kendallTauB": 0.5377657168701945
+          },
+          "6DO1-A-C": {
+            "poseCount": 68,
+            "positiveCount": 43,
+            "prevalence": 0.6323529411764706,
+            "averagePrecision": 0.7001634242575916,
+            "averagePrecisionLift": 1.1072351825468891,
+            "auroc": 0.6855813953488372,
+            "precisionAt1": 0,
+            "precisionAt5": 0.4,
+            "precisionAt10": 0.6,
+            "successAt1": 0,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0,
+            "enrichmentFactor5Percent": 0.39534883720930236,
+            "kendallTauB": 0.2800702370500439
+          },
+          "6O3C-A-B": {
+            "poseCount": 67,
+            "positiveCount": 43,
+            "prevalence": 0.6417910447761194,
+            "averagePrecision": 0.7238926848581634,
+            "averagePrecisionLift": 1.1279258112906267,
+            "auroc": 0.7248062015503876,
+            "precisionAt1": 0,
+            "precisionAt5": 0.4,
+            "precisionAt10": 0.5,
+            "successAt1": 0,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0,
+            "enrichmentFactor5Percent": 0.7790697674418605,
+            "kendallTauB": 0.2962460425146992
+          },
+          "8QW4-A-B": {
+            "poseCount": 67,
+            "positiveCount": 42,
+            "prevalence": 0.6268656716417911,
+            "averagePrecision": 0.7680549360602794,
+            "averagePrecisionLift": 1.225230493239017,
+            "auroc": 0.799047619047619,
+            "precisionAt1": 0,
+            "precisionAt5": 0.4,
+            "precisionAt10": 0.6,
+            "successAt1": 0,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0,
+            "enrichmentFactor5Percent": 0.7976190476190476,
+            "kendallTauB": 0.43464495703301675
+          }
+        },
+        "clash_burden": {
+          "3P0G-A-B": {
+            "poseCount": 68,
+            "positiveCount": 44,
+            "prevalence": 0.6470588235294118,
+            "averagePrecision": 0.562728527374476,
+            "averagePrecisionLift": 0.8696713604878265,
+            "auroc": 0.3977272727272727,
+            "precisionAt1": 0.16666666666666666,
+            "precisionAt5": 0.16666666666666669,
+            "precisionAt10": 0.33999999999999997,
+            "successAt1": 0.16666666666666663,
+            "successAt5": 0.8333333333333334,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0.25757575757575757,
+            "enrichmentFactor5Percent": 0.25757575757575757,
+            "kendallTauB": 0.019168747547965336
+          },
+          "4XT1-A-C": {
+            "poseCount": 67,
+            "positiveCount": 41,
+            "prevalence": 0.6119402985074627,
+            "averagePrecision": 0.5526367591876107,
+            "averagePrecisionLift": 0.9030893381846321,
+            "auroc": 0.45168855534709196,
+            "precisionAt1": 0.16666666666666666,
+            "precisionAt5": 0.16666666666666669,
+            "precisionAt10": 0.275,
+            "successAt1": 0.16666666666666663,
+            "successAt5": 0.8333333333333334,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0.27235772357723576,
+            "enrichmentFactor5Percent": 0.27235772357723576,
+            "kendallTauB": 0.08435334678166438
+          },
+          "6DO1-A-C": {
+            "poseCount": 68,
+            "positiveCount": 43,
+            "prevalence": 0.6323529411764706,
+            "averagePrecision": 0.6478348371281797,
+            "averagePrecisionLift": 1.0244829982492145,
+            "auroc": 0.5530232558139535,
+            "precisionAt1": 0.3333333333333333,
+            "precisionAt5": 0.6,
+            "precisionAt10": 0.65,
+            "successAt1": 0.33333333333333337,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0.5271317829457364,
+            "enrichmentFactor5Percent": 0.7906976744186047,
+            "kendallTauB": 0.21809987798476901
+          },
+          "6O3C-A-B": {
+            "poseCount": 67,
+            "positiveCount": 43,
+            "prevalence": 0.6417910447761194,
+            "averagePrecision": 0.6001764206292237,
+            "averagePrecisionLift": 0.9351586088873951,
+            "auroc": 0.47044573643410853,
+            "precisionAt1": 0.25,
+            "precisionAt5": 0.3,
+            "precisionAt10": 0.4,
+            "successAt1": 0.25,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0.38953488372093026,
+            "enrichmentFactor5Percent": 0.38953488372093026,
+            "kendallTauB": 0.14152639867621458
+          },
+          "8QW4-A-B": {
+            "poseCount": 67,
+            "positiveCount": 42,
+            "prevalence": 0.6268656716417911,
+            "averagePrecision": 0.5748602969412984,
+            "averagePrecisionLift": 0.9170390451206426,
+            "auroc": 0.4585714285714286,
+            "precisionAt1": 0.2,
+            "precisionAt5": 0.2,
+            "precisionAt10": 0.4,
+            "successAt1": 0.19999999999999996,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0.319047619047619,
+            "enrichmentFactor5Percent": 0.319047619047619,
+            "kendallTauB": 0.10162311666860097
+          }
+        },
+        "cdr_contact_share": {
+          "3P0G-A-B": {
+            "poseCount": 68,
+            "positiveCount": 44,
+            "prevalence": 0.6470588235294118,
+            "averagePrecision": 0.7133454072759543,
+            "averagePrecisionLift": 1.1024429021537474,
+            "auroc": 0.7215909090909091,
+            "precisionAt1": 0.45454545454545453,
+            "precisionAt5": 0.4545454545454546,
+            "precisionAt10": 0.4545454545454546,
+            "successAt1": 0.4545454545454546,
+            "successAt5": 0.987012987012987,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0.7024793388429752,
+            "enrichmentFactor5Percent": 0.7024793388429752,
+            "kendallTauB": 0.3179307566492126
+          },
+          "4XT1-A-C": {
+            "poseCount": 67,
+            "positiveCount": 41,
+            "prevalence": 0.6119402985074627,
+            "averagePrecision": 0.6331284491446822,
+            "averagePrecisionLift": 1.034624538846188,
+            "auroc": 0.6214821763602252,
+            "precisionAt1": 0.375,
+            "precisionAt5": 0.375,
+            "precisionAt10": 0.5,
+            "successAt1": 0.375,
+            "successAt5": 0.9821428571428571,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0.6128048780487805,
+            "enrichmentFactor5Percent": 0.6128048780487805,
+            "kendallTauB": 0.07845205167846958
+          },
+          "6DO1-A-C": {
+            "poseCount": 68,
+            "positiveCount": 43,
+            "prevalence": 0.6323529411764706,
+            "averagePrecision": 0.6761319471776298,
+            "averagePrecisionLift": 1.0692319164669495,
+            "auroc": 0.6502325581395348,
+            "precisionAt1": 0,
+            "precisionAt5": 0.4,
+            "precisionAt10": 0.6,
+            "successAt1": 0,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0,
+            "enrichmentFactor5Percent": 0.39534883720930236,
+            "kendallTauB": 0.02725277094795751
+          },
+          "6O3C-A-B": {
+            "poseCount": 67,
+            "positiveCount": 43,
+            "prevalence": 0.6417910447761194,
+            "averagePrecision": 0.7702370187294917,
+            "averagePrecisionLift": 1.2001367501133942,
+            "auroc": 0.7916666666666666,
+            "precisionAt1": 0.5,
+            "precisionAt5": 0.4,
+            "precisionAt10": 0.7,
+            "successAt1": 0.5,
+            "successAt5": 1,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0.7790697674418605,
+            "enrichmentFactor5Percent": 0.38953488372093026,
+            "kendallTauB": 0.30807777887849036
+          },
+          "8QW4-A-B": {
+            "poseCount": 67,
+            "positiveCount": 42,
+            "prevalence": 0.6268656716417911,
+            "averagePrecision": 0.714262759501757,
+            "averagePrecisionLift": 1.1394191639670885,
+            "auroc": 0.73,
+            "precisionAt1": 0.5625,
+            "precisionAt5": 0.5625,
+            "precisionAt10": 0.5625,
+            "successAt1": 0.5625,
+            "successAt5": 0.9951923076923077,
+            "successAt10": 1,
+            "enrichmentFactor1Percent": 0.8973214285714285,
+            "enrichmentFactor5Percent": 0.8973214285714285,
+            "kendallTauB": 0.3121860539198532
+          }
+        },
+        "random_all_tied": {
+          "3P0G-A-B": {
+            "poseCount": 68,
+            "positiveCount": 44,
+            "prevalence": 0.6470588235294118,
+            "averagePrecision": 0.6470588235294118,
+            "averagePrecisionLift": 1,
+            "auroc": 0.5,
+            "precisionAt1": 0.6470588235294118,
+            "precisionAt5": 0.6470588235294118,
+            "precisionAt10": 0.6470588235294118,
+            "successAt1": 0.6470588235294117,
+            "successAt5": 0.9959225366380766,
+            "successAt10": 0.9999932545488652,
+            "enrichmentFactor1Percent": 1,
+            "enrichmentFactor5Percent": 1,
+            "kendallTauB": null
+          },
+          "4XT1-A-C": {
+            "poseCount": 67,
+            "positiveCount": 41,
+            "prevalence": 0.6119402985074627,
+            "averagePrecision": 0.6119402985074627,
+            "averagePrecisionLift": 1,
+            "auroc": 0.5,
+            "precisionAt1": 0.6119402985074627,
+            "precisionAt5": 0.6119402985074627,
+            "precisionAt10": 0.6119402985074627,
+            "successAt1": 0.6119402985074627,
+            "successAt5": 0.9931888178156835,
+            "successAt10": 0.999978581254299,
+            "enrichmentFactor1Percent": 1,
+            "enrichmentFactor5Percent": 1,
+            "kendallTauB": null
+          },
+          "6DO1-A-C": {
+            "poseCount": 68,
+            "positiveCount": 43,
+            "prevalence": 0.6323529411764706,
+            "averagePrecision": 0.6323529411764706,
+            "averagePrecisionLift": 1,
+            "auroc": 0.5,
+            "precisionAt1": 0.6323529411764706,
+            "precisionAt5": 0.6323529411764706,
+            "precisionAt10": 0.6323529411764706,
+            "successAt1": 0.6323529411764706,
+            "successAt5": 0.9949031707975957,
+            "successAt10": 0.999988757581442,
+            "enrichmentFactor1Percent": 1,
+            "enrichmentFactor5Percent": 1,
+            "kendallTauB": null
+          },
+          "6O3C-A-B": {
+            "poseCount": 67,
+            "positiveCount": 43,
+            "prevalence": 0.6417910447761194,
+            "averagePrecision": 0.6417910447761194,
+            "averagePrecisionLift": 1,
+            "auroc": 0.5,
+            "precisionAt1": 0.6417910447761194,
+            "precisionAt5": 0.6417910447761195,
+            "precisionAt10": 0.6417910447761195,
+            "successAt1": 0.6417910447761195,
+            "successAt5": 0.9955989284347493,
+            "successAt10": 0.9999920915400489,
+            "enrichmentFactor1Percent": 1,
+            "enrichmentFactor5Percent": 1,
+            "kendallTauB": null
+          },
+          "8QW4-A-B": {
+            "poseCount": 67,
+            "positiveCount": 42,
+            "prevalence": 0.6268656716417911,
+            "averagePrecision": 0.6268656716417911,
+            "averagePrecisionLift": 1,
+            "auroc": 0.5,
+            "precisionAt1": 0.6268656716417911,
+            "precisionAt5": 0.6268656716417911,
+            "precisionAt10": 0.6268656716417911,
+            "successAt1": 0.6268656716417911,
+            "successAt5": 0.9944986605434366,
+            "successAt10": 0.9999868192334148,
+            "enrichmentFactor1Percent": 1,
+            "enrichmentFactor5Percent": 1,
+            "kendallTauB": null
+          }
+        }
+      },
+      "macro": {
+        "confovhh_evidence_v0_4": {
+          "averagePrecision": {
+            "value": 0.685128878605,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.08410697701,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.575244799066,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.937142857143,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.85898036811,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 1.582874773175,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 1.488835739525,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.393864801002,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 67,
+            "maximumPosesPerEligibleTarget": 68
+          }
+        },
+        "contact_count": {
+          "averagePrecision": {
+            "value": 0.670108426255,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.060562449309,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.632959376391,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.44,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.56,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.326829268293,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.634460642402,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.120678745182,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 67,
+            "maximumPosesPerEligibleTarget": 68
+          }
+        },
+        "delta_sasa": {
+          "averagePrecision": {
+            "value": 0.772040510991,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.223669102348,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.762983324956,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.6,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.64,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.2,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.326829268293,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.953054980565,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.381315096041,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 67,
+            "maximumPosesPerEligibleTarget": 68
+          }
+        },
+        "clash_burden": {
+          "averagePrecision": {
+            "value": 0.587647368252,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 0.929888270186,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.466291249779,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.223333333333,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.286666666667,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.413,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.223333333333,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.933333333333,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.353129553373,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.405842731668,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.112954297532,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 67,
+            "maximumPosesPerEligibleTarget": 68
+          }
+        },
+        "cdr_contact_share": {
+          "averagePrecision": {
+            "value": 0.701421116366,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1.109171054309,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.702994462051,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.378409090909,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.438409090909,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.563409090909,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.378409090909,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.99286963037,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 0.598335082581,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 0.599497873279,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": 0.208779882415,
+            "eligibleTargets": 5
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 67,
+            "maximumPosesPerEligibleTarget": 68
+          }
+        },
+        "random_all_tied": {
+          "averagePrecision": {
+            "value": 0.632001755926,
+            "eligibleTargets": 5
+          },
+          "averagePrecisionLift": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "auroc": {
+            "value": 0.5,
+            "eligibleTargets": 5
+          },
+          "precisionAt1": {
+            "value": 0.632001755926,
+            "eligibleTargets": 5
+          },
+          "precisionAt5": {
+            "value": 0.632001755926,
+            "eligibleTargets": 5
+          },
+          "precisionAt10": {
+            "value": 0.632001755926,
+            "eligibleTargets": 5
+          },
+          "successAt1": {
+            "value": 0.632001755926,
+            "eligibleTargets": 5
+          },
+          "successAt5": {
+            "value": 0.994822422846,
+            "eligibleTargets": 5
+          },
+          "successAt10": {
+            "value": 0.999987900832,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor1Percent": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "enrichmentFactor5Percent": {
+            "value": 1,
+            "eligibleTargets": 5
+          },
+          "kendallTauB": {
+            "value": null,
+            "eligibleTargets": 0
+          },
+          "coverage": {
+            "eligibleTargets": 5,
+            "minimumPosesPerEligibleTarget": 67,
+            "maximumPosesPerEligibleTarget": 68
+          }
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 90420260827,
+    "scheme": "paired hierarchical cluster bootstrap: sample receptor-family clusters with replacement, then targets within sampled clusters; never resample poses",
+    "interval": "2.5th and 97.5th percentiles",
+    "interpretation": "development-target bootstrap dispersion interval, not external-generalization evidence"
+  },
+  "artifactIntegrity": {
+    "sourceManifestSha256": "d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176",
+    "sourceManifestBytes": 1549,
+    "targetsJsonlSha256": "38c32bbcadf4a7dbcd9a3c58b6e89c0a3bda0194fda4f13234c20a3ba3edc5d5",
+    "targetsJsonlBytes": 18681,
+    "posesJsonlSha256": "3a9dc8f3e9348441e183d348354dd880d744aae6acef6291b709899dd3d852ef",
+    "posesJsonlBytes": 984055
+  },
+  "formalHoldoutEvaluated": false,
+  "hardDecoyProtocolCompleted": false,
+  "nearNativeRankingValidated": false,
+  "preliminaryNearNativeClaimAllowed": false,
+  "limitations": [
+    "All five complexes were already used for development and public regression; this is not an independent holdout.",
+    "The native-derived local rigid-body grid omits wrong-patch docking, tangential slides, external-generator decoys, conformational flexibility, and non-binders.",
+    "DockQ measures similarity to a deposited source complex and does not establish binding, affinity, specificity, signaling, stability, or physiological validity.",
+    "Bootstrap intervals describe dispersion across five development targets and do not establish external generalization or statistical significance.",
+    "No thresholds or composite weights were fitted to DockQ labels, and the formal hard-decoy release gate remains unevaluated."
+  ]
+}
