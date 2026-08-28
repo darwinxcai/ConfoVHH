@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "engine": {
+    "name": "ConfoVHH",
+    "packageVersion": "0.5.0",
+    "commit": "04c6bda2289157dd294c290609f6052aa0ef9195",
+    "tree": "1d0bc74ca7ca8d59de840b224e453bb61bd8e6b9",
+    "detachedCleanWorktreeRequired": true,
+    "transitiveScientificClosureHashRequired": true
+  },
+  "auditPolicy": {
+    "confidenceMode": "none",
+    "pae": "forbidden",
+    "plddt": "forbidden",
+    "ensembleRecurrence": "forbidden"
+  },
+  "scientificPreorder": [
+    {
+      "field": "evidenceBandOrdinal",
+      "direction": "descending",
+      "mapping": {
+        "supported": 3,
+        "mixed": 2,
+        "limited": 1,
+        "not-assessable": 0
+      }
+    },
+    {
+      "field": "severeClashResiduePairCount",
+      "direction": "ascending"
+    },
+    {
+      "field": "maximumVdwOverlapAngstrom",
+      "direction": "ascending",
+      "quantization": 0.01
+    },
+    {
+      "field": "imgtNumberingAvailable",
+      "direction": "available-first"
+    },
+    {
+      "field": "cdrContactShare",
+      "direction": "descending",
+      "missing": "after-all-available"
+    },
+    {
+      "field": "interfaceResiduePairCount",
+      "direction": "descending"
+    },
+    {
+      "field": "deltaSasaAngstromSquared",
+      "direction": "descending",
+      "quantization": 1
+    }
+  ],
+  "scientificTiePolicy": "identical-complete-quantized-tuples-remain-tied",
+  "displayOnlyFields": ["attemptId", "poseId", "coordinateSha256"],
+  "displayFieldsMayBreakScientificTies": false,
+  "prespecifiedBaselines": [
+    {
+      "id": "producer-percentile",
+      "field": "producerScore",
+      "direction": "generator-defined",
+      "normalization": "tie-aware-percentile-within-target-generator"
+    },
+    {
+      "id": "delta-sasa",
+      "field": "deltaSasaAngstromSquared",
+      "direction": "descending"
+    },
+    {
+      "id": "contact-count",
+      "field": "interfaceResiduePairCount",
+      "direction": "descending"
+    },
+    {
+      "id": "negative-severe-clashes",
+      "field": "severeClashResiduePairCount",
+      "direction": "ascending"
+    },
+    {
+      "id": "negative-maximum-overlap",
+      "field": "maximumVdwOverlapAngstrom",
+      "direction": "ascending"
+    },
+    {
+      "id": "cdr-contact-share",
+      "field": "cdrContactShare",
+      "direction": "descending",
+      "missing": "contrast-unavailable-not-imputed"
+    },
+    {
+      "id": "all-tied",
+      "field": null,
+      "direction": "all-tied"
+    },
+    {
+      "id": "random-permutation-diagnostic",
+      "field": "attemptId",
+      "direction": "fixed-seed-permutation",
+      "scientificBaseline": false
+    }
+  ],
+  "fittingAllowed": false,
+  "thresholdTuningAllowed": false,
+  "weightTuningAllowed": false
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "TARGET_CENSUS_BLOCKED",
+  "retrievedDateUtc": "2026-08-28",
+  "requiredIndependentGroups": 10,
+  "provisionalGroupsBeforeFormalSequenceAndEpitopeAudit": [
+    "GPR158",
+    "LGR4",
+    "CASR",
+    "MGLU",
+    "ADGRV1",
+    "DRD1",
+    "MC4R"
+  ],
+  "screenedCandidateRecordCount": 8,
+  "screenedExclusionRecordCount": 11,
+  "screenedProvisionalGroupCount": 7,
+  "formallyClearedGroupCount": 0,
+  "finalUsableGroupCount": null,
+  "candidateDiscoveryExhaustive": false,
+  "exclusionDiscoveryComplete": false,
+  "rawMetadataResponsesArchived": false,
+  "sourceCoverage": "PARTIAL-RCSB-CORE-ONLY",
+  "conditionalGroups": [
+    {
+      "id": "CASR",
+      "condition": "6.0-A reconstruction must pass a prespecified atom-level model-quality gate."
+    },
+    {
+      "id": "ADGRV1",
+      "condition": "Primary article/publication and epitope metadata must become available."
+    },
+    {
+      "id": "DRD1",
+      "condition": "7TM clustering and VHH-lineage comparisons against development aminergic binders must pass."
+    },
+    {
+      "id": "MC4R",
+      "condition": "The MC4R-beta2AR hybrid must not violate the construct-leakage rule; otherwise exclude."
+    }
+  ],
+  "formalLeakageAuditCompleted": false,
+  "exactFrozenGroupCount": null,
+  "exactFrozenTargetSetExists": false,
+  "targetManifestFrozen": false,
+  "candidateManifestFrozen": false,
+  "auditManifestFrozen": false,
+  "prelabelSealCreated": false,
+  "userApproved": false,
+  "holdoutReadyForApproval": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "integrityDisclosure": "A broad repository text search displayed already-frozen development-pilot DockQ values. It exposed no proposed holdout target label, coordinate, or result and did not influence target selection.",
+  "conclusion": "The documented metadata screen records eight candidate structures resolving to seven provisional and zero formally cleared direct GPCR-VHH groups, below the frozen minimum of ten. Because candidate-discovery completeness was not established and formal leakage audits remain incomplete, this checkpoint supports blocking target freeze but not an exhaustive census, an upper bound, or a claim of global public-data infeasibility.",
+  "scientificallyHonestOptions": [
+    "After formal auditing, define any smaller exact panel as a separately preregistered exploratory study; do not relabel it as the formal ten-group holdout.",
+    "Wait for additional public structures.",
+    "Use a larger leave-family-out cross-validation set and label it cross-validation, not independent holdout.",
+    "Broaden the scientific question beyond direct GPCR-VHH complexes."
+  ]
+}

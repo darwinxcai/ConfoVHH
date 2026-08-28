@@ -81,7 +81,7 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 
 | Layer | Current result | Interpretation |
 |---|---:|---|
-| Ordinary unit/integration tests | 349/349 passed | Deterministic software behavior and export integrity |
+| Ordinary unit/integration tests | 368/368 passed | 349 product/engine tests plus 19 fail-closed census-integrity tests |
 | Genuine producer outputs | 2 public runs · 26 source files · 10/10 poses · 10/10 PAE audits | End-to-end compatibility for actual AlphaFold Server and ColabFold outputs |
 | PDB↔mmCIF parity | 17/17 structures | Parser/metric reproducibility across serializations |
 | Deposited assemblies | 5/5 coordinate oracles | Assembly-operation reconstruction accuracy |
@@ -90,6 +90,8 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 | DockQ development ledger | 360/360 poses + 20/20 controls | Benchmark plumbing and descriptive development analysis |
 
 These counts are software/regression evidence, not a biological performance estimate. The DockQ perturbation set is development-only and does not establish generalization. No independent family-clustered hard-decoy holdout has yet been evaluated. See [VALIDATION.md](./VALIDATION.md) and [HARD_DECOY_PROTOCOL.md](./HARD_DECOY_PROTOCOL.md).
+
+On 2026-08-28, the documented metadata-only screen for the stricter [v2 hard-decoy protocol](./HARD_DECOY_PROTOCOL_V2.md) recorded eight candidate structures resolving to seven provisional public direct GPCR–VHH groups and zero formally cleared groups, against a frozen minimum of ten. Candidate-discovery completeness was not established. No candidate coordinates, DockQ/CAPRI labels, or holdout results were accessed. The minimum was not relaxed, so this is a checksummed [blocked screening checkpoint](./validation/hard-decoy-holdout-v2/prelabel-census/), not an exhaustive census, assembled holdout, upper bound, or performance result.
 
 ## Architecture
 
@@ -258,6 +260,8 @@ The development-only DockQ pilot reused five public complexes already present in
 The v0.5 replay was executed from clean source commit `278ae1a74da133778fba5b17bc296a8e37f02e76` and is recorded separately in `validation/dockq-v0.5-regression-replay-v1/`. It reproduced all discrete records exactly; maximum ΔSASA drift was 1.03×10⁻¹⁰ Å² against the 1×10⁻⁹ Å² bound fixed before the full 360-pose scan. It reuses already observed DockQ labels only to detect software regression and is not a second experiment. The public state-context inventory is in `validation/state-context-native-regression-v1.json` and contains zero same-VHH cross-context examples.
 
 No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. [HARD_DECOY_PROTOCOL.md](./HARD_DECOY_PROTOCOL.md) is a prospective protocol only and must not be described as an existing dataset or a completed study.
+
+The separate [v2 pre-label census](./validation/hard-decoy-holdout-v2/prelabel-census/) is deliberately blocked before target freeze: its documented screen contains seven provisional and zero formally cleared groups, below the preregistered minimum of ten; candidate discovery remains incomplete. It does not change any validation claim above.
 
 See [VALIDATION.md](./VALIDATION.md) for methods, frozen expectations, and the status of commit-attested release results.
 

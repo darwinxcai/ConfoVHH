@@ -42,6 +42,8 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 
 Current v0.8 product-layer result (2026-08-28): **349/349 ordinary tests passed**, including the emitted production prediction-run worker runtime request; **33/33 fixed-seed adversarial suites passed**, exercising exactly **7,221,999 semantic cases** and **4,679,968 assertions**. These are software-verification counts, not biological-validation samples.
 
+The blocked hard-decoy v2 census adds 19 ordinary integrity tests, bringing the current repository total to **368/368** without relabeling the v0.8 product-layer result.
+
 ### v0.8 product-layer validation boundary
 
 The native-run workflow first invokes the unchanged coordinate-only v0.5 ensemble executor. Only retained exact-sequence-compatible poses advance to an independent per-pose PAE audit. PAE remains exact per-pose context: an audit uses only the PAE source explicitly associated with that coordinate pose, and no PAE source or summary is pooled, transferred, or substituted across poses. A missing, malformed, dimension-mismatched, ambiguously mapped, or understated-maximum PAE source receives an explicit rejected/not-provided record while the coordinate audit remains labeled as coordinate-only. No fallback searches another JSON file, and PAE does not affect recurrence rank, evidence band, contact geometry, clashes, or approximate SASA.
@@ -194,6 +196,32 @@ This is a **post-label regression replay**. The v0.4 labels and aggregate result
 
 No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. `HARD_DECOY_PROTOCOL.md` specifies a future experiment only.
 
+### Independent hard-decoy v2 target census
+
+On 2026-08-28, a metadata-only census tested whether the stricter
+`HARD_DECOY_PROTOCOL_V2.md` could be instantiated without weakening its
+development-leakage rules. The documented screen recorded eight candidate
+structures resolving to seven provisional public direct GPCR–VHH groups and
+zero formally cleared groups before the unresolved quality, construct,
+receptor-cluster, VHH-lineage, epitope, and publication gates. The frozen
+minimum is ten, and the screen is not claimed to be globally exhaustive.
+
+The census therefore stopped before target freeze with status
+`TARGET_CENSUS_BLOCKED`. It contains no frozen eligible target set
+and cannot be approved or executed. No candidate coordinates, native poses,
+DockQ/CAPRI labels, or holdout performance results were retrieved or
+inspected. The package pins the metadata sources and exact construct
+sequences, records the 11 exclusions encountered and unresolved audits, locks the historical
+artifacts, and preregisters generators, scoring, baselines, endpoints,
+resources, and fail-closed state transitions so they cannot be silently
+repurposed as a completed holdout.
+
+The checksummed record is in
+`validation/hard-decoy-holdout-v2/prelabel-census/`. It establishes that this
+documented screen is insufficient to freeze the requested study; it does not
+establish global public-data infeasibility or provide evidence for or against
+ConfoVHH ranking performance.
+
 All release claim flags remain false:
 
 ```json
@@ -273,6 +301,7 @@ Pinned `immunum 1.2.0` assigns IMGT positions by sequence alignment. CDR1-IMGT i
 - The local-SE(3) pilot reuses development targets, has 63.6% positives, and lacks wrong-patch, external-generator, flexible, and nonbinding cases.
 - The executed v0.5 replay reused already observed labels and therefore measures regression only; it provides no new performance estimate.
 - No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated.
+- The v2 metadata census is blocked before target freeze because its documented screen contains seven provisional and zero formally cleared public groups against a minimum of ten; candidate discovery and formal leakage auditing remain incomplete.
 - The public context inventory has two receptor pairs but zero same-VHH cross-context pairs.
 - Ensemble recurrence cannot prove seed independence or correct for correlated model families.
 - Coordinate-derived sequences omit unresolved residues; IMGT-to-coordinate mapping may be incomplete in experimental structures.

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "scientificEngine": {
+    "commit": "04c6bda2289157dd294c290609f6052aa0ef9195",
+    "tree": "1d0bc74ca7ca8d59de840b224e453bb61bd8e6b9"
+  },
+  "censusStart": {
+    "commit": "a4dffa87913b364eb5fc7c220ac2b75011ad0c0a",
+    "tree": "d7017bc0c1fdcb6ee35ffa655a9a91067dedfd75"
+  },
+  "immutableFiles": [
+    {"path":"HARD_DECOY_PROTOCOL.md","sha256":"9a6c441d844069f52f87e60fa2cf00dfc671b588a19454d0479d188e4cb46c1f"},
+    {"path":"validation/dockq-development-pilot-v1/checksums.sha256","sha256":"d68cde133ae39f1b142e5ecccfde3b8ffc2a17a94c6999c7d21d3e3d81d18e3c"},
+    {"path":"validation/dockq-development-pilot-v1/pilot-spec.json","sha256":"110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc"},
+    {"path":"validation/dockq-development-pilot-v1/poses.jsonl","sha256":"3a9dc8f3e9348441e183d348354dd880d744aae6acef6291b709899dd3d852ef"},
+    {"path":"validation/dockq-development-pilot-v1/source-manifest.json","sha256":"d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176"},
+    {"path":"validation/dockq-development-pilot-v1/summary.json","sha256":"57e6d08e82f3b450bc4ceb682af2a1376af3a370fce717c8d6666ebb2638c0f9"},
+    {"path":"validation/dockq-development-pilot-v1/summary.md","sha256":"2843d3a101bf4aec6b93c544e6d828a81c0753b9ed177c0c1d01517c667e5a0d"},
+    {"path":"validation/dockq-development-pilot-v1/targets.jsonl","sha256":"38c32bbcadf4a7dbcd9a3c58b6e89c0a3bda0194fda4f13234c20a3ba3edc5d5"},
+    {"path":"validation/dockq-v0.5-regression-replay-v1/checksums.sha256","sha256":"fa76a3af9f3bf84a727f38befcc2cd99eba6c955f268586044833cd318e807c3"},
+    {"path":"validation/dockq-v0.5-regression-replay-v1/comparisons.jsonl","sha256":"b0c257252f72d13a5b1159cb31c98727b38e6048edc5bb1f94aca0f16d83abef"},
+    {"path":"validation/dockq-v0.5-regression-replay-v1/summary.json","sha256":"50aedd70d049aa065e687e6bdfe2e62b914126d4634fb151b01bf73237508743"},
+    {"path":"validation/mmcif-regression-manifest.v1.json","sha256":"5622c72b90f420462054f2f80fbe37924a4d6bfbcbf367a328f0b2fe356219e5"},
+    {"path":"validation/real-prediction-run-regression-v1.json","sha256":"31b4a936f6ff4b8784ea80b98f54bbc142aba91ac3c2119e4fa2e10cbdeada6e"},
+    {"path":"validation/state-context-native-regression-v1.json","sha256":"b4e14c80b63ca95984faf5b137834d7823b2eb1e4968d3a1b64c29bc897db4a9"},
+    {"path":"validation/v0.5-public-regression-attestation-v1/checksums.sha256","sha256":"ad543d4a59d64829fb7fc53e1a6eefdd63919563039981301ce18f7baafdf758"},
+    {"path":"validation/v0.5-public-regression-attestation-v1/mmcif-and-assemblies.json","sha256":"e2bdf2880247ca4cfaeec43c179d1f4269d51a1c85bf035de57ea440cf2e9f06"},
+    {"path":"validation/v0.5-public-regression-attestation-v1/native-interfaces.json","sha256":"10864245ed469cd302f60ce5cc9001b16168eeda47da9c679d43d9c4da2f459d"},
+    {"path":"validation/v0.5-public-regression-attestation-v1/summary.json","sha256":"7d1dee34fe98a1b01cc05f5ad984f57841f9b1f2f545861ebca5d9a3fc83c4da"}
+  ]
+}

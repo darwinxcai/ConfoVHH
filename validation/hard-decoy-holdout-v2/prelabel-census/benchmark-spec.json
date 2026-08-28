@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "2.0.0",
+  "benchmarkId": "confovhh-hard-decoy-holdout-v2",
+  "protocol": "HARD_DECOY_PROTOCOL_V2.md",
+  "protocolSha256": "9c38f2d2f7ed2ce4acd5b6730fedd6a37151fe992a808bfefc4268888f862421",
+  "status": "TARGET_CENSUS_BLOCKED",
+  "createdDateUtc": "2026-08-28",
+  "primaryQuestion": "Among contact-rich candidates generated without the native relative receptor-VHH pose, does the frozen ConfoVHH v0.5 coordinate-audit ordering enrich DockQ-acceptable-or-better poses beyond every prespecified baseline?",
+  "analysisUnit": "independent receptor-VHH-epitope-publication connected component",
+  "minimumIndependentGroups": 10,
+  "exactFrozenGroupCount": null,
+  "exactFrozenTargetSetExists": false,
+  "holdoutReadyForApproval": false,
+  "executionAuthorized": false,
+  "candidateDiscoveryExhaustive": false,
+  "rawMetadataResponsesArchived": false,
+  "sourceCoverage": "PARTIAL-RCSB-CORE-ONLY",
+  "targetManifestFrozen": false,
+  "candidateManifestFrozen": false,
+  "auditManifestFrozen": false,
+  "prelabelSealCreated": false,
+  "userApproved": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "postHocTuningAllowed": false,
+  "requiredGeneratorIds": [
+    "colabfold-1.6.2-afmultimer-v3",
+    "boltz-2.2.1"
+  ],
+  "primaryPopulation": "all-prelabel-eligible-outputs",
+  "secondaryPopulation": "dockq-spectrum-balanced-diagnostic-only",
+  "scientificEngine": {
+    "packageVersion": "0.5.0",
+    "commit": "04c6bda2289157dd294c290609f6052aa0ef9195",
+    "tree": "1d0bc74ca7ca8d59de840b224e453bb61bd8e6b9",
+    "confidenceMode": "none",
+    "pae": "forbidden",
+    "plddt": "forbidden",
+    "ensembleRecurrence": "forbidden"
+  },
+  "publicProductPreservation": {
+    "release": "v0.8.0",
+    "siteVersion": 12,
+    "siteUrl": "https://confovhh.darwin-cai.chatgpt.site",
+    "visibility": "public",
+    "sourceCommitAtCensusStart": "a4dffa87913b364eb5fc7c220ac2b75011ad0c0a",
+    "sourceTreeAtCensusStart": "d7017bc0c1fdcb6ee35ffa655a9a91067dedfd75"
+  },
+  "claimFlags": {
+    "formalHoldoutEvaluated": false,
+    "hardDecoyProtocolCompleted": false,
+    "nearNativeRankingValidated": false,
+    "preliminaryNearNativeClaimAllowed": false
+  },
+  "freezeBlockers": [
+    {
+      "id": "minimum-independent-target-groups",
+      "status": "OPEN",
+      "required": 10,
+      "formallyClearedGroupCount": 0,
+      "screenedProvisionalGroupCount": 7,
+      "rule": "No target can be added merely to reach the count; every group must pass direct-interface, receptor-cluster, VHH-lineage, epitope, construct, and publication leakage checks."
+    },
+    {
+      "id": "search-universe-reconciliation",
+      "status": "OPEN",
+      "rule": "The documented screen is not globally exhaustive; an exact query/source universe and reconciliation ledger are required before TARGETS_FROZEN."
+    },
+    {
+      "id": "raw-metadata-response-archive",
+      "status": "OPEN",
+      "rule": "Recorded source byte counts and SHA-256 observations are not independently rehashable until the exact metadata response bodies are archived."
+    },
+    {
+      "id": "substantial-gpu-allocation",
+      "status": "OPEN",
+      "planningEnvelope": "20-80 aggregate GPU-hours plus calibration; exact hardware-calibrated caps must be approved before execution."
+    }
+  ],
+  "authorizationPolicy": "No generation, native-reference opening, DockQ labeling, or performance analysis is authorized by this census package."
+}
