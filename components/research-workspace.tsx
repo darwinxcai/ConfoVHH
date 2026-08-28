@@ -72,9 +72,9 @@ export function WorkspaceNavigator({
   pairedContextCompared: boolean;
 }) {
   const steps = [
-    { href: "#prediction-run-intake", label: "Batch run", detail: predictionRunHasCommitted ? "complete" : predictionRunHasDraft ? "in progress" : "optional", ready: predictionRunHasCommitted, available: true },
     { href: "#coordinate-setup", label: "Input", detail: hasStructure ? "ready" : "required", ready: hasStructure, available: true },
     { href: "#audit-results", label: "Single pose", detail: hasAudit ? "complete" : "required", ready: hasAudit, available: hasAudit },
+    { href: "#prediction-run-intake", label: "Batch run", detail: predictionRunHasCommitted ? "complete" : predictionRunHasDraft ? "in progress" : "optional", ready: predictionRunHasCommitted, available: true },
     { href: "#ensemble-comparison", label: "Pose ensemble", detail: ensemblePoseCount > 1 ? `${ensemblePoseCount} poses` : "optional", ready: ensemblePoseCount > 1, available: hasAudit },
     { href: "#paired-context", label: "Context pair", detail: pairedContextCompared ? "complete" : "optional", ready: pairedContextCompared, available: hasAudit },
     { href: "#handoff", label: "Report", detail: hasAudit ? "available" : "locked", ready: hasAudit, available: hasAudit },
@@ -110,7 +110,7 @@ export function ResearchContextPanel({
   onChange: (field: keyof ResearchContext, value: string) => void;
 }) {
   return (
-    <details className="panel research-context" open>
+    <details className="panel research-context">
       <summary>
         <span><ClipboardCheck /> Study context</span>
         <small>Optional metadata for the handoff dossier</small>
@@ -140,7 +140,9 @@ export function AuditDecisionSummary({
   onExportDossier: () => void;
   onExportMarkdown: () => void;
 }) {
-  const icon = brief.band === "retain-for-comparison" ? <ShieldCheck /> : <AlertTriangle />;
+  const icon = brief.band === "retain-for-comparison" || brief.band === "coordinate-geometry-coherent"
+    ? <ShieldCheck />
+    : <AlertTriangle />;
   return (
     <section className={`panel decision-summary decision-${brief.band}`} id="handoff" aria-labelledby="decision-summary-title">
       <div className="decision-head">
@@ -182,10 +184,11 @@ export function AuditDecisionSummary({
       </Alert>
 
       <div className="handoff-actions">
-        <Button onClick={onExportDossier}><FileArchive /> Export complete dossier</Button>
+        <Button onClick={onExportDossier}><FileArchive /> Workspace dossier JSON</Button>
         <Button variant="outline" onClick={onExportMarkdown}><FileDown /> Lab-note Markdown</Button>
         <Button variant="outline" onClick={onSaveNotebook}><Save /> Save summary locally</Button>
       </div>
+      <p className="export-privacy-note">The workspace dossier contains complete selected receptor/VHH sequences, residue-level contacts, metrics, hashes, provenance, and user notes. It excludes raw coordinate text and complete PAE matrices. Review exports before sharing.</p>
     </section>
   );
 }
@@ -273,6 +276,12 @@ export function NotebookPanel({
 
 export function ImportedDossier({ bundle, onClose }: { bundle: WorkspaceBundle; onClose: () => void }) {
   const audit = bundle.reports.singleAudit.audit;
+  const evidenceLabel = {
+    supported: "Coherent coordinate geometry",
+    mixed: "Mixed coordinate evidence",
+    limited: "Weak coordinate evidence",
+    "not-assessable": "Not assessable",
+  }[audit.evidenceLevel];
   return (
     <section className="panel imported-dossier" aria-labelledby="imported-dossier-title">
       <div className="panel-heading compact">
@@ -286,7 +295,7 @@ export function ImportedDossier({ bundle, onClose }: { bundle: WorkspaceBundle; 
       <div className="imported-dossier-grid">
         <article><span>Decision brief</span><strong>{bundle.decisionBrief.title}</strong><p>{bundle.decisionBrief.summary}</p></article>
         <article><span>Coordinate source</span><strong>{bundle.coordinate.filename}</strong><p>Model {bundle.coordinate.selectedModelId} · {bundle.coordinate.coordinateScope}{bundle.coordinate.selectedAssemblyId ? ` ${bundle.coordinate.selectedAssemblyId}` : ""} · chains {bundle.coordinate.receptorChain} ↔ {bundle.coordinate.vhhChain} · SHA-256 {bundle.coordinate.sha256.slice(0, 16)}…</p></article>
-        <article><span>Audit snapshot</span><strong>{audit.evidenceLevel}</strong><p>{audit.contactPairCount} contacts · {audit.severeClashCount} severe clashes · ΔSASA {audit.deltaSasaAngstrom2.toFixed(0)} Å²</p></article>
+        <article><span>Audit snapshot</span><strong>{evidenceLabel}</strong><p>{audit.contactPairCount} contacts · {audit.severeClashCount} severe clashes · ΔSASA {audit.deltaSasaAngstrom2.toFixed(0)} Å²</p></article>
         <article><span>Workflow coverage</span><strong>{bundle.workflow.ensemblePoseCount} ensemble pose{bundle.workflow.ensemblePoseCount === 1 ? "" : "s"}</strong><p>PAE {bundle.workflow.paeAttached ? "attached" : "not attached"} · context pair {bundle.workflow.pairedContextCompared ? "included" : "not included"}</p></article>
         {bundle.userDefinedFootprint && <article><span>User-defined footprint</span><strong>{bundle.userDefinedFootprint.contactedCount} / {bundle.userDefinedFootprint.mappedCount} mapped residues contacted</strong><p>{bundle.userDefinedFootprint.unmapped.length} identifiers unmapped · overlap only, not specificity</p></article>}
       </div>
@@ -309,7 +318,13 @@ export function EnsembleConsensusMatrix({
       <div className="ensemble-component-grid">
         {ensemble.poses.map((pose) => (
           <article key={pose.id}>
-            <div><strong>#{pose.rank} {pose.filename}</strong><Badge variant="outline">{pose.triageGroup}</Badge></div>
+            <div><strong>#{pose.rank} {pose.filename}</strong><Badge variant="outline">{
+              pose.triageGroup === "coherent"
+                ? "Coherent coordinate geometry"
+                : pose.triageGroup === "review"
+                  ? "Coordinate geometry to review"
+                  : "Weak coordinate geometry"
+            }</Badge></div>
             <dl>
               <div><dt>Contact-pair consensus</dt><dd>{pose.contactPairConsensus == null ? "—" : pose.contactPairConsensus.toFixed(3)}</dd></div>
               <div><dt>Receptor footprint</dt><dd>{pose.receptorEpitopeConsensus == null ? "—" : pose.receptorEpitopeConsensus.toFixed(3)}</dd></div>
@@ -370,13 +385,13 @@ export function DossierImportControl({ onImportText }: { onImportText: (text: st
 export function EntryWorkflowCards({ onDemo }: { onDemo: () => void }) {
   return (
     <section className="entry-workflows" aria-labelledby="entry-workflows-title">
-      <div><p className="eyebrow">Start with one reference complex</p><h2 id="entry-workflows-title">Choose the structural question you need to answer</h2></div>
+      <div><p className="eyebrow">Choose an input</p><h2 id="entry-workflows-title">Start with one pose, a prediction folder, or the worked example</h2></div>
       <div className="entry-workflow-grid">
-        <article><ShieldCheck /><span>Required first step</span><h3>Audit one coordinate pose</h3><p>Confirm chains, inspect interface geometry, IMGT footprint, optional pLDDT, and directional PAE.</p><a href="#coordinate-setup">Import coordinates <ArrowRight /></a></article>
-        <article><Layers3 /><span>Then add 1–11 poses</span><h3>Compare seeds or poses</h3><p>Measure recurrence of residue contacts, receptor footprint, and VHH footprint across compatible coordinates.</p><a href="#coordinate-setup">Audit a reference first <ArrowRight /></a></article>
-        <article><FlaskConical /><span>Public worked example</span><h3>Learn with β₂AR–Nb80</h3><p>Load experimental PDB 3P0G to walk through the audit without preparing a file.</p><button type="button" onClick={onDemo}>Load the demo <ArrowRight /></button></article>
+        <article><ShieldCheck /><span>Single-pose path</span><h3>Audit one coordinate pose</h3><p>Confirm chains, inspect interface geometry, IMGT footprint, optional pLDDT, and directional PAE.</p><a href="#coordinate-setup">Import coordinates <ArrowRight /></a></article>
+        <article><Layers3 /><span>Batch path · desktop recommended</span><h3>Audit a prediction output run</h3><p>Review associations, audit one reference, then compare up to 12 compatible AlphaFold, ColabFold, or Boltz poses.</p><a href="#prediction-run-intake">Choose a prediction folder <ArrowRight /></a></article>
+        <article><FlaskConical /><span>Experimental worked example</span><h3>Learn with β₂AR–Nb80</h3><p>Load PDB 3P0G to learn the workflow—not to measure prediction accuracy or prospective ranking.</p><button type="button" onClick={onDemo}>Load the demo <ArrowRight /></button></article>
       </div>
-      <p className="product-release-note">ConfoVHH product {CONFOVHH_PRODUCT_RELEASE} · commit-attested scientific engine v0.5.0</p>
+      <p className="product-release-note">ConfoVHH product {CONFOVHH_PRODUCT_RELEASE} · scientific engine v0.5.0 · frozen validation digests preserved</p>
     </section>
   );
 }

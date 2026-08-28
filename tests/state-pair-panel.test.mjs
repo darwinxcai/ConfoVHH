@@ -14,7 +14,8 @@ test("state-pair source preserves bounded input, raw-byte provenance, and worker
 
   assert.match(source, /MAX_COORDINATE_FILE_BYTES = 12 \* 1024 \* 1024/);
   assert.match(source, /await comparisonFile\.arrayBuffer\(\)/);
-  assert.match(source, /crypto\.subtle\.digest\("SHA-256", bytes\)/);
+  assert.match(source, /import \{ sha256Hex \} from "@\/lib\/sha256"/);
+  assert.match(source, /const sha256 = \(bytes: ArrayBuffer\): Promise<string> => sha256Hex\(bytes\)/);
   assert.match(source, /new TextDecoder\("utf-8", \{ fatal: true \}\)/);
   assert.match(source, /new URL\("\.\.\/lib\/audit-worker\.ts", import\.meta\.url\)/);
   assert.match(source, /type: "state-pair"/);

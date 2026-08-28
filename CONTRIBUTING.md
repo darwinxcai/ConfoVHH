@@ -13,11 +13,23 @@ ConfoVHH welcomes focused bug reports, reproducible parser fixtures, validation 
 
 ```bash
 npm ci
-npm run lint
-npm test
+npm run test:release
+node scripts/validate-real-prediction-runs.mjs --verify=validation/real-prediction-run-regression-v1.json --quiet
 ```
 
-The ordinary suite must pass before a pull request is opened. Scientific-core changes should add an independent oracle, adversarial boundary case, or public regression fixture; increasing the test count alone is not validation.
+The complete offline release gate and exact public producer-output regression must pass before a pull request is opened. Scientific-core changes should add an independent oracle, adversarial boundary case, or public regression fixture; increasing the test count alone is not validation.
+
+Browser, accessibility, and coverage tooling is deliberately isolated from the digest-attested scientific-engine dependency record. To run those checks locally:
+
+```bash
+npm ci --prefix qa
+./qa/node_modules/.bin/c8 --all --include='lib/**/*.ts' --check-coverage --statements=60 --lines=60 --branches=80 --functions=50 node --test tests/*.test.mjs
+npm run build
+./qa/node_modules/.bin/playwright install chromium
+npm --prefix qa test
+```
+
+Do not update the root `package.json` or `package-lock.json` as an incidental tooling change. Follow [DEPENDENCY_POLICY.md](./DEPENDENCY_POLICY.md) for scientific-engine and QA dependency changes.
 
 ## Scientific claims
 

@@ -33,7 +33,7 @@ function expectedCapriClass(dockq) {
 }
 
 test("release metadata namespaces, versions, bounds, and claim barriers are explicit", () => {
-  assert.equal(RELEASE_VALIDATION.schemaVersion, "1.1.0");
+  assert.equal(RELEASE_VALIDATION.schemaVersion, "1.2.0");
   assert.equal(RELEASE_VALIDATION.softwareVersion, "0.5.0");
   assert.equal(RELEASE_VALIDATION.runtime.minimumNodeVersion, "22.18.0");
   assert.equal(
@@ -53,6 +53,11 @@ test("release metadata namespaces, versions, bounds, and claim barriers are expl
     RELEASE_VALIDATION.dockqV05RegressionReplay.sourceCommit,
     "278ae1a74da133778fba5b17bc296a8e37f02e76",
   );
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.provisionalGroups, 7);
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.formallyClearedGroups, 0);
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.minimumRequiredGroups, 10);
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.candidateDiscoveryComplete, false);
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.epitopeBlindingDesignResolved, false);
   assert.ok(Object.values(RELEASE_VALIDATION.claimFlags).every((value) => value === false));
 });
 

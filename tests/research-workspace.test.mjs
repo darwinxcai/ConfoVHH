@@ -95,6 +95,43 @@ const workflow = {
   pairedContextCompared: false,
 };
 
+function legacyBrief(brief, evidenceLevel) {
+  const legacy = structuredClone(brief);
+  const legacyByEvidence = {
+    supported: {
+      band: "retain-for-comparison",
+      title: "Retain this coordinate pose for comparative review",
+      summary: "The selected interface has coherent coordinate geometry under the fixed audit policy. Retention is a modeling decision, not evidence of biological binding.",
+    },
+    mixed: {
+      band: "review-before-comparison",
+      title: "Review this coordinate pose before prioritization",
+      summary: "The selected interface contains both supportive and cautionary coordinate evidence. Resolve the highlighted geometry issues before using it as a leading coordinate pose for manual structural review.",
+    },
+    limited: {
+      band: "deprioritize-coordinate-pose",
+      title: "Deprioritize this coordinate pose",
+      summary: "The selected interface has weak or unfavorable coordinate evidence under the fixed audit policy. A different pose or model seed is a stronger next step than interpreting this geometry biologically.",
+    },
+    "not-assessable": {
+      band: "not-assessable",
+      title: "This coordinate interface is not assessable",
+      summary: "The selected chains do not provide an assessable interface under the fixed contact policy. Verify the chain assignment, coordinate scope, and model before drawing conclusions.",
+    },
+  };
+  Object.assign(legacy, legacyByEvidence[evidenceLevel]);
+  legacy.nextActions = legacy.nextActions.map((action) => {
+    if (action === "Compare multiple seeds or poses to characterize interface recurrence before making a researcher-authored decision.") {
+      return "Compare multiple seeds or poses to test interface recurrence before prioritizing.";
+    }
+    if (action === "Use experiments to evaluate biological hypotheses; coordinate coherence does not establish binding.") {
+      return "Validate retained candidates experimentally; coordinate coherence is not binding proof.";
+    }
+    return action;
+  });
+  return legacy;
+}
+
 function context(overrides = {}) {
   return {
     studyName: "β2AR screen",
@@ -121,11 +158,11 @@ test("normalizes bounded study metadata without invisible controls", () => {
   assert.doesNotMatch(JSON.stringify(normalized), /[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]/u);
 });
 
-test("derives conservative coordinate decisions for every evidence band", () => {
+test("derives neutral coordinate-geometry flags for every evidence band", () => {
   const expected = new Map([
-    ["supported", "retain-for-comparison"],
-    ["mixed", "review-before-comparison"],
-    ["limited", "deprioritize-coordinate-pose"],
+    ["supported", "coordinate-geometry-coherent"],
+    ["mixed", "coordinate-geometry-mixed"],
+    ["limited", "coordinate-geometry-limited"],
     ["not-assessable", "not-assessable"],
   ]);
   for (const [evidenceLevel, band] of expected) {
@@ -135,6 +172,8 @@ test("derives conservative coordinate decisions for every evidence band", () => 
     assert.ok(brief.evidenceGaps.some((item) => /experimental/i.test(item)));
     assert.ok(brief.nextActions.some((item) => /experiment/i.test(item)));
     assert.doesNotMatch(brief.title, /best binder|experiment-ready|active-compatible/i);
+    assert.match(brief.summary, /not (?:been )?validated|not a validated|not assessable|do not provide an assessable/i);
+    assert.doesNotMatch(JSON.stringify(brief), /low-priority|before prioritization/i);
   }
 });
 
@@ -143,9 +182,9 @@ test("coordinate review actions are tied to observed gaps and flags", () => {
     evidenceLevel: "mixed",
     severeClashCount: 3,
     paratopeProxyShare: 0.2,
-    findings: [{ level: "review", label: "Sterics", evidence: "Three", action: "Inspect overlaps." }],
+    findings: [{ level: "review", label: "Sterics", evidence: "Three", action: "Review the overlapping atoms before prioritization." }],
   }), workflow);
-  assert.deepEqual(brief.reviewItems, ["Sterics: Inspect overlaps."]);
+  assert.deepEqual(brief.reviewItems, ["Sterics: Review the overlapping atoms and compare a relaxed or alternate pose."]);
   assert.ok(brief.nextActions.some((item) => /severe overlap/i.test(item)));
   assert.ok(brief.nextActions.some((item) => /framework-dominated/i.test(item)));
   assert.ok(brief.nextActions.some((item) => /multiple seeds/i.test(item)));
@@ -212,7 +251,7 @@ test("notebook export round-trips atomically and rejects malformed entries", () 
   assert.throws(() => parseNotebookExport('{"schemaVersion":"9.0.0","entries":[]}'), /incompatible|unsupported/i);
 });
 
-test("v0.8 emits current records while importing intact v0.6 and v0.7 notebook records", () => {
+test("v0.9 emits neutral records while importing intact v0.6 through v0.8 notebook records", () => {
   const currentEntry = createNotebookEntry({
     singleAuditReport: canonicalReport(),
     context: context(),
@@ -220,19 +259,28 @@ test("v0.8 emits current records while importing intact v0.6 and v0.7 notebook r
     savedAt: GENERATED_AT,
   });
   const currentExport = createNotebookExport([currentEntry], GENERATED_AT);
-  assert.equal(currentEntry.productRelease, "0.8.0");
-  assert.equal(currentExport.productRelease, "0.8.0");
+  assert.equal(currentEntry.productRelease, "0.9.0");
+  assert.equal(currentExport.productRelease, "0.9.0");
 
   const legacyExport = structuredClone(currentExport);
   legacyExport.productRelease = "0.6.0";
   legacyExport.entries[0].productRelease = "0.6.0";
+  legacyExport.entries[0].triage = legacyBrief(
+    legacyExport.entries[0].triage,
+    legacyExport.entries[0].metrics.evidenceLevel,
+  );
   const imported = parseNotebookExport(JSON.stringify(legacyExport));
   assert.equal(imported.length, 1);
   assert.equal(imported[0].productRelease, "0.6.0");
 
   const mixedExport = structuredClone(currentExport);
   mixedExport.productRelease = "0.6.0";
-  assert.equal(parseNotebookExport(JSON.stringify(mixedExport))[0].productRelease, "0.8.0");
+  assert.equal(parseNotebookExport(JSON.stringify(mixedExport))[0].productRelease, "0.9.0");
+
+  const v08 = structuredClone(legacyExport);
+  v08.productRelease = "0.8.0";
+  v08.entries[0].productRelease = "0.8.0";
+  assert.equal(parseNotebookExport(JSON.stringify(v08))[0].productRelease, "0.8.0");
 
   const unsupported = structuredClone(currentExport);
   unsupported.productRelease = "0.5.0";
@@ -290,17 +338,30 @@ test("workspace dossier round-trips validated reports and rejects provenance dri
   assert.throws(() => parseWorkspaceBundle(unsafe), /unsafe/i);
 });
 
-test("v0.8 emits current dossiers while importing intact v0.6 and v0.7 dossiers", () => {
+test("v0.9 emits current dossiers while importing and migrating v0.6 through v0.8 dossiers", () => {
   const current = createWorkspaceBundle({
     context: context(),
     singleAuditReport: canonicalReport(),
     generatedAt: GENERATED_AT,
   });
-  assert.equal(current.productRelease, "0.8.0");
+  assert.equal(current.productRelease, "0.9.0");
 
   const legacy = structuredClone(current);
   legacy.productRelease = "0.6.0";
-  assert.equal(parseWorkspaceBundle(JSON.stringify(legacy)).productRelease, "0.8.0");
+  legacy.decisionBrief = legacyBrief(legacy.decisionBrief, legacy.reports.singleAudit.audit.evidenceLevel);
+  const migrated = parseWorkspaceBundle(JSON.stringify(legacy));
+  assert.equal(migrated.productRelease, "0.9.0");
+  assert.equal(
+    migrated.decisionBrief.band,
+    deriveCoordinateTriageBrief(
+      migrated.reports.singleAudit.audit,
+      migrated.workflow,
+    ).band,
+  );
+
+  const v08 = structuredClone(legacy);
+  v08.productRelease = "0.8.0";
+  assert.equal(parseWorkspaceBundle(JSON.stringify(v08)).productRelease, "0.9.0");
 
   const unsupported = structuredClone(current);
   unsupported.productRelease = "0.5.0";
@@ -375,7 +436,7 @@ test("human handoff includes provenance, next checks, and explicit claim limits"
   assert.match(markdown, /Selected model:/);
   assert.match(markdown, /Selected-coordinate fingerprint:/);
   assert.match(markdown, /Audit-input fingerprint:/);
-  assert.match(markdown, /Validate retained candidates experimentally/);
+  assert.match(markdown, /Use experiments to evaluate biological hypotheses/);
   assert.match(markdown, /does not establish binding/i);
   assert.ok(markdown.includes("Test \\*without\\* overclaim\\."));
 

@@ -31,7 +31,10 @@ import {
   type PredictionRunManifest,
   type PredictionRunPoseRecord,
 } from "./prediction-run.ts";
-import { validateImportedSingleAuditReport } from "./research-workspace.ts";
+import {
+  CONFOVHH_PRODUCT_RELEASE,
+  validateImportedSingleAuditReport,
+} from "./research-workspace.ts";
 import {
   evaluateAnnotatedFootprint,
   validateNormalizedTopologyAnnotation,
@@ -41,7 +44,7 @@ import {
 
 export const PREDICTION_RUN_AUDIT_SCHEMA_VERSION = "1.0.0" as const;
 export const PREDICTION_RUN_DOSSIER_SCHEMA_VERSION = "1.0.0" as const;
-export const PREDICTION_RUN_PRODUCT_RELEASE = "0.7.0" as const;
+export const PREDICTION_RUN_PRODUCT_RELEASE = CONFOVHH_PRODUCT_RELEASE;
 export const PREDICTION_RUN_CLAIM_BOUNDARY =
   "ConfoVHH audits coordinate plausibility, per-pose source PAE over coordinate-defined contacts, and recurrence within the selected uploaded run. It does not establish pose correctness, binding, affinity, specificity, stability, signaling, membrane compatibility, receptor-state identity, or conformational selectivity.";
 export const PER_POSE_PAE_INTERPRETATION =
@@ -176,6 +179,9 @@ export interface PredictionRunDossier {
   privacy: {
     rawCoordinateTextIncluded: false;
     paeMatricesIncluded: false;
+    selectedProteinSequencesIncluded: true;
+    residueContactTablesIncluded: true;
+    researcherDecisionsIncluded: false;
     sourceFilesUploadedByConfoVHH: false;
   };
   claimBoundary: typeof PREDICTION_RUN_CLAIM_BOUNDARY;
@@ -1114,6 +1120,9 @@ export function createPredictionRunDossier(
     privacy: {
       rawCoordinateTextIncluded: false,
       paeMatricesIncluded: false,
+      selectedProteinSequencesIncluded: true,
+      residueContactTablesIncluded: true,
+      researcherDecisionsIncluded: false,
       sourceFilesUploadedByConfoVHH: false,
     },
     claimBoundary: PREDICTION_RUN_CLAIM_BOUNDARY,
@@ -1128,8 +1137,19 @@ export function createPredictionRunDossier(
 
 function csvCell(value: string | number | null): string {
   if (value == null) return "";
-  let text = String(value);
-  if (/^[=+\-@\t\r]/u.test(text)) text = `'${text}`;
+  const raw = String(value);
+  const formulaLike = typeof value === "string" &&
+    /^[\p{White_Space}\p{Cc}\p{Cf}\p{Zl}\p{Zp}]*[=+\-@]/u.test(raw);
+  const normalized = typeof value === "string"
+    ? raw.replace(/[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]/gu, (character) => {
+      if (character === "\n") return "\\n";
+      if (character === "\r") return "\\r";
+      if (character === "\t") return "\\t";
+      if (/\p{Cf}/u.test(character)) return "";
+      return `\\u${character.charCodeAt(0).toString(16).padStart(4, "0")}`;
+    })
+    : raw;
+  const text = formulaLike ? `'${normalized}` : normalized;
   return `"${text.replace(/"/gu, '""')}"`;
 }
 

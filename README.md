@@ -3,16 +3,16 @@
 **Local-first structural triage for modeled GPCR–nanobody complexes.**
 
 [![CI](https://github.com/darwinxcai/ConfoVHH/actions/workflows/ci.yml/badge.svg)](https://github.com/darwinxcai/ConfoVHH/actions/workflows/ci.yml)
-![Product](https://img.shields.io/badge/product-v0.8.0-42d3a5)
+![Product](https://img.shields.io/badge/product-v0.9.0-42d3a5)
 ![Scientific engine](https://img.shields.io/badge/scientific_engine-v0.5.0-2b8a75)
-![Tests](https://img.shields.io/badge/ordinary_tests-349%2F349_passed-42d3a5)
+![Tests](https://img.shields.io/badge/repository_tests-373%2F373_passed-42d3a5)
 ![Node](https://img.shields.io/badge/Node-%E2%89%A522.18-5fa04e)
 
-**[Launch ConfoVHH](https://confovhh.darwin-cai.chatgpt.site)** · [Five-minute workflow](#five-minute-workflow) · [Validation record](./VALIDATION.md) · [How to cite](./CITATION.cff)
+**[Launch ConfoVHH](https://confovhh.darwin-cai.chatgpt.site)** · [Five-minute workflow](#five-minute-workflow) · [Validation record](./VALIDATION.md) · [Release provenance](./PROVENANCE.md) · [How to cite](./CITATION.cff)
 
-ConfoVHH is a browser-side research application for auditing and prioritizing predicted GPCR–VHH coordinate sets from AlphaFold, ColabFold, and Boltz workflows. It converts raw complex predictions into inspectable interface evidence, pose-recurrence summaries, researcher-authored candidate decisions, and provenance-bound handoff reports.
+ConfoVHH is a browser-side research application for auditing GPCR–VHH coordinate poses from AlphaFold, ColabFold, and Boltz workflows. It converts raw complex predictions into inspectable interface evidence, pose-recurrence summaries, researcher-authored decisions, and provenance-bound handoff reports.
 
-Raw coordinates and PAE matrices remain in the browser tab. The application does **not** claim to predict binding, affinity, functional state, membrane compatibility, or pose correctness.
+User-selected coordinates and PAE matrices are processed in the browser tab and are not uploaded by ConfoVHH. The worked example is fetched from RCSB only when requested; the local notebook writes only after an explicit save; exports are downloaded files. Complete audit/dossier exports contain selected protein sequences, residue-level contacts, hashes, and notes, but not raw coordinate text or complete PAE matrices. The application does **not** claim to predict binding, affinity, functional state, membrane compatibility, candidate priority, or pose correctness.
 
 ## Why this project exists
 
@@ -48,13 +48,26 @@ flowchart TD
 
 ConfoVHH audits prediction outputs; it does not run AlphaFold, ColabFold, or Boltz from FASTA sequences.
 
-1. [Open the public app](https://confovhh.darwin-cai.chatgpt.site). For an immediate single-structure example, choose **Load β₂AR–Nb80 demo**.
-2. For a batch, choose the prediction output folder (or the matching files), then review every coordinate/PAE association and select a reference pose.
-3. Choose **Open reference pose**, confirm which chains are the receptor and VHH, and run the single-pose interface audit.
-4. Use **Continue prediction run** to return to the batch. ConfoVHH propagates chain roles only through unique exact-sequence matches and rejects ambiguous or changed chains.
-5. Analyze the ready poses, inspect coordinate recurrence and per-pose PAE, record **advance / hold / reject** decisions, and export the dossier or shortlist.
+1. [Open the public app](https://confovhh.darwin-cai.chatgpt.site) and choose **Load β₂AR–Nb80 demo**.
+2. Verify the suggested receptor `A` and VHH `B` chain roles, then explicitly confirm them. Chain suggestions are heuristics, not annotations.
+3. Run the interface audit and inspect the geometry flag, metrics, findings, and evidence boundary. The experimental 3P0G example teaches workflow mechanics; it does not measure prediction accuracy.
 
-All scientific work stays in the browser tab. Boltz coordinates are supported, but native NPZ PAE is inventory-only; continue coordinate-only unless a compatible JSON matrix and its axes/order were independently verified.
+For a batch, choose the prediction output folder (or matching files), review every coordinate/PAE association, select and audit one reference, return to the run, and analyze the ready poses. ConfoVHH propagates chain roles only through unique exact-sequence matches and rejects ambiguous or changed chains. Researcher **advance for experimental review / hold for manual review / exclude from this set** decisions are stored separately from ConfoVHH evidence.
+
+Boltz coordinates are supported, but native NPZ PAE is inventory-only; continue coordinate-only unless a compatible JSON matrix and its axes/order were independently verified.
+
+### Reading the outputs
+
+| Output | What it describes | What it does not establish |
+|---|---|---|
+| Contact count / interface residues | Residue pairs within the fixed coordinate cutoff | Binding, specificity, or energetic favorability |
+| Severe clashes | Large van der Waals overlaps in the supplied pose | Experimental nonbinding or failed expression |
+| ΔSASA | Deterministic approximate buried surface area | Free energy, affinity, or a calibrated ranking score |
+| IMGT CDR-contact share | Fraction of coordinate contacts assigned to numbered CDR residues | Epitope correctness or developability |
+| Directional PAE | Source-model uncertainty over coordinate-defined contacts | A native predictor score or cross-pose binding rank |
+| Pose recurrence | Similar contacts within the uploaded pose set | Correctness, seed independence, or generalization |
+
+Current desktop Chromium, Firefox, and Safari are the intended browsers. CI executes the full browser acceptance and WCAG A/AA scan in Chromium; Firefox and Safari are not yet CI-gated. Single-pose review is responsive on mobile; desktop is recommended for prediction-folder selection and wide evidence tables.
 
 ## Run locally
 
@@ -81,7 +94,8 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 
 | Layer | Current result | Interpretation |
 |---|---:|---|
-| Ordinary unit/integration tests | 368/368 passed | 349 product/engine tests plus 19 fail-closed census-integrity tests |
+| Ordinary unit/integration tests | 373/373 passed | 349 product/engine tests, 19 fail-closed census-integrity tests, 3 release-integrity tests, and 2 product-assurance regressions for visible wording and the production request boundary |
+| Browser acceptance/accessibility | 3 Chromium scenarios | Initial shell, 390 px mobile reflow, and a real local-file worker audit with WCAG A/AA scans, response headers, local-only request boundary, and downloaded-report validation |
 | Genuine producer outputs | 2 public runs · 26 source files · 10/10 poses · 10/10 PAE audits | End-to-end compatibility for actual AlphaFold Server and ColabFold outputs |
 | PDB↔mmCIF parity | 17/17 structures | Parser/metric reproducibility across serializations |
 | Deposited assemblies | 5/5 coordinate oracles | Assembly-operation reconstruction accuracy |
@@ -89,7 +103,7 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 | Far-translation controls | 102/102 rejected | Zero-interface sanity checks |
 | DockQ development ledger | 360/360 poses + 20/20 controls | Benchmark plumbing and descriptive development analysis |
 
-These counts are software/regression evidence, not a biological performance estimate. The DockQ perturbation set is development-only and does not establish generalization. No independent family-clustered hard-decoy holdout has yet been evaluated. See [VALIDATION.md](./VALIDATION.md) and [HARD_DECOY_PROTOCOL.md](./HARD_DECOY_PROTOCOL.md).
+These counts are software/regression evidence, not a biological performance estimate. The DockQ perturbation set is development-only and does not establish generalization. No independent family-clustered hard-decoy holdout has yet been evaluated. See [VALIDATION.md](./VALIDATION.md) and the current blocked [hard-decoy v2 protocol](./HARD_DECOY_PROTOCOL_V2.md). The original [v1 protocol](./HARD_DECOY_PROTOCOL.md) is immutable historical material.
 
 On 2026-08-28, the documented metadata-only screen for the stricter [v2 hard-decoy protocol](./HARD_DECOY_PROTOCOL_V2.md) recorded eight candidate structures resolving to seven provisional public direct GPCR–VHH groups and zero formally cleared groups, against a frozen minimum of ten. Candidate-discovery completeness was not established. No candidate coordinates, DockQ/CAPRI labels, or holdout results were accessed. The minimum was not relaxed, so this is a checksummed [blocked screening checkpoint](./validation/hard-decoy-holdout-v2/prelabel-census/), not an exhaustive census, assembled holdout, upper bound, or performance result.
 
@@ -97,7 +111,7 @@ On 2026-08-28, the documented metadata-only screen for the stricter [v2 hard-dec
 
 ConfoVHH is a TypeScript/React application built with Vinext for Cloudflare-compatible deployment. Coordinate parsing, IMGT numbering, ensemble analysis, and per-pose PAE auditing run in bounded browser workers. Canonical reports retain raw-file SHA-256 values, coordinate/geometry fingerprints, parser policy, chain/assembly provenance, and software versions.
 
-The repository's `package.json` version remains `0.5.0` because it identifies the commit-attested scientific engine. Researcher-facing capabilities advance independently as product release `0.8.0`; product-only changes do not relabel the frozen v0.5 validation artifacts.
+The repository's `package.json` version remains `0.5.0` because it identifies the digest-attested scientific engine. Researcher-facing capabilities advance independently as product release `0.9.0`; product-only changes do not relabel the frozen v0.5 validation artifacts. Historical source identifiers are retained in the artifacts and resolve to ancestor commits in the Sites source history used for this product, but those objects are absent from the current public GitHub repository. Release receipts bind the still-verifiable digests to reachable product tags without treating the historical commits as publicly reachable.
 
 ```text
 app/          researcher workspace and orchestration
@@ -110,19 +124,21 @@ scripts/      reproducible public-data and adversarial validation runners
 
 ## Scientific boundaries
 
-ConfoVHH prioritizes **coordinate plausibility and recurrence for experimental review**. Favorable output is not evidence of binding, affinity, specificity, stability, signaling, receptor-state selectivity, physiological assembly, or membrane compatibility. Experimental validation remains required.
+ConfoVHH supports review of **coordinate plausibility and recurrence within an uploaded pose set**. Its geometry flags are not validated candidate-selection or experimental-priority rules. Favorable output is not evidence of binding, affinity, specificity, stability, signaling, receptor-state selectivity, physiological assembly, or membrane compatibility. Experimental validation remains required.
 
 ## Author and citation
 
-ConfoVHH was created by [Darwin Cai](https://github.com/darwinxcai). Citation metadata are available in [CITATION.cff](./CITATION.cff). Third-party licenses and attributions are summarized in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+ConfoVHH was created by [Darwin Cai](https://github.com/darwinxcai). Citation metadata are available in [CITATION.cff](./CITATION.cff). See the [security policy](./SECURITY.md), [current dependency-advisory triage](./SECURITY_AUDIT.md), [dependency policy](./DEPENDENCY_POLICY.md), and [provenance model](./PROVENANCE.md) for maintenance and release details. Third-party licenses and attributions are summarized in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
 
 Released under the [MIT License](./LICENSE).
 
-## Product release 0.8
+## Product release 0.9
 
-The researcher-facing product release is 0.8.0. Its scientific engine remains the commit-attested v0.5.0 implementation; the v0.5 public-regression and post-label replay artifacts are not relabeled as new validation.
+The researcher-facing product release is 0.9.0. Its scientific engine remains the digest-attested v0.5.0 implementation; the v0.5 public-regression and post-label replay artifacts are unchanged and are not relabeled as new validation.
 
-Release 0.8 adds a researcher-authored candidate decision layer to native prediction-run results. Scientists can search and filter audited poses, record advance/hold/reject dispositions with bounded notes, reopen candidates for deeper inspection, and export a provenance-bound shortlist as JSON or spreadsheet-safe CSV. These decisions are deliberately separate from ConfoVHH evidence fields: the product does not compute or imply a composite binding score.
+Release 0.9 removes automated retain/deprioritize recommendations from the current product display and researcher handoff brief, replacing them with neutral coordinate-geometry flags. Canonical single-audit records retain their raw v0.5 engine fields for reproducibility. The current flags have not been validated to improve candidate selection or experimental hit rate. Researcher-authored decisions remain separate, are cleared whenever a run is recomputed, and are exported with exact coordinate, audit, PAE, and topology evidence bindings. Release 0.9 also hardens spreadsheet exports, verifies the worked-example checksum, clarifies export contents, adds response security headers, improves first-use hierarchy and contrast, and introduces browser, accessibility, coverage, Node 24, and reproducible-release gates.
+
+Release 0.8 introduced the researcher-authored decision layer and native prediction-run result review. Scientists can search and filter audited poses, record bounded notes, reopen candidates for deeper inspection, and export a provenance-bound shortlist. These decisions are deliberately separate from ConfoVHH evidence fields: the product does not compute or imply a composite binding score.
 
 The product layer adds:
 
@@ -219,7 +235,7 @@ The state-context workspace compares one explicitly selected receptor–VHH pair
 - signed contact, clash, and approximate ΔSASA changes, always defined as **comparison minus reference**;
 - contact-pair, receptor-epitope, and VHH-paratope Jaccard similarity;
 - shared, reference-only, and comparison-only residue contacts;
-- the independent audit and full coordinate provenance for each side;
+- the separate audit and full coordinate provenance for each side;
 - optional user labels that are retained as descriptive metadata only.
 
 The single-audit JSON report, ensemble JSON/CSV reports, and paired JSON/CSV reports use application export schema 1.2. Paired JSON and long-form CSV both include all shared, reference-only, and comparison-only contact records, along with the SASA orientation policy, sphere-point count, 25,000,000 candidate-distance bound, and 250,000,000 surface-point-occlusion bound. Paired comparison has no rejection ledger in either format: a failed pair produces an error instead of an accepted summary export.
@@ -244,7 +260,7 @@ The evidence band describes internal coordinate coherence. It is not a probabili
 
 The release suite combines offline unit/integration tests with distinct public-data exercises. They answer different questions and are never pooled into one performance claim.
 
-The public-panel counts below were reproduced from clean source commit `5cb57617b54baa314513486885c402449f643406` and are recorded with raw-source, implementation, and executed-`immunum` hashes in `validation/v0.5-public-regression-attestation-v1/`.
+The public-panel counts below were reproduced from a clean tree retaining legacy source identifier `5cb57617b54baa314513486885c402449f643406` and are recorded with raw-source, implementation, and executed-`immunum` hashes in `validation/v0.5-public-regression-attestation-v1/`. That commit is an ancestor in the Sites source history used for this product, but it is absent from the current public GitHub repository and cannot be resolved there. The recorded digests remain verifiable and are bound forward through reachable product-release receipts.
 
 | Exercise | Result | What it supports | What it does not support |
 |---|---:|---|---|
@@ -257,13 +273,13 @@ The public-panel counts below were reproduced from clean source commit `5cb57617
 
 The development-only DockQ pilot reused five public complexes already present in development data. At DockQ ≥0.23, target-macro AP was 0.688 for the categorical ConfoVHH evidence band, 0.636 for the all-tied prevalence baseline, and 0.773 for raw ΔSASA. Corresponding AUROCs were 0.574, 0.500, and 0.754. This narrow, high-positive-prevalence perturbation grid therefore does not justify a near-native-ranking claim. The complete frozen v0.4 specification, source-integrity manifest, 360-pose ledger, per-target results, 10,000-replicate tie-aware bootstrap summaries, implementation/DockQ/Python provenance, and checksums remain byte-for-byte frozen in `validation/dockq-development-pilot-v1/`.
 
-The v0.5 replay was executed from clean source commit `278ae1a74da133778fba5b17bc296a8e37f02e76` and is recorded separately in `validation/dockq-v0.5-regression-replay-v1/`. It reproduced all discrete records exactly; maximum ΔSASA drift was 1.03×10⁻¹⁰ Å² against the 1×10⁻⁹ Å² bound fixed before the full 360-pose scan. It reuses already observed DockQ labels only to detect software regression and is not a second experiment. The public state-context inventory is in `validation/state-context-native-regression-v1.json` and contains zero same-VHH cross-context examples.
+The v0.5 replay retained legacy source identifier `278ae1a74da133778fba5b17bc296a8e37f02e76` and is recorded separately in `validation/dockq-v0.5-regression-replay-v1/`; that commit is likewise an ancestor in the Sites source history but absent from the current public GitHub repository. It reproduced all discrete records exactly; maximum ΔSASA drift was 1.03×10⁻¹⁰ Å² against the 1×10⁻⁹ Å² bound fixed before the full 360-pose scan. It reuses already observed DockQ labels only to detect software regression and is not a second experiment. The public state-context inventory is in `validation/state-context-native-regression-v1.json` and contains zero same-VHH cross-context examples.
 
-No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. [HARD_DECOY_PROTOCOL.md](./HARD_DECOY_PROTOCOL.md) is a prospective protocol only and must not be described as an existing dataset or a completed study.
+No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. The current [hard-decoy v2 protocol](./HARD_DECOY_PROTOCOL_V2.md) is blocked before target freeze at seven provisional groups, zero formally cleared groups, and a minimum of ten; candidate discovery and the epitope-blinding design remain incomplete. It must not be described as an existing dataset or a completed study.
 
 The separate [v2 pre-label census](./validation/hard-decoy-holdout-v2/prelabel-census/) is deliberately blocked before target freeze: its documented screen contains seven provisional and zero formally cleared groups, below the preregistered minimum of ten; candidate discovery remains incomplete. It does not change any validation claim above.
 
-See [VALIDATION.md](./VALIDATION.md) for methods, frozen expectations, and the status of commit-attested release results.
+See [VALIDATION.md](./VALIDATION.md) for methods, frozen expectations, digest attestations, and public-history limitations.
 
 ## Local commands
 
@@ -277,6 +293,9 @@ node --test tests/*.test.mjs
 npm test
 npm run test:release
 npm run test:adversarial
+npm ci --prefix qa
+./qa/node_modules/.bin/c8 --all --include='lib/**/*.ts' --check-coverage --statements=60 --lines=60 --branches=80 --functions=50 node --test tests/*.test.mjs
+npm --prefix qa test
 npm run test:mmcif
 npm run test:benchmark
 npm run test:public-attestation

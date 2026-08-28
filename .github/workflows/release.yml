@@ -1,0 +1,141 @@
+name: Product release
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: product-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish verified product release
+    if: >
+      ${{ github.event.workflow_run.conclusion == 'success' &&
+          github.event.workflow_run.event == 'push' &&
+          github.event.workflow_run.head_branch == 'main' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: Check out the exact successful CI commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Confirm this CI commit is still current main
+        id: freshness
+        run: |
+          git fetch origin main --no-tags
+          if [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ]; then
+            echo "current=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Current main advanced after this CI run; a newer run will own release publication."
+            echo "current=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Derive and validate product tag
+        if: steps.freshness.outputs.current == 'true'
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          product_version="$(node scripts/create-release-artifacts.mjs --print-product-version)"
+          tag="product-v${product_version}"
+          echo "product_version=${product_version}" >> "$GITHUB_OUTPUT"
+          echo "tag=${tag}" >> "$GITHUB_OUTPUT"
+
+          git fetch origin "refs/tags/${tag}:refs/tags/${tag}" || true
+          if git rev-parse -q --verify "refs/tags/${tag}" >/dev/null; then
+            tag_exists=true
+            tagged_commit="$(git rev-list -n 1 "${tag}")"
+          else
+            tag_exists=false
+            tagged_commit=""
+          fi
+
+          published_tag="$(
+            gh release view "${tag}" --repo "${GITHUB_REPOSITORY}" \
+              --json tagName,isDraft \
+              --jq 'select(.isDraft == false) | .tagName' 2>/dev/null || true
+          )"
+          if [ "${published_tag}" = "${tag}" ]; then
+            valid_release=true
+          else
+            valid_release=false
+          fi
+
+          echo "tag_exists=${tag_exists}" >> "$GITHUB_OUTPUT"
+          echo "valid_release=${valid_release}" >> "$GITHUB_OUTPUT"
+
+          if [ "${tag_exists}" = "true" ] && [ "${valid_release}" = "true" ]; then
+            echo "${tag} already has a published GitHub Release at ${tagged_commit}; no publication is required."
+            echo "publish_required=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [ "${tag_exists}" = "true" ] && [ "${tagged_commit}" != "$(git rev-parse HEAD)" ]; then
+            echo "Tag ${tag} points to ${tagged_commit} but has no valid published GitHub Release." >&2
+            exit 1
+          fi
+
+          if [ "${tag_exists}" = "false" ] && [ "${valid_release}" = "true" ]; then
+            echo "A published GitHub Release exists for ${tag}, but its Git tag is unavailable." >&2
+            exit 1
+          fi
+
+          echo "publish_required=true" >> "$GITHUB_OUTPUT"
+      - name: Install frozen dependencies
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
+        run: npm ci
+      - name: Re-run the complete offline release gate
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
+        run: npm run test:release
+      - name: Re-run exact public producer-output regression
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
+        run: node scripts/validate-real-prediction-runs.mjs --verify=validation/real-prediction-run-regression-v1.json --quiet
+      - name: Generate deterministic archives, SBOM, receipt, and checksums
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
+        env:
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+          RELEASE_COMMIT_SHA: ${{ github.event.workflow_run.head_sha }}
+          RELEASE_CI_RUN_ID: ${{ github.event.workflow_run.id }}
+          RELEASE_CI_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}
+          RELEASE_SITE_URL: https://confovhh.darwin-cai.chatgpt.site
+          RELEASE_OUTPUT_DIRECTORY: ${{ github.workspace }}/release-artifacts
+        run: node scripts/create-release-artifacts.mjs
+      - name: Recheck main immediately before publication
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
+        run: |
+          git fetch origin main --no-tags
+          test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
+      - name: Create immutable annotated product tag
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true' && steps.release.outputs.tag_exists != 'true'
+        env:
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+          PRODUCT_VERSION: ${{ steps.release.outputs.product_version }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "${RELEASE_TAG}" -m "ConfoVHH product ${PRODUCT_VERSION}"
+          git push origin "refs/tags/${RELEASE_TAG}"
+      - name: Create GitHub Release
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+          PRODUCT_VERSION: ${{ steps.release.outputs.product_version }}
+        run: |
+          gh release create "${RELEASE_TAG}" release-artifacts/* \
+            --verify-tag \
+            --title "ConfoVHH product ${PRODUCT_VERSION}" \
+            --notes-file RELEASE_NOTES.md

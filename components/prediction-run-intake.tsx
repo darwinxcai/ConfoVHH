@@ -63,6 +63,7 @@ import {
 } from "@/lib/prediction-run";
 import {
   createPredictionRunDossier,
+  PREDICTION_RUN_PRODUCT_RELEASE,
   predictionRunPoseSummaryCsv,
   type PredictionRunAuditJob,
   type PredictionRunAuditPoseSource,
@@ -116,6 +117,13 @@ function percent(value: number | null): string {
 function angstrom(value: number | null): string {
   return value == null ? "—" : `${value.toFixed(1)} Å`;
 }
+
+const coordinateEvidenceLabel: Record<InterfaceAudit["evidenceLevel"], string> = {
+  supported: "Coherent coordinate geometry",
+  mixed: "Mixed coordinate evidence",
+  limited: "Weak coordinate evidence",
+  "not-assessable": "Not assessable",
+};
 
 function downloadText(content: string, mimeType: string, filename: string): void {
   const url = URL.createObjectURL(new Blob([content], { type: mimeType }));
@@ -509,10 +517,14 @@ export function PredictionRunIntake({
       } else if (event.data.type === "result") {
         finish();
         setProgress(null);
+        setCandidateDecisions({});
+        setResultFilter("all");
+        setResultQuery("");
         setCommitted({ manifest, result: event.data.result, topologyAnnotation });
         setNotice(
           `Run complete: ${event.data.result.counts.coordinateAccepted} coordinate poses retained, ` +
-          `${event.data.result.counts.paeAudited} with audited PAE, ${event.data.result.counts.paeRejected} PAE attachment${event.data.result.counts.paeRejected === 1 ? "" : "s"} rejected explicitly.`,
+          `${event.data.result.counts.paeAudited} with audited PAE, ${event.data.result.counts.paeRejected} PAE attachment${event.data.result.counts.paeRejected === 1 ? "" : "s"} rejected explicitly. ` +
+          "Researcher decisions were reset because the evidence snapshot was recomputed.",
         );
         window.requestAnimationFrame(() => {
           const results = document.getElementById("prediction-run-results");
@@ -563,11 +575,13 @@ export function PredictionRunIntake({
   const exportManifest = () => {
     if (!manifest) return;
     try {
+      const downloadName = `confovhh-product-${PREDICTION_RUN_PRODUCT_RELEASE}_prediction-run-manifest.json`;
       downloadText(
         JSON.stringify(predictionRunManifestForExport(manifest), null, 2),
         "application/json",
-        "confovhh_prediction_run_manifest.json",
+        downloadName,
       );
+      setNotice(`${downloadName} downloaded.`);
       setError(null);
     } catch (caught) {
       setError(caught instanceof Error ? `Prediction-run manifest export failed: ${caught.message}` : "Prediction-run manifest export failed.");
@@ -576,7 +590,12 @@ export function PredictionRunIntake({
   const exportRun = (format: "json" | "csv") => {
     if (!committed) return;
     try {
+      const reference = predictionRunFileById(committed.manifest, committed.result.referenceCoordinateFileId);
+      const referenceStem = (reference?.filename ?? "prediction-run").replace(/\.[^.]+$/u, "");
+      const exportStem = `${referenceStem}_confovhh-product-${PREDICTION_RUN_PRODUCT_RELEASE}`;
+      let downloadName: string;
       if (format === "json") {
+        downloadName = `${exportStem}_run-evidence-dossier.json`;
         downloadText(
           JSON.stringify(createPredictionRunDossier(
             committed.manifest,
@@ -584,15 +603,17 @@ export function PredictionRunIntake({
             committed.topologyAnnotation,
           ), null, 2),
           "application/json",
-          "confovhh_prediction_run_dossier.json",
+          downloadName,
         );
       } else {
+        downloadName = `${exportStem}_pose-summary.csv`;
         downloadText(
           predictionRunPoseSummaryCsv(committed.result),
           "text/csv;charset=utf-8",
-          "confovhh_prediction_run_pose_summary.csv",
+          downloadName,
         );
       }
+      setNotice(`${safeDownloadFilename(downloadName)} downloaded. Run evidence exports contain selected protein sequences and residue-level contacts, but exclude raw coordinate text, complete PAE matrices, and researcher decisions.`);
       setError(null);
     } catch (caught) {
       setError(caught instanceof Error ? `Prediction-run ${format.toUpperCase()} export failed: ${caught.message}` : `Prediction-run ${format.toUpperCase()} export failed.`);
@@ -601,13 +622,21 @@ export function PredictionRunIntake({
   const exportShortlist = (format: "json" | "csv") => {
     if (!committed) return;
     try {
-      const report = createCandidateShortlistReport(committed.result, candidateDecisions);
+      const report = createCandidateShortlistReport(
+        committed.result,
+        candidateDecisions,
+        undefined,
+        committed.topologyAnnotation?.annotationFingerprint ?? null,
+      );
+      const reference = predictionRunFileById(committed.manifest, committed.result.referenceCoordinateFileId);
+      const referenceStem = (reference?.filename ?? "prediction-run").replace(/\.[^.]+$/u, "");
+      const downloadName = `${referenceStem}_confovhh-product-${PREDICTION_RUN_PRODUCT_RELEASE}_researcher-decision-shortlist.${format}`;
       downloadText(
         format === "json" ? JSON.stringify(report, null, 2) : candidateShortlistToCsv(report),
         format === "json" ? "application/json" : "text/csv;charset=utf-8",
-        `confovhh_candidate_shortlist.${format}`,
+        downloadName,
       );
-      setNotice(`Researcher shortlist exported as ${format.toUpperCase()}.`);
+      setNotice(`${safeDownloadFilename(downloadName)} downloaded. The shortlist contains researcher-authored dispositions and notes bound to this exact evidence snapshot.`);
       setError(null);
     } catch (caught) {
       setError(caught instanceof Error ? `Shortlist export failed: ${caught.message}` : "Shortlist export failed.");
@@ -649,7 +678,7 @@ export function PredictionRunIntake({
             ConfoVHH audits already-predicted complex coordinates. It does not accept FASTA sequences or run a structure predictor. Scan up to 12 poses locally, review every proposed PAE association, and produce one provenance-bound run dossier.
           </p>
         </div>
-        <Badge variant="outline">product 0.8</Badge>
+        <Badge variant="outline">product {PREDICTION_RUN_PRODUCT_RELEASE}</Badge>
       </div>
       <ol className="run-workflow-steps" aria-label="Four-step prediction-run workflow">
         <li><span>1</span><div><strong>Choose output files</strong><small>Select a producer folder or the matching coordinate, confidence, and PAE files.</small></div></li>
@@ -703,7 +732,7 @@ export function PredictionRunIntake({
         )}
       </div>
       <p className="run-local-note">
-        Files stay in this tab and are not uploaded. Limits: {MAX_PREDICTION_RUN_FILES} bounded files per manifest, 12 poses, 12 MiB/coordinate, 16 MiB/JSON, 48 MiB aggregate coordinates, 48 MiB selected PAE JSON, and 96 MiB recognized content. Oversized unsupported binaries are listed without being read; bounded NPZ/pickle is inventoried but never executed. Filename matching proposes an association; it never proves model identity or residue order.
+        Files stay in this tab and are not uploaded. Folder selection works best on desktop; use “Choose multiple files” on mobile or in browsers without folder selection. Limits: {MAX_PREDICTION_RUN_FILES} bounded files per manifest, 12 poses, 12 MiB/coordinate, 16 MiB/JSON, 48 MiB aggregate coordinates, 48 MiB selected PAE JSON, and 96 MiB recognized content. Oversized unsupported binaries are listed without being read; bounded NPZ/pickle is inventoried but never executed. Filename matching proposes an association; it never proves model identity or residue order.
       </p>
 
       {scanning && <div className="run-progress" role="status"><LoaderCircle className="animate-spin" /> {scanning}</div>}
@@ -915,15 +944,16 @@ export function PredictionRunIntake({
               </p>
             </div>
             <div className="run-export-actions">
-              <Button onClick={() => exportRun("json")}><FileArchive /> Snapshot dossier</Button>
-              <Button variant="outline" onClick={() => exportRun("csv")}><Download /> Pose CSV</Button>
-              <Button variant="outline" onClick={() => exportShortlist("json")}><Download /> Shortlist JSON</Button>
-              <Button variant="outline" onClick={() => exportShortlist("csv")}><Download /> Shortlist CSV</Button>
+              <Button onClick={() => exportRun("json")}><FileArchive /> Run evidence dossier</Button>
+              <Button variant="outline" onClick={() => exportRun("csv")}><Download /> Pose summary CSV</Button>
+              <Button variant="outline" onClick={() => exportShortlist("json")}><Download /> Decision shortlist JSON</Button>
+              <Button variant="outline" onClick={() => exportShortlist("csv")}><Download /> Decision shortlist CSV</Button>
             </div>
           </div>
+          <p className="run-export-disclosure">The run evidence dossier excludes researcher dispositions. The decision shortlist contains them. Both include hashes and derived evidence; the evidence dossier also contains selected protein sequences and residue-level contacts, but neither includes raw coordinate text or complete PAE matrices.</p>
           <div className="candidate-review-toolbar" aria-label="Candidate review controls">
             <label><span>Find pose</span><Input value={resultQuery} maxLength={160} placeholder="Filename, provider, or SHA-256" onChange={(event) => setResultQuery(event.target.value)} /></label>
-            <label><span><ListFilter /> Disposition</span><Select value={resultFilter} onValueChange={(value) => setResultFilter(value as CandidateDisposition | "all")}><SelectTrigger aria-label="Filter candidates by disposition"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All candidates</SelectItem><SelectItem value="unreviewed">Unreviewed</SelectItem><SelectItem value="advance">Advance</SelectItem><SelectItem value="hold">Hold</SelectItem><SelectItem value="reject">Reject</SelectItem></SelectContent></Select></label>
+            <label><span><ListFilter /> Researcher decision</span><Select value={resultFilter} onValueChange={(value) => setResultFilter(value as CandidateDisposition | "all")}><SelectTrigger aria-label="Filter candidates by researcher decision"><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">All candidates</SelectItem><SelectItem value="unreviewed">Unreviewed</SelectItem><SelectItem value="advance">Advance for experimental review</SelectItem><SelectItem value="hold">Hold for manual review</SelectItem><SelectItem value="reject">Exclude from this set</SelectItem></SelectContent></Select></label>
             <p><strong>{visiblePoseAudits.length}</strong> of {committed.result.poseAudits.length} shown. Decisions remain local to this tab until exported.</p>
           </div>
           <Table containerLabel="Scrollable prediction-run pose audit table">
@@ -944,12 +974,12 @@ export function PredictionRunIntake({
                   <TableCell className="candidate-decision-cell">
                     <Select value={candidateDecisions[pose.id]?.disposition ?? "unreviewed"} onValueChange={(value) => setCandidateDecisions((current) => ({ ...current, [pose.id]: { disposition: value as CandidateDisposition, note: current[pose.id]?.note ?? "" } }))}>
                       <SelectTrigger aria-label={`Researcher disposition for ${pose.coordinate.filename}`}><SelectValue /></SelectTrigger>
-                      <SelectContent><SelectItem value="unreviewed">Unreviewed</SelectItem><SelectItem value="advance">Advance</SelectItem><SelectItem value="hold">Hold</SelectItem><SelectItem value="reject">Reject</SelectItem></SelectContent>
+                      <SelectContent><SelectItem value="unreviewed">Unreviewed</SelectItem><SelectItem value="advance">Advance for experimental review</SelectItem><SelectItem value="hold">Hold for manual review</SelectItem><SelectItem value="reject">Exclude from this set</SelectItem></SelectContent>
                     </Select>
                     <Input aria-label={`Researcher note for ${pose.coordinate.filename}`} maxLength={MAX_CANDIDATE_NOTE_LENGTH} placeholder="Why? Next experiment?" value={candidateDecisions[pose.id]?.note ?? ""} onChange={(event) => setCandidateDecisions((current) => ({ ...current, [pose.id]: { disposition: current[pose.id]?.disposition ?? "unreviewed", note: event.target.value } }))} />
                   </TableCell>
                   <TableCell>{rankByDigest.get(pose.coordinate.sha256) ? `rank ${rankByDigest.get(pose.coordinate.sha256)}` : "single pose"}</TableCell>
-                  <TableCell>{pose.singleAudit.audit.evidenceLevel}<small>{pose.singleAudit.audit.contactPairCount} contacts · {pose.singleAudit.audit.severeClashCount} severe overlaps</small></TableCell>
+                  <TableCell>{coordinateEvidenceLabel[pose.singleAudit.audit.evidenceLevel]}<small>{pose.singleAudit.audit.contactPairCount} contacts · {pose.singleAudit.audit.severeClashCount} severe overlaps</small></TableCell>
                   <TableCell>{statusBadge(pose.pae.status)}{pose.pae.reason && <small>{pose.pae.reason}</small>}</TableCell>
                   <TableCell>
                     <span>R aligned: {angstrom(pose.pae.receptorAlignedVhhEvaluatedMedianAngstrom)}</span>

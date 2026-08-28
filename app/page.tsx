@@ -127,6 +127,9 @@ import type {
 import type { UserTopologyAnnotationInput } from "@/lib/topology-annotation";
 
 const DEMO_URL = "https://files.rcsb.org/download/3P0G.cif";
+const DEMO_SHA256 = "ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88";
+const DEMO_BYTES = 396_018;
+const DEMO_FILENAME = "3P0G_beta2AR_Nb80.cif";
 const MAX_COORDINATE_FILE_BYTES = 12 * 1024 * 1024;
 const MAX_ENSEMBLE_TOTAL_BYTES = 48 * 1024 * 1024;
 export const MAX_VIEWPORT_TRACE_POINTS_PER_CHAIN = 1_500;
@@ -234,11 +237,54 @@ export async function readBoundedResponseBytes(
 }
 
 const evidenceLabel: Record<EvidenceLevel, string> = {
-  supported: "Coherent candidate geometry",
+  supported: "Coherent coordinate geometry",
   mixed: "Mixed coordinate evidence",
   limited: "Weak coordinate evidence",
   "not-assessable": "No assessable interface",
 };
+
+const findingLevelLabel: Record<InterfaceAudit["findings"][number]["level"], string> = {
+  supported: "Supporting observation",
+  review: "Manual review",
+  limited: "Limiting observation",
+  unavailable: "Unavailable observation",
+};
+
+const ensembleTriageLabel = {
+  coherent: "Coherent coordinate geometry",
+  review: "Coordinate geometry to review",
+  "low-priority": "Weak coordinate geometry",
+} as const;
+
+const FROZEN_ENGINE_DISPLAY_REPLACEMENTS = new Map([
+  [
+    "Treat it as low-priority geometry until the pose is reviewed.",
+    "Treat it as weak coordinate geometry requiring manual review.",
+  ],
+  [
+    "Review the footprint, overlaps, and coordinate confidence before prioritization.",
+    "Review the footprint, overlaps, and coordinate confidence before drawing conclusions.",
+  ],
+  [
+    "Review the overlapping atoms before prioritization.",
+    "Review the overlapping atoms and compare a relaxed or alternate pose.",
+  ],
+] as const);
+
+export function neutralizeFrozenEnginePrioritizationText(value: string): string {
+  let displayText = value;
+  for (const [engineText, replacement] of FROZEN_ENGINE_DISPLAY_REPLACEMENTS) {
+    displayText = displayText.replaceAll(engineText, replacement);
+  }
+  return displayText;
+}
+
+export function isPinnedDemoCoordinate(
+  bytes: number | null,
+  sha256: string | null,
+): boolean {
+  return bytes === DEMO_BYTES && sha256 === DEMO_SHA256;
+}
 
 function MetricCard({ label, value, detail }: { label: string; value: string; detail: string }) {
   return (
@@ -597,6 +643,13 @@ export default function Home() {
     setEnsembleMode(null);
     setStatePairResult(null);
     setTopologyInput(EMPTY_TOPOLOGY_ANNOTATION);
+    setResearchContext((current) => ({
+      ...current,
+      candidateId: "",
+      coordinateContext: "",
+      intendedFootprint: "",
+      notes: "",
+    }));
     setError(null);
     setNotice(null);
     setLoading(null);
@@ -1130,14 +1183,20 @@ export default function Home() {
         Promise.resolve(decodeUtf8(bytes, "3P0G.cif")),
         sha256(bytes),
       ]);
+      if (checksum.bytes !== DEMO_BYTES || checksum.hex !== DEMO_SHA256) {
+        throw new Error(
+          "The public 3P0G demo no longer matches the release-pinned RCSB file. Use your own verified coordinate file while the worked example is reviewed.",
+        );
+      }
       if (operationId.current !== currentOperation) return;
       const parsed = await executeParseInWorker(currentOperation, {
-        filename: "3P0G_beta2AR_Nb80.cif",
+        filename: DEMO_FILENAME,
         text,
         assemblyId: null,
       });
       if (operationId.current !== currentOperation) return;
-      applyParsedStructure(parsed, "3P0G_beta2AR_Nb80.cif", checksum, text);
+      applyParsedStructure(parsed, DEMO_FILENAME, checksum, text);
+      setNotice("Loaded the release-pinned experimental PDB 3P0G worked example. It demonstrates workflow mechanics, not prediction accuracy or prospective ranking.");
     } catch (caught) {
       if (controller.signal.aborted || operationId.current !== currentOperation) return;
       setError(caught instanceof Error ? caught.message : "The public demo could not be loaded.");
@@ -1387,12 +1446,14 @@ export default function Home() {
     if (!audit || !filename) return;
     try {
       const payload = createCanonicalAuditReport();
+      const downloadName = `${filename.replace(/\.[^.]+$/, "")}_confovhh-product-${CONFOVHH_PRODUCT_RELEASE}_single-pose-audit.json`;
       downloadText(
         JSON.stringify(payload, null, 2),
         "application/json",
-        `${filename.replace(/\.[^.]+$/, "")}_audit.json`,
+        downloadName,
       );
       setError(null);
+      setNotice(`${safeDownloadFilename(downloadName)} downloaded. The audit JSON contains selected sequences, residue-level contacts, metrics, hashes, and provenance; it excludes raw coordinate text and any complete PAE matrix.`);
     } catch (caught) {
       setError(caught instanceof Error
         ? `Audit export failed: ${caught.message}`
@@ -1408,6 +1469,10 @@ export default function Home() {
   const decisionBrief = audit
     ? deriveCoordinateTriageBrief(audit, workflowCoverage)
     : null;
+  const displayDecisionBrief = decisionBrief == null ? null : {
+    ...decisionBrief,
+    reviewItems: decisionBrief.reviewItems.map(neutralizeFrozenEnginePrioritizationText),
+  };
   const currentIntendedFootprint = () => {
     if (!audit || !structure || !researchContext.intendedFootprint.trim()) return null;
     return analyzeIntendedFootprint(
@@ -1468,12 +1533,14 @@ export default function Home() {
 
   const exportNotebook = () => {
     try {
+      const downloadName = `confovhh-product-${CONFOVHH_PRODUCT_RELEASE}_summary-notebook.json`;
       downloadText(
         JSON.stringify(createNotebookExport(notebookEntries), null, 2),
         "application/json",
-        "confovhh_summary_notebook.json",
+        downloadName,
       );
       setError(null);
+      setNotice(`${downloadName} downloaded. Notebook exports contain only explicitly saved context and derived summaries.`);
     } catch (caught) {
       setError(caught instanceof Error ? `Notebook export failed: ${caught.message}` : "Notebook export failed unexpectedly.");
     }
@@ -1500,12 +1567,14 @@ export default function Home() {
               statePairResult.comparisonMode,
             ),
       });
+      const downloadName = `${researchContext.candidateId || filename.replace(/\.[^.]+$/, "")}_confovhh-product-${CONFOVHH_PRODUCT_RELEASE}_workspace-dossier.json`;
       downloadText(
         JSON.stringify(bundle, null, 2),
         "application/json",
-        `${researchContext.candidateId || filename.replace(/\.[^.]+$/, "")}_workspace_dossier.json`,
+        downloadName,
       );
       setError(null);
+      setNotice(`${safeDownloadFilename(downloadName)} downloaded. The dossier contains complete selected sequences, residue-level contacts, derived evidence, hashes, and notes; it excludes raw coordinate text and complete PAE matrices.`);
     } catch (caught) {
       setError(caught instanceof Error ? `Workspace dossier export failed: ${caught.message}` : "Workspace dossier export failed unexpectedly.");
     }
@@ -1514,6 +1583,7 @@ export default function Home() {
   const exportHandoffMarkdown = () => {
     if (!audit || !decisionBrief || !filename || !coordinateSha256) return;
     try {
+      const downloadName = `${researchContext.candidateId || filename.replace(/\.[^.]+$/, "")}_confovhh-product-${CONFOVHH_PRODUCT_RELEASE}_lab-note.md`;
       downloadText(
         createHandoffMarkdown({
           singleAuditReport: createCanonicalAuditReport(),
@@ -1522,9 +1592,10 @@ export default function Home() {
           userDefinedFootprint: currentIntendedFootprint(),
         }),
         "text/markdown;charset=utf-8",
-        `${researchContext.candidateId || filename.replace(/\.[^.]+$/, "")}_coordinate_handoff.md`,
+        downloadName,
       );
       setError(null);
+      setNotice(`${safeDownloadFilename(downloadName)} downloaded.`);
     } catch (caught) {
       setError(caught instanceof Error ? `Handoff export failed: ${caught.message}` : "Handoff export failed unexpectedly.");
     }
@@ -1548,9 +1619,10 @@ export default function Home() {
       downloadText(
         content,
         format === "json" ? "application/json" : "text/csv;charset=utf-8",
-        `confovhh_ensemble.${format}`,
+        `confovhh-product-${CONFOVHH_PRODUCT_RELEASE}_pose-ensemble.${format}`,
       );
       setError(null);
+      setNotice(`Pose-ensemble ${format.toUpperCase()} downloaded.`);
     } catch (caught) {
       setError(caught instanceof Error
         ? `Ensemble ${format.toUpperCase()} export failed: ${caught.message}`
@@ -1610,7 +1682,7 @@ export default function Home() {
               <AlertDialogHeader>
                 <AlertDialogTitle>Clear the current coordinate analysis and prediction run?</AlertDialogTitle>
                 <AlertDialogDescription>
-                  This removes the loaded coordinate, PAE, audit, ensemble, paired-context result, prediction-run draft, and committed run snapshot from the tab. Study metadata, locally saved summaries, and downloaded reports are kept.
+                  This removes the loaded coordinate, PAE, audit, ensemble, paired-context result, prediction-run draft, and committed run snapshot from the tab. Study name and receptor are kept; candidate ID, coordinate context, intended footprint, and candidate notes are cleared. Locally saved summaries and downloaded reports are kept.
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
@@ -1619,11 +1691,19 @@ export default function Home() {
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>
-          <Button aria-label="Export audit as JSON" variant="outline" size="sm" onClick={exportAudit} disabled={!audit || Boolean(loading)}>
-            <Download /> <span className="button-label">Export audit</span>
+          <Button aria-label="Download the single-pose audit as JSON" variant="outline" size="sm" onClick={exportAudit} disabled={!audit || Boolean(loading)}>
+            <Download /> <span className="button-label">Single-pose audit JSON</span>
           </Button>
         </div>
       </header>
+
+      <section className="product-intro" aria-labelledby="product-title">
+        <p className="eyebrow">Local-first coordinate review</p>
+        <h1 id="product-title">Audit GPCR–VHH coordinate poses</h1>
+        <p>Inspect coordinate geometry and provenance without treating ConfoVHH output as binding, affinity, functional, or candidate-selection evidence.</p>
+      </section>
+
+      {!structure && <EntryWorkflowCards onDemo={() => void loadDemo()} />}
 
       <WorkspaceNavigator
         hasStructure={Boolean(structure)}
@@ -1653,42 +1733,12 @@ export default function Home() {
 
       {importedDossier && <ImportedDossier bundle={importedDossier} onClose={() => setImportedDossier(null)} />}
 
-      <PredictionRunIntake
-        currentCoordinateSha256={coordinateSha256}
-        currentStructure={structure}
-        currentAudit={audit}
-        receptorChain={receptorChain}
-        vhhChain={vhhChain}
-        chainConfirmed={chainConfirmed}
-        topologyAnnotation={topologyState.analysis?.annotation ?? null}
-        topologyAnnotationError={topologyState.error}
-        onOpenPose={openPredictionRunPose}
-        cancelToken={cancelToken}
-        resetToken={predictionRunResetToken}
-        onStatusChange={setPredictionRunStatus}
-      />
-
-      <ResearchContextPanel
-        context={researchContext}
-        onChange={(field, value) => setResearchContext((current) => ({ ...current, [field]: value }))}
-      />
-
-      <NotebookPanel
-        entries={notebookEntries}
-        onRemove={removeNotebookEntry}
-        onClear={clearNotebook}
-        onExport={exportNotebook}
-        onImportText={importNotebook}
-      />
-
-      {!structure && <EntryWorkflowCards onDemo={() => void loadDemo()} />}
-
       <section className="workspace" id="coordinate-setup" tabIndex={-1} aria-label="ConfoVHH analysis workspace">
         <aside className="panel import-panel">
           <div className="panel-heading">
             <div>
               <p className="eyebrow">01 · Coordinate input</p>
-              <h1>Import coordinate complex</h1>
+              <h2>Import coordinate complex</h2>
             </div>
             <FileCode2 className="panel-icon" />
           </div>
@@ -1751,6 +1801,13 @@ export default function Home() {
                   />
                 </label>
               </div>
+              {isPinnedDemoCoordinate(coordinateBytes, coordinateSha256) && (
+                <Alert className="demo-loaded-note" role="note">
+                  <FlaskConical />
+                  <AlertTitle>Experimental worked example · PDB 3P0G</AlertTitle>
+                  <AlertDescription>This release-pinned file demonstrates the audit workflow. It does not measure prediction accuracy, model generalization, or prospective ranking.</AlertDescription>
+                </Alert>
+              )}
               <p className="replace-note">Replacing the coordinate clears the current PAE, audit, ensemble, and paired-context result; saved notebook summaries remain.</p>
 
               {structure.sourceFormat === "mmcif" && structure.availableAssemblies.length > 0 && (
@@ -1947,6 +2004,26 @@ export default function Home() {
         </section>
       </section>
 
+      <ResearchContextPanel
+        context={researchContext}
+        onChange={(field, value) => setResearchContext((current) => ({ ...current, [field]: value }))}
+      />
+
+      <PredictionRunIntake
+        currentCoordinateSha256={coordinateSha256}
+        currentStructure={structure}
+        currentAudit={audit}
+        receptorChain={receptorChain}
+        vhhChain={vhhChain}
+        chainConfirmed={chainConfirmed}
+        topologyAnnotation={topologyState.analysis?.annotation ?? null}
+        topologyAnnotationError={topologyState.error}
+        onOpenPose={openPredictionRunPose}
+        cancelToken={cancelToken}
+        resetToken={predictionRunResetToken}
+        onStatusChange={setPredictionRunStatus}
+      />
+
       {audit ? (
         <section className="results" id="audit-results" tabIndex={-1} aria-label="Interface audit results" ref={resultsRef}>
           <div className={`evidence-banner evidence-${audit.evidenceLevel}`}>
@@ -1954,7 +2031,7 @@ export default function Home() {
             <div>
               <p className="eyebrow">03 · Evidence summary</p>
               <h2>Interface evidence: {evidenceLabel[audit.evidenceLevel]}</h2>
-              <p>{audit.rationale}</p>
+              <p>{neutralizeFrozenEnginePrioritizationText(audit.rationale)}</p>
             </div>
             <Badge variant="outline">Chains {audit.receptorChain} ↔ {audit.vhhChain}</Badge>
           </div>
@@ -2010,9 +2087,9 @@ export default function Home() {
             />
           </div>
 
-          {decisionBrief && (
+          {displayDecisionBrief && (
             <AuditDecisionSummary
-              brief={decisionBrief}
+              brief={displayDecisionBrief}
               workflow={workflowCoverage}
               onSaveNotebook={saveNotebookSummary}
               onExportDossier={exportDossier}
@@ -2035,10 +2112,10 @@ export default function Home() {
                     <div>
                       <div className="finding-title">
                         <h3>{finding.label}</h3>
-                        <span className={`finding-status status-${finding.level}`}>{finding.level}</span>
+                        <span className={`finding-status status-${finding.level}`}>{findingLevelLabel[finding.level]}</span>
                       </div>
                       <p>{finding.evidence}</p>
-                      <small>{finding.action}</small>
+                      <small>{neutralizeFrozenEnginePrioritizationText(finding.action)}</small>
                     </div>
                   </article>
                 ))}
@@ -2055,7 +2132,7 @@ export default function Home() {
               </div>
               <Alert className="scope-alert">
                 <AlertTriangle />
-                <AlertTitle>Prioritization evidence—not binding proof</AlertTitle>
+                <AlertTitle>Coordinate evidence—not binding proof</AlertTitle>
                 <AlertDescription>
                   Favorable geometry does not establish biological binding. ConfoVHH does not predict affinity, specificity, stability, signaling, or experimental validity.
                 </AlertDescription>
@@ -2232,7 +2309,7 @@ export default function Home() {
                             </small>
                           </TableCell>
                           <TableCell>
-                            <span className={`ensemble-group ensemble-${pose.triageGroup}`}>{pose.triageGroup}</span>
+                            <span className={`ensemble-group ensemble-${pose.triageGroup}`}>{ensembleTriageLabel[pose.triageGroup]}</span>
                           </TableCell>
                           <TableCell className="mono-cell">
                             {pose.ensembleConsensus == null ? "—" : pose.ensembleConsensus.toFixed(3)}
@@ -2313,11 +2390,19 @@ export default function Home() {
         </section>
       )}
 
+      <NotebookPanel
+        entries={notebookEntries}
+        onRemove={removeNotebookEntry}
+        onClear={clearNotebook}
+        onExport={exportNotebook}
+        onImportText={importNotebook}
+      />
+
       <ValidationRecord />
 
       <footer>
         <span>ConfoVHH product {CONFOVHH_PRODUCT_RELEASE} · engine {CONFOVHH_VERSION}</span>
-        <span>Local-first single-pose and prediction-run structural triage</span>
+        <span>Local-first single-pose and prediction-run coordinate review</span>
         <a href="https://github.com/darwinxcai/ConfoVHH" target="_blank" rel="noreferrer">Source, methods, and citation</a>
         <a href="https://www.rcsb.org/structure/3P0G" target="_blank" rel="noreferrer">Demo source: RCSB PDB 3P0G</a>
       </footer>

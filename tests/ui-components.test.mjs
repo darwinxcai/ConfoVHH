@@ -96,8 +96,8 @@ test("renders the task-centered researcher workspace and privacy-bounded handoff
     WorkspaceNavigator,
   } = await vite.ssrLoadModule("/components/research-workspace.tsx");
   const brief = {
-    band: "retain-for-comparison",
-    title: "Retain this coordinate pose for comparative review",
+    band: "coordinate-geometry-coherent",
+    title: "Coordinate geometry is coherent under this audit policy",
     summary: "Coordinate evidence only.",
     reviewItems: [],
     evidenceGaps: ["No experiment is represented."],
@@ -136,12 +136,22 @@ test("renders the task-centered researcher workspace and privacy-bounded handoff
   assert.match(html, /Research workflow/);
   assert.match(html, /Optional metadata for the handoff dossier/);
   assert.match(html, /No composite score/);
-  assert.match(html, /Export complete dossier/);
+  assert.match(html, /Workspace dossier JSON/);
   assert.match(html, /Lab-note Markdown/);
   assert.match(html, /does not automatically copy loaded coordinates, parsed sequences, PAE matrices, or residue-contact tables/);
   assert.match(html, /Clear all/);
   assert.match(html, /Audit one coordinate pose/);
-  assert.match(html, /Compare seeds or poses/);
+  assert.match(html, /Audit a prediction output run/);
+  assert.match(html, /workflow—not to measure prediction accuracy or prospective ranking/);
+
+  const coherentSummary = renderToStaticMarkup(React.createElement(AuditDecisionSummary, {
+    brief,
+    workflow,
+    onSaveNotebook: () => {},
+    onExportDossier: () => {},
+    onExportMarkdown: () => {},
+  }));
+  assert.match(coherentSummary, /lucide-shield-check/);
 });
 
 test("keeps unavailable workflow stages non-interactive until a reference audit exists", async () => {
@@ -367,6 +377,16 @@ test("workspace source preserves accessibility, cancellation, replacement, and l
   assert.match(source, /resetToken=\{predictionRunResetToken\}/);
   assert.match(source, /onStatusChange=\{setPredictionRunStatus\}/);
 
+  const coordinateWorkspace = source.indexOf('id="coordinate-setup"');
+  const researchContext = source.indexOf("<ResearchContextPanel", coordinateWorkspace);
+  const predictionRun = source.indexOf("<PredictionRunIntake", researchContext);
+  const auditResults = source.indexOf('id="audit-results"', predictionRun);
+  assert.ok(
+    coordinateWorkspace >= 0 && researchContext > coordinateWorkspace &&
+    predictionRun > researchContext && auditResults > predictionRun,
+    "Study context must precede prediction-run and single-pose handoff/export controls.",
+  );
+
   const paeStart = source.indexOf("const readPaeFile = async");
   const paeRead = source.indexOf("const bytes = await file.arrayBuffer()", paeStart);
   const paeCatch = source.indexOf("} catch (caught) {", paeRead);
@@ -420,7 +440,16 @@ test("viewport sampling and one-path trace construction remain deterministic and
 });
 
 test("public demo response reading is byte-bounded before parsing", async () => {
-  const { readBoundedResponseBytes } = await vite.ssrLoadModule("/app/page.tsx");
+  const { isPinnedDemoCoordinate, readBoundedResponseBytes } = await vite.ssrLoadModule("/app/page.tsx");
+  const pinnedDigest = "ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88";
+  assert.equal(isPinnedDemoCoordinate(396_018, pinnedDigest), true);
+  assert.equal(isPinnedDemoCoordinate(396_017, pinnedDigest), false);
+  assert.equal(isPinnedDemoCoordinate(396_018, "0".repeat(64)), false);
+  assert.equal(isPinnedDemoCoordinate(null, null), false);
+
+  const pageSource = await readFile(path.join(root, "app", "page.tsx"), "utf8");
+  assert.match(pageSource, /isPinnedDemoCoordinate\(coordinateBytes, coordinateSha256\)/);
+  assert.doesNotMatch(pageSource, /filename === DEMO_FILENAME/);
   const payload = new Uint8Array([1, 2, 3, 4, 5]);
   const accepted = await readBoundedResponseBytes(
     new Response(payload, { headers: { "content-length": "5" } }),
@@ -461,6 +490,28 @@ test("public demo response reading is byte-bounded before parsing", async () => 
     readBoundedResponseBytes(new Response(), -1, "Fixture"),
     /non-negative safe integer/,
   );
+});
+
+test("product display neutralizes frozen-engine prioritization wording", async () => {
+  const { neutralizeFrozenEnginePrioritizationText } = await vite.ssrLoadModule("/app/page.tsx");
+  const frozenStrings = [
+    "Treat it as low-priority geometry until the pose is reviewed.",
+    "Review the footprint, overlaps, and coordinate confidence before prioritization.",
+    "Review the overlapping atoms before prioritization.",
+  ];
+  const engineSource = await readFile(path.join(root, "lib", "confovhh.ts"), "utf8");
+  for (const frozenString of frozenStrings) {
+    assert.match(engineSource, new RegExp(frozenString.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+    assert.doesNotMatch(
+      neutralizeFrozenEnginePrioritizationText(`Steric quality: ${frozenString}`),
+      /prioritization|low-priority/i,
+    );
+  }
+
+  const pageSource = await readFile(path.join(root, "app", "page.tsx"), "utf8");
+  assert.match(pageSource, /neutralizeFrozenEnginePrioritizationText\(audit\.rationale\)/);
+  assert.match(pageSource, /decisionBrief\.reviewItems\.map\(neutralizeFrozenEnginePrioritizationText\)/);
+  assert.match(pageSource, /neutralizeFrozenEnginePrioritizationText\(finding\.action\)/);
 });
 
 test("workspace export controls, errors, provenance, and method labels are explicit", async () => {
@@ -545,8 +596,9 @@ test("renders the release record with exact results and an explicit claim bounda
   assert.match(html, /Post-label regression replay passed—not new validation/);
   assert.match(html, /all 20 controls\/cross-checks passed/);
   assert.match(html, /adds no independent performance evidence/);
-  assert.match(html, /No holdout dataset exists for this release/);
-  assert.match(html, /none has been assembled, labeled, frozen, opened, or evaluated/);
+  assert.match(html, /Hard-decoy holdout remains blocked and unexecuted/);
+  assert.match(html, /No holdout has been assembled, labeled, frozen, opened, or evaluated/);
+  assert.match(html, /seven groups are provisional, zero are formally cleared, and at least ten are required/);
 });
 
 test("emits chart themes for the starter's media dark mode", async () => {

@@ -15,6 +15,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { safeDownloadFilename } from "@/lib/download";
+import { sha256Hex } from "@/lib/sha256";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -82,6 +83,13 @@ function formatBytes(bytes: number | null): string {
 
 function formatLabel(label: StateContextLabel | null): string {
   return label == null ? "unlabeled" : label;
+}
+
+function coordinateEvidenceLabel(value: StatePairCoordinateSummary["evidenceLevel"]): string {
+  if (value === "supported") return "Coherent coordinate geometry";
+  if (value === "mixed") return "Mixed coordinate evidence";
+  if (value === "limited") return "Weak coordinate evidence";
+  return "Not assessable";
 }
 
 function formatJaccard(value: number | null): string {
@@ -159,7 +167,7 @@ function PoseCard({
         </Badge>
       </div>
       <dl>
-        <div><dt>Evidence</dt><dd>{pose.evidenceLevel}</dd></div>
+        <div><dt>Evidence</dt><dd>{coordinateEvidenceLabel(pose.evidenceLevel)}</dd></div>
         <div><dt>Contacts</dt><dd>{pose.contactPairCount}</dd></div>
         <div><dt>Severe clashes</dt><dd>{pose.severeClashCount}</dd></div>
         <div><dt>Protein ΔSASA</dt><dd>{pose.deltaSasaAngstrom2.toFixed(0)} Å²</dd></div>
@@ -281,13 +289,7 @@ export function StatePairPanel({ reference, busy, onBusyChange, onResultChange, 
     result.summary.reference.coordinateProvenance !== result.summary.comparison.coordinateProvenance
   );
 
-  const sha256 = async (bytes: ArrayBuffer): Promise<string> => {
-    const digest = await crypto.subtle.digest("SHA-256", bytes);
-    return Array.from(
-      new Uint8Array(digest),
-      (value) => value.toString(16).padStart(2, "0"),
-    ).join("");
-  };
+  const sha256 = (bytes: ArrayBuffer): Promise<string> => sha256Hex(bytes);
 
   const decodeUtf8 = (bytes: ArrayBuffer, label: string): string => {
     try {

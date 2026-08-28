@@ -1,0 +1,17 @@
+{
+  "name": "confovhh-qa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "playwright test --config=playwright.config.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.62.1",
+    "c8": "12.0.0"
+  }
+}

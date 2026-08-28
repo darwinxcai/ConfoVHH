@@ -23,11 +23,16 @@ import {
   type IntendedFootprintSummary,
 } from "./user-footprint.ts";
 
-export const CONFOVHH_PRODUCT_RELEASE = "0.8.0" as const;
-export type SupportedConfoVhhProductRelease = "0.6.0" | "0.7.0" | typeof CONFOVHH_PRODUCT_RELEASE;
+export const CONFOVHH_PRODUCT_RELEASE = "0.9.0" as const;
+export type SupportedConfoVhhProductRelease =
+  | "0.6.0"
+  | "0.7.0"
+  | "0.8.0"
+  | typeof CONFOVHH_PRODUCT_RELEASE;
 const SUPPORTED_PRODUCT_RELEASES = new Set<SupportedConfoVhhProductRelease>([
   "0.6.0",
   "0.7.0",
+  "0.8.0",
   CONFOVHH_PRODUCT_RELEASE,
 ]);
 export const RESEARCH_WORKSPACE_BUNDLE_SCHEMA_VERSION = "1.0.0" as const;
@@ -80,6 +85,9 @@ export type CoordinateTriageBand =
   | "retain-for-comparison"
   | "review-before-comparison"
   | "deprioritize-coordinate-pose"
+  | "coordinate-geometry-coherent"
+  | "coordinate-geometry-mixed"
+  | "coordinate-geometry-limited"
   | "not-assessable";
 
 export interface CoordinateTriageBrief {
@@ -596,6 +604,22 @@ export function normalizeResearchContext(
   };
 }
 
+function neutralProductReviewText(value: string): string {
+  return value
+    .replaceAll(
+      "Treat it as low-priority geometry until the pose is reviewed.",
+      "Treat it as weak coordinate geometry requiring manual review.",
+    )
+    .replaceAll(
+      "Review the footprint, overlaps, and coordinate confidence before prioritization.",
+      "Review the footprint, overlaps, and coordinate confidence before drawing conclusions.",
+    )
+    .replaceAll(
+      "Review the overlapping atoms before prioritization.",
+      "Review the overlapping atoms and compare a relaxed or alternate pose.",
+    );
+}
+
 export function deriveCoordinateTriageBrief(
   audit: Pick<InterfaceAudit, "evidenceLevel" | "findings" | "severeClashCount" | "paratopeProxyShare">,
   workflow: WorkflowCoverage,
@@ -604,19 +628,19 @@ export function deriveCoordinateTriageBrief(
 
   const triageByEvidence: Record<EvidenceLevel, Pick<CoordinateTriageBrief, "band" | "title" | "summary">> = {
     supported: {
-      band: "retain-for-comparison",
-      title: "Retain this coordinate pose for comparative review",
-      summary: "The selected interface has coherent coordinate geometry under the fixed audit policy. Retention is a modeling decision, not evidence of biological binding.",
+      band: "coordinate-geometry-coherent",
+      title: "Coordinate geometry is coherent under this audit policy",
+      summary: "The selected interface has coherent coordinate geometry under the fixed audit policy. This flag has not been validated to improve candidate selection, experimental hit rate, or biological ranking.",
     },
     mixed: {
-      band: "review-before-comparison",
-      title: "Review this coordinate pose before prioritization",
-      summary: "The selected interface contains both supportive and cautionary coordinate evidence. Resolve the highlighted geometry issues before using it as a leading coordinate pose for manual structural review.",
+      band: "coordinate-geometry-mixed",
+      title: "Coordinate geometry requires manual review",
+      summary: "The selected interface contains both supportive and cautionary coordinate evidence. This flag has not been validated to improve candidate selection, experimental hit rate, or biological ranking.",
     },
     limited: {
-      band: "deprioritize-coordinate-pose",
-      title: "Deprioritize this coordinate pose",
-      summary: "The selected interface has weak or unfavorable coordinate evidence under the fixed audit policy. A different pose or model seed is a stronger next step than interpreting this geometry biologically.",
+      band: "coordinate-geometry-limited",
+      title: "Coordinate geometry is weak under this audit policy",
+      summary: "The selected interface has weak or unfavorable coordinate evidence under the fixed audit policy. This flag describes the uploaded geometry and is not a validated candidate-selection rule.",
     },
     "not-assessable": {
       band: "not-assessable",
@@ -628,7 +652,7 @@ export function deriveCoordinateTriageBrief(
   const base = triageByEvidence[audit.evidenceLevel];
   const reviewItems = audit.findings
     .filter((finding) => finding.level === "limited" || finding.level === "review")
-    .map((finding) => `${finding.label}: ${finding.action}`);
+    .map((finding) => `${finding.label}: ${neutralProductReviewText(finding.action)}`);
   const evidenceGaps: string[] = [];
   if (!workflow.paeAttached) {
     evidenceGaps.push("No direction-aware cross-chain PAE was attached for this audit.");
@@ -655,12 +679,12 @@ export function deriveCoordinateTriageBrief(
     nextActions.push("For predicted complexes, attach the matching PAE JSON and confirm residue order.");
   }
   if (workflow.ensemblePoseCount < 2) {
-    nextActions.push("Compare multiple seeds or poses to test interface recurrence before prioritizing.");
+    nextActions.push("Compare multiple seeds or poses to characterize interface recurrence before making a researcher-authored decision.");
   }
   if (!workflow.pairedContextCompared) {
     nextActions.push("If context dependence matters, compare same-sequence receptor–VHH coordinate contexts.");
   }
-  nextActions.push("Validate retained candidates experimentally; coordinate coherence is not binding proof.");
+  nextActions.push("Use experiments to evaluate biological hypotheses; coordinate coherence does not establish binding.");
 
   return {
     ...base,
@@ -669,6 +693,61 @@ export function deriveCoordinateTriageBrief(
     nextActions: [...new Set(nextActions)],
     boundary: CLAIM_BOUNDARY,
   };
+}
+
+function deriveLegacyCoordinateTriageBrief(
+  audit: Pick<InterfaceAudit, "evidenceLevel" | "findings" | "severeClashCount" | "paratopeProxyShare">,
+  workflow: WorkflowCoverage,
+): CoordinateTriageBrief {
+  const current = deriveCoordinateTriageBrief(audit, workflow);
+  const legacyByEvidence: Record<EvidenceLevel, Pick<CoordinateTriageBrief, "band" | "title" | "summary">> = {
+    supported: {
+      band: "retain-for-comparison",
+      title: "Retain this coordinate pose for comparative review",
+      summary: "The selected interface has coherent coordinate geometry under the fixed audit policy. Retention is a modeling decision, not evidence of biological binding.",
+    },
+    mixed: {
+      band: "review-before-comparison",
+      title: "Review this coordinate pose before prioritization",
+      summary: "The selected interface contains both supportive and cautionary coordinate evidence. Resolve the highlighted geometry issues before using it as a leading coordinate pose for manual structural review.",
+    },
+    limited: {
+      band: "deprioritize-coordinate-pose",
+      title: "Deprioritize this coordinate pose",
+      summary: "The selected interface has weak or unfavorable coordinate evidence under the fixed audit policy. A different pose or model seed is a stronger next step than interpreting this geometry biologically.",
+    },
+    "not-assessable": {
+      band: "not-assessable",
+      title: "This coordinate interface is not assessable",
+      summary: "The selected chains do not provide an assessable interface under the fixed contact policy. Verify the chain assignment, coordinate scope, and model before drawing conclusions.",
+    },
+  };
+  return {
+    ...current,
+    ...legacyByEvidence[audit.evidenceLevel],
+    reviewItems: audit.findings
+      .filter((finding) => finding.level === "limited" || finding.level === "review")
+      .map((finding) => `${finding.label}: ${finding.action}`),
+    nextActions: current.nextActions.map((action) => {
+      if (action === "Compare multiple seeds or poses to characterize interface recurrence before making a researcher-authored decision.") {
+        return "Compare multiple seeds or poses to test interface recurrence before prioritizing.";
+      }
+      if (action === "Use experiments to evaluate biological hypotheses; coordinate coherence does not establish binding.") {
+        return "Validate retained candidates experimentally; coordinate coherence is not binding proof.";
+      }
+      return action;
+    }),
+  };
+}
+
+function deriveCoordinateTriageBriefForRelease(
+  audit: Pick<InterfaceAudit, "evidenceLevel" | "findings" | "severeClashCount" | "paratopeProxyShare">,
+  workflow: WorkflowCoverage,
+  productRelease: SupportedConfoVhhProductRelease,
+): CoordinateTriageBrief {
+  return productRelease === CONFOVHH_PRODUCT_RELEASE
+    ? deriveCoordinateTriageBrief(audit, workflow)
+    : deriveLegacyCoordinateTriageBrief(audit, workflow);
 }
 
 interface NotebookEntryInput {
@@ -840,12 +919,12 @@ function notebookEntrySnapshot(value: unknown): NotebookEntry {
   if (!validateDecisionBrief(entry.triage)) {
     throw new Error("Notebook coordinate review brief is invalid.");
   }
-  const expectedBrief = deriveCoordinateTriageBrief({
+  const expectedBrief = deriveCoordinateTriageBriefForRelease({
     evidenceLevel: entry.metrics.evidenceLevel,
     findings: [],
     severeClashCount: entry.metrics.severeClashCount,
     paratopeProxyShare: entry.metrics.paratopeProxyShare,
-  }, entry.workflow);
+  }, entry.workflow, entry.productRelease);
   const expectedCore = {
     band: expectedBrief.band,
     title: expectedBrief.title,
@@ -1802,6 +1881,9 @@ function validateDecisionBrief(value: unknown): value is CoordinateTriageBrief {
     "retain-for-comparison",
     "review-before-comparison",
     "deprioritize-coordinate-pose",
+    "coordinate-geometry-coherent",
+    "coordinate-geometry-mixed",
+    "coordinate-geometry-limited",
     "not-assessable",
   ].includes(brief.band ?? "") &&
     typeof brief.title === "string" && Boolean(brief.title) && brief.title.length <= 1_000 && cleanText(brief.title, 1_000) === brief.title &&
@@ -1857,10 +1939,15 @@ export function parseWorkspaceBundle(text: string): WorkspaceBundle {
   if (!jsonEqual(bundle.coordinate, coordinate)) {
     throw new Error("Workspace dossier coordinate selection does not match its single-audit provenance.");
   }
-  const decisionBrief = deriveCoordinateTriageBrief(singleAudit.audit, workflow);
-  if (!validateDecisionBrief(bundle.decisionBrief) || !jsonEqual(bundle.decisionBrief, decisionBrief)) {
+  const importedDecisionBrief = deriveCoordinateTriageBriefForRelease(
+    singleAudit.audit,
+    workflow,
+    bundle.productRelease as SupportedConfoVhhProductRelease,
+  );
+  if (!validateDecisionBrief(bundle.decisionBrief) || !jsonEqual(bundle.decisionBrief, importedDecisionBrief)) {
     throw new Error("Workspace dossier decision brief does not reconcile with its audit and workflow coverage.");
   }
+  const decisionBrief = deriveCoordinateTriageBrief(singleAudit.audit, workflow);
   if (bundle.userDefinedFootprint != null) {
     validateIntendedFootprintSummary(bundle.userDefinedFootprint, coordinate.receptorChain);
     validateFootprintContext(

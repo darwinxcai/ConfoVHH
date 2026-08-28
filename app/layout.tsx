@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "ConfoVHH",
   description:
-    "Local-first batch triage for modeled GPCR–nanobody complexes: coordinate interfaces, IMGT CDR mapping, directional PAE, pose recurrence, and auditable research handoff.",
+    "Local-first coordinate review for modeled GPCR–nanobody complexes: interface geometry, IMGT CDR mapping, directional PAE, pose recurrence, and auditable research handoff.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

@@ -1,8 +1,8 @@
 # ConfoVHH v0.5 scientific-engine validation record
 
-ConfoVHH is a coordinate-quality and prioritization aid. The record below tests parser correctness, assembly reconstruction, geometric calculations, deterministic multi-pose bookkeeping, paired coordinate-context bookkeeping, browser-worker behavior, numerical/resource bounds, and reproducible benchmark plumbing. It does **not** validate binding, affinity, specificity, signaling, physiological assembly, membrane compatibility, state selectivity, near-native ranking, or a universal pose-acceptance threshold.
+ConfoVHH is a coordinate-quality and structural-review aid. The record below tests parser correctness, assembly reconstruction, geometric calculations, deterministic multi-pose bookkeeping, paired coordinate-context bookkeeping, browser-worker behavior, numerical/resource bounds, and reproducible benchmark plumbing. It does **not** validate binding, affinity, specificity, signaling, physiological assembly, membrane compatibility, state selectivity, candidate selection, experimental hit rate, near-native ranking, or a universal pose-acceptance threshold.
 
-The current researcher-facing product is release 0.8.0 and continues to run the attested v0.5.0 scientific engine. Product-only functions—workflow navigation, native prediction-run manifests, provider-specific file pairing, per-pose PAE mapping and quarantine, annotated receptor-footprint consistency, researcher-authored candidate dispositions and shortlist exports, the coordinate-review brief, contact filtering/CSV, PAE display downsampling, dossier/notebook serialization, import validation, accessibility, cancellation, and local-summary privacy—have their own deterministic offline tests. They do not change the fixed contact, clash, SASA, PAE-summary, IMGT, ensemble, or paired-comparison calculations, and they do not create new biological validation evidence.
+The current researcher-facing product is release 0.9.0 and continues to run the digest-attested v0.5.0 scientific engine. Product-only functions—workflow navigation, native prediction-run manifests, provider-specific file pairing, per-pose PAE mapping and quarantine, annotated receptor-footprint consistency, researcher-authored candidate dispositions and shortlist exports, the coordinate-review brief, contact filtering/CSV, PAE display downsampling, dossier/notebook serialization, import validation, accessibility, cancellation, and local-summary privacy—have their own deterministic offline tests. They do not change the fixed contact, clash, SASA, PAE-summary, IMGT, ensemble, or paired-comparison calculations, and they do not create new biological validation evidence.
 
 ## Release test layers
 
@@ -42,7 +42,19 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 
 Current v0.8 product-layer result (2026-08-28): **349/349 ordinary tests passed**, including the emitted production prediction-run worker runtime request; **33/33 fixed-seed adversarial suites passed**, exercising exactly **7,221,999 semantic cases** and **4,679,968 assertions**. These are software-verification counts, not biological-validation samples.
 
-The blocked hard-decoy v2 census adds 19 ordinary integrity tests, bringing the current repository total to **368/368** without relabeling the v0.8 product-layer result.
+The blocked hard-decoy v2 census added 19 ordinary integrity tests, bringing the pre-v0.9 repository total to **368/368** without relabeling the v0.8 product-layer result. Release 0.9 adds three release-integrity tests and two product-assurance regressions covering visible neutral wording and the production request boundary; the current result is **373/373 ordinary tests passed**. The isolated browser package defines three Chromium acceptance/accessibility scenarios and is reported separately from this Node test count.
+
+Current v0.9 fixed-seed adversarial result (2026-08-28): **33/33 suites passed**, exercising exactly **7,221,999 semantic cases** and **4,679,971 assertions**. These are software-verification counts, not biological-validation samples.
+
+### v0.9 product-layer validation boundary
+
+Release 0.9 replaces automated retain/deprioritize recommendations in the current product display and researcher handoff brief with neutral coordinate-geometry flags; canonical single-audit records preserve the raw v0.5 engine fields for reproducibility. Those current flags are descriptive summaries of the unchanged coordinate audit and have not been validated to improve candidate selection, candidate ranking, or experimental hit rate. Advance/hold/exclude dispositions remain researcher-authored, are cleared whenever a run is recomputed, and are never inferred from an evidence band. Shortlist exports bind each disposition to exact coordinate, audit-result, PAE, and topology evidence identifiers.
+
+Release 0.9 also adds checksum verification for the fetched worked example, spreadsheet-formula neutralization after leading whitespace and format characters, explicit disclosure of sequence/contact content in complete exports, response security headers, higher-contrast first-use presentation, and separate browser/accessibility, coverage, supported-Node, public-producer, and reproducible-release gates. These are product-integrity and software-assurance changes, not new scientific-performance evidence.
+
+Measured across every `lib/**/*.ts` file, the v0.9 Node suite covers 61.75% of statements/lines, 83.18% of branches, and 51.05% of functions under c8. CI enforces non-regression floors of 60% statements/lines, 80% branches, and 50% functions. Coverage is software execution evidence, not biological validation.
+
+The v0.9 product work intentionally leaves the frozen v0.5 engine, root package manifest and lockfile, public regression artifacts, DockQ development pilot, hard-decoy records, and post-label replay artifacts unchanged. Legacy v0.6–v0.8 workspace records remain importable; imported decision briefs are migrated to the current neutral wording without rewriting the source file.
 
 ### v0.8 product-layer validation boundary
 
@@ -52,7 +64,7 @@ Provider filenames are tested as deterministic association proposals, not identi
 
 Annotated receptor-footprint consistency compares unique coordinate-contacting receptor residues with mutually exclusive user-supplied residue classes. Its exported result explicitly records that no topology inference, membrane-plane calculation, or membrane-compatibility assessment occurred. These checks validate deterministic mapping and accounting only; they do not validate extracellular accessibility, whole-binder sidedness, receptor state, epitope correctness, or binding.
 
-The v0.8 product work intentionally leaves the frozen v0.5 engine, package lock, public regression artifacts, DockQ development pilot, and post-label replay artifacts unchanged. Acceptance of intact earlier notebook and dossier records is regression-tested; newly created researcher-facing records identify the current product release where their schema exposes that field.
+The v0.8 product work intentionally left the frozen v0.5 engine, package lock, public regression artifacts, DockQ development pilot, and post-label replay artifacts unchanged. Acceptance of intact earlier notebook and dossier records is regression-tested; newly created researcher-facing records identify the current product release where their schema exposes that field.
 
 The network-enabled public-data exercises are explicit commands so an offline test run cannot silently depend on a mutable remote archive:
 
@@ -64,7 +76,7 @@ npm run test:public-attestation
 
 The first two commands print their current results. Public coordinate responses use a 30-second per-request timeout and a 4 MiB per-file declared/streamed byte limit. `npm run test:public-attestation` must start from a clean committed tree; it runs both public exercises from a detached worktree, records raw-source, implementation, and executed-dependency digests, cross-reconciles independent PDB downloads, and publishes a separate exclusively locked, non-overwriting artifact atomically.
 
-Current status: **executed current-release regression**. The clean-tree run completed on 2026-08-27 from source commit `5cb57617b54baa314513486885c402449f643406`; checksummed outputs, exact implementation digests, raw-source hashes, and the before/after hash of the executed `immunum 1.2.0` distribution are in `validation/v0.5-public-regression-attestation-v1/`. All biological claim flags remain false.
+Current status: **executed digest-attested regression**. The clean-tree run completed on 2026-08-27 and retained legacy source identifier `5cb57617b54baa314513486885c402449f643406`. That commit resolves as an ancestor in the Sites source history used for this product, but it is absent from the current public GitHub repository and cannot be resolved there. The checksummed outputs, exact implementation digests, raw-source hashes, and before/after hash of the executed `immunum 1.2.0` distribution remain independently verifiable in `validation/v0.5-public-regression-attestation-v1/`. A product release receipt binds these preserved digests to a reachable product tag. All biological claim flags remain false.
 
 The supported runtime is Node.js ≥22.18.0. This minimum is recorded in both `package.json` and the lockfile.
 
@@ -85,9 +97,9 @@ These systems are not GPCR–VHH complexes. They validate producer-output compat
 
 ## PDBx/mmCIF and deposited-assembly regression
 
-`npm run test:mmcif` downloads both legacy PDB and PDBx/mmCIF serializations for the 17 public GPCR–VHH structures in `validation/mmcif-regression-manifest.v1.json`. Each PDBx/mmCIF and deposited-assembly source covered by the manifest must match its frozen byte count and SHA-256 before parsing. Legacy PDB bytes are independently downloaded by both public exercises, hashed in each result, and required to match each other in the commit-bound attestation.
+`npm run test:mmcif` downloads both legacy PDB and PDBx/mmCIF serializations for the 17 public GPCR–VHH structures in `validation/mmcif-regression-manifest.v1.json`. Each PDBx/mmCIF and deposited-assembly source covered by the manifest must match its frozen byte count and SHA-256 before parsing. Legacy PDB bytes are independently downloaded by both public exercises, hashed in each result, and required to match each other in the digest-bound attestation.
 
-Commit-attested v0.5 result:
+Digest-attested v0.5 result:
 
 - 17/17 PDB and PDBx/mmCIF structures had exactly equal selected protein-heavy-atom counts;
 - 17/17 had exactly equal protein residue counts and selected receptor/VHH atom counts;
@@ -110,7 +122,7 @@ All atom, chain, and residue counts matched exactly. The acceptance tolerance wa
 
 `npm run test:benchmark` uses 17 experimentally determined structures spanning class A and class F GPCRs, intracellular and extracellular epitopes, active and inactive contexts, and multiple VHH/scaffold families. This is a **public native-interface regression panel**, not a docking benchmark.
 
-Commit-attested v0.5 result:
+Digest-attested v0.5 result:
 
 - 17/17 annotated native receptor–VHH pairs had a detected interface;
 - 102/102 obvious geometry sanity controls produced by translating the VHH ±1,000 Å along each Cartesian axis had zero contacts and zero ΔSASA;
@@ -186,17 +198,17 @@ Interpretation: this development-only grid validates deterministic generation, l
 
 `npm run test:dockq-replay` regenerates the local-SE(3) coordinate ledger with the v0.5 implementation, reruns DockQ 2.1.3, and compares the result against the already labeled v0.4 development artifact. It writes only to `validation/dockq-v0.5-regression-replay-v1/`.
 
-Current status: **executed post-label regression only**. The clean-tree run completed on 2026-08-27 from source commit `278ae1a74da133778fba5b17bc296a8e37f02e76`. All 360 generated coordinate records, normalized non-SASA audit fields, DockQ records, and CAPRI classes matched exactly. All 360 SASA audits passed the fixed 1×10⁻⁹ Å² ΔSASA and 5×10⁻¹⁰ Å² half-ΔSASA bounds; the maximum observed differences were 1.03×10⁻¹⁰ Å² and 5.14×10⁻¹¹ Å², respectively. All five native-self controls, five far-translation controls, and ten independent CLI cross-checks passed, and pose accounting, CAPRI counts, primary target-macro aggregates, sensitivity analyses, and bootstrap intervals matched exactly.
+Current status: **executed post-label regression only**. The clean-tree run completed on 2026-08-27 and retained legacy source identifier `278ae1a74da133778fba5b17bc296a8e37f02e76`; that commit resolves as an ancestor in the Sites source history used for this product, but it is absent from the current public GitHub repository and cannot be resolved there. All 360 generated coordinate records, normalized non-SASA audits, DockQ records, and CAPRI classes matched the still-verifiable digest-bound artifacts exactly. All 360 SASA audits passed the fixed 1×10⁻⁹ Å² ΔSASA and 5×10⁻¹⁰ Å² half-ΔSASA bounds; the maximum observed differences were 1.03×10⁻¹⁰ Å² and 5.14×10⁻¹¹ Å², respectively. All five native-self controls, five far-translation controls, and ten independent CLI cross-checks passed, and pose accounting, CAPRI counts, primary target-macro aggregates, sensitivity analyses, and bootstrap intervals matched exactly.
 
 The first replay attempt used full bit-exact audit equality and halted on its first pose at a 4.55×10⁻¹³ Å² ΔSASA difference. Before scanning the remaining pose comparisons, the contract was revised to isolate only ΔSASA and half-ΔSASA behind the fixed bounds above; no DockQ label or performance aggregate was used to choose those bounds. The completed ledger contains 131 positive, 208 negative, and 21 zero ΔSASA drifts, and all 360 observed half-ΔSASA values equal observed ΔSASA/2 exactly, consistent with floating summation-order noise rather than a directional change.
 
-The replay started from a clean, committed v0.5 tree. Its attestation records the source commit, `workingTreeDirtyAtStart: false`, exact computational implementation-file digests, frozen baseline artifact digests, the DockQ distribution digest, and the Python environment lock. Presentation components and the release-status metadata record are deliberately outside the computational digest so they can report the observed result without changing the audited algorithms. Generated outputs are checksummed in `validation/dockq-v0.5-regression-replay-v1/`.
+The replay started from a clean, committed v0.5 tree. Its attestation records the legacy source identifier, `workingTreeDirtyAtStart: false`, exact computational implementation-file digests, frozen baseline artifact digests, the DockQ distribution digest, and the Python environment lock. Presentation components and the release-status metadata record are deliberately outside the computational digest so they can report the observed result without changing the audited algorithms. Generated outputs are checksummed in `validation/dockq-v0.5-regression-replay-v1/`.
 
 This is a **post-label regression replay**. The v0.4 labels and aggregate results had already been observed before v0.5 was implemented. The passed exact and tolerance-bounded checks are evidence against an unintended software regression on those examples; they contribute no new estimate of ranking performance and are not an independent validation set.
 
-No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. `HARD_DECOY_PROTOCOL.md` specifies a future experiment only.
+No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. The current `HARD_DECOY_PROTOCOL_V2.md` is blocked before target freeze; `HARD_DECOY_PROTOCOL.md` is immutable historical v1 material.
 
-### Independent hard-decoy v2 target census
+### Separate internal hard-decoy v2 target census
 
 On 2026-08-28, a metadata-only census tested whether the stricter
 `HARD_DECOY_PROTOCOL_V2.md` could be instantiated without weakening its
@@ -222,8 +234,8 @@ documented screen is insufficient to freeze the requested study; it does not
 establish global public-data infeasibility or provide evidence for or against
 ConfoVHH ranking performance.
 
-A subsequent metadata-only audit froze four exact RCSB full-text queries and a
-GPCRdb inventory intersection. It independently reproduced 2,065 unique RCSB
+A subsequent separate internal metadata-only audit froze four exact RCSB full-text queries and a
+GPCRdb inventory intersection. It reproduced 2,065 unique RCSB
 records, 1,716 GPCRdb structure rows, and a 287-entry intersection. A metadata
 review reported no credible eighth provisional candidate under the current
 screening heuristics, but its 287 entry-level dispositions were not frozen, so
@@ -232,7 +244,7 @@ record and does not update the formal census. This is not a global upper bound.
 The query shapes, counts, hashes, correction ledger, and limitations are recorded in
 `validation/hard-decoy-holdout-v2/METADATA_SEARCH_AUDIT_2026-08-28.md`.
 
-An independent protocol audit also found that exact native-contact epitope
+The separate internal protocol audit also found that exact native-contact epitope
 disjointness and a categorical ban on native-coordinate readers cannot both be
 certified as currently written. The two defensible designs and the remaining
 family, lineage, mapping, graph, and provenance decisions are recorded in

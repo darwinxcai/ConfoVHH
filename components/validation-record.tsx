@@ -28,7 +28,7 @@ export function ValidationRecord() {
     <details className="panel release-validation" aria-label="ConfoVHH release validation record">
       <summary className="release-validation-summary">
         <span><FlaskConical /> Validation and scientific limits</span>
-        <Badge variant="secondary">attested engine v{record.softwareVersion}</Badge>
+        <Badge variant="secondary">digest-attested engine v{record.softwareVersion}</Badge>
       </summary>
       <div className="release-validation-body">
       <div className="panel-heading compact release-validation-heading">
@@ -100,12 +100,12 @@ export function ValidationRecord() {
         <PublicStatusIcon />
         <AlertTitle>
           {publicAttested
-            ? "Current-release public regressions are commit-attested"
+            ? "Historical public regressions are digest-attested"
             : "Clean-tree v0.5 public attestation pending"}
         </AlertTitle>
         <AlertDescription>
           {publicAttested
-            ? `The public parser, assembly, native-interface, and obvious-translation regression counts were reproduced from source commit ${record.publicV05RegressionAttestation.sourceCommit.slice(0, 12)} with raw-source and executed-dependency hashes. They remain coordinate regression evidence, not biological validation.`
+            ? `The public parser, assembly, native-interface, and obvious-translation regression records retain legacy source identifier ${record.publicV05RegressionAttestation.sourceCommit.slice(0, 12)}. That commit resolves as an ancestor in the Sites source history used for this product, but it is absent from the current public GitHub repository and cannot be resolved there. The recorded implementation, raw-source, executed-dependency, and artifact digests remain verifiable. They are coordinate regression evidence, not biological validation.`
             : "The displayed public-panel counts are frozen expectations and prior observations until the clean-tree attestation artifact is executed and committed."}
         </AlertDescription>
       </Alert>
@@ -153,14 +153,14 @@ export function ValidationRecord() {
         </AlertTitle>
         <AlertDescription>
           {replayExecuted
-            ? `From source commit ${record.dockqV05RegressionReplay.sourceCommit.slice(0, 12)}, all ${record.dockqV05RegressionReplay.poses} coordinates, non-SASA audits, DockQ records, and CAPRI labels passed; all ${record.dockqV05RegressionReplay.controlsAndCrossChecks} controls/cross-checks passed. Maximum ΔSASA drift was ${record.dockqV05RegressionReplay.maximumDeltaSasaAbsoluteDifferenceAngstrom2.toExponential(2)} Å² against a ${record.dockqV05RegressionReplay.deltaSasaToleranceAngstrom2.toExponential(0)} Å² bound. These labels were already observed, so this detects software regression but adds no independent performance evidence. The public context inventory still contains ${record.stateContextNativeRegression.sameVhhCrossContextPairs} same-VHH cross-context pairs, so state selectivity remains unvalidated.`
+            ? `The replay retains legacy source identifier ${record.dockqV05RegressionReplay.sourceCommit.slice(0, 12)}, which resolves as an ancestor in the Sites source history used for this product but is absent from the current public GitHub repository and cannot be resolved there. All ${record.dockqV05RegressionReplay.poses} coordinates, non-SASA audits, DockQ records, and CAPRI labels passed against the digest-bound artifacts; all ${record.dockqV05RegressionReplay.controlsAndCrossChecks} controls/cross-checks passed. Maximum ΔSASA drift was ${record.dockqV05RegressionReplay.maximumDeltaSasaAbsoluteDifferenceAngstrom2.toExponential(2)} Å² against a ${record.dockqV05RegressionReplay.deltaSasaToleranceAngstrom2.toExponential(0)} Å² bound. These labels were already observed, so this detects software regression but adds no independent performance evidence. The public context inventory still contains ${record.stateContextNativeRegression.sameVhhCrossContextPairs} same-VHH cross-context pairs, so state selectivity remains unvalidated.`
             : "The clean-tree replay has not been executed. No replay result is claimed. The public context inventory contains no same-VHH cross-context pairs, so state selectivity remains unvalidated."}
         </AlertDescription>
       </Alert>
 
       <Alert className="release-boundary-alert" role="note">
         <AlertTriangle />
-        <AlertTitle>No holdout dataset exists for this release</AlertTitle>
+        <AlertTitle>Hard-decoy holdout remains blocked and unexecuted</AlertTitle>
         <AlertDescription>{record.holdoutStatus.statement}</AlertDescription>
       </Alert>
       </div>

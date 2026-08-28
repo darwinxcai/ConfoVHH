@@ -1,5 +1,5 @@
 export const RELEASE_VALIDATION = {
-  schemaVersion: "1.1.0",
+  schemaVersion: "1.2.0",
   softwareVersion: "0.5.0",
   runtime: {
     minimumNodeVersion: "22.18.0",
@@ -112,7 +112,12 @@ export const RELEASE_VALIDATION = {
     frozen: false,
     opened: false,
     evaluated: false,
-    statement: "No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated.",
+    provisionalGroups: 7,
+    formallyClearedGroups: 0,
+    minimumRequiredGroups: 10,
+    candidateDiscoveryComplete: false,
+    epitopeBlindingDesignResolved: false,
+    statement: "The hard-decoy v2 screen is blocked before target freeze: seven groups are provisional, zero are formally cleared, and at least ten are required. Candidate discovery is incomplete and the epitope-blinding design remains unresolved. No holdout has been assembled, labeled, frozen, opened, or evaluated.",
   },
   claimFlags: {
     bindingValidated: false,

@@ -2142,6 +2142,9 @@ await suite("prediction-run dossier provenance and CSV privacy survive hostile m
   ok(!/"text"\s*:|"matrix"\s*:/u.test(serializedDossier), "canonical prediction-run dossier leaked raw source data");
   equal(dossier.privacy.rawCoordinateTextIncluded, false, "dossier privacy flag drifted");
   equal(dossier.privacy.paeMatricesIncluded, false, "dossier PAE privacy flag drifted");
+  equal(dossier.privacy.selectedProteinSequencesIncluded, true, "dossier sequence disclosure drifted");
+  equal(dossier.privacy.residueContactTablesIncluded, true, "dossier contact-table disclosure drifted");
+  equal(dossier.privacy.researcherDecisionsIncluded, false, "dossier decision disclosure drifted");
 
   for (let trial = 0; trial < 25_000; trial += 1) {
     const category = trial % 5;
@@ -2179,10 +2182,19 @@ await suite("prediction-run dossier provenance and CSV privacy survive hostile m
     );
   }
 
-  const formulaPrefixes = ["=", "+", "-", "@", "\t", "\r"];
+  const formulaPrefixes = ["=", "+", "-", "@", "\t", "\r", " \u200b=", "\u00a0+"];
   const basePose = result.poseAudits[0];
   for (let trial = 0; trial < 75_000; trial += 1) {
     const payload = `${formulaPrefixes[trial % formulaPrefixes.length]}FORMULA(${trial}),\"quoted\"`;
+    const normalizedPayload = payload.replace(/[\p{Cc}\p{Cf}\p{Zl}\p{Zp}]/gu, (character) => {
+      if (character === "\n") return "\\n";
+      if (character === "\r") return "\\r";
+      if (character === "\t") return "\\t";
+      if (/\p{Cf}/u.test(character)) return "";
+      return "\\u" + character.charCodeAt(0).toString(16).padStart(4, "0");
+    });
+    const formulaLike = /^[\p{White_Space}\p{Cc}\p{Cf}\p{Zl}\p{Zp}]*[=+\-@]/u.test(payload);
+    const expectedPayload = (formulaLike ? "'" : "") + normalizedPayload;
     const hostileResult = {
       ...result,
       coordinateEnsemble: null,
@@ -2195,7 +2207,7 @@ await suite("prediction-run dossier provenance and CSV privacy survive hostile m
     const csv = predictionRunPoseSummaryCsv(hostileResult);
     const rows = parseCsv(csv);
     ok(
-      rows.length === 2 && rows[1][0] === `'${payload}` && rows[1][1] === `'${payload}`,
+      rows.length === 2 && rows[1][0] === expectedPayload && rows[1][1] === expectedPayload,
       `trial ${trial}: CSV formula or separator payload was not neutralized exactly`,
     );
   }
@@ -2213,7 +2225,7 @@ const summary = {
 };
 
 console.log(JSON.stringify({
-  tool: "ConfoVHH v0.7 adversarial validation",
+  tool: "ConfoVHH product v0.9 adversarial validation",
   schemaVersion: "1.0.0",
   seed: `0x${INITIAL_SEED.toString(16)}`,
   node: process.version,

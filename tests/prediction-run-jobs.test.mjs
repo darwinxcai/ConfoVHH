@@ -326,6 +326,9 @@ test("creates a no-raw-source dossier bound to the resolved manifest and pose re
   const serialized = JSON.stringify(dossier);
   assert.equal(dossier.privacy.rawCoordinateTextIncluded, false);
   assert.equal(dossier.privacy.paeMatricesIncluded, false);
+  assert.equal(dossier.privacy.selectedProteinSequencesIncluded, true);
+  assert.equal(dossier.privacy.residueContactTablesIncluded, true);
+  assert.equal(dossier.privacy.researcherDecisionsIncluded, false);
   assert.doesNotMatch(serialized, /"text"\s*:/);
   assert.doesNotMatch(serialized, /ATOM\s+1/);
   assert.doesNotMatch(serialized, /"matrix"\s*:/);
@@ -361,13 +364,13 @@ test("creates a no-raw-source dossier bound to the resolved manifest and pose re
   }
 });
 
-test("CSV neutralizes formula-like source text and preserves directional field names", () => {
+test("CSV neutralizes formula-like source text after leading whitespace and preserves directional field names", () => {
   const coord = source("coord-csv", "run/pose.pdb", coordinate());
-  const result = executePredictionRunAuditJob(job([pose("=HYPERLINK", coord)]));
+  const result = executePredictionRunAuditJob(job([pose("  =HYPERLINK", coord)]));
   const csv = predictionRunPoseSummaryCsv(result);
   assert.match(csv, /receptor_aligned_vhh_evaluated_median_angstrom/);
   assert.match(csv, /vhh_aligned_receptor_evaluated_median_angstrom/);
-  assert.match(csv, /"'=HYPERLINK"/);
+  assert.match(csv, /"'  =HYPERLINK"/);
 });
 
 test("rejects duplicate selected coordinate digests before recurrence", () => {

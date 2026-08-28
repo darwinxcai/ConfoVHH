@@ -159,6 +159,28 @@ summary:focus-visible,
   padding: 0 28px 28px;
 }
 
+.product-intro {
+  margin: 0 0 18px;
+  padding: 2px 0 4px;
+}
+
+.product-intro h1 {
+  max-width: 760px;
+  margin: 4px 0 6px;
+  color: #f2faf7;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  font-weight: 690;
+  letter-spacing: -0.035em;
+}
+
+.product-intro > p:last-child {
+  max-width: 850px;
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
 .topbar {
   position: sticky;
   z-index: 20;
@@ -1735,7 +1757,7 @@ summary {
   place-items: center;
   border: 1px solid #30443c;
   border-radius: 9px;
-  color: #60756d;
+  color: #71877e;
   font-family: var(--font-mono);
   font-size: 0.68rem;
 }
@@ -1924,7 +1946,7 @@ summary {
 
 .workflow-navigator ol {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 5px;
   margin: 0;
   padding: 0;
@@ -2216,6 +2238,9 @@ summary {
 .notebook-retain-for-comparison { background: var(--teal); }
 .notebook-review-before-comparison { background: var(--amber); }
 .notebook-deprioritize-coordinate-pose { background: var(--rose); }
+.notebook-coordinate-geometry-coherent { background: var(--teal); }
+.notebook-coordinate-geometry-mixed { background: var(--amber); }
+.notebook-coordinate-geometry-limited { background: var(--rose); }
 
 .notebook-empty {
   gap: 12px;
@@ -2337,6 +2362,17 @@ summary {
 .decision-retain-for-comparison { border-color: rgb(114 214 196 / 37%); }
 .decision-review-before-comparison { border-color: rgb(224 189 114 / 38%); }
 .decision-deprioritize-coordinate-pose { border-color: rgb(223 139 144 / 38%); }
+.decision-coordinate-geometry-coherent { border-color: rgb(114 214 196 / 37%); }
+.decision-coordinate-geometry-mixed { border-color: rgb(224 189 114 / 38%); }
+.decision-coordinate-geometry-limited { border-color: rgb(223 139 144 / 38%); }
+
+.export-privacy-note,
+.run-export-disclosure {
+  margin: 12px 0 0;
+  color: var(--muted-foreground);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
 
 .decision-head {
   display: grid;
@@ -2968,7 +3004,7 @@ footer a:hover {
 }
 
 .run-file-meta div { padding: 8px; border: 1px solid #263832; border-radius: 7px; }
-.run-file-meta dt { color: #697d76; font-size: 0.625rem; }
+.run-file-meta dt { color: #71877e; font-size: 0.75rem; }
 .run-file-meta dd { margin: 3px 0 0; overflow-wrap: anywhere; color: #aebfb9; font-size: 0.625rem; }
 
 .run-pae-select { display: grid; grid-template-columns: 92px minmax(0, 1fr); align-items: center; gap: 8px; margin-top: 11px; }
@@ -3161,6 +3197,10 @@ footer a:hover {
 
   .workflow-intro {
     display: none;
+  }
+
+  .workflow-navigator ol {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .workflow-navigator a,
@@ -3382,7 +3422,12 @@ footer a:hover {
   }
 
   .workflow-navigator ol {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .topbar .dossier-import,
+  .topbar-actions > button:disabled {
+    display: none;
   }
 
   .workflow-coverage,
@@ -3425,17 +3470,51 @@ footer a:hover {
   align-items: end;
   margin: 1rem 0;
   padding: 1rem;
-  border: 1px solid var(--line);
-  background: color-mix(in srgb, var(--panel) 92%, var(--accent));
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--surface) 92%, var(--accent));
 }
 
 .candidate-review-toolbar label { display: grid; gap: 0.35rem; }
 .candidate-review-toolbar label > span { display: flex; gap: 0.35rem; align-items: center; font-size: 0.78rem; font-weight: 700; }
 .candidate-review-toolbar svg { width: 0.9rem; height: 0.9rem; }
-.candidate-review-toolbar p { margin: 0 0 0.55rem; color: var(--muted); font-size: 0.82rem; }
+.candidate-review-toolbar p { margin: 0 0 0.55rem; color: var(--muted-foreground); font-size: 0.82rem; }
 .candidate-decision-cell { min-width: 15rem; }
 .candidate-decision-cell > * + * { margin-top: 0.45rem; }
 
 @media (max-width: 850px) {
   .candidate-review-toolbar { grid-template-columns: 1fr; }
+}
+
+/* Product-facing evidence and provenance text must remain readable at normal zoom. */
+.workflow-intro small,
+.workflow-navigator small,
+.entry-workflow-grid article > span,
+.entry-workflow-grid p,
+.entry-workflow-grid a,
+.entry-workflow-grid button,
+.product-release-note,
+.replace-note,
+.workflow-coverage strong,
+.workflow-coverage small,
+.footprint-summary-grid span,
+.footprint-summary-grid small,
+.pae-summary-grid span,
+.pae-summary-grid small,
+.pae-axis,
+.pae-legend,
+.imported-dossier-grid span,
+.ensemble-component-grid dl div,
+.rejection-ledger small,
+.run-workflow-steps small,
+.run-format-help code,
+.run-summary span,
+.run-file-meta dd,
+.run-pae-detail,
+.run-pose-warning,
+.run-file-ledger td,
+.run-file-ledger code,
+.run-results td small,
+.topology-result dt {
+  font-size: 0.75rem;
 }
