@@ -102,7 +102,7 @@ test("local coordinate audit runs in the browser and exports a bound report", as
   await expectNoSeriousAxeViolations(page);
 
   const downloadPromise = page.waitForEvent("download");
-  await page.getByRole("button", { name: /Single-pose audit JSON/i }).click();
+  await page.getByRole("button", { name: "Download the single-pose audit as JSON" }).click();
   const download = await downloadPromise;
   expect(download.suggestedFilename()).toMatch(/confovhh-product-0\.9\.0_single-pose-audit\.json$/);
   const stream = await download.createReadStream();
