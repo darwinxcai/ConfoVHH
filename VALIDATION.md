@@ -222,6 +222,23 @@ documented screen is insufficient to freeze the requested study; it does not
 establish global public-data infeasibility or provide evidence for or against
 ConfoVHH ranking performance.
 
+A subsequent metadata-only audit froze four exact RCSB full-text queries and a
+GPCRdb inventory intersection. It independently reproduced 2,065 unique RCSB
+records, 1,716 GPCRdb structure rows, and a 287-entry intersection. A metadata
+review reported no credible eighth provisional candidate under the current
+screening heuristics, but its 287 entry-level dispositions were not frozen, so
+that curation conclusion is not independently reconstructible from the audit
+record and does not update the formal census. This is not a global upper bound.
+The query shapes, counts, hashes, correction ledger, and limitations are recorded in
+`validation/hard-decoy-holdout-v2/METADATA_SEARCH_AUDIT_2026-08-28.md`.
+
+An independent protocol audit also found that exact native-contact epitope
+disjointness and a categorical ban on native-coordinate readers cannot both be
+certified as currently written. The two defensible designs and the remaining
+family, lineage, mapping, graph, and provenance decisions are recorded in
+`validation/hard-decoy-holdout-v2/PROTOCOL_FEASIBILITY_DECISION.md`. No state
+transition or execution is authorized by either audit.
+
 All release claim flags remain false:
 
 ```json
