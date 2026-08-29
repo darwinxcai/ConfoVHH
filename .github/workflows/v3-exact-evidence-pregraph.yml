@@ -1,0 +1,78 @@
+name: Hard-decoy v3 exact metadata evidence pregraph
+
+on:
+  push:
+    branches:
+      - "work/hard-decoy-v3-exact-evidence-*"
+    paths:
+      - ".github/workflows/v3-exact-evidence-pregraph.yml"
+      - "scripts/hard-decoy/v3-exact-evidence-pregraph.mjs"
+      - "scripts/hard-decoy/v3-development-metadata.mjs"
+      - "scripts/hard-decoy/v3-disposition-seed.mjs"
+      - "tests/hard-decoy-v3-exact-evidence-pregraph*.test.mjs"
+      - "validation/hard-decoy-holdout-v3/exact-evidence-contract-2026-08-29.json"
+      - "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/**"
+      - "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/**"
+      - "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hard-decoy-v3-exact-evidence-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate-verify-and-record:
+    name: Build and verify exact metadata evidence pregraph
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+      - name: Verify authoritative v3 integration boundary
+        run: node scripts/hard-decoy-v3/verify-integration-state.mjs
+      - name: Verify merged 287-row disposition seed
+        run: node scripts/hard-decoy/v3-disposition-seed.mjs verify validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29
+      - name: Verify complete 17-node development metadata registry
+        run: node scripts/hard-decoy/v3-development-metadata.mjs verify validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29
+      - name: Run exact-evidence pregraph integrity tests
+        run: node --test tests/hard-decoy-v3-exact-evidence-pregraph*.test.mjs
+      - name: Generate exact-evidence pregraph snapshot
+        run: node scripts/hard-decoy/v3-exact-evidence-pregraph.mjs generate validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29
+      - name: Independently replay exact-evidence pregraph snapshot
+        run: node scripts/hard-decoy/v3-exact-evidence-pregraph.mjs verify validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29
+      - name: Upload inspectable exact-evidence pregraph
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: hard-decoy-v3-exact-evidence-pregraph
+          path: validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29
+          if-no-files-found: error
+          retention-days: 14
+      - name: Commit verified pregraph when changed
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          output="validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29"
+          if [[ -z "$(git status --porcelain --untracked-files=all -- "$output")" ]]; then
+            echo "Verified exact-evidence pregraph is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$output"
+          if git diff --cached --quiet -- "$output"; then
+            echo "No exact-evidence pregraph content was staged."
+            exit 1
+          fi
+          git commit -m "Record exact v3 metadata evidence pregraph"
+          git push origin "HEAD:${TARGET_BRANCH}"
