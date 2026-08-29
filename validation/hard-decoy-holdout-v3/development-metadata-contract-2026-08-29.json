@@ -79,6 +79,14 @@
     "expectedInventoryCount": 1716,
     "pdbCodeField": "pdb_code"
   },
+  "sourceLicenses": {
+    "path": "validation/hard-decoy-holdout-v3/source-licenses-2026-08-29.json",
+    "sha256": "35474077e829f0246c05537074cac226f4cb777dc3abec73cc8753263ed1e614",
+    "requiredMappings": {
+      "gpcrdb-structure-api-and-table-data": "CC-BY-4.0",
+      "rcsb-pdb-search-and-data-apis": "CC0-1.0"
+    }
+  },
   "metadataSelection": {
     "receptorEntity": "use-only-when-the-frozen-GPCRdb-preferred-auth-chain-maps-to-exactly-one-polymer-entity",
     "receptorUniProt": "retain-the-complete-bytewise-sorted-set-of-UniProt-reference-accessions-on-the-selected-receptor-entity",
