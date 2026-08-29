@@ -1,0 +1,69 @@
+name: Hard-decoy v3 disposition snapshot
+
+on:
+  push:
+    branches:
+      - "work/hard-decoy-v3-disposition-seed-*"
+    paths:
+      - ".github/workflows/v3-disposition-seed-snapshot.yml"
+      - "scripts/hard-decoy/v3-disposition-seed.mjs"
+      - "tests/hard-decoy-v3-disposition-seed.test.mjs"
+      - "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json"
+      - "validation/hard-decoy-holdout-v3/disposition-seed-contract-2026-08-29.json"
+      - "validation/hard-decoy-holdout-v3/prelabel-census-draft/disposition-contract.json"
+      - "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/**"
+      - "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hard-decoy-v3-disposition-snapshot-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate-verify-and-record:
+    name: Generate, verify, and record metadata-only seed
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+      - name: Verify existing v3 pre-label contracts
+        run: node scripts/hard-decoy/verify-v3-census-contracts.mjs
+      - name: Run conservative disposition-seed tests
+        run: node --test tests/hard-decoy-v3-disposition-seed.test.mjs
+      - name: Generate committed snapshot candidate
+        run: node scripts/hard-decoy/v3-disposition-seed.mjs generate validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29
+      - name: Verify committed snapshot candidate
+        run: node scripts/hard-decoy/v3-disposition-seed.mjs verify validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29
+      - name: Upload independently inspectable snapshot
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: hard-decoy-v3-disposition-seed
+          path: validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29
+          if-no-files-found: error
+          retention-days: 14
+      - name: Commit verified snapshot when changed
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          output="validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29"
+          if git diff --quiet -- "$output" && git diff --cached --quiet -- "$output"; then
+            echo "Verified disposition snapshot is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$output"
+          git commit -m "Record deterministic v3 disposition seed"
+          git push origin "HEAD:${TARGET_BRANCH}"
