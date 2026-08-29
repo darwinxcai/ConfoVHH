@@ -1,0 +1,152 @@
+ce === 2, "CDR3 threshold drifted.");
+  ok(contract.edgeCriterion.absenceOfThresholdMatchIsNotFormalNoEdgeEvidence && contract.edgeCriterion.possibleEdgeIsNotFormalLeakageAuthorityUntilRoleAdjudication, "VHH pair authority boundary drifted.");
+  ok(contract.integrity.formalLeakageGraphComplete === false && contract.integrity.formallyClearedGroupCount === 0 && contract.integrity.targetFreezePermitted === false && contract.integrity.executionAuthorized === false, "VHH sequence contract authority drifted.");
+
+  const exactSnapshotDirectory = path.join(root, contract.nodeUniverse.snapshotDirectory);
+  await verifyExactEvidencePregraph({ repositoryRoot: root, snapshotDirectory: exactSnapshotDirectory });
+
+  const protocolFile = await readDirect(root, contract.selectedProtocol.path, "selected v3 protocol", 4 * 1024 * 1024);
+  const exactChecksumsFile = await readDirect(root, `${contract.nodeUniverse.snapshotDirectory}/checksums.sha256`, "exact pregraph checksums", 128 * 1024);
+  const candidateNodesFile = await readDirect(root, `${contract.nodeUniverse.snapshotDirectory}/${contract.nodeUniverse.candidateNodeFile}`, "candidate nodes");
+  const developmentNodesFile = await readDirect(root, `${contract.nodeUniverse.snapshotDirectory}/${contract.nodeUniverse.developmentNodeFile}`, "development nodes");
+  const candidateEntriesFile = await readDirect(root, contract.sequenceInputs.candidateEntryMetadataPath, "candidate entry metadata");
+  const developmentEntitiesFile = await readDirect(root, contract.sequenceInputs.developmentEntityPath, "development entity metadata");
+  const candidateCandidateEvidenceFile = await readDirect(root, `${contract.nodeUniverse.snapshotDirectory}/${contract.exactEvidenceReconciliation.candidateCandidateFile}`, "candidate-candidate exact evidence");
+  const candidateDevelopmentEvidenceFile = await readDirect(root, `${contract.nodeUniverse.snapshotDirectory}/${contract.exactEvidenceReconciliation.candidateDevelopmentFile}`, "candidate-development exact evidence");
+  const developmentDevelopmentEvidenceFile = await readDirect(root, `${contract.nodeUniverse.snapshotDirectory}/${contract.exactEvidenceReconciliation.developmentDevelopmentFile}`, "development-development exact evidence");
+  for (const [observed, expected, label] of [
+    [protocolFile.sha256, contract.selectedProtocol.sha256, "selected protocol"],
+    [exactChecksumsFile.sha256, contract.nodeUniverse.checksumsSha256, "exact pregraph checksums"],
+    [candidateNodesFile.sha256, contract.nodeUniverse.candidateNodeSha256, "candidate node ledger"],
+    [developmentNodesFile.sha256, contract.nodeUniverse.developmentNodeSha256, "development node ledger"],
+    [candidateEntriesFile.sha256, contract.sequenceInputs.candidateEntryMetadataSha256, "candidate entry metadata"],
+    [developmentEntitiesFile.sha256, contract.sequenceInputs.developmentEntitySha256, "development entity metadata"],
+    [candidateCandidateEvidenceFile.sha256, contract.exactEvidenceReconciliation.candidateCandidateSha256, "candidate-candidate evidence"],
+    [candidateDevelopmentEvidenceFile.sha256, contract.exactEvidenceReconciliation.candidateDevelopmentSha256, "candidate-development evidence"],
+    [developmentDevelopmentEvidenceFile.sha256, contract.exactEvidenceReconciliation.developmentDevelopmentSha256, "development-development evidence"],
+  ]) ok(observed === expected, `${label} digest drifted.`);
+
+  const candidateNodes = parseJsonl(candidateNodesFile.text, "candidate nodes").sort((left, right) => byteCompare(left.nodeId, right.nodeId));
+  const developmentNodes = parseJsonl(developmentNodesFile.text, "development nodes").sort((left, right) => byteCompare(left.nodeId, right.nodeId));
+  const candidateEntries = parseJsonl(candidateEntriesFile.text, "candidate entry metadata");
+  const developmentEntities = parseJsonl(developmentEntitiesFile.text, "development entity metadata");
+  const evidenceRows = [
+    ...parseJsonl(candidateCandidateEvidenceFile.text, "candidate-candidate exact evidence"),
+    ...parseJsonl(candidateDevelopmentEvidenceFile.text, "candidate-development exact evidence"),
+    ...parseJsonl(developmentDevelopmentEvidenceFile.text, "development-development exact evidence"),
+  ];
+  ok(candidateNodes.length === contract.nodeUniverse.candidateNodeCount && developmentNodes.length === contract.nodeUniverse.developmentNodeCount, "VHH node-universe counts drifted.");
+  ok(candidateNodes.length + developmentNodes.length === contract.nodeUniverse.totalNodeCount, "VHH total node count drifted.");
+  const allNodes = [...candidateNodes, ...developmentNodes].sort((left, right) => byteCompare(left.nodeId, right.nodeId));
+  ok(new Set(allNodes.map((node) => node.nodeId)).size === allNodes.length, "VHH node IDs are duplicated.");
+  for (const node of allNodes) {
+    ok(NODE_ID.test(node.nodeId) && PDB_ID.test(node.pdbId) && node.nodeId.endsWith(node.pdbId), `Invalid VHH node identity: ${node.nodeId}`);
+    ok(Array.isArray(node.vhhMetadataCandidates), `${node.nodeId} lacks a frozen VHH metadata-candidate array.`);
+    ok(node.directReceptorVhhEvidence === "UNRESOLVED", `${node.nodeId} improperly resolves direct VHH identity.`);
+  }
+
+  const candidateEntryMap = mapUnique(candidateEntries, "pdbId", "candidate entry metadata", PDB_ID);
+  const developmentEntityMap = new Map();
+  for (const entity of developmentEntities) {
+    ok(PDB_ID.test(entity.pdbId) && typeof entity.entityId === "string", "Development entity identity is invalid.");
+    const key = `${entity.pdbId}|${entity.entityId}`;
+    ok(!developmentEntityMap.has(key), `Duplicate development entity: ${key}`);
+    developmentEntityMap.set(key, entity);
+  }
+
+  const candidateProfiles = [];
+  for (const node of candidateNodes) {
+    const entry = candidateEntryMap.get(node.pdbId);
+    ok(entry, `Candidate node is absent from entry metadata: ${node.pdbId}`);
+    const entityMap = new Map((entry.polymerEntities ?? []).map((entity) => [entity.entityId, entity]));
+    for (const metadataCandidate of node.vhhMetadataCandidates) {
+      candidateProfiles.push(buildProfile(node, metadataCandidate, entityMap.get(metadataCandidate.entityId), contract));
+    }
+  }
+  const developmentProfiles = [];
+  for (const node of developmentNodes) {
+    for (const metadataCandidate of node.vhhMetadataCandidates) {
+      developmentProfiles.push(buildProfile(node, metadataCandidate, developmentEntityMap.get(`${node.pdbId}|${metadataCandidate.entityId}`), contract));
+    }
+  }
+  candidateProfiles.sort(profileSort);
+  developmentProfiles.sort(profileSort);
+  [...candidateProfiles, ...developmentProfiles].forEach((profile) => validateProfile(profile, contract));
+  ok(new Set([...candidateProfiles, ...developmentProfiles].map((profile) => profile.profileId)).size === candidateProfiles.length + developmentProfiles.length, "VHH profile IDs are duplicated.");
+
+  const exactEvidencePairs = exactVhhEvidencePairSet(evidenceRows, contract.exactEvidenceReconciliation.evidenceTypes);
+  ok(exactEvidencePairs.size === contract.exactEvidenceReconciliation.expectedExactOrRoleAmbiguousVhhSequencePairCount, "Exact VHH-sequence evidence pair count drifted.");
+
+  return {
+    root,
+    contract,
+    candidateNodes,
+    developmentNodes,
+    allNodes,
+    candidateProfiles,
+    developmentProfiles,
+    exactEvidencePairs,
+    inputDigests: {
+      contract: contractFile.sha256,
+      selectedProtocol: protocolFile.sha256,
+      exactPregraphChecksums: exactChecksumsFile.sha256,
+      candidateNodeLedger: candidateNodesFile.sha256,
+      developmentNodeLedger: developmentNodesFile.sha256,
+      candidateEntryMetadata: candidateEntriesFile.sha256,
+      developmentEntityMetadata: developmentEntitiesFile.sha256,
+      candidateCandidateEvidence: candidateCandidateEvidenceFile.sha256,
+      candidateDevelopmentEvidence: candidateDevelopmentEvidenceFile.sha256,
+      developmentDevelopmentEvidence: developmentDevelopmentEvidenceFile.sha256,
+      generatorScript: sha256(await readFile(HERE)),
+    },
+  };
+}
+
+function buildMatrix(inputs) {
+  const profilesByNode = new Map(inputs.allNodes.map((node) => [node.nodeId, []]));
+  for (const profile of [...inputs.candidateProfiles, ...inputs.developmentProfiles]) profilesByNode.get(profile.nodeId).push(profile);
+  for (const profiles of profilesByNode.values()) profiles.sort(profileSort);
+  const caches = { framework: new Map(), cdr3: new Map() };
+  const candidateCandidate = enumerateSame(inputs.candidateNodes, profilesByNode, caches, inputs.contract, "CANDIDATE_CANDIDATE");
+  const candidateDevelopment = enumerateCross(inputs.candidateNodes, inputs.developmentNodes, profilesByNode, caches, inputs.contract);
+  const developmentDevelopment = enumerateSame(inputs.developmentNodes, profilesByNode, caches, inputs.contract, "DEVELOPMENT_DEVELOPMENT");
+  ok(candidateCandidate.rows.length === inputs.contract.pairSpace.candidateCandidatePairs, "Candidate-candidate VHH pair count drifted.");
+  ok(candidateDevelopment.rows.length === inputs.contract.pairSpace.candidateDevelopmentPairs, "Candidate-development VHH pair count drifted.");
+  ok(developmentDevelopment.rows.length === inputs.contract.pairSpace.developmentDevelopmentPairs, "Development-development VHH pair count drifted.");
+  const allRows = [...candidateCandidate.rows, ...candidateDevelopment.rows, ...developmentDevelopment.rows]
+    .sort((left, right) => byteCompare(left.pairId, right.pairId));
+  const allPairIds = byteSort([...candidateCandidate.pairIds, ...candidateDevelopment.pairIds, ...developmentDevelopment.pairIds]);
+  ok(allRows.length === inputs.contract.pairSpace.allUnorderedPairs && new Set(allPairIds).size === allPairIds.length, "Complete VHH unordered pair space drifted.");
+
+  const matrixExactPairs = new Set(allRows.filter((row) => row.exactFullSequenceMatchProfilePairCount > 0).map((row) => row.pairId));
+  ok(matrixExactPairs.size === inputs.exactEvidencePairs.size, "VHH exact-sequence matrix/evidence pair count disagrees.");
+  ok([...inputs.exactEvidencePairs].every((pairId) => matrixExactPairs.has(pairId)) && [...matrixExactPairs].every((pairId) => inputs.exactEvidencePairs.has(pairId)), "VHH exact-sequence matrix does not exactly reconcile the frozen exact-evidence pregraph.");
+
+  const pairSpaceCommitments = {
+    schemaVersion: "1.0.0",
+    serialization: "bytewise-sorted-canonical-nodeA-pipe-nodeB-with-terminal-LF",
+    candidateCandidate: pairCommitment(candidateCandidate.pairIds),
+    candidateDevelopment: pairCommitment(candidateDevelopment.pairIds),
+    developmentDevelopment: pairCommitment(developmentDevelopment.pairIds),
+    allUnorderedPairs: pairCommitment(allPairIds),
+    completeNodePairRowsStored: true,
+    absenceOfThresholdMatchIsNotNoEdgeEvidence: true,
+    formalLeakageGraphAuthority: false,
+  };
+  const expectedCommitments = inputs.contract.pairSpace.commitments;
+  if (expectedCommitments) {
+    for (const key of ["candidateCandidate", "candidateDevelopment", "developmentDevelopment", "allUnorderedPairs"]) {
+      ok(pairSpaceCommitments[key].sha256 === expectedCommitments[key], `VHH ${key} pair-space commitment drifted.`);
+    }
+  }
+
+  const components = thresholdComponents(inputs.allNodes, allRows);
+  const candidateNodesWithNoMetadataProfile = inputs.candidateNodes.filter((node) => (profilesByNode.get(node.nodeId) ?? []).length === 0).length;
+  const developmentNodesWithNoMetadataProfile = inputs.developmentNodes.filter((node) => (profilesByNode.get(node.nodeId) ?? []).length === 0).length;
+  const candidateNodesWithAllProfilesNumbered = inputs.candidateNodes.filter((node) => {
+    const profiles = profilesByNode.get(node.nodeId) ?? [];
+    return profiles.length > 0 && profiles.every((profile) => profile.numberingStatus === "NUMBERED");
+  }).length;
+  const developmentNodesWithAllProfilesNumbered = inputs.developmentNodes.filter((node) => {
+    const profiles = profilesByNode.get(node.nodeId) ?? [];
+    return profiles.length > 0 && profiles.every((profile) => profile.numberingStat

@@ -1,0 +1,54 @@
+onst file = await readDirect(snapshot, row.relative, `VHH sequence ${row.relative}`);
+    ok(file.sha256 === row.digest, `VHH sequence checksum mismatch: ${row.relative}`);
+    observed.set(row.relative, file.text);
+  }
+  const expectedPayloads = outputPayloads(inputs, buildMatrix(inputs));
+  for (const relative of payloadFiles) ok(observed.get(relative) === expectedPayloads[relative], `VHH sequence snapshot is not reproducible: ${relative}`);
+  const summary = JSON.parse(observed.get("summary.json"));
+  const manifest = JSON.parse(observed.get("manifest.json"));
+  walk(summary);
+  walk(manifest);
+  assertAuthorityBoundary(summary, "VHH sequence summary");
+  assertAuthorityBoundary(manifest, "VHH sequence manifest");
+  ok(summary.pairSpace.allUnorderedPairs === inputs.contract.pairSpace.allUnorderedPairs, "VHH sequence summary pair-space count drifted.");
+  ok(summary.exactEvidencePregraphReconciled === true && summary.exactFullSequenceEvidencePairCount === inputs.contract.exactEvidenceReconciliation.expectedExactOrRoleAmbiguousVhhSequencePairCount, "VHH exact-evidence reconciliation drifted.");
+  return {
+    status: summary.status,
+    candidateNodeCount: summary.candidateNodeCount,
+    developmentNodeCount: summary.developmentNodeCount,
+    totalNodeCount: summary.totalNodeCount,
+    totalMetadataProfileCount: summary.totalMetadataProfileCount,
+    numberedProfileCount: summary.numberedProfileCount,
+    unavailableProfileCount: summary.unavailableProfileCount,
+    allUnorderedPairCount: summary.pairSpace.allUnorderedPairs,
+    possibleMetadataSequenceEdgePairCount: summary.possibleMetadataSequenceEdgePairCounts.all,
+    candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge: summary.candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge,
+    thresholdPregraphComponentCount: summary.thresholdPregraphComponentCount,
+    exactFullSequenceEvidencePairCount: summary.exactFullSequenceEvidencePairCount,
+    formallyClearedGroupCount: 0,
+    targetFreezePermitted: false,
+    executionAuthorized: false,
+    nativeHoldoutCoordinatesAccessed: false,
+    dockqLabelsAccessed: false,
+  };
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === HERE) {
+  const command = process.argv[2];
+  const output = process.argv[3]
+    ? path.resolve(process.argv[3])
+    : path.join(ROOT, "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29");
+  try {
+    if (command === "generate") {
+      await rm(output, { recursive: true, force: true });
+      console.log(JSON.stringify(await collectVhhSequencePregraph({ outputDirectory: output }), null, 2));
+    } else if (command === "verify") {
+      console.log(JSON.stringify(await verifyVhhSequencePregraph({ snapshotDirectory: output }), null, 2));
+    } else {
+      throw new Error("Usage: node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs <generate|verify> [snapshot-directory]");
+    }
+  } catch (error) {
+    console.error(error instanceof Error ? error.message : String(error));
+    process.exitCode = 1;
+  }
+}

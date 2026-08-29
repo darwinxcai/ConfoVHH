@@ -1,0 +1,251 @@
+ndidateState, candidateScore] of candidates) {
+    if (candidateScore > best) {
+      best = candidateScore;
+      state = candidateState;
+    }
+  }
+  return [best, state];
+}
+
+export function alignGlobalAffine(leftSequence, rightSequence, options = {}) {
+  ok(typeof leftSequence === "string" && CANONICAL_AA.test(leftSequence), "The left alignment sequence must use the canonical amino-acid alphabet.");
+  ok(typeof rightSequence === "string" && CANONICAL_AA.test(rightSequence), "The right alignment sequence must use the canonical amino-acid alphabet.");
+  const gapOpen = options.gapOpen ?? -10;
+  const gapExtension = options.gapExtension ?? -1;
+  ok(Number.isSafeInteger(gapOpen) && gapOpen < 0 && Number.isSafeInteger(gapExtension) && gapExtension <= 0, "Gap penalties must be frozen nonpositive safe integers.");
+
+  const [sequenceA, sequenceB] = byteCompare(leftSequence, rightSequence) <= 0
+    ? [leftSequence, rightSequence]
+    : [rightSequence, leftSequence];
+  const rows = sequenceA.length + 1;
+  const columns = sequenceB.length + 1;
+  const size = rows * columns;
+  const matrixM = new Int32Array(size);
+  const matrixX = new Int32Array(size);
+  const matrixY = new Int32Array(size);
+  matrixM.fill(NEGATIVE_INFINITY);
+  matrixX.fill(NEGATIVE_INFINITY);
+  matrixY.fill(NEGATIVE_INFINITY);
+  const traceM = new Uint8Array(size);
+  const traceX = new Uint8Array(size);
+  const traceY = new Uint8Array(size);
+  traceM.fill(NO_TRACE);
+  traceX.fill(NO_TRACE);
+  traceY.fill(NO_TRACE);
+  const index = (row, column) => row * columns + column;
+  matrixM[index(0, 0)] = 0;
+  for (let row = 1; row < rows; row += 1) {
+    const current = index(row, 0);
+    matrixX[current] = gapOpen + (row - 1) * gapExtension;
+    traceX[current] = row === 1 ? STATE_M : STATE_X;
+  }
+  for (let column = 1; column < columns; column += 1) {
+    const current = index(0, column);
+    matrixY[current] = gapOpen + (column - 1) * gapExtension;
+    traceY[current] = column === 1 ? STATE_M : STATE_Y;
+  }
+
+  for (let row = 1; row < rows; row += 1) {
+    for (let column = 1; column < columns; column += 1) {
+      const current = index(row, column);
+      const diagonal = index(row - 1, column - 1);
+      const [diagonalBest, diagonalState] = chooseState([
+        [STATE_M, matrixM[diagonal]],
+        [STATE_X, matrixX[diagonal]],
+        [STATE_Y, matrixY[diagonal]],
+      ]);
+      matrixM[current] = diagonalBest + substitutionScore(sequenceA[row - 1], sequenceB[column - 1]);
+      traceM[current] = diagonalState;
+
+      const above = index(row - 1, column);
+      const [xBest, xState] = chooseState([
+        [STATE_M, matrixM[above] + gapOpen],
+        [STATE_X, matrixX[above] + gapExtension],
+      ]);
+      matrixX[current] = xBest;
+      traceX[current] = xState;
+
+      const previous = index(row, column - 1);
+      const [yBest, yState] = chooseState([
+        [STATE_M, matrixM[previous] + gapOpen],
+        [STATE_Y, matrixY[previous] + gapExtension],
+      ]);
+      matrixY[current] = yBest;
+      traceY[current] = yState;
+    }
+  }
+
+  let row = sequenceA.length;
+  let column = sequenceB.length;
+  const terminal = index(row, column);
+  const [alignmentScore, initialState] = chooseState([
+    [STATE_M, matrixM[terminal]],
+    [STATE_X, matrixX[terminal]],
+    [STATE_Y, matrixY[terminal]],
+  ]);
+  let state = initialState;
+  let identicalResidueColumns = 0;
+  let alignmentColumns = 0;
+  let gapColumns = 0;
+  while (row > 0 || column > 0) {
+    const current = index(row, column);
+    if (state === STATE_M) {
+      ok(row > 0 && column > 0, "The affine alignment traceback entered an impossible match state.");
+      if (sequenceA[row - 1] === sequenceB[column - 1]) identicalResidueColumns += 1;
+      state = traceM[current];
+      row -= 1;
+      column -= 1;
+      alignmentColumns += 1;
+    } else if (state === STATE_X) {
+      ok(row > 0, "The affine alignment traceback entered an impossible X-gap state.");
+      state = traceX[current];
+      row -= 1;
+      alignmentColumns += 1;
+      gapColumns += 1;
+    } else if (state === STATE_Y) {
+      ok(column > 0, "The affine alignment traceback entered an impossible Y-gap state.");
+      state = traceY[current];
+      column -= 1;
+      alignmentColumns += 1;
+      gapColumns += 1;
+    } else {
+      throw new Error("The affine alignment traceback encountered an invalid state.");
+    }
+  }
+  ok(alignmentColumns > 0 && identicalResidueColumns <= alignmentColumns, "The affine alignment produced invalid identity accounting.");
+  return {
+    algorithm: "global-Needleman-Wunsch-three-state-affine-gap",
+    substitutionMatrix: "BLOSUM62",
+    gapOpen,
+    gapExtension,
+    terminalGapsPenalized: true,
+    stateTiePrecedence: ["M", "X", "Y"],
+    sequencePairCanonicalizedBytewise: true,
+    alignmentScore,
+    identicalResidueColumns,
+    alignmentColumns,
+    gapColumns,
+    identity: Number((identicalResidueColumns / alignmentColumns).toFixed(12)),
+  };
+}
+
+export function evaluateFrozenVhhThreshold({ framework, cdr3, cdr3LengthA, cdr3LengthB }, criterion = null) {
+  ok(framework && cdr3, "Framework and CDR3 alignment metrics are required.");
+  const frameworkNumerator = criterion?.frameworkIdentityMinimum?.numerator ?? 9;
+  const frameworkDenominator = criterion?.frameworkIdentityMinimum?.denominator ?? 10;
+  const cdr3Numerator = criterion?.cdr3IdentityMinimum?.numerator ?? 7;
+  const cdr3Denominator = criterion?.cdr3IdentityMinimum?.denominator ?? 10;
+  const maximumLengthDifference = criterion?.maximumAbsoluteCdr3LengthDifference ?? 2;
+  const cdr3LengthDifference = Math.abs(cdr3LengthA - cdr3LengthB);
+  const frameworkIdentitySatisfied = framework.identicalResidueColumns * frameworkDenominator
+    >= framework.alignmentColumns * frameworkNumerator;
+  const cdr3IdentitySatisfied = cdr3.identicalResidueColumns * cdr3Denominator
+    >= cdr3.alignmentColumns * cdr3Numerator;
+  const cdr3LengthSatisfied = cdr3LengthDifference <= maximumLengthDifference;
+  return {
+    frameworkIdentitySatisfied,
+    cdr3IdentitySatisfied,
+    cdr3LengthSatisfied,
+    cdr3LengthDifference,
+    thresholdCriterionSatisfied: frameworkIdentitySatisfied && cdr3IdentitySatisfied && cdr3LengthSatisfied,
+  };
+}
+
+function alignmentSummary(result) {
+  return {
+    alignmentScore: result.alignmentScore,
+    identicalResidueColumns: result.identicalResidueColumns,
+    alignmentColumns: result.alignmentColumns,
+    gapColumns: result.gapColumns,
+    identity: result.identity,
+  };
+}
+
+function cachedAlignment(sequenceA, sequenceB, cache, contract) {
+  const ordered = byteCompare(sequenceA, sequenceB) <= 0 ? [sequenceA, sequenceB] : [sequenceB, sequenceA];
+  const key = `${ordered[0]}\n${ordered[1]}`;
+  if (!cache.has(key)) {
+    cache.set(key, alignGlobalAffine(ordered[0], ordered[1], {
+      gapOpen: contract.alignment.gapOpen,
+      gapExtension: contract.alignment.gapExtension,
+    }));
+  }
+  return cache.get(key);
+}
+
+function profileSort(left, right) {
+  return byteCompare(left.profileId, right.profileId);
+}
+
+function buildProfile(node, metadataCandidate, entity, contract) {
+  ok(NODE_ID.test(node.nodeId) && PDB_ID.test(node.pdbId), `Invalid source node: ${node.nodeId}`);
+  ok(entity && entity.entityId === metadataCandidate.entityId, `${node.nodeId} metadata candidate entity is unresolved: ${metadataCandidate.entityId}`);
+  const sequence = entity.sequence;
+  ok(typeof sequence === "string" && sequence.length > 0, `${node.nodeId} entity ${entity.entityId} lacks a sequence.`);
+  ok(sequence === sequence.trim().toUpperCase(), `${node.nodeId} entity ${entity.entityId} sequence is not normalized.`);
+  const sequenceSha256 = sha256(Buffer.from(sequence));
+  ok(sequenceSha256 === entity.sequenceSha256 && sequenceSha256 === metadataCandidate.sequenceSha256, `${node.nodeId} entity ${entity.entityId} sequence digest drifted.`);
+  ok(sequence.length === entity.sequenceLength && sequence.length === metadataCandidate.sequenceLength, `${node.nodeId} entity ${entity.entityId} sequence length drifted.`);
+  const numbering = numberVhhForLeakage(sequence, {
+    engine: contract.numbering.engine,
+    scheme: contract.numbering.scheme,
+    minimumConfidence: contract.numbering.minimumEngineConfidence,
+  });
+  const profileId = `${node.nodeId}#entity:${metadataCandidate.entityId}`;
+  ok(PROFILE_ID.test(profileId), `Invalid VHH profile ID: ${profileId}`);
+  return {
+    profileId,
+    nodeId: node.nodeId,
+    nodeRole: node.role,
+    pdbId: node.pdbId,
+    entityId: metadataCandidate.entityId,
+    entityDescription: metadataCandidate.description ?? entity.description ?? null,
+    authAsymIds: uniqueStrings(metadataCandidate.authAsymIds ?? entity.authAsymIds ?? []),
+    labelAsymIds: uniqueStrings(metadataCandidate.labelAsymIds ?? entity.labelAsymIds ?? []),
+    fullSequence: sequence,
+    fullSequenceLength: sequence.length,
+    fullSequenceSha256: sequenceSha256,
+    ...numbering,
+    directBinderIdentityResolved: false,
+    knownParentVariantIdentityResolved: false,
+    formalLeakageEdgeAuthority: false,
+    formalNoEdgeAuthority: false,
+    nativeCoordinatesInspected: false,
+  };
+}
+
+function validateProfile(profile, contract) {
+  ok(PROFILE_ID.test(profile.profileId) && NODE_ID.test(profile.nodeId) && PDB_ID.test(profile.pdbId), `Invalid VHH profile identity: ${profile.profileId}`);
+  ok(profile.profileId.startsWith(`${profile.nodeId}#entity:`), `${profile.profileId} is not bound to its node.`);
+  ok(profile.fullSequenceLength === profile.fullSequence.length && sha256(Buffer.from(profile.fullSequence)) === profile.fullSequenceSha256, `${profile.profileId} full-sequence accounting drifted.`);
+  ok(profile.numberingScheme === contract.numbering.scheme && profile.numberingEngine === contract.numbering.engine, `${profile.profileId} numbering provenance drifted.`);
+  if (profile.numberingStatus === "NUMBERED") {
+    ok(profile.numberingFailureCode === null && profile.numberingFailureMessage === null, `${profile.profileId} reports a failure despite successful numbering.`);
+    ok(CANONICAL_AA.test(profile.frameworkSequence) && CANONICAL_AA.test(profile.cdr3Sequence), `${profile.profileId} emitted a noncanonical numbered region.`);
+    ok(profile.frameworkLength === profile.frameworkSequence.length && profile.cdr3Length === profile.cdr3Sequence.length, `${profile.profileId} numbered-region lengths drifted.`);
+    ok(sha256(Buffer.from(profile.frameworkSequence)) === profile.frameworkSequenceSha256, `${profile.profileId} framework digest drifted.`);
+    ok(sha256(Buffer.from(profile.cdr3Sequence)) === profile.cdr3SequenceSha256, `${profile.profileId} CDR3 digest drifted.`);
+  } else {
+    ok(profile.numberingStatus === "UNAVAILABLE" && typeof profile.numberingFailureCode === "string", `${profile.profileId} has an invalid numbering state.`);
+    for (const field of ["frameworkSequence", "frameworkLength", "frameworkSequenceSha256", "cdr3Sequence", "cdr3Length", "cdr3SequenceSha256"]) {
+      ok(profile[field] === null, `${profile.profileId} retains numbered-region data despite unavailable numbering: ${field}`);
+    }
+  }
+  for (const field of ["directBinderIdentityResolved", "knownParentVariantIdentityResolved", "formalLeakageEdgeAuthority", "formalNoEdgeAuthority", "nativeCoordinatesInspected"]) {
+    ok(profile[field] === false, `${profile.profileId} authority/access field must remain false: ${field}`);
+  }
+}
+
+function evaluateProfilePair(profileA, profileB, caches, contract) {
+  ok(byteCompare(profileA.profileId, profileB.profileId) !== 0, "A VHH profile cannot be compared with itself across one node pair.");
+  const exactFullSequenceMatch = profileA.fullSequenceSha256 === profileB.fullSequenceSha256;
+  const base = {
+    profileA: profileA.profileId,
+    profileB: profileB.profileId,
+    fullSequenceSha256A: profileA.fullSequenceSha256,
+    fullSequenceSha256B: profileB.fullSequenceSha256,
+    exactFullSequenceMatch,
+    evaluationStatus: "UNRESOLVED_NUMBERING",
+    framework: null,
+    cdr3: null,
+    cdr3LengthA: prof

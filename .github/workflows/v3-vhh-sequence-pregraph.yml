@@ -1,0 +1,100 @@
+name: Hard-decoy v3 VHH sequence pregraph
+
+on:
+  push:
+    branches:
+      - "work/hard-decoy-v3-vhh-sequence-*"
+    paths:
+      - ".github/workflows/v3-vhh-sequence-pregraph.yml"
+      - ".github/generated/v3-vhh-sequence-pregraph/**"
+      - "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs"
+      - "scripts/hard-decoy/v3-exact-evidence-pregraph.mjs"
+      - "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+      - "tests/vhh-numbering.test.mjs"
+      - "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json"
+      - "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/**"
+      - "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/**"
+      - "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
+      - "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl"
+      - "package.json"
+      - "package-lock.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hard-decoy-v3-vhh-sequence-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate-verify-and-record:
+    if: github.actor != 'github-actions[bot]'
+    name: Build and verify frozen IMGT VHH sequence pregraph
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Materialize the reviewable generator source
+        run: |
+          set -euo pipefail
+          source_parts=".github/generated/v3-vhh-sequence-pregraph"
+          target="scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs"
+          if [[ ! -f "$target" ]]; then
+            cat "$source_parts"/part-* > "$target"
+          fi
+          node --check "$target"
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install the pinned dependency closure
+        run: npm ci
+      - name: Verify authoritative pre-label state and exact 304-node universe
+        run: |
+          node scripts/hard-decoy-v3/verify-integration-state.mjs
+          node scripts/hard-decoy/v3-exact-evidence-pregraph.mjs verify validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29
+      - name: Run frozen VHH numbering and matrix integrity tests
+        run: |
+          node --test tests/vhh-numbering.test.mjs
+          node --test tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs
+      - name: Generate complete VHH sequence pregraph snapshot
+        run: node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs generate validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
+      - name: Independently replay VHH sequence pregraph snapshot
+        run: node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs verify validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
+      - name: Upload inspectable VHH sequence pregraph
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: hard-decoy-v3-vhh-sequence-pregraph
+          path: validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
+          if-no-files-found: error
+          retention-days: 14
+      - name: Commit verified VHH sequence pregraph when changed
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          output="validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29"
+          generator="scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs"
+          source_parts=".github/generated/v3-vhh-sequence-pregraph"
+          rm -rf "$source_parts"
+          if [[ -z "$(git status --porcelain --untracked-files=all -- "$output" "$generator" "$source_parts")" ]]; then
+            echo "Verified VHH sequence pregraph and generator are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add -- "$output" "$generator"
+          git add -A -- "$source_parts"
+          if git diff --cached --quiet -- "$output" "$generator" "$source_parts"; then
+            echo "No VHH sequence pregraph content was staged."
+            exit 1
+          fi
+          git commit -m "Record frozen v3 VHH sequence pregraph"
+          git push origin "HEAD:${TARGET_BRANCH}"
