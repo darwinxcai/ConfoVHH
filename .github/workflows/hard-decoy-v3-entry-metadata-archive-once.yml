@@ -1,0 +1,122 @@
+name: Hard-decoy v3 entry-metadata archive once
+
+on:
+  push:
+    branches:
+      - archive/hard-decoy-v3-entry-metadata-20260829
+    paths:
+      - .github/workflows/hard-decoy-v3-entry-metadata-archive-once.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hard-decoy-v3-entry-metadata-archive-once
+  cancel-in-progress: false
+
+jobs:
+  archive-entry-metadata:
+    if: github.repository == 'darwinxcai/ConfoVHH' && github.actor == 'darwinxcai'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out isolated archive branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 2
+
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+
+      - name: Reverify source, contracts, and adversarial fixtures
+        run: |
+          set -euo pipefail
+          node scripts/hard-decoy/v3-source-universe.mjs verify validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29
+          node scripts/hard-decoy/verify-v3-entry-metadata-contracts.mjs
+          node --test tests/hard-decoy-entry-metadata-v3.test.mjs
+
+      - name: Capture and replay exact 287-entry metadata
+        env:
+          SNAPSHOT_DIRECTORY: validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29
+        run: |
+          set -euo pipefail
+          test ! -e "${SNAPSHOT_DIRECTORY}"
+          node scripts/hard-decoy/v3-entry-metadata.mjs collect "${SNAPSHOT_DIRECTORY}"
+          node scripts/hard-decoy/v3-entry-metadata.mjs verify "${SNAPSHOT_DIRECTORY}"
+
+      - name: Write blocked-state archive attestation
+        env:
+          SNAPSHOT_DIRECTORY: validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29
+          ATTESTATION_FILE: validation/hard-decoy-holdout-v3/ENTRY_METADATA_SNAPSHOT_ATTESTATION_2026-08-29.json
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import { createHash } from 'node:crypto';
+          import { readFileSync, writeFileSync } from 'node:fs';
+          import { execFileSync } from 'node:child_process';
+
+          const snapshot = process.env.SNAPSHOT_DIRECTORY;
+          const manifestBytes = readFileSync(`${snapshot}/manifest.json`);
+          const checksumsBytes = readFileSync(`${snapshot}/checksums.sha256`);
+          const summary = JSON.parse(readFileSync(`${snapshot}/summary.json`, 'utf8'));
+          const manifest = JSON.parse(manifestBytes.toString('utf8'));
+          const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
+          const sourceRepositoryCommit = execFileSync('git', ['rev-parse', 'HEAD^'], { encoding: 'utf8' }).trim();
+          const archiveWorkflowCommit = execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+
+          const attestation = {
+            schemaVersion: '1.0.0',
+            studyId: 'confovhh-hard-decoy-holdout-v3',
+            status: 'ENTRY_METADATA_ARCHIVED_BLOCKED_PENDING_SCIENTIFIC_DISPOSITIONS',
+            sourceRepositoryCommit,
+            archiveWorkflowCommit,
+            workflowRunId: Number(process.env.GITHUB_RUN_ID),
+            workflowRunAttempt: Number(process.env.GITHUB_RUN_ATTEMPT),
+            workflowRunUrl: `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,
+            archivedAtUtc: new Date().toISOString(),
+            snapshotDirectory: snapshot,
+            snapshotManifestSha256: sha256(manifestBytes),
+            snapshotChecksumsSha256: sha256(checksumsBytes),
+            contractSha256: manifest.contractSha256,
+            querySha256: manifest.querySha256,
+            sourceIdentifierCount: manifest.sourceIdentifierCount,
+            sourceIdentifierListSha256: manifest.sourceIdentifierListSha256,
+            batchCount: manifest.batchCount,
+            repeatCount: manifest.repeatCount,
+            rawResponseCount: manifest.requests.length,
+            summary,
+            pendingDispositionRows: summary.pendingDispositionRows,
+            dispositionLedgerComplete: false,
+            leakageGraphComplete: false,
+            formallyClearedGroupCount: 0,
+            exactFrozenTargetSetExists: false,
+            targetFreezePermitted: false,
+            prelabelSealCreated: false,
+            userApproved: false,
+            executionAuthorized: false,
+            nativeHoldoutCoordinatesAccessed: false,
+            nativeRelativePosesInspected: false,
+            dockqLabelsAccessed: false,
+            performanceResultsAccessed: false
+          };
+          writeFileSync(process.env.ATTESTATION_FILE, `${JSON.stringify(attestation, null, 2)}\n`, { flag: 'wx' });
+          NODE
+
+      - name: Commit immutable entry-metadata archive to isolated branch
+        env:
+          SNAPSHOT_DIRECTORY: validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29
+          ATTESTATION_FILE: validation/hard-decoy-holdout-v3/ENTRY_METADATA_SNAPSHOT_ATTESTATION_2026-08-29.json
+        run: |
+          set -euo pipefail
+          git diff --check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "${SNAPSHOT_DIRECTORY}" "${ATTESTATION_FILE}"
+          test -n "$(git diff --cached --name-only)"
+          git commit \
+            -m "Record hard-decoy v3 entry-metadata snapshot" \
+            -m "Source commit: ${GITHUB_SHA}" \
+            -m "Workflow run: ${GITHUB_RUN_ID}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
