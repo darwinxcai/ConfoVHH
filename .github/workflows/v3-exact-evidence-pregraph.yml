@@ -6,15 +6,20 @@ on:
       - "work/hard-decoy-v3-exact-evidence-*"
     paths:
       - ".github/workflows/v3-exact-evidence-pregraph.yml"
+      - "scripts/hard-decoy-v3/verify-integration-state.mjs"
       - "scripts/hard-decoy/v3-exact-evidence-pregraph.mjs"
       - "scripts/hard-decoy/v3-development-metadata.mjs"
       - "scripts/hard-decoy/v3-disposition-seed.mjs"
+      - "tests/hard-decoy-v3-integration-state.test.mjs"
       - "tests/hard-decoy-v3-development-metadata-committed.test.mjs"
       - "tests/hard-decoy-v3-exact-evidence-pregraph*.test.mjs"
+      - "validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json"
       - "validation/hard-decoy-holdout-v3/DEVELOPMENT_METADATA_COMPLETION_2026-08-29.json"
+      - "validation/hard-decoy-holdout-v3/EXACT_EVIDENCE_PREGRAPH_ATTESTATION_2026-08-29.json"
       - "validation/hard-decoy-holdout-v3/exact-evidence-contract-2026-08-29.json"
       - "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/**"
       - "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/**"
+      - "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/**"
       - "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
   workflow_dispatch:
 
@@ -41,7 +46,9 @@ jobs:
         with:
           node-version: 22.18.0
       - name: Verify authoritative v3 integration boundary
-        run: node scripts/hard-decoy-v3/verify-integration-state.mjs
+        run: |
+          node scripts/hard-decoy-v3/verify-integration-state.mjs
+          node --test tests/hard-decoy-v3-integration-state.test.mjs
       - name: Verify merged 287-row disposition seed
         run: node scripts/hard-decoy/v3-disposition-seed.mjs verify validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29
       - name: Verify complete 17-node development metadata registry and attestation
