@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "1.0.0",
+  "ledgerFilename": "entry-dispositions.jsonl",
+  "oneRowPerSourceEntry": true,
+  "sourceUniverse": "normalized/rcsb-gpcrdb-intersection.txt",
+  "requiredFields": [
+    "pdbId",
+    "sourceQueryIds",
+    "releaseDate",
+    "receptorEntityName",
+    "receptorUniProt",
+    "vhhEntityName",
+    "vhhSequenceSha256",
+    "primaryDoi",
+    "primaryPmid",
+    "publicationStatus",
+    "directReceptorVhhEvidence",
+    "constructEvidence",
+    "auxiliaryBinderFlag",
+    "annotationEpitope",
+    "receptorClusterStatus",
+    "vhhClusterStatus",
+    "knownParentStatus",
+    "publicationEdgeStatus",
+    "dispositionCode",
+    "dispositionReason",
+    "evidenceUrls",
+    "nativeCoordinatesInspected"
+  ],
+  "nullableFields": [
+    "releaseDate",
+    "receptorEntityName",
+    "receptorUniProt",
+    "vhhEntityName",
+    "vhhSequenceSha256",
+    "primaryDoi",
+    "primaryPmid",
+    "annotationEpitope"
+  ],
+  "allowedPublicationStatus": [
+    "PUBLISHED",
+    "UNPUBLISHED",
+    "UNKNOWN"
+  ],
+  "allowedTriState": [
+    "PASS",
+    "FAIL",
+    "UNRESOLVED"
+  ],
+  "dispositionCodes": {
+    "PROVISIONAL_DIRECT_TARGET": "Metadata supports a direct receptor–VHH target, but formal leakage and construct gates are not yet all complete.",
+    "EXCLUDE_AUXILIARY_BINDER": "The antibody domain supports another complex component rather than directly benchmarking receptor–VHH docking.",
+    "EXCLUDE_NO_DIRECT_RECEPTOR_VHH_INTERFACE": "No source-backed direct receptor–VHH interface is established.",
+    "EXCLUDE_FUSION_DOMINATED_INTERFACE": "Binding is dominated by an engineered fusion or scaffold.",
+    "EXCLUDE_ENGINEERED_EPITOPE_GRAFT": "The receptor construct grafts or creates a development-derived epitope.",
+    "EXCLUDE_RECEPTOR_CLUSTER_LEAKAGE": "The receptor is connected to development or another holdout component under the frozen receptor rule.",
+    "EXCLUDE_VHH_CLUSTER_OR_PARENT_LEAKAGE": "The VHH is connected by sequence cluster or source-backed parent/variant provenance.",
+    "EXCLUDE_PUBLICATION_LEAKAGE": "The primary publication is shared with development or another holdout component.",
+    "EXCLUDE_ANNOTATION_EPITOPE_LEAKAGE": "The source-backed annotation epitope is connected under the frozen ontology.",
+    "EXCLUDE_AMBIGUOUS_EVIDENCE": "Required direct-interface, construct, publication, sequence, or epitope evidence is missing or contradictory.",
+    "SAME_COMPONENT_NOT_ADDITIONAL": "The entry is eligible only as another structure within an already represented connected component.",
+    "PENDING_REQUIRED_METADATA": "The row is not disposition-complete because required public metadata is not yet available."
+  },
+  "failClosedDispositionCodes": [
+    "EXCLUDE_AMBIGUOUS_EVIDENCE",
+    "PENDING_REQUIRED_METADATA"
+  ],
+  "forbiddenFields": [
+    "dockq",
+    "dockqScore",
+    "capri",
+    "capriClass",
+    "fnat",
+    "irmsd",
+    "lrmsd",
+    "nativeCoordinates",
+    "nativeInterfaceResidues",
+    "confovhhScore",
+    "performanceResult"
+  ],
+  "evidenceRules": {
+    "nativeCoordinatesInspectedMustBeFalse": true,
+    "evidenceUrlsRequired": true,
+    "ambiguousEvidenceFailsClosed": true,
+    "manualGroupAssignmentForbidden": true,
+    "exactlyOneDispositionPerSourceEntry": true
+  }
+}
