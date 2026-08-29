@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "EXACT_METADATA_EVIDENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_FORMAL_LEAKAGE_AUDIT",
+  "recordedAtUtc": "2026-08-29T14:05:00Z",
+  "sourceBranchCommit": "7e5ac007611ce85f895cdee9591492e469785543",
+  "snapshotDirectory": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29",
+  "snapshotChecksumsSha256": "d0a4e22b0b4f879dd59b551dffbef4e2860fffebbf6bb458eb6280c850a08553",
+  "developmentMetadataAttestationPath": "validation/hard-decoy-holdout-v3/DEVELOPMENT_METADATA_COMPLETION_2026-08-29.json",
+  "developmentMetadataAttestationSha256": "c04c62b46ccc5f2a9c64d26ee6f801208e1a9afe0e88e7db0c43eeb6a1e104c0",
+  "candidateNodeCount": 287,
+  "developmentNodeCount": 17,
+  "totalNodeCount": 304,
+  "allUnorderedPairCount": 46056,
+  "positiveEvidencePairCount": 3013,
+  "positiveEvidencePairCounts": {
+    "candidateCandidate": 2869,
+    "candidateDevelopment": 140,
+    "developmentDevelopment": 4
+  },
+  "evidenceClassificationPairCounts": {
+    "definiteMetadataIdentity": 823,
+    "exactVhhSequenceRoleUnresolved": 1551,
+    "ambiguousEntityEvidence": 639
+  },
+  "exactPdbExclusionReconciliationCount": 15,
+  "definiteEvidenceComponentCount": 100,
+  "inclusiveEvidenceComponentCount": 18,
+  "candidateNodesConnectedToDevelopmentByDefiniteEvidence": 33,
+  "candidateNodesConnectedToDevelopmentByInclusiveEvidence": 262,
+  "interpretation": {
+    "exactMetadataEvidencePregraphOnly": true,
+    "formalLeakageGraph": false,
+    "formalNoEdgeClaims": false,
+    "absenceOfExactEvidenceIsNoEdge": false,
+    "uniqueVhhMetadataCandidateIsDirectInterfaceEvidence": false,
+    "inclusiveConnectivityMayReflectAuxiliaryOrRoleAmbiguousVhhReuse": true
+  },
+  "formalLeakageGraphComplete": false,
+  "dispositionLedgerComplete": false,
+  "formallyClearedGroupCount": 0,
+  "exactFrozenTargetSetExists": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "nextMilestone": "Apply only monotonic, source-backed exact positive leakage exclusions from the definite evidence pregraph; preserve all remaining rows as pending until direct-interface, construct, canonical TM1-TM7, IMGT/known-parent, publication, and sealed native-epitope gates are resolved."
+}
