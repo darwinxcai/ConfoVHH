@@ -1,0 +1,134 @@
+name: Bootstrap hard-decoy v3 disposition draft once
+
+on:
+  push:
+    branches:
+      - work/hard-decoy-v3-disposition-draft-20260829
+    paths:
+      - .github/workflows/bootstrap-hard-decoy-v3-disposition-draft-once.yml
+      - .openai/disposition-draft-bootstrap/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bootstrap-hard-decoy-v3-disposition-draft-once
+  cancel-in-progress: false
+
+jobs:
+  bootstrap:
+    if: github.repository == 'darwinxcai/ConfoVHH' && github.actor == 'darwinxcai'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out isolated work branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 2
+
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+
+      - name: Reconstruct and verify exact payload
+        run: |
+          set -euo pipefail
+          test "$(find .openai/disposition-draft-bootstrap -maxdepth 1 -type f -name 'part-*.b64' | wc -l)" -eq 3
+          cat .openai/disposition-draft-bootstrap/part-*.b64 | base64 --decode > "${RUNNER_TEMP}/disposition-draft-payload.tar.gz"
+          echo "9f29f2e9e303189756f3a5153a1b96003e63fcd0ee409dbb019c65a11dd17b3e  ${RUNNER_TEMP}/disposition-draft-payload.tar.gz" | sha256sum --check --strict
+
+          cat > "${RUNNER_TEMP}/expected-files.txt" <<'EOF'
+          .github/workflows/hard-decoy-v3-disposition-draft.yml
+          scripts/hard-decoy/v3-disposition-draft.mjs
+          scripts/hard-decoy/verify-v3-disposition-draft-contracts.mjs
+          tests/hard-decoy-disposition-draft-v3.test.mjs
+          validation/hard-decoy-holdout-v3/ENTRY_METADATA_ARCHIVE_CORRECTION_2026-08-29.md
+          validation/hard-decoy-holdout-v3/disposition-draft/README.md
+          validation/hard-decoy-holdout-v3/disposition-draft/checksums.sha256
+          validation/hard-decoy-holdout-v3/disposition-draft/disposition-draft-contract.json
+          EOF
+          tar -tzf "${RUNNER_TEMP}/disposition-draft-payload.tar.gz" | LC_ALL=C sort > "${RUNNER_TEMP}/observed-files.txt"
+          diff -u "${RUNNER_TEMP}/expected-files.txt" "${RUNNER_TEMP}/observed-files.txt"
+          while IFS= read -r file; do test ! -e "$file"; done < "${RUNNER_TEMP}/expected-files.txt"
+          tar -xzf "${RUNNER_TEMP}/disposition-draft-payload.tar.gz"
+
+      - name: Run archived-source, contract, and adversarial gates
+        run: |
+          set -euo pipefail
+          node scripts/hard-decoy/v3-source-universe.mjs verify validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29
+          node scripts/hard-decoy/v3-entry-metadata.mjs verify validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29
+          node scripts/hard-decoy/verify-v3-disposition-draft-contracts.mjs
+          node --test tests/hard-decoy-disposition-draft-v3.test.mjs
+
+      - name: Build and independently replay real 287-row draft
+        env:
+          SNAPSHOT_DIRECTORY: ${{ runner.temp }}/confovhh-hard-decoy-v3-disposition-draft
+        run: |
+          set -euo pipefail
+          node scripts/hard-decoy/v3-disposition-draft.mjs build "${SNAPSHOT_DIRECTORY}"
+          node scripts/hard-decoy/v3-disposition-draft.mjs verify "${SNAPSHOT_DIRECTORY}"
+          node --input-type=module <<'NODE'
+          import { readFileSync } from 'node:fs';
+          const summary = JSON.parse(readFileSync(`${process.env.SNAPSHOT_DIRECTORY}/summary.json`, 'utf8'));
+          const expected = {
+            sourceUniverseEntries: 287,
+            dispositionDraftRows: 287,
+            pendingDispositionRows: 287,
+            formalDecisionRows: 0,
+            formallyClearedRows: 0,
+            formallyClearedGroupCount: 0
+          };
+          for (const [key, value] of Object.entries(expected)) {
+            if (summary[key] !== value) throw new Error(`${key}: expected ${value}, observed ${summary[key]}`);
+          }
+          const expectedStrata = {
+            AUXILIARY_OR_CONSTRUCT_REVIEW: 242,
+            DIRECT_TARGET_CANDIDATE_REVIEW: 39,
+            METADATA_RESOLUTION_REQUIRED: 6
+          };
+          if (JSON.stringify(summary.metadataReviewStrata) !== JSON.stringify(expectedStrata)) throw new Error('Metadata review strata drifted.');
+          const expectedPriorities = {
+            AUXILIARY_OR_CONSTRUCT_REVIEW: 238,
+            DIRECT_TARGET_CANDIDATE_REVIEW: 30,
+            HISTORICAL_RECORD_REVALIDATION: 15,
+            METADATA_RESOLUTION_REQUIRED: 4
+          };
+          if (JSON.stringify(summary.priorityClasses) !== JSON.stringify(expectedPriorities)) throw new Error('Priority classes drifted.');
+          const history = summary.historicalCrosswalk;
+          if (history.recordPdbPairs !== 35 || history.in287Intersection !== 15 || history.outside287Intersection !== 20) throw new Error('Historical crosswalk counts drifted.');
+          if (history.provisionalGroupCount !== 7 || history.provisionalGroupsRepresentedIn287 !== 3) throw new Error('Provisional-group coverage drifted.');
+          if (JSON.stringify(history.provisionalGroupsMissingFrom287) !== JSON.stringify(['ADGRV1','GPR158','LGR4','MGLU'])) throw new Error('Missing provisional groups drifted.');
+          const coverage = {
+            GPCRDB_ONLY_NOT_RCSB_FOUR_TERMS: 4,
+            IN_287_INTERSECTION: 15,
+            OUTSIDE_BOTH_FROZEN_SOURCE_LISTS: 3,
+            RCSB_FOUR_TERM_ONLY_NOT_GPCRDB: 13
+          };
+          if (JSON.stringify(history.sourceCoverageClasses) !== JSON.stringify(coverage)) throw new Error('Historical source-coverage classes drifted.');
+          if (summary.exactEdgeSeeds.total !== 301) throw new Error(`Exact edge-seed count drifted: ${summary.exactEdgeSeeds.total}`);
+          for (const key of ['dispositionLedgerComplete','leakageGraphComplete','exactFrozenTargetSetExists','targetFreezePermitted','prelabelSealCreated','userApproved','executionAuthorized','nativeHoldoutCoordinatesAccessed','nativeRelativePosesInspected','dockqLabelsAccessed','performanceResultsAccessed']) {
+            if (summary[key] !== false) throw new Error(`Blocked-state field drifted: ${key}`);
+          }
+          NODE
+
+      - name: Commit tested non-workflow files
+        run: |
+          set -euo pipefail
+          rm -rf .openai/disposition-draft-bootstrap
+          rm -f .github/workflows/hard-decoy-v3-disposition-draft.yml
+          git diff --check
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all -- \
+            .openai/disposition-draft-bootstrap \
+            scripts/hard-decoy/v3-disposition-draft.mjs \
+            scripts/hard-decoy/verify-v3-disposition-draft-contracts.mjs \
+            tests/hard-decoy-disposition-draft-v3.test.mjs \
+            validation/hard-decoy-holdout-v3/ENTRY_METADATA_ARCHIVE_CORRECTION_2026-08-29.md \
+            validation/hard-decoy-holdout-v3/disposition-draft
+          test -n "$(git diff --cached --name-only)"
+          git commit \
+            -m "Add fail-closed v3 disposition draft" \
+            -m "Reconcile the exact 287-entry metadata universe with source-backed historical records while keeping every scientific disposition pending. Record source-universe gaps, exact metadata edge seeds, and the immutable 1,401-entity archive correction without opening coordinates or labels."
+          git push origin "HEAD:${GITHUB_REF_NAME}"
