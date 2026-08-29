@@ -50,7 +50,6 @@ jobs:
           EOF
           tar -tzf "${RUNNER_TEMP}/entry-metadata-payload.tar.gz" | LC_ALL=C sort > "${RUNNER_TEMP}/observed-files.txt"
           diff -u "${RUNNER_TEMP}/expected-files.txt" "${RUNNER_TEMP}/observed-files.txt"
-
           while IFS= read -r file; do test ! -e "$file"; done < "${RUNNER_TEMP}/expected-files.txt"
           tar -xzf "${RUNNER_TEMP}/entry-metadata-payload.tar.gz"
 
@@ -61,17 +60,15 @@ jobs:
           node scripts/hard-decoy/verify-v3-entry-metadata-contracts.mjs
           node --test tests/hard-decoy-entry-metadata-v3.test.mjs
 
-      - name: Remove one-time transport and commit tested files
+      - name: Commit tested non-workflow files
         run: |
           set -euo pipefail
           rm -rf .openai/entry-metadata-bootstrap
-          rm -f .github/workflows/bootstrap-hard-decoy-v3-entry-metadata-once.yml
+          rm -f .github/workflows/hard-decoy-v3-entry-metadata.yml
           git diff --check
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add --all -- \
-            .github/workflows/bootstrap-hard-decoy-v3-entry-metadata-once.yml \
-            .github/workflows/hard-decoy-v3-entry-metadata.yml \
             .openai/entry-metadata-bootstrap \
             scripts/hard-decoy/v3-entry-metadata.mjs \
             scripts/hard-decoy/verify-v3-entry-metadata-contracts.mjs \
