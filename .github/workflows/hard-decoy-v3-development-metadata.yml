@@ -1,0 +1,81 @@
+name: Hard-decoy v3 development metadata
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - work/hard-decoy-v3-development-metadata-20260829
+    paths:
+      - validation/hard-decoy-holdout-v3/development-metadata-draft/**
+      - scripts/hard-decoy/v3-development-metadata.mjs
+      - tests/hard-decoy-development-metadata-v3.test.mjs
+      - .github/workflows/hard-decoy-v3-development-metadata.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hard-decoy-v3-development-metadata-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  development-metadata:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+
+      - name: Verify prior frozen and v3 pre-label packages
+        run: |
+          node scripts/hard-decoy/verify-census.mjs
+          node scripts/hard-decoy/verify-v3-census-contracts.mjs
+          node scripts/hard-decoy/v3-source-universe.mjs verify validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29
+          node scripts/hard-decoy/verify-v3-entry-metadata-contracts.mjs
+
+      - name: Run development-metadata integrity tests
+        run: node --test tests/hard-decoy-development-metadata-v3.test.mjs
+
+      - name: Capture repeated public metadata for all development PDBs
+        run: >-
+          node scripts/hard-decoy/v3-development-metadata.mjs
+          collect
+          "${RUNNER_TEMP}/confovhh-hard-decoy-v3-development-metadata"
+
+      - name: Independently replay development metadata snapshot
+        run: >-
+          node scripts/hard-decoy/v3-development-metadata.mjs
+          verify
+          "${RUNNER_TEMP}/confovhh-hard-decoy-v3-development-metadata"
+
+      - name: Archive verified development metadata on the work branch
+        env:
+          TARGET: validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29
+        run: |
+          if [ -e "$TARGET" ]; then
+            diff -ru "$TARGET" "${RUNNER_TEMP}/confovhh-hard-decoy-v3-development-metadata"
+            exit 0
+          fi
+          cp -a "${RUNNER_TEMP}/confovhh-hard-decoy-v3-development-metadata" "$TARGET"
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add "$TARGET"
+          git commit -m "Archive v3 development metadata snapshot"
+          git push origin HEAD:${GITHUB_REF_NAME}
+
+      - name: Upload development metadata snapshot
+        if: always() && !cancelled()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: confovhh-hard-decoy-v3-development-metadata-${{ github.run_id }}
+          path: ${{ runner.temp }}/confovhh-hard-decoy-v3-development-metadata/
+          if-no-files-found: error
+          retention-days: 30
