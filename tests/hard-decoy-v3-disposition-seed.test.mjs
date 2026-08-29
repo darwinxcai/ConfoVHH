@@ -10,6 +10,8 @@ import { verifyDispositionSeed, writeDispositionSeed } from "../scripts/hard-dec
 const ROOT = path.resolve(import.meta.dirname, "..");
 const TRIAGE = path.join(ROOT, "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/triage-signals.jsonl");
 const DEVELOPMENT = path.join(ROOT, "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json");
+const COMMITTED = path.join(ROOT, "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29");
+const SNAPSHOT_FILES = ["README.md", "checksums.sha256", "entry-dispositions.jsonl", "manifest.json", "summary.json"];
 
 function parseJsonl(text) {
   return text.trimEnd().split("\n").map(JSON.parse);
@@ -30,6 +32,34 @@ async function refreshChecksum(snapshot, relative) {
   assert.equal(rows.filter((row) => row.endsWith(`  ${relative}`)).length, 1);
   await writeFile(path.join(snapshot, "checksums.sha256"), `${rows.join("\n")}\n`);
 }
+
+test("the committed metadata-only seed is verified and matches a fresh deterministic reconstruction", async () => {
+  const verified = await verifyDispositionSeed({ repositoryRoot: ROOT, snapshotDirectory: COMMITTED });
+  assert.equal(verified.status, "DISPOSITION_SEED_CREATED_BLOCKED_PENDING_REVIEW");
+  assert.equal(verified.sourceEntryCount, 287);
+  assert.equal(verified.dispositionRowCount, 287);
+  assert.equal(verified.resolvedDispositionRowCount, 15);
+  assert.equal(verified.pendingDispositionRowCount, 272);
+  assert.equal(verified.exactDevelopmentExclusionCount, 15);
+  assert.equal(verified.provisionalDirectTargetCount, 0);
+  assert.equal(verified.formallyClearedGroupCount, 0);
+  assert.equal(verified.nativeHoldoutCoordinatesAccessed, false);
+  assert.equal(verified.dockqLabelsAccessed, false);
+  assert.equal(verified.executionAuthorized, false);
+
+  const fresh = await generateTemporarySeed();
+  try {
+    for (const name of SNAPSHOT_FILES) {
+      assert.deepEqual(
+        await readFile(path.join(COMMITTED, name)),
+        await readFile(path.join(fresh.output, name)),
+        `Committed disposition snapshot drifted from fresh reconstruction: ${name}`,
+      );
+    }
+  } finally {
+    await rm(fresh.temporary, { recursive: true, force: true });
+  }
+});
 
 test("metadata-only disposition seed covers all 287 source entries without promoting targets", async () => {
   const { temporary, output, result } = await generateTemporarySeed();
@@ -104,7 +134,7 @@ test("disposition seed generation is byte-for-byte deterministic", async () => {
   const first = await generateTemporarySeed();
   const second = await generateTemporarySeed();
   try {
-    for (const name of ["README.md", "checksums.sha256", "entry-dispositions.jsonl", "manifest.json", "summary.json"]) {
+    for (const name of SNAPSHOT_FILES) {
       assert.deepEqual(await readFile(path.join(first.output, name)), await readFile(path.join(second.output, name)));
     }
   } finally {
