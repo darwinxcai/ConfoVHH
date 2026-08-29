@@ -3,15 +3,18 @@ import { lstat, readFile, realpath } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { verifyDesignRecord } from "./verify-design-record.mjs";
+import { verifyDevelopmentMetadataSnapshot } from "../hard-decoy/v3-development-metadata.mjs";
+import { verifyDispositionSeed } from "../hard-decoy/v3-disposition-seed.mjs";
 import { verifyEntryMetadataSnapshot } from "../hard-decoy/v3-entry-metadata.mjs";
+import { verifyExactEvidencePregraph } from "../hard-decoy/v3-exact-evidence-pregraph.mjs";
 import { verifySourceUniverse } from "../hard-decoy/v3-source-universe.mjs";
 import { verifyV3CensusContracts } from "../hard-decoy/verify-v3-census-contracts.mjs";
+import { verifyDesignRecord } from "./verify-design-record.mjs";
 
 const HERE = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(HERE), "../..");
 const STATE_RELATIVE = "validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json";
-const EXPECTED_STATE_SHA256 = "34ee524f8e27baa4de2d8de74b19467328c957ef38cf416ea4ac5ae3b877a2aa";
+const EXPECTED_STATE_SHA256 = "0ce214774346688bc96da3b84078b39c4763268044b6788f71803316ecbc5e6c";
 const SHA256 = /^[a-f0-9]{64}$/u;
 
 function ok(value, message) {
@@ -36,15 +39,18 @@ async function requireDigest(root, relative, expected) {
   ok(!path.isAbsolute(relative) && relative.split("/").every((part) => part && part !== "." && part !== ".."), `Unsafe integration-state path: ${relative}`);
   const filename = path.join(root, relative);
   ok(await realpath(filename) === path.resolve(filename), `Integration-state path cannot traverse a symlink: ${relative}`);
-  const bytes = await readBoundRegularFile(filename, 8 * 1024 * 1024);
-  const observed = sha256(bytes);
-  ok(observed === expected, `Integration-state digest mismatch: ${relative}`);
+  const bytes = await readBoundRegularFile(filename, 64 * 1024 * 1024);
+  ok(sha256(bytes) === expected, `Integration-state digest mismatch: ${relative}`);
   return bytes;
 }
 
 function exactKeys(value, expected, label) {
   ok(value && typeof value === "object" && !Array.isArray(value), `${label} must be an object.`);
   ok(JSON.stringify(Object.keys(value).sort()) === JSON.stringify([...expected].sort()), `${label} fields drifted.`);
+}
+
+function allFalse(record, fields, label) {
+  for (const field of fields) ok(record[field] === false, `${label} field must remain false: ${field}`);
 }
 
 async function verifyBoundedCensusAudit(root, census) {
@@ -72,15 +78,14 @@ async function verifyBoundedCensusAudit(root, census) {
     && audit.newIndependentComponentCount === census.boundedAuditNewGroups,
   "Bounded census-audit group accounting disagrees with the integration state.");
   ok(audit.reviewedLedgerRecordCount === census.boundedAuditReviewedLedgerRecords && audit.reviewedPdbEntryCount === census.boundedAuditReviewedPdbEntries, "Bounded census-audit review accounting drifted.");
-  for (const field of ["sourceUniverseFrozen", "dispositionLedgerComplete", "leakageGraphComplete", "targetManifestFrozen", "targetFreezeReady"]) ok(audit[field] === false, `Bounded census-audit field must remain false: ${field}`);
-  const accessFalseFields = [
+  allFalse(audit, ["sourceUniverseFrozen", "dispositionLedgerComplete", "leakageGraphComplete", "targetManifestFrozen", "targetFreezeReady"], "Bounded census audit");
+  allFalse(access, [
     "nativeHoldoutCoordinatesAccessed", "coordinateFilesDownloaded", "coordinateEndpointsRequested", "nativeRelativeReceptorVhhPosesInspected",
     "nativeStructuresVisualized", "coordinateDerivedContactsCalculated", "coordinateDerivedInterfacesCalculated", "dockqValuesAccessed",
     "capriLabelsAccessed", "fnatIrmsdLrmsdAccessed", "confoVhhHoldoutScoresGenerated", "candidateGeneratorOutputsAccessed",
     "holdoutPerformanceResultsAccessed", "rawHttpResponseBytesPreserved", "repeatResponseEqualityRecorded", "sourceUniverseFrozen",
     "dispositionLedgerComplete", "leakageMatricesComplete", "targetFreezePermitted", "executionAuthorized",
-  ];
-  for (const field of accessFalseFields) ok(access[field] === false, `Bounded census-audit access field must remain false: ${field}`);
+  ], "Bounded census audit access");
   ok(access.metadataOnly === true, "Bounded census audit must remain metadata-only.");
   const dispositionsText = decode("dispositions.jsonl");
   ok(dispositionsText.endsWith("\n"), "Bounded census-audit dispositions must end with LF.");
@@ -103,53 +108,87 @@ async function verifyBoundedCensusAudit(root, census) {
 }
 
 function validateBlockedState(state) {
-  ok(state.schemaVersion === "1.0.0" && state.studyId === "confovhh-hard-decoy-holdout-v3", "Integration-state identity drifted.");
+  ok(state.schemaVersion === "1.1.0" && state.studyId === "confovhh-hard-decoy-holdout-v3", "Integration-state identity drifted.");
   ok(state.status === "DRAFT", "The incomplete v3 census must remain in the protocol DRAFT state.");
   exactKeys(state.targetFreezeGate, ["status", "minimumSatisfied", "discoveryComplete", "dispositionLedgerComplete", "statement"], "Target-freeze gate");
   ok(state.targetFreezeGate.status === "BLOCKED", "Target freeze must remain blocked.");
-  for (const field of ["minimumSatisfied", "discoveryComplete", "dispositionLedgerComplete"]) {
-    ok(state.targetFreezeGate[field] === false, `Target-freeze gate field must remain false: ${field}`);
-  }
+  allFalse(state.targetFreezeGate, ["minimumSatisfied", "discoveryComplete", "dispositionLedgerComplete"], "Target-freeze gate");
+
   ok(state.selectedProtocol.path === "HARD_DECOY_PROTOCOL_V3.md" && state.selectedProtocol.epitopeDesign === "sealed-one-way-native-epitope-boolean-oracle", "Selected protocol drifted.");
   ok(state.historicalAncestry.annotationDraftAdvancementAuthority === false && state.historicalAncestry.annotationEpitopeEligibilityAuthority === false, "The archived annotation draft cannot authorize eligibility.");
   ok(state.sourceUniverse.role === "frozen-historical-four-term-sub-universe-not-exhaustive-candidate-universe" && state.sourceUniverse.broaderDiscoveryComplete === false, "Source-universe claim boundary drifted.");
   ok(state.sourceUniverse.rcsbUnionEntries === 2065 && state.sourceUniverse.gpcrdbEntries === 1716 && state.sourceUniverse.intersectionEntries === 287, "Source-universe counts drifted.");
+
   ok(state.entryMetadata.entries === 287 && state.entryMetadata.polymerEntities === 1401 && state.entryMetadata.repeatedRawResponses === 24, "Entry-metadata counts drifted.");
-  ok(state.entryMetadata.pendingDispositionRows === 287 && state.entryMetadata.formalEligibilityAuthority === false, "Entry metadata cannot be treated as eligibility evidence.");
+  ok(state.entryMetadata.snapshotPendingDispositionRows === 287 && state.entryMetadata.formalEligibilityAuthority === false, "Entry metadata cannot be treated as eligibility evidence.");
   ok(state.entryMetadata.independentCaptureCount === 2, "Both independent entry-metadata captures must remain bound.");
   exactKeys(state.entryMetadata.normalizedOutputSha256, ["entries", "entities", "triageSignals"], "Entry-metadata normalized-output digests");
-  ok(Object.values(state.entryMetadata.normalizedOutputSha256).every((value) => typeof value === "string" && SHA256.test(value)), "Entry-metadata normalized-output digest is invalid.");
+  ok(Object.values(state.entryMetadata.normalizedOutputSha256).every((value) => SHA256.test(value)), "Entry-metadata normalized-output digest is invalid.");
+
+  ok(state.dispositionSeed.rows === 287 && state.dispositionSeed.resolvedRows === 15 && state.dispositionSeed.pendingRows === 272, "Disposition-seed accounting drifted.");
+  ok(state.dispositionSeed.exactDevelopmentPdbExclusions === 15 && state.dispositionSeed.provisionalDirectTargets === 0 && state.dispositionSeed.formalEligibilityAuthority === false, "Disposition-seed authority or exact-exclusion accounting drifted.");
+
+  ok(state.developmentMetadata.nodes === 17 && state.developmentMetadata.reusedMetadataNodes === 15 && state.developmentMetadata.newlyCompletedMetadataNodes === 2, "Development-metadata node accounting drifted.");
+  ok(JSON.stringify(state.developmentMetadata.newlyCompletedPdbIds) === JSON.stringify(["6KNM", "6O3C"]), "Development-metadata completion set drifted.");
+  ok(state.developmentMetadata.uniquePreferredReceptorEntities === 17 && state.developmentMetadata.singleUniProtReceptorNodes === 10, "Development receptor metadata accounting drifted.");
+  ok(state.developmentMetadata.uniqueVhhMetadataCandidates === 16 && state.developmentMetadata.multipleVhhMetadataCandidates === 1, "Development VHH metadata accounting drifted.");
+  ok(state.developmentMetadata.directInterfaceEvidenceResolvedNodes === 0 && state.developmentMetadata.formalLeakageAuthority === false, "Development metadata improperly gained scientific authority.");
+
+  ok(state.exactEvidencePregraph.candidateNodes === 287 && state.exactEvidencePregraph.developmentNodes === 17 && state.exactEvidencePregraph.totalNodes === 304, "Exact-evidence node accounting drifted.");
+  ok(state.exactEvidencePregraph.allUnorderedPairs === 46056 && state.exactEvidencePregraph.positiveEvidencePairs === 3013, "Exact-evidence pair accounting drifted.");
+  ok(state.exactEvidencePregraph.definiteEvidencePairs === 823 && state.exactEvidencePregraph.exactVhhRoleUnresolvedPairs === 1551 && state.exactEvidencePregraph.ambiguousEvidencePairs === 639, "Exact-evidence classification accounting drifted.");
+  ok(state.exactEvidencePregraph.definiteEvidenceComponents === 100 && state.exactEvidencePregraph.inclusiveEvidenceComponents === 18, "Exact-evidence component accounting drifted.");
+  ok(state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByDefiniteEvidence === 33 && state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByInclusiveEvidence === 262, "Exact-evidence development-connectivity accounting drifted.");
+  ok(state.exactEvidencePregraph.formalLeakageGraphAuthority === false && state.exactEvidencePregraph.formalNoEdgeAuthority === false, "Exact-evidence pregraph gained formal graph authority.");
+
   ok(state.census.requiredIndependentGroups === 10 && state.census.provisionalGroups === 7 && state.census.formallyClearedGroups === 0 && state.census.boundedAuditNewGroups === 0, "Census accounting drifted.");
-  ok(state.census.boundedAuditChecksumsPath === "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/checksums.sha256" && SHA256.test(state.census.boundedAuditChecksumsSha256), "Bounded census-audit binding drifted.");
   ok(state.census.boundedAuditArtifactId === "census-audit-2026-08-29" && state.census.boundedAuditReviewedLedgerRecords === 13 && state.census.boundedAuditReviewedPdbEntries === 20, "Bounded census-audit accounting drifted.");
-  for (const field of ["dispositionLedgerComplete", "leakageGraphComplete", "minimumSatisfied", "targetManifestFrozen"]) ok(state.census[field] === false, `Census field must remain false: ${field}`);
+  allFalse(state.census, ["dispositionLedgerComplete", "leakageGraphComplete", "minimumSatisfied", "targetManifestFrozen"], "Census");
+
   ok(state.oracle.designSelected === true, "The sealed-oracle design must remain selected.");
-  for (const field of ["requestFrozen", "independentImplementationContainerFrozen", "keyCeremonyCompleted", "executed", "opened"]) ok(state.oracle[field] === false, `Oracle field must remain false: ${field}`);
+  allFalse(state.oracle, ["requestFrozen", "independentImplementationContainerFrozen", "keyCeremonyCompleted", "executed", "opened"], "Oracle");
   const labelBoundaryFields = ["nativeCoordinatesAccessedDuringV3Preparation", "nativeRelativePosesInspectedDuringV3Preparation", "dockqOrCapriLabelsAccessedDuringV3Preparation", "confovhhHoldoutScoresAccessed", "holdoutPerformanceResultsAccessed"];
   exactKeys(state.labelBoundary, labelBoundaryFields, "Integration label boundary");
-  for (const field of labelBoundaryFields) ok(state.labelBoundary[field] === false, `Integration label-boundary field must remain false: ${field}`);
-  ok(state.authorization.approvalReady === false && state.authorization.userApproved === false && state.authorization.executionAuthorized === false, "Blocked integration state cannot authorize approval or execution.");
-  ok(state.authorization.blockers.includes("fewer-than-ten-formally-cleared-leakage-components"), "The formal minimum blocker is missing.");
+  allFalse(state.labelBoundary, labelBoundaryFields, "Integration label boundary");
+  allFalse(state.authorization, ["approvalReady", "userApproved", "executionAuthorized"], "Authorization");
+  const requiredBlockers = [
+    "272-source-entries-still-pending-scientific-disposition",
+    "direct-receptor-vhh-interface-and-construct-adjudication-incomplete",
+    "canonical-TM1-through-TM7-receptor-matrix-unfrozen",
+    "IMGT-and-known-parent-vhh-matrix-unfrozen",
+    "formal-publication-and-candidate-component-graph-incomplete",
+    "sealed-native-epitope-oracle-request-and-custody-unfrozen",
+    "broader-candidate-discovery-incomplete",
+    "fewer-than-ten-formally-cleared-leakage-components",
+  ];
+  ok(requiredBlockers.every((blocker) => state.authorization.blockers.includes(blocker)), "One or more required authorization blockers are missing.");
   return state;
 }
 
 export async function verifyIntegrationState(repositoryRoot = ROOT) {
   const root = await realpath(repositoryRoot);
   ok(root === path.resolve(repositoryRoot), "Repository root cannot contain symlinked ancestors.");
-  const statePath = path.join(root, STATE_RELATIVE);
-  const stateBytes = await readBoundRegularFile(statePath);
+  const stateBytes = await readBoundRegularFile(path.join(root, STATE_RELATIVE));
   ok(sha256(stateBytes) === EXPECTED_STATE_SHA256, "Integration-state root differs from the externally pinned verifier root.");
   const state = validateBlockedState(JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(stateBytes)));
 
-  await requireDigest(root, state.selectedProtocol.path, state.selectedProtocol.sha256);
-  await requireDigest(root, state.selectedProtocol.designChecksumsPath, state.selectedProtocol.designChecksumsSha256);
-  await requireDigest(root, state.historicalAncestry.annotationDraftChecksumsPath, state.historicalAncestry.annotationDraftChecksumsSha256);
-  await requireDigest(root, state.sourceUniverse.checksumsPath, state.sourceUniverse.checksumsSha256);
-  await requireDigest(root, state.sourceUniverse.importReceiptPath, state.sourceUniverse.importReceiptSha256);
-  await requireDigest(root, state.sourceUniverse.licenseRecordPath, state.sourceUniverse.licenseRecordSha256);
-  await requireDigest(root, state.entryMetadata.checksumsPath, state.entryMetadata.checksumsSha256);
-  await requireDigest(root, state.entryMetadata.attestationPath, state.entryMetadata.attestationSha256);
-  await requireDigest(root, state.entryMetadata.independentReplayChecksumsPath, state.entryMetadata.independentReplayChecksumsSha256);
+  await Promise.all([
+    requireDigest(root, state.selectedProtocol.path, state.selectedProtocol.sha256),
+    requireDigest(root, state.selectedProtocol.designChecksumsPath, state.selectedProtocol.designChecksumsSha256),
+    requireDigest(root, state.historicalAncestry.annotationDraftChecksumsPath, state.historicalAncestry.annotationDraftChecksumsSha256),
+    requireDigest(root, state.sourceUniverse.checksumsPath, state.sourceUniverse.checksumsSha256),
+    requireDigest(root, state.sourceUniverse.importReceiptPath, state.sourceUniverse.importReceiptSha256),
+    requireDigest(root, state.sourceUniverse.licenseRecordPath, state.sourceUniverse.licenseRecordSha256),
+    requireDigest(root, state.entryMetadata.checksumsPath, state.entryMetadata.checksumsSha256),
+    requireDigest(root, state.entryMetadata.attestationPath, state.entryMetadata.attestationSha256),
+    requireDigest(root, state.entryMetadata.independentReplayChecksumsPath, state.entryMetadata.independentReplayChecksumsSha256),
+    requireDigest(root, state.dispositionSeed.checksumsPath, state.dispositionSeed.checksumsSha256),
+    requireDigest(root, state.dispositionSeed.summaryPath, state.dispositionSeed.summarySha256),
+    requireDigest(root, state.developmentMetadata.checksumsPath, state.developmentMetadata.checksumsSha256),
+    requireDigest(root, state.developmentMetadata.attestationPath, state.developmentMetadata.attestationSha256),
+    requireDigest(root, state.exactEvidencePregraph.checksumsPath, state.exactEvidencePregraph.checksumsSha256),
+    requireDigest(root, state.exactEvidencePregraph.attestationPath, state.exactEvidencePregraph.attestationSha256),
+  ]);
 
   const primaryEntryDirectory = path.dirname(state.entryMetadata.checksumsPath);
   const replayEntryDirectory = path.dirname(state.entryMetadata.independentReplayChecksumsPath);
@@ -159,49 +198,60 @@ export async function verifyIntegrationState(repositoryRoot = ROOT) {
     await requireDigest(root, `${replayEntryDirectory}/${relative}`, expected);
   }
 
-  const importReceipt = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(
-    await readBoundRegularFile(path.join(root, state.sourceUniverse.importReceiptPath)),
-  ));
+  const importReceipt = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(await readBoundRegularFile(path.join(root, state.sourceUniverse.importReceiptPath))));
   ok(importReceipt.snapshotGitTree === "9732ae10954a5336442e4a565a55ddf16e3b34d5" && importReceipt.result.intersectionEntries === 287, "Source-snapshot import receipt drifted.");
-  const importBoundaryFields = ["nativeCoordinatesAccessed", "nativeRelativePosesInspected", "dockqOrCapriLabelsAccessed", "confovhhHoldoutScoresAccessed", "performanceResultsAccessed", "executionAuthorized"];
-  exactKeys(importReceipt.accessBoundary, importBoundaryFields, "Source import access boundary");
-  for (const field of importBoundaryFields) ok(importReceipt.accessBoundary[field] === false, `Source import access-boundary field must remain false: ${field}`);
-  const licenseRecord = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(
-    await readBoundRegularFile(path.join(root, state.sourceUniverse.licenseRecordPath)),
-  ));
+  allFalse(importReceipt.accessBoundary, ["nativeCoordinatesAccessed", "nativeRelativePosesInspected", "dockqOrCapriLabelsAccessed", "confovhhHoldoutScoresAccessed", "performanceResultsAccessed", "executionAuthorized"], "Source import access boundary");
+
+  const licenseRecord = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(await readBoundRegularFile(path.join(root, state.sourceUniverse.licenseRecordPath))));
   const licenses = Object.fromEntries(licenseRecord.sources.map((source) => [source.sourceId, source]));
   ok(licenses["rcsb-pdb-search-and-data-apis"]?.licenseSpdx === "CC0-1.0" && licenses["rcsb-pdb-search-and-data-apis"]?.licenseEvidenceUrl === "https://www.rcsb.org/pages/usage-policy", "RCSB license mapping drifted.");
   ok(licenses["gpcrdb-structure-api-and-table-data"]?.licenseSpdx === "CC-BY-4.0" && licenses["gpcrdb-structure-api-and-table-data"]?.licenseEvidenceUrl === "https://docs.gpcrdb.org/legal_notice.html", "GPCRdb license mapping drifted.");
-  const entryAttestation = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(
-    await readBoundRegularFile(path.join(root, state.entryMetadata.attestationPath)),
-  ));
+
+  const entryAttestation = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(await readBoundRegularFile(path.join(root, state.entryMetadata.attestationPath))));
   ok(entryAttestation.status === "ENTRY_METADATA_ARCHIVED_BLOCKED_PENDING_SCIENTIFIC_DISPOSITIONS"
     && entryAttestation.snapshotChecksumsSha256 === state.entryMetadata.checksumsSha256
     && entryAttestation.sourceIdentifierCount === state.entryMetadata.entries
     && entryAttestation.summary?.polymerEntities === state.entryMetadata.polymerEntities,
   "Entry-metadata attestation drifted from the primary capture.");
-  for (const field of ["targetFreezePermitted", "userApproved", "executionAuthorized", "nativeHoldoutCoordinatesAccessed", "nativeRelativePosesInspected", "dockqLabelsAccessed", "performanceResultsAccessed"]) {
-    ok(entryAttestation[field] === false, `Entry-metadata attestation field must remain false: ${field}`);
-  }
+  allFalse(entryAttestation, ["targetFreezePermitted", "userApproved", "executionAuthorized", "nativeHoldoutCoordinatesAccessed", "nativeRelativePosesInspected", "dockqLabelsAccessed", "performanceResultsAccessed"], "Entry metadata attestation");
 
-  const [design, archivedDraft, source, entry, entryReplay, boundedAudit] = await Promise.all([
+  const developmentAttestation = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(await readBoundRegularFile(path.join(root, state.developmentMetadata.attestationPath))));
+  ok(developmentAttestation.snapshotChecksumsSha256 === state.developmentMetadata.checksumsSha256
+    && developmentAttestation.developmentNodeCount === state.developmentMetadata.nodes
+    && developmentAttestation.newlyCompletedRepeatedMetadataNodeCount === state.developmentMetadata.newlyCompletedMetadataNodes,
+  "Development-metadata attestation drifted.");
+  allFalse(developmentAttestation, ["formalLeakageCertificationComplete", "dispositionLedgerComplete", "leakageGraphComplete", "targetFreezePermitted", "executionAuthorized", "nativeHoldoutCoordinatesAccessed", "nativeRelativePosesInspected", "dockqLabelsAccessed", "performanceResultsAccessed"], "Development metadata attestation");
+
+  const exactAttestation = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(await readBoundRegularFile(path.join(root, state.exactEvidencePregraph.attestationPath))));
+  ok(exactAttestation.snapshotChecksumsSha256 === state.exactEvidencePregraph.checksumsSha256
+    && exactAttestation.totalNodeCount === state.exactEvidencePregraph.totalNodes
+    && exactAttestation.allUnorderedPairCount === state.exactEvidencePregraph.allUnorderedPairs
+    && exactAttestation.positiveEvidencePairCount === state.exactEvidencePregraph.positiveEvidencePairs,
+  "Exact-evidence pregraph attestation drifted.");
+  ok(exactAttestation.interpretation?.exactMetadataEvidencePregraphOnly === true && exactAttestation.interpretation?.formalLeakageGraph === false && exactAttestation.interpretation?.formalNoEdgeClaims === false, "Exact-evidence interpretation boundary drifted.");
+  allFalse(exactAttestation, ["formalLeakageGraphComplete", "dispositionLedgerComplete", "exactFrozenTargetSetExists", "targetFreezePermitted", "executionAuthorized", "nativeHoldoutCoordinatesAccessed", "nativeRelativePosesInspected", "dockqLabelsAccessed", "performanceResultsAccessed"], "Exact evidence attestation");
+
+  const [design, archivedDraft, source, entry, entryReplay, seed, development, exactEvidence, boundedAudit] = await Promise.all([
     verifyDesignRecord(root),
     verifyV3CensusContracts(root),
     verifySourceUniverse({ repositoryRoot: root, snapshotDirectory: path.join(root, "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29") }),
     verifyEntryMetadataSnapshot({ repositoryRoot: root, snapshotDirectory: path.join(root, primaryEntryDirectory) }),
     verifyEntryMetadataSnapshot({ repositoryRoot: root, snapshotDirectory: path.join(root, replayEntryDirectory) }),
+    verifyDispositionSeed({ repositoryRoot: root, snapshotDirectory: path.join(root, path.dirname(state.dispositionSeed.checksumsPath)) }),
+    verifyDevelopmentMetadataSnapshot({ repositoryRoot: root, snapshotDirectory: path.join(root, path.dirname(state.developmentMetadata.checksumsPath)) }),
+    verifyExactEvidencePregraph({ repositoryRoot: root, snapshotDirectory: path.join(root, path.dirname(state.exactEvidencePregraph.checksumsPath)) }),
     verifyBoundedCensusAudit(root, state.census),
   ]);
+
   ok(design.selectedDesign === state.selectedProtocol.epitopeDesign && design.oracleRequestFrozen === false, "Selected design replay disagrees with integration state.");
   ok(archivedDraft.advancementAuthority === false && archivedDraft.annotationEpitopeEligibilityAuthority === false, "Archived draft replay gained authority.");
   ok(source.intersectionCount === state.sourceUniverse.intersectionEntries && source.formallyClearedGroups === 0 && source.targetFreezePermitted === false, "Source replay disagrees with integration state.");
-  ok(entry.sourceEntries === state.entryMetadata.entries && entry.polymerEntities === state.entryMetadata.polymerEntities
-    && entry.repeatedRawResponses === state.entryMetadata.repeatedRawResponses && entry.pendingDispositionRows === state.entryMetadata.pendingDispositionRows
-    && entry.targetFreezePermitted === false, "Entry-metadata replay disagrees with integration state.");
+  ok(entry.sourceEntries === state.entryMetadata.entries && entry.polymerEntities === state.entryMetadata.polymerEntities && entry.repeatedRawResponses === state.entryMetadata.repeatedRawResponses && entry.pendingDispositionRows === state.entryMetadata.snapshotPendingDispositionRows && entry.targetFreezePermitted === false, "Entry-metadata replay disagrees with integration state.");
   ok(JSON.stringify(entryReplay) === JSON.stringify(entry), "The independent entry-metadata captures disagree after normalized replay.");
-  ok(boundedAudit.requiredIndependentGroups === state.census.requiredIndependentGroups && boundedAudit.provisionalGroups === state.census.provisionalGroups
-    && boundedAudit.formallyClearedGroups === state.census.formallyClearedGroups && boundedAudit.newIndependentGroups === state.census.boundedAuditNewGroups,
-  "Bounded census-audit replay disagrees with integration state.");
+  ok(seed.dispositionRowCount === state.dispositionSeed.rows && seed.resolvedDispositionRowCount === state.dispositionSeed.resolvedRows && seed.pendingDispositionRowCount === state.dispositionSeed.pendingRows && seed.exactDevelopmentExclusionCount === state.dispositionSeed.exactDevelopmentPdbExclusions && seed.provisionalDirectTargetCount === 0, "Disposition-seed replay disagrees with integration state.");
+  ok(development.developmentNodeCount === state.developmentMetadata.nodes && development.newlyCompletedMetadataNodeCount === state.developmentMetadata.newlyCompletedMetadataNodes && development.uniquePreferredReceptorEntityCount === state.developmentMetadata.uniquePreferredReceptorEntities, "Development-metadata replay disagrees with integration state.");
+  ok(exactEvidence.totalNodeCount === state.exactEvidencePregraph.totalNodes && exactEvidence.allUnorderedPairCount === state.exactEvidencePregraph.allUnorderedPairs && exactEvidence.positiveEvidencePairCount === state.exactEvidencePregraph.positiveEvidencePairs && exactEvidence.candidateNodesConnectedToDevelopmentByDefiniteEvidence === state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByDefiniteEvidence && exactEvidence.candidateNodesConnectedToDevelopmentByInclusiveEvidence === state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByInclusiveEvidence, "Exact-evidence replay disagrees with integration state.");
+  ok(boundedAudit.requiredIndependentGroups === state.census.requiredIndependentGroups && boundedAudit.provisionalGroups === state.census.provisionalGroups && boundedAudit.formallyClearedGroups === state.census.formallyClearedGroups && boundedAudit.newIndependentGroups === state.census.boundedAuditNewGroups, "Bounded census-audit replay disagrees with integration state.");
 
   return {
     status: state.status,
@@ -214,6 +264,15 @@ export async function verifyIntegrationState(repositoryRoot = ROOT) {
     repeatedRawResponses: entry.repeatedRawResponses,
     entryMetadataCaptures: state.entryMetadata.independentCaptureCount,
     normalizedCaptureAgreement: true,
+    dispositionRows: seed.dispositionRowCount,
+    resolvedDispositionRows: seed.resolvedDispositionRowCount,
+    pendingDispositionRows: seed.pendingDispositionRowCount,
+    developmentMetadataNodes: development.developmentNodeCount,
+    exactEvidenceNodes: exactEvidence.totalNodeCount,
+    exactEvidenceUnorderedPairs: exactEvidence.allUnorderedPairCount,
+    positiveExactOrAmbiguousEvidencePairs: exactEvidence.positiveEvidencePairCount,
+    candidateNodesConnectedToDevelopmentByDefiniteEvidence: exactEvidence.candidateNodesConnectedToDevelopmentByDefiniteEvidence,
+    candidateNodesConnectedToDevelopmentByInclusiveEvidence: exactEvidence.candidateNodesConnectedToDevelopmentByInclusiveEvidence,
     boundedAuditReviewedLedgerRecords: boundedAudit.reviewedLedgerRecords,
     boundedAuditReviewedPdbEntries: boundedAudit.reviewedPdbEntries,
     provisionalGroups: state.census.provisionalGroups,

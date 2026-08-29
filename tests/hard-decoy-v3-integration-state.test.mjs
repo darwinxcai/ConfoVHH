@@ -12,7 +12,7 @@ import {
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 
-test("the authoritative v3 integration state replays every frozen metadata layer and stays blocked", async () => {
+test("the authoritative v3 integration state replays every current pre-label evidence layer and stays blocked", async () => {
   const result = await verifyIntegrationState(ROOT);
   assert.deepEqual(result, {
     status: "DRAFT",
@@ -25,6 +25,15 @@ test("the authoritative v3 integration state replays every frozen metadata layer
     repeatedRawResponses: 24,
     entryMetadataCaptures: 2,
     normalizedCaptureAgreement: true,
+    dispositionRows: 287,
+    resolvedDispositionRows: 15,
+    pendingDispositionRows: 272,
+    developmentMetadataNodes: 17,
+    exactEvidenceNodes: 304,
+    exactEvidenceUnorderedPairs: 46056,
+    positiveExactOrAmbiguousEvidencePairs: 3013,
+    candidateNodesConnectedToDevelopmentByDefiniteEvidence: 33,
+    candidateNodesConnectedToDevelopmentByInclusiveEvidence: 262,
     boundedAuditReviewedLedgerRecords: 13,
     boundedAuditReviewedPdbEntries: 20,
     provisionalGroups: 7,
@@ -36,7 +45,7 @@ test("the authoritative v3 integration state replays every frozen metadata layer
   assert.match(EXPECTED_STATE_SHA256, /^[a-f0-9]{64}$/u);
 });
 
-test("the integration-state policy rejects authority, label access, and threshold relaxation", async () => {
+test("the integration-state policy rejects authority, label access, count drift, and threshold relaxation", async () => {
   const original = JSON.parse(await readFile(path.join(ROOT, STATE_RELATIVE), "utf8"));
   for (const mutate of [
     (state) => { state.historicalAncestry.annotationDraftAdvancementAuthority = true; },
@@ -46,7 +55,11 @@ test("the integration-state policy rejects authority, label access, and threshol
     (state) => { state.census.boundedAuditReviewedPdbEntries = 19; },
     (state) => { state.authorization.approvalReady = true; },
     (state) => { state.entryMetadata.independentCaptureCount = 1; },
-    (state) => { state.status = "TARGET_CENSUS_BLOCKED"; },
+    (state) => { state.dispositionSeed.pendingRows = 271; },
+    (state) => { state.developmentMetadata.directInterfaceEvidenceResolvedNodes = 1; },
+    (state) => { state.exactEvidencePregraph.formalLeakageGraphAuthority = true; },
+    (state) => { state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByInclusiveEvidence = 261; },
+    (state) => { state.status = "TARGETS_FROZEN"; },
     (state) => { state.targetFreezeGate.status = "OPEN"; },
   ]) {
     const changed = structuredClone(original);

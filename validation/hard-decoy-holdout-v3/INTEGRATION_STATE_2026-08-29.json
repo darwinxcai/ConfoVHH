@@ -1,14 +1,14 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "studyId": "confovhh-hard-decoy-holdout-v3",
-  "recordedAtUtc": "2026-08-29T05:45:00Z",
+  "recordedAtUtc": "2026-08-29T14:08:00Z",
   "status": "DRAFT",
   "targetFreezeGate": {
     "status": "BLOCKED",
     "minimumSatisfied": false,
     "discoveryComplete": false,
     "dispositionLedgerComplete": false,
-    "statement": "The protocol remains DRAFT while candidate discovery and scientific dispositions are incomplete. Target freeze is separately blocked because zero of at least ten required independent groups are formally cleared."
+    "statement": "The v3 protocol remains DRAFT. The 287-row seed now has 15 exact development-PDB exclusions and 272 pending rows; all 17 development metadata nodes and a 304-node exact-evidence pregraph are reproducibly bound, but direct-interface, construct, canonical TM1-TM7, IMGT/known-parent, exhaustive discovery, formal leakage, and sealed native-epitope gates remain incomplete. Zero of at least ten required independent groups are formally cleared."
   },
   "selectedProtocol": {
     "path": "HARD_DECOY_PROTOCOL_V3.md",
@@ -57,8 +57,59 @@
     "entries": 287,
     "polymerEntities": 1401,
     "repeatedRawResponses": 24,
-    "pendingDispositionRows": 287,
+    "snapshotPendingDispositionRows": 287,
     "formalEligibilityAuthority": false
+  },
+  "dispositionSeed": {
+    "checksumsPath": "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/checksums.sha256",
+    "checksumsSha256": "f175b92ed43f80ecda1ea12f960b9e7f41621113781512e555d08072a30518ab",
+    "summaryPath": "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/summary.json",
+    "summarySha256": "404cb9687bc7564e71208e9e69557807eb56a7a276bf43d414ddc81e44d0d93e",
+    "rows": 287,
+    "resolvedRows": 15,
+    "pendingRows": 272,
+    "exactDevelopmentPdbExclusions": 15,
+    "provisionalDirectTargets": 0,
+    "formalEligibilityAuthority": false
+  },
+  "developmentMetadata": {
+    "checksumsPath": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/checksums.sha256",
+    "checksumsSha256": "add32255432d635d55657f200636d61134e726e5bf2071130df1dcf94b546758",
+    "attestationPath": "validation/hard-decoy-holdout-v3/DEVELOPMENT_METADATA_COMPLETION_2026-08-29.json",
+    "attestationSha256": "c04c62b46ccc5f2a9c64d26ee6f801208e1a9afe0e88e7db0c43eeb6a1e104c0",
+    "nodes": 17,
+    "reusedMetadataNodes": 15,
+    "newlyCompletedMetadataNodes": 2,
+    "newlyCompletedPdbIds": [
+      "6KNM",
+      "6O3C"
+    ],
+    "uniquePreferredReceptorEntities": 17,
+    "singleUniProtReceptorNodes": 10,
+    "uniqueVhhMetadataCandidates": 16,
+    "multipleVhhMetadataCandidates": 1,
+    "directInterfaceEvidenceResolvedNodes": 0,
+    "formalLeakageAuthority": false
+  },
+  "exactEvidencePregraph": {
+    "checksumsPath": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/checksums.sha256",
+    "checksumsSha256": "d0a4e22b0b4f879dd59b551dffbef4e2860fffebbf6bb458eb6280c850a08553",
+    "attestationPath": "validation/hard-decoy-holdout-v3/EXACT_EVIDENCE_PREGRAPH_ATTESTATION_2026-08-29.json",
+    "attestationSha256": "aafa8401a9401155a7c0ed0fa0cbc6bdf831720f4e5d8d5413fe15cd34c9e096",
+    "candidateNodes": 287,
+    "developmentNodes": 17,
+    "totalNodes": 304,
+    "allUnorderedPairs": 46056,
+    "positiveEvidencePairs": 3013,
+    "definiteEvidencePairs": 823,
+    "exactVhhRoleUnresolvedPairs": 1551,
+    "ambiguousEvidencePairs": 639,
+    "definiteEvidenceComponents": 100,
+    "inclusiveEvidenceComponents": 18,
+    "candidateNodesConnectedToDevelopmentByDefiniteEvidence": 33,
+    "candidateNodesConnectedToDevelopmentByInclusiveEvidence": 262,
+    "formalLeakageGraphAuthority": false,
+    "formalNoEdgeAuthority": false
   },
   "census": {
     "requiredIndependentGroups": 10,
@@ -95,11 +146,14 @@
     "userApproved": false,
     "executionAuthorized": false,
     "blockers": [
-      "fewer-than-ten-formally-cleared-leakage-components",
-      "incomplete-scientific-disposition-ledger",
-      "incomplete-leakage-graph",
-      "unfrozen-independent-oracle-implementation-and-custody",
-      "unfrozen-oracle-request-and-key-ceremony"
+      "272-source-entries-still-pending-scientific-disposition",
+      "direct-receptor-vhh-interface-and-construct-adjudication-incomplete",
+      "canonical-TM1-through-TM7-receptor-matrix-unfrozen",
+      "IMGT-and-known-parent-vhh-matrix-unfrozen",
+      "formal-publication-and-candidate-component-graph-incomplete",
+      "sealed-native-epitope-oracle-request-and-custody-unfrozen",
+      "broader-candidate-discovery-incomplete",
+      "fewer-than-ten-formally-cleared-leakage-components"
     ]
   }
 }

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "EXACT_METADATA_EVIDENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_FORMAL_LEAKAGE_AUDIT",
+  "candidateNodeCount": 287,
+  "developmentNodeCount": 17,
+  "totalNodeCount": 304,
+  "pairSpace": {
+    "candidateCandidate": 41041,
+    "candidateDevelopment": 4879,
+    "developmentDevelopment": 136,
+    "allUnorderedPairs": 46056
+  },
+  "positiveEvidencePairCounts": {
+    "candidateCandidate": 2869,
+    "candidateDevelopment": 140,
+    "developmentDevelopment": 4,
+    "all": 3013
+  },
+  "evidenceTypePairCounts": {
+    "EXACT_PDB_ID_REUSE": 15,
+    "EXACT_RECEPTOR_ENTITY_SEQUENCE": 345,
+    "EXACT_SINGLETON_RECEPTOR_UNIPROT": 690,
+    "EXACT_PRIMARY_DOI": 274,
+    "EXACT_PRIMARY_PMID": 273,
+    "EXACT_UNIQUE_VHH_METADATA_SEQUENCE": 1987,
+    "SHARED_RECEPTOR_UNIPROT_WITH_MULTIACCESSION_AMBIGUITY": 694,
+    "SHARED_VHH_METADATA_SEQUENCE_WITH_ROLE_AMBIGUITY": 36
+  },
+  "evidenceClassificationPairCounts": {
+    "AMBIGUOUS_ENTITY_EVIDENCE": 639,
+    "DEFINITE_METADATA_IDENTITY_EVIDENCE": 823,
+    "EXACT_VHH_SEQUENCE_EVIDENCE_ROLE_UNRESOLVED": 1551
+  },
+  "exactPdbExclusionReconciliationCount": 15,
+  "definiteEvidenceComponentCount": 100,
+  "inclusiveEvidenceComponentCount": 18,
+  "candidateNodesConnectedToDevelopmentByDefiniteEvidence": 33,
+  "candidateNodesConnectedToDevelopmentByInclusiveEvidence": 262,
+  "formalLeakageGraphComplete": false,
+  "dispositionLedgerComplete": false,
+  "formallyClearedGroupCount": 0,
+  "exactFrozenTargetSetExists": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "EXACT_METADATA_EVIDENCE_PREGRAPH_RULE_FROZEN",
+  "snapshotDateUtc": "2026-08-29",
+  "selectedProtocol": {
+    "path": "HARD_DECOY_PROTOCOL_V3.md",
+    "sha256": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "metadataPreparationStageOnly": true,
+    "formalNativeEpitopeAuthority": "sealed-one-way-native-epitope-boolean-oracle"
+  },
+  "candidateInputs": {
+    "entryMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+    "entryMetadataSha256": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "dispositionSnapshotDirectory": "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29",
+    "dispositionLedgerFile": "entry-dispositions.jsonl",
+    "dispositionLedgerSha256": "1687775f2495447475dbffccdc27b8ded042d7c235669635672b6d3afe61e894",
+    "expectedNodeCount": 287,
+    "expectedExactDevelopmentPdbExclusionCount": 15
+  },
+  "developmentInputs": {
+    "snapshotDirectory": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29",
+    "snapshotChecksumsSha256": "add32255432d635d55657f200636d61134e726e5bf2071130df1dcf94b546758",
+    "nodeLedgerFile": "development-nodes.jsonl",
+    "nodeLedgerSha256": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e",
+    "expectedNodeCount": 17
+  },
+  "nodeRules": {
+    "candidateReceptor": "use-only-the-polymer-entity-selected-by-exactly-one-frozen-GPCRdb-preferred-auth-chain-mapping",
+    "candidateVhhMetadataCandidates": "retain-all-entities-listed-by-the-frozen-vhh-like-metadata-signal",
+    "developmentNodes": "reuse-the-complete-development-metadata-ledger-without-resolving-ambiguous-VHH-candidates",
+    "uniqueVhhMetadataCandidateIsNotDirectInterfaceEvidence": true,
+    "multiaccessionReceptorReferenceIsAmbiguous": true,
+    "missingMetadataCannotEstablishNoEdge": true
+  },
+  "evidenceTypes": {
+    "definiteExact": [
+      "EXACT_PDB_ID_REUSE",
+      "EXACT_RECEPTOR_ENTITY_SEQUENCE",
+      "EXACT_SINGLETON_RECEPTOR_UNIPROT",
+      "EXACT_PRIMARY_DOI",
+      "EXACT_PRIMARY_PMID"
+    ],
+    "exactRoleUnresolved": [
+      "EXACT_UNIQUE_VHH_METADATA_SEQUENCE"
+    ],
+    "ambiguous": [
+      "SHARED_RECEPTOR_UNIPROT_WITH_MULTIACCESSION_AMBIGUITY",
+      "SHARED_VHH_METADATA_SEQUENCE_WITH_ROLE_AMBIGUITY"
+    ]
+  },
+  "pairRules": {
+    "candidateCandidatePairs": 41041,
+    "candidateDevelopmentPairs": 4879,
+    "developmentDevelopmentPairs": 136,
+    "allUnorderedPairs": 46056,
+    "storeOnlyPairsWithPositiveExactOrAmbiguousEvidence": true,
+    "commitCompletePairIdentifierStreams": true,
+    "pairOrder": "nodeId-bytewise-ascending",
+    "positiveEvidencePairOrder": "pairId-bytewise-ascending",
+    "formalNoEdgeClaimPermitted": false,
+    "formalLeakageEdgeClaimPermitted": false
+  },
+  "pregraphRules": {
+    "definitePregraphEvidence": [
+      "EXACT_PDB_ID_REUSE",
+      "EXACT_RECEPTOR_ENTITY_SEQUENCE",
+      "EXACT_SINGLETON_RECEPTOR_UNIPROT",
+      "EXACT_PRIMARY_DOI",
+      "EXACT_PRIMARY_PMID"
+    ],
+    "inclusivePregraphAdds": [
+      "EXACT_UNIQUE_VHH_METADATA_SEQUENCE",
+      "SHARED_RECEPTOR_UNIPROT_WITH_MULTIACCESSION_AMBIGUITY",
+      "SHARED_VHH_METADATA_SEQUENCE_WITH_ROLE_AMBIGUITY"
+    ],
+    "includeSingletonComponents": true,
+    "componentId": "sha256-of-terminal-LF-joined-bytewise-sorted-nodeIds",
+    "formalLeakageComponents": false,
+    "formalTargetEligibilityAuthority": false
+  },
+  "forbiddenDerivations": [
+    "coordinate-derived-interface-or-epitope",
+    "annotation-epitope-formal-edge",
+    "approximate-receptor-sequence-identity",
+    "canonical-TM1-through-TM7-similarity-before-frozen-extraction-and-aligner",
+    "IMGT-framework-or-CDR3-threshold-edge-before-frozen-numbering",
+    "VHH-parent-assignment-from-name-or-sequence-heuristics",
+    "direct-interface-assignment-from-a-unique-VHH-like-metadata-entity",
+    "absence-of-exact-evidence-interpreted-as-NO_EDGE",
+    "automatic-target-promotion"
+  ],
+  "serialization": {
+    "pdbIdPattern": "^[0-9][A-Z0-9]{3}$",
+    "nodeIdPattern": "^(candidate|development):[0-9][A-Z0-9]{3}$",
+    "rowOrder": "primary-identifier-bytewise-ascending",
+    "setOrder": "bytewise-ascending",
+    "jsonObjectKeys": "recursive-bytewise-ascending",
+    "jsonlTerminalLf": true,
+    "digest": "SHA-256"
+  },
+  "output": {
+    "directoryName": "exact-evidence-pregraph-2026-08-29",
+    "requiredFiles": [
+      "README.md",
+      "candidate-candidate-evidence.jsonl",
+      "candidate-development-evidence.jsonl",
+      "candidate-nodes.jsonl",
+      "checksums.sha256",
+      "definite-evidence-components.jsonl",
+      "development-development-evidence.jsonl",
+      "development-nodes.jsonl",
+      "inclusive-evidence-components.jsonl",
+      "manifest.json",
+      "pair-space-commitments.json",
+      "summary.json"
+    ]
+  },
+  "integrity": {
+    "exactCandidateCoverageRequired": true,
+    "exactDevelopmentCoverageRequired": true,
+    "exactPairSpaceCommitmentsRequired": true,
+    "metadataEvidenceCannotPromoteTargets": true,
+    "formalLeakageGraphComplete": false,
+    "formallyClearedGroupCount": 0,
+    "nativeCoordinatesForbidden": true,
+    "nativeRelativePoseInspectionForbidden": true,
+    "dockqCapriLabelsForbidden": true,
+    "confovhhHoldoutScoresForbidden": true,
+    "performanceResultsForbidden": true,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false
+  }
+}

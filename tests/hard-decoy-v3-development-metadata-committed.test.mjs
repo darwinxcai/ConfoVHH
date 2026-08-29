@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import test from "node:test";
@@ -7,6 +8,7 @@ import { verifyDevelopmentMetadataSnapshot } from "../scripts/hard-decoy/v3-deve
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const SNAPSHOT = path.join(ROOT, "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29");
+const ATTESTATION = path.join(ROOT, "validation/hard-decoy-holdout-v3/DEVELOPMENT_METADATA_COMPLETION_2026-08-29.json");
 
 test("the committed development metadata snapshot replays all 17 nodes and preserves the blind boundary", async () => {
   const result = await verifyDevelopmentMetadataSnapshot({ repositoryRoot: ROOT, snapshotDirectory: SNAPSHOT });
@@ -28,6 +30,20 @@ test("the committed development metadata snapshot replays all 17 nodes and prese
     nativeHoldoutCoordinatesAccessed: false,
     dockqLabelsAccessed: false,
   });
+});
+
+test("the completion attestation is cryptographically bound to the committed snapshot", async () => {
+  const attestation = JSON.parse(await readFile(ATTESTATION, "utf8"));
+  const checksums = await readFile(path.join(SNAPSHOT, "checksums.sha256"));
+  const observed = createHash("sha256").update(checksums).digest("hex");
+  assert.equal(attestation.snapshotDirectory, "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29");
+  assert.equal(attestation.snapshotChecksumsSha256, observed);
+  assert.equal(observed, "add32255432d635d55657f200636d61134e726e5bf2071130df1dcf94b546758");
+  assert.equal(attestation.formalLeakageCertificationComplete, false);
+  assert.equal(attestation.targetFreezePermitted, false);
+  assert.equal(attestation.executionAuthorized, false);
+  assert.equal(attestation.nativeHoldoutCoordinatesAccessed, false);
+  assert.equal(attestation.dockqLabelsAccessed, false);
 });
 
 test("metadata ambiguity remains explicit in the committed development node ledger", async () => {
