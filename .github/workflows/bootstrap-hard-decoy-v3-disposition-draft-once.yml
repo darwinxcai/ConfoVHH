@@ -34,11 +34,11 @@ jobs:
       - name: Reconstruct and verify exact payload
         run: |
           set -euo pipefail
-          test "$(find .openai/disposition-draft-bootstrap -maxdepth 1 -type f -name 'part-*.b64' | wc -l)" -eq 7
+          test "$(find .openai/disposition-draft-bootstrap -maxdepth 1 -type f -name 'part-*.b64' | wc -l)" -eq 9
           cat \
             .openai/disposition-draft-bootstrap/part-00.b64 \
             .openai/disposition-draft-bootstrap/part-01-*.b64 \
-            .openai/disposition-draft-bootstrap/part-02.b64 \
+            .openai/disposition-draft-bootstrap/part-02-*.b64 \
             | base64 --decode > "${RUNNER_TEMP}/disposition-draft-payload.tar.gz"
           echo "9f29f2e9e303189756f3a5153a1b96003e63fcd0ee409dbb019c65a11dd17b3e  ${RUNNER_TEMP}/disposition-draft-payload.tar.gz" | sha256sum --check --strict
 
