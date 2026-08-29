@@ -2,7 +2,7 @@
 
 ConfoVHH is a coordinate-quality and structural-review aid. The record below tests parser correctness, assembly reconstruction, geometric calculations, deterministic multi-pose bookkeeping, paired coordinate-context bookkeeping, browser-worker behavior, numerical/resource bounds, and reproducible benchmark plumbing. It does **not** validate binding, affinity, specificity, signaling, physiological assembly, membrane compatibility, state selectivity, candidate selection, experimental hit rate, near-native ranking, or a universal pose-acceptance threshold.
 
-The current researcher-facing product is release 0.9.0 and continues to run the digest-attested v0.5.0 scientific engine. Product-only functions—workflow navigation, native prediction-run manifests, provider-specific file pairing, per-pose PAE mapping and quarantine, annotated receptor-footprint consistency, researcher-authored candidate dispositions and shortlist exports, the coordinate-review brief, contact filtering/CSV, PAE display downsampling, dossier/notebook serialization, import validation, accessibility, cancellation, and local-summary privacy—have their own deterministic offline tests. They do not change the fixed contact, clash, SASA, PAE-summary, IMGT, ensemble, or paired-comparison calculations, and they do not create new biological validation evidence.
+The current researcher-facing product is release 0.9.1. Its fixed contact, clash, SASA, PAE-summary, IMGT, ensemble, and paired-comparison source remains byte-identical to the attested v0.5.0 scientific core, and the executed `immunum 1.2.0` bytes still match. The product now uses a separately patched dependency/build environment, so byte-identical equivalence to the historical v0.5 lockfile is not claimed. The exact historical implementation objects are preserved in `validation/v0.5-engine-implementation-snapshot-v1/` without changing either frozen v0.5 evidence package. Product-only functions—workflow navigation, native prediction-run manifests, provider-specific file pairing and per-pose PAE mapping, annotated receptor-footprint consistency, researcher-authored candidate dispositions and shortlist exports, the coordinate-review brief, contact filtering/CSV, PAE display downsampling, dossier/notebook serialization, import validation, accessibility, cancellation, and local-summary privacy—have their own deterministic offline tests and do not create new biological validation evidence.
 
 ## Release test layers
 
@@ -42,19 +42,19 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 
 Current v0.8 product-layer result (2026-08-28): **349/349 ordinary tests passed**, including the emitted production prediction-run worker runtime request; **33/33 fixed-seed adversarial suites passed**, exercising exactly **7,221,999 semantic cases** and **4,679,968 assertions**. These are software-verification counts, not biological-validation samples.
 
-The blocked hard-decoy v2 census added 19 ordinary integrity tests, bringing the pre-v0.9 repository total to **368/368** without relabeling the v0.8 product-layer result. Release 0.9 adds three release-integrity tests and two product-assurance regressions covering visible neutral wording and the production request boundary; the current result is **373/373 ordinary tests passed**. The isolated browser package defines three Chromium acceptance/accessibility scenarios and is reported separately from this Node test count.
+The hard-decoy evidence layer now contains **98 ordinary fail-closed tests**: 25 preserve and harden the blocked v2 census, while 73 cover the selected v3 oracle, request, design, source-universe, entry-metadata, duplicate-key defenses, pagination/redirect policy, metadata-workflow isolation, and authoritative integration-state contracts. The complete product, scientific-engine, release-integrity, provenance, and protocol repository result is **454/454 ordinary tests passed**. The isolated browser package passed **4/4** production-mode Chromium acceptance/accessibility scenarios on 2026-08-29 and is reported separately from this Node test count. Three scenarios are entirely same-origin/local: response headers and write rejection, WCAG A/AA scans, 390-pixel reflow without horizontal overflow, a complete local worker audit, deterministic results focus, zero off-origin requests for a user-supplied pose, and a provenance-bound downloaded report. The fourth explicitly allowlists only the release-pinned RCSB 3P0G request, then verifies its exact 396,018-byte SHA-256-bound coordinate file, A/B chain suggestion, 46 contacts, zero severe clashes, rounded 1,729 Å² ΔSASA, non-binding boundary, accessibility, focus, and downloaded report.
 
-Current v0.9 fixed-seed adversarial result (2026-08-28): **33/33 suites passed**, exercising exactly **7,221,999 semantic cases** and **4,679,971 assertions**. These are software-verification counts, not biological-validation samples.
+Current v0.9 fixed-seed adversarial result (2026-08-29): **33/33 suites passed**, exercising exactly **7,221,999 semantic cases** and **4,679,971 assertions**. These are software-verification counts, not biological-validation samples.
 
 ### v0.9 product-layer validation boundary
 
 Release 0.9 replaces automated retain/deprioritize recommendations in the current product display and researcher handoff brief with neutral coordinate-geometry flags; canonical single-audit records preserve the raw v0.5 engine fields for reproducibility. Those current flags are descriptive summaries of the unchanged coordinate audit and have not been validated to improve candidate selection, candidate ranking, or experimental hit rate. Advance/hold/exclude dispositions remain researcher-authored, are cleared whenever a run is recomputed, and are never inferred from an evidence band. Shortlist exports bind each disposition to exact coordinate, audit-result, PAE, and topology evidence identifiers.
 
-Release 0.9 also adds checksum verification for the fetched worked example, spreadsheet-formula neutralization after leading whitespace and format characters, explicit disclosure of sequence/contact content in complete exports, response security headers, higher-contrast first-use presentation, and separate browser/accessibility, coverage, supported-Node, public-producer, and reproducible-release gates. These are product-integrity and software-assurance changes, not new scientific-performance evidence.
+Release 0.9 also adds checksum verification for the fetched worked example, spreadsheet-formula neutralization after leading whitespace and format characters, explicit disclosure of sequence/contact content in complete exports, response security headers, higher-contrast first-use presentation, and separate browser/accessibility, coverage, supported-Node, public-producer, and release-integrity gates. The release generator emits and compares two normalized source archives from the exact commit, inventories the exact already-built `dist` twice, and publishes only a deterministic file-path/byte-count/SHA-256 manifest of that production output. It does not publish the credential-bearing production bytes. The manifest is inspection/attestation-only and cannot be deployed; deployment requires a fresh verified build from the annotated source tag. Independent compilation is not byte-reproducible or claimed because clean-checkout Vinext builds intentionally receive fresh framework credentials and therefore produce different content-hash filenames. ConfoVHH does not replace those credentials with public constants merely to obtain matching bundles. SBOM UUID/timestamp fields and provenance generation times are also intentionally per-run. These are product-integrity and software-assurance changes, not new scientific-performance evidence.
 
-Measured across every `lib/**/*.ts` file, the v0.9 Node suite covers 61.75% of statements/lines, 83.18% of branches, and 51.05% of functions under c8. CI enforces non-regression floors of 60% statements/lines, 80% branches, and 50% functions. Coverage is software execution evidence, not biological validation.
+Measured across every `lib/**/*.ts` file, the current Node suite covers 61.64% of statements/lines, 83.15% of branches, and 50.91% of functions under c8. CI enforces non-regression floors of 60% statements/lines, 80% branches, and 50% functions. Coverage is software execution evidence, not biological validation.
 
-The v0.9 product work intentionally leaves the frozen v0.5 engine, root package manifest and lockfile, public regression artifacts, DockQ development pilot, hard-decoy records, and post-label replay artifacts unchanged. Legacy v0.6–v0.8 workspace records remain importable; imported decision briefs are migrated to the current neutral wording without rewriting the source file.
+The v0.9.1 product work intentionally leaves the frozen v0.5 scientific-core source, public regression artifacts, DockQ development pilot, historical hard-decoy records, and post-label replay artifacts unchanged. The live root package manifest and lockfile advance only as a separately patched dependency/build environment; the exact historical v0.5 implementation and package objects remain preserved in the supplemental checksummed snapshot and are not relabeled as the current environment. Legacy v0.6–v0.9.0 workspace records remain importable; v0.6–v0.8 decision briefs are migrated to the current neutral wording without rewriting the source file, while v0.9.0 neutral records remain valid as written.
 
 ### v0.8 product-layer validation boundary
 
@@ -71,10 +71,9 @@ The network-enabled public-data exercises are explicit commands so an offline te
 ```bash
 npm run test:mmcif
 npm run test:benchmark
-npm run test:public-attestation
 ```
 
-The first two commands print their current results. Public coordinate responses use a 30-second per-request timeout and a 4 MiB per-file declared/streamed byte limit. `npm run test:public-attestation` must start from a clean committed tree; it runs both public exercises from a detached worktree, records raw-source, implementation, and executed-dependency digests, cross-reconciles independent PDB downloads, and publishes a separate exclusively locked, non-overwriting artifact atomically.
+Both commands print their current results. Public coordinate responses use a 30-second per-request timeout and a 4 MiB per-file declared/streamed byte limit. `npm run test:public-attestation` is retained only as the archival, non-overwriting v0.5 evidence generator. It is not a current clean-clone verification command and is expected to refuse while the frozen attestation target already exists; current verification uses the direct public-data commands plus checksum verification of the preserved artifact.
 
 Current status: **executed digest-attested regression**. The clean-tree run completed on 2026-08-27 and retained legacy source identifier `5cb57617b54baa314513486885c402449f643406`. That commit resolves as an ancestor in the Sites source history used for this product, but it is absent from the current public GitHub repository and cannot be resolved there. The checksummed outputs, exact implementation digests, raw-source hashes, and before/after hash of the executed `immunum 1.2.0` distribution remain independently verifiable in `validation/v0.5-public-regression-attestation-v1/`. A product release receipt binds these preserved digests to a reachable product tag. All biological claim flags remain false.
 
@@ -206,7 +205,7 @@ The replay started from a clean, committed v0.5 tree. Its attestation records th
 
 This is a **post-label regression replay**. The v0.4 labels and aggregate results had already been observed before v0.5 was implemented. The passed exact and tolerance-bounded checks are evidence against an unintended software regression on those examples; they contribute no new estimate of ranking performance and are not an independent validation set.
 
-No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. The current `HARD_DECOY_PROTOCOL_V2.md` is blocked before target freeze; `HARD_DECOY_PROTOCOL.md` is immutable historical v1 material.
+No independent leakage-component hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. `HARD_DECOY_PROTOCOL_V2.md` remains a terminal blocked record and `HARD_DECOY_PROTOCOL.md` remains immutable v1 history. The current `HARD_DECOY_PROTOCOL_V3.md` specifies a sealed one-way native-epitope oracle but does not authorize or claim a frozen request, oracle execution, target set, label opening, or benchmark result.
 
 ### Separate internal hard-decoy v2 target census
 
@@ -250,6 +249,85 @@ certified as currently written. The two defensible designs and the remaining
 family, lineage, mapping, graph, and provenance decisions are recorded in
 `validation/hard-decoy-holdout-v2/PROTOCOL_FEASIBILITY_DECISION.md`. No state
 transition or execution is authorized by either audit.
+
+### V3 sealed-oracle design and bounded census
+
+`HARD_DECOY_PROTOCOL_V3.md` selects a process-separated solution to the v2
+epitope contradiction: a one-time noninteractive oracle receives one complete,
+precommitted batch, reads exact preselected public native structures, and emits
+only a signed complete pair matrix (`EDGE`, `NO_EDGE`, or `FAIL_CLOSED`) plus
+fixed-size encrypted evidence and salted commitments. Literal or hashed epitope
+tokens, residue identifiers, contacts, overlap values, paths, timing, labels,
+and performance results remain forbidden before opening.
+
+The design and its ancestry are checksummed in
+`validation/hard-decoy-holdout-v3/design-record/`. The implementation-level
+tests cover strict canonical JSON, exact whole-batch pair coverage, external
+request-root binding, key/entropy commitments, record-kind-separated hidden
+commitments, candidate exclusion on development leakage or oracle failure,
+fixed-size recipient/ephemeral-key-bound evidence, canonical signatures,
+post-opening commitment/decision reconciliation, no-replace output, and
+historical-root preservation. These tests establish software contract behavior;
+they do not establish custody, confidentiality, oracle independence, or target
+eligibility. The independent coordinate parser/container, one-shot execution
+wrapper, external transparency receipt, key ceremony, and request package do
+not yet exist as frozen production artifacts.
+
+The separate checksummed
+`validation/hard-decoy-holdout-v3/census-audit-2026-08-29/` package records a
+bounded metadata-only audit of 20 recent or ambiguous PDB entries. Thirteen
+disposition records yielded zero new independent components: records either
+collapsed into existing LGR4/GPR158 groups, reused development receptors or
+VHHs, or were auxiliary/fusion/non-GPCR binders. The state remains seven
+provisional components, zero formally cleared components, and a minimum of ten.
+No coordinate, pose, DockQ/CAPRI label, ConfoVHH holdout score, or performance
+result was accessed. That bounded audit did not preserve its own raw HTTP
+responses and is not an exhaustive census.
+
+A separate frozen historical four-term source sub-universe is now checked in at
+`validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/`. It retains both
+raw responses for four RCSB full-text searches and the GPCRdb API/HTML
+inventories. Replay reconstructs 2,065 unique RCSB identifiers, 1,716 GPCRdb
+identifiers, exact API/HTML agreement, and a 287-entry intersection. The
+snapshot manifest, complete checksum coverage, original GitHub Actions run,
+archive-result commit, public-main import, and patch-identical Sites import are
+bound by `SOURCE_SNAPSHOT_ATTESTATION_2026-08-29.json` and
+`SOURCE_SNAPSHOT_IMPORT_RECEIPT_2026-08-29.json`.
+
+The durable primary capture at
+`validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/`
+and the separately timed replay at
+`validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/`
+each retain 24 raw RCSB GraphQL response files (12 batches × 2 repeats). Their raw bytes and retrieval timestamps remain distinct, while both replay to the same 287 exact entry rows, 1,401 polymer entities, and 287 triage rows. The primary capture remains bound by its original public attestation; the authoritative integration record binds both checksum roots and their exact normalized-output digests. The non-dispositive metadata signals place 39 entries in
+direct-target review, 242 in auxiliary/construct review, and 6 in
+metadata-resolution review. All 287 rows remain `PENDING_DISPOSITION`; these
+strata are not target eligibility, direct-interface proof, or leakage edges.
+The source-to-license record maps RCSB API/archive data to CC0 1.0 and GPCRdb
+data to CC BY 4.0 with attribution, and records the live evidence URLs used on
+2026-08-29. The external license-page bytes are not archived in that record.
+
+The first public annotation-epitope draft is retained byte-for-byte as archived
+source-universe/curation machinery. The separate authoritative integration
+record explicitly gives that historical draft no advancement or epitope-eligibility authority. The integration
+state selects `HARD_DECOY_PROTOCOL_V3.md` and its sealed native-contact oracle.
+Its target-freeze gate remains `BLOCKED` while formal protocol status stays
+`DRAFT`: broader discovery is incomplete; every scientific
+disposition, receptor/VHH/parent/publication matrix, native-oracle edge, and
+connected component is unfinished; the independent oracle container/custody
+and request are unfrozen; and the minimum of ten formally cleared components is
+not met. The integration-state verifier replays the design record, archived
+source contract, source snapshot, and both entry-metadata captures together and
+must keep approval and execution false.
+
+### Separate unexecuted leakage-component-out development evaluation
+
+`LEAKAGE_COMPONENT_DEVELOPMENT_PROTOCOL.md` preregisters a retrospective
+leakage-component-out evaluation of the already frozen v0.5 ordering. It is
+explicitly development evidence, not ordinary cross-validation and not a
+replacement for the independent holdout. Executing its new two-generator,
+6,800-attempt population is estimated to require substantial GPU time and
+storage, so it remains unexecuted and unauthorized in this release. No metric,
+threshold, weight, or scientific claim has been updated from that protocol.
 
 All release claim flags remain false:
 
@@ -329,8 +407,10 @@ Pinned `immunum 1.2.0` assigns IMGT positions by sequence alignment. CDR1-IMGT i
 - The public regression panel contains native interfaces and obvious far translations, not realistic docking negatives or experimental nonbinders.
 - The local-SE(3) pilot reuses development targets, has 63.6% positives, and lacks wrong-patch, external-generator, flexible, and nonbinding cases.
 - The executed v0.5 replay reused already observed labels and therefore measures regression only; it provides no new performance estimate.
-- No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated.
-- The v2 metadata census is blocked before target freeze because its documented screen contains seven provisional and zero formally cleared public groups against a minimum of ten; candidate discovery and formal leakage auditing remain incomplete.
+- No independent leakage-component hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated.
+- The v2 record remains terminal at seven provisional and zero formally cleared groups against a minimum of ten; the v3 archive covers a reproducible historical four-term metadata sub-universe, not exhaustive candidate discovery, and its bounded audit found zero additional components.
+- The v3 sealed-oracle design is tested as a software contract, while its independent parser/container, one-shot custody environment, keys, externally approved request root, leakage graph, complete scientific disposition ledger, and target manifest remain unfrozen.
+- The separate leakage-component-out development evaluation is unexecuted and requires explicit substantial-GPU authorization.
 - The public context inventory has two receptor pairs but zero same-VHH cross-context pairs.
 - Ensemble recurrence cannot prove seed independence or correct for correlated model families.
 - Coordinate-derived sequences omit unresolved residues; IMGT-to-coordinate mapping may be incomplete in experimental structures.

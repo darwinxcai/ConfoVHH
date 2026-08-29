@@ -3,16 +3,30 @@
 **Local-first structural triage for modeled GPCR–nanobody complexes.**
 
 [![CI](https://github.com/darwinxcai/ConfoVHH/actions/workflows/ci.yml/badge.svg)](https://github.com/darwinxcai/ConfoVHH/actions/workflows/ci.yml)
-![Product](https://img.shields.io/badge/product-v0.9.0-42d3a5)
+![Product](https://img.shields.io/badge/product-v0.9.1-42d3a5)
 ![Scientific engine](https://img.shields.io/badge/scientific_engine-v0.5.0-2b8a75)
-![Tests](https://img.shields.io/badge/repository_tests-373%2F373_passed-42d3a5)
+![Tests](https://img.shields.io/badge/tests-release_gated-42d3a5)
 ![Node](https://img.shields.io/badge/Node-%E2%89%A522.18-5fa04e)
 
 **[Launch ConfoVHH](https://confovhh.darwin-cai.chatgpt.site)** · [Five-minute workflow](#five-minute-workflow) · [Validation record](./VALIDATION.md) · [Release provenance](./PROVENANCE.md) · [How to cite](./CITATION.cff)
 
+![ConfoVHH auditing the release-pinned public β₂AR–Nb80 structure 3P0G, showing 46 contact pairs, zero severe clashes, 1,729 square angstroms of protein delta-SASA, and the explicit non-binding interpretation boundary.](./public/media/confovhh-3p0g-audit.png)
+
+*Real v0.9.1 browser run on the SHA-256-pinned public 3P0G coordinate file. These values demonstrate the audit workflow; they are not binding or ranking validation.*
+
 ConfoVHH is a browser-side research application for auditing GPCR–VHH coordinate poses from AlphaFold, ColabFold, and Boltz workflows. It converts raw complex predictions into inspectable interface evidence, pose-recurrence summaries, researcher-authored decisions, and provenance-bound handoff reports.
 
 User-selected coordinates and PAE matrices are processed in the browser tab and are not uploaded by ConfoVHH. The worked example is fetched from RCSB only when requested; the local notebook writes only after an explicit save; exports are downloaded files. Complete audit/dossier exports contain selected protein sequences, residue-level contacts, hashes, and notes, but not raw coordinate text or complete PAE matrices. The application does **not** claim to predict binding, affinity, functional state, membrane compatibility, candidate priority, or pose correctness.
+
+### Scientific status at a glance
+
+| Question | Current answer |
+|---|---|
+| Can researchers audit real prediction outputs? | **Yes.** The local-first workflow is exercised on genuine AlphaFold Server and ColabFold runs, plus a public GPCR–VHH coordinate panel. |
+| Are parsers and geometry calculations regression-tested? | **Yes.** PDB/mmCIF parity, deposited assemblies, exact worker paths, provenance, resource bounds, and adversarial inputs are release-gated. |
+| Is the ranking rule independently validated on realistic hard decoys? | **No.** The formal holdout remains unassembled and unexecuted. |
+| Does favorable output establish binding, affinity, specificity, signaling, state selectivity, or membrane compatibility? | **No.** Those biological claims remain explicitly false. |
+| What is the hard-decoy stop state? | A repeat-fetched 287-entry metadata sub-universe is archived, but all 287 scientific dispositions remain pending; seven groups are provisional, zero are formally cleared, and at least ten are required. |
 
 ## Why this project exists
 
@@ -94,31 +108,40 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 
 | Layer | Current result | Interpretation |
 |---|---:|---|
-| Ordinary unit/integration tests | 373/373 passed | 349 product/engine tests, 19 fail-closed census-integrity tests, 3 release-integrity tests, and 2 product-assurance regressions for visible wording and the production request boundary |
-| Browser acceptance/accessibility | 3 Chromium scenarios | Initial shell, 390 px mobile reflow, and a real local-file worker audit with WCAG A/AA scans, response headers, local-only request boundary, and downloaded-report validation |
+| Ordinary unit/integration tests | 454/454 passed | Complete product, scientific-engine, release-integrity, provenance, and fail-closed protocol suite; 98 tests specifically exercise hard-decoy census/design/request/isolation boundaries |
+| Browser acceptance/accessibility | 4/4 Chromium scenarios passed | Initial shell, 390 px mobile reflow, a local-file worker audit with zero off-origin requests, and the SHA-pinned public 3P0G audit/export; all include applicable WCAG A/AA, focus, response-boundary, and report checks |
+| Release artifacts | Deterministic tagged-source archive, exact CI-build file-hash manifest, SBOM, provenance receipt, and SHA-256 checksums | Credential-bearing `dist` bytes are not published; the manifest is inspection-only and a fresh verified build from the tag is required for deployment |
 | Genuine producer outputs | 2 public runs · 26 source files · 10/10 poses · 10/10 PAE audits | End-to-end compatibility for actual AlphaFold Server and ColabFold outputs |
 | PDB↔mmCIF parity | 17/17 structures | Parser/metric reproducibility across serializations |
 | Deposited assemblies | 5/5 coordinate oracles | Assembly-operation reconstruction accuracy |
 | Native interfaces | 17/17 detected | Positive and obvious-geometry regression coverage |
 | Far-translation controls | 102/102 rejected | Zero-interface sanity checks |
 | DockQ development ledger | 360/360 poses + 20/20 controls | Benchmark plumbing and descriptive development analysis |
+| V3 metadata source archive | 2,065 RCSB union · 1,716 GPCRdb · 287 intersection | Reproducible historical four-term source sub-universe; not an exhaustive candidate universe |
+| V3 entry-metadata replay | 2 independent captures · 48 response files · 287 entries · 1,401 polymer entities | Exact normalized agreement across both 12-batch × 2-repeat captures; 287/287 dispositions still pending and no target eligibility |
 
-These counts are software/regression evidence, not a biological performance estimate. The DockQ perturbation set is development-only and does not establish generalization. No independent family-clustered hard-decoy holdout has yet been evaluated. See [VALIDATION.md](./VALIDATION.md) and the current blocked [hard-decoy v2 protocol](./HARD_DECOY_PROTOCOL_V2.md). The original [v1 protocol](./HARD_DECOY_PROTOCOL.md) is immutable historical material.
+These counts are software/regression evidence, not a biological performance estimate. The DockQ perturbation set is development-only and does not establish generalization. No independent leakage-component hard-decoy holdout has yet been assembled or evaluated. The terminal [v2 protocol](./HARD_DECOY_PROTOCOL_V2.md) and original [v1 protocol](./HARD_DECOY_PROTOCOL.md) remain immutable history. The current [v3 protocol](./HARD_DECOY_PROTOCOL_V3.md) specifies a sealed one-way native-epitope oracle, but its request, independent parser/container, key ceremony, leakage graph, targets, labels, and performance analysis are not frozen or executed. See [VALIDATION.md](./VALIDATION.md).
 
 On 2026-08-28, the documented metadata-only screen for the stricter [v2 hard-decoy protocol](./HARD_DECOY_PROTOCOL_V2.md) recorded eight candidate structures resolving to seven provisional public direct GPCR–VHH groups and zero formally cleared groups, against a frozen minimum of ten. Candidate-discovery completeness was not established. No candidate coordinates, DockQ/CAPRI labels, or holdout results were accessed. The minimum was not relaxed, so this is a checksummed [blocked screening checkpoint](./validation/hard-decoy-holdout-v2/prelabel-census/), not an exhaustive census, assembled holdout, upper bound, or performance result.
+
+On 2026-08-29, a second bounded metadata-only audit reviewed 20 recent or previously ambiguous PDB entries and found zero defensible additional independent components. LGR4 and GPR158 entries collapsed into existing groups; the other direct-looking records reused development receptors/VHHs or were auxiliary, fusion, or non-GPCR binders. The checksummed [v3 census audit](./validation/hard-decoy-holdout-v3/census-audit-2026-08-29/) preserves 13 disposition records, sequence hashes, sources, and explicit no-coordinate/no-label access flags. That bounded audit did not retain its own raw responses.
+
+A separate, durable [source snapshot](./validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/) retains both raw repeats for the four RCSB searches and GPCRdb API/HTML inventories: 2,065 unique RCSB entries, 1,716 GPCRdb entries, and an exact 287-entry intersection. Two independently timed entry-metadata captures—[the already-public capture](./validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/) and a [separate preserved replay](./validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/)—each retain 24 raw RCSB GraphQL responses (12 batches × 2 repeats). Their raw bytes and timestamps remain distinct, while all normalized 287 entry rows, 1,401 polymer entities, and 287 triage rows agree exactly. These are a historical four-term metadata sub-universe and triage layer—not an exhaustive candidate universe or eligibility ledger. All 287 scientific dispositions, sequence/parent matrices, native-oracle edges, and the connected-component graph remain incomplete; seven groups remain provisional, zero are cleared, and the minimum remains ten. Source-license mappings and live evidence URLs are recorded in [source-licenses-2026-08-29.json](./validation/hard-decoy-holdout-v3/source-licenses-2026-08-29.json).
+
+The checksummed [v3 oracle design record](./validation/hard-decoy-holdout-v3/design-record/) and [separate leakage-component-out development protocol](./LEAKAGE_COMPONENT_DEVELOPMENT_PROTOCOL.md) are protocol artifacts, not performance evidence. The development study is unexecuted and would require substantial GPU resources; it cannot substitute for the independent holdout.
 
 ## Architecture
 
 ConfoVHH is a TypeScript/React application built with Vinext for Cloudflare-compatible deployment. Coordinate parsing, IMGT numbering, ensemble analysis, and per-pose PAE auditing run in bounded browser workers. Canonical reports retain raw-file SHA-256 values, coordinate/geometry fingerprints, parser policy, chain/assembly provenance, and software versions.
 
-The repository's `package.json` version remains `0.5.0` because it identifies the digest-attested scientific engine. Researcher-facing capabilities advance independently as product release `0.9.0`; product-only changes do not relabel the frozen v0.5 validation artifacts. Historical source identifiers are retained in the artifacts and resolve to ancestor commits in the Sites source history used for this product, but those objects are absent from the current public GitHub repository. Release receipts bind the still-verifiable digests to reachable product tags without treating the historical commits as publicly reachable.
+The repository's `package.json` version remains `0.5.0` because it identifies the scientific-core lineage. Researcher-facing capabilities and pre-label protocol artifacts advance independently as product release `0.9.1`; changes outside the scientific calculations do not relabel the frozen v0.5 validation artifacts. The current product preserves the attested v0.5 scientific-core source and executed `immunum 1.2.0` bytes, but it uses a separately patched dependency/build environment and does **not** claim byte-identical equivalence to the historical v0.5 lockfile. A checksummed [supplemental implementation snapshot](./validation/v0.5-engine-implementation-snapshot-v1/) preserves the exact historical objects named by both unchanged v0.5 attestations. Historical source identifiers are retained in the artifacts and resolve to ancestor commits in the Sites source history used for this product, but those objects are absent from the current public GitHub repository. Release receipts bind the still-verifiable digests to reachable product tags without treating the historical commits as publicly reachable.
 
 ```text
 app/          researcher workspace and orchestration
 components/   prediction-run intake, contact/PAE explorers, state comparison
 lib/          parsers, geometry engine, workers, exports, validation contracts
 tests/        unit, integration, rendered-output, and worker-runtime tests
-validation/   frozen public regression and DockQ development artifacts
+validation/   frozen regressions plus checksummed pre-label protocol/census records
 scripts/      reproducible public-data and adversarial validation runners
 ```
 
@@ -130,13 +153,15 @@ ConfoVHH supports review of **coordinate plausibility and recurrence within an u
 
 ConfoVHH was created by [Darwin Cai](https://github.com/darwinxcai). Citation metadata are available in [CITATION.cff](./CITATION.cff). See the [security policy](./SECURITY.md), [current dependency-advisory triage](./SECURITY_AUDIT.md), [dependency policy](./DEPENDENCY_POLICY.md), and [provenance model](./PROVENANCE.md) for maintenance and release details. Third-party licenses and attributions are summarized in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
 
-Released under the [MIT License](./LICENSE).
+ConfoVHH source code is released under the [MIT License](./LICENSE). Archived third-party metadata remains under its source license; see [Third-party notices](./THIRD_PARTY_NOTICES.md).
 
-## Product release 0.9
+## Product release 0.9.1
 
-The researcher-facing product release is 0.9.0. Its scientific engine remains the digest-attested v0.5.0 implementation; the v0.5 public-regression and post-label replay artifacts are unchanged and are not relabeled as new validation.
+The researcher-facing product release is 0.9.1. Its scientific calculations remain source-identical to the attested v0.5.0 core and retain the executed `immunum 1.2.0` bytes; its dependency/build environment is security-patched and is not the historical attested lockfile. The v0.5 public-regression and post-label replay artifacts are unchanged and are not relabeled as new validation.
 
-Release 0.9 removes automated retain/deprioritize recommendations from the current product display and researcher handoff brief, replacing them with neutral coordinate-geometry flags. Canonical single-audit records retain their raw v0.5 engine fields for reproducibility. The current flags have not been validated to improve candidate selection or experimental hit rate. Researcher-authored decisions remain separate, are cleared whenever a run is recomputed, and are exported with exact coordinate, audit, PAE, and topology evidence bindings. Release 0.9 also hardens spreadsheet exports, verifies the worked-example checksum, clarifies export contents, adds response security headers, improves first-use hierarchy and contrast, and introduces browser, accessibility, coverage, Node 24, and reproducible-release gates.
+Release 0.9.1 archives the repeat-fetched v3 metadata source/entry snapshots, selects and hardens the sealed-oracle software contract, and preserves an explicit `DRAFT` integration state with a separately `BLOCKED` target-freeze gate. It adds no holdout performance result or biological claim.
+
+Release 0.9.0 removed automated retain/deprioritize recommendations from the current product display and researcher handoff brief, replacing them with neutral coordinate-geometry flags. Canonical single-audit records retain their raw v0.5 engine fields for reproducibility. The current flags have not been validated to improve candidate selection or experimental hit rate. Researcher-authored decisions remain separate, are cleared whenever a run is recomputed, and are exported with exact coordinate, audit, PAE, and topology evidence bindings. Release 0.9.0 also hardened spreadsheet exports, verified the worked-example checksum, clarified export contents, added response security headers, improved first-use hierarchy and contrast, and introduced browser, accessibility, coverage, Node 24, and release-integrity gates. Release 0.9.1 makes that last boundary explicit: it deterministically packages the tagged source and publishes a file-hash manifest of the exact CI-built bundle, but it does not publish the credential-bearing `dist` bytes. The build manifest is inspection/attestation-only and is not deployable. A deployment must make a fresh verified build from the annotated source tag, which mints new Vinext framework credentials. Independent production recompilation remains unclaimed because those fresh credentials legitimately change bundle bytes and chunk hashes.
 
 Release 0.8 introduced the researcher-authored decision layer and native prediction-run result review. Scientists can search and filter audited poses, record bounded notes, reopen candidates for deeper inspection, and export a provenance-bound shortlist. These decisions are deliberately separate from ConfoVHH evidence fields: the product does not compute or imply a composite binding score.
 
@@ -275,9 +300,11 @@ The development-only DockQ pilot reused five public complexes already present in
 
 The v0.5 replay retained legacy source identifier `278ae1a74da133778fba5b17bc296a8e37f02e76` and is recorded separately in `validation/dockq-v0.5-regression-replay-v1/`; that commit is likewise an ancestor in the Sites source history but absent from the current public GitHub repository. It reproduced all discrete records exactly; maximum ΔSASA drift was 1.03×10⁻¹⁰ Å² against the 1×10⁻⁹ Å² bound fixed before the full 360-pose scan. It reuses already observed DockQ labels only to detect software regression and is not a second experiment. The public state-context inventory is in `validation/state-context-native-regression-v1.json` and contains zero same-VHH cross-context examples.
 
-No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. The current [hard-decoy v2 protocol](./HARD_DECOY_PROTOCOL_V2.md) is blocked before target freeze at seven provisional groups, zero formally cleared groups, and a minimum of ten; candidate discovery and the epitope-blinding design remain incomplete. It must not be described as an existing dataset or a completed study.
+No independent leakage-component hard-decoy dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated. The terminal [hard-decoy v2 protocol](./HARD_DECOY_PROTOCOL_V2.md) remains blocked before target freeze at seven provisional groups, zero formally cleared groups, and a minimum of ten. The current [v3 protocol](./HARD_DECOY_PROTOCOL_V3.md) resolves the logical epitope-blinding design with a sealed one-way oracle, but the oracle request, independent implementation/container, key ceremony, leakage graph, target set, and execution remain unfrozen. It must not be described as an existing dataset or completed study.
 
 The separate [v2 pre-label census](./validation/hard-decoy-holdout-v2/prelabel-census/) is deliberately blocked before target freeze: its documented screen contains seven provisional and zero formally cleared groups, below the preregistered minimum of ten; candidate discovery remains incomplete. It does not change any validation claim above.
+
+The [2026-08-29 bounded v3 metadata audit](./validation/hard-decoy-holdout-v3/census-audit-2026-08-29/) adds 13 reproducible dispositions covering 20 PDB entries and finds zero new components. That bounded audit did not preserve its own raw HTTP responses. Separate source and entry-metadata snapshots now retain repeated raw responses for the frozen 287-entry four-term sub-universe, but the full scientific disposition ledger and broader discovery routes remain incomplete. This is negative screening and provenance evidence—not a frozen target census or proof that no future targets can exist.
 
 See [VALIDATION.md](./VALIDATION.md) for methods, frozen expectations, digest attestations, and public-history limitations.
 
@@ -294,11 +321,11 @@ npm test
 npm run test:release
 npm run test:adversarial
 npm ci --prefix qa
+./qa/node_modules/.bin/playwright install chromium
 ./qa/node_modules/.bin/c8 --all --include='lib/**/*.ts' --check-coverage --statements=60 --lines=60 --branches=80 --functions=50 node --test tests/*.test.mjs
 npm --prefix qa test
 npm run test:mmcif
 npm run test:benchmark
-npm run test:public-attestation
 ```
 
 The DockQ exercises additionally require pinned DockQ 2.1.3:
@@ -310,6 +337,6 @@ npm run test:dockq-pilot
 npm run test:dockq-replay
 ```
 
-`npm run test:mmcif` and `npm run test:benchmark` download public RCSB files and are intentionally separate from the offline release suite. `npm run test:public-attestation` executes both from a clean committed worktree, records raw-source hashes and commit-bound implementation digests, and atomically writes a non-overwriting v0.5 evidence artifact. `npm run test:dockq-pilot` is the historical v0.4 runner: its frozen version assertion means it is runnable only from the v0.4 source tree, and a release must never overwrite `validation/dockq-development-pilot-v1/`. `npm run test:dockq-replay` writes the separate post-label v0.5 regression attestation and must start from a clean committed tree.
+`npm run test:mmcif` and `npm run test:benchmark` download public RCSB files and are intentionally separate from the offline release suite. `npm run test:public-attestation` is the archival, non-overwriting v0.5 evidence generator—not a current clean-clone verification command—and is expected to refuse while its frozen target artifact already exists. The DockQ runners are likewise historical reconstruction tools: the v0.4 pilot requires the v0.4 source tree, and the post-label v0.5 replay must never replace its frozen output. Use the ordinary, adversarial, browser, direct public-data, and genuine-producer commands above for current product verification.
 
 The app includes a public experimental demo based on the β₂AR–Nb80 complex [RCSB PDB 3P0G](https://www.rcsb.org/structure/3P0G). Coordinate and PAE analysis occurs locally in the browser; unpublished structures are not required for the bundled examples or validation records.

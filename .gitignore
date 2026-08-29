@@ -36,12 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
-# typescript
-next-env.d.ts
 /dist/
 /.wrangler/
 /.sites-runtime/
 /outputs/
+/release-artifacts/
 /work/
 /.bench-venv/
 /tsconfig.tsbuildinfo

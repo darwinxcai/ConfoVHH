@@ -6,6 +6,8 @@ Security and data-integrity fixes target the current `main` branch and latest pu
 
 The current installed-dependency findings, deployment exposure review, and forward-remediation requirement are recorded in [SECURITY_AUDIT.md](./SECURITY_AUDIT.md). Release SBOMs intentionally retain the complete dependency inventory for independent scanning.
 
+GitHub Releases do not publish the credential-bearing production `dist` bytes. The production-build manifest is inspection/attestation-only and is not deployable. Build from the annotated source tag for every deployment so Vinext mints fresh framework credentials; never treat a CI-output hash manifest as a deployable bundle.
+
 ## Reporting a vulnerability
 
 Please do not open a public issue containing vulnerability details that could expose local files, bypass parser/resource limits, execute untrusted content, corrupt provenance, or produce misleading scientific exports. Use [GitHub's private vulnerability report](https://github.com/darwinxcai/ConfoVHH/security/advisories/new). If that form is unavailable, open a detail-free issue titled `Security contact request`; the maintainer can then establish a private channel before you share a reproduction.

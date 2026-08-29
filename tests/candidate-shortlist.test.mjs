@@ -21,7 +21,7 @@ const pose = (id, filename, sha, rank) => ({
 });
 
 const result = {
-  schemaVersion: "1.0.0", productRelease: "0.9.0", engineVersion: "0.5.0", referenceCoordinateFileId: "p1",
+  schemaVersion: "1.0.0", productRelease: "0.9.1", engineVersion: "0.5.0", referenceCoordinateFileId: "p1",
   coordinateEnsemble: { poses: [{ sha256: "a".repeat(64), rank: 1 }, { sha256: "b".repeat(64), rank: 2 }] },
   poseAudits: [pose("p1", "pose1.cif", "a".repeat(64), 1), pose("p2", "pose2.cif", "b".repeat(64), 2)],
 };
@@ -78,7 +78,7 @@ test("shortlist CSV neutralizes spreadsheet formulas after leading whitespace an
     "audit_result_fingerprint",
     "pae_sha256",
   ]) assert.ok(header.includes(requiredBinding), `missing CSV evidence binding ${requiredBinding}`);
-  assert.match(csv, /"0\.9\.0","0\.5\.0","1\.0\.0","p1","fnv1a64-topology-v1:0123456789abcdef"/);
+  assert.match(csv, /"0\.9\.1","0\.5\.0","1\.0\.0","p1","fnv1a64-topology-v1:0123456789abcdef"/);
   assert.match(csv, /"audit-p1"/);
   assert.equal(csv.split("\n").length, 3);
 });

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "futureStateRequired": "ORACLE_REQUEST_FROZEN",
+  "requiredFiles": [
+    "oracle-contract.json",
+    "target-universe.jsonl",
+    "development-registry.jsonl",
+    "source-manifest.jsonl",
+    "pair-manifest.jsonl",
+    "mapping-contract.json",
+    "topology-ontology.json",
+    "selection-contract.json",
+    "key-ceremony.json",
+    "resource-contract.json",
+    "checksums.sha256"
+  ],
+  "minimumCandidateComponentsBeforeOracle": 10,
+  "pairCoverage": [
+    "all-candidate-development-unordered-pairs",
+    "all-candidate-candidate-unordered-pairs"
+  ],
+  "forbiddenFiles": [
+    "coordinates",
+    "poses",
+    "labels",
+    "results",
+    "private-paths",
+    "oracle-private-keys",
+    "encryption-recipient-private-key"
+  ],
+  "currentPrecommitExists": false
+}

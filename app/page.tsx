@@ -620,6 +620,30 @@ export default function Home() {
     window.requestAnimationFrame(() => errorRef.current?.focus());
   }, [error]);
 
+  useEffect(() => {
+    if (!audit) return;
+    const frame = window.requestAnimationFrame(() => {
+      resultsRef.current?.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "start",
+      });
+      resultsRef.current?.focus({ preventScroll: true });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [audit]);
+
+  useEffect(() => {
+    if (!ensemble) return;
+    const frame = window.requestAnimationFrame(() => {
+      ensembleRef.current?.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+        block: "start",
+      });
+      ensembleRef.current?.focus({ preventScroll: true });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [ensemble]);
+
   const reset = () => {
     operationId.current += 1;
     demoAbort.current?.abort();
@@ -1329,13 +1353,6 @@ export default function Home() {
       setEnsemble(null);
       setEnsembleRejected([]);
       setEnsembleMode(null);
-      window.requestAnimationFrame(() => {
-        resultsRef.current?.scrollIntoView({
-          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
-          block: "start",
-        });
-        resultsRef.current?.focus({ preventScroll: true });
-      });
     } catch (caught) {
       if (operationId.current !== currentOperation) return;
       setError(caught instanceof Error ? caught.message : "The interface audit could not be completed.");
@@ -1408,13 +1425,6 @@ export default function Home() {
       setEnsemble(result.summary);
       setEnsembleRejected(result.rejected);
       setEnsembleMode(result.comparisonMode);
-      window.requestAnimationFrame(() => {
-        ensembleRef.current?.scrollIntoView({
-          behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
-          block: "start",
-        });
-        ensembleRef.current?.focus({ preventScroll: true });
-      });
     } catch (caught) {
       if (operationId.current !== currentOperation) return;
       setError(caught instanceof Error ? caught.message : "The pose ensemble could not be compared.");

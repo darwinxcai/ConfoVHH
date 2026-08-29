@@ -3,6 +3,9 @@ import { lstat, readFile, readdir, realpath } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { verifySourceUniverse } from "./v3-source-universe.mjs";
+import { parseStrictJson } from "./oracle/canonical-json.mjs";
+
 const HERE = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(HERE), "../..");
 const REL = "validation/hard-decoy-holdout-v3/entry-metadata-draft";
@@ -10,6 +13,12 @@ const FILES = ["README.md", "checksums.sha256", "entry-metadata-contract.json", 
 const SHA = /^[a-f0-9]{64}$/u;
 const COORD = /(?:^|[\r\n"'`])[ \t]*(?:ATOM {2}|HETATM).{20,}|(?:^|[\r\n"'`])[ \t]*_atom_site\.(?:group_PDB|Cartn_[xyz])\b/imu;
 const LABEL = /\b(?:DockQ|Fnat|iRMSD|LRMSD)\s*(?:=|:)\s*(?:\d+(?:\.\d+)?|\.\d+)\b|\bCAPRI(?:Class|Label)?\s*(?:=|:)\s*(?:incorrect|acceptable|medium|high)\b/iu;
+const FORBIDDEN_KEY = /(?:^|[_-])(?:[xyz]|atom[_-]?site|cartn[_-]?[xyz]|cartesian[_-]?[xyz]|coordinates?|dockq|fnat|rmsd|[il]rmsd|interface[_-]?rmsd|ligand[_-]?rmsd|capri(?:class|label)?|native[_-]?(?:pose|interface)|relative[_-]?(?:pose|interface)|confovhh[_-]?(?:score|rank)|performance[_-]?results?)(?:$|[_-])/iu;
+const FALSE_SENTINELS = new Set(["nativeHoldoutCoordinatesAccessed", "nativeRelativePosesInspected", "nativeCoordinatesInspected", "dockqLabelsAccessed", "performanceResultsAccessed"]);
+const MAX_SCAN_DEPTH = 64;
+const MAX_SCAN_NODES = 500_000;
+const MAX_BASE64_BYTES = 1024 * 1024;
+const MAX_JSON_CHARACTERS = 20 * 1024 * 1024;
 
 function ok(value, message) {
   if (!value) throw new Error(message);
@@ -23,18 +32,79 @@ function byteSort(values) {
 function same(left, right, message) {
   ok(JSON.stringify(left) === JSON.stringify(right), message);
 }
+function parseVerifierJson(name, text, maximumCharacters = MAX_JSON_CHARACTERS) {
+  try {
+    return parseStrictJson(text, {
+      maximumCharacters,
+      maximumTokens: MAX_SCAN_NODES,
+      maximumDepth: MAX_SCAN_DEPTH,
+    });
+  } catch (error) {
+    throw new Error(`${name} failed strict JSON validation: ${error instanceof Error ? error.message : String(error)}`);
+  }
+}
+function scanValue(name, value, state, depth) {
+  ok(depth <= MAX_SCAN_DEPTH, `Metadata nesting exceeded the ${MAX_SCAN_DEPTH}-level cap in ${name}.`);
+  state.nodes += 1;
+  ok(state.nodes <= MAX_SCAN_NODES, `Metadata node count exceeded the ${MAX_SCAN_NODES}-node cap in ${name}.`);
+  if (typeof value === "string") {
+    ok(!COORD.test(value), `Coordinate payload appeared in ${name}.`);
+    ok(!LABEL.test(value), `Observed holdout-label assignment appeared in ${name}.`);
+    const candidate = value.trim();
+    if (candidate.length >= 24 && candidate.length <= MAX_BASE64_BYTES * 2 && /^[A-Za-z0-9+/_-]+={0,2}$/u.test(candidate)) {
+      const unpadded = candidate.replace(/-/gu, "+").replace(/_/gu, "/").replace(/=+$/u, "");
+      if (unpadded.length % 4 !== 1) {
+        const encoded = `${unpadded}${"=".repeat((4 - (unpadded.length % 4)) % 4)}`;
+        const decoded = Buffer.from(encoded, "base64");
+        if (decoded.byteLength <= MAX_BASE64_BYTES && decoded.toString("base64").replace(/=+$/u, "") === unpadded) {
+        try {
+          const decodedText = new TextDecoder("utf-8", { fatal: true }).decode(decoded);
+          ok(!COORD.test(decodedText), `Coordinate payload appeared in ${name} after base64 decoding.`);
+          ok(!LABEL.test(decodedText), `Observed holdout-label assignment appeared in ${name} after base64 decoding.`);
+          const trimmed = decodedText.trim();
+          if ((trimmed.startsWith("{") && trimmed.endsWith("}")) || (trimmed.startsWith("[") && trimmed.endsWith("]"))) scanValue(name, parseVerifierJson(`${name} decoded metadata`, trimmed, MAX_BASE64_BYTES), state, depth + 1);
+        } catch (error) {
+          if (!(error instanceof TypeError)) throw error;
+        }
+        }
+      }
+    }
+    return;
+  }
+  if (Array.isArray(value)) {
+    for (const item of value) scanValue(name, item, state, depth + 1);
+    return;
+  }
+  if (!value || typeof value !== "object") return;
+  for (const [key, item] of Object.entries(value)) {
+    if (FALSE_SENTINELS.has(key)) ok(item === false, `Forbidden-access sentinel must remain false in ${name}: ${key}`);
+    else {
+      const normalizedKey = key.replace(/([a-z0-9])([A-Z])/gu, "$1_$2").toLowerCase();
+      ok(!FORBIDDEN_KEY.test(normalizedKey), `Forbidden coordinate- or label-like JSON key appeared in ${name}: ${key}`);
+    }
+    scanValue(name, item, state, depth + 1);
+  }
+}
 function clean(name, text) {
   ok(!text.includes("\0"), `NUL byte appeared in ${name}.`);
   ok(!COORD.test(text), `Coordinate payload appeared in ${name}.`);
   ok(!LABEL.test(text), `Observed holdout-label assignment appeared in ${name}.`);
+  const state = { nodes: 0 };
+  if (name.endsWith(".json")) scanValue(name, parseVerifierJson(name, text), state, 0);
+  else if (name.endsWith(".jsonl") && text.length) {
+    ok(text.endsWith("\n"), `${name} must end with LF.`);
+    for (const [index, line] of text.trimEnd().split("\n").entries()) scanValue(name, parseVerifierJson(`${name} row ${index + 1}`, line), state, 0);
+  }
 }
 async function regularFile(file, label, maximum = 20 * 1024 * 1024) {
   const info = await lstat(file, { bigint: true });
   ok(info.isFile() && !info.isSymbolicLink() && info.nlink === 1n, `${label} must be one direct regular file.`);
+  ok(info.size <= BigInt(maximum), `${label} exceeds the byte cap.`);
   const bytes = await readFile(file);
-  ok(bytes.byteLength <= maximum, `${label} exceeds the byte cap.`);
+  ok(bytes.byteLength <= maximum, `${label} exceeds the byte cap after read.`);
   const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
-  clean(label, text);
+  const extension = path.extname(file);
+  clean(extension && !label.endsWith(extension) ? `${label}${extension}` : label, text);
   return { bytes, text };
 }
 
@@ -53,12 +123,16 @@ async function loadPackage(root) {
   const rows = manifest.trimEnd().split("\n");
   ok(rows.length === expected.length, "Entry-metadata checksums must cover every contract file except itself.");
   const texts = new Map([["checksums.sha256", manifest]]);
-  const seen = new Set();
-  for (const [index, row] of rows.entries()) {
+  const parsedRows = rows.map((row, index) => {
     const match = /^([a-f0-9]{64})  ([A-Za-z0-9._-]+)$/u.exec(row);
     ok(match, `entry-metadata checksums:${index + 1} has invalid syntax.`);
     const [, expectedSha, file] = match;
-    ok(expected.includes(file) && !seen.has(file), `Unexpected or duplicate entry-metadata checksum path: ${file}`);
+    return { expectedSha, file };
+  });
+  ok(new Set(parsedRows.map(({ file }) => file)).size === parsedRows.length, "Entry-metadata checksum paths must be unique.");
+  same(parsedRows.map(({ file }) => file).sort(), [...expected].sort(), "Entry-metadata checksum paths must match the exact allowlist before payload access.");
+  const seen = new Set();
+  for (const { expectedSha, file } of parsedRows) {
     seen.add(file);
     const payload = await regularFile(path.join(directory, file), file, 2 * 1024 * 1024);
     ok(digest(payload.bytes) === expectedSha, `Entry-metadata checksum mismatch: ${file}`);
@@ -66,7 +140,7 @@ async function loadPackage(root) {
   }
   same([...seen].sort(), [...expected].sort(), "Entry-metadata checksum coverage is incomplete.");
   return {
-    contract: JSON.parse(texts.get("entry-metadata-contract.json")),
+    contract: parseVerifierJson("entry-metadata-contract.json", texts.get("entry-metadata-contract.json"), 2 * 1024 * 1024),
     query: texts.get("rcsb-entry-metadata.graphql"),
   };
 }
@@ -131,6 +205,9 @@ async function verifySourceBinding(root, contract) {
   const snapshot = path.join(root, input.sourceSnapshotDirectory);
   const attestationPath = path.join(root, input.sourceAttestation);
   ok(await realpath(snapshot) === path.resolve(snapshot), "Source snapshot path cannot contain symlinked ancestors.");
+  const verifiedSource = await verifySourceUniverse({ repositoryRoot: root, snapshotDirectory: snapshot });
+  ok(verifiedSource.intersectionCount === input.sourceIdentifierCount && verifiedSource.pendingDispositionRows === input.sourceIdentifierCount, "Full source-universe verification does not reconcile to the entry-metadata contract.");
+  ok(verifiedSource.targetFreezePermitted === false && verifiedSource.nativeHoldoutCoordinatesAccessed === false && verifiedSource.dockqLabelsAccessed === false && verifiedSource.executionAuthorized === false, "Full source-universe verification did not preserve the blocked state.");
   const [manifest, checksums, identifiers, universe, gpcrdb, attestationFile] = await Promise.all([
     regularFile(path.join(snapshot, "manifest.json"), "source manifest"),
     regularFile(path.join(snapshot, "checksums.sha256"), "source checksums"),
@@ -149,25 +226,25 @@ async function verifySourceBinding(root, contract) {
   const ids = identifiers.text.trimEnd().split("\n");
   ok(ids.length === input.sourceIdentifierCount && new Set(ids).size === ids.length && ids.every((id) => idPattern.test(id)), "Source identifier list has invalid count, duplicates, or identifiers.");
   same(ids, byteSort(ids), "Source identifier list is not bytewise sorted.");
-  const universeRows = universe.text.trimEnd().split("\n").map((line) => JSON.parse(line));
+  const universeRows = universe.text.trimEnd().split("\n").map((line, index) => parseVerifierJson(`source-universe.jsonl row ${index + 1}`, line));
   ok(universeRows.length === ids.length, "Source universe row count no longer matches the identifier list.");
   same(universeRows.map((row) => row.pdbId), ids, "Source universe IDs no longer match the identifier list.");
   for (const row of universeRows) {
     ok(row.dispositionStatus === "PENDING_DISPOSITION" && row.nativeCoordinatesInspected === false, `${row.pdbId} improperly claims a disposition or coordinate access.`);
   }
 
-  const gpcrdbRows = JSON.parse(gpcrdb.text);
+  const gpcrdbRows = parseVerifierJson("frozen GPCRdb metadata", gpcrdb.text);
   ok(Array.isArray(gpcrdbRows), "Frozen GPCRdb metadata must be an array.");
   const gpcrdbIds = gpcrdbRows.map((row) => String(row?.pdb_code ?? "").toUpperCase());
   ok(ids.every((id) => gpcrdbIds.includes(id)), "Frozen GPCRdb metadata is missing a source-universe entry.");
 
-  const sourceManifest = JSON.parse(manifest.text);
+  const sourceManifest = parseVerifierJson("source manifest", manifest.text);
   ok(sourceManifest.normalized?.intersection?.count === input.sourceIdentifierCount && sourceManifest.normalized?.intersection?.sha256 === input.sourceIdentifierListSha256, "Source manifest intersection binding drifted.");
   for (const field of ["dispositionLedgerComplete", "leakageGraphComplete", "exactFrozenTargetSetExists", "targetFreezePermitted", "prelabelSealCreated", "userApproved", "executionAuthorized", "nativeHoldoutCoordinatesAccessed", "nativeRelativePosesInspected", "dockqLabelsAccessed", "performanceResultsAccessed"]) {
     ok(sourceManifest[field] === false, `Source manifest blocked-state field drifted: ${field}`);
   }
 
-  const attestation = JSON.parse(attestationFile.text);
+  const attestation = parseVerifierJson("source attestation", attestationFile.text, 2 * 1024 * 1024);
   ok(attestation.status === "SOURCE_UNIVERSE_ARCHIVED_BLOCKED_PENDING_DISPOSITIONS", "Source attestation status drifted.");
   ok(attestation.snapshotDirectory === input.sourceSnapshotDirectory && attestation.snapshotManifestSha256 === input.sourceManifestSha256 && attestation.snapshotChecksumsSha256 === input.sourceChecksumsSha256, "Source attestation no longer binds the selected snapshot.");
   ok(attestation.pendingDispositionRows === input.sourceIdentifierCount && attestation.formallyClearedGroupCount === 0, "Source attestation improperly claims disposition or clearance.");

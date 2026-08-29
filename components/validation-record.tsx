@@ -28,19 +28,28 @@ export function ValidationRecord() {
     <details className="panel release-validation" aria-label="ConfoVHH release validation record">
       <summary className="release-validation-summary">
         <span><FlaskConical /> Validation and scientific limits</span>
-        <Badge variant="secondary">digest-attested engine v{record.softwareVersion}</Badge>
+        <Badge variant="secondary">v{record.softwareVersion} scientific core · patched environment</Badge>
       </summary>
       <div className="release-validation-body">
       <div className="panel-heading compact release-validation-heading">
         <div>
           <p className="eyebrow">06 · Release evidence</p>
-          <h2>v{record.softwareVersion} release checks and historical evidence</h2>
+          <h2>Scientific engine v{record.softwareVersion} checks and historical evidence</h2>
           <p>
             Parser, transformation, geometry, regression, and benchmark-plumbing checks are kept separate from biological claims.
           </p>
+          <p>{record.engineLineage.statement}</p>
         </div>
         <Badge variant="secondary"><FlaskConical /> validation record</Badge>
       </div>
+
+      <Alert className="release-boundary-alert" role="status">
+        <AlertTriangle />
+        <AlertTitle>Hard-decoy metadata archived; target freeze remains blocked</AlertTitle>
+        <AlertDescription>
+          {record.holdoutStatus.statement} The entry-metadata layer contains {record.hardDecoySourceUniverse.polymerEntities.toLocaleString("en-US")} polymer entities across {record.hardDecoySourceUniverse.entryMetadataRawResponsesArchived} response files ({record.hardDecoySourceUniverse.entryMetadataCaptureCount} independent captures × 12 batches × 2 repeats); the normalized outputs agree exactly, and the signals remain non-dispositive.
+        </AlertDescription>
+      </Alert>
 
       <div className="release-stat-grid">
         <article>
@@ -71,7 +80,7 @@ export function ValidationRecord() {
         <article>
           <CheckCircle2 aria-hidden="true" />
           <strong>{ratio(record.realPredictionRunRegression.coordinatePosesAccepted, record.realPredictionRunRegression.coordinatePoses)}</strong>
-          <span>public generated AlphaFold Server + ColabFold poses completed with {record.realPredictionRunRegression.paeAttachmentsAudited}/10 PAE audits</span>
+          <span>public generated AlphaFold Server + ColabFold poses completed with {record.realPredictionRunRegression.paeAttachmentsAudited}/{record.realPredictionRunRegression.paeAttachments} PAE audits</span>
         </article>
         <article>
           <ReplayStatusIcon aria-hidden="true" />
@@ -158,11 +167,6 @@ export function ValidationRecord() {
         </AlertDescription>
       </Alert>
 
-      <Alert className="release-boundary-alert" role="note">
-        <AlertTriangle />
-        <AlertTitle>Hard-decoy holdout remains blocked and unexecuted</AlertTitle>
-        <AlertDescription>{record.holdoutStatus.statement}</AlertDescription>
-      </Alert>
       </div>
     </details>
   );

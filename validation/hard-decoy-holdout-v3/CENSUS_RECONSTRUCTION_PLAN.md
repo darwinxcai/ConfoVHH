@@ -2,6 +2,12 @@
 
 Status: **pre-label scientific work only; no target freeze or execution authorization**
 
+Protocol authority note (2026-08-29): this reconstruction plan originated with
+the archived annotation-epitope draft. Annotation fields below are retained as
+descriptive source metadata only. They cannot establish epitope independence
+or advance a target. The selected eligibility gate is the sealed native-contact
+oracle in `HARD_DECOY_PROTOCOL_V3.md`.
+
 Date: 2026-08-29 UTC
 
 ## Purpose
@@ -54,7 +60,7 @@ Minimum fields:
 - `direct_receptor_vhh_evidence`
 - `construct_evidence`
 - `auxiliary_binder_flag`
-- `annotation_epitope_token`
+- `annotation_epitope_token` (descriptive only; never an eligibility decision)
 - `receptor_cluster_status`
 - `vhh_cluster_status`
 - `known_parent_status`
@@ -91,7 +97,8 @@ Before any target is formally cleared, freeze:
 - complete receptor identity matrix;
 - pinned IMGT implementation and complete VHH sequence/CDR matrix;
 - known-parent/variant provenance ledger;
-- annotation-epitope ontology and source-backed assignments;
+- descriptive annotation-epitope ontology and source-backed assignments for curation only;
+- complete sealed-oracle request inputs and native-contact edge matrix under `HARD_DECOY_PROTOCOL_V3.md`;
 - complete development publication and epitope registry;
 - all graph nodes and edge ledgers.
 
@@ -109,7 +116,7 @@ Metadata-only provisional status is not formal clearance. Each target must also 
 - VHH IMGT readiness;
 - receptor cluster independence;
 - VHH cluster/known-parent independence;
-- annotation-epitope independence;
+- sealed native-contact epitope independence (annotation metadata is non-dispositive);
 - publication independence.
 
 CASR, ADGRV1, DRD1, and MC4R remain conditional exactly as documented in the v2 census until these gates are mechanically resolved.
@@ -124,7 +131,7 @@ This spot-check is **not** an exhaustive search and does not update the formal g
 
 Proceed to an exact v3 target manifest only if at least 10 groups survive all leakage and construct gates. Freeze the exact number and exact identities before candidate generation.
 
-If fewer than 10 survive, terminate the v3 census as `V3_TARGET_CENSUS_BLOCKED`. Do not reduce the threshold, substitute a weaker study, or open labels to decide what to keep.
+While discovery or scientific dispositions remain incomplete, keep the formal v3 protocol state at `DRAFT` and record the target-freeze gate separately as `BLOCKED`. If a completed census still yields fewer than 10 formally cleared independent groups, transition to the protocol-defined terminal `TARGET_CENSUS_BLOCKED` state. Do not reduce the threshold, substitute a weaker study, or open labels to decide what to keep.
 
 ## Integrity rule
 

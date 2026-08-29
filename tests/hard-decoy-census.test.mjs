@@ -229,7 +229,7 @@ test("embedded PDB and mmCIF coordinate strings are rejected after valid recheck
       spec.embeddedPayload = payload;
       await writeFile(specPath, `${JSON.stringify(spec, null, 2)}\n`);
       await refreshFixtureChecksum(census, "benchmark-spec.json");
-      await assert.rejects(() => verifyCensus(root), /coordinate text/i);
+      await assert.rejects(() => verifyCensus(root), /coordinate text|decoded control/i);
     } finally {
       await rm(temporary, { recursive: true, force: true });
     }
@@ -278,6 +278,97 @@ test("a frozen-eligible target is incompatible with the blocked state", async ()
     await writeFile(targetPath, `${targets.map((target) => JSON.stringify(target)).join("\n")}\n`);
     await refreshFixtureChecksum(census, "target-census.jsonl");
     await assert.rejects(() => verifyCensus(root), /cannot claim cleared or final groups/);
+  } finally {
+    await rm(temporary, { recursive: true, force: true });
+  }
+});
+
+test("the v2 protocol cannot be self-authenticated after mutation", async () => {
+  const { temporary, root, census } = await copyVerifierFixture();
+  try {
+    const protocolPath = path.join(root, "HARD_DECOY_PROTOCOL_V2.md");
+    await writeFile(protocolPath, `${await readFile(protocolPath, "utf8")}\nmutated\n`);
+    const digest = createHash("sha256").update(await readFile(protocolPath)).digest("hex");
+    for (const relative of ["benchmark-spec.json", "census-attestation.json"]) {
+      const filename = path.join(census, relative);
+      const record = JSON.parse(await readFile(filename, "utf8"));
+      record.protocolSha256 = digest;
+      await writeFile(filename, `${JSON.stringify(record, null, 2)}\n`);
+      await refreshFixtureChecksum(census, relative);
+    }
+    await assert.rejects(() => verifyCensus(root), /pinned release trust root/);
+  } finally {
+    await rm(temporary, { recursive: true, force: true });
+  }
+});
+
+test("historical locks cannot be rewritten to bless a changed artifact", async () => {
+  const { temporary, root, census } = await copyVerifierFixture();
+  try {
+    const protocolPath = path.join(root, "HARD_DECOY_PROTOCOL.md");
+    await writeFile(protocolPath, `${await readFile(protocolPath, "utf8")}\nmutated\n`);
+    const digest = createHash("sha256").update(await readFile(protocolPath)).digest("hex");
+    const lockPath = path.join(census, "historical-lock.json");
+    const lock = JSON.parse(await readFile(lockPath, "utf8"));
+    lock.immutableFiles.find((item) => item.path === "HARD_DECOY_PROTOCOL.md").sha256 = digest;
+    await writeFile(lockPath, `${JSON.stringify(lock, null, 2)}\n`);
+    await refreshFixtureChecksum(census, "historical-lock.json");
+    await assert.rejects(() => verifyCensus(root), /pinned release trust root/);
+  } finally {
+    await rm(temporary, { recursive: true, force: true });
+  }
+});
+
+test("base64-wrapped coordinate payloads fail the public-package boundary", async () => {
+  const { temporary, root, census } = await copyVerifierFixture();
+  try {
+    const filename = path.join(census, "census-attestation.json");
+    const record = JSON.parse(await readFile(filename, "utf8"));
+    record.opaque = Buffer.from("ATOM      1  CA  GLY A   1       0.000   0.000   0.000\n").toString("base64");
+    await writeFile(filename, `${JSON.stringify(record, null, 2)}\n`);
+    await refreshFixtureChecksum(census, "census-attestation.json");
+    await assert.rejects(() => verifyCensus(root), /Base64-encoded coordinate text/);
+  } finally {
+    await rm(temporary, { recursive: true, force: true });
+  }
+});
+
+test("duplicate JSON keys fail before overwritten values can hide labels", async () => {
+  const { temporary, root, census } = await copyVerifierFixture();
+  try {
+    const filename = path.join(census, "exclusion-ledger.jsonl");
+    const rows = (await readFile(filename, "utf8")).trimEnd().split("\n");
+    rows[0] = rows[0].replace('{"recordId"', '{"reason":"D\\u006fckQ: 0.987654321","recordId"');
+    await writeFile(filename, `${rows.join("\n")}\n`);
+    await refreshFixtureChecksum(census, "exclusion-ledger.jsonl");
+    await assert.rejects(() => verifyCensus(root), /duplicate object key/);
+  } finally {
+    await rm(temporary, { recursive: true, force: true });
+  }
+});
+
+test("decoded NUL strings fail even when the source JSON contains only an escape", async () => {
+  const { temporary, root, census } = await copyVerifierFixture();
+  try {
+    const filename = path.join(census, "census-attestation.json");
+    const source = (await readFile(filename, "utf8")).replace(/\n\}\s*$/u, ',\n  "escapedNul": "safe\\u0000unsafe"\n}\n');
+    await writeFile(filename, source);
+    await refreshFixtureChecksum(census, "census-attestation.json");
+    await assert.rejects(() => verifyCensus(root), /Decoded NUL|decoded control/);
+  } finally {
+    await rm(temporary, { recursive: true, force: true });
+  }
+});
+
+test("the DockQ retained-field contract rejects numeric label-like additions", async () => {
+  const { temporary, root, census } = await copyVerifierFixture();
+  try {
+    const filename = path.join(census, "endpoint-contract.json");
+    const record = JSON.parse(await readFile(filename, "utf8"));
+    record.dockq.retainedFields.push(0.987654321);
+    await writeFile(filename, `${JSON.stringify(record, null, 2)}\n`);
+    await refreshFixtureChecksum(census, "endpoint-contract.json");
+    await assert.rejects(() => verifyCensus(root), /retained-field contract drifted/);
   } finally {
     await rm(temporary, { recursive: true, force: true });
   }

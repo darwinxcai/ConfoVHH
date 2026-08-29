@@ -7,6 +7,20 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 
+async function findUniqueWorkerAsset(pattern) {
+  const matches = [];
+  async function visit(directory) {
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      const entryPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) await visit(entryPath);
+      else if (pattern.test(entry.name)) matches.push(entryPath);
+    }
+  }
+  await visit(path.join(root, "dist", "client"));
+  assert.equal(matches.length, 1, `expected exactly one production ${pattern} worker asset`);
+  return matches[0];
+}
+
 function minimalStructure() {
   const atom = (chainId, residueName, x) => ({
     serial: chainId === "A" ? 1 : 2,
@@ -63,11 +77,8 @@ function minimalStructure() {
 }
 
 test("production audit worker boots and completes the typed request protocol", async (context) => {
-  const assetsDirectory = path.join(root, "dist", "client", "assets");
-  const assets = await readdir(assetsDirectory);
-  const workerAsset = assets.find((name) => /^audit-worker-.*\.js$/.test(name));
-  assert.ok(workerAsset, "expected a production audit-worker asset");
-  const assetUrl = pathToFileURL(path.join(assetsDirectory, workerAsset)).href;
+  const workerAsset = await findUniqueWorkerAsset(/^audit-worker-.*\.js$/);
+  const assetUrl = pathToFileURL(workerAsset).href;
   const wrapper = `
     import { parentPort } from "node:worker_threads";
     globalThis.self = {
@@ -117,11 +128,8 @@ test("production audit worker boots and completes the typed request protocol", a
 });
 
 test("production worker parses mmCIF and reconstructs a declared assembly", async (context) => {
-  const assetsDirectory = path.join(root, "dist", "client", "assets");
-  const assets = await readdir(assetsDirectory);
-  const workerAsset = assets.find((name) => /^audit-worker-.*\.js$/.test(name));
-  assert.ok(workerAsset, "expected a production audit-worker asset");
-  const assetUrl = pathToFileURL(path.join(assetsDirectory, workerAsset)).href;
+  const workerAsset = await findUniqueWorkerAsset(/^audit-worker-.*\.js$/);
+  const assetUrl = pathToFileURL(workerAsset).href;
   const wrapper = `
     import { parentPort } from "node:worker_threads";
     globalThis.self = {
@@ -208,11 +216,8 @@ ATOM 2 C CA GLY B 1 N 1 4 0 0
 });
 
 test("production worker parses PAE into a transferable row-major Float32 matrix", async (context) => {
-  const assetsDirectory = path.join(root, "dist", "client", "assets");
-  const assets = await readdir(assetsDirectory);
-  const workerAsset = assets.find((name) => /^audit-worker-.*\.js$/.test(name));
-  assert.ok(workerAsset, "expected a production audit-worker asset");
-  const assetUrl = pathToFileURL(path.join(assetsDirectory, workerAsset)).href;
+  const workerAsset = await findUniqueWorkerAsset(/^audit-worker-.*\.js$/);
+  const assetUrl = pathToFileURL(workerAsset).href;
   const wrapper = `
     import { parentPort } from "node:worker_threads";
     globalThis.self = {

@@ -104,7 +104,7 @@ test("local coordinate audit runs in the browser and exports a bound report", as
   const downloadPromise = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download the single-pose audit as JSON" }).click();
   const download = await downloadPromise;
-  expect(download.suggestedFilename()).toMatch(/confovhh-product-0\.9\.0_single-pose-audit\.json$/);
+  expect(download.suggestedFilename()).toMatch(/confovhh-product-0\.9\.1_single-pose-audit\.json$/);
   const stream = await download.createReadStream();
   const chunks = [];
   for await (const chunk of stream) chunks.push(chunk);
@@ -114,5 +114,61 @@ test("local coordinate audit runs in the browser and exports a bound report", as
   expect(report.audit.auditAttestation.resultFingerprint).toMatch(/^fnv1a32x2-audit-result:/);
 
   expect(offOriginRequests).toEqual([]);
+  expect(errors).toEqual([]);
+});
+
+test("release-pinned public 3P0G data runs end to end with exact scientific outputs", async ({ page }) => {
+  test.setTimeout(120_000);
+  const errors = [];
+  const offOriginRequests = [];
+  page.on("console", (message) => {
+    if (message.type() === "error") errors.push(message.text());
+  });
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/");
+
+  const applicationOrigin = new URL(page.url()).origin;
+  page.on("request", (request) => {
+    const url = request.url();
+    if (url.startsWith("http") && new URL(url).origin !== applicationOrigin) offOriginRequests.push(url);
+  });
+
+  await page.getByRole("button", { name: "Load β₂AR–Nb80 demo" }).click();
+  await expect(page.getByText("3P0G_beta2AR_Nb80.cif", { exact: true })).toBeVisible({ timeout: 60_000 });
+  await expect(page.getByText(/2 chains · 405 residues · MMCIF · model ID 1/i)).toBeVisible();
+  await expect(page.getByText(/release-pinned file demonstrates the audit workflow/i)).toBeVisible();
+  await expect(page.getByRole("combobox", { name: "Receptor chain" })).toHaveText(/^A(?:\s|·)/u);
+  await expect(page.getByRole("combobox", { name: "VHH chain" })).toHaveText(/^B(?:\s|·)/u);
+
+  await page.getByRole("checkbox", { name: /confirmed the selected receptor and VHH chain roles/i }).check();
+  await page.getByRole("button", { name: "Run interface audit" }).click();
+  const results = page.getByLabel("Interface audit results");
+  await expect(results).toBeVisible({ timeout: 90_000 });
+  await expect(results).toBeFocused();
+  await expect(results.locator("article.metric-card").filter({ hasText: "Contact residue pairs" }).getByText("46", { exact: true })).toBeVisible();
+  await expect(results.locator("article.metric-card").filter({ hasText: "Clashing residue pairs" }).getByText("0", { exact: true })).toBeVisible();
+  await expect(results.locator("article.metric-card").filter({ hasText: "Protein ΔSASA" }).getByText("1729 Å²", { exact: true })).toBeVisible();
+  await expect(results.getByText("Coordinate evidence—not binding proof", { exact: true })).toBeVisible();
+  await expectNoSeriousAxeViolations(page);
+
+  const downloadPromise = page.waitForEvent("download");
+  await page.getByRole("button", { name: "Download the single-pose audit as JSON" }).click();
+  const download = await downloadPromise;
+  expect(download.suggestedFilename()).toBe("3P0G_beta2AR_Nb80_confovhh-product-0.9.1_single-pose-audit.json");
+  const stream = await download.createReadStream();
+  const chunks = [];
+  for await (const chunk of stream) chunks.push(chunk);
+  const report = JSON.parse(Buffer.concat(chunks).toString("utf8"));
+  expect(report.file).toBe("3P0G_beta2AR_Nb80.cif");
+  expect(report.structure.sourceFileBytes).toBe(396_018);
+  expect(report.structure.sourceFileSha256).toBe("ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88");
+  expect(report.audit.receptorChain).toBe("A");
+  expect(report.audit.vhhChain).toBe("B");
+  expect(report.audit.contactPairCount).toBe(46);
+  expect(report.audit.severeClashCount).toBe(0);
+  expect(report.audit.deltaSasaAngstrom2).toBeCloseTo(1729.261867, 6);
+  expect(report.audit.warnings).toContain("Favorable coordinate geometry is not evidence of affinity, specificity, kinetics, signaling, or biological binding.");
+
+  expect(offOriginRequests).toEqual(["https://files.rcsb.org/download/3P0G.cif"]);
   expect(errors).toEqual([]);
 });

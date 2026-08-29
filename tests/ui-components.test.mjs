@@ -282,6 +282,16 @@ async function readCssTree(directory) {
   return contents.join("\n");
 }
 
+async function findFiles(directory, pattern) {
+  const matches = [];
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const entryPath = path.join(directory, entry.name);
+    if (entry.isDirectory()) matches.push(...await findFiles(entryPath, pattern));
+    else if (pattern.test(entry.name)) matches.push(entryPath);
+  }
+  return matches;
+}
+
 test("emits ConfoVHH interaction and reduced-motion styles", async () => {
   const css = await readCssTree(path.join(root, "dist"));
 
@@ -294,11 +304,12 @@ test("emits ConfoVHH interaction and reduced-motion styles", async () => {
 });
 
 test("production audit worker embeds the IMGT WASM without a Node filesystem loader", async () => {
-  const assetsDirectory = path.join(root, "dist", "client", "assets");
-  const assets = await readdir(assetsDirectory);
-  const workerAsset = assets.find((name) => /^audit-worker-.*\.js$/.test(name));
-  assert.ok(workerAsset, "expected a production audit-worker asset");
-  const source = await readFile(path.join(assetsDirectory, workerAsset), "utf8");
+  const workerAssets = await findFiles(
+    path.join(root, "dist", "client"),
+    /^audit-worker-.*\.js$/,
+  );
+  assert.equal(workerAssets.length, 1, "expected exactly one production audit-worker asset");
+  const source = await readFile(workerAssets[0], "utf8");
 
   assert.doesNotMatch(source, /__dirname|readFileSync/);
   assert.match(source, /Uint8Array\.from\(atob/);
@@ -314,23 +325,22 @@ test("development and production transforms expose immunum as named ESM", async 
 
 test("production page bundles never instantiate the IMGT WASM during SSR or hydration", async () => {
   const bundleDirectories = [
-    path.join(root, "dist", "server", "ssr", "assets"),
-    path.join(root, "dist", "client", "assets"),
+    path.join(root, "dist", "server", "ssr"),
+    path.join(root, "dist", "client"),
   ];
   let pageBundles = 0;
   for (const directory of bundleDirectories) {
-    const assets = await readdir(directory);
-    const pages = assets.filter((name) => /^page-.*\.js$/.test(name));
+    const pages = await findFiles(directory, /^page-.*\.js$/);
     assert.ok(pages.length > 0, `expected a production page asset in ${directory}`);
     for (const page of pages) {
       pageBundles += 1;
-      const source = await readFile(path.join(directory, page), "utf8");
+      const source = await readFile(page, "utf8");
       assert.doesNotMatch(source, /WebAssembly\.Module/);
       assert.doesNotMatch(source, /Uint8Array\.from\(atob/);
       assert.match(source, /IMGT numbering is available only inside the ConfoVHH audit worker/);
     }
   }
-  assert.equal(pageBundles, 2);
+  assert.ok(pageBundles >= 2);
 });
 
 test("workspace source preserves raw-byte provenance and bounded worker handoff", async () => {
@@ -587,6 +597,8 @@ test("renders the release record with exact results and an explicit claim bounda
   );
   const html = renderToStaticMarkup(React.createElement(ValidationRecord));
   assert.match(html, /06 · Release evidence/);
+  assert.match(html, /v0\.5\.0 scientific core · patched environment/);
+  assert.match(html, /Byte-identical equivalence to the historical v0\.5 lockfile is not claimed/);
   assert.match(html, /17\/17/);
   assert.match(html, /5\/5/);
   assert.match(html, /360\/360/);
@@ -596,9 +608,14 @@ test("renders the release record with exact results and an explicit claim bounda
   assert.match(html, /Post-label regression replay passed—not new validation/);
   assert.match(html, /all 20 controls\/cross-checks passed/);
   assert.match(html, /adds no independent performance evidence/);
-  assert.match(html, /Hard-decoy holdout remains blocked and unexecuted/);
+  assert.match(html, /Hard-decoy metadata archived; target freeze remains blocked/);
+  assert.match(html, /287-entry historical four-term metadata sub-universe/);
+  assert.match(html, /48 response files \(2 independent captures × 12 batches × 2 repeats\)/);
+  assert.match(html, /normalized outputs agree exactly/);
+  assert.match(html, /1,401 polymer entities/);
   assert.match(html, /No holdout has been assembled, labeled, frozen, opened, or evaluated/);
   assert.match(html, /seven groups are provisional, zero are formally cleared, and at least ten are required/);
+  assert.match(html, /selects a sealed one-way native-epitope oracle design/);
 });
 
 test("emits chart themes for the starter's media dark mode", async () => {

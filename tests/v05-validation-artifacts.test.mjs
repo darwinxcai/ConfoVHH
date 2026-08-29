@@ -23,8 +23,15 @@ const historicalDockqDirectory = path.join(
   "validation",
   "dockq-development-pilot-v1",
 );
+const implementationSnapshotDirectory = path.join(
+  root,
+  "validation",
+  "v0.5-engine-implementation-snapshot-v1",
+);
 const EXPECTED_PUBLIC_SOURCE_COMMIT = "5cb57617b54baa314513486885c402449f643406";
 const EXPECTED_REPLAY_SOURCE_COMMIT = "278ae1a74da133778fba5b17bc296a8e37f02e76";
+const EXPECTED_PUBLIC_SUMMARY_SHA256 = "7d1dee34fe98a1b01cc05f5ad984f57841f9b1f2f545861ebca5d9a3fc83c4da";
+const EXPECTED_REPLAY_SUMMARY_SHA256 = "50aedd70d049aa065e687e6bdfe2e62b914126d4634fb151b01bf73237508743";
 const EXPECTED_PUBLIC_IMPLEMENTATION_FILES = [
   "lib/confovhh.ts",
   "lib/geometry-constants.ts",
@@ -73,6 +80,18 @@ async function json(filename) {
 async function jsonl(filename) {
   const text = await readFile(filename, "utf8");
   return text.trim().split("\n").filter(Boolean).map((line) => JSON.parse(line));
+}
+
+async function implementationSnapshot() {
+  return json(path.join(implementationSnapshotDirectory, "index.json"));
+}
+
+async function snapshotImplementationBytes(attestationId, relative, expected) {
+  const snapshot = await implementationSnapshot();
+  assert.equal(snapshot.attestations[attestationId].files[relative], expected);
+  const bytes = await readFile(path.join(implementationSnapshotDirectory, "objects", expected));
+  assert.equal(sha256(bytes), expected);
+  return bytes;
 }
 
 function checksumMap(text) {
@@ -164,14 +183,16 @@ test("v0.5 public attestation checksums and commit-bound accounting are intact",
   );
 });
 
-test("v0.5 public attestation binds implementation and executed immunum bytes", async () => {
+test("v0.5 public attestation binds archived implementation and current scientific-core bytes", async () => {
   const summary = await json(path.join(publicDirectory, "summary.json"));
   const implementation = summary.sourceAttestation.implementation;
   assert.deepEqual(Object.keys(implementation.files).sort(), EXPECTED_PUBLIC_IMPLEMENTATION_FILES);
   const combined = createHash("sha256");
   for (const [relative, expected] of Object.entries(implementation.files)) {
-    const bytes = await readFile(path.join(root, relative));
-    assert.equal(sha256(bytes), expected, `${relative}: post-attestation drift`);
+    const bytes = await snapshotImplementationBytes("public-regression", relative, expected);
+    if (relative !== "package.json" && relative !== "package-lock.json") {
+      assert.equal(sha256(await readFile(path.join(root, relative))), expected, `${relative}: scientific-core drift`);
+    }
     combined.update(relative);
     combined.update("\0");
     combined.update(bytes);
@@ -264,14 +285,16 @@ test("v0.5 DockQ replay checksums, source attestation, and claim barriers are in
   );
 });
 
-test("v0.5 DockQ replay binds the complete computational implementation", async () => {
+test("v0.5 DockQ replay binds archived implementation and current scientific-core bytes", async () => {
   const summary = await json(path.join(replayDirectory, "summary.json"));
   const implementation = summary.sourceAttestation.implementation;
   assert.deepEqual(Object.keys(implementation.files).sort(), EXPECTED_REPLAY_IMPLEMENTATION_FILES);
   const combined = createHash("sha256");
   for (const [relative, expected] of Object.entries(implementation.files)) {
-    const bytes = await readFile(path.join(root, relative));
-    assert.equal(sha256(bytes), expected, `${relative}: post-replay computational drift`);
+    const bytes = await snapshotImplementationBytes("dockq-regression-replay", relative, expected);
+    if (relative !== "package.json" && relative !== "package-lock.json") {
+      assert.equal(sha256(await readFile(path.join(root, relative))), expected, `${relative}: scientific-core drift`);
+    }
     combined.update(relative);
     combined.update("\0");
     combined.update(bytes);
@@ -289,6 +312,107 @@ test("v0.5 DockQ replay binds the complete computational implementation", async 
   assert.deepEqual(
     summary.dockqEnvironment.pythonEnvironment,
     historicalSummary.software.pythonEnvironment,
+  );
+});
+
+test("supplemental v0.5 implementation snapshot is complete and checksum-covered", async () => {
+  const snapshot = await implementationSnapshot();
+  assert.equal(snapshot.schemaVersion, "1.0.0");
+  assert.equal(snapshot.status, "frozen-supplemental-source-snapshot");
+  assert.equal(snapshot.currentProductDependencyEnvironmentMatchesAttestedV05, false);
+  assert.deepEqual(Object.keys(snapshot.attestations).sort(), [
+    "dockq-regression-replay",
+    "public-regression",
+  ]);
+
+  const expectedBindings = {
+    "public-regression": {
+      summary: "validation/v0.5-public-regression-attestation-v1/summary.json",
+      summarySha256: EXPECTED_PUBLIC_SUMMARY_SHA256,
+      sourceCommit: EXPECTED_PUBLIC_SOURCE_COMMIT,
+      implementationFiles: EXPECTED_PUBLIC_IMPLEMENTATION_FILES,
+    },
+    "dockq-regression-replay": {
+      summary: "validation/dockq-v0.5-regression-replay-v1/summary.json",
+      summarySha256: EXPECTED_REPLAY_SUMMARY_SHA256,
+      sourceCommit: EXPECTED_REPLAY_SOURCE_COMMIT,
+      implementationFiles: EXPECTED_REPLAY_IMPLEMENTATION_FILES,
+    },
+  };
+  for (const [id, expected] of Object.entries(expectedBindings)) {
+    const archived = snapshot.attestations[id];
+    assert.equal(archived.summary, expected.summary);
+    assert.equal(archived.summarySha256, expected.summarySha256);
+    assert.equal(archived.sourceCommit, expected.sourceCommit);
+    const summaryBytes = await readFile(path.join(root, archived.summary));
+    assert.equal(sha256(summaryBytes), expected.summarySha256);
+    const summary = JSON.parse(summaryBytes.toString("utf8"));
+    assert.equal(archived.sourceCommit, summary.sourceAttestation.gitCommit);
+    assert.equal(
+      archived.implementationCombinedSha256,
+      summary.sourceAttestation.implementation.combinedSha256,
+    );
+    assert.deepEqual(archived.files, summary.sourceAttestation.implementation.files);
+    assert.deepEqual(Object.keys(archived.files).sort(), expected.implementationFiles);
+  }
+
+  const checksums = checksumMap(await readFile(
+    path.join(implementationSnapshotDirectory, "checksums.sha256"),
+    "utf8",
+  ));
+  const files = [];
+  async function visit(directory, prefix = "") {
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      const relative = prefix ? `${prefix}/${entry.name}` : entry.name;
+      if (entry.isDirectory()) await visit(path.join(directory, entry.name), relative);
+      else if (relative !== "checksums.sha256") files.push(relative);
+    }
+  }
+  await visit(implementationSnapshotDirectory);
+  assert.deepEqual([...checksums.keys()].sort(), files.sort());
+  for (const [relative, expected] of checksums) {
+    assert.equal(sha256(await readFile(path.join(implementationSnapshotDirectory, relative))), expected);
+  }
+
+  const immunum = snapshot.executedDependencies.immunum;
+  const publicSummary = await json(path.join(publicDirectory, "summary.json"));
+  const recordedImmunum = publicSummary.sourceAttestation.executedDependencies.immunum;
+  assert.deepEqual(immunum, {
+    name: recordedImmunum.name,
+    version: recordedImmunum.version,
+    fileCount: recordedImmunum.fileCount,
+    combinedSha256: recordedImmunum.combinedSha256,
+    files: Object.fromEntries(recordedImmunum.files.map((entry) => [
+      entry.path,
+      { bytes: entry.bytes, sha256: entry.sha256 },
+    ])),
+  });
+  assert.equal(immunum.version, "1.2.0");
+  assert.equal(Object.keys(immunum.files).length, immunum.fileCount);
+  const combined = createHash("sha256");
+  for (const [relative, entry] of Object.entries(immunum.files)) {
+    const bytes = await readFile(path.join(implementationSnapshotDirectory, "objects", entry.sha256));
+    assert.equal(bytes.byteLength, entry.bytes);
+    assert.equal(sha256(bytes), entry.sha256);
+    combined.update(relative);
+    combined.update("\0");
+    combined.update(entry.sha256);
+    combined.update("\0");
+  }
+  assert.equal(combined.digest("hex"), immunum.combinedSha256);
+
+  const expectedObjects = new Set([
+    ...Object.values(snapshot.attestations).flatMap((attestation) => Object.values(attestation.files)),
+    ...Object.values(immunum.files).map((entry) => entry.sha256),
+  ]);
+  const objectEntries = await readdir(
+    path.join(implementationSnapshotDirectory, "objects"),
+    { withFileTypes: true },
+  );
+  assert.ok(objectEntries.every((entry) => entry.isFile() && /^[a-f0-9]{64}$/u.test(entry.name)));
+  assert.deepEqual(
+    objectEntries.map((entry) => entry.name).sort(),
+    [...expectedObjects].sort(),
   );
 });
 

@@ -37,7 +37,8 @@ test("renders the ConfoVHH application shell without preview-only metadata", asy
   const html = await response.text();
   assert.match(html, /ConfoVHH/);
   assert.match(html, /GPCR.{0,20}VHH interface audit/i);
-  assert.match(html, /product(?:\s|<!--[^>]*-->)*0\.9\.0/i);
+  assert.match(html, /product(?:\s|<!--[^>]*-->)*0\.9\.1/i);
+  assert.match(html, /engine(?:\s|<!--[^>]*-->)*0\.5\.0/i);
   assert.match(html, /Prediction-run batch audit/i);
   assert.match(html, /AlphaFold, ColabFold, or Boltz/i);
   assert.match(html, /Research workflow/);

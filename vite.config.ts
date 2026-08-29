@@ -1,11 +1,12 @@
 import vinext from "vinext";
+import { Buffer } from "node:buffer";
 import { readFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import path from "node:path";
 import type { TransformPluginContext } from "rolldown";
 import { defineConfig } from "vite";
-import hostingConfig from "./.openai/hosting.json";
-import { sites } from "./build/sites-vite-plugin";
+import hostingConfig from "./.openai/hosting.json" with { type: "json" };
+import { sites } from "./build/sites-vite-plugin.ts";
 
 const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
   "00000000-0000-4000-8000-000000000000";
@@ -13,9 +14,9 @@ const SITE_CREATOR_PLACEHOLDER_DATABASE_ID =
 const { d1, r2 } = hostingConfig;
 const require = createRequire(import.meta.url);
 const immunumEntry = require.resolve("immunum");
-const immunumWasmBase64 = readFileSync(
+const immunumWasmBase64 = Buffer.from(readFileSync(
   path.join(path.dirname(immunumEntry), "immunum_bg.wasm"),
-).toString("base64");
+)).toString("base64");
 
 function immunumWorkerWasmPlugin(forceWorkerRuntime = false) {
   return {

@@ -1,0 +1,77 @@
+/* tslint:disable */
+/* eslint-disable */
+
+/**
+ * Ordered position → residue map, iterated in IMGT-correct order.
+ * Keys are position strings (e.g. `"112A"`) and values are single-character residues.
+ */
+export type Numbering = Map<string, string>;
+
+/** Result returned by {@link Annotator.number}. On failure, chain/scheme/confidence/numbering/query_start/query_end are null and error contains the reason. */
+export interface NumberingResult {
+    /** Detected chain type: `"H"`, `"K"`, `"L"`, `"A"`, `"B"`, `"G"`, or `"D"`. Null on failure. */
+    chain: string | null;
+    /** Numbering scheme used: `"imgt"` or `"kabat"`. Null on failure. */
+    scheme: string | null;
+    /** Alignment confidence score between 0 and 1. Null on failure. */
+    confidence: number | null;
+    /** Position-to-residue mapping for the aligned region. Null on failure. */
+    numbering: Numbering | null;
+    /** 0-indexed start of the aligned region in the input sequence (inclusive). Null on failure. */
+    query_start: number | null;
+    /** 0-indexed end of the aligned region in the input sequence (inclusive). Null on failure. */
+    query_end: number | null;
+    /** Error message if numbering failed, null on success. */
+    error: string | null;
+}
+
+/** FR/CDR segments returned by {@link Annotator.segment}. On failure, all region fields are absent and error contains the reason. */
+export interface SegmentationResult {
+    fr1?: string;
+    cdr1?: string;
+    fr2?: string;
+    cdr2?: string;
+    fr3?: string;
+    cdr3?: string;
+    fr4?: string;
+    /** Residues before FR1 (non-canonical N-terminal extension). */
+    prefix?: string;
+    /** Residues after FR4 (non-canonical C-terminal extension). */
+    postfix?: string;
+    /** Error message if segmentation failed, null on success. */
+    error: string | null;
+}
+
+/**
+ * Annotates antibody and T-cell receptor sequences with IMGT or Kabat position numbers.
+ *
+ * @param chains - Chain types to consider during auto-detection. Each entry is a
+ *   case-insensitive string. Accepted values:
+ *   - Antibody heavy chain: `"IGH"` / `"H"` / `"heavy"`
+ *   - Antibody kappa chain: `"IGK"` / `"K"` / `"kappa"`
+ *   - Antibody lambda chain: `"IGL"` / `"L"` / `"lambda"`
+ *   - TCR alpha chain:       `"TRA"` / `"A"` / `"alpha"`
+ *   - TCR beta chain:        `"TRB"` / `"B"` / `"beta"`
+ *   - TCR gamma chain:       `"TRG"` / `"G"` / `"gamma"`
+ *   - TCR delta chain:       `"TRD"` / `"D"` / `"delta"`
+ *
+ *   Pass all chains you want to consider; the annotator scores each and picks the
+ *   best-matching one. To consider every supported chain pass all seven values.
+ *
+ * @param scheme - Numbering scheme to use for output positions. Accepted values
+ *   (case-insensitive):
+ *   - `"IMGT"` / `"i"` — IMGT numbering (recommended; used internally)
+ *   - `"Kabat"` / `"k"` — Kabat numbering (derived from IMGT)
+ *
+ * @param min_confidence - Optional minimum alignment confidence threshold in the
+ *   range `[0, 1]`. Sequences scoring below this value are rejected with an error.
+ *   Defaults to `0.5` when `null` or omitted.
+ */
+export class Annotator {
+    free(): void;
+    [Symbol.dispose](): void;
+    constructor(chains: string[], scheme: string, min_confidence?: number | null);
+    number(sequence: string): NumberingResult;
+    segment(sequence: string): SegmentationResult;
+
+}

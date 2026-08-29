@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0.0",
+  "protocols": [
+    {
+      "path": "HARD_DECOY_PROTOCOL.md",
+      "sha256": "9a6c441d844069f52f87e60fa2cf00dfc671b588a19454d0479d188e4cb46c1f",
+      "role": "immutable-v1-history"
+    },
+    {
+      "path": "HARD_DECOY_PROTOCOL_V2.md",
+      "sha256": "9c38f2d2f7ed2ce4acd5b6730fedd6a37151fe992a808bfefc4268888f862421",
+      "role": "immutable-v2-blocked-history"
+    },
+    {
+      "path": "HARD_DECOY_PROTOCOL_V3.md",
+      "sha256": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+      "role": "current-independent-holdout-design"
+    },
+    {
+      "path": "LEAKAGE_COMPONENT_DEVELOPMENT_PROTOCOL.md",
+      "sha256": "fee5eb0b38c5e912668356740bb6c2d2dcb78eb77e0d27c6fdcacbed3092dff8",
+      "role": "separate-development-evaluation-design"
+    }
+  ],
+  "scientificEngine": {
+    "version": "0.5.0",
+    "commit": "04c6bda2289157dd294c290609f6052aa0ef9195",
+    "tree": "1d0bc74ca7ca8d59de840b224e453bb61bd8e6b9"
+  },
+  "v2BlockedCensus": {
+    "checksumManifestSha256": "e2020cf5863246058d3c89d974b49da0d5d41803904b899670712f1509609502",
+    "gitTree": "f4e9445ce08ec623633113b6abaef6fb5c00cd78"
+  }
+}

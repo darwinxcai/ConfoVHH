@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "executionEnvironment": "separate-noninteractive-vm-or-independent-custodian",
+  "requiredControls": [
+    "network-disabled-after-source-staging",
+    "no-tty-shell-debugger-ptrace-core-dumps-crash-upload-or-telemetry",
+    "unprivileged-identity",
+    "read-only-code-input-and-key-mounts",
+    "tmpfs-scratch",
+    "no-repository-generator-candidate-pose-confovhh-dockq-or-label-mount",
+    "fixed-status-only-stdout-stderr",
+    "exact-two-output-allowlist",
+    "append-only-external-transparency-receipt"
+  ],
+  "filesystemPolicy": {
+    "inputOpen": "pinned-directory-descriptor-openat2-RESOLVE_BENEATH-and-RESOLVE_NO_SYMLINKS-preferred",
+    "processVerifiedBytesWithoutReopen": true,
+    "rejectSymlinkHardlinkTraversalInodeAliasAndTOCTOU": true,
+    "outputOpen": "O_CREAT-O_EXCL-O_NOFOLLOW-mode-0600",
+    "fsyncFileAndDirectory": true,
+    "replaceExistingOutputForbidden": true
+  },
+  "failurePolicy": {
+    "targetFailure": "signed-FAIL_CLOSED-and-target-mechanically-ineligible",
+    "systemicFailure": "terminal-ORACLE_FAILED",
+    "sameVersionRerunForbidden": true,
+    "interactiveDebuggingAfterNativeAccessForbidden": true
+  },
+  "claimBoundary": "process-separation-not-proof-against-malicious-privileged-operator"
+}

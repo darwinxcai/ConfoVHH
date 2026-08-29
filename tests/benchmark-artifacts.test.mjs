@@ -33,7 +33,10 @@ function expectedCapriClass(dockq) {
 }
 
 test("release metadata namespaces, versions, bounds, and claim barriers are explicit", () => {
-  assert.equal(RELEASE_VALIDATION.schemaVersion, "1.2.0");
+  assert.equal(RELEASE_VALIDATION.schemaVersion, "1.5.0");
+  assert.equal(RELEASE_VALIDATION.engineLineage.scientificCoreSourceMatchesAttestedV05, true);
+  assert.equal(RELEASE_VALIDATION.engineLineage.executedImmunumMatchesAttestedV05, true);
+  assert.equal(RELEASE_VALIDATION.engineLineage.dependencyEnvironmentMatchesAttestedV05, false);
   assert.equal(RELEASE_VALIDATION.softwareVersion, "0.5.0");
   assert.equal(RELEASE_VALIDATION.runtime.minimumNodeVersion, "22.18.0");
   assert.equal(
@@ -57,7 +60,38 @@ test("release metadata namespaces, versions, bounds, and claim barriers are expl
   assert.equal(RELEASE_VALIDATION.holdoutStatus.formallyClearedGroups, 0);
   assert.equal(RELEASE_VALIDATION.holdoutStatus.minimumRequiredGroups, 10);
   assert.equal(RELEASE_VALIDATION.holdoutStatus.candidateDiscoveryComplete, false);
-  assert.equal(RELEASE_VALIDATION.holdoutStatus.epitopeBlindingDesignResolved, false);
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.currentProtocol, "HARD_DECOY_PROTOCOL_V3.md");
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.selectedDesign, "sealed-one-way-native-epitope-boolean-oracle");
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.v2CensusTerminal, true);
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.epitopeBlindingDesignSelected, true);
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.oracleImplementationValidated, false);
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.oracleCustodyValidated, false);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.rcsbQueryUnionEntries, 2065);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.gpcrdbApiEntries, 1716);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.gpcrdbHtmlEntries, 1716);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.intersectionEntries, 287);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.sourceRawResponsesArchived, 12);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.entryMetadataCaptureCount, 2);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.entryMetadataRawResponsesArchived, 48);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.polymerEntities, 1401);
+  assert.deepEqual(RELEASE_VALIDATION.hardDecoySourceUniverse.reviewStrata, {
+    directTargetCandidateReview: 39,
+    auxiliaryOrConstructReview: 242,
+    metadataResolutionRequired: 6,
+  });
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.pendingDispositionRows, 287);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.dispositionLedgerComplete, false);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.targetFreezePermitted, false);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.nativeCoordinatesAccessedDuringV3Preparation, false);
+  assert.equal(RELEASE_VALIDATION.hardDecoySourceUniverse.dockqOrCapriLabelsAccessedDuringV3Preparation, false);
+  assert.equal(RELEASE_VALIDATION.holdoutStatus.holdoutDatasetExists, false);
+  for (const field of [
+    "oracleRequestFrozen",
+    "oracleExecuted",
+    "leakageGraphFrozen",
+    "targetManifestFrozen",
+    "developmentEvaluationExecuted",
+  ]) assert.equal(RELEASE_VALIDATION.holdoutStatus[field], false, field);
   assert.ok(Object.values(RELEASE_VALIDATION.claimFlags).every((value) => value === false));
 });
 

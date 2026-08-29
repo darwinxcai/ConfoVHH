@@ -39,6 +39,14 @@ The complete dependency graph and exact resolved versions are recorded in `packa
 - The canonical VHH numbering fixture is a public immunum documentation example.
 - The long-CDR3 numbering fixture is a public sequence reported in [ANARCI issue #14](https://github.com/oxpig/ANARCI/issues/14).
 
+## Archived public metadata responses
+
+- RCSB PDB search/API metadata archived under `validation/hard-decoy-holdout-v3/` is identified as CC0 1.0 in the [RCSB usage policy](https://www.rcsb.org/pages/usage-policy).
+- GPCRdb API/HTML metadata archived under the same validation tree is identified as CC BY 4.0 in the [GPCRdb legal notice](https://docs.gpcrdb.org/legal_notice.html); GPCRdb attribution is retained here and in the evidence record.
+- The exact source-license mapping and live evidence URLs used during the 2026-08-29 metadata preparation are recorded in [`source-licenses-2026-08-29.json`](./validation/hard-decoy-holdout-v3/source-licenses-2026-08-29.json). The external license-page bytes were not archived in that record.
+
+These metadata archives are redistributed under their source terms and are not relicensed by ConfoVHH's MIT license.
+
 ## Public prediction-output compatibility data
 
 - The real ColabFold-multimer regression uses exact remote bytes from [Zenodo record 17063524](https://zenodo.org/records/17063524), “AlphaFold2 Multimer Structural Models for CtBP-Prospero Protein Interaction,” by Bohdana Rovenko, Mykhailo Girych, and Ville Hietakangas, under CC-BY-4.0. ConfoVHH records hashes and derived audit summaries; it does not redistribute the raw files.

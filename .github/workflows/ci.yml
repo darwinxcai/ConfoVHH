@@ -31,10 +31,19 @@ jobs:
           node-version: ${{ matrix.node }}
           cache: npm
           cache-dependency-path: package-lock.json
-      - name: Install frozen scientific-engine dependencies
+      - name: Install patched product dependencies
         run: npm ci
+      - name: Verify dependency graph and advisories
+        run: |
+          npm ls --all
+          npm audit --audit-level=moderate
+          npm audit --omit=dev --audit-level=moderate
       - name: Full offline release gate
         run: npm run test:release
+      - name: Replay blocked hard-decoy v3 integration state
+        run: |
+          node scripts/hard-decoy-v3/verify-integration-state.mjs
+          node --test validation/hard-decoy-holdout-v3/census-audit-2026-08-29/verify.test.mjs
 
   core-coverage:
     name: Core coverage
@@ -56,7 +65,7 @@ jobs:
           npm ci
           npm ci --prefix qa
       - name: Audit isolated QA dependencies
-        run: npm audit --prefix qa --audit-level=high
+        run: npm audit --prefix qa --audit-level=moderate
       - name: Build production output for rendered-response tests
         run: npm run build
       - name: Enforce measured core coverage floors
@@ -73,7 +82,7 @@ jobs:
           --functions=50
           node --test tests/*.test.mjs
       - name: Upload coverage report
-        if: always() && !cancelled()
+        if: success()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: core-coverage
@@ -107,7 +116,7 @@ jobs:
       - name: Run browser and WCAG A/AA acceptance
         run: npm --prefix qa test
       - name: Upload browser diagnostics
-        if: always() && !cancelled()
+        if: failure() && !cancelled()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: chromium-acceptance
@@ -130,7 +139,7 @@ jobs:
           node-version: 22.18.0
           cache: npm
           cache-dependency-path: package-lock.json
-      - name: Install frozen scientific-engine dependencies
+      - name: Install patched product dependencies
         run: npm ci
       - name: Verify immutable producer bytes and all pose/PAE audits
         run: node scripts/validate-real-prediction-runs.mjs --verify=validation/real-prediction-run-regression-v1.json --quiet

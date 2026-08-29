@@ -1,5 +1,11 @@
 # ConfoVHH independent hard-decoy protocol v3 — draft
 
+> Archival notice (2026-08-29): this file preserves the first public v3 draft.
+> The selected, still-unexecuted design is now
+> [`HARD_DECOY_PROTOCOL_V3.md`](HARD_DECOY_PROTOCOL_V3.md). The selected design
+> uses a sealed native-contact oracle and does not retroactively alter this
+> draft or any v1/v2 artifact.
+
 Status: **DRAFT ONLY; target census blocked; no holdout coordinates, candidate poses, DockQ/CAPRI labels, ConfoVHH holdout scores, or performance results accessed.**
 
 This file is additive. It does **not** modify or supersede `HARD_DECOY_PROTOCOL.md`, `HARD_DECOY_PROTOCOL_V2.md`, the public product release, the commit-attested v0.5.0 scientific engine, or any frozen historical validation artifact. It resolves protocol ambiguities identified in `validation/hard-decoy-holdout-v2/PROTOCOL_FEASIBILITY_DECISION.md` without authorizing target freeze or execution.

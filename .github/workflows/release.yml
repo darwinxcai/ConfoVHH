@@ -94,16 +94,22 @@ jobs:
           fi
 
           echo "publish_required=true" >> "$GITHUB_OUTPUT"
-      - name: Install frozen dependencies
+      - name: Install patched product dependencies
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
         run: npm ci
+      - name: Verify dependency graph and advisories
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
+        run: |
+          npm ls --all
+          npm audit --audit-level=moderate
+          npm audit --omit=dev --audit-level=moderate
       - name: Re-run the complete offline release gate
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
         run: npm run test:release
       - name: Re-run exact public producer-output regression
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
         run: node scripts/validate-real-prediction-runs.mjs --verify=validation/real-prediction-run-regression-v1.json --quiet
-      - name: Generate deterministic archives, SBOM, receipt, and checksums
+      - name: Generate source archive, production manifest, SBOM, receipt, and checksums
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
         env:
           RELEASE_TAG: ${{ steps.release.outputs.tag }}

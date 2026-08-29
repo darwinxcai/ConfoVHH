@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "frozen-supplemental-source-snapshot",
+  "purpose": "Preserve the exact implementation and executed immunum bytes bound by the unchanged v0.5 validation summaries after the researcher-facing product dependency environment advances.",
+  "currentProductDependencyEnvironmentMatchesAttestedV05": false,
+  "attestations": {
+    "public-regression": {
+      "summary": "validation/v0.5-public-regression-attestation-v1/summary.json",
+      "summarySha256": "7d1dee34fe98a1b01cc05f5ad984f57841f9b1f2f545861ebca5d9a3fc83c4da",
+      "sourceCommit": "5cb57617b54baa314513486885c402449f643406",
+      "implementationCombinedSha256": "7d98f49b97499c0cefb460c6b06673d2639c9aeef2adfdb2d1198e965766d5f7",
+      "files": {
+        "lib/confovhh.ts": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+        "lib/geometry-constants.ts": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+        "lib/geometry-fit.ts": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+        "lib/mmcif.ts": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+        "lib/vhh-numbering.ts": "221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+        "package.json": "6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+        "package-lock.json": "db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+        "scripts/benchmark-mmcif-assemblies.mjs": "1412c0db6fa055c75615b481dcebaa6dc3661884b412aa2d2381e1714c1ba42e",
+        "scripts/benchmark-public-pdbs.mjs": "ff3b296028330ebb0280921229cfaedd81664bebdab778260992e2169dcca37c",
+        "scripts/public-coordinate-download.mjs": "7134c92b5513e506c67eb8f416cdf83efe1b1579addb1b085e6280fde88f5488",
+        "scripts/run-v05-public-regression-attestation.mjs": "50b2d56cfdd792438e77c5f593f46033fb9c5fc1c2a89d71965e62bc92958808",
+        "validation/mmcif-regression-manifest.v1.json": "5622c72b90f420462054f2f80fbe37924a4d6bfbcbf367a328f0b2fe356219e5"
+      }
+    },
+    "dockq-regression-replay": {
+      "summary": "validation/dockq-v0.5-regression-replay-v1/summary.json",
+      "summarySha256": "50aedd70d049aa065e687e6bdfe2e62b914126d4634fb151b01bf73237508743",
+      "sourceCommit": "278ae1a74da133778fba5b17bc296a8e37f02e76",
+      "implementationCombinedSha256": "8926de3d4f9db9343a40659d8393d00db2f612572404c1b4bb8a7e41de3260d3",
+      "files": {
+        "lib/audit-export.ts": "5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+        "lib/audit-jobs.ts": "79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+        "lib/audit-worker-protocol.ts": "2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+        "lib/audit-worker.ts": "9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+        "lib/confovhh.ts": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+        "lib/coordinate-parser.ts": "0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+        "lib/geometry-constants.ts": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+        "lib/geometry-fit.ts": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+        "lib/mmcif.ts": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+        "lib/pose-ensemble.ts": "c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+        "lib/state-pair.ts": "d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+        "lib/vhh-numbering.ts": "221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+        "package.json": "6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+        "package-lock.json": "db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+        "scripts/dockq-batch.py": "53a8981abea8c25724afa34b082d872dec52661fb234897f3c7c5939f85608e2",
+        "scripts/dockq-replay-comparison.mjs": "1f782eb097ffcf700e759d68c1cdcffc7d8a2511b2a2100e39c176d56358bfe8",
+        "scripts/run-dockq-development-pilot.mjs": "a67af203faa4b6fd6ebe365c6b47ebba66d8199c9db6651fb2ea532f65d2170d",
+        "scripts/run-dockq-v05-regression-replay.mjs": "ee73137ef5343088e4a39a8571ce3408499cddc9b2f35f20b192b8a8c00bf37b",
+        "validation/dockq-development-pilot-v1/pilot-spec.json": "110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc",
+        "validation/dockq-development-pilot-v1/source-manifest.json": "d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176"
+      }
+    }
+  },
+  "executedDependencies": {
+    "immunum": {
+      "name": "immunum",
+      "version": "1.2.0",
+      "fileCount": 6,
+      "combinedSha256": "b0c5c0214fad3b74a09c5e73e257c421afe40854b61789eb894ad0ea8ae53d97",
+      "files": {
+        "LICENSE": {
+          "bytes": 1064,
+          "sha256": "12bbf05564e72739e874538f016e07c942b8e1095a695a3f118db61f2b130430"
+        },
+        "README.md": {
+          "bytes": 11962,
+          "sha256": "d5ab21cf91508752b32e150cd32ace7cc5de12dd6c2885778b648dc6267bcfc8"
+        },
+        "immunum.d.ts": {
+          "bytes": 3343,
+          "sha256": "0b00b87cc306d42306a9853f50d47e037f06640995cd5ae41c1be1b75084c8f2"
+        },
+        "immunum.js": {
+          "bytes": 10138,
+          "sha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00"
+        },
+        "immunum_bg.wasm": {
+          "bytes": 698520,
+          "sha256": "d7d37ac79611f00c694a5e712fc3a395ef4b8216c58c9805f1bfbd5093e59e32"
+        },
+        "package.json": {
+          "bytes": 564,
+          "sha256": "d4ed5f38d8e94a9f3d746ef9d391f7f1675ace313c572b946862647e8c31c559"
+        }
+      }
+    }
+  }
+}

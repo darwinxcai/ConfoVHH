@@ -1,25 +1,45 @@
-# Product 0.9.0 dependency-advisory triage
+# Product 0.9.1 dependency-security record
 
-Review date: 2026-08-28
+Review date: 2026-08-29
 
-The root npm lockfile is part of the digest-attested scientific-engine v0.5.0 record. A current `npm audit --omit=dev` reports high-severity advisories against five installed package families: `next`, `postcss`, `nanoid`, `sharp`, and `fast-uri`. The isolated `qa/` lockfile reports zero known vulnerabilities. This record does not dismiss the advisories or claim that an installed vulnerable version is patched.
+Product 0.9.1 uses a security-patched dependency/build environment that is intentionally distinct from the historical v0.5 execution lockfile. The unchanged v0.5 evidence summaries retain their original hashes; exact historical implementation and `immunum 1.2.0` bytes are preserved in the checksummed `validation/v0.5-engine-implementation-snapshot-v1/` package.
 
-## Exposure review
+After a clean `npm ci`, the current dependency state reports:
 
-| Package | Why it is installed | Product 0.9.0 exposure and control |
-|---|---|---|
-| `next@16.2.6` | Compatibility types/package for the Vinext application | Production is built and routed by Vinext, not the Next.js server. ConfoVHH has no Server Actions, authentication middleware, rewrites, or server-side user-data endpoints. The Worker rejects every method except `GET` and `HEAD` before framework routing. |
-| `postcss@8.5.14` and `8.4.31` | Build-time CSS processing | It processes repository-controlled CSS during the build. PostCSS code is absent from the generated production bundles; users cannot submit CSS or source maps to the deployed service. |
-| `nanoid@3.3.12` | Transitive PostCSS dependency | It is not imported by ConfoVHH and is absent from the generated production bundles. |
-| `sharp@0.34.5` | Optional Next.js dependency and local Miniflare tooling | It is absent from the generated production bundles. Hosted image transformation uses the platform image binding and same-origin assets; ConfoVHH accepts no user image uploads. |
-| `fast-uri@3.1.2` | Transitive schema/build tooling | It is absent from the generated production bundles and is not used for ConfoVHH URL authorization, outbound routing, or source-file parsing. |
+| Gate | Result |
+|---|---:|
+| `npm ls --all` | exit 0 |
+| `npm audit --audit-level=moderate` | 0 vulnerabilities |
+| `npm audit --omit=dev --audit-level=moderate` | 0 vulnerabilities |
+| `npm audit --prefix qa --audit-level=moderate` | 0 vulnerabilities |
 
-The generated `dist/server/vinext-externals.json` is empty, and a release build contains no module markers for these five package families. Public traffic is additionally constrained by a same-origin-first content security policy, a single explicit RCSB connect origin for the opt-in worked example, framing denial, MIME-sniffing denial, a restrictive permissions policy, and no server-side scientific-file upload endpoint.
+No advisory is suppressed or allowlisted.
 
-## Disposition
+On the reviewed Linux host, npm 11.9.0 also prints three `extraneous` annotations after a pristine install: lockfile-pinned optional `@img/sharp-wasm32` 0.35.2 and 0.35.4 packages plus their `@emnapi/runtime` 1.11.3 dependency. Repeating `npm prune` leaves the same optional-platform annotations. Every named package has a registry URL and integrity digest in `package-lock.json`; `npm ls --all` exits 0, reports no invalid or missing dependency, and both full and production audits remain at zero vulnerabilities. This npm optional-dependency accounting is recorded for transparency and is not treated as a dirty source tree or a failed installation. A changed package set, nonzero graph exit, invalid dependency, or audit finding remains release-blocking.
 
-Product 0.9.0 treats the current findings as installed build/compatibility dependency risk, not as demonstrated reachable vulnerabilities in the deployed application. Builds must run in an ephemeral or otherwise non-sensitive environment and must never process untrusted repository CSS or configuration. Release artifacts include the complete CycloneDX SBOM so downstream scanners retain visibility.
+## Patched cohort
 
-The packages must be upgraded in a forward scientific-engine release, with a reviewed lockfile diff, new non-overwriting attestations, the complete offline/adversarial suite, public producer regression, coverage gate, and browser acceptance suite. The historical v0.5.0 lockfile and validation evidence will remain unchanged.
+The reviewed update moves the coupled runtime/tooling families together:
 
-Advisory references: [Next.js middleware bypass](https://github.com/advisories/GHSA-6gpp-xcg3-4w24), [Next.js Server Action denial of service](https://github.com/advisories/GHSA-m99w-x7hq-7vfj), [PostCSS path traversal](https://github.com/advisories/GHSA-r28c-9q8g-f849), [fast-uri host confusion](https://github.com/advisories/GHSA-v2hh-gcrm-f6hx), and [sharp/libvips vulnerabilities](https://github.com/advisories/GHSA-f88m-g3jw-g9cj). The npm audit output contains the complete advisory set applicable on the review date.
+| Family | Current version |
+|---|---:|
+| Next.js / ESLint config | 16.3.3 |
+| React / ReactDOM / React Server DOM | 19.2.8 |
+| Vite | 8.2.2 |
+| Vinext | 1.0.0-beta.8 |
+| Vite RSC plugin | 0.5.34 |
+| Cloudflare Vite plugin | 1.54.2 |
+| Wrangler | 4.127.1 |
+| Cloudflare Workers types | 5.20260829.1 |
+
+The update clears the previously recorded React Server DOM, Next.js, PostCSS, Sharp, Undici, WebSocket, Vite, and transitive parser/expansion advisories. The unused D1/Drizzle starter scaffold and its vulnerable legacy esbuild loader chain were removed; ConfoVHH has no database binding, database route, or server-side scientific-file upload endpoint.
+
+## Product controls
+
+ConfoVHH remains a read-only application. The Worker rejects every method except `GET` and `HEAD` before framework routing. Scientific coordinates and PAE files are processed in browser workers and are not uploaded to the service. The production build must continue to prove that the server/page bundles do not instantiate the IMGT WebAssembly module, while the dedicated audit worker does.
+
+The generated `dist/server/vinext-externals.json` is required to remain empty. Public traffic is constrained by a same-origin-first content security policy, one explicit RCSB connect origin for the opt-in worked example, framing denial, MIME-sniffing denial, a restrictive permissions policy, and no user-controlled server action.
+
+## Release requirement
+
+Zero-advisory audit output is a point-in-time software-supply-chain result, not a biological-validation result. Release CI reruns clean installation, dependency-graph validation, full and production audits, typecheck, lint, production build, worker/SSR checks, the ordinary and adversarial suites, public producer regression, coverage, and Chromium acceptance. Any future dependency update must preserve the historical evidence packages without overwriting them and must repeat those gates.

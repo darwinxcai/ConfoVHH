@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "artifactId": "census-audit-2026-08-29",
+  "retrievalDateUtc": "2026-08-29",
+  "packageTimestampUtc": "2026-08-29T05:16:29Z",
+  "timePrecisionNote": "The initial search time was not retained beyond the UTC date. The package timestamp records the final metadata refresh and packaging boundary.",
+  "publicMainContext": {
+    "tip": "07781f50c51e58dc11376d4168c57d18968e2dd2",
+    "commits": [
+      {
+        "commit": "8901e47d6969fcc170b1444bb0023c9457e2dc08",
+        "role": "draft protocol only",
+        "completedTargetDispositions": false
+      },
+      {
+        "commit": "e3325aa0b5f6a9616a00e4770e7407f639f0ac3a",
+        "role": "census reconstruction plan only",
+        "completedTargetDispositions": false
+      },
+      {
+        "commit": "07781f50c51e58dc11376d4168c57d18968e2dd2",
+        "role": "source-universe contracts, workflow, verifier, and tests",
+        "completedTargetDispositions": false
+      }
+    ],
+    "interpretation": "The existing v3 work defines a reconstructible source-universe plan and pre-label controls. Its checked-in state has sourceUniverseFrozen=false, dispositionLedgerComplete=false, exactFrozenGroupCount=null, and exactFrozenTargetSetExists=false."
+  },
+  "normalization": {
+    "pdbIdentifierPattern": "^[0-9][A-Z0-9]{3}$",
+    "uppercase": true,
+    "deduplicate": true,
+    "sort": "bytewise ascending",
+    "serialization": "one identifier per line with terminal LF",
+    "digest": "SHA-256 over UTF-8 serialized bytes",
+    "sequenceNormalization": "remove ASCII/Unicode whitespace from deposited canonical one-letter sequence; preserve all remaining characters and case",
+    "sequenceDigest": "SHA-256 over normalized UTF-8 sequence bytes"
+  },
+  "historicalFourTermReproduction": {
+    "endpoint": "https://search.rcsb.org/rcsbsearch/v2/query",
+    "method": "POST",
+    "payloadTemplate": {
+      "query": {
+        "type": "terminal",
+        "service": "full_text",
+        "parameters": {
+          "value": "<TERM>"
+        }
+      },
+      "return_type": "entry",
+      "request_options": {
+        "paginate": {
+          "start": 0,
+          "rows": 10000
+        },
+        "results_content_type": [
+          "experimental"
+        ]
+      }
+    },
+    "queries": [
+      {
+        "id": "nanobody",
+        "term": "nanobody",
+        "count": 1760,
+        "normalizedIdSha256": "a66f26fce4498ba07dc2eb46bd5ba1c5440f671209775e9496ce7b82bd194795"
+      },
+      {
+        "id": "vhh",
+        "term": "VHH",
+        "count": 475,
+        "normalizedIdSha256": "0ad358494867265303e46afe24f7122508d98a6717c6d5ae26059b5e4adef614"
+      },
+      {
+        "id": "camelid",
+        "term": "camelid",
+        "count": 188,
+        "normalizedIdSha256": "43fbe51adbd46533cc7855e8f5ce5f3e85752d45790e97b057a68b253a21b41c"
+      },
+      {
+        "id": "megabody",
+        "term": "megabody",
+        "count": 59,
+        "normalizedIdSha256": "c63071f001fb61779eafddfed99b5b41826f2f8c04f798ad4cd833fb6cf37d91"
+      }
+    ],
+    "union": {
+      "count": 2065,
+      "normalizedIdSha256": "c154b8a9780f0d7a898a9fed77bbc54f2b18572830840d55ead625ede647f0ca"
+    },
+    "gpcrdbHtml": {
+      "endpoint": "https://gpcrdb.org/structure/",
+      "method": "GET",
+      "responseByteCount": 7918869,
+      "responseSha256": "e12185d20153e7e3844319f5ca1d24eb31ec05d2181442320dd6b40ac2be1f3c",
+      "normalizedCodeCount": 1716,
+      "normalizedCodeSha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+    },
+    "intersection": {
+      "count": 287,
+      "normalizedIdSha256": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7"
+    },
+    "rawResponsesPreservedInThisPackage": false,
+    "claim": "The normalized counts and digests matched the historical audit; this is not a reconstructible raw-response snapshot."
+  },
+  "accessionCenteredRecentReleaseSweep": {
+    "gpcrdbReceptorList": {
+      "endpoint": "https://gpcrdb.org/services/receptorlist/",
+      "method": "GET",
+      "responseByteCount": 1828102,
+      "responseSha256": "657f4e183b01b8fabf42de2deaf619c7ad259767553f9124ae9c273b8e6e9187",
+      "recordCount": 2471,
+      "sortedAccessionSha256": "eddef5d0c15827472babd982cf2a6462766759c816072368c1a680ac824de6d8"
+    },
+    "rcsbEndpoint": "https://search.rcsb.org/rcsbsearch/v2/query",
+    "rcsbMethod": "POST",
+    "batching": {
+      "sort": "bytewise ascending",
+      "maximumAccessionsPerBatch": 400,
+      "batchCount": 7
+    },
+    "queryLogic": "AND(database_accession in <BATCH>, initial_release_date greater_or_equal 2025-01-01)",
+    "payloadTemplate": {
+      "query": {
+        "type": "group",
+        "logical_operator": "and",
+        "nodes": [
+          {
+            "type": "terminal",
+            "service": "text",
+            "parameters": {
+              "attribute": "rcsb_polymer_entity_container_identifiers.reference_sequence_identifiers.database_accession",
+              "operator": "in",
+              "value": "<SORTED_BATCH_OF_AT_MOST_400_ACCESSIONS>"
+            }
+          },
+          {
+            "type": "terminal",
+            "service": "text",
+            "parameters": {
+              "attribute": "rcsb_accession_info.initial_release_date",
+              "operator": "greater_or_equal",
+              "value": "2025-01-01"
+            }
+          }
+        ]
+      },
+      "return_type": "entry",
+      "request_options": {
+        "paginate": {
+          "start": 0,
+          "rows": 10000
+        },
+        "results_content_type": [
+          "experimental"
+        ]
+      }
+    },
+    "queryFields": {
+      "accession": "rcsb_polymer_entity_container_identifiers.reference_sequence_identifiers.database_accession",
+      "releaseDate": "rcsb_accession_info.initial_release_date"
+    },
+    "returnType": "entry",
+    "resultsContentType": [
+      "experimental"
+    ],
+    "pagination": {
+      "start": 0,
+      "rows": 10000
+    },
+    "batches": [
+      {
+        "index": 1,
+        "count": 132,
+        "normalizedIdSha256": "bb2b011edef459c6d5de2f5e0a5140b6b2f21e82324a83c85b93088d0314c703"
+      },
+      {
+        "index": 2,
+        "count": 499,
+        "normalizedIdSha256": "2d0e6d79fd63bc1c07c49a517a1a36aa90912554038a14c939dbeb9c40f74df0"
+      },
+      {
+        "index": 3,
+        "count": 82,
+        "normalizedIdSha256": "a2c720fae08420b6f82c74c9906d8cfe5bb6b2dd4373c5348fbcf5bf48ef768c"
+      },
+      {
+        "index": 4,
+        "count": 29,
+        "normalizedIdSha256": "3e7fd82274536c0a918ec00f3e96d45b1fe27f5256f3645f3707104d0ce7068c"
+      },
+      {
+        "index": 5,
+        "count": 50,
+        "normalizedIdSha256": "88df4ab813e0ffa5d7976e91d2c547fb9f1246a7705cbffb6db3bdd0e6978df5"
+      },
+      {
+        "index": 6,
+        "count": 112,
+        "normalizedIdSha256": "a66ea9e1a44779527dad500cfee05983e49c4d596d27decf8ed53889e44e51bc"
+      },
+      {
+        "index": 7,
+        "count": 14,
+        "normalizedIdSha256": "90a8b9714ee019a0b0c669d02e641db9da2001092ead3717c58dae97fedacb39"
+      }
+    ],
+    "union": {
+      "count": 873,
+      "normalizedIdSha256": "8a27cca5141bbc7cc8a3cf3543f56c1f95fcbe1d562402203753183a14d3f0c3"
+    },
+    "rawResponsesPreservedInThisPackage": false
+  },
+  "entryAndSequenceMetadata": {
+    "entryEndpointTemplate": "https://data.rcsb.org/rest/v1/core/entry/<PDB_ID>",
+    "polymerEndpoint": "https://data.rcsb.org/graphql",
+    "graphqlOperation": "entries(entry_ids) { rcsb_id polymer_entities { rcsb_polymer_entity_container_identifiers { entity_id auth_asym_ids reference_sequence_identifiers { database_name database_accession } } rcsb_polymer_entity { pdbx_description } entity_poly { pdbx_seq_one_letter_code_can } } }",
+    "fieldsUsed": [
+      "initial release date",
+      "experimental method",
+      "nominal resolution",
+      "primary citation DOI/PMID/title/year/status",
+      "polymer description",
+      "auth chain identifiers",
+      "reference sequence accessions",
+      "deposited canonical one-letter sequence"
+    ],
+    "coordinateFieldsRequested": false,
+    "rawResponsesPreservedInThisPackage": false
+  },
+  "sourceLicensing": {
+    "structuralMetadataAndDepositedSequences": {
+      "license": "CC0-1.0",
+      "policyUrl": "https://www.wwpdb.org/about/usage-policies"
+    },
+    "primaryPublications": {
+      "licenseStatus": "not-assessed",
+      "use": "citation, link, and factual paraphrase only; no publication text redistributed"
+    }
+  },
+  "limitations": [
+    "Raw source-response bytes were not archived for this bounded audit.",
+    "Repeat-response equality and HTTP validators were not recorded.",
+    "The complete 287-entry historical intersection was not dispositioned.",
+    "The accession-centered 873-entry union was not exhaustively dispositioned.",
+    "Publication-first and taxonomy/entity-annotation discovery routes remain incomplete.",
+    "Receptor identity, VHH IMGT/CDR, annotation-epitope, and publication leakage matrices remain incomplete.",
+    "The seven existing groups remain provisional and zero are formally cleared."
+  ]
+}

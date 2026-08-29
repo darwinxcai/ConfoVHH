@@ -8,6 +8,20 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 
+async function findUniquePredictionWorkerAsset() {
+  const matches = [];
+  async function visit(directory) {
+    for (const entry of await readdir(directory, { withFileTypes: true })) {
+      const entryPath = path.join(directory, entry.name);
+      if (entry.isDirectory()) await visit(entryPath);
+      else if (/^prediction-run-worker-.*\.js$/.test(entry.name)) matches.push(entryPath);
+    }
+  }
+  await visit(path.join(root, "dist", "client"));
+  assert.equal(matches.length, 1, "expected exactly one production prediction-run-worker asset");
+  return matches[0];
+}
+
 function atomLine({ serial, chain, residue, x, y, residueName }) {
   return [
     "ATOM".padEnd(6), String(serial).padStart(5), " ", " CA ", " ", residueName, " ", chain,
@@ -36,11 +50,8 @@ function coordinateFixture() {
 }
 
 test("production prediction-run worker boots and audits one coordinate-only pose", async (context) => {
-  const assetsDirectory = path.join(root, "dist", "client", "assets");
-  const assets = await readdir(assetsDirectory);
-  const workerAsset = assets.find((name) => /^prediction-run-worker-.*\.js$/.test(name));
-  assert.ok(workerAsset, "expected a production prediction-run-worker asset");
-  const assetUrl = pathToFileURL(path.join(assetsDirectory, workerAsset)).href;
+  const workerAsset = await findUniquePredictionWorkerAsset();
+  const assetUrl = pathToFileURL(workerAsset).href;
   const wrapper = `
     import { parentPort } from "node:worker_threads";
     globalThis.self = {

@@ -15,7 +15,7 @@ function rcsbResponse(ids, extra = {}) {
   return JSON.stringify({ query_id: "fixture", result_type: "entry", total_count: ids.length, result_set: ids.map((identifier) => ({ identifier, score: 1 })), ...extra });
 }
 function gpcrdbResponse(ids, extraRow = null) {
-  const rows = ids.map((pdb_code) => ({ pdb_code, receptor: `fixture-${pdb_code}` }));
+  const rows = ids.map((pdb_code) => ({ pdb_code }));
   if (extraRow) rows.push(extraRow);
   return JSON.stringify(rows);
 }
@@ -51,7 +51,7 @@ function makeFixtureFetch({ queryRepeats = {}, apiRepeats = null, htmlRepeats = 
     if (url.endsWith("/services/structure/")) {
       return new Response(gpcrdbResponse(api[index] ?? api.at(-1), index === 0 ? apiExtraRow : null), { status: 200, headers: { "content-type": "application/json" } });
     }
-    if (url.endsWith("/structure")) {
+    if (url.endsWith("/structure/")) {
       return new Response(gpcrdbHtml(html[index] ?? html.at(-1)), { status: 200, headers: { "content-type": "text/html; charset=utf-8" } });
     }
     throw new Error(`Unexpected fixture URL: ${url}`);
@@ -77,9 +77,12 @@ async function refreshChecksum(directory, relative) {
   await writeFile(checksumPath, `${next.join("\n")}\n`);
 }
 
-test("v3 pre-label contracts fail closed and preserve the formal minimum", async () => {
+test("the byte-preserved historical source-census contract is externally nonauthoritative and preserves the formal minimum", async () => {
   const result = await verifyV3CensusContracts(ROOT);
   assert.equal(result.status, "V3_CENSUS_IN_PROGRESS");
+  assert.equal(result.advancementAuthority, false);
+  assert.equal(result.annotationEpitopeEligibilityAuthority, false);
+  assert.equal(result.selectedProtocol, "HARD_DECOY_PROTOCOL_V3.md");
   assert.equal(result.requiredIndependentGroups, 10);
   assert.equal(result.sourceRetrievalRepeats, 2);
   assert.equal(result.snapshotFileCount, 24);

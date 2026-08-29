@@ -4,10 +4,14 @@ import { lstat, open, readdir, realpath } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { parseStrictJson } from "./oracle/canonical-json.mjs";
+
 const THIS_FILE = fileURLToPath(import.meta.url);
 const DEFAULT_ROOT = path.resolve(path.dirname(THIS_FILE), "../..");
 const CENSUS_RELATIVE = "validation/hard-decoy-holdout-v2/prelabel-census";
 const SHA256 = /^[a-f0-9]{64}$/u;
+const TRUSTED_V2_PROTOCOL_SHA256 = "9c38f2d2f7ed2ce4acd5b6730fedd6a37151fe992a808bfefc4268888f862421";
+const TRUSTED_V2_PACKAGE_MANIFEST_SHA256 = "e2020cf5863246058d3c89d974b49da0d5d41803904b899670712f1509609502";
 const EXPECTED_CENSUS_FILES = [
   "README.md",
   "benchmark-spec.json",
@@ -64,7 +68,7 @@ function invariant(condition, message) {
 }
 
 function readJsonFromPackage(packageTexts, relative) {
-  return JSON.parse(packageTexts.get(relative));
+  return parseStrictJson(packageTexts.get(relative));
 }
 
 function readJsonlFromPackage(packageTexts, relative) {
@@ -72,7 +76,7 @@ function readJsonlFromPackage(packageTexts, relative) {
   invariant(text.endsWith("\n"), `${relative} must end with LF.`);
   return text.trimEnd().split("\n").map((line, index) => {
     try {
-      return JSON.parse(line);
+      return parseStrictJson(line);
     } catch (error) {
       throw new Error(`${relative}:${index + 1} is invalid JSON: ${error.message}`);
     }
@@ -110,6 +114,34 @@ function hasCoordinatePayload(text) {
     || /(?:^|\r?\n)[ \t]*_atom_site\.(?:group_PDB|Cartn_[xyz])\b/imu.test(text);
 }
 
+function decodedBase64Payload(value) {
+  if (
+    typeof value !== "string" || value.length < 16 || value.length > 1024 * 1024 ||
+    value.length % 4 !== 0 || !/^[A-Za-z0-9+/]+={0,2}$/u.test(value)
+  ) return null;
+  try {
+    const bytes = Buffer.from(value, "base64");
+    if (bytes.toString("base64") !== value) return null;
+    return new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+  } catch {
+    return null;
+  }
+}
+
+function verifyDecodedString(relative, value, trail) {
+  invariant(!value.includes("\0"), `Decoded NUL appeared in ${relative}: ${trail.join(".")}`);
+  invariant(!hasCoordinatePayload(value), `Embedded coordinate text appeared in ${relative}: ${trail.join(".")}`);
+  invariant(!PRIVATE_VAULT_PATH.test(value), `Private vault locator appeared in ${relative}: ${trail.join(".")}`);
+  invariant(!OBSERVED_LABEL_ASSIGNMENT.test(value), `Observed label assignment appeared in ${relative}: ${trail.join(".")}`);
+  const decoded = decodedBase64Payload(value);
+  if (decoded != null) {
+    invariant(!decoded.includes("\0"), `Base64-decoded NUL appeared in ${relative}: ${trail.join(".")}`);
+    invariant(!hasCoordinatePayload(decoded), `Base64-encoded coordinate text appeared in ${relative}: ${trail.join(".")}`);
+    invariant(!PRIVATE_VAULT_PATH.test(decoded), `Base64-encoded private locator appeared in ${relative}: ${trail.join(".")}`);
+    invariant(!OBSERVED_LABEL_ASSIGNMENT.test(decoded), `Base64-encoded observed label appeared in ${relative}: ${trail.join(".")}`);
+  }
+}
+
 function verifyNoForbiddenPayload(relative, text) {
   invariant(!text.includes("\0"), `NUL byte appeared in public package file: ${relative}`);
   invariant(!hasCoordinatePayload(text), `Coordinate text appeared in public package file: ${relative}`);
@@ -118,8 +150,8 @@ function verifyNoForbiddenPayload(relative, text) {
 
   if (!/\.jsonl?$/u.test(relative)) return;
   const records = relative.endsWith(".jsonl")
-    ? text.trimEnd().split("\n").map((line) => JSON.parse(line))
-    : [JSON.parse(text)];
+    ? text.trimEnd().split("\n").map((line) => parseStrictJson(line))
+    : [parseStrictJson(text)];
   for (const record of records) {
     walkKeys(record, (key, value, trail) => {
       const allowedDockqContract = relative === "endpoint-contract.json"
@@ -132,7 +164,7 @@ function verifyNoForbiddenPayload(relative, text) {
       invariant(!FORBIDDEN_PAYLOAD_KEYS.test(key), `Forbidden payload container in ${relative}: ${trail.join(".")}`);
     });
     walkValues(record, (value, trail) => {
-      if (typeof value === "string") invariant(!hasCoordinatePayload(value), `Embedded coordinate text appeared in ${relative}: ${trail.join(".")}`);
+      if (typeof value === "string") verifyDecodedString(relative, value, trail);
       if (typeof value === "number") invariant(Number.isFinite(value), `Nonfinite public number in ${relative}: ${trail.join(".")}`);
     });
   }
@@ -236,7 +268,7 @@ async function verifyChecksumManifest(censusDirectory) {
   }
   const expectedCovered = EXPECTED_CENSUS_FILES.filter((relative) => relative !== "checksums.sha256").sort();
   invariant(JSON.stringify([...seen].sort()) === JSON.stringify(expectedCovered), "Checksum manifest coverage drifted from the package allowlist.");
-  return { checksumCount: rows.length, packageTexts };
+  return { checksumCount: rows.length, manifestSha256: createHash("sha256").update(manifestBytes).digest("hex"), packageTexts };
 }
 
 export async function verifyCensus(repositoryRoot = DEFAULT_ROOT) {
@@ -245,7 +277,7 @@ export async function verifyCensus(repositoryRoot = DEFAULT_ROOT) {
   const repositoryReal = await realpath(repositoryRoot);
   invariant(repositoryReal === path.resolve(repositoryRoot), "Repository root cannot contain symlinked ancestors.");
   const censusDirectory = path.join(repositoryReal, CENSUS_RELATIVE);
-  const { checksumCount, packageTexts } = await verifyChecksumManifest(censusDirectory);
+  const { checksumCount, manifestSha256, packageTexts } = await verifyChecksumManifest(censusDirectory);
   const spec = readJsonFromPackage(packageTexts, "benchmark-spec.json");
   const summary = readJsonFromPackage(packageTexts, "census-summary.json");
   const generators = readJsonFromPackage(packageTexts, "generator-contracts.json");
@@ -263,6 +295,7 @@ export async function verifyCensus(repositoryRoot = DEFAULT_ROOT) {
 
   invariant(spec.status === "TARGET_CENSUS_BLOCKED", "Benchmark spec must remain blocked.");
   invariant(SHA256.test(spec.protocolSha256), "Protocol digest is invalid.");
+  invariant(spec.protocolSha256 === TRUSTED_V2_PROTOCOL_SHA256, "Version 2 protocol drifted from the pinned release trust root.");
   invariant(spec.protocol === "HARD_DECOY_PROTOCOL_V2.md", "Unexpected version 2 protocol path.");
   invariant(await sha256DirectRepositoryFile(repositoryReal, spec.protocol) === spec.protocolSha256, "Version 2 protocol changed after census attestation.");
   invariant(attestation.protocolSha256 === spec.protocolSha256, "Census protocol attestations drifted.");
@@ -391,6 +424,7 @@ export async function verifyCensus(repositoryRoot = DEFAULT_ROOT) {
   exactKeys(endpoints.dockq, ENDPOINT_DOCKQ_KEYS, "endpoint-contract.json dockq");
   exactKeys(endpoints.dockq.capriBands, ["acceptable", "high", "incorrect", "medium"], "endpoint-contract.json CAPRI bands");
   invariant(endpoints.dockq.package === "DockQ" && endpoints.dockq.version === "2.1.3" && endpoints.dockq.mapping === "AB:AB", "DockQ contract drifted.");
+  invariant(JSON.stringify(endpoints.dockq.retainedFields) === JSON.stringify(["DockQ", "Fnat", "iRMSD", "LRMSD"]), "DockQ retained-field contract drifted.");
   invariant(endpoints.primaryEndpoints.includes("independent-group-macro-average-precision"), "Primary AP endpoint is missing.");
   invariant(endpoints.bootstrap.replicates === 10000 && endpoints.bootstrap.poseResampling === false, "Bootstrap contract drifted.");
   invariant(endpoints.scientificGate.logic === "intersection-union-all-required", "Scientific gate multiplicity contract drifted.");
@@ -411,6 +445,8 @@ export async function verifyCensus(repositoryRoot = DEFAULT_ROOT) {
     invariant(SHA256.test(locked.sha256), `Invalid historical lock digest: ${locked.path}`);
     invariant(await sha256DirectRepositoryFile(repositoryReal, locked.path) === locked.sha256, `Historical artifact changed: ${locked.path}`);
   }
+
+  invariant(manifestSha256 === TRUSTED_V2_PACKAGE_MANIFEST_SHA256, "Version 2 census package drifted from the pinned release trust root.");
 
   return {
     status: spec.status,

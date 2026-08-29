@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "recordedAtUtc": "2026-08-29T05:45:00Z",
+  "sourceArchiveWorkflow": {
+    "runId": 33235661638,
+    "runUrl": "https://github.com/darwinxcai/ConfoVHH/actions/runs/33235661638",
+    "workflowHeadCommit": "cd3e59148e51f1cc0739a8730b415f5afe6dc0cb",
+    "resultCommit": "9982dae30b87c95a733c60ab57302a44eee56469",
+    "publicMainImportCommit": "c1473c4e9fea1757857e5ff86598459bd0a2300e",
+    "sitesPatchIdenticalCommit": "3feaccd53cf55e4555dbd9f5dc38140cb817ea72"
+  },
+  "snapshotDirectory": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29",
+  "snapshotGitTree": "9732ae10954a5336442e4a565a55ddf16e3b34d5",
+  "attestationSha256": "f53cefaa1d2f5e490b613b67bbbf243ffb7c6326479a469a3a9009ae5cca00b9",
+  "checksumsSha256": "796aa0734da86791f8ccdef92c7de03da22bdafd7818a5c5e95d73b6b5d35ebc",
+  "manifestSha256": "c0b24e5a153bdf240afc2da436321ad2abbdf93800f4b9791d82ae15c9b7b0db",
+  "sourceUniverseJsonlSha256": "f2bdfe58cb591a007f21685008eb3bea676f6c87b196fad63a223bed8e478879",
+  "result": {
+    "rcsbUnionEntries": 2065,
+    "gpcrdbEntries": 1716,
+    "intersectionEntries": 287,
+    "gpcrdbApiHtmlNormalizedAgreement": true,
+    "pendingDispositionRows": 287,
+    "formallyClearedGroups": 0,
+    "targetFreezePermitted": false
+  },
+  "accessBoundary": {
+    "nativeCoordinatesAccessed": false,
+    "nativeRelativePosesInspected": false,
+    "dockqOrCapriLabelsAccessed": false,
+    "confovhhHoldoutScoresAccessed": false,
+    "performanceResultsAccessed": false,
+    "executionAuthorized": false
+  }
+}

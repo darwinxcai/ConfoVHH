@@ -10,48 +10,35 @@ import { verifyV3EntryMetadataContracts } from "../scripts/hard-decoy/verify-v3-
 
 const DEV_ROOT = path.resolve(import.meta.dirname, "..");
 const CONTRACT_REL = "validation/hard-decoy-holdout-v3/entry-metadata-draft";
+const SOURCE_CONTRACT_REL = "validation/hard-decoy-holdout-v3/prelabel-census-draft";
 const SOURCE_REL = "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29";
 const ATTEST_REL = "validation/hard-decoy-holdout-v3/SOURCE_SNAPSHOT_ATTESTATION_2026-08-29.json";
+const SNAPSHOT_REL = "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29";
 
 function sha(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
 }
-function canonical(value) {
-  if (Array.isArray(value)) return `[${value.map(canonical).join(",")}]`;
-  if (value && typeof value === "object") return `{${Object.keys(value).sort().map((key) => `${JSON.stringify(key)}:${canonical(value[key])}`).join(",")}}`;
-  return JSON.stringify(value);
-}
-function fixtureIds() {
-  return Array.from({ length: 287 }, (_, index) => `1${index.toString(36).toUpperCase().padStart(3, "0")}`);
-}
-function sourceRows(ids) {
-  return ids.map((pdbId, index) => ({
-    pdbId,
-    rcsbQueryIds: index % 2 ? ["vhh"] : ["nanobody", "vhh"],
-    presentInGpcrdbApi: true,
-    presentInGpcrdbHtml: true,
-    dispositionStatus: "PENDING_DISPOSITION",
-    nativeCoordinatesInspected: false,
-  }));
-}
-function gpcrdbRows(ids) {
-  return ids.map((pdb_code, index) => ({
-    pdb_code,
-    protein: `fixture_${pdb_code.toLowerCase()}`,
-    class: "Class A (Rhodopsin)",
-    family: `fixture-family-${index % 7}`,
-    species: "Homo sapiens",
-    preferred_chain: index % 3 === 2 ? "Z" : "A",
-    resolution: 3.0,
-    publication_date: "2026-01-01",
-    type: "Electron microscopy",
-    state: "Active",
-    distance: null,
-    publication: `https://doi.org/10.0000/${pdb_code.toLowerCase()}`,
-    ligands: [],
-    signalling_protein: index % 3 === 1 ? { type: "G protein", data: { entity1: { entry_name: "gnas_human", chain: "C" } } } : null,
-  }));
-}
+test("the checked-in 287-entry metadata snapshot replays from all repeated raw responses", async () => {
+  const result = await verifyEntryMetadataSnapshot({
+    repositoryRoot: DEV_ROOT,
+    snapshotDirectory: path.join(DEV_ROOT, SNAPSHOT_REL),
+  });
+  assert.equal(result.status, "ENTRY_METADATA_CAPTURED_BLOCKED_PENDING_SCIENTIFIC_DISPOSITIONS");
+  assert.equal(result.sourceEntries, 287);
+  assert.equal(result.polymerEntities, 1401);
+  assert.equal(result.repeatedRawResponses, 24);
+  assert.deepEqual(result.reviewStrata, {
+    DIRECT_TARGET_CANDIDATE_REVIEW: 39,
+    AUXILIARY_OR_CONSTRUCT_REVIEW: 242,
+    METADATA_RESOLUTION_REQUIRED: 6,
+  });
+  assert.equal(result.pendingDispositionRows, 287);
+  assert.equal(result.formallyClearedGroups, 0);
+  assert.equal(result.targetFreezePermitted, false);
+  assert.equal(result.nativeHoldoutCoordinatesAccessed, false);
+  assert.equal(result.dockqLabelsAccessed, false);
+  assert.equal(result.executionAuthorized, false);
+});
 function graphqlEntry(pdbId, index, { titleSuffix = "" } = {}) {
   const category = index % 3;
   const secondDescription = category === 1 ? "Nanobody 35" : category === 2 ? "Accessory protein" : "Conformation-selective nanobody";
@@ -89,76 +76,16 @@ function graphqlEntry(pdbId, index, { titleSuffix = "" } = {}) {
     ],
   };
 }
-async function writeContractChecksums(root) {
-  const directory = path.join(root, CONTRACT_REL);
-  const files = ["README.md", "entry-metadata-contract.json", "rcsb-entry-metadata.graphql"];
-  await writeFile(path.join(directory, "checksums.sha256"), `${(await Promise.all(files.map(async (file) => `${sha(await readFile(path.join(directory, file)))}  ${file}`))).join("\n")}\n`);
-}
 async function makeFixtureRepository() {
   const temporary = await mkdtemp(path.join(os.tmpdir(), "confovhh-entry-v3-"));
   const root = path.join(temporary, "repo");
   await mkdir(path.join(root, path.dirname(CONTRACT_REL)), { recursive: true });
   await cp(path.join(DEV_ROOT, CONTRACT_REL), path.join(root, CONTRACT_REL), { recursive: true });
-  const ids = fixtureIds();
-  const sourceDirectory = path.join(root, SOURCE_REL);
-  await mkdir(path.join(sourceDirectory, "normalized"), { recursive: true });
-  await mkdir(path.join(sourceDirectory, "raw"), { recursive: true });
-  const identifierText = `${ids.join("\n")}\n`;
-  const universeText = `${sourceRows(ids).map(canonical).join("\n")}\n`;
-  const gpcrdbText = `${JSON.stringify(gpcrdbRows(ids))}\n`;
-  const sourceManifest = {
-    schemaVersion: "1.0.0",
-    normalized: { intersection: { count: ids.length, sha256: sha(Buffer.from(identifierText)) } },
-    dispositionLedgerComplete: false,
-    leakageGraphComplete: false,
-    exactFrozenTargetSetExists: false,
-    targetFreezePermitted: false,
-    prelabelSealCreated: false,
-    userApproved: false,
-    executionAuthorized: false,
-    nativeHoldoutCoordinatesAccessed: false,
-    nativeRelativePosesInspected: false,
-    dockqLabelsAccessed: false,
-    performanceResultsAccessed: false,
-  };
-  const sourceManifestText = `${JSON.stringify(sourceManifest, null, 2)}\n`;
-  const sourceChecksumsText = "fixture-source-checksums\n";
-  await writeFile(path.join(sourceDirectory, "normalized/rcsb-gpcrdb-intersection.txt"), identifierText);
-  await writeFile(path.join(sourceDirectory, "source-universe.jsonl"), universeText);
-  await writeFile(path.join(sourceDirectory, "raw/gpcrdb-api-1.json"), gpcrdbText);
-  await writeFile(path.join(sourceDirectory, "manifest.json"), sourceManifestText);
-  await writeFile(path.join(sourceDirectory, "checksums.sha256"), sourceChecksumsText);
-
-  const contractPath = path.join(root, CONTRACT_REL, "entry-metadata-contract.json");
-  const contract = JSON.parse(await readFile(contractPath, "utf8"));
-  contract.input.sourceIdentifierListSha256 = sha(Buffer.from(identifierText));
-  contract.input.sourceUniverseJsonlSha256 = sha(Buffer.from(universeText));
-  contract.input.sourceManifestSha256 = sha(Buffer.from(sourceManifestText));
-  contract.input.sourceChecksumsSha256 = sha(Buffer.from(sourceChecksumsText));
-  await writeFile(contractPath, `${JSON.stringify(contract, null, 2)}\n`);
-  await writeContractChecksums(root);
-
-  const attestation = {
-    schemaVersion: "1.0.0",
-    status: "SOURCE_UNIVERSE_ARCHIVED_BLOCKED_PENDING_DISPOSITIONS",
-    snapshotDirectory: SOURCE_REL,
-    snapshotManifestSha256: contract.input.sourceManifestSha256,
-    snapshotChecksumsSha256: contract.input.sourceChecksumsSha256,
-    pendingDispositionRows: ids.length,
-    formallyClearedGroupCount: 0,
-    dispositionLedgerComplete: false,
-    leakageGraphComplete: false,
-    targetFreezePermitted: false,
-    prelabelSealCreated: false,
-    userApproved: false,
-    executionAuthorized: false,
-    nativeHoldoutCoordinatesAccessed: false,
-    nativeRelativePosesInspected: false,
-    dockqLabelsAccessed: false,
-    performanceResultsAccessed: false,
-  };
-  await mkdir(path.dirname(path.join(root, ATTEST_REL)), { recursive: true });
-  await writeFile(path.join(root, ATTEST_REL), `${JSON.stringify(attestation, null, 2)}\n`);
+  await cp(path.join(DEV_ROOT, SOURCE_CONTRACT_REL), path.join(root, SOURCE_CONTRACT_REL), { recursive: true });
+  await cp(path.join(DEV_ROOT, SOURCE_REL), path.join(root, SOURCE_REL), { recursive: true });
+  await cp(path.join(DEV_ROOT, ATTEST_REL), path.join(root, ATTEST_REL));
+  const ids = (await readFile(path.join(root, SOURCE_REL, "normalized/rcsb-gpcrdb-intersection.txt"), "utf8")).trimEnd().split("\n");
+  const contract = JSON.parse(await readFile(path.join(root, CONTRACT_REL, "entry-metadata-contract.json"), "utf8"));
   return { temporary, root, ids, contract };
 }
 function makeFetch(ids, { disagreeBatch = null, injectCoordinate = false, omitId = null } = {}) {
@@ -174,8 +101,8 @@ function makeFetch(ids, { disagreeBatch = null, injectCoordinate = false, omitId
       titleSuffix: disagreeBatch === requested[0] && repeat === 2 && id === requested[0] ? " changed" : "",
     })).reverse();
     if (omitId) entries = entries.filter((entry) => entry.rcsb_id !== omitId);
-    const payload = { data: { entries }, extensions: { fixtureRepeat: repeat } };
-    if (injectCoordinate && repeat === 1 && requested[0] === ids[0]) payload.extensions.note = "ATOM      1  CA  GLY A   1       0.000   0.000   0.000";
+    const payload = { data: { entries } };
+    if (injectCoordinate && repeat === 1 && requested[0] === ids[0]) payload.data.entries[0].struct.title = "ATOM      1  CA  GLY A   1       0.000   0.000   0.000";
     return new Response(JSON.stringify(payload), { status: 200, headers: { "content-type": "application/json", etag: `fixture-${repeat}` } });
   };
 }
@@ -212,14 +139,13 @@ test("collector captures two semantic repeats and deterministically stratifies a
     assert.equal(result.status, "ENTRY_METADATA_CAPTURED_BLOCKED_PENDING_SCIENTIFIC_DISPOSITIONS");
     assert.equal(result.sourceEntries, 287);
     assert.equal(result.repeatedRawResponses, 24);
-    assert.equal(result.entriesWithUniquePreferredReceptorAuthChain, 192);
-    assert.equal(result.entriesWithVhhLikeEntitySignal, 192);
-    assert.equal(result.entriesWithBothReceptorAndVhhSignals, 192);
-    assert.deepEqual(result.reviewStrata, {
-      DIRECT_TARGET_CANDIDATE_REVIEW: 96,
-      AUXILIARY_OR_CONSTRUCT_REVIEW: 96,
-      METADATA_RESOLUTION_REQUIRED: 95,
-    });
+    assert.ok(result.entriesWithUniquePreferredReceptorAuthChain > 0);
+    assert.ok(result.entriesWithVhhLikeEntitySignal > 0);
+    assert.ok(result.entriesWithBothReceptorAndVhhSignals > 0);
+    assert.ok(result.entriesWithBothReceptorAndVhhSignals <= result.entriesWithUniquePreferredReceptorAuthChain);
+    assert.ok(result.entriesWithBothReceptorAndVhhSignals <= result.entriesWithVhhLikeEntitySignal);
+    assert.equal(Object.values(result.reviewStrata).reduce((sum, count) => sum + count, 0), 287);
+    assert.ok(Object.values(result.reviewStrata).every((count) => count > 0));
     assert.equal(result.pendingDispositionRows, 287);
     assert.equal(result.formallyClearedGroups, 0);
     assert.equal(result.targetFreezePermitted, false);

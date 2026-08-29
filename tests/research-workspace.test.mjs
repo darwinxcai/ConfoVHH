@@ -251,7 +251,7 @@ test("notebook export round-trips atomically and rejects malformed entries", () 
   assert.throws(() => parseNotebookExport('{"schemaVersion":"9.0.0","entries":[]}'), /incompatible|unsupported/i);
 });
 
-test("v0.9 emits neutral records while importing intact v0.6 through v0.8 notebook records", () => {
+test("v0.9.1 emits neutral records while importing intact v0.6 through v0.9.0 notebook records", () => {
   const currentEntry = createNotebookEntry({
     singleAuditReport: canonicalReport(),
     context: context(),
@@ -259,8 +259,8 @@ test("v0.9 emits neutral records while importing intact v0.6 through v0.8 notebo
     savedAt: GENERATED_AT,
   });
   const currentExport = createNotebookExport([currentEntry], GENERATED_AT);
-  assert.equal(currentEntry.productRelease, "0.9.0");
-  assert.equal(currentExport.productRelease, "0.9.0");
+  assert.equal(currentEntry.productRelease, "0.9.1");
+  assert.equal(currentExport.productRelease, "0.9.1");
 
   const legacyExport = structuredClone(currentExport);
   legacyExport.productRelease = "0.6.0";
@@ -275,12 +275,17 @@ test("v0.9 emits neutral records while importing intact v0.6 through v0.8 notebo
 
   const mixedExport = structuredClone(currentExport);
   mixedExport.productRelease = "0.6.0";
-  assert.equal(parseNotebookExport(JSON.stringify(mixedExport))[0].productRelease, "0.9.0");
+  assert.equal(parseNotebookExport(JSON.stringify(mixedExport))[0].productRelease, "0.9.1");
 
   const v08 = structuredClone(legacyExport);
   v08.productRelease = "0.8.0";
   v08.entries[0].productRelease = "0.8.0";
   assert.equal(parseNotebookExport(JSON.stringify(v08))[0].productRelease, "0.8.0");
+
+  const v090 = structuredClone(currentExport);
+  v090.productRelease = "0.9.0";
+  v090.entries[0].productRelease = "0.9.0";
+  assert.equal(parseNotebookExport(JSON.stringify(v090))[0].productRelease, "0.9.0");
 
   const unsupported = structuredClone(currentExport);
   unsupported.productRelease = "0.5.0";
@@ -338,19 +343,19 @@ test("workspace dossier round-trips validated reports and rejects provenance dri
   assert.throws(() => parseWorkspaceBundle(unsafe), /unsafe/i);
 });
 
-test("v0.9 emits current dossiers while importing and migrating v0.6 through v0.8 dossiers", () => {
+test("v0.9.1 emits current dossiers while importing and migrating v0.6 through v0.9.0 dossiers", () => {
   const current = createWorkspaceBundle({
     context: context(),
     singleAuditReport: canonicalReport(),
     generatedAt: GENERATED_AT,
   });
-  assert.equal(current.productRelease, "0.9.0");
+  assert.equal(current.productRelease, "0.9.1");
 
   const legacy = structuredClone(current);
   legacy.productRelease = "0.6.0";
   legacy.decisionBrief = legacyBrief(legacy.decisionBrief, legacy.reports.singleAudit.audit.evidenceLevel);
   const migrated = parseWorkspaceBundle(JSON.stringify(legacy));
-  assert.equal(migrated.productRelease, "0.9.0");
+  assert.equal(migrated.productRelease, "0.9.1");
   assert.equal(
     migrated.decisionBrief.band,
     deriveCoordinateTriageBrief(
@@ -361,7 +366,11 @@ test("v0.9 emits current dossiers while importing and migrating v0.6 through v0.
 
   const v08 = structuredClone(legacy);
   v08.productRelease = "0.8.0";
-  assert.equal(parseWorkspaceBundle(JSON.stringify(v08)).productRelease, "0.9.0");
+  assert.equal(parseWorkspaceBundle(JSON.stringify(v08)).productRelease, "0.9.1");
+
+  const v090 = structuredClone(current);
+  v090.productRelease = "0.9.0";
+  assert.equal(parseWorkspaceBundle(JSON.stringify(v090)).productRelease, "0.9.1");
 
   const unsupported = structuredClone(current);
   unsupported.productRelease = "0.5.0";
