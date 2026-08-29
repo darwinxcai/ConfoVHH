@@ -7,7 +7,7 @@ on:
     paths:
       - ".github/workflows/v3-development-metadata-snapshot.yml"
       - "scripts/hard-decoy/v3-development-metadata.mjs"
-      - "tests/hard-decoy-v3-development-metadata.test.mjs"
+      - "tests/hard-decoy-v3-development-metadata*.test.mjs"
       - "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json"
       - "validation/hard-decoy-holdout-v3/development-metadata-contract-2026-08-29.json"
       - "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql"
@@ -43,7 +43,7 @@ jobs:
       - name: Verify merged 287-row disposition seed
         run: node scripts/hard-decoy/v3-disposition-seed.mjs verify validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29
       - name: Run development metadata integrity tests
-        run: node --test tests/hard-decoy-v3-development-metadata.test.mjs
+        run: node --test tests/hard-decoy-v3-development-metadata*.test.mjs
       - name: Generate development metadata snapshot
         run: node scripts/hard-decoy/v3-development-metadata.mjs generate validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29
       - name: Independently replay development metadata snapshot
