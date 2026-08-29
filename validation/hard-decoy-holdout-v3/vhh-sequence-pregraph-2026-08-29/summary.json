@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "VHH_SEQUENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_DIRECT_ROLE_AND_PARENT_ADJUDICATION",
+  "candidateNodeCount": 287,
+  "developmentNodeCount": 17,
+  "totalNodeCount": 304,
+  "candidateMetadataProfileCount": 285,
+  "developmentMetadataProfileCount": 18,
+  "totalMetadataProfileCount": 303,
+  "numberedProfileCount": 302,
+  "unavailableProfileCount": 1,
+  "numberingFailureCodeCounts": {
+    "NONCANONICAL_OR_EMPTY_SEQUENCE": 1
+  },
+  "candidateNodesWithNoMetadataProfile": 5,
+  "developmentNodesWithNoMetadataProfile": 0,
+  "candidateNodesWithAllProfilesNumbered": 281,
+  "developmentNodesWithAllProfilesNumbered": 17,
+  "pairSpace": {
+    "candidateCandidate": 41041,
+    "candidateDevelopment": 4879,
+    "developmentDevelopment": 136,
+    "allUnorderedPairs": 46056
+  },
+  "matrixStatusCounts": {
+    "FAIL_CLOSED_MISSING_OR_UNNUMBERABLE_METADATA_PROFILE": 1803,
+    "NO_THRESHOLD_MATCH_NO_FORMAL_NO_EDGE_AUTHORITY": 29536,
+    "POSSIBLE_METADATA_SEQUENCE_LEAKAGE_EDGE_ROLE_UNRESOLVED": 14717
+  },
+  "possibleMetadataSequenceEdgePairCounts": {
+    "candidateCandidate": 14638,
+    "candidateDevelopment": 77,
+    "developmentDevelopment": 2,
+    "all": 14717
+  },
+  "exactFullSequenceEvidencePairCount": 2023,
+  "exactEvidencePregraphReconciled": true,
+  "frameworkAlignmentCacheEntryCount": 654,
+  "cdr3AlignmentCacheEntryCount": 488,
+  "thresholdPregraphComponentCount": 35,
+  "candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge": 57,
+  "directBinderRolesResolved": false,
+  "knownParentVariantEvidenceComplete": false,
+  "formalLeakageGraphComplete": false,
+  "dispositionLedgerComplete": false,
+  "formallyClearedGroupCount": 0,
+  "exactFrozenTargetSetExists": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "confovhhHoldoutScoresAccessed": false,
+  "performanceResultsAccessed": false
+}
