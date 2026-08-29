@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "V3_CENSUS_IN_PROGRESS",
+  "protocol": "HARD_DECOY_PROTOCOL_V3_DRAFT.md",
+  "protocolDigestStatus": "REQUIRED_BEFORE_V3_TARGETS_FROZEN",
+  "requiredIndependentGroups": 10,
+  "sourceUniverseFrozen": false,
+  "sourceUniverseSnapshot": null,
+  "dispositionLedgerComplete": false,
+  "leakageGraphComplete": false,
+  "exactFrozenGroupCount": null,
+  "exactFrozenTargetSetExists": false,
+  "targetManifestFrozen": false,
+  "candidateManifestFrozen": false,
+  "auditManifestFrozen": false,
+  "prelabelSealCreated": false,
+  "userApproved": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "claimVocabulary": {
+    "receptor": "receptor-cluster-disjoint",
+    "vhh": "VHH-sequence-cluster-disjoint-with-known-parent-vetoes",
+    "epitope": "annotation-epitope-disjoint",
+    "publication": "primary-publication-disjoint"
+  },
+  "openBlockers": [
+    "source-universe-reconstruction",
+    "exhaustive-entry-dispositions",
+    "development-registry-completion",
+    "receptor-and-vhh-leakage-matrices",
+    "mechanical-connected-component-graph",
+    "minimum-independent-groups",
+    "generator-environment-locks",
+    "prelabel-seal-and-explicit-approval"
+  ]
+}
