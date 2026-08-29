@@ -58,12 +58,16 @@ jobs:
         run: |
           set -euo pipefail
           output="validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29"
-          if git diff --quiet -- "$output" && git diff --cached --quiet -- "$output"; then
+          if [[ -z "$(git status --porcelain --untracked-files=all -- "$output")" ]]; then
             echo "Verified disposition snapshot is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- "$output"
+          if git diff --cached --quiet -- "$output"; then
+            echo "No disposition snapshot content was staged."
+            exit 1
+          fi
           git commit -m "Record deterministic v3 disposition seed"
           git push origin "HEAD:${TARGET_BRANCH}"
