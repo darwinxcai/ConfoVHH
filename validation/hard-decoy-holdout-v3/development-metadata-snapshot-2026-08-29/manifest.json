@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "stage": "V3_METADATA_PREPARATION",
+  "status": "DEVELOPMENT_METADATA_COMPLETED_BLOCKED_PENDING_SCIENTIFIC_LEAKAGE_AUDIT",
+  "snapshotDateUtc": "2026-08-29",
+  "contractPath": "validation/hard-decoy-holdout-v3/development-metadata-contract-2026-08-29.json",
+  "generatorScript": "scripts/hard-decoy/v3-development-metadata.mjs",
+  "inputDigests": {
+    "contract": "7054f6d17dc63d3f96e255b88ed3d228ddaba72b09dc3aa8230afa699cfb4f17",
+    "selectedProtocol": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "developmentRegistry": "d4cda5ecfa060dc2dc0d5147114946f8d059dce983d9fe4ac10a0c5509ad9778",
+    "reusedEntryMetadata": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "frozenGpcrdbMetadata": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "rcsbQuery": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "sourceLicenseRecord": "35474077e829f0246c05537074cac226f4cb777dc3abec73cc8753263ed1e614",
+    "generatorScript": "7e04b0a5ce6545f74d82029af4f267ffeb747a9449abc6be123534eb2ba01ad7"
+  },
+  "sourceLicenses": {
+    "gpcrdb-structure-api-and-table-data": "CC-BY-4.0",
+    "rcsb-pdb-search-and-data-apis": "CC0-1.0"
+  },
+  "reusedDevelopmentMetadataIds": [
+    "3P0G",
+    "4MQS",
+    "4XT1",
+    "5C1M",
+    "5JQH",
+    "6B73",
+    "6DO1",
+    "6IBL",
+    "6RNK",
+    "6VI4",
+    "7L1V",
+    "7YM8",
+    "8FCZ",
+    "8QOT",
+    "8QW4"
+  ],
+  "newlyCompletedDevelopmentMetadataIds": [
+    "6KNM",
+    "6O3C"
+  ],
+  "repeatedRequestCount": 2,
+  "requests": [
+    {
+      "repeat": 1,
+      "requestedIds": [
+        "6KNM",
+        "6O3C"
+      ],
+      "requestBodySha256": "15b2f0bd64df43a3072170d463db0077f1c1db8ba55924a7b357166460255c39",
+      "requestedUrl": "https://data.rcsb.org/graphql",
+      "finalUrl": "https://data.rcsb.org/graphql",
+      "method": "POST",
+      "startedUtc": "2026-08-29T13:45:00.876Z",
+      "completedUtc": "2026-08-29T13:45:01.347Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 4723,
+      "sha256": "b3f7567b586c36946f4493d231c198e7d425bc038a5233ec9f8069b7bad13946",
+      "normalizedEntryCount": 2,
+      "normalizedEntriesSha256": "b993c59f64d1f15e68c5fe8f481c75a1c7d12bae433a549e842a76ec2167f1f9"
+    },
+    {
+      "repeat": 2,
+      "requestedIds": [
+        "6KNM",
+        "6O3C"
+      ],
+      "requestBodySha256": "15b2f0bd64df43a3072170d463db0077f1c1db8ba55924a7b357166460255c39",
+      "requestedUrl": "https://data.rcsb.org/graphql",
+      "finalUrl": "https://data.rcsb.org/graphql",
+      "method": "POST",
+      "startedUtc": "2026-08-29T13:45:01.449Z",
+      "completedUtc": "2026-08-29T13:45:01.490Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 4723,
+      "sha256": "b3f7567b586c36946f4493d231c198e7d425bc038a5233ec9f8069b7bad13946",
+      "normalizedEntryCount": 2,
+      "normalizedEntriesSha256": "b993c59f64d1f15e68c5fe8f481c75a1c7d12bae433a549e842a76ec2167f1f9"
+    }
+  ],
+  "normalizedOutputs": {
+    "developmentNodes": {
+      "count": 17,
+      "sha256": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e"
+    },
+    "entities": {
+      "count": 44,
+      "sha256": "8e2219f94d91bb3a8822e56a1e43f20cc652a86bc9458a9af76013f96e3c5be7"
+    },
+    "missingEntries": {
+      "count": 2,
+      "sha256": "b993c59f64d1f15e68c5fe8f481c75a1c7d12bae433a549e842a76ec2167f1f9"
+    }
+  },
+  "summary": {
+    "schemaVersion": "1.0.0",
+    "studyId": "confovhh-hard-decoy-holdout-v3",
+    "status": "DEVELOPMENT_METADATA_COMPLETED_BLOCKED_PENDING_SCIENTIFIC_LEAKAGE_AUDIT",
+    "developmentNodeCount": 17,
+    "reusedMetadataNodeCount": 15,
+    "newlyCompletedMetadataNodeCount": 2,
+    "newlyCompletedPdbIds": [
+      "6KNM",
+      "6O3C"
+    ],
+    "uniquePreferredReceptorEntityCount": 17,
+    "receptorNodesWithExactlyOneUniProtAccession": 10,
+    "vhhMetadataCandidateCounts": {
+      "unique": 16,
+      "multiple": 1,
+      "none": 0
+    },
+    "nodesWithPrimaryCitationIdentifier": 17,
+    "directInterfaceEvidenceResolvedCount": 0,
+    "formalLeakageCertificationComplete": false,
+    "dispositionLedgerComplete": false,
+    "leakageGraphComplete": false,
+    "formallyClearedGroupCount": 0,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false,
+    "nativeHoldoutCoordinatesAccessed": false,
+    "nativeRelativePosesInspected": false,
+    "dockqLabelsAccessed": false,
+    "performanceResultsAccessed": false
+  },
+  "directInterfaceEvidenceResolved": false,
+  "formalLeakageCertificationComplete": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}
