@@ -1,0 +1,76 @@
+name: Hard-decoy v3 development metadata snapshot
+
+on:
+  push:
+    branches:
+      - "work/hard-decoy-v3-development-metadata-*"
+    paths:
+      - ".github/workflows/v3-development-metadata-snapshot.yml"
+      - "scripts/hard-decoy/v3-development-metadata.mjs"
+      - "tests/hard-decoy-v3-development-metadata.test.mjs"
+      - "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json"
+      - "validation/hard-decoy-holdout-v3/development-metadata-contract-2026-08-29.json"
+      - "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql"
+      - "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/**"
+      - "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json"
+      - "validation/hard-decoy-holdout-v3/source-licenses-2026-08-29.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hard-decoy-v3-development-metadata-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  generate-verify-and-record:
+    name: Complete and verify all 17 development metadata nodes
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+      - name: Verify authoritative v3 integration boundary
+        run: node scripts/hard-decoy-v3/verify-integration-state.mjs
+      - name: Verify merged 287-row disposition seed
+        run: node scripts/hard-decoy/v3-disposition-seed.mjs verify validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29
+      - name: Run development metadata integrity tests
+        run: node --test tests/hard-decoy-v3-development-metadata.test.mjs
+      - name: Generate development metadata snapshot
+        run: node scripts/hard-decoy/v3-development-metadata.mjs generate validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29
+      - name: Independently replay development metadata snapshot
+        run: node scripts/hard-decoy/v3-development-metadata.mjs verify validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29
+      - name: Upload inspectable development metadata evidence
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: hard-decoy-v3-development-metadata
+          path: validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29
+          if-no-files-found: error
+          retention-days: 14
+      - name: Commit verified snapshot when changed
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          output="validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29"
+          if [[ -z "$(git status --porcelain --untracked-files=all -- "$output")" ]]; then
+            echo "Verified development metadata snapshot is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$output"
+          if git diff --cached --quiet -- "$output"; then
+            echo "No development metadata snapshot content was staged."
+            exit 1
+          fi
+          git commit -m "Record complete v3 development metadata"
+          git push origin "HEAD:${TARGET_BRANCH}"
