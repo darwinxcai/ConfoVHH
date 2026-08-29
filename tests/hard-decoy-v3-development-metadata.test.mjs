@@ -162,11 +162,12 @@ test("a unique VHH-like metadata entity never becomes direct-interface evidence"
 test("normalized disagreement between repeated public metadata requests fails closed", async () => {
   const temporary = await mkdtemp(path.join(os.tmpdir(), "confovhh-development-repeat-"));
   try {
+    const fetchImpl = await fixtureResponse({ mutateSecond: true });
     await assert.rejects(
       () => collectDevelopmentMetadata({
         repositoryRoot: ROOT,
         outputDirectory: path.join(temporary, "snapshot"),
-        fetchImpl: await fixtureResponse({ mutateSecond: true }),
+        fetchImpl,
         delay: async () => {},
       }),
       /Normalized repeated development metadata responses disagree/,
@@ -179,11 +180,12 @@ test("normalized disagreement between repeated public metadata requests fails cl
 test("coordinate-like text in an otherwise valid metadata response is rejected", async () => {
   const temporary = await mkdtemp(path.join(os.tmpdir(), "confovhh-development-coordinate-"));
   try {
+    const fetchImpl = await fixtureResponse({ coordinatePayload: true });
     await assert.rejects(
       () => collectDevelopmentMetadata({
         repositoryRoot: ROOT,
         outputDirectory: path.join(temporary, "snapshot"),
-        fetchImpl: await fixtureResponse({ coordinatePayload: true }),
+        fetchImpl,
         delay: async () => {},
       }),
       /Coordinate payload appeared/,
