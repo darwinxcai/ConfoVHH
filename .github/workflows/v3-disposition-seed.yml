@@ -1,0 +1,49 @@
+name: Hard-decoy v3 disposition seed
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - ".github/workflows/v3-disposition-seed.yml"
+      - "scripts/hard-decoy/v3-disposition-seed.mjs"
+      - "scripts/hard-decoy/verify-v3-census-contracts.mjs"
+      - "tests/hard-decoy-v3-disposition-seed.test.mjs"
+      - "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json"
+      - "validation/hard-decoy-holdout-v3/prelabel-census-draft/**"
+      - "validation/hard-decoy-holdout-v3/disposition-seed-contract-2026-08-29.json"
+      - "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/**"
+      - "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hard-decoy-v3-disposition-seed-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate-and-verify:
+    name: Generate and verify metadata-only disposition seed
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+      - name: Verify v3 pre-label contracts
+        run: node scripts/hard-decoy/verify-v3-census-contracts.mjs
+      - name: Generate deterministic disposition seed
+        run: node scripts/hard-decoy/v3-disposition-seed.mjs generate "$RUNNER_TEMP/disposition-seed"
+      - name: Verify deterministic disposition seed
+        run: node scripts/hard-decoy/v3-disposition-seed.mjs verify "$RUNNER_TEMP/disposition-seed"
+      - name: Upload disposition seed
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: hard-decoy-v3-disposition-seed
+          path: ${{ runner.temp }}/disposition-seed
+          if-no-files-found: error
+          retention-days: 14
