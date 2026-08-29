@@ -1,0 +1,61 @@
+name: Hard-decoy v3 metadata census
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - HARD_DECOY_PROTOCOL_V3_DRAFT.md
+      - validation/hard-decoy-holdout-v3/**
+      - scripts/hard-decoy/v3-source-universe.mjs
+      - scripts/hard-decoy/verify-v3-census-contracts.mjs
+      - tests/hard-decoy-census-v3.test.mjs
+      - .github/workflows/hard-decoy-v3-metadata.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hard-decoy-v3-metadata-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  metadata-census:
+    name: Reconstruct metadata-only source universe
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+
+      - name: Verify v3 pre-label contracts
+        run: node scripts/hard-decoy/verify-v3-census-contracts.mjs
+
+      - name: Run metadata-census integrity tests
+        run: node --test tests/hard-decoy-census-v3.test.mjs
+
+      - name: Capture repeated public metadata responses
+        run: >-
+          node scripts/hard-decoy/v3-source-universe.mjs
+          collect
+          "${RUNNER_TEMP}/confovhh-hard-decoy-v3-source"
+
+      - name: Independently replay the captured snapshot
+        run: >-
+          node scripts/hard-decoy/v3-source-universe.mjs
+          verify
+          "${RUNNER_TEMP}/confovhh-hard-decoy-v3-source"
+
+      - name: Upload checksummed metadata snapshot
+        if: always() && !cancelled()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: confovhh-hard-decoy-v3-source-${{ github.run_id }}
+          path: ${{ runner.temp }}/confovhh-hard-decoy-v3-source/
+          if-no-files-found: warn
+          retention-days: 30
