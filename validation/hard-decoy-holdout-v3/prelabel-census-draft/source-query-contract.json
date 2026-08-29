@@ -1,0 +1,136 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "stage": "V3_CENSUS_IN_PROGRESS",
+  "blindBoundary": {
+    "allowedDataClasses": [
+      "public-entry-identifiers",
+      "public-metadata",
+      "polymer-sequences",
+      "publication-and-depositor-annotations",
+      "licenses-and-release-dates"
+    ],
+    "forbiddenDataClasses": [
+      "holdout-coordinates",
+      "native-relative-receptor-vhh-poses",
+      "coordinate-derived-native-interfaces",
+      "DockQ-or-CAPRI-labels",
+      "ConfoVHH-holdout-scores",
+      "holdout-performance-results"
+    ],
+    "forbiddenUrlFragments": [
+      "files.rcsb.org",
+      "/download/",
+      "/coordinate/",
+      "native-vault",
+      "label-vault",
+      "candidate-vault"
+    ]
+  },
+  "retrieval": {
+    "repeatCount": 2,
+    "timeoutMilliseconds": 90000,
+    "maximumResponseBytes": 16777216,
+    "userAgent": "ConfoVHH-hard-decoy-census-v3/1.0 (+https://github.com/darwinxcai/ConfoVHH)"
+  },
+  "normalization": {
+    "identifierPattern": "^[0-9][A-Z0-9]{3}$",
+    "uppercase": true,
+    "deduplicate": true,
+    "sort": "bytewise-ascending",
+    "serialization": "one-identifier-per-line-with-terminal-LF",
+    "digest": "SHA-256-over-UTF-8-serialized-bytes"
+  },
+  "rcsb": {
+    "endpoint": "https://search.rcsb.org/rcsbsearch/v2/query",
+    "method": "POST",
+    "service": "full_text",
+    "returnType": "entry",
+    "resultsContentType": [
+      "experimental"
+    ],
+    "pagination": {
+      "start": 0,
+      "rows": 10000
+    },
+    "queries": [
+      {
+        "id": "nanobody",
+        "term": "nanobody"
+      },
+      {
+        "id": "vhh",
+        "term": "VHH"
+      },
+      {
+        "id": "camelid",
+        "term": "camelid"
+      },
+      {
+        "id": "megabody",
+        "term": "megabody"
+      }
+    ]
+  },
+  "gpcrdb": {
+    "apiEndpoint": "https://gpcrdb.org/services/structure/",
+    "apiMethod": "GET",
+    "pdbCodeField": "pdb_code",
+    "htmlEndpoint": "https://gpcrdb.org/structure",
+    "htmlMethod": "GET",
+    "htmlPdbColumnIndexZeroBased": 7,
+    "crossCheckPolicy": "record-differences-and-block-target-freeze-until-resolved"
+  },
+  "historicalReferenceOnly": {
+    "retrievedDateUtc": "2026-08-28",
+    "rcsbQueryCounts": {
+      "nanobody": 1760,
+      "vhh": 475,
+      "camelid": 188,
+      "megabody": 59
+    },
+    "rcsbQueryDigests": {
+      "nanobody": "a66f26fce4498ba07dc2eb46bd5ba1c5440f671209775e9496ce7b82bd194795",
+      "vhh": "0ad358494867265303e46afe24f7122508d98a6717c6d5ae26059b5e4adef614",
+      "camelid": "43fbe51adbd46533cc7855e8f5ce5f3e85752d45790e97b057a68b253a21b41c",
+      "megabody": "c63071f001fb61779eafddfed99b5b41826f2f8c04f798ad4cd833fb6cf37d91"
+    },
+    "rcsbUnionCount": 2065,
+    "rcsbUnionDigest": "c154b8a9780f0d7a898a9fed77bbc54f2b18572830840d55ead625ede647f0ca",
+    "gpcrdbCount": 1716,
+    "gpcrdbDigest": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861",
+    "intersectionCount": 287,
+    "intersectionDigest": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7"
+  },
+  "snapshot": {
+    "requiredFiles": [
+      "checksums.sha256",
+      "manifest.json",
+      "normalized/gpcrdb-api.txt",
+      "normalized/gpcrdb-html.txt",
+      "normalized/rcsb-camelid.txt",
+      "normalized/rcsb-gpcrdb-intersection.txt",
+      "normalized/rcsb-megabody.txt",
+      "normalized/rcsb-nanobody.txt",
+      "normalized/rcsb-union.txt",
+      "normalized/rcsb-vhh.txt",
+      "raw/gpcrdb-api-1.json",
+      "raw/gpcrdb-api-2.json",
+      "raw/gpcrdb-html-1.html",
+      "raw/gpcrdb-html-2.html",
+      "raw/rcsb-camelid-1.json",
+      "raw/rcsb-camelid-2.json",
+      "raw/rcsb-megabody-1.json",
+      "raw/rcsb-megabody-2.json",
+      "raw/rcsb-nanobody-1.json",
+      "raw/rcsb-nanobody-2.json",
+      "raw/rcsb-vhh-1.json",
+      "raw/rcsb-vhh-2.json",
+      "source-universe.jsonl",
+      "summary.md"
+    ],
+    "rawResponsesRetained": true,
+    "repeatResponsesRetained": true,
+    "targetFreezePermittedBySnapshotAlone": false
+  }
+}
