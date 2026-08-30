@@ -7,10 +7,13 @@ on:
     paths:
       - ".github/workflows/v3-vhh-sequence-pregraph.yml"
       - ".github/generated/v3-vhh-sequence-pregraph/**"
+      - ".github/generated/vhh-numbering-upgrade/**"
+      - "scripts/hard-decoy/upgrade-vhh-numbering-v130.mjs"
       - "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs"
       - "scripts/hard-decoy/v3-exact-evidence-pregraph.mjs"
       - "tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs"
       - "tests/vhh-numbering.test.mjs"
+      - "validation/hard-decoy-holdout-v3/VHH_NUMBERING_CORRECTION_2026-08-30.json"
       - "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json"
       - "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/**"
       - "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/**"
@@ -54,47 +57,75 @@ jobs:
           node-version: 22.18.0
           cache: npm
           cache-dependency-path: package-lock.json
-      - name: Install the pinned dependency closure
+      - name: Apply and bind the pre-label long-CDR3 numbering correction
+        run: |
+          set -euo pipefail
+          upgrade_template=".github/generated/vhh-numbering-upgrade/template.txt"
+          upgrade_script="scripts/hard-decoy/upgrade-vhh-numbering-v130.mjs"
+          {
+            printf 'const profile = { profileId: "${profile.profileId}" };\n'
+            printf 'const field = "${field}";\n'
+            cat "$upgrade_template"
+          } > "$upgrade_script"
+          node --check "$upgrade_script"
+          node "$upgrade_script" prepare
+          npm install --package-lock-only --ignore-scripts --save-exact immunum@1.3.0
+          node "$upgrade_script" bind-lock
+          node --check scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs
+          node --check tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs
+          node --check tests/hard-decoy-v3-vhh-sequence-pregraph-snapshot-audit.test.mjs
+          git diff --check
+      - name: Install the corrected pinned dependency closure
         run: npm ci
       - name: Verify authoritative pre-label state and exact 304-node universe
         run: |
           node scripts/hard-decoy-v3/verify-integration-state.mjs
           node scripts/hard-decoy/v3-exact-evidence-pregraph.mjs verify validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29
-      - name: Run frozen VHH numbering, matrix integrity, and independent snapshot audits
+      - name: Generate corrected complete VHH sequence pregraph snapshot
+        run: node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs generate validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
+      - name: Run frozen numbering, long-CDR3, matrix-integrity, and independent snapshot audits
         run: |
           node --test tests/vhh-numbering.test.mjs
           node --test tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs
-      - name: Generate complete VHH sequence pregraph snapshot
-        run: node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs generate validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
-      - name: Independently replay VHH sequence pregraph snapshot
+      - name: Independently replay corrected VHH sequence pregraph snapshot
         run: node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs verify validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
-      - name: Upload inspectable VHH sequence pregraph
+      - name: Upload inspectable corrected VHH sequence pregraph
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: hard-decoy-v3-vhh-sequence-pregraph
           path: validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
           if-no-files-found: error
           retention-days: 14
-      - name: Commit verified VHH sequence pregraph when changed
+      - name: Commit corrected verified VHH sequence pregraph when changed
         env:
           TARGET_BRANCH: ${{ github.ref_name }}
         run: |
           set -euo pipefail
           output="validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29"
           generator="scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs"
+          contract="validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json"
+          correction="validation/hard-decoy-holdout-v3/VHH_NUMBERING_CORRECTION_2026-08-30.json"
+          tests=(
+            "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+            "tests/hard-decoy-v3-vhh-sequence-pregraph-snapshot-audit.test.mjs"
+          )
           source_parts=".github/generated/v3-vhh-sequence-pregraph"
-          rm -rf "$source_parts"
-          if [[ -z "$(git status --porcelain --untracked-files=all -- "$output" "$generator" "$source_parts")" ]]; then
-            echo "Verified VHH sequence pregraph and generator are already current."
+          upgrade_parts=".github/generated/vhh-numbering-upgrade"
+          upgrade_script="scripts/hard-decoy/upgrade-vhh-numbering-v130.mjs"
+          rm -rf "$source_parts" "$upgrade_parts"
+          rm -f "$upgrade_script"
+          paths=("$output" "$generator" "$contract" "$correction" "package.json" "package-lock.json" "${tests[@]}" "$source_parts" "$upgrade_parts" "$upgrade_script")
+          if [[ -z "$(git status --porcelain --untracked-files=all -- "${paths[@]}")" ]]; then
+            echo "Corrected verified VHH sequence pregraph is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add -- "$output" "$generator"
-          git add -A -- "$source_parts"
-          if git diff --cached --quiet -- "$output" "$generator" "$source_parts"; then
-            echo "No VHH sequence pregraph content was staged."
+          git add -- "$output" "$generator" "$contract" "$correction" package.json package-lock.json "${tests[@]}"
+          git add -A -- "$source_parts" "$upgrade_parts" "$upgrade_script"
+          if git diff --cached --quiet -- "${paths[@]}"; then
+            echo "No corrected VHH sequence pregraph content was staged."
             exit 1
           fi
-          git commit -m "Record frozen v3 VHH sequence pregraph"
+          git commit -m "Regenerate VHH pregraph with corrected long-CDR3 numbering"
           git push origin "HEAD:${TARGET_BRANCH}"
