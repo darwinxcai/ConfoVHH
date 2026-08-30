@@ -1,0 +1,76 @@
+import { createHash } from "node:crypto";
+import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const HERE = fileURLToPath(import.meta.url);
+const ROOT = path.resolve(path.dirname(HERE), "../..");
+const STATE_RELATIVE = "validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json";
+const VERIFIER_RELATIVE = "scripts/hard-decoy-v3/verify-integration-state.mjs";
+const TEST_RELATIVE = "tests/hard-decoy-v3-integration-state.test.mjs";
+const ATTESTATION_RELATIVE = "validation/hard-decoy-holdout-v3/VHH_SEQUENCE_PREGRAPH_ATTESTATION_2026-08-30.json";
+const CONTRACT_RELATIVE = "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json";
+const CORRECTION_RELATIVE = "validation/hard-decoy-holdout-v3/VHH_NUMBERING_CORRECTION_2026-08-30.json";
+const SNAPSHOT_RELATIVE = "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29";
+const CHECKSUMS_RELATIVE = `${SNAPSHOT_RELATIVE}/checksums.sha256`;
+const MANIFEST_RELATIVE = `${SNAPSHOT_RELATIVE}/manifest.json`;
+const SUMMARY_RELATIVE = `${SNAPSHOT_RELATIVE}/summary.json`;
+const PACKAGE_LOCK_RELATIVE = "package-lock.json";
+const GENERATOR_RELATIVE = "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs";
+const SHA256 = /^[a-f0-9]{64}$/u;
+
+function ok(value, message) {
+  if (!value) throw new Error(message);
+}
+
+function sha256(bytes) {
+  return createHash("sha256").update(bytes).digest("hex");
+}
+
+function filename(relative) {
+  ok(typeof relative === "string" && relative.length > 0 && !path.isAbsolute(relative), `Unsafe relative path: ${relative}`);
+  const resolved = path.resolve(ROOT, relative);
+  const containment = path.relative(ROOT, resolved);
+  ok(containment && containment !== ".." && !containment.startsWith(`..${path.sep}`) && !path.isAbsolute(containment), `Path escaped repository root: ${relative}`);
+  return resolved;
+}
+
+async function bytes(relative) {
+  return readFile(filename(relative));
+}
+
+async function text(relative) {
+  return readFile(filename(relative), "utf8");
+}
+
+async function json(relative) {
+  return JSON.parse(await text(relative));
+}
+
+async function digest(relative) {
+  return sha256(await bytes(relative));
+}
+
+async function writeJson(relative, value) {
+  await writeFile(filename(relative), `${JSON.stringify(value, null, 2)}\n`);
+}
+
+function occurrences(source, fragment) {
+  return source.split(fragment).length - 1;
+}
+
+function replaceOnce(source, before, after, label) {
+  if (source.includes(after)) return source;
+  const count = occurrences(source, before);
+  ok(count === 1, `${label} expected one source fragment, observed ${count}.`);
+  return source.replace(before, after);
+}
+
+function insertAfterOnce(source, anchor, insertion, marker, label) {
+  if (source.includes(marker)) return source;
+  const count = occurrences(source, anchor);
+  ok(count === 1, `${label} expected one anchor, observed ${count}.`);
+  return source.replace(anchor, `${anchor}${insertion}`);
+}
+
+function assertFalse(r

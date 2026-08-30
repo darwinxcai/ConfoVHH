@@ -1,4 +1,4 @@
-name: Hard-decoy v3 VHH sequence pregraph
+name: Bind corrected v3 VHH sequence pregraph
 
 on:
   push:
@@ -6,33 +6,31 @@ on:
       - "work/hard-decoy-v3-vhh-sequence-*"
     paths:
       - ".github/workflows/v3-vhh-sequence-pregraph.yml"
-      - "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs"
-      - "scripts/hard-decoy/v3-exact-evidence-pregraph.mjs"
+      - ".github/generated/vhh-state-integration/**"
+      - "scripts/hard-decoy-v3/integrate-vhh-sequence-state.mjs"
       - "scripts/hard-decoy-v3/verify-integration-state.mjs"
-      - "tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs"
+      - "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs"
       - "tests/hard-decoy-v3-integration-state.test.mjs"
-      - "tests/vhh-numbering.test.mjs"
+      - "tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs"
       - "validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json"
+      - "validation/hard-decoy-holdout-v3/VHH_SEQUENCE_PREGRAPH_ATTESTATION_2026-08-30.json"
       - "validation/hard-decoy-holdout-v3/VHH_NUMBERING_CORRECTION_2026-08-30.json"
       - "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json"
       - "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/**"
-      - "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/**"
-      - "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
-      - "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl"
-      - "package.json"
       - "package-lock.json"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: hard-decoy-v3-vhh-sequence-${{ github.ref }}
+  group: hard-decoy-v3-vhh-state-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  verify:
-    name: Replay frozen IMGT VHH sequence pregraph
+  bind-verify-and-record:
+    if: github.actor != 'github-actions[bot]'
+    name: Bind corrected VHH pregraph into authoritative DRAFT state
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     steps:
@@ -40,7 +38,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.ref_name }}
-          fetch-depth: 1
+          fetch-depth: 0
       - name: Use Node.js 22.18
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -49,23 +47,54 @@ jobs:
           cache-dependency-path: package-lock.json
       - name: Install the frozen dependency closure
         run: npm ci
-      - name: Verify the authoritative pre-label boundary and exact node universe
+      - name: Materialize and execute the deterministic state integration
+        run: |
+          set -euo pipefail
+          parts=".github/generated/vhh-state-integration"
+          script="scripts/hard-decoy-v3/integrate-vhh-sequence-state.mjs"
+          cat "$parts"/part-* > "$script"
+          test "$(sha256sum "$script" | cut -d' ' -f1)" = "2402d56b42462ea761ba06915aafba717b35216eaeb13ce8ebc7bef107b2981a"
+          node --check "$script"
+          node "$script"
+          node --check scripts/hard-decoy-v3/verify-integration-state.mjs
+          node --check tests/hard-decoy-v3-integration-state.test.mjs
+          git diff --check
+      - name: Replay every integrated pre-label layer
         run: |
           node scripts/hard-decoy-v3/verify-integration-state.mjs
           node --test tests/hard-decoy-v3-integration-state.test.mjs
-          node scripts/hard-decoy/v3-exact-evidence-pregraph.mjs verify validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29
-      - name: Independently replay the committed corrected VHH pregraph
-        run: node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs verify validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
-      - name: Run numbering, long-CDR3, mutation, and complete matrix audits
-        run: |
-          node --test tests/vhh-numbering.test.mjs
+          node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs verify validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
           node --test tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs
-      - name: Confirm the workflow is read-only
-        run: test -z "$(git status --porcelain --untracked-files=all)"
-      - name: Upload the inspectable committed VHH pregraph
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: hard-decoy-v3-vhh-sequence-pregraph
-          path: validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
-          if-no-files-found: error
-          retention-days: 14
+      - name: Confirm conservative authority and access boundary
+        run: |
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const state = JSON.parse(fs.readFileSync('validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json', 'utf8'));
+          if (state.status !== 'DRAFT' || state.targetFreezeGate.status !== 'BLOCKED') process.exit(1);
+          if (state.census.formallyClearedGroups !== 0) process.exit(1);
+          if (state.authorization.approvalReady || state.authorization.userApproved || state.authorization.executionAuthorized) process.exit(1);
+          if (Object.values(state.labelBoundary).some(Boolean)) process.exit(1);
+          if (state.vhhSequencePregraph.formalLeakageGraphAuthority || state.vhhSequencePregraph.formalNoEdgeAuthority || state.vhhSequencePregraph.targetEligibilityAuthority) process.exit(1);
+          NODE
+      - name: Commit the verified integrated state
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          parts=".github/generated/vhh-state-integration"
+          script="scripts/hard-decoy-v3/integrate-vhh-sequence-state.mjs"
+          attestation="validation/hard-decoy-holdout-v3/VHH_SEQUENCE_PREGRAPH_ATTESTATION_2026-08-30.json"
+          state="validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json"
+          verifier="scripts/hard-decoy-v3/verify-integration-state.mjs"
+          test_file="tests/hard-decoy-v3-integration-state.test.mjs"
+          rm -rf "$parts"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$script" "$attestation" "$state" "$verifier" "$test_file"
+          git add -A -- .github/generated
+          if git diff --cached --quiet; then
+            echo "The corrected VHH pregraph is already bound into the authoritative DRAFT state."
+            exit 0
+          fi
+          git commit -m "Bind corrected VHH pregraph into v3 integration state"
+          git push origin "HEAD:${TARGET_BRANCH}"

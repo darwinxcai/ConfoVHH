@@ -1,0 +1,13 @@
+ "VHH replay destructuring",
+  );
+  const exactReplayAnchor = '    verifyExactEvidencePregraph({ repositoryRoot: root, snapshotDirectory: path.join(root, path.dirname(state.exactEvidencePregraph.checksumsPath)) }),\n';
+  source = insertAfterOnce(
+    source,
+    exactReplayAnchor,
+    '    verifyVhhSequencePregraph({ repositoryRoot: root, snapshotDirectory: path.join(root, state.vhhSequencePregraph.snapshotDirectory) }),\n',
+    "verifyVhhSequencePregraph({ repositoryRoot: root",
+    "VHH replay call",
+  );
+
+  const exactReplayCheckAnchor = '  ok(exactEvidence.totalNodeCount === state.exactEvidencePregraph.totalNodes && exactEvidence.allUnorderedPairCount === state.exactEvidencePregraph.allUnorderedPairs && exactEvidence.positiveEvidencePairCount === state.exactEvidencePregraph.positiveEvidencePairs && exactEvidence.candidateNodesConnectedToDevelopmentByDefiniteEvidence === state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByDefiniteEvidence && exactEvidence.candidateNodesConnectedToDevelopmentByInclusiveEvidence === state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByInclusiveEvidence, "Exact-evidence replay disagrees with integration state.");\n';
+  const vhhReplayCheck = '  ok(vhhSequence.totalNodeCount === state.vhhSequencePregraph.totalNodes && vhhSequence.totalMetadataProfileCount === state.vhhSequencePregraph.totalMetadataProfiles && vhhSequence.numberedProfileCount === state.vhhSequencePregraph.numberedProfiles && vhhSequence.unavailablePro

@@ -1,0 +1,52 @@
+,
+    digest(CHECKSUMS_RELATIVE),
+    digest(MANIFEST_RELATIVE),
+    digest(SUMMARY_RELATIVE),
+    digest(PACKAGE_LOCK_RELATIVE),
+    digest(GENERATOR_RELATIVE),
+  ]);
+
+  ok(state.studyId === "confovhh-hard-decoy-holdout-v3" && state.status === "DRAFT", "Unexpected integration-state identity.");
+  state.schemaVersion = "1.2.0";
+  state.recordedAtUtc = "2026-08-30T01:25:00Z";
+  state.targetFreezeGate.statement = "The v3 protocol remains DRAFT. The 287-row seed has 15 exact development-PDB exclusions and 272 pending rows; all 17 development metadata nodes, the 304-node exact-evidence pregraph, and a corrected complete 46,056-pair IMGT VHH sequence pregraph are reproducibly bound. The VHH layer conservatively marks 20,859 possible metadata-sequence leakage pairs, but direct receptor-VHH role, known-parent/variant, construct, canonical TM1-TM7, exhaustive discovery, formal graph, and sealed native-epitope gates remain incomplete. Zero of at least ten required independent groups are formally cleared.";
+
+  const oldBlocker = "IMGT-and-known-parent-vhh-matrix-unfrozen";
+  const newBlocker = "vhh-direct-role-and-known-parent-adjudication-incomplete";
+  const blockerSet = new Set(state.authorization.blockers);
+  ok(blockerSet.has(oldBlocker) || blockerSet.has(newBlocker), "Expected VHH authorization blocker is missing.");
+  state.authorization.blockers = state.authorization.blockers.map((blocker) => blocker === oldBlocker ? newBlocker : blocker);
+  ok(new Set(state.authorization.blockers).size === state.authorization.blockers.length, "Integration-state blockers became duplicated.");
+
+  const vhhSequencePregraph = {
+    status: summary.status,
+    snapshotDirectory: SNAPSHOT_RELATIVE,
+    checksumsPath: CHECKSUMS_RELATIVE,
+    checksumsSha256,
+    manifestPath: MANIFEST_RELATIVE,
+    manifestSha256,
+    summaryPath: SUMMARY_RELATIVE,
+    summarySha256,
+    contractPath: CONTRACT_RELATIVE,
+    contractSha256,
+    attestationPath: ATTESTATION_RELATIVE,
+    attestationSha256,
+    correctionRecordPath: CORRECTION_RELATIVE,
+    correctionRecordSha256: correctionSha256,
+    dependencyLockPath: PACKAGE_LOCK_RELATIVE,
+    dependencyLockSha256: packageLockSha256,
+    generatorScriptPath: GENERATOR_RELATIVE,
+    generatorScriptSha256: generatorSha256,
+    numberingEngine: contract.numbering.engine,
+    candidateNodes: summary.candidateNodeCount,
+    developmentNodes: summary.developmentNodeCount,
+    totalNodes: summary.totalNodeCount,
+    totalMetadataProfiles: summary.totalMetadataProfileCount,
+    numberedProfiles: summary.numberedProfileCount,
+    unavailableProfiles: summary.unavailableProfileCount,
+    allUnorderedPairs: summary.pairSpace.allUnorderedPairs,
+    matrixStatusCounts: summary.matrixStatusCounts,
+    possibleMetadataSequenceEdgePairs: summary.possibleMetadataSequenceEdgePairCounts.all,
+    exactFullSequenceEvidencePairs: summary.exactFullSequenceEvidencePairCount,
+    thresholdPregraphComponents: summary.thresholdPregraphComponentCount,
+    candida
