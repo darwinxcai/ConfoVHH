@@ -1,0 +1,123 @@
+name: Repair v0.5 dependency-separation regression
+
+on:
+  push:
+    branches:
+      - "work/hard-decoy-v3-vhh-sequence-pregraph-20260829"
+    paths:
+      - ".github/workflows/fix-v05-history-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair-and-verify:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install the frozen dependency closure
+        run: npm ci
+      - name: Correct the historical/current dependency invariant
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("tests/v05-validation-artifacts.test.mjs")
+          source = path.read_text()
+          old = '''test("v0.5 public attestation binds archived implementation and current scientific-core bytes", async () => {
+            const summary = await json(path.join(publicDirectory, "summary.json"));
+            const implementation = summary.sourceAttestation.implementation;
+            assert.deepEqual(Object.keys(implementation.files).sort(), EXPECTED_PUBLIC_IMPLEMENTATION_FILES);
+            const combined = createHash("sha256");
+            for (const [relative, expected] of Object.entries(implementation.files)) {
+              const bytes = await snapshotImplementationBytes("public-regression", relative, expected);
+              if (relative !== "package.json" && relative !== "package-lock.json") {
+                assert.equal(sha256(await readFile(path.join(root, relative))), expected, `${relative}: scientific-core drift`);
+              }
+              combined.update(relative);
+              combined.update("\\0");
+              combined.update(bytes);
+              combined.update("\\0");
+            }
+            assert.equal(combined.digest("hex"), implementation.combinedSha256);
+
+            const recordedImmunum = summary.sourceAttestation.executedDependencies.immunum;
+            assert.equal(recordedImmunum.name, "immunum");
+            assert.equal(recordedImmunum.version, "1.2.0");
+            const currentImmunum = await installedPackageDigest(path.join(root, "node_modules", "immunum"));
+            assert.equal(currentImmunum.fileCount, recordedImmunum.fileCount);
+            assert.equal(currentImmunum.combinedSha256, recordedImmunum.combinedSha256);
+            assert.deepEqual(currentImmunum.files, recordedImmunum.files);
+          });'''.replace("          ", "")
+          new = '''test("v0.5 public attestation binds archived implementation, unchanged scientific-core bytes, and historical dependency separation", async () => {
+            const summary = await json(path.join(publicDirectory, "summary.json"));
+            const implementation = summary.sourceAttestation.implementation;
+            assert.deepEqual(Object.keys(implementation.files).sort(), EXPECTED_PUBLIC_IMPLEMENTATION_FILES);
+            const combined = createHash("sha256");
+            for (const [relative, expected] of Object.entries(implementation.files)) {
+              const bytes = await snapshotImplementationBytes("public-regression", relative, expected);
+              if (relative !== "package.json" && relative !== "package-lock.json") {
+                assert.equal(sha256(await readFile(path.join(root, relative))), expected, `${relative}: scientific-core drift`);
+              }
+              combined.update(relative);
+              combined.update("\\0");
+              combined.update(bytes);
+              combined.update("\\0");
+            }
+            assert.equal(combined.digest("hex"), implementation.combinedSha256);
+
+            const snapshot = await implementationSnapshot();
+            assert.equal(snapshot.currentProductDependencyEnvironmentMatchesAttestedV05, false);
+            const recordedImmunum = summary.sourceAttestation.executedDependencies.immunum;
+            assert.equal(recordedImmunum.name, "immunum");
+            assert.equal(recordedImmunum.version, "1.2.0");
+            assert.deepEqual(snapshot.executedDependencies.immunum, {
+              name: recordedImmunum.name,
+              version: recordedImmunum.version,
+              fileCount: recordedImmunum.fileCount,
+              combinedSha256: recordedImmunum.combinedSha256,
+              files: Object.fromEntries(recordedImmunum.files.map((entry) => [
+                entry.path,
+                { bytes: entry.bytes, sha256: entry.sha256 },
+              ])),
+            });
+
+            const currentPackage = await json(path.join(root, "node_modules", "immunum", "package.json"));
+            assert.equal(currentPackage.version, "1.3.0");
+            const currentImmunum = await installedPackageDigest(path.join(root, "node_modules", "immunum"));
+            assert.notEqual(currentImmunum.combinedSha256, recordedImmunum.combinedSha256);
+          });'''.replace("          ", "")
+          if old not in source:
+              raise SystemExit("expected historical dependency test block was not found exactly")
+          if source.count(old) != 1:
+              raise SystemExit("historical dependency test block was not unique")
+          path.write_text(source.replace(old, new))
+          PY
+          node --check tests/v05-validation-artifacts.test.mjs
+          git diff --check
+      - name: Verify historical v0.5 and current v3 dependency separation
+        run: node --test --test-concurrency=1 tests/v05-validation-artifacts.test.mjs
+      - name: Commit the verified test repair and remove this one-off workflow
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          git rm .github/workflows/fix-v05-history-test.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tests/v05-validation-artifacts.test.mjs
+          git commit -m "Separate archived v0.5 dependencies from current VHH tooling"
+          git push origin "HEAD:${TARGET_BRANCH}"
