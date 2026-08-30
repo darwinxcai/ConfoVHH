@@ -183,7 +183,7 @@ test("v0.5 public attestation checksums and commit-bound accounting are intact",
   );
 });
 
-test("v0.5 public attestation binds archived implementation and current scientific-core bytes", async () => {
+test("v0.5 public attestation binds archived implementation, unchanged scientific-core bytes, and historical dependency separation", async () => {
   const summary = await json(path.join(publicDirectory, "summary.json"));
   const implementation = summary.sourceAttestation.implementation;
   assert.deepEqual(Object.keys(implementation.files).sort(), EXPECTED_PUBLIC_IMPLEMENTATION_FILES);
@@ -200,13 +200,26 @@ test("v0.5 public attestation binds archived implementation and current scientif
   }
   assert.equal(combined.digest("hex"), implementation.combinedSha256);
 
+  const snapshot = await implementationSnapshot();
+  assert.equal(snapshot.currentProductDependencyEnvironmentMatchesAttestedV05, false);
   const recordedImmunum = summary.sourceAttestation.executedDependencies.immunum;
   assert.equal(recordedImmunum.name, "immunum");
   assert.equal(recordedImmunum.version, "1.2.0");
+  assert.deepEqual(snapshot.executedDependencies.immunum, {
+    name: recordedImmunum.name,
+    version: recordedImmunum.version,
+    fileCount: recordedImmunum.fileCount,
+    combinedSha256: recordedImmunum.combinedSha256,
+    files: Object.fromEntries(recordedImmunum.files.map((entry) => [
+      entry.path,
+      { bytes: entry.bytes, sha256: entry.sha256 },
+    ])),
+  });
+
+  const currentPackage = await json(path.join(root, "node_modules", "immunum", "package.json"));
+  assert.equal(currentPackage.version, "1.3.0");
   const currentImmunum = await installedPackageDigest(path.join(root, "node_modules", "immunum"));
-  assert.equal(currentImmunum.fileCount, recordedImmunum.fileCount);
-  assert.equal(currentImmunum.combinedSha256, recordedImmunum.combinedSha256);
-  assert.deepEqual(currentImmunum.files, recordedImmunum.files);
+  assert.notEqual(currentImmunum.combinedSha256, recordedImmunum.combinedSha256);
 });
 
 test("v0.5 public result ledgers reconcile all source hashes and exact regressions", async () => {
