@@ -1,0 +1,488 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Legal notice &mdash; GPCRdb 1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Meetings with GPCRdb representation" href="meetings.html" />
+    <link rel="prev" title="Acknowledgements" href="acknowledgements.html" /> 
+
+<!-- RTD Extra Head -->
+
+
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "builder": "sphinx", "canonical_url": null, "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "legal_notice", "programming_language": "", "project": "gpcrdb", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+
+
+<!-- end RTD <extrahead> -->
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="gpcrdb" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/legal_notice.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="receptors.html">Receptors and families</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="receptors.html#receptor-pages">Receptor pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="receptors.html#family-pages">Family pages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ligands.html">Ligands &amp; Bioactivities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ligands.html#ligand-coverage">Ligand coverage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ligands.html#ligands-chembl-gtp-ki-db">Ligands (ChEMBL, GtP, Ki db)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ligands.html#receptor-query">Receptor query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ligands.html#ligand-query">Ligand query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ligands.html#ligand-info-page">Ligand Info page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ligands.html#endogenous-ligand-browser">Endogenous ligand browser</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="signalproteins.html">Signal proteins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="signalproteins.html#signal-protein-page">Signal protein page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signalproteins.html#gpcr-g-protein-coupling">GPCR-G protein coupling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signalproteins.html#g-protein-alignments">G protein alignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signalproteins.html#interface-mapping">Interface mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sequences.html">Sequences</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#structure-based-alignments">Structure-based alignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#phylogenetic-trees">Phylogenetic trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#similarity-search-gpcrdb">Similarity search - GPCRdb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#similarity-search-blast">Similarity search - BLAST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#similarity-matrix">Similarity matrix</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sequence_signature.html">Sequence signature tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structures.html">Structures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-browser">Structure browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#refined-structures">Refined structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-statistics">Structure statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-models">Structure models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-model-validation">Structure model validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-descriptors">Structure descriptors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="structure_comparison.html">Structure comparison</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structure_comparison.html#structure-comparison-tool">Structure comparison tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_comparison.html#structure-similarity-trees">Structure similarity trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_comparison.html#structure-superposition">Structure superposition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_comparison.html#generic-residue-numbering-pdb">Generic residue numbering (PDB)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="constructs.html">Structure Constructs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#data">Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#construct-alignments">Construct alignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#construct-design-tool">Construct design tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#experiment-browser">Experiment browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#truncation-fusion-analysis">Truncation &amp; Fusion analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#mutation-analysis">Mutation analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mutations.html">Mutations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mutations.html#mutation-browser">Mutation browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mutations.html#mutation-data-submission">Mutation data submission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mutations.html#type-of-mutation-data">Type of mutation data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutations.html#how-will-the-mutation-data-be-used">How will the mutation data be used?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biasedsignaling.html">Biased signaling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biasedsignaling.html#data-submission">Data submission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="biasedsignaling.html#submission-of-biased-ligands-balanced-reference-ligands-and-pathway-effects">Submission of biased ligands, balanced reference ligands and pathway effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="biasedsignaling.html#biased-ligands">Biased ligands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="biasedsignaling.html#balanced-ligands-references-for-pathway-bias">Balanced ligands (references for pathway-bias)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="biasedsignaling.html#pathway-effects">Pathway effects</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sites.html">Sites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#ligand-interactions">Ligand interactions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#site-search-manual">Site search - manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#site-search-from-pdb-complex">Site search - from pdb complex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#pharmacophore-generation">Pharmacophore generation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sites.html#abstract">Abstract</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#sodium-ion-site">Sodium ion site</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="generic_numbering.html">Generic residue numbering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drugs.html">Drugs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="drugs.html#drug-statistics">Drug statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drugs.html#drug-target-mapping">Drug target mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drugs.html#drug-browser">Drug browser</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nhs.html">Sales and prescription (NHS)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nhs.html#nhs-sales">NHS sales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nhs.html#estimated-economic-burden">Estimated economic burden</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="variants.html">Genetic variants</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variants.html#variation-statistics">Variation statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variants.html#receptor-variant-browser">Receptor variant browser</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="web_services.html">Web services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="web_services.html#api-reference">API reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_services.html#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="web_services.html#python-3-with-requests">Python 3 with requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_services.html#python-3-with-urllib">Python 3 with urllib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_services.html#python-2-with-urllib2">Python 2 with urllib2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#as-a-programmer">As a programmer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#as-a-data-curator">As a data curator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="local_installation.html">Local installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="local_installation.html#for-development">For development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="local_installation.html#for-internal-use">For internal use</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coding_style.html">Coding style</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coding_style.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coding_style.html#keep-your-code-clean">Keep your code clean</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="git_workflow.html">Recommended git workflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="git_workflow.html#preface">Preface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git_workflow.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#configuring-the-upstream-repository">Configuring the upstream repository</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="git_workflow.html#workflow">Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#branches">Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#committing">Committing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#keeping-your-branch-up-to-date">Keeping your branch up to date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#merging-your-branch-into-master">Merging your branch into master</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#pushing-changes-to-github-and-sending-a-pull-request">Pushing changes to Github and sending a pull request</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reload_database.html">Reload database from dump</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_a_database.html">Building a local database from source data</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About GPCRdb</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About GPCRdb</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about.html#background-and-development">Background and development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors of data and development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing GPCRdb</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#main-reference-for-gpcrdb">Main reference for GPCRdb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#introduction-to-new-users-review">Introduction to new users (review)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#structure-based-alignments-and-generic-residue-numbering">Structure-based alignments and generic residue numbering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#gpcr-drugs-and-targets">GPCR drugs and targets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#gpcr-g-protein-selectivity">GPCR-G protein selectivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#mutation-design-tool">Mutation design tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#crystal-structure-fragment-based-pharmacophore-models">Crystal structure fragment-based pharmacophore models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#gpcr-specific-pdf-reader">GPCR specific PDF reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#older-gpcrdb-articles">Older GPCRdb articles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Acknowledgements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="acknowledgements.html#gpcrdb-versions-since-2013">GPCRdb versions since 2013</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acknowledgements.html#gpcrdb-versions-1993-2013">GPCRdb versions 1993-2013</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Legal notice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#formal">Formal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#informal">Informal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#privacy">Privacy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="meetings.html">Meetings with GPCRdb representation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-1">2020</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-2">2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-3">2018</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-4">2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-5">2016</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-6">2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-7">2014</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-8">2013</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="linking.html">Linking to GPCRdb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_sites.html">External GPCR sites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="external_sites.html#modeling-servers">Modeling servers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gpcrm">GPCRM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#scpdb">scPDB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gpcr-ssfe">GPCR-SSFE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gomodo">GOMoDo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gpcr-modsim">GPCR-ModSim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#hybrid-mm-cg-webserver">Hybrid MM/CG webserver</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="external_sites.html#others">Others</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#guide-to-pharmacology">Guide to Pharmacology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#drgpcr">DrGPCR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gpcrladies">GPCRladies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GPCRdb</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Legal notice</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/protwis/gpcrdb_data/blob/master/docs/legal_notice.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="legal-notice">
+<h1>Legal notice<a class="headerlink" href="#legal-notice" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="formal">
+<h2>Formal<a class="headerlink" href="#formal" title="Permalink to this headline">¶</a></h2>
+<p>The GPCRdb server and data suite is a free data distribution system. The data and the server are distributed in the
+hope that it will be useful, but WITHOUT ANY WARRANTY without even the implied warranty of merchantability or fitness
+for a particular purpose. The copyright holders and/or other parties provide the data “AS IS”, without warranty of any
+kind, either expressed or implied. The entire risk as to the quality and performance of the data is with you. Should
+any data prove defective, you assume the cost of all necessary servicing, repair or correction.</p>
+<p>The copyrights for ALL information stored in the GPCRdb belongs to the partners in the GPCRdb project unless stated
+otherwise. It is free to make unlimited use of the GPCRdb data. The use of data or services provided by the GPCRdb
+project should be acknowledged the classical way by referring to the articles written by the GPCRdb project partners,
+and preferably also by mentioning: “We acknowledge the use of the GPCRdb database (<a class="reference external" href="https://www.gpcrdb.org">https://www.gpcrdb.org</a>).”.</p>
+</div>
+<div class="section" id="informal">
+<h2>Informal<a class="headerlink" href="#informal" title="Permalink to this headline">¶</a></h2>
+<p>The complete GPCRdb source code is freely available on <a class="reference external" href="https://github.com/protwis/protwis">GitHub</a> under the <a class="reference external" href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0 license</a>. This means that
+the code can be used, modified and distributed for any use (including commercial use), as long as the original license
+and copyright notice are included with the code, and any significant changes stated.</p>
+<p>The data in GPCRdb is freely available under the <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International license</a>. This means
+that the data can be copied, redistributed, remixed, transformed and built upon, as long as appropriate credit is
+giving, a link to the license provided and any changes stated.</p>
+</div>
+<div class="section" id="privacy">
+<h2>Privacy<a class="headerlink" href="#privacy" title="Permalink to this headline">¶</a></h2>
+<p>We voluntarily maintain the following privacy rules:</p>
+<ul class="simple">
+<li>We collect usage statistics with Google Analytics</li>
+<li>We take all possible measures to ensure that all detailed usage will remain secret.</li>
+<li>Usage data will not be sold or shared with third parties unless for academic purposes, and after we obtained the
+guarantee that our voluntary privacy rules will be obeyed.</li>
+<li>Detailed usage data will only be used by the site curators for optimisation and error detection purposes.</li>
+<li>We reserve the right to publicise, on our site, the names or internet address of any site using this resource,
+including frequencies of usage and breakdown of usage data types and tools (not individual receptor targets).</li>
+<li>We reserve the right to occasionally make the usage statistics available to granting organisations but these lists
+also take the above listed restrictions into account.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="meetings.html" class="btn btn-neutral float-right" title="Meetings with GPCRdb representation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="acknowledgements.html" class="btn btn-neutral float-left" title="Acknowledgements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, GPCRdb
+      
+        <span class="commit">
+          Revision <code>02a3a311</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+</body>
+</html>
