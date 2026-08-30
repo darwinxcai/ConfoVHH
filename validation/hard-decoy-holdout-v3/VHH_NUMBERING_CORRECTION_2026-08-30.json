@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "recordDateUtc": "2026-08-30",
+  "status": "PRELABEL_NUMBERING_ENGINE_CORRECTION_APPLIED_BEFORE_TARGET_FREEZE",
+  "supersededUnmergedArtifact": {
+    "pullRequest": 14,
+    "headCommitBeforeCorrection": "4a88fa9567e4b87470718e8acb426a6dad303bc4",
+    "numberingEngine": "immunum 1.2.0",
+    "formalBenchmarkAuthority": false
+  },
+  "finding": {
+    "code": "LONG_CDR3_SUFFIX_CLIPPING_BEFORE_FR4",
+    "representativeProfileId": "candidate:3SN6#entity:5",
+    "observedTruncatedCdr3": "AR",
+    "sequenceAnchoredCompleteCdr3": "ARCPAPFTRDCFDVTSTTYAY",
+    "sequenceAnchoredCompleteCdr3Length": 21,
+    "consequence": "framework-and-CDR3-leakage-comparisons-could-be-biologically-misclassified",
+    "nativeCoordinatesInspected": false,
+    "nativeRelativePoseInspected": false
+  },
+  "upstreamCorrection": {
+    "package": "immunum",
+    "fromVersion": "1.2.0",
+    "toVersion": "1.3.0",
+    "releaseTag": "v1.3.0",
+    "releaseCommit": "e027d5fe2405300508eee7ce78582a2fe4990f20",
+    "releaseDateUtc": "2026-08-28",
+    "officialChangelogUrl": "https://github.com/ENPICOM/immunum/blob/e027d5fe2405300508eee7ce78582a2fe4990f20/CHANGELOG.md",
+    "statedCorrection": "ultralong-CDR3-domains-are-no-longer-suffix-clipped-before-FR4"
+  },
+  "remediation": [
+    "pin-immunum-1.3.0-in-package-and-lock-files",
+    "bind-the-exact-package-lock-digest-into-the-frozen-numbering-contract",
+    "require-nonempty-FR1-CDR1-FR2-CDR2-FR3-CDR3-and-FR4",
+    "require-exact-agreement-between-number-map-derived-and-segment-derived-regions",
+    "regenerate-every-profile-pair-matrix-row-and-component",
+    "independently-replay-pair-space-threshold-and-sequence-reuse-accounting"
+  ],
+  "accessBoundary": {
+    "nativeHoldoutCoordinatesAccessed": false,
+    "nativeRelativePosesInspected": false,
+    "nativeEpitopesAccessed": false,
+    "dockqOrCapriLabelsAccessed": false,
+    "confovhhHoldoutScoresAccessed": false,
+    "performanceResultsAccessed": false
+  },
+  "authorization": {
+    "formallyClearedGroupCount": 0,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false
+  }
+}
