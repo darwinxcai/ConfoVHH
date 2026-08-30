@@ -114,7 +114,7 @@ jobs:
           upgrade_script="scripts/hard-decoy/upgrade-vhh-numbering-v130.mjs"
           rm -rf "$source_parts" "$upgrade_parts"
           rm -f "$upgrade_script"
-          paths=("$output" "$generator" "$contract" "$correction" "package.json" "package-lock.json" "${tests[@]}" "$source_parts" "$upgrade_parts" "$upgrade_script")
+          paths=("$output" "$generator" "$contract" "$correction" "package.json" "package-lock.json" "${tests[@]}" ".github/generated" "scripts/hard-decoy")
           if [[ -z "$(git status --porcelain --untracked-files=all -- "${paths[@]}")" ]]; then
             echo "Corrected verified VHH sequence pregraph is already current."
             exit 0
@@ -122,7 +122,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add -- "$output" "$generator" "$contract" "$correction" package.json package-lock.json "${tests[@]}"
-          git add -A -- "$source_parts" "$upgrade_parts" "$upgrade_script"
+          git add -A -- .github/generated scripts/hard-decoy
           if git diff --cached --quiet -- "${paths[@]}"; then
             echo "No corrected VHH sequence pregraph content was staged."
             exit 1
