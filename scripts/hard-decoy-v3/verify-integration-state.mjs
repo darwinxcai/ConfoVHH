@@ -7,6 +7,7 @@ import { verifyDevelopmentMetadataSnapshot } from "../hard-decoy/v3-development-
 import { verifyDispositionSeed } from "../hard-decoy/v3-disposition-seed.mjs";
 import { verifyEntryMetadataSnapshot } from "../hard-decoy/v3-entry-metadata.mjs";
 import { verifyExactEvidencePregraph } from "../hard-decoy/v3-exact-evidence-pregraph.mjs";
+import { verifyVhhSequencePregraph } from "../hard-decoy/v3-vhh-sequence-pregraph.mjs";
 import { verifySourceUniverse } from "../hard-decoy/v3-source-universe.mjs";
 import { verifyV3CensusContracts } from "../hard-decoy/verify-v3-census-contracts.mjs";
 import { verifyDesignRecord } from "./verify-design-record.mjs";
@@ -14,7 +15,7 @@ import { verifyDesignRecord } from "./verify-design-record.mjs";
 const HERE = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(HERE), "../..");
 const STATE_RELATIVE = "validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json";
-const EXPECTED_STATE_SHA256 = "0ce214774346688bc96da3b84078b39c4763268044b6788f71803316ecbc5e6c";
+const EXPECTED_STATE_SHA256 = "e06e92945c8591d1ca64a12f8f352ecd682de36ffc9083e248ea2c3c52c64ec1";
 const SHA256 = /^[a-f0-9]{64}$/u;
 
 function ok(value, message) {
@@ -108,7 +109,7 @@ async function verifyBoundedCensusAudit(root, census) {
 }
 
 function validateBlockedState(state) {
-  ok(state.schemaVersion === "1.1.0" && state.studyId === "confovhh-hard-decoy-holdout-v3", "Integration-state identity drifted.");
+  ok(state.schemaVersion === "1.2.0" && state.studyId === "confovhh-hard-decoy-holdout-v3", "Integration-state identity drifted.");
   ok(state.status === "DRAFT", "The incomplete v3 census must remain in the protocol DRAFT state.");
   exactKeys(state.targetFreezeGate, ["status", "minimumSatisfied", "discoveryComplete", "dispositionLedgerComplete", "statement"], "Target-freeze gate");
   ok(state.targetFreezeGate.status === "BLOCKED", "Target freeze must remain blocked.");
@@ -141,6 +142,17 @@ function validateBlockedState(state) {
   ok(state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByDefiniteEvidence === 33 && state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByInclusiveEvidence === 262, "Exact-evidence development-connectivity accounting drifted.");
   ok(state.exactEvidencePregraph.formalLeakageGraphAuthority === false && state.exactEvidencePregraph.formalNoEdgeAuthority === false, "Exact-evidence pregraph gained formal graph authority.");
 
+  ok(state.vhhSequencePregraph.status === "VHH_SEQUENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_DIRECT_ROLE_AND_PARENT_ADJUDICATION", "VHH sequence pregraph status drifted.");
+  ok(state.vhhSequencePregraph.numberingEngine === "immunum 1.3.0" && state.vhhSequencePregraph.completeImgtRegionCoverageRequired === true && state.vhhSequencePregraph.numberingSegmentationAgreementRequired === true, "Corrected VHH numbering policy drifted.");
+  ok(state.vhhSequencePregraph.candidateNodes === 287 && state.vhhSequencePregraph.developmentNodes === 17 && state.vhhSequencePregraph.totalNodes === 304, "VHH sequence node accounting drifted.");
+  ok(state.vhhSequencePregraph.totalMetadataProfiles === 303 && state.vhhSequencePregraph.numberedProfiles === 302 && state.vhhSequencePregraph.unavailableProfiles === 1, "VHH sequence profile accounting drifted.");
+  ok(state.vhhSequencePregraph.allUnorderedPairs === 46056 && state.vhhSequencePregraph.possibleMetadataSequenceEdgePairs === 20859 && state.vhhSequencePregraph.exactFullSequenceEvidencePairs === 2023, "VHH sequence pair accounting drifted.");
+  exactKeys(state.vhhSequencePregraph.matrixStatusCounts, ["FAIL_CLOSED_MISSING_OR_UNNUMBERABLE_METADATA_PROFILE", "NO_THRESHOLD_MATCH_NO_FORMAL_NO_EDGE_AUTHORITY", "POSSIBLE_METADATA_SEQUENCE_LEAKAGE_EDGE_ROLE_UNRESOLVED"], "VHH matrix status counts");
+  ok(state.vhhSequencePregraph.matrixStatusCounts.FAIL_CLOSED_MISSING_OR_UNNUMBERABLE_METADATA_PROFILE === 1803 && state.vhhSequencePregraph.matrixStatusCounts.NO_THRESHOLD_MATCH_NO_FORMAL_NO_EDGE_AUTHORITY === 23394 && state.vhhSequencePregraph.matrixStatusCounts.POSSIBLE_METADATA_SEQUENCE_LEAKAGE_EDGE_ROLE_UNRESOLVED === 20859, "VHH matrix status accounting drifted.");
+  ok(state.vhhSequencePregraph.thresholdPregraphComponents === 34 && state.vhhSequencePregraph.candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge === 57, "VHH component/connectivity accounting drifted.");
+  for (const field of ["checksumsSha256", "manifestSha256", "summarySha256", "contractSha256", "attestationSha256", "correctionRecordSha256", "dependencyLockSha256", "generatorScriptSha256"]) ok(SHA256.test(state.vhhSequencePregraph[field]), `Invalid VHH integration digest: ${field}`);
+  allFalse(state.vhhSequencePregraph, ["directBinderRolesResolved", "knownParentVariantEvidenceComplete", "formalLeakageGraphAuthority", "formalNoEdgeAuthority", "targetEligibilityAuthority"], "VHH sequence pregraph");
+
   ok(state.census.requiredIndependentGroups === 10 && state.census.provisionalGroups === 7 && state.census.formallyClearedGroups === 0 && state.census.boundedAuditNewGroups === 0, "Census accounting drifted.");
   ok(state.census.boundedAuditArtifactId === "census-audit-2026-08-29" && state.census.boundedAuditReviewedLedgerRecords === 13 && state.census.boundedAuditReviewedPdbEntries === 20, "Bounded census-audit accounting drifted.");
   allFalse(state.census, ["dispositionLedgerComplete", "leakageGraphComplete", "minimumSatisfied", "targetManifestFrozen"], "Census");
@@ -155,7 +167,7 @@ function validateBlockedState(state) {
     "272-source-entries-still-pending-scientific-disposition",
     "direct-receptor-vhh-interface-and-construct-adjudication-incomplete",
     "canonical-TM1-through-TM7-receptor-matrix-unfrozen",
-    "IMGT-and-known-parent-vhh-matrix-unfrozen",
+    "vhh-direct-role-and-known-parent-adjudication-incomplete",
     "formal-publication-and-candidate-component-graph-incomplete",
     "sealed-native-epitope-oracle-request-and-custody-unfrozen",
     "broader-candidate-discovery-incomplete",
@@ -188,6 +200,14 @@ export async function verifyIntegrationState(repositoryRoot = ROOT) {
     requireDigest(root, state.developmentMetadata.attestationPath, state.developmentMetadata.attestationSha256),
     requireDigest(root, state.exactEvidencePregraph.checksumsPath, state.exactEvidencePregraph.checksumsSha256),
     requireDigest(root, state.exactEvidencePregraph.attestationPath, state.exactEvidencePregraph.attestationSha256),
+    requireDigest(root, state.vhhSequencePregraph.checksumsPath, state.vhhSequencePregraph.checksumsSha256),
+    requireDigest(root, state.vhhSequencePregraph.manifestPath, state.vhhSequencePregraph.manifestSha256),
+    requireDigest(root, state.vhhSequencePregraph.summaryPath, state.vhhSequencePregraph.summarySha256),
+    requireDigest(root, state.vhhSequencePregraph.contractPath, state.vhhSequencePregraph.contractSha256),
+    requireDigest(root, state.vhhSequencePregraph.attestationPath, state.vhhSequencePregraph.attestationSha256),
+    requireDigest(root, state.vhhSequencePregraph.correctionRecordPath, state.vhhSequencePregraph.correctionRecordSha256),
+    requireDigest(root, state.vhhSequencePregraph.dependencyLockPath, state.vhhSequencePregraph.dependencyLockSha256),
+    requireDigest(root, state.vhhSequencePregraph.generatorScriptPath, state.vhhSequencePregraph.generatorScriptSha256),
   ]);
 
   const primaryEntryDirectory = path.dirname(state.entryMetadata.checksumsPath);
@@ -231,7 +251,26 @@ export async function verifyIntegrationState(repositoryRoot = ROOT) {
   ok(exactAttestation.interpretation?.exactMetadataEvidencePregraphOnly === true && exactAttestation.interpretation?.formalLeakageGraph === false && exactAttestation.interpretation?.formalNoEdgeClaims === false, "Exact-evidence interpretation boundary drifted.");
   allFalse(exactAttestation, ["formalLeakageGraphComplete", "dispositionLedgerComplete", "exactFrozenTargetSetExists", "targetFreezePermitted", "executionAuthorized", "nativeHoldoutCoordinatesAccessed", "nativeRelativePosesInspected", "dockqLabelsAccessed", "performanceResultsAccessed"], "Exact evidence attestation");
 
-  const [design, archivedDraft, source, entry, entryReplay, seed, development, exactEvidence, boundedAudit] = await Promise.all([
+  const vhhAttestation = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(await readBoundRegularFile(path.join(root, state.vhhSequencePregraph.attestationPath))));
+  ok(vhhAttestation.status === "VHH_SEQUENCE_PREGRAPH_ATTESTED_BLOCKED_PENDING_DIRECT_ROLE_AND_PARENT_ADJUDICATION"
+    && vhhAttestation.snapshotChecksumsSha256 === state.vhhSequencePregraph.checksumsSha256
+    && vhhAttestation.contractSha256 === state.vhhSequencePregraph.contractSha256
+    && vhhAttestation.numberingCorrectionRecordSha256 === state.vhhSequencePregraph.correctionRecordSha256
+    && vhhAttestation.dependencyPackageLockSha256 === state.vhhSequencePregraph.dependencyLockSha256
+    && vhhAttestation.generatorScriptSha256 === state.vhhSequencePregraph.generatorScriptSha256
+    && vhhAttestation.totalNodeCount === state.vhhSequencePregraph.totalNodes
+    && vhhAttestation.allUnorderedPairCount === state.vhhSequencePregraph.allUnorderedPairs
+    && vhhAttestation.possibleMetadataSequenceEdgePairCount === state.vhhSequencePregraph.possibleMetadataSequenceEdgePairs,
+  "VHH sequence pregraph attestation drifted.");
+  ok(vhhAttestation.interpretation?.sequenceEvidencePregraphOnly === true
+    && vhhAttestation.interpretation?.possibleMetadataSequenceEdgesAreNotFormalLeakageEdges === true
+    && vhhAttestation.interpretation?.thresholdComponentsAreNotIndependentBenchmarkGroups === true
+    && vhhAttestation.interpretation?.absenceOfThresholdMatchIsNotFormalNoEdgeEvidence === true,
+  "VHH sequence interpretation boundary drifted.");
+  allFalse(vhhAttestation, ["directBinderRolesResolved", "knownParentVariantEvidenceComplete", "formalLeakageGraphComplete", "dispositionLedgerComplete", "exactFrozenTargetSetExists", "targetFreezePermitted", "executionAuthorized", "nativeHoldoutCoordinatesAccessed", "nativeRelativePosesInspected", "nativeEpitopesAccessed", "dockqLabelsAccessed", "confovhhHoldoutScoresAccessed", "performanceResultsAccessed"], "VHH sequence attestation");
+  ok(vhhAttestation.formallyClearedGroupCount === 0, "VHH sequence attestation cannot clear benchmark groups.");
+
+  const [design, archivedDraft, source, entry, entryReplay, seed, development, exactEvidence, vhhSequence, boundedAudit] = await Promise.all([
     verifyDesignRecord(root),
     verifyV3CensusContracts(root),
     verifySourceUniverse({ repositoryRoot: root, snapshotDirectory: path.join(root, "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29") }),
@@ -240,6 +279,7 @@ export async function verifyIntegrationState(repositoryRoot = ROOT) {
     verifyDispositionSeed({ repositoryRoot: root, snapshotDirectory: path.join(root, path.dirname(state.dispositionSeed.checksumsPath)) }),
     verifyDevelopmentMetadataSnapshot({ repositoryRoot: root, snapshotDirectory: path.join(root, path.dirname(state.developmentMetadata.checksumsPath)) }),
     verifyExactEvidencePregraph({ repositoryRoot: root, snapshotDirectory: path.join(root, path.dirname(state.exactEvidencePregraph.checksumsPath)) }),
+    verifyVhhSequencePregraph({ repositoryRoot: root, snapshotDirectory: path.join(root, state.vhhSequencePregraph.snapshotDirectory) }),
     verifyBoundedCensusAudit(root, state.census),
   ]);
 
@@ -251,6 +291,7 @@ export async function verifyIntegrationState(repositoryRoot = ROOT) {
   ok(seed.dispositionRowCount === state.dispositionSeed.rows && seed.resolvedDispositionRowCount === state.dispositionSeed.resolvedRows && seed.pendingDispositionRowCount === state.dispositionSeed.pendingRows && seed.exactDevelopmentExclusionCount === state.dispositionSeed.exactDevelopmentPdbExclusions && seed.provisionalDirectTargetCount === 0, "Disposition-seed replay disagrees with integration state.");
   ok(development.developmentNodeCount === state.developmentMetadata.nodes && development.newlyCompletedMetadataNodeCount === state.developmentMetadata.newlyCompletedMetadataNodes && development.uniquePreferredReceptorEntityCount === state.developmentMetadata.uniquePreferredReceptorEntities, "Development-metadata replay disagrees with integration state.");
   ok(exactEvidence.totalNodeCount === state.exactEvidencePregraph.totalNodes && exactEvidence.allUnorderedPairCount === state.exactEvidencePregraph.allUnorderedPairs && exactEvidence.positiveEvidencePairCount === state.exactEvidencePregraph.positiveEvidencePairs && exactEvidence.candidateNodesConnectedToDevelopmentByDefiniteEvidence === state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByDefiniteEvidence && exactEvidence.candidateNodesConnectedToDevelopmentByInclusiveEvidence === state.exactEvidencePregraph.candidateNodesConnectedToDevelopmentByInclusiveEvidence, "Exact-evidence replay disagrees with integration state.");
+  ok(vhhSequence.totalNodeCount === state.vhhSequencePregraph.totalNodes && vhhSequence.totalMetadataProfileCount === state.vhhSequencePregraph.totalMetadataProfiles && vhhSequence.numberedProfileCount === state.vhhSequencePregraph.numberedProfiles && vhhSequence.unavailableProfileCount === state.vhhSequencePregraph.unavailableProfiles && vhhSequence.allUnorderedPairCount === state.vhhSequencePregraph.allUnorderedPairs && vhhSequence.possibleMetadataSequenceEdgePairCount === state.vhhSequencePregraph.possibleMetadataSequenceEdgePairs && vhhSequence.thresholdPregraphComponentCount === state.vhhSequencePregraph.thresholdPregraphComponents && vhhSequence.candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge === state.vhhSequencePregraph.candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge && vhhSequence.formallyClearedGroupCount === 0 && vhhSequence.targetFreezePermitted === false && vhhSequence.executionAuthorized === false, "VHH sequence replay disagrees with integration state.");
   ok(boundedAudit.requiredIndependentGroups === state.census.requiredIndependentGroups && boundedAudit.provisionalGroups === state.census.provisionalGroups && boundedAudit.formallyClearedGroups === state.census.formallyClearedGroups && boundedAudit.newIndependentGroups === state.census.boundedAuditNewGroups, "Bounded census-audit replay disagrees with integration state.");
 
   return {
@@ -273,6 +314,13 @@ export async function verifyIntegrationState(repositoryRoot = ROOT) {
     positiveExactOrAmbiguousEvidencePairs: exactEvidence.positiveEvidencePairCount,
     candidateNodesConnectedToDevelopmentByDefiniteEvidence: exactEvidence.candidateNodesConnectedToDevelopmentByDefiniteEvidence,
     candidateNodesConnectedToDevelopmentByInclusiveEvidence: exactEvidence.candidateNodesConnectedToDevelopmentByInclusiveEvidence,
+    vhhMetadataProfiles: vhhSequence.totalMetadataProfileCount,
+    vhhNumberedProfiles: vhhSequence.numberedProfileCount,
+    vhhUnavailableProfiles: vhhSequence.unavailableProfileCount,
+    vhhSequenceUnorderedPairs: vhhSequence.allUnorderedPairCount,
+    possibleVhhSequenceEvidencePairs: vhhSequence.possibleMetadataSequenceEdgePairCount,
+    vhhThresholdPregraphComponents: vhhSequence.thresholdPregraphComponentCount,
+    candidateNodesConnectedToDevelopmentByPossibleVhhSequenceEvidence: vhhSequence.candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge,
     boundedAuditReviewedLedgerRecords: boundedAudit.reviewedLedgerRecords,
     boundedAuditReviewedPdbEntries: boundedAudit.reviewedPdbEntries,
     provisionalGroups: state.census.provisionalGroups,
