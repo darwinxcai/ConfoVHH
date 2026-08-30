@@ -67,7 +67,7 @@ jobs:
         run: |
           node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs verify validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
           node --test tests/vhh-numbering.test.mjs
-          node --test tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs
+          node --test --test-concurrency=1 tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs
       - name: Confirm conservative authority and access boundary
         run: |
           node - <<'NODE'

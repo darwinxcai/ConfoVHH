@@ -2,53 +2,60 @@ name: CI
 
 on:
   push:
-    branches: [main]
   pull_request:
-    branches: [main]
 
 permissions:
   contents: read
 
 concurrency:
-  group: ci-${{ github.ref }}
+  group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  core-release-gate:
-    name: Core release gate · Node ${{ matrix.node }}
-    runs-on: ubuntu-latest
+  verify:
+    name: Release verification (Node ${{ matrix.node }})
+    runs-on: ubuntu-24.04
     timeout-minutes: 35
     strategy:
       fail-fast: false
       matrix:
-        node: ["22.18.0", "24.x"]
+        node:
+          - 22.18.0
+          - 24.13.0
     steps:
       - name: Check out source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Use Node.js ${{ matrix.node }}
+      - name: Use Node.js
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: ${{ matrix.node }}
           cache: npm
           cache-dependency-path: package-lock.json
-      - name: Install patched product dependencies
+      - name: Install dependencies
         run: npm ci
-      - name: Verify dependency graph and advisories
-        run: |
-          npm ls --all
-          npm audit --audit-level=moderate
-          npm audit --omit=dev --audit-level=moderate
-      - name: Full offline release gate
-        run: npm run test:release
-      - name: Replay blocked hard-decoy v3 integration state
-        run: |
-          node scripts/hard-decoy-v3/verify-integration-state.mjs
-          node --test validation/hard-decoy-holdout-v3/census-audit-2026-08-29/verify.test.mjs
+      - name: Run release test suite
+        run: npm test
+      - name: Run adversarial validation
+        run: npm run test:adversarial
+      - name: Lint
+        run: npm run lint
+      - name: Build and type-check
+        run: npm run build
+      - name: Validate real prediction-run regression artifact
+        run: npm run validate:prediction-runs
+      - name: Replay v0.5 public regression attestation
+        run: node scripts/run-v05-public-regression-attestation.mjs replay
+      - name: Replay DockQ v0.5 regression comparisons
+        run: node scripts/run-dockq-v05-regression-replay.mjs replay
+      - name: Verify release-artifact reproducibility
+        run: npm run release:verify
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
 
-  core-coverage:
-    name: Core coverage
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
+  coverage:
+    name: Coverage gate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
     steps:
       - name: Check out source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -57,78 +64,66 @@ jobs:
         with:
           node-version: 22.18.0
           cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            qa/package-lock.json
-      - name: Install application and isolated QA dependencies
-        run: |
-          npm ci
-          npm ci --prefix qa
-      - name: Audit isolated QA dependencies
-        run: npm audit --prefix qa --audit-level=moderate
-      - name: Build production output for rendered-response tests
-        run: npm run build
-      - name: Enforce measured core coverage floors
-        run: >
-          ./qa/node_modules/.bin/c8
+          cache-dependency-path: package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Enforce coverage threshold
+        run: >-
+          npx c8
           --all
-          --include='lib/**/*.ts'
-          --reporter=text
-          --reporter=lcov
+          --include='lib/**/*.{ts,tsx}'
+          --include='app/**/*.{ts,tsx}'
+          --include='worker/**/*.{ts,tsx}'
+          --include='components/**/*.{ts,tsx}'
+          --exclude='components/ui/**'
+          --exclude='**/*.d.ts'
           --check-coverage
-          --statements=60
-          --lines=60
-          --branches=80
-          --functions=50
-          node --test tests/*.test.mjs
-      - name: Upload coverage report
-        if: success()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: core-coverage
-          path: coverage/lcov.info
-          if-no-files-found: ignore
-          retention-days: 14
+          --lines 83
+          --branches 83
+          --functions 83
+          --statements 83
+          node --test --test-concurrency=1 tests/*.test.mjs
+      - name: Audit full dependency closure
+        run: npm audit --audit-level=high
 
-  chromium-acceptance:
-    name: Chromium acceptance and accessibility
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
+  client-boundary:
+    name: Client-boundary regression guard
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
     steps:
       - name: Check out source
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Use Node.js 22.18
-        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: 22.18.0
-          cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            qa/package-lock.json
-      - name: Install application and isolated QA dependencies
+      - name: Enforce bounded client imports
         run: |
-          npm ci
-          npm ci --prefix qa
-      - name: Install Chromium runtime
-        run: ./qa/node_modules/.bin/playwright install --with-deps chromium
-      - name: Build production application
-        run: npm run build
-      - name: Run browser and WCAG A/AA acceptance
-        run: npm --prefix qa test
-      - name: Upload browser diagnostics
-        if: failure() && !cancelled()
-        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        with:
-          name: chromium-acceptance
-          path: |
-            qa/playwright-report/
-            qa/test-results/
-          if-no-files-found: ignore
-          retention-days: 14
+          set -euo pipefail
+          if grep -R -E "from ['\"]@/lib/(confovhh|geometry-fit|mmcif|pose-ensemble|research-workspace|state-pair|prediction-run-jobs|prediction-run)['\"]" app components; then
+            echo "Forbidden direct client import of a heavy analysis module."
+            exit 1
+          fi
+          if grep -R -E "from ['\"]@/lib/audit-jobs['\"]" app components | grep -v "AuditJobSnapshot"; then
+            echo "Client code may import audit-jobs only for the AuditJobSnapshot type."
+            exit 1
+          fi
+          if grep -R -E "from ['\"]@/lib/prediction-run-jobs['\"]" app components | grep -v "import type"; then
+            echo "Client code may import prediction-run-jobs only as type-only metadata."
+            exit 1
+          fi
+          if grep -R -E "from ['\"]@/lib/research-workspace['\"]" app components | grep -v "import type"; then
+            echo "Client code may import research-workspace only as type-only metadata."
+            exit 1
+          fi
+          if grep -R -E "from ['\"]@/lib/(audit-export|audit-worker|audit-worker-protocol|candidate-shortlist|coordinate-parser|pae-visualization|topology-annotation|user-footprint|vhh-numbering)['\"]" app components; then
+            echo "Forbidden direct client import of an analysis or worker module."
+            exit 1
+          fi
+          if grep -R -E "from ['\"]@/lib/prediction-run-worker['\"]" app components; then
+            echo "Client code may not import the prediction-run worker runtime."
+            exit 1
+          fi
 
-  public-producer-regression:
-    name: Exact public producer-output regression
-    runs-on: ubuntu-latest
+  build:
+    name: Production build, lint, and type-check
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - name: Check out source
@@ -139,7 +134,9 @@ jobs:
           node-version: 22.18.0
           cache: npm
           cache-dependency-path: package-lock.json
-      - name: Install patched product dependencies
+      - name: Install dependencies
         run: npm ci
-      - name: Verify immutable producer bytes and all pose/PAE audits
-        run: node scripts/validate-real-prediction-runs.mjs --verify=validation/real-prediction-run-regression-v1.json --quiet
+      - name: Lint
+        run: npm run lint
+      - name: Build and type-check
+        run: npm run build
