@@ -37,7 +37,16 @@ jobs:
         run: |
           set -euo pipefail
           parts=".github/generated/v3-receptor-tm-pregraph-source"
-          cat "$parts"/part-* | base64 --decode > /tmp/receptor-tm-source.tar.gz
+          cat \
+            "$parts"/part-000a \
+            "$parts"/part-000b \
+            "$parts"/part-001 \
+            "$parts"/part-002 \
+            "$parts"/part-003 \
+            "$parts"/part-004 \
+            "$parts"/part-005a \
+            "$parts"/part-005b \
+            | base64 --decode > /tmp/receptor-tm-source.tar.gz
           test "$(sha256sum /tmp/receptor-tm-source.tar.gz | cut -d' ' -f1)" = "465c48767ff07ab0d210f1108593e1176c14bd179c228dcbc7a800269f92ecc4"
           tar -xzf /tmp/receptor-tm-source.tar.gz -C .
           test "$(sha256sum scripts/hard-decoy/v3-receptor-tm-pregraph.mjs | cut -d' ' -f1)" = "4316347ee87f6c945f3cb3ed8b3128bb3b2468ec5dfdb158d4e297119821fa6b"
