@@ -50,7 +50,19 @@ jobs:
           test "$(sha256sum /tmp/receptor-tm-source.tar.gz | cut -d' ' -f1)" = "465c48767ff07ab0d210f1108593e1176c14bd179c228dcbc7a800269f92ecc4"
           tar -xzf /tmp/receptor-tm-source.tar.gz -C .
           test "$(sha256sum scripts/hard-decoy/v3-receptor-tm-pregraph.mjs | cut -d' ' -f1)" = "4316347ee87f6c945f3cb3ed8b3128bb3b2468ec5dfdb158d4e297119821fa6b"
-          test "$(sha256sum validation/hard-decoy-holdout-v3/receptor-tm-contract-2026-08-30.json | cut -d' ' -f1)" = "e23dee22770f3757349662a0389b67c7731b657ff9d8409cee07735bd6ad250d"
+          contract="validation/hard-decoy-holdout-v3/receptor-tm-contract-2026-08-30.json"
+          test "$(sha256sum "$contract" | cut -d' ' -f1)" = "e23dee22770f3757349662a0389b67c7731b657ff9d8409cee07735bd6ad250d"
+          python - <<'PY'
+          from pathlib import Path
+          path = Path("validation/hard-decoy-holdout-v3/receptor-tm-contract-2026-08-30.json")
+          source = path.read_text()
+          old = "9b0f1b42b34e2026ccb7de4cd98df7b8be57c9d5cf30c0e050668224715a3ad"
+          new = "9b0f1b42b34e20206ccb7de4cd98df7b8be57c9d5cf30c0e050668224715a3ad"
+          if source.count(old) != 1:
+              raise SystemExit("The expected development-node checksum typo was not unique.")
+          path.write_text(source.replace(old, new))
+          PY
+          test "$(sha256sum "$contract" | cut -d' ' -f1)" = "abd88bbae2d35fda28dc9339f80d91c65d95c4b9f844d74ddff7249090eea412"
           test "$(sha256sum tests/hard-decoy-v3-receptor-tm-pregraph.test.mjs | cut -d' ' -f1)" = "9cf8890e494452b7b31d00df8210e5309fc50cf68dbe35fe26a4a56e3cdf8065"
           node --check scripts/hard-decoy/v3-receptor-tm-pregraph.mjs
           node --check tests/hard-decoy-v3-receptor-tm-pregraph.test.mjs
