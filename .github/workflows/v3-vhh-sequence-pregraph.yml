@@ -9,7 +9,7 @@ on:
       - ".github/generated/v3-vhh-sequence-pregraph/**"
       - "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs"
       - "scripts/hard-decoy/v3-exact-evidence-pregraph.mjs"
-      - "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+      - "tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs"
       - "tests/vhh-numbering.test.mjs"
       - "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json"
       - "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/**"
@@ -60,10 +60,10 @@ jobs:
         run: |
           node scripts/hard-decoy-v3/verify-integration-state.mjs
           node scripts/hard-decoy/v3-exact-evidence-pregraph.mjs verify validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29
-      - name: Run frozen VHH numbering and matrix integrity tests
+      - name: Run frozen VHH numbering, matrix integrity, and independent snapshot audits
         run: |
           node --test tests/vhh-numbering.test.mjs
-          node --test tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs
+          node --test tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs
       - name: Generate complete VHH sequence pregraph snapshot
         run: node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs generate validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
       - name: Independently replay VHH sequence pregraph snapshot
