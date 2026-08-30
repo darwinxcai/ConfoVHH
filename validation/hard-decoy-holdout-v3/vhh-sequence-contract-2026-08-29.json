@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "studyId": "confovhh-hard-decoy-holdout-v3",
   "status": "VHH_SEQUENCE_PREGRAPH_RULE_FROZEN",
   "snapshotDateUtc": "2026-08-29",
@@ -44,7 +44,7 @@
   },
   "numbering": {
     "scheme": "IMGT",
-    "engine": "immunum 1.2.0",
+    "engine": "immunum 1.3.0",
     "detectedChain": "H",
     "minimumEngineConfidence": 0.5,
     "supportedAlphabet": "ACDEFGHIKLMNPQRSTVWY",
@@ -90,7 +90,28 @@
     "insertionPolicy": "assign-by-numeric-IMGT-position-prefix",
     "terminalTagPolicy": "exclude-residues-outside-the-numbered-V-domain",
     "ambiguousResiduePolicy": "fail-closed-before-numbering",
-    "emptyFrameworkOrCdr3Policy": "fail-closed"
+    "emptyFrameworkOrCdr3Policy": "fail-closed",
+    "engineReleaseTag": "v1.3.0",
+    "engineReleaseCommit": "e027d5fe2405300508eee7ce78582a2fe4990f20",
+    "engineReleaseDateUtc": "2026-08-28",
+    "engineUpgradeReason": "correct-ultralong-CDR3-suffix-clipping-before-FR4",
+    "requiredImgtRegions": [
+      "FR1-IMGT",
+      "CDR1-IMGT",
+      "FR2-IMGT",
+      "CDR2-IMGT",
+      "FR3-IMGT",
+      "CDR3-IMGT",
+      "FR4-IMGT"
+    ],
+    "completeImgtRegionCoverageRequired": true,
+    "numberingSegmentationAgreementRequired": true,
+    "incompleteRegionPolicy": "fail-closed",
+    "segmentationCrossCheck": "number-map-derived-and-segment-derived-regions-must-agree-exactly",
+    "packageLockPath": "package-lock.json",
+    "packageLockSha256": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+    "correctionRecordPath": "validation/hard-decoy-holdout-v3/VHH_NUMBERING_CORRECTION_2026-08-30.json",
+    "correctionRecordSha256": "414c333525977126e84915fd9154af7403ad9cddc3552349f34b7c83cef0e461"
   },
   "alignment": {
     "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",

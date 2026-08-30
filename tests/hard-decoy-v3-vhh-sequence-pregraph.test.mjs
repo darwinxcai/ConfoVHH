@@ -16,6 +16,8 @@ import {
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CONTRACT_PATH = path.join(ROOT, "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json");
 const NANOBODY_SEQUENCE = "QVQLQESGGGLVQAGGSLRLSCAASGSIFSINTMGWYRQAPGKQRELVAAIHSGGSTNYANSVKGRFTISRDNAANTVYLQMNSLKPEDTAVYYCNVKDYGAVLYEYDYWGQGTQVTVSSHHHHHH";
+const NB35_SEQUENCE =
+  "QVQLQESGGGLVQPGGSLRLSCAASGFTFSNYKMNWVRQAPGKGLEWVSDISQSGASISYTGSVKGRFTISRDNAKNTLYLQMNSLKPEDTAVYYCARCPAPFTRDCFDVTSTTYAYRGQGTQVTVSSHHHHHHEPEA";
 
 function sha256(bytes) {
   return createHash("sha256").update(bytes).digest("hex");
@@ -33,8 +35,14 @@ test("the VHH sequence contract freezes numbering, alignment, thresholds, pair s
   const contract = JSON.parse(await readFile(CONTRACT_PATH, "utf8"));
   assert.equal(contract.status, "VHH_SEQUENCE_PREGRAPH_RULE_FROZEN");
   assert.equal(contract.numbering.scheme, "IMGT");
-  assert.equal(contract.numbering.engine, "immunum 1.2.0");
+  assert.equal(contract.numbering.engine, "immunum 1.3.0");
   assert.equal(contract.numbering.minimumEngineConfidence, 0.5);
+  assert.equal(contract.numbering.completeImgtRegionCoverageRequired, true);
+  assert.equal(contract.numbering.numberingSegmentationAgreementRequired, true);
+  assert.equal(contract.numbering.packageLockPath, "package-lock.json");
+  assert.match(contract.numbering.packageLockSha256, /^[a-f0-9]{64}$/u);
+  assert.equal(contract.numbering.correctionRecordPath, "validation/hard-decoy-holdout-v3/VHH_NUMBERING_CORRECTION_2026-08-30.json");
+  assert.match(contract.numbering.correctionRecordSha256, /^[a-f0-9]{64}$/u);
   assert.equal(contract.alignment.algorithm, "global-Needleman-Wunsch-three-state-affine-gap");
   assert.equal(contract.alignment.substitutionMatrix, "BLOSUM62");
   assert.equal(contract.alignment.gapOpen, -10);
@@ -115,10 +123,13 @@ test("the pinned IMGT engine deterministically extracts framework and CDR3 while
   assert.deepEqual(first, second);
   assert.equal(first.numberingStatus, "NUMBERED");
   assert.equal(first.numberingScheme, "IMGT");
-  assert.equal(first.numberingEngine, "immunum 1.2.0");
+  assert.equal(first.numberingEngine, "immunum 1.3.0");
   assert.equal(first.detectedChain, "H");
   assert.ok(first.frameworkLength > 70);
   assert.ok(first.cdr3Length > 0);
+  assert.equal(first.completeImgtRegionCoverage, true);
+  assert.equal(first.numberingSegmentationAgreement, true);
+  assert.ok(Object.values(first.imgtRegionLengths).every((length) => Number.isSafeInteger(length) && length > 0));
   assert.ok(!first.frameworkSequence.endsWith("HHHHHH"));
   assert.ok(!first.cdr3Sequence.endsWith("HHHHHH"));
 
@@ -127,6 +138,18 @@ test("the pinned IMGT engine deterministically extracts framework and CDR3 while
   assert.equal(invalid.numberingFailureCode, "NONCANONICAL_OR_EMPTY_SEQUENCE");
   assert.equal(invalid.frameworkSequence, null);
   assert.equal(invalid.cdr3Sequence, null);
+});
+
+test("the corrected pinned IMGT engine preserves the complete Nb35 long CDR3 before a terminal tag", () => {
+  const numbered = numberVhhForLeakage(NB35_SEQUENCE);
+  assert.equal(numbered.numberingStatus, "NUMBERED");
+  assert.equal(numbered.numberingEngine, "immunum 1.3.0");
+  assert.equal(numbered.cdr3Sequence, "ARCPAPFTRDCFDVTSTTYAY");
+  assert.equal(numbered.cdr3Length, 21);
+  assert.equal(numbered.completeImgtRegionCoverage, true);
+  assert.equal(numbered.numberingSegmentationAgreement, true);
+  assert.ok(numbered.imgtRegionLengths["FR4-IMGT"] > 0);
+  assert.ok(numbered.queryEnd < NB35_SEQUENCE.length - 1);
 });
 
 test("the complete VHH sequence pregraph regenerates, reconciles exact evidence, and fails closed under mutation", { timeout: 600_000 }, async () => {

@@ -7,7 +7,9 @@
   "contractPath": "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json",
   "generatorScript": "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs",
   "inputDigests": {
-    "contract": "eeb2517015098366a5f80426546a308661845757c8bd236917307c530647a85a",
+    "contract": "bc31adf14cf1222ebade348337facefb209c286c631f0da0bf640bd778b0688f",
+    "dependencyPackageLock": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+    "numberingCorrectionRecord": "414c333525977126e84915fd9154af7403ad9cddc3552349f34b7c83cef0e461",
     "selectedProtocol": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
     "exactPregraphChecksums": "d0a4e22b0b4f879dd59b551dffbef4e2860fffebbf6bb458eb6280c850a08553",
     "candidateNodeLedger": "1442fe120454a9242c54b37e7b95233c36646ca33c0dd8812fedd251eccf897f",
@@ -17,32 +19,32 @@
     "candidateCandidateEvidence": "37f1db3a1dc43494b9bd0b87b564e931e9172f9f20a797feaa5d318d8e90990e",
     "candidateDevelopmentEvidence": "700e6b4b4aed2218a301bfb2eac8ed0504002422dccef0a22e04c24a1a278f0c",
     "developmentDevelopmentEvidence": "64285cc52a4cf713c84ef27b0540811f7a910ce4ea0ce616638088704207b175",
-    "generatorScript": "ea754e111dce5f4ff9cec38745c5e0e7c9688f23d5d83ac37282fc5f200904eb"
+    "generatorScript": "5e46e17d7f14315bd9f87da60dffb7db7ce7a328c6db96e1e8f9fe8c9662ffeb"
   },
   "normalizedOutputs": {
     "README.md": {
       "bytes": 1545,
-      "sha256": "fe8c41344d03f48ebc6f5dd3a3072c5feabacea11ac2db52cf2edc8443a65e6c"
+      "sha256": "e7b32f3620c324b0836f06cd46faa0efc8dd06f063f089ffdcc52c7f6c7fb833"
     },
     "candidate-candidate-vhh-matrix.jsonl": {
-      "bytes": 75047540,
-      "sha256": "6ff47bcc76566f848a2c46e44c38e28ff9564be3b1b74f0c1186ba5e4694843b"
+      "bytes": 75079219,
+      "sha256": "cbf604066904a1fc60e762e12b300d4c774734b0f4735def1dd70302dd95fb34"
     },
     "candidate-development-vhh-matrix.jsonl": {
-      "bytes": 9309402,
-      "sha256": "380a5eb25534383470aedc2bdccccc5f49e41c3a4a633e03164787d6b03b4c95"
+      "bytes": 9323842,
+      "sha256": "198503d754a1242e8b73373c146d18a7451f0a1712114a04d28f17f352d07823"
     },
     "candidate-vhh-profiles.jsonl": {
-      "bytes": 355199,
-      "sha256": "a8c89798c258b8148c158fd7b6e97afe223f8cba99824bb951d69882e963dda3"
+      "bytes": 415683,
+      "sha256": "58d435ce89bd45c997aa89f0816340c273d24f5474e2d38c2bd2c85fce3cc39d"
     },
     "development-development-vhh-matrix.jsonl": {
       "bytes": 269602,
       "sha256": "db0383fcc0057010bdeaa80dbb98444af7dbd98bdf3e037482332965caf68e81"
     },
     "development-vhh-profiles.jsonl": {
-      "bytes": 22582,
-      "sha256": "409b2ae5a4b0e2a9f1b374a7e87f687c3f7cc8cb8c7fc550ff720eac46727db2"
+      "bytes": 26055,
+      "sha256": "1c791d337d628a1de397eb33cfe5685d76953e169bfbf1077798365fa9fa8730"
     },
     "pair-space-commitments.json": {
       "bytes": 775,
@@ -50,11 +52,11 @@
     },
     "summary.json": {
       "bytes": 2044,
-      "sha256": "9ee899564d5a0aceb9d7b96af671ea8db2af5b223886f283f586c56e6b52a5a5"
+      "sha256": "b33af7abd4638ba82cc9e206607fb748af04d28a0f58435e4669f37b575b3985"
     },
     "threshold-pregraph-components.jsonl": {
-      "bytes": 20679,
-      "sha256": "4b0944924ad8d68054a13a9c4fbffe090b02d54f4fa458caf595f6d475554078"
+      "bytes": 20233,
+      "sha256": "e519ed741013ea4c2b039020404dcd7922a4aaff139709bc07f1926b4fb20af2"
     }
   },
   "pairSpaceCommitments": {
@@ -107,20 +109,20 @@
     },
     "matrixStatusCounts": {
       "FAIL_CLOSED_MISSING_OR_UNNUMBERABLE_METADATA_PROFILE": 1803,
-      "NO_THRESHOLD_MATCH_NO_FORMAL_NO_EDGE_AUTHORITY": 29536,
-      "POSSIBLE_METADATA_SEQUENCE_LEAKAGE_EDGE_ROLE_UNRESOLVED": 14717
+      "NO_THRESHOLD_MATCH_NO_FORMAL_NO_EDGE_AUTHORITY": 23394,
+      "POSSIBLE_METADATA_SEQUENCE_LEAKAGE_EDGE_ROLE_UNRESOLVED": 20859
     },
     "possibleMetadataSequenceEdgePairCounts": {
-      "candidateCandidate": 14638,
+      "candidateCandidate": 20780,
       "candidateDevelopment": 77,
       "developmentDevelopment": 2,
-      "all": 14717
+      "all": 20859
     },
     "exactFullSequenceEvidencePairCount": 2023,
     "exactEvidencePregraphReconciled": true,
-    "frameworkAlignmentCacheEntryCount": 654,
-    "cdr3AlignmentCacheEntryCount": 488,
-    "thresholdPregraphComponentCount": 35,
+    "frameworkAlignmentCacheEntryCount": 618,
+    "cdr3AlignmentCacheEntryCount": 520,
+    "thresholdPregraphComponentCount": 34,
     "candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge": 57,
     "directBinderRolesResolved": false,
     "knownParentVariantEvidenceComplete": false,

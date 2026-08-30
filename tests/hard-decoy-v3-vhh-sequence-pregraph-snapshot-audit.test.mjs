@@ -88,6 +88,9 @@ async function readProfiles() {
     if (profile.numberingStatus === "NUMBERED") {
       assert.equal(profile.numberingFailureCode, null, `${profile.profileId} numbering failure code`);
       assert.equal(profile.numberingFailureMessage, null, `${profile.profileId} numbering failure message`);
+      assert.equal(profile.completeImgtRegionCoverage, true, `${profile.profileId} complete IMGT region coverage`);
+      assert.equal(profile.numberingSegmentationAgreement, true, `${profile.profileId} numbering/segmentation agreement`);
+      assert.ok(profile.imgtRegionLengths && Object.values(profile.imgtRegionLengths).every((length) => Number.isSafeInteger(length) && length > 0), `${profile.profileId} IMGT region lengths`);
       assert.equal(profile.frameworkSequence.length, profile.frameworkLength, `${profile.profileId} framework length`);
       assert.equal(profile.cdr3Sequence.length, profile.cdr3Length, `${profile.profileId} CDR3 length`);
       assert.equal(sha256(Buffer.from(profile.frameworkSequence)), profile.frameworkSequenceSha256, `${profile.profileId} framework digest`);
@@ -102,6 +105,9 @@ async function readProfiles() {
         "cdr3Length",
         "cdr3SequenceSha256",
       ]) assert.equal(profile[field], null, `${profile.profileId} unavailable-numbering field ${field}`);
+      assert.equal(profile.imgtRegionLengths, null, `${profile.profileId} unavailable IMGT region lengths`);
+      assert.equal(profile.completeImgtRegionCoverage, false, `${profile.profileId} unavailable complete-region state`);
+      assert.equal(profile.numberingSegmentationAgreement, false, `${profile.profileId} unavailable segmentation-agreement state`);
     }
   }
   return { profiles, byId, byNode };
@@ -258,7 +264,11 @@ async function auditMatrix({ relative, pairType, summaryKey }, profilesById, pro
 
 test("the committed VHH matrix independently replays pair identity, sequence reuse, thresholds, summaries, and non-authority", { timeout: 180_000 }, async () => {
   const summary = JSON.parse(await readFile(path.join(SNAPSHOT, "summary.json"), "utf8"));
+  const manifest = JSON.parse(await readFile(path.join(SNAPSHOT, "manifest.json"), "utf8"));
+  const contract = JSON.parse(await readFile(path.join(ROOT, "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json"), "utf8"));
   const commitments = JSON.parse(await readFile(path.join(SNAPSHOT, "pair-space-commitments.json"), "utf8"));
+  assert.equal(manifest.inputDigests.dependencyPackageLock, contract.numbering.packageLockSha256, "Dependency-lock manifest binding");
+  assert.equal(manifest.inputDigests.numberingCorrectionRecord, contract.numbering.correctionRecordSha256, "Correction-record manifest binding");
   const { profiles, byId, byNode } = await readProfiles();
   assert.equal(profiles.length, summary.totalMetadataProfileCount, "Total VHH profile count");
   assert.equal(profiles.filter((profile) => profile.numberingStatus === "NUMBERED").length, summary.numberedProfileCount, "Numbered VHH profile count");

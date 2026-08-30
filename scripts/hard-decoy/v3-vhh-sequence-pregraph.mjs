@@ -169,7 +169,7 @@ function boundedErrorMessage(value) {
 }
 
 export function numberVhhForLeakage(sequence, options = {}) {
-  const engine = options.engine ?? "immunum 1.2.0";
+  const engine = options.engine ?? "immunum 1.3.0";
   const scheme = options.scheme ?? "IMGT";
   const minimumConfidence = options.minimumConfidence ?? 0.5;
   const normalized = typeof sequence === "string" ? sequence.trim().toUpperCase() : "";
@@ -189,6 +189,9 @@ export function numberVhhForLeakage(sequence, options = {}) {
     cdr3Sequence: null,
     cdr3Length: null,
     cdr3SequenceSha256: null,
+    imgtRegionLengths: null,
+    completeImgtRegionCoverage: false,
+    numberingSegmentationAgreement: false,
   };
   if (!normalized || !CANONICAL_AA.test(normalized)) {
     return {
@@ -219,8 +222,8 @@ export function numberVhhForLeakage(sequence, options = {}) {
       };
     }
 
-    const framework = [];
-    const cdr3 = [];
+    const requiredRegions = ["FR1-IMGT", "CDR1-IMGT", "FR2-IMGT", "CDR2-IMGT", "FR3-IMGT", "CDR3-IMGT", "FR4-IMGT"];
+    const residuesByRegion = Object.fromEntries(requiredRegions.map((region) => [region, []]));
     for (let offset = 0; offset < entries.length; offset += 1) {
       const [position, aminoAcid] = entries[offset];
       const sequenceIndex = result.query_start + offset;
@@ -232,18 +235,51 @@ export function numberVhhForLeakage(sequence, options = {}) {
         };
       }
       const region = imgtRegion(position);
-      if (["FR1-IMGT", "FR2-IMGT", "FR3-IMGT", "FR4-IMGT"].includes(region)) framework.push(aminoAcid);
-      else if (region === "CDR3-IMGT") cdr3.push(aminoAcid);
+      if (residuesByRegion[region]) residuesByRegion[region].push(aminoAcid);
     }
-    const frameworkSequence = framework.join("");
-    const cdr3Sequence = cdr3.join("");
-    if (!frameworkSequence || !cdr3Sequence) {
+    const mapSegments = {
+      fr1: residuesByRegion["FR1-IMGT"].join(""),
+      cdr1: residuesByRegion["CDR1-IMGT"].join(""),
+      fr2: residuesByRegion["FR2-IMGT"].join(""),
+      cdr2: residuesByRegion["CDR2-IMGT"].join(""),
+      fr3: residuesByRegion["FR3-IMGT"].join(""),
+      cdr3: residuesByRegion["CDR3-IMGT"].join(""),
+      fr4: residuesByRegion["FR4-IMGT"].join(""),
+    };
+    const segmented = annotator.segment(normalized);
+    if (segmented.error) {
       return {
         ...base,
-        numberingFailureCode: "EMPTY_FRAMEWORK_OR_CDR3",
-        numberingFailureMessage: "IMGT numbering did not yield both a framework sequence and CDR3.",
+        numberingFailureCode: "NUMBERING_SEGMENTATION_ERROR",
+        numberingFailureMessage: boundedErrorMessage(segmented.error) ?? "The pinned numbering engine could not segment the V-domain.",
       };
     }
+    const requiredSegmentNames = ["fr1", "cdr1", "fr2", "cdr2", "fr3", "cdr3", "fr4"];
+    if (requiredSegmentNames.some((name) => typeof segmented[name] !== "string" || segmented[name].length === 0 || mapSegments[name].length === 0)) {
+      return {
+        ...base,
+        numberingFailureCode: "INCOMPLETE_IMGT_V_DOMAIN",
+        numberingFailureMessage: "IMGT numbering must yield nonempty FR1, CDR1, FR2, CDR2, FR3, CDR3, and FR4 regions.",
+      };
+    }
+    if (requiredSegmentNames.some((name) => segmented[name] !== mapSegments[name])) {
+      return {
+        ...base,
+        numberingFailureCode: "NUMBERING_SEGMENTATION_MISMATCH",
+        numberingFailureMessage: "Number-map-derived and segment-derived IMGT regions disagree.",
+      };
+    }
+    const frameworkSequence = [segmented.fr1, segmented.fr2, segmented.fr3, segmented.fr4].join("");
+    const cdr3Sequence = segmented.cdr3;
+    const imgtRegionLengths = {
+      "FR1-IMGT": segmented.fr1.length,
+      "CDR1-IMGT": segmented.cdr1.length,
+      "FR2-IMGT": segmented.fr2.length,
+      "CDR2-IMGT": segmented.cdr2.length,
+      "FR3-IMGT": segmented.fr3.length,
+      "CDR3-IMGT": segmented.cdr3.length,
+      "FR4-IMGT": segmented.fr4.length,
+    };
     return {
       ...base,
       numberingStatus: "NUMBERED",
@@ -259,6 +295,9 @@ export function numberVhhForLeakage(sequence, options = {}) {
       cdr3Sequence,
       cdr3Length: cdr3Sequence.length,
       cdr3SequenceSha256: sha256(Buffer.from(cdr3Sequence)),
+      imgtRegionLengths,
+      completeImgtRegionCoverage: true,
+      numberingSegmentationAgreement: true,
     };
   } catch (error) {
     return {
@@ -502,17 +541,25 @@ function validateProfile(profile, contract) {
   ok(profile.profileId.startsWith(`${profile.nodeId}#entity:`), `${profile.profileId} is not bound to its node.`);
   ok(profile.fullSequenceLength === profile.fullSequence.length && sha256(Buffer.from(profile.fullSequence)) === profile.fullSequenceSha256, `${profile.profileId} full-sequence accounting drifted.`);
   ok(profile.numberingScheme === contract.numbering.scheme && profile.numberingEngine === contract.numbering.engine, `${profile.profileId} numbering provenance drifted.`);
+  const requiredRegions = contract.numbering.requiredImgtRegions;
+  ok(canonical(requiredRegions) === canonical(["FR1-IMGT", "CDR1-IMGT", "FR2-IMGT", "CDR2-IMGT", "FR3-IMGT", "CDR3-IMGT", "FR4-IMGT"]), `${profile.profileId} required IMGT-region contract drifted.`);
   if (profile.numberingStatus === "NUMBERED") {
     ok(profile.numberingFailureCode === null && profile.numberingFailureMessage === null, `${profile.profileId} reports a failure despite successful numbering.`);
+    ok(profile.completeImgtRegionCoverage === true && profile.numberingSegmentationAgreement === true, `${profile.profileId} lacks complete independently cross-checked IMGT regions.`);
+    ok(profile.imgtRegionLengths && typeof profile.imgtRegionLengths === "object" && !Array.isArray(profile.imgtRegionLengths), `${profile.profileId} lacks IMGT region-length evidence.`);
+    for (const region of requiredRegions) ok(Number.isSafeInteger(profile.imgtRegionLengths[region]) && profile.imgtRegionLengths[region] > 0, `${profile.profileId} has an invalid or empty IMGT region: ${region}`);
     ok(CANONICAL_AA.test(profile.frameworkSequence) && CANONICAL_AA.test(profile.cdr3Sequence), `${profile.profileId} emitted a noncanonical numbered region.`);
     ok(profile.frameworkLength === profile.frameworkSequence.length && profile.cdr3Length === profile.cdr3Sequence.length, `${profile.profileId} numbered-region lengths drifted.`);
+    const expectedFrameworkLength = ["FR1-IMGT", "FR2-IMGT", "FR3-IMGT", "FR4-IMGT"].reduce((sum, region) => sum + profile.imgtRegionLengths[region], 0);
+    ok(profile.frameworkLength === expectedFrameworkLength && profile.cdr3Length === profile.imgtRegionLengths["CDR3-IMGT"], `${profile.profileId} IMGT region accounting drifted.`);
     ok(sha256(Buffer.from(profile.frameworkSequence)) === profile.frameworkSequenceSha256, `${profile.profileId} framework digest drifted.`);
     ok(sha256(Buffer.from(profile.cdr3Sequence)) === profile.cdr3SequenceSha256, `${profile.profileId} CDR3 digest drifted.`);
   } else {
     ok(profile.numberingStatus === "UNAVAILABLE" && typeof profile.numberingFailureCode === "string", `${profile.profileId} has an invalid numbering state.`);
-    for (const field of ["frameworkSequence", "frameworkLength", "frameworkSequenceSha256", "cdr3Sequence", "cdr3Length", "cdr3SequenceSha256"]) {
+    for (const field of ["frameworkSequence", "frameworkLength", "frameworkSequenceSha256", "cdr3Sequence", "cdr3Length", "cdr3SequenceSha256", "imgtRegionLengths"]) {
       ok(profile[field] === null, `${profile.profileId} retains numbered-region data despite unavailable numbering: ${field}`);
     }
+    ok(profile.completeImgtRegionCoverage === false && profile.numberingSegmentationAgreement === false, `${profile.profileId} unavailable numbering improperly claims complete region coverage.`);
   }
   for (const field of ["directBinderIdentityResolved", "knownParentVariantIdentityResolved", "formalLeakageEdgeAuthority", "formalNoEdgeAuthority", "nativeCoordinatesInspected"]) {
     ok(profile[field] === false, `${profile.profileId} authority/access field must remain false: ${field}`);
@@ -765,8 +812,11 @@ async function readInputs(repositoryRoot = ROOT) {
   const contractFile = await readDirect(root, CONTRACT_REL, "VHH sequence contract", 2 * 1024 * 1024);
   const contract = JSON.parse(contractFile.text);
   walk(contract);
-  ok(contract.schemaVersion === "1.0.0" && contract.studyId === "confovhh-hard-decoy-holdout-v3" && contract.status === "VHH_SEQUENCE_PREGRAPH_RULE_FROZEN", "VHH sequence contract identity drifted.");
-  ok(contract.numbering.engine === "immunum 1.2.0" && contract.numbering.scheme === "IMGT" && contract.numbering.minimumEngineConfidence === 0.5, "Frozen VHH numbering policy drifted.");
+  ok(contract.schemaVersion === "1.1.0" && contract.studyId === "confovhh-hard-decoy-holdout-v3" && contract.status === "VHH_SEQUENCE_PREGRAPH_RULE_FROZEN", "VHH sequence contract identity drifted.");
+  ok(contract.numbering.engine === "immunum 1.3.0" && contract.numbering.scheme === "IMGT" && contract.numbering.minimumEngineConfidence === 0.5, "Frozen VHH numbering policy drifted.");
+  ok(contract.numbering.completeImgtRegionCoverageRequired === true && contract.numbering.numberingSegmentationAgreementRequired === true, "Frozen IMGT completeness policy drifted.");
+  ok(contract.numbering.packageLockPath === "package-lock.json" && SHA256.test(contract.numbering.packageLockSha256), "Frozen numbering dependency-lock binding drifted.");
+  ok(typeof contract.numbering.correctionRecordPath === "string" && SHA256.test(contract.numbering.correctionRecordSha256), "Frozen numbering correction-record binding drifted.");
   ok(contract.alignment.algorithm === "global-Needleman-Wunsch-three-state-affine-gap" && contract.alignment.substitutionMatrix === "BLOSUM62" && contract.alignment.gapOpen === -10 && contract.alignment.gapExtension === -1, "Frozen VHH alignment policy drifted.");
   ok(contract.alignment.terminalGapPolicy === "penalize-identically-to-internal-gaps" && contract.alignment.identityDenominator === "all-global-alignment-columns-including-gap-columns", "Frozen terminal-gap or identity policy drifted.");
   ok(canonical(contract.alignment.stateTiePrecedence) === canonical(["M", "X", "Y"]), "Frozen alignment tie policy drifted.");
@@ -774,6 +824,11 @@ async function readInputs(repositoryRoot = ROOT) {
   ok(contract.edgeCriterion.cdr3IdentityMinimum.numerator === 7 && contract.edgeCriterion.cdr3IdentityMinimum.denominator === 10 && contract.edgeCriterion.maximumAbsoluteCdr3LengthDifference === 2, "CDR3 threshold drifted.");
   ok(contract.edgeCriterion.absenceOfThresholdMatchIsNotFormalNoEdgeEvidence && contract.edgeCriterion.possibleEdgeIsNotFormalLeakageAuthorityUntilRoleAdjudication, "VHH pair authority boundary drifted.");
   ok(contract.integrity.formalLeakageGraphComplete === false && contract.integrity.formallyClearedGroupCount === 0 && contract.integrity.targetFreezePermitted === false && contract.integrity.executionAuthorized === false, "VHH sequence contract authority drifted.");
+
+  const dependencyLockFile = await readDirect(root, contract.numbering.packageLockPath, "pinned dependency lock", 2 * 1024 * 1024);
+  ok(dependencyLockFile.sha256 === contract.numbering.packageLockSha256, "Pinned dependency lock digest drifted.");
+  const correctionRecordFile = await readDirect(root, contract.numbering.correctionRecordPath, "VHH numbering correction record", 512 * 1024);
+  ok(correctionRecordFile.sha256 === contract.numbering.correctionRecordSha256, "VHH numbering correction-record digest drifted.");
 
   const exactSnapshotDirectory = path.join(root, contract.nodeUniverse.snapshotDirectory);
   await verifyExactEvidencePregraph({ repositoryRoot: root, snapshotDirectory: exactSnapshotDirectory });
@@ -861,6 +916,8 @@ async function readInputs(repositoryRoot = ROOT) {
     exactEvidencePairs,
     inputDigests: {
       contract: contractFile.sha256,
+      dependencyPackageLock: dependencyLockFile.sha256,
+      numberingCorrectionRecord: correctionRecordFile.sha256,
       selectedProtocol: protocolFile.sha256,
       exactPregraphChecksums: exactChecksumsFile.sha256,
       candidateNodeLedger: candidateNodesFile.sha256,

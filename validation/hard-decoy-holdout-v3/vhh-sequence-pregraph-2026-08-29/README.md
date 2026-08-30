@@ -7,7 +7,7 @@ Status: **VHH_SEQUENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_DIRECT_ROLE_AND_PARENT
 - Retained VHH-like metadata profiles: 303
 - Successfully IMGT-numbered profiles: 302
 - Complete unordered node-pair rows: 46056
-- Node pairs meeting the frozen metadata sequence threshold: 14717
+- Node pairs meeting the frozen metadata sequence threshold: 20859
 - Exact sequence-evidence pairs reconciled to the prior pregraph: 2023
 - Candidate nodes connected to development by a possible metadata sequence edge: 57
 
