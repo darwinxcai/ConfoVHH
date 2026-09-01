@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "candidateId": "confovhh-v0.6-vhh-numbering-candidate-v1",
+  "recordedDate": "2026-09-01",
+  "status": "DEVELOPMENT_CANDIDATE_NOT_INTEGRATED",
+  "baseScientificLineage": "0.5.0",
+  "candidateScientificLineage": "0.6.0-candidate.1",
+  "scope": {
+    "component": "VHH IMGT numbering and framework/CDR segmentation",
+    "changesContactGeometry": false,
+    "changesClashGeometry": false,
+    "changesSasa": false,
+    "changesPaeMapping": false,
+    "changesPoseRecurrence": false,
+    "changesCandidateRanking": false,
+    "productionIntegrated": false
+  },
+  "problemStatement": [
+    "The current product dependency graph installs immunum 1.3.0, while the attested v0.5 numbering module reports immunum 1.2.0 provenance.",
+    "The v0.5 numbering path accepts a number-map result without independently requiring complete nonempty FR1, CDR1, FR2, CDR2, FR3, CDR3, and FR4 segments.",
+    "The v0.5 numbering path does not compare number-map-derived regions against the independent segment() output.",
+    "A previously documented long-CDR3 case, Nb35, was truncated by the older immunum 1.2.0 behavior and is preserved correctly by immunum 1.3.0."
+  ],
+  "candidatePolicy": {
+    "scheme": "IMGT",
+    "engine": "immunum 1.3.0",
+    "minimumEngineConfidence": 0.5,
+    "exactCoordinateSequenceMapBackRequired": true,
+    "completeSevenRegionCoverageRequired": true,
+    "numberingSegmentationAgreementRequired": true,
+    "failurePolicy": "fail closed to unavailable numbering",
+    "terminalTagsOutsideNumberedVDomain": true
+  },
+  "developmentEvidence": {
+    "exactLongCdr3Regression": {
+      "name": "Nb35",
+      "expectedCdr3": "ARCPAPFTRDCFDVTSTTYAY",
+      "expectedLength": 21
+    },
+    "sourcePaths": [
+      "lib/vhh-numbering.ts",
+      "package.json",
+      "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs",
+      "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs",
+      "validation/hard-decoy-holdout-v3/VHH_NUMBERING_CORRECTION_2026-08-30.json"
+    ],
+    "usesPreviouslyObservedDockqLabels": false,
+    "usesNativeHoldoutCoordinates": false,
+    "usesNativeHoldoutRelativePoses": false,
+    "usesNativeHoldoutEpitopes": false
+  },
+  "frozenIntegrity": {
+    "historicalV05ArtifactsModified": false,
+    "historicalDockqDevelopmentArtifactsModified": false,
+    "hardDecoyProtocolModified": false,
+    "hardDecoyTargetFreezePermitted": false,
+    "hardDecoyExecutionAuthorized": false
+  },
+  "requiredPromotionGates": [
+    "Pass candidate-specific canonical, terminal-tag, malformed-input, deterministic, mismatch, incomplete-region, long-insertion, and exact Nb35 regressions.",
+    "Run a public sequence-panel differential analysis between v0.5 and the candidate and account for every status, boundary, and CDR assignment change.",
+    "Run the public 17-structure coordinate panel and account for every CDR-dependent audit-field change while confirming coordinate-only geometry remains unchanged.",
+    "Run a post-label regression replay on the already-observed development ledger without tuning against its DockQ labels.",
+    "Create a new v0.6 implementation attestation and preserve all v0.5 attestations byte-for-byte.",
+    "Route production audits to the candidate only after the preceding gates pass."
+  ],
+  "claimFlags": {
+    "improvesBindingPrediction": false,
+    "improvesAffinityPrediction": false,
+    "improvesPoseCorrectnessPrediction": false,
+    "validatesCandidateRanking": false,
+    "establishesGeneralization": false,
+    "constitutesIndependentHoldoutEvidence": false,
+    "establishesExperimentalBinding": false
+  }
+}
