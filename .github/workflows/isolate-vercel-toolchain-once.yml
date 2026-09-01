@@ -1,0 +1,46 @@
+name: Isolate Vercel toolchain once
+
+on:
+  push:
+    branches:
+      - fix/vercel-native-next-build-20260901
+
+permissions:
+  contents: write
+
+jobs:
+  isolate-toolchain:
+    if: ${{ !contains(github.event.head_commit.message, 'Restore frozen root inputs and lock Vercel toolchain') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Use Node.js 22
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.x
+      - name: Restore integrity-bound root inputs exactly from main
+        run: |
+          git fetch origin main --no-tags
+          for file in package.json package-lock.json vite.config.ts app/globals.css next.config.ts; do
+            git show "origin/main:${file}" > "${file}"
+          done
+      - name: Generate isolated pinned Vercel lockfile
+        run: npm install --package-lock-only --ignore-scripts --prefix hosting/vercel
+      - name: Verify frozen root inputs are byte-identical to main
+        run: git diff --exit-code origin/main -- package.json package-lock.json vite.config.ts app/globals.css next.config.ts
+      - name: Commit isolated hosting dependency metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package.json package-lock.json vite.config.ts app/globals.css next.config.ts hosting/vercel/package-lock.json
+          if git diff --cached --quiet; then
+            echo "No repair required."
+            exit 0
+          fi
+          git commit -m "Restore frozen root inputs and lock Vercel toolchain"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
