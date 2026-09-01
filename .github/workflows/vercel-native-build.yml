@@ -1,4 +1,4 @@
-name: Vercel static vinext build
+name: Vercel Nitro vinext build
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  vercel-static-build:
+  vercel-nitro-build:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -24,21 +24,10 @@ jobs:
           cache-dependency-path: package-lock.json
       - name: Install dependencies
         run: npm ci
-      - name: Build Vercel static export through vinext/Vite
-        run: CONFOVHH_VERCEL_STATIC=1 npx vite build
-      - name: Verify static homepage and audit worker
+      - name: Build vinext through Nitro for Vercel
+        run: CONFOVHH_VERCEL_NITRO=1 NITRO_PRESET=vercel npx vite build
+      - name: Verify Vercel output and audit worker
         run: |
-          test -f dist/client/index.html
-          find dist/client/_next/static/workers -type f -name 'audit-worker-*.js' -print -quit | grep -q .
-      - name: Smoke-test exported homepage
-        run: |
-          python3 -m http.server 4173 --directory dist/client >/tmp/confovhh-static-server.log 2>&1 &
-          server_pid=$!
-          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
-          for attempt in $(seq 1 10); do
-            if curl --fail --silent --show-error http://127.0.0.1:4173/ >/tmp/confovhh-home.html; then
-              break
-            fi
-            sleep 1
-          done
-          grep -q 'ConfoVHH' /tmp/confovhh-home.html
+          test -d .output
+          find .output -type f -print -quit | grep -q .
+          find .output -type f -name 'audit-worker-*.js' -print -quit | grep -q .
