@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "NITRO_PRESET=vercel npx vite build",
-  "outputDirectory": ".output"
+  "buildCommand": "CONFOVHH_VERCEL_STATIC=1 npx vite build",
+  "outputDirectory": "dist/client"
 }
