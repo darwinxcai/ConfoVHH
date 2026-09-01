@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "integrationId": "confovhh-v0.6-vhh-numbering-production-integration-v1",
+  "recordedDate": "2026-09-01",
+  "status": "PREREGISTERED_BEFORE_PRODUCTION_ROUTING",
+  "baseCommit": "4eee1f04ddfe5a51af7a59ce91b5da936ab9b814",
+  "sourceCandidate": {
+    "version": "0.6.0-candidate.1",
+    "implementation": "lib/vhh-numbering-v06.ts",
+    "designRecord": "validation/v0.6-vhh-numbering-candidate-v1/design-record.json",
+    "publicDifferential": "validation/v0.6-vhh-numbering-candidate-v1/public-panel-differential.json",
+    "postlabelReplay": "validation/v0.6-vhh-numbering-candidate-v1/postlabel-replay.json"
+  },
+  "intendedProductionChanges": [
+    "Promote the validated candidate policy into the stable lib/vhh-numbering.ts API.",
+    "Report the installed immunum 1.3.0 engine exactly.",
+    "Require exact coordinate-sequence map-back, complete seven-region IMGT coverage, and independent number()/segment() agreement.",
+    "Fail closed to unavailable numbering on every mapping, coverage, confidence, or segmentation inconsistency.",
+    "Advance the current ConfoVHH scientific-output version to 0.6.0 and expose the numbering-policy state in exported audits.",
+    "Preserve every v0.5 validation artifact and archived implementation object byte-for-byte."
+  ],
+  "unchangedScientificComponents": [
+    "coordinate parsing",
+    "atom and residue contact geometry",
+    "clash geometry",
+    "SASA and buried-interface calculations",
+    "PAE parsing and directional summaries",
+    "pose recurrence and rigid alignment",
+    "evidence-band rules",
+    "candidate-ranking rules",
+    "hard-decoy protocol and custody state"
+  ],
+  "requiredGates": [
+    "All candidate-specific VHH-numbering tests pass through the stable production API.",
+    "All 17 SHA-pinned public structures reproduce the candidate differential with zero geometry regressions.",
+    "All 360 previously observed development poses reproduce zero CDR-dependent evidence or ranking-input changes.",
+    "A new v0.6 implementation attestation binds the exact production source and installed immunum bytes.",
+    "Every v0.5 artifact and archived implementation object retains its recorded SHA-256 digest.",
+    "Full release, browser, accessibility, coverage, producer-output, and hard-decoy integrity gates pass on Node 22 and Node 24 where applicable."
+  ],
+  "failurePolicy": {
+    "productionRoutingOnAnyGateFailure": false,
+    "overwriteHistoricalV05Artifacts": false,
+    "openOrEvaluateSealedHoldout": false,
+    "tuneRankingAgainstObservedDockqLabels": false
+  },
+  "supportedClaimIfAllGatesPass": "Production VHH framework/CDR annotation uses the validated stricter IMGT mapping policy and corrected dependency provenance without changing established coordinate-only geometry on the public panel or CDR-dependent ranking inputs on the development ledger.",
+  "claimFlags": {
+    "improvesBindingPrediction": false,
+    "improvesAffinityPrediction": false,
+    "improvesPoseCorrectnessPrediction": false,
+    "improvesProspectiveRanking": false,
+    "establishesGeneralization": false,
+    "establishesExperimentalBinding": false,
+    "constitutesIndependentHoldoutEvidence": false
+  }
+}
