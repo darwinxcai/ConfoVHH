@@ -52,8 +52,8 @@ test("initial shell is accessible and serves defensive response headers", async 
   expect(rejectedWrite.headers()["cache-control"]).toBe("no-store");
 
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1, name: /Audit GPCR–VHH coordinate poses/i })).toBeVisible();
-  await expect(page.getByText(/without treating ConfoVHH output as.*candidate-selection evidence/i)).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: /Review GPCR–VHH structural interfaces/i })).toBeVisible();
+  await expect(page.getByText(/without presenting structural evidence as biological validation/i)).toBeVisible();
   await expectNoSeriousAxeViolations(page);
   expect(errors).toEqual([]);
 });
@@ -61,7 +61,7 @@ test("initial shell is accessible and serves defensive response headers", async 
 test("single-pose entry reflows at a 390-pixel mobile viewport", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
-  await expect(page.getByRole("heading", { level: 1, name: /Audit GPCR–VHH coordinate poses/i })).toBeVisible();
+  await expect(page.getByRole("heading", { level: 1, name: /Review GPCR–VHH structural interfaces/i })).toBeVisible();
   await expect(page.getByLabel("Choose a PDB or PDBx/mmCIF coordinate file")).toBeVisible();
   const hasHorizontalOverflow = await page.evaluate(() => (
     document.documentElement.scrollWidth > window.innerWidth + 1

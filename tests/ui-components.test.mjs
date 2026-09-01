@@ -142,7 +142,7 @@ test("renders the task-centered researcher workspace and privacy-bounded handoff
   assert.match(html, /Clear all/);
   assert.match(html, /Audit one coordinate pose/);
   assert.match(html, /Audit a prediction output run/);
-  assert.match(html, /workflow—not to measure prediction accuracy or prospective ranking/);
+  assert.match(html, /demonstrates interface review, not prediction accuracy or prospective ranking/);
 
   const coherentSummary = renderToStaticMarkup(React.createElement(AuditDecisionSummary, {
     brief,
