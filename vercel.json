@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": "nextjs",
-  "buildCommand": "npx next build"
+  "framework": null,
+  "buildCommand": "NITRO_PRESET=vercel npx vite build",
+  "outputDirectory": ".output"
 }
