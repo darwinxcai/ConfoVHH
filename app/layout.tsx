@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ConfoVHH",
+  title: "ConfoVHH | GPCR–VHH Structural Interface Review",
   description:
-    "Local-first coordinate review for modeled GPCR–nanobody complexes: interface geometry, IMGT CDR mapping, directional PAE, pose recurrence, and auditable research handoff.",
+    "Review GPCR–VHH structural interfaces locally using coordinate geometry, IMGT CDR mapping, directional PAE, pose recurrence, explicit provenance, and conservative interpretation.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
