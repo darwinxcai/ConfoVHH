@@ -1,0 +1,83 @@
+name: Finalize v0.6 VHH numbering candidate
+
+on:
+  push:
+    branches:
+      - accuracy/vhh-numbering-v06-candidate-20260901
+
+permissions:
+  contents: write
+
+concurrency:
+  group: finalize-v06-vhh-numbering-candidate-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Scientific release gate · Node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["22.x", "24.x"]
+    steps:
+      - name: Check out candidate commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Use Node.js ${{ matrix.node }}
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install frozen dependencies
+        run: npm ci
+      - name: Verify production dependency advisories
+        run: npm audit --omit=dev --audit-level=moderate
+      - name: Run candidate-specific VHH-numbering regressions
+        run: node --test tests/vhh-numbering-v06.test.mjs
+      - name: Run full offline scientific release gate
+        run: npm run test:release
+      - name: Replay blocked hard-decoy v3 integrity state
+        run: |
+          node scripts/hard-decoy-v3/verify-integration-state.mjs
+          node --test validation/hard-decoy-holdout-v3/census-audit-2026-08-29/verify.test.mjs
+      - name: Reproduce public-panel differential exactly
+        run: |
+          node scripts/run-v06-vhh-numbering-public-differential.mjs
+          git diff --exit-code -- validation/v0.6-vhh-numbering-candidate-v1/public-panel-differential.json
+      - name: Reproduce post-label development replay exactly
+        run: |
+          node scripts/run-v06-vhh-numbering-postlabel-replay.mjs
+          git diff --exit-code -- validation/v0.6-vhh-numbering-candidate-v1/postlabel-replay.json
+
+  cleanup:
+    name: Remove temporary validation workflows
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out latest candidate branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Remove one-time workflows
+        run: |
+          rm -f \
+            .github/workflows/v06-vhh-numbering-public-differential.yml \
+            .github/workflows/v06-vhh-numbering-postlabel-replay.yml \
+            .github/workflows/validate-v06-vhh-numbering-candidate-once.yml \
+            .github/workflows/finalize-v06-vhh-numbering-candidate.yml
+          git diff --check
+      - name: Commit workflow cleanup
+        run: |
+          if git diff --quiet; then
+            echo "No temporary workflows remain."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/workflows
+          git commit -m "Remove v0.6 candidate validation workflows"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
