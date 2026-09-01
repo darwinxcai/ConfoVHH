@@ -44,25 +44,25 @@ jobs:
           replace_exact(
               "lib/confovhh.ts",
               '''  vhhNumbering: {
-              status: VhhNumberingAnnotation["status"];
-              scheme: "IMGT";
-              engine: string;
-              confidence: number | null;
-              cdrLengths: VhhNumberingAnnotation["cdrLengths"];
-              error: string | null;
-            };'''.replace("            ", ""),
+    status: VhhNumberingAnnotation["status"];
+    scheme: "IMGT";
+    engine: string;
+    confidence: number | null;
+    cdrLengths: VhhNumberingAnnotation["cdrLengths"];
+    error: string | null;
+  };''',
               '''  vhhNumbering: {
-              status: VhhNumberingAnnotation["status"];
-              policyVersion: VhhNumberingAnnotation["policyVersion"];
-              scheme: "IMGT";
-              engine: string;
-              minimumEngineConfidence: number;
-              confidence: number | null;
-              completeImgtRegionCoverage: boolean;
-              numberingSegmentationAgreement: boolean;
-              cdrLengths: VhhNumberingAnnotation["cdrLengths"];
-              error: string | null;
-            };'''.replace("            ", ""),
+    status: VhhNumberingAnnotation["status"];
+    policyVersion: VhhNumberingAnnotation["policyVersion"];
+    scheme: "IMGT";
+    engine: string;
+    minimumEngineConfidence: number;
+    confidence: number | null;
+    completeImgtRegionCoverage: boolean;
+    numberingSegmentationAgreement: boolean;
+    cdrLengths: VhhNumberingAnnotation["cdrLengths"];
+    error: string | null;
+  };''',
           )
           replace_exact(
               "lib/confovhh.ts",
@@ -72,32 +72,30 @@ jobs:
           replace_exact(
               "lib/confovhh.ts",
               '''    vhhNumbering: {
-                status: vhhNumbering.status,
-                scheme: "IMGT",
-                engine: vhhNumbering.engine,
-                confidence: vhhNumbering.confidence,
-                cdrLengths: vhhNumbering.cdrLengths,
-                error: vhhNumbering.error,
-              },'''.replace("              ", ""),
+      status: vhhNumbering.status,
+      scheme: "IMGT",
+      engine: vhhNumbering.engine,
+      confidence: vhhNumbering.confidence,
+      cdrLengths: vhhNumbering.cdrLengths,
+      error: vhhNumbering.error,
+    },''',
               '''    vhhNumbering: {
-                status: vhhNumbering.status,
-                policyVersion: vhhNumbering.policyVersion,
-                scheme: "IMGT",
-                engine: vhhNumbering.engine,
-                minimumEngineConfidence: vhhNumbering.minimumEngineConfidence,
-                confidence: vhhNumbering.confidence,
-                completeImgtRegionCoverage: vhhNumbering.completeImgtRegionCoverage,
-                numberingSegmentationAgreement: vhhNumbering.numberingSegmentationAgreement,
-                cdrLengths: vhhNumbering.cdrLengths,
-                error: vhhNumbering.error,
-              },'''.replace("              ", ""),
+      status: vhhNumbering.status,
+      policyVersion: vhhNumbering.policyVersion,
+      scheme: "IMGT",
+      engine: vhhNumbering.engine,
+      minimumEngineConfidence: vhhNumbering.minimumEngineConfidence,
+      confidence: vhhNumbering.confidence,
+      completeImgtRegionCoverage: vhhNumbering.completeImgtRegionCoverage,
+      numberingSegmentationAgreement: vhhNumbering.numberingSegmentationAgreement,
+      cdrLengths: vhhNumbering.cdrLengths,
+      error: vhhNumbering.error,
+    },''',
           )
           replace_exact(
               "lib/confovhh.ts",
-              '''        ? `${IMGT_NUMBERING_ENGINE} recognized an IGH V-domain with alignment confidence ${vhhNumbering.confidence?.toFixed(2)}; ` +
-          `CDR lengths ${vhhNumbering.cdrLengths?.cdr1}/${vhhNumbering.cdrLengths?.cdr2}/${vhhNumbering.cdrLengths?.cdr3}.`''',
-              '''        ? `${IMGT_NUMBERING_ENGINE} recognized an IGH V-domain with alignment confidence ${vhhNumbering.confidence?.toFixed(2)}; ` +
-          `complete seven-region number/segment agreement passed; CDR lengths ${vhhNumbering.cdrLengths?.cdr1}/${vhhNumbering.cdrLengths?.cdr2}/${vhhNumbering.cdrLengths?.cdr3}.`''',
+              '`CDR lengths ${vhhNumbering.cdrLengths?.cdr1}/${vhhNumbering.cdrLengths?.cdr2}/${vhhNumbering.cdrLengths?.cdr3}.`',
+              '`complete seven-region number/segment agreement passed; CDR lengths ${vhhNumbering.cdrLengths?.cdr1}/${vhhNumbering.cdrLengths?.cdr2}/${vhhNumbering.cdrLengths?.cdr3}.`',
           )
 
           package = Path("package.json")
