@@ -1,0 +1,132 @@
+name: Apply v0.6 numbering integration patch
+
+on:
+  push:
+    branches:
+      - accuracy/integrate-v06-vhh-numbering-20260901
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-v06-numbering-integration-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: ${{ !contains(github.event.head_commit.message, 'Route production audits through strict v0.6 numbering') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out integration branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Apply exact scoped replacements
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          def replace_exact(pathname, old, new, expected=1):
+              path = Path(pathname)
+              text = path.read_text()
+              count = text.count(old)
+              if count != expected:
+                  raise SystemExit(f"{pathname}: expected {expected} matches, found {count}: {old[:120]!r}")
+              path.write_text(text.replace(old, new))
+
+          replace_exact(
+              "lib/confovhh.ts",
+              'export const CONFOVHH_VERSION = "0.5.0";',
+              'export const CONFOVHH_VERSION = "0.6.0";',
+          )
+          replace_exact(
+              "lib/confovhh.ts",
+              '''  vhhNumbering: {
+              status: VhhNumberingAnnotation["status"];
+              scheme: "IMGT";
+              engine: string;
+              confidence: number | null;
+              cdrLengths: VhhNumberingAnnotation["cdrLengths"];
+              error: string | null;
+            };'''.replace("            ", ""),
+              '''  vhhNumbering: {
+              status: VhhNumberingAnnotation["status"];
+              policyVersion: VhhNumberingAnnotation["policyVersion"];
+              scheme: "IMGT";
+              engine: string;
+              minimumEngineConfidence: number;
+              confidence: number | null;
+              completeImgtRegionCoverage: boolean;
+              numberingSegmentationAgreement: boolean;
+              cdrLengths: VhhNumberingAnnotation["cdrLengths"];
+              error: string | null;
+            };'''.replace("            ", ""),
+          )
+          replace_exact(
+              "lib/confovhh.ts",
+              '  `Sequence-aligned IMGT regions from ${IMGT_NUMBERING_ENGINE}: CDR1 27–38, CDR2 56–65, CDR3 105–117.`;',
+              '  `Sequence-aligned IMGT regions from ${IMGT_NUMBERING_ENGINE}: exact coordinate-sequence map-back, complete FR1/CDR1/FR2/CDR2/FR3/CDR3/FR4 coverage, and independent number/segment agreement; CDR1 27–38, CDR2 56–65, CDR3 105–117.`;',
+          )
+          replace_exact(
+              "lib/confovhh.ts",
+              '''    vhhNumbering: {
+                status: vhhNumbering.status,
+                scheme: "IMGT",
+                engine: vhhNumbering.engine,
+                confidence: vhhNumbering.confidence,
+                cdrLengths: vhhNumbering.cdrLengths,
+                error: vhhNumbering.error,
+              },'''.replace("              ", ""),
+              '''    vhhNumbering: {
+                status: vhhNumbering.status,
+                policyVersion: vhhNumbering.policyVersion,
+                scheme: "IMGT",
+                engine: vhhNumbering.engine,
+                minimumEngineConfidence: vhhNumbering.minimumEngineConfidence,
+                confidence: vhhNumbering.confidence,
+                completeImgtRegionCoverage: vhhNumbering.completeImgtRegionCoverage,
+                numberingSegmentationAgreement: vhhNumbering.numberingSegmentationAgreement,
+                cdrLengths: vhhNumbering.cdrLengths,
+                error: vhhNumbering.error,
+              },'''.replace("              ", ""),
+          )
+          replace_exact(
+              "lib/confovhh.ts",
+              '''        ? `${IMGT_NUMBERING_ENGINE} recognized an IGH V-domain with alignment confidence ${vhhNumbering.confidence?.toFixed(2)}; ` +
+          `CDR lengths ${vhhNumbering.cdrLengths?.cdr1}/${vhhNumbering.cdrLengths?.cdr2}/${vhhNumbering.cdrLengths?.cdr3}.`''',
+              '''        ? `${IMGT_NUMBERING_ENGINE} recognized an IGH V-domain with alignment confidence ${vhhNumbering.confidence?.toFixed(2)}; ` +
+          `complete seven-region number/segment agreement passed; CDR lengths ${vhhNumbering.cdrLengths?.cdr1}/${vhhNumbering.cdrLengths?.cdr2}/${vhhNumbering.cdrLengths?.cdr3}.`''',
+          )
+
+          package = Path("package.json")
+          package_text = package.read_text()
+          prefix = '{\n  "name": "confovhh",\n  "version": "0.5.0",'
+          if package_text.count(prefix) != 1:
+              raise SystemExit("package.json: current version context did not match exactly")
+          package.write_text(package_text.replace(prefix, '{\n  "name": "confovhh",\n  "version": "0.6.0",'))
+
+          lock = Path("package-lock.json")
+          lock_text = lock.read_text()
+          top = '{\n  "name": "confovhh",\n  "version": "0.5.0",'
+          root = '    "": {\n      "name": "confovhh",\n      "version": "0.5.0",'
+          if lock_text.count(top) != 1 or lock_text.count(root) != 1:
+              raise SystemExit("package-lock.json: root version contexts did not match exactly")
+          lock_text = lock_text.replace(top, '{\n  "name": "confovhh",\n  "version": "0.6.0",')
+          lock_text = lock_text.replace(root, '    "": {\n      "name": "confovhh",\n      "version": "0.6.0",')
+          lock.write_text(lock_text)
+          PY
+      - name: Verify patch scope
+        run: |
+          git diff --check
+          changed="$(git diff --name-only | sort)"
+          expected="$(printf '%s\n' lib/confovhh.ts package-lock.json package.json | sort)"
+          test "$changed" = "$expected"
+      - name: Commit production routing patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lib/confovhh.ts package.json package-lock.json
+          git commit -m "Route production audits through strict v0.6 numbering"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
