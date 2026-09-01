@@ -1,4 +1,4 @@
-name: Vercel Nitro vinext build
+name: Vercel static SPA build
 
 on:
   pull_request:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  vercel-nitro-build:
+  vercel-static-build:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -21,19 +21,35 @@ jobs:
         with:
           node-version: 22.x
           cache: npm
-          cache-dependency-path: |
-            package-lock.json
-            hosting/vercel/package-lock.json
+          cache-dependency-path: package-lock.json
       - name: Install application dependencies
         run: npm ci
-      - name: Install isolated Vercel build dependencies
-        run: npm ci --prefix hosting/vercel
-      - name: Build vinext through isolated Nitro configuration
-        run: NITRO_PRESET=vercel npx vite build --config vite.vercel.config.ts
-      - name: Verify Vercel Build Output API bundle
+      - name: Build the static single-page bundle
+        run: npm run build:static
+      - name: Verify static output layout
         run: |
-          test -d .vercel/output
-          test -f .vercel/output/config.json
-          test -d .vercel/output/functions/__server.func
-          find .vercel/output/static/_next/static/workers -type f -name 'audit-worker-*.js' -print -quit | grep -q .
-          find .vercel/output/static/_next/static/workers -type f -name 'prediction-run-worker-*.js' -print -quit | grep -q .
+          test -f dist/static/index.html
+          test -d dist/static/assets
+          find dist/static/assets/workers -type f -name 'audit-worker-*.js' -print -quit | grep -q .
+          find dist/static/assets/workers -type f -name 'prediction-run-worker-*.js' -print -quit | grep -q .
+      - name: Verify no server runtime is emitted
+        run: |
+          if [ -e .vercel/output ]; then
+            echo "A Build Output API directory was emitted; the static path must not produce one." >&2
+            exit 1
+          fi
+          if find dist/static -type d -name 'functions' | grep -q .; then
+            echo "The static output contains a functions directory." >&2
+            exit 1
+          fi
+      - name: Verify the audit worker inlines the immunum WebAssembly module
+        run: |
+          worker="$(find dist/static/assets/workers -type f -name 'audit-worker-*.js' -print -quit)"
+          grep -q 'atob(' "$worker" || {
+            echo "The audit worker does not inline the immunum WebAssembly module." >&2
+            exit 1
+          }
+          if grep -q 'readFileSync' "$worker"; then
+            echo "The audit worker still carries immunum's Node-only fs loader." >&2
+            exit 1
+          fi
