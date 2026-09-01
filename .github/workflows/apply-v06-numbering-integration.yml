@@ -41,57 +41,17 @@ jobs:
               'export const CONFOVHH_VERSION = "0.5.0";',
               'export const CONFOVHH_VERSION = "0.6.0";',
           )
-          replace_exact(
-              "lib/confovhh.ts",
-              '''  vhhNumbering: {
-    status: VhhNumberingAnnotation["status"];
-    scheme: "IMGT";
-    engine: string;
-    confidence: number | null;
-    cdrLengths: VhhNumberingAnnotation["cdrLengths"];
-    error: string | null;
-  };''',
-              '''  vhhNumbering: {
-    status: VhhNumberingAnnotation["status"];
-    policyVersion: VhhNumberingAnnotation["policyVersion"];
-    scheme: "IMGT";
-    engine: string;
-    minimumEngineConfidence: number;
-    confidence: number | null;
-    completeImgtRegionCoverage: boolean;
-    numberingSegmentationAgreement: boolean;
-    cdrLengths: VhhNumberingAnnotation["cdrLengths"];
-    error: string | null;
-  };''',
-          )
+          old_type = '  vhhNumbering: {\n    status: VhhNumberingAnnotation["status"];\n    scheme: "IMGT";\n    engine: string;\n    confidence: number | null;\n    cdrLengths: VhhNumberingAnnotation["cdrLengths"];\n    error: string | null;\n  };'
+          new_type = '  vhhNumbering: {\n    status: VhhNumberingAnnotation["status"];\n    policyVersion: VhhNumberingAnnotation["policyVersion"];\n    scheme: "IMGT";\n    engine: string;\n    minimumEngineConfidence: number;\n    confidence: number | null;\n    completeImgtRegionCoverage: boolean;\n    numberingSegmentationAgreement: boolean;\n    cdrLengths: VhhNumberingAnnotation["cdrLengths"];\n    error: string | null;\n  };'
+          replace_exact("lib/confovhh.ts", old_type, new_type)
           replace_exact(
               "lib/confovhh.ts",
               '  `Sequence-aligned IMGT regions from ${IMGT_NUMBERING_ENGINE}: CDR1 27–38, CDR2 56–65, CDR3 105–117.`;',
               '  `Sequence-aligned IMGT regions from ${IMGT_NUMBERING_ENGINE}: exact coordinate-sequence map-back, complete FR1/CDR1/FR2/CDR2/FR3/CDR3/FR4 coverage, and independent number/segment agreement; CDR1 27–38, CDR2 56–65, CDR3 105–117.`;',
           )
-          replace_exact(
-              "lib/confovhh.ts",
-              '''    vhhNumbering: {
-      status: vhhNumbering.status,
-      scheme: "IMGT",
-      engine: vhhNumbering.engine,
-      confidence: vhhNumbering.confidence,
-      cdrLengths: vhhNumbering.cdrLengths,
-      error: vhhNumbering.error,
-    },''',
-              '''    vhhNumbering: {
-      status: vhhNumbering.status,
-      policyVersion: vhhNumbering.policyVersion,
-      scheme: "IMGT",
-      engine: vhhNumbering.engine,
-      minimumEngineConfidence: vhhNumbering.minimumEngineConfidence,
-      confidence: vhhNumbering.confidence,
-      completeImgtRegionCoverage: vhhNumbering.completeImgtRegionCoverage,
-      numberingSegmentationAgreement: vhhNumbering.numberingSegmentationAgreement,
-      cdrLengths: vhhNumbering.cdrLengths,
-      error: vhhNumbering.error,
-    },''',
-          )
+          old_result = '    vhhNumbering: {\n      status: vhhNumbering.status,\n      scheme: "IMGT",\n      engine: vhhNumbering.engine,\n      confidence: vhhNumbering.confidence,\n      cdrLengths: vhhNumbering.cdrLengths,\n      error: vhhNumbering.error,\n    },'
+          new_result = '    vhhNumbering: {\n      status: vhhNumbering.status,\n      policyVersion: vhhNumbering.policyVersion,\n      scheme: "IMGT",\n      engine: vhhNumbering.engine,\n      minimumEngineConfidence: vhhNumbering.minimumEngineConfidence,\n      confidence: vhhNumbering.confidence,\n      completeImgtRegionCoverage: vhhNumbering.completeImgtRegionCoverage,\n      numberingSegmentationAgreement: vhhNumbering.numberingSegmentationAgreement,\n      cdrLengths: vhhNumbering.cdrLengths,\n      error: vhhNumbering.error,\n    },'
+          replace_exact("lib/confovhh.ts", old_result, new_result)
           replace_exact(
               "lib/confovhh.ts",
               '`CDR lengths ${vhhNumbering.cdrLengths?.cdr1}/${vhhNumbering.cdrLengths?.cdr2}/${vhhNumbering.cdrLengths?.cdr3}.`',
