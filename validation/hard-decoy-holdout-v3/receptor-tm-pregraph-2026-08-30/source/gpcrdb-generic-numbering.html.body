@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Generic residue numbering &mdash; GPCRdb 1 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Drugs" href="drugs.html" />
+    <link rel="prev" title="Sites" href="sites.html" /> 
+
+<!-- RTD Extra Head -->
+
+
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "builder": "sphinx", "canonical_url": null, "docroot": "/docs/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "generic_numbering", "programming_language": "", "project": "gpcrdb", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "latest"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+
+
+<!-- end RTD <extrahead> -->
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="gpcrdb" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/generic_numbering.html" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">User documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="receptors.html">Receptors and families</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="receptors.html#receptor-pages">Receptor pages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="receptors.html#family-pages">Family pages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ligands.html">Ligands &amp; Bioactivities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ligands.html#ligand-coverage">Ligand coverage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ligands.html#ligands-chembl-gtp-ki-db">Ligands (ChEMBL, GtP, Ki db)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ligands.html#receptor-query">Receptor query</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ligands.html#ligand-query">Ligand query</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ligands.html#ligand-info-page">Ligand Info page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ligands.html#endogenous-ligand-browser">Endogenous ligand browser</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="signalproteins.html">Signal proteins</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="signalproteins.html#signal-protein-page">Signal protein page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signalproteins.html#gpcr-g-protein-coupling">GPCR-G protein coupling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signalproteins.html#g-protein-alignments">G protein alignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signalproteins.html#interface-mapping">Interface mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sequences.html">Sequences</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#structure-based-alignments">Structure-based alignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#phylogenetic-trees">Phylogenetic trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#similarity-search-gpcrdb">Similarity search - GPCRdb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#similarity-search-blast">Similarity search - BLAST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sequences.html#similarity-matrix">Similarity matrix</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sequence_signature.html">Sequence signature tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structures.html">Structures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-browser">Structure browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#refined-structures">Refined structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-statistics">Structure statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-models">Structure models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-model-validation">Structure model validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structures.html#structure-descriptors">Structure descriptors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="structure_comparison.html">Structure comparison</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structure_comparison.html#structure-comparison-tool">Structure comparison tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_comparison.html#structure-similarity-trees">Structure similarity trees</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_comparison.html#structure-superposition">Structure superposition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_comparison.html#generic-residue-numbering-pdb">Generic residue numbering (PDB)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="constructs.html">Structure Constructs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#data">Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#construct-alignments">Construct alignments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#construct-design-tool">Construct design tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#experiment-browser">Experiment browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#truncation-fusion-analysis">Truncation &amp; Fusion analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constructs.html#mutation-analysis">Mutation analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mutations.html">Mutations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mutations.html#mutation-browser">Mutation browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mutations.html#mutation-data-submission">Mutation data submission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mutations.html#type-of-mutation-data">Type of mutation data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mutations.html#how-will-the-mutation-data-be-used">How will the mutation data be used?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biasedsignaling.html">Biased signaling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="biasedsignaling.html#data-submission">Data submission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="biasedsignaling.html#submission-of-biased-ligands-balanced-reference-ligands-and-pathway-effects">Submission of biased ligands, balanced reference ligands and pathway effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="biasedsignaling.html#biased-ligands">Biased ligands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="biasedsignaling.html#balanced-ligands-references-for-pathway-bias">Balanced ligands (references for pathway-bias)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="biasedsignaling.html#pathway-effects">Pathway effects</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sites.html">Sites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#ligand-interactions">Ligand interactions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#site-search-manual">Site search - manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#site-search-from-pdb-complex">Site search - from pdb complex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#pharmacophore-generation">Pharmacophore generation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sites.html#abstract">Abstract</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sites.html#sodium-ion-site">Sodium ion site</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Generic residue numbering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drugs.html">Drugs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="drugs.html#drug-statistics">Drug statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drugs.html#drug-target-mapping">Drug target mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="drugs.html#drug-browser">Drug browser</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nhs.html">Sales and prescription (NHS)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nhs.html#nhs-sales">NHS sales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nhs.html#estimated-economic-burden">Estimated economic burden</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="variants.html">Genetic variants</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variants.html#variation-statistics">Variation statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variants.html#receptor-variant-browser">Receptor variant browser</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="web_services.html">Web services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="web_services.html#api-reference">API reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_services.html#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="web_services.html#python-3-with-requests">Python 3 with requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_services.html#python-3-with-urllib">Python 3 with urllib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web_services.html#python-2-with-urllib2">Python 2 with urllib2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to the project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#as-a-programmer">As a programmer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html#as-a-data-curator">As a data curator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="local_installation.html">Local installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="local_installation.html#for-development">For development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="local_installation.html#for-internal-use">For internal use</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="coding_style.html">Coding style</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="coding_style.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coding_style.html#keep-your-code-clean">Keep your code clean</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="git_workflow.html">Recommended git workflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="git_workflow.html#preface">Preface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="git_workflow.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#configuring-the-upstream-repository">Configuring the upstream repository</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="git_workflow.html#workflow">Workflow</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#branches">Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#committing">Committing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#keeping-your-branch-up-to-date">Keeping your branch up to date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#merging-your-branch-into-master">Merging your branch into master</a></li>
+<li class="toctree-l3"><a class="reference internal" href="git_workflow.html#pushing-changes-to-github-and-sending-a-pull-request">Pushing changes to Github and sending a pull request</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reload_database.html">Reload database from dump</a></li>
+<li class="toctree-l1"><a class="reference internal" href="building_a_database.html">Building a local database from source data</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About GPCRdb</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About GPCRdb</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="about.html#background-and-development">Background and development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors of data and development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citing.html">Citing GPCRdb</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#main-reference-for-gpcrdb">Main reference for GPCRdb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#introduction-to-new-users-review">Introduction to new users (review)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#structure-based-alignments-and-generic-residue-numbering">Structure-based alignments and generic residue numbering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#gpcr-drugs-and-targets">GPCR drugs and targets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#gpcr-g-protein-selectivity">GPCR-G protein selectivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#mutation-design-tool">Mutation design tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#crystal-structure-fragment-based-pharmacophore-models">Crystal structure fragment-based pharmacophore models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#gpcr-specific-pdf-reader">GPCR specific PDF reader</a></li>
+<li class="toctree-l2"><a class="reference internal" href="citing.html#older-gpcrdb-articles">Older GPCRdb articles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">Acknowledgements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="acknowledgements.html#gpcrdb-versions-since-2013">GPCRdb versions since 2013</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acknowledgements.html#gpcrdb-versions-1993-2013">GPCRdb versions 1993-2013</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="legal_notice.html">Legal notice</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="legal_notice.html#formal">Formal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legal_notice.html#informal">Informal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legal_notice.html#privacy">Privacy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="meetings.html">Meetings with GPCRdb representation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-1">2020</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-2">2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-3">2018</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-4">2017</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-5">2016</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-6">2015</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-7">2014</a></li>
+<li class="toctree-l2"><a class="reference internal" href="meetings.html#section-8">2013</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="linking.html">Linking to GPCRdb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_sites.html">External GPCR sites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="external_sites.html#modeling-servers">Modeling servers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gpcrm">GPCRM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#scpdb">scPDB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gpcr-ssfe">GPCR-SSFE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gomodo">GOMoDo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gpcr-modsim">GPCR-ModSim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#hybrid-mm-cg-webserver">Hybrid MM/CG webserver</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="external_sites.html#others">Others</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#guide-to-pharmacology">Guide to Pharmacology</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#drgpcr">DrGPCR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="external_sites.html#gpcrladies">GPCRladies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GPCRdb</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Generic residue numbering</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/protwis/gpcrdb_data/blob/master/docs/generic_numbering.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="generic-residue-numbering">
+<h1>Generic residue numbering<a class="headerlink" href="#generic-residue-numbering" title="Permalink to this headline">¶</a></h1>
+<p>Sequence-based generic GPCR residue numbering schemes<sup>1</sup> exist for class A
+(Ballesteros-Weinstein, BW<sup>2</sup> ) B (Wootten<sup>3</sup> ), C (Pin<sup>4</sup> ), and F
+(Wang<sup>5</sup> ). In these systems, the first number denotes the helix (1-7) and the second the residue
+position relative to the most conserved position, which is assigned the number 50. For example, 6.51 denotes
+a residue in transmembrane helix 6, one position after the most conserved residue (6.50). The reference
+helix conserved positions differ between the GPCR classes.</p>
+<p>Recent GPCR crystal structures have revealed frequent helix bulges and constrictions in several
+transmembrane helices<sup>6</sup> . Structural superimposition makes it clear that these cause a gap that
+offsets all the following residue numbers when compared to an undistorted helix, i.e. the structurally equivalent
+residues no longer have the same number (Fig. 1).</p>
+<div class="figure" id="figure-1">
+<img alt="Examples of bulges and constrictions" src="_images/bulge_and_constriction.png" />
+<p class="caption"><span class="caption-text"><strong>Figure 1</strong>. A bulge in helix 2 of the Beta-2 adrenergic receptor (left) and a
+constriction in helix 4 of the Histamine H1 receptor (right) create offsets in the
+sequence-based generic numbers when compared to receptors that lack the bulge/constriction.</span></p>
+</div>
+<p>The GPCRdb numbering scheme<sup>1</sup> is the first that is based on crystal structures and corrects for
+helix bulges and constrictions. GPCRdb numbers are distinguished by a unique separator x and may be used
+alone, e.g. 5x47, or together with one of the sequence-based schemes, e.g. 5.46x47. A bulge residue is
+assigned the same number as the preceding residue followed by a 1, e.g. 551 for a bulge following
+position 55.</p>
+<p>GPCRdb offers a suite of tools making it easier to use generic residue numbers:</p>
+<ul class="simple">
+<li>Structure-based <a class="reference external" href="https://gpcrdb.org/alignment/targetselection">sequence alignments</a> gapped to account for bulges and constrictions</li>
+<li><a class="reference external" href="https://gpcrdb.org/residue/residuetable">Lookup tables</a> with receptor-specific and generic residue numbers</li>
+<li><a class="reference external" href="https://gpcrdb.org/structure/generic_numbering_index">PDB structure numbering</a> along with visualization tools for PyMOL and Maestro</li>
+</ul>
+<p>GPCRdb cross-class alignments contain each of the numbering schemes, which may be distinguished in text
+by appending the letter of the class, e.g. 2x52ax59b. The Lookup tables tool also provides the alternative
+class A numbering schemes by Oliveira<sup>7</sup> and Baldwin/Schwartz<sup>7,8</sup> .</p>
+<p><strong>References</strong></p>
+<ol class="arabic simple">
+<li><a class="reference external" href="https://dx.doi.org/10.1016/j.tips.2014.11.001">V Isberg et al.</a>, <strong>2015</strong>, <em>Trends Pharmacol Sci</em>, 36(1), 22–31.</li>
+<li><a class="reference external" href="https://dx.doi.org/10.1016/S1043-9471(05)80049-7">JA Ballesteros and H Weinstein</a>, <strong>1995</strong>, <em>Methods Neurosci</em>, 25, 366–428.</li>
+<li><a class="reference external" href="https://dx.doi.org/10.1073/pnas.1221585110">D Wootten et al.</a>, <strong>2013</strong>, <em>Proc Natl Acad Sci</em>, 110(13), 5211-5216.</li>
+<li><a class="reference external" href="https://dx.doi.org/10.1016/S0163-7258(03)00038-X">J-P Pin et al.</a>, <strong>2003</strong>, <em>Pharmacol Ther</em>, 98(3), 325-354.</li>
+<li><a class="reference external" href="https://dx.doi.org/10.1038/ncomms5355">C Wang et al.</a>, <strong>2014</strong>, <em>Nat Commun</em>, 5, 4355.</li>
+<li><a class="reference external" href="https://dx.doi.org/10.3390/ijms15057841">R van der Kant and G Vriend</a>, <strong>2014</strong>, <em>Int J Mol Sci</em>, 15(5), 7841-7864.</li>
+<li><a class="reference external" href="https://dx.doi.org/10.1007/BF00125323">L Oliveira et al.</a>, <strong>1993</strong>, <em>J Comput Aided Mol Des</em>, 7(6), 649–658.</li>
+<li><a class="reference external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC413383">JM Baldwin</a>, <strong>1993</strong>, <em>EMBO J</em>, 12(4), 1693–703.</li>
+<li><a class="reference external" href="https://dx.doi.org/10.1016/0958-1669(94)90054-X">TW Schwartz</a>, <strong>1994</strong>, <em>Curr Opin Biotechnol</em>, 5(4), 434–44.</li>
+</ol>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="drugs.html" class="btn btn-neutral float-right" title="Drugs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="sites.html" class="btn btn-neutral float-left" title="Sites" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, GPCRdb
+      
+        <span class="commit">
+          Revision <code>02a3a311</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  
+
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+name: Apply receptor TM pregraph integration patch
+
+on:
+  push:
+    branches:
+      - "work/hard-decoy-v3-receptor-tm-pregraph-20260830"
+    paths:
+      - ".github/workflows/apply-receptor-integration-patch.yml"
+      - ".github/generated/v3-receptor-integration-patch/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-receptor-integration-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  apply-verify-and-record:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Check out the receptor work branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Materialize the checksum-pinned integration patch
+        run: |
+          set -euo pipefail
+          parts=".github/generated/v3-receptor-integration-patch"
+          cat \
+            "$parts/part-000" \
+            "$parts/part-001" \
+            "$parts/part-002" \
+            "$parts/part-003" \
+            "$parts/part-004" \
+            | base64 --decode > /tmp/receptor-integration-patch.tar.gz
+          test "$(sha256sum /tmp/receptor-integration-patch.tar.gz | cut -d' ' -f1)" = "4c9383b2ed950ab9cf1e1547ccb2e8d6d9e7e88fd7ad719515e7f0c2ff71f14c"
+          tar -xzf /tmp/receptor-integration-patch.tar.gz -C .
+          test "$(sha256sum scripts/hard-decoy-v3/verify-integration-state.mjs | cut -d' ' -f1)" = "5aafe31e5fd835946c504e07eeb56f43e8f71c84a40ff8d8962c3d70df0735ce"
+          test "$(sha256sum tests/hard-decoy-v3-integration-state.test.mjs | cut -d' ' -f1)" = "395b93d1628a426c6758d694238c9d4c079c0ee36e5e84a2298d3c1add7d131d"
+          test "$(sha256sum validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json | cut -d' ' -f1)" = "e7cdfb96dd1a0c2778d1117e58dc4d66cb71f7a9b56cb838dfcdef5ddc14d7be"
+          test "$(sha256sum validation/hard-decoy-holdout-v3/RECEPTOR_TM_PREGRAPH_ATTESTATION_2026-08-30.json | cut -d' ' -f1)" = "17d090688f158b75fef41579e8017c2e9bd036dc59393b9969c0b82c12e3aeeb"
+          node --check scripts/hard-decoy-v3/verify-integration-state.mjs
+          node --check tests/hard-decoy-v3-integration-state.test.mjs
+
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install the frozen dependency closure
+        run: npm ci
+
+      - name: Run receptor and integration regression gates
+        run: >-
+          node --test
+          tests/hard-decoy-v3-receptor-tm-pregraph.test.mjs
+          tests/hard-decoy-v3-integration-state.test.mjs
+
+      - name: Replay the complete authoritative pre-label state
+        run: |
+          set -euo pipefail
+          node scripts/hard-decoy-v3/verify-integration-state.mjs | tee /tmp/receptor-integration-replay.json
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const replay = JSON.parse(fs.readFileSync('/tmp/receptor-integration-replay.json', 'utf8'));
+          if (replay.receptorTmNodes !== 304 || replay.receptorTmUnorderedPairs !== 46056) process.exit(1);
+          if (replay.receptorTmPrimaryEdgePairs !== 3622 || replay.receptorTmSensitivityEdgePairs !== 6575) process.exit(1);
+          if (replay.receptorTmFailClosedCandidateProfiles !== 22) process.exit(1);
+          if (replay.formallyClearedGroups !== 0 || replay.approvalReady !== false || replay.executionAuthorized !== false) process.exit(1);
+          NODE
+
+      - name: Commit the attested integration state
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          parts=".github/generated/v3-receptor-integration-patch"
+          rm -rf "$parts"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- \
+            scripts/hard-decoy-v3/verify-integration-state.mjs \
+            tests/hard-decoy-v3-integration-state.test.mjs \
+            validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json \
+            validation/hard-decoy-holdout-v3/RECEPTOR_TM_PREGRAPH_ATTESTATION_2026-08-30.json
+          git add -A -- "$parts"
+          if git diff --cached --quiet; then
+            echo "No receptor integration changes were staged."
+            exit 1
+          fi
+          git commit -m "Attest the v3 canonical receptor TM pregraph"
+          git push origin "HEAD:${TARGET_BRANCH}"

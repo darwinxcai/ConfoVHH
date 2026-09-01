@@ -1,0 +1,139 @@
+name: Hard-decoy v3 receptor TM pregraph
+
+on:
+  push:
+    branches:
+      - "work/hard-decoy-v3-receptor-tm-pregraph-*"
+    paths:
+      - ".github/workflows/v3-receptor-tm-pregraph.yml"
+      - ".github/generated/v3-receptor-tm-pregraph-source/**"
+      - "scripts/hard-decoy/v3-receptor-tm-pregraph.mjs"
+      - "tests/hard-decoy-v3-receptor-tm-pregraph*.test.mjs"
+      - "validation/hard-decoy-holdout-v3/receptor-tm-contract-2026-08-30.json"
+      - "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/**"
+      - "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hard-decoy-v3-receptor-tm-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  capture-generate-and-record:
+    if: github.actor != 'github-actions[bot]'
+    name: Capture and verify canonical GPCR TM1-TM7 pregraph
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out source branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Materialize the checksum-pinned source bundle
+        run: |
+          set -euo pipefail
+          parts=".github/generated/v3-receptor-tm-pregraph-source"
+          cat \
+            "$parts"/part-000a \
+            "$parts"/part-000b \
+            "$parts"/part-001 \
+            "$parts"/part-002 \
+            "$parts"/part-003 \
+            "$parts"/part-004 \
+            "$parts"/part-005a \
+            "$parts"/part-005b \
+            | base64 --decode > /tmp/receptor-tm-source.tar.gz
+          test "$(sha256sum /tmp/receptor-tm-source.tar.gz | cut -d' ' -f1)" = "465c48767ff07ab0d210f1108593e1176c14bd179c228dcbc7a800269f92ecc4"
+          tar -xzf /tmp/receptor-tm-source.tar.gz -C .
+          test "$(sha256sum scripts/hard-decoy/v3-receptor-tm-pregraph.mjs | cut -d' ' -f1)" = "4316347ee87f6c945f3cb3ed8b3128bb3b2468ec5dfdb158d4e297119821fa6b"
+          contract="validation/hard-decoy-holdout-v3/receptor-tm-contract-2026-08-30.json"
+          test "$(sha256sum "$contract" | cut -d' ' -f1)" = "e23dee22770f3757349662a0389b67c7731b657ff9d8409cee07735bd6ad250d"
+          python - <<'PY'
+          from pathlib import Path
+          path = Path("validation/hard-decoy-holdout-v3/receptor-tm-contract-2026-08-30.json")
+          source = path.read_text()
+          old = "9b0f1b42b34e2026ccb7de4cd98df7b8be57c9d5cf30c0e050668224715a3ad"
+          new = "9b0f1b42b34e20206ccb7de4cd98df7b8be57c9d5cf30c0e050668224715a3ad"
+          if source.count(old) != 1:
+              raise SystemExit("The expected development-node checksum typo was not unique.")
+          path.write_text(source.replace(old, new))
+          PY
+          test "$(sha256sum "$contract" | cut -d' ' -f1)" = "abd88bbae2d35fda28dc9339f80d91c65d95c4b9f844d74ddff7249090eea412"
+          test "$(sha256sum tests/hard-decoy-v3-receptor-tm-pregraph.test.mjs | cut -d' ' -f1)" = "9cf8890e494452b7b31d00df8210e5309fc50cf68dbe35fe26a4a56e3cdf8065"
+          node --check scripts/hard-decoy/v3-receptor-tm-pregraph.mjs
+          node --check tests/hard-decoy-v3-receptor-tm-pregraph.test.mjs
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install the frozen dependency closure
+        run: npm ci
+      - name: Verify the frozen receptor-sequence contract and pure algorithms
+        run: node --test tests/hard-decoy-v3-receptor-tm-pregraph.test.mjs
+      - name: Capture two complete GPCRdb snapshots and build the pair matrix
+        run: >-
+          node scripts/hard-decoy/v3-receptor-tm-pregraph.mjs
+          capture
+          validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30
+      - name: Independently replay the committed-format snapshot offline
+        run: >-
+          node scripts/hard-decoy/v3-receptor-tm-pregraph.mjs
+          verify
+          validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30
+      - name: Confirm complete pair accounting and conservative authority
+        run: |
+          set -euo pipefail
+          node - <<'NODE'
+          const fs = require('node:fs');
+          const path = 'validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30';
+          const summary = JSON.parse(fs.readFileSync(`${path}/summary.json`, 'utf8'));
+          const manifest = JSON.parse(fs.readFileSync(`${path}/manifest.json`, 'utf8'));
+          if (summary.totalNodeCount !== 304 || summary.pairSpace.allUnorderedPairs !== 46056) process.exit(1);
+          if (!summary.normalizedRepeatedCaptureAgreement || !manifest.gpcrdbCapture.normalizedCaptureAgreement) process.exit(1);
+          if (summary.formallyClearedGroupCount !== 0) process.exit(1);
+          for (const key of [
+            'formalLeakageGraphComplete', 'dispositionLedgerComplete', 'exactFrozenTargetSetExists',
+            'targetFreezePermitted', 'executionAuthorized', 'nativeHoldoutCoordinatesAccessed',
+            'nativeRelativePosesInspected', 'nativeEpitopesAccessed', 'dockqLabelsAccessed',
+            'confovhhHoldoutScoresAccessed', 'performanceResultsAccessed',
+          ]) if (summary[key] !== false) process.exit(1);
+          if (!summary.primarySequenceComponentsAreNotBiologicalFamilyClaims || !summary.sensitivityEdgesAreVetoOnly) process.exit(1);
+          NODE
+          if find validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30 -type f -size +95M -print -quit | grep -q .; then
+            echo "A generated file exceeds the conservative GitHub size limit."
+            exit 1
+          fi
+      - name: Upload the inspectable receptor TM pregraph
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: hard-decoy-v3-receptor-tm-pregraph
+          path: validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30
+          if-no-files-found: error
+          retention-days: 14
+      - name: Commit the verified receptor TM pregraph
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          output="validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30"
+          script="scripts/hard-decoy/v3-receptor-tm-pregraph.mjs"
+          contract="validation/hard-decoy-holdout-v3/receptor-tm-contract-2026-08-30.json"
+          test_file="tests/hard-decoy-v3-receptor-tm-pregraph.test.mjs"
+          parts=".github/generated/v3-receptor-tm-pregraph-source"
+          rm -rf "$parts"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "$output" "$script" "$contract" "$test_file"
+          git add -A -- "$parts"
+          if git diff --cached --quiet; then
+            echo "The verified receptor TM pregraph is already current."
+            exit 0
+          fi
+          git commit -m "Record frozen v3 receptor TM1-TM7 pregraph"
+          git push origin "HEAD:${TARGET_BRANCH}"
