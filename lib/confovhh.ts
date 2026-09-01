@@ -17,7 +17,7 @@ export {
   MAX_CANONICAL_COORDINATE_ANGSTROM,
 } from "./geometry-constants.ts";
 
-export const CONFOVHH_VERSION = "0.5.0";
+export const CONFOVHH_VERSION = "0.6.0";
 
 export type ConfidenceMode = "none" | "plddt";
 export type EvidenceLevel = "supported" | "mixed" | "limited" | "not-assessable";
@@ -186,9 +186,13 @@ export interface InterfaceAudit {
   paeOrderConfirmed: boolean;
   vhhNumbering: {
     status: VhhNumberingAnnotation["status"];
+    policyVersion: VhhNumberingAnnotation["policyVersion"];
     scheme: "IMGT";
     engine: string;
+    minimumEngineConfidence: number;
     confidence: number | null;
+    completeImgtRegionCoverage: boolean;
+    numberingSegmentationAgreement: boolean;
     cdrLengths: VhhNumberingAnnotation["cdrLengths"];
     error: string | null;
   };
@@ -506,7 +510,7 @@ const SASA_GRID_CELL_SIZE = 2 * (
 export const SASA_RADII_METHOD_DESCRIPTION =
   "Element-based Bondi radii: H 1.20, C 1.70, N 1.55, O 1.52, S/P 1.80, Se 1.90 Å.";
 export const CDR_ANNOTATION_METHOD_DESCRIPTION =
-  `Sequence-aligned IMGT regions from ${IMGT_NUMBERING_ENGINE}: CDR1 27–38, CDR2 56–65, CDR3 105–117.`;
+  `Sequence-aligned IMGT regions from ${IMGT_NUMBERING_ENGINE}: exact coordinate-sequence map-back, complete FR1/CDR1/FR2/CDR2/FR3/CDR3/FR4 coverage, and independent number/segment agreement; CDR1 27–38, CDR2 56–65, CDR3 105–117.`;
 export const PAE_SUMMARY_METHOD_DESCRIPTION =
   "Directional median and 90th-percentile PAE over contacting receptor–VHH residue pairs using the user-confirmed AlphaFold row-aligned/column-evaluated convention and residue order; conservative summaries aggregate the worse direction for each contact pair, and lowPaeContactShare is the share of those conservative contact-pair values at or below 10 Å.";
 
@@ -1931,7 +1935,7 @@ export function analyzeInterface(
         ? "supported" : vhhNumbering.status === "numbered" ? "review" : "unavailable",
       evidence: vhhNumbering.status === "numbered"
         ? `${IMGT_NUMBERING_ENGINE} recognized an IGH V-domain with alignment confidence ${vhhNumbering.confidence?.toFixed(2)}; ` +
-          `CDR lengths ${vhhNumbering.cdrLengths?.cdr1}/${vhhNumbering.cdrLengths?.cdr2}/${vhhNumbering.cdrLengths?.cdr3}.`
+          `complete seven-region number/segment agreement passed; CDR lengths ${vhhNumbering.cdrLengths?.cdr1}/${vhhNumbering.cdrLengths?.cdr2}/${vhhNumbering.cdrLengths?.cdr3}.`
         : `IMGT annotation unavailable: ${vhhNumbering.error ?? "the V-domain was not recognized"}`,
       action: "Sequence-aligned IMGT regions map the paratope footprint but do not establish antigen binding.",
     },
@@ -2075,9 +2079,13 @@ export function analyzeInterface(
     paeOrderConfirmed: Boolean(pae && paeOrderConfirmed),
     vhhNumbering: {
       status: vhhNumbering.status,
+      policyVersion: vhhNumbering.policyVersion,
       scheme: "IMGT",
       engine: vhhNumbering.engine,
+      minimumEngineConfidence: vhhNumbering.minimumEngineConfidence,
       confidence: vhhNumbering.confidence,
+      completeImgtRegionCoverage: vhhNumbering.completeImgtRegionCoverage,
+      numberingSegmentationAgreement: vhhNumbering.numberingSegmentationAgreement,
       cdrLengths: vhhNumbering.cdrLengths,
       error: vhhNumbering.error,
     },
