@@ -83,7 +83,7 @@ export function WorkspaceNavigator({
     <nav className="workflow-navigator" aria-label="Analysis workflow">
       <div className="workflow-intro">
         <span>Research workflow</span>
-        <small>Optional branches unlock after one audited reference pose.</small>
+        <small>Begin with one reference pose; additional comparisons become available after the first audit.</small>
       </div>
       <ol>
         {steps.map((step, index) => (
@@ -385,11 +385,11 @@ export function DossierImportControl({ onImportText }: { onImportText: (text: st
 export function EntryWorkflowCards({ onDemo }: { onDemo: () => void }) {
   return (
     <section className="entry-workflows" aria-labelledby="entry-workflows-title">
-      <div><p className="eyebrow">Choose an input</p><h2 id="entry-workflows-title">Start with one pose, a prediction folder, or the worked example</h2></div>
+      <div><p className="eyebrow">Start here</p><h2 id="entry-workflows-title">Start with one pose, a prediction folder, or the worked example</h2></div>
       <div className="entry-workflow-grid">
-        <article><ShieldCheck /><span>Single-pose path</span><h3>Audit one coordinate pose</h3><p>Confirm chains, inspect interface geometry, IMGT footprint, optional pLDDT, and directional PAE.</p><a href="#coordinate-setup">Import coordinates <ArrowRight /></a></article>
-        <article><Layers3 /><span>Batch path · desktop recommended</span><h3>Audit a prediction output run</h3><p>Review associations, audit one reference, then compare up to 12 compatible AlphaFold, ColabFold, or Boltz poses.</p><a href="#prediction-run-intake">Choose a prediction folder <ArrowRight /></a></article>
-        <article><FlaskConical /><span>Experimental worked example</span><h3>Learn with β₂AR–Nb80</h3><p>Load PDB 3P0G to learn the workflow—not to measure prediction accuracy or prospective ranking.</p><button type="button" onClick={onDemo}>Load the demo <ArrowRight /></button></article>
+        <article><ShieldCheck /><span>Single-pose path</span><h3>Audit one coordinate pose</h3><p>Confirm the receptor and VHH chains, then inspect contacts, clashes, buried interface area, IMGT CDR involvement, optional pLDDT, and directional PAE.</p><a href="#coordinate-setup">Import coordinates <ArrowRight /></a></article>
+        <article><Layers3 /><span>Batch path · desktop recommended</span><h3>Audit a prediction output run</h3><p>Check the proposed file associations, audit one reference pose, and compare up to 12 compatible AlphaFold, ColabFold, or Boltz models.</p><a href="#prediction-run-intake">Choose a prediction folder <ArrowRight /></a></article>
+        <article><FlaskConical /><span>Experimental worked example</span><h3>Explore β₂AR–Nb80</h3><p>Open experimental structure PDB 3P0G to see the full workflow. It demonstrates interface review, not prediction accuracy or prospective ranking.</p><button type="button" onClick={onDemo}>Open worked example <ArrowRight /></button></article>
       </div>
       <p className="product-release-note">ConfoVHH product {CONFOVHH_PRODUCT_RELEASE} · scientific engine v0.5.0 · frozen validation digests preserved</p>
     </section>

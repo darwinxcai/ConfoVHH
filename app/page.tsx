@@ -1708,9 +1708,9 @@ export default function Home() {
       </header>
 
       <section className="product-intro" aria-labelledby="product-title">
-        <p className="eyebrow">Local-first coordinate review</p>
-        <h1 id="product-title">Audit GPCR–VHH coordinate poses</h1>
-        <p>Inspect coordinate geometry and provenance without treating ConfoVHH output as binding, affinity, functional, or candidate-selection evidence.</p>
+        <p className="eyebrow">Private, local structural review</p>
+        <h1 id="product-title">Review GPCR–VHH structural interfaces</h1>
+        <p>Analyze contacts, clashes, buried interface area, and optional PAE context with explicit provenance—without presenting structural evidence as biological validation.</p>
       </section>
 
       {!structure && <EntryWorkflowCards onDemo={() => void loadDemo()} />}
