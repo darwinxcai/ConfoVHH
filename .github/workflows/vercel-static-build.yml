@@ -28,23 +28,23 @@ jobs:
         run: npm run build:static
       - name: Verify static output layout
         run: |
-          test -f dist/static/index.html
-          test -d dist/static/assets
-          find dist/static/assets/workers -type f -name 'audit-worker-*.js' -print -quit | grep -q .
-          find dist/static/assets/workers -type f -name 'prediction-run-worker-*.js' -print -quit | grep -q .
+          test -f dist-static/index.html
+          test -d dist-static/assets
+          find dist-static/assets/workers -type f -name 'audit-worker-*.js' -print -quit | grep -q .
+          find dist-static/assets/workers -type f -name 'prediction-run-worker-*.js' -print -quit | grep -q .
       - name: Verify no server runtime is emitted
         run: |
           if [ -e .vercel/output ]; then
             echo "A Build Output API directory was emitted; the static path must not produce one." >&2
             exit 1
           fi
-          if find dist/static -type d -name 'functions' | grep -q .; then
+          if find dist-static -type d -name 'functions' | grep -q .; then
             echo "The static output contains a functions directory." >&2
             exit 1
           fi
       - name: Verify the audit worker inlines the immunum WebAssembly module
         run: |
-          worker="$(find dist/static/assets/workers -type f -name 'audit-worker-*.js' -print -quit)"
+          worker="$(find dist-static/assets/workers -type f -name 'audit-worker-*.js' -print -quit)"
           grep -q 'atob(' "$worker" || {
             echo "The audit worker does not inline the immunum WebAssembly module." >&2
             exit 1

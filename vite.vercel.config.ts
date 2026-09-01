@@ -50,7 +50,10 @@ export default defineConfig({
   },
   plugins: [immunumWorkerWasmPlugin(), react()],
   build: {
-    outDir: path.join(projectRoot, "dist", "static"),
+    // Deliberately outside dist/. scripts/create-release-artifacts.mjs hashes
+    // every file under dist/ into the attested Cloudflare production build
+    // manifest, so static output living there would corrupt that record.
+    outDir: path.join(projectRoot, "dist-static"),
     emptyOutDir: true,
     target: "es2022",
     sourcemap: false,
