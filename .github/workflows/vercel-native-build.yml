@@ -26,8 +26,10 @@ jobs:
         run: npm ci
       - name: Build vinext through Nitro for Vercel
         run: CONFOVHH_VERCEL_NITRO=1 NITRO_PRESET=vercel npx vite build
-      - name: Verify Vercel output and audit worker
+      - name: Verify Vercel Build Output API bundle
         run: |
-          test -d .output
-          find .output -type f -print -quit | grep -q .
-          find .output -type f -name 'audit-worker-*.js' -print -quit | grep -q .
+          test -d .vercel/output
+          test -f .vercel/output/config.json
+          test -d .vercel/output/functions/__server.func
+          find .vercel/output/static/_next/static/workers -type f -name 'audit-worker-*.js' -print -quit | grep -q .
+          find .vercel/output/static/_next/static/workers -type f -name 'prediction-run-worker-*.js' -print -quit | grep -q .
