@@ -21,11 +21,15 @@ jobs:
         with:
           node-version: 22.x
           cache: npm
-          cache-dependency-path: package-lock.json
-      - name: Install dependencies
+          cache-dependency-path: |
+            package-lock.json
+            hosting/vercel/package-lock.json
+      - name: Install application dependencies
         run: npm ci
-      - name: Build vinext through Nitro for Vercel
-        run: CONFOVHH_VERCEL_NITRO=1 NITRO_PRESET=vercel npx vite build
+      - name: Install isolated Vercel build dependencies
+        run: npm ci --prefix hosting/vercel
+      - name: Build vinext through isolated Nitro configuration
+        run: NITRO_PRESET=vercel npx vite build --config vite.vercel.config.ts
       - name: Verify Vercel Build Output API bundle
         run: |
           test -d .vercel/output
