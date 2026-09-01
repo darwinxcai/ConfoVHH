@@ -1,21 +1,27 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [
+const isVercelStaticBuild = process.env.CONFOVHH_VERCEL_STATIC === "1";
+
+const nextConfig: NextConfig = isVercelStaticBuild
+  ? {
+      output: "export",
+    }
+  : {
+      async redirects() {
+        return [
           {
-            type: "host",
-            value: "confovhh.darwin-cai.chatgpt.site",
+            source: "/:path*",
+            has: [
+              {
+                type: "host",
+                value: "confovhh.darwin-cai.chatgpt.site",
+              },
+            ],
+            destination: "https://github.com/darwinxcai/ConfoVHH",
+            permanent: false,
           },
-        ],
-        destination: "https://github.com/darwinxcai/ConfoVHH",
-        permanent: false,
+        ];
       },
-    ];
-  },
-};
+    };
 
 export default nextConfig;
