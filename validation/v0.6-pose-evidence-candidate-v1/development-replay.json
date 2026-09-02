@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "1.0.0",
+  "candidateId": "confovhh-v0.6-pose-evidence-candidate-v1",
+  "recordedDate": "2026-09-02",
+  "status": "DEVELOPMENT_REPLAY_ONLY_NOT_INTEGRATED",
+  "dataRole": "development",
+  "sourceArtifact": "validation/dockq-development-pilot-v1",
+  "dockqPositiveCutoff": 0.23,
+  "metricDefinitions": "Tie-aware grouped average precision and tie-aware AUROC, transcribed from scripts/run-dockq-development-pilot.mjs; target-macro aggregation.",
+  "candidatePolicy": {
+    "version": "0.6.0-candidate.1",
+    "status": "development-candidate-not-integrated",
+    "rankingSignal": "half-delta-SASA interface burial",
+    "rankingScope": "within-target-only",
+    "fittedCoefficients": 0,
+    "clashBurdenGatesRanking": false,
+    "minimumContactPairs": 1,
+    "minimumInterfaceResiduesPerChain": 3
+  },
+  "poseAccounting": {
+    "retainedPoses": 360,
+    "targets": 5,
+    "candidateAssessable": 339,
+    "candidateNotAssessable": 21,
+    "cautionCounts": {
+      "high-overlap-burden": 290,
+      "sparse-interface": 10
+    }
+  },
+  "macro": {
+    "confovhh_evidence_v0_4": {
+      "averagePrecision": 0.687853610626,
+      "averagePrecisionLift": 1.081281677441,
+      "auroc": 0.574180187644,
+      "eligibleTargets": 5
+    },
+    "pose_evidence_v0_6": {
+      "averagePrecision": 0.772742639817,
+      "averagePrecisionLift": 1.214965805109,
+      "auroc": 0.754144372319,
+      "eligibleTargets": 5
+    },
+    "delta_sasa": {
+      "averagePrecision": 0.772742639817,
+      "averagePrecisionLift": 1.214965805109,
+      "auroc": 0.754144372319,
+      "eligibleTargets": 5
+    },
+    "random_all_tied": {
+      "averagePrecision": 0.636111111111,
+      "averagePrecisionLift": 1,
+      "auroc": 0.5,
+      "eligibleTargets": 5
+    }
+  },
+  "perTarget": {
+    "confovhh_evidence_v0_4": {
+      "3P0G-A-B": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.6938405797101449,
+        "averagePrecisionLift": 1.0860113421550095,
+        "auroc": 0.5760869565217391
+      },
+      "4XT1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.6847826086956521,
+        "averagePrecisionLift": 1.0718336483931947,
+        "auroc": 0.5681438127090301
+      },
+      "6DO1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 47,
+        "prevalence": 0.6527777777777778,
+        "averagePrecision": 0.7118794326241135,
+        "averagePrecisionLift": 1.0905387052965143,
+        "auroc": 0.5851063829787234
+      },
+      "6O3C-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.6743827160493827,
+        "averagePrecisionLift": 1.0790123456790124,
+        "auroc": 0.5707818930041152
+      },
+      "8QW4-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.6743827160493827,
+        "averagePrecisionLift": 1.0790123456790124,
+        "auroc": 0.5707818930041152
+      }
+    },
+    "pose_evidence_v0_6": {
+      "3P0G-A-B": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.767460515667918,
+        "averagePrecisionLift": 1.2012425462628282,
+        "auroc": 0.754180602006689
+      },
+      "4XT1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.9076415321547249,
+        "averagePrecisionLift": 1.4206563111986998,
+        "auroc": 0.8528428093645485
+      },
+      "6DO1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 47,
+        "prevalence": 0.6527777777777778,
+        "averagePrecision": 0.7174502109944491,
+        "averagePrecisionLift": 1.0990726636510708,
+        "auroc": 0.6723404255319149
+      },
+      "6O3C-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.7118690318889586,
+        "averagePrecisionLift": 1.1389904510223336,
+        "auroc": 0.7160493827160493
+      },
+      "8QW4-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.7592919083802963,
+        "averagePrecisionLift": 1.214867053408474,
+        "auroc": 0.7753086419753087
+      }
+    },
+    "delta_sasa": {
+      "3P0G-A-B": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.767460515667918,
+        "averagePrecisionLift": 1.2012425462628282,
+        "auroc": 0.754180602006689
+      },
+      "4XT1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.9076415321547249,
+        "averagePrecisionLift": 1.4206563111986998,
+        "auroc": 0.8528428093645485
+      },
+      "6DO1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 47,
+        "prevalence": 0.6527777777777778,
+        "averagePrecision": 0.7174502109944491,
+        "averagePrecisionLift": 1.0990726636510708,
+        "auroc": 0.6723404255319149
+      },
+      "6O3C-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.7118690318889586,
+        "averagePrecisionLift": 1.1389904510223336,
+        "auroc": 0.7160493827160493
+      },
+      "8QW4-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.7592919083802963,
+        "averagePrecisionLift": 1.214867053408474,
+        "auroc": 0.7753086419753087
+      }
+    },
+    "random_all_tied": {
+      "3P0G-A-B": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.6388888888888888,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5
+      },
+      "4XT1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.6388888888888888,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5
+      },
+      "6DO1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 47,
+        "prevalence": 0.6527777777777778,
+        "averagePrecision": 0.6527777777777778,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5
+      },
+      "6O3C-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.625,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5
+      },
+      "8QW4-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.625,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5
+      }
+    }
+  },
+  "claimFlags": {
+    "improvesBindingPrediction": false,
+    "improvesAffinityPrediction": false,
+    "improvesPoseCorrectnessPrediction": false,
+    "establishesGeneralization": false,
+    "constitutesIndependentHoldoutEvidence": false,
+    "establishesExperimentalBinding": false,
+    "tunedAgainstDockqLabels": false,
+    "hardDecoyHoldoutAccessed": false
+  },
+  "interpretationBoundary": "Development-set association only, on a native-derived local rigid-body perturbation grid across five previously used complexes. It does not test blind docking, wrong-patch decoys, flexible conformational change, non-binders, unseen receptor families, or experimental binding. The prospectively specified hard-decoy protocol remains unexecuted."
+}
