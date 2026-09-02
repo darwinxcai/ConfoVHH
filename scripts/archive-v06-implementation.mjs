@@ -103,8 +103,19 @@ for (const definition of DEFINITIONS) {
     const digest = sha256(bytes);
     const before = previous.files[relative];
     assert.ok(before, `${relative}: absent from the v0.5 attestation`);
-    await retainObject(bytes, digest);
-    files[relative] = { sha256: digest, v05Sha256: before, changed: digest !== before };
+    // Manifest digests are recorded, but their bytes are not retained. This
+    // package binds the scientific core, and the pin excludes the manifests
+    // precisely because the dependency environment is separately patched. The
+    // lockfile alone is 456 KiB, so storing a copy here would dominate the
+    // package with the one file it does not pin. The v0.5 snapshot already
+    // preserves the historical manifest bytes.
+    if (!MANIFESTS.has(relative)) await retainObject(bytes, digest);
+    files[relative] = {
+      sha256: digest,
+      v05Sha256: before,
+      changed: digest !== before,
+      objectRetained: !MANIFESTS.has(relative),
+    };
     if (digest === before) carriedUnchanged.push(relative);
     else {
       changed.push(relative);
@@ -175,6 +186,12 @@ const index = {
   scientificLineage: "0.6.0",
   supersedes: "validation/v0.5-engine-implementation-snapshot-v1",
   v05AttestationsPreservedByteForByte: true,
+  objectRetentionPolicy:
+    "Objects are retained for the pinned scientific-core files and the executed immunum " +
+    "bytes. package.json and package-lock.json digests are recorded but their bytes are " +
+    "not copied here: this package binds the scientific core, the pin excludes the " +
+    "manifests because the dependency environment is separately patched, and the v0.5 " +
+    "snapshot already preserves the historical manifest bytes.",
   purpose:
     "Bind the scientific-core bytes the product currently executes, after the v0.6 VHH " +
     "numbering promotion moved lib/vhh-numbering.ts. The v0.5 snapshot continues to bind " +
@@ -218,7 +235,11 @@ const readme =
   "v0.5 public-regression and DockQ replay attestations were produced under. This\n" +
   "package answers a different question: what runs now.\n\n" +
   "The promotion changes one pinned file, `lib/vhh-numbering.ts`. The generating script\n" +
-  "asserts that set and fails if the promotion touched anything else.\n";
+  "asserts that set and fails if the promotion touched anything else.\n\n" +
+  "`package.json` and `package-lock.json` appear in `index.json` with their digests but\n" +
+  "have no object here. They are recorded, not pinned: the pin excludes them because the\n" +
+  "dependency environment is separately patched, the lockfile alone is 456 KiB, and the\n" +
+  "v0.5 snapshot already preserves the historical manifest bytes.\n";
 
 await writeFile(path.join(output, "README.md"), readme, { flag: "wx" });
 await writeFile(path.join(output, "index.json"), `${JSON.stringify(index, null, 2)}\n`, {
