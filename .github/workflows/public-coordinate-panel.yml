@@ -62,7 +62,10 @@ jobs:
         if: github.ref_name != github.event.repository.default_branch
         run: |
           set -euo pipefail
-          if git diff --quiet -- validation/v0.6-pose-evidence-candidate-v2; then
+          # --porcelain, not `git diff`: on a first run the record is a NEW file,
+          # and `git diff` reports only tracked changes, so it would call an
+          # untracked record "unchanged" and skip the commit entirely.
+          if [ -z "$(git status --porcelain -- validation/v0.6-pose-evidence-candidate-v2)" ]; then
             echo "Panel record unchanged; nothing to commit."
             exit 0
           fi
