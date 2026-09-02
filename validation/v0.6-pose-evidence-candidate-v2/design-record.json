@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.1.0",
+  "candidateId": "confovhh-v0.6-pose-evidence-candidate-v2",
+  "recordedDate": "2026-09-02",
+  "status": "DEVELOPMENT_CANDIDATE_NOT_INTEGRATED",
+  "baseScientificLineage": "0.5.0",
+  "candidateScientificLineage": "0.6.0-candidate.2",
+  "supersedes": {
+    "candidateId": "confovhh-v0.6-pose-evidence-candidate-v1",
+    "artifact": "validation/v0.6-pose-evidence-candidate-v1",
+    "artifactPreservedByteForByte": true,
+    "reason": [
+      "Candidate.1 replaced the shipped v0.5 evidence ordinal with raw interface burial, on the strength of burial's higher target-macro AUROC (0.754144372319 against 0.574180187644) on the DockQ development pilot.",
+      "That comparison was correctly computed but measured the wrong property. AUROC scores global separation across all poses; it does not score what the product shows a user, which is the top of the ranked list.",
+      "Scored at the top of the list, candidate.1 is worse than an all-tied control. Its expected precision at rank 1 is 0.2, against 0.636111111111 for the control and 1.0 for the shipped ordinal it proposed to replace. Adopting it would have made the product worse at its actual job.",
+      "Candidate.1's stated rationale also mischaracterised the shipped ordinal's clash-free requirement for the 'supported' tier as a defect. It does cost recall, as recorded there. It also buys the precision that keeps interpenetrating poses out of the top tier, which candidate.1 did not measure.",
+      "The candidate.1 record is retained unmodified. It is superseded, not withdrawn: its measurements were reproducible and its baseline reproduction still holds."
+    ]
+  },
+  "scope": {
+    "component": "Coordinate-pose evidence ranking",
+    "changesContactGeometry": false,
+    "changesClashGeometry": false,
+    "changesSasa": false,
+    "changesPaeMapping": false,
+    "changesPoseRecurrence": false,
+    "changesImgtNumbering": false,
+    "changesEvidenceLevelComputation": false,
+    "changesCandidateRanking": true,
+    "productionIntegrated": false
+  },
+  "problemStatement": [
+    "The shipped v0.5 evidence ordinal has a resolution failure, not a judgement failure. 309 of 360 retained development poses fall in 'limited' and 4 in 'supported', so below the top tier it expresses no preference between poses at all.",
+    "Its judgement, where it expresses one, is sound on this pilot. Every pose in the top occupied tier of every target is DockQ-positive, 12 of 12, and its expected precision at rank 1 is 1.0.",
+    "Its target-macro AUROC of 0.574180187644 reflects the missing resolution rather than a wrong verdict: an ordinal that is constant across 86% of the distribution cannot separate that distribution however correct it is.",
+    "Interface burial is absent from the ordinal's inputs and carries real information the ordinal discards. Within the 'limited' block alone, where the ordinal is silent, half-delta-SASA separates DockQ-positive from DockQ-negative poses at 0.721666397871 target-macro AUROC.",
+    "Interface burial cannot be used on its own, because it overshoots. It rises with pose quality only until the chains begin to interpenetrate, after which it keeps rising while the pose becomes physically impossible."
+  ],
+  "burialOvershootEvidence": [
+    "Across burial deciles, mean DockQ rises to 0.647 at decile 8 and then falls to 0.340 at decile 10, where the mean severe-overlap count jumps from 20.8 to 70.3.",
+    "The single most-buried pose is DockQ-negative in 4 of 5 targets.",
+    "For 3P0G the most-buried pose has 2440 square angstroms of burial, 153 severe overlaps, 3.19 angstroms maximum overlap and DockQ 0.106. The near-native pose of the same target has 844 square angstroms, 1 severe overlap, 0.62 angstroms and DockQ 0.979.",
+    "This is a physical property of the measurement, not an artifact of this pilot: buried area is monotone in penetration depth, so any ranking that maximises it without a feasibility constraint is maximising penetration once contact is saturated."
+  ],
+  "candidatePolicy": {
+    "rankKey": "(shipped v0.5 evidence tier, then half-delta-SASA interface burial)",
+    "primaryKey": "shipped v0.5 evidence tier, carried through unchanged and never recomputed",
+    "secondaryKey": "half-delta-SASA interface burial, carried through unchanged",
+    "tieBreak": "pose identifier, so the order is total and reproducible",
+    "rankingScope": "within-target-only",
+    "fittedCoefficients": 0,
+    "newThresholdsIntroduced": 0,
+    "reordersAcrossShippedTiers": false,
+    "clashBurdenGatesRanking": true,
+    "clashBurdenGatingInheritedFrom": "the shipped v0.5 evidence level",
+    "assessabilityFailsClosed": true,
+    "failClosedScope": "within tier; an unmeasurable pose sorts to the bottom of its own tier and is never moved out of it",
+    "minimumContactPairs": 1,
+    "minimumInterfaceResiduesPerChain": 3
+  },
+  "designRationale": [
+    "The two signals fail in opposite directions and neither is redundant. The ordinal is precise at the top and blind below it; burial is informative below the top and actively misleading at it. Composing them lexicographically takes the property each one has.",
+    "Making the shipped tier the primary key is a safety property, not a preference. Because burial only ever reorders poses inside a tier, the candidate cannot move a pose past a pose the shipped policy ranked above it, so it cannot regress the top-tier precision it inherits.",
+    "The composition introduces no parameter. There is no weight between the two keys, because a lexicographic key has none, and no new threshold, because every tier boundary is the shipped v0.5 boundary carried verbatim. There is nothing here for five correlated development targets to overfit.",
+    "The clash-free requirement for the 'supported' tier is kept rather than removed. Candidate.1 removed it and rank-1 correctness collapsed from 1.0 to 0.2. Its recall cost is real and is recorded under known limitations; its precision benefit is what keeps interpenetrating poses out of the top tier.",
+    "Assessability fails closed within the tier rather than across tiers, because the shipped verdict is the authority on tier placement and this candidate does not second-guess it."
+  ],
+  "metricIntegrity": {
+    "tieBreakLeakageFound": true,
+    "description": [
+      "Rank-k correctness was first computed by sorting and breaking ties on pose identifier. Under that definition the all-tied control arm scored 5 of 5 at rank 1, which is impossible for a control and exposed the error.",
+      "Pose identifiers encode perturbation magnitude in zero-padded fields, for example 'rot0020-trans0005-rep1', so ordering a tied block lexicographically orders it by increasing distance from the native pose. Any arm leaving a large tie at the top was handed the near-native pose for free.",
+      "Rank-k is therefore reported as an expectation under uniform random tie-breaking, consistent with the tie-aware AUROC and average precision the pilot already uses. Under the corrected definition the all-tied control returns the positive prevalence, 0.636111111111, as a control should.",
+      "The shipped ordinal's rank-1 result survives the correction on its own merit: its top occupied tier contains only DockQ-positive poses in every target, so no tie-break can flatter it."
+    ]
+  },
+  "developmentEvidence": {
+    "sourceArtifact": "validation/dockq-development-pilot-v1",
+    "replayArtifact": "validation/v0.6-pose-evidence-candidate-v2/development-replay.json",
+    "dockqPositiveCutoff": 0.23,
+    "targets": 5,
+    "retainedPoses": 360,
+    "targetMacroAuroc": {
+      "shippedEvidenceOrdinal": 0.574180187644,
+      "candidate2": 0.77239697102,
+      "supersededCandidate1": 0.754144372319,
+      "allTiedControl": 0.5
+    },
+    "targetMacroAveragePrecision": {
+      "shippedEvidenceOrdinal": 0.687853610626,
+      "candidate2": 0.835253100377,
+      "supersededCandidate1": 0.772742639817,
+      "allTiedControl": 0.636111111111
+    },
+    "expectedPrecisionAtRank1": {
+      "shippedEvidenceOrdinal": 1,
+      "candidate2": 1,
+      "supersededCandidate1": 0.2,
+      "allTiedControl": 0.636111111111
+    },
+    "expectedPrecisionAtRank5": {
+      "shippedEvidenceOrdinal": 0.94,
+      "candidate2": 1,
+      "supersededCandidate1": 0.6,
+      "allTiedControl": 0.636111111111
+    },
+    "secondaryKeyWithinLimitedTierAuroc": 0.721666397871,
+    "baselineReproduced": "The replay harness reproduces the recorded v0.5 evidence-ordinal and delta-SASA arms to twelve decimal places, so every comparison is like-for-like.",
+    "sourcePaths": [
+      "lib/confovhh.ts",
+      "lib/pose-evidence-v06.ts",
+      "scripts/run-dockq-development-pilot.mjs",
+      "scripts/run-v06-pose-evidence-development-replay.mjs",
+      "validation/dockq-development-pilot-v1/poses.jsonl"
+    ],
+    "usesPreviouslyObservedDockqLabels": true,
+    "labelsUsedForMeasurementOnly": true,
+    "labelsUsedForFitting": false,
+    "labelsUsedForRevisionSelection": true,
+    "revisionSelectionNote": "The choice between candidate.1 and candidate.2 was made by reading development results, which is what a development set is for. No coefficient was fitted and no threshold was introduced, but the reported development figures carry the optimism of that selection and are expected to fall on a holdout.",
+    "usesNativeHoldoutCoordinates": false,
+    "usesNativeHoldoutRelativePoses": false,
+    "usesNativeHoldoutEpitopes": false
+  },
+  "frozenIntegrity": {
+    "historicalV05ArtifactsModified": false,
+    "historicalDockqDevelopmentArtifactsModified": false,
+    "candidateV1ArtifactsModified": false,
+    "hardDecoyProtocolModified": false,
+    "hardDecoyTargetFreezePermitted": false,
+    "hardDecoyExecutionAuthorized": false,
+    "attestedV05ScientificCoreModified": false
+  },
+  "requiredPromotionGates": [
+    "Pass candidate-specific tier-carrying, fail-closed, passthrough, caution-reporting, and deterministic-ordering regressions.",
+    "Reproduce the recorded v0.5 evidence-ordinal and delta-SASA development arms exactly, so any future change to the candidate is measured against an unchanged baseline.",
+    "Run the public 17-structure coordinate panel and account for every ranking change against the v0.5 ordinal.",
+    "Specify, in advance and in writing, the ranking arm, the primary metric, and the cutoff to be reported from the hard-decoy holdout, before that holdout is executed. The metric-integrity finding recorded above is the reason the metric must be named in advance and not chosen afterwards.",
+    "Execute the hard-decoy holdout exactly once and report the result irrespective of outcome.",
+    "Create a new v0.6 implementation attestation and preserve all v0.5 attestations byte-for-byte.",
+    "Route production ranking to the candidate only after the preceding gates pass."
+  ],
+  "knownLimitations": [
+    "The development pilot is a native-derived local rigid-body perturbation grid with 63.6% positives. It is an easier distribution than the prospectively specified hard-decoy protocol, and candidate performance is expected to fall on harder decoys.",
+    "Five targets provide far less independent information than 360 poses suggests, because poses drawn from one complex are strongly correlated. An expected precision of 1.0 at rank 1 across five targets is consistent with a true rate well below 1.",
+    "Target-macro AUROC of 0.772 is a ranking prior, not a filter. It does not justify presenting the ranking as a verdict.",
+    "The candidate inherits every weakness of the shipped tier boundaries, including the clash-free requirement for 'supported', which bars 96.9% of CAPRI high or medium development poses from that tier. The candidate does not fix this; it declines to make it worse.",
+    "Burial scales with interface size, so scores are not comparable between different complexes, and the rank key is meaningful only within one target.",
+    "The lexicographic key inherits the discontinuity of the shipped tier boundaries. Two poses either side of a boundary are ordered by the boundary and not by their burial, however close their geometry.",
+    "Neither candidate was tested against poses generated by docking rather than by perturbing a native structure. The overshoot regime documented here was reachable only because the perturbation grid drives chains into one another; its prevalence under a real docking funnel is unmeasured."
+  ],
+  "claimFlags": {
+    "improvesBindingPrediction": false,
+    "improvesAffinityPrediction": false,
+    "improvesPoseCorrectnessPrediction": false,
+    "validatesCandidateRanking": false,
+    "establishesGeneralization": false,
+    "constitutesIndependentHoldoutEvidence": false,
+    "establishesExperimentalBinding": false
+  }
+}
