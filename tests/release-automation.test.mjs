@@ -68,7 +68,7 @@ test("CI and release workflows use full-SHA official actions and separated assur
   for (const command of [
     /^\s*run: npm ci\s*$/mu,
     /^\s*npm ls --all\s*$/mu,
-    /^\s*npm audit --audit-level=moderate\s*$/mu,
+    /^\s*node scripts\/audit-advisories\.mjs\s*$/mu,
     /^\s*npm audit --omit=dev --audit-level=moderate\s*$/mu,
     /^\s*run: npm run test:release\s*$/mu,
   ]) {
@@ -101,7 +101,7 @@ test("CI and release workflows use full-SHA official actions and separated assur
   for (const command of [
     /^\s*run: npm ci\s*$/mu,
     /^\s*npm ls --all\s*$/mu,
-    /^\s*npm audit --audit-level=moderate\s*$/mu,
+    /^\s*node scripts\/audit-advisories\.mjs\s*$/mu,
     /^\s*npm audit --omit=dev --audit-level=moderate\s*$/mu,
     /^\s*run: npm run test:release\s*$/mu,
   ]) {

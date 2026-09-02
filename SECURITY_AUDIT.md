@@ -9,13 +9,40 @@ After a clean `npm ci`, the current dependency state reports:
 | Gate | Result |
 |---|---:|
 | `npm ls --all` | exit 0 |
-| `npm audit --audit-level=moderate` | 0 vulnerabilities |
+| `node scripts/audit-advisories.mjs` (full tree, allowlist-aware) | pass, 2 reviewed exceptions |
 | `npm audit --omit=dev --audit-level=moderate` | 0 vulnerabilities |
 | `npm audit --prefix qa --audit-level=moderate` | 0 vulnerabilities |
 
-No advisory is suppressed or allowlisted.
+Two advisories are allowlisted, both against `browserslist` and both development-only. They are recorded with their justification, scope and review date in [`security-advisory-allowlist.json`](./security-advisory-allowlist.json) and enforced by `scripts/audit-advisories.mjs`. Nothing else is suppressed. See the 2026-09-02 amendment below.
 
-On the reviewed Linux host, npm 11.9.0 also prints three `extraneous` annotations after a pristine install: lockfile-pinned optional `@img/sharp-wasm32` 0.35.2 and 0.35.4 packages plus their `@emnapi/runtime` 1.11.3 dependency. Repeating `npm prune` leaves the same optional-platform annotations. Every named package has a registry URL and integrity digest in `package-lock.json`; `npm ls --all` exits 0, reports no invalid or missing dependency, and both full and production audits remain at zero vulnerabilities. This npm optional-dependency accounting is recorded for transparency and is not treated as a dirty source tree or a failed installation. A changed package set, nonzero graph exit, invalid dependency, or audit finding remains release-blocking.
+On the reviewed Linux host, npm 11.9.0 also prints three `extraneous` annotations after a pristine install: lockfile-pinned optional `@img/sharp-wasm32` 0.35.2 and 0.35.4 packages plus their `@emnapi/runtime` 1.11.3 dependency. Repeating `npm prune` leaves the same optional-platform annotations. Every named package has a registry URL and integrity digest in `package-lock.json`; `npm ls --all` exits 0, reports no invalid or missing dependency, and the production audit remains at zero vulnerabilities. This npm optional-dependency accounting is recorded for transparency and is not treated as a dirty source tree or a failed installation. A changed package set, nonzero graph exit, invalid dependency, or audit finding remains release-blocking.
+
+## Amendment, 2026-09-02: allowlisted development-only advisories
+
+A `browserslist` advisory pair (GHSA-c83g-rgw3-j3cx, GHSA-73wf-gq98-2v4g, both high) began failing the
+full-tree gate. Both are build-time only: `browserslist` reaches the graph through `eslint-config-next`
+and `react-server-dom-webpack`, is absent from the production dependency tree, and
+`npm audit --omit=dev --audit-level=moderate` continues to report zero vulnerabilities, so no ConfoVHH
+user is exposed.
+
+The fix is a five-package lockfile bump that clears both advisories. It is deliberately **not** applied
+yet. The root `package-lock.json` digest is bound into the frozen pre-label numbering contract at
+`validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json`, whose status is
+`VHH_SEQUENCE_PREGRAPH_RULE_FROZEN` with `targetFreezePermitted: false` and `executionAuthorized: false`.
+That freeze exists so the analysis environment cannot move before the hard-decoy holdout is labelled and
+executed, and the recorded remediation for changing it requires regenerating every profile, pair, matrix
+row and component. Moving a pre-registration freeze to clear a build-tool advisory is the wrong trade;
+the bump belongs in the next pre-registration window, with the regeneration the contract requires.
+
+To keep the exception visible rather than silent, the full-tree gate is now
+`scripts/audit-advisories.mjs`, which fails on any advisory at or above moderate that is not listed in
+`security-advisory-allowlist.json`. Two properties are not waivable: an advisory reachable from the
+production tree fails even when allowlisted, and an entry past its `reviewBy` date fails. Both entries
+are set to `reviewBy` 2026-12-01, so the exception cannot outlive its review.
+
+Structural note for the next advisory: the contract pins the entire root lockfile, so any dependency
+patch anywhere in the tree collides with a numbering attestation it has no relationship to. Narrowing
+that binding to the dependencies the numbering engine actually uses would remove the collision.
 
 ## Patched cohort
 

@@ -101,7 +101,7 @@ jobs:
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
         run: |
           npm ls --all
-          npm audit --audit-level=moderate
+          node scripts/audit-advisories.mjs
           npm audit --omit=dev --audit-level=moderate
       - name: Re-run the complete offline release gate
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
