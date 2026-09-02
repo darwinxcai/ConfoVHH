@@ -6,6 +6,14 @@ import path from "node:path";
 import type { Plugin } from "vite";
 
 /**
+ * Used by the static Vercel build (vite.vercel.config.ts).
+ *
+ * vite.config.ts, which drives the Cloudflare Worker build, deliberately keeps
+ * its own inline copy of this transform. tests/ui-components.test.mjs asserts
+ * that file's literal source text, so the two cannot be merged without changing
+ * a frozen test. Any fix here should be mirrored there by hand until that
+ * pinning is lifted.
+ *
  * immunum ships wasm-bindgen glue that boots its WebAssembly module through a
  * Node-only `fs` read. That loader cannot run in a browser Web Worker, so the
  * production bundle inlines the module bytes instead.
