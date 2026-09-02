@@ -1,0 +1,34 @@
+{
+  "$schema-note": "Consumed by scripts/audit-advisories.mjs. Each entry excuses one advisory identifier at or above minimumSeverity, and only for dependencies absent from the production tree. An advisory reachable from production always fails, allowlisted or not, and an entry past its reviewBy date always fails.",
+  "minimumSeverity": "moderate",
+  "allowed": [
+    {
+      "advisory": "GHSA-c83g-rgw3-j3cx",
+      "package": "browserslist",
+      "severity": "high",
+      "scope": "development-only",
+      "reachableFrom": [
+        "eslint-config-next > eslint-plugin-react-hooks > @babel/core > @babel/helper-compilation-targets",
+        "react-server-dom-webpack > webpack"
+      ],
+      "justification": "Unbounded memory growth in browserslist query caching. browserslist runs only while linting and bundling, over queries committed in this repository, and is absent from the production dependency tree, so no ConfoVHH user is exposed. The fix requires bumping the root lockfile, whose SHA-256 is bound into the frozen pre-label numbering contract at validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json. That freeze exists so the analysis environment cannot move before the hard-decoy holdout is labelled and executed.",
+      "resolution": "Apply the dependency bump at the next pre-registration window, together with the artifact regeneration the frozen contract requires.",
+      "recordedOn": "2026-09-02",
+      "reviewBy": "2026-12-01"
+    },
+    {
+      "advisory": "GHSA-73wf-gq98-2v4g",
+      "package": "browserslist",
+      "severity": "high",
+      "scope": "development-only",
+      "reachableFrom": [
+        "eslint-config-next > eslint-plugin-react-hooks > @babel/core > @babel/helper-compilation-targets",
+        "react-server-dom-webpack > webpack"
+      ],
+      "justification": "Crash and prototype write when browserslist parses an untrusted browserslist-stats.json. This repository ships no browserslist-stats.json and never parses one from an external source. As above, browserslist is build-time only and absent from the production dependency tree.",
+      "resolution": "Apply the dependency bump at the next pre-registration window, together with the artifact regeneration the frozen contract requires.",
+      "recordedOn": "2026-09-02",
+      "reviewBy": "2026-12-01"
+    }
+  ]
+}
