@@ -35,6 +35,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import {
+  poseEvidenceInputFromAuditV06,
   scorePoseEvidenceV06,
   POSE_EVIDENCE_V06_POLICY,
   POSE_EVIDENCE_V06_TIER_ORDER,
@@ -122,7 +123,7 @@ const round = (value) => (Number.isFinite(value) ? Number(value.toFixed(12)) : n
  * dropped, matching the pilot's documented missing-value policy for the CDR arm.
  */
 function scoreForArm(pose, arm) {
-  const evidence = scorePoseEvidenceV06(pose.audit);
+  const evidence = scorePoseEvidenceV06(poseEvidenceInputFromAuditV06(pose.audit));
   const burial = evidence.burialScore ?? 0;
   switch (arm) {
     case "confovhh_evidence_v0_4":
@@ -379,7 +380,7 @@ async function main() {
   const cautionCounts = {};
   const tierCounts = {};
   for (const pose of poses) {
-    const evidence = scorePoseEvidenceV06(pose.audit);
+    const evidence = scorePoseEvidenceV06(poseEvidenceInputFromAuditV06(pose.audit));
     if (evidence.assessability === "assessable") assessable += 1;
     else notAssessable += 1;
     tierCounts[evidence.shippedEvidenceLevel] =

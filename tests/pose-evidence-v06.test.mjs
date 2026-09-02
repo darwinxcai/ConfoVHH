@@ -11,6 +11,7 @@ import {
   POSE_EVIDENCE_V06_CANDIDATE_VERSION,
   POSE_EVIDENCE_V06_POLICY,
   POSE_EVIDENCE_V06_TIER_ORDER,
+  poseEvidenceInputFromAuditV06,
   rankPosesWithinTargetV06,
   scorePoseEvidenceV06,
 } from "../lib/pose-evidence-v06.ts";
@@ -78,6 +79,42 @@ test("the shipped evidence level is carried through, never recomputed", () => {
   // pilot's own scoreForArm collapses them. Splitting them would move the
   // baseline this candidate is measured against.
   assert.equal(POSE_EVIDENCE_V06_TIER_ORDER.limited, POSE_EVIDENCE_V06_TIER_ORDER["not-assessable"]);
+});
+
+test("the audit adapter reads both numbering shapes identically", () => {
+  // A live analyzeInterface result nests numbering; the recorded development
+  // ledger flattens it. Two mappings would let the replay and the public panel
+  // disagree about which poses raise a numbering caution.
+  const flattened = assessablePose({ imgtNumberingStatus: "unavailable" });
+  const withoutFlattened = assessablePose();
+  delete withoutFlattened.imgtNumberingStatus;
+  const nested = { ...withoutFlattened, vhhNumbering: { status: "unavailable" } };
+
+  assert.deepEqual(
+    poseEvidenceInputFromAuditV06(nested),
+    poseEvidenceInputFromAuditV06(flattened),
+  );
+  assert.deepEqual(
+    scorePoseEvidenceV06(poseEvidenceInputFromAuditV06(nested)).cautions,
+    scorePoseEvidenceV06(poseEvidenceInputFromAuditV06(flattened)).cautions,
+  );
+
+  // Absent on both shapes means "not reported", not "unnumbered": inventing a
+  // status here would raise a caution on every pose the panel scores.
+  assert.equal(
+    poseEvidenceInputFromAuditV06(withoutFlattened).imgtNumberingStatus,
+    null,
+  );
+  assert.deepEqual(
+    scorePoseEvidenceV06(poseEvidenceInputFromAuditV06(withoutFlattened)).cautions,
+    [],
+  );
+
+  // The adapter carries the ranking inputs verbatim; it must not reshape them.
+  const numbered = poseEvidenceInputFromAuditV06(assessablePose());
+  assert.equal(numbered.evidenceLevel, "mixed");
+  assert.equal(numbered.halfDeltaSasaInterfaceAreaAngstrom2, 900);
+  assert.equal(numbered.imgtNumberingStatus, "numbered");
 });
 
 test("the secondary key is interface burial passed through unchanged", () => {

@@ -1,0 +1,55 @@
+name: Public coordinate panel
+
+# Manual only, on purpose. This job downloads 17 structures from files.rcsb.org,
+# so wiring it into every pull request would make the merge gate depend on an
+# external service the repository does not control. It is a promotion gate that
+# is run deliberately and whose artifact is reviewed and committed, not a
+# per-commit check.
+#
+# It runs only the v0.6 pose-evidence panel, which writes a new file. The v0.6
+# VHH-numbering differential is deliberately NOT wired up here: its output is
+# already executed and is hash-bound by that candidate's postlabel replay, so
+# re-running it from a workflow could overwrite frozen evidence.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-coordinate-panel-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  panel:
+    name: Public 17-structure coordinate panel
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install patched product dependencies
+        run: npm ci
+      - name: Run the pose-evidence candidate panel
+        run: node scripts/run-v06-pose-evidence-public-panel.mjs --write
+      - name: Confirm nothing outside the candidate directory changed
+        run: |
+          git --no-pager diff --stat
+          test -z "$(git status --porcelain -- . ':!validation/v0.6-pose-evidence-candidate-v2')"
+      # Uploaded rather than committed: the artifact is evidence, and evidence is
+      # reviewed and committed deliberately, not pushed by a workflow.
+      - name: Upload panel artifacts
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: public-coordinate-panel
+          path: |
+            validation/v0.6-pose-evidence-candidate-v2/public-panel.json
+            validation/v0.6-pose-evidence-candidate-v2/public-panel.sha256
+          if-no-files-found: error
+          retention-days: 90

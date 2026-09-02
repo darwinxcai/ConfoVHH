@@ -145,6 +145,36 @@ export interface PoseEvidenceInputV06 {
   imgtNumberingStatus?: string | null;
 }
 
+/**
+ * The two shapes an interface audit reaches this module in.
+ *
+ * A live `analyzeInterface` result nests numbering under `vhhNumbering.status`;
+ * the recorded development ledger flattens it to `imgtNumberingStatus`. Both are
+ * the same measurement, and reading them through one adapter keeps the replay
+ * and the public panel from drifting into two different mappings.
+ */
+export interface PoseEvidenceAuditLikeV06
+  extends Omit<PoseEvidenceInputV06, "imgtNumberingStatus"> {
+  imgtNumberingStatus?: string | null;
+  vhhNumbering?: { status?: string | null } | null;
+}
+
+export function poseEvidenceInputFromAuditV06(
+  audit: PoseEvidenceAuditLikeV06,
+): PoseEvidenceInputV06 {
+  return {
+    evidenceLevel: audit.evidenceLevel,
+    contactPairCount: audit.contactPairCount,
+    receptorInterfaceResidues: audit.receptorInterfaceResidues,
+    vhhInterfaceResidues: audit.vhhInterfaceResidues,
+    halfDeltaSasaInterfaceAreaAngstrom2: audit.halfDeltaSasaInterfaceAreaAngstrom2,
+    severeClashCount: audit.severeClashCount,
+    maximumOverlapAngstrom: audit.maximumOverlapAngstrom,
+    imgtNumberingStatus:
+      audit.imgtNumberingStatus ?? audit.vhhNumbering?.status ?? null,
+  };
+}
+
 export interface PoseEvidenceV06 {
   version: typeof POSE_EVIDENCE_V06_CANDIDATE_VERSION;
   assessability: PoseAssessabilityV06;
