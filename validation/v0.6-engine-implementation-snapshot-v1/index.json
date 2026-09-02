@@ -1,0 +1,302 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "frozen-current-implementation-attestation",
+  "scientificLineage": "0.6.0",
+  "supersedes": "validation/v0.5-engine-implementation-snapshot-v1",
+  "v05AttestationsPreservedByteForByte": true,
+  "purpose": "Bind the scientific-core bytes the product currently executes, after the v0.6 VHH numbering promotion moved lib/vhh-numbering.ts. The v0.5 snapshot continues to bind the historical bytes and is not modified. Every other pinned file is carried byte-identical, and the assertion above fails if that stops being true.",
+  "promotion": {
+    "component": "VHH IMGT numbering",
+    "candidateStudy": "validation/v0.6-vhh-numbering-candidate-v1",
+    "expectedChangedFiles": [
+      "lib/vhh-numbering.ts"
+    ],
+    "engineProvenanceCorrected": {
+      "from": "immunum 1.2.0",
+      "to": "immunum 1.3.0",
+      "note": "The previous label was false: the installed and executed engine was already 1.3.0."
+    },
+    "measuredBehaviouralChange": {
+      "developmentPilotPoses": 360,
+      "poseEngineProvenanceChanges": 360,
+      "poseNumberingStatusChanges": 0,
+      "targetRegionAssignmentChanges": 0,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0,
+      "publicPanelStructures": 17,
+      "publicPanelMeasuredFieldChanges": 0
+    }
+  },
+  "attestations": {
+    "public-regression": {
+      "supersedes": {
+        "summary": "validation/v0.5-public-regression-attestation-v1/summary.json",
+        "sourceCommit": "5cb57617b54baa314513486885c402449f643406",
+        "implementationCombinedSha256": "7d98f49b97499c0cefb460c6b06673d2639c9aeef2adfdb2d1198e965766d5f7"
+      },
+      "implementationCombinedSha256": "55242f09fff35b559633b829b51125b8b7061d92174e0036a649311229bb8079",
+      "filesCarriedUnchangedFromV05": [
+        "lib/confovhh.ts",
+        "lib/geometry-constants.ts",
+        "lib/geometry-fit.ts",
+        "lib/mmcif.ts",
+        "scripts/benchmark-mmcif-assemblies.mjs",
+        "scripts/benchmark-public-pdbs.mjs",
+        "scripts/public-coordinate-download.mjs",
+        "scripts/run-v05-public-regression-attestation.mjs",
+        "validation/mmcif-regression-manifest.v1.json"
+      ],
+      "filesChangedSinceV05": [
+        "lib/vhh-numbering.ts",
+        "package-lock.json",
+        "package.json"
+      ],
+      "files": {
+        "lib/confovhh.ts": {
+          "sha256": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+          "v05Sha256": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+          "changed": false
+        },
+        "lib/geometry-constants.ts": {
+          "sha256": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+          "v05Sha256": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+          "changed": false
+        },
+        "lib/geometry-fit.ts": {
+          "sha256": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+          "v05Sha256": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+          "changed": false
+        },
+        "lib/mmcif.ts": {
+          "sha256": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+          "v05Sha256": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+          "changed": false
+        },
+        "lib/vhh-numbering.ts": {
+          "sha256": "32157450d56e24994c513fc09b40e7c66b4651c3cbf38b587bb4511a4d4ca1d7",
+          "v05Sha256": "221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+          "changed": true
+        },
+        "package.json": {
+          "sha256": "7da54c9bae9b63301b03ebb39d75a0f54fd8d7ff67664481ae8a023ad35ef0b5",
+          "v05Sha256": "6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+          "changed": true
+        },
+        "package-lock.json": {
+          "sha256": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+          "v05Sha256": "db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+          "changed": true
+        },
+        "scripts/benchmark-mmcif-assemblies.mjs": {
+          "sha256": "1412c0db6fa055c75615b481dcebaa6dc3661884b412aa2d2381e1714c1ba42e",
+          "v05Sha256": "1412c0db6fa055c75615b481dcebaa6dc3661884b412aa2d2381e1714c1ba42e",
+          "changed": false
+        },
+        "scripts/benchmark-public-pdbs.mjs": {
+          "sha256": "ff3b296028330ebb0280921229cfaedd81664bebdab778260992e2169dcca37c",
+          "v05Sha256": "ff3b296028330ebb0280921229cfaedd81664bebdab778260992e2169dcca37c",
+          "changed": false
+        },
+        "scripts/public-coordinate-download.mjs": {
+          "sha256": "7134c92b5513e506c67eb8f416cdf83efe1b1579addb1b085e6280fde88f5488",
+          "v05Sha256": "7134c92b5513e506c67eb8f416cdf83efe1b1579addb1b085e6280fde88f5488",
+          "changed": false
+        },
+        "scripts/run-v05-public-regression-attestation.mjs": {
+          "sha256": "50b2d56cfdd792438e77c5f593f46033fb9c5fc1c2a89d71965e62bc92958808",
+          "v05Sha256": "50b2d56cfdd792438e77c5f593f46033fb9c5fc1c2a89d71965e62bc92958808",
+          "changed": false
+        },
+        "validation/mmcif-regression-manifest.v1.json": {
+          "sha256": "5622c72b90f420462054f2f80fbe37924a4d6bfbcbf367a328f0b2fe356219e5",
+          "v05Sha256": "5622c72b90f420462054f2f80fbe37924a4d6bfbcbf367a328f0b2fe356219e5",
+          "changed": false
+        }
+      }
+    },
+    "dockq-regression-replay": {
+      "supersedes": {
+        "summary": "validation/dockq-v0.5-regression-replay-v1/summary.json",
+        "sourceCommit": "278ae1a74da133778fba5b17bc296a8e37f02e76",
+        "implementationCombinedSha256": "8926de3d4f9db9343a40659d8393d00db2f612572404c1b4bb8a7e41de3260d3"
+      },
+      "implementationCombinedSha256": "f38a299e4e24f6e10d1d3553b13baec8669c938acf7fd17ac4f16df126f8d943",
+      "filesCarriedUnchangedFromV05": [
+        "lib/audit-export.ts",
+        "lib/audit-jobs.ts",
+        "lib/audit-worker-protocol.ts",
+        "lib/audit-worker.ts",
+        "lib/confovhh.ts",
+        "lib/coordinate-parser.ts",
+        "lib/geometry-constants.ts",
+        "lib/geometry-fit.ts",
+        "lib/mmcif.ts",
+        "lib/pose-ensemble.ts",
+        "lib/state-pair.ts",
+        "scripts/dockq-batch.py",
+        "scripts/dockq-replay-comparison.mjs",
+        "scripts/run-dockq-development-pilot.mjs",
+        "scripts/run-dockq-v05-regression-replay.mjs",
+        "validation/dockq-development-pilot-v1/pilot-spec.json",
+        "validation/dockq-development-pilot-v1/source-manifest.json"
+      ],
+      "filesChangedSinceV05": [
+        "lib/vhh-numbering.ts",
+        "package-lock.json",
+        "package.json"
+      ],
+      "files": {
+        "lib/audit-export.ts": {
+          "sha256": "5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+          "v05Sha256": "5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+          "changed": false
+        },
+        "lib/audit-jobs.ts": {
+          "sha256": "79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+          "v05Sha256": "79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+          "changed": false
+        },
+        "lib/audit-worker-protocol.ts": {
+          "sha256": "2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+          "v05Sha256": "2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+          "changed": false
+        },
+        "lib/audit-worker.ts": {
+          "sha256": "9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+          "v05Sha256": "9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+          "changed": false
+        },
+        "lib/confovhh.ts": {
+          "sha256": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+          "v05Sha256": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+          "changed": false
+        },
+        "lib/coordinate-parser.ts": {
+          "sha256": "0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+          "v05Sha256": "0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+          "changed": false
+        },
+        "lib/geometry-constants.ts": {
+          "sha256": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+          "v05Sha256": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+          "changed": false
+        },
+        "lib/geometry-fit.ts": {
+          "sha256": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+          "v05Sha256": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+          "changed": false
+        },
+        "lib/mmcif.ts": {
+          "sha256": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+          "v05Sha256": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+          "changed": false
+        },
+        "lib/pose-ensemble.ts": {
+          "sha256": "c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+          "v05Sha256": "c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+          "changed": false
+        },
+        "lib/state-pair.ts": {
+          "sha256": "d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+          "v05Sha256": "d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+          "changed": false
+        },
+        "lib/vhh-numbering.ts": {
+          "sha256": "32157450d56e24994c513fc09b40e7c66b4651c3cbf38b587bb4511a4d4ca1d7",
+          "v05Sha256": "221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+          "changed": true
+        },
+        "package.json": {
+          "sha256": "7da54c9bae9b63301b03ebb39d75a0f54fd8d7ff67664481ae8a023ad35ef0b5",
+          "v05Sha256": "6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+          "changed": true
+        },
+        "package-lock.json": {
+          "sha256": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+          "v05Sha256": "db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+          "changed": true
+        },
+        "scripts/dockq-batch.py": {
+          "sha256": "53a8981abea8c25724afa34b082d872dec52661fb234897f3c7c5939f85608e2",
+          "v05Sha256": "53a8981abea8c25724afa34b082d872dec52661fb234897f3c7c5939f85608e2",
+          "changed": false
+        },
+        "scripts/dockq-replay-comparison.mjs": {
+          "sha256": "1f782eb097ffcf700e759d68c1cdcffc7d8a2511b2a2100e39c176d56358bfe8",
+          "v05Sha256": "1f782eb097ffcf700e759d68c1cdcffc7d8a2511b2a2100e39c176d56358bfe8",
+          "changed": false
+        },
+        "scripts/run-dockq-development-pilot.mjs": {
+          "sha256": "a67af203faa4b6fd6ebe365c6b47ebba66d8199c9db6651fb2ea532f65d2170d",
+          "v05Sha256": "a67af203faa4b6fd6ebe365c6b47ebba66d8199c9db6651fb2ea532f65d2170d",
+          "changed": false
+        },
+        "scripts/run-dockq-v05-regression-replay.mjs": {
+          "sha256": "ee73137ef5343088e4a39a8571ce3408499cddc9b2f35f20b192b8a8c00bf37b",
+          "v05Sha256": "ee73137ef5343088e4a39a8571ce3408499cddc9b2f35f20b192b8a8c00bf37b",
+          "changed": false
+        },
+        "validation/dockq-development-pilot-v1/pilot-spec.json": {
+          "sha256": "110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc",
+          "v05Sha256": "110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc",
+          "changed": false
+        },
+        "validation/dockq-development-pilot-v1/source-manifest.json": {
+          "sha256": "d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176",
+          "v05Sha256": "d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176",
+          "changed": false
+        }
+      }
+    }
+  },
+  "executedDependencies": {
+    "immunum": {
+      "name": "immunum",
+      "version": "1.3.0",
+      "v05RecordedVersion": "1.2.0",
+      "fileCount": 6,
+      "combinedSha256": "d66f7d770aa89de69a0e85c734b28955baadeb651c2dd60e4b1b02a82d12fb21",
+      "v05CombinedSha256": "b0c5c0214fad3b74a09c5e73e257c421afe40854b61789eb894ad0ea8ae53d97",
+      "files": {
+        "LICENSE": {
+          "bytes": 1064,
+          "sha256": "12bbf05564e72739e874538f016e07c942b8e1095a695a3f118db61f2b130430",
+          "v05Sha256": "12bbf05564e72739e874538f016e07c942b8e1095a695a3f118db61f2b130430",
+          "changed": false
+        },
+        "README.md": {
+          "bytes": 12472,
+          "sha256": "4af495e25be8dc56e59930813a31c67c5e0fae71f9bfd86facfe37d490ee9159",
+          "v05Sha256": "d5ab21cf91508752b32e150cd32ace7cc5de12dd6c2885778b648dc6267bcfc8",
+          "changed": true
+        },
+        "immunum.d.ts": {
+          "bytes": 3708,
+          "sha256": "87eebaa63abe6f531985bc79228cc71dae53d74962778859f77b6e797eb20f15",
+          "v05Sha256": "0b00b87cc306d42306a9853f50d47e037f06640995cd5ae41c1be1b75084c8f2",
+          "changed": true
+        },
+        "immunum.js": {
+          "bytes": 10138,
+          "sha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00",
+          "v05Sha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00",
+          "changed": false
+        },
+        "immunum_bg.wasm": {
+          "bytes": 698218,
+          "sha256": "68804983b37b3746f65d84c9c6c0e703361ea9191fe3edc3d0748cddad2c646b",
+          "v05Sha256": "d7d37ac79611f00c694a5e712fc3a395ef4b8216c58c9805f1bfbd5093e59e32",
+          "changed": true
+        },
+        "package.json": {
+          "bytes": 564,
+          "sha256": "733c9d00636ec6b88ba3ff7584ecc2fb77380eb5d65750cdcacdd9214299b098",
+          "v05Sha256": "d4ed5f38d8e94a9f3d746ef9d391f7f1675ace313c572b946862647e8c31c559",
+          "changed": true
+        }
+      }
+    }
+  }
+}

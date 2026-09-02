@@ -1,0 +1,28 @@
+{
+  "name": "immunum",
+  "collaborators": [
+    "ENPICOM <dev@enpicom.com>"
+  ],
+  "description": "Fast antibody and T-cell receptor numbering in Rust and Python",
+  "version": "1.3.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ENPICOM/immunum"
+  },
+  "files": [
+    "immunum_bg.wasm",
+    "immunum.js",
+    "immunum.d.ts"
+  ],
+  "main": "immunum.js",
+  "homepage": "https://immunum.enpicom.com",
+  "types": "immunum.d.ts",
+  "keywords": [
+    "antibody",
+    "numbering",
+    "schemes",
+    "python",
+    "imgt"
+  ]
+}

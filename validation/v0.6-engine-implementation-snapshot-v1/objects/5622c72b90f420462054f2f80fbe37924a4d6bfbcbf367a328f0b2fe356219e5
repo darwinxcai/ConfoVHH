@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "benchmarkId": "confovhh-mmcif-and-assembly-regression-v1",
+  "dataRole": "public-native-interface-regression",
+  "retrievedAt": "2026-08-27T00:00:00.000Z",
+  "nativePanel": [
+    { "pdb": "3P0G", "receptor": "A", "vhh": "B", "cifBytes": 396018, "cifSha256": "ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88", "proteinAtoms": 3211, "proteinResidues": 405, "contacts": 46, "deltaSasa": 1729.261867, "clashes": 0, "evidence": "supported" },
+    { "pdb": "4MQS", "receptor": "A", "vhh": "B", "cifBytes": 367528, "cifSha256": "ffa02f41badf80f86e1e961933835269ac1d88989faf8922105ddf8ee649fa6d", "proteinAtoms": 3020, "proteinResidues": 398, "contacts": 31, "deltaSasa": 1541.105275, "clashes": 0, "evidence": "supported" },
+    { "pdb": "4XT1", "receptor": "A", "vhh": "C", "cifBytes": 802247, "cifSha256": "dee05b6977c04cb921049724f8c6425305b365df0740ec1c8abcc40bcb680390", "proteinAtoms": 3692, "proteinResidues": 474, "contacts": 59, "deltaSasa": 2225.620776, "clashes": 1, "evidence": "mixed" },
+    { "pdb": "6DO1", "receptor": "A", "vhh": "C", "cifBytes": 911349, "cifSha256": "502ef802cbda59cb043e7a5822308dd4a03a801a78b79fb430c9225dc28c4e82", "proteinAtoms": 7734, "proteinResidues": 1006, "contacts": 60, "deltaSasa": 2247.016869, "clashes": 1, "evidence": "mixed" },
+    { "pdb": "6B73", "receptor": "B", "vhh": "C", "cifBytes": 1223811, "cifSha256": "91067fbc73dad614d074b4a399be8ff4e633775b9115e0c3631e1462b9574727", "proteinAtoms": 6006, "proteinResidues": 798, "contacts": 56, "deltaSasa": 2074.551615, "clashes": 0, "evidence": "supported" },
+    { "pdb": "6RNK", "receptor": "A", "vhh": "B", "cifBytes": 793799, "cifSha256": "89127969dbc7a5eaf773d0e35283782764045eb0fe813146e24db891ed2e4156", "proteinAtoms": 3281, "proteinResidues": 414, "contacts": 44, "deltaSasa": 1525.084227, "clashes": 0, "evidence": "supported" },
+    { "pdb": "6KNM", "receptor": "B", "vhh": "A", "cifBytes": 789359, "cifSha256": "cf399d3788edce06e31d42771e385e8d6f0b5c7dcca689d63a2bffe95715cab1", "proteinAtoms": 3746, "proteinResidues": 480, "contacts": 91, "deltaSasa": 3238.247715, "clashes": 1, "evidence": "mixed" },
+    { "pdb": "7YM8", "receptor": "A", "vhh": "D", "cifBytes": 508498, "cifSha256": "3d566b37bd7b05ecb8735ef79c13b7b42b0d676de742edb07d36bb2134584052", "proteinAtoms": 4233, "proteinResidues": 556, "contacts": 57, "deltaSasa": 1754.549114, "clashes": 0, "evidence": "supported" },
+    { "pdb": "8QOT", "receptor": "A", "vhh": "B", "cifBytes": 892637, "cifSha256": "698408564ac02831d217dceb9b9406dce6d322e58edf360994a495f4f2275c16", "proteinAtoms": 7482, "proteinResidues": 968, "contacts": 49, "deltaSasa": 2136.926740, "clashes": 0, "evidence": "supported" },
+    { "pdb": "8FCZ", "receptor": "A", "vhh": "C", "cifBytes": 754801, "cifSha256": "a2f63c277566d750d76d403f3f07066781fd85505d7597c9edb35a7eac274799", "proteinAtoms": 6627, "proteinResidues": 845, "contacts": 20, "deltaSasa": 1022.353799, "clashes": 0, "evidence": "supported" },
+    { "pdb": "7L1V", "receptor": "R", "vhh": "S", "cifBytes": 1127762, "cifSha256": "88a726e52d07675072c714402d35c304e3d60f402416e2d9cef454b12b6b81ee", "proteinAtoms": 9561, "proteinResidues": 1253, "contacts": 55, "deltaSasa": 2027.838328, "clashes": 2, "evidence": "mixed" },
+    { "pdb": "6O3C", "receptor": "A", "vhh": "B", "cifBytes": 642120, "cifSha256": "80ac4900170684ef46465d1a60178c1f79e561676b94f9c7b96cb9de9167a03e", "proteinAtoms": 4648, "proteinResidues": 606, "contacts": 66, "deltaSasa": 2329.473121, "clashes": 0, "evidence": "supported" },
+    { "pdb": "8QW4", "receptor": "A", "vhh": "B", "cifBytes": 405051, "cifSha256": "417b6f9149f61cd7174eeec8d0b252c444b1cba223aebbc5cfa1c9ba6118c53f", "proteinAtoms": 3479, "proteinResidues": 434, "contacts": 36, "deltaSasa": 1826.268074, "clashes": 0, "evidence": "supported" },
+    { "pdb": "5JQH", "receptor": "A", "vhh": "C", "cifBytes": 1543593, "cifSha256": "03d10f9ec14312645651bc0accd550f758a6b67f4d805efbb2098aab78a011e2", "proteinAtoms": 7601, "proteinResidues": 1030, "contacts": 64, "deltaSasa": 1615.892686, "clashes": 1, "evidence": "mixed" },
+    { "pdb": "6VI4", "receptor": "B", "vhh": "C", "cifBytes": 685503, "cifSha256": "88bc3a01fc1d3c72d0d71d001d5dcf6dd349825c1b141d3ff6be26edcb942cca", "proteinAtoms": 5951, "proteinResidues": 794, "contacts": 29, "deltaSasa": 1172.682242, "clashes": 1, "evidence": "mixed" },
+    { "pdb": "5C1M", "receptor": "A", "vhh": "B", "cifBytes": 783145, "cifSha256": "e561b0670e874a32fc07620e6fb44444d7b0102aff84b9826882eaa69c787096", "proteinAtoms": 3249, "proteinResidues": 413, "contacts": 57, "deltaSasa": 2380.942515, "clashes": 0, "evidence": "supported" },
+    { "pdb": "6IBL", "receptor": "A", "vhh": "C", "cifBytes": 920165, "cifSha256": "6fe3e4c9e524f652e25207ab6b238868cae1f72cf1c51ede6b5649dc29a9e8b7", "proteinAtoms": 7984, "proteinResidues": 1027, "contacts": 72, "deltaSasa": 2367.561338, "clashes": 0, "evidence": "supported" }
+  ],
+  "assemblyGoldens": [
+    { "pdb": "6VI4", "assemblyId": "1", "sourceBytes": 685503, "sourceSha256": "88bc3a01fc1d3c72d0d71d001d5dcf6dd349825c1b141d3ff6be26edcb942cca", "assemblyBytes": 703076, "assemblySha256": "dd64f380821bd13cc29aabb540bdf12b8e339628e306706bb96fbd879dd660e5", "proteinAtoms": 5951, "proteinChains": 4, "proteinResidues": 794 },
+    { "pdb": "1TRZ", "assemblyId": "3", "sourceBytes": 166990, "sourceSha256": "c09212b60ec05abc195ded6a30f630877eb00ee186b797133543c2d34aef3b45", "assemblyBytes": 326036, "assemblySha256": "00f62a269e15798f1f17c178f929484f9cd7df80eafb025785b6dbb13b4b0411", "proteinAtoms": 2373, "proteinChains": 12, "proteinResidues": 306 },
+    { "pdb": "3C70", "assemblyId": "1", "sourceBytes": 817668, "sourceSha256": "a3e5e2bc4997710ba916b6f8b6fd01acd85d9e6912fd063b2ac79b4d581fbb88", "assemblyBytes": 1799364, "assemblySha256": "a11b363a056512faa79ac74931350684d34f8a3dcf5d1d21e6ce9fd7e2c6610e", "proteinAtoms": 4114, "proteinChains": 2, "proteinResidues": 512 },
+    { "pdb": "1OUT", "assemblyId": "1", "sourceBytes": 302215, "sourceSha256": "422d5c5ef73a43eb8f5f794bcaeea0d18452d6e45379ef9a6138686862d3dcc5", "assemblyBytes": 549125, "assemblySha256": "a66310f2709af10b19596e17dad7f5050d16b5e7f2914c9f6d6733515d418fc4", "proteinAtoms": 4368, "proteinChains": 4, "proteinResidues": 576 },
+    { "pdb": "4IP9", "assemblyId": "1", "sourceBytes": 369030, "sourceSha256": "7f99acfd7243721913448a240fc84efd7ba47b4e1c8565d8b7330bbae46ef4e4", "assemblyBytes": 1081256, "assemblySha256": "30e5c6d45e919d3e5087b2e05be85dd9a60b214ff28a6122cf7aa07338baee06", "proteinAtoms": 4974, "proteinChains": 6, "proteinResidues": 624 }
+  ],
+  "claims": {
+    "nearNativeRankingValidated": false,
+    "purpose": "Parser, coordinate-transform, and native-interface regression only"
+  }
+}

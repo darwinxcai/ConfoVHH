@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-v0.6-vhh-numbering-candidate-v1",
+  "recordDateUtc": "2026-09-02",
+  "status": "CANDIDATE_PROMOTED_TO_PRODUCTION",
+  "recordKind": "additive-promotion-record",
+  "note": [
+    "This record is additive. design-record.json, postlabel-replay.json, postlabel-replay-plan.json and public-panel-differential.json are unmodified, and lib/vhh-numbering-v06.ts remains byte-identical to the SHA-256 that postlabel-replay.json binds, so that study's candidateFrozenBeforeReplay claim still holds.",
+    "design-record.json therefore still reads productionIntegrated: false. That was true when it was written and is the state the study was conducted under; this record supersedes it rather than editing it."
+  ],
+  "promotion": {
+    "component": "VHH IMGT numbering",
+    "from": "lib/vhh-numbering.ts, v0.5 policy, engine labelled immunum 1.2.0",
+    "to": "lib/vhh-numbering.ts delegating to lib/vhh-numbering-v06.ts, engine labelled immunum 1.3.0",
+    "candidateImplementationModified": false,
+    "productionIntegrated": true,
+    "implementationAttestation": "validation/v0.6-engine-implementation-snapshot-v1",
+    "scientificCoreFilesChanged": ["lib/vhh-numbering.ts"],
+    "v05AttestationsPreservedByteForByte": true
+  },
+  "primaryFinding": {
+    "code": "FALSE_ENGINE_PROVENANCE_IN_SHIPPED_OUTPUT",
+    "description": "Every audit reported IMGT numbering provenance as immunum 1.2.0 while the installed and executed engine was 1.3.0. The label was a hardcoded constant that was not updated when the dependency was upgraded to fix long-CDR3 suffix clipping.",
+    "userVisible": true,
+    "correctedTo": "immunum 1.3.0"
+  },
+  "secondaryChange": {
+    "code": "NUMBERING_ACCEPTANCE_TIGHTENED",
+    "description": "The promoted policy additionally requires the engine's alignment confidence to clear 0.5 explicitly, bounds-checks the query window, type-checks every numbering entry, and cross-checks the number-map-derived IMGT regions against the engine's independent segment() output with complete nonempty FR1/CDR1/FR2/CDR2/FR3/CDR3/FR4 coverage. A chain failing any of these is now reported unavailable rather than numbered on partial evidence.",
+    "direction": "fail-closed"
+  },
+  "measuredBehaviouralChange": {
+    "developmentLedger": {
+      "artifact": "validation/v0.6-vhh-numbering-candidate-v1/postlabel-replay.json",
+      "targets": 5,
+      "poses": 360,
+      "poseEngineProvenanceChanges": 360,
+      "poseNumberingStatusChanges": 0,
+      "targetNumberingStatusChanges": 0,
+      "targetRegionAssignmentChanges": 0,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    },
+    "publicCoordinatePanel": {
+      "artifact": "validation/v0.6-vhh-numbering-candidate-v1/public-panel-differential.json",
+      "structures": 17,
+      "statusChanges": 0,
+      "queryBoundChanges": 0,
+      "cdrLengthChanges": 0,
+      "regionAssignmentChanges": 0,
+      "paratopeShareChanges": 0,
+      "cdr3ShareChanges": 0,
+      "changedContactPairs": 0,
+      "coordinateGeometryRegressions": 0
+    },
+    "summary": "Across every executed comparison, engine provenance is the only field that moves. No numbering status, region assignment, CDR length, contact share, evidence band or ranking input changes."
+  },
+  "promotionGates": {
+    "candidateSpecificRegressionsPass": true,
+    "publicSequencePanelDifferentialExecuted": true,
+    "publicCoordinatePanelExecuted": true,
+    "postLabelDevelopmentReplayExecuted": true,
+    "v06ImplementationAttestationCreated": true,
+    "allV05AttestationsPreservedByteForByte": true,
+    "productionRoutedToCandidate": true
+  },
+  "pinnedByteIntegrity": {
+    "description": "tests/v05-validation-artifacts.test.mjs pins the live scientific-core bytes by SHA-256. Promoting necessarily moves that pin, because lib/vhh-numbering.ts is in the pinned set and there is no route to changing production numbering that does not touch a pinned file.",
+    "pinMoved": true,
+    "pinWeakened": false,
+    "howTheReplacementIsStronger": "Live bytes are now checked against the v0.6 attestation, the v0.5 archived objects are still verified against their own recorded digests, and a new regression asserts that exactly one scientific-core file differs between the two attestations. The previous pin proved only that the core had not drifted; the replacement proves that it drifted in precisely the one file this promotion is about.",
+    "regressionsAdded": [
+      "the v0.6 promotion moved exactly one scientific-core file and preserved every v0.5 attestation",
+      "both implementation snapshots verify against their own checksum manifests"
+    ]
+  },
+  "accessBoundary": {
+    "usesNativeHoldoutCoordinates": false,
+    "usesNativeHoldoutRelativePoses": false,
+    "usesNativeHoldoutEpitopes": false,
+    "usesDockqLabelsForTuning": false,
+    "hardDecoyProtocolModified": false,
+    "hardDecoyTargetFreezePermitted": false,
+    "hardDecoyExecutionAuthorized": false
+  },
+  "claimFlags": {
+    "improvesBindingPrediction": false,
+    "improvesAffinityPrediction": false,
+    "improvesPoseCorrectnessPrediction": false,
+    "improvesCandidateRanking": false,
+    "establishesGeneralization": false,
+    "constitutesIndependentHoldoutEvidence": false,
+    "establishesExperimentalBinding": false
+  },
+  "interpretationBoundary": "This promotion corrects a provenance misstatement and tightens numbering acceptance. It changes no measured scientific output, and it establishes nothing about binding, affinity, specificity, state selectivity or pose correctness."
+}
