@@ -36,7 +36,7 @@ jobs:
       - name: Verify dependency graph and advisories
         run: |
           npm ls --all
-          npm audit --audit-level=moderate
+          node scripts/audit-advisories.mjs
           npm audit --omit=dev --audit-level=moderate
       - name: Full offline release gate
         run: npm run test:release
