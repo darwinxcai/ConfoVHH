@@ -42,6 +42,15 @@ jobs:
         run: |
           git --no-pager diff --stat
           test -z "$(git status --porcelain -- . ':!validation/v0.6-pose-evidence-candidate-v2')"
+      # Echoed as well as uploaded. The upload redirects to blob storage, which
+      # is not reachable from every environment that needs to commit this
+      # evidence, and the record is a few kilobytes. The digest printed beside it
+      # is the one the run computed, so a transcribed copy can be verified rather
+      # than trusted.
+      - name: Print the panel record and its digest
+        run: |
+          sha256sum validation/v0.6-pose-evidence-candidate-v2/public-panel.json
+          cat validation/v0.6-pose-evidence-candidate-v2/public-panel.json
       # Uploaded rather than committed: the artifact is evidence, and evidence is
       # reviewed and committed deliberately, not pushed by a workflow.
       - name: Upload panel artifacts
