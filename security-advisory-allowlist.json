@@ -29,6 +29,19 @@
       "resolution": "Apply the dependency bump at the next pre-registration window, together with the artifact regeneration the frozen contract requires.",
       "recordedOn": "2026-09-02",
       "reviewBy": "2026-12-01"
+    },
+    {
+      "advisory": "GHSA-px8p-9vwx-vf98",
+      "package": "fflate",
+      "severity": "moderate",
+      "scope": "development-only",
+      "reachableFrom": [
+        "vinext > @vercel/og > satori > @shuding/opentype.js"
+      ],
+      "justification": "fflate unzipSync can enter an infinite loop on a malformed ZIP64 archive. ConfoVHH never reaches that code. fflate is pulled in only by vinext's Open Graph image generation, through satori's font parser; vinext is a devDependency that serves the local dev server, the shipped artifact is the static SPA built by vite build --config vite.vercel.config.ts, and `npm ls fflate --omit=dev` is empty. No ConfoVHH source file references fflate or unzipSync, and the product accepts coordinate and PAE files rather than archives, so there is no path by which a user-supplied ZIP reaches this parser. The fix requires bumping the root lockfile, whose SHA-256 (0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54) is bound into the frozen pre-label numbering contract at validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json. That freeze exists so the analysis environment cannot move before the hard-decoy holdout is labelled and executed.",
+      "resolution": "Apply the dependency bump at the next pre-registration window, together with the artifact regeneration the frozen contract requires.",
+      "recordedOn": "2026-09-03",
+      "reviewBy": "2026-12-01"
     }
   ]
 }
