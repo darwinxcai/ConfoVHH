@@ -40,6 +40,13 @@ import {
   clusterBootstrap,
   macroFromPerTarget,
 } from "./panel-extension/metrics.mjs";
+import {
+  centroid,
+  coordinateRmsd,
+  poseToken,
+  poseTransform,
+  transformPoint,
+} from "./panel-extension/geometry.mjs";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const STUDY = path.join(ROOT, "validation", "panel-extension-v1");
@@ -70,68 +77,9 @@ function finite(value, label) {
 }
 
 // ---------------------------------------------------------------------------
-// Geometry. Transcribed from the pilot so the generated distribution matches.
+// Canonical PDB emission. Geometry lives in panel-extension/geometry.mjs, which
+// the equivalence gate replays against all 360 recorded pilot transforms.
 // ---------------------------------------------------------------------------
-
-function unitVector(digest, byteOffset) {
-  const components = [0, 4, 8].map((offset) => (
-    digest.readUInt32BE(byteOffset + offset) / 0xffff_ffff * 2 - 1
-  ));
-  const norm = Math.hypot(...components);
-  if (norm < 1e-12) return byteOffset === 0 ? [1, 0, 0] : [0, 1, 0];
-  return components.map((component) => component / norm);
-}
-
-function rodrigues(axis, angleDegrees) {
-  const [x, y, z] = axis;
-  const angle = angleDegrees * Math.PI / 180;
-  const cosine = Math.cos(angle);
-  const sine = Math.sin(angle);
-  const complement = 1 - cosine;
-  return [
-    [cosine + x * x * complement, x * y * complement - z * sine, x * z * complement + y * sine],
-    [y * x * complement + z * sine, cosine + y * y * complement, y * z * complement - x * sine],
-    [z * x * complement - y * sine, z * y * complement + x * sine, cosine + z * z * complement],
-  ];
-}
-
-function affineMatrix(rotation, pivot, translation) {
-  const rotatedPivot = rotation.map((row) => (
-    row[0] * pivot[0] + row[1] * pivot[1] + row[2] * pivot[2]
-  ));
-  const offset = pivot.map((component, index) => (
-    component - rotatedPivot[index] + translation[index]
-  ));
-  return [
-    [rotation[0][0], rotation[0][1], rotation[0][2], offset[0]],
-    [rotation[1][0], rotation[1][1], rotation[1][2], offset[1]],
-    [rotation[2][0], rotation[2][1], rotation[2][2], offset[2]],
-    [0, 0, 0, 1],
-  ];
-}
-
-function transformPoint(matrix, atom) {
-  return [
-    matrix[0][0] * atom.x + matrix[0][1] * atom.y + matrix[0][2] * atom.z + matrix[0][3],
-    matrix[1][0] * atom.x + matrix[1][1] * atom.y + matrix[1][2] * atom.z + matrix[1][3],
-    matrix[2][0] * atom.x + matrix[2][1] * atom.y + matrix[2][2] * atom.z + matrix[2][3],
-  ];
-}
-
-function transformedStructure(structure, chainId, matrix) {
-  const transformed = structuredClone(structure);
-  const chain = transformed.chains.find((candidate) => candidate.id === chainId);
-  assert.ok(chain, `Missing chain ${chainId} while applying a perturbation`);
-  for (const residue of chain.residues) {
-    for (const atom of residue.atoms) {
-      const [x, y, z] = transformPoint(matrix, atom);
-      atom.x = finite(x, "transformed x coordinate");
-      atom.y = finite(y, "transformed y coordinate");
-      atom.z = finite(z, "transformed z coordinate");
-    }
-  }
-  return transformed;
-}
 
 function atomNameField(name) {
   const clean = name.slice(0, 4);
@@ -195,28 +143,20 @@ function chainAlphaCarbons(structure, chainId) {
   return coordinates;
 }
 
-function centroid(points) {
-  const result = [0, 0, 0];
-  for (const point of points) {
-    for (let index = 0; index < 3; index += 1) result[index] += point[index];
+/** Rewrite one chain's atoms in place on a clone, leaving the other untouched. */
+function transformedStructure(structure, chainId, matrix) {
+  const transformed = structuredClone(structure);
+  const chain = transformed.chains.find((candidate) => candidate.id === chainId);
+  assert.ok(chain, `Missing chain ${chainId} while applying a perturbation`);
+  for (const residue of chain.residues) {
+    for (const atom of residue.atoms) {
+      const [x, y, z] = transformPoint(matrix, atom);
+      atom.x = finite(x, "transformed x coordinate");
+      atom.y = finite(y, "transformed y coordinate");
+      atom.z = finite(z, "transformed z coordinate");
+    }
   }
-  return result.map((value) => value / points.length);
-}
-
-function coordinateRmsd(left, right) {
-  assert.equal(left.length, right.length, "C-alpha arrays differ in length");
-  let sum = 0;
-  for (let index = 0; index < left.length; index += 1) {
-    const dx = left[index][0] - right[index][0];
-    const dy = left[index][1] - right[index][1];
-    const dz = left[index][2] - right[index][2];
-    sum += dx * dx + dy * dy + dz * dz;
-  }
-  return Math.sqrt(sum / left.length);
-}
-
-function poseToken(value) {
-  return Math.round(Number(value) * 10).toString().padStart(4, "0");
+  return transformed;
 }
 
 function auditSnapshot(audit) {
@@ -283,13 +223,15 @@ async function generateTarget(payload) {
     for (const translationMagnitudeAngstrom of generator.translationMagnitudesAngstrom) {
       for (let replicate = 1; replicate <= generator.replicatesPerGridCell; replicate += 1) {
         const poseId = `${target.targetId}-rot${poseToken(angleDegrees)}-trans${poseToken(translationMagnitudeAngstrom)}-rep${replicate}`;
-        const digest = createHash("sha256")
-          .update([benchmarkId, target.targetId, angleDegrees, translationMagnitudeAngstrom, replicate].join("|"))
-          .digest();
-        const rotationAxis = unitVector(digest, 0);
-        const translationDirection = unitVector(digest, 12);
-        const translationVector = translationDirection.map((value) => value * translationMagnitudeAngstrom);
-        const matrix = affineMatrix(rodrigues(rotationAxis, angleDegrees), pivot, translationVector);
+        const transform = poseTransform({
+          benchmarkId,
+          targetId: target.targetId,
+          angleDegrees,
+          translationMagnitudeAngstrom,
+          replicate,
+          pivot,
+        });
+        const matrix = transform.matrixRowMajor4x4;
         const baseRecord = {
           schemaVersion: "1.0.0",
           benchmarkId,
@@ -298,14 +240,14 @@ async function generateTarget(payload) {
           targetId: target.targetId,
           generator: "local-SE3-grid",
           stratum: { angleDegrees, translationMagnitudeAngstrom, replicate },
-          deterministicSeedSha256: digest.toString("hex"),
+          deterministicSeedSha256: transform.deterministicSeedSha256,
           transform: {
             pivotAngstrom: pivot,
-            rotationAxis,
+            rotationAxis: transform.rotationAxis,
             angleDegrees,
-            translationDirection,
+            translationDirection: transform.translationDirection,
             translationMagnitudeAngstrom,
-            translationVectorAngstrom: translationVector,
+            translationVectorAngstrom: transform.translationVectorAngstrom,
             matrixRowMajor4x4: matrix,
             convention: "active x'=R(x-pivot)+pivot+translation",
             coordinateUnits: "angstrom",

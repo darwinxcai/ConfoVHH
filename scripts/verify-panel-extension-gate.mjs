@@ -39,6 +39,7 @@ import {
   clusterBootstrap,
   macroFromPerTarget,
 } from "./panel-extension/metrics.mjs";
+import { poseTransform } from "./panel-extension/geometry.mjs";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const PILOT = path.join(ROOT, "validation", "dockq-development-pilot-v1");
@@ -94,9 +95,11 @@ const pilotSpec = JSON.parse(readFileSync(path.join(PILOT, "pilot-spec.json"), "
 const recorded = JSON.parse(readFileSync(path.join(PILOT, "summary.json"), "utf8"));
 
 const posesByTarget = new Map();
+const ledgerRows = [];
 for (const line of readFileSync(path.join(PILOT, "poses.jsonl"), "utf8").split("\n")) {
   if (!line.trim()) continue;
   const row = JSON.parse(line);
+  ledgerRows.push(row);
   if (!posesByTarget.has(row.targetId)) posesByTarget.set(row.targetId, []);
   posesByTarget.get(row.targetId).push({
     poseId: row.poseId,
@@ -104,6 +107,53 @@ for (const line of readFileSync(path.join(PILOT, "poses.jsonl"), "utf8").split("
     audit: row.audit,
     dockq: row.dockq,
   });
+}
+
+// ---------------------------------------------------------------------------
+// Geometry. The generator's transform code was transcribed from a hash-pinned
+// script, and a transposed matrix index or a byte offset off by four would still
+// produce plausible-looking poses. Every one of the pilot's recorded transforms
+// is recomputed from its stratum and compared to the ledger, which checks the
+// transcription against 360 independent cases across the whole grid.
+// ---------------------------------------------------------------------------
+let geometryChecks = 0;
+for (const row of ledgerRows) {
+  const recomputed = poseTransform({
+    benchmarkId: row.benchmarkId,
+    targetId: row.targetId,
+    angleDegrees: row.stratum.angleDegrees,
+    translationMagnitudeAngstrom: row.stratum.translationMagnitudeAngstrom,
+    replicate: row.stratum.replicate,
+    pivot: row.transform.pivotAngstrom,
+  });
+  // The seed digest is exact: it is a hash, so a single differing input byte
+  // changes it entirely. Everything downstream is floating point and is compared
+  // at the tolerance the rest of this gate uses.
+  if (recomputed.deterministicSeedSha256 !== row.deterministicSeedSha256) {
+    failures.push(
+      `geometry.${row.poseId}.seed: expected ${row.deterministicSeedSha256}, ` +
+        `got ${recomputed.deterministicSeedSha256}`,
+    );
+  }
+  for (const field of ["rotationAxis", "translationDirection", "translationVectorAngstrom"]) {
+    for (let index = 0; index < 3; index += 1) {
+      compare(
+        `geometry.${row.poseId}.${field}[${index}]`,
+        recomputed[field][index],
+        row.transform[field][index],
+      );
+    }
+  }
+  for (let rowIndex = 0; rowIndex < 4; rowIndex += 1) {
+    for (let column = 0; column < 4; column += 1) {
+      compare(
+        `geometry.${row.poseId}.matrix[${rowIndex}][${column}]`,
+        recomputed.matrixRowMajor4x4[rowIndex][column],
+        row.transform.matrixRowMajor4x4[rowIndex][column],
+      );
+    }
+  }
+  geometryChecks += 1;
 }
 
 const targetIds = pilotSpec.targets.map((target) => target.targetId);
@@ -226,6 +276,7 @@ process.stdout.write(
     targets: targetIds.length,
     poses: [...posesByTarget.values()].reduce((sum, poses) => sum + poses.length, 0),
     arms: PILOT_SCORE_ARMS.length,
+    transformsReproduced: geometryChecks,
     macroMetricsMatched: macroChecks,
     bootstrapIntervalsMatched: intervalChecks,
     perTargetMetricsMatched: perTargetChecks,
