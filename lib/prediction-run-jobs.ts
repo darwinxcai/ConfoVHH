@@ -14,6 +14,7 @@ import {
   createSingleAuditExportReport,
   type SingleAuditExportReport,
 } from "./audit-export.ts";
+import { POSE_RANKING_POLICY, rankPoses, scorePoseRanking } from "./pose-ranking.ts";
 import {
   matchEnsembleChains,
   validatePoseEnsembleExportSummary,
@@ -1156,7 +1157,8 @@ function csvCell(value: string | number | null): string {
 export function predictionRunPoseSummaryCsv(result: PredictionRunAuditResult): string {
   const header = [
     "pose_id", "coordinate_file", "coordinate_sha256", "is_reference", "provider",
-    "recurrence_rank", "evidence_level", "contact_pairs", "severe_clashes", "delta_sasa_angstrom2",
+    "recurrence_rank", "ranking_policy_version", "evidence_rank", "interface_burial_angstrom2",
+    "evidence_level", "contact_pairs", "severe_clashes", "delta_sasa_angstrom2",
     "pae_status", "pae_file", "pae_sha256", "receptor_aligned_vhh_evaluated_median_angstrom",
     "vhh_aligned_receptor_evaluated_median_angstrom", "conservative_median_angstrom",
     "contact_pair_share_at_or_below_10_angstrom", "topology_status", "topology_intended_side",
@@ -1167,6 +1169,15 @@ export function predictionRunPoseSummaryCsv(result: PredictionRunAuditResult): s
   const rankByDigest = new Map(
     result.coordinateEnsemble?.poses.map((pose) => [pose.sha256, pose.rank]) ?? [],
   );
+  // Row order is left as audited so this stays a stable evidence table; the
+  // ranking travels as a column the reader can sort on. The decision shortlist
+  // is the surface that is emitted in rank order.
+  const ranking = new Map(
+    rankPoses(
+      result.poseAudits.map((pose) => ({ poseId: pose.id, pose })),
+      (entry) => scorePoseRanking(entry.pose.singleAudit.audit),
+    ).map((entry) => [entry.poseId, entry]),
+  );
   const rows = result.poseAudits.map((pose) => [
     pose.id,
     pose.coordinate.filename,
@@ -1174,6 +1185,9 @@ export function predictionRunPoseSummaryCsv(result: PredictionRunAuditResult): s
     pose.isReference,
     pose.provider,
     rankByDigest.get(pose.coordinate.sha256) ?? null,
+    POSE_RANKING_POLICY.version,
+    ranking.get(pose.id)?.evidenceRank ?? null,
+    ranking.get(pose.id)?.evidence.burialScore ?? null,
     pose.singleAudit.audit.evidenceLevel,
     pose.singleAudit.audit.contactPairCount,
     pose.singleAudit.audit.severeClashCount,
