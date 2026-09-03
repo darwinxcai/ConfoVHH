@@ -1,0 +1,141 @@
+name: Panel extension study
+
+# Manual only, and deliberately so. This job downloads seventeen structures from
+# files.rcsb.org, generates 1,224 perturbed poses, runs a SASA-bearing interface
+# audit on every one, and labels them with DockQ. It is a pre-registered study
+# execution, not a per-commit check, and wiring it into the merge gate would make
+# that gate depend on an external service and on roughly half an hour of compute.
+#
+# The study protocol is frozen at validation/panel-extension-v1/study-spec.json.
+# The runner verifies that freeze and reproduces the five-target pilot's recorded
+# numbers before it downloads anything, so a drifted protocol or a divergent
+# estimator aborts the run rather than producing an uninterpretable number.
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: >-
+          Optional comma-separated PDB IDs, for rehearsing the pipeline on a
+          subset. Leave empty for the full pre-registered seventeen. A subset run
+          writes a results artifact whose primary population is incomplete, so it
+          is for rehearsal only and must not be reported.
+        required: false
+        default: ""
+
+permissions:
+  # Write is needed only to commit the study record back to the dispatch branch,
+  # and the step that uses it refuses to run on the default branch. Evidence
+  # still reaches main through a reviewed pull request, never from here.
+  contents: write
+
+concurrency:
+  group: panel-extension-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  study:
+    name: Local-SE(3) panel extension
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Set up Python 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.12"
+      - name: Install patched product dependencies
+        run: npm ci
+
+      # DockQ is pinned by version AND by the source digest the pilot recorded,
+      # so this study is labelled by the same scorer the five-target baseline was.
+      # --no-binary forces the sdist, which is what that digest is of.
+      - name: Install pinned DockQ
+        run: |
+          set -euo pipefail
+          EXPECTED=$(node -e 'process.stdout.write(require("./validation/panel-extension-v1/study-spec.json").dockqPolicy.pypiSourceSha256)')
+          python -m venv .bench-venv
+          ./.bench-venv/bin/python -m pip install --upgrade pip
+          ./.bench-venv/bin/python -m pip download --no-binary :all: --no-deps --dest .dockq-src "DockQ==2.1.3"
+          SDIST=$(ls .dockq-src/DockQ-2.1.3.tar.gz)
+          ACTUAL=$(sha256sum "$SDIST" | cut -d' ' -f1)
+          echo "DockQ sdist digest: $ACTUAL"
+          if [ "$ACTUAL" != "$EXPECTED" ]; then
+            echo "DockQ source digest does not match the frozen study spec." >&2
+            echo "  expected $EXPECTED" >&2
+            echo "  actual   $ACTUAL" >&2
+            exit 1
+          fi
+          ./.bench-venv/bin/python -m pip install "$SDIST"
+          ./.bench-venv/bin/python -c 'import importlib.metadata as m; print("DockQ", m.version("DockQ"))'
+
+      # Run separately and first so the transcript shows the gate passing before
+      # any structure is fetched. The runner re-runs it too; this is for the log.
+      - name: Verify the protocol freeze and the estimator equivalence gate
+        run: node scripts/verify-panel-extension-gate.mjs
+
+      - name: Execute the study
+        run: |
+          set -euo pipefail
+          if [ -n "${{ inputs.targets }}" ]; then
+            node scripts/run-panel-extension.mjs --targets "${{ inputs.targets }}"
+          else
+            node scripts/run-panel-extension.mjs
+          fi
+
+      - name: Confirm nothing outside the study directory changed
+        run: |
+          git --no-pager diff --stat
+          test -z "$(git status --porcelain -- . ':!validation/panel-extension-v1')"
+
+      - name: Print the outcome and digests
+        run: |
+          sha256sum validation/panel-extension-v1/results.json
+          node -e '
+            const r = require("./validation/panel-extension-v1/results.json");
+            console.log(JSON.stringify({
+              outcome: r.prespecifiedOutcome,
+              poseAccounting: r.poseAccounting,
+            }, null, 2));
+          '
+
+      - name: Commit the study record to the dispatch branch
+        if: github.ref_name != github.event.repository.default_branch
+        run: |
+          set -euo pipefail
+          # --porcelain, not `git diff`: on a first run these are NEW files, and
+          # `git diff` reports only tracked changes, so it would call an untracked
+          # record "unchanged" and skip the commit while still reporting success.
+          if [ -z "$(git status --porcelain -- validation/panel-extension-v1)" ]; then
+            echo "Study record unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add validation/panel-extension-v1/results.json \
+                  validation/panel-extension-v1/results.sha256 \
+                  validation/panel-extension-v1/poses.jsonl \
+                  validation/panel-extension-v1/targets.jsonl
+          git commit -m "Record the executed panel extension study
+
+          Produced by ${GITHUB_WORKFLOW} run ${GITHUB_RUN_ID} on ${GITHUB_SHA}."
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - name: Upload study artifacts
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: panel-extension-study
+          path: |
+            validation/panel-extension-v1/results.json
+            validation/panel-extension-v1/results.sha256
+            validation/panel-extension-v1/poses.jsonl
+            validation/panel-extension-v1/targets.jsonl
+          if-no-files-found: warn
+          retention-days: 90
