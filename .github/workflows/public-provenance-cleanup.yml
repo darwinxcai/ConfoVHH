@@ -52,7 +52,20 @@ jobs:
           path.write_text(text.replace(old, new), encoding="utf-8")
           PY
 
-      - name: Run complete release gate
+      - name: Commit reviewed corrections before the clean-tree release gate
+        run: |
+          git diff --check
+          git status --short
+          test -n "$(git status --porcelain)"
+          git config user.name "Darwin Cai"
+          git config user.email "darwinxcai@gmail.com"
+          git add README.md PROVENANCE.md DEPENDENCY_POLICY.md VALIDATION.md \
+            lib/release-validation.ts tests/benchmark-artifacts.test.mjs
+          git commit -m "Apply public provenance cleanup (staged for validation)"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          test -z "$(git status --porcelain --untracked-files=no)"
+
+      - name: Run complete release gate from a clean committed tree
         run: npm run test:release
 
       - name: Remove vendor boilerplate from merged PR descriptions
@@ -73,18 +86,14 @@ jobs:
             fi
           done
 
-      - name: Commit reviewed documentation and metadata corrections
+      - name: Remove one-time cleanup machinery
         run: |
           rm scripts/public-provenance-cleanup.py
           rm .github/workflows/public-provenance-cleanup.yml
           git diff --check
-          git status --short
-          test -n "$(git status --porcelain)"
           git config user.name "Darwin Cai"
           git config user.email "darwinxcai@gmail.com"
-          git add README.md PROVENANCE.md DEPENDENCY_POLICY.md VALIDATION.md \
-            lib/release-validation.ts tests/benchmark-artifacts.test.mjs \
-            scripts/public-provenance-cleanup.py \
+          git add -A scripts/public-provenance-cleanup.py \
             .github/workflows/public-provenance-cleanup.yml
-          git commit -m "Apply public provenance cleanup"
+          git commit -m "Apply public provenance cleanup finalization"
           git push origin "HEAD:${GITHUB_REF_NAME}"
