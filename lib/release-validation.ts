@@ -1,12 +1,18 @@
 export const RELEASE_VALIDATION = {
-  schemaVersion: "1.5.0",
+  schemaVersion: "1.6.0",
   softwareVersion: "0.5.0",
   engineLineage: {
-    scientificCoreSourceMatchesAttestedV05: true,
-    executedImmunumMatchesAttestedV05: true,
+    canonicalAuditVersion: "0.5.0",
+    currentScientificLineage: "0.6.0",
+    scientificCoreSourceMatchesAttestedV05: false,
+    executedImmunumMatchesAttestedV05: false,
+    v05HistoricalArtifactsPreservedByteForByte: true,
     dependencyEnvironmentMatchesAttestedV05: false,
-    implementationSnapshot: "validation/v0.5-engine-implementation-snapshot-v1",
-    statement: "The current product preserves the v0.5 scientific-core source and executed immunum 1.2.0 bytes, but uses a separately patched dependency/build environment. Byte-identical equivalence to the historical v0.5 lockfile is not claimed.",
+    implementationSnapshot: "validation/v0.6-engine-implementation-snapshot-v1",
+    historicalImplementationSnapshot: "validation/v0.5-engine-implementation-snapshot-v1",
+    currentVhhNumberingPolicy: "0.6.0",
+    currentExecutedImmunum: "1.3.0",
+    statement: "The canonical audit and geometry version remains 0.5.0, but production VHH numbering is the validated v0.6 policy and executes immunum 1.3.0. Historical v0.5 scientific-core objects and executed immunum 1.2.0 bytes remain preserved byte-for-byte; the current dependency/build environment is separately patched. Byte-identical equivalence to the historical v0.5 lockfile is not claimed.",
   },
   runtime: {
     minimumNodeVersion: "22.18.0",

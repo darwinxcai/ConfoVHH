@@ -33,10 +33,23 @@ function expectedCapriClass(dockq) {
 }
 
 test("release metadata namespaces, versions, bounds, and claim barriers are explicit", () => {
-  assert.equal(RELEASE_VALIDATION.schemaVersion, "1.5.0");
-  assert.equal(RELEASE_VALIDATION.engineLineage.scientificCoreSourceMatchesAttestedV05, true);
-  assert.equal(RELEASE_VALIDATION.engineLineage.executedImmunumMatchesAttestedV05, true);
+  assert.equal(RELEASE_VALIDATION.schemaVersion, "1.6.0");
+  assert.equal(RELEASE_VALIDATION.engineLineage.canonicalAuditVersion, "0.5.0");
+  assert.equal(RELEASE_VALIDATION.engineLineage.currentScientificLineage, "0.6.0");
+  assert.equal(RELEASE_VALIDATION.engineLineage.scientificCoreSourceMatchesAttestedV05, false);
+  assert.equal(RELEASE_VALIDATION.engineLineage.executedImmunumMatchesAttestedV05, false);
+  assert.equal(RELEASE_VALIDATION.engineLineage.v05HistoricalArtifactsPreservedByteForByte, true);
   assert.equal(RELEASE_VALIDATION.engineLineage.dependencyEnvironmentMatchesAttestedV05, false);
+  assert.equal(
+    RELEASE_VALIDATION.engineLineage.implementationSnapshot,
+    "validation/v0.6-engine-implementation-snapshot-v1",
+  );
+  assert.equal(
+    RELEASE_VALIDATION.engineLineage.historicalImplementationSnapshot,
+    "validation/v0.5-engine-implementation-snapshot-v1",
+  );
+  assert.equal(RELEASE_VALIDATION.engineLineage.currentVhhNumberingPolicy, "0.6.0");
+  assert.equal(RELEASE_VALIDATION.engineLineage.currentExecutedImmunum, "1.3.0");
   assert.equal(RELEASE_VALIDATION.softwareVersion, "0.5.0");
   assert.equal(RELEASE_VALIDATION.runtime.minimumNodeVersion, "22.18.0");
   assert.equal(

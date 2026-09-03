@@ -1,13 +1,12 @@
 # Release provenance
 
-ConfoVHH uses two version namespaces:
+ConfoVHH uses separately versioned layers:
 
 - the researcher-facing product release, currently 0.9.1;
-- the v0.5.0 scientific-core lineage, whose historical execution environments remain digest-attested.
+- the canonical audit and geometry lineage, which remains version 0.5.0 for compatibility with the frozen v0.5 studies;
+- promoted VHH-numbering and pose-ranking policies, both versioned 0.6.0 with additive promotion and validation records.
 
-Product changes do not relabel the scientific engine or frozen validation evidence.
-
-The current product retains byte-identical attested v0.5 scientific-core source and executed `immunum 1.2.0` bytes, but its root dependency/build environment is security-patched. It therefore does not claim that the current lockfile is the historical attested lockfile. The supplemental `validation/v0.5-engine-implementation-snapshot-v1/` package preserves every implementation object named by both unchanged v0.5 summaries and reconstructs their original combined digests.
+A component promotion does not rewrite or relabel frozen historical evidence. The `validation/v0.5-engine-implementation-snapshot-v1/` package preserves the scientific-core objects and executed `immunum 1.2.0` bytes used by the v0.5 studies. Current production VHH numbering uses pinned `immunum 1.3.0`; `validation/v0.6-engine-implementation-snapshot-v1/` binds the exact current scientific-core bytes and records that `lib/vhh-numbering.ts` is the sole promoted file in the pinned scientific-core set. The root dependency/build environment is separately security-patched and is not represented as the historical attested lockfile.
 
 ## Historical evidence boundary
 
