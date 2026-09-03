@@ -28,6 +28,14 @@ const implementationSnapshotDirectory = path.join(
   "validation",
   "v0.5-engine-implementation-snapshot-v1",
 );
+const currentImplementationSnapshotDirectory = path.join(
+  root,
+  "validation",
+  "v0.6-engine-implementation-snapshot-v1",
+);
+/** The v0.6 numbering promotion's entire blast radius on the pinned file set. */
+const EXPECTED_V06_CHANGED_FILES = ["lib/vhh-numbering.ts"];
+const PINNED_MANIFESTS = new Set(["package.json", "package-lock.json"]);
 const EXPECTED_PUBLIC_SOURCE_COMMIT = "5cb57617b54baa314513486885c402449f643406";
 const EXPECTED_REPLAY_SOURCE_COMMIT = "278ae1a74da133778fba5b17bc296a8e37f02e76";
 const EXPECTED_PUBLIC_SUMMARY_SHA256 = "7d1dee34fe98a1b01cc05f5ad984f57841f9b1f2f545861ebca5d9a3fc83c4da";
@@ -84,6 +92,22 @@ async function jsonl(filename) {
 
 async function implementationSnapshot() {
   return json(path.join(implementationSnapshotDirectory, "index.json"));
+}
+
+/**
+ * The v0.6 attestation binds the scientific-core bytes the product currently
+ * executes. The v0.5 snapshot above continues to bind the historical bytes the
+ * v0.5 studies were produced under, unmodified.
+ *
+ * Live bytes are checked against v0.6 rather than v0.5 because the v0.6 VHH
+ * numbering promotion deliberately moved lib/vhh-numbering.ts. The pin did not
+ * weaken: it moved forward with a record, and the delta test below asserts that
+ * exactly one scientific-core file differs between the two.
+ */
+async function currentImplementationSnapshot() {
+  return json(
+    path.join(currentImplementationSnapshotDirectory, "index.json"),
+  );
 }
 
 async function snapshotImplementationBytes(attestationId, relative, expected) {
@@ -190,8 +214,20 @@ test("v0.5 public attestation binds archived implementation, unchanged scientifi
   const combined = createHash("sha256");
   for (const [relative, expected] of Object.entries(implementation.files)) {
     const bytes = await snapshotImplementationBytes("public-regression", relative, expected);
-    if (relative !== "package.json" && relative !== "package-lock.json") {
-      assert.equal(sha256(await readFile(path.join(root, relative))), expected, `${relative}: scientific-core drift`);
+    if (!PINNED_MANIFESTS.has(relative)) {
+      const current = (await currentImplementationSnapshot())
+        .attestations["public-regression"].files[relative];
+      assert.ok(current, `${relative}: absent from the v0.6 implementation attestation`);
+      assert.equal(
+        sha256(await readFile(path.join(root, relative))),
+        current.sha256,
+        `${relative}: scientific-core drift`,
+      );
+      assert.equal(
+        current.v05Sha256,
+        expected,
+        `${relative}: the v0.6 attestation misrecords the v0.5 digest`,
+      );
     }
     combined.update(relative);
     combined.update("\0");
@@ -305,8 +341,20 @@ test("v0.5 DockQ replay binds archived implementation and current scientific-cor
   const combined = createHash("sha256");
   for (const [relative, expected] of Object.entries(implementation.files)) {
     const bytes = await snapshotImplementationBytes("dockq-regression-replay", relative, expected);
-    if (relative !== "package.json" && relative !== "package-lock.json") {
-      assert.equal(sha256(await readFile(path.join(root, relative))), expected, `${relative}: scientific-core drift`);
+    if (!PINNED_MANIFESTS.has(relative)) {
+      const current = (await currentImplementationSnapshot())
+        .attestations["dockq-regression-replay"].files[relative];
+      assert.ok(current, `${relative}: absent from the v0.6 implementation attestation`);
+      assert.equal(
+        sha256(await readFile(path.join(root, relative))),
+        current.sha256,
+        `${relative}: scientific-core drift`,
+      );
+      assert.equal(
+        current.v05Sha256,
+        expected,
+        `${relative}: the v0.6 attestation misrecords the v0.5 digest`,
+      );
     }
     combined.update(relative);
     combined.update("\0");
@@ -543,4 +591,87 @@ test("replay controls reconcile the five targets and remain exact at far transla
   assert.equal(summary.controls.controlsAndCrossChecksPassed, 20);
   assert.equal(summary.controls.maximumFarTranslationDeltaSasaAbsoluteDifferenceAngstrom2, 0);
   assert.equal(summary.controls.maximumFarTranslationHalfDeltaSasaAbsoluteDifferenceAngstrom2, 0);
+});
+
+test("the v0.6 promotion moved exactly one scientific-core file and preserved every v0.5 attestation", async () => {
+  const historical = await implementationSnapshot();
+  const current = await currentImplementationSnapshot();
+
+  assert.equal(current.schemaVersion, "1.0.0");
+  assert.equal(current.status, "frozen-current-implementation-attestation");
+  assert.equal(current.scientificLineage, "0.6.0");
+  assert.equal(current.supersedes, "validation/v0.5-engine-implementation-snapshot-v1");
+  assert.equal(current.v05AttestationsPreservedByteForByte, true);
+  assert.deepEqual(
+    current.promotion.expectedChangedFiles,
+    EXPECTED_V06_CHANGED_FILES,
+  );
+
+  // The pin moved forward; it did not widen. Every pinned scientific-core file
+  // except the one the promotion is about must still be byte-identical to v0.5,
+  // and the changed one must actually differ.
+  const changed = new Set();
+  for (const [id, attestation] of Object.entries(current.attestations)) {
+    assert.ok(historical.attestations[id], `${id}: absent from the v0.5 snapshot`);
+    for (const [relative, record] of Object.entries(attestation.files)) {
+      if (PINNED_MANIFESTS.has(relative)) continue;
+      assert.equal(
+        record.v05Sha256,
+        historical.attestations[id].files[relative],
+        `${relative}: the v0.6 attestation misrecords the v0.5 digest`,
+      );
+      if (record.changed) changed.add(relative);
+      else {
+        assert.equal(
+          record.sha256,
+          record.v05Sha256,
+          `${relative}: recorded unchanged but the digests differ`,
+        );
+      }
+    }
+  }
+  assert.deepEqual([...changed].sort(), [...EXPECTED_V06_CHANGED_FILES].sort());
+
+  // The correction the promotion exists to make.
+  assert.equal(current.executedDependencies.immunum.version, "1.3.0");
+  assert.equal(current.executedDependencies.immunum.v05RecordedVersion, "1.2.0");
+  assert.equal(
+    current.promotion.engineProvenanceCorrected.to,
+    "immunum 1.3.0",
+  );
+
+  // Measured, not assumed: engine provenance was the only field that moved.
+  const measured = current.promotion.measuredBehaviouralChange;
+  assert.equal(measured.developmentPilotPoses, 360);
+  assert.equal(measured.poseEngineProvenanceChanges, 360);
+  for (const field of [
+    "poseNumberingStatusChanges",
+    "targetRegionAssignmentChanges",
+    "cdrContactShareChanges",
+    "cdr3ContactShareChanges",
+    "evidenceBandChanges",
+    "cdrDependentRankingInputChanges",
+    "publicPanelMeasuredFieldChanges",
+  ]) {
+    assert.equal(measured[field], 0, `${field} must be 0`);
+  }
+});
+
+test("both implementation snapshots verify against their own checksum manifests", async () => {
+  for (const directory of [
+    implementationSnapshotDirectory,
+    currentImplementationSnapshotDirectory,
+  ]) {
+    const recorded = checksumMap(
+      await readFile(path.join(directory, "checksums.sha256"), "utf8"),
+    );
+    assert.ok(recorded.size >= 3, `${directory}: implausibly small checksum manifest`);
+    for (const [relative, digest] of recorded) {
+      assert.equal(
+        sha256(await readFile(path.join(directory, relative))),
+        digest,
+        `${path.basename(directory)}/${relative}: checksum mismatch`,
+      );
+    }
+  }
 });
