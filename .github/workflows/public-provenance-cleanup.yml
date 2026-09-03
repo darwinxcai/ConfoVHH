@@ -38,6 +38,20 @@ jobs:
       - name: Correct current provenance and state project stewardship
         run: python3 scripts/public-provenance-cleanup.py patch-files
 
+      - name: Preserve the exact historical-lockfile disclaimer contract
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path("lib/release-validation.ts")
+          text = path.read_text(encoding="utf-8")
+          old = "the current dependency/build environment is separately patched and is not the historical v0.5 lockfile."
+          new = "the current dependency/build environment is separately patched. Byte-identical equivalence to the historical v0.5 lockfile is not claimed."
+          if text.count(old) != 1:
+              raise SystemExit("release-validation statement did not match exactly")
+          path.write_text(text.replace(old, new), encoding="utf-8")
+          PY
+
       - name: Run complete release gate
         run: npm run test:release
 
