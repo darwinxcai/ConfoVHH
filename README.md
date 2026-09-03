@@ -52,7 +52,7 @@ flowchart TD
 
 - Parses legacy PDB and PDBx/mmCIF coordinates, including explicit deposited-assembly reconstruction.
 - Identifies receptor–VHH contacts, interface residues, geometric clash candidates, and deterministic 960-point Shrake–Rupley ΔSASA.
-- Assigns sequence-aligned IMGT framework/CDR regions with pinned `immunum 1.2.0`.
+- Assigns sequence-aligned IMGT framework/CDR regions under the validated v0.6 numbering policy using pinned `immunum 1.3.0`, with exact coordinate-sequence map-back and independent number/segment agreement.
 - Maps directional PAE only after explicit model/residue-order confirmation.
 - Compares compatible multi-seed pose ensembles by contact, epitope, and paratope recurrence.
 - Audits existing AlphaFold Server, local AlphaFold 3, ColabFold, and Boltz output folders.
@@ -137,7 +137,7 @@ The checksummed [v3 oracle design record](./validation/hard-decoy-holdout-v3/des
 
 ConfoVHH is a TypeScript/React application built with Vinext for Cloudflare-compatible deployment. Coordinate parsing, IMGT numbering, ensemble analysis, and per-pose PAE auditing run in bounded browser workers. Canonical reports retain raw-file SHA-256 values, coordinate/geometry fingerprints, parser policy, chain/assembly provenance, and software versions.
 
-The repository's `package.json` version remains `0.5.0` because it identifies the scientific-core lineage. Researcher-facing capabilities and pre-label protocol artifacts advance independently as product release `0.9.1`; changes outside the scientific calculations do not relabel the frozen v0.5 validation artifacts. The current product preserves the attested v0.5 scientific-core source and executed `immunum 1.2.0` bytes, but it uses a separately patched dependency/build environment and does **not** claim byte-identical equivalence to the historical v0.5 lockfile. A checksummed [supplemental implementation snapshot](./validation/v0.5-engine-implementation-snapshot-v1/) preserves the exact historical objects named by both unchanged v0.5 attestations. Historical source identifiers are retained in the artifacts and resolve to ancestor commits in the Sites source history used for this product, but those objects are absent from the current public GitHub repository. Release receipts bind the still-verifiable digests to reachable product tags without treating the historical commits as publicly reachable.
+The repository's `package.json` and canonical audit version remain `0.5.0` for compatibility with the attested geometry-core lineage. Researcher-facing capabilities advance independently as product release `0.9.1`, while promoted components carry their own versioned records: production VHH numbering and pose ranking are v0.6 policies. Historical v0.5 scientific-core objects and the executed `immunum 1.2.0` distribution remain preserved byte-for-byte, while current production VHH numbering uses pinned `immunum 1.3.0` under the validated v0.6 policy. The current dependency/build environment is separately patched and is not represented as the historical v0.5 lockfile. The checksummed [v0.5 implementation snapshot](./validation/v0.5-engine-implementation-snapshot-v1/) preserves the historical objects, and the [v0.6 implementation snapshot](./validation/v0.6-engine-implementation-snapshot-v1/) binds the scientific-core bytes the current product executes after the numbering promotion. Historical source identifiers are retained in the artifacts and resolve to ancestor commits in the Sites source history used for this product, but those objects are absent from the current public GitHub repository. Release receipts bind the still-verifiable digests to reachable product tags without treating the historical commits as publicly reachable.
 
 ```text
 app/          researcher workspace and orchestration
@@ -154,7 +154,7 @@ ConfoVHH supports review of **coordinate plausibility and recurrence within an u
 
 ## Author and citation
 
-ConfoVHH was created by [Darwin Cai](https://github.com/darwinxcai). Citation metadata are available in [CITATION.cff](./CITATION.cff). See the [security policy](./SECURITY.md), [current dependency-advisory triage](./SECURITY_AUDIT.md), [dependency policy](./DEPENDENCY_POLICY.md), and [provenance model](./PROVENANCE.md) for maintenance and release details. Third-party licenses and attributions are summarized in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+ConfoVHH is designed, scientifically directed, and maintained by [Darwin Cai](https://github.com/darwinxcai). AI-assisted coding tools have supported implementation, debugging, testing, and documentation under his review; scientific claims and release decisions remain the maintainer's responsibility. Citation metadata are available in [CITATION.cff](./CITATION.cff). See the [security policy](./SECURITY.md), [current dependency-advisory triage](./SECURITY_AUDIT.md), [dependency policy](./DEPENDENCY_POLICY.md), and [provenance model](./PROVENANCE.md) for maintenance and release details. Third-party licenses and attributions are summarized in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
 
 ConfoVHH source code is released under the [MIT License](./LICENSE). Archived third-party metadata remains under its source license; see [Third-party notices](./THIRD_PARTY_NOTICES.md).
 
