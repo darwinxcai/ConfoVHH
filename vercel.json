@@ -3,14 +3,6 @@
   "framework": null,
   "buildCommand": "npm run build:static",
   "outputDirectory": "dist-static",
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "confovhh.darwin-cai.chatgpt.site" }],
-      "destination": "https://github.com/darwinxcai/ConfoVHH",
-      "permanent": false
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",

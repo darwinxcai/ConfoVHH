@@ -390,7 +390,7 @@ const receipt = {
     npm: execFileSync("npm", ["--version"], { cwd: repositoryRoot, encoding: "utf8" }).trim(),
   },
   deployment: {
-    publicUrl: process.env.RELEASE_SITE_URL || "https://confovhh.darwin-cai.chatgpt.site",
+    publicUrl: process.env.RELEASE_SITE_URL || "https://github.com/darwinxcai/ConfoVHH",
     sourceTreeBinding: "The hosted release is a separate fresh build from this Git tree and never reuses a published production bundle.",
   },
   scientificArtifactManifestSha256: scientificArtifactDigests,
