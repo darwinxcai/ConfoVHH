@@ -44,4 +44,10 @@ yarn-error.log*
 /release-artifacts/
 /work/
 /.bench-venv/
+# Scratch for the panel extension study: downloaded structures, the 1,224
+# generated pose files and the DockQ batch manifest. Regenerated deterministically
+# from the frozen spec on every run, so it is never evidence and must never be
+# committed. The study's own record lives in validation/panel-extension-v1/.
+/.panel-extension-work/
+/.dockq-src/
 /tsconfig.tsbuildinfo
