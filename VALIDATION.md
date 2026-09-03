@@ -193,6 +193,41 @@ Average precision enters complete score-tie blocks together; AUROC awards 0.5 cr
 
 Interpretation: this development-only grid validates deterministic generation, labeling, aggregation, and provenance plumbing and shows descriptive associations inside its narrow native-derived distribution. The categorical ConfoVHH band did not outperform the strongest prespecified single-feature baseline. The study is not an independent holdout, not blind docking, and not execution of the formal hard-decoy protocol. The historical directory is immutable; v0.5 does not rewrite its files.
 
+## Local-SE(3) panel extension
+
+The pilot above measured a five-target grid, and the shipped ranking policy was selected on it. That is circular, and the specification at `validation/panel-extension-v1/study-spec.json` was frozen — before any runner code existed, at commit `d818b6c` — to test whether the ordering survives on receptors it was never measured against. It applies the pilot's generator, unchanged, to all seventeen structures of the public regression panel: 72 poses per target, 1,224 total, of which 1,222 were retained after label-blind 0.5 Å deduplication.
+
+Five of the seventeen structures were in the pilot. **The primary endpoint is therefore the twelve that were not** — 5JQH, 6IBL, 5C1M, 6B73, 6VI4, 8QOT, 7YM8, 4MQS, 6RNK, 6KNM, 8FCZ, 7L1V — and every all-seventeen figure is secondary and labelled contaminated in the artifact.
+
+Because the pilot's implementation is hash-pinned by the v0.5 DockQ regression attestation and exports nothing, the estimator was re-implemented. It is gated rather than asserted: `scripts/verify-panel-extension-gate.mjs` replays the pilot's own 360-pose ledger and requires agreement within 10⁻⁹ before the study may run. It reproduces 360/360 recorded transforms (seed digest exactly; rotation axis, translation vector and all sixteen affine entries at tolerance), 72 macro metrics, 77 bootstrap intervals over 10,000 replicates, and 450 per-target metrics. The runner also verifies the frozen specification's SHA-256 and aborts on a mismatch, so nothing is downloaded and no pose is generated under a drifted protocol.
+
+Every source was re-verified against the byte count and SHA-256 recorded in the v0.5 public-regression attestation before generation. DockQ 2.1.3 was installed from the sdist whose digest the pilot recorded, so both studies are labelled by the same scorer. Results:
+
+- 1,256/1,256 DockQ jobs completed: 1,222 ranking poses, 17 native-self controls, and 17 +1,000 Å controls;
+- all 17 far controls had DockQ <0.01, zero contacts, and zero ΔSASA;
+- the retained grid contained 184 high, 281 medium, 310 acceptable, and 447 incorrect DockQ classes;
+- 775/1,222 poses (63.4%) were acceptable-or-better, so top-k success remains intrinsically easy and the all-tied control, not a coin flip, is the reference.
+
+Prespecified target-macro, tie-aware point results at DockQ ≥0.23, on the twelve previously-unused receptors:
+
+| Score arm | AP | AP lift over target prevalence | AUROC | Kendall τb | Expected precision at 1 |
+|---|---:|---:|---:|---:|---:|
+| Shipped pose ranking (tier, then burial) | 0.838 | 1.321 | 0.762 | 0.461 | 1.000 |
+| ConfoVHH evidence band alone | 0.713 | 1.122 | 0.609 | 0.419 | 0.995 |
+| ΔSASA alone | 0.725 | 1.143 | 0.698 | 0.331 | 0.000 |
+| Contact count | 0.645 | 1.017 | 0.570 | 0.096 | 0.083 |
+| Negative clash burden | 0.629 | 0.990 | 0.524 | 0.120 | 0.245 |
+| CDR-contact share | 0.693 | 1.095 | 0.664 | 0.208 | 0.350 |
+| All poses tied | 0.635 | 1.000 | 0.500 | unavailable | 0.635 |
+
+The paired advantage of the shipped ordering over the all-tied control is 0.181 to 0.224 average precision (95% interval, 10,000 paired hierarchical cluster bootstrap replicates over provisional receptor components), and the rank-1 pose is acceptable on each of the twelve individually, not only in the macro mean. Average precision on the five targets the policy was designed against is 0.764 and on the twelve it had never seen is 0.838; the all-seventeen figure is 0.816.
+
+ΔSASA alone is the sharpest result in the table. It ranks the wrong pose first on **all twelve** targets, because the most-buried pose is the interpenetrating one in every case, yet the same measurement used as a tie-break behind the clash-aware tier ranks correctly on all twelve. This is the safety property the lexicographic key was designed around, measured rather than argued.
+
+`prespecifiedOutcomes` in the frozen specification names the failure branch as explicitly as the success branch, and the runner reads off which one fired. Had the shipped arm not exceeded the all-tied control, or had expected precision at rank 1 fallen below 0.50, `results.json` would record `branch: "failsToGeneralize"` and `improvesCandidateRankingOnDevelopmentData: false`. That path was reachable.
+
+Interpretation: this rules out the explanation that the pilot result was specific to five correlated targets. It does not establish generalization to prediction-pipeline output, because every pose in both studies is a rigid-body perturbation of a solved structure — a distribution that is easier than, and differently shaped from, the wrong-epitope and wrong-orientation failures a real pipeline produces. The receptor components used for clustering are transcribed and provisional, not the frozen leakage graph a ranking claim under either pre-registered protocol would require. This study is neither of those protocols and must never be reported as one; the hard-decoy holdout remains unexecuted with `executionAuthorized: false`, and nothing under its directory was read or written.
+
 ## v0.5 post-label regression replay
 
 `npm run test:dockq-replay` regenerates the local-SE(3) coordinate ledger with the v0.5 implementation, reruns DockQ 2.1.3, and compares the result against the already labeled v0.4 development artifact. It writes only to `validation/dockq-v0.5-regression-replay-v1/`.

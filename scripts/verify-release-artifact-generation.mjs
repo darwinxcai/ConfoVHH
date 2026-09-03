@@ -42,7 +42,7 @@ const releaseEnvironment = {
   RELEASE_TAG: `product-v${productVersion}`,
   RELEASE_COMMIT_SHA: commitSha,
   RELEASE_TREE_SHA: treeSha,
-  RELEASE_SITE_URL: "https://confovhh.darwin-cai.chatgpt.site",
+  RELEASE_SITE_URL: "https://github.com/darwinxcai/ConfoVHH",
 };
 
 try {

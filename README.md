@@ -8,7 +8,7 @@
 ![Tests](https://img.shields.io/badge/tests-release_gated-42d3a5)
 ![Node](https://img.shields.io/badge/Node-%E2%89%A522.18-5fa04e)
 
-**[Launch ConfoVHH](https://confovhh.darwin-cai.chatgpt.site)** · [Five-minute workflow](#five-minute-workflow) · [Validation record](./VALIDATION.md) · [Release provenance](./PROVENANCE.md) · [How to cite](./CITATION.cff)
+[Run it locally](#run-locally) · [Five-minute workflow](#five-minute-workflow) · [Validation record](./VALIDATION.md) · [Release provenance](./PROVENANCE.md) · [How to cite](./CITATION.cff)
 
 ![ConfoVHH auditing the release-pinned public β₂AR–Nb80 structure 3P0G, showing 46 contact pairs, zero severe clashes, 1,729 square angstroms of protein delta-SASA, and the explicit non-binding interpretation boundary.](./public/media/confovhh-3p0g-audit.png)
 
@@ -24,7 +24,9 @@ User-selected coordinates and PAE matrices are processed in the browser tab and 
 |---|---|
 | Can researchers audit real prediction outputs? | **Yes.** The local-first workflow is exercised on genuine AlphaFold Server and ColabFold runs, plus a public GPCR–VHH coordinate panel. |
 | Are parsers and geometry calculations regression-tested? | **Yes.** PDB/mmCIF parity, deposited assemblies, exact worker paths, provenance, resource bounds, and adversarial inputs are release-gated. |
-| Is the ranking rule independently validated on realistic hard decoys? | **No.** The formal holdout remains unassembled and unexecuted. |
+| Does the tool order poses, or only measure them? | **It orders them.** Poses of one complex are ranked by shipped evidence tier, then half-ΔSASA interface burial. No fitted coefficients and no thresholds that did not already ship. |
+| Does that ordering hold on receptors it was not designed against? | **Yes, on perturbation decoys.** Under a protocol frozen before any pose existed, the rank-1 pose is DockQ-acceptable on 12/12 previously-unused panel receptors; target-macro AP 0.838 against 0.635 for an all-tied control. |
+| Is the ranking rule independently validated on realistic hard decoys? | **No.** Every decoy scored so far is a rigid-body perturbation of a solved structure. The formal holdout, whose decoys come from real prediction pipelines, remains unassembled and unexecuted. |
 | Does favorable output establish binding, affinity, specificity, signaling, state selectivity, or membrane compatibility? | **No.** Those biological claims remain explicitly false. |
 | What is the hard-decoy stop state? | A repeat-fetched 287-entry metadata sub-universe is archived, but all 287 scientific dispositions remain pending; seven groups are provisional, zero are formally cleared, and at least ten are required. |
 
@@ -62,7 +64,7 @@ flowchart TD
 
 ConfoVHH audits prediction outputs; it does not run AlphaFold, ColabFold, or Boltz from FASTA sequences.
 
-1. [Open the public app](https://confovhh.darwin-cai.chatgpt.site) and choose **Load β₂AR–Nb80 demo**.
+1. [Start the app locally](#run-locally) and choose **Load β₂AR–Nb80 demo**.
 2. Verify the suggested receptor `A` and VHH `B` chain roles, then explicitly confirm them. Chain suggestions are heuristics, not annotations.
 3. Run the interface audit and inspect the geometry flag, metrics, findings, and evidence boundary. The experimental 3P0G example teaches workflow mechanics; it does not measure prediction accuracy.
 
@@ -108,7 +110,7 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 
 | Layer | Current result | Interpretation |
 |---|---:|---|
-| Ordinary unit/integration tests | 454/454 passed | Complete product, scientific-engine, release-integrity, provenance, and fail-closed protocol suite; 98 tests specifically exercise hard-decoy census/design/request/isolation boundaries |
+| Ordinary unit/integration tests | 526/526 passed | Complete product, scientific-engine, release-integrity, provenance, and fail-closed protocol suite; 98 tests specifically exercise hard-decoy census/design/request/isolation boundaries |
 | Browser acceptance/accessibility | 4/4 Chromium scenarios passed | Initial shell, 390 px mobile reflow, a local-file worker audit with zero off-origin requests, and the SHA-pinned public 3P0G audit/export; all include applicable WCAG A/AA, focus, response-boundary, and report checks |
 | Release artifacts | Deterministic tagged-source archive, exact CI-build file-hash manifest, SBOM, provenance receipt, and SHA-256 checksums | Credential-bearing `dist` bytes are not published; the manifest is inspection-only and a fresh verified build from the tag is required for deployment |
 | Genuine producer outputs | 2 public runs · 26 source files · 10/10 poses · 10/10 PAE audits | End-to-end compatibility for actual AlphaFold Server and ColabFold outputs |
@@ -117,10 +119,11 @@ node scripts/validate-real-prediction-runs.mjs --verify=validation/real-predicti
 | Native interfaces | 17/17 detected | Positive and obvious-geometry regression coverage |
 | Far-translation controls | 102/102 rejected | Zero-interface sanity checks |
 | DockQ development ledger | 360/360 poses + 20/20 controls | Benchmark plumbing and descriptive development analysis |
+| Local-SE(3) panel extension | 1,222 poses · 17 receptors · 34/34 controls | Cross-receptor ranking evidence on perturbation decoys; primary endpoint is the 12 receptors the pilot never used |
 | V3 metadata source archive | 2,065 RCSB union · 1,716 GPCRdb · 287 intersection | Reproducible historical four-term source sub-universe; not an exhaustive candidate universe |
 | V3 entry-metadata replay | 2 independent captures · 48 response files · 287 entries · 1,401 polymer entities | Exact normalized agreement across both 12-batch × 2-repeat captures; 287/287 dispositions still pending and no target eligibility |
 
-These counts are software/regression evidence, not a biological performance estimate. The DockQ perturbation set is development-only and does not establish generalization. No independent leakage-component hard-decoy holdout has yet been assembled or evaluated. The terminal [v2 protocol](./HARD_DECOY_PROTOCOL_V2.md) and original [v1 protocol](./HARD_DECOY_PROTOCOL.md) remain immutable history. The current [v3 protocol](./HARD_DECOY_PROTOCOL_V3.md) specifies a sealed one-way native-epitope oracle, but its request, independent parser/container, key ceremony, leakage graph, targets, labels, and performance analysis are not frozen or executed. See [VALIDATION.md](./VALIDATION.md).
+These counts are software/regression evidence, not a biological performance estimate. The DockQ perturbation sets are development-only. They now establish that the shipped ordering is not specific to the five targets it was designed on — the [panel extension](./validation/panel-extension-v1/) tested it on twelve previously-unused receptors under a protocol frozen in advance, including the criteria that would have counted as failure. They do not establish generalization to the poses a real prediction pipeline produces, because every decoy in both sets is a rigid-body perturbation of a solved structure. No independent leakage-component hard-decoy holdout has yet been assembled or evaluated. The terminal [v2 protocol](./HARD_DECOY_PROTOCOL_V2.md) and original [v1 protocol](./HARD_DECOY_PROTOCOL.md) remain immutable history. The current [v3 protocol](./HARD_DECOY_PROTOCOL_V3.md) specifies a sealed one-way native-epitope oracle, but its request, independent parser/container, key ceremony, leakage graph, targets, labels, and performance analysis are not frozen or executed. See [VALIDATION.md](./VALIDATION.md).
 
 On 2026-08-28, the documented metadata-only screen for the stricter [v2 hard-decoy protocol](./HARD_DECOY_PROTOCOL_V2.md) recorded eight candidate structures resolving to seven provisional public direct GPCR–VHH groups and zero formally cleared groups, against a frozen minimum of ten. Candidate-discovery completeness was not established. No candidate coordinates, DockQ/CAPRI labels, or holdout results were accessed. The minimum was not relaxed, so this is a checksummed [blocked screening checkpoint](./validation/hard-decoy-holdout-v2/prelabel-census/), not an exhaustive census, assembled holdout, upper bound, or performance result.
 

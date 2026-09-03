@@ -116,7 +116,7 @@ jobs:
           RELEASE_COMMIT_SHA: ${{ github.event.workflow_run.head_sha }}
           RELEASE_CI_RUN_ID: ${{ github.event.workflow_run.id }}
           RELEASE_CI_RUN_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}
-          RELEASE_SITE_URL: https://confovhh.darwin-cai.chatgpt.site
+          RELEASE_SITE_URL: https://github.com/darwinxcai/ConfoVHH
           RELEASE_OUTPUT_DIRECTORY: ${{ github.workspace }}/release-artifacts
         run: node scripts/create-release-artifacts.mjs
       - name: Recheck main immediately before publication
