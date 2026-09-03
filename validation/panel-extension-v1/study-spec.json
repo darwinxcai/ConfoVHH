@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "1.0.0",
+  "benchmarkId": "confovhh-local-se3-panel-extension-v1",
+  "title": "ConfoVHH local-SE(3) panel extension: pose ranking across the 17-structure public panel",
+  "dataRole": "development",
+  "statusAtFreeze": "prospectively-specified-before-any-pose-generation-or-dockq-labeling",
+  "frozenAt": "2026-09-03T18:00:00.000Z",
+
+  "question": "Does the shipped pose-ranking policy order locally perturbed poses better than its prespecified baselines on receptors it was not selected against, or was the five-target pilot result a property of those five targets?",
+
+  "protocolRelationship": {
+    "isHardDecoyHoldout": false,
+    "isLeakageComponentOutStudy": false,
+    "explanation": [
+      "This is a THIRD study and must never be reported as either pre-registered protocol.",
+      "It is NOT validation/hard-decoy-holdout-v3. That protocol requires at least ten formally cleared independent groups, an exhaustively archived candidate universe, a pinned independent oracle, a signing and transparency key ceremony, and candidate generation by two learned generators. None of those gates is satisfied and executionAuthorized remains false. Nothing under that directory is read or written by this study.",
+      "It is NOT the study described in LEAKAGE_COMPONENT_DEVELOPMENT_PROTOCOL.md. That design mandates a new template-free population from ColabFold 1.6.2 and Boltz 2.2.1, roughly 34 to 136 GPU-hours, under a separately frozen environment manifest. This study generates no learned-model output and requires no GPU.",
+      "It extends only the generator of validation/dockq-development-pilot-v1 from five targets to seventeen. Its decoys are rigid-body perturbations of a known-correct structure, which is a materially easier and differently-shaped distribution than poses a real predictor produces. It therefore cannot answer whether the ranking picks the correct pose out of predictor output; only the holdout answers that."
+    ]
+  },
+
+  "primaryContamination": {
+    "description": "Five of the seventeen structures were used by the DockQ development pilot, and the shipped ranking policy was selected on that pilot. Their targets are therefore contaminated and an all-seventeen number is optimistic.",
+    "previouslyUsedStructures": ["3P0G", "4XT1", "6DO1", "6O3C", "8QW4"],
+    "previouslyUnusedStructures": ["4MQS", "6B73", "6RNK", "6KNM", "7YM8", "8QOT", "8FCZ", "7L1V", "5JQH", "6VI4", "5C1M", "6IBL"],
+    "previouslyUnusedComponents": ["opioid", "alpha-1-adrenergic", "CHRM2", "SUCNR1", "APLNR", "rhodopsin", "HCRTR2"],
+    "consequence": "The primary endpoint is computed on the twelve previously-unused structures. All-seventeen and previously-used-five figures are reported as secondary and are labelled contaminated wherever they appear."
+  },
+
+  "targets": [
+    { "targetId": "3P0G-A-B", "pdb": "3P0G", "receptorChain": "A", "vhhChain": "B", "receptor": "ADRB2", "component": "beta-adrenergic", "pilotReuse": true },
+    { "targetId": "5JQH-A-C", "pdb": "5JQH", "receptorChain": "A", "vhhChain": "C", "receptor": "ADRB2 inactive", "component": "beta-adrenergic", "pilotReuse": false },
+    { "targetId": "6IBL-A-C", "pdb": "6IBL", "receptorChain": "A", "vhhChain": "C", "receptor": "ADRB1/Nb80", "component": "beta-adrenergic", "pilotReuse": false },
+    { "targetId": "5C1M-A-B", "pdb": "5C1M", "receptorChain": "A", "vhhChain": "B", "receptor": "OPRM1/Nb39", "component": "opioid", "pilotReuse": false },
+    { "targetId": "6B73-B-C", "pdb": "6B73", "receptorChain": "B", "vhhChain": "C", "receptor": "OPRK1", "component": "opioid", "pilotReuse": false },
+    { "targetId": "6VI4-B-C", "pdb": "6VI4", "receptorChain": "B", "vhhChain": "C", "receptor": "OPRK1 inactive", "component": "opioid", "pilotReuse": false },
+    { "targetId": "8QOT-A-B", "pdb": "8QOT", "receptorChain": "A", "vhhChain": "B", "receptor": "OPRM1", "component": "opioid", "pilotReuse": false },
+    { "targetId": "7YM8-A-D", "pdb": "7YM8", "receptorChain": "A", "vhhChain": "D", "receptor": "ADRA1A", "component": "alpha-1-adrenergic", "pilotReuse": false },
+    { "targetId": "4MQS-A-B", "pdb": "4MQS", "receptorChain": "A", "vhhChain": "B", "receptor": "CHRM2", "component": "CHRM2", "pilotReuse": false },
+    { "targetId": "4XT1-A-C", "pdb": "4XT1", "receptorChain": "A", "vhhChain": "C", "receptor": "US28", "component": "US28", "pilotReuse": true },
+    { "targetId": "6DO1-A-C", "pdb": "6DO1", "receptorChain": "A", "vhhChain": "C", "receptor": "AGTR1", "component": "AGTR1", "pilotReuse": true },
+    { "targetId": "6RNK-A-B", "pdb": "6RNK", "receptorChain": "A", "vhhChain": "B", "receptor": "SUCNR1", "component": "SUCNR1", "pilotReuse": false },
+    { "targetId": "6KNM-B-A", "pdb": "6KNM", "receptorChain": "B", "vhhChain": "A", "receptor": "APLNR", "component": "APLNR", "pilotReuse": false },
+    { "targetId": "8FCZ-A-C", "pdb": "8FCZ", "receptorChain": "A", "vhhChain": "C", "receptor": "RHO", "component": "rhodopsin", "pilotReuse": false },
+    { "targetId": "7L1V-R-S", "pdb": "7L1V", "receptorChain": "R", "vhhChain": "S", "receptor": "HCRTR2", "component": "HCRTR2", "pilotReuse": false },
+    { "targetId": "6O3C-A-B", "pdb": "6O3C", "receptorChain": "A", "vhhChain": "B", "receptor": "SMO", "component": "SMO", "pilotReuse": true },
+    { "targetId": "8QW4-A-B", "pdb": "8QW4", "receptorChain": "A", "vhhChain": "B", "receptor": "FZD3", "component": "FZD3", "pilotReuse": true }
+  ],
+
+  "componentPolicy": {
+    "source": "LEAKAGE_COMPONENT_DEVELOPMENT_PROTOCOL.md, 'Provisional development components'",
+    "status": "provisional-not-mechanically-reconstructed",
+    "componentCount": 12,
+    "use": "Clustering unit for the hierarchical bootstrap and for the per-component secondary endpoint only.",
+    "explicitLimitation": "These components are transcribed, not rebuilt from frozen receptor, VHH, epitope, construct and publication matrices. They are not the frozen leakage graph that a ranking claim under either pre-registered protocol would require, and no independence claim rests on them."
+  },
+
+  "sourcePolicy": {
+    "coordinateUrlTemplate": "https://files.rcsb.org/download/{PDB}.pdb",
+    "coordinateFormat": "legacy PDB",
+    "coordinateScope": "as-supplied",
+    "selectedModelPolicy": "first actual model identifier",
+    "chainNormalizationForDockQ": "canonical two-chain PDB; A=receptor and B=VHH",
+    "integrityBinding": "validation/v0.5-public-regression-attestation-v1/native-interfaces.json",
+    "integrityRule": "Every downloaded file must match the byte count AND SHA-256 already recorded in the v0.5 attestation before any pose is generated. A mismatch fails the whole study closed; it is never repaired, re-downloaded past a mismatch, or excluded."
+  },
+
+  "generator": {
+    "inheritedFrom": "validation/dockq-development-pilot-v1/pilot-spec.json",
+    "kind": "native-derived-local-rigid-body",
+    "receptorCoordinates": "fixed",
+    "vhhInternalGeometry": "fixed",
+    "pivot": "VHH C-alpha centroid",
+    "rotationAnglesDegrees": [2, 5, 10, 20, 40, 80],
+    "translationMagnitudesAngstrom": [0.5, 1, 2, 4, 8, 16],
+    "replicatesPerGridCell": 2,
+    "posesPerTargetBeforeDeduplication": 72,
+    "totalPosesBeforeDeduplication": 1224,
+    "axisAndDirection": "independent deterministic unit vectors derived from SHA-256",
+    "seedDerivation": "SHA-256 of benchmark ID, target ID, rotation angle, translation magnitude, and replicate",
+    "seedNote": "The benchmark ID differs from the pilot's, so every pose in this study is newly drawn. The five reused structures do not receive the pilot's poses; only their native coordinates are shared.",
+    "transformConvention": "active Cartesian transform x' = R(x-pivot) + pivot + translation; row-major 4x4 affine matrix; coordinates in angstrom",
+    "rotationConvention": "right-handed Rodrigues rotation",
+    "deduplication": {
+      "metric": "VHH C-alpha RMSD without realignment",
+      "cutoffAngstrom": 0.5,
+      "keeper": "lexicographically first pose ID",
+      "labelBlind": true
+    },
+    "eligibility": "retain every finite, nonduplicate generated pose without consulting DockQ or any ConfoVHH output",
+    "controlsOutsideRankingPool": ["native self", "VHH translated +1000 angstrom along x"]
+  },
+
+  "auditPolicy": {
+    "softwareVersion": "0.5.0",
+    "confidenceMode": "none",
+    "pae": "absent",
+    "experimentalBFactorAsPlddt": false,
+    "ensembleConsensus": "not used",
+    "poseIdTieBreakAffectsMetrics": false
+  },
+
+  "dockqPolicy": {
+    "package": "DockQ",
+    "version": "2.1.3",
+    "pypiSourceSha256": "50c4e2b4bced3bf865b12061ec0b56e23de1383dc70b445441848224f6c72c0d",
+    "mapping": "AB:AB",
+    "classification": {
+      "incorrect": "0 <= DockQ < 0.23",
+      "acceptable": "0.23 <= DockQ < 0.49",
+      "medium": "0.49 <= DockQ < 0.80",
+      "high": "DockQ >= 0.80"
+    },
+    "primaryBinaryLabel": "DockQ >= 0.23",
+    "interpretation": "reference-complex geometric similarity only"
+  },
+
+  "scoreArms": [
+    { "id": "pose_ranking_v0_6", "role": "primary", "direction": "descending", "definition": "The shipped policy in lib/pose-ranking.ts: shipped evidence tier, then half-delta-SASA interface burial, ties preserved." },
+    { "id": "confovhh_evidence_v0_4", "role": "baseline", "direction": "descending", "definition": "supported=2, mixed=1, limited/not-assessable=0; the ordering that shipped before the promotion." },
+    { "id": "delta_sasa", "role": "baseline", "direction": "descending", "definition": "protein-heavy-atom delta SASA in square angstrom; burial with no tier gate." },
+    { "id": "contact_count", "role": "baseline", "direction": "descending", "definition": "receptor-VHH contacting residue-pair count" },
+    { "id": "clash_burden", "role": "baseline", "direction": "descending", "definition": "negative severe-clash residue-pair count" },
+    { "id": "cdr_contact_share", "role": "baseline", "direction": "descending", "definition": "IMGT CDR contact share; target unavailable when numbering is unavailable for every pose" },
+    { "id": "random_all_tied", "role": "control", "direction": "descending", "definition": "constant zero; prevalence baseline under uniform random tie-breaking" }
+  ],
+
+  "tiePolicy": {
+    "inheritedFrom": "validation/dockq-development-pilot-v1/pilot-spec.json",
+    "averagePrecision": "threshold-grouped non-interpolated AP; each complete tie block enters together",
+    "auroc": "Mann-Whitney formulation with 0.5 credit for positive-negative ties",
+    "kendall": "Kendall tau-b preserving score and DockQ ties",
+    "precisionAtK": "expected positive fraction when a boundary tie block crosses k",
+    "successAtK": "hypergeometric expected success when a boundary tie block crosses k",
+    "poseId": "display-only; never breaks metric ties"
+  },
+
+  "endpoints": {
+    "primary": {
+      "population": "the twelve structures not used by the DockQ development pilot",
+      "metric": "target-macro average precision for DockQ >= 0.23",
+      "comparator": "each target's prevalence, reported as AP lift"
+    },
+    "secondary": [
+      "the same primary metric over all seventeen structures, labelled contaminated",
+      "the same primary metric over the five previously-used structures, labelled contaminated",
+      "component-macro average precision over the twelve provisional components",
+      "target-macro AUROC",
+      "expected success and precision at 1, 5, and 10",
+      "enrichment factor at 1% and 5%",
+      "target-macro Kendall tau-b",
+      "positive rate by shipped evidence band",
+      "interpenetration caution rate, and its rate among DockQ-positive poses"
+    ],
+    "aggregation": "calculate per target first, then equal-weight target macro mean; retain the eligible-target denominator",
+    "sensitivityDockQCutoffs": [0.21, 0.23, 0.25],
+    "boundaryExclusion": "repeat after excluding 0.21 <= DockQ <= 0.25"
+  },
+
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 90420260903,
+    "scheme": "paired hierarchical cluster bootstrap: sample provisional receptor components with replacement, then targets within sampled components; never resample poses",
+    "interval": "2.5th and 97.5th percentiles",
+    "interpretation": "development-target dispersion interval over a provisional clustering, not external-generalization evidence"
+  },
+
+  "implementationEquivalenceGate": {
+    "requirement": "Before the seventeen-target study is scored, the runner must reproduce the frozen five-target pilot.",
+    "procedure": "Re-execute the scoring pipeline over validation/dockq-development-pilot-v1/poses.jsonl using the pilot's benchmark ID, arms and tie policy, and compare every macro metric of every shared arm against validation/dockq-development-pilot-v1/summary.json.",
+    "tolerance": 1e-9,
+    "onFailure": "The study aborts before generating a single pose. A re-implementation that cannot reproduce the frozen numbers is not the same estimator, and its seventeen-target output would not be comparable to the pilot's."
+  },
+
+  "requiredControls": {
+    "nativeSelf": "DockQ equals 1 within numerical tolerance and ConfoVHH reproduces the audit recorded in the v0.5 attestation",
+    "farTranslation": "DockQ below 0.01, zero contacts, and zero delta SASA",
+    "cliCrossCheck": "at least two generated poses per target agree with the primary DockQ execution path within 1e-6",
+    "specDigest": "The runner recomputes this file's SHA-256 and refuses to execute unless it matches the digest recorded in checksums.sha256 at freeze time."
+  },
+
+  "prespecifiedOutcomes": {
+    "note": "Written before any pose exists so that the result cannot be reinterpreted after the fact. Every branch is published either way.",
+    "generalizes": "On the primary population, pose_ranking_v0_6 macro AP exceeds both random_all_tied and confovhh_evidence_v0_4, and its expected precision at 1 is at or above 0.80.",
+    "partial": "pose_ranking_v0_6 beats random_all_tied but not confovhh_evidence_v0_4, or its expected precision at 1 falls between 0.50 and 0.80. Reported as: the ordering carries signal on unseen receptors but the pilot's margin did not transfer.",
+    "failsToGeneralize": "pose_ranking_v0_6 macro AP does not exceed random_all_tied on the primary population, or its expected precision at 1 falls below 0.50. Reported as a failure to generalize, in the interface and in the defence document, with the shipped policy's boundary text amended to say so.",
+    "noPostHocRescue": "No threshold, arm definition, direction, quantization, tie rule, missing-value rule, target, or population may be changed after DockQ output is read. A result that lands in the failure branch is published as a failure."
+  },
+
+  "accessBoundary": {
+    "usesNativeHoldoutCoordinates": false,
+    "usesNativeHoldoutRelativePoses": false,
+    "usesNativeHoldoutEpitopes": false,
+    "readsAnythingUnderHardDecoyHoldoutV3": false,
+    "hardDecoyProtocolModified": false,
+    "hardDecoyTargetFreezePermitted": false,
+    "hardDecoyExecutionAuthorized": false
+  },
+
+  "claimFlags": {
+    "formalHoldoutEvaluated": false,
+    "hardDecoyProtocolCompleted": false,
+    "leakageComponentOutStudyCompleted": false,
+    "nearNativeRankingValidated": false,
+    "establishesGeneralizationToPredictorOutput": false,
+    "establishesBindingAffinityOrSpecificity": false,
+    "improvesCandidateRankingOnDevelopmentData": "to-be-determined-by-this-study"
+  },
+
+  "interpretationBoundary": "DockQ measures geometric similarity to each source complex, not binding. Every pose here is a rigid-body perturbation of a solved structure, so the population is easier and differently shaped than predictor output, and a good result establishes only that the ordering is not specific to five targets. It does not establish that the ranking selects correct poses among candidates a real prediction pipeline produces, and it is not, and may never be reported as, the pre-registered hard-decoy holdout."
+}
