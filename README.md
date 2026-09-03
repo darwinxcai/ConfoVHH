@@ -15,7 +15,7 @@
 
 ## Why I built it
 
-Structure-prediction tools can return several plausible GPCR–nanobody poses for the same target. Their confidence metrics are useful, but they do not directly answer the experimental questions I usually care about: Is the interface physically coherent? Is binding concentrated in the VHH CDRs? Does the same epitope recur across independent runs? Does the model contact the receptor region the experiment was designed to probe?
+Structure-prediction tools can return several plausible GPCR–nanobody poses for the same target. Their confidence metrics are useful, but they do not directly answer the experimental questions I usually care about: Is the interface physically coherent? Are the modeled contacts concentrated in the VHH CDRs? Does the same modeled epitope recur across runs? Does the model contact the receptor region the experiment was designed to probe?
 
 I built ConfoVHH to make that review step systematic and inspectable. It takes existing AlphaFold, ColabFold, or Boltz outputs and organizes the structural evidence needed to compare them. The project grew from work on conformation-selective GPCR nanobodies, where a visually convincing complex can still place the binder at the wrong surface or overstate what a predicted pose establishes.
 
@@ -69,7 +69,7 @@ ConfoVHH separates software verification from biological performance claims. Det
 | PDB ↔ mmCIF regression panel | **17/17 structures matched** | Equivalent structural inputs produce matching atom, residue, contact, and clash results |
 | Deposited-assembly reconstruction | **5/5 coordinate oracles matched** | Assembly operators and generated chain copies are reconstructed correctly |
 | Genuine prediction outputs | **10/10 poses and 10/10 PAE audits completed** | End-to-end compatibility with public AlphaFold Server and ColabFold outputs |
-| Cross-structure pose-ranking study | **1,222 retained poses across 17 complexes** | The ranking rule was tested beyond the five structures used during development |
+| Cross-structure pose-ranking study | **1,222 retained poses from 17 public structures** | The ranking rule was tested beyond the five structures used during development |
 
 For the 12 structures not used to choose the pose-ranking rule, the top-ranked perturbation was DockQ-acceptable in **12/12** cases. Target-macro average precision was **0.838**, compared with **0.635** for an all-tied control.
 
