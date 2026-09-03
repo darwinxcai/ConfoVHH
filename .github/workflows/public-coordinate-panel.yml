@@ -14,7 +14,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  # Write is needed only to commit the panel record back to the dispatch branch,
+  # and the step that uses it refuses to run on the default branch. Evidence
+  # still reaches main through a reviewed pull request, never from here.
+  contents: write
 
 concurrency:
   group: public-coordinate-panel-${{ github.ref }}
@@ -42,8 +45,38 @@ jobs:
         run: |
           git --no-pager diff --stat
           test -z "$(git status --porcelain -- . ':!validation/v0.6-pose-evidence-candidate-v2')"
-      # Uploaded rather than committed: the artifact is evidence, and evidence is
-      # reviewed and committed deliberately, not pushed by a workflow.
+      # Echoed as well as uploaded. The upload redirects to blob storage, which
+      # is not reachable from every environment that needs to commit this
+      # evidence, and the record is a few kilobytes. The digest printed beside it
+      # is the one the run computed, so a transcribed copy can be verified rather
+      # than trusted.
+      - name: Print the panel record and its digest
+        run: |
+          sha256sum validation/v0.6-pose-evidence-candidate-v2/public-panel.json
+          cat validation/v0.6-pose-evidence-candidate-v2/public-panel.json
+      # Committed to the dispatch branch, never to the default branch, and never
+      # merged from here. The panel needs network access the development
+      # environment does not have, so this is the only path by which its record
+      # reaches a working tree at all; review still happens in a pull request.
+      - name: Commit the panel record to the dispatch branch
+        if: github.ref_name != github.event.repository.default_branch
+        run: |
+          set -euo pipefail
+          # --porcelain, not `git diff`: on a first run the record is a NEW file,
+          # and `git diff` reports only tracked changes, so it would call an
+          # untracked record "unchanged" and skip the commit entirely.
+          if [ -z "$(git status --porcelain -- validation/v0.6-pose-evidence-candidate-v2)" ]; then
+            echo "Panel record unchanged; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add validation/v0.6-pose-evidence-candidate-v2/public-panel.json \
+                  validation/v0.6-pose-evidence-candidate-v2/public-panel.sha256
+          git commit -m "Record the executed public coordinate panel
+
+          Produced by ${GITHUB_WORKFLOW} run ${GITHUB_RUN_ID} on ${GITHUB_SHA}."
+          git push origin "HEAD:${GITHUB_REF_NAME}"
       - name: Upload panel artifacts
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:

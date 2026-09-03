@@ -338,6 +338,54 @@ test("the candidate claims nothing about binding, generalization, or the holdout
   assert.ok(design.knownLimitations.length >= 6);
 });
 
+test("the executed public panel is recorded, checksummed, and consistent with the design record", async () => {
+  const panel = await readCandidate("public-panel.json");
+  const design = await readCandidate("design-record.json");
+  const recorded = await readFile(
+    path.join(candidateDirectory, "public-panel.sha256"),
+    "utf8",
+  );
+  const serialized = await readFile(
+    path.join(candidateDirectory, "public-panel.json"),
+    "utf8",
+  );
+  const digest = createHash("sha256").update(serialized).digest("hex");
+  assert.equal(recorded.trim(), `${digest}  public-panel.json`);
+  assert.equal(design.publicCoordinatePanel.sha256, digest);
+
+  // The safety property, checked on real crystal coordinates rather than on
+  // the perturbation grid the candidate was developed against.
+  assert.equal(panel.accounting.structures, 17);
+  assert.equal(panel.accounting.tierChangesAgainstShippedOrdinal, 0);
+  assert.equal(panel.accounting.structuresWithAuditDrift, 0);
+  assert.equal(panel.accounting.nativeRankedFirstAgainstTranslatedControls, 17);
+  assert.equal(panel.accounting.translatedControlsNotAssessable, 102);
+  assert.equal(panel.accounting.translatedControls, 102);
+  for (const record of panel.records) {
+    assert.equal(record.tierCarriedUnchanged, true, `${record.pdb}: tier not carried`);
+    assert.deepEqual(record.auditDriftFields, [], `${record.pdb}: audit drift`);
+  }
+
+  // Caution calibration. A threshold that fires on 81% of the development
+  // pilot and on no published structure is discriminating; one that fires on
+  // real crystal contacts would not be.
+  assert.equal(panel.accounting.interpenetrationCautions, 0);
+  const overlaps = panel.nativeOverlapDistributionAngstrom;
+  assert.equal(overlaps.cautionBoundary, 1.5);
+  assert.ok(
+    overlaps.maximum < overlaps.cautionBoundary,
+    "a published structure reaching the caution boundary would mean it is mis-set",
+  );
+
+  for (const [name, value] of Object.entries(panel.claimFlags)) {
+    assert.equal(value, false, `${name} must remain false`);
+  }
+  assert.equal(panel.integrity.productionIntegrated, false);
+  assert.equal(panel.integrity.usesDockqLabels, false);
+  assert.match(panel.interpretationBoundary, /not ranking accuracy/);
+  assert.equal(design.publicCoordinatePanel.status, "EXECUTED");
+});
+
 test("the replay artifact matches its recorded checksum", async () => {
   const serialized = await readFile(path.join(candidateDirectory, "development-replay.json"), "utf8");
   const recorded = await readFile(path.join(candidateDirectory, "checksums.sha256"), "utf8");

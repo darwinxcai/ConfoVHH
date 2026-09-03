@@ -134,7 +134,7 @@
   "requiredPromotionGates": [
     "Pass candidate-specific tier-carrying, fail-closed, passthrough, caution-reporting, and deterministic-ordering regressions.",
     "Reproduce the recorded v0.5 evidence-ordinal and delta-SASA development arms exactly, so any future change to the candidate is measured against an unchanged baseline.",
-    "Run the public 17-structure coordinate panel and account for every ranking change against the v0.5 ordinal.",
+    "Run the public 17-structure coordinate panel and account for every ranking change against the v0.5 ordinal. EXECUTED 2026-09-02; see publicCoordinatePanel above. Zero tier changes, zero audit drift, zero interpenetration cautions on natives.",
     "Specify, in advance and in writing, the ranking arm, the primary metric, and the cutoff to be reported from the hard-decoy holdout, before that holdout is executed. The metric-integrity finding recorded above is the reason the metric must be named in advance and not chosen afterwards.",
     "Execute the hard-decoy holdout exactly once and report the result irrespective of outcome.",
     "Create a new v0.6 implementation attestation and preserve all v0.5 attestations byte-for-byte.",
@@ -157,5 +157,49 @@
     "establishesGeneralization": false,
     "constitutesIndependentHoldoutEvidence": false,
     "establishesExperimentalBinding": false
+  },
+  "publicCoordinatePanel": {
+    "status": "EXECUTED",
+    "artifact": "validation/v0.6-pose-evidence-candidate-v2/public-panel.json",
+    "sha256": "b1bd7ee977d738aff098846a85da12707cfb6f69102973f8c78c6327789e4579",
+    "executedOn": "GitHub Actions; the development environment's network policy blocks files.rcsb.org",
+    "reproducibility": "Three independent runs on separate runners, one from main and two from the recording branch, produced a byte-identical record.",
+    "structures": 17,
+    "receptors": [
+      "ADRB2",
+      "CHRM2",
+      "US28",
+      "AGTR1",
+      "OPRK1",
+      "SUCNR1",
+      "APLNR",
+      "ADRA1A",
+      "OPRM1",
+      "RHO",
+      "HCRTR2",
+      "SMO",
+      "FZD3",
+      "ADRB1"
+    ],
+    "inactiveStateControls": 2,
+    "tierChangesAgainstShippedOrdinal": 0,
+    "structuresWithAuditDrift": 0,
+    "interpenetrationCautionsOnNatives": 0,
+    "nativeRankedFirstAgainstTranslatedControls": 17,
+    "translatedControlsNotAssessable": 102,
+    "nativeMaximumOverlapAngstrom": {
+      "minimum": 0.049964984421,
+      "median": 0.462213158541,
+      "maximum": 0.892336114089,
+      "cautionBoundary": 1.5
+    },
+    "findings": [
+      "The safety property holds on real crystal coordinates, not only on perturbed ones: the candidate's primary key equalled the shipped evidence level on all 17 structures, so it never reordered across tiers.",
+      "The recomputed audits reproduced the frozen v0.5 public attestation exactly on every checked field, so the panel measured the candidate rather than a drifted environment.",
+      "The interpenetration caution fired on 0 of 17 published structures. Native maximum cross-chain overlap spans 0.05 to 0.89 angstroms against a 1.5 angstrom boundary, so every real structure clears it, the closest by 0.61 angstroms.",
+      "That result is what makes the caution informative rather than constant. It fires on 290 of 360 development-pilot poses, which are driven into one another by construction, and on none of the published structures. The 81% rate on the pilot is a property of that distribution, not of the threshold.",
+      "All 102 translated controls were reported not-assessable and every native outranked its own six controls. This is a fail-closed sanity check on real separations, not evidence of discrimination."
+    ],
+    "interpretationBoundary": "One native pose per structure, so this panel measures structural behaviour and caution calibration, not ranking accuracy. It establishes nothing about binding, affinity, specificity or pose correctness, and the hard-decoy holdout remains unexecuted."
   }
 }
