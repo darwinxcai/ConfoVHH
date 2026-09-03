@@ -55,16 +55,35 @@ jobs:
 
       # DockQ is pinned by version AND by the source digest the pilot recorded,
       # so this study is labelled by the same scorer the five-target baseline was.
-      # --no-binary forces the sdist, which is what that digest is of.
+      #
+      # --no-binary names DockQ specifically rather than :all:. With :all:, pip
+      # also builds every BUILD dependency from source to read the sdist's
+      # metadata, which took ten minutes and bought nothing: the digest being
+      # pinned is DockQ's own sdist, not its build chain.
+      #
+      # The filename is globbed, not spelled. PyPI serves the PEP 625 normalised
+      # name (dockq-2.1.3.tar.gz, lowercase) while the distribution is called
+      # DockQ, and hardcoding the capitalised form is what failed the first run.
+      # Globbing with an explicit one-file assertion is both correct and immune
+      # to that class of mistake, and the digest check below is what actually
+      # establishes identity.
       - name: Install pinned DockQ
         run: |
           set -euo pipefail
           EXPECTED=$(node -e 'process.stdout.write(require("./validation/panel-extension-v1/study-spec.json").dockqPolicy.pypiSourceSha256)')
           python -m venv .bench-venv
           ./.bench-venv/bin/python -m pip install --upgrade pip
-          ./.bench-venv/bin/python -m pip download --no-binary :all: --no-deps --dest .dockq-src "DockQ==2.1.3"
-          SDIST=$(ls .dockq-src/DockQ-2.1.3.tar.gz)
+          ./.bench-venv/bin/python -m pip download --no-binary DockQ --no-deps --dest .dockq-src "DockQ==2.1.3"
+          shopt -s nullglob
+          SDISTS=(.dockq-src/*.tar.gz)
+          if [ "${#SDISTS[@]}" -ne 1 ]; then
+            echo "Expected exactly one DockQ sdist, found ${#SDISTS[@]}:" >&2
+            ls -la .dockq-src >&2
+            exit 1
+          fi
+          SDIST="${SDISTS[0]}"
           ACTUAL=$(sha256sum "$SDIST" | cut -d' ' -f1)
+          echo "DockQ sdist: $SDIST"
           echo "DockQ sdist digest: $ACTUAL"
           if [ "$ACTUAL" != "$EXPECTED" ]; then
             echo "DockQ source digest does not match the frozen study spec." >&2
