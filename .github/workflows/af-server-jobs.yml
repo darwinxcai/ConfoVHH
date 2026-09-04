@@ -1,0 +1,54 @@
+name: AlphaFold Server job file
+
+# Manual only. Downloads structures from files.rcsb.org to read their SEQRES,
+# which the development environment cannot reach, and emits a job file for
+# AlphaFold Server. Writes nothing to the repository — the file is collected
+# from the run artifact.
+on:
+  workflow_dispatch:
+    inputs:
+      pdbs:
+        description: >-
+          Comma-separated PDB IDs. Leave empty for all seventeen panel
+          structures. A small pilot is usually the right first run.
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build AlphaFold Server job file
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Use Node.js 22.18
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22.18.0
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install dependencies
+        run: npm ci
+      - name: Build the job file
+        run: |
+          set -euo pipefail
+          if [ -n "${{ inputs.pdbs }}" ]; then
+            node scripts/make-af-server-jobs.mjs --pdbs "${{ inputs.pdbs }}"
+          else
+            node scripts/make-af-server-jobs.mjs
+          fi
+      # Echoed as well as uploaded: the file is a few kilobytes, and the artifact
+      # download redirects to blob storage that is not reachable everywhere.
+      - name: Print the job file
+        run: cat af-server-jobs.json
+      - name: Upload the job file
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: af-server-jobs
+          path: af-server-jobs.json
+          if-no-files-found: error
+          retention-days: 30
