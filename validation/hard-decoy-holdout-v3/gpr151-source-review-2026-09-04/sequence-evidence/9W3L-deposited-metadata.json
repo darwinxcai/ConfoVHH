@@ -1,0 +1,128 @@
+{
+  "directInterfaceEvidenceStatus": "UNRESOLVED",
+  "dispositionStatus": "PENDING_DISPOSITION",
+  "experimentalMethods": [
+    "ELECTRON MICROSCOPY",
+    "EM"
+  ],
+  "gpcrdb": {
+    "activationDistance": null,
+    "class": null,
+    "experimentalType": null,
+    "family": null,
+    "preferredChain": null,
+    "protein": null,
+    "publication": null,
+    "publicationDate": null,
+    "resolution": null,
+    "signallingProtein": null,
+    "species": null,
+    "state": null
+  },
+  "keywords": {
+    "pdbxKeywords": "MEMBRANE PROTEIN",
+    "text": "orphan GPCR, cryo-EM, GPR151, MEMBRANE PROTEIN"
+  },
+  "metadataCompleteness": {
+    "allPolymerSequencesPresent": true,
+    "entryTitlePresent": true,
+    "polymerEntityCountMatches": true,
+    "preferredReceptorAuthChainUniquelyMapped": false,
+    "primaryCitationIdentified": true
+  },
+  "metadataSignals": {
+    "auxiliaryLexicalEntityIds": [],
+    "constructRiskEntityIds": [],
+    "vhhLikeEntityIds": []
+  },
+  "nativeCoordinatesInspected": false,
+  "pdbId": "9W3L",
+  "polymerEntities": [
+    {
+      "authAsymIds": [
+        "A"
+      ],
+      "description": "G-protein coupled receptor 151",
+      "entityId": "1",
+      "labelAsymIds": [
+        "A"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": false,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": false,
+        "vhhLikeCandidate": false
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "9W3L_1",
+      "referenceSequences": [
+        {
+          "databaseAccession": "Q8TDV0",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ],
+      "sequence": "MLAAAFADSNSSSMNVSFAHLHFAGGYLPSDSQDWRTIIPALLVAVCLVGFVGNLCVIGILLHNAWKGKPSMIHSLILNLSLADLLLLLFSAPIRATAYSKSVWDLGWFVCKSSDWFIHTCMAAKSWTIVVVAKVCFMYASDPAKQVSIHNYTIWSVLVAIWTVASLLPLPEWFFSTIRHHEGVEMCLVDVPAVAEEFMAMFGKLYPLLAFGLPLFFASFYYTLMILRLKSVRLLSGSREKDRNLRRITRLVLSIAIISALLWLPEWVAWLWVWHLKAAGPAPPQGFIALSQVLMFSISAANPLIFLVMSEEFREGLKGVWKWMITKKPPTVSESQETPAGNSEGLPDKVPSPESPASIPEKEKPSSPSSGKGKTEKAEIPILPDVEQFWHERDTVPSVQDNDPIPWEHEDQETGEGVK",
+      "sequenceLength": 419,
+      "sequenceSha256": "f8905ab49c5a6ac712c0146edb4d72e9bbbdd020355fa8ee3284037dfab8e018",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Homo sapiens",
+          "taxonomyId": "9606"
+        }
+      ]
+    },
+    {
+      "authAsymIds": [
+        "B"
+      ],
+      "description": "NB6",
+      "entityId": "2",
+      "labelAsymIds": [
+        "B"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": false,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": true,
+        "vhhLikeCandidate": false
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "9W3L_2",
+      "referenceSequences": [],
+      "sequence": "MQVQLQESGGGLVQAGESLRLSCAASGTIFRLYDMGWYRRAPGKQRELVASITSGGSTKYGDSVKGRFTISRDNAKNTVYLQMSSLKPEDTAVYYCNAEYRTGIWEELLDGWGQGTQVTVSSLEHHH",
+      "sequenceLength": 127,
+      "sequenceSha256": "5f867337653ed65137392ad7fb5a69400c7fc6ec3feee464dbd84198385ced1d",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Spodoptera frugiperda",
+          "taxonomyId": "7108"
+        }
+      ]
+    }
+  ],
+  "polymerEntityCountReported": 2,
+  "primaryCitation": {
+    "doi": "10.1073/pnas.2534234123",
+    "pmid": "42085164",
+    "title": "Decoding the structure of GPR151 via NELiS."
+  },
+  "receptorMapping": {
+    "preferredAuthChainEntityIds": [],
+    "preferredLabelChainEntityIds": []
+  },
+  "releaseDate": "2026-05-06T00:00:00Z",
+  "resolutionAngstrom": [
+    2.76
+  ],
+  "sourceQueryIds": [
+    "C.1_GPCR_DOMAIN_REMAINDER_WITHOUT_ANTIBODY_OR_TAXONOMY_FILTER"
+  ],
+  "title": "Cryo-EM structure of GPR151-Nb6 complex"
+}

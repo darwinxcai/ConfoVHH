@@ -1,0 +1,20 @@
+{
+  "recordType": "INCIDENTAL_OLD_ARTICLE_FIGURE_TITLE_NAVIGATION_EXPOSURE",
+  "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8926151/",
+  "sourceDoi": "10.1126/science.abl4732",
+  "responseSha256": "8a313051969077401f67dab5605fd1258af41577e4cfdcc8724a5b930cd46d03",
+  "visibleContentCategory": "Four figure-title headings appeared in an HTML heading list used to locate supplementary Methods.",
+  "figureTitleCount": 4,
+  "captionBodiesRead": false,
+  "nativeResidueOrContactDetailsRead": false,
+  "structureImagesRequestedOrInspected": false,
+  "nativeCoordinateOrPoseFilesRequestedOrInspected": false,
+  "contactTablesRequestedOrInspected": false,
+  "dockqLabelsAccessed": false,
+  "exactFigureTitlesReproducedInPackage": false,
+  "relationshipToCurrentEntries": "The heading-list event concerns the older preparation reference, not a retrieval of 9VOR/9VOS native structures. It does not establish an exposure-clearance judgment for the current study.",
+  "usedForConstructOrEligibilityDecision": false,
+  "mitigation": "Further HTML extraction must exclude figure ancestors before displaying headings or prose. Subsequent output was confined to attachment metadata and Methods citation details.",
+  "formalExposureClearanceComplete": false,
+  "targetFreezePermitted": false
+}

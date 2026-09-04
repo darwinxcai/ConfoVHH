@@ -1,0 +1,68 @@
+[
+  {
+    "id": "doi-search",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1073%2Fpnas.2534234123&format=json&resultType=lite&pageSize=100",
+    "method": "GET",
+    "startedAt": "2026-09-04T23:15:14.549974+00:00",
+    "finishedAt": "2026-09-04T23:15:23.095818+00:00",
+    "status": 200,
+    "contentType": "application/json;charset=UTF-8",
+    "file": "sources/doi-search.json",
+    "bytes": 896,
+    "sha256": "99217f2ce0e93970bf940f98f23cbe24cd54c3bebf21de098815b9d0512c33b5"
+  },
+  {
+    "id": "pnas-primary",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.2534234123",
+    "method": "GET",
+    "urlProvenance": "exact DOI publisher URL",
+    "startedAt": "2026-09-04T23:15:42.363288+00:00",
+    "finishedAt": "2026-09-04T23:15:49.121833+00:00",
+    "status": 403,
+    "contentType": "text/html; charset=UTF-8",
+    "bytes": 5996,
+    "sha256": "292431e669d6308b4952e4fbd9889641f32919c3b601d6e74305a6e6010f0192",
+    "scratchPath": "/tmp/confovhh-gpr151-pnas-primary.bin",
+    "responseBodyRetainedInRepository": true,
+    "file": "sources/pnas-primary-failed-response.html"
+  },
+  {
+    "id": "pnas-si-candidate",
+    "url": "https://www.pnas.org/doi/suppl/10.1073/pnas.2534234123/suppl_file/pnas.2534234123.sapp.pdf",
+    "method": "GET",
+    "urlProvenance": "conventional PNAS supplement path, not yet verified from primary attachment metadata",
+    "startedAt": "2026-09-04T23:15:49.122111+00:00",
+    "finishedAt": "2026-09-04T23:15:54.932308+00:00",
+    "status": 403,
+    "contentType": "text/html; charset=UTF-8",
+    "bytes": 6186,
+    "sha256": "f5ed590379fdcf9079baf568ac72522f741e730755afedbaecfb5087e1b0d1bb",
+    "scratchPath": "/tmp/confovhh-gpr151-pnas-si-candidate.bin",
+    "responseBodyRetainedInRepository": true,
+    "file": "sources/pnas-si-candidate-failed-response.html"
+  },
+  {
+    "id": "doi-core",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1073%2Fpnas.2534234123&format=json&resultType=core&pageSize=100",
+    "method": "GET",
+    "startedAt": "2026-09-04T23:16:36.212023+00:00",
+    "finishedAt": "2026-09-04T23:16:44.451205+00:00",
+    "status": 200,
+    "contentType": "application/json;charset=UTF-8",
+    "file": "sources/doi-core.json",
+    "bytes": 9975,
+    "sha256": "20f0c0c3d1d92b175b2aef192fa82967a4ad5a73dbc8096bcb204503e6e43c5a"
+  },
+  {
+    "id": "title-search",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Decoding+the+structure+of+GPR151%22&format=json&resultType=lite&pageSize=100",
+    "method": "GET",
+    "startedAt": "2026-09-04T23:16:44.451701+00:00",
+    "finishedAt": "2026-09-04T23:16:52.606911+00:00",
+    "status": 200,
+    "contentType": "application/json;charset=UTF-8",
+    "file": "sources/title-search.json",
+    "bytes": 911,
+    "sha256": "02054f4256cb4b2fc7387cc9dec0869ee86d6b4ec91757193c3e0f9b5eb1b1e5"
+  }
+]
