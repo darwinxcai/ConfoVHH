@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "recordedAtUtc": "2026-09-04T19:45:37Z",
+  "status": "BLOCKED_BEFORE_TARGET_FREEZE_AND_MSA_RETRIEVAL",
+  "purpose": "Record the recovered repository checkpoint, the generator assets already pinned, and the exact fail-closed requirements that remain before MSA retrieval or prediction generation.",
+  "sourceState": {
+    "repository": "darwinxcai/ConfoVHH",
+    "auditedMainCommit": "c86a9f6e611925078a25a31839bf642fbef2eebf",
+    "receptorTmPregraphCommit": "589e7bf1e55f00877ca329221a8d50eac6eb5848",
+    "protocolV2": {
+      "path": "HARD_DECOY_PROTOCOL_V2.md",
+      "sha256": "9c38f2d2f7ed2ce4acd5b6730fedd6a37151fe992a808bfefc4268888f862421"
+    },
+    "protocolV3": {
+      "path": "HARD_DECOY_PROTOCOL_V3.md",
+      "sha256": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376"
+    },
+    "integrationState": {
+      "path": "validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json",
+      "sha256": "e06e92945c8591d1ca64a12f8f352ecd682de36ffc9083e248ea2c3c52c64ec1",
+      "recordedBeforeReceptorTmPregraph": true
+    },
+    "generatorContracts": {
+      "path": "validation/hard-decoy-holdout-v2/prelabel-census/generator-contracts.json",
+      "sha256": "4387328701ce16d6a0d166a73fa6405acc7dabc0940014f2a12c120bb01aef53",
+      "role": "historical-v2-contract-requiring-v3-msa-clarification"
+    },
+    "receptorTmPregraph": {
+      "directory": "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30",
+      "checksumsPath": "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/checksums.sha256",
+      "checksumsSha256": "a7d4bea8f24f5c79b18095337543ae2cad226449ac5f714053c3ffd907adb402",
+      "manifestPath": "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/manifest.json",
+      "manifestSha256": "cd9ddfbb24ac5daf9ad4c9dfc2bc0524a87ceea7f6a5aba4c3d7d700af7edfa1",
+      "summaryPath": "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/summary.json",
+      "summarySha256": "6412850ea58f52bed63e529222a9177e8d20e5063c809fb57f76c5d0ada99a79"
+    }
+  },
+  "completedCheckpoint": {
+    "canonicalReceptorTmPregraphComplete": true,
+    "canonicalReceptorTmPregraphMustNotBeRegenerated": true,
+    "totalNodes": 304,
+    "candidateNodes": 287,
+    "developmentNodes": 17,
+    "allUnorderedReceptorPairs": 46056,
+    "resolvedCanonicalTmProfiles": 282,
+    "failClosedCanonicalTmProfiles": 22,
+    "repeatedGpcrdbCaptureAgreement": true,
+    "nativeHoldoutCoordinatesAccessed": false,
+    "dockqLabelsAccessed": false,
+    "performanceResultsAccessed": false
+  },
+  "targetState": {
+    "exactTargetManifestFrozen": false,
+    "formallyClearedIndependentGroups": 0,
+    "requiredIndependentGroups": 10,
+    "dispositionLedgerComplete": false,
+    "pendingDispositionRows": 272,
+    "broaderCandidateDiscoveryComplete": false,
+    "predictionGenerationAuthorized": false
+  },
+  "msaPreparation": {
+    "status": "BLOCKED_UNTIL_EXACT_TARGET_MANIFEST_AND_RETRIEVAL_CONTRACT",
+    "retrievalAuthorized": false,
+    "finalTargetManifestPath": null,
+    "finalTargetManifestSha256": null,
+    "pairFastaInventoryPath": null,
+    "pairFastaInventorySha256": null,
+    "uniqueSequenceInventoryPath": null,
+    "uniqueSequenceInventorySha256": null,
+    "retrievalServerBaseUrl": null,
+    "retrievalServerDatabaseRelease": null,
+    "retrievalServerDatabaseDigest": null,
+    "requestRetryAndTimeoutContractPath": null,
+    "requestRetryAndTimeoutContractSha256": null,
+    "historicalV2PolicyAssessment": {
+      "policy": "one serial ColabFold/MMseqs2 retrieval per unique frozen chain, then offline reuse",
+      "sufficientForUnpairedMsa": true,
+      "sufficientForConfiguredUnpairedPairedMode": false,
+      "reason": "ColabFold 1.6.2 and Boltz 2.2.1 issue a separate joint paired-MSA search for a heteromeric target when paired mode is enabled. Per-chain retrieval alone does not freeze that target-level request or response."
+    },
+    "requiredRetrievalUnits": {
+      "unpaired": "one archived request and response per unique frozen protein-sequence SHA-256",
+      "paired": "one archived joint request and response per exact final heteromeric target if paired MSA mode remains enabled",
+      "policyDecision": "Either freeze both units with pairing strategy and database provenance, or amend the protocol to unpaired-only before target freeze."
+    },
+    "fixedCurrentGeneratorOptions": {
+      "colabfoldPairMode": "unpaired_paired",
+      "colabfoldPairingStrategy": "greedy",
+      "templates": false,
+      "liveRetrievalDuringFinalGeneration": false,
+      "offlineReuseRequired": true
+    },
+    "requiredCapturePerRequest": [
+      "requestId",
+      "requestKind",
+      "orderedTargetAndChainIds",
+      "orderedInputSequenceSha256",
+      "canonicalRequestBytes",
+      "canonicalRequestSha256",
+      "serverBaseUrl",
+      "serverDatabaseReleaseOrExplicitUnavailableMarker",
+      "submittedUtc",
+      "completedUtc",
+      "httpStatusLedger",
+      "retryAndTimeoutPolicySha256",
+      "rawResponseInventory",
+      "rawResponseSha256",
+      "normalizedA3mInventory",
+      "normalizedA3mSha256"
+    ],
+    "requiredFrozenOutputs": [
+      "target-manifest.json",
+      "pair-fasta-inventory.json",
+      "unique-sequence-inventory.json",
+      "request-response-ledger.jsonl",
+      "raw-response-checksums.sha256",
+      "raw-and-normalized-a3m-checksums.sha256",
+      "colabfold-complex-a3m-inventory.json",
+      "boltz-chain-csv-inventory.json",
+      "manifest.json",
+      "checksums.sha256"
+    ],
+    "colabfoldImplementationEvidence": {
+      "version": "1.6.2",
+      "gitCommit": "c7d1772352cc9619df25c6d36cb0f218c0c6610e",
+      "batchPySha256": "1001e5685ce9b104cefbe0391cf803815d0788f90d47387883b6991338bebcd7",
+      "mmseqsApiPySha256": "35cdbef65000b45d4a242e3773192b1dbda5320c8e47242506f92a062e60aad4",
+      "downloadPySha256": "b39c12d434c5a0d3ddaf1df9735d7531c6b13345d3ff035ba17160fe160aabbb"
+    },
+    "boltzImplementationEvidence": {
+      "version": "2.2.1",
+      "gitCommit": "cb04aeccdd480fd4db707f0bbafde538397fa2ac",
+      "mainPySha256": "b5ded4dac1552af2e079c335d56e64ea580b4d5ca0202a9542385ce3e318c3b3",
+      "mmseqsApiPySha256": "7537c23ca2d6863639187b8815011d592ee433bb145e6fdc86082ca836d3a6e7"
+    }
+  },
+  "generatorAssets": {
+    "colabfold": {
+      "version": "1.6.2",
+      "modelType": "AlphaFold-Multimer-v3",
+      "containerReference": "ghcr.io/sokrypton/colabfold:1.6.2-cuda12",
+      "containerIndexDigest": "sha256:22f1243a8feca427b6942889d4dc3b549a3b75b23df9cf85c5f512a85e4f7f77",
+      "containerLinuxAmd64ManifestDigest": "sha256:fd2eddea1cbc8efb21e6980e76e67e0eccfe1f2f4e833304be10dfd3ca6d180d",
+      "parameterArchiveUrl": "https://storage.googleapis.com/alphafold/alphafold_params_colab_2022-12-06.tar",
+      "parameterArchiveSha256": null,
+      "extractedParameterInventorySha256": null,
+      "status": "BLOCKED_PENDING_PARAMETER_ARCHIVE_AND_EXTRACTED_FILE_HASHES"
+    },
+    "boltz": {
+      "version": "2.2.1",
+      "wheelFilename": "boltz-2.2.1-py3-none-any.whl",
+      "wheelBytes": 268390,
+      "wheelSha256": "b8c62bbdede1922931d9203118f62c858f11aa699bf91fd4c05a5ed6a6d8b4fc",
+      "checkpointFilename": "boltz2_conf.ckpt",
+      "checkpointBytes": 2286561469,
+      "checkpointSha256": "090e82ac8c92f5e943fa1b39e7410a44027bea7243c0bbb3caa67a77fc1428e1",
+      "checkpointRepositoryCommit": "6fdef46d763fee7fbb83ca5501ccceff43b85607",
+      "environmentImageDigest": null,
+      "resolvedDependencyLockSha256": null,
+      "status": "BLOCKED_PENDING_IMMUTABLE_ENVIRONMENT_IMAGE_AND_DEPENDENCY_LOCK"
+    }
+  },
+  "activeExecution": {
+    "githubActionsInProgress": 0,
+    "githubActionsQueued": 0,
+    "scientificGenerationRunning": false
+  },
+  "blockers": [
+    "exact-target-manifest-not-frozen",
+    "fewer-than-ten-formally-cleared-leakage-components",
+    "272-source-entries-still-pending-scientific-disposition",
+    "broader-candidate-discovery-incomplete",
+    "paired-msa-retrieval-unit-not-frozen-for-current-unpaired-paired-mode",
+    "msa-server-and-database-provenance-unresolved",
+    "msa-request-retry-timeout-contract-unresolved",
+    "alphafold-multimer-v3-parameter-archive-and-file-hashes-unresolved",
+    "boltz-2.2.1-environment-image-digest-unresolved",
+    "boltz-2.2.1-resolved-dependency-lock-unresolved"
+  ]
+}
