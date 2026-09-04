@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-09-04T22:26:35.530Z",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/prelabel-census-draft/source-query-contract.json": "1a480345f9910470d4474e134bedc1cab550ba04c0254c2e09184c1c7fddb825",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json": "bbf10ef8ebf057dde42969fbd166bcbd2bd437902a76064d7ad8fcea9faa16b7",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/gpcrdb-api.txt": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0"
+  },
+  "generatorScript": "scripts/hard-decoy-v3/capture-recent-gpcrdb-delta.mjs",
+  "generatorScriptSha256": "37a2b58ec4f242a5d839fb727d42b0962e7f079235cac6f59a7ab7ba66941958",
+  "gpcrdbEndpoint": "https://gpcrdb.org/services/structure/",
+  "rcsbEndpoint": "https://data.rcsb.org/graphql",
+  "requestRepeatCount": 2,
+  "networkRequests": 2,
+  "replayFinalizedAt": "2026-09-04T22:28:01.744Z"
+}

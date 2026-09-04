@@ -1,0 +1,52 @@
+[
+  {
+    "endpoint": "https://gpcrdb.org/services/structure/",
+    "method": "GET",
+    "repeat": 1,
+    "requestedIds": null,
+    "requestBodySha256": null,
+    "startedAt": "2026-09-04T22:26:24.898Z",
+    "finishedAt": "2026-09-04T22:26:34.423Z",
+    "status": 200,
+    "finalUrl": "https://gpcrdb.org/services/structure/",
+    "redirected": false,
+    "headers": {
+      "date": "Fri, 04 Sep 2026 22:26:33 GMT",
+      "content-type": "application/json",
+      "content-length": null,
+      "content-encoding": "gzip",
+      "etag": null,
+      "last-modified": null
+    },
+    "rawFile": "raw/gpcrdb-api-1.json",
+    "responseByteCount": 1014984,
+    "responseSha256": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "bodyRepresentation": "fetch-decoded-response-bytes",
+    "error": null
+  },
+  {
+    "endpoint": "https://gpcrdb.org/services/structure/",
+    "method": "GET",
+    "repeat": 2,
+    "requestedIds": null,
+    "requestBodySha256": null,
+    "startedAt": "2026-09-04T22:26:34.427Z",
+    "finishedAt": "2026-09-04T22:26:35.185Z",
+    "status": 200,
+    "finalUrl": "https://gpcrdb.org/services/structure/",
+    "redirected": false,
+    "headers": {
+      "date": "Fri, 04 Sep 2026 22:26:34 GMT",
+      "content-type": "application/json",
+      "content-length": null,
+      "content-encoding": "gzip",
+      "etag": null,
+      "last-modified": null
+    },
+    "rawFile": "raw/gpcrdb-api-2.json",
+    "responseByteCount": 1014984,
+    "responseSha256": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "bodyRepresentation": "fetch-decoded-response-bytes",
+    "error": null
+  }
+]
