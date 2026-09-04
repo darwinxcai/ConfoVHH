@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "PRELABEL_VIABILITY_REVIEW_CREATED_TARGET_CENSUS_BLOCKED",
+  "recordedAtUtc": "2026-09-04T20:30:00Z",
+  "sourceEntryCount": 287,
+  "directLookingEntryCount": 39,
+  "exactDevelopmentPdbDirectLookingCount": 10,
+  "nonDevelopmentDirectLookingEntryCount": 29,
+  "directDevelopmentPathCount": 19,
+  "transitiveDevelopmentPathCount": 4,
+  "noDevelopmentPathCount": 6,
+  "noDevelopmentPathIds": [
+    "6N51",
+    "7DGE",
+    "7EPB",
+    "8T7H",
+    "8XFP",
+    "8XFS"
+  ],
+  "pregraphPathsAreFormalLeakageDecisions": false,
+  "queueRowsAreScientificDispositions": false,
+  "formallyClearedComponentCount": 0,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "PRELABEL_VIABILITY_REVIEW_CREATED_TARGET_CENSUS_BLOCKED",
+  "recordedAtUtc": "2026-09-04T20:30:00Z",
+  "purpose": "Record the statistical stop/fallback rule before completing candidate adjudication and prioritize label-safe review without converting pregraph signals into formal leakage decisions.",
+  "authoritativeProtocol": {
+    "path": "HARD_DECOY_PROTOCOL_V3.md",
+    "sha256": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376"
+  },
+  "requiredIndependentComponents": 10,
+  "currentProvisionalComponents": 7,
+  "currentFormallyClearedComponents": 0,
+  "interpretation": "Provisional components are candidates for adjudication, not independent observations in a completed benchmark. The current formal sample size is zero because no component has cleared every gate.",
+  "decisionRule": {
+    "atLeastTenOutcome": "CONTINUE_TO_REMAINING_PRELABEL_GATES_WITHOUT_AUTOMATIC_EXECUTION",
+    "fewerThanTenOutcome": "TARGET_CENSUS_BLOCKED",
+    "thresholdMayBeLoweredAfterReview": false,
+    "candidateMayBeAddedOnlyToReachCount": false,
+    "smallerGpcrPanelStudyLabel": "EXPLORATORY_FEASIBILITY_STUDY",
+    "smallerPanelMaySupportFormalHoldoutClaim": false,
+    "broaderStudyMustBeSeparatelyPreregistered": true,
+    "crossStudyPoolingPermitted": false
+  },
+  "fallbackDirection": {
+    "preferredScope": "separately preregistered membrane-protein-VHH hard-decoy benchmark",
+    "rationale": "A broader membrane-protein scope can increase independent components while remaining closer to the intended receptor-VHH use case than a general soluble-antigen benchmark.",
+    "gpcrPanelRoleIfBelowTen": "secondary exploratory feasibility result",
+    "exactFallbackProtocolFrozen": false
+  },
+  "prioritizedReview": {
+    "sourceEntryCount": 287,
+    "pendingDispositionRowsAtRecovery": 272,
+    "directLookingEntryCount": 39,
+    "nonDevelopmentDirectLookingEntryCount": 29,
+    "directOrTransitivePregraphDevelopmentPathCount": 23,
+    "noPregraphDevelopmentPathCount": 6,
+    "noPregraphPathDoesNotEstablishIndependence": true
+  },
+  "allowedNow": [
+    "public metadata and primary-publication adjudication",
+    "direct receptor-VHH and construct-role review",
+    "VHH parent and variant provenance review",
+    "reproducibility and immutable generator-environment work",
+    "separate fallback-study protocol drafting",
+    "manuscript methods and claim-boundary drafting"
+  ],
+  "forbiddenNow": [
+    "target freeze",
+    "final MSA retrieval",
+    "GPU prediction generation",
+    "native holdout coordinate or relative-pose inspection",
+    "DockQ or CAPRI label access",
+    "ConfoVHH holdout scoring or performance analysis",
+    "CRO commissioning tied to an unfrozen target set"
+  ],
+  "targetFreezePermitted": false,
+  "executionAuthorized": false
+}
