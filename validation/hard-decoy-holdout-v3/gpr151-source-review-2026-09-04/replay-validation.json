@@ -1,0 +1,24 @@
+{
+  "status": "OFFLINE_SCIENTIFIC_REPLAY_MATCHED",
+  "repositoryRoot": "/workspace/scratch/746bb3989941/ConfoVHH",
+  "evidenceDirectory": "/workspace/scratch/746bb3989941/ConfoVHH/validation/hard-decoy-holdout-v3/gpr151-source-review-2026-09-04/sequence-evidence",
+  "outputDirectory": "/tmp/confovhh-gpr151-replay-sDbfp8",
+  "originalCollectorSourcesPreserved": true,
+  "originalNodeSourceSha256": "7f4b5e7ab6f4c20874ee569969eacbffbf9abadc276e2c9d650e399706b01aba",
+  "originalPythonSourceSha256": "a4dd5c01e9713f588f11e2c9462b1dde07b12972cc79559457de06a77d135693",
+  "replayNodeSourceSha256": "25ddd18d728fb46fd2366757528ef9a70c2b4724494b6180dad1e3855b6dbfef",
+  "replayPythonSourceSha256": "b3970151f107a994b30308e3494b3fa323c08ff55f1c1007ce8b1176bef0a521",
+  "excludedRuntimeFields": [
+    "nb6.createdAt",
+    "nb6.repositoryRoot",
+    "nb6.executionScript"
+  ],
+  "normalizedRuntimeFields": [
+    "receptor.sourceInputs[].path: original/replay output-directory prefixes map to sequence-evidence/"
+  ],
+  "scientificInputsAndDigestFieldsCompared": true,
+  "completeScientificOutputsCompared": true,
+  "exactAdditionalInventoryOutputsCompared": 3,
+  "developmentProfilesReproduced": 18,
+  "targetFreezePermitted": false
+}
