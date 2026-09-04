@@ -1,0 +1,776 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewDate": "2026-09-04",
+  "scope": "Citation identity and exact deposition linkage only; no new binder-role or whole-entry adjudication.",
+  "reviews": [
+    {
+      "pdbId": "6GT3",
+      "candidateCitation": {
+        "doi": "10.1136/jitc-2019-000417",
+        "pmid": "32727810",
+        "pmcid": "PMC7394305",
+        "title": "Small molecule AZD4635 inhibitor of A<sub>2A</sub>R signaling rescues immune cell function including CD103<sup>+</sup> dendritic cells enhancing anti-tumor immunity.",
+        "primaryUrl": "https://doi.org/10.1136/jitc-2019-000417",
+        "sourceTextSha256": "313f50d05cf2bcb8926503bed6afa13870bb2badf122242fdc7f086f62869c7b"
+      },
+      "citationRelation": "TITLE_MATCHED_BIBLIOGRAPHY_ONLY_NO_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "A captured frozen-title bibliography query identifies this candidate source. Citation-title similarity alone does not establish that it originally reports this exact PDB accession.",
+      "bibliographyQueryId": "title-22",
+      "accessLimitations": [
+        "Primary article body XML retrieved, but exact6GT3 deposition linkage was not established; supplementary deposition material was not reviewed."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "6H7N",
+      "candidateCitation": {
+        "doi": "10.1126/science.aau5595",
+        "pmid": "31072904",
+        "pmcid": "PMC6586556",
+        "title": "Molecular basis for high-affinity agonist binding in GPCRs.",
+        "primaryUrl": "https://doi.org/10.1126/science.aau5595",
+        "sourceTextSha256": null
+      },
+      "citationRelation": "TITLE_MATCHED_BIBLIOGRAPHY_ONLY_NO_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "A captured frozen-title bibliography query identifies this candidate source. Citation-title similarity alone does not establish that it originally reports this exact PDB accession.",
+      "bibliographyQueryId": "title-18",
+      "accessLimitations": [
+        "Journal article full-text XML request returned HTTP404; its exact6H7N deposition link was not verified. Do not attach the journal PMID to the distinct frozen bioRxiv DOI."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "7TRK",
+      "candidateCitation": {
+        "doi": "10.7554/elife.83477",
+        "pmid": "37248726",
+        "pmcid": "PMC10229135",
+        "title": "Pharmacological hallmarks of allostery at the M4 muscarinic receptor elucidated through structure and dynamics",
+        "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10229135/",
+        "retrievedFromUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10229135/fullTextXML",
+        "sourceTextSha256": "4de127524b11f2b617c666d27281435c018b064091e74d6e780f59ebd25111ed",
+        "sourceTextScratchPath": "/tmp/confovhh-c5-PMC10229135.xml"
+      },
+      "citationRelation": "ORIGINAL_STUDY_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": true,
+      "articleSection": "Data availability",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "7TRK",
+        "7TRP",
+        "7TRQ",
+        "7TRS"
+      ],
+      "depositionEmdbId": "EMD-26099",
+      "evidenceParaphrase": "The original study explicitly deposits 7TRK/EMD-26099 as the M4 receptor-Gi1 sample containing iperoxo. This resolves the source identity only; candidate roles and whole-entry eligibility have not been reviewed here.",
+      "accessLimitations": [],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "7TRP",
+      "candidateCitation": {
+        "doi": "10.7554/elife.83477",
+        "pmid": "37248726",
+        "pmcid": "PMC10229135",
+        "title": "Pharmacological hallmarks of allostery at the M4 muscarinic receptor elucidated through structure and dynamics",
+        "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10229135/",
+        "retrievedFromUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10229135/fullTextXML",
+        "sourceTextSha256": "4de127524b11f2b617c666d27281435c018b064091e74d6e780f59ebd25111ed",
+        "sourceTextScratchPath": "/tmp/confovhh-c5-PMC10229135.xml"
+      },
+      "citationRelation": "ORIGINAL_STUDY_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": true,
+      "articleSection": "Data availability",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "7TRK",
+        "7TRP",
+        "7TRQ",
+        "7TRS"
+      ],
+      "depositionEmdbId": "EMD-26100",
+      "evidenceParaphrase": "The original study explicitly deposits 7TRP/EMD-26100 as the M4 receptor-Gi1 sample containing iperoxo and LY2033298. This resolves the source identity only; candidate roles and whole-entry eligibility have not been reviewed here.",
+      "accessLimitations": [],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "7TRQ",
+      "candidateCitation": {
+        "doi": "10.7554/elife.83477",
+        "pmid": "37248726",
+        "pmcid": "PMC10229135",
+        "title": "Pharmacological hallmarks of allostery at the M4 muscarinic receptor elucidated through structure and dynamics",
+        "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10229135/",
+        "retrievedFromUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10229135/fullTextXML",
+        "sourceTextSha256": "4de127524b11f2b617c666d27281435c018b064091e74d6e780f59ebd25111ed",
+        "sourceTextScratchPath": "/tmp/confovhh-c5-PMC10229135.xml"
+      },
+      "citationRelation": "ORIGINAL_STUDY_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": true,
+      "articleSection": "Data availability",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "7TRK",
+        "7TRP",
+        "7TRQ",
+        "7TRS"
+      ],
+      "depositionEmdbId": "EMD-26101",
+      "evidenceParaphrase": "The original study explicitly deposits 7TRQ/EMD-26101 as the M4 receptor-Gi1 sample containing iperoxo and VU0467154. This resolves the source identity only; candidate roles and whole-entry eligibility have not been reviewed here.",
+      "accessLimitations": [],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "7TRS",
+      "candidateCitation": {
+        "doi": "10.7554/elife.83477",
+        "pmid": "37248726",
+        "pmcid": "PMC10229135",
+        "title": "Pharmacological hallmarks of allostery at the M4 muscarinic receptor elucidated through structure and dynamics",
+        "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10229135/",
+        "retrievedFromUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10229135/fullTextXML",
+        "sourceTextSha256": "4de127524b11f2b617c666d27281435c018b064091e74d6e780f59ebd25111ed",
+        "sourceTextScratchPath": "/tmp/confovhh-c5-PMC10229135.xml"
+      },
+      "citationRelation": "ORIGINAL_STUDY_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": true,
+      "articleSection": "Data availability",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "7TRK",
+        "7TRP",
+        "7TRQ",
+        "7TRS"
+      ],
+      "depositionEmdbId": "EMD-26102",
+      "evidenceParaphrase": "The original study explicitly deposits 7TRS/EMD-26102 as the M4 receptor-Gi1 sample containing acetylcholine. This resolves the source identity only; candidate roles and whole-entry eligibility have not been reviewed here.",
+      "accessLimitations": [],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "7Y35",
+      "candidateCitation": {
+        "doi": "10.1038/s41467-022-34009-x",
+        "pmid": "36271004",
+        "pmcid": "PMC9586930",
+        "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9586930/",
+        "sourceTextScratchPath": "/tmp/confovhh-c5-PMC9586930.xml",
+        "sourceTextSha256": "15786b121199a3a3d661935cf3d6ed3b91154cdf828001a679a41266ff4874d0",
+        "hashMeaning": "SHA256 of retrieved full-text XML or publisher HTML bytes"
+      },
+      "citationRelation": "ORIGINAL_STUDY_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": true,
+      "articleSection": "Data availability",
+      "evidenceParaphrase": "The original study explicitly identifies 7Y35 as its abaloparatide-bound PTH1R-Gs deposited complex and associates that sample with EMD-33588.",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "7Y35",
+        "7Y36"
+      ],
+      "depositionEmdbId": "EMD-33588",
+      "accessLimitations": [],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "7Y36",
+      "candidateCitation": {
+        "doi": "10.1038/s41467-022-34009-x",
+        "pmid": "36271004",
+        "pmcid": "PMC9586930",
+        "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9586930/",
+        "sourceTextScratchPath": "/tmp/confovhh-c5-PMC9586930.xml",
+        "sourceTextSha256": "15786b121199a3a3d661935cf3d6ed3b91154cdf828001a679a41266ff4874d0",
+        "hashMeaning": "SHA256 of retrieved full-text XML or publisher HTML bytes"
+      },
+      "citationRelation": "ORIGINAL_STUDY_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": true,
+      "articleSection": "Data availability",
+      "evidenceParaphrase": "The original study explicitly identifies 7Y36 as its PTH-bound PTH1R-Gs deposited complex and associates that sample with EMD-33590.",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "7Y35",
+        "7Y36"
+      ],
+      "depositionEmdbId": "EMD-33590",
+      "accessLimitations": [],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "7YDJ",
+      "candidateCitation": {
+        "doi": "10.1016/j.chembiol.2023.08.003",
+        "pmid": "37673067",
+        "pmcid": null,
+        "primaryUrl": "https://www.sciencedirect.com/science/article/pii/S2451945623002751",
+        "sourceTextScratchPath": null,
+        "sourceTextSha256": null,
+        "hashMeaning": null
+      },
+      "citationRelation": "RELATED_STUDY_ONLY_NO_EXACT_ACCESSION",
+      "exactPdbDepositionVerified": false,
+      "articleSection": "Data and code availability",
+      "evidenceParaphrase": "The same-author CD97 study lists deposits 7YDH/EMD-33747, 7YDM/EMD-33753 and 7YDP/EMD-33755. Its inspected publisher text does not link 7YDJ. Do not propagate publication evidence from those related G-protein samples to the miniG12 entry.",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "7YDH",
+        "7YDM",
+        "7YDP"
+      ],
+      "accessLimitations": [
+        "Publisher text was readable through indexed retrieval. Original HTML bytes were not yet recovered for a source-body checksum.",
+        "PMCID not determined here."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "7YP7",
+      "candidateCitation": {
+        "doi": "10.1038/s41589-022-01084-6",
+        "pmid": "35982227",
+        "pmcid": null,
+        "primaryUrl": "https://www.nature.com/articles/s41589-022-01084-6",
+        "sourceTextScratchPath": "/tmp/confovhh-c5-s41589-022-01084-6.html",
+        "sourceTextSha256": "1103edeff9104889347f229314444fece984030b8a352fd491f1cae5b3f136bd",
+        "hashMeaning": "SHA256 of retrieved full-text XML or publisher HTML bytes"
+      },
+      "citationRelation": "RELATED_AUTHOR_AND_SAMPLE_MATCH_WITH_ACCESSION_DISCREPANCY",
+      "exactPdbDepositionVerified": false,
+      "articleSection": "Data availability",
+      "evidenceParaphrase": "The candidate study describes an apo ADGRG2-Gs sample but its inspected deposition statement names 7XM6/EMD-30658, plus ligand-bound 7XKD, 7XKF and 7XKE. It does not name 7YP7. Similar authorship and sample wording are insufficient to substitute this citation.",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "7XM6",
+        "7XKD",
+        "7XKF",
+        "7XKE"
+      ],
+      "accessLimitations": [
+        "Public publisher page exposes data availability; subscription full text was not obtained.",
+        "An accession replacement or correction could resolve the mismatch, but none was verified in this source-text review.",
+        "PMCID not determined here."
+      ],
+      "candidateDispositionChanged": false,
+      "currentHoldingsFollowup": {
+        "7XM6": {
+          "path": "raw/holdings-7XM6.json",
+          "sha256": "89945fc58f10dd1690aa66f718b04dc82de458aa56714bf62e9fad11c02086a6",
+          "status": "UNRELEASED",
+          "statusCode": "WDRN"
+        },
+        "7YP7": {
+          "path": "raw/holdings-7YP7.json",
+          "sha256": "e3f2d1d15c18d5546c44ed3a5a6f65edb48ca156fd35d204cee79e9511cbfaae",
+          "status": "CURRENT",
+          "statusCode": "REL"
+        },
+        "replacementMappingEstablished": false
+      }
+    },
+    {
+      "pdbId": "8GAG",
+      "candidateCitation": {
+        "doi": "10.1038/s41467-025-57136-7",
+        "pmid": "40044644",
+        "pmcid": "PMC11882969",
+        "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11882969/",
+        "sourceTextScratchPath": "/tmp/confovhh-c5-PMC11882969.xml",
+        "sourceTextSha256": "38bf91b0fbe7d0337e65999909ead5aaa8cc2d575354a279962e1c615de0510c",
+        "hashMeaning": "SHA256 of retrieved full-text XML or publisher HTML bytes"
+      },
+      "citationRelation": "ORIGINAL_STUDY_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": true,
+      "articleSection": "Data availability",
+      "evidenceParaphrase": "The original study explicitly assigns its compound-1350/CB1R/Gi/o complex to PDB 8GAG and EMDB EMD-29898; other deposited models are separately assigned to 9DGI and 9EGO.",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "8GAG",
+        "9DGI",
+        "9EGO"
+      ],
+      "depositionEmdbId": "EMD-29898",
+      "accessLimitations": [],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8HN1",
+      "candidateCitation": {
+        "doi": "10.1038/s42003-025-08405-0",
+        "pmid": "40670604",
+        "pmcid": "PMC12267694",
+        "title": "Molecular mechanism of human α1A-adrenoceptor inhibition by Mamba snake toxin AdTx1",
+        "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12267694/",
+        "sourceTextSha256": "9b1f661352aeb14c71f5bc3d4a6a63d00441945a3c7a7f52594a419d156b8d41"
+      },
+      "citationRelation": "PREVIOUSLY_VERIFIED_EXACT_PRIMARY_DEPOSITION_CONTROL",
+      "knownPositiveControl": true,
+      "exactPdbDepositionVerified": true,
+      "articleSection": "Data availability",
+      "exactPdbIdsInRelevantDepositionStatement": [
+        "8HN1"
+      ],
+      "evidenceParaphrase": "The previously completed priority review inspected the original article deposition statement naming 8HN1. This known-positive control tests whether bibliographic follow-up can recover a source even when current RCSB DOI/PMID fields remain absent.",
+      "priorSourceReviewRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-priority-review-2026-09-04/source-reviews.json",
+        "sha256": "b2cc22d3261dfbeb861af09ed1f5e65fe3ba168063ba4deee61e6eca49610f9d",
+        "sourceId": "ADTX1_ADRA1A_2025",
+        "pdbId": "8HN1"
+      },
+      "accessLimitations": [],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8HN8",
+      "candidateCitation": null,
+      "citationRelation": "NO_ORIGINAL_STUDY_LINK_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "One exact-accession reuse hit and two related primary H4 studies were checked; no original-study accession link was verified.",
+      "sourceChecks": [],
+      "secondaryReviewDetails": {
+        "pdbId": "8HN8",
+        "exactPdbDepositionVerified": false,
+        "originalPrimaryCitation": null,
+        "bibliographyStatus": "PENDING_ORIGINAL_STUDY_LINK",
+        "sourcesChecked": [
+          {
+            "sourceId": "H4R_REUSE_2026",
+            "doi": "10.1002/cbdv.71490",
+            "pmid": "42427244",
+            "pmcid": "PMC13352103",
+            "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13352103/",
+            "retrievedTextPath": "/tmp/confovhh-c5-secondary-PMC13352103.xml",
+            "retrievedTextSha256": "d69f47443c1a013d980752bc8a39142c17c60c9aedbe39fa2f000b20d16fbc75",
+            "hashMeaning": "SHA256 of retrieved publisher or PMC article HTML/XML bytes",
+            "inspectedSection": "Experimental Section / Molecular Docking",
+            "citationRelation": "REUSE_OF_PREEXISTING_PDB_ENTRY",
+            "evidenceParaphrase": "The methods state that the histamine H4 receptor structure was downloaded from PDB as 8HN8 for docking. This verifies reuse, not original deposition.",
+            "reportedOriginalDepositionPdbIds": [],
+            "exactRequestedAccessionDepositionVerified": false
+          },
+          {
+            "sourceId": "H4R_2023",
+            "doi": "10.1038/s41467-023-42260-z",
+            "pmid": "37863901",
+            "pmcid": "PMC10589313",
+            "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10589313/",
+            "retrievedTextPath": "/tmp/confovhh-c5-secondary-PMC10589313.xml",
+            "retrievedTextSha256": "2194215891485a01fb35d51e5b29b705b0d797b7ce692ef2b77bdf8664441fcb",
+            "hashMeaning": "SHA256 of retrieved publisher or PMC article HTML/XML bytes",
+            "inspectedSection": "Data availability",
+            "citationRelation": "RELATED_RECEPTOR_STUDY_ONLY",
+            "evidenceParaphrase": "This histamine/imetit H4R study reports 7YFC and 7YFD deposits. Neither requested H4 entry appears in the retrieved XML.",
+            "reportedOriginalDepositionPdbIds": [
+              "7YFC",
+              "7YFD"
+            ],
+            "exactRequestedAccessionDepositionVerified": false
+          },
+          {
+            "sourceId": "H4R_2024",
+            "doi": "10.1038/s41467-024-46840-5",
+            "pmid": "38509098",
+            "pmcid": "PMC10954740",
+            "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10954740/",
+            "retrievedTextPath": "/tmp/confovhh-c5-secondary-PMC10954740.xml",
+            "retrievedTextSha256": "ee2ee34b54f86b29a6f00c7e44b7080499c95dc7302588103e9f51aaf45fba55",
+            "hashMeaning": "SHA256 of retrieved publisher or PMC article HTML/XML bytes",
+            "inspectedSection": "Data availability",
+            "citationRelation": "RELATED_RECEPTOR_STUDY_ONLY",
+            "evidenceParaphrase": "This H4R study reports 8JXT, 8JXX, 8JXW and 8JXV deposits. Neither requested H4 entry appears in the retrieved XML.",
+            "reportedOriginalDepositionPdbIds": [
+              "8JXT",
+              "8JXX",
+              "8JXW",
+              "8JXV"
+            ],
+            "exactRequestedAccessionDepositionVerified": false
+          }
+        ],
+        "evidenceSummary": "One exact-accession reuse hit and two related primary H4 studies were checked; no original-study accession link was verified.",
+        "capturedExactIdSearch": {
+          "path": "/workspace/scratch/746bb3989941/ConfoVHH/validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/raw/pdb-8HN8.json",
+          "sha256": "a1ade6fe6264eefd233bf243a8b97d75c5e12c7b5ac368094dbb2f9257bc031a"
+        },
+        "accessLimitations": [
+          "This bounded review does not establish that no publication exists.",
+          "No candidate entity or whole-entry disposition was changed."
+        ]
+      },
+      "accessLimitations": [
+        "This bounded review does not establish that no publication exists.",
+        "No candidate entity or whole-entry disposition was changed."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8HOC",
+      "candidateCitation": null,
+      "citationRelation": "NO_ORIGINAL_STUDY_LINK_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "Related H4 primary studies name different deposits. The captured exact-ID search returns an unrelated 1978 microbiology paper, not an admissible original-study link.",
+      "sourceChecks": [],
+      "secondaryReviewDetails": {
+        "pdbId": "8HOC",
+        "exactPdbDepositionVerified": false,
+        "originalPrimaryCitation": null,
+        "bibliographyStatus": "PENDING_ORIGINAL_STUDY_LINK",
+        "sourcesChecked": [
+          {
+            "sourceId": "H4R_2023",
+            "doi": "10.1038/s41467-023-42260-z",
+            "pmid": "37863901",
+            "pmcid": "PMC10589313",
+            "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10589313/",
+            "retrievedTextPath": "/tmp/confovhh-c5-secondary-PMC10589313.xml",
+            "retrievedTextSha256": "2194215891485a01fb35d51e5b29b705b0d797b7ce692ef2b77bdf8664441fcb",
+            "hashMeaning": "SHA256 of retrieved publisher or PMC article HTML/XML bytes",
+            "inspectedSection": "Data availability",
+            "citationRelation": "RELATED_RECEPTOR_STUDY_ONLY",
+            "evidenceParaphrase": "This histamine/imetit H4R study reports 7YFC and 7YFD deposits. Neither requested H4 entry appears in the retrieved XML.",
+            "reportedOriginalDepositionPdbIds": [
+              "7YFC",
+              "7YFD"
+            ],
+            "exactRequestedAccessionDepositionVerified": false
+          },
+          {
+            "sourceId": "H4R_2024",
+            "doi": "10.1038/s41467-024-46840-5",
+            "pmid": "38509098",
+            "pmcid": "PMC10954740",
+            "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10954740/",
+            "retrievedTextPath": "/tmp/confovhh-c5-secondary-PMC10954740.xml",
+            "retrievedTextSha256": "ee2ee34b54f86b29a6f00c7e44b7080499c95dc7302588103e9f51aaf45fba55",
+            "hashMeaning": "SHA256 of retrieved publisher or PMC article HTML/XML bytes",
+            "inspectedSection": "Data availability",
+            "citationRelation": "RELATED_RECEPTOR_STUDY_ONLY",
+            "evidenceParaphrase": "This H4R study reports 8JXT, 8JXX, 8JXW and 8JXV deposits. Neither requested H4 entry appears in the retrieved XML.",
+            "reportedOriginalDepositionPdbIds": [
+              "8JXT",
+              "8JXX",
+              "8JXW",
+              "8JXV"
+            ],
+            "exactRequestedAccessionDepositionVerified": false
+          }
+        ],
+        "evidenceSummary": "Related H4 primary studies name different deposits. The captured exact-ID search returns an unrelated 1978 microbiology paper, not an admissible original-study link.",
+        "capturedExactIdSearch": {
+          "path": "/workspace/scratch/746bb3989941/ConfoVHH/validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/raw/pdb-8HOC.json",
+          "sha256": "62bc0665f69c627ddf92f2dece87712d5cd82ae505e4ac131f7bd068ce7f69f9"
+        },
+        "accessLimitations": [
+          "This bounded review does not establish that no publication exists.",
+          "No candidate entity or whole-entry disposition was changed."
+        ],
+        "rejectedBibliographyHits": [
+          {
+            "pmid": "415039",
+            "pmcid": "PMC222047",
+            "doi": "10.1128/jb.133.2.472-476.1978",
+            "reason": "1978 microbiology study is not the original report of a structure deposited decades later; no citation authority inferred from the token match."
+          }
+        ]
+      },
+      "accessLimitations": [
+        "This bounded review does not establish that no publication exists.",
+        "No candidate entity or whole-entry disposition was changed."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8IA8",
+      "candidateCitation": null,
+      "citationRelation": "NO_ORIGINAL_STUDY_LINK_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "The captured exact-ID search returns an unrelated 1995 molecular-dynamics paper. Bounded C3aR/C3a/E7 title and bibliography searches did not produce an independently verified original-study deposition link.",
+      "sourceChecks": [],
+      "secondaryReviewDetails": {
+        "pdbId": "8IA8",
+        "exactPdbDepositionVerified": false,
+        "originalPrimaryCitation": null,
+        "bibliographyStatus": "PENDING_ORIGINAL_STUDY_LINK",
+        "sourcesChecked": [],
+        "evidenceSummary": "The captured exact-ID search returns an unrelated 1995 molecular-dynamics paper. Bounded C3aR/C3a/E7 title and bibliography searches did not produce an independently verified original-study deposition link.",
+        "capturedExactIdSearch": {
+          "path": "/workspace/scratch/746bb3989941/ConfoVHH/validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/raw/pdb-8IA8.json",
+          "sha256": "797cc1f9c8a4951c00a21177c3d71095666253fcc2d9209909724170a521dcab"
+        },
+        "accessLimitations": [
+          "This bounded review does not establish that no publication exists.",
+          "No candidate entity or whole-entry disposition was changed."
+        ],
+        "rejectedBibliographyHits": [
+          {
+            "pmid": "7724554",
+            "pmcid": "PMC42151",
+            "doi": "10.1073/pnas.92.8.3288",
+            "reason": "1995 general molecular-dynamics study is not the original report of the requested recently deposited C3aR structure."
+          }
+        ]
+      },
+      "accessLimitations": [
+        "This bounded review does not establish that no publication exists.",
+        "No candidate entity or whole-entry disposition was changed."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8J23",
+      "candidateCitation": null,
+      "citationRelation": "NO_ORIGINAL_STUDY_LINK_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "The likely 2024 FFAR2/3 article omits 8J23 from its inspected main-article deposition list; the 2025 article explicitly reuses it. Neither establishes an original-paper accession link.",
+      "sourceChecks": [],
+      "secondaryReviewDetails": {
+        "pdbId": "8J23",
+        "exactPdbDepositionVerified": false,
+        "originalPrimaryCitation": null,
+        "bibliographyStatus": "PENDING_ORIGINAL_STUDY_LINK",
+        "sourcesChecked": [
+          {
+            "sourceId": "FFAR23_2024",
+            "doi": "10.1038/s41422-023-00914-z",
+            "pmid": "38191689",
+            "pmcid": "PMC10978569",
+            "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10978569/",
+            "retrievedTextPath": "/tmp/ambiguous_scfv_1.html",
+            "retrievedTextSha256": "f6f1581bfc5dc036e90b3ebd075df750f188e52cccabaae1051c38f326ecbc20",
+            "hashMeaning": "SHA256 of retrieved publisher or PMC article HTML/XML bytes",
+            "inspectedSection": "Data availability",
+            "citationRelation": "RELATED_SAME_RECEPTOR_STUDY_WITH_MISSING_ACCESSION",
+            "evidenceParaphrase": "The primary deposition list identifies 8J20, 8J21, 8J22 and 8J24. The requested 8J23 does not appear in the retrieved main-article HTML.",
+            "reportedOriginalDepositionPdbIds": [
+              "8J20",
+              "8J21",
+              "8J22",
+              "8J24"
+            ],
+            "exactRequestedAccessionDepositionVerified": false
+          },
+          {
+            "sourceId": "FFAR2_REUSE_2025",
+            "doi": "10.1038/s41586-025-09186-6",
+            "pmid": "40533560",
+            "pmcid": "PMC12570966",
+            "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12570966/",
+            "retrievedTextPath": "/tmp/confovhh-c5-secondary-PMC12570966.html",
+            "retrievedTextSha256": "4566803bdd372d2beaa12a989c47cd71535ac54b8e1a9cff07370e69e588b511",
+            "hashMeaning": "SHA256 of retrieved publisher or PMC article HTML/XML bytes",
+            "inspectedSection": "Data availability",
+            "citationRelation": "REUSE_OF_PREEXISTING_PDB_ENTRY",
+            "evidenceParaphrase": "The authors explicitly list 8J23 among existing PDB structures used for comparison, identifying it as an empty FFA2/Gi complex. That statement does not claim original deposition.",
+            "reportedOriginalDepositionPdbIds": [],
+            "exactRequestedAccessionDepositionVerified": false
+          }
+        ],
+        "evidenceSummary": "The likely 2024 FFAR2/3 article omits 8J23 from its inspected main-article deposition list; the 2025 article explicitly reuses it. Neither establishes an original-paper accession link.",
+        "capturedExactIdSearch": {
+          "path": "/workspace/scratch/746bb3989941/ConfoVHH/validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/raw/pdb-8J23.json",
+          "sha256": "e63c87784a984cc6836a60563a77c9fd9ed6ef87e0f2410dccea3649090f966f"
+        },
+        "accessLimitations": [
+          "This bounded review does not establish that no publication exists.",
+          "No candidate entity or whole-entry disposition was changed.",
+          "Europe PMC XML for PMC12570966 returned404; PMC HTML was retrieved successfully.",
+          "Supplementary documents to the2024FFAR article were not reviewed."
+        ]
+      },
+      "accessLimitations": [
+        "This bounded review does not establish that no publication exists.",
+        "No candidate entity or whole-entry disposition was changed.",
+        "Europe PMC XML for PMC12570966 returned404; PMC HTML was retrieved successfully.",
+        "Supplementary documents to the2024FFAR article were not reviewed."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8K4N",
+      "candidateCitation": null,
+      "citationRelation": "NO_ORIGINAL_STUDY_LINK_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "The captured exact-ID query returned zero hits. Two identified GPR34 primary studies report other accessions, leaving this entry unresolved.",
+      "sourceChecks": [],
+      "secondaryReviewDetails": {
+        "pdbId": "8K4N",
+        "exactPdbDepositionVerified": false,
+        "originalPrimaryCitation": null,
+        "bibliographyStatus": "PENDING_ORIGINAL_STUDY_LINK",
+        "sourcesChecked": [
+          {
+            "sourceId": "GPR34_2024",
+            "doi": "10.1038/s41467-024-45046-z",
+            "pmid": "38326347",
+            "pmcid": "PMC10850092",
+            "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10850092/",
+            "retrievedTextPath": "/tmp/confovhh-c5-secondary-PMC10850092.xml",
+            "retrievedTextSha256": "e72d961f50d5449903ce93f42b75e88f93fb3724b9fb2b0b59b415fd3a42dfd9",
+            "hashMeaning": "SHA256 of retrieved publisher or PMC article HTML/XML bytes",
+            "inspectedSection": "Data availability",
+            "citationRelation": "RELATED_RECEPTOR_STUDY_ONLY",
+            "evidenceParaphrase": "The primary deposition statement reports 8XBE, 8XBG, 8XBH and 8XBI. Requested entry 8K4N does not appear in the retrieved XML.",
+            "reportedOriginalDepositionPdbIds": [
+              "8XBE",
+              "8XBG",
+              "8XBH",
+              "8XBI"
+            ],
+            "exactRequestedAccessionDepositionVerified": false
+          },
+          {
+            "sourceId": "GPR34_2023",
+            "doi": "10.1371/journal.pbio.3002387",
+            "pmid": "38048360",
+            "pmcid": "PMC10721165",
+            "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10721165/",
+            "retrievedTextPath": "/tmp/confovhh-c5-secondary-PMC10721165.xml",
+            "retrievedTextSha256": "bba4946c4a9c15fa3e8fc40569e16c94f5a8153a6732a34b1b34f6c10e703e73",
+            "hashMeaning": "SHA256 of retrieved publisher or PMC article HTML/XML bytes",
+            "inspectedSection": "Data Availability",
+            "citationRelation": "RELATED_RECEPTOR_STUDY_ONLY",
+            "evidenceParaphrase": "The study reports 8WRB for GPR34 and 8IZB for GPR174. Requested entry 8K4N does not appear in the retrieved XML.",
+            "reportedOriginalDepositionPdbIds": [
+              "8WRB",
+              "8IZB"
+            ],
+            "exactRequestedAccessionDepositionVerified": false
+          }
+        ],
+        "evidenceSummary": "The captured exact-ID query returned zero hits. Two identified GPR34 primary studies report other accessions, leaving this entry unresolved.",
+        "capturedExactIdSearch": {
+          "path": "/workspace/scratch/746bb3989941/ConfoVHH/validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/raw/pdb-8K4N.json",
+          "sha256": "7031098651a8c41563ff6fd73afc4ec9cd8ff2c29a4ece207a560aa917e0c944"
+        },
+        "accessLimitations": [
+          "This bounded review does not establish that no publication exists.",
+          "No candidate entity or whole-entry disposition was changed."
+        ]
+      },
+      "accessLimitations": [
+        "This bounded review does not establish that no publication exists.",
+        "No candidate entity or whole-entry disposition was changed."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8WJX",
+      "candidateCitation": {
+        "doi": "10.1016/j.abb.2025.110555",
+        "pmid": "40684933",
+        "pmcid": null,
+        "primaryUrl": "https://doi.org/10.1016/j.abb.2025.110555",
+        "sourceTextScratchPath": null,
+        "sourceTextSha256": null,
+        "hashMeaning": null
+      },
+      "citationRelation": "STRUCTURE_REUSE_CITATION_NOT_ORIGINAL_DEPOSITION",
+      "exactPdbDepositionVerified": false,
+      "articleSection": "Footnote visible in indexed author-hosted PDF; original deposition statement unavailable",
+      "evidenceParaphrase": "A 2025 P2Y1/polyphosphate study explicitly discusses 8WJX as a previously deposited structure and states in a footnote that a peer-reviewed report of that structure was unavailable at that time. This is a reuse citation, not evidence that the study deposited 8WJX.",
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "accessLimitations": [
+        "Only indexed text of the author-hosted paper and bibliographic identifiers were inspected; original article bytes were not retrieved.",
+        "The time-specific unpublished statement cannot establish current publication status.",
+        "PMCID not determined here."
+      ],
+      "secondaryToDepositionEvidenceUrl": "https://bmecenter.ru/sites/default/files/publications/The%20molecular%20mechanism%20of%20P2Y1%20receptor%20activation%20by%20inorganic%20polyphosphates-%D1%81%D0%B6%D0%B0%D1%82%D1%8B%D0%B9.pdf",
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8WWH",
+      "candidateCitation": {
+        "doi": "10.21203/rs.3.rs-3451292/v1",
+        "pmid": null,
+        "pmcid": null,
+        "title": "Structural insights into ligand recognition and activation of melanin-concentrating hormone receptor MCHR1",
+        "primaryUrl": "https://doi.org/10.21203/rs.3.rs-3451292/v1",
+        "sourceTextSha256": null
+      },
+      "citationRelation": "TITLE_MATCHED_BIBLIOGRAPHY_ONLY_NO_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "A captured frozen-title bibliography query identifies this candidate source. Citation-title similarity alone does not establish that it originally reports this exact PDB accession.",
+      "bibliographyQueryId": "title-24",
+      "accessLimitations": [
+        "Bibliographic title match identifies a preprint; original deposition statement and current publication relation remain unverified."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8WWI",
+      "candidateCitation": {
+        "doi": "10.21203/rs.3.rs-3451292/v1",
+        "pmid": null,
+        "pmcid": null,
+        "title": "Structural insights into ligand recognition and activation of melanin-concentrating hormone receptor MCHR1",
+        "primaryUrl": "https://doi.org/10.21203/rs.3.rs-3451292/v1",
+        "sourceTextSha256": null
+      },
+      "citationRelation": "TITLE_MATCHED_BIBLIOGRAPHY_ONLY_NO_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "A captured frozen-title bibliography query identifies this candidate source. Citation-title similarity alone does not establish that it originally reports this exact PDB accession.",
+      "bibliographyQueryId": "title-24",
+      "accessLimitations": [
+        "Bibliographic title match identifies a preprint; original deposition statement and current publication relation remain unverified."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8WWJ",
+      "candidateCitation": {
+        "doi": "10.21203/rs.3.rs-3451292/v1",
+        "pmid": null,
+        "pmcid": null,
+        "title": "Structural insights into ligand recognition and activation of melanin-concentrating hormone receptor MCHR1",
+        "primaryUrl": "https://doi.org/10.21203/rs.3.rs-3451292/v1",
+        "sourceTextSha256": null
+      },
+      "citationRelation": "TITLE_MATCHED_BIBLIOGRAPHY_ONLY_NO_EXACT_ACCESSION_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "evidenceParaphrase": "A captured frozen-title bibliography query identifies this candidate source. Citation-title similarity alone does not establish that it originally reports this exact PDB accession.",
+      "bibliographyQueryId": "title-24",
+      "accessLimitations": [
+        "Bibliographic title match identifies a preprint; original deposition statement and current publication relation remain unverified."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8ZR5",
+      "candidateCitation": null,
+      "citationRelation": "NO_PRIMARY_ARTICLE_LINK_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "articleSection": null,
+      "evidenceParaphrase": "Exact-accession searches and searches combining GPR119 with the deposited author names found deposition metadata but no verifiable primary article that names this accession.",
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "accessLimitations": [
+        "No retrieved primary article or source-body hash.",
+        "A negative bounded search does not establish that no publication exists.",
+        "Current RCSB citation checking is delegated to the parent and is not duplicated here."
+      ],
+      "candidateDispositionChanged": false
+    },
+    {
+      "pdbId": "8ZRK",
+      "candidateCitation": null,
+      "citationRelation": "NO_PRIMARY_ARTICLE_LINK_VERIFIED",
+      "exactPdbDepositionVerified": false,
+      "articleSection": null,
+      "evidenceParaphrase": "Exact-accession searches and searches combining GPR119 with the deposited author names found deposition metadata but no verifiable primary article that names this accession.",
+      "exactPdbIdsInRelevantDepositionStatement": [],
+      "accessLimitations": [
+        "No retrieved primary article or source-body hash.",
+        "A negative bounded search does not establish that no publication exists.",
+        "Current RCSB citation checking is delegated to the parent and is not duplicated here."
+      ],
+      "candidateDispositionChanged": false
+    }
+  ],
+  "sourceBodyStorage": "Primary article bodies were inspected as text in scratch and are not copied into the repository; available exact retrieved-byte hashes and source URLs are recorded.",
+  "boundaries": {
+    "newBinderRoleAdjudications": 0,
+    "newEntryDispositions": 0,
+    "broaderDiscoveryComplete": false,
+    "targetFreezePermitted": false
+  }
+}

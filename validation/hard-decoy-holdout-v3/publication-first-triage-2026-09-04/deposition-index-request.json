@@ -1,0 +1,37 @@
+{
+  "query": {
+    "type": "terminal",
+    "service": "text",
+    "parameters": {
+      "attribute": "rcsb_primary_citation.pdbx_database_id_DOI",
+      "operator": "in",
+      "value": [
+        "10.1073/pnas.1800756115",
+        "10.1073/pnas.2117054119",
+        "10.1021/acsomega.3c02737",
+        "10.1038/s41589-023-01390-7",
+        "10.1038/s41467-024-49000-x",
+        "10.1038/s41467-024-50827-7",
+        "10.1073/pnas.2423931122",
+        "10.1038/s41589-025-01896-2",
+        "10.1038/s41467-026-72093-5"
+      ]
+    }
+  },
+  "return_type": "entry",
+  "request_options": {
+    "paginate": {
+      "start": 0,
+      "rows": 100
+    },
+    "results_content_type": [
+      "experimental"
+    ],
+    "sort": [
+      {
+        "sort_by": "rcsb_id",
+        "direction": "asc"
+      }
+    ]
+  }
+}

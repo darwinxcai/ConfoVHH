@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-6PEL",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "6PEL"
+    ],
+    "query": "\"6PEL\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226PEL%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:48:48.702031+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-6PEL.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226PEL%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "e8e5f6651ade5991e05ad815f5b0ad820549fbd533db89aa4877b769bc598fd3",
+  "bytes": 5333,
+  "reportedHitCount": 6,
+  "retrievedRecordCount": 6,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:48:58.064317+00:00"
+}

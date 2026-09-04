@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-8GAG",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "8GAG"
+    ],
+    "query": "\"8GAG\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228GAG%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:48:09.043160+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-8GAG.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228GAG%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "235683e990d11c65d35aedb07b5791bd5768f55f15a6b58fc58c1a1e465e397d",
+  "bytes": 21263,
+  "reportedHitCount": 24,
+  "retrievedRecordCount": 24,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:48:19.315037+00:00"
+}

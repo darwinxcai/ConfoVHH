@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-01",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "5V54"
+    ],
+    "query": "TITLE:\"A common antagonistic mechanism for class A GPCRs revealed by the structure of the human 5-HT1B serotonin receptor bound to an antagonist\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22A+common+antagonistic+mechanism+for+class+A+GPCRs+revealed+by+the+structure+of+the+human+5-HT1B+serotonin+receptor+bound+to+an+antagonist%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:06.653984+00:00",
+  "status": 200,
+  "rawFile": "raw/title-01.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22A+common+antagonistic+mechanism+for+class+A+GPCRs+revealed+by+the+structure+of+the+human+5-HT1B+serotonin+receptor+bound+to+an+antagonist%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "22f5e49ead9b7326568d0f40b8ae5398821237c47ab3b469b906d5d411b376d8",
+  "bytes": 314,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:18.320922+00:00"
+}

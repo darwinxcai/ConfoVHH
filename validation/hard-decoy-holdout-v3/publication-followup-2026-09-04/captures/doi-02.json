@@ -1,0 +1,27 @@
+{
+  "request": {
+    "requestId": "doi-02",
+    "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+    "pdbIds": [
+      "8H0P",
+      "8H0Q"
+    ],
+    "query": "DOI:\"10.1038/s41422-022-00743-6\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41422-022-00743-6%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:17.701437+00:00",
+  "status": 200,
+  "rawFile": "raw/doi-02.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41422-022-00743-6%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "4d69c0f9f9820d8dfd196fae1fc839b46d3cd11a37d33c05e9cfc5b882a41726",
+  "bytes": 1033,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:48.282508+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-7EZM",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "7EZM"
+    ],
+    "query": "\"7EZM\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227EZM%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:47:40.524921+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-7EZM.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227EZM%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "c58106918a1803de928068a81f3150b190bf6f76ed47b1a71159de61e3244fb5",
+  "bytes": 14333,
+  "reportedHitCount": 15,
+  "retrievedRecordCount": 15,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:47:50.953946+00:00"
+}

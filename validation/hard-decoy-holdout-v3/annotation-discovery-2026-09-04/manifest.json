@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0.0",
+  "collectionPlanSha256": "9c2c4f458b85ba6f9e00abf64c4333819e41565cab1af07c25781ee9397b8f24",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/checksums.sha256": "a19407d2fb144772abe275d78b7fbca5d9709b73050c81fe51cb754572464add",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/authority-evidence.json": "242bf297046578375a529785a7aa431104cbc4203604052a008dcd4e21aea686",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/rcsb-search-schema.json": "a32ed048a5099b7efd13a0bea9d22e905df90428b33b636c5e063b336b630dfb",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/domain-pf00001.json": "704f576b0238d1cfc79ed568aa2f181167eb0071d383db6d9682ff4fe0c4b230",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/domain-pf00002.json": "6a816aa1358ad125e6e9560366dfe315622aeafc72dddd46dd95f6705721b41a",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/domain-pf00003.json": "155427aaf7f5dd1aba0378fd25eda4ffb993fa073955e168762559f9c6c24dbf",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/domain-pf01534.json": "1d0b44e39c59434c3a581890b6f80664f432f54e271d80f3655554ccc2ee034a",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/checksums.sha256": "796aa0734da86791f8ccdef92c7de03da22bdafd7818a5c5e95d73b6b5d35ebc",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/gpcrdb-api.txt": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-gpcrdb-intersection.txt": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/checksums.sha256": "5fe666115b21325ce2bad42cb9412be0049e535e5a15031d8731b4d9828d879d",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/checksums.sha256": "7025ad7b9375a685b837d04be1964eb285400b63f6953e67a095df9f202d7cbf",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-replacements-2026-09-04/checksums.sha256": "dec3a47bf0fc67b2458ece654402320fe17401d5c3e0696f48f87e5f0b0975a4",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-replacements-2026-09-04/entries.jsonl": "b0b26eb7776fa1eb53182cf7c23213417209b47a67afbc05621680bfe79457cd",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/entries.jsonl": "4ae69b0921f20b2874783b84322f32c3213d842c10e8ed98e65b6c14f0a2e99f",
+    "validation/hard-decoy-holdout-v3/publication-accession-review-2026-09-04/priority-reviews.json": "6dea1ceec60aca2bd1a21f99b01ace333968de7268578e6d1e41c21ed5ce317e",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json": "bbf10ef8ebf057dde42969fbd166bcbd2bd437902a76064d7ad8fcea9faa16b7",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "scripts/hard-decoy/v3-entry-metadata.mjs": "77afbf8b485976fd902de4f8377dcf9f02e90d93328a1da06546c8d7aae7c562",
+    "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+    "scripts/hard-decoy-v3/capture-annotation-discovery.mjs": "7326feed2af064164fe744f97c7565a87c57b075933bd2d5f5f2ade8bdcd9922"
+  },
+  "responseCount": 41,
+  "outputDigests": {
+    "authority-evidence.json": "5b525d64d71cf4979a2abc6993cdd3a01f76daee4a9363adf935f63927c45e0f",
+    "query-results.json": "9d26ad5cc82830420bb68f27084a33fac63901ba751834797abc7230ecc5bf37",
+    "normalized/gpcr-ids.txt": "d9f628d6ea268740cd361b836e402da99c15ce63519491cf65787168234dc43f",
+    "normalized/immunoglobulin-ids.txt": "dfc80c48b443259e3513b50431887c3a9b3fba4309cfd1f3f71a9bad9c7eec82",
+    "normalized/camelid-ids.txt": "86dc2735934a376710a1455ada7861682265282d2ba4e8dc4c020ecfcda479d2",
+    "normalized/gpcr-immunoglobulin-intersection.txt": "b32c94e33543eb57389dbce6f0aefe267a3431dac71ccf1d821462b52ba5c900",
+    "normalized/gpcr-camelid-intersection.txt": "eb5645712f08868af44c6b323ffd9bca47ef7a277db528a7ed47480fd0ab0947",
+    "normalized/combined-intersection.txt": "11fda35f430e6e8d02346cc654594a526df20e3f676f5b0feb149d6c4b091416",
+    "normalized/new-metadata-ids.txt": "4f00ef200600ee0de19dad6ad5f0f7daca7f496bead4685f6c23e89c335845b8",
+    "candidate-status.jsonl": "81c9123124e7b8674a265430eca047ae08bf98d940d3c0e71ef9fa15bf4e0d45",
+    "entries.jsonl": "ab4ebb4597948b973af33ae55763c0f8a65fcbfe66db3748d24478ec33a429df",
+    "triage-signals.jsonl": "8707068a68b87f3dac6d7c3651b9c8df505028fe2dd574baf307ce73c258260e",
+    "missing-new-ids.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "summary.json": "b1ab92e5746912301d829e542bf3e656a18aa3f13164fdd95854cdb92600f1aa",
+    "README.md": "fa5bb7ac35fadcbdb71ef0d68dab0a586cedd3f0e9ca716f7231564a16b8a818"
+  },
+  "summary": {
+    "schemaVersion": "1.0.0",
+    "studyId": "confovhh-hard-decoy-holdout-v3",
+    "route": "C1_GLOBAL_DOMAIN_AND_SOURCE_TAXONOMY_DISCOVERY",
+    "status": "SPECIFIED_ANNOTATION_QUERIES_CAPTURED_SCIENTIFIC_REVIEW_PENDING",
+    "releaseDateRestriction": null,
+    "repeatedQueryCount": 8,
+    "gpcrDomainEntryCount": 2477,
+    "immunoglobulinDomainEntryCount": 1227,
+    "camelidSourceEntryCount": 1997,
+    "gpcrImmunoglobulinIntersectionCount": 8,
+    "gpcrCamelidIntersectionCount": 378,
+    "combinedIntersectionCount": 386,
+    "intersectionAbsentFromFrozenGpcrdbCount": 142,
+    "intersectionAbsentFromHistorical287Count": 230,
+    "metadataAlreadyCapturedCount": 244,
+    "newlyRequestedMetadataEntryCount": 142,
+    "newlyCapturedMetadataEntryCount": 142,
+    "unresolvedNewMetadataEntryCount": 0,
+    "positiveControl": {
+      "pdbId": "3P0G",
+      "inGpcrSet": true,
+      "inImmunoglobulinSet": false,
+      "inCamelidSet": true,
+      "inFinalIntersection": true
+    },
+    "domainControls": [
+      {
+        "accession": "PF00001",
+        "pdbId": "3SN6",
+        "found": true
+      },
+      {
+        "accession": "PF00002",
+        "pdbId": "7VVN",
+        "found": true
+      },
+      {
+        "accession": "PF00003",
+        "pdbId": "4OR2",
+        "found": true
+      },
+      {
+        "accession": "PF01534",
+        "pdbId": "4JKV",
+        "found": true
+      }
+    ],
+    "immunoglobulinControls": [
+      {
+        "accession": "PF07686",
+        "pdbId": "1A14",
+        "found": true
+      },
+      {
+        "accession": "PF00047",
+        "pdbId": "1B6U",
+        "found": true
+      }
+    ],
+    "vhhAnnotationSensitivity": [
+      {
+        "pdbId": "3P0G",
+        "inGpcrDomainSet": true,
+        "inImmunoglobulinDomainSet": false,
+        "inCamelidSourceSet": true,
+        "inCombinedIntersection": true,
+        "interpretation": "Known GPCR–VHH controls can lack the selected immunoglobulin Pfam annotations; annotation absence cannot establish VHH absence."
+      },
+      {
+        "pdbId": "3SN6",
+        "inGpcrDomainSet": true,
+        "inImmunoglobulinDomainSet": false,
+        "inCamelidSourceSet": true,
+        "inCombinedIntersection": true,
+        "interpretation": "Known GPCR–VHH controls can lack the selected immunoglobulin Pfam annotations; annotation absence cannot establish VHH absence."
+      }
+    ],
+    "taxonomyIdNameAgreement": true,
+    "specifiedQueriesComplete": true,
+    "exhaustiveGpcrDomainCoverage": false,
+    "exhaustiveImmunoglobulinCoverage": false,
+    "taxonomyCompletenessAssumed": false,
+    "broaderDiscoveryComplete": false,
+    "formalProtocolStatus": "DRAFT",
+    "targetFreezeGate": "BLOCKED",
+    "independentComponentsAdded": 0,
+    "wholeCensusComponentUpperBound": null,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false,
+    "nativeHoldoutCoordinatesAccessed": false,
+    "nativeRelativePosesInspected": false,
+    "dockqLabelsAccessed": false,
+    "performanceResultsAccessed": false
+  }
+}

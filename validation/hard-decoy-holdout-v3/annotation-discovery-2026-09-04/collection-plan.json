@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "route": "C1_GLOBAL_DOMAIN_AND_SOURCE_TAXONOMY_DISCOVERY",
+  "queries": [
+    {
+      "id": "gpcr-pf00001",
+      "group": "gpcr",
+      "accession": "PF00001"
+    },
+    {
+      "id": "gpcr-pf00002",
+      "group": "gpcr",
+      "accession": "PF00002"
+    },
+    {
+      "id": "gpcr-pf00003",
+      "group": "gpcr",
+      "accession": "PF00003"
+    },
+    {
+      "id": "gpcr-pf01534",
+      "group": "gpcr",
+      "accession": "PF01534"
+    },
+    {
+      "id": "ig-pf07686",
+      "group": "immunoglobulin",
+      "accession": "PF07686"
+    },
+    {
+      "id": "ig-pf00047",
+      "group": "immunoglobulin",
+      "accession": "PF00047"
+    },
+    {
+      "id": "camelid-lineage-id",
+      "group": "camelid",
+      "attribute": "rcsb_entity_source_organism.taxonomy_lineage.id",
+      "value": "9835"
+    },
+    {
+      "id": "camelid-lineage-name",
+      "group": "camelid",
+      "attribute": "rcsb_entity_source_organism.taxonomy_lineage.name",
+      "value": "Camelidae"
+    }
+  ],
+  "rowsPerPage": 1000,
+  "maximumPagesPerQuery": 100,
+  "repeatCount": 2,
+  "releaseDateRestriction": null,
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/checksums.sha256": "a19407d2fb144772abe275d78b7fbca5d9709b73050c81fe51cb754572464add",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/authority-evidence.json": "242bf297046578375a529785a7aa431104cbc4203604052a008dcd4e21aea686",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/rcsb-search-schema.json": "a32ed048a5099b7efd13a0bea9d22e905df90428b33b636c5e063b336b630dfb",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/domain-pf00001.json": "704f576b0238d1cfc79ed568aa2f181167eb0071d383db6d9682ff4fe0c4b230",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/domain-pf00002.json": "6a816aa1358ad125e6e9560366dfe315622aeafc72dddd46dd95f6705721b41a",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/domain-pf00003.json": "155427aaf7f5dd1aba0378fd25eda4ffb993fa073955e168762559f9c6c24dbf",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/raw/domain-pf01534.json": "1d0b44e39c59434c3a581890b6f80664f432f54e271d80f3655554ccc2ee034a",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/checksums.sha256": "796aa0734da86791f8ccdef92c7de03da22bdafd7818a5c5e95d73b6b5d35ebc",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/gpcrdb-api.txt": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-gpcrdb-intersection.txt": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/checksums.sha256": "5fe666115b21325ce2bad42cb9412be0049e535e5a15031d8731b4d9828d879d",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/checksums.sha256": "7025ad7b9375a685b837d04be1964eb285400b63f6953e67a095df9f202d7cbf",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-replacements-2026-09-04/checksums.sha256": "dec3a47bf0fc67b2458ece654402320fe17401d5c3e0696f48f87e5f0b0975a4",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-replacements-2026-09-04/entries.jsonl": "b0b26eb7776fa1eb53182cf7c23213417209b47a67afbc05621680bfe79457cd",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/entries.jsonl": "4ae69b0921f20b2874783b84322f32c3213d842c10e8ed98e65b6c14f0a2e99f",
+    "validation/hard-decoy-holdout-v3/publication-accession-review-2026-09-04/priority-reviews.json": "6dea1ceec60aca2bd1a21f99b01ace333968de7268578e6d1e41c21ed5ce317e",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json": "bbf10ef8ebf057dde42969fbd166bcbd2bd437902a76064d7ad8fcea9faa16b7",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "scripts/hard-decoy/v3-entry-metadata.mjs": "77afbf8b485976fd902de4f8377dcf9f02e90d93328a1da06546c8d7aae7c562",
+    "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+    "scripts/hard-decoy-v3/capture-annotation-discovery.mjs": "7326feed2af064164fe744f97c7565a87c57b075933bd2d5f5f2ade8bdcd9922"
+  },
+  "capturedMetadataSources": [
+    "entry-metadata-snapshot-2026-08-29",
+    "gpcrdb-complement-metadata-2026-09-04",
+    "gpcrdb-complement-replacements-2026-09-04",
+    "rcsb-recent-discovery-2026-09-04"
+  ],
+  "positiveControlPdbId": "3P0G",
+  "gpcrDomainControlPdbIds": {
+    "PF00001": "3SN6",
+    "PF00002": "7VVN",
+    "PF00003": "4OR2",
+    "PF01534": "4JKV"
+  },
+  "immunoglobulinDomainControlPdbIds": {
+    "PF07686": "1A14",
+    "PF00047": "1B6U"
+  },
+  "intersectionUnit": "PDB_ENTRY_ID_ACROSS_SEPARATE_QUERIES",
+  "broaderDiscoveryComplete": false,
+  "formalProtocolStatus": "DRAFT",
+  "targetFreezeGate": "BLOCKED"
+}

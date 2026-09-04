@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-8H0P",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "8H0P"
+    ],
+    "query": "\"8H0P\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228H0P%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:48:09.050220+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-8H0P.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228H0P%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "47904ba7248f6babb56376cd240c042f6b1bafd2417421cb7d502cebe88e9462",
+  "bytes": 3547,
+  "reportedHitCount": 4,
+  "retrievedRecordCount": 4,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:48:18.836566+00:00"
+}

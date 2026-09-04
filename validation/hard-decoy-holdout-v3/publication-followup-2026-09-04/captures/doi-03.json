@@ -1,0 +1,27 @@
+{
+  "request": {
+    "requestId": "doi-03",
+    "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+    "pdbIds": [
+      "7NA7",
+      "7NA8"
+    ],
+    "query": "DOI:\"10.1038/s41467-021-26735-5\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-021-26735-5%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:17.706412+00:00",
+  "status": 200,
+  "rawFile": "raw/doi-03.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-021-26735-5%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "f6fc5757e5bdc3044c97ce747e62955092419826bb6ccf4d72f2eaefeb4894d0",
+  "bytes": 1124,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:48.531206+00:00"
+}

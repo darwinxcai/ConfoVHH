@@ -1,0 +1,28 @@
+{
+  "request": {
+    "requestId": "doi-01",
+    "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+    "pdbIds": [
+      "6WGT",
+      "6WH4",
+      "6WHA"
+    ],
+    "query": "DOI:\"10.1016/j.cell.2020.08.024\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.cell.2020.08.024%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:17.699949+00:00",
+  "status": 200,
+  "rawFile": "raw/doi-01.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.cell.2020.08.024%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "e735ea942b4e915012a5342285f3262a92a0a3fecb55574db0198c664f1c4e60",
+  "bytes": 1244,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:47.847782+00:00"
+}

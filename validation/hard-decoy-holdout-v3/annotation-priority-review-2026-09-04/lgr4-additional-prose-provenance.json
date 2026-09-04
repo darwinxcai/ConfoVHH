@@ -1,0 +1,50 @@
+{
+  "paragraphHashNormalization": "sha256(UTF8(' '.join(''.join(p.itertext()).split())))",
+  "fullTextArchived": false,
+  "sources": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12462478/fullTextXML",
+      "retrievedUtc": "2026-09-04T22:58:04.741114+00:00",
+      "httpStatus": 200,
+      "responseBytes": 178162,
+      "responseSha256": "772ab81dfa455a8d97d1b5a0a2f8a6335c677c1f451e289bf51f8056535222f8",
+      "sections": {
+        "Construct design": [
+          "ca1bc4437c42a211b034e580bfa5add21ed1475918d46bf2200dde8acbfa0bb9"
+        ],
+        "Construction of camelid nanobody phage-display library": [
+          "f578b01d05fd192e065fb7b2e7e0f5162e847efbf2fc2c999efc0f497d8c7e51",
+          "93e519dc7c3acf9522dc0d78431eb7f9561b0ac3763d14e8e883c3c7f3a3e287",
+          "9788b5645be9448c524e6e32751f55370236a23bb7245eaafc5c0f88e3b5ba1d"
+        ],
+        "Expression and purification of MB52 and NB21 proteins": [
+          "3cd899341c0832dc46192bae02a01dfa2d267d8f430b1eb3b53d71404749178b",
+          "ada28fa60e6637b340d51badb8bfa4dca264bd4e14bb348d3191a2cb5c80bc9a"
+        ],
+        "Data availability": [
+          "a53d1552cb8f341330e868e260573597ccee711670922f92c884d05df77d1984"
+        ]
+      }
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12234955/fullTextXML",
+      "retrievedUtc": "2026-09-04T22:58:11.483140+00:00",
+      "httpStatus": 200,
+      "responseBytes": 139474,
+      "responseSha256": "03ffb15fcd3c5ce71ba7093b203b5122826ddb51b38b3b38986135cf31c2e61d",
+      "sections": {
+        "Construct design and cloning": [
+          "9d4977f7e675c8c7b76e11ad78e3fedb83ef83d4c9b365d322d27abc31b77acc"
+        ],
+        "NB18 and MB52 generation, expression, and purification": [
+          "369d2a052bd4c803c4888a64d9318e79e1db94671000974df055d8b16dae203c",
+          "9fad4534ec3d913e73ea487dce67aa48466a37b9bff8deb7e2cd8310f992ac62",
+          "9291c87e04f1a03266ce7108c286c1598bc2f3d8c4624efdf170faeaff4debe8"
+        ],
+        "Data availability": [
+          "a5042b00e5fc72ab39eb568df9d9ebf5a3ad6142d550f6676bcda561c9688a15"
+        ]
+      }
+    }
+  ]
+}

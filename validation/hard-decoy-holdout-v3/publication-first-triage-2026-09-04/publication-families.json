@@ -1,0 +1,166 @@
+{
+  "inputRecordCount": 24,
+  "publicationFamilyCount": 23,
+  "linkageRule": "Merge only explicitly documented DOI version relationships. All unlinked DOIs remain separate even when titles or topics resemble one another.",
+  "verifiedVersionLinks": [
+    {
+      "preprintDoi": "10.1101/783290",
+      "publishedDoi": "10.1073/pnas.2011560117",
+      "evidence": [
+        {
+          "sourceFile": "sources/preprint-crossref.json",
+          "field": "message.relation.is-preprint-of",
+          "assertedBy": "subject"
+        },
+        {
+          "sourceFile": "sources/published-crossref.json",
+          "field": "message.relation.has-preprint",
+          "assertedBy": "object"
+        }
+      ],
+      "titleSimilarityUsedAsAuthority": false
+    }
+  ],
+  "families": [
+    {
+      "familyId": "10.1002/2211-5463.13850",
+      "sourceIds": [
+        "MED:38898362"
+      ]
+    },
+    {
+      "familyId": "10.1002/pmic.70057",
+      "sourceIds": [
+        "MED:41097828"
+      ]
+    },
+    {
+      "familyId": "10.1016/j.molpha.2025.100054",
+      "sourceIds": [
+        "MED:40694881"
+      ]
+    },
+    {
+      "familyId": "10.1016/j.molpha.2026.100110",
+      "sourceIds": [
+        "MED:41795245"
+      ]
+    },
+    {
+      "familyId": "10.1021/acsomega.3c02737",
+      "sourceIds": [
+        "MED:37457453"
+      ]
+    },
+    {
+      "familyId": "10.1038/s12276-025-01485-2",
+      "sourceIds": [
+        "MED:40588530"
+      ]
+    },
+    {
+      "familyId": "10.1038/s41467-024-49000-x",
+      "sourceIds": [
+        "MED:38816420"
+      ]
+    },
+    {
+      "familyId": "10.1038/s41467-024-50827-7",
+      "sourceIds": [
+        "MED:39353917"
+      ]
+    },
+    {
+      "familyId": "10.1038/s41467-026-72093-5",
+      "sourceIds": [
+        "MED:42026072"
+      ]
+    },
+    {
+      "familyId": "10.1038/s41467-026-73120-1",
+      "sourceIds": [
+        "MED:42161902"
+      ]
+    },
+    {
+      "familyId": "10.1038/s41589-023-01390-7",
+      "sourceIds": [
+        "MED:37500769"
+      ]
+    },
+    {
+      "familyId": "10.1038/s41589-025-01896-2",
+      "sourceIds": [
+        "MED:40374856"
+      ]
+    },
+    {
+      "familyId": "10.1038/s41598-017-17216-1",
+      "sourceIds": [
+        "MED:29208950"
+      ]
+    },
+    {
+      "familyId": "10.1038/s42003-022-03255-6",
+      "sourceIds": [
+        "MED:35379919"
+      ]
+    },
+    {
+      "familyId": "10.1073/pnas.1800756115",
+      "sourceIds": [
+        "MED:29507218"
+      ]
+    },
+    {
+      "familyId": "10.1073/pnas.2011560117",
+      "sourceIds": [
+        "MED:33139559",
+        "PPR:PPR93867"
+      ]
+    },
+    {
+      "familyId": "10.1073/pnas.2117054119",
+      "sourceIds": [
+        "MED:35858343"
+      ]
+    },
+    {
+      "familyId": "10.1073/pnas.2423931122",
+      "sourceIds": [
+        "MED:40067891"
+      ]
+    },
+    {
+      "familyId": "10.1074/jbc.r115.679811",
+      "sourceIds": [
+        "MED:26677230"
+      ]
+    },
+    {
+      "familyId": "10.1152/function.107.2025",
+      "sourceIds": [
+        "MED:41627946"
+      ]
+    },
+    {
+      "familyId": "10.3389/fbioe.2022.844405",
+      "sourceIds": [
+        "MED:35211467"
+      ]
+    },
+    {
+      "familyId": "10.7554/elife.51511",
+      "sourceIds": [
+        "MED:31990273"
+      ]
+    },
+    {
+      "familyId": "10.7554/elife.92462",
+      "sourceIds": [
+        "MED:38381130"
+      ]
+    }
+  ],
+  "publicationFamilyCountIsIndependentBenchmarkN": false
+}

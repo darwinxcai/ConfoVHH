@@ -1,0 +1,799 @@
+<!doctype html>
+<html>
+
+<!--
+    inputData = {
+        srchTerm: ,
+        names: [
+            {
+                taxId,
+                taxName
+            }
+        ]
+    }
+-->
+
+<head>
+    <title>Taxonomy browser
+        
+    Taxonomy Browser (Camelidae)
+
+    </title>
+        <meta name="author" content="taxonomy">
+    <meta name="keywords"
+        content="national center for biotechnology information, ncbi, national library of medicine, nlm, national institutes of health, nih, database, archive, bookshelf, pubmed, pubmed central, bioinformatics, biomedicine,taxonomy, organism, phylogeny, sequence, database">
+    <meta name="description"
+        content="THE NCBI Taxonomy database allows browsing of the taxonomy tree, which contains a classification of organisms.">
+    <meta name="log_op" content="pageview" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <!-- For Pinger -->
+    <meta name="ncbi_app" content="taxbrowser2" />
+    <meta name="ncbi_db" content="taxonomy" />
+
+    <!-- Global Alert message support -->
+    <meta name="galert_type" content="default" />
+
+    <!-- For Pinger -->
+    <script type="text/javascript">
+        var ncbi;
+        window.ncbi_startTime = new Date();
+    </script>
+
+    <link rel="stylesheet" href="//www.ncbi.nlm.nih.gov/corehtml/ncbi2.css">
+    <style>
+        fieldset {
+            border: 1px solid;
+        }
+
+        .subcat {
+            border-left: 1px solid;
+            border-bottom: 1px solid;
+            max-height: auto;
+            margin-top: 3px;
+            margin-bottom: 1px;
+            transition: max-height 0.2s ease-out;
+            overflow: hidden;
+        }
+
+        .nomrel {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            padding-left: 2px;
+        }
+
+        .nomrelfolded {
+            display: inline-block;
+            vertical-align: top;
+            max-height: auto;
+            text-align: left;
+            padding-left: 2px;
+        }
+
+        .nomrelfolded:after {
+            content: "\229e";
+        }
+
+        .nomrelopen {
+            display: inline-block;
+            vertical-align: top;
+            max-height: auto;
+            text-align: left;
+            padding-left: 2px;
+        }
+
+        .nomrelopen:after {
+            content: "\229f";
+        }
+
+        .subname {
+            display: inline-block;
+        }
+
+        .subord {
+            display: block;
+            margin-left: 50px;
+        }
+
+        .activef:after {
+            content: "\229f";
+        }
+
+        .activeo:after {
+            content: "\229e";
+        }
+
+        .citation {
+            display: block;
+            vertical-align: middle;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .citimage {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+            float: left;
+        }
+
+        .citkey {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            margin-left: 5px;
+        }
+
+        .cittext {
+            display: block;
+            width: 85%;
+            vertical-align: bottom;
+            text-align: left;
+        }
+
+        .biocoll_link {
+            text-decoration: none;
+            border-bottom: 1px dotted;
+            cursor: help;
+        }
+
+        .entrez-records {
+            padding: 0 0 0 1rem;
+            float: right;
+        }
+        .entrez-records table {
+            border-collapse: collapse;
+            border: 2px solid grey;
+        }
+        .entrez-records table tr {
+            border-top: 2px solid grey;
+        }
+        .entrez-records table td {
+            border-right: 2px solid grey;
+            padding: 0.25rem;
+        }
+
+        .linkOuts {
+            padding: 0 0 0 1rem;
+        }
+        .linkOuts table {
+            border-collapse: collapse;
+            border: 2px solid grey;
+        }
+        .linkOuts table tr {
+            border-top: 2px solid grey;
+        }
+        .linkOuts table td {
+            border-right: 2px solid grey;
+            padding: 0.25rem;
+        }
+
+        .checkbox-container-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px; /* row and column gap */
+            align-items: flex-start;
+        }
+        .checkbox-container-flex label {
+            /* This ensures the labels align neatly */
+            flex: 0 0 auto;
+        }
+        .checkbox-container-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, max-content));
+            background-color: #CCCCCC;
+            gap: 0px; /* space between grid items */
+        }
+
+    </style>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" onLoad="document.form.name.focus();document.form.name.select();">
+    <!--  the header   -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td width="140"><a href="//www.ncbi.nlm.nih.gov"> <img src="//www.ncbi.nlm.nih.gov/corehtml/left.GIF"
+                    width="130" height="45" border="0" alt="Link to NCBI Front Page"></a></td>
+        <td valign="BOTTOM"><img src="/Taxonomy/taxonomyhome.html/html/taxonomylogo.gif" alt="Taxonomy Logo"
+                border="0"></td>
+    </tr>
+</table>
+<div id="global-banner">
+    <title></title>
+<style>
+    #local-banner {
+        padding: 0 !important;
+    }
+
+    .local-banner-outer {
+        background-color: #F9DEDE;
+        border-left: 8px solid #E31C3D;
+        padding: 5px 0 10px 10px !important;
+    }
+
+    .local-banner-inner {
+        Xbackground-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='126' height='126' viewBox='0 0 126 126'%3E%3Cpath fill='%231B1B1B' d='M117.18,31.592 C111.585,22.006 103.995,14.416 94.409,8.821 C84.821,3.226 74.354,0.429 63.001,0.429 C51.649,0.429 41.18,3.226 31.593,8.821 C22.006,14.415 14.416,22.005 8.821,31.592 C3.225,41.179 0.428,51.649 0.428,63 C0.428,74.351 3.226,84.82 8.82,94.408 C14.415,103.992 22.005,111.584 31.592,117.179 C41.179,122.774 51.648,125.571 63,125.571 C74.352,125.571 84.822,122.774 94.408,117.179 C103.994,111.585 111.584,103.994 117.179,94.408 C122.773,84.82 125.57,74.35 125.57,63 C125.57,51.649 122.773,41.178 117.18,31.592 Z M73.43,102.025 C73.43,102.786 73.184,103.423 72.696,103.939 C72.208,104.455 71.61,104.712 70.903,104.712 L55.26,104.712 C54.554,104.712 53.929,104.441 53.386,103.898 C52.843,103.355 52.572,102.73 52.572,102.025 L52.572,86.546 C52.572,85.84 52.843,85.215 53.386,84.672 C53.929,84.129 54.554,83.858 55.26,83.858 L70.903,83.858 C71.61,83.858 72.209,84.116 72.696,84.631 C73.184,85.149 73.43,85.785 73.43,86.546 L73.43,102.025 Z M73.266,73.999 C73.211,74.542 72.927,75.018 72.412,75.425 C71.895,75.832 71.258,76.035 70.498,76.035 L55.425,76.035 C54.664,76.035 54.012,75.832 53.469,75.425 C52.926,75.018 52.654,74.542 52.654,73.999 L51.269,23.404 C51.269,22.751 51.54,22.263 52.083,21.937 C52.627,21.503 53.279,21.285 54.039,21.285 L71.965,21.285 C72.726,21.285 73.377,21.502 73.92,21.937 C74.463,22.263 74.733,22.752 74.733,23.404 L73.266,73.999 Z'/%3E%3C/svg%3E%0A");
+        /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -5 36 36' width='36px' height='36px'%3E%3Cpath d='M 12 0 C 5.371094 0 0 5.371094 0 12 C 0 18.628906 5.371094 24 12 24 C 18.628906 24 24 18.628906 24 12 C 24 5.371094 18.628906 0 12 0 Z M 12 2 C 17.523438 2 22 6.476563 22 12 C 22 17.523438 17.523438 22 12 22 C 6.476563 22 2 17.523438 2 12 C 2 6.476563 6.476563 2 12 2 Z M 12 5.8125 C 11.816406 5.8125 11.664063 5.808594 11.5 5.84375 C 11.335938 5.878906 11.183594 5.96875 11.0625 6.0625 C 10.941406 6.15625 10.851563 6.285156 10.78125 6.4375 C 10.710938 6.589844 10.6875 6.769531 10.6875 7 C 10.6875 7.226563 10.710938 7.40625 10.78125 7.5625 C 10.851563 7.71875 10.941406 7.84375 11.0625 7.9375 C 11.183594 8.03125 11.335938 8.085938 11.5 8.125 C 11.664063 8.164063 11.816406 8.1875 12 8.1875 C 12.179688 8.1875 12.371094 8.164063 12.53125 8.125 C 12.691406 8.085938 12.816406 8.03125 12.9375 7.9375 C 13.058594 7.84375 13.148438 7.71875 13.21875 7.5625 C 13.289063 7.410156 13.34375 7.226563 13.34375 7 C 13.34375 6.769531 13.289063 6.589844 13.21875 6.4375 C 13.148438 6.285156 13.058594 6.15625 12.9375 6.0625 C 12.816406 5.96875 12.691406 5.878906 12.53125 5.84375 C 12.371094 5.808594 12.179688 5.8125 12 5.8125 Z M 10.78125 9.15625 L 10.78125 18.125 L 13.21875 18.125 L 13.21875 9.15625 Z'/%3E%3C/svg%3E");*/
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cdefs%3E%3Cmask id='m'%3E%3Crect width='100%25' height='100%25' fill='white'/%3E%3Crect x='118' y='75' width='20' height='75' rx='10' fill='black'/%3E%3Ccircle cx='128' cy='180' r='10' fill='black'/%3E%3C/mask%3E%3C/defs%3E%3Ccircle cx='128' cy='128' r='96' fill='black' mask='url(%23m)'/%3E%3C/svg%3E");
+        background-size: 3rem;
+        background-position: .5rem;
+        background-repeat: no-repeat;
+        padding-left: 4rem;
+        min-height: 40px;
+    }
+
+    #local-banner+#sub-banner {
+        margin-top: .5rem;
+    }
+</style>
+    <div class="local-banner-outer" role="region" aria-label="Alert">
+    <div class="local-banner-inner">
+        <p>
+            
+                <a href="https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9835/" target="_blank">
+            
+                <strong>Try the new NCBI Taxonomy Browser for enhanced search and links to other NCBI data!</strong>
+            </a>
+            <br>
+            This legacy page is planned to be replaced in October 2026.
+            <a href="https://ncbiinsights.ncbi.nlm.nih.gov/2026/03/11/ncbi-taxonomy-new-browser/" target="_blank">
+                Read more
+            </a>
+        </p>
+    </div>
+    </div>
+    
+</div>
+<!--  the quicklinks bar   -->
+<table CLASS="TEXT" border="0" width="100%" cellspacing="0" cellpadding="3" bgcolor="#000000">
+    <tr CLASS="TEXT" align="CENTER">
+        <td width="11%"><a href="/gquery" class="BAR">Entrez</a></td>
+        <td width="11%"><a href="/pubmed" class="BAR">PubMed</a></td>
+        <td width="11%"><a href="/nucleotide" class="BAR">Nucleotide</a></td>
+        <td width="11%"><a href="/protein" class="BAR">Protein</a></td>
+        <td width="11%"><a href="/genome" class="BAR">Genome</a></td>
+        <td width="11%"><a href="/structure" class="BAR">Structure</a></td>
+        <td width="11%"><a href="/pmc" class="BAR">PMC</a></td>
+        <td width="11%"><a href="/taxonomy" class="BAR">Taxonomy</a></td>
+        <td width="11%"><a href="/biocollections" class="BAR">BioCollections</a></td>
+    </tr>
+</table>
+
+<form name="form" action="" method="get">
+    <!--  the query box   -->
+    <table CLASS="TEXT" border="0" width="100%" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC">
+        <tr>
+            <td><LABEL FOR=searchtxt ACCESSKEY=S>Search for </LABEL>
+                <INPUT ID=searchtxt TYPE=text name="searchTerm" value="" size=35>
+                <LABEL FOR=searchtype ACCESSKEY=A> as </LABEL><SELECT ID=searchtype NAME="searchMode">
+                    <OPTION selected>complete name
+                    <OPTION>wild card
+                    <OPTION>token set
+                    <OPTION>taxonomy id
+                </SELECT>
+                <INPUT ID=keepstate TYPE=checkbox ALT="Lock search mode" name="lock" value=1 CHECKED>
+                <LABEL for="keepstate" ACCESSKEY=L> lock </LABEL><input name="unlock" type="hidden" value="1">
+                &nbsp;&nbsp;&nbsp;
+                <INPUT TYPE="submit" NAME="command" VALUE="search">
+                <input name="Clear" type=button value="Clear"
+                    onClick="this.form.searchTerm.value='';this.form.searchMode.selectedIndex=0;this.form.lock.checked=false;this.form.searchTerm.focus();">
+
+            </td>
+        </tr>
+        <tr>
+            
+        </tr>
+    </table>
+        
+</form>
+
+
+    <!--  the contents   -->
+
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+<div>
+    <div class="entrez-records"><table>
+    <tr>
+        <td align="center" bgcolor="#ccccff" colspan="4" valign="center">
+            <strong>&nbsp;&nbsp;&nbsp;Entrez records&nbsp;&nbsp;&nbsp;</strong>
+        </td>
+    </tr>
+    <tr>
+        <td align="center" title="Entez database name" valign="bottom"><small>Database&nbsp;name</small></td>
+        <td align="center" title="Entries linked directly to this taxon node in the taxonomy database"
+            valign="bottom"><small>Direct&nbsp;links</small></td>
+        <td align="center" title="Entries from type linked directly to this taxon in the taxonomy database"
+            valign="bottom"><small>Subtree&nbsp;links</small></td>
+        <td align="center" title="Entries from type linked directly to this taxon in the taxonomy database" valign="bottom">
+            <small>Links&nbsp;from&nbsp;type</small></td>
+    </tr>
+    
+        <tr>
+            <td><span style="color:#0000A0">BioProject</span></td>
+            <td align="right">
+                
+                    <span style="color:#0000A0">-</span>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/bioproject/?term=txid9835[Organism:exp]"><span style="color:#0000A0">199</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#0000A0">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#FF8000">BioSample</span></td>
+            <td align="right">
+                
+                    <span style="color:#FF8000">-</span>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/biosample/?term=txid9835[Organism:exp]"><span style="color:#FF8000">5,282</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#FF8000">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#00CC00">GEO DataSets</span></td>
+            <td align="right">
+                
+                    <span style="color:#00CC00">-</span>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/gds/?term=txid9835[Organism:exp]"><span style="color:#00CC00">119</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#00CC00">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#8080C0">Gene</span></td>
+            <td align="right">
+                
+                    <span style="color:#8080C0">-</span>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/gene/?term=txid9835[Organism:exp]"><span style="color:#8080C0">164,121</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#8080C0">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#C00000">Identical Protein Groups</span></td>
+            <td align="right">
+                
+                    <a href="/ipg/?term=txid9835[Organism:noexp]"><span style="color:#C00000">46</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/ipg/?term=txid9835[Organism:exp]"><span style="color:#C00000">186,211</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#C00000">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#0000A0">Nucleotide</span></td>
+            <td align="right">
+                
+                    <a href="/nuccore/?term=txid9835[Organism:noexp]"><span style="color:#0000A0">24</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/nuccore/?term=txid9835[Organism:exp]"><span style="color:#0000A0">1,708,341</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#0000A0">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#008040">PubChem BioAssay</span></td>
+            <td align="right">
+                
+                    <span style="color:#008040">-</span>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/pcassay/?term=txid9835[Organism:exp]"><span style="color:#008040">1</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#008040">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#804000">PMC</span></td>
+            <td align="right">
+                
+                    <a href="/pmc/?term=txid9835[Organism:noexp]&pmfilter_Fulltext=off"><span style="color:#804000">983</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/pmc/?term=txid9835[Organism:exp]&pmfilter_Fulltext=off"><span style="color:#804000">5,380</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#804000">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#F00000">Protein</span></td>
+            <td align="right">
+                
+                    <a href="/protein/?term=txid9835[Organism:noexp]"><span style="color:#F00000">186</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/protein/?term=txid9835[Organism:exp]"><span style="color:#F00000">292,381</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#F00000">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#408080">SRA</span></td>
+            <td align="right">
+                
+                    <span style="color:#408080">-</span>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/sra/?term=txid9835[Organism:exp]"><span style="color:#408080">9,774</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#408080">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#007000">Structure</span></td>
+            <td align="right">
+                
+                    <a href="/structure/?term=txid9835[Organism:noexp]"><span style="color:#007000">44</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/structure/?term=txid9835[Organism:exp]"><span style="color:#007000">1,959</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#007000">-</span>
+                
+            </td>
+        </tr>
+    
+        <tr>
+            <td><span style="color:#FF8080">Taxonomy</span></td>
+            <td align="right">
+                
+                    <a href="/taxonomy/?term=txid9835[Organism:noexp]"><span style="color:#FF8080">41</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <a href="/taxonomy/?term=txid9835[Organism:exp]"><span style="color:#FF8080">41</span></a>
+                
+            </td>
+            <td align="right">
+                
+                    <span style="color:#FF8080">-</span>
+                
+            </td>
+        </tr>
+    
+</table>
+</div>
+    <div>
+    <h2>Camelidae</h2>
+    Taxonomy ID: 9835 <small>(for references in articles please use ncbitaxon:9835)</small><br>
+
+    
+        <fieldset><legend>current name</legend>
+            <div><div>
+            
+            
+                <strong><i>Camelidae</i></strong>
+            
+            
+            
+            
+            
+            </div></div>
+            
+        </fieldset>
+    
+
+    
+    NCBI BLAST name: <strong>even-toed ungulates & whales</strong><br>
+    Rank: <strong>family</strong><br>
+    Genetic code: <a href="/Taxonomy/taxonomyhome.html/index.cgi?chapter=cgencodes#SG1">Translation table 1 (Standard)</a><br>
+
+    
+        Mitochondrial genetic code: <a href="/Taxonomy/taxonomyhome.html/index.cgi?chapter=cgencodes#SG2">Translation table 2 (Vertebrate Mitochondrial)</a><br>
+    
+
+    
+
+    
+
+    
+
+    <dl>
+
+        <dt>Lineage<em>(full)</em></dt>
+        <dd>
+        
+            <a alt="cellular root" href="?command=show&mode=tree&id=131567&lvl=" title="cellular root">cellular organisms</a>;
+        
+            <a alt="domain" href="?command=show&mode=tree&id=2759&lvl=" title="domain">Eukaryota</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=33154&lvl=" title="no rank">Opisthokonta</a>;
+        
+            <a alt="kingdom" href="?command=show&mode=tree&id=33208&lvl=" title="kingdom">Metazoa</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=6072&lvl=" title="no rank">Eumetazoa</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=33213&lvl=" title="no rank">Bilateria</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=33511&lvl=" title="no rank">Deuterostomia</a>;
+        
+            <a alt="phylum" href="?command=show&mode=tree&id=7711&lvl=" title="phylum">Chordata</a>;
+        
+            <a alt="subphylum" href="?command=show&mode=tree&id=89593&lvl=" title="subphylum">Craniata</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=7742&lvl=" title="no rank">Vertebrata</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=7776&lvl=" title="no rank">Gnathostomata</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=117570&lvl=" title="no rank">Teleostomi</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=117571&lvl=" title="no rank">Euteleostomi</a>;
+        
+            <a alt="superclass" href="?command=show&mode=tree&id=8287&lvl=" title="superclass">Sarcopterygii</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=1338369&lvl=" title="no rank">Dipnotetrapodomorpha</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=32523&lvl=" title="no rank">Tetrapoda</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=32524&lvl=" title="no rank">Amniota</a>;
+        
+            <a alt="class" href="?command=show&mode=tree&id=40674&lvl=" title="class">Mammalia</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=32525&lvl=" title="no rank">Theria</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=9347&lvl=" title="no rank">Eutheria</a>;
+        
+            <a alt="no rank" href="?command=show&mode=tree&id=1437010&lvl=" title="no rank">Boreoeutheria</a>;
+        
+            <a alt="superorder" href="?command=show&mode=tree&id=314145&lvl=" title="superorder">Laurasiatheria</a>;
+        
+            <a alt="order" href="?command=show&mode=tree&id=91561&lvl=" title="order">Artiodactyla</a>;
+        
+            <a alt="suborder" href="?command=show&mode=tree&id=9834&lvl=" title="suborder">Tylopoda</a>
+        
+        </dd>
+    </dl>
+    <p></p>
+
+    
+
+    
+    </div>
+</div>
+<div class="linkOuts"><h3>External Information Resources (NCBI LinkOut)</h3>
+<table border="1" width="100%">
+    <tr>
+        <td bgcolor="#cccccc">LinkOut</td>
+        <td bgcolor="#cccccc">Subject</td>
+        <td bgcolor="#cccccc">LinkOut Provider</td>
+    </tr>
+
+    
+        <tr>
+            <td><a href="http://www.animalbase.uni-goettingen.de/zooweb/servlet/AnimalBase/home/family?id=772" ref="PrId=5782&amp;uid=9835&amp;db=taxonomy" target="_blank">Camelidae</a></td>
+            <td>taxonomy/phylogenetic</td>
+            <td align="center" valign="center"><a href="http://www.animalbase.org/" target="_blank">AnimalBase</a></td>
+        </tr>
+    
+        <tr>
+            <td><a href="https://arctos.database.museum/name/Camelidae" ref="PrId=3849&amp;uid=9835&amp;db=taxonomy" target="_blank">Camelidae taxonomy</a></td>
+            <td>taxonomy/phylogenetic</td>
+            <td align="center" valign="center"><a href="http://arctos.database.museum/home.cfm" target="_blank">Arctos Specimen Database</a></td>
+        </tr>
+    
+        <tr>
+            <td><a href="http://www.boldsystems.org/views/taxbrowser.php?taxid=1472" ref="PrId=5067&amp;uid=9835&amp;db=taxonomy" target="_blank">DNA barcoding : Camelidae</a></td>
+            <td>taxonomy/phylogenetic</td>
+            <td align="center" valign="center"><a href="http://www.barcodinglife.com/" target="_blank">Barcodes of Life</a></td>
+        </tr>
+    
+        <tr>
+            <td><a href="https://eol.org/pages/7686" ref="PrId=7164&amp;uid=9835&amp;db=taxonomy" target="_blank">Camelidae</a></td>
+            <td>taxonomy/phylogenetic</td>
+            <td align="center" valign="center"><a href="https://eol.org/pages/" target="_blank">Encyclopedia of life</a></td>
+        </tr>
+    
+        <tr>
+            <td><a href="https://www.globalbioticinteractions.org?sourceTaxon=NCBI:9835" ref="PrId=9426&amp;uid=9835&amp;db=taxonomy" target="_blank">Show Biotic Interactions</a></td>
+            <td>taxonomy/phylogenetic</td>
+            <td align="center" valign="center"><a href="https://www.globalbioticinteractions.org" target="_blank">Global Biotic Interactions</a></td>
+        </tr>
+    
+        <tr>
+            <td><a href="https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=624918" ref="PrId=3236&amp;uid=9835&amp;db=taxonomy" target="_blank">Camelidae Gray, 1821</a></td>
+            <td>taxonomy/phylogenetic</td>
+            <td align="center" valign="center"><a href="https://www.itis.gov" target="_blank">Integrated Taxonomic Information System</a></td>
+        </tr>
+    
+        <tr>
+            <td><a href="https://lifemap.cnrs.fr/tree?tid=9835" ref="PrId=9789&amp;uid=9835&amp;db=taxonomy" target="_blank">Camelidae</a></td>
+            <td>taxonomy/phylogenetic</td>
+            <td align="center" valign="center"><a href="https://lifemap.cnrs.fr/" target="_blank">Lifemap</a></td>
+        </tr>
+    
+        <tr>
+            <td><a href="http://www.departments.bucknell.edu/biology/resources/msw3/browse.asp?id=14200110" ref="PrId=3234&amp;uid=9835&amp;db=taxonomy" target="_blank">Camelidae Gray 1821</a></td>
+            <td>taxonomy/phylogenetic</td>
+            <td align="center" valign="center"><a href="http://vertebrates.si.edu/mammals/msw/" target="_blank">Mammal Species of the World</a></td>
+        </tr>
+    
+        <tr>
+            <td><a href="http://purl.org/phylo/treebase/phylows/taxon/find?query=tb.identifier.ncbi=9835" ref="PrId=4382&amp;uid=9835&amp;db=taxonomy" target="_blank">Camelidae</a></td>
+            <td>taxonomy/phylogenetic</td>
+            <td align="center" valign="center"><a href="http://www.treebase.org/treebase-web/home.html" target="_blank">TreeBase</a></td>
+        </tr>
+    
+</table>
+<dl>
+    <dt><small><em>Notes:</em></small></dt>
+    <dd><small>Groups interested in participating in the LinkOut program should visit the <a
+                href="https://www.ncbi.nlm.nih.gov/projects/linkout/">LinkOut home page</a>.<br> A list of our current
+            non-bibliographic LinkOut providers can be found <a
+                href="https://www.ncbi.nlm.nih.gov/projects/linkout/journals/htmllists.cgi?type_id=9">here</a>.</small>
+    </dd>
+</dl></div>
+
+
+
+    <HR />
+<P><strong>Disclaimer:</strong> The NCBI taxonomy database is not an authoritative
+    source for nomenclature or classification - please consult the
+    relevant scientific literature for the most reliable information.</P>
+    <P><strong>Reference:</strong> How to cite this resource - <i>Schoch CL, et al. NCBI Taxonomy: a comprehensive
+        update on curation, resources and tools. Database (Oxford). 2020: <a
+            href="https://doi.org/10.1093/database/baaa062">baaa062</a>.</i> PubMed: <a
+        href="https://pubmed.ncbi.nlm.nih.gov/32761142/">32761142</a> PMC: <a
+        href="http://www.ncbi.nlm.nih.gov/pmc/articles/pmc7408187/">PMC7408187</a>.
+</P>
+<br />Comments and questions to
+<A HREF="mailto:info@ncbi.nlm.nih.gov">info@ncbi.nlm.nih.gov</A>
+<BR /><BR />
+<!--  end of content  -->
+
+<table bgcolor="#ccccff" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr align="CENTER">
+        <td width="99"><a href="/Taxonomy/Browser/taxhelp_new.html" class="HELPBAR">[Help]</a></td>
+        <td width="99"><a href="/gquery" class="HELPBAR">[Search]</a></td>
+        <td width="99">
+            <a href="//www.nlm.nih.gov" class="HELPBAR">[NLM</a>
+            <a href="//www.nih.gov" class="HELPBAR">NIH]</a>
+        </td>
+        <td width="99"><a href="//www.ncbi.nlm.nih.gov/About/disclaimer.html" class="HELPBAR">[Disclaimer]</a></td>
+    </tr>
+</table>
+<script type="text/javascript">
+    function listToggleF() {
+        var togres = this.classList.toggle("activef");
+        var content = this.parentElement;
+        if (!togres){
+            content.style.maxHeight = this.scrollHeight;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    }
+    function listToggleO() {
+        var togres = this.classList.toggle("activeo");
+        var content = this.parentElement;
+        if (togres){
+            content.style.maxHeight = this.scrollHeight;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    }
+
+    var coll = document.getElementsByClassName("nomrelfolded");
+
+    for (var i = 0; i < coll.length; i++) {
+        var content = coll[i].parentElement;
+        content.style.maxHeight = coll[i].scrollHeight;
+        coll[i].style.content = "\229f";
+
+        coll[i].addEventListener("click", listToggleF);
+    }
+    coll = document.getElementsByClassName("nomrelopen");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", listToggleO);
+    }
+</script>
+
+<!-- For Pinger -->
+<script src="https://www.ncbi.nlm.nih.gov/core/pinger/pinger.js" type="text/javascript"></script>
+
+</body>
+
+</html>

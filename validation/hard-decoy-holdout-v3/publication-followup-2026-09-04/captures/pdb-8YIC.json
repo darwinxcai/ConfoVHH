@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-8YIC",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "8YIC"
+    ],
+    "query": "\"8YIC\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228YIC%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:08.819369+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-8YIC.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228YIC%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "3e24ce8f87f4dc6006a30ed9e41c232e2c1aa35354c10b99a933b7513d5a8640",
+  "bytes": 2201,
+  "reportedHitCount": 2,
+  "retrievedRecordCount": 2,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:17.701142+00:00"
+}
