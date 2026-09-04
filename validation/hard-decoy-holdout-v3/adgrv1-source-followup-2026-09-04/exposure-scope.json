@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "followupScope": "Official publication metadata, source-organism metadata and primary sequence records; previously retained abstract/significance metadata and filtered review summaries.",
+  "filterBeforeModelVisibleOutput": [
+    "New web search responses were retained in orchestration memory and projected to titles and URLs only before review.",
+    "The direct web open returned a retrieval error and no primary article prose.",
+    "HTTP bodies were saved without printing; Europe PMC and Crossref were projected to DOI, ID, availability and delivery-link fields.",
+    "PDBj HTML was parsed for publication links only; EMDB JSON was projected to citation fields. Map, model and image assets were not downloaded.",
+    "UniProt responses were projected to accession, organism and sequence. No annotation comments, native contacts, coordinates or model geometry were used.",
+    "The advertised bioRxiv JATS and alternative source route returned 429 and 404 respectively. No article Methods, Results or captions were extracted."
+  ],
+  "newStructuralResultsProseRead": false,
+  "newFigureCaptionProseRead": false,
+  "nativeCoordinateFilesRead": false,
+  "structuralImageAssetsRead": false,
+  "contactTablesRead": false,
+  "nativePoseOrOrientationTextRead": false,
+  "dockqOrCapriLabelsRead": false,
+  "predictionOrPerformanceOutputsRead": false,
+  "historicalCaveatsRemainInForce": [
+    {
+      "pdbId": "9FTE",
+      "file": "validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/incidental-prose-exposure.json",
+      "summary": "The earlier citation child received qualitative state/caption fragments, receptor ranges and simulation/contact-definition prose outside the requested narrow scope. This follow-up does not erase or adjudicate that exposure."
+    },
+    {
+      "pdbId": "9S38",
+      "file": "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json",
+      "summary": "The earlier LGR4 review exposed native contact/orientation prose. Exposure remains pending adjudication for this related entry; the follow-up does not clear it."
+    }
+  ],
+  "eligibilityOrExposureClearanceGranted": false
+}

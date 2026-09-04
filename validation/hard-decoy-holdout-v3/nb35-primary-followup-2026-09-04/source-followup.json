@@ -1,0 +1,4460 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-04",
+  "scope": "Bounded new public access-route followup for the sixteen unresolved entries in the historical Nb35 source review. Historical and frozen records are not changed.",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/nb35-source-review-2026-09-04/source-reviews.json": "a4b54744bc101718d05eb96a50d65c2195ae95ae1398296fcf7e99d8606839c4",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-005-repeat-1.json": "5f7dc21cbc39abfb457c2e1860758a3b41f73ca406ff410e1bb2205396c98e07",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-007-repeat-1.json": "f500e8d3a05149251371e1e39a78ac0df372d859c1c61cd9709a3714cf1fb552"
+  },
+  "bibliography": {
+    "pth": {
+      "id": "35932760",
+      "doi": "10.1016/j.molcel.2022.07.003",
+      "pmcid": null,
+      "title": "Endogenous ligand recognition and structural transition of a human PTH receptor.",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Open access",
+            "availabilityCode": "OA",
+            "documentStyle": "pdf",
+            "site": "Unpaywall",
+            "url": "http://www.cell.com/article/S1097276522006608/pdf"
+          },
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1016/j.molcel.2022.07.003"
+          }
+        ]
+      }
+    },
+    "amylin": {
+      "id": "35324283",
+      "doi": "10.1126/science.abm9609",
+      "pmcid": null,
+      "title": "A structural basis for amylin receptor phenotype.",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Subscription required",
+            "availabilityCode": "S",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.1126/science.abm9609"
+          }
+        ]
+      }
+    }
+  },
+  "authorHostedDepositionLink": {
+    "source": "https://park.itc.u-tokyo.ac.jp/hekato_lab/en/publications/",
+    "sourceBodySha256": "d11335bfc908f3b945d94371024812a840914e777df9decfbf1fe929f823a065",
+    "boundedCardSha256": "34dcdb9ba9e5138927af7633200dd87c9a5e65c0fba0b70bd3b068640fdd82e2",
+    "title": "Endogenous ligand recognition and structural transition of a human PTH receptor.",
+    "articleLinks": [
+      "https://www.sciencedirect.com/science/article/pii/S1097276522006608?via%3Dihub"
+    ],
+    "pdbLinks": [
+      "https://www.rcsb.org/structure/7VVJ",
+      "https://www.rcsb.org/structure/7VVK",
+      "https://www.rcsb.org/structure/7VVL",
+      "https://www.rcsb.org/structure/7VVM",
+      "https://www.rcsb.org/structure/7VVN",
+      "https://www.rcsb.org/structure/7VVO"
+    ],
+    "emdbIdentifierLinks": [
+      "https://www.emdataresource.org/EMD-32141",
+      "https://www.emdataresource.org/EMD-32142",
+      "https://www.emdataresource.org/EMD-32143",
+      "https://www.emdataresource.org/EMD-32144",
+      "https://www.emdataresource.org/EMD-32145",
+      "https://www.emdataresource.org/EMD-32146"
+    ],
+    "mapsDownloadedOrInspected": false
+  },
+  "sourceAttempts": [
+    {
+      "key": "amylin_crossref",
+      "url": "https://api.crossref.org/works/10.1126/science.abm9609",
+      "retrievedAt": "2026-09-04T23:35:10.716795+00:00",
+      "finalUrl": "https://api.crossref.org/works/10.1126/science.abm9609",
+      "httpStatus": 429,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "raw/amylin_crossref.response",
+      "contentType": null,
+      "size": 0
+    },
+    {
+      "key": "amylin_epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:35324283%20AND%20SRC:MED&format=json&resultType=core",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:35324283%20AND%20SRC:MED&format=json&resultType=core",
+      "httpStatus": 200,
+      "bodySha256": "a713ef113b7eccafa6d6139ace42c3c520b09182ced1183e41c437d65f9a7f87",
+      "path": "raw/amylin_epmc.response",
+      "contentType": "application/json;charset=UTF-8",
+      "size": 9529,
+      "retrievedAt": "2026-09-04T23:34:46.864372+00:00"
+    },
+    {
+      "key": "amylin_monash",
+      "url": "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+      "finalUrl": "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+      "httpStatus": 403,
+      "bodySha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "path": "raw/amylin_monash.response",
+      "contentType": "text/plain; charset=UTF-8",
+      "size": 17,
+      "retrievedAt": "2026-09-04T23:34:45.586396+00:00"
+    },
+    {
+      "key": "amylin_science_supp",
+      "url": "https://www.science.org/doi/suppl/10.1126/science.abm9609/suppl_file/science.abm9609_sm.pdf",
+      "retrievedAt": "2026-09-04T23:35:10.715340+00:00",
+      "finalUrl": "https://www.science.org/doi/suppl/10.1126/science.abm9609/suppl_file/science.abm9609_sm.pdf",
+      "httpStatus": 403,
+      "bodySha256": "ddca95fe4284ad3eb413375f6aabaa5dbf22a5528881c1b4f0df7c934696a431",
+      "path": "raw/amylin_science_supp.response",
+      "contentType": "text/html; charset=UTF-8",
+      "size": 6183
+    },
+    {
+      "key": "pth_cell_pdf",
+      "url": "https://www.cell.com/article/S1097276522006608/pdf",
+      "retrievedAt": "2026-09-04T23:35:10.715979+00:00",
+      "transportError": "The read operation timed out",
+      "httpStatus": null
+    },
+    {
+      "key": "pth_crossref",
+      "url": "https://api.crossref.org/works/10.1016/j.molcel.2022.07.003",
+      "retrievedAt": "2026-09-04T23:35:16.360597+00:00",
+      "finalUrl": "https://api.crossref.org/works/10.1016/j.molcel.2022.07.003",
+      "httpStatus": 200,
+      "bodySha256": "b42dee3818ba7e427a759d311d9f12171aa5d4e031f419911cff3b11508f7c4d",
+      "path": "raw/pth_crossref.response",
+      "contentType": "application/json",
+      "size": 27420
+    },
+    {
+      "key": "pth_elsevier_textmining",
+      "url": "https://api.elsevier.com/content/article/PII:S1097276522006608?httpAccept=text/xml",
+      "retrievedAt": "2026-09-04T23:36:19.351304+00:00",
+      "transportError": "The read operation timed out",
+      "httpStatus": null
+    },
+    {
+      "key": "pth_epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:35932760%20AND%20SRC:MED&format=json&resultType=core",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:35932760%20AND%20SRC:MED&format=json&resultType=core",
+      "httpStatus": 200,
+      "bodySha256": "3ebcfc3d6c27634d982561b8b18de26a32610cdeb8571e26f017aa6ba406722d",
+      "path": "raw/pth_epmc.response",
+      "contentType": "application/json;charset=UTF-8",
+      "size": 11316,
+      "retrievedAt": "2026-09-04T23:34:46.668700+00:00"
+    },
+    {
+      "key": "pth_kato_lab",
+      "url": "https://park.itc.u-tokyo.ac.jp/hekato_lab/en/publications/",
+      "retrievedAt": "2026-09-04T23:36:10.621031+00:00",
+      "finalUrl": "https://park.itc.u-tokyo.ac.jp/hekato_lab/en/publications/",
+      "httpStatus": 200,
+      "bodySha256": "d11335bfc908f3b945d94371024812a840914e777df9decfbf1fe929f823a065",
+      "path": "raw/pth_kato_lab.response",
+      "contentType": "text/html; charset=UTF-8",
+      "size": 82636
+    },
+    {
+      "key": "pth_nureki_2021",
+      "url": "https://www.nurekilab.net/index.php/en?Publication%2F2021-",
+      "retrievedAt": "2026-09-04T23:36:42.880022+00:00",
+      "finalUrl": "https://www.nurekilab.net/index.php/en?Publication%2F2021-",
+      "httpStatus": 200,
+      "bodySha256": "8fce406e42b4c95ad21ec61c7c5bef46d91394bf9955f4e7e4abf9c08581a077",
+      "path": "raw/pth_nureki_2021.response",
+      "contentType": "text/html; charset=iso-8859-1",
+      "size": 72378
+    },
+    {
+      "key": "pth_nureki_lab",
+      "url": "https://www.nurekilab.net/index.php/en?Publication=",
+      "retrievedAt": "2026-09-04T23:36:10.620589+00:00",
+      "finalUrl": "https://www.nurekilab.net/index.php/en?Publication=",
+      "httpStatus": 200,
+      "bodySha256": "d1e77cee8bd0df316df92ed33343b53b6ca4385066a1dfb2038e6d5f271fe54d",
+      "path": "raw/pth_nureki_lab.response",
+      "contentType": "text/html; charset=iso-8859-1",
+      "size": 8503
+    },
+    {
+      "key": "pth_tokyo",
+      "url": "https://www.c.u-tokyo.ac.jp/info/news/topics/20220809140000.html",
+      "retrievedAt": "2026-09-04T23:35:10.716280+00:00",
+      "finalUrl": "https://www.c.u-tokyo.ac.jp/info/news/topics/20220809140000.html",
+      "httpStatus": 200,
+      "bodySha256": "f7bbce755b0749b8de14f1a5e98fa54ac84a2ff26edf051bf1af1cda2bf951c9",
+      "path": "raw/pth_tokyo.response",
+      "contentType": "text/html",
+      "size": 29656
+    }
+  ],
+  "reviews": [
+    {
+      "pdbId": "7TYF",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-005-repeat-1.json",
+      "frozenMetadataFileSha256": "5f7dc21cbc39abfb457c2e1860758a3b41f73ca406ff410e1bb2205396c98e07",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Human Amylin1 Receptor in complex with Gs and rat amylin peptide",
+      "frozenPolymerEntityCount": 7,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TYF_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYF_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYF_3",
+          "entityId": "3",
+          "description": "Receptor activity-modifying protein 1",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "E"
+          ],
+          "sequenceLength": 149,
+          "sequenceSha256": "2223dc627d9bc33c8f8d3aab0cf9fbe29df12cc5061886b63a372ac126bffcf0",
+          "referenceSequences": [
+            {
+              "databaseAccession": "O60894",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYF_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYF_5",
+          "entityId": "5",
+          "description": "Nanobody 35",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7TYF_6",
+          "entityId": "6",
+          "description": "amylin peptide",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 38,
+          "sequenceSha256": "f02a7cee5c62017cf1167aaddd9bfc7ef4428a34fca60a5e2491c46191fe9338",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P12969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYF_7",
+          "entityId": "7",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "G"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TYF_5",
+        "entityId": "5",
+        "description": "Nanobody 35",
+        "asymIds": [
+          "E"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TYF_5",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TYF_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYF_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYF_3",
+          "accountedComponent": "RECEPTOR_ACTIVITY_MODIFYING_PROTEIN",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYF_4",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYF_5",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYF_6",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYF_7",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TYF"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 7,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7TYH",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-005-repeat-1.json",
+      "frozenMetadataFileSha256": "5f7dc21cbc39abfb457c2e1860758a3b41f73ca406ff410e1bb2205396c98e07",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Human Amylin2 Receptor in complex with Gs and human calcitonin peptide",
+      "frozenPolymerEntityCount": 7,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TYH_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYH_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYH_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYH_4",
+          "entityId": "4",
+          "description": "nanobody 35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7TYH_5",
+          "entityId": "5",
+          "description": "Receptor activity-modifying protein 2",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "E"
+          ],
+          "sequenceLength": 156,
+          "sequenceSha256": "98fedbba1da6651e9f0801ea35f2db6d39fc284e2ebc06296f5897765219ee9d",
+          "referenceSequences": [
+            {
+              "databaseAccession": "O60895",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYH_6",
+          "entityId": "6",
+          "description": "Calcitonin",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 33,
+          "sequenceSha256": "04990733e47586c6d28261cea9f87942488e840cd6c8545c1a93bdcfe0a11e66",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYH_7",
+          "entityId": "7",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "G"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TYH_4",
+        "entityId": "4",
+        "description": "nanobody 35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TYH_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TYH_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYH_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYH_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYH_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYH_5",
+          "accountedComponent": "RECEPTOR_ACTIVITY_MODIFYING_PROTEIN",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYH_6",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYH_7",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TYH"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 7,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7TYI",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-005-repeat-1.json",
+      "frozenMetadataFileSha256": "5f7dc21cbc39abfb457c2e1860758a3b41f73ca406ff410e1bb2205396c98e07",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Calcitonin Receptor in complex with Gs and rat amylin peptide, CT-like state",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TYI_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "c27468bbdd6d89658c71088994be31a24bc21453a17eb0505bd64d972e41224b",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYI_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYI_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYI_4",
+          "entityId": "4",
+          "description": "Nanobody 35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7TYI_5",
+          "entityId": "5",
+          "description": "Islet amyloid polypeptide",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 38,
+          "sequenceSha256": "f02a7cee5c62017cf1167aaddd9bfc7ef4428a34fca60a5e2491c46191fe9338",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P12969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYI_6",
+          "entityId": "6",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TYI_4",
+        "entityId": "4",
+        "description": "Nanobody 35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TYI_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TYI_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYI_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYI_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYI_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYI_5",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYI_6",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TYI"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7TYL",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-005-repeat-1.json",
+      "frozenMetadataFileSha256": "5f7dc21cbc39abfb457c2e1860758a3b41f73ca406ff410e1bb2205396c98e07",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Calcitonin Receptor in complex with Gs and rat amylin peptide, bypass motif",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TYL_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYL_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYL_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYL_4",
+          "entityId": "4",
+          "description": "Nanobody 35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7TYL_5",
+          "entityId": "5",
+          "description": "amylin peptide",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 38,
+          "sequenceSha256": "f02a7cee5c62017cf1167aaddd9bfc7ef4428a34fca60a5e2491c46191fe9338",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P12969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYL_6",
+          "entityId": "6",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TYL_4",
+        "entityId": "4",
+        "description": "Nanobody 35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TYL_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TYL_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYL_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYL_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYL_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYL_5",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYL_6",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TYL"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7TYN",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Calcitonin Receptor in complex with Gs and salmon calcitonin peptide",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TYN_1",
+          "entityId": "1",
+          "description": "Calcitonin-1",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 33,
+          "sequenceSha256": "b14ba2a814785b614abaa3d69dbd7f13e3e953773d78da95ba3b94b2bb989f02",
+          "referenceSequences": [
+            {
+              "databaseAccession": "B5XGR7",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYN_2",
+          "entityId": "2",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYN_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "9f36d2e88f9078e6f8f276f104ea17e4ecb9be027264f21822b9b18c69cd6f57",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYN_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYN_5",
+          "entityId": "5",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYN_6",
+          "entityId": "6",
+          "description": "Nanobody 35",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TYN_6",
+        "entityId": "6",
+        "description": "Nanobody 35",
+        "asymIds": [
+          "F"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TYN_6",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TYN_1",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYN_2",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYN_3",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYN_4",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYN_5",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYN_6",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TYN"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7TYO",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Calcitonin receptor in complex with Gs and human calcitonin peptide",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TYO_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYO_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYO_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYO_4",
+          "entityId": "4",
+          "description": "Nanobody 35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7TYO_5",
+          "entityId": "5",
+          "description": "Calcitonin",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 33,
+          "sequenceSha256": "04990733e47586c6d28261cea9f87942488e840cd6c8545c1a93bdcfe0a11e66",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYO_6",
+          "entityId": "6",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TYO_4",
+        "entityId": "4",
+        "description": "Nanobody 35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TYO_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TYO_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYO_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYO_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYO_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYO_5",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYO_6",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TYO"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7TYW",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Human Amylin1 Receptor in complex with Gs and salmon calcitonin peptide",
+      "frozenPolymerEntityCount": 7,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TYW_1",
+          "entityId": "1",
+          "description": "Receptor activity-modifying protein 1",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "E"
+          ],
+          "sequenceLength": 149,
+          "sequenceSha256": "2223dc627d9bc33c8f8d3aab0cf9fbe29df12cc5061886b63a372ac126bffcf0",
+          "referenceSequences": [
+            {
+              "databaseAccession": "O60894",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYW_2",
+          "entityId": "2",
+          "description": "Calcitonin-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 33,
+          "sequenceSha256": "b14ba2a814785b614abaa3d69dbd7f13e3e953773d78da95ba3b94b2bb989f02",
+          "referenceSequences": [
+            {
+              "databaseAccession": "B5XGR7",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYW_3",
+          "entityId": "3",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYW_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYW_5",
+          "entityId": "5",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYW_6",
+          "entityId": "6",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYW_7",
+          "entityId": "7",
+          "description": "nanobody 35",
+          "asymIds": [
+            "G"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TYW_7",
+        "entityId": "7",
+        "description": "nanobody 35",
+        "asymIds": [
+          "G"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TYW_7",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TYW_1",
+          "accountedComponent": "RECEPTOR_ACTIVITY_MODIFYING_PROTEIN",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYW_2",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYW_3",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYW_4",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYW_5",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYW_6",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYW_7",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TYW"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 7,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7TYX",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Human Amylin2 Receptor in complex with Gs and rat amylin peptide",
+      "frozenPolymerEntityCount": 7,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TYX_1",
+          "entityId": "1",
+          "description": "Receptor activity-modifying protein 2",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "E"
+          ],
+          "sequenceLength": 156,
+          "sequenceSha256": "98fedbba1da6651e9f0801ea35f2db6d39fc284e2ebc06296f5897765219ee9d",
+          "referenceSequences": [
+            {
+              "databaseAccession": "O60895",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYX_2",
+          "entityId": "2",
+          "description": "amylin peptide",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 38,
+          "sequenceSha256": "f02a7cee5c62017cf1167aaddd9bfc7ef4428a34fca60a5e2491c46191fe9338",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P12969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYX_3",
+          "entityId": "3",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYX_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "9f36d2e88f9078e6f8f276f104ea17e4ecb9be027264f21822b9b18c69cd6f57",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYX_5",
+          "entityId": "5",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYX_6",
+          "entityId": "6",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYX_7",
+          "entityId": "7",
+          "description": "nanobody 35",
+          "asymIds": [
+            "G"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TYX_7",
+        "entityId": "7",
+        "description": "nanobody 35",
+        "asymIds": [
+          "G"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TYX_7",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TYX_1",
+          "accountedComponent": "RECEPTOR_ACTIVITY_MODIFYING_PROTEIN",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYX_2",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYX_3",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYX_4",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYX_5",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYX_6",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYX_7",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TYX"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 7,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7TYY",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Human Amylin2 Receptor in complex with Gs and salmon calcitonin peptide",
+      "frozenPolymerEntityCount": 7,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TYY_1",
+          "entityId": "1",
+          "description": "Receptor activity-modifying protein 2",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "E"
+          ],
+          "sequenceLength": 156,
+          "sequenceSha256": "98fedbba1da6651e9f0801ea35f2db6d39fc284e2ebc06296f5897765219ee9d",
+          "referenceSequences": [
+            {
+              "databaseAccession": "O60895",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYY_2",
+          "entityId": "2",
+          "description": "Calcitonin-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 33,
+          "sequenceSha256": "b14ba2a814785b614abaa3d69dbd7f13e3e953773d78da95ba3b94b2bb989f02",
+          "referenceSequences": [
+            {
+              "databaseAccession": "B5XGR7",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYY_3",
+          "entityId": "3",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYY_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYY_5",
+          "entityId": "5",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYY_6",
+          "entityId": "6",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TYY_7",
+          "entityId": "7",
+          "description": "nanobody 35",
+          "asymIds": [
+            "G"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TYY_7",
+        "entityId": "7",
+        "description": "nanobody 35",
+        "asymIds": [
+          "G"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TYY_7",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TYY_1",
+          "accountedComponent": "RECEPTOR_ACTIVITY_MODIFYING_PROTEIN",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYY_2",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYY_3",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYY_4",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYY_5",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYY_6",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TYY_7",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TYY"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 7,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7TZF",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/science.abm9609",
+        "pdbx_database_id_PubMed": 35324283,
+        "title": "A structural basis for amylin receptor phenotype."
+      },
+      "frozenEntryTitle": "Human Amylin3 Receptor in complex with Gs and rat amylin peptide",
+      "frozenPolymerEntityCount": 7,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7TZF_1",
+          "entityId": "1",
+          "description": "Receptor activity-modifying protein 3",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "E"
+          ],
+          "sequenceLength": 149,
+          "sequenceSha256": "3198f347eff0457dd046c967163237fa01f2d2af393208493b9a8be3cd52ba3f",
+          "referenceSequences": [
+            {
+              "databaseAccession": "O60896",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TZF_2",
+          "entityId": "2",
+          "description": "amylin peptide",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 38,
+          "sequenceSha256": "f02a7cee5c62017cf1167aaddd9bfc7ef4428a34fca60a5e2491c46191fe9338",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P12969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TZF_3",
+          "entityId": "3",
+          "description": "Calcitonin receptor",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 501,
+          "sequenceSha256": "fb27aa7a70a273165cbf6cf965c019985142cc5c43527617b7b7a68ad6567944",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30988",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TZF_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TZF_5",
+          "entityId": "5",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TZF_6",
+          "entityId": "6",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7TZF_7",
+          "entityId": "7",
+          "description": "nanobody 35",
+          "asymIds": [
+            "G"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7TZF_7",
+        "entityId": "7",
+        "description": "nanobody 35",
+        "asymIds": [
+          "G"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 138,
+        "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "AMYLIN_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7TZF_7",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 1,
+        "candidateEnd1": 126,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "",
+        "candidateSuffix": "SSHHHHHHEPEA",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7TZF_1",
+          "accountedComponent": "RECEPTOR_ACTIVITY_MODIFYING_PROTEIN",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TZF_2",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TZF_3",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TZF_4",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TZF_5",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TZF_6",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7TZF_7",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.science.org/doi/10.1126/science.abm9609",
+        "https://research.monash.edu/en/publications/a-structural-basis-for-amylin-receptor-phenotype/",
+        "https://www.rcsb.org/structure/7TZF"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": null,
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 7,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7VVJ",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1016/j.molcel.2022.07.003",
+        "pdbx_database_id_PubMed": 35932760,
+        "title": "Endogenous ligand recognition and structural transition of a human PTH receptor."
+      },
+      "frozenEntryTitle": "PTHrP-bound human PTH1R in complex with Gs",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7VVJ_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 380,
+          "sequenceSha256": "42c0be3efb3d52431260bf8eeca59a967624fb0f6506eaf1a15d036c87b6996c",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVJ_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 351,
+          "sequenceSha256": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P54311",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVJ_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 68,
+          "sequenceSha256": "119eb0a2c050f78dc257cdfd41ce1e0b3dc76d47c91da40f30b8720cb3172197",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63212",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVJ_4",
+          "entityId": "4",
+          "description": "nanobody Nb35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 137,
+          "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7VVJ_5",
+          "entityId": "5",
+          "description": "PTHrP[1-36]",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 36,
+          "sequenceSha256": "250529c297bbbd5db688748597b2ea26168b062e8b06b8ee2d58be3e7fa3b848",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P12272",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVJ_6",
+          "entityId": "6",
+          "description": "Parathyroid hormone/parathyroid hormone-related peptide receptor",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 482,
+          "sequenceSha256": "991f771132b536c5f421dbf8a5bec5935aac744e588321cc66792778b1e3b1a8",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q03431",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7VVJ_4",
+        "entityId": "4",
+        "description": "nanobody Nb35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 137,
+        "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "PTH1R_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "PTH1R_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7VVJ_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 3,
+        "candidateEnd1": 128,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "MG",
+        "candidateSuffix": "SSLHHHHHH",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7VVJ_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVJ_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVJ_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVJ_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVJ_5",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVJ_6",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.sciencedirect.com/science/article/pii/S1097276522006608",
+        "https://www.cell.com/molecular-cell/fulltext/S1097-2765(22)00660-8",
+        "https://www.rcsb.org/structure/7VVJ"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": {
+        "classification": "AUTHOR_HOSTED_PUBLICATION_CARD_EXACT_PDB_LINK",
+        "sourceUrl": "https://park.itc.u-tokyo.ac.jp/hekato_lab/en/publications/",
+        "sourceBodySha256": "d11335bfc908f3b945d94371024812a840914e777df9decfbf1fe929f823a065",
+        "boundedCardSha256": "34dcdb9ba9e5138927af7633200dd87c9a5e65c0fba0b70bd3b068640fdd82e2",
+        "paperTitle": "Endogenous ligand recognition and structural transition of a human PTH receptor.",
+        "paperLink": "https://www.sciencedirect.com/science/article/pii/S1097276522006608?via%3Dihub",
+        "pdbLink": "https://www.rcsb.org/structure/7VVJ",
+        "pdbIdExplicitlyNamedInAuthorHostedCard": true,
+        "pdbIdVerifiedInPrimaryArticleDepositionStatement": false,
+        "complexToPdbMappingVerifiedFromMethods": false,
+        "limitation": "The author laboratory groups these identifiers under this exact publication. This is stronger than a citation field alone, but it is not the inaccessible primary paper deposition statement and supplies no sample composition or binder role."
+      },
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7VVK",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1016/j.molcel.2022.07.003",
+        "pdbx_database_id_PubMed": 35932760,
+        "title": "Endogenous ligand recognition and structural transition of a human PTH receptor."
+      },
+      "frozenEntryTitle": "PTH-bound human PTH1R in complex with Gs (class1)",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7VVK_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 380,
+          "sequenceSha256": "42c0be3efb3d52431260bf8eeca59a967624fb0f6506eaf1a15d036c87b6996c",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVK_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 351,
+          "sequenceSha256": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P54311",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVK_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 68,
+          "sequenceSha256": "119eb0a2c050f78dc257cdfd41ce1e0b3dc76d47c91da40f30b8720cb3172197",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63212",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVK_4",
+          "entityId": "4",
+          "description": "nanobody Nb35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 137,
+          "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7VVK_5",
+          "entityId": "5",
+          "description": "Parathyroid hormone",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 34,
+          "sequenceSha256": "cb4679b9603a1f7e013fd567393fb174cd1c789a15dd70b3c64e96504a328d8b",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01270",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVK_6",
+          "entityId": "6",
+          "description": "Parathyroid hormone/parathyroid hormone-related peptide receptor",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 473,
+          "sequenceSha256": "482c5a1fcf90c0fbda778874f48bb585e1794e7d55e9cb61583e1507f63932a0",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q03431",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7VVK_4",
+        "entityId": "4",
+        "description": "nanobody Nb35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 137,
+        "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "PTH1R_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "PTH1R_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7VVK_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 3,
+        "candidateEnd1": 128,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "MG",
+        "candidateSuffix": "SSLHHHHHH",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7VVK_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVK_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVK_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVK_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVK_5",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVK_6",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.sciencedirect.com/science/article/pii/S1097276522006608",
+        "https://www.cell.com/molecular-cell/fulltext/S1097-2765(22)00660-8",
+        "https://www.rcsb.org/structure/7VVK"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": {
+        "classification": "AUTHOR_HOSTED_PUBLICATION_CARD_EXACT_PDB_LINK",
+        "sourceUrl": "https://park.itc.u-tokyo.ac.jp/hekato_lab/en/publications/",
+        "sourceBodySha256": "d11335bfc908f3b945d94371024812a840914e777df9decfbf1fe929f823a065",
+        "boundedCardSha256": "34dcdb9ba9e5138927af7633200dd87c9a5e65c0fba0b70bd3b068640fdd82e2",
+        "paperTitle": "Endogenous ligand recognition and structural transition of a human PTH receptor.",
+        "paperLink": "https://www.sciencedirect.com/science/article/pii/S1097276522006608?via%3Dihub",
+        "pdbLink": "https://www.rcsb.org/structure/7VVK",
+        "pdbIdExplicitlyNamedInAuthorHostedCard": true,
+        "pdbIdVerifiedInPrimaryArticleDepositionStatement": false,
+        "complexToPdbMappingVerifiedFromMethods": false,
+        "limitation": "The author laboratory groups these identifiers under this exact publication. This is stronger than a citation field alone, but it is not the inaccessible primary paper deposition statement and supplies no sample composition or binder role."
+      },
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7VVL",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1016/j.molcel.2022.07.003",
+        "pdbx_database_id_PubMed": 35932760,
+        "title": "Endogenous ligand recognition and structural transition of a human PTH receptor."
+      },
+      "frozenEntryTitle": "PTH-bound human PTH1R in complex with Gs (class2)",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7VVL_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 380,
+          "sequenceSha256": "42c0be3efb3d52431260bf8eeca59a967624fb0f6506eaf1a15d036c87b6996c",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVL_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 351,
+          "sequenceSha256": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P54311",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVL_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 68,
+          "sequenceSha256": "119eb0a2c050f78dc257cdfd41ce1e0b3dc76d47c91da40f30b8720cb3172197",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63212",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVL_4",
+          "entityId": "4",
+          "description": "nanobody Nb35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 137,
+          "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7VVL_5",
+          "entityId": "5",
+          "description": "Parathyroid hormone",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 34,
+          "sequenceSha256": "cb4679b9603a1f7e013fd567393fb174cd1c789a15dd70b3c64e96504a328d8b",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01270",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVL_6",
+          "entityId": "6",
+          "description": "Parathyroid hormone/parathyroid hormone-related peptide receptor",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 473,
+          "sequenceSha256": "482c5a1fcf90c0fbda778874f48bb585e1794e7d55e9cb61583e1507f63932a0",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q03431",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7VVL_4",
+        "entityId": "4",
+        "description": "nanobody Nb35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 137,
+        "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "PTH1R_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "PTH1R_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7VVL_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 3,
+        "candidateEnd1": 128,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "MG",
+        "candidateSuffix": "SSLHHHHHH",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7VVL_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVL_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVL_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVL_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVL_5",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVL_6",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.sciencedirect.com/science/article/pii/S1097276522006608",
+        "https://www.cell.com/molecular-cell/fulltext/S1097-2765(22)00660-8",
+        "https://www.rcsb.org/structure/7VVL"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": {
+        "classification": "AUTHOR_HOSTED_PUBLICATION_CARD_EXACT_PDB_LINK",
+        "sourceUrl": "https://park.itc.u-tokyo.ac.jp/hekato_lab/en/publications/",
+        "sourceBodySha256": "d11335bfc908f3b945d94371024812a840914e777df9decfbf1fe929f823a065",
+        "boundedCardSha256": "34dcdb9ba9e5138927af7633200dd87c9a5e65c0fba0b70bd3b068640fdd82e2",
+        "paperTitle": "Endogenous ligand recognition and structural transition of a human PTH receptor.",
+        "paperLink": "https://www.sciencedirect.com/science/article/pii/S1097276522006608?via%3Dihub",
+        "pdbLink": "https://www.rcsb.org/structure/7VVL",
+        "pdbIdExplicitlyNamedInAuthorHostedCard": true,
+        "pdbIdVerifiedInPrimaryArticleDepositionStatement": false,
+        "complexToPdbMappingVerifiedFromMethods": false,
+        "limitation": "The author laboratory groups these identifiers under this exact publication. This is stronger than a citation field alone, but it is not the inaccessible primary paper deposition statement and supplies no sample composition or binder role."
+      },
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7VVM",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1016/j.molcel.2022.07.003",
+        "pdbx_database_id_PubMed": 35932760,
+        "title": "Endogenous ligand recognition and structural transition of a human PTH receptor."
+      },
+      "frozenEntryTitle": "PTH-bound human PTH1R in complex with Gs (class3)",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7VVM_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 380,
+          "sequenceSha256": "42c0be3efb3d52431260bf8eeca59a967624fb0f6506eaf1a15d036c87b6996c",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVM_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 351,
+          "sequenceSha256": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P54311",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVM_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 68,
+          "sequenceSha256": "119eb0a2c050f78dc257cdfd41ce1e0b3dc76d47c91da40f30b8720cb3172197",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63212",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVM_4",
+          "entityId": "4",
+          "description": "nanobody Nb35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 137,
+          "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7VVM_5",
+          "entityId": "5",
+          "description": "Parathyroid hormone",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 34,
+          "sequenceSha256": "cb4679b9603a1f7e013fd567393fb174cd1c789a15dd70b3c64e96504a328d8b",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01270",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVM_6",
+          "entityId": "6",
+          "description": "Parathyroid hormone/parathyroid hormone-related peptide receptor",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 473,
+          "sequenceSha256": "482c5a1fcf90c0fbda778874f48bb585e1794e7d55e9cb61583e1507f63932a0",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q03431",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7VVM_4",
+        "entityId": "4",
+        "description": "nanobody Nb35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 137,
+        "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "PTH1R_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "PTH1R_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7VVM_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 3,
+        "candidateEnd1": 128,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "MG",
+        "candidateSuffix": "SSLHHHHHH",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7VVM_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVM_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVM_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVM_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVM_5",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVM_6",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.sciencedirect.com/science/article/pii/S1097276522006608",
+        "https://www.cell.com/molecular-cell/fulltext/S1097-2765(22)00660-8",
+        "https://www.rcsb.org/structure/7VVM"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": {
+        "classification": "AUTHOR_HOSTED_PUBLICATION_CARD_EXACT_PDB_LINK",
+        "sourceUrl": "https://park.itc.u-tokyo.ac.jp/hekato_lab/en/publications/",
+        "sourceBodySha256": "d11335bfc908f3b945d94371024812a840914e777df9decfbf1fe929f823a065",
+        "boundedCardSha256": "34dcdb9ba9e5138927af7633200dd87c9a5e65c0fba0b70bd3b068640fdd82e2",
+        "paperTitle": "Endogenous ligand recognition and structural transition of a human PTH receptor.",
+        "paperLink": "https://www.sciencedirect.com/science/article/pii/S1097276522006608?via%3Dihub",
+        "pdbLink": "https://www.rcsb.org/structure/7VVM",
+        "pdbIdExplicitlyNamedInAuthorHostedCard": true,
+        "pdbIdVerifiedInPrimaryArticleDepositionStatement": false,
+        "complexToPdbMappingVerifiedFromMethods": false,
+        "limitation": "The author laboratory groups these identifiers under this exact publication. This is stronger than a citation field alone, but it is not the inaccessible primary paper deposition statement and supplies no sample composition or binder role."
+      },
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7VVN",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "frozenMetadataFileSha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1016/j.molcel.2022.07.003",
+        "pdbx_database_id_PubMed": 35932760,
+        "title": "Endogenous ligand recognition and structural transition of a human PTH receptor."
+      },
+      "frozenEntryTitle": "PTH-bound human PTH1R in complex with Gs (class4)",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7VVN_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 380,
+          "sequenceSha256": "42c0be3efb3d52431260bf8eeca59a967624fb0f6506eaf1a15d036c87b6996c",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVN_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 351,
+          "sequenceSha256": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P54311",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVN_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 68,
+          "sequenceSha256": "119eb0a2c050f78dc257cdfd41ce1e0b3dc76d47c91da40f30b8720cb3172197",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63212",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVN_4",
+          "entityId": "4",
+          "description": "nanobody Nb35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 137,
+          "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7VVN_5",
+          "entityId": "5",
+          "description": "Parathyroid hormone",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 34,
+          "sequenceSha256": "cb4679b9603a1f7e013fd567393fb174cd1c789a15dd70b3c64e96504a328d8b",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01270",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVN_6",
+          "entityId": "6",
+          "description": "Parathyroid hormone/parathyroid hormone-related peptide receptor",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 473,
+          "sequenceSha256": "482c5a1fcf90c0fbda778874f48bb585e1794e7d55e9cb61583e1507f63932a0",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q03431",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7VVN_4",
+        "entityId": "4",
+        "description": "nanobody Nb35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 137,
+        "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "PTH1R_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "PTH1R_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7VVN_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 3,
+        "candidateEnd1": 128,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "MG",
+        "candidateSuffix": "SSLHHHHHH",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7VVN_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVN_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVN_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVN_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVN_5",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVN_6",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.sciencedirect.com/science/article/pii/S1097276522006608",
+        "https://www.cell.com/molecular-cell/fulltext/S1097-2765(22)00660-8",
+        "https://www.rcsb.org/structure/7VVN"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": {
+        "classification": "AUTHOR_HOSTED_PUBLICATION_CARD_EXACT_PDB_LINK",
+        "sourceUrl": "https://park.itc.u-tokyo.ac.jp/hekato_lab/en/publications/",
+        "sourceBodySha256": "d11335bfc908f3b945d94371024812a840914e777df9decfbf1fe929f823a065",
+        "boundedCardSha256": "34dcdb9ba9e5138927af7633200dd87c9a5e65c0fba0b70bd3b068640fdd82e2",
+        "paperTitle": "Endogenous ligand recognition and structural transition of a human PTH receptor.",
+        "paperLink": "https://www.sciencedirect.com/science/article/pii/S1097276522006608?via%3Dihub",
+        "pdbLink": "https://www.rcsb.org/structure/7VVN",
+        "pdbIdExplicitlyNamedInAuthorHostedCard": true,
+        "pdbIdVerifiedInPrimaryArticleDepositionStatement": false,
+        "complexToPdbMappingVerifiedFromMethods": false,
+        "limitation": "The author laboratory groups these identifiers under this exact publication. This is stronger than a citation field alone, but it is not the inaccessible primary paper deposition statement and supplies no sample composition or binder role."
+      },
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    },
+    {
+      "pdbId": "7VVO",
+      "reviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-007-repeat-1.json",
+      "frozenMetadataFileSha256": "f500e8d3a05149251371e1e39a78ac0df372d859c1c61cd9709a3714cf1fb552",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1016/j.molcel.2022.07.003",
+        "pdbx_database_id_PubMed": 35932760,
+        "title": "Endogenous ligand recognition and structural transition of a human PTH receptor."
+      },
+      "frozenEntryTitle": "PTH-bound human PTH1R in complex with Gs (class5)",
+      "frozenPolymerEntityCount": 6,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7VVO_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 380,
+          "sequenceSha256": "42c0be3efb3d52431260bf8eeca59a967624fb0f6506eaf1a15d036c87b6996c",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVO_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 351,
+          "sequenceSha256": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P54311",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVO_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 68,
+          "sequenceSha256": "119eb0a2c050f78dc257cdfd41ce1e0b3dc76d47c91da40f30b8720cb3172197",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63212",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVO_4",
+          "entityId": "4",
+          "description": "nanobody Nb35",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 137,
+          "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+          "referenceSequences": []
+        },
+        {
+          "rcsbEntityId": "7VVO_5",
+          "entityId": "5",
+          "description": "Parathyroid hormone",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "P"
+          ],
+          "sequenceLength": 34,
+          "sequenceSha256": "cb4679b9603a1f7e013fd567393fb174cd1c789a15dd70b3c64e96504a328d8b",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01270",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7VVO_6",
+          "entityId": "6",
+          "description": "Parathyroid hormone/parathyroid hormone-related peptide receptor",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 473,
+          "sequenceSha256": "482c5a1fcf90c0fbda778874f48bb585e1794e7d55e9cb61583e1507f63932a0",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q03431",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7VVO_4",
+        "entityId": "4",
+        "description": "nanobody Nb35",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 137,
+        "sequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+        "referenceSequences": []
+      },
+      "candidateRoleClass": null,
+      "candidateRoleEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "sourceId": "PTH1R_2022",
+        "auxiliaryRoleAuthoritySourceId": null,
+        "section": null,
+        "sourceReagentUseVerified": false,
+        "roleInferredAcrossEntryPublications": false
+      },
+      "depositionLinkage": {
+        "classification": "FROZEN_CITATION_ONLY_PENDING_PRIMARY_DEPOSITION_TEXT",
+        "sourceId": "PTH1R_2022",
+        "section": null,
+        "pdbIdExplicitlyNamed": false,
+        "sourceComplexLabel": null,
+        "frozenCandidateRcsbEntityId": "7VVO_4",
+        "entityNumberSource": "Frozen RCSB metadata"
+      },
+      "sequenceIdentityEvidence": {
+        "classification": "EXACT_SHARED_SEQUENCE_SEGMENT",
+        "referenceRcsbEntityId": "7FIM_1",
+        "referenceSourceId": "TIRZEPATIDE_2022",
+        "referenceSequenceSha256": "48a57ac4e6c4244ab9a5056bf26030cc7f4087a9c655ad64a286693de965ef62",
+        "referenceStart1": 3,
+        "referenceEnd1": 128,
+        "candidateStart1": 3,
+        "candidateEnd1": 128,
+        "segmentLength": 126,
+        "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+        "candidatePrefix": "MG",
+        "candidateSuffix": "SSLHHHHHH",
+        "internalDifferencesWithinSharedSegment": 0,
+        "fullSequenceEqualToReference": false,
+        "mappingBasis": "Literal unique substring comparison of the complete frozen polymer sequences. Segment boundaries are computational, not experimentally determined domain boundaries.",
+        "limitation": "Sequence similarity alone does not complete an entry review; terminal differences are not assigned a cleavage or expression explanation."
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7VVO_1",
+          "accountedComponent": "G_ALPHA_OR_ENGINEERED_G_ALPHA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVO_2",
+          "accountedComponent": "G_BETA_OR_ENGINEERED_G_BETA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVO_3",
+          "accountedComponent": "G_GAMMA",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVO_4",
+          "accountedComponent": "REVIEWED_NB35_ENTITY",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVO_5",
+          "accountedComponent": "PEPTIDE_LIGAND",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        },
+        {
+          "rcsbEntityId": "7VVO_6",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "basis": "FROZEN_METADATA_ONLY_PENDING_PRIMARY_TEXT",
+          "sourceId": null
+        }
+      ],
+      "otherAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [],
+      "entryAssessment": {
+        "classification": "UNRESOLVED_PRIMARY_TEXT_ACCESS",
+        "reason": "Frozen metadata and the shared Nb35 sequence segment support triage, but entry-specific primary-text review is incomplete. No entry exclusion is inferred.",
+        "scope": "Bounded entry inventory assessment; no proof of universal VHH absence, no exhaustive discovery claim, and no statement about incidental receptor contacts.",
+        "unresolvedDiscrepancies": [
+          "PRIMARY_CONSTRUCT_AND_SAMPLE_METHODS_NOT_ACCESSIBLE",
+          "PRIMARY_ARTICLE_COMPLETE_DEPOSITION_STATEMENT_NOT_ACCESSIBLE",
+          "ENTRY_SPECIFIC_NB35_AUXILIARY_ROLE_NOT_SOURCE_CLEARED"
+        ],
+        "notes": []
+      },
+      "evidenceUrls": [
+        "https://www.sciencedirect.com/science/article/pii/S1097276522006608",
+        "https://www.cell.com/molecular-cell/fulltext/S1097-2765(22)00660-8",
+        "https://www.rcsb.org/structure/7VVO"
+      ],
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "targetFreezePermitted": false,
+      "historicalReviewStatus": "PENDING_PRIMARY_FULL_TEXT_REVIEW",
+      "additionalDepositionEvidence": {
+        "classification": "AUTHOR_HOSTED_PUBLICATION_CARD_EXACT_PDB_LINK",
+        "sourceUrl": "https://park.itc.u-tokyo.ac.jp/hekato_lab/en/publications/",
+        "sourceBodySha256": "d11335bfc908f3b945d94371024812a840914e777df9decfbf1fe929f823a065",
+        "boundedCardSha256": "34dcdb9ba9e5138927af7633200dd87c9a5e65c0fba0b70bd3b068640fdd82e2",
+        "paperTitle": "Endogenous ligand recognition and structural transition of a human PTH receptor.",
+        "paperLink": "https://www.sciencedirect.com/science/article/pii/S1097276522006608?via%3Dihub",
+        "pdbLink": "https://www.rcsb.org/structure/7VVO",
+        "pdbIdExplicitlyNamedInAuthorHostedCard": true,
+        "pdbIdVerifiedInPrimaryArticleDepositionStatement": false,
+        "complexToPdbMappingVerifiedFromMethods": false,
+        "limitation": "The author laboratory groups these identifiers under this exact publication. This is stronger than a citation field alone, but it is not the inaccessible primary paper deposition statement and supplies no sample composition or binder role."
+      },
+      "inventoryReplay": {
+        "allDepositedPolymerEntitiesChecked": true,
+        "checkedPolymerEntityCount": 6,
+        "basis": "Exact frozen record identifier, sequence, length and chain comparison; prior metadata component labels are carried forward without new primary sample authority."
+      }
+    }
+  ],
+  "summary": {
+    "pendingEntryCount": 16,
+    "frozenPolymerEntitiesReverified": 102,
+    "newAuthorHostedExactPdbLinks": 6,
+    "newPrimaryArticleDepositionStatements": 0,
+    "newPrimaryMethodsReviews": 0,
+    "newSourceClearedAuxiliaryRoleCount": 0,
+    "newEntryExclusions": 0,
+    "eligibleTargetCountAdded": 0,
+    "independentComponentsAdded": 0,
+    "targetFreezePermitted": false,
+    "wholeCensusComponentUpperBound": null,
+    "broaderDiscoveryComplete": false
+  },
+  "evidenceBoundary": {
+    "newModelVisibleScientificContent": "Bibliographic metadata and author-hosted publication card identifiers. Full paper Methods could not be retrieved. Search responses were filtered to URL strings before model-visible output.",
+    "exploratoryParserDisclosure": "One early laboratory-page extraction was too broad and emitted surrounding publication bibliography entries and identifier links. It did not emit paper Results, figure captions, measured contacts, native pose descriptions, coordinate files or images. Final replay requires one exact-title article.pub-card and extracts title/links only.",
+    "nativeCoordinatesInspected": false,
+    "nativeRelativePoseInspected": false,
+    "structuralFiguresInspected": false,
+    "labelsAccessed": false,
+    "predictionOutputsAccessed": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "hal-title",
+  "url": "https://api.archives-ouvertes.fr/search/?q=title_t%3A%22Structural+insights+into+the+inactive+state+of+the+adhesion+GPCR+ADGRV1%22&wt=json&fl=docid%2ChalId_s%2Ctitle_s%2CdoiId_s%2Curi_s%2CfileMain_s%2Cfiles_s%2Cabstract_s",
+  "finalUrl": "https://api.archives-ouvertes.fr/search/?q=title_t%3A%22Structural+insights+into+the+inactive+state+of+the+adhesion+GPCR+ADGRV1%22&wt=json&fl=docid%2ChalId_s%2Ctitle_s%2CdoiId_s%2Curi_s%2CfileMain_s%2Cfiles_s%2Cabstract_s",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:35:27.335648+00:00",
+  "finishedAt": "2026-09-04T23:35:37.751772+00:00",
+  "status": 200,
+  "headers": {
+    "date": "Fri, 04 Sep 2026 23:35:37 GMT",
+    "server": "Apache/2.4.68 (Debian)",
+    "served-by": "192.168.176.71 D=87094",
+    "environment": "production",
+    "access-control-allow-origin": "*",
+    "content-length": "116",
+    "content-type": "application/json; charset=utf-8",
+    "strict-transport-security": "max-age=63072000",
+    "connection": "close"
+  },
+  "file": "sources/hal-title.body",
+  "bytes": 116,
+  "sha256": "316b596864c92e18c8f6688107ad49ecfc3fe632ebdc85efe82c65ed28ba8064"
+}

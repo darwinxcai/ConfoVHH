@@ -1,0 +1,450 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="mco2159" xml:lang="en" article-type="research-article" dtd-version="1.4"><?da-xref-anchor-style superscripted?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">MedComm (2020)</journal-id><journal-id journal-id-type="iso-abbrev">MedComm (2020)</journal-id><journal-id journal-id-type="pmc-domain-id">4101</journal-id><journal-id journal-id-type="pmc-domain">mcomm</journal-id><journal-id journal-id-type="nlm-id">101769925</journal-id><journal-id journal-id-type="publisher-id">MCO2</journal-id><journal-title-group><journal-title>MedComm</journal-title></journal-title-group><issn pub-type="epub">2688-2663</issn><?publisher_abbrev blackwell?><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC9464062</article-id><article-id pub-id-type="pmcid-ver">PMC9464062.1</article-id><article-id pub-id-type="pmcaid">9464062</article-id><article-id pub-id-type="pmcaiid">9464062</article-id><article-id pub-id-type="pmid">36105372</article-id><article-id pub-id-type="doi">10.1002/mco2.159</article-id><article-id pub-id-type="publisher-id">MCO2159</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Articles</subject></subj-group></article-categories><title-group><article-title>Cryo‐EM structure of G‐protein‐coupled receptor GPR17 in complex with inhibitory G protein</article-title><alt-title alt-title-type="left-running-head">YE et al.</alt-title></title-group><contrib-group><contrib id="mco2159-cr-0001" contrib-type="author"><name name-style="western"><surname>Ye</surname><given-names initials="F">Fang</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="mco2159-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="mco2159-note-0001" ref-type="author-notes">
+<sup>#</sup>
+</xref></contrib><contrib id="mco2159-cr-0002" contrib-type="author"><name name-style="western"><surname>Wong</surname><given-names initials="TS">Thian‐Sze</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="mco2159-note-0001" ref-type="author-notes">
+<sup>#</sup>
+</xref></contrib><contrib id="mco2159-cr-0003" contrib-type="author"><name name-style="western"><surname>Chen</surname><given-names initials="G">Geng</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="mco2159-note-0001" ref-type="author-notes">
+<sup>#</sup>
+</xref></contrib><contrib id="mco2159-cr-0004" contrib-type="author"><name name-style="western"><surname>Zhang</surname><given-names initials="Z">Zhiyi</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="mco2159-cr-0005" contrib-type="author"><name name-style="western"><surname>Zhang</surname><given-names initials="B">Binghao</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="mco2159-cr-0006" contrib-type="author"><name name-style="western"><surname>Gan</surname><given-names initials="S">Shiyi</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="mco2159-cr-0007" contrib-type="author"><name name-style="western"><surname>Gao</surname><given-names initials="W">Wei</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="mco2159-cr-0008" contrib-type="author"><name name-style="western"><surname>Li</surname><given-names initials="J">Jiancheng</given-names></name><xref rid="mco2159-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="mco2159-cr-0009" contrib-type="author"><name name-style="western"><surname>Wu</surname><given-names initials="Z">Zhangsong</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="mco2159-cr-0010" contrib-type="author"><name name-style="western"><surname>Pan</surname><given-names initials="X">Xin</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="mco2159-cr-0011" contrib-type="author" corresp="yes"><name name-style="western"><surname>Du</surname><given-names initials="Y">Yang</given-names></name><xref rid="mco2159-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="mco2159-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>yangdu@cuhk.edu.cn</email></address></contrib></contrib-group><aff id="mco2159-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Kobilka Institute of Innovative Drug Discovery</named-content>
+<named-content content-type="organisation-division">Shenzhen Key Laboratory of Steroid Drug Discovery and Development</named-content>
+<named-content content-type="organisation-division">School of Medicine</named-content>
+<institution>The Chinese University of Hong Kong</institution>
+<city>Shenzhen</city>
+<named-content content-type="country-part">Guangdong</named-content>
+<country country="CN">China</country>
+</aff><aff id="mco2159-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">The Chinese University of Hong Kong</named-content>
+<institution>Shenzhen Futian Biomedical Innovation R&amp;D Center</institution>
+<city>Shenzhen</city>
+<named-content content-type="country-part">Guangdong</named-content>
+<country country="CN">China</country>
+</aff><aff id="mco2159-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Instrumental Analysis Center</named-content>
+<institution>Shenzhen University</institution>
+<city>Shenzhen</city>
+<named-content content-type="country-part">Guangdong</named-content>
+<country country="CN">China</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold>
+<break/>Yang Du, Kobilka Institute of Innovative Drug Discovery, Shenzhen Key Laboratory of Steroid Drug Discovery and Development, School of Medicine, The Chinese University of Hong Kong, Shenzhen, Guangdong, 518172, China.<break/>Email: <email>yangdu@cuhk.edu.cn</email>
+<break/>
+</corresp><fn id="mco2159-note-0001"><label>#</label><p>Fang Ye, Thian‐Sze Wong, and Geng Chen contributed equally to this paper.</p></fn></author-notes><pub-date pub-type="epub"><day>10</day><month>9</month><year>2022</year></pub-date><pub-date pub-type="collection"><month>12</month><year>2022</year></pub-date><volume>3</volume><issue seq="10">4</issue><issue-id pub-id-type="pmc-issue-id">416844</issue-id><issue-id pub-id-type="doi">10.1002/mco2.v3.4</issue-id><elocation-id>e159</elocation-id><history>
+<date date-type="rev-recd"><day>29</day><month>6</month><year>2022</year></date>
+<date date-type="received"><day>22</day><month>3</month><year>2022</year></date>
+<date date-type="accepted"><day>01</day><month>7</month><year>2022</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>10</day><month>09</month><year>2022</year></date></event><event event-type="pmc-live"><date><day>13</day><month>09</month><year>2022</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2025-08-16 16:25:38.770"><day>16</day><month>08</month><year>2025</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2022 The Authors. <italic toggle="yes">MedComm</italic> published by Sichuan International Medical Exchange &amp; Promotion Association (SCIMEA) and John Wiley &amp; Sons Australia, Ltd.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="MCO2-3-e159.pdf"><?pdf-name MCO2-3-e159.pdf?><?pdf-size 5450476?><?pdf-md5 1ef8f955a457b19224cf12c0dc131f4f?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:d39c/9464062/1ef8f955a457/MCO2-3-e159.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:MCO2-3-e159.pdf"/><abstract><title>Abstract</title><p>GPR17 is a class A orphan G protein‐coupled receptor (GPCR) expressed in neurons and oligodendrocyte progenitors of the central nervous system (CNS). The signalling of GPR17 occurs through the heterotrimeric Gi, but its activation mechanism is unclear. Here, we employed cryo‐electron microscopy (cryo‐EM) technology to elucidate the structure of activated GPR17‐Gi complex. The 3.02 Å resolution structure, together with mutagenesis studies, revealed that the extracellular loop2 of GPR17 occupied the orthosteric binding pocket to promote its self‐activation. The active GPR17 carried several typical microswitches like other class A GPCRs. Moreover, the Gi interacted with the key residues of transmembrane helix 3 (TM3), the amphipathic helix 8 (Helix8), and intracellular loops 3 (ICL3) in GPR17 to engage in the receptor core. In summary, our results highlight the activation mechanism of GPR17 from the structural basis. Elucidating the structural and activation mechanism of GPR17 may facilitate the pharmacological intervention for acute/chronic CNS injury.</p></abstract><abstract id="mco2159-abs-0001" abstract-type="graphical"><p>GPR17 is a class A orphan G protein‐coupled receptor. The 3.02 Å resolution structure elucidates the activated GPR17 in complex with the Gαi, Gβ, Gγ, and scFv16 in the ligand‐free state. The ECL2 of GPR17 occupies the orthosteric binding pocket to promote its self‐activation. Meanwhile, the residues D350 and E318 of Gαi form two salt bridges with K331<sup>8.49</sup> and R252 of GPR17, respectively, which play a prominent role in the assembly of complex. 
+<boxed-text position="anchor" content-type="graphic" orientation="portrait"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="MCO2-3-e159-g005.jpg"><?image-name MCO2-3-e159-g005.jpg?><?image-size 11287?><?image-md5 15ad8d5a5c89438f7154eef2adad96ef?><?image-image-server-status NEVER_LOAD?><?image-original-height 112?><?image-original-width 180?><?image-scaled-height 112?><?image-scaled-width 180?><?image-cloudpmc-urn urn:cdn:blobs/d39c/9464062/15ad8d5a5c89/MCO2-3-e159-g005.jpg?></graphic></boxed-text>
+</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="mco2159-kwd-0001">cryo‐EM</kwd><kwd id="mco2159-kwd-0002">ECL2</kwd><kwd id="mco2159-kwd-0003">GPCR</kwd><kwd id="mco2159-kwd-0004">GPR17</kwd><kwd id="mco2159-kwd-0005">protein structure</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>Science, Technology, and Innovation Commission of Shenzhen Municipality</funding-source><award-id>JCYJ20200109150019113</award-id></award-group><award-group id="funding-0002"><funding-source>Shenzhen Key Laboratory</funding-source><award-id>ZDSYS20190902093417963</award-id></award-group><award-group id="funding-0003"><funding-source>Shenzhen‐Hong Kong Cooperation Zone for Technology and Innovation</funding-source><award-id>HZQB‐KCZYB‐2020056</award-id></award-group><award-group id="funding-0004"><funding-source>Kobilka Institute of Innovative Drug Discovery and Presidential Fellowship at the Chinese University of Hong Kong, Shenzhen</funding-source></award-group></funding-group><counts><fig-count count="7"/><table-count count="0"/><page-count count="11"/><word-count count="5747"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>December 2022</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.1.8 mode:remove_FC converted:10.09.2022</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="mco2159-cit-0028">
+<string-name name-style="western">
+<surname>Ye</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wong</surname>
+<given-names>T‐S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>G</given-names>
+</string-name>, et al. <article-title>Cryo‐EM structure of G‐protein‐coupled receptor GPR17 in complex with inhibitory G protein</article-title>. <source>MedComm</source>. <year>2022</year>;<volume>3</volume>:<elocation-id>e159</elocation-id>. <pub-id pub-id-type="doi">10.1002/mco2.159</pub-id>
+<pub-id pub-id-type="pmcid">PMC9464062</pub-id><pub-id pub-id-type="pmid">36105372</pub-id></mixed-citation>
+</p></notes></front><body><sec id="mco2159-sec-0010"><label>1</label><title>INTRODUCTION</title><p>GPR17 is a class A orphan G protein‐coupled receptor (GPCR), which is phylogenetically related to the families of purine P2Y receptors and cysteinyl leukotriene (CysLT) receptors.<xref rid="mco2159-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> In humans, the GPR17 gene, located on the chromosome 2q21, contains three exons and two open reading frames (ORFs), resulting in two isoforms: a short one with 339 amino acid residues, and a long one with 367 amino acid residues. The isoforms have different functions in the brain tissues.<xref rid="mco2159-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref>, <xref rid="mco2159-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref>
+</p><p>Recently, intensive researches have shown that GPR17 is prominently expressed in central nervous system (CNS), particularly in the oligodendrocyte precursor cells (OPCs).<xref rid="mco2159-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref>, <xref rid="mco2159-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref>, <xref rid="mco2159-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref> Specifically, under normal physiological conditions, GPR17 acts as a regulator of oligodendrocyte differentiation and maturation. As for the expression level of GPR17, the overall trend is to maintain a low level initially and then increase with the transition of OPCs to mature oligodendrocytes and finally decrease again after full maturation.<xref rid="mco2159-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> In contrast, under pathological conditions, GPR17 could be used as a specific marker associated with CNS injury. In the early phase of CNS damage, increased level of GPR17 accelerates the neuronal death. After axonal injury, the GPR17, on the surface of infiltrating macrophages, will gather at the place of nerve tissue so as to aggravate the damage of brain. The GPR17 level is positively correlated with the distance and extent of injury, as well as negatively correlated with the time after injury.<xref rid="mco2159-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> Collectively, GPR17 plays an important role in the identification of CNS injury and the determination of therapeutic approach. In addition, GPR17 is highly expressed in organs susceptible to ischemic damage (e.g., heart, kidney, and brain), which has attracted high attention from researchers. Based on the ischemic stroke models in rats and mice, it has been confirmed that GPR17 can inhibit the progression of ischemic injury, thus considered to be a potential therapeutic target for stroke.<xref rid="mco2159-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref>, <xref rid="mco2159-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref> Furthermore, GPR17 might also be involved in the regulation of whole‐body energy homeostasis. The mice with systemic or specific knockout of GPR17 display significantly less weight gain during a high‐fat diet. Further analysis suggests that it is mainly attributed to the GPR17/cyclic AMP (cAMP)/lactate signaling axis that regulates the activities of hypothalamic neurons to maintain energy homeostasis.<xref rid="mco2159-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref>, <xref rid="mco2159-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref> Given these important roles, GPR17 has become a promising target for pharmacological intervention in the neurodegenerative diseases, ischemic damage, and energy metabolism dysregulation.</p><p>In 2006, the uracil nucleotides (UDP, UDP‐glucose, and UDP‐galactose) and CysLTs (LTD4 and LTC4) were first identified as the endogenous ligands of GPR17.<xref rid="mco2159-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref> The precise activation of GPR17 leads to both adenylyl cyclase inhibition and intracellular calcium increase. However, nucleotides and CysLTs are reported ligands for P2Y and CysLT receptors, and their roles for activating GPR17 were challenged.<xref rid="mco2159-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref> In order to further investigate these findings, it is essential to elucidate the underlying activation mechanism of GPR17 by structural biology study. Our research will provide the detailed 3D Structure of GPR17 and facilitate the deorphanization of GPR17.</p><p>Previous studies showed that some orphan class A GPCRs are self‐activation and exhibit high level of basal activity without any agonist.<xref rid="mco2159-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref>, <xref rid="mco2159-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref> They can mediate the cellular signaling immediately after expressing on the cell surface. So far, GPR52 and BILF1 are reported to be activated by their own structural elements.<xref rid="mco2159-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref> In this study, we employed cryo‐electron microscopy (cryo‐EM) to resolve the structure of active GPR17‐Gi complex in the absence of ligand and unexpectedly found that the GPR17 is a self‐activated receptor as well. The extracellular loop2 (ECL2) of GPR17 formed a unique loop structure covering the pocket entrance for the cognate ligand. Structural superimposition revealed a high conformational similarity between the active GPR17 and other Gi‐coupled GPCRs except the ECL2 part. Together, the results highlight the self‐activation mechanism of GPR17 from the structural basis, which is mediated by the ECL2.</p></sec><sec id="mco2159-sec-0020"><label>2</label><title>RESULTS</title><sec id="mco2159-sec-0030"><label>2.1</label><title>Overall structure of the active‐state GPR17</title><p>We first solved cryo‐EM structure of human GPR17‐Gi complex in the ligand‐free state. To facilitate complex formation, GPR17 receptor and Gi protein were co‐expressed in Sf9 insect cells. The GPR17‐Gi complex was then purified to homogeneity for cryo‐EM analysis with Titan Krios microscope. The structure revealed the extracellular domains, transmembrane regions, and extracellular domains in complex with Gαi, Gβ, Gγ, and scFv16 at a resolution of 3.02 Å (Figure <xref rid="mco2159-fig-0001" ref-type="fig">1</xref>, Figures <xref rid="mco2159-supitem-0001" ref-type="supplementary-material">S1</xref> and <xref rid="mco2159-supitem-0001" ref-type="supplementary-material">S2</xref>, and Table <xref rid="mco2159-supitem-0001" ref-type="supplementary-material">S1</xref>). The map showed a clear density of the backbone transmembrane helices (TMs), intracellular loops (ICLs), ECLs, and the amphipathic helix 8 (H8). Moreover, the interface residues between GPR17 and Gi (α5‐helix) were clearly defined. Two GPR17 isoforms (long and short) are found in human brain tissue. The short form is 28 amino acids shorter in the N‐terminus of GPR17. We used the long isoform of GPR17 for the complex constitution. However, in the GPR17 map, the whole N‐terminal residues (1‐54) were not resolved, indicating a highly flexible N‐term extracellular domain.</p><fig position="float" fig-type="FIGURE" id="mco2159-fig-0001" orientation="portrait"><label>FIGURE 1</label><caption><p>Cryo‐electron microscopy (EM) structure of the GPR17‐Gi complex. (A) Cryo‐EM density map of GPR17‐Gi complex. GPR17, Gαi, Gβ, Gγ, and scFv16 are shown in cornflower blue, pale green, hot pink, green, and purple, respectively. (B) Structural model determined after refinement in the cryo‐EM map. (C) Heatmap showing the spatial resolution of GPR17‐Gi density map</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="MCO2-3-e159-g006.jpg"><?image-name MCO2-3-e159-g006.jpg?><?image-size 117772?><?image-md5 de89ac4fba2be5d1b4438bdf9773baa2?><?image-image-server-status NEVER_LOAD?><?image-original-height 547?><?image-original-width 600?><?image-scaled-height 547?><?image-scaled-width 600?><?image-cloudpmc-urn urn:cdn:blobs/d39c/9464062/de89ac4fba2b/MCO2-3-e159-g006.jpg?><?thumb-name MCO2-3-e159-g006.gif?><?thumb-size 5213?><?thumb-md5 54f6d73f7a72116e0e4477e4a98f2fb6?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 91?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/d39c/9464062/54f6d73f7a72/MCO2-3-e159-g006.gif?></graphic></fig></sec><sec id="mco2159-sec-0040"><label>2.2</label><title>ECL2 occupies the orthosteric pocket</title><p>GPR17 has a unique ECL2 structure, which is not common in other class A GPCR. GPR17 ECL2 is the longest ECL compared to ECL1 (7 residues) and ECL3 (8 residues). The ECL2 covers around 40% of the pocket entrance, which may hinder the entry or egress of ligands (Figure <xref rid="mco2159-fig-0002" ref-type="fig">2A,B</xref>). The overall GPR17 ECL2 conformation is a hairpin like structure connected to a loop that inserts into the canonical ligand binding pocket, which is quite similar to the predicted structure in AlphaFold database. ECL2 contains 21 residues (PQTVQTNHTVVCLQLYREKAS), and we divide it into three segments, which are named as P1 segment (P198‐T203), P2 segment (N204‐L212), and P3 segment (Y213‐S218) for further analysis. The whole ECL2 adopts an upward orientation pointing to the extracellular side and inclines toward ECL3. The hairpin like structure (P1 and P2 segment) is stabilized by forming hydrogen bonds with both V201 and V207, Q202 and T206, N204 and T206 between their side chains and backbone carbonyl groups (Figure <xref rid="mco2159-fig-0002" ref-type="fig">2C</xref>). The central loop (P3 segment) is connected to TM5, which is immersed in the orthosteric pocket of GPR17. In addition, the conserved disulfide bond between C209 (ECL2) and C132<sup>3.25</sup> (TM3) provides additional support to stabilize ECL2 in the position (Figure <xref rid="mco2159-fig-0002" ref-type="fig">2D</xref>). The residues Y213 and R214 of the P3 segment interact with TM7 residues R308<sup>7.36</sup> and N307<sup>7.35</sup> to form hydrogen bonds, which help to lock the receptor in the active conformation (Figure <xref rid="mco2159-fig-0002" ref-type="fig">2E</xref>). As shown in the cAMP assays, mutations of C209, Y213, and R214 of ECL2 greatly reduced the constitutive Gi‐mediated cAMP signaling (Figure <xref rid="mco2159-fig-0003" ref-type="fig">3A</xref>), which indicates the hydrogen bond formed between ECL2 and TM7 is essential for GPR17‐basal activity. We also replaced ECL2 by six amino acid GS linker (GGSGGS) at different positions, and then the influence on downstream signaling was evaluated (Figure <xref rid="mco2159-fig-0003" ref-type="fig">3B</xref>). The mutations of GPR17 ECL2 did not affect the GPR17 expression significantly (Figure <xref rid="mco2159-fig-0003" ref-type="fig">3C</xref>),  but reduced the Gi‐mediated receptor signaling profoundly, further supporting the proposal that ECL2 has a key role for GPR17 self‐activation.</p><fig position="float" fig-type="FIGURE" id="mco2159-fig-0002" orientation="portrait"><label>FIGURE 2</label><caption><p>Analysis the ECL2 of GPR17. (A) A top view of the GPR17 map. The ECL2 (hot pink) inserted on the transparent surface presentation of GPR17 map (cornflower blue). (B) Cartoon view of GPR17 (cornflower blue), showing the ECL2 (hot pink) structure overlaid the ligand binding pocket. P1, P2, and P3 segment of ECL2 indicated three parts composed of P198‐T203, N204‐L212, and Y213‐S218, respectively. (C) Magnified view of the ECL2 in the orthosteric binding pocket of GPR17. Key interacting residues were shown as sticks in hot pink, and the hydrogen bonds were shown as dashed lines. (D) The disulfide bond (yellow) between C209 of ECL2 (hot pink) and C132<sup>3.25</sup> of TM3 (cornflower blue). (E) The interacting residues of ECL2 (hot pink) and TMs (cornflower blue). The hydrogen bonds were shown as dashed lines</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="MCO2-3-e159-g003.jpg"><?image-name MCO2-3-e159-g003.jpg?><?image-size 119560?><?image-md5 57fc8895414db83d9f5eff7256ab9971?><?image-image-server-status NEVER_LOAD?><?image-original-height 460?><?image-original-width 800?><?image-scaled-height 460?><?image-scaled-width 800?><?image-cloudpmc-urn urn:cdn:blobs/d39c/9464062/57fc8895414d/MCO2-3-e159-g003.jpg?><?thumb-name MCO2-3-e159-g003.gif?><?thumb-size 7002?><?thumb-md5 d9c5d888441bc3d8e1c3b821ecd9e9a6?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 139?><?thumb-cloudpmc-urn urn:cdn:blobs/d39c/9464062/d9c5d888441b/MCO2-3-e159-g003.gif?></graphic></fig><fig position="float" fig-type="FIGURE" id="mco2159-fig-0003" orientation="portrait"><label>FIGURE 3</label><caption><p>cAMP level and surface expression of WT GPR17 and mutants. (A) cAMP assay (expressed as a percentage of forskolin‐mediated cAMP) identified key residues involved in GPR17. The data were presented as means ± SEM, one‐way analysis of variance (ANOVA), *<italic toggle="yes">p</italic> &lt; 0.05, **<italic toggle="yes">p</italic> &lt; 0.01, ***<italic toggle="yes">p</italic> &lt; 0.001. (B) The effects on cAMP level were compared between WT and ECL2 mutants of GPR17 (D198‐218, D198‐203, D204‐212, D213‐218, were replaced with a six‐residue linker, GGSGGS, respectively). The data represented means ± SEM, one‐way ANOVA, *<italic toggle="yes">p</italic> &lt; 0.05. (C) Cell surface expression was determined by FACS analysis. WT: wild‐type GPR17. The expression of ECL2 mutants compared to that of GPR17 WT was not significant using one‐way ANOVA. The experiments were performed in triplicates</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-7" orientation="portrait" xlink:href="MCO2-3-e159-g004.jpg"><?image-name MCO2-3-e159-g004.jpg?><?image-size 109614?><?image-md5 c9edd424204a9379b0c74a86956ac73b?><?image-image-server-status NEVER_LOAD?><?image-original-height 693?><?image-original-width 600?><?image-scaled-height 693?><?image-scaled-width 600?><?image-cloudpmc-urn urn:cdn:blobs/d39c/9464062/c9edd424204a/MCO2-3-e159-g004.jpg?><?thumb-name MCO2-3-e159-g004.gif?><?thumb-size 4779?><?thumb-md5 0316f7e8a2a5d5bb5ee93c7d0d28a227?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 116?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/d39c/9464062/0316f7e8a2a5/MCO2-3-e159-g004.gif?></graphic></fig></sec><sec id="mco2159-sec-0050"><label>2.3</label><title>Microswitches of GPR17</title><p>The GPR17 structure showed TM rearrangement, which is consistent with other class A Gi‐engaged GPCRs in an active state. In GPR17, the conserved N<sup>7.49</sup> residue in the NPxxY motif is replaced by a negatively charged aspartic acid (D<sup>7.49</sup>P<sup>7.50</sup>IMY<sup>7.53</sup>). Y325<sup>7.53</sup> on TM7 interacts with A80<sup>1.53</sup>, F84<sup>1.57</sup>, L98<sup>2.43</sup>, and M99<sup>2.44</sup> to form a hydrophobic cluster, contributing to the activation of receptor (Figure <xref rid="mco2159-fig-0004" ref-type="fig">4A</xref>). Moreover, the conserved Y<sup>3.51</sup> in the aspartate‐arginine‐tyrosine (DRY) motif is substituted by F158<sup>3.51</sup> in GPR17, forming the DRF motif. For inactive class A GPCRs, DRY can form an ionic lock through the oppositely charged residues. The electrostatic lock opens upon ligand‐dependent receptor activation. In GPR17, the ionic lock between D156<sup>3.49</sup> and R157<sup>3.50</sup> is opened. R157<sup>3.50</sup> on TM3 rotates and interacts with Y240<sup>5.58</sup> of receptor and C351 of Gαi to maintain TM5 and Gi in the position via hydrogen bonds (Figure <xref rid="mco2159-fig-0004" ref-type="fig">4B</xref>). In GPR17, the conserved W<sup>6.48</sup> in the toggle switch is replaced by F<sup>6.48</sup>, forming the C<sup>6.47</sup>F<sup>6.48</sup>xP<sup>6.50</sup> motif. C275<sup>6.47</sup>, works as a rotameric switch and interacts with N317<sup>7.45</sup> side chain via hydrogen bond. F276<sup>6.48</sup> also forms hydrophobic cluster with residues F229<sup>5.47</sup> and F233<sup>5.51</sup> of TM5 and F272<sup>6.44</sup>, Y279<sup>6.51</sup>, and H280<sup>6.52</sup> of TM6. In this scenario, C275<sup>6.47</sup> and F276<sup>6.48</sup> may help maintain the hinge structure by interacting with TM5 and TM7 via hydrophobic interactions and hydrogen bonds (Figure <xref rid="mco2159-fig-0004" ref-type="fig">4C</xref>). At last, the P<sup>5.50</sup>I<sup>3.40</sup>F<sup>6.44</sup>(PIF) motif interacts with TM3 (I147<sup>3.40</sup>), TM5 (F229<sup>5.47</sup>, P232<sup>5.50</sup>, F233<sup>5.51</sup>), and TM6 (F272<sup>6.44</sup>) via hydrophobic interactions (Figure <xref rid="mco2159-fig-0004" ref-type="fig">4D</xref>). Together, the conformation features reveal that GPR17 shares similar microswitches with other class A GPCRs.<xref rid="mco2159-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref> GPR17 utilizes the universal macroswitch of class A GPCR on TM6 to open the intracellular cavity through rotation and outward movement of the cytoplasmic half of TM6 to accommodate Gi‐coupled.</p><fig position="float" fig-type="FIGURE" id="mco2159-fig-0004" orientation="portrait"><label>FIGURE 4</label><caption><p>The conformational switches of GPR17. (A) Magnified view of DP<sup>7.50</sup>xxY<sup>7.53</sup> motif in GPR17. The residues of the motif were shown as yellow sticks, and those interacting with them are shown as cornflower blue sticks. (B) The interacting residues of DR<sup>3.50</sup>F (yellow) with TM5 (cornflower blue) and α5 (pale green) within 4 Å distance. The hydrogen bonds were shown as dashed lines. (C) The interacting residues of C<sup>6.47</sup>F<sup>6.48</sup>xP<sup>6.50</sup> (yellow) and TM7, TM6, and TM5 (cornflower blue) within 4 Å distance. (D) The interacting residues of P<sup>5.50</sup>I<sup>3.40</sup>F<sup>6.44</sup> (yellow) and TM5 (cornflower blue) within 4 Å distance</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-9" orientation="portrait" xlink:href="MCO2-3-e159-g002.jpg"><?image-name MCO2-3-e159-g002.jpg?><?image-size 103020?><?image-md5 0ba45e63f21db86aa0114cdfa46beffb?><?image-image-server-status NEVER_LOAD?><?image-original-height 487?><?image-original-width 600?><?image-scaled-height 487?><?image-scaled-width 600?><?image-cloudpmc-urn urn:cdn:blobs/d39c/9464062/0ba45e63f21d/MCO2-3-e159-g002.jpg?><?thumb-name MCO2-3-e159-g002.gif?><?thumb-size 5520?><?thumb-md5 3f3c4825639bcbc28612e63c6edd1c2c?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 81?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/d39c/9464062/3f3c4825639b/MCO2-3-e159-g002.gif?></graphic></fig></sec><sec id="mco2159-sec-0060"><label>2.4</label><title>Comparison of ECL2 between GPR17 with other self‐activated GPCRs</title><p>In light of the previous studies suggesting the involvement of ECL2 in mediating self‐activation of GPCR, we compared the activated GPR17 structure with human GPR52 and Epstein‐Barr virus BILF1 (Figure <xref rid="mco2159-fig-0005" ref-type="fig">5A</xref>), which were reported self‐activating receptors.</p><fig position="float" fig-type="FIGURE" id="mco2159-fig-0005" orientation="portrait"><label>FIGURE 5</label><caption><p>Cryo‐electron microscopy (EM) structure of GPR17 compared to self‐activated GPCRs. (A) Extracellular structures of GPR17 (cornflower blue), GPR52 (light see green; PDB: 6LI3), and BILF1 (forest green; PDB: 7JHJ). The ECL2s were highlighted in hot pink. (B and C) Superposition of GPR17 (cornflower blue) with GPR52 (light see green). The ECL2s of GPR17 and GPR52 were shown as hot pink and orange, respectively. Key residues were shown as sticks. Arrows indicated remarkable conformational changes. (D and E) Superposition of GPR17 (cornflower blue) with BILF1 (forest green). The ECL2s of GPR17 and BILF1 were shown as hot pink and yellow, respectively</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-11" orientation="portrait" xlink:href="MCO2-3-e159-g007.jpg"><?image-name MCO2-3-e159-g007.jpg?><?image-size 118081?><?image-md5 f91a5ee005a8b902f02453cfc3235902?><?image-image-server-status NEVER_LOAD?><?image-original-height 545?><?image-original-width 600?><?image-scaled-height 545?><?image-scaled-width 600?><?image-cloudpmc-urn urn:cdn:blobs/d39c/9464062/f91a5ee005a8/MCO2-3-e159-g007.jpg?><?thumb-name MCO2-3-e159-g007.gif?><?thumb-size 5396?><?thumb-md5 c3a609d72a5f94d3707601e38a940bf3?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 91?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/d39c/9464062/c3a609d72a5f/MCO2-3-e159-g007.gif?></graphic></fig><p>On active GPR52, Y185<sup>ECL2</sup> forms hydrophobic interaction with Y281<sup>6.51</sup>, Y284<sup>6.54</sup>, and F285<sup>6.55</sup> of TM6. Moreover, Lys182<sup>ECL2</sup> interacts with D188<sup>ECL2</sup> via a salt bridge, which stabilizes ECL2 in the ligand pocket. Compared to GPR52, GPR17 has different interactions between ECL2 and TMs. There are hydrogen bonds between Y213<sup>ECL2</sup> and R308<sup>7.36</sup>, R214<sup>ECL2</sup> and N307<sup>7.35</sup>, which lead ECL2 to occupy the ligand binding pocket deeply (Figure <xref rid="mco2159-fig-0005" ref-type="fig">5B</xref>). The unique ECL2 conformation of GPR17 has not been observed in other GPCRs. However, the TM6, TM7, and H8 of GPR17 have similar conformation with GPR52 as well as other active GPCRs, which indicates that GPR17 is also at the fully active state (Figure <xref rid="mco2159-fig-0005" ref-type="fig">5C</xref>).</p><p>Self‐activated BILF1 structure was reported by K. Christopher Garcia group. BILF1 has two long ECLs: ECL2 (19 residues) and ECL3 (21 residues). ECL2 and ECL3 capping the entrance of BILF1 orthosteric pocket may hinder the assessment of diffusible ligands. However, the ECL2 of BILF1 is important to its protein expression but not significant for Gi signaling. Compared to BILF1, GPR17 has a longer ECL2 to deeply insert the orthosteric ligand binding pocket and be essential for coupling to Gi protein (Figure <xref rid="mco2159-fig-0005" ref-type="fig">5D</xref>). GPR17 has a narrower gap between TM6 and TM7, which suggests the gap of GPR17 is unlikely to be a similar ectopic binding pocket as BILF1 (Figure <xref rid="mco2159-fig-0005" ref-type="fig">5E</xref>). Compared with self‐activated GPCRs that have been previously described, these results confirm that the interactions of ECL2 with TM7 are important for GPR17 activation and structural stabilization.</p></sec><sec id="mco2159-sec-0070"><label>2.5</label><title>Comparing the Gi‐binding interface of GPR17 with other Gi‐coupled GPCR</title><p>GPR17‐Gi adopts nearly the same conformation compared to the recently reported Gi‐coupled class A GPCRs. The carboxyl‐terminus of Gi is buried in the helical core of the GPR17 transmembrane region formed by hydrogen bonds. The Gi‐coupled interface on class A GPCR (BILF1, Rho, μOR, CB1) is composed of TMs, ICL2 and ICL3.<xref rid="mco2159-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref>, <xref rid="mco2159-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref>, <xref rid="mco2159-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref>, <xref rid="mco2159-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> For GPR17, ICL2 does not have interaction with αN of Gαi, but ICL3 indeed interact with α5 helix (α5) on Gαi (Figure <xref rid="mco2159-fig-0006" ref-type="fig">6A</xref>). The main interaction sites between GPR17 and Gαi are composed of hydrogen bonds and salt bridges in the interface of GPR17 and α5 of Gαi. C351 of Gαi forms a hydrogen bond with R157<sup>3.50</sup> on TM3 of GPR17. Another hydrogen bond is found between N347 of Gαi and A160<sup>3.53</sup> of GPR17 in close proximity to the E/DRY domain. Moreover, D350 on Gαi can form a salt bridge with K331<sup>8.49</sup> on GPR17 Helix8 (Figure <xref rid="mco2159-fig-0006" ref-type="fig">6B</xref>). Interestingly, there is also a salt bridge between E318 on Gαi and R252 of ICL3 on GPR17, indicating a critical binding site of GPR17 to Gi (Figure <xref rid="mco2159-fig-0006" ref-type="fig">6C</xref>). We compared the structure of the GPR17‐Gi complex with those Gi‐coupled BILF1, Rho, μOR, and CB1 based on the alignment of receptors. When receptors were aligned, the relative orientations of α5 were similar, but the deflections of αN were large. Relative to the αN of Gi in the GPR17‐Gi, the αN of Gαi rotates ∼7.4 Å in the BILF1‐Gi, ∼19.9 Å° in the Rho‐Gi, ∼6.6 Å° in the μOR‐Gi, and ∼17.7 Å° in the CB1‐Gi measured at the residue A11 of Gαi (Figure <xref rid="mco2159-fig-0006" ref-type="fig">6D</xref>). If only aligns the Gi, the most regions of Gi were aligned well, and the α5 and αN showed similar conformations (Figure <xref rid="mco2159-supitem-0001" ref-type="supplementary-material">S3</xref>). But, we observed that D350 of Gαi has large deflection compared to BIFL‐Gi complex, suggesting that D350 of GPR17‐Gi plays a key role in the Gi‐binding interface (Figure <xref rid="mco2159-fig-0006" ref-type="fig">6E</xref>). Together, these results show that the interaction between GPR17 (ICL3, TM3 and H8) and Gαi is considered to stabilize the GPR17‐Gi complex.</p><fig position="float" fig-type="FIGURE" id="mco2159-fig-0006" orientation="portrait"><label>FIGURE 6</label><caption><p>Analysis of the GPR17‐Gi interface and comparison with class A GPCRs. (A) Side view of the GPR17‐Gαi complex (cornflower blue‐pale green). (B and C) Key molecular interactions between in the GPR17 and Gαi. The residues of GPR17 and Gαi are shown as cornflower blue and pale green sticks. The hydrogen bonds were dark green‐dashed lines. (D) Alignment of GPR17 (cornflower blue‐pale green) with BILF1 (magenta, PDB: 7JHJ), Rhodopsin (Roh; gold; PDB: 6CMO), μ‐opioid receptor (μOR; crimson; PDB: 6DDE), cannabinoid receptor‐1 (CB1; tomato; PDB: 6N4B) complexed with Gαi. Their structural superimposition was displayed at a top‐down view. Arrows indicated remarkable conformational changes. (E) Structural comparison of the GPR17‐Gαi complex (cornflower blue‐pale green) and BILF1‐Gαi complex (magenta). The key residues of GPR17‐Gαi and BILF1‐Gαi complex were shown as sticks in pale green and magenta</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-13" orientation="portrait" xlink:href="MCO2-3-e159-g001.jpg"><?image-name MCO2-3-e159-g001.jpg?><?image-size 103627?><?image-md5 9be19c67b397501a9980df056e0e9ae6?><?image-image-server-status NEVER_LOAD?><?image-original-height 567?><?image-original-width 600?><?image-scaled-height 567?><?image-scaled-width 600?><?image-cloudpmc-urn urn:cdn:blobs/d39c/9464062/9be19c67b397/MCO2-3-e159-g001.jpg?><?thumb-name MCO2-3-e159-g001.gif?><?thumb-size 5188?><?thumb-md5 3e407df974fd886b0c1d51228c9eeca5?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 95?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/d39c/9464062/3e407df974fd/MCO2-3-e159-g001.gif?></graphic></fig></sec></sec><sec id="mco2159-sec-0080"><label>3</label><title>DISCUSSION</title><p>So far, BILF1 and GPR52 are reported to be activated by their own structural elements.<xref rid="mco2159-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref>, <xref rid="mco2159-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref> GPR52 is an orphan GPCR in class A with high constitutive activity under physiological conditions. Similar to GPR52, constitutive BILF1 activity is noted, and cognate ligands are yet to be discovered. In GPR17, ECL2 functions as a self‐agonist which activates the Gi signaling. This is in contrast to the BILF1, whose ECL2 has limited effects on its signaling but is essential for the protein expression.</p><p>In GPR52, ECL2 functions as a self‐agonist, which activates the orphan GPR52. Our observation suggests that ECL2 of GPR17 occupies the orthosteric pocket to induce high level of basal signaling, which confirms a similar activation mechanism to GPR52. However, different to GPR52, the residues of GPR17 ECL2 interact with TM3 and TM7 residues via hydrogen bonds but not hydrophobic interaction and salt bridge.</p><p>What are the implications for ligand identification and drug development based on the structure of GPR17? The orthosteric pocket is occupied by ECL2 (CLQLYRE) and forms various interactions with hydrophilic residues R115<sup>2.60</sup>, Y118<sup>2.63</sup>, C132<sup>3.25</sup>, T135<sup>3.28</sup>, G136<sup>3.29</sup>, Y140<sup>3.33</sup>, Y279<sup>6.51</sup>, R283<sup>6.55</sup>, Y286<sup>6.58</sup>, R291<sup>6.63</sup>, N307<sup>7.35</sup>, and R308<sup>7.36</sup>. These results indicate a hydrophilic environment of the orthosteric binding pocket and thus the endogenous ligands of GPR17 might be hydrophilic molecules.Therefore, as GPR17 is expressed in neurons and oligodendrocyte progenitors, we suggest that future deorphanization work should focus on screening hydrophilic molecules in CNS. Also, the cryo‐EM structure of GPR17 we reported reveals the potential ligand‐binding pocket, which may benefit the further research on the leading compound screening to overcome the great challenge of neurodegenerative diseases.</p><p>GPR17 carries several microswitches, which are similar to the typical microswitches in other class A GPCRs. The DPxxY motif plays an essential part in GPR17 activation. The cyclic side chain of P<sup>7.50</sup> maintains proper active conformation of TM7. DRF motif at the cytoplasmic end of TM3 is also present in CXC‐chemokine receptor 6 (CXCR6). Koenen et al. mutated CXCR6 DRF motif to the typical DRY and found no effect on ligand binding and receptor recycling.  Instead, DRF motif in CXCR6 may function as an environmental regulator, which alters calcium signaling capacity, migratory potential and chemotactic response compared to DRY containing CXCR6.<xref rid="mco2159-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref> Similarly, DRF‐containing GPR17 activation in oligodendrocyte precursors can stimulate cell migration, which functions as a post‐traumatic response.<xref rid="mco2159-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref> The highly conserved tryptophan (W<sup>6.48</sup>) in the CWxP toggle switch is substituted by F<sup>6.48</sup> in GPR17, forming the CFxP motif. W<sup>6.48</sup> controls TM6 movement, essential for ligand‐induced receptor activation and ionic lock inactivation. In the A3 receptor, W243F mutation alters downstream signaling via G protein or β‐arrestin.<xref rid="mco2159-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref>, <xref rid="mco2159-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref> In GPR17, the rotamer toggle switch at F<sup>6.48</sup> forms a noncovalent contact interface with TM7 shaping the development of active conformation. The unique motifs on GPR17 may account for the auto‐activation features of GPR17 and warrant further investigation.</p><p>In a word, our results have profound implications for understanding the structural basis underlying mechanism of GPR17 and may provide rational, structure‐based, approaches for ligand screening on GPR17 for the treatment of neurodegenerative diseases. Moreover, the GPR17 structure in ligand‐free state complements the self‐activation mechanism in the orphan GPCR field. In light of the therapeutic essential of GPR17, revealing the structural change from inactive to active state is under process. Elucidation of the structures of GPR17 and its endogenous ligands may need further research.</p></sec><sec id="mco2159-sec-0090"><label>4</label><title>MATERIAS AND METHODS</title><sec id="mco2159-sec-0100"><label>4.1</label><title>Cloning and purification of GPR17‐Gi complex</title><p>The full‐length human GPR17 was cloned into pFastbac A vector (Thermo Fisher Cat# 10360014) with N‐terminal hemagglutinin (HA) signal sequence, FLAG epitope, and 3C cleavage site, as well as a C‐terminal His tag. The construction of the dominant‐negative Gαi1 (DNGαi1) with mutations (G203A and A326S) was identical to that of GPR17. Whereas the Gβ1γ2 was cloned into the pFastbac Dual vector. The Bac‐to‐Bac baculovirus expression system (Thermo Fisher Cat# 10360014) was used to co‐express GPR17, DNGαi1, and Gβ1γ2 in <italic toggle="yes">Spodoptera frugiperda</italic> Sf9 cells (Invitrogen Cat# A35243), which were grown in suspension at 27°C. Sf9 cells at 4 × 10<xref rid="mco2159-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> cells/ml density were infected with baculoviruses expressing GPR17, DNGαi1, and Gβ1γ2 at a ratio of 10:10:1. After 48 h, Sf9 cells were collected by centrifugation at 4000 g for 10 min and then stored at −80°C before protein purification.</p><p>Cell pellets were thawed and suspended by spinning in lysis buffer (10 mM Tris pH7.5, 0.5 mM EDTA) at 4°C for 60 min to facilitate complexes formation. Cell membranes were collected by centrifugation, and the supernatant was discarded. The sediment was homogenized by the dounce homogenizer in solubilization buffer containing NH buffer (20 mM HEPES pH 7.5, 100 mM NaCl), 10% glycerol, 10 mM MgCl<sub>2</sub>, 5 mM CaCl<sub>2</sub>, 1 mM MnCl<sub>2</sub>, 100 μg/ml benzamidine (Sigma–Aldrich Cat# 12072), 0.2 μg/ml leupeptin (Sigma‐Aldrich Cat# L5793), 25 μU/ml apyrase (NEB Cat# M0398S), and 100 μU/ml lambda protein phosphatase (NEB Cat# P0753S). Then, 1% DDM (n‐Dodecyl‐β‐D‐Maltoside, Anatrace Cat# D310) and 0.1% CHS (Sigma Cat#C6512) were added to the homogenate liquid and solubilized at 4°C for 2 h.</p><p>After centrifugation, the supernatant was collected, added with 2 mM CaCl<sub>2</sub> and loaded onto the anti‐Flag M1 antibody affinity resin. The M1 resin was extensively washed with NH buffer containing 0.1% DDM, 0.01% CHS, and 2 mM CaCl<sub>2</sub>. After exchanging the 1% DDM buffer to 0.1% LMNG (Cat# 4216588) buffer with gradient steps, 10 × CMC buffer (NH buffer, 0.01% LMNG, 0.001% CHS, and 2 mM CaCl<sub>2</sub>) was used to further wash the M1 resin.</p><p>The GPR17‐Gi protein was eluted using 10 × CMC buffer without CaCl<sub>2</sub> supplemented with 200 μg/ml Flag peptide (Sigma Cat# F3290), 5mM EDTA and 0.033% GDN (Anatrace Cat#GDN101).</p><p>The eluted protein was concentrated with Ultrafiltration tube (Merck, Amicon Ultra‐15ML) and incubated with the antibody fragment scFv16 for 2 h on ice at the molar ratio of 1:1.5.<xref rid="mco2159-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref> The GPR17 complex was further purified with Superdex 200 Increase 10/300 column (GE Healthcare) that was pre‐equilibrated with 10 × CMC buffer with 0.033% GDN. The pure GPR17 complex was concentrated with an ultrafiltration tube and flash frozen in liquid nitrogen for further use.</p></sec><sec id="mco2159-sec-0110"><label>4.2</label><title>Negative staining EM</title><p>The carbon‐coated copper grid (zhong jing ke yi) was predischarged by glow discharge Easyglow and incubated with the GPR17 complex (0.05 mg/ml) for 2 min. Excess protein was removed using a filter paper gently. Immediately after blotting, the grids were stained with uranyl acetate (0.1 mg/ml) for 1 min, and the excess liquid was removed with filter paper before air‐dried. Data were collected using Talos 120C at 120 kV.</p></sec><sec id="mco2159-sec-0120"><label>4.3</label><title>Cryo‐grid preparation and EM data collection</title><p>The Au 300 girds (QUANTIFOIL R 1.2/1.3) were discharged with Tergeo plasma cleaner. A droplet (3 μl) of purified 5.6 mg/ml GPR17‐Gi‐scFV16 complex was applied to the grid. Wait and blot for 3.5 s respectively at 10°C and 100% humidity using the Freezing plunger Vitrobot I (Thermo Fisher Scientific). Grids were quickly frozen in liquid ethane and transferred to liquid nitrogen for preservation until checked.</p><p>The grids were checked and cryo‐EM data were collected using the 300 kV Titan Krios Gi3 microscope (Thermo Fisher Scientific FEI). All movies were acquired at a magnification of 105,000 using the Gatan K3 BioQuantum camera. The raw pixel size corresponded to 0.85 Å. A GIF‐quantum energy filter (Gatan, USA) was used to remove inelastically scattered electrons. Movie stacks were automatically acquired with a 20 eV slit width and a defocus range from −1.0 to −2.0 μm. The exposure was 2.5 s, with frames collected every 0.05 s for total 50 frames per sample. The dose rate was 21.2 e/pixel/s. Automated single‐particle data acquisition was performed using SerialEM 3.7.</p></sec><sec id="mco2159-sec-0130"><label>4.4</label><title>Image processing and 3D reconstruction</title><p>In total, 9513 movie stacks were aligned with dose‐weighted motion correction that was performed by cryoSPARC v3.3. The template was generated by 1007 manually picked particles using 81 projected images as reference after 2D classification. In the first‐round template picking, 8,276,241 particles were extracted. Then, the particles were processed to three cycles of 2D classification and reduced to 3,006,195. The particle size further was reduced to 730,103 after 3D classification. After the ab initio 3D constructions, 3D classes with 314,674 particles were subjected to homogeneous refinement, nonuniform refinement and local refinement. Finally, the density map with global resolution of 3.02 Å at FSC 0.143 was obtained.</p></sec><sec id="mco2159-sec-0140"><label>4.5</label><title>Model building and refinement</title><p>The predicted human‐GPR17 structure obtained from Alphafold (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://alphafold.ebi.ac.uk/" ext-link-type="uri">https://alphafold.ebi.ac.uk/</ext-link>) was used as a template to build the GPR17‐Gi‐scFv16 complex model. The template for Gi‐scFV16 was obtained from the Gi heterotrimer of FPR2‐Gi cryoEM structure (PDB 6OMM). Model docking was carried out using Chimera.<xref rid="mco2159-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref> Manually adjustment and rebuilding was performed with COOT.<xref rid="mco2159-bib-0026" ref-type="bibr">
+<sup>26</sup>
+</xref> The model was repeatedly refined using phenix.realspace refinement module in Phenix.<xref rid="mco2159-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref> The softwares, such as UCSF Chimera, UCSF ChimeraX, and PyMOL, were used to prepare the molecular graphics figures. The final model statistical analysis was performed by Phenix.</p></sec><sec id="mco2159-sec-0150"><label>4.6</label><title>cAMP assay</title><p>First, the full‐length GPR17 with indicated point mutants were cloned into pcDNA3.1 vector with an N‐terminal Flag tag, and a 3C protease site inserted after a HA signal peptide. cAMP level with GPR17 plasmid DNA concentrations of 100, 200, 300, and 400 ng/well was analyzed using the cAMP‐Gi KIT (Perkin Elmer, TRF0263) according to the manufacturer's instructions. HEK‐293 cells (ATCC CRL‐1573) were seeded in 24‐well culture plates (at a density of 70%–90% cells per well). The cells were transiently transfected with WT or mutated GPR17 plasmids using Lipo3000 reagents (Invitrogen, L3000). After 36 h, the cells were washed with PBS twice and suspended with stimulation buffer containing 500 μM IBMX. The cell suspension was transferred to a 384‐well plate for 30 min at 37°C. Afterward, 12 μM forskolin was added to a 384‐well plate and incubated at 37°C with 5% CO<sub>2</sub> for another 45 min. Then, at room temperature, 5 μl cAMP Eu‐cryptate reagent and anti‐cAMP‐d2 working solution were added to the 384‐well plate for and incubated for 1 h. The fluorescence signals were detected on the multimode plate reader (Perkin Elmer) at 620/665 nm. The experiments were performed in triplicate.</p></sec><sec id="mco2159-sec-0160"><label>4.7</label><title>Cell surface expression assay</title><p>Expression levels of GPR17 plasmid in HEK‐293 were confirmed by flow cytometry. Briefly, transfected HEK‐293 cells were blocked with 5% BSA at room temperature for 15 min and labeled with anti‐FLAG antibody (1:100, Thremofisher) at 4°C for 1 h. The antibody‐stained cells were washed with PBS three times. After, the cells were incubated with anti‐mouse Alexa‐488‐conjugated secondary antibody (1:300, Beyotime) at 4°C in dark for 1 h. Approximately 10,000 cellular events were counted for each sample, and the fluorescent intensity was quantified by BD Accuri C6 Plus flow cytometer. The experiments were repeated at least three times.</p></sec><sec id="mco2159-sec-0170"><label>4.8</label><title>Statistical analysis</title><p>Data were presented as mean ± SEM (standard error of the mean) in triplicates, and the statistical significance was shown in figure legends. Statistical analyses were performed with GraphPad Prism 9.0 with One‐way analysis of variance followed by Tukey's multiple comparisons test. Values with <italic toggle="yes">p</italic> &lt; 0.05 were considered statistically significant, and ns means not significant.</p></sec></sec><sec sec-type="COI-statement" id="mco2159-sec-0190"><title>CONFLICT OF INTEREST</title><p>The authors declare no conflict of interests.</p></sec><sec id="mco2159-sec-0200"><title>AUTHOR CONTRIBUTIONS</title><p>F. Y., Z. Z., B. Z., S. G., W. G., Z. W, and J. L. performed the experiments, collected, and analyzed the data. Y. D. and G. C. decided his research direction and supervised the project. F. Y., T. W., and G. C. wrote the manuscript. X. P., and B. Z. revised the manuscript. All authors discussed the results and reviewed the manuscript.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="mco2159-supitem-0001" position="float" content-type="local-data" orientation="portrait"><caption><p>Supporting Information</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="MCO2-3-e159-s001.docx" position="float" orientation="portrait"><?suppdata-name MCO2-3-e159-s001.docx?><?suppdata-size 2167208?><?suppdata-md5 f30e968e5a9088e55b4d5198889cd7f6?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type application?><?suppdata-mime-sub-type vnd.openxmlformats-officedocument.wordprocessingml.document?><?suppdata-cloudpmc-urn urn:app:d39c/9464062/f30e968e5a90/MCO2-3-e159-s001.docx?><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="mco2159-sec-0180"><title>ACKNOWLEDGMENT</title><p>The authors would like to thank the Kobilka Cryo‐Electron Microscopy Center, the Chinese University of Hong Kong, Shenzhen for our cryo‐electron microscopy. YD is supported by grants from Science, Technology and Innovation Commission of Shenzhen Municipality (project code: JCYJ20200109150019113) and Shenzhen Key Laboratory (project code: ZDSYS20190902093417963), Shenzhen‐Hong Kong Cooperation Zone for Technology and Innovation(project code: HZQB‐KCZYB‐2020056), and in part by the Kobilka Institute of Innovative Drug Discovery and Presidential Fellowship at the Chinese University of Hong Kong, Shenzhen.</p></ack><sec sec-type="data-availability" id="mco2159-sec-0220"><title>DATA AVAILABILITY STATEMENT</title><p>The data supporting this study are available from the corresponding author upon reasonable request. The cryo‐EM density map and structure coordinate of GPR17‐Gi complex have been deposited to the Protein Data Bank database (PDB) and Electron Microscopy Database (EMDB) under accession codes 7Y89 and EMD‐33682, respectively.</p></sec><ref-list id="mco2159-bibl-0001"><title>REFERENCES</title><ref id="mco2159-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="mco2159-cit-0001">
+<string-name name-style="western">
+<surname>Civelli</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Reinscheid</surname>
+<given-names>RK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fredriksson</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schiöth</surname>
+<given-names>HB</given-names>
+</string-name>. <article-title>G protein‐coupled receptor deorphanizations</article-title>. <source>Annu Rev Pharmacol Toxicol</source>. <year>2013</year>;<volume>53</volume>:<fpage>127</fpage>‐<lpage>146</lpage>.<pub-id pub-id-type="pmid">23020293</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1146/annurev-pharmtox-010611-134548</pub-id><pub-id pub-id-type="pmcid">PMC5828024</pub-id></mixed-citation></ref><ref id="mco2159-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="mco2159-cit-0002">
+<string-name name-style="western">
+<surname>Dziedzic</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Miller</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Saluk‐Bijak</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bijak</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>The GPR17 receptor—a promising goal for therapy and a potential marker of the neurodegenerative process in multiple sclerosis</article-title>. <source>Int J Mol Sci</source>. <year>2020</year>;<volume>21</volume>(<issue>5</issue>):<fpage>1852</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms21051852</pub-id><pub-id pub-id-type="pmcid">PMC7084627</pub-id><pub-id pub-id-type="pmid">32182666</pub-id></mixed-citation></ref><ref id="mco2159-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="mco2159-cit-0003">
+<string-name name-style="western">
+<surname>Benned‐Jensen</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rosenkilde</surname>
+<given-names>MM</given-names>
+</string-name>. <article-title>Distinct expression and ligand‐binding profiles of two constitutively active GPR17 splice variants</article-title>. <source>Br J Pharmacol</source>. <year>2010</year>;<volume>159</volume>(<issue>5</issue>):<fpage>1092</fpage>‐<lpage>1105</lpage>.<pub-id pub-id-type="pmid">20148890</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1476-5381.2009.00633.x</pub-id><pub-id pub-id-type="pmcid">PMC2839267</pub-id></mixed-citation></ref><ref id="mco2159-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="mco2159-cit-0004">
+<string-name name-style="western">
+<surname>Chen</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>The oligodendrocyte‐specific G protein–coupled receptor GPR17 is a cell‐intrinsic timer of myelination</article-title>. <source>Nat Neurosci</source>. <year>2009</year>;<volume>12</volume>(<issue>11</issue>):<fpage>1398</fpage>‐<lpage>1406</lpage>.<pub-id pub-id-type="pmid">19838178</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nn.2410</pub-id><pub-id pub-id-type="pmcid">PMC2783566</pub-id></mixed-citation></ref><ref id="mco2159-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="mco2159-cit-0005">
+<string-name name-style="western">
+<surname>Simon</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hennen</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Merten</surname>
+<given-names>N</given-names>
+</string-name>, et al. <article-title>The orphan G protein‐coupled receptor GPR17 negatively regulates oligodendrocyte differentiation via Gαi/o and its downstream effector molecules</article-title>. <source>J Biol Chem</source>. <year>2016</year>;<volume>291</volume>(<issue>2</issue>):<fpage>705</fpage>‐<lpage>718</lpage>.<pub-id pub-id-type="pmid">26620557</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1074/jbc.M115.683953</pub-id><pub-id pub-id-type="pmcid">PMC4705391</pub-id></mixed-citation></ref><ref id="mco2159-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="mco2159-cit-0006">
+<string-name name-style="western">
+<surname>Franke</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Parravicini</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lecca</surname>
+<given-names>D</given-names>
+</string-name>, et al. <article-title>Changes of the GPR17 receptor, a new target for neurorepair, in neurons and glial cells in patients with traumatic brain injury</article-title>. <source>Purinergic Signal</source>. <year>2013</year>;<volume>9</volume>(<issue>3</issue>):<fpage>451</fpage>‐<lpage>462</lpage>.<pub-id pub-id-type="pmid">23801362</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s11302-013-9366-3</pub-id><pub-id pub-id-type="pmcid">PMC3757149</pub-id></mixed-citation></ref><ref id="mco2159-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="mco2159-cit-0007">
+<string-name name-style="western">
+<surname>Marucci</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dal Ben</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lambertucci</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>The G protein‐coupled receptor GPR17: overview and update</article-title>. <source>ChemMedChem</source>. <year>2016</year>;<volume>11</volume>(<issue>23</issue>):<fpage>2567</fpage>‐<lpage>2574</lpage>.<pub-id pub-id-type="pmid">27863043</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/cmdc.201600453</pub-id></mixed-citation></ref><ref id="mco2159-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="mco2159-cit-0008">
+<string-name name-style="western">
+<surname>Gelosa</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Colazzo</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tremoli</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sironi</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Castiglioni</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Cysteinyl leukotrienes as potential pharmacological targets for cerebral diseases</article-title>. <source>Mediat Inflamm</source>. <year>2017</year>;<volume>2017</volume>:<fpage>15</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1155/2017/3454212</pub-id><pub-id pub-id-type="pmcid">PMC5451784</pub-id><pub-id pub-id-type="pmid">28607533</pub-id></mixed-citation></ref><ref id="mco2159-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="mco2159-cit-0009">
+<string-name name-style="western">
+<surname>Ou</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ma</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sun</surname>
+<given-names>Y</given-names>
+</string-name>, et al. <article-title>A GPR17‐cAMP‐lactate signalling axis in oligodendrocytes regulates whole‐body metabolism</article-title>. <source>Cell Rep</source>. <year>2019</year>;<volume>26</volume>(<issue>11</issue>):<fpage>2984</fpage>‐<lpage>2997</lpage>.<pub-id pub-id-type="pmid">30865888</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.celrep.2019.02.060</pub-id><pub-id pub-id-type="pmcid">PMC6679936</pub-id></mixed-citation></ref><ref id="mco2159-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="mco2159-cit-0010">
+<string-name name-style="western">
+<surname>Mastaitis</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Min</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Elvert</surname>
+<given-names>R</given-names>
+</string-name>, et al. <article-title>GPR17 gene disruption does not alter food intake or glucose homeostasis in mice</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2015</year>;<volume>112</volume>(<issue>6</issue>):<fpage>1845</fpage>‐<lpage>1849</lpage>.<pub-id pub-id-type="pmid">25624481</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.1424968112</pub-id><pub-id pub-id-type="pmcid">PMC4330737</pub-id></mixed-citation></ref><ref id="mco2159-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="mco2159-cit-0011">
+<string-name name-style="western">
+<surname>Ciana</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fumagalli</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Trincavelli</surname>
+<given-names>ML</given-names>
+</string-name>, et al. <article-title>The orphan receptor GPR17 identified as a new dual uracil nucleotides/cysteinyl‐leukotrienes receptor</article-title>. <source>EMBO J</source>. <year>2006</year>;<volume>25</volume>(<issue>19</issue>):<fpage>4615</fpage>‐<lpage>4627</lpage>.<pub-id pub-id-type="pmid">16990797</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/sj.emboj.7601341</pub-id><pub-id pub-id-type="pmcid">PMC1589991</pub-id></mixed-citation></ref><ref id="mco2159-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="mco2159-cit-0012">
+<string-name name-style="western">
+<surname>Yokomizo</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nakamura</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shimizu</surname>
+<given-names>T</given-names>
+</string-name>. <article-title>Leukotriene receptors as potential therapeutic targets</article-title>. <source>J Clin Invest</source>. <year>2018</year>;<volume>128</volume>(<issue>7</issue>):<fpage>2691</fpage>‐<lpage>2701</lpage>.<pub-id pub-id-type="pmid">29757196</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1172/JCI97946</pub-id><pub-id pub-id-type="pmcid">PMC6025999</pub-id></mixed-citation></ref><ref id="mco2159-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="mco2159-cit-0013">
+<string-name name-style="western">
+<surname>Murai</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kunisue</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Setsu</surname>
+<given-names>G</given-names>
+</string-name>, et al. <article-title>GPR176 is a Gz‐linked orphan G‐protein‐coupled receptor that sets the pace of circadian behaviour</article-title>. <source>Nat Commun</source>. <year>2016</year>;<volume>7</volume>(<issue>1</issue>):<fpage>1</fpage>‐<lpage>13</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/ncomms10583</pub-id><pub-id pub-id-type="pmcid">PMC4757782</pub-id><pub-id pub-id-type="pmid">26882873</pub-id></mixed-citation></ref><ref id="mco2159-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="mco2159-cit-0014">
+<string-name name-style="western">
+<surname>Katritch</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fenalti</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Abola</surname>
+<given-names>EE</given-names>
+</string-name>, et al. <article-title>Allosteric sodium in class A GPCR signaling</article-title>. <source>Trends Biochem Sci</source>. <year>2014</year>;<volume>39</volume>(<issue>5</issue>):<fpage>233</fpage>‐<lpage>244</lpage>.<pub-id pub-id-type="pmid">24767681</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.tibs.2014.03.002</pub-id><pub-id pub-id-type="pmcid">PMC4106411</pub-id></mixed-citation></ref><ref id="mco2159-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="mco2159-cit-0015">
+<string-name name-style="western">
+<surname>Tsutsumi</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Qu</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mavri</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Structural basis for the constitutive activity and immunomodulatory properties of the Epstein‐Barr virus‐encoded G protein‐coupled receptor BILF1</article-title>. <source>Immunity</source>. <year>2021</year>;<volume>54</volume>(<issue>7</issue>):<fpage>1405</fpage>‐<lpage>1416</lpage>.<pub-id pub-id-type="pmid">34216564</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.immuni.2021.06.001</pub-id><pub-id pub-id-type="pmcid">PMC8282746</pub-id></mixed-citation></ref><ref id="mco2159-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="mco2159-cit-0016">
+<string-name name-style="western">
+<surname>Hauser</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kooistra</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Munk</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>GPCR activation mechanisms across classes and macro/microscales</article-title>. <source>Nat Struct Mol Biol</source>. <year>2021</year>;<volume>28</volume>(<issue>11</issue>):<fpage>879</fpage>‐<lpage>888</lpage>.<pub-id pub-id-type="pmid">34759375</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41594-021-00674-7</pub-id><pub-id pub-id-type="pmcid">PMC8580822</pub-id></mixed-citation></ref><ref id="mco2159-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="mco2159-cit-0017">
+<string-name name-style="western">
+<surname>Kang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kuybeda</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>de Waal</surname>
+<given-names>PW</given-names>
+</string-name>, et al. <article-title>Cryo‐EM structure of human rhodopsin bound to an inhibitory G protein</article-title>. <source>Nature</source>. <year>2018</year>;<volume>558</volume>(<issue>7711</issue>):<fpage>553</fpage>‐<lpage>558</lpage>.<pub-id pub-id-type="pmid">29899450</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41586-018-0215-y</pub-id><pub-id pub-id-type="pmcid">PMC8054211</pub-id></mixed-citation></ref><ref id="mco2159-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="mco2159-cit-0018">
+<string-name name-style="western">
+<surname>Koehl</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Maeda</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Structure of the μ‐opioid receptor‐Gi protein complex</article-title>. <source>Nature</source>. <year>2018</year>;<volume>558</volume>(<issue>7711</issue>):<fpage>547</fpage>‐<lpage>552</lpage>.<pub-id pub-id-type="pmid">29899455</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41586-018-0219-7</pub-id><pub-id pub-id-type="pmcid">PMC6317904</pub-id></mixed-citation></ref><ref id="mco2159-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="mco2159-cit-0019">
+<string-name name-style="western">
+<surname>Krishna Kumar</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Shalev‐Benami</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Robertson</surname>
+<given-names>MJ</given-names>
+</string-name>, et al. <article-title>Structure of a signaling cannabinoid receptor 1‐G protein complex</article-title>. <source>Cell</source>. <year>2019</year>;<volume>176</volume>(<issue>3</issue>):<fpage>448</fpage>‐<lpage>458</lpage>.<pub-id pub-id-type="pmid">30639101</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cell.2018.11.040</pub-id><pub-id pub-id-type="pmcid">PMC6461403</pub-id></mixed-citation></ref><ref id="mco2159-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="mco2159-cit-0020">
+<string-name name-style="western">
+<surname>Lin</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>N</given-names>
+</string-name>, et al. <article-title>Structural basis of ligand recognition and self‐activation of orphan GPR52</article-title>. <source>Nature</source>. <year>2020</year>;<volume>579</volume>(<issue>7797</issue>):<fpage>152</fpage>‐<lpage>157</lpage>.<pub-id pub-id-type="pmid">32076264</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41586-020-2019-0</pub-id></mixed-citation></ref><ref id="mco2159-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="mco2159-cit-0021">
+<string-name name-style="western">
+<surname>Koenen</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Babendreyer</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schumacher</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>The DRF motif of CXCR6 as chemokine receptor adaptation to adhesion</article-title>. <source>PLoS One</source>. <year>2017</year>;<volume>12</volume>(<issue>3</issue>):<elocation-id>e0173486</elocation-id>.<pub-id pub-id-type="pmid">28267793</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pone.0173486</pub-id><pub-id pub-id-type="pmcid">PMC5340378</pub-id></mixed-citation></ref><ref id="mco2159-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="mco2159-cit-0022">
+<string-name name-style="western">
+<surname>Coppi</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Maraula</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fumagalli</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>UDP‐glucose enhances outward K(+) currents necessary for cell differentiation and stimulates cell migration by activating the GPR17 receptor in oligodendrocyte precursors</article-title>. <source>Glia</source>. <year>2013</year>;<volume>61</volume>(<issue>7</issue>):<fpage>1155</fpage>‐<lpage>1171</lpage>.<pub-id pub-id-type="pmid">23640798</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/glia.22506</pub-id></mixed-citation></ref><ref id="mco2159-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="mco2159-cit-0023">
+<string-name name-style="western">
+<surname>Coste</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sijobert</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pissard‐Gibollet</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pasquier</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Espiau</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Geny</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Detection of freezing of gait in Parkinson disease: preliminary results</article-title>. <source>Sensors (Basel)</source>. <year>2014</year>;<volume>14</volume>(<issue>4</issue>):<fpage>6819</fpage>‐<lpage>6827</lpage>.<pub-id pub-id-type="pmid">24740014</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/s140406819</pub-id><pub-id pub-id-type="pmcid">PMC4029660</pub-id></mixed-citation></ref><ref id="mco2159-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="mco2159-cit-0024">
+<string-name name-style="western">
+<surname>Stoddart</surname>
+<given-names>LA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kellam</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Briddon</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hill</surname>
+<given-names>SJ</given-names>
+</string-name>. <article-title>Effect of a toggle switch mutation in TM6 of the human adenosine A₃ receptor on Gi protein‐dependent signalling and Gi‐independent receptor internalization</article-title>. <source>Br J Pharmacol</source>. <year>2014</year>;<volume>171</volume>(<issue>16</issue>):<fpage>3827</fpage>‐<lpage>3844</lpage>.<pub-id pub-id-type="pmid">24750014</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/bph.12739</pub-id><pub-id pub-id-type="pmcid">PMC4128046</pub-id></mixed-citation></ref><ref id="mco2159-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="mco2159-cit-0025">
+<string-name name-style="western">
+<surname>Pettersen</surname>
+<given-names>EF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Goddard</surname>
+<given-names>TD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Huang</surname>
+<given-names>CC</given-names>
+</string-name>, et al. <article-title>UCSF Chimera—a visualization system for exploratory research and analysis</article-title>. <source>J Comput Chem</source>. <year>2004</year>;<volume>25</volume>(<issue>13</issue>):<fpage>1605</fpage>‐<lpage>1612</lpage>.<pub-id pub-id-type="pmid">15264254</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jcc.20084</pub-id></mixed-citation></ref><ref id="mco2159-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="mco2159-cit-0026">
+<string-name name-style="western">
+<surname>Emsley</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cowtan</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>Coot: model‐building tools for molecular graphics</article-title>. <source>Acta Crystallogr D</source>. <year>2004</year>;<volume>60</volume>(<issue>12</issue>):<fpage>2126</fpage>‐<lpage>2132</lpage>.<pub-id pub-id-type="pmid">15572765</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1107/S0907444904019158</pub-id></mixed-citation></ref><ref id="mco2159-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="mco2159-cit-0027">
+<string-name name-style="western">
+<surname>Adams</surname>
+<given-names>PD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Afonine</surname>
+<given-names>PV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bunkóczi</surname>
+<given-names>G</given-names>
+</string-name>, et al. <article-title>PHENIX: a comprehensive Python‐based system for macromolecular structure solution</article-title>. <source>Acta Crystallogr D</source>. <year>2010</year>;<volume>66</volume>(<issue>2</issue>):<fpage>213</fpage>‐<lpage>221</lpage>.<pub-id pub-id-type="pmid">20124702</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1107/S0907444909052925</pub-id><pub-id pub-id-type="pmcid">PMC2815670</pub-id></mixed-citation></ref></ref-list></back></article>

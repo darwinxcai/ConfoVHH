@@ -54,6 +54,18 @@ The bounded [mGlyR preparation follow-up](mglyr-construct-followup-2026-09-04/RE
 
 ## Remaining decisions
 
+### Additional completed source and development reviews
+
+The [full domain-remainder development comparison](domain-remainder-development-review-2026-09-04/README.md) now accounts for all 374 heavy-domain-positive entities in 345 entries, preserving 478 overlapping or alternative window calls. All 18 frozen development VHH profiles reproduce. The 6,732 entity/VHH and 5,865 entry/receptor comparisons produce 19 positive VHH-criterion entities and 42 entries with primary canonical receptor signals; the 0.30 sensitivity criterion flags 57 entries, including the primary positives. Five entries carry multiple recognized receptor accessions, and 252 lack recognized profiles within the retained canonical subset. Those cases remain unresolved. None of these counts is an eligibility, exclusion, ancestry, or component certificate. Source work is grouped into 99 exact containing-entity sequences with every publication identifier retained, without treating those groups as independent cases.
+
+The [GPR17 follow-up](gpr17-construct-followup-2026-09-04/README.md) resolves a narrower sequence question for 7Y89. Its 293-residue receptor exactly matches human Q13304 residues 50–342 and human isoform Q13304-2 residues 22–314; the corresponding best mouse Q6NS65 window differs at 23 positions. Primary Methods describe human GPR17, supporting a human-sequence-consistent assessment despite the deposited mouse annotation. The two human isoforms cannot be distinguished by the retained segment. Full expressed-construct and tag reconciliation remain incomplete, so the whole entry remains pending.
+
+The [ADGRV1 follow-up](adgrv1-source-followup-2026-09-04/README.md) finds a different species conflict: 9FTE's receptor fragment exactly matches mouse B8JJE0 residues 5884–6298, followed by SGRHHHHHHHH. Reviewed mouse Q8VHN7 differs at one aligned position, while the human reference lacks this exact fragment. Nineteen source captures corroborate the candidate preprint but do not resolve its human description, exact primary deposition statement or experimental construct. The bounded 9S38 follow-up likewise leaves its missing citation unresolved. Prior exposure caveats remain active.
+
+The [historical Nb35 follow-up](nb35-primary-followup-2026-09-04/README.md) adds six author-hosted exact PTH1R deposition links and rechecks all 102 polymer entities across the sixteen pending entries. Twelve bounded access-route attempts did not recover the necessary primary Methods. All sixteen remain pending; author-hosted bibliography is not reagent-role evidence. Further work on those papers needs a new accessible source route rather than repetition of the same failed requests.
+
+These packets pass deterministic offline replay and independent review, including relocated repository/evidence checks where applicable. The next source task is the GPR1/Nb32 family from the refined queue, accounting for the co-present scFv30 as well as Nb32. An independent all-date RCSB text discovery complement is also underway; its identifier-query coverage, chosen metadata collection scope, and uncollected remainder must remain separately reported.
+
 1. Reconcile newly discovered accessions and publication versions without double-counting replacements, repeated structures or shared studies.
 2. Resolve direct versus auxiliary binder roles, full polymer inventories, engineered constructs, binder lineage and missing primary methods.
 3. Integrate only evidence-supported receptor, VHH, publication and development connections into the formal leakage review; preserve unresolved and exposed entries.

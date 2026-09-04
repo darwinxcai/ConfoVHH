@@ -1,0 +1,23 @@
+{
+  "id": "hal-preprint",
+  "url": "https://api.archives-ouvertes.fr/search/?q=doiId_s%3A%2210.64898%2F2026.03.05.709805%22&wt=json&fl=docid%2ChalId_s%2Ctitle_s%2CdoiId_s%2Curi_s%2CfileMain_s%2Cfiles_s%2Cabstract_s",
+  "finalUrl": "https://api.archives-ouvertes.fr/search/?q=doiId_s%3A%2210.64898%2F2026.03.05.709805%22&wt=json&fl=docid%2ChalId_s%2Ctitle_s%2CdoiId_s%2Curi_s%2CfileMain_s%2Cfiles_s%2Cabstract_s",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:34:43.768370+00:00",
+  "finishedAt": "2026-09-04T23:34:53.192949+00:00",
+  "status": 200,
+  "headers": {
+    "date": "Fri, 04 Sep 2026 23:34:52 GMT",
+    "server": "Apache/2.4.68 (Debian)",
+    "served-by": "192.168.176.70 D=77022",
+    "environment": "production",
+    "access-control-allow-origin": "*",
+    "content-length": "116",
+    "content-type": "application/json; charset=utf-8",
+    "strict-transport-security": "max-age=63072000",
+    "connection": "close"
+  },
+  "file": "sources/hal-preprint.body",
+  "bytes": 116,
+  "sha256": "316b596864c92e18c8f6688107ad49ecfc3fe632ebdc85efe82c65ed28ba8064"
+}
