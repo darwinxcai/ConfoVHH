@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "collectionPlanSha256": "d7d95dfa12f2fc24cfb03e670c9103af204727e257f8726dd92e2c425b021bca",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/checksums.sha256": "796aa0734da86791f8ccdef92c7de03da22bdafd7818a5c5e95d73b6b5d35ebc",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/checksums.sha256": "7025ad7b9375a685b837d04be1964eb285400b63f6953e67a095df9f202d7cbf",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/gpcrdb-api.txt": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-gpcrdb-intersection.txt": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/missing-ids.jsonl": "dd704563fde5805cac5ce568f3841aa1be034a4947b91209a3245df46c64e571",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/summary.json": "1f32b0311b8acfc975e5c0902762bccacf1ece0db1687e19acc3fb9ee0c08063",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/manifest.json": "e034a3557cd162ad8f56aa8196eaf9752ec4c4b3f235f77429589a6e847a6be2",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json": "bbf10ef8ebf057dde42969fbd166bcbd2bd437902a76064d7ad8fcea9faa16b7",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "scripts/hard-decoy/v3-entry-metadata.mjs": "77afbf8b485976fd902de4f8377dcf9f02e90d93328a1da06546c8d7aae7c562",
+    "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+    "scripts/hard-decoy-v3/reconcile-replaced-census-entries.mjs": "7f9e2889506fe99f3e5f68830b3bce610bf3b41f28eac41826fb1bf24d990875"
+  },
+  "outputDigests": {
+    "aliases.jsonl": "8c84b7572e7b5d99abcdc87e7653a33001d1a4677d694469fc9608c63bd0e730",
+    "entries.jsonl": "b0b26eb7776fa1eb53182cf7c23213417209b47a67afbc05621680bfe79457cd",
+    "triage-signals.jsonl": "14b5c22a1e6b53e3322089a06d344044e9245debb66987ef658f26ca3d4ccefa",
+    "requests.jsonl": "35e053633e05deb37cf29dfba64d558e2a2c8d73cb1cc8258e8e2e93a03aaba5",
+    "summary.json": "da3a55f938659acd7530583cbfe720ac7b7ed0fb114488e9409a9a7ff24dc0de",
+    "README.md": "be2c2bec63a90b08c66402969ebb91dd701c1b5382ecb3cce6bc4c77d6312cab"
+  },
+  "summary": {
+    "schemaVersion": "1.0.0",
+    "status": "THREE_MISSING_ACCESSION_IDENTITIES_RECONCILED_SCIENTIFIC_REVIEW_PENDING",
+    "originalMissingAccessions": [
+      "7EVW",
+      "7XOX",
+      "8ZFJ"
+    ],
+    "replacementAccessions": [
+      "8IA7",
+      "8YY8",
+      "9J31"
+    ],
+    "matchedHoldingsRepeats": 6,
+    "matchedMetadataRepeats": 2,
+    "missingAccessionIdentityResolvedCount": 3,
+    "replacementAlreadyCapturedCount": 2,
+    "additionalDistinctMetadataAccessions": [
+      "9J31"
+    ],
+    "additionalDistinctMetadataAccessionCount": 1,
+    "captured1426PlusDistinctReplacements": 1427,
+    "originalMissingEntryCountUnchanged": 3,
+    "originalMissingLedgerModified": false,
+    "discoveryRouteMetadataCaptureComplete": false,
+    "scopedMissingIdentityReconciliationComplete": true,
+    "routeC2ScientificDispositionComplete": false,
+    "broaderDiscoveryComplete": false,
+    "formalProtocolStatus": "DRAFT",
+    "targetFreezeGate": "BLOCKED",
+    "independentComponentsAdded": 0,
+    "wholeCensusComponentUpperBound": null,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false,
+    "nativeHoldoutCoordinatesAccessed": false,
+    "nativeRelativePosesInspected": false,
+    "dockqLabelsAccessed": false,
+    "performanceResultsAccessed": false
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "purpose": "RECONCILE_THREE_OBSERVED_MISSING_ACCESSIONS_ONLY",
+  "observedPairsToVerify": {
+    "7EVW": "8YY8",
+    "7XOX": "8IA7",
+    "8ZFJ": "9J31"
+  },
+  "replacementIds": [
+    "8IA7",
+    "8YY8",
+    "9J31"
+  ],
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/checksums.sha256": "796aa0734da86791f8ccdef92c7de03da22bdafd7818a5c5e95d73b6b5d35ebc",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/checksums.sha256": "7025ad7b9375a685b837d04be1964eb285400b63f6953e67a095df9f202d7cbf",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/gpcrdb-api.txt": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-gpcrdb-intersection.txt": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/missing-ids.jsonl": "dd704563fde5805cac5ce568f3841aa1be034a4947b91209a3245df46c64e571",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/summary.json": "1f32b0311b8acfc975e5c0902762bccacf1ece0db1687e19acc3fb9ee0c08063",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/manifest.json": "e034a3557cd162ad8f56aa8196eaf9752ec4c4b3f235f77429589a6e847a6be2",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json": "bbf10ef8ebf057dde42969fbd166bcbd2bd437902a76064d7ad8fcea9faa16b7",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "scripts/hard-decoy/v3-entry-metadata.mjs": "77afbf8b485976fd902de4f8377dcf9f02e90d93328a1da06546c8d7aae7c562",
+    "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+    "scripts/hard-decoy-v3/reconcile-replaced-census-entries.mjs": "7f9e2889506fe99f3e5f68830b3bce610bf3b41f28eac41826fb1bf24d990875"
+  },
+  "querySha256": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+  "requests": [
+    {
+      "kind": "holdings",
+      "originalId": "7EVW",
+      "repeat": 1,
+      "method": "GET",
+      "url": "https://data.rcsb.org/rest/v1/holdings/status/7EVW",
+      "rawFile": "raw/holdings-7EVW-repeat-1.json",
+      "captureFile": "captures/holdings-7EVW-repeat-1.json"
+    },
+    {
+      "kind": "holdings",
+      "originalId": "7EVW",
+      "repeat": 2,
+      "method": "GET",
+      "url": "https://data.rcsb.org/rest/v1/holdings/status/7EVW",
+      "rawFile": "raw/holdings-7EVW-repeat-2.json",
+      "captureFile": "captures/holdings-7EVW-repeat-2.json"
+    },
+    {
+      "kind": "holdings",
+      "originalId": "7XOX",
+      "repeat": 1,
+      "method": "GET",
+      "url": "https://data.rcsb.org/rest/v1/holdings/status/7XOX",
+      "rawFile": "raw/holdings-7XOX-repeat-1.json",
+      "captureFile": "captures/holdings-7XOX-repeat-1.json"
+    },
+    {
+      "kind": "holdings",
+      "originalId": "7XOX",
+      "repeat": 2,
+      "method": "GET",
+      "url": "https://data.rcsb.org/rest/v1/holdings/status/7XOX",
+      "rawFile": "raw/holdings-7XOX-repeat-2.json",
+      "captureFile": "captures/holdings-7XOX-repeat-2.json"
+    },
+    {
+      "kind": "holdings",
+      "originalId": "8ZFJ",
+      "repeat": 1,
+      "method": "GET",
+      "url": "https://data.rcsb.org/rest/v1/holdings/status/8ZFJ",
+      "rawFile": "raw/holdings-8ZFJ-repeat-1.json",
+      "captureFile": "captures/holdings-8ZFJ-repeat-1.json"
+    },
+    {
+      "kind": "holdings",
+      "originalId": "8ZFJ",
+      "repeat": 2,
+      "method": "GET",
+      "url": "https://data.rcsb.org/rest/v1/holdings/status/8ZFJ",
+      "rawFile": "raw/holdings-8ZFJ-repeat-2.json",
+      "captureFile": "captures/holdings-8ZFJ-repeat-2.json"
+    },
+    {
+      "kind": "replacement-metadata",
+      "replacementIds": [
+        "8IA7",
+        "8YY8",
+        "9J31"
+      ],
+      "repeat": 1,
+      "method": "GET",
+      "url": "https://data.rcsb.org/graphql?query=query%20ConfoVHHEntryMetadata(%24ids%3A%20%5BString!%5D!)%20%7B%0A%20%20entries(entry_ids%3A%20%24ids)%20%7B%0A%20%20%20%20rcsb_id%0A%20%20%20%20struct%20%7B%0A%20%20%20%20%20%20title%0A%20%20%20%20%7D%0A%20%20%20%20struct_keywords%20%7B%0A%20%20%20%20%20%20pdbx_keywords%0A%20%20%20%20%20%20text%0A%20%20%20%20%7D%0A%20%20%20%20exptl%20%7B%0A%20%20%20%20%20%20method%0A%20%20%20%20%7D%0A%20%20%20%20rcsb_accession_info%20%7B%0A%20%20%20%20%20%20initial_release_date%0A%20%20%20%20%7D%0A%20%20%20%20rcsb_primary_citation%20%7B%0A%20%20%20%20%20%20pdbx_database_id_DOI%0A%20%20%20%20%20%20pdbx_database_id_PubMed%0A%20%20%20%20%20%20title%0A%20%20%20%20%7D%0A%20%20%20%20rcsb_entry_info%20%7B%0A%20%20%20%20%20%20experimental_method%0A%20%20%20%20%20%20resolution_combined%0A%20%20%20%20%20%20polymer_entity_count%0A%20%20%20%20%7D%0A%20%20%20%20polymer_entities%20%7B%0A%20%20%20%20%20%20rcsb_id%0A%20%20%20%20%20%20entity_poly%20%7B%0A%20%20%20%20%20%20%20%20pdbx_seq_one_letter_code_can%0A%20%20%20%20%20%20%20%20rcsb_entity_polymer_type%0A%20%20%20%20%20%20%20%20type%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rcsb_polymer_entity%20%7B%0A%20%20%20%20%20%20%20%20pdbx_description%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rcsb_polymer_entity_container_identifiers%20%7B%0A%20%20%20%20%20%20%20%20entity_id%0A%20%20%20%20%20%20%20%20asym_ids%0A%20%20%20%20%20%20%20%20auth_asym_ids%0A%20%20%20%20%20%20%20%20reference_sequence_identifiers%20%7B%0A%20%20%20%20%20%20%20%20%20%20database_name%0A%20%20%20%20%20%20%20%20%20%20database_accession%0A%20%20%20%20%20%20%20%20%20%20provenance_source%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rcsb_entity_source_organism%20%7B%0A%20%20%20%20%20%20%20%20ncbi_scientific_name%0A%20%20%20%20%20%20%20%20ncbi_taxonomy_id%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%22ids%22%3A%5B%228IA7%22%2C%228YY8%22%2C%229J31%22%5D%7D",
+      "rawFile": "raw/replacement-metadata-repeat-1.json",
+      "captureFile": "captures/replacement-metadata-repeat-1.json"
+    },
+    {
+      "kind": "replacement-metadata",
+      "replacementIds": [
+        "8IA7",
+        "8YY8",
+        "9J31"
+      ],
+      "repeat": 2,
+      "method": "GET",
+      "url": "https://data.rcsb.org/graphql?query=query%20ConfoVHHEntryMetadata(%24ids%3A%20%5BString!%5D!)%20%7B%0A%20%20entries(entry_ids%3A%20%24ids)%20%7B%0A%20%20%20%20rcsb_id%0A%20%20%20%20struct%20%7B%0A%20%20%20%20%20%20title%0A%20%20%20%20%7D%0A%20%20%20%20struct_keywords%20%7B%0A%20%20%20%20%20%20pdbx_keywords%0A%20%20%20%20%20%20text%0A%20%20%20%20%7D%0A%20%20%20%20exptl%20%7B%0A%20%20%20%20%20%20method%0A%20%20%20%20%7D%0A%20%20%20%20rcsb_accession_info%20%7B%0A%20%20%20%20%20%20initial_release_date%0A%20%20%20%20%7D%0A%20%20%20%20rcsb_primary_citation%20%7B%0A%20%20%20%20%20%20pdbx_database_id_DOI%0A%20%20%20%20%20%20pdbx_database_id_PubMed%0A%20%20%20%20%20%20title%0A%20%20%20%20%7D%0A%20%20%20%20rcsb_entry_info%20%7B%0A%20%20%20%20%20%20experimental_method%0A%20%20%20%20%20%20resolution_combined%0A%20%20%20%20%20%20polymer_entity_count%0A%20%20%20%20%7D%0A%20%20%20%20polymer_entities%20%7B%0A%20%20%20%20%20%20rcsb_id%0A%20%20%20%20%20%20entity_poly%20%7B%0A%20%20%20%20%20%20%20%20pdbx_seq_one_letter_code_can%0A%20%20%20%20%20%20%20%20rcsb_entity_polymer_type%0A%20%20%20%20%20%20%20%20type%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rcsb_polymer_entity%20%7B%0A%20%20%20%20%20%20%20%20pdbx_description%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rcsb_polymer_entity_container_identifiers%20%7B%0A%20%20%20%20%20%20%20%20entity_id%0A%20%20%20%20%20%20%20%20asym_ids%0A%20%20%20%20%20%20%20%20auth_asym_ids%0A%20%20%20%20%20%20%20%20reference_sequence_identifiers%20%7B%0A%20%20%20%20%20%20%20%20%20%20database_name%0A%20%20%20%20%20%20%20%20%20%20database_accession%0A%20%20%20%20%20%20%20%20%20%20provenance_source%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20rcsb_entity_source_organism%20%7B%0A%20%20%20%20%20%20%20%20ncbi_scientific_name%0A%20%20%20%20%20%20%20%20ncbi_taxonomy_id%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%22ids%22%3A%5B%228IA7%22%2C%228YY8%22%2C%229J31%22%5D%7D",
+      "rawFile": "raw/replacement-metadata-repeat-2.json",
+      "captureFile": "captures/replacement-metadata-repeat-2.json"
+    }
+  ],
+  "originalMissingLedgerModified": false,
+  "obsoletePreferredChainInherited": false,
+  "broaderDiscoveryComplete": false,
+  "formalProtocolStatus": "DRAFT",
+  "targetFreezeGate": "BLOCKED"
+}

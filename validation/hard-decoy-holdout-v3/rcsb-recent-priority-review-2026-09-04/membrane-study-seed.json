@@ -1,0 +1,145 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "SEPARATE_MEMBRANE_STUDY_METADATA_SEED_ONLY",
+  "pdbIds": [
+    "9SL1",
+    "9SLD",
+    "9SLM"
+  ],
+  "targetClass": "GABAA ligand-gated ion channel",
+  "primaryDoi": "10.1038/s41467-026-76879-5",
+  "sharedPublicationProvisionalComponentUpperBound": 1,
+  "componentBoundAssumption": "The separate draft study joins entries that share a primary publication. This is a conditional metadata bound, not a frozen leakage-graph result.",
+  "independentEligibleComponentCount": null,
+  "developmentAndFamilyExposureResolved": false,
+  "formalGraphComputed": false,
+  "gpcrStudyPoolingPermitted": false,
+  "currentGpcrEligibleTargetsAdded": 0,
+  "evidenceForDependence": [
+    "All three entries cite the same primary DOI.",
+    "All three receptor-subunit sequence hashes match across entries, despite differences in descriptions and reference accessions.",
+    "Nb24 sequences share an identical 123-residue prefix; the longer deposited sequence adds HHHHHHEPEA."
+  ],
+  "binderInventory": [
+    {
+      "pdbId": "9SL1",
+      "entities": [
+        {
+          "entityId": "4",
+          "description": "Megabody Mb30",
+          "sequenceLength": 138,
+          "sequenceSha256": "2198b8fe6fa028fd9f3c421cbe12241c32766eed92057a5cfe3d10d78ad83f45",
+          "authAsymIds": [
+            "F",
+            "H"
+          ],
+          "labelAsymIds": [
+            "F",
+            "H"
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "5",
+          "description": "Nanobody Nb24",
+          "sequenceLength": 133,
+          "sequenceSha256": "2d986fd680728d0251260060077fc46f0b29311226b3c93d71f3ddf14d28ae9d",
+          "authAsymIds": [
+            "G",
+            "I"
+          ],
+          "labelAsymIds": [
+            "G",
+            "I"
+          ],
+          "referenceSequences": []
+        }
+      ]
+    },
+    {
+      "pdbId": "9SLD",
+      "entities": [
+        {
+          "entityId": "4",
+          "description": "Megabody Mb30",
+          "sequenceLength": 138,
+          "sequenceSha256": "2198b8fe6fa028fd9f3c421cbe12241c32766eed92057a5cfe3d10d78ad83f45",
+          "authAsymIds": [
+            "F",
+            "H"
+          ],
+          "labelAsymIds": [
+            "F",
+            "H"
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "5",
+          "description": "Nanobody Nb24",
+          "sequenceLength": 133,
+          "sequenceSha256": "2d986fd680728d0251260060077fc46f0b29311226b3c93d71f3ddf14d28ae9d",
+          "authAsymIds": [
+            "G",
+            "I"
+          ],
+          "labelAsymIds": [
+            "G",
+            "I"
+          ],
+          "referenceSequences": []
+        }
+      ]
+    },
+    {
+      "pdbId": "9SLM",
+      "entities": [
+        {
+          "entityId": "4",
+          "description": "Nanobody Nb24",
+          "sequenceLength": 123,
+          "sequenceSha256": "1b5af6c76f6c93ad74e5de3b5dfaf79a3daea999038786946d178077097c3810",
+          "authAsymIds": [
+            "F",
+            "G"
+          ],
+          "labelAsymIds": [
+            "F",
+            "G"
+          ],
+          "referenceSequences": []
+        }
+      ]
+    }
+  ],
+  "constructObservations": [
+    {
+      "fact": "9SLM contains Nb24 only; 9SL1 and 9SLD contain Nb24 and a deposited entity named Mb30.",
+      "inference": "Do not describe all three as containing both binders."
+    },
+    {
+      "fact": "The deposited Mb30 entity is 138 residues long.",
+      "inference": "Its name does not establish that the sequence represents the complete experimentally used megabody. Scaffold and construct completeness remain unresolved."
+    },
+    {
+      "fact": "The 133-residue Nb24 sequence equals the 123-residue 9SLM sequence followed by HHHHHHEPEA.",
+      "inference": "The suffix is consistent with purification/detection tags, but its experimental provenance is unreviewed. No sequence is silently trimmed."
+    },
+    {
+      "fact": "9SL1/9SLD alpha4 references P48169, while the identical 9SLM alpha4 sequence references F6UBA8 and Q9D6F4. Beta3/fusion descriptions also differ despite identical sequence hashes.",
+      "inference": "Canonical receptor identity, species and engineered construct mapping require reconciliation before generation or evaluation."
+    }
+  ],
+  "requiredBeforeEligibility": [
+    "Accessible primary methods defining binder origin, architecture, production and direct target role",
+    "Complete assembly/entity and experimental construct consistency review",
+    "Separate family and binder-lineage dependency graph containing prior-development exposure nodes",
+    "Generator training-overlap records and per-target provenance",
+    "Separate power/precision planning and protocol gates without transferring GPCR thresholds across folds"
+  ],
+  "directBindingOrEfficacyValidatedHere": false,
+  "nativeRelativePosesInspected": false,
+  "modelGenerationAuthorized": false,
+  "nativeLabelsAuthorized": false,
+  "formalFreezePermitted": false
+}
