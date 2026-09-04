@@ -1,0 +1,27 @@
+{
+  "request": {
+    "requestId": "title-26",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "8HN8",
+      "8HOC"
+    ],
+    "query": "TITLE:\"Structure insights into Histamine H4 receptor activation by an endogenous ligand histamine and agonist imetit\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Structure+insights+into+Histamine+H4+receptor+activation+by+an+endogenous+ligand+histamine+and+agonist+imetit%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:27.940773+00:00",
+  "status": 200,
+  "rawFile": "raw/title-26.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Structure+insights+into+Histamine+H4+receptor+activation+by+an+endogenous+ligand+histamine+and+agonist+imetit%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "7bf682a4d3173e11282a79c60d7c077cfbc2dd14fb0d4d3000bbe6a41024af1d",
+  "bytes": 286,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:36.897099+00:00"
+}

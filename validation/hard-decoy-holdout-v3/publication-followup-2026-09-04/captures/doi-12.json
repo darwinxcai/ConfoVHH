@@ -1,0 +1,28 @@
+{
+  "request": {
+    "requestId": "doi-12",
+    "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+    "pdbIds": [
+      "7RKF",
+      "7RKM",
+      "7RKN"
+    ],
+    "query": "DOI:\"10.1126/sciadv.abl5442\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fsciadv.abl5442%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:48.531596+00:00",
+  "status": 200,
+  "rawFile": "raw/doi-12.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fsciadv.abl5442%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "18e6596e033fd5a8b5546b894ba7dd1480bd243837d568c45e02a1b31080a881",
+  "bytes": 1254,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:00.737445+00:00"
+}

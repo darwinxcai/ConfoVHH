@@ -1,0 +1,2405 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-04",
+  "scope": "Eight annotation-route leads: two GPR158/mGlyR entries and six LGR4 entries. Metadata/prose overlay; no frozen ledger rewrite.",
+  "evidenceBoundary": "Primary selection, assay, construct, sample and deposition prose; complete polymer inventories and sequence hashes; UniProt sequence/TM annotations. A LGR4 prose-exposure exception is explicitly recorded.",
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl": "ab4ebb4597948b973af33ae55763c0f8a65fcbfe66db3748d24478ec33a429df",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/manifest.json": "6b50d7e79f17c7570b227cbbb0739e15e263fc64bf3704b6f62929fbebb5ea62",
+    "validation/hard-decoy-holdout-v3/annotation-screen-2026-09-04/entity-screens.jsonl": "5f583d2f7c4f8f2990f0a1f4281b597365fe53f6f3d334740529469052f0c1d1",
+    "validation/hard-decoy-holdout-v3/annotation-screen-2026-09-04/sequence-screens.jsonl": "f7767c377cb6c9e74bdedc87c9133ec17adcf0bc3d552231148edd43cc8b6557",
+    "validation/hard-decoy-holdout-v3/annotation-screen-2026-09-04/manifest.json": "691c881a872c441246c4fd65c002bacb3cef51332bf60e9610bb93eb1ec53bbb",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl": "8e2219f94d91bb3a8822e56a1e43f20cc652a86bc9458a9af76013f96e3c5be7",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json": "dc6ebf09ca1ea8e7c83c01ac442e907357a8e4c732e38d22b306432f06d4e281",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/lgr4-additional-prose-provenance.json": "619eefdd1d5d6c965a4d01092ecccfdd4b7286323c0f09c5d63202f3752aac3a",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/lgr4-prose-provenance.json": "d79d783b97a549b899cb0da4521fa883b7103d3aeae591862c8dcf33e4c9fd97",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/mglyr-prose-provenance.json": "9da3350e7c6df119a24140cff445652b7ca4ed2c47c5adb4de8a988f602f7726",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/raw/uniprot-q5t848-transmembrane.json": "d2012c113c366811fc7169234944b611ff2537909833bdc4bc438c1d07cf7e1f",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/raw/uniprot-q5t848.fasta": "9f6979be266a61608d1e9064f4eb305028a2eaebbb339249395d66dae437c52e",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/raw/uniprot-q9bxb1-transmembrane.json": "d09a96f1bc27999158ec1c6ece93b0d793ad727267b79cb8eb692acc95047539",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/transmembrane-source-provenance.json": "fcda1d559605c7d9a1d55f6b26baa8e28d9aef6c6332687bcfc97efb6be994ad",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/uniprot-source.json": "393c0e7eac9bc4b4763d472c2f5a593b24add3f2fb17e295bb85225fb80fc4df"
+  },
+  "sources": [
+    {
+      "sourceId": "MGLYR_NB20_2026",
+      "doi": "10.1038/s41467-026-68339-x",
+      "pmcid": "PMC12834959",
+      "url": "https://www.nature.com/articles/s41467-026-68339-x",
+      "provenancePath": "mglyr-prose-provenance.json",
+      "paragraphHashNormalization": "sha256(UTF8(' '.join(''.join(p.itertext()).split())))",
+      "reviewedEvidenceSections": [
+        "Development and characterization of nanobodies targeting mGlyR (nonstructural selection and binding-assay prose)",
+        "cDNA constructs",
+        "Protein production and purification",
+        "Cryo-EM sample preparation and data acquisition",
+        "Data availability"
+      ],
+      "roleAndConstructFacts": "Nb20 was selected from an immunized llama library and tested against receptor-expressing cells and purified receptor ectodomain. The Methods separately describe ectodomain-Fc binding assays and a purified Nb20-mGlyR-RGS7-Gbeta5 cryo-EM sample; the ectodomain assay reagent must not be substituted for the deposited receptor construct. The publication gives an Nb20 sequence and describes tagged recombinant production.",
+      "pdbIdsExplicitlyNamed": [
+        "9VOR",
+        "9VOS"
+      ],
+      "fullTextReviewComplete": false,
+      "scope": "Role, construct/sample and deposition review; structural Results and images excluded from this reviewer output."
+    },
+    {
+      "sourceId": "LGR4_NB21_2025",
+      "doi": "10.1038/s41467-025-63410-5",
+      "pmcid": "PMC12462478",
+      "url": "https://www.nature.com/articles/s41467-025-63410-5",
+      "provenancePath": "lgr4-additional-prose-provenance.json",
+      "roleAndConstructFacts": "Methods specify recombinant LGR4 residues 25–833 with an HA signal sequence and Flag tag; full-length LGR4 was used separately for cellular assays. LGR4-selective VHH panning and NB52/NB21 production are described. MB52 combines the NB52 VHH with circularly permuted H. pylori HopQ adhesin scaffold, reported as 58 kDa.",
+      "pdbIdsExplicitlyNamed": [
+        "8XT9",
+        "8XUM",
+        "9S37"
+      ],
+      "fullTextReviewComplete": false,
+      "exposureCaveatPath": "exposure-caveat.json"
+    },
+    {
+      "sourceId": "LGR4_NB18_2025",
+      "doi": "10.1038/s41467-025-61545-z",
+      "pmcid": "PMC12234955",
+      "url": "https://www.nature.com/articles/s41467-025-61545-z",
+      "provenancePath": "lgr4-additional-prose-provenance.json",
+      "roleAndConstructFacts": "Methods specify LGR4 residues 25–833 with HA signal and Flag tags, receptor-selective VHH preparation, and MB52 generation by fusion of NB52 to circularly permuted HopQ adhesin scaffold, reported as 45 kDa. A nonstructural introductory sentence identifies NB18 as LGR4-targeting. The two papers differ in their reported scaffold mass; this review preserves that discrepancy.",
+      "pdbIdsExplicitlyNamed": [
+        "9UOK",
+        "9KHH",
+        "9KGK"
+      ],
+      "fullTextReviewComplete": false,
+      "exposureCaveatPath": "exposure-caveat.json"
+    }
+  ],
+  "reviews": [
+    {
+      "pdbId": "8XT9",
+      "sourceId": "LGR4_NB21_2025",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED_WITH_UNRESOLVED_CONSTRUCTS",
+      "frozenEntryTitle": "structure of LGR4",
+      "frozenPrimaryCitation": {
+        "doi": "10.1038/s41467-025-63410-5",
+        "pmid": "40998774",
+        "title": "Cryo-EM structure of the full-length LGR4-RSPOs complex and a targeting nanobody for anti-obesity therapy."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41467-025-63410-5",
+        "pmcid": "PMC12462478",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "entryDisposition": "PENDING_CONSTRUCT_AND_EXPOSURE_ADJUDICATION",
+      "entrySourceReviewComplete": false,
+      "candidateRoleClass": "SOURCE_SUPPORTED_RECEPTOR_TARGETING_NANOBODY_OR_DERIVED_MEGABODY",
+      "frozenPolymerEntityCount": 2,
+      "allFrozenPolymerEntities": [
+        {
+          "authAsymIds": [
+            "C"
+          ],
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8XT9_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9BXB1",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 951,
+          "sequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECEPTOR_CONSTRUCT"
+        },
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "description": "MB52",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8XT9_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "A0A0F6YEF6",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 110,
+          "sequenceSha256": "4af784aa04f4f6acb6a5a00c33131b7a78fd50f0f3b61df2a2843d6755253d40",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus bactrianus",
+              "taxonomyId": "9837"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "numberedHeavyDomainCallCount": 1,
+            "priorityTier": 1,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "receptorEntityId": "1",
+      "receptorAccession": "Q9BXB1",
+      "depositionLinkage": {
+        "pdbIdExplicitlyNamed": true,
+        "sourceId": "LGR4_NB21_2025",
+        "entityNumberSource": "Archived RCSB metadata; publication does not establish deposited entity numbering."
+      },
+      "topologyCheck": {
+        "classification": "SEQUENCE_ONLY_METADATA_COMPARISON",
+        "canonicalSourcePath": "raw/uniprot-q9bxb1-transmembrane.json",
+        "canonicalSequenceLength": 951,
+        "canonicalSequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4",
+        "matchingBlocksAtLeast10Residues": [
+          {
+            "canonicalStart1": 1,
+            "depositedStart1": 1,
+            "length": 951
+          }
+        ],
+        "transmembraneSegments": [
+          {
+            "description": "Helical; Name=1",
+            "canonicalRange1Inclusive": [
+              545,
+              565
+            ],
+            "sequenceSha256": "4416428eb62180fc61da5e1763ceb4974351891e65b5adf9b609aa877f4484de",
+            "exactDepositedRange1Inclusive": [
+              545,
+              565
+            ]
+          },
+          {
+            "description": "Helical; Name=2",
+            "canonicalRange1Inclusive": [
+              576,
+              596
+            ],
+            "sequenceSha256": "6d7923d80d6668b6c031863ec850bf1584109380bb06241b728442a95877638b",
+            "exactDepositedRange1Inclusive": [
+              576,
+              596
+            ]
+          },
+          {
+            "description": "Helical; Name=3",
+            "canonicalRange1Inclusive": [
+              621,
+              641
+            ],
+            "sequenceSha256": "dd83637d3591c850894c16a8071bf50e232250a6d0ec554a7b7a2ac0b4950e1e",
+            "exactDepositedRange1Inclusive": [
+              621,
+              641
+            ]
+          },
+          {
+            "description": "Helical; Name=4",
+            "canonicalRange1Inclusive": [
+              662,
+              682
+            ],
+            "sequenceSha256": "1579a16a329b1bfb950c67e1366137098d0c2a29324020386546e5514aa503dc",
+            "exactDepositedRange1Inclusive": [
+              662,
+              682
+            ]
+          },
+          {
+            "description": "Helical; Name=5",
+            "canonicalRange1Inclusive": [
+              704,
+              724
+            ],
+            "sequenceSha256": "9a67dca0aaf9f3b779bda009515dfe6540cab38172d9c18aeb618b9b18c2f641",
+            "exactDepositedRange1Inclusive": [
+              704,
+              724
+            ]
+          },
+          {
+            "description": "Helical; Name=6",
+            "canonicalRange1Inclusive": [
+              757,
+              777
+            ],
+            "sequenceSha256": "c6c734bbb199b7030f97f30fb9d783b314f5dfa6c2a3ee3e2f6439b6a14b9aaa",
+            "exactDepositedRange1Inclusive": [
+              757,
+              777
+            ]
+          },
+          {
+            "description": "Helical; Name=7",
+            "canonicalRange1Inclusive": [
+              784,
+              804
+            ],
+            "sequenceSha256": "a56f6dac00cd71c169059d0e06b09d090c9da4beaad0bd0d949a517953d1d494",
+            "exactDepositedRange1Inclusive": [
+              784,
+              804
+            ]
+          }
+        ],
+        "allSevenAnnotatedTransmembraneSegmentSequencesPresent": true,
+        "interpretation": "Deposited sequence is not an isolated ectodomain. Presence of seven TM sequences does not establish experimental construct equivalence, resolved coordinates or holdout eligibility."
+      },
+      "exactDevelopmentConnections": [],
+      "developmentCheckScope": {
+        "registryNodeCount": 17,
+        "checks": [
+          "Receptor UniProt accession",
+          "Source-resolved primary DOI",
+          "Every deposited polymer full-sequence SHA-256",
+          "Frozen numbering-screen exact reference results"
+        ],
+        "noMatchDoesNotCertifyDisjointness": true,
+        "formalPairwiseGraphComplete": false
+      },
+      "unresolvedOrCorrectedDiscrepancies": [
+        "Experimental and deposited construct identity remains unreconciled. Methods 25–833 plus tags do not directly reproduce this deposited receptor sequence.",
+        "MB52 is experimentally described as an NB52-scaffold fusion. Short deposited antibody sequences cannot establish absence of the scaffold in the experimental complex.",
+        "Native contact/orientation prose was inadvertently exposed; formal exposure adjudication is required."
+      ],
+      "exposureBlocked": true,
+      "exposureCaveatPath": "exposure-caveat.json",
+      "entryNativeContactProseExposedInThisReview": true,
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "labelsAccessed": false
+    },
+    {
+      "pdbId": "8XUM",
+      "sourceId": "LGR4_NB21_2025",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED_WITH_UNRESOLVED_CONSTRUCTS",
+      "frozenEntryTitle": "Structure of LGR4 with RSPO2",
+      "frozenPrimaryCitation": {
+        "doi": "10.1038/s41467-025-63410-5",
+        "pmid": "40998774",
+        "title": "Cryo-EM structure of the full-length LGR4-RSPOs complex and a targeting nanobody for anti-obesity therapy."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41467-025-63410-5",
+        "pmcid": "PMC12462478",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "entryDisposition": "PENDING_CONSTRUCT_AND_EXPOSURE_ADJUDICATION",
+      "entrySourceReviewComplete": false,
+      "candidateRoleClass": "SOURCE_SUPPORTED_RECEPTOR_TARGETING_NANOBODY_OR_DERIVED_MEGABODY",
+      "frozenPolymerEntityCount": 3,
+      "allFrozenPolymerEntities": [
+        {
+          "authAsymIds": [
+            "C"
+          ],
+          "description": "MB52",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8XUM_1",
+          "referenceSequences": [],
+          "sequenceLength": 110,
+          "sequenceSha256": "4af784aa04f4f6acb6a5a00c33131b7a78fd50f0f3b61df2a2843d6755253d40",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus bactrianus",
+              "taxonomyId": "9837"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "numberedHeavyDomainCallCount": 1,
+            "priorityTier": 1,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        },
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8XUM_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9BXB1",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 951,
+          "sequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECEPTOR_CONSTRUCT"
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "description": "R-spondin-2",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8XUM_3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q6UXX9",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 243,
+          "sequenceSha256": "a0b17c6ce0efb6550b7451bd18aba46f3df2698f27df869bbbad84ea0dd77af1",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "ANNOTATED_PARTNER_POLYMER"
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "receptorEntityId": "2",
+      "receptorAccession": "Q9BXB1",
+      "depositionLinkage": {
+        "pdbIdExplicitlyNamed": true,
+        "sourceId": "LGR4_NB21_2025",
+        "entityNumberSource": "Archived RCSB metadata; publication does not establish deposited entity numbering."
+      },
+      "topologyCheck": {
+        "classification": "SEQUENCE_ONLY_METADATA_COMPARISON",
+        "canonicalSourcePath": "raw/uniprot-q9bxb1-transmembrane.json",
+        "canonicalSequenceLength": 951,
+        "canonicalSequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4",
+        "matchingBlocksAtLeast10Residues": [
+          {
+            "canonicalStart1": 1,
+            "depositedStart1": 1,
+            "length": 951
+          }
+        ],
+        "transmembraneSegments": [
+          {
+            "description": "Helical; Name=1",
+            "canonicalRange1Inclusive": [
+              545,
+              565
+            ],
+            "sequenceSha256": "4416428eb62180fc61da5e1763ceb4974351891e65b5adf9b609aa877f4484de",
+            "exactDepositedRange1Inclusive": [
+              545,
+              565
+            ]
+          },
+          {
+            "description": "Helical; Name=2",
+            "canonicalRange1Inclusive": [
+              576,
+              596
+            ],
+            "sequenceSha256": "6d7923d80d6668b6c031863ec850bf1584109380bb06241b728442a95877638b",
+            "exactDepositedRange1Inclusive": [
+              576,
+              596
+            ]
+          },
+          {
+            "description": "Helical; Name=3",
+            "canonicalRange1Inclusive": [
+              621,
+              641
+            ],
+            "sequenceSha256": "dd83637d3591c850894c16a8071bf50e232250a6d0ec554a7b7a2ac0b4950e1e",
+            "exactDepositedRange1Inclusive": [
+              621,
+              641
+            ]
+          },
+          {
+            "description": "Helical; Name=4",
+            "canonicalRange1Inclusive": [
+              662,
+              682
+            ],
+            "sequenceSha256": "1579a16a329b1bfb950c67e1366137098d0c2a29324020386546e5514aa503dc",
+            "exactDepositedRange1Inclusive": [
+              662,
+              682
+            ]
+          },
+          {
+            "description": "Helical; Name=5",
+            "canonicalRange1Inclusive": [
+              704,
+              724
+            ],
+            "sequenceSha256": "9a67dca0aaf9f3b779bda009515dfe6540cab38172d9c18aeb618b9b18c2f641",
+            "exactDepositedRange1Inclusive": [
+              704,
+              724
+            ]
+          },
+          {
+            "description": "Helical; Name=6",
+            "canonicalRange1Inclusive": [
+              757,
+              777
+            ],
+            "sequenceSha256": "c6c734bbb199b7030f97f30fb9d783b314f5dfa6c2a3ee3e2f6439b6a14b9aaa",
+            "exactDepositedRange1Inclusive": [
+              757,
+              777
+            ]
+          },
+          {
+            "description": "Helical; Name=7",
+            "canonicalRange1Inclusive": [
+              784,
+              804
+            ],
+            "sequenceSha256": "a56f6dac00cd71c169059d0e06b09d090c9da4beaad0bd0d949a517953d1d494",
+            "exactDepositedRange1Inclusive": [
+              784,
+              804
+            ]
+          }
+        ],
+        "allSevenAnnotatedTransmembraneSegmentSequencesPresent": true,
+        "interpretation": "Deposited sequence is not an isolated ectodomain. Presence of seven TM sequences does not establish experimental construct equivalence, resolved coordinates or holdout eligibility."
+      },
+      "exactDevelopmentConnections": [],
+      "developmentCheckScope": {
+        "registryNodeCount": 17,
+        "checks": [
+          "Receptor UniProt accession",
+          "Source-resolved primary DOI",
+          "Every deposited polymer full-sequence SHA-256",
+          "Frozen numbering-screen exact reference results"
+        ],
+        "noMatchDoesNotCertifyDisjointness": true,
+        "formalPairwiseGraphComplete": false
+      },
+      "unresolvedOrCorrectedDiscrepancies": [
+        "Experimental and deposited construct identity remains unreconciled. Methods 25–833 plus tags do not directly reproduce this deposited receptor sequence.",
+        "MB52 is experimentally described as an NB52-scaffold fusion. Short deposited antibody sequences cannot establish absence of the scaffold in the experimental complex.",
+        "Native contact/orientation prose was inadvertently exposed; formal exposure adjudication is required."
+      ],
+      "exposureBlocked": true,
+      "exposureCaveatPath": "exposure-caveat.json",
+      "entryNativeContactProseExposedInThisReview": true,
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "labelsAccessed": false
+    },
+    {
+      "pdbId": "9KGK",
+      "sourceId": "LGR4_NB18_2025",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED_WITH_UNRESOLVED_CONSTRUCTS",
+      "frozenEntryTitle": "Structure of the complex of LGR4 with NB18",
+      "frozenPrimaryCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structure of the complex of LGR4 with NB18"
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41467-025-61545-z",
+        "pmcid": "PMC12234955",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "entryDisposition": "PENDING_CONSTRUCT_AND_EXPOSURE_ADJUDICATION",
+      "entrySourceReviewComplete": false,
+      "candidateRoleClass": "SOURCE_SUPPORTED_RECEPTOR_TARGETING_NANOBODY_OR_DERIVED_MEGABODY",
+      "frozenPolymerEntityCount": 3,
+      "allFrozenPolymerEntities": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9KGK_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9BXB1",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 950,
+          "sequenceSha256": "b8b59019b5be4dcf30ebbf7f7dda3878431a4a3ce570fb1446c1b5160a77f0e8",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECEPTOR_CONSTRUCT"
+        },
+        {
+          "authAsymIds": [
+            "E"
+          ],
+          "description": "MB52",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9KGK_2",
+          "referenceSequences": [],
+          "sequenceLength": 148,
+          "sequenceSha256": "9e670ddabd80871b78cc72cff690f7f65fd18529ef0788a925a3f10e5dc0dcd8",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus dromedarius",
+              "taxonomyId": "9838"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "numberedHeavyDomainCallCount": 1,
+            "priorityTier": 2,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 1
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "description": "NB18",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9KGK_3",
+          "referenceSequences": [],
+          "sequenceLength": 166,
+          "sequenceSha256": "09781c0029b86d2048a21c68b66d0a8743e0ef60cf1415e8428c82f0e739b608",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus dromedarius",
+              "taxonomyId": "9838"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "numberedHeavyDomainCallCount": 1,
+            "priorityTier": 1,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "receptorEntityId": "1",
+      "receptorAccession": "Q9BXB1",
+      "depositionLinkage": {
+        "pdbIdExplicitlyNamed": true,
+        "sourceId": "LGR4_NB18_2025",
+        "entityNumberSource": "Archived RCSB metadata; publication does not establish deposited entity numbering."
+      },
+      "topologyCheck": {
+        "classification": "SEQUENCE_ONLY_METADATA_COMPARISON",
+        "canonicalSourcePath": "raw/uniprot-q9bxb1-transmembrane.json",
+        "canonicalSequenceLength": 951,
+        "canonicalSequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4",
+        "matchingBlocksAtLeast10Residues": [
+          {
+            "canonicalStart1": 1,
+            "depositedStart1": 1,
+            "length": 950
+          }
+        ],
+        "transmembraneSegments": [
+          {
+            "description": "Helical; Name=1",
+            "canonicalRange1Inclusive": [
+              545,
+              565
+            ],
+            "sequenceSha256": "4416428eb62180fc61da5e1763ceb4974351891e65b5adf9b609aa877f4484de",
+            "exactDepositedRange1Inclusive": [
+              545,
+              565
+            ]
+          },
+          {
+            "description": "Helical; Name=2",
+            "canonicalRange1Inclusive": [
+              576,
+              596
+            ],
+            "sequenceSha256": "6d7923d80d6668b6c031863ec850bf1584109380bb06241b728442a95877638b",
+            "exactDepositedRange1Inclusive": [
+              576,
+              596
+            ]
+          },
+          {
+            "description": "Helical; Name=3",
+            "canonicalRange1Inclusive": [
+              621,
+              641
+            ],
+            "sequenceSha256": "dd83637d3591c850894c16a8071bf50e232250a6d0ec554a7b7a2ac0b4950e1e",
+            "exactDepositedRange1Inclusive": [
+              621,
+              641
+            ]
+          },
+          {
+            "description": "Helical; Name=4",
+            "canonicalRange1Inclusive": [
+              662,
+              682
+            ],
+            "sequenceSha256": "1579a16a329b1bfb950c67e1366137098d0c2a29324020386546e5514aa503dc",
+            "exactDepositedRange1Inclusive": [
+              662,
+              682
+            ]
+          },
+          {
+            "description": "Helical; Name=5",
+            "canonicalRange1Inclusive": [
+              704,
+              724
+            ],
+            "sequenceSha256": "9a67dca0aaf9f3b779bda009515dfe6540cab38172d9c18aeb618b9b18c2f641",
+            "exactDepositedRange1Inclusive": [
+              704,
+              724
+            ]
+          },
+          {
+            "description": "Helical; Name=6",
+            "canonicalRange1Inclusive": [
+              757,
+              777
+            ],
+            "sequenceSha256": "c6c734bbb199b7030f97f30fb9d783b314f5dfa6c2a3ee3e2f6439b6a14b9aaa",
+            "exactDepositedRange1Inclusive": [
+              757,
+              777
+            ]
+          },
+          {
+            "description": "Helical; Name=7",
+            "canonicalRange1Inclusive": [
+              784,
+              804
+            ],
+            "sequenceSha256": "a56f6dac00cd71c169059d0e06b09d090c9da4beaad0bd0d949a517953d1d494",
+            "exactDepositedRange1Inclusive": [
+              784,
+              804
+            ]
+          }
+        ],
+        "allSevenAnnotatedTransmembraneSegmentSequencesPresent": true,
+        "interpretation": "Deposited sequence is not an isolated ectodomain. Presence of seven TM sequences does not establish experimental construct equivalence, resolved coordinates or holdout eligibility."
+      },
+      "exactDevelopmentConnections": [],
+      "developmentCheckScope": {
+        "registryNodeCount": 17,
+        "checks": [
+          "Receptor UniProt accession",
+          "Source-resolved primary DOI",
+          "Every deposited polymer full-sequence SHA-256",
+          "Frozen numbering-screen exact reference results"
+        ],
+        "noMatchDoesNotCertifyDisjointness": true,
+        "formalPairwiseGraphComplete": false
+      },
+      "unresolvedOrCorrectedDiscrepancies": [
+        "Experimental and deposited construct identity remains unreconciled. Methods 25–833 plus tags do not directly reproduce this deposited receptor sequence.",
+        "MB52 is experimentally described as an NB52-scaffold fusion. Short deposited antibody sequences cannot establish absence of the scaffold in the experimental complex.",
+        "Native contact/orientation prose was inadvertently exposed; formal exposure adjudication is required."
+      ],
+      "exposureBlocked": true,
+      "exposureCaveatPath": "exposure-caveat.json",
+      "entryNativeContactProseExposedInThisReview": true,
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "labelsAccessed": false
+    },
+    {
+      "pdbId": "9KHH",
+      "sourceId": "LGR4_NB18_2025",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED_WITH_UNRESOLVED_CONSTRUCTS",
+      "frozenEntryTitle": "Structure of the complex of LGR4 with Norrin (2:2)",
+      "frozenPrimaryCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structure of the complex of LGR4 with Norrin (2:2)"
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41467-025-61545-z",
+        "pmcid": "PMC12234955",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "entryDisposition": "PENDING_CONSTRUCT_AND_EXPOSURE_ADJUDICATION",
+      "entrySourceReviewComplete": false,
+      "candidateRoleClass": "SOURCE_SUPPORTED_RECEPTOR_TARGETING_NANOBODY_OR_DERIVED_MEGABODY",
+      "frozenPolymerEntityCount": 3,
+      "allFrozenPolymerEntities": [
+        {
+          "authAsymIds": [
+            "A",
+            "B"
+          ],
+          "description": "MB52",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A",
+            "D"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9KHH_1",
+          "referenceSequences": [],
+          "sequenceLength": 556,
+          "sequenceSha256": "8812c44a8fb96ff3278c0a09db9c6edeb0734c1f8a620b9a61b425c2f0aa6e90",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus dromedarius",
+              "taxonomyId": "9838"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "numberedHeavyDomainCallCount": 2,
+            "priorityTier": 2,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 1
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        },
+        {
+          "authAsymIds": [
+            "E",
+            "F"
+          ],
+          "description": "Norrin,Immunoglobulin gamma-1 heavy chain",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B",
+            "C"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9KHH_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q00604",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 409,
+          "sequenceSha256": "859140b3705863139432eb57b39e6ccfdea0c01b7756597d4bf8d092e86908ae",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 4,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "ANNOTATED_PARTNER_POLYMER"
+        },
+        {
+          "authAsymIds": [
+            "C",
+            "D"
+          ],
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "entityId": "3",
+          "labelAsymIds": [
+            "E",
+            "F"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9KHH_3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9BXB1",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 954,
+          "sequenceSha256": "986e42b20c94fa080a7717713cafe7c866381ff8aedaf71269b77f8298a00d29",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECEPTOR_CONSTRUCT"
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "receptorEntityId": "3",
+      "receptorAccession": "Q9BXB1",
+      "depositionLinkage": {
+        "pdbIdExplicitlyNamed": true,
+        "sourceId": "LGR4_NB18_2025",
+        "entityNumberSource": "Archived RCSB metadata; publication does not establish deposited entity numbering."
+      },
+      "topologyCheck": {
+        "classification": "SEQUENCE_ONLY_METADATA_COMPARISON",
+        "canonicalSourcePath": "raw/uniprot-q9bxb1-transmembrane.json",
+        "canonicalSequenceLength": 951,
+        "canonicalSequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4",
+        "matchingBlocksAtLeast10Residues": [
+          {
+            "canonicalStart1": 24,
+            "depositedStart1": 16,
+            "length": 928
+          }
+        ],
+        "transmembraneSegments": [
+          {
+            "description": "Helical; Name=1",
+            "canonicalRange1Inclusive": [
+              545,
+              565
+            ],
+            "sequenceSha256": "4416428eb62180fc61da5e1763ceb4974351891e65b5adf9b609aa877f4484de",
+            "exactDepositedRange1Inclusive": [
+              537,
+              557
+            ]
+          },
+          {
+            "description": "Helical; Name=2",
+            "canonicalRange1Inclusive": [
+              576,
+              596
+            ],
+            "sequenceSha256": "6d7923d80d6668b6c031863ec850bf1584109380bb06241b728442a95877638b",
+            "exactDepositedRange1Inclusive": [
+              568,
+              588
+            ]
+          },
+          {
+            "description": "Helical; Name=3",
+            "canonicalRange1Inclusive": [
+              621,
+              641
+            ],
+            "sequenceSha256": "dd83637d3591c850894c16a8071bf50e232250a6d0ec554a7b7a2ac0b4950e1e",
+            "exactDepositedRange1Inclusive": [
+              613,
+              633
+            ]
+          },
+          {
+            "description": "Helical; Name=4",
+            "canonicalRange1Inclusive": [
+              662,
+              682
+            ],
+            "sequenceSha256": "1579a16a329b1bfb950c67e1366137098d0c2a29324020386546e5514aa503dc",
+            "exactDepositedRange1Inclusive": [
+              654,
+              674
+            ]
+          },
+          {
+            "description": "Helical; Name=5",
+            "canonicalRange1Inclusive": [
+              704,
+              724
+            ],
+            "sequenceSha256": "9a67dca0aaf9f3b779bda009515dfe6540cab38172d9c18aeb618b9b18c2f641",
+            "exactDepositedRange1Inclusive": [
+              696,
+              716
+            ]
+          },
+          {
+            "description": "Helical; Name=6",
+            "canonicalRange1Inclusive": [
+              757,
+              777
+            ],
+            "sequenceSha256": "c6c734bbb199b7030f97f30fb9d783b314f5dfa6c2a3ee3e2f6439b6a14b9aaa",
+            "exactDepositedRange1Inclusive": [
+              749,
+              769
+            ]
+          },
+          {
+            "description": "Helical; Name=7",
+            "canonicalRange1Inclusive": [
+              784,
+              804
+            ],
+            "sequenceSha256": "a56f6dac00cd71c169059d0e06b09d090c9da4beaad0bd0d949a517953d1d494",
+            "exactDepositedRange1Inclusive": [
+              776,
+              796
+            ]
+          }
+        ],
+        "allSevenAnnotatedTransmembraneSegmentSequencesPresent": true,
+        "interpretation": "Deposited sequence is not an isolated ectodomain. Presence of seven TM sequences does not establish experimental construct equivalence, resolved coordinates or holdout eligibility."
+      },
+      "exactDevelopmentConnections": [],
+      "developmentCheckScope": {
+        "registryNodeCount": 17,
+        "checks": [
+          "Receptor UniProt accession",
+          "Source-resolved primary DOI",
+          "Every deposited polymer full-sequence SHA-256",
+          "Frozen numbering-screen exact reference results"
+        ],
+        "noMatchDoesNotCertifyDisjointness": true,
+        "formalPairwiseGraphComplete": false
+      },
+      "unresolvedOrCorrectedDiscrepancies": [
+        "Experimental and deposited construct identity remains unreconciled. Methods 25–833 plus tags do not directly reproduce this deposited receptor sequence.",
+        "MB52 is experimentally described as an NB52-scaffold fusion. Short deposited antibody sequences cannot establish absence of the scaffold in the experimental complex.",
+        "Native contact/orientation prose was inadvertently exposed; formal exposure adjudication is required."
+      ],
+      "exposureBlocked": true,
+      "exposureCaveatPath": "exposure-caveat.json",
+      "entryNativeContactProseExposedInThisReview": true,
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "labelsAccessed": false
+    },
+    {
+      "pdbId": "9S37",
+      "sourceId": "LGR4_NB21_2025",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED_WITH_UNRESOLVED_CONSTRUCTS",
+      "frozenEntryTitle": "Structure of LGR4 with NB21",
+      "frozenPrimaryCitation": {
+        "doi": "10.1038/s41467-025-63410-5",
+        "pmid": "40998774",
+        "title": "Cryo-EM structure of the full-length LGR4-RSPOs complex and a targeting nanobody for anti-obesity therapy."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41467-025-63410-5",
+        "pmcid": "PMC12462478",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "entryDisposition": "PENDING_CONSTRUCT_AND_EXPOSURE_ADJUDICATION",
+      "entrySourceReviewComplete": false,
+      "candidateRoleClass": "SOURCE_SUPPORTED_RECEPTOR_TARGETING_NANOBODY_OR_DERIVED_MEGABODY",
+      "frozenPolymerEntityCount": 3,
+      "allFrozenPolymerEntities": [
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "description": "NB21",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9S37_1",
+          "referenceSequences": [],
+          "sequenceLength": 125,
+          "sequenceSha256": "f9bebf012c7b2e1d14540bc29a5053a2ede5da1d2a6df726063ba87c8d55b6c6",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus bactrianus",
+              "taxonomyId": "9837"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "numberedHeavyDomainCallCount": 1,
+            "priorityTier": 1,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        },
+        {
+          "authAsymIds": [
+            "D"
+          ],
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9S37_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9BXB1",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 792,
+          "sequenceSha256": "6277fa37848f454db32ac180d606ebdc946efd5daeb8731a5426b2210b68177a",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECEPTOR_CONSTRUCT"
+        },
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "description": "NB52",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9S37_3",
+          "referenceSequences": [],
+          "sequenceLength": 94,
+          "sequenceSha256": "429f96cc9bcfc0acd3389071194f32f1acd9f9c1db3cfd8501b8a5741fa5e28d",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus bactrianus",
+              "taxonomyId": "9837"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 4,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "receptorEntityId": "2",
+      "receptorAccession": "Q9BXB1",
+      "depositionLinkage": {
+        "pdbIdExplicitlyNamed": true,
+        "sourceId": "LGR4_NB21_2025",
+        "entityNumberSource": "Archived RCSB metadata; publication does not establish deposited entity numbering."
+      },
+      "topologyCheck": {
+        "classification": "SEQUENCE_ONLY_METADATA_COMPARISON",
+        "canonicalSourcePath": "raw/uniprot-q9bxb1-transmembrane.json",
+        "canonicalSequenceLength": 951,
+        "canonicalSequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4",
+        "matchingBlocksAtLeast10Residues": [
+          {
+            "canonicalStart1": 32,
+            "depositedStart1": 1,
+            "length": 46
+          },
+          {
+            "canonicalStart1": 79,
+            "depositedStart1": 48,
+            "length": 395
+          },
+          {
+            "canonicalStart1": 475,
+            "depositedStart1": 444,
+            "length": 223
+          },
+          {
+            "canonicalStart1": 699,
+            "depositedStart1": 668,
+            "length": 125
+          }
+        ],
+        "transmembraneSegments": [
+          {
+            "description": "Helical; Name=1",
+            "canonicalRange1Inclusive": [
+              545,
+              565
+            ],
+            "sequenceSha256": "4416428eb62180fc61da5e1763ceb4974351891e65b5adf9b609aa877f4484de",
+            "exactDepositedRange1Inclusive": [
+              514,
+              534
+            ]
+          },
+          {
+            "description": "Helical; Name=2",
+            "canonicalRange1Inclusive": [
+              576,
+              596
+            ],
+            "sequenceSha256": "6d7923d80d6668b6c031863ec850bf1584109380bb06241b728442a95877638b",
+            "exactDepositedRange1Inclusive": [
+              545,
+              565
+            ]
+          },
+          {
+            "description": "Helical; Name=3",
+            "canonicalRange1Inclusive": [
+              621,
+              641
+            ],
+            "sequenceSha256": "dd83637d3591c850894c16a8071bf50e232250a6d0ec554a7b7a2ac0b4950e1e",
+            "exactDepositedRange1Inclusive": [
+              590,
+              610
+            ]
+          },
+          {
+            "description": "Helical; Name=4",
+            "canonicalRange1Inclusive": [
+              662,
+              682
+            ],
+            "sequenceSha256": "1579a16a329b1bfb950c67e1366137098d0c2a29324020386546e5514aa503dc",
+            "exactDepositedRange1Inclusive": [
+              631,
+              651
+            ]
+          },
+          {
+            "description": "Helical; Name=5",
+            "canonicalRange1Inclusive": [
+              704,
+              724
+            ],
+            "sequenceSha256": "9a67dca0aaf9f3b779bda009515dfe6540cab38172d9c18aeb618b9b18c2f641",
+            "exactDepositedRange1Inclusive": [
+              673,
+              693
+            ]
+          },
+          {
+            "description": "Helical; Name=6",
+            "canonicalRange1Inclusive": [
+              757,
+              777
+            ],
+            "sequenceSha256": "c6c734bbb199b7030f97f30fb9d783b314f5dfa6c2a3ee3e2f6439b6a14b9aaa",
+            "exactDepositedRange1Inclusive": [
+              726,
+              746
+            ]
+          },
+          {
+            "description": "Helical; Name=7",
+            "canonicalRange1Inclusive": [
+              784,
+              804
+            ],
+            "sequenceSha256": "a56f6dac00cd71c169059d0e06b09d090c9da4beaad0bd0d949a517953d1d494",
+            "exactDepositedRange1Inclusive": [
+              753,
+              773
+            ]
+          }
+        ],
+        "allSevenAnnotatedTransmembraneSegmentSequencesPresent": true,
+        "interpretation": "Deposited sequence is not an isolated ectodomain. Presence of seven TM sequences does not establish experimental construct equivalence, resolved coordinates or holdout eligibility."
+      },
+      "exactDevelopmentConnections": [],
+      "developmentCheckScope": {
+        "registryNodeCount": 17,
+        "checks": [
+          "Receptor UniProt accession",
+          "Source-resolved primary DOI",
+          "Every deposited polymer full-sequence SHA-256",
+          "Frozen numbering-screen exact reference results"
+        ],
+        "noMatchDoesNotCertifyDisjointness": true,
+        "formalPairwiseGraphComplete": false
+      },
+      "unresolvedOrCorrectedDiscrepancies": [
+        "Experimental and deposited construct identity remains unreconciled. Methods 25–833 plus tags do not directly reproduce this deposited receptor sequence.",
+        "MB52 is experimentally described as an NB52-scaffold fusion. Short deposited antibody sequences cannot establish absence of the scaffold in the experimental complex.",
+        "Native contact/orientation prose was inadvertently exposed; formal exposure adjudication is required."
+      ],
+      "exposureBlocked": true,
+      "exposureCaveatPath": "exposure-caveat.json",
+      "entryNativeContactProseExposedInThisReview": true,
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "labelsAccessed": false
+    },
+    {
+      "pdbId": "9S38",
+      "sourceId": null,
+      "reviewStatus": "INVENTORY_REVIEWED_PRIMARY_LINK_PENDING",
+      "frozenEntryTitle": "Structure of LGR4 with NB21",
+      "frozenPrimaryCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structure of LGR4 with NB21"
+      },
+      "resolvedPrimaryCitation": null,
+      "entryDisposition": "PENDING_CONSTRUCT_AND_EXPOSURE_ADJUDICATION",
+      "entrySourceReviewComplete": false,
+      "candidateRoleClass": "RELATED_SEQUENCE_LEAD_ROLE_AND_PUBLICATION_PENDING",
+      "frozenPolymerEntityCount": 3,
+      "allFrozenPolymerEntities": [
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "description": "NB21",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9S38_1",
+          "referenceSequences": [],
+          "sequenceLength": 125,
+          "sequenceSha256": "f9bebf012c7b2e1d14540bc29a5053a2ede5da1d2a6df726063ba87c8d55b6c6",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus bactrianus",
+              "taxonomyId": "9837"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "numberedHeavyDomainCallCount": 1,
+            "priorityTier": 1,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        },
+        {
+          "authAsymIds": [
+            "D"
+          ],
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9S38_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9BXB1",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 792,
+          "sequenceSha256": "6277fa37848f454db32ac180d606ebdc946efd5daeb8731a5426b2210b68177a",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECEPTOR_CONSTRUCT"
+        },
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "description": "NB52",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9S38_3",
+          "referenceSequences": [],
+          "sequenceLength": 94,
+          "sequenceSha256": "429f96cc9bcfc0acd3389071194f32f1acd9f9c1db3cfd8501b8a5741fa5e28d",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus bactrianus",
+              "taxonomyId": "9837"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 4,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "receptorEntityId": "2",
+      "receptorAccession": "Q9BXB1",
+      "depositionLinkage": {
+        "pdbIdExplicitlyNamed": false,
+        "sourceId": null,
+        "entityNumberSource": "Archived RCSB metadata; publication does not establish deposited entity numbering."
+      },
+      "topologyCheck": {
+        "classification": "SEQUENCE_ONLY_METADATA_COMPARISON",
+        "canonicalSourcePath": "raw/uniprot-q9bxb1-transmembrane.json",
+        "canonicalSequenceLength": 951,
+        "canonicalSequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4",
+        "matchingBlocksAtLeast10Residues": [
+          {
+            "canonicalStart1": 32,
+            "depositedStart1": 1,
+            "length": 46
+          },
+          {
+            "canonicalStart1": 79,
+            "depositedStart1": 48,
+            "length": 395
+          },
+          {
+            "canonicalStart1": 475,
+            "depositedStart1": 444,
+            "length": 223
+          },
+          {
+            "canonicalStart1": 699,
+            "depositedStart1": 668,
+            "length": 125
+          }
+        ],
+        "transmembraneSegments": [
+          {
+            "description": "Helical; Name=1",
+            "canonicalRange1Inclusive": [
+              545,
+              565
+            ],
+            "sequenceSha256": "4416428eb62180fc61da5e1763ceb4974351891e65b5adf9b609aa877f4484de",
+            "exactDepositedRange1Inclusive": [
+              514,
+              534
+            ]
+          },
+          {
+            "description": "Helical; Name=2",
+            "canonicalRange1Inclusive": [
+              576,
+              596
+            ],
+            "sequenceSha256": "6d7923d80d6668b6c031863ec850bf1584109380bb06241b728442a95877638b",
+            "exactDepositedRange1Inclusive": [
+              545,
+              565
+            ]
+          },
+          {
+            "description": "Helical; Name=3",
+            "canonicalRange1Inclusive": [
+              621,
+              641
+            ],
+            "sequenceSha256": "dd83637d3591c850894c16a8071bf50e232250a6d0ec554a7b7a2ac0b4950e1e",
+            "exactDepositedRange1Inclusive": [
+              590,
+              610
+            ]
+          },
+          {
+            "description": "Helical; Name=4",
+            "canonicalRange1Inclusive": [
+              662,
+              682
+            ],
+            "sequenceSha256": "1579a16a329b1bfb950c67e1366137098d0c2a29324020386546e5514aa503dc",
+            "exactDepositedRange1Inclusive": [
+              631,
+              651
+            ]
+          },
+          {
+            "description": "Helical; Name=5",
+            "canonicalRange1Inclusive": [
+              704,
+              724
+            ],
+            "sequenceSha256": "9a67dca0aaf9f3b779bda009515dfe6540cab38172d9c18aeb618b9b18c2f641",
+            "exactDepositedRange1Inclusive": [
+              673,
+              693
+            ]
+          },
+          {
+            "description": "Helical; Name=6",
+            "canonicalRange1Inclusive": [
+              757,
+              777
+            ],
+            "sequenceSha256": "c6c734bbb199b7030f97f30fb9d783b314f5dfa6c2a3ee3e2f6439b6a14b9aaa",
+            "exactDepositedRange1Inclusive": [
+              726,
+              746
+            ]
+          },
+          {
+            "description": "Helical; Name=7",
+            "canonicalRange1Inclusive": [
+              784,
+              804
+            ],
+            "sequenceSha256": "a56f6dac00cd71c169059d0e06b09d090c9da4beaad0bd0d949a517953d1d494",
+            "exactDepositedRange1Inclusive": [
+              753,
+              773
+            ]
+          }
+        ],
+        "allSevenAnnotatedTransmembraneSegmentSequencesPresent": true,
+        "interpretation": "Deposited sequence is not an isolated ectodomain. Presence of seven TM sequences does not establish experimental construct equivalence, resolved coordinates or holdout eligibility."
+      },
+      "exactDevelopmentConnections": [],
+      "developmentCheckScope": {
+        "registryNodeCount": 17,
+        "checks": [
+          "Receptor UniProt accession",
+          "Source-resolved primary DOI",
+          "Every deposited polymer full-sequence SHA-256",
+          "Frozen numbering-screen exact reference results"
+        ],
+        "noMatchDoesNotCertifyDisjointness": true,
+        "formalPairwiseGraphComplete": false
+      },
+      "unresolvedOrCorrectedDiscrepancies": [
+        "Experimental and deposited construct identity remains unreconciled. Methods 25–833 plus tags do not directly reproduce this deposited receptor sequence.",
+        "MB52 is experimentally described as an NB52-scaffold fusion. Short deposited antibody sequences cannot establish absence of the scaffold in the experimental complex.",
+        "Native contact/orientation prose was inadvertently exposed; formal exposure adjudication is required.",
+        "Exact accession absent from both reviewed primary deposition statements; matching all three 9S37 polymer sequences supports relatedness but does not prove publication attribution."
+      ],
+      "exposureBlocked": true,
+      "exposureCaveatPath": "exposure-caveat.json",
+      "entryNativeContactProseExposedInThisReview": true,
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "labelsAccessed": false
+    },
+    {
+      "pdbId": "9VOR",
+      "sourceId": "MGLYR_NB20_2026",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED_WITH_UNRESOLVED_CONSTRUCTS",
+      "frozenEntryTitle": "Cryo-EM Structure of Human GPR158 Bound to Nanobody Nb20",
+      "frozenPrimaryCitation": {
+        "doi": "10.1038/s41467-026-68339-x",
+        "pmid": "41588006",
+        "title": "Targeting mGlyR with nanobodies for depression."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41467-026-68339-x",
+        "pmcid": "PMC12834959",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "entryDisposition": "PENDING_CONSTRUCT_AND_FORMAL_GRAPH_REVIEW",
+      "entrySourceReviewComplete": false,
+      "candidateRoleClass": "SOURCE_SUPPORTED_RECEPTOR_TARGETING_NANOBODY_OR_DERIVED_MEGABODY",
+      "frozenPolymerEntityCount": 2,
+      "allFrozenPolymerEntities": [
+        {
+          "authAsymIds": [
+            "A",
+            "B"
+          ],
+          "description": "Metabotropic glycine receptor",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A",
+            "B"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9VOR_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q5T848",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 781,
+          "sequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECEPTOR_CONSTRUCT"
+        },
+        {
+          "authAsymIds": [
+            "C",
+            "E"
+          ],
+          "description": "Nb20",
+          "entityId": "2",
+          "labelAsymIds": [
+            "C",
+            "D"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9VOR_2",
+          "referenceSequences": [],
+          "sequenceLength": 150,
+          "sequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "numberedHeavyDomainCallCount": 1,
+            "priorityTier": 1,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "receptorEntityId": "1",
+      "receptorAccession": "Q5T848",
+      "depositionLinkage": {
+        "pdbIdExplicitlyNamed": true,
+        "sourceId": "MGLYR_NB20_2026",
+        "entityNumberSource": "Archived RCSB metadata; publication does not establish deposited entity numbering."
+      },
+      "topologyCheck": {
+        "classification": "SEQUENCE_ONLY_METADATA_COMPARISON",
+        "canonicalSourcePath": "raw/uniprot-q5t848-transmembrane.json",
+        "canonicalSequenceLength": 1215,
+        "canonicalSequenceSha256": "d2c04732c71ad1d652cf8a6982c5cb330c1701dbfe16b5be071ee72b7b0980b8",
+        "matchingBlocksAtLeast10Residues": [
+          {
+            "canonicalStart1": 1,
+            "depositedStart1": 1,
+            "length": 775
+          }
+        ],
+        "transmembraneSegments": [
+          {
+            "description": "Helical; Name=1",
+            "canonicalRange1Inclusive": [
+              418,
+              439
+            ],
+            "sequenceSha256": "d4429728cf6cd971dcfc8776a75a235dd92e09e52c63cb5a4ad4cec32fbe2d5a",
+            "exactDepositedRange1Inclusive": [
+              418,
+              439
+            ]
+          },
+          {
+            "description": "Helical; Name=2",
+            "canonicalRange1Inclusive": [
+              452,
+              474
+            ],
+            "sequenceSha256": "e0845436850e3206fb930c5ab7072ce82c11dc2cc81e876868d5d3ef6726e1f8",
+            "exactDepositedRange1Inclusive": [
+              452,
+              474
+            ]
+          },
+          {
+            "description": "Helical; Name=3",
+            "canonicalRange1Inclusive": [
+              479,
+              501
+            ],
+            "sequenceSha256": "681cf8712a9876bcc234afc1034a6651b18808a0abc09094e0bb4ab6acb3b1b2",
+            "exactDepositedRange1Inclusive": [
+              479,
+              501
+            ]
+          },
+          {
+            "description": "Helical; Name=4",
+            "canonicalRange1Inclusive": [
+              526,
+              547
+            ],
+            "sequenceSha256": "8244c2a911fc33061e82acc449d3c4b674c8753d6ab0381993d9f5883924dbce",
+            "exactDepositedRange1Inclusive": [
+              526,
+              547
+            ]
+          },
+          {
+            "description": "Helical; Name=5",
+            "canonicalRange1Inclusive": [
+              577,
+              597
+            ],
+            "sequenceSha256": "698c1e797e891a7196fc0cd2ca61e73b16bace7264c174aeb964dce42c2f2e5f",
+            "exactDepositedRange1Inclusive": [
+              577,
+              597
+            ]
+          },
+          {
+            "description": "Helical; Name=6",
+            "canonicalRange1Inclusive": [
+              612,
+              633
+            ],
+            "sequenceSha256": "c15d6ddbd67c10b1859148ae0f041eb5c463610b5e253eb26f99d19ffe8d813f",
+            "exactDepositedRange1Inclusive": [
+              612,
+              633
+            ]
+          },
+          {
+            "description": "Helical; Name=7",
+            "canonicalRange1Inclusive": [
+              643,
+              664
+            ],
+            "sequenceSha256": "f0f570650f63d27dbe1e6223fd98b789f23e65f24cb960a110f72f13aa24e8a1",
+            "exactDepositedRange1Inclusive": [
+              643,
+              664
+            ]
+          }
+        ],
+        "allSevenAnnotatedTransmembraneSegmentSequencesPresent": true,
+        "interpretation": "Deposited sequence is not an isolated ectodomain. Presence of seven TM sequences does not establish experimental construct equivalence, resolved coordinates or holdout eligibility."
+      },
+      "exactDevelopmentConnections": [],
+      "developmentCheckScope": {
+        "registryNodeCount": 17,
+        "checks": [
+          "Receptor UniProt accession",
+          "Source-resolved primary DOI",
+          "Every deposited polymer full-sequence SHA-256",
+          "Frozen numbering-screen exact reference results"
+        ],
+        "noMatchDoesNotCertifyDisjointness": true,
+        "formalPairwiseGraphComplete": false
+      },
+      "unresolvedOrCorrectedDiscrepancies": [
+        "Deposited receptor is canonical residues 1–775 plus LEVLFQ, whereas the canonical sequence is 1215 residues. Sample construct and tags require reconciliation with referenced preparation methods.",
+        "Deposited Nb20 has an N-terminal purification/cleavage prefix; the paper also describes C-terminal tags for recombinant nanobody assays. These reagent descriptions do not by themselves fully identify the cryo-EM construct."
+      ],
+      "exposureBlocked": false,
+      "exposureCaveatPath": null,
+      "entryNativeContactProseExposedInThisReview": false,
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "labelsAccessed": false
+    },
+    {
+      "pdbId": "9VOS",
+      "sourceId": "MGLYR_NB20_2026",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED_WITH_UNRESOLVED_CONSTRUCTS",
+      "frozenEntryTitle": "Cryo-EM Structure of GPR158 in Complex with RGS7-Gbeta5 and Nanobody Nb20",
+      "frozenPrimaryCitation": {
+        "doi": "10.1038/s41467-026-68339-x",
+        "pmid": "41588006",
+        "title": "Targeting mGlyR with nanobodies for depression."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41467-026-68339-x",
+        "pmcid": "PMC12834959",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "entryDisposition": "PENDING_CONSTRUCT_AND_FORMAL_GRAPH_REVIEW",
+      "entrySourceReviewComplete": false,
+      "candidateRoleClass": "SOURCE_SUPPORTED_RECEPTOR_TARGETING_NANOBODY_OR_DERIVED_MEGABODY",
+      "frozenPolymerEntityCount": 4,
+      "allFrozenPolymerEntities": [
+        {
+          "authAsymIds": [
+            "A",
+            "B"
+          ],
+          "description": "Metabotropic glycine receptor",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A",
+            "B"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9VOS_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q5T848",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 781,
+          "sequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECEPTOR_CONSTRUCT"
+        },
+        {
+          "authAsymIds": [
+            "C"
+          ],
+          "description": "Isoform 2 of Regulator of G-protein signaling 7",
+          "entityId": "2",
+          "labelAsymIds": [
+            "C"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9VOS_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P49802",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 469,
+          "sequenceSha256": "4ce9cd64aee861cc1f991498f67c539bef5c1e9a9ff49e039b4af0978495575c",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "ANNOTATED_PARTNER_POLYMER"
+        },
+        {
+          "authAsymIds": [
+            "D"
+          ],
+          "description": "Guanine nucleotide-binding protein subunit beta-5",
+          "entityId": "3",
+          "labelAsymIds": [
+            "D"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9VOS_3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62881",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequenceLength": 353,
+          "sequenceSha256": "3bbca653acaa5e0ebced223904c4a577ff749d9fb237a05d9026aa2b190df4bc",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "numberedHeavyDomainCallCount": 0,
+            "priorityTier": 5,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "ANNOTATED_PARTNER_POLYMER"
+        },
+        {
+          "authAsymIds": [
+            "H",
+            "I"
+          ],
+          "description": "Nb20",
+          "entityId": "4",
+          "labelAsymIds": [
+            "E",
+            "F"
+          ],
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9VOS_4",
+          "referenceSequences": [],
+          "sequenceLength": 150,
+          "sequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ],
+          "sequenceScreen": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "numberedHeavyDomainCallCount": 1,
+            "priorityTier": 1,
+            "developmentSequenceMatch": false,
+            "referenceMatchCount": 0
+          },
+          "accountedComponent": "RECOMBINANT_ANTIBODY_OR_ANTIBODY_CONSTRUCT_PENDING"
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "receptorEntityId": "1",
+      "receptorAccession": "Q5T848",
+      "depositionLinkage": {
+        "pdbIdExplicitlyNamed": true,
+        "sourceId": "MGLYR_NB20_2026",
+        "entityNumberSource": "Archived RCSB metadata; publication does not establish deposited entity numbering."
+      },
+      "topologyCheck": {
+        "classification": "SEQUENCE_ONLY_METADATA_COMPARISON",
+        "canonicalSourcePath": "raw/uniprot-q5t848-transmembrane.json",
+        "canonicalSequenceLength": 1215,
+        "canonicalSequenceSha256": "d2c04732c71ad1d652cf8a6982c5cb330c1701dbfe16b5be071ee72b7b0980b8",
+        "matchingBlocksAtLeast10Residues": [
+          {
+            "canonicalStart1": 1,
+            "depositedStart1": 1,
+            "length": 775
+          }
+        ],
+        "transmembraneSegments": [
+          {
+            "description": "Helical; Name=1",
+            "canonicalRange1Inclusive": [
+              418,
+              439
+            ],
+            "sequenceSha256": "d4429728cf6cd971dcfc8776a75a235dd92e09e52c63cb5a4ad4cec32fbe2d5a",
+            "exactDepositedRange1Inclusive": [
+              418,
+              439
+            ]
+          },
+          {
+            "description": "Helical; Name=2",
+            "canonicalRange1Inclusive": [
+              452,
+              474
+            ],
+            "sequenceSha256": "e0845436850e3206fb930c5ab7072ce82c11dc2cc81e876868d5d3ef6726e1f8",
+            "exactDepositedRange1Inclusive": [
+              452,
+              474
+            ]
+          },
+          {
+            "description": "Helical; Name=3",
+            "canonicalRange1Inclusive": [
+              479,
+              501
+            ],
+            "sequenceSha256": "681cf8712a9876bcc234afc1034a6651b18808a0abc09094e0bb4ab6acb3b1b2",
+            "exactDepositedRange1Inclusive": [
+              479,
+              501
+            ]
+          },
+          {
+            "description": "Helical; Name=4",
+            "canonicalRange1Inclusive": [
+              526,
+              547
+            ],
+            "sequenceSha256": "8244c2a911fc33061e82acc449d3c4b674c8753d6ab0381993d9f5883924dbce",
+            "exactDepositedRange1Inclusive": [
+              526,
+              547
+            ]
+          },
+          {
+            "description": "Helical; Name=5",
+            "canonicalRange1Inclusive": [
+              577,
+              597
+            ],
+            "sequenceSha256": "698c1e797e891a7196fc0cd2ca61e73b16bace7264c174aeb964dce42c2f2e5f",
+            "exactDepositedRange1Inclusive": [
+              577,
+              597
+            ]
+          },
+          {
+            "description": "Helical; Name=6",
+            "canonicalRange1Inclusive": [
+              612,
+              633
+            ],
+            "sequenceSha256": "c15d6ddbd67c10b1859148ae0f041eb5c463610b5e253eb26f99d19ffe8d813f",
+            "exactDepositedRange1Inclusive": [
+              612,
+              633
+            ]
+          },
+          {
+            "description": "Helical; Name=7",
+            "canonicalRange1Inclusive": [
+              643,
+              664
+            ],
+            "sequenceSha256": "f0f570650f63d27dbe1e6223fd98b789f23e65f24cb960a110f72f13aa24e8a1",
+            "exactDepositedRange1Inclusive": [
+              643,
+              664
+            ]
+          }
+        ],
+        "allSevenAnnotatedTransmembraneSegmentSequencesPresent": true,
+        "interpretation": "Deposited sequence is not an isolated ectodomain. Presence of seven TM sequences does not establish experimental construct equivalence, resolved coordinates or holdout eligibility."
+      },
+      "exactDevelopmentConnections": [],
+      "developmentCheckScope": {
+        "registryNodeCount": 17,
+        "checks": [
+          "Receptor UniProt accession",
+          "Source-resolved primary DOI",
+          "Every deposited polymer full-sequence SHA-256",
+          "Frozen numbering-screen exact reference results"
+        ],
+        "noMatchDoesNotCertifyDisjointness": true,
+        "formalPairwiseGraphComplete": false
+      },
+      "unresolvedOrCorrectedDiscrepancies": [
+        "Deposited receptor is canonical residues 1–775 plus LEVLFQ, whereas the canonical sequence is 1215 residues. Sample construct and tags require reconciliation with referenced preparation methods.",
+        "Deposited Nb20 has an N-terminal purification/cleavage prefix; the paper also describes C-terminal tags for recombinant nanobody assays. These reagent descriptions do not by themselves fully identify the cryo-EM construct."
+      ],
+      "exposureBlocked": false,
+      "exposureCaveatPath": null,
+      "entryNativeContactProseExposedInThisReview": false,
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "labelsAccessed": false
+    }
+  ],
+  "withinReviewExactRelations": [
+    {
+      "pdbIds": [
+        "8XT9",
+        "8XUM"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY",
+        "PRIMARY_DOI_IDENTITY",
+        "EXACT_FULL_POLYMER_SEQUENCE"
+      ],
+      "sharedSequenceHashes": [
+        "4af784aa04f4f6acb6a5a00c33131b7a78fd50f0f3b61df2a2843d6755253d40",
+        "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4"
+      ],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "8XT9",
+        "9KGK"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "8XT9",
+        "9KHH"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "8XT9",
+        "9S37"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY",
+        "PRIMARY_DOI_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "8XT9",
+        "9S38"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "8XUM",
+        "9KGK"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "8XUM",
+        "9KHH"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "8XUM",
+        "9S37"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY",
+        "PRIMARY_DOI_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "8XUM",
+        "9S38"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "9KGK",
+        "9KHH"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY",
+        "PRIMARY_DOI_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "9KGK",
+        "9S37"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "9KGK",
+        "9S38"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "9KHH",
+        "9S37"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "9KHH",
+        "9S38"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY"
+      ],
+      "sharedSequenceHashes": [],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "9S37",
+        "9S38"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY",
+        "EXACT_FULL_POLYMER_SEQUENCE"
+      ],
+      "sharedSequenceHashes": [
+        "429f96cc9bcfc0acd3389071194f32f1acd9f9c1db3cfd8501b8a5741fa5e28d",
+        "6277fa37848f454db32ac180d606ebdc946efd5daeb8731a5426b2210b68177a",
+        "f9bebf012c7b2e1d14540bc29a5053a2ede5da1d2a6df726063ba87c8d55b6c6"
+      ],
+      "formalGraphAuthority": false
+    },
+    {
+      "pdbIds": [
+        "9VOR",
+        "9VOS"
+      ],
+      "evidenceTypes": [
+        "RECEPTOR_UNIPROT_IDENTITY",
+        "PRIMARY_DOI_IDENTITY",
+        "EXACT_FULL_POLYMER_SEQUENCE"
+      ],
+      "sharedSequenceHashes": [
+        "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc",
+        "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc"
+      ],
+      "formalGraphAuthority": false
+    }
+  ],
+  "mglyrNb20PublicationSequenceComparison": {
+    "classification": "EXACT_SEQUENCE_COMPARISON_TO_CDNA_METHODS",
+    "publishedSequenceLength": 131,
+    "publishedSequenceSha256": "dc98dd242f5929991a7780a20d2aa613270104a7b9c4e4d1431d721ab9b5b38b",
+    "depositedSequenceLength": 150,
+    "depositedSequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc",
+    "exactPublishedSequenceWithoutInitiatorMethionineIsDepositedSuffix": true,
+    "depositedPrefix": "MGSSHHHHHHHHLEVLFQGP",
+    "scope": "Sequence-supported identity; not experimental tag reconciliation or interface certification."
+  },
+  "additionalPrimaryAccessionLead": {
+    "pdbId": "9UOK",
+    "sourceId": "LGR4_NB18_2025",
+    "primaryDepositionLinkExact": true,
+    "inventoryIncludedHere": false,
+    "exposureCaveatApplies": true,
+    "followup": "Cross-check discovery inventory before any further source review."
+  },
+  "broaderDiscoveryComplete": false,
+  "wholeCensusComponentUpperBound": null,
+  "targetFreezePermitted": false,
+  "summary": {
+    "entriesReviewed": 8,
+    "completePolymerInventories": 8,
+    "polymerEntitiesReviewed": 23,
+    "exactPrimaryDepositionLinks": 7,
+    "newlyRecoveredCitationsForPreviouslyUncitedEntries": [
+      "9KGK",
+      "9KHH"
+    ],
+    "primaryCitationUnresolved": [
+      "9S38"
+    ],
+    "pendingEntries": [
+      "8XT9",
+      "8XUM",
+      "9KGK",
+      "9KHH",
+      "9S37",
+      "9S38",
+      "9VOR",
+      "9VOS"
+    ],
+    "exposureBlockedReviewedEntries": [
+      "8XT9",
+      "8XUM",
+      "9KGK",
+      "9KHH",
+      "9S37",
+      "9S38"
+    ],
+    "formalEligibleEntriesAdded": 0,
+    "formalIndependentComponentsAdded": 0,
+    "exactDevelopmentConnectionCount": 0,
+    "interpretation": "Two receptor-linked discovery groups, not eight independent components. Exact development checks do not establish full leakage disjointness. All entries remain pending; LGR4 entries additionally require exposure adjudication."
+  }
+}

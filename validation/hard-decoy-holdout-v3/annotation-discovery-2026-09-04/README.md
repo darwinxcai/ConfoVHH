@@ -1,0 +1,9 @@
+# Global annotation and source-taxonomy discovery
+
+No release-date restriction was used. Eight independent searches were repeated twice: four verified GPCR Pfam families (PF00001, PF00002, PF00003, PF01534), two immunoglobulin Pfam families (PF07686, PF00047), and Camelidae source lineage by NCBI ID 9835 and by name. All queries return entry IDs. GPCR and antibody-source predicates were intersected locally across separate result sets, so a receptor and binder can belong to different polymer entities.
+
+The combined intersection contains 386 entries. Metadata already existed for 244; 142 new entries were requested twice, with 0 unresolved. The known GPCR–VHH complex 3P0G and four GPCR-family controls were recovered.
+
+This is a bounded search of documented annotation families and one source lineage. Immunoglobulin domains also occur in non-antibody proteins; camelid source is not VHH identity. Synthetic, humanized, engineered, unannotated or incompletely annotated chains can be missed. Known GPCR–VHH controls 3P0G and 3SN6 were checked separately against the selected immunoglobulin families and camelid lineage; their results are retained in the summary, including any annotation sensitivity failures. The four GPCR Pfam families do not establish coverage of every GPCR class, fungal receptor, or isolated/truncated receptor domain. Entry intersections establish co-occurrence only, not direct receptor binding or a usable experimental reference pose.
+
+Raw pages, requests, dates/statuses, repeated hit sets, authorities and hashes are retained. New metadata uses the existing sequence-only GraphQL contract and does not inherit receptor mapping from an unrelated entry. Candidate eligibility and leakage independence remain pending. The broader census is incomplete and the protocol remains DRAFT/BLOCKED.

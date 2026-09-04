@@ -1,0 +1,32 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {parseGraphqlResponse,canonical} from '/workspace/scratch/746bb3989941/ConfoVHH/scripts/hard-decoy/v3-entry-metadata.mjs';
+const root='/workspace/scratch/746bb3989941/ConfoVHH';
+const out=root+'/validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/publication-closure';
+const sha=x=>createHash('sha256').update(x).digest('hex');
+const contractPath='validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json';
+const contractBytes=await readFile(root+'/'+contractPath),contract=JSON.parse(contractBytes);
+const queryBytes=await readFile(root+'/'+contract.rcsb.queryFile),query=queryBytes.toString();
+if(sha(queryBytes)!==contract.rcsb.querySha256)throw Error('query drift');
+const ids=['9NNZ','9NOZ','9UOK'];const body=JSON.stringify({query,variables:{ids}})+'\n';
+await mkdir(out,{recursive:true});await writeFile(out+'/request.json',body);
+const records=[],versions=[];
+const oldRecords=JSON.parse(await readFile(out+'/captures.json','utf8'));
+for(let repeat=1;repeat<=2;repeat++){
+ let raw; const previous=oldRecords.find(x=>x.repeat===repeat);
+ if(previous){raw=await readFile(out+'/'+previous.responseFile);if(sha(raw)!==previous.responseSha256||previous.requestSha256!==sha(body)||previous.status!==200)throw Error('capture mismatch');records.push(previous);}
+ else {
+ const start=new Date().toISOString();const r=await fetch(contract.rcsb.endpoint,{method:'POST',headers:{'content-type':'application/json'},body,signal:AbortSignal.timeout(60000)});raw=Buffer.from(await r.arrayBuffer());
+ const filename=`raw-repeat-${repeat}.json`;await writeFile(out+'/'+filename,raw);
+ records.push({repeat,requestedIds:ids,method:'POST',requestedUrl:contract.rcsb.endpoint,finalUrl:r.url,startedAt:start,finishedAt:new Date().toISOString(),status:r.status,contentType:r.headers.get('content-type'),serverDate:r.headers.get('date'),requestFile:'request.json',requestSha256:sha(body),responseFile:filename,responseBytes:raw.length,responseSha256:sha(raw)});
+ await writeFile(out+'/captures.json',JSON.stringify(records,null,2)+'\n');
+ if(r.status!==200)throw Error('status '+r.status);
+ }
+ if(/_atom_site|"Cartn_[xyz]"|\b(?:DockQ|Fnat|iRMSD|LRMSD)\b/u.test(raw.toString()))throw Error('forbidden payload');
+ const sourceMap=new Map(ids.map(pdbId=>[pdbId,{pdbId,rcsbQueryIds:['C.3_EXACT_PRIMARY_DEPOSITION_CLOSURE']} ]));
+ versions.push(parseGraphqlResponse(raw.toString(),{batchIndex:1,ids},sourceMap,new Map(ids.map(pdbId=>[pdbId,{}])),contract));
+}
+if(canonical(versions[0])!==canonical(versions[1]))throw Error('Repeat mismatch');
+await writeFile(out+'/entries.jsonl',versions[0].map(canonical).join('\n')+'\n');
+await writeFile(out+'/manifest.json',JSON.stringify({schemaVersion:'1.0.0',requestedIds:ids,repeatCount:2,normalizedRepeatAgreement:true,entryCount:versions[0].length,polymerEntityCount:versions[0].reduce((n,e)=>n+e.polymerEntities.length,0),normalizationContractPath:contractPath,normalizationContractSha256:sha(contractBytes),queryFile:contract.rcsb.queryFile,querySha256:sha(queryBytes),normalizerPath:'scripts/hard-decoy/v3-entry-metadata.mjs',normalizerSha256:sha(await readFile(root+'/scripts/hard-decoy/v3-entry-metadata.mjs')),collectorScriptSha256:sha(await readFile('/tmp/confovhh-capture-publication-closure.mjs')),targetFreezePermitted:false,formalExclusionAuthority:false,formalLeakageGraphAuthority:false,nativeCoordinatesInspected:false},null,2)+'\n');
+console.log(JSON.stringify({entries:versions[0].length,polymerEntities:versions[0].reduce((n,e)=>n+e.polymerEntities.length,0),repeatAgreement:true}));

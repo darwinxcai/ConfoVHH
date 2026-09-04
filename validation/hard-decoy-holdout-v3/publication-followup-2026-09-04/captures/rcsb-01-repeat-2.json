@@ -1,0 +1,42 @@
+{
+  "request": {
+    "requestId": "rcsb-01-repeat-2",
+    "kind": "RCSB_PRIMARY_CITATION_ONLY",
+    "pdbIds": [
+      "5V54",
+      "6GT3",
+      "6H7N",
+      "6KP6",
+      "6KUW",
+      "6KUX",
+      "6KUY",
+      "6NWE",
+      "6PEL",
+      "6PGS",
+      "6PH7",
+      "6WGT",
+      "6WH4",
+      "6WHA",
+      "6WQA",
+      "7DHI",
+      "7DHR",
+      "7EZH",
+      "7EZK",
+      "7EZM"
+    ],
+    "repeat": 2,
+    "method": "GET",
+    "url": "https://data.rcsb.org/graphql?query=query+%7B+entries%28entry_ids%3A+%5B%225V54%22%2C+%226GT3%22%2C+%226H7N%22%2C+%226KP6%22%2C+%226KUW%22%2C+%226KUX%22%2C+%226KUY%22%2C+%226NWE%22%2C+%226PEL%22%2C+%226PGS%22%2C+%226PH7%22%2C+%226WGT%22%2C+%226WH4%22%2C+%226WHA%22%2C+%226WQA%22%2C+%227DHI%22%2C+%227DHR%22%2C+%227EZH%22%2C+%227EZK%22%2C+%227EZM%22%5D%29+%7B+rcsb_id+rcsb_primary_citation+%7B+title+pdbx_database_id_DOI+pdbx_database_id_PubMed+year+journal_abbrev+journal_volume+page_first+page_last+rcsb_authors+%7D+%7D+%7D"
+  },
+  "startedUtc": "2026-09-04T22:47:30.169799+00:00",
+  "status": 200,
+  "rawFile": "raw/rcsb-01-repeat-2.json",
+  "finalUrl": "https://data.rcsb.org/graphql?query=query+%7B+entries%28entry_ids%3A+%5B%225V54%22%2C+%226GT3%22%2C+%226H7N%22%2C+%226KP6%22%2C+%226KUW%22%2C+%226KUX%22%2C+%226KUY%22%2C+%226NWE%22%2C+%226PEL%22%2C+%226PGS%22%2C+%226PH7%22%2C+%226WGT%22%2C+%226WH4%22%2C+%226WHA%22%2C+%226WQA%22%2C+%227DHI%22%2C+%227DHR%22%2C+%227EZH%22%2C+%227EZK%22%2C+%227EZM%22%5D%29+%7B+rcsb_id+rcsb_primary_citation+%7B+title+pdbx_database_id_DOI+pdbx_database_id_PubMed+year+journal_abbrev+journal_volume+page_first+page_last+rcsb_authors+%7D+%7D+%7D",
+  "contentType": "application/json",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "f8c3bead58097fbc0d1085990cbb149e92db3df96f6f82c0d273315e7b5d50cb",
+  "bytes": 9469,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:47:40.504840+00:00"
+}

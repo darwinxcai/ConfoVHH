@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0.0",
+  "requestedIds": [
+    "9NNZ",
+    "9NOZ",
+    "9UOK"
+  ],
+  "repeatCount": 2,
+  "normalizedRepeatAgreement": true,
+  "entryCount": 3,
+  "polymerEntityCount": 7,
+  "normalizationContractPath": "validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json",
+  "normalizationContractSha256": "bbf10ef8ebf057dde42969fbd166bcbd2bd437902a76064d7ad8fcea9faa16b7",
+  "queryFile": "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql",
+  "querySha256": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+  "normalizerPath": "scripts/hard-decoy/v3-entry-metadata.mjs",
+  "normalizerSha256": "77afbf8b485976fd902de4f8377dcf9f02e90d93328a1da06546c8d7aae7c562",
+  "collectorScriptSha256": "b1efdda42f4f3482e4822435f9630515f1912ce1dfbac5dfcd51c6b94e201d3b",
+  "targetFreezePermitted": false,
+  "formalExclusionAuthority": false,
+  "formalLeakageGraphAuthority": false,
+  "nativeCoordinatesInspected": false,
+  "collectorScriptFile": "collector-source.txt",
+  "collectorScriptIsArchivedExecutionProvenance": true,
+  "normalizationNote": "Outside-index entries receive explicit empty GPCRdb metadata rows, preserving nulls. No preferred receptor chain or experimental state is inherited from another accession."
+}

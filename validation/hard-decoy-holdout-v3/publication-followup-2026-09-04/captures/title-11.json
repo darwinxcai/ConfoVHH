@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-11",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "8WVU"
+    ],
+    "query": "TITLE:\"Cryo-EM structure of LGR4 in complex with Rspo1 and RNF43\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Cryo-EM+structure+of+LGR4+in+complex+with+Rspo1+and+RNF43%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:47.840916+00:00",
+  "status": 200,
+  "rawFile": "raw/title-11.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Cryo-EM+structure+of+LGR4+in+complex+with+Rspo1+and+RNF43%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "1f43e6dcfdc884dd4368cfd00cf0ab7784d7c4f7013d2c5cb111e5c9d1cc18eb",
+  "bytes": 234,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:03.007026+00:00"
+}

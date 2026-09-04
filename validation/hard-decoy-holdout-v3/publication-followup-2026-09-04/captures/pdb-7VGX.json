@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-7VGX",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "7VGX"
+    ],
+    "query": "\"7VGX\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227VGX%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:47:59.931040+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-7VGX.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227VGX%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "83fd3276c8406cf6f4fd256f56a742f7495bdb6fd89be40b7bee6211d10e2d11",
+  "bytes": 8097,
+  "reportedHitCount": 9,
+  "retrievedRecordCount": 9,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:48:08.909669+00:00"
+}

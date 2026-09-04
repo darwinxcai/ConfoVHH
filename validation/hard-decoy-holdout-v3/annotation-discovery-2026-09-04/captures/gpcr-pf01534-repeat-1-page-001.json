@@ -1,0 +1,19 @@
+{
+  "specification": {
+    "name": "gpcr-pf01534-repeat-1-page-001",
+    "url": "https://search.rcsb.org/rcsbsearch/v2/query?json=%7B%22query%22%3A%7B%22type%22%3A%22group%22%2C%22logical_operator%22%3A%22and%22%2C%22nodes%22%3A%5B%7B%22type%22%3A%22terminal%22%2C%22service%22%3A%22text%22%2C%22parameters%22%3A%7B%22attribute%22%3A%22rcsb_polymer_entity_annotation.type%22%2C%22operator%22%3A%22exact_match%22%2C%22value%22%3A%22Pfam%22%7D%7D%2C%7B%22type%22%3A%22terminal%22%2C%22service%22%3A%22text%22%2C%22parameters%22%3A%7B%22attribute%22%3A%22rcsb_polymer_entity_annotation.annotation_id%22%2C%22operator%22%3A%22exact_match%22%2C%22value%22%3A%22PF01534%22%7D%7D%5D%7D%2C%22return_type%22%3A%22entry%22%2C%22request_options%22%3A%7B%22paginate%22%3A%7B%22start%22%3A0%2C%22rows%22%3A1000%7D%2C%22results_content_type%22%3A%5B%22experimental%22%5D%2C%22sort%22%3A%5B%7B%22sort_by%22%3A%22rcsb_id%22%2C%22direction%22%3A%22asc%22%7D%5D%7D%7D",
+    "method": "GET",
+    "requestFile": "requests/gpcr-pf01534-repeat-1-page-001.json",
+    "requestSha256": "d12008e32401a29e87b5da6b8dfbc062ffd1a777242540daa0d14da4e7b7a93e",
+    "rawFile": "raw/gpcr-pf01534-repeat-1-page-001.json",
+    "captureFile": "captures/gpcr-pf01534-repeat-1-page-001.json"
+  },
+  "startedUtc": "2026-09-04T22:47:57.484Z",
+  "completedUtc": "2026-09-04T22:47:58.817Z",
+  "status": 200,
+  "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query?json=%7B%22query%22%3A%7B%22type%22%3A%22group%22%2C%22logical_operator%22%3A%22and%22%2C%22nodes%22%3A%5B%7B%22type%22%3A%22terminal%22%2C%22service%22%3A%22text%22%2C%22parameters%22%3A%7B%22attribute%22%3A%22rcsb_polymer_entity_annotation.type%22%2C%22operator%22%3A%22exact_match%22%2C%22value%22%3A%22Pfam%22%7D%7D%2C%7B%22type%22%3A%22terminal%22%2C%22service%22%3A%22text%22%2C%22parameters%22%3A%7B%22attribute%22%3A%22rcsb_polymer_entity_annotation.annotation_id%22%2C%22operator%22%3A%22exact_match%22%2C%22value%22%3A%22PF01534%22%7D%7D%5D%7D%2C%22return_type%22%3A%22entry%22%2C%22request_options%22%3A%7B%22paginate%22%3A%7B%22start%22%3A0%2C%22rows%22%3A1000%7D%2C%22results_content_type%22%3A%5B%22experimental%22%5D%2C%22sort%22%3A%5B%7B%22sort_by%22%3A%22rcsb_id%22%2C%22direction%22%3A%22asc%22%7D%5D%7D%7D",
+  "contentType": "application/json",
+  "dateHeader": "Fri, 04 Sep 2026 22:47:58 GMT",
+  "sha256": "93502932ba49feafdc72ede447dff28e3496030b545c82a0a14cb381a1170849",
+  "bytes": 1947
+}

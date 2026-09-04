@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-7NA7",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "7NA7"
+    ],
+    "query": "\"7NA7\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227NA7%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:47:49.659282+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-7NA7.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227NA7%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "14ff383bb1020839c0d3bd5969905def238dba9452136c7a82b7306f7b0f945f",
+  "bytes": 13593,
+  "reportedHitCount": 16,
+  "retrievedRecordCount": 16,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:47:59.685212+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "request": {
+    "requestId": "title-24",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "8WWH",
+      "8WWI",
+      "8WWJ"
+    ],
+    "query": "TITLE:\"Structural insights into ligand recognition and activation of melanin-concentrating hormone receptor MCHR1\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Structural+insights+into+ligand+recognition+and+activation+of+melanin-concentrating+hormone+receptor+MCHR1%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:19.670145+00:00",
+  "status": 200,
+  "rawFile": "raw/title-24.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Structural+insights+into+ligand+recognition+and+activation+of+melanin-concentrating+hormone+receptor+MCHR1%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "e7019582ca39875e5291785242fdb366ff264cade2dee70aed0702fdb88a3fcd",
+  "bytes": 942,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:28.627388+00:00"
+}

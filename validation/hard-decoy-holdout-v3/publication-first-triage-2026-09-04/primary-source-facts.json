@@ -1,0 +1,32 @@
+{
+  "facts": [
+    {
+      "pmid": "29208950",
+      "sourceFile": "sources/diffraction-method-paper.xml",
+      "section": "Materials and Methods / PDB data mining and curation",
+      "fact": "The study mines existing PDB structure-factor data for comparative analysis."
+    },
+    {
+      "pmid": "35379919",
+      "sourceFile": "sources/cryoem-method-paper.xml",
+      "section": "Data availability and experimental dataset descriptions",
+      "fact": "The evaluated data include reused ribosome datasets and PTCH1-TI23 dataset EMPIAR-10328, alongside EMD-3508, EMD-2660 and EMPIAR-10028. These are not new GPCR-VHH depositions."
+    },
+    {
+      "pmid": "35858343",
+      "sourceFile": "sources/gpbar-paper.xml",
+      "section": "Data Availability",
+      "fact": "The authors deposit the R399-bound GPBAR-G complex under PDB 7XTQ and EMDB EMD-33452."
+    },
+    {
+      "pmid": "29507218",
+      "sourceFile": "sources/europepmc-core.json",
+      "section": "Abstract",
+      "fact": "The study reports molecular-dynamics simulation, compared with an existing experimental structure.",
+      "fullTextRetrievalGap": "The attempted Europe PMC fullTextXML request returned HTTP 404; no full-text absence/deposition conclusion is made from that failed response."
+    }
+  ],
+  "inheritedPriorityReviewCount": 5,
+  "inheritedPriorityReviewPath": "validation/hard-decoy-holdout-v3/publication-accession-review-2026-09-04/priority-reviews.json",
+  "figuresOrCoordinateFilesFetched": false
+}

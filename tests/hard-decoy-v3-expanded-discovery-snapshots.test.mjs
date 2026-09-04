@@ -43,7 +43,7 @@ test("the actual 1,429-entry complement capture replays offline with three missi
   assertBlocked(result);
 });
 
-test("both actual sequence-screen packages reconstruct every saved entity and retain non-authority", { timeout: 120_000 }, async (t) => {
+test("all actual sequence-screen packages reconstruct every saved entity and retain non-authority", { timeout: 120_000 }, async (t) => {
   offline(t);
   const complement = await verifyGpcrdbComplementScreen({ repositoryRoot: ROOT, inputDirectory: snapshot("gpcrdb-complement-metadata"), outputDirectory: snapshot("gpcrdb-complement-screen") });
   assert.equal(complement.inputEntryCount, 1426);
@@ -59,7 +59,14 @@ test("both actual sequence-screen packages reconstruct every saved entity and re
   assert.equal(recent.distinctPresentSequencesScreened, 279);
   assert.equal(recent.entitiesWithNumberedHeavyDomain, 11);
   assert.equal(recent.entriesWithNumberedHeavyDomain, 8);
-  for (const result of [complement, recent]) {
+  const annotation = await verifyGpcrdbComplementScreen({ repositoryRoot: ROOT, inputDirectory: snapshot("annotation-discovery"), outputDirectory: snapshot("annotation-screen") });
+  assert.equal(annotation.inputEntryCount, 142);
+  assert.equal(annotation.polymerEntityCount, 719);
+  assert.equal(annotation.distinctPresentSequencesScreened, 240);
+  assert.equal(annotation.entitiesWithNumberedHeavyDomain, 160);
+  assert.equal(annotation.entriesWithNumberedHeavyDomain, 141);
+  assert.equal(annotation.untaggedUnexposedSequencePositiveEntities, 0);
+  for (const result of [complement, recent, annotation]) {
     assert.equal(result.proteinOrUnknownTypeEntityCount + result.nonProteinEntityCount, result.polymerEntityCount);
     assert.equal(result.entitiesWithNumberedHeavyDomain + result.entitiesWithoutConfidentCompleteHeavyDomain, result.proteinOrUnknownTypeEntityCount);
     assert.equal(result.eligibleDirectVhhCount, null);

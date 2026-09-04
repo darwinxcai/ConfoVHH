@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-09-04T22:51:13.625224+00:00",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/publication-first-discovery-2026-09-04/publications.jsonl": "e8fd1e6010c16f95eece769f83ed24daed7afa31977ff3e817a562be3ee8e186",
+    "validation/hard-decoy-holdout-v3/publication-accession-review-2026-09-04/priority-reviews.json": "6dea1ceec60aca2bd1a21f99b01ace333968de7268578e6d1e41c21ed5ce317e",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/publication-first-discovery-2026-09-04/checksums.sha256": "410fa133ac34f87bcd734aae751eda207031f61635537980f268cd8995921bd1"
+  },
+  "generatorScript": "validation/hard-decoy-holdout-v3/publication-first-triage-2026-09-04/build-triage.py",
+  "generatorScriptSha256": "4f3fce88b7f8155d796c6c97df3e3ac814463517bf00758cb67e749330709e3e",
+  "sourceCaptureRecords": "source-capture-records.json",
+  "reviewBoundary": "Record-level bibliography triage and deposition-index reconciliation only. No atomic coordinates or figure assets fetched; no scientific entry exclusions assigned."
+}

@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "doi-10",
+    "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+    "pdbIds": [
+      "6KP6"
+    ],
+    "query": "DOI:\"10.1107/s2052252520000597\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1107%2Fs2052252520000597%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:48.264115+00:00",
+  "status": 200,
+  "rawFile": "raw/doi-10.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1107%2Fs2052252520000597%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "3463b53a206fc015bcf52ad0c996200ad58519ae7ef150f927888e91424429aa",
+  "bytes": 1055,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:00.736507+00:00"
+}
