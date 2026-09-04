@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "PUBLIC_COMPONENT_LINKS_RECORDED_DISPOSITIONS_STILL_PENDING",
+  "generatorScript": "scripts/hard-decoy-v3/build-public-component-links.mjs",
+  "generatorScriptSha256": "5051f1b5683938542e01b2ecaa549d7d54ec9f263440a49d5db1141f3a413740",
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v2/prelabel-census/target-census.jsonl": "1a6703a6e8d4ccba711ec160d0eb5586e6ad3e127253d4ccd0cd081007155480",
+    "validation/hard-decoy-holdout-v2/prelabel-census/vhh-lineage-census.jsonl": "df50440b3b7311192f74515a1183a69a4e288195ec372e4d13c379952b8275cc",
+    "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/entry-dispositions.jsonl": "1687775f2495447475dbffccdc27b8ded042d7c235669635672b6d3afe61e894",
+    "validation/hard-decoy-holdout-v3/prelabel-viability-review-2026-09-04/candidate-review-queue.jsonl": "6e296f4318c82228e705105d0f1dcdd673027dc2cdd7803fef05061181125fe7",
+    "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/candidate-receptor-profiles.jsonl": "ac6d733ec4658b17349b8ca63cc9a4fbf18ce9c761b7c9ed38fcd4854e8b15f3",
+    "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/candidate-vhh-profiles.jsonl": "58d435ce89bd45c997aa89f0816340c273d24f5474e2d38c2bd2c85fce3cc39d"
+  },
+  "outputDigests": {
+    "component-links.jsonl": "16c08e3db78aa4b23978b4e8488584f4f5fda2c60cc241d1419c6c56429c9688",
+    "summary.json": "af25ad19477f78615db0d3e8e6922048c206059d377dc4004379fe9a63964c76"
+  },
+  "decisionBasis": "Frozen v3 public component rules applied to frozen metadata and sequence records; primary-source role notes do not control the component-count conclusion.",
+  "formalTargetDispositionsAssigned": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false
+}
