@@ -1,0 +1,147 @@
+{
+  "pdbId": "9SH6",
+  "reviewQueueMember": false,
+  "purpose": "Retain positive GPCR metadata context alongside the negative heavy-domain screen without inferring VHH absence.",
+  "entryTitle": "Structure of a GPCR dimer bound to two G proteins",
+  "primaryCitation": {
+    "doi": null,
+    "pmid": null,
+    "title": "Structure and mechanism of a GPCR dimer coupling to two G proteins"
+  },
+  "allDepositedEntities": [
+    {
+      "entityId": "1",
+      "description": "Pheromone alpha factor receptor",
+      "sequenceLength": 430,
+      "sequenceSha256": "16ff7a9718dc6b4e2331c3099801e51e2e2a290aa2861f6273e6a808e1e6883d",
+      "authAsymIds": [
+        "A",
+        "B"
+      ],
+      "labelAsymIds": [
+        "A",
+        "B"
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "D6VTK4",
+          "databaseName": "UniProt",
+          "provenanceSource": "PDB"
+        }
+      ]
+    },
+    {
+      "entityId": "2",
+      "description": "Mating factor alpha",
+      "sequenceLength": 13,
+      "sequenceSha256": "6cfa7f575e90ee768d076c413744c896ac162f5e7a717eac65a5b30216badd13",
+      "authAsymIds": [
+        "I",
+        "K"
+      ],
+      "labelAsymIds": [
+        "C",
+        "D"
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P32435",
+          "databaseName": "UniProt",
+          "provenanceSource": "PDB"
+        }
+      ]
+    },
+    {
+      "entityId": "3",
+      "description": "Guanine nucleotide-binding protein subunit gamma",
+      "sequenceLength": 110,
+      "sequenceSha256": "1a1eb6369e6685110aedb149750e6eacd3c182a43399f5a0fa0483c1da986771",
+      "authAsymIds": [
+        "G",
+        "H"
+      ],
+      "labelAsymIds": [
+        "E",
+        "J"
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P18852",
+          "databaseName": "UniProt",
+          "provenanceSource": "PDB"
+        }
+      ]
+    },
+    {
+      "entityId": "4",
+      "description": "Guanine nucleotide-binding protein subunit beta",
+      "sequenceLength": 423,
+      "sequenceSha256": "fa51e002a40720b3b65ff02508a8b8d1b88e1c90bac4c1cb4f72508c370975ca",
+      "authAsymIds": [
+        "C",
+        "F"
+      ],
+      "labelAsymIds": [
+        "F",
+        "H"
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P18851",
+          "databaseName": "UniProt",
+          "provenanceSource": "PDB"
+        }
+      ]
+    },
+    {
+      "entityId": "5",
+      "description": "Guanine nucleotide-binding protein alpha-1 subunit",
+      "sequenceLength": 472,
+      "sequenceSha256": "fc5f9df8c6342ad30466c9742dd8ac13d4be3987382ec36d7edb98f7c84dbf3f",
+      "authAsymIds": [
+        "D",
+        "E"
+      ],
+      "labelAsymIds": [
+        "G",
+        "I"
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P08539",
+          "databaseName": "UniProt",
+          "provenanceSource": "PDB"
+        }
+      ]
+    }
+  ],
+  "screenEntityCount": 5,
+  "heavyVariableDomainPositiveEntityCount": 0,
+  "sourceScreenStatuses": [
+    {
+      "entityId": "1",
+      "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE"
+    },
+    {
+      "entityId": "2",
+      "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE"
+    },
+    {
+      "entityId": "3",
+      "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE"
+    },
+    {
+      "entityId": "4",
+      "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE"
+    },
+    {
+      "entityId": "5",
+      "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE"
+    }
+  ],
+  "scopeEvidence": "The entry title and pheromone alpha-factor receptor entity provide positive GPCR context.",
+  "scientificInterpretation": "No confident heavy-domain call is an algorithmic negative. It cannot establish absence of an unrecognized, truncated or noncanonical VHH and cannot alone justify formal census exclusion.",
+  "absenceOfHiddenVhhEstablished": false,
+  "newEligibleGpcrVhhComplexEstablished": false,
+  "formalDispositionAssigned": false
+}

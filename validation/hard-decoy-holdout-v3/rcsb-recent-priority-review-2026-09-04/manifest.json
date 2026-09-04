@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-09-04T22:45:46.539679+00:00",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/rcsb-recent-screen-2026-09-04/review-queue.jsonl": "4325929dd2a98cea2b088aa5d1baa80e082fdef9df9aed03fd4792ae4bdabf6e",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-screen-2026-09-04/entity-screens.jsonl": "d3450301644af9090a4b4c0a6efda0d7e7b3c652fc87286cbf4ec3370b4c6a56",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-screen-2026-09-04/summary.json": "0d45adbcb0bbda55af7b65ac5cb75552d1c582acecd6bba3ed079c4bbc0379c3",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-screen-2026-09-04/checksums.sha256": "205a7c8d661c0240f78a54861dfa6656f5e1b088c55fcffe249f00bb65874593",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/entries.jsonl": "4ae69b0921f20b2874783b84322f32c3213d842c10e8ed98e65b6c14f0a2e99f",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/checksums.sha256": "a19407d2fb144772abe275d78b7fbca5d9709b73050c81fe51cb754572464add",
+    "validation/membrane-vhh-feasibility-draft/README.md": "b4df608975ce39d429b9b7876c5da56bf63123925431925719123b33dffca01d"
+  },
+  "generatorScript": "validation/hard-decoy-holdout-v3/rcsb-recent-priority-review-2026-09-04/build-review.py",
+  "generatorScriptSha256": "440a22185ea238bfc2d67332ef0d97887ef9902f485226da891709d97a67bd3d",
+  "reviewMethod": "Metadata scope assessment; exact entity sequence hashes are checked against source entry records. Primary-publisher subject classification and curated receptor identity distinguish GABAA ion channels from GPCRs. No formal ledger is mutated.",
+  "sourceCaptures": "source-capture-records.json",
+  "scopeNotes": "All 24 queued entities are retained. The separate 9SH6 context note is outside this 24-row queue.",
+  "formalLedgerModified": false
+}

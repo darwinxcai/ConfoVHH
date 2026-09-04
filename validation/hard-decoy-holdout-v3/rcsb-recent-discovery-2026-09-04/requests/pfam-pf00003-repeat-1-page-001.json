@@ -1,0 +1,66 @@
+{
+  "query": {
+    "type": "group",
+    "logical_operator": "and",
+    "nodes": [
+      {
+        "type": "terminal",
+        "service": "text",
+        "parameters": {
+          "attribute": "rcsb_accession_info.initial_release_date",
+          "operator": "greater_or_equal",
+          "value": "2026-08-30T00:00:00Z"
+        }
+      },
+      {
+        "type": "terminal",
+        "service": "text",
+        "parameters": {
+          "attribute": "rcsb_accession_info.initial_release_date",
+          "operator": "less",
+          "value": "2026-09-05T00:00:00Z"
+        }
+      },
+      {
+        "type": "group",
+        "logical_operator": "and",
+        "nodes": [
+          {
+            "type": "terminal",
+            "service": "text",
+            "parameters": {
+              "attribute": "rcsb_polymer_entity_annotation.type",
+              "operator": "exact_match",
+              "value": "Pfam"
+            }
+          },
+          {
+            "type": "terminal",
+            "service": "text",
+            "parameters": {
+              "attribute": "rcsb_polymer_entity_annotation.annotation_id",
+              "operator": "exact_match",
+              "value": "PF00003"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "return_type": "entry",
+  "request_options": {
+    "paginate": {
+      "start": 0,
+      "rows": 100
+    },
+    "results_content_type": [
+      "experimental"
+    ],
+    "sort": [
+      {
+        "sort_by": "rcsb_id",
+        "direction": "asc"
+      }
+    ]
+  }
+}
