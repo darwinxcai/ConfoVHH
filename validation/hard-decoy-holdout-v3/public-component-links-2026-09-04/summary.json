@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "PUBLIC_COMPONENT_LINKS_RECORDED_DISPOSITIONS_STILL_PENDING",
+  "recordedAtUtc": "2026-09-04T20:39:00Z",
+  "reviewedEntryCount": 6,
+  "reviewedPdbIds": [
+    "6N51",
+    "7DGE",
+    "7EPB",
+    "8T7H",
+    "8XFP",
+    "8XFS"
+  ],
+  "existingGroupsReached": [
+    "LGR4",
+    "MGLU"
+  ],
+  "newIndependentComponentUpperBoundFromReviewedEntries": 0,
+  "provisionalComponentCountBeforeReview": 7,
+  "provisionalComponentCountAfterReview": 7,
+  "formalClearedComponentCount": 0,
+  "remainingDirectLookingEntriesForReview": 23,
+  "conclusion": "The six entries previously prioritized because no development path appeared in the v3 pregraphs cannot increase the independent-component count. This does not resolve their target eligibility or the remaining 23 direct-looking entries.",
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "OTHER_STRATA_SALVAGE_REVIEW_QUEUED_NO_DISPOSITIONS_ASSIGNED",
+  "generatorScript": "scripts/hard-decoy-v3/build-other-strata-salvage-review.mjs",
+  "generatorScriptSha256": "57680097d5ccf9869189f7fe0203992dbb733092f1998060987c7b3edaa062ed",
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v2/prelabel-census/target-census.jsonl": "1a6703a6e8d4ccba711ec160d0eb5586e6ad3e127253d4ccd0cd081007155480",
+    "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/entry-dispositions.jsonl": "1687775f2495447475dbffccdc27b8ded042d7c235669635672b6d3afe61e894",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/triage-signals.jsonl": "7cb53cad9c3b4faee1972bd772c635787595476c77e50fa546f0e4540d3c1a51",
+    "validation/hard-decoy-holdout-v3/prelabel-viability-review-2026-09-04/candidate-review-queue.jsonl": "6e296f4318c82228e705105d0f1dcdd673027dc2cdd7803fef05061181125fe7",
+    "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/candidate-development-evidence.jsonl": "700e6b4b4aed2218a301bfb2eac8ed0504002422dccef0a22e04c24a1a278f0c",
+    "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/candidate-development-vhh-matrix.jsonl": "198503d754a1242e8b73373c146d18a7451f0a1712114a04d28f17f352d07823",
+    "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/receptor-pair-matrix.jsonl": "be97357b63a2837f46da47e8f0c9470cd3d63126925ae900c83075ee2e00ae8f"
+  },
+  "selectionRule": "Pending rows outside the 29-entry direct-looking queue for which no auxiliary lexical entity was identified, or at least one VHH-like entity was not among the auxiliary lexical entities.",
+  "complementRule": "All apparent VHH-like entities have auxiliary lexical signals; rows remain pending and require source-backed review.",
+  "reviewPriorityRule": "No direct development-pregraph signal before direct signal; rows not named in the existing provisional census before named representatives; then selection-basis order; then bytewise PDB ID.",
+  "outputDigests": {
+    "salvage-review-queue.jsonl": "1f4c5bf98e0b742a07220aea0b4f06242dcfd5dd4eb30f16b06d40f6c41a8385",
+    "unselected-still-pending.jsonl": "04dadbc250097ea4d6751439ffc847dea29dd02a26de7c3f3e0c56c28327632f",
+    "summary.json": "e51a47e8fffc5cba340d28979c6e794efcd0bef648a26ed67837446348d79107"
+  },
+  "formalDispositionsAssigned": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false
+}
