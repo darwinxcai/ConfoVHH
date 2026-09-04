@@ -15,7 +15,7 @@ const INPUT_RELS = [
   "validation/hard-decoy-holdout-v3/other-strata-salvage-review-2026-09-04/unselected-still-pending.jsonl",
   "validation/hard-decoy-holdout-v3/direct-signal-salvage-bound-2026-09-04/summary.json",
 ];
-const STATUS = "TARGET_CENSUS_BLOCKED";
+const STATUS = "AUXILIARY_REMAINDER_TRIAGED_SOURCE_REVIEW_REQUIRED";
 const PDB_ID = /^[0-9][A-Z0-9]{3}$/u;
 const COORDINATES = /(?:^|[\r\n"'`])[ \t]*(?:ATOM {2}|HETATM).{20,}|(?:^|[\r\n"'`])[ \t]*_atom_site\.(?:group_PDB|Cartn_[xyz])\b/imu;
 const OBSERVED_LABEL = /\b(?:DockQ|Fnat|iRMSD|LRMSD)\s*(?:=|:)\s*(?:\d+(?:\.\d+)?|\.\d+)|\bCAPRI(?:Class|Label)?\s*(?:=|:)\s*(?:incorrect|acceptable|medium|high)\b/iu;
@@ -193,7 +193,7 @@ function additionalAntibodyLikeEvidence(entry, primaryVhhEntityId) {
         sequenceLength: entity.sequenceLength ?? null,
         sequenceSha256: entity.sequenceSha256 ?? null,
         classification: "ADDITIONAL_SCFV16_G_PROTEIN_STABILIZER",
-        directReceptorVhhCandidate: false,
+        formalRoleAssignment: false,
       };
     }
     ok(/fab.*(?:heavy|light)|(?:heavy|light).*fab/iu.test(description), `${entry.pdbId} contains an unreviewed additional antibody-like entity: ${description}`);
@@ -203,7 +203,7 @@ function additionalAntibodyLikeEvidence(entry, primaryVhhEntityId) {
       sequenceLength: entity.sequenceLength ?? null,
       sequenceSha256: entity.sequenceSha256 ?? null,
       classification: "FAB_CHAIN_NOT_VHH",
-      directReceptorVhhCandidate: false,
+      formalRoleAssignment: false,
     };
   }).sort((left, right) => byteCompare(left.entityId, right.entityId));
 }
@@ -222,6 +222,7 @@ export async function buildAuxiliaryRemainderBound(repositoryRoot = ROOT) {
   ok(/The primary holdout requires an exact frozen set of \*\*at least ten\*\*/u.test(protocol), "The minimum-component rule drifted.");
   ok(/Exclude auxiliary G-protein nanobodies, anti-BRIL\/anti-Fab binders/u.test(protocol), "The auxiliary-binder exclusion rule drifted.");
   ok(/completed census still yields fewer than 10 formally cleared independent groups[\s\S]*TARGET_CENSUS_BLOCKED/u.test(reconstructionPlan), "The completed-census terminal rule drifted.");
+  ok(reconstructionPlan.includes("The four-term search is known to be incomplete"), "The non-exhaustive discovery boundary drifted.");
 
   const contract = parseJson(loaded.get(INPUT_RELS[2]).text, INPUT_RELS[2]);
   ok(Object.hasOwn(contract.dispositionCodes, "EXCLUDE_AUXILIARY_BINDER"), "The auxiliary-binder disposition is absent from the frozen contract.");
@@ -247,6 +248,7 @@ export async function buildAuxiliaryRemainderBound(repositoryRoot = ROOT) {
     ok(vhhIds.length === 1 && auxiliaryIds.size > 0 && auxiliaryIds.has(vhhIds[0]), `${remainderRow.pdbId} does not contain exactly one auxiliary-marked VHH-like entity.`);
     const entity = (entry.polymerEntities ?? []).find((candidate) => candidate.entityId === vhhIds[0]);
     ok(entity, `${remainderRow.pdbId} auxiliary VHH-like entity is missing.`);
+    ok(typeof entity.sequence === "string" && entity.sequence.length === entity.sequenceLength && sha256(entity.sequence) === entity.sequenceSha256, `${remainderRow.pdbId} frozen auxiliary sequence/hash mismatch.`);
     const roleClass = ROLE_BY_DESCRIPTION.get(entity.description ?? "");
     ok(roleClass && authorities.has(roleClass), `${remainderRow.pdbId} has an unrecognized auxiliary descriptor: ${entity.description ?? "<missing>"}`);
     const authority = authorities.get(roleClass);
@@ -257,12 +259,15 @@ export async function buildAuxiliaryRemainderBound(repositoryRoot = ROOT) {
       entry.primaryCitation?.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${entry.primaryCitation.pmid}/` : null,
     ].filter(Boolean).sort(byteCompare);
     return {
-      schemaVersion: "1.0.0",
+      schemaVersion: "1.1.0",
       studyId: "confovhh-hard-decoy-holdout-v3",
       pdbId: remainderRow.pdbId,
-      dispositionCode: "EXCLUDE_AUXILIARY_BINDER",
-      independentComponentCountIncrementUpperBound: 0,
-      roleClass,
+      dispositionCode: "PENDING_REQUIRED_METADATA",
+      independentComponentCountIncrementUpperBound: null,
+      inferredRoleClass: roleClass,
+      formalRoleAssignment: false,
+      entrySpecificSourceReviewComplete: false,
+      reagentSequenceIdentityVerified: false,
       frozenVhhLikeEntity: {
         entityId: entity.entityId,
         description: entity.description ?? null,
@@ -273,7 +278,7 @@ export async function buildAuxiliaryRemainderBound(repositoryRoot = ROOT) {
       },
       companionEvidence: companionEvidence(entry, roleClass),
       additionalAntibodyLikeEntities: additionalAntibodyLikeEvidence(entry, entity.entityId),
-      sourceAuthority: {
+      reagentRoleLiterature: {
         doi: authority.doi,
         pmid: authority.pmid,
         evidenceClassification: authority.evidenceClassification,
@@ -284,9 +289,9 @@ export async function buildAuxiliaryRemainderBound(repositoryRoot = ROOT) {
         pmid: entry.primaryCitation?.pmid ?? null,
         title: entry.primaryCitation?.title ?? null,
       },
-      dispositionReason: "The sole apparent VHH-like entity maps exactly by frozen entity description and companion-component context to a source-established auxiliary binder class excluded by the v3 protocol.",
+      dispositionReason: "The frozen descriptor and companion entities suggest an auxiliary reagent. Reagent-role literature does not establish this entry's binder identity, variant provenance, or direct-interface role. Entry-specific source review is still required.",
       evidenceUrls,
-      publicSourcesReviewed: true,
+      reagentRoleSourcesReviewed: true,
       nativeCoordinatesInspected: false,
       nativeRelativePoseInspected: false,
       masterDispositionLedgerRewritten: false,
@@ -294,43 +299,56 @@ export async function buildAuxiliaryRemainderBound(repositoryRoot = ROOT) {
     };
   }).sort((left, right) => byteCompare(left.pdbId, right.pdbId));
 
-  const roleCounts = Object.fromEntries([...authorities.keys()].map((roleClass) => [roleClass, mappings.filter((row) => row.roleClass === roleClass).length]));
+  const roleCounts = Object.fromEntries([...authorities.keys()].map((roleClass) => [roleClass, mappings.filter((row) => row.inferredRoleClass === roleClass).length]));
   ok(canonical(roleCounts) === canonical({
     NB35_G_PROTEIN_STABILIZER: 196,
     SCFV16_G_PROTEIN_STABILIZER: 3,
     ANTI_FAB_FIDUCIAL_NANOBODY: 13,
   }), "The auxiliary role partition drifted.");
-  ok(mappings.length === 212 && mappings.every((row) => row.independentComponentCountIncrementUpperBound === 0), "The remainder bound is incomplete.");
+  ok(mappings.length === 212 && mappings.every((row) => row.dispositionCode === "PENDING_REQUIRED_METADATA" && row.independentComponentCountIncrementUpperBound === null), "Metadata-only triage gained disposition authority.");
   const additionalAntibodyLikeEntities = mappings.flatMap((row) => row.additionalAntibodyLikeEntities);
   const additionalScfv16EntityCount = additionalAntibodyLikeEntities.filter((entity) => entity.classification === "ADDITIONAL_SCFV16_G_PROTEIN_STABILIZER").length;
   const additionalFabChainEntityCount = additionalAntibodyLikeEntities.filter((entity) => entity.classification === "FAB_CHAIN_NOT_VHH").length;
   ok(additionalAntibodyLikeEntities.length === 44 && additionalScfv16EntityCount === 16 && additionalFabChainEntityCount === 28, "The additional antibody-like entity review drifted.");
 
-  const wholeCensusComponentUpperBound = priorBound.prioritizedFrontierUpperBound;
   const requiredIndependentComponentCount = priorBound.requiredIndependentComponentCount;
-  const componentDeficitAtUpperBound = requiredIndependentComponentCount - wholeCensusComponentUpperBound;
-  ok(wholeCensusComponentUpperBound === 8 && componentDeficitAtUpperBound === 2, "The terminal component arithmetic drifted.");
+  const sequenceGroups = new Map();
+  for (const row of mappings) {
+    const key = row.frozenVhhLikeEntity.sequenceSha256;
+    ok(/^[a-f0-9]{64}$/u.test(key), `${row.pdbId} lacks a sequence hash.`);
+    if (!sequenceGroups.has(key)) sequenceGroups.set(key, { sequenceSha256: key, inferredRoleClass: row.inferredRoleClass, entries: [], identityToEstablishedReagentVerified: false, formalExclusionAuthority: false });
+    const group = sequenceGroups.get(key);
+    ok(group.inferredRoleClass === row.inferredRoleClass, "An exact sequence carries conflicting role descriptors.");
+    group.entries.push({ pdbId: row.pdbId, entityId: row.frozenVhhLikeEntity.entityId });
+  }
+  const sequenceReviewGroups = [...sequenceGroups.values()].sort((left, right) => byteCompare(left.sequenceSha256, right.sequenceSha256));
+  ok(sequenceReviewGroups.length === 29, "Exact-sequence review partition drifted.");
   const summary = {
-    schemaVersion: "1.0.0",
+    schemaVersion: "1.1.0",
     studyId: "confovhh-hard-decoy-holdout-v3",
     status: STATUS,
-    recordedAtUtc: "2026-09-04T21:34:00Z",
-    completeFrozenCandidateUniverseEntryCount: entries.length,
+    recordedAtUtc: "2026-09-04T22:00:00Z",
+    historicalSubUniverseEntryCount: entries.length,
+    broaderDiscoveryComplete: false,
     reviewedAuxiliaryRemainderEntryCount: mappings.length,
-    sourceBackedAuxiliaryBinderExclusionCount: mappings.length,
+    sourceBackedAuxiliaryBinderExclusionCount: 0,
+    pendingEntryCount: mappings.length,
+    exactSequenceReviewGroupCount: sequenceReviewGroups.length,
     auxiliaryRoleCounts: roleCounts,
     additionalAntibodyLikeEntityCount: additionalAntibodyLikeEntities.length,
     additionalScfv16EntityCount,
     additionalFabChainEntityCount,
-    auxiliaryRemainderIndependentComponentIncrementUpperBound: 0,
+    auxiliaryRemainderIndependentComponentIncrementUpperBound: null,
     priorPrioritizedFrontierUpperBound: priorBound.prioritizedFrontierUpperBound,
-    wholeCensusComponentUpperBound,
+    wholeCensusComponentUpperBound: null,
     requiredIndependentComponentCount,
-    componentDeficitAtUpperBound,
-    wholeCensusUpperBoundBelowRequiredMinimum: wholeCensusComponentUpperBound < requiredIndependentComponentCount,
-    wholeCensusTerminalDecisionReached: true,
-    formalProtocolStatus: STATUS,
-    completedCensusCountBound: true,
+    conditionalHistoricalScenario: { ifAll212RowsAreIndependentlyExcluded: true, priorFrontierUpperBound: 8, additionalComponentsNeededOutsideThatFrontier: 2, formalWholeCensusAuthority: false },
+    wholeCensusUpperBoundBelowRequiredMinimum: null,
+    wholeCensusTerminalDecisionReached: false,
+    formalProtocolStatus: "DRAFT",
+    targetFreezeGate: "BLOCKED",
+    completedCensusCountBound: false,
+    absenceOfHiddenVhhEstablished: false,
     masterDispositionLedgerRewritten: false,
     oracleRequestFreezePermitted: false,
     targetFreezePermitted: false,
@@ -339,28 +357,32 @@ export async function buildAuxiliaryRemainderBound(repositoryRoot = ROOT) {
     nativeRelativePosesInspected: false,
     dockqLabelsAccessed: false,
     performanceResultsAccessed: false,
-    interpretation: "Every row in the 212-entry auxiliary-lexical remainder has exactly one apparent VHH-like entity and maps to a source-established auxiliary class: 196 Nb35 G-protein stabilizers, three scFv16 G-protein stabilizers, and 13 anti-Fab fiducial nanobodies. A broad negative-control scan finds only 16 additional scFv16 stabilizers and 28 Fab heavy/light chains, with no hidden additional VHH candidate. These rows add zero independent components. The prior favorable frontier upper bound therefore becomes the whole-census upper bound of eight, below the required ten, so hard-decoy v3 terminates at TARGET_CENSUS_BLOCKED before oracle freeze or label access.",
+    interpretation: "The 212 historical remainder rows have descriptors consistent with 196 Nb35, three scFv16, and 13 anti-Fab reagents. This is review triage, not 212 established exclusions. They form 29 exact-sequence review groups. The descriptor scan detects another 16 scFv16-like and 28 Fab-chain-like entities; it cannot rule out a missed VHH. Reagent-role papers do not replace entry-specific identity and role review. Broader candidate discovery is explicitly incomplete, so no whole-census upper bound or terminal v3 decision follows. Formal status remains DRAFT with target freeze BLOCKED.",
   };
 
   const authorityBytes = Buffer.from(jsonl(ROLE_AUTHORITIES.map((authority) => ({ ...authority, evidenceUrls: [...authority.evidenceUrls].sort(byteCompare) }))));
   const mappingBytes = Buffer.from(jsonl(mappings));
+  const sequenceGroupBytes = Buffer.from(jsonl(sequenceReviewGroups));
   const summaryBytes = Buffer.from(pretty(summary));
   const manifest = {
-    schemaVersion: "1.0.0",
+    schemaVersion: "1.1.0",
     studyId: "confovhh-hard-decoy-holdout-v3",
     status: STATUS,
     generatorScript: path.relative(root, HERE),
     generatorScriptSha256: sha256(await readFile(HERE)),
     inputDigests: Object.fromEntries(INPUT_RELS.map((relative) => [relative, loaded.get(relative).sha256])),
-    evidenceBoundary: "Frozen public entity metadata plus role definitions from three primary papers; no coordinate-derived interface inference.",
-    matchingRule: "Exactly one frozen VHH-like entity per row; exact descriptor membership in a closed role dictionary; role-specific G-protein or Fab companion entities required.",
+    evidenceBoundary: "Historical metadata descriptors plus general reagent-role literature only. No entry-specific source adjudication or reagent sequence identity verification is performed.",
+    matchingRule: "One VHH-like descriptor per row plus lexical companion context yields only an inferred review class; sequence hashes group review work without propagating exclusions.",
     outputDigests: {
       "role-authorities.jsonl": sha256(authorityBytes),
       "auxiliary-entity-mappings.jsonl": sha256(mappingBytes),
+      "sequence-review-groups.jsonl": sha256(sequenceGroupBytes),
       "summary.json": sha256(summaryBytes),
     },
-    completedCensusCountBound: true,
-    wholeCensusTerminalDecisionReached: true,
+    completedCensusCountBound: false,
+    wholeCensusTerminalDecisionReached: false,
+    formalRoleAssignment: false,
+    broaderDiscoveryComplete: false,
     masterDispositionLedgerRewritten: false,
     oracleRequestFreezePermitted: false,
     targetFreezePermitted: false,
@@ -371,17 +393,19 @@ export async function buildAuxiliaryRemainderBound(repositoryRoot = ROOT) {
     "",
     `Status: **${STATUS}**`,
     "",
-    "This source-backed audit closes the 212 rows left outside the earlier salvage queue. It uses frozen public entity metadata and primary role sources, without native coordinates or relative-pose inspection.",
+    "This package organizes 212 pending entries from the historical 287-entry sub-universe for source review. It does not close those rows or terminate v3.",
     "",
     "## Entity-level result",
     "",
-    "Each row contains exactly one apparent VHH-like entity, already marked auxiliary in the frozen triage snapshot. Exact descriptor matching and required companion entities classify 196 as Nb35 G-protein stabilizers, three as scFv16 G-protein stabilizers, and 13 as anti-Fab fiducial nanobodies. A broader antibody-like entity scan additionally accounts for 16 scFv16 stabilizers and 28 Fab heavy/light chains and finds no hidden VHH candidate. The v3 protocol explicitly excludes all three auxiliary VHH-like classes. Every row therefore has an independent-component increment upper bound of zero.",
+    "Descriptors and companion-protein names suggest 196 Nb35, three scFv16, and 13 anti-Fab reagents. All 212 remain PENDING_REQUIRED_METADATA. Their hashes partition into 29 exact-sequence groups for efficient identity and variant review. The additional descriptor scan detects 16 scFv16-like entities and 28 Fab-chain-like entities; it does not establish that no other VHH exists.",
     "",
     "## Census consequence",
     "",
-    "The preceding audit bounded the favorable prioritized frontier at eight components and proved that at least two more would have to come from these 212 rows. Because this package closes all 212 at zero, eight is now the whole-census upper bound. The protocol requires at least ten, so version 3 terminates at `TARGET_CENSUS_BLOCKED`.",
+    "The earlier eight-component frontier is a bounded prior analysis. Treating it as a whole-census bound requires additional evidence. The reconstruction plan explicitly says the four-term historical search is incomplete. General reagent-role papers plus entity-name matches cannot establish every entry-specific role or close broader discovery. V3 remains DRAFT with target freeze BLOCKED; no terminal decision is reached.",
     "",
-    "This terminal decision does not authorize a smaller formal GPCR holdout. A smaller panel remains exploratory only. A broader membrane-protein-VHH benchmark would require a separately preregistered protocol.",
+    "Correction to local commit 9ef5d5e: its terminal TARGET_CENSUS_BLOCKED conclusion, 212 formal exclusions, and no-hidden-VHH assertion were unsupported and are withdrawn. Passing software tests did not validate those scientific premises. Complete entry-specific source review and the separately archived broader discovery routes before deciding census feasibility.",
+    "",
+    "A separate [entry-specific follow-on review](../auxiliary-remainder-source-review-2026-09-04/README.md) records primary-source adjudication for 16 rows. This triage snapshot retains its original pending statuses; the follow-on package states exactly which entry assessments it supersedes and which discrepancies remain open.",
     "",
     "No oracle request, target freeze, MSA retrieval, generator run, native coordinate access, pose inspection, DockQ/CAPRI label access, or ConfoVHH performance analysis is authorized.",
     "",
@@ -397,11 +421,12 @@ export async function buildAuxiliaryRemainderBound(repositoryRoot = ROOT) {
     "README.md": readme,
     "role-authorities.jsonl": authorityBytes.toString(),
     "auxiliary-entity-mappings.jsonl": mappingBytes.toString(),
+    "sequence-review-groups.jsonl": sequenceGroupBytes.toString(),
     "summary.json": summaryBytes.toString(),
     "manifest.json": pretty(manifest),
   };
   Object.entries(files).forEach(([name, text]) => clean(name, text));
-  return { authorities: ROLE_AUTHORITIES, mappings, files, manifest, summary };
+  return { authorities: ROLE_AUTHORITIES, mappings, sequenceReviewGroups, files, manifest, summary };
 }
 
 function checksumsFor(files) {

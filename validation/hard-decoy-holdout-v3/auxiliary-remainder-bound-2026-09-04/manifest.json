@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "studyId": "confovhh-hard-decoy-holdout-v3",
-  "status": "TARGET_CENSUS_BLOCKED",
+  "status": "AUXILIARY_REMAINDER_TRIAGED_SOURCE_REVIEW_REQUIRED",
   "generatorScript": "scripts/hard-decoy-v3/build-auxiliary-remainder-bound.mjs",
-  "generatorScriptSha256": "6577edd190561c6553f0f38143f08cb8e6b6e644dbd22b83cdbc1e6af2e02da3",
+  "generatorScriptSha256": "ad7bfe346db3bdcca5146e17d97a55897d6cba47ce7c493e73f141fa16a0c0f5",
   "inputDigests": {
     "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
     "validation/hard-decoy-holdout-v3/CENSUS_RECONSTRUCTION_PLAN.md": "f14bc3dc045a39118a2be3181c78152df9bee0540e8368badcc0ec2594cb96d6",
@@ -13,15 +13,18 @@
     "validation/hard-decoy-holdout-v3/other-strata-salvage-review-2026-09-04/unselected-still-pending.jsonl": "04dadbc250097ea4d6751439ffc847dea29dd02a26de7c3f3e0c56c28327632f",
     "validation/hard-decoy-holdout-v3/direct-signal-salvage-bound-2026-09-04/summary.json": "b3985b15051c8962635a6d227147b0da0aa18dc9465e00a88cda1f396bfe7557"
   },
-  "evidenceBoundary": "Frozen public entity metadata plus role definitions from three primary papers; no coordinate-derived interface inference.",
-  "matchingRule": "Exactly one frozen VHH-like entity per row; exact descriptor membership in a closed role dictionary; role-specific G-protein or Fab companion entities required.",
+  "evidenceBoundary": "Historical metadata descriptors plus general reagent-role literature only. No entry-specific source adjudication or reagent sequence identity verification is performed.",
+  "matchingRule": "One VHH-like descriptor per row plus lexical companion context yields only an inferred review class; sequence hashes group review work without propagating exclusions.",
   "outputDigests": {
     "role-authorities.jsonl": "e6a065904c659e68099e83396d78857d222b7d86d6e970dbe88453d169f7878f",
-    "auxiliary-entity-mappings.jsonl": "8656b790cba7e8f479a4fe58834bdc5c14137abd811e0ce1cc3d8863fd671c31",
-    "summary.json": "29e815522bcf8abf7d43c49782989502aa0aa3a51ca4859aba042fbbeae62906"
+    "auxiliary-entity-mappings.jsonl": "f2c2e37a5b0e1a8b73104b20e6203da824c428cd058193b96da407e2178e6965",
+    "sequence-review-groups.jsonl": "33be96b19f0fcca99e33def41313d135c821e4110a66f76b21efa2d099f563e6",
+    "summary.json": "39398e87f997eefc0b13258596984436b0b91d744be5ce8618ced62e95eefa33"
   },
-  "completedCensusCountBound": true,
-  "wholeCensusTerminalDecisionReached": true,
+  "completedCensusCountBound": false,
+  "wholeCensusTerminalDecisionReached": false,
+  "formalRoleAssignment": false,
+  "broaderDiscoveryComplete": false,
   "masterDispositionLedgerRewritten": false,
   "oracleRequestFreezePermitted": false,
   "targetFreezePermitted": false,

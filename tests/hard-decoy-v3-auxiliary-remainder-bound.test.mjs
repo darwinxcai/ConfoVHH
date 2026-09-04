@@ -1,77 +1,107 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { readFile } from "node:fs/promises";
+import { copyFile, mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
-import { buildAuxiliaryRemainderBound, writeAuxiliaryRemainderBound } from "../scripts/hard-decoy-v3/build-auxiliary-remainder-bound.mjs";
+import { buildAuxiliaryRemainderBound } from "../scripts/hard-decoy-v3/build-auxiliary-remainder-bound.mjs";
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const OUTPUT = path.join(ROOT, "validation/hard-decoy-holdout-v3/auxiliary-remainder-bound-2026-09-04");
+const built = await buildAuxiliaryRemainderBound(ROOT);
 
-test("all 212 remainder rows map to source-backed auxiliary classes", async () => {
-  const { authorities, mappings, summary } = await buildAuxiliaryRemainderBound(ROOT);
-  assert.equal(authorities.length, 3);
-  assert.equal(mappings.length, 212);
-  assert.deepEqual(summary.auxiliaryRoleCounts, {
+test("all 212 descriptor matches remain pending despite known reagent-role literature", () => {
+  assert.deepEqual(built.summary.auxiliaryRoleCounts, {
     NB35_G_PROTEIN_STABILIZER: 196,
     SCFV16_G_PROTEIN_STABILIZER: 3,
     ANTI_FAB_FIDUCIAL_NANOBODY: 13,
   });
-  assert.ok(mappings.every((row) => row.dispositionCode === "EXCLUDE_AUXILIARY_BINDER"));
-  assert.ok(mappings.every((row) => row.frozenVhhLikeEntity.soleApparentVhhLikeEntity));
-  assert.ok(mappings.every((row) => row.frozenVhhLikeEntity.auxiliaryLexicalEntityMatch));
-  assert.ok(mappings.every((row) => row.publicSourcesReviewed && row.evidenceUrls.length >= 3));
-  assert.equal(summary.additionalAntibodyLikeEntityCount, 44);
-  assert.equal(summary.additionalScfv16EntityCount, 16);
-  assert.equal(summary.additionalFabChainEntityCount, 28);
-  assert.ok(mappings.flatMap((row) => row.additionalAntibodyLikeEntities).every((entity) => entity.directReceptorVhhCandidate === false));
+  assert.equal(built.mappings.length, 212);
+  for (const row of built.mappings) {
+    assert.equal(row.dispositionCode, "PENDING_REQUIRED_METADATA");
+    assert.equal(row.independentComponentCountIncrementUpperBound, null);
+    assert.equal(row.formalRoleAssignment, false);
+    assert.equal(row.entrySpecificSourceReviewComplete, false);
+    assert.equal(row.reagentSequenceIdentityVerified, false);
+    assert.equal(Object.hasOwn(row, "publicSourcesReviewed"), false);
+  }
 });
 
-test("role-specific companion evidence is complete without native inspection", async () => {
-  const { mappings } = await buildAuxiliaryRemainderBound(ROOT);
-  const gProteinRows = mappings.filter((row) => row.roleClass !== "ANTI_FAB_FIDUCIAL_NANOBODY");
-  const antiFabRows = mappings.filter((row) => row.roleClass === "ANTI_FAB_FIDUCIAL_NANOBODY");
-  assert.equal(gProteinRows.length, 199);
-  assert.equal(antiFabRows.length, 13);
-  assert.ok(gProteinRows.every((row) => row.companionEvidence.gAlphaEntityIds.length > 0 && row.companionEvidence.gBetaEntityIds.length > 0));
-  assert.ok(antiFabRows.every((row) => row.companionEvidence.fabHeavyEntityIds.length > 0 && row.companionEvidence.fabLightEntityIds.length > 0));
-  assert.ok(mappings.every((row) => row.nativeCoordinatesInspected === false && row.nativeRelativePoseInspected === false));
+test("29 exact-sequence groups partition the review queue without propagating exclusions", () => {
+  const groups = built.sequenceReviewGroups;
+  assert.equal(groups.length, 29);
+  assert.deepEqual(groups.flatMap(g => g.entries.map(e => e.pdbId)).sort(), built.mappings.map(r => r.pdbId));
+  assert.ok(groups.every(g => !g.identityToEstablishedReagentVerified && !g.formalExclusionAuthority));
 });
 
-test("the completed count bound terminates v3 below ten components", async () => {
-  const { mappings, summary, manifest } = await buildAuxiliaryRemainderBound(ROOT);
-  assert.ok(mappings.every((row) => row.independentComponentCountIncrementUpperBound === 0));
-  assert.equal(summary.auxiliaryRemainderIndependentComponentIncrementUpperBound, 0);
-  assert.equal(summary.priorPrioritizedFrontierUpperBound, 8);
-  assert.equal(summary.wholeCensusComponentUpperBound, 8);
-  assert.equal(summary.requiredIndependentComponentCount, 10);
-  assert.equal(summary.componentDeficitAtUpperBound, 2);
-  assert.equal(summary.wholeCensusUpperBoundBelowRequiredMinimum, true);
-  assert.equal(summary.wholeCensusTerminalDecisionReached, true);
-  assert.equal(summary.formalProtocolStatus, "TARGET_CENSUS_BLOCKED");
-  assert.equal(manifest.completedCensusCountBound, true);
+test("historical sub-universe and descriptor scans cannot establish a terminal whole census", () => {
+  const { summary, manifest } = built;
+  assert.equal(summary.historicalSubUniverseEntryCount, 287);
+  assert.equal(summary.broaderDiscoveryComplete, false);
+  assert.equal(summary.sourceBackedAuxiliaryBinderExclusionCount, 0);
+  assert.equal(summary.wholeCensusComponentUpperBound, null);
+  assert.equal(summary.wholeCensusUpperBoundBelowRequiredMinimum, null);
+  assert.equal(summary.wholeCensusTerminalDecisionReached, false);
+  assert.equal(summary.formalProtocolStatus, "DRAFT");
+  assert.equal(summary.targetFreezeGate, "BLOCKED");
+  assert.equal(summary.absenceOfHiddenVhhEstablished, false);
+  assert.equal(manifest.completedCensusCountBound, false);
+  assert.equal(manifest.formalRoleAssignment, false);
+  for (const field of ["oracleRequestFreezePermitted", "targetFreezePermitted", "executionAuthorized", "nativeHoldoutCoordinatesAccessed", "nativeRelativePosesInspected", "dockqLabelsAccessed", "performanceResultsAccessed"]) {
+    assert.equal(summary[field], false);
+  }
 });
 
-test("terminal status preserves all pre-label guardrails", async () => {
-  const { summary, manifest } = await buildAuxiliaryRemainderBound(ROOT);
-  assert.equal(summary.oracleRequestFreezePermitted, false);
-  assert.equal(summary.targetFreezePermitted, false);
-  assert.equal(summary.executionAuthorized, false);
-  assert.equal(summary.nativeHoldoutCoordinatesAccessed, false);
-  assert.equal(summary.nativeRelativePosesInspected, false);
-  assert.equal(summary.dockqLabelsAccessed, false);
-  assert.equal(summary.performanceResultsAccessed, false);
-  assert.equal(manifest.masterDispositionLedgerRewritten, false);
-});
-
-test("checked-in terminal bound artifacts are deterministic and checksummed", async () => {
-  const generated = await writeAuxiliaryRemainderBound(ROOT, OUTPUT);
-  assert.equal(generated.output, OUTPUT);
-  const checksums = (await readFile(path.join(OUTPUT, "checksums.sha256"), "utf8")).trimEnd().split("\n");
-  for (const line of checksums) {
-    const match = /^([a-f0-9]{64})  (.+)$/u.exec(line);
+test("checked-in artifacts equal fresh reconstruction without rewriting expected files", async () => {
+  for (const [name, content] of Object.entries(built.files)) {
+    assert.equal(await readFile(path.join(OUTPUT, name), "utf8"), content, name);
+  }
+  const lines = (await readFile(path.join(OUTPUT, "checksums.sha256"), "utf8")).trimEnd().split("\n");
+  const names = [];
+  for (const line of lines) {
+    const match = /^([a-f0-9]{64})  ([A-Za-z0-9.-]+)$/u.exec(line);
     assert.ok(match);
+    names.push(match[2]);
     const bytes = await readFile(path.join(OUTPUT, match[2]));
     assert.equal(createHash("sha256").update(bytes).digest("hex"), match[1]);
   }
+  assert.deepEqual(names.sort(), Object.keys(built.files).sort());
+});
+
+async function mutatedEntries(mutate, check) {
+  const temp = await mkdtemp(path.join(os.tmpdir(), "auxiliary-review-"));
+  try {
+    for (const relative of Object.keys(built.manifest.inputDigests)) {
+      const destination = path.join(temp, relative);
+      await mkdir(path.dirname(destination), { recursive: true });
+      await copyFile(path.join(ROOT, relative), destination);
+    }
+    const filename = path.join(temp, "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl");
+    const rows = (await readFile(filename, "utf8")).trimEnd().split("\n").map(JSON.parse);
+    mutate(rows.find(r => r.pdbId === "5UZ7"));
+    await writeFile(filename, rows.map(r => JSON.stringify(r)).join("\n") + "\n");
+    await check(temp);
+  } finally {
+    await rm(temp, { recursive: true, force: true });
+  }
+}
+
+test("an unrecognized antibody descriptor fails instead of being auto-excluded", async () => {
+  const entityId = built.mappings.find(r => r.pdbId === "5UZ7").frozenVhhLikeEntity.entityId;
+  await mutatedEntries(entry => {
+    entry.polymerEntities.find(e => e.entityId === entityId).description = "uncharacterized nanobody";
+  }, async temp => {
+    await assert.rejects(buildAuxiliaryRemainderBound(temp), /unrecognized auxiliary descriptor/u);
+  });
+});
+
+test("an unflagged generic polymer never becomes proof of VHH absence", async () => {
+  await mutatedEntries(entry => {
+    entry.polymerEntities.push({ entityId: "999", description: "uncharacterized protein", sequenceLength: 125 });
+  }, async temp => {
+    const result = await buildAuxiliaryRemainderBound(temp);
+    assert.equal(result.summary.absenceOfHiddenVhhEstablished, false);
+    assert.equal(result.summary.wholeCensusComponentUpperBound, null);
+    assert.equal(result.summary.sourceBackedAuxiliaryBinderExclusionCount, 0);
+  });
 });
