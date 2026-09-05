@@ -1,0 +1,1060 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> confovhh@0.5.0 test:release
+> npm run lint && npm test && npm run test:adversarial && npm run test:release-artifacts
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> confovhh@0.5.0 lint
+> bash scripts/sites-env.sh -- eslint . --ignore-pattern dist --ignore-pattern .next
+
+
+/workspace/scratch/b080e573db3d/ConfoVHH/scripts/hard-decoy-v3/build-prelabel-viability-review.mjs
+  30:7  warning  'SHA256' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/workspace/scratch/b080e573db3d/ConfoVHH/scripts/hard-decoy/v3-development-metadata.mjs
+  10:7  warning  'SHA256' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/workspace/scratch/b080e573db3d/ConfoVHH/scripts/hard-decoy/v3-receptor-tm-pregraph.mjs
+   19:7  warning  'SHA256' is assigned a value but never used           @typescript-eslint/no-unused-vars
+  622:5  warning  'capture' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  623:5  warning  'endpoint' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  624:5  warning  'rawBodyPath' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  625:5  warning  'rawMetaPath' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  626:5  warning  'rawBodySha256' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  627:5  warning  'retrievedAtUtc' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  628:5  warning  'attempts' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  629:5  warning  'responseHeaders' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  637:5  warning  'capture' is assigned a value but never used          @typescript-eslint/no-unused-vars
+  638:5  warning  'endpoint' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  639:5  warning  'rawBodyPath' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  640:5  warning  'rawMetaPath' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  641:5  warning  'rawBodySha256' is assigned a value but never used    @typescript-eslint/no-unused-vars
+  642:5  warning  'retrievedAtUtc' is assigned a value but never used   @typescript-eslint/no-unused-vars
+  643:5  warning  'attempts' is assigned a value but never used         @typescript-eslint/no-unused-vars
+  644:5  warning  'responseHeaders' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+✖ 19 problems (0 errors, 19 warnings)
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> confovhh@0.5.0 test
+> npm run typecheck && npm run build && node --test --test-concurrency=1 tests/*.test.mjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> confovhh@0.5.0 typecheck
+> tsc --noEmit
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> confovhh@0.5.0 build
+> bash scripts/build-verified.sh
+
+/usr/bin/timeout
+Running bounded vinext build...
+
+  vinext build  (Vite 8.2.2)
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mProxy environment variables detected. We'll use your proxy for fetch requests.[0m
+
+
+[1/5] analyze client references...
+transforming...
+✓ 239 modules transformed.
+rendering chunks...
+✓ built in 1.59s
+[2/5] analyze server references...
+transforming...
+✓ 262 modules transformed.
+rendering chunks...
+✓ built in 927ms
+[3/5] build rsc environment...
+transforming...
+✓ 231 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.36s
+[4/5] build client environment...
+transforming...
+✓ 2089 modules transformed.
+rendering chunks...
+computing gzip size...
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 2.40s
+[5/5] build ssr environment...
+transforming...
+✓ 268 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 851ms
+[0m
+  Route (app)
+  ─ ? /
+
+  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+
+✔ single-audit schema 1.2 exports source, parser, model, chain, PAE, and method provenance (23.975987ms)
+✔ raw fingerprint changes under a whole-complex proper rotation and translation while the SE(3) fingerprint is stable (15.840398ms)
+✔ deposited-assembly export retains selected assembly and generated chain provenance (5.092977ms)
+✔ single-audit export rejects incomplete or mismatched PAE provenance (31.521355ms)
+✔ single-audit export requires confirmed chains and a canonical UTC timestamp (11.397809ms)
+✔ single-audit export normalizes accepted uppercase source digests (2.881088ms)
+✔ single-audit export rejects incomplete or internally inconsistent audits (12.517275ms)
+✔ single-audit export rejects a stale audit after coordinate mutation (2.460063ms)
+✔ single-audit export is a deep provenance snapshot (2.794578ms)
+✔ single-audit export never silently serializes non-finite metadata as null (2.96916ms)
+✔ single-audit export rejects impossible parser, model, and assembly provenance (10.182931ms)
+✔ single audit jobs preserve the requested confidence policy (8.98666ms)
+✔ coordinate parse jobs reject malformed envelopes and oversized decoded text before parsing (0.507504ms)
+✔ ensemble metadata and decoded-text limits are enforced before any candidate parse (1.284063ms)
+✔ ensemble declared-byte, pose-count, and parsed-reference caps fail before candidate parsing (11.66441ms)
+✔ ensemble jobs bound the aggregate retained contact inventory (164.094936ms)
+✔ paired-state jobs enforce comparison text and metadata before coordinate parsing (0.942579ms)
+✔ paired-state jobs reject incompatible atom inventories before scientific re-audit (0.59726ms)
+✔ ensemble jobs keep compatible poses and report malformed poses without aborting (4.764402ms)
+✔ ensemble jobs reject duplicates individually and fail only when no candidate survives (6.280115ms)
+✔ ensemble jobs accept mixed PDB/mmCIF coordinates and preserve format provenance (6.792967ms)
+✔ ensemble deduplication is rigid-transform invariant and keeps the reference privileged (1.617385ms)
+✔ candidate deduplication is upload-order stable even across a contact cutoff (7.28022ms)
+✔ non-transitive duplicate chains use a geometry medoid across SHA and upload permutations (5.846773ms)
+✔ ensemble jobs fail closed when a matched pose has a different selected atom inventory (2.533004ms)
+✔ duplicate candidates cannot allocate scientific audit ledgers before component selection (0.646212ms)
+✔ a localized deviation above 0.05 Å is not diluted by low global RMSD (22.651241ms)
+✔ worker protocol validates request envelopes without trusting a request identifier (1.103792ms)
+✔ worker reports malformed requests and remains reusable for a valid request (53.632214ms)
+✔ release metadata namespaces, versions, bounds, and claim barriers are explicit (1.69354ms)
+✔ clean-tree attestation runners pin committed source and publish without overwrite (9.095678ms)
+✔ mmCIF regression manifest freezes complete native and assembly provenance (3.705037ms)
+✔ state-context inventory is internally reconciled and makes no biological validation claim (1.678486ms)
+✔ DockQ development artifact checksums and frozen-before-labeling contract are intact (8.936793ms)
+✔ DockQ development artifact preserves its historical implementation attestation (1.602833ms)
+✔ DockQ public-source manifest exactly matches the executed target ledger (1.366527ms)
+✔ DockQ pose ledger is complete, finite, mapped, and internally reproducible (11.664139ms)
+✔ DockQ summaries recompute their label counts and preserve all claim barriers (9.469635ms)
+✔ every DockQ AP, AUROC, Kendall and target-macro point estimate independently recomputes (20.025686ms)
+✔ DockQ cutoff and boundary sensitivity AP/AUROC/Kendall values independently recompute (16.955944ms)
+✔ all 10,000 target-bootstrap AP/AUROC/Kendall intervals independently recompute (477.648639ms)
+✔ shortlist binds researcher decisions to audited pose provenance (7.815134ms)
+✔ decision normalization is bounded and fail-closed (0.406792ms)
+✔ shortlist CSV neutralizes spreadsheet formulas after leading whitespace and format characters (1.513789ms)
+✔ parses polymeric HETATM MSE but excludes unrelated heteroatoms (2.71058ms)
+✔ classifies experimental methods without calling theoretical models experimental (0.175865ms)
+✔ selects the highest-occupancy alternate location, including B over A (0.314233ms)
+✔ selects one coherent alternate conformer for an entire residue (0.953866ms)
+✔ retains a residue represented only by alternate location B (0.269696ms)
+✔ zero-occupancy-only residues do not create ghost sequence or PAE positions (0.663359ms)
+✔ negative occupancy records fail closed without creating ghost residues (0.278789ms)
+✔ occupancy accepts the unit boundary and rejects values above one (0.169525ms)
+✔ counts duplicate, malformed, zero-occupancy, and residue-name conflict records (0.294894ms)
+✔ defaults to the first actual model ID and permits explicit model selection (0.665772ms)
+✔ keeps insertion-coded residues distinct (0.234102ms)
+✔ audits a legal pipe chain identifier without corrupting residue-pair keys (6.370129ms)
+✔ contact cutoff is inclusive at 4.5 Å and exclusive immediately above it (3.732149ms)
+✔ polar and salt proxies require physically non-overlapping lower distances (2.794266ms)
+✔ recognizes a plausible interchain disulfide without calling it a noncovalent clash (2.848598ms)
+✔ a C-alpha-only broad pose can never receive the top evidence band (25.576181ms)
+✔ pLDDT values outside 0–100 invalidate rather than inflate interface confidence (55.331112ms)
+✔ sparse pLDDT coverage cannot support a pose (54.322695ms)
+✔ one catastrophic overlap forces limited evidence even in a broad interface (56.918052ms)
+✔ buried-area calculation is zero for separated atoms (0.533793ms)
+✔ two-sphere buried area agrees with the analytic spherical-cap result (0.211589ms)
+✔ SASA grid finds the narrow selenium occlusion across a former two-cell boundary (0.739253ms)
+✔ buried area is deterministic, partner-swap invariant, and translation invariant (1.630584ms)
+✔ scientific audit results are invariant to atom rows reordered within fixed residues (10.263891ms)
+✔ parses AlphaFold-list, pae-object, and raw PAE matrix formats (0.46544ms)
+✔ reports asymmetric PAE directions separately and uses their maximum as the conservative scalar (1.610675ms)
+✔ conservative PAE aggregates the worse direction per contact pair (0.966985ms)
+✔ refuses PAE summaries until matrix residue order is explicitly confirmed (0.253322ms)
+✔ PAE parser fails closed on invalid JSON, shape, values, and coordinate mismatch (0.558841ms)
+✔ missing PAE remains explicitly unavailable (0.721847ms)
+✔ spatial-grid contact counts match a brute-force oracle across negative coordinates (5.063051ms)
+✔ pair-aware chain suggestion prefers a contacting receptor–VHH pair (5.197344ms)
+✔ chain suggestion remains deterministic across a 256-copy assembly-like structure (4.848599ms)
+✔ invalid chain assignments return clear errors (0.437599ms)
+✔ PDB parser rejects NUL text and malformed MODEL state before retaining coordinates (0.747615ms)
+✔ PDB parser accepts 100 coordinate models and rejects the 101st during pre-scan (0.806073ms)
+✔ PDB coordinate bounds fail closed across parsing, canonicalization, and audit (12.946899ms)
+✔ PDB and PAE parsers reject oversized text before allocating parsed records (0.284148ms)
+✔ PAE structural preflight rejects empty-row and flat-entry bombs before JSON decoding (184.917917ms)
+✔ parsed PAE validation accepts 1,500 residues and rejects 1,501 (12.478915ms)
+✔ PDB rejects blank-line bombs before splitting them into millions of strings (1.589703ms)
+✔ PDB bounds unique heavy-atom candidate identities before materialization (219.112386ms)
+✔ a skewed exact-boundary source remains valid after canonical centering (1.752027ms)
+✔ PDB numeric fields reject nonblank junk suffixes instead of partial parsing (0.440914ms)
+✔ blank and literal underscore PDB chain identifiers remain distinct (0.250607ms)
+✔ blank PDB element fields infer selenium without treating it as sulfur (0.298019ms)
+✔ iterative PDB duplicate selection handles 130,000 exact records without argument spreading (188.216367ms)
+✔ equal-occupancy coordinate-conflicting PDB duplicates fail closed (0.423016ms)
+✔ source-frame contacts retain the exact inclusive cutoff when SASA uses a separate frame (1.630255ms)
+✔ probe-expanded burial is reported without inventing a 4.5 Å residue contact (1.011262ms)
+✔ interface audit caps unique residue-pair allocation at 50,000 (37.979162ms)
+✔ SASA preflights candidate-distance and occlusion work independently (37.317956ms)
+✔ chain suggestion falls back deterministically beyond bounded pair and atom scans (55.236421ms)
+✔ directional PAE regression preserves a 7/9 Å asymmetry (1.152165ms)
+✔ split SASA frames do not perturb a source-frame contact exactly at 4.5 Å (0.749107ms)
+✔ parses protein chains and proposes the size-plausible assignment (13.616227ms)
+✔ finds an interface with typed distance evidence and bounded labels (37.485278ms)
+✔ reports no assessable interface for separated chains and leaves B-factors uninterpreted (23.493285ms)
+✔ rejects a same-chain audit (6.771984ms)
+✔ bars the top evidence band when a severe overlap is present (24.875456ms)
+✔ filters complete contact evidence by query, geometry, and IMGT region (0.970792ms)
+✔ sorts contacts deterministically by distance or sequence order (0.642257ms)
+✔ contact CSV exports every filtered field and neutralizes spreadsheet controls (1.638627ms)
+✔ DockQ replay audit comparison keeps exact non-SASA fields and reports exact SASA (1.578396ms)
+✔ DockQ replay audit comparison accepts and exposes bounded floating SASA drift (0.253081ms)
+✔ DockQ replay audit comparison accepts signed drift through the exact boundary (0.271468ms)
+✔ DockQ replay audit comparison rejects just beyond the exact boundary (1.173176ms)
+✔ DockQ replay audit comparison rejects either SASA field beyond tolerance (0.545571ms)
+✔ DockQ replay audit comparison rejects non-SASA and non-finite drift (1.652628ms)
+✔ DockQ replay audit comparison never mutates either supplied audit (0.263507ms)
+✔ download filenames remove traversal syntax, controls, format marks, and dot-only names (3.47429ms)
+✔ download filenames are deterministically bounded while preserving a short extension (0.763159ms)
+✔ proper rotations and translations are near-duplicates (2.241013ms)
+✔ proper-rotation fit keeps reflections distinct (0.314533ms)
+✔ 0.001 Å serialization drift remains a duplicate (1.152015ms)
+✔ maximum-deviation guard prevents a local outlier from being diluted (0.79655ms)
+✔ atom inventory mismatch returns null (0.313222ms)
+✔ JSON tuple atom identities remain unambiguous (0.701516ms)
+✔ coincident and collinear selections canonicalize without throwing (1.047246ms)
+✔ canonicalization clones only the selected receptor and VHH, not ballast chains (4.822199ms)
+✔ canonical anchor ties stay deterministic under 1,000 rigid transforms (19.204219ms)
+✔ auditor validates reviewed cognate plans without depending on row order (2.373163ms)
+✔ auditor rejects controls, unreviewed references and wrong source request identities (1.573619ms)
+✔ auditor rejects duplicate records, byte aliases, partial five-model jobs and wrong filenames (1.646439ms)
+✔ auditor requires consistent reviewed receptor and VHH maps and excludes frozen data (0.869539ms)
+✔ changed model bytes stop before production analysis (11.179724ms)
+✔ full-data PAE cannot be silently ignored or replaced with summary confidence (5.456153ms)
+✔ failed audit preserves a failed receipt and refuses to reuse its output directory (84.696949ms)
+✔ compact exports use unchanged tier-first ranking and preserve source hash and recurrence identity (1.309992ms)
+✔ partial production results or chain-map disagreements cannot produce successful exports (7.095822ms)
+✔ development Boltz runner rejects incomplete, mismatched, and tampered artifacts (527.841822ms)
+✔ development intake binds all 92 requests to 460 unique model records and separates reference eligibility (11.435034ms)
+✔ request chain roles preserve the original binder-first order and reversed-order rescue/controls (4.692223ms)
+✔ rejects duplicate models and incomplete ledgers instead of accepting total-count-only evidence (10.093874ms)
+✔ rejects wrong-job request filenames, seed metadata and cross-reference metric reassignment (10.351723ms)
+✔ rejects a noncognate binder disguised as a cognate condition (6.296889ms)
+✔ rejects within-condition receptor sequence drift and mismatched template policies (8.205172ms)
+✔ legacy scores never become official DockQ, standard quality labels, or validation claims (11.801065ms)
+✔ raw inventory is opt-in and an empty directory cannot certify any model or job (23.836988ms)
+✔ partial and empty coordinate files remain explicit and hashes do not certify biological identity (10.208528ms)
+✔ five nonempty filenames still require coordinate/reference identity review before scoring (12.209865ms)
+✔ recovered request metadata must match the original request bytes (7.83905ms)
+✔ ambiguous copies of the same job/model and symlink traversal fail closed (18.300608ms)
+✔ frozen holdout trees are outside the permitted development inventory (6.626185ms)
+✔ reports are deterministic under source order changes and across writes (21.037169ms)
+✔ development summary joins identities, rejects corruption, and preserves complete groups and ties (84.492521ms)
+✔ the byte-preserved historical source-census contract is externally nonauthoritative and preserves the formal minimum (10.558565ms)
+✔ the metadata collector freezes repeated raw responses and a deterministic intersection (47.154594ms)
+✔ the GPCRdb HTML parser uses the prespecified eighth table column (0.758152ms)
+✔ normalized repeat disagreement fails before a source snapshot can be accepted (4.185281ms)
+✔ an API/HTML inventory mismatch is preserved as a target-freeze blocker (29.445145ms)
+✔ a source snapshot mutation cannot bypass checksum verification (29.458686ms)
+✔ even a rechecksummed semantic mutation cannot authorize execution (8.716181ms)
+✔ coordinate-like payloads are rejected even when hidden in otherwise parseable metadata (10.174076ms)
+✔ the hard-decoy v2 census fails closed before target freeze (48.549043ms)
+✔ candidate sequence records are internally hash-consistent and partial source provenance is explicit (0.985213ms)
+✔ the scientific preorder preserves ties and excludes display hashes (1.145564ms)
+✔ public census ledgers contain no holdout label fields (1.450333ms)
+✔ a changed historical artifact invalidates the census lock (1308.659017ms)
+✔ an unlisted package file invalidates exact checksum coverage (1088.403746ms)
+✔ a symlinked package entry fails before content verification (1203.783107ms)
+✔ coordinate text in an allowlisted public artifact fails closed (1202.994786ms)
+✔ summary and attestation access states cannot diverge (1542.383753ms)
+✔ a hardlinked package entry fails before digest verification (1362.446836ms)
+✔ a symlinked census directory is rejected (1301.845677ms)
+✔ a content mutation cannot bypass mandatory checksum verification (1313.9444ms)
+✔ same-size in-place mutation during verification cannot produce a pass (2425.725311ms)
+✔ a missing allowlisted file invalidates the package inventory (1383.49811ms)
+✔ a missing checksum row invalidates complete package coverage (1280.27155ms)
+✔ embedded PDB and mmCIF coordinate strings are rejected after valid rechecksumming (2721.979868ms)
+✔ observed label fields cannot hide in general or endpoint contracts (2443.877865ms)
+✔ an escaping protocol path fails before repository evidence access (1430.695488ms)
+✔ a frozen-eligible target is incompatible with the blocked state (1271.615722ms)
+✔ the v2 protocol cannot be self-authenticated after mutation (1359.903002ms)
+✔ historical locks cannot be rewritten to bless a changed artifact (1411.584068ms)
+✔ base64-wrapped coordinate payloads fail the public-package boundary (1312.231968ms)
+✔ duplicate JSON keys fail before overwritten values can hide labels (1371.59548ms)
+✔ decoded NUL strings fail even when the source JSON contains only an escape (1495.401607ms)
+✔ the DockQ retained-field contract rejects numeric label-like additions (1499.234834ms)
+✔ the checked-in 287-entry metadata snapshot replays from all repeated raw responses (1699.691601ms)
+✔ entry-metadata contract binds the exact source universe and remains fail-closed (837.391252ms)
+✔ collector captures two semantic repeats and deterministically stratifies all 287 rows (2555.655996ms)
+✔ semantic disagreement between repeated RCSB batches fails closed (1002.507682ms)
+✔ an omitted source-universe entry fails exact reconciliation (890.104526ms)
+✔ coordinate-like content is rejected even inside an otherwise valid GraphQL payload (894.563067ms)
+✔ snapshot byte mutation fails checksum replay (3421.731928ms)
+✔ a rechecksummed manifest still cannot authorize execution (3655.176558ms)
+✔ reordering normalized entry rows cannot bypass exact source reconciliation (3715.992457ms)
+✔ exact integer epitope thresholds include equality and fail closed (1.040276ms)
+✔ signed oracle certificate verifies and opened evidence fully reconciles (32.987969ms)
+✔ evidence envelope binds its context, recipient, and precommitted ephemeral key (4.666525ms)
+✔ tampering, key substitution, incomplete matrices, and noncanonical signatures fail (9.694674ms)
+✔ public certificate declassifies decisions and commitments, not hidden epitopes (2.860106ms)
+✔ transcript requires an actually verified frozen request and exact encrypted bytes (12.852638ms)
+✔ development leakage edges and FAIL_CLOSED pairs make candidates ineligible (3.096612ms)
+✔ target and pair commitments have disjoint nonce and digest namespaces (0.515707ms)
+✔ strict parser rejects duplicate keys, decoded controls, bidi, unsafe numbers, and depth bombs (0.526122ms)
+✔ canonical parser rejects alternate numeric forms, whitespace, BOM, and trailing bytes (0.376717ms)
+✔ canonicalizer rejects getters, symbols, and array side properties (0.399852ms)
+✔ oracle output is durable, private, no-replace, and symlink-safe (7.799752ms)
+✔ annotation route uses global separate entry queries with source-lineage strings (1.007306ms)
+✔ entry intersection retains camelid controls even when immunoglobulin Pfam annotations are absent (1.425055ms)
+✔ search parser rejects unexpected fields and unsorted or repeated entry IDs (5.778639ms)
+✔ archived global annotation discovery replays without promoting annotation hits to eligible components (590.49008ms)
+✔ replay rejects extra unplanned snapshot files even when core results are unchanged (981.45779ms)
+✔ all 212 descriptor matches remain pending despite known reagent-role literature (1.864727ms)
+✔ 29 exact-sequence groups partition the review queue without propagating exclusions (0.422375ms)
+✔ historical sub-universe and descriptor scans cannot establish a terminal whole census (0.17891ms)
+✔ checked-in artifacts equal fresh reconstruction without rewriting expected files (9.179198ms)
+✔ an unrecognized antibody descriptor fails instead of being auto-excluded (60.04509ms)
+✔ an unflagged generic polymer never becomes proof of VHH absence (60.966898ms)
+✔ source review verifies all 16 complete frozen inventories while retaining four discrepancies (20.899331ms)
+✔ inventory omission cannot survive comparison with the frozen raw snapshot (5.30035ms)
+✔ anti-Fab boundaries and scFv identity evidence must agree with frozen sequence bytes (14.580058ms)
+✔ unresolved source-deposition discrepancies cannot become exclusions or whole-census authority (5.491146ms)
+✔ removed-accession reconciliation replays all eight public metadata captures without double-counting replacements (270.587447ms)
+✔ replacement9J31 does not inherit the obsolete entry's preferred receptor chain (1.293568ms)
+✔ editing the alias ledger cannot manufacture a second unseen accession (219.376895ms)
+✔ collectors reject existing destinations without deleting caller data (9.067179ms)
+✔ source collection rejects cross-origin responses and non-JSON media types (13.101422ms)
+✔ recursive JSON keys and base64-wrapped coordinate records fail the blind boundary (11.40542ms)
+✔ collectors reject escaped-equivalent duplicate keys before overwritten metadata can be scanned (1015.800128ms)
+✔ replay rejects rechecksummed raw responses whose duplicate keys overwrite forbidden metadata (1654.210076ms)
+✔ strict parsing preserves all 34 frozen metadata response values (147.360913ms)
+✔ source response schemas reject unknown coordinate-shaped fields and incomplete result pages (7.310125ms)
+✔ source collection forbids redirects and requires the exact contracted endpoint (4.739384ms)
+✔ entry-metadata retrieval enforces its pinned origin, JSON media type, and recursive blind boundary (3488.051695ms)
+✔ source checksum paths are matched to the exact allowlist before payload replay (29.455127ms)
+✔ entry contracts fully replay the frozen source universe before consuming GPCRdb (36.913454ms)
+✔ rechecksummed request-ledger remapping is rejected against the frozen batch plan (1541.794252ms)
+✔ entry checksum traversal syntax is rejected without resolving attacker paths (941.496713ms)
+✔ v3 records the selected oracle design without claiming a frozen request (16.58182ms)
+✔ rechecksumming a changed v3 state cannot rewrite the pinned release root (1253.382186ms)
+✔ protocol ancestry cannot be self-authenticated after mutation (1231.697431ms)
+✔ unlisted and symlinked v3 package entries fail closed (2217.476987ms)
+✔ FAIL_CLOSED is frozen as target ineligibility, not a selectable graph edge (1.741341ms)
+✔ the committed development metadata snapshot replays all 17 nodes and preserves the blind boundary (91.637461ms)
+✔ the completion attestation is cryptographically bound to the committed snapshot (1.403322ms)
+✔ metadata ambiguity remains explicit in the committed development node ledger (1.090621ms)
+✔ development metadata completion covers all 17 nodes and fills only the two prespecified gaps (172.777752ms)
+✔ a unique VHH-like metadata entity never becomes direct-interface evidence (165.164262ms)
+✔ normalized disagreement between repeated public metadata requests fails closed (93.310295ms)
+✔ coordinate-like text in an otherwise valid metadata response is rejected (57.750999ms)
+✔ a content mutation cannot bypass the committed snapshot checksum inventory (193.280463ms)
+✔ even a rechecksummed label injection fails closed (189.144066ms)
+✔ all 24 direct-signal salvage rows have a zero component-increment upper bound (368.401413ms)
+✔ US28 fusion constructs map exactly and unambiguously to all seven 4XT1 TM segments (342.814808ms)
+✔ the source-backed exclusions distinguish fusion and auxiliary roles (310.971731ms)
+✔ 8JXS loss lowers the prioritized frontier to eight groups (310.236901ms)
+✔ the bounded audit preserves formal and pre-oracle guardrails (314.256747ms)
+✔ checked-in direct-signal salvage artifacts are deterministic and checksummed (315.926915ms)
+✔ the 29-entry direct-looking stratum adds at most two components (41.2357ms)
+✔ the bound does not overstate whole-census completion (37.629711ms)
+✔ checked-in direct-stratum record is deterministic and checksummed (34.017284ms)
+✔ the committed metadata-only seed is verified and matches a fresh deterministic reconstruction (205.161962ms)
+✔ metadata-only disposition seed covers all 287 source entries without promoting targets (105.377163ms)
+✔ only exact development-PDB reuse is automatically resolved (115.593555ms)
+✔ direct-target metadata review strata do not become scientific dispositions (116.913853ms)
+✔ disposition seed generation is byte-for-byte deterministic (203.461889ms)
+✔ a rechecksummed label injection still fails closed (159.531493ms)
+✔ domain remainder is the exact global domain-minus-metadata set, without an antibody predicate (634.314325ms)
+✔ same-sized replacement of the upstream domain list is rejected by its pinned source digest (3.830496ms)
+✔ verified checkpoints resume and retain every uncharacterized polymer without borrowed receptor mapping (3900.525478ms)
+✔ an entry missing from both repeats stays explicit and prevents metadata completeness (1403.014821ms)
+✔ repeat disagreement retains both bodies and cannot be resumed as a successful snapshot (826.514009ms)
+✔ duplicate, unrequested, and partial-error GraphQL responses fail closed (1436.11803ms)
+✔ transient failures remain auditable across an exhausted attempt and a later resumed retry (2408.285408ms)
+✔ actual remainder capture and screen replay offline for all 692 entries and 2,424 polymers (2161.245084ms)
+✔ the committed exact-evidence pregraph replays all nodes, pairs, and conservative authority states (507.414991ms)
+✔ the exact-evidence attestation is cryptographically bound to both evidence and development snapshots (3.437946ms)
+✔ the 262-node inclusive development connectivity is explicitly not treated as formal leakage (3.109811ms)
+✔ the pregraph commits all 304 nodes and all 46,056 unordered pairs without claiming a formal graph (926.621036ms)
+✔ exact development PDB reuse reconciles the 15 frozen seed exclusions and nothing is promoted (1038.600885ms)
+✔ only prespecified exact or explicitly ambiguous metadata evidence types are emitted (838.655026ms)
+✔ development and candidate VHH ambiguity remains explicit rather than becoming direct-interface evidence (831.013103ms)
+✔ definite and inclusive components are deterministic complete partitions, not formal leakage components (810.142166ms)
+✔ exact evidence generation is byte-for-byte deterministic (1646.663474ms)
+✔ a content mutation cannot bypass the checksum inventory (999.374337ms)
+✔ even a rechecksummed observed-label injection fails closed (989.893943ms)
+✔ the actual 1,429-entry complement capture replays offline with three missing IDs still explicit (1455.50575ms)
+✔ all actual sequence-screen packages reconstruct every saved entity and retain non-authority (3801.039335ms)
+✔ actual recent discovery distinguishes an unchanged GPCRdb index from 112 RCSB candidates (803.477682ms)
+✔ actual replacement reconciliation adds one distinct accession rather than counting three aliases as new entries (181.725428ms)
+✔ actual publication queries reconstruct 24 bibliography records while source extraction stays pending (3.600575ms)
+✔ the recovered generator-readiness package verifies without regenerating frozen artifacts (8.726558ms)
+✔ per-chain MSA retrieval cannot authorize the configured paired mode (2.129648ms)
+✔ missing parameter and environment hashes remain hard blockers (1.260459ms)
+✔ C.2 plan derives exactly the 1,429-ID complement and binds every request (143.786594ms)
+✔ verified capture checkpoints resume without refetching, while snapshot replay remains non-dispositive (2806.035812ms)
+✔ an omitted entry is preserved in the missing-ID ledger and blocks metadata completeness (1028.717563ms)
+✔ semantic repeat disagreement fails closed while retaining raw responses (388.063346ms)
+✔ a transient HTTP failure is archived before retry and included in verification (1438.951951ms)
+✔ generic synthetic descriptions cannot hide an exposed heavy variable domain (7.893953ms)
+✔ long multidomain fusions and noncanonical flanks retain positive sequence signals (25.827332ms)
+✔ Fab wording and a positive heavy-domain screen are never converted into VHH proof (1.211005ms)
+✔ numbered Fab, scFv and heavy-chain names are antibody signals without adjudicating format or role (2.630153ms)
+✔ exact development full-sequence and domain matches flag exposure without excluding (3.658912ms)
+✔ missing, noncanonical and unnumbered sequences stay unresolved, with every polymer retained (1.355903ms)
+✔ distinct sequence cache preserves separate entities and rejects corrupted metadata hashes (4.740202ms)
+✔ artifact verification reconstructs independently and detects tampering without overwriting (70.426346ms)
+✔ recent GPCRdb delta replays from archived bytes without rewriting evidence (252.899983ms)
+✔ a failed inventory repeat leaves removal and discovery completeness unresolved (0.923401ms)
+✔ new index membership is distinct from initial PDB release date (7.250864ms)
+✔ an omitted RCSB entry remains visible and unresolved (1.780844ms)
+✔ metadata disagreement with unchanged identifiers blocks a complete delta capture (0.547094ms)
+✔ unexpected entries and duplicate JSON keys do not pass metadata replay (1.992693ms)
+✔ the authoritative v3 integration state replays every current pre-label evidence layer and stays blocked (9044.08201ms)
+✔ the integration-state policy rejects authority, label access, count drift, and threshold relaxation (3.810509ms)
+✔ five new-looking priority rows receive source-backed exclusion dispositions (26.861079ms)
+✔ two remaining rows are already counted provisional representatives (22.773191ms)
+✔ the bounded audit preserves whole-census and pre-oracle guardrails (23.314447ms)
+✔ checked-in role-audit artifacts are deterministic and checksummed (23.089388ms)
+✔ the conservative other-strata rule creates a 31-entry first-pass queue (415.847578ms)
+✔ the queue prioritizes seven rows without a direct development-pregraph signal (379.399008ms)
+✔ metadata and pregraph signals remain review-only (363.11982ms)
+✔ checked-in salvage-review artifacts are deterministic and checksummed (357.802947ms)
+✔ the committed pre-label viability review matches deterministic reconstruction (1346.851694ms)
+✔ a fresh queue is byte-identical and remains review-only (1333.846813ms)
+✔ the decision rule cannot shrink or relabel the formal holdout (1244.294722ms)
+✔ six priority entries cannot add an independent component (25.793989ms)
+✔ 7EPB uses exact numbered framework and CDR3 evidence (18.960168ms)
+✔ record remains pre-label and non-executable (23.887401ms)
+✔ checked-in output is deterministic and checksummed (19.172068ms)
+✔ publication discovery reproduces its dated bibliography without claiming source review or census completeness (15.228558ms)
+✔ a rehashed response from the wrong phrase is rejected despite matching result totals (18.878706ms)
+▶ page, HTTP and result-format bindings survive ordinary hash rebinding
+  ✔ cursor (10.69408ms)
+  ✔ page size (10.675287ms)
+  ✔ result type (9.330659ms)
+  ✔ method (11.180725ms)
+  ✔ status (10.76334ms)
+✔ page, HTTP and result-format bindings survive ordinary hash rebinding (53.694427ms)
+✔ recent RCSB discovery replays exact archived queries and metadata (665.434209ms)
+✔ recent date boundaries and experimental content remain in every discovery query (0.533305ms)
+✔ Pfam type and accession share a nested group and controls do not enter the recent route (0.192631ms)
+✔ only an empty HTTP 204 is interpreted as a zero-result page (1.31201ms)
+✔ partial pagination preserves observed candidates while blocking completeness (1.381816ms)
+✔ a control-only match never becomes a newly released candidate (1.02723ms)
+✔ the receptor TM contract freezes mapping, TM extraction, alignment, thresholds, and non-authority (5.098683ms)
+✔ global affine alignment is deterministic, symmetric in metrics, and counts gap columns in identity and coverage (1.613996ms)
+✔ the exact receptor thresholds include equality and keep the 30 percent analysis veto-only (0.21821ms)
+✔ GPCRdb protein records require exact accession, canonical sequence, GPCR family, and SWISSPROT source (0.539624ms)
+✔ canonical TM extraction requires all seven ordered segments and exact canonical-sequence mapping (1.059208ms)
+✔ a fused construct resolves only through one unique valid GPCRdb accession and otherwise fails closed (1.307323ms)
+✔ accepts a canonical frozen request with ten disjoint candidate components and exact whole-batch pairs (40.523037ms)
+✔ requires the out-of-band checksum root and rejects a fully self-rehashed mutation (17.425977ms)
+✔ rejects fewer than ten candidate targets/components even when all internal hashes agree (17.302742ms)
+✔ rejects missing, reversed, duplicate, and forbidden pair rows after complete rebinding (75.771597ms)
+✔ rejects unlisted, missing, symlinked, and hardlinked request files (29.25006ms)
+✔ strict schemas reject hidden disclosures and decoded duplicate keys (28.959053ms)
+✔ noncanonical numbers and path/confusable identifiers fail closed (52.106486ms)
+✔ source mappings are exact and reject missing or unbound source rows (37.231183ms)
+✔ key, digest, entropy, resource, and state substitutions fail closed (92.351893ms)
+✔ canonical HTTPS source mappings reject credentials and traversal spellings (50.988354ms)
+✔ the committed VHH matrix independently replays pair identity, sequence reuse, thresholds, summaries, and non-authority (558.97502ms)
+✔ the VHH sequence contract freezes numbering, alignment, thresholds, pair space, and non-authority (5.042453ms)
+✔ the frozen affine alignment is symmetric in metrics, deterministic, and counts terminal gaps in identity (4.458876ms)
+✔ the exact frozen VHH threshold includes equality and fails each conjunct independently (0.256576ms)
+✔ the pinned IMGT engine deterministically extracts framework and CDR3 while excluding the terminal tag (7.425828ms)
+✔ the corrected pinned IMGT engine preserves the complete Nb35 long CDR3 before a terminal tag (1.217701ms)
+✔ the complete VHH sequence pregraph regenerates, reconciles exact evidence, and fails closed under mutation (14545.782746ms)
+✔ metadata-only profiles are exact, closed, and exclude evaluation artifacts (11.747319ms)
+✔ every relative module import is present in the same isolated profile (3.533319ms)
+✔ metadata workflows never checkout or mount broader project/evaluation closures (1.978384ms)
+✔ stager source is standalone and has no repository-shell or manifest-driven path mechanism (1.046579ms)
+✔ the exact read-only staged tree and receipt verify (130.824102ms)
+▶ staged-input verification rejects extra, missing, mutated, symlinked, hardlinked, or writable files
+  ✔ extra (55.407182ms)
+  ✔ missing (57.045396ms)
+  ✔ mutated (48.594283ms)
+  ✔ symlinked (54.958632ms)
+  ✔ hardlinked (51.145435ms)
+  ✔ writable (50.00673ms)
+✔ staged-input verification rejects extra, missing, mutated, symlinked, hardlinked, or writable files (318.601404ms)
+✔ staged-input verification rejects receipt identity and aggregate-root drift (101.922936ms)
+✔ staged-input verification rejects hostile receipt and root filesystem states (251.871367ms)
+✔ detects PDBx/mmCIF by extension or content (4.612296ms)
+✔ bounds distinct mmCIF data names before retaining unbounded empty loops (36.081909ms)
+✔ bounds mmCIF block, data-name, chain, model, and operation identifiers (1.170683ms)
+✔ parses shuffled atom-site columns, quoted values, uncertainty notation, and EOF (0.518791ms)
+✔ preserves label/auth identity and avoids duplicate author-chain IDs (1.049971ms)
+✔ sorts observed residues by label sequence and selects the first encountered model ID (0.718452ms)
+✔ fails closed when one author residue mixes present and missing label sequence IDs (0.509367ms)
+✔ bounds deposited-assembly asym-ID lists before splitting them (0.812804ms)
+✔ applies coherent residue-level alternate-location selection and occupancy guards (0.607595ms)
+✔ distinguishes quoted missing-value symbols from unquoted missing values (0.353723ms)
+✔ expands lists, numeric ranges, and Cartesian products without evaluation (0.282856ms)
+✔ reconstructs an identity deposited assembly with unique chain instances (1.199767ms)
+✔ uses label asym IDs exactly and creates multiple copies deterministically (1.037853ms)
+✔ composes noncommuting operations in wwPDB expression order (0.514204ms)
+✔ unions multiple assembly generator rows (0.348715ms)
+✔ fails closed for missing operators, unknown asym IDs, and invalid transforms (1.356553ms)
+✔ rejects malformed loops, multiple data blocks, and save frames (0.385561ms)
+✔ consumes uncommon whitespace without hanging and bounds transformed coordinates (0.61059ms)
+✔ canonicalizes equivalent label sequence integers into one residue site (0.324468ms)
+✔ fails closed on input-order-dependent residue microheterogeneity (0.191528ms)
+✔ parses 128 deterministic atom-site column permutations identically (13.652029ms)
+✔ operation-expression expansion matches 100 deterministic Cartesian-product oracles (1.04972ms)
+✔ deposited-assembly descriptors accept exactly 256 IDs and reject the 257th during retention (2.42339ms)
+✔ as-supplied mmCIF parsing accepts 256 protein chains and rejects the 257th (5.753965ms)
+✔ assembly-operation numeric ranges reject unsafe integer endpoints (0.15306ms)
+✔ mmCIF materialized residue keys encode tuples without delimiter collisions (0.264979ms)
+✔ iterative mmCIF duplicate selection handles 130,000 exact candidates (895.856037ms)
+✔ equal-occupancy coordinate-conflicting mmCIF duplicates fail closed (0.444169ms)
+✔ extracts directional receptor/VHH PAE blocks in confirmed chain order (1.478186ms)
+✔ downsamples directional blocks by deterministic bin means (0.163837ms)
+✔ rejects stale dimensions, invalid chain roles, and invalid display caps (0.510199ms)
+✔ contact-marker sampling is bounded, deterministic, and endpoint preserving (0.414054ms)
+✔ Jaccard similarity handles partial, disjoint, and empty sets explicitly (1.222611ms)
+✔ identical contacting poses receive complete consensus (23.539581ms)
+✔ a reproduced pose cluster ranks above an isolated contact pattern (12.180494ms)
+✔ recurrence order is not overridden by a weaker coordinate-evidence band (9.566898ms)
+✔ consensus ties use clash burden then stable ID, never ΔSASA (6.730847ms)
+✔ ensemble results are invariant to upload order (9.441639ms)
+✔ recurrence serialization is exactly stable across many upload permutations (1389.778278ms)
+✔ recurrent-contact share uses contacts present in at least half the ensemble (8.237285ms)
+✔ poses with no interfaces do not gain artificial consensus (3.895676ms)
+✔ exact receptor and VHH sequence mismatches fail closed (4.091742ms)
+✔ exact sequence matches with incompatible selected atom inventories fail closed (4.806549ms)
+✔ duplicate identifiers and unsupported ensemble sizes are rejected (25.402858ms)
+✔ chain matching supports changed chain IDs when both sequences match exactly (0.441105ms)
+✔ chain matching rejects duplicate exact-sequence copies instead of selecting by interface geometry (0.212239ms)
+✔ chain matching rejects a million ambiguous pairs without allocating a Cartesian product (0.515176ms)
+✔ CSV export preserves scientific values and escapes filenames (23.63915ms)
+✔ JSON report preserves the reference, coordinate-only policy, and exclusions (5.898513ms)
+✔ ensemble export validates rejected records, timestamps, provenance, and snapshots (5.848088ms)
+✔ JSON and CSV share strict ensemble-summary integrity validation (147.569369ms)
+✔ competition-rank ties are validated independently from stable display order (7.268242ms)
+✔ accepted and rejected ensemble provenance share the twelve-record cap (4.050819ms)
+✔ ensemble summary rejects coordinate-policy drift and incomplete methods (16.087764ms)
+✔ ensemble summary requires exact current method descriptions even when every pose drifts together (7.896249ms)
+✔ ensemble summary rejects an audit after a selected coordinate mutates (2.87744ms)
+✔ ensemble summary rejects nonfinite metrics and inconsistent contact records (13.428152ms)
+✔ ensemble summary rejects invalid input provenance and contact domains (20.917458ms)
+✔ the candidate policy is frozen and carries no fitted coefficient or new threshold (1.109614ms)
+✔ the shipped evidence level is carried through, never recomputed (0.288716ms)
+✔ the audit adapter reads both numbering shapes identically (1.580604ms)
+✔ the secondary key is interface burial passed through unchanged (0.242285ms)
+✔ assessability fails closed rather than defaulting optimistically (0.205059ms)
+✔ interpenetration is reported, and is honest that it already moved the tier (0.187393ms)
+✔ sparse interfaces and missing numbering raise non-gating cautions (0.200462ms)
+✔ burial orders poses inside a tier and never across tiers (0.25822ms)
+✔ within-target ranking is total, deterministic, and sinks unassessable poses in tier (5.85487ms)
+✔ the development replay reproduces the recorded v0.5 arms exactly (7.37281ms)
+✔ rank-k is measured tie-aware, so the all-tied control cannot beat its prevalence (0.82217ms)
+✔ the candidate improves ranking without giving up the shipped top tier (0.723721ms)
+✔ the burial overshoot is recorded, not asserted (0.653656ms)
+✔ the candidate claims nothing about binding, generalization, or the holdout (1.188643ms)
+✔ the executed public panel is recorded, checksummed, and consistent with the design record (1.729178ms)
+✔ the replay artifact matches its recorded checksum (0.793947ms)
+✔ the superseded candidate.1 record is preserved byte-for-byte (1.071115ms)
+✔ the shipped policy carries every behavioural field from the studied candidate (1.151116ms)
+✔ burial never promotes a pose past the shipped tier the audit assigned it (0.842551ms)
+✔ burial orders poses inside a tier and a missing measurement sinks without leaving the tier (8.854394ms)
+✔ scoring fails closed on incomplete or unrecognised audit input (0.224208ms)
+✔ cautions report interpenetration at the shipped overlap boundary and mark what moves the rank (0.419633ms)
+✔ the shipped module reproduces the frozen development-pilot accounting (5.499884ms)
+✔ the shipped rank key puts an acceptable pose first in every development target (4.168367ms)
+✔ the decision shortlist is emitted in rank order and binds the policy that produced it (1.755147ms)
+✔ audits one coordinate pose with a researcher-confirmed square PAE matrix (17.919776ms)
+✔ preserves raw-array PAE source format through the canonical per-pose report (8.790657ms)
+✔ extracts AF3 full-data PAE while ignoring its extra contact-probability matrix (2.593451ms)
+✔ subsets a token PAE matrix only through an exact protein-residue token map (2.084274ms)
+✔ quarantines unused token metadata that aliases a parsed protein chain (2.133618ms)
+✔ quarantines extra-token PAE without residue metadata and keeps coordinate audit explicit (1.680154ms)
+✔ quarantines ragged, negative, nonfinite, understated-max, and dimension-mismatched PAE (7.562977ms)
+✔ accepts only sub-centiangstrom producer rounding between max_pae and serialized matrix (2.71161ms)
+✔ requires explicit PAE association and axis confirmation before scientific work (0.548337ms)
+✔ runs coordinate-only recurrence first and joins retained poses by SHA-256 (7.708797ms)
+✔ records rather than hides duplicate-geometry and incompatible candidate rejection (3.871229ms)
+✔ evaluates user-annotated receptor footprint per retained exact-sequence pose (5.088404ms)
+✔ reports monotonic phase-local progress and one terminal audit per accepted pose (4.600218ms)
+✔ creates a no-raw-source dossier bound to the resolved manifest and pose reports (16.622079ms)
+✔ CSV neutralizes formula-like source text after leading whitespace and preserves directional field names (2.451287ms)
+✔ rejects duplicate selected coordinate digests before recurrence (0.299782ms)
+✔ enforces declared UTF-8 byte provenance and explicit reference identity (0.332021ms)
+✔ validates the complete worker-facing prediction-run job envelope before parsing (0.637772ms)
+✔ requires unique exact per-pose PAE ownership (0.240152ms)
+✔ validates native PAE source metadata on the direct worker path (0.357389ms)
+✔ generation advancement is monotonic, bounded, and stale-safe (1.197276ms)
+✔ worker events require both the current generation and request identifier (0.155324ms)
+✔ progress accepts phase-local monotonic updates and the one forward phase transition (1.123735ms)
+✔ progress retains its prior snapshot for malformed, regressive, or phase-reversing events (0.315216ms)
+✔ progress cannot enter per-pose audit before coordinate recurrence completes (0.171118ms)
+✔ production prediction-run worker boots and audits one coordinate-only pose (138.603908ms)
+✔ accepts only the two bounded prediction-run worker request types (4.996922ms)
+✔ recovers request identifiers without trusting malformed envelopes (0.310679ms)
+✔ production worker dispatches native PAE and full-run requests with explicit error conversion (6.887252ms)
+✔ pairs AlphaFold Server coordinate and full-data JSON by exact model index (5.932898ms)
+✔ pairs ColabFold scores with the complete anchored rank/model/seed tag (1.939124ms)
+✔ strips the rightmost ColabFold role suffix when the user prefix contains native-looking text (0.923172ms)
+✔ does not confuse ColabFold rank 001 with rank 010 (0.465021ms)
+✔ requires one ColabFold relaxed/unrelaxed variant before reusing one score file (0.771323ms)
+✔ pairs local AlphaFold 3 sample files only inside their relative directory (2.061229ms)
+✔ excludes the local AlphaFold 3 top-ranked copy by naming even when its bytes differ (0.986698ms)
+✔ recognizes Boltz confidence JSON and binary PAE without substituting confidence for PAE (0.366793ms)
+✔ resolves fold-prefixed Boltz coordinates from companions, including a flattened upload (0.445562ms)
+✔ does not guess when fold-prefixed AlphaFold Server and Boltz companions conflict (0.427975ms)
+✔ quarantines PAE matrices hidden under confidence and ranking filenames (0.383999ms)
+✔ manual PAE association is explicit and cannot be reused by included poses (0.560085ms)
+✔ identical coordinate aliases block recurrence until one is excluded (0.26515ms)
+✔ manifest is invariant to FileList order (0.473314ms)
+✔ export strips decoded coordinate and PAE source text (0.352732ms)
+✔ rejects disguised coordinate content and malformed native PAE JSON (0.698022ms)
+✔ generic coordinate-only inputs remain explicitly visible and ready (0.172961ms)
+✔ path validation rejects traversal, absolute, control, bidi, empty, and collisions (1.5912ms)
+✔ enforces file-count and digest integrity boundaries (0.684653ms)
+✔ rejects UTF-8 BOM inputs before manifest classification (0.610671ms)
+✔ blocks ready PAE selections above the shared 48 MiB aggregate audit limit (450.681384ms)
+✔ production audit worker boots and completes the typed request protocol (135.906415ms)
+✔ production worker parses mmCIF and reconstructs a declared assembly (112.017832ms)
+✔ production worker parses PAE into a transferable row-major Float32 matrix (108.439635ms)
+✔ bounded public download streams exact bytes and passes a timeout signal (15.8004ms)
+✔ bounded public download rejects declared and streamed byte overflows (1.086959ms)
+✔ bounded public download fails closed on malformed metadata and responses (1.316776ms)
+✔ public download defaults are explicit release resource bounds (0.107643ms)
+✔ real prediction-run artifact identifies immutable public source bytes (1.363296ms)
+✔ real producer outputs complete manifest, recurrence, and per-pose PAE paths (0.203897ms)
+✔ real-run evidence remains explicitly separate from GPCR-VHH validation claims (0.272531ms)
+✔ archived scientific-engine manifests remain byte-identical to both v0.5 attestations (7.237135ms)
+✔ CI and release workflows use full-SHA official actions and separated assurance gates (2.633381ms)
+✔ Dependabot monitors root, QA, and GitHub Actions dependency domains (0.843092ms)
+✔ isolated QA and release artifacts preserve product/engine separation (2.292387ms)
+✔ renders the ConfoVHH application shell without preview-only metadata (121.404108ms)
+✔ production entry rejects write methods before framework routing (7.010844ms)
+✔ normalizes bounded study metadata without invisible controls (1.772243ms)
+✔ derives neutral coordinate-geometry flags for every evidence band (0.807408ms)
+✔ coordinate review actions are tied to observed gaps and flags (0.853127ms)
+✔ local notebook entries contain allowlisted summaries and exact selection provenance (33.520895ms)
+✔ notebook export round-trips atomically and rejects malformed entries (11.971865ms)
+✔ v0.9.1 emits neutral records while importing intact v0.6 through v0.9.0 notebook records (8.87881ms)
+✔ workspace dossier round-trips validated reports and rejects provenance drift (18.511609ms)
+✔ v0.9.1 emits current dossiers while importing and migrating v0.6 through v0.9.0 dossiers (10.156638ms)
+✔ workspace dossier rejects false fixed-policy and parser provenance while accepting multiline metadata (9.606438ms)
+✔ workspace dossier rejects PAE convention and selected-chain mapping drift (8.388432ms)
+✔ workspace dossier rejects non-finite nested report values before export (4.73367ms)
+✔ human handoff includes provenance, next checks, and explicit claim limits (10.890355ms)
+✔ software SHA-256 matches Node across padding boundaries and large inputs (19.243002ms)
+✔ portable SHA-256 uses WebCrypto when available without changing the digest (3.227388ms)
+✔ state-pair source preserves bounded input, raw-byte provenance, and worker failure paths (3.568502ms)
+✔ state-pair source exposes all three optional labels and reproducible exports (2.570697ms)
+✔ browser contact rendering is capped while the complete result remains exportable (1.409426ms)
+✔ state-pair UI exposes provenance, policy, numbering, and assertive errors (1.244697ms)
+✔ exact observed sequences match across changed chain IDs (2.143713ms)
+✔ exact sequence matching fails closed on mismatch and ambiguity (0.822601ms)
+✔ ambiguous matching exits without materializing a million-pair Cartesian product (0.726286ms)
+✔ paired summary reports signed comparison-minus-reference deltas and three Jaccards (16.751495ms)
+✔ contact partitions retain shared and condition-only residue records (7.355854ms)
+✔ reversing the pair negates signed deltas, preserves similarity, and swaps exclusive contacts (5.892167ms)
+✔ two empty contact footprints report null overlap rather than artificial agreement (2.809087ms)
+✔ one empty footprint and one nonempty footprint report zero overlap (3.224713ms)
+✔ Jaccard and contact partitions satisfy seeded set properties (345.885024ms)
+✔ exact observed receptor and VHH sequence mismatches fail closed (2.303775ms)
+✔ the comparison audit must use the unique exact-sequence chain assignment (1.967938ms)
+✔ global proper rotation and translation duplicates are rejected (2.938772ms)
+✔ sub-threshold coordinate noise remains a rejected duplicate (2.854626ms)
+✔ a reflected chiral coordinate set is not collapsed by the proper-rotation fit (3.144292ms)
+✔ incompatible selected atom identities fail before comparison (2.863569ms)
+✔ labels are optional user context and do not alter any calculation (5.380976ms)
+✔ unsupported runtime labels fail closed (2.129862ms)
+✔ pLDDT and every PAE path are excluded from coordinate-only paired audits (10.80813ms)
+✔ fixed contact, clash, SASA, and budget policies fail closed on drift (13.652991ms)
+✔ exact method descriptions fail closed even when both audits drift together (5.116627ms)
+✔ contact records are range-checked, unique, and reconciled with summary counts (7.614654ms)
+✔ nonfinite, inconsistent, and out-of-domain audit metrics are rejected (13.045044ms)
+✔ audit software versions, input identifiers, byte counts, and filenames are validated (11.235925ms)
+✔ full coordinate, parser, assembly, and chain-instance provenance is retained (3.671006ms)
+✔ JSON export uses schema 1.2 and preserves policy, fit, labels, provenance, and claim boundary (5.939698ms)
+✔ long-form CSV has fixed-width rows, metric/contact records, policy budgets, and safe text (8.903478ms)
+✔ summary generation is deterministic and does not mutate either input (4.287376ms)
+✔ summary provenance is a stable snapshot rather than a live view of mutable inputs (2.462674ms)
+✔ state summary rejects an audit after a selected coordinate mutates (2.083602ms)
+✔ state summaries verify supplied fingerprints and normalize uppercase SHA-256 (5.200944ms)
+✔ state export requires complete source provenance and is an immutable snapshot (6.518461ms)
+✔ the shared JSON/CSV validator rejects every recursively nonfinite numeric leaf (164.084738ms)
+✔ the shared JSON/CSV validator rejects provenance, policy, delta, overlap, contact, and attestation drift (26.484602ms)
+✔ all signed deltas, Jaccards, and contact partitions are independently rederived at both export gates (21.653728ms)
+✔ validateStatePairExportSummary returns a detached, fully validated snapshot (3.29571ms)
+✔ reports unique receptor-contact overlap across mutually exclusive supplied classes (17.41202ms)
+✔ uses neutral all, none, descriptive, and insufficient statuses (5.68296ms)
+✔ fails closed when one mapped residue is assigned to multiple classes (1.793625ms)
+✔ surfaces unmapped identifiers without inferring wild-type or generic numbering (3.125423ms)
+✔ validates the complete normalized annotation trust boundary (4.168267ms)
+✔ propagates a reference annotation only by receptor sequence order (1.5786ms)
+✔ rejects invalid or duplicate observed interface orders (2.298968ms)
+✔ normalizes bounded annotation source and produces deterministic fingerprints (1.842779ms)
+✔ exports explicit negative inference flags and the fixed claim boundary (1.676208ms)
+✔ renders the state-pair setup with a strict scientific boundary (1462.712383ms)
+✔ disables state-pair inputs while another workspace operation is busy (9.072372ms)
+✔ renders the task-centered researcher workspace and privacy-bounded handoff controls (125.537795ms)
+✔ keeps unavailable workflow stages non-interactive until a reference audit exists (1.511755ms)
+✔ renders directional PAE views with an accessible non-binding boundary (17.228625ms)
+✔ renders native prediction-run intake with bounded, review-first controls (158.305853ms)
+✔ renders user-annotated topology as an optional non-inferential check (10.569935ms)
+✔ emits ConfoVHH interaction and reduced-motion styles (2.75809ms)
+✔ production audit worker embeds the IMGT WASM without a Node filesystem loader (3.175669ms)
+✔ development and production transforms expose immunum as named ESM (0.73133ms)
+✔ production page bundles never instantiate the IMGT WASM during SSR or hydration (6.505609ms)
+✔ workspace source preserves raw-byte provenance and bounded worker handoff (0.888327ms)
+✔ workspace source preserves accessibility, cancellation, replacement, and local-summary privacy contracts (1.556032ms)
+✔ viewport sampling and one-path trace construction remain deterministic and bounded (89.448349ms)
+✔ public demo response reading is byte-bounded before parsing (7.291222ms)
+✔ product display neutralizes frozen-engine prioritization wording (2.265079ms)
+✔ workspace export controls, errors, provenance, and method labels are explicit (0.981547ms)
+✔ application text styles do not render below the ten-pixel floor (0.722638ms)
+✔ ten-pixel workflow and PAE labels meet WCAG AA contrast (0.882007ms)
+✔ project and test Vite watchers ignore generated and benchmark trees (0.67779ms)
+✔ forwards progress semantics to the primitive (4.744409ms)
+✔ renders the release record with exact results and an explicit claim boundary (9.554327ms)
+✔ emits chart themes for the starter's media dark mode (188.846835ms)
+✔ renders sidebar skeletons deterministically (47.920519ms)
+✔ maps exact and selected-chain residue identifiers onto the observed footprint (3.769292ms)
+✔ reports distinct aliases that map to one receptor residue without dropping requests (0.404338ms)
+✔ retains the complete observed footprint when no intended residues are supplied (0.209746ms)
+✔ copied canonical identifiers round-trip even when internal residue keys contain delimiters (0.268174ms)
+✔ rejects mismatched audit chains and bounded-input violations (0.548846ms)
+✔ v0.5 public attestation checksums and commit-bound accounting are intact (7.022858ms)
+✔ v0.5 public attestation binds archived implementation, unchanged scientific-core bytes, and historical dependency separation (17.536929ms)
+✔ v0.5 public result ledgers reconcile all source hashes and exact regressions (1.281338ms)
+✔ v0.5 DockQ replay checksums, source attestation, and claim barriers are intact (3.738035ms)
+✔ v0.5 DockQ replay binds archived implementation and current scientific-core bytes (22.186446ms)
+✔ supplemental v0.5 implementation snapshot is complete and checksum-covered (16.389101ms)
+✔ all 360 replay comparisons reconcile exact records and bounded SASA drift (8.086448ms)
+✔ replay controls reconcile the five targets and remain exact at far translation (1.36289ms)
+✔ the v0.6 promotion moved exactly one scientific-core file and preserved every v0.5 attestation (2.612862ms)
+✔ both implementation snapshots verify against their own checksum manifests (12.421942ms)
+✔ the v0.6 candidate freezes the corrected engine and strict fail-closed policy (1.170711ms)
+✔ the v0.6 candidate assigns complete, independently cross-checked IMGT regions (4.540873ms)
+✔ the corrected v0.6 candidate preserves the complete Nb35 21-residue CDR3 (2.369014ms)
+✔ the independent segmentation check fails closed on incomplete or disagreeing regions (1.629802ms)
+✔ the v0.6 candidate excludes terminal tags from all numbered regions (1.444804ms)
+✔ the v0.6 candidate normalizes case, rejects invalid input, and is deterministic (2.982188ms)
+✔ assigns formal IMGT-scheme positions and expected CDR segments (5.706427ms)
+✔ maps every IMGT FR/CDR boundary exactly (0.19275ms)
+✔ leaves terminal tags outside the numbered V-domain (1.428029ms)
+✔ retains long-CDR3 IMGT insertion labels instead of treating them as raw offsets (1.260127ms)
+✔ normalizes lowercase sequence input (1.264904ms)
+✔ fails closed for a low-complexity non-antibody chain (1.077722ms)
+✔ rejects characters outside the supported protein alphabet (0.328695ms)
+✔ numbering is deterministic across repeated calls (2.31917ms)
+ℹ tests 642
+ℹ suites 0
+ℹ pass 642
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 155617.752078
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> confovhh@0.5.0 test:adversarial
+> node scripts/run-adversarial-validation.mjs
+
+{
+  "tool": "ConfoVHH product v0.9 adversarial validation",
+  "schemaVersion": "1.0.0",
+  "seed": "0x6d2b79f5",
+  "node": "v24.19.0",
+  "results": [
+    {
+      "name": "proper rigid fits survive randomized rotations and translations",
+      "status": "PASS",
+      "assertions": 8000,
+      "milliseconds": 81.1,
+      "cases": 2000,
+      "worstRmsd": 1.6248815950983187e-10,
+      "worstMaximumDeviation": 2.4393454971490735e-10
+    },
+    {
+      "name": "reflections remain distinct in fits and signed fingerprints",
+      "status": "PASS",
+      "assertions": 1500,
+      "milliseconds": 131.9,
+      "cases": 500,
+      "smallestRmsd": 5.579838175605815
+    },
+    {
+      "name": "geometry and source-coordinate fingerprints have their intended invariants",
+      "status": "PASS",
+      "assertions": 3000,
+      "milliseconds": 339.9,
+      "cases": 1000
+    },
+    {
+      "name": "contact cutoff and spatial grid agree with direct distance oracles",
+      "status": "PASS",
+      "assertions": 1201,
+      "milliseconds": 500,
+      "cases": 1201
+    },
+    {
+      "name": "approximate SASA is translation- and side-swap-invariant",
+      "status": "PASS",
+      "assertions": 150,
+      "milliseconds": 155.2,
+      "cases": 150,
+      "worstAbsoluteError": 0
+    },
+    {
+      "name": "PDB fixed-column mutation fuzz fails safely",
+      "status": "PASS",
+      "assertions": 43500,
+      "milliseconds": 172.8,
+      "cases": 20001,
+      "accepted": 19999,
+      "rejected": 1
+    },
+    {
+      "name": "mmCIF token streams and assembly expressions fuzz safely",
+      "status": "PASS",
+      "assertions": 42716,
+      "milliseconds": 310.8,
+      "cases": 30000,
+      "mmcifAccepted": 0,
+      "mmcifRejected": 10000
+    },
+    {
+      "name": "valid mmCIF column permutations and operation ranges have exact oracles",
+      "status": "PASS",
+      "assertions": 4002,
+      "milliseconds": 44.2,
+      "cases": 2502
+    },
+    {
+      "name": "PAE matrix fuzz rejects nonfinite, negative, and malformed shapes",
+      "status": "PASS",
+      "assertions": 2000,
+      "milliseconds": 179,
+      "cases": 1500,
+      "valid": 500,
+      "rejected": 1000
+    },
+    {
+      "name": "exact parser ceilings accept the boundary and reject the next item",
+      "status": "PASS",
+      "assertions": 9,
+      "milliseconds": 1354.1,
+      "cases": 2371702,
+      "pdbBytes": 4739999,
+      "mmcifBytes": 3263518,
+      "paeJsonBytes": 4503021
+    },
+    {
+      "name": "line, container, size, metadata, and identifier bombs fail before unbounded work",
+      "status": "PASS",
+      "assertions": 14,
+      "milliseconds": 100.3,
+      "cases": 14,
+      "millionRowBombBytes": 3000009
+    },
+    {
+      "name": "ensemble summaries are invariant across seeded upload permutations",
+      "status": "PASS",
+      "assertions": 500,
+      "milliseconds": 969.2,
+      "cases": 500,
+      "posesPerCase": 6
+    },
+    {
+      "name": "Jaccard properties hold over randomized sets",
+      "status": "PASS",
+      "assertions": 75000,
+      "milliseconds": 79.7,
+      "cases": 25000
+    },
+    {
+      "name": "state-pair reversal preserves overlaps and negates signed deltas",
+      "status": "PASS",
+      "assertions": 3600,
+      "milliseconds": 162,
+      "cases": 400
+    },
+    {
+      "name": "CSV exports neutralize formula prefixes, controls, separators, and format characters",
+      "status": "PASS",
+      "assertions": 36537,
+      "milliseconds": 83.2,
+      "cases": 38,
+      "payloads": 19
+    },
+    {
+      "name": "attestations reject stale coordinates and coherently shaped result tampering",
+      "status": "PASS",
+      "assertions": 8,
+      "milliseconds": 4.5,
+      "cases": 8
+    },
+    {
+      "name": "product contact filters and CSV remain deterministic across randomized ledgers",
+      "status": "PASS",
+      "assertions": 15000,
+      "milliseconds": 71.9,
+      "cases": 102634,
+      "trials": 5000
+    },
+    {
+      "name": "directional PAE display bins match an independent randomized oracle",
+      "status": "PASS",
+      "assertions": 54122,
+      "milliseconds": 17,
+      "cases": 54122,
+      "trials": 2000
+    },
+    {
+      "name": "user-defined receptor footprints map exactly under randomized inventories",
+      "status": "PASS",
+      "assertions": 20000,
+      "milliseconds": 155.9,
+      "cases": 61627,
+      "trials": 5000
+    },
+    {
+      "name": "notebook and dossier product records round-trip without scientific input persistence",
+      "status": "PASS",
+      "assertions": 4000,
+      "milliseconds": 9969.9,
+      "cases": 2000,
+      "trials": 1000
+    },
+    {
+      "name": "chain suggestions are independent of top-level chain order",
+      "status": "PASS",
+      "assertions": 100,
+      "milliseconds": 7.4,
+      "cases": 100
+    },
+    {
+      "name": "prediction-run manifests are invariant across seeded FileList permutations",
+      "status": "PASS",
+      "assertions": 20002,
+      "milliseconds": 1391.8,
+      "cases": 240000,
+      "trials": 20000,
+      "filesPerTrial": 12
+    },
+    {
+      "name": "prediction-run path normalization rejects hostile and colliding names deterministically",
+      "status": "PASS",
+      "assertions": 100000,
+      "milliseconds": 437.2,
+      "cases": 100000,
+      "safe": 40000,
+      "hostile": 50000,
+      "collisions": 10000
+    },
+    {
+      "name": "prediction-run content sniffing rejects disguises, binary PAE, and polyglot-like inputs",
+      "status": "PASS",
+      "assertions": 50000,
+      "milliseconds": 542.5,
+      "cases": 50000,
+      "categories": 10
+    },
+    {
+      "name": "native prediction pairing agrees with an independent exact-key graph oracle",
+      "status": "PASS",
+      "assertions": 50001,
+      "milliseconds": 825.6,
+      "cases": 50000,
+      "trials": 10000,
+      "posesPerTrial": 5
+    },
+    {
+      "name": "prediction PAE JSON fuzz rejects structural bombs before scientific attachment",
+      "status": "PASS",
+      "assertions": 80000,
+      "milliseconds": 967.3,
+      "cases": 80000,
+      "categories": 8
+    },
+    {
+      "name": "native PAE token metadata maps exact, permuted, manual, and conflicting orders",
+      "status": "PASS",
+      "assertions": 115000,
+      "milliseconds": 969.8,
+      "cases": 75000,
+      "exact": 20000,
+      "permuted": 20000,
+      "researcherConfirmed": 20000,
+      "rejected": 15000
+    },
+    {
+      "name": "directional per-pose PAE summaries obey transpose and joint-order metamorphisms",
+      "status": "PASS",
+      "assertions": 200001,
+      "milliseconds": 536.8,
+      "cases": 200000,
+      "trials": 50000,
+      "metamorphismsPerTrial": 4
+    },
+    {
+      "name": "prediction-run digest mutation invalidates only dependent manifest identities",
+      "status": "PASS",
+      "assertions": 50000,
+      "milliseconds": 345.2,
+      "cases": 50000,
+      "trials": 10000,
+      "localityChecksPerTrial": 5
+    },
+    {
+      "name": "production prediction-run progress guards match an independent lifecycle oracle",
+      "status": "PASS",
+      "assertions": 2000001,
+      "milliseconds": 1273,
+      "cases": 2000000,
+      "traces": 50000,
+      "eventsPerTrace": 40
+    },
+    {
+      "name": "cancel, replacement, timeout, and late-result traces cannot commit stale generations",
+      "status": "PASS",
+      "assertions": 1500001,
+      "milliseconds": 460.6,
+      "cases": 1500000,
+      "traces": 50000,
+      "eventsPerTrace": 30
+    },
+    {
+      "name": "user topology overlap matches an independent randomized residue-set oracle",
+      "status": "PASS",
+      "assertions": 100000,
+      "milliseconds": 11937.3,
+      "cases": 100000,
+      "residueUniverse": 12
+    },
+    {
+      "name": "prediction-run dossier provenance and CSV privacy survive hostile mutations",
+      "status": "PASS",
+      "assertions": 100006,
+      "milliseconds": 2393.2,
+      "cases": 100000,
+      "provenanceMutations": 25000,
+      "csvPayloads": 75000
+    }
+  ],
+  "summary": {
+    "suites": 33,
+    "passed": 33,
+    "failed": 0,
+    "cases": 7221999,
+    "assertions": 4679971,
+    "milliseconds": 36970.3
+  }
+}
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> confovhh@0.5.0 test:release-artifacts
+> node scripts/verify-release-artifact-generation.mjs
+
+Release artifact smoke passed: 5 assets, 68 hashed production files, no production bundle archive.

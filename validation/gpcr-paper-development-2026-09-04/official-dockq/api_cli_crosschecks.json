@@ -1,0 +1,171 @@
+{
+  "checks": [
+    {
+      "absolute_metric_differences": {
+        "DockQ": 0.0,
+        "F1": 0.0,
+        "LRMSD": 0.0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 0.0
+      },
+      "cli_json_sha256": "6e740c98c2d867fb426a50ee9c06838b6aae65f3c5ed429e697dd4a06fda536f",
+      "command": [
+        "/workspace/scratch/b080e573db3d/ConfoVHH/.bench-venv/bin/python",
+        "-m",
+        "DockQ.DockQ",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/runs/3P0G_cutoff_2011_01_18_complex_seed1/fold_3p0g_cutoff_2011_01_18_complex_seed1_model_0.cif",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/references/3P0G.cif.gz",
+        "--mapping",
+        "BA:AB",
+        "--n_cpu",
+        "1",
+        "--json",
+        "/workspace/scratch/b080e573db3d/ConfoVHH/validation/gpcr-paper-development-2026-09-04/official-dockq/cli_crosschecks/3P0G_cutoff_2011_01_18_complex_seed1_model_0.json"
+      ],
+      "job": "3P0G_cutoff_2011_01_18_complex_seed1",
+      "model": "0",
+      "model_sha256": "c1b8331850e98d6999f6c7a5bdec5ecc51e0860bba50def66b727e6c3a257555",
+      "native_sha256": "25cfe2f425f962fe27c82cdc4f107598a2563d8a6c968e669ffe4e1d5611ae63",
+      "native_to_model": {
+        "A": "B",
+        "B": "A"
+      },
+      "ok": true
+    },
+    {
+      "absolute_metric_differences": {
+        "DockQ": 0.0,
+        "F1": 0.0,
+        "LRMSD": 0.0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 0.0
+      },
+      "cli_json_sha256": "765c6606760e058706e69ca534efb3e2036b3f266f89d64d0e0260a0b4680522",
+      "command": [
+        "/workspace/scratch/b080e573db3d/ConfoVHH/.bench-venv/bin/python",
+        "-m",
+        "DockQ.DockQ",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_model_0.cif",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/references/4MQS.cif",
+        "--mapping",
+        "AB:AB",
+        "--n_cpu",
+        "1",
+        "--json",
+        "/workspace/scratch/b080e573db3d/ConfoVHH/validation/gpcr-paper-development-2026-09-04/official-dockq/cli_crosschecks/4MQS_default_complex_seed1_model_0.json"
+      ],
+      "job": "4MQS_default_complex_seed1",
+      "model": "0",
+      "model_sha256": "7ba3a31fd3fc2e305f02177edb136c4395226df1c69a2c5e31914fc9a709b4c7",
+      "native_sha256": "ffa02f41badf80f86e1e961933835269ac1d88989faf8922105ddf8ee649fa6d",
+      "native_to_model": {
+        "A": "A",
+        "B": "B"
+      },
+      "ok": true
+    },
+    {
+      "absolute_metric_differences": {
+        "DockQ": 0.0,
+        "F1": 0.0,
+        "LRMSD": 0.0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 0.0
+      },
+      "cli_json_sha256": "2cc339450038419f035a9f9cc6afbb4c352b3f66726a869e2c1b2f4e31eab8f3",
+      "command": [
+        "/workspace/scratch/b080e573db3d/ConfoVHH/.bench-venv/bin/python",
+        "-m",
+        "DockQ.DockQ",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_model_0.cif",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/references/5C1M.cif",
+        "--mapping",
+        "AB:AB",
+        "--n_cpu",
+        "1",
+        "--json",
+        "/workspace/scratch/b080e573db3d/ConfoVHH/validation/gpcr-paper-development-2026-09-04/official-dockq/cli_crosschecks/5C1M_default_complex_seed1_model_0.json"
+      ],
+      "job": "5C1M_default_complex_seed1",
+      "model": "0",
+      "model_sha256": "d90dbf2dc6eb1adb1b69421b1755021b82f88759f9550a119458e69410c707db",
+      "native_sha256": "e561b0670e874a32fc07620e6fb44444d7b0102aff84b9826882eaa69c787096",
+      "native_to_model": {
+        "A": "A",
+        "B": "B"
+      },
+      "ok": true
+    },
+    {
+      "absolute_metric_differences": {
+        "DockQ": 0.0,
+        "F1": 0.0,
+        "LRMSD": 0.0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 0.0
+      },
+      "cli_json_sha256": "176c097e7afeff159759bc63c501ee5f1b2024970060b8391a4c083e71841d9e",
+      "command": [
+        "/workspace/scratch/b080e573db3d/ConfoVHH/.bench-venv/bin/python",
+        "-m",
+        "DockQ.DockQ",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/runs/5JQH_cutoff_2016_07_12_complex_seed1/fold_5jqh_cutoff_2016_07_12_complex_seed1_model_0.cif",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/references/5JQH.cif.gz",
+        "--mapping",
+        "BA:AC",
+        "--n_cpu",
+        "1",
+        "--json",
+        "/workspace/scratch/b080e573db3d/ConfoVHH/validation/gpcr-paper-development-2026-09-04/official-dockq/cli_crosschecks/5JQH_cutoff_2016_07_12_complex_seed1_model_0.json"
+      ],
+      "job": "5JQH_cutoff_2016_07_12_complex_seed1",
+      "model": "0",
+      "model_sha256": "b3b9ad73a473d077912ad1193a28cb5eea567d9c537e1daa1836afb7fe45f4bf",
+      "native_sha256": "4e3c8351601f421c9a073046438f81ceaedd1df6de4ab409eca79e40fdd32fe7",
+      "native_to_model": {
+        "A": "B",
+        "C": "A"
+      },
+      "ok": true
+    },
+    {
+      "absolute_metric_differences": {
+        "DockQ": 0.0,
+        "F1": 0.0,
+        "LRMSD": 0.0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 0.0
+      },
+      "cli_json_sha256": "e94f6aac7c273c0ce843e2c16cac5c1d10c854f9852454c72d9cb56eab199afb",
+      "command": [
+        "/workspace/scratch/b080e573db3d/ConfoVHH/.bench-venv/bin/python",
+        "-m",
+        "DockQ.DockQ",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed1/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed1_model_0.cif",
+        "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY/references/5JQH.cif.gz",
+        "--mapping",
+        "AB:AC",
+        "--n_cpu",
+        "1",
+        "--json",
+        "/workspace/scratch/b080e573db3d/ConfoVHH/validation/gpcr-paper-development-2026-09-04/official-dockq/cli_crosschecks/RESCUE_5JQH_complex_cutoff_2011_01_01_seed1_model_0.json"
+      ],
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed1",
+      "model": "0",
+      "model_sha256": "434b3920ef387f8ddef305b05646ab1e098648f2a951e292b5c2c55b1a5dc470",
+      "native_sha256": "4e3c8351601f421c9a073046438f81ceaedd1df6de4ab409eca79e40fdd32fe7",
+      "native_to_model": {
+        "A": "A",
+        "C": "B"
+      },
+      "ok": true
+    }
+  ],
+  "same_implementation_not_independent_method_validation": true,
+  "selection": "First input per reference and explicit chain-map tuple; selected without using score"
+}

@@ -1,0 +1,35 @@
+Collecting biopython==1.88 (from -r /workspace/scratch/b080e573db3d/dockq-existing-pins.txt (line 1))
+  Using cached biopython-1.88-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (13 kB)
+Collecting colorama==0.4.6 (from -r /workspace/scratch/b080e573db3d/dockq-existing-pins.txt (line 2))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting dockq==2.1.3 (from -r /workspace/scratch/b080e573db3d/dockq-existing-pins.txt (line 3))
+  Using cached dockq-2.1.3.tar.gz (175 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting networkx==3.6.1 (from -r /workspace/scratch/b080e573db3d/dockq-existing-pins.txt (line 4))
+  Using cached networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting numpy==1.26.4 (from -r /workspace/scratch/b080e573db3d/dockq-existing-pins.txt (line 5))
+  Using cached numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting parallelbar==2.5 (from -r /workspace/scratch/b080e573db3d/dockq-existing-pins.txt (line 6))
+  Using cached parallelbar-2.5-py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: pip==25.0.1 in ./.bench-venv/lib/python3.12/site-packages (from -r /workspace/scratch/b080e573db3d/dockq-existing-pins.txt (line 7)) (25.0.1)
+Collecting tqdm==4.70.0 (from -r /workspace/scratch/b080e573db3d/dockq-existing-pins.txt (line 8))
+  Using cached tqdm-4.70.0-py3-none-any.whl.metadata (57 kB)
+Using cached biopython-1.88-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.2 MB)
+Using cached colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Using cached networkx-3.6.1-py3-none-any.whl (2.1 MB)
+Using cached numpy-1.26.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.0 MB)
+Using cached parallelbar-2.5-py3-none-any.whl (11 kB)
+Using cached tqdm-4.70.0-py3-none-any.whl (80 kB)
+Building wheels for collected packages: dockq
+  Building wheel for dockq (pyproject.toml): started
+  Building wheel for dockq (pyproject.toml): finished with status 'done'
+  Created wheel for dockq: filename=dockq-2.1.3-cp312-cp312-linux_x86_64.whl size=691434 sha256=7b661d45b86cb617700f41bc5f3cb54607a10237f3ed903040b854962d7b7925
+  Stored in directory: /root/.cache/pip/wheels/df/f6/ca/d656cf4da833de78078f50659f430cca12de0d8fc3bfe2ee36
+Successfully built dockq
+Installing collected packages: tqdm, numpy, networkx, colorama, parallelbar, biopython, dockq
+Successfully installed biopython-1.88 colorama-0.4.6 dockq-2.1.3 networkx-3.6.1 numpy-1.26.4 parallelbar-2.5 tqdm-4.70.0
