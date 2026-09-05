@@ -1,0 +1,6 @@
+{
+  "adaptedCaptureScriptSha256": "8ec2dee77f63c846b36aaa26085193851bf2b51285ba89674c3f0886ea45250a",
+  "finalizerScriptSha256": "f130e02a21fb8a91f6785bf20ccd3a8cfbec5e72ea5d6274c3228ad18369b491",
+  "reason": "All repeated captures and scientific normalization completed under the adapted collector. Final checksum generation found a 22.7 MB aggregate entries file above its 16 MiB local-file read cap. The finalizer raises only local-file reads to 64 MiB while retaining the 16 MiB individual HTTP response/parser cap. Capture source plans, records, normalized scientific outputs and their attribution are unchanged.",
+  "finalizationRequestsNetworkAccess": false
+}

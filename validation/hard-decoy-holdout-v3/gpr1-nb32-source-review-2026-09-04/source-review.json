@@ -1,0 +1,2370 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-04",
+  "scope": "Six GPR1 entries, all deposited polymers, and five source-linked Nb32 reference entries. No frozen decisions are modified.",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/entries.jsonl": "6aa103cf88f5fb69874842da11ce5306a23429f7590a77210f892a40ef046017",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/global-text-discovery-2026-09-04/entries.jsonl": "fde2a0de338d34ea0e2baf56924b20bbc2de113b821a30af9c976b064d3a92d0",
+    "validation/hard-decoy-holdout-v3/domain-remainder-development-review-2026-09-04/source-review-queue.jsonl": "5ce4363a99dd0423b4e6118df04beddf96e27d566b0a2cf7a4bb2132855b1f13",
+    "validation/hard-decoy-holdout-v3/domain-remainder-development-review-2026-09-04/receptor-review.jsonl": "a4ef439058351c6779db8ecc2ecfcef66042c96bad6dd406fe3d18fd2012c852"
+  },
+  "sourceAttempts": [
+    {
+      "key": "gpr1_epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41264711%20AND%20SRC:MED&format=json&resultType=core",
+      "retrievedAt": "2026-09-04T23:41:34.657766+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:41264711%20AND%20SRC:MED&format=json&resultType=core",
+      "httpStatus": 200,
+      "bodySha256": "db02293f6aff49f8a74e52209f8c0a122eafb92f29889bcad6c49dafecb41768",
+      "path": "raw/gpr1_epmc.response",
+      "contentType": "application/json;charset=UTF-8",
+      "size": 16080
+    },
+    {
+      "key": "gpr1_crossref",
+      "url": "https://api.crossref.org/works/10.1126/science.adt8794",
+      "retrievedAt": "2026-09-04T23:41:34.658159+00:00",
+      "finalUrl": "https://api.crossref.org/works/10.1126/science.adt8794",
+      "httpStatus": 200,
+      "bodySha256": "78d0415abdae3f145dac5c2ccaef3aed0912b8310db388ed9c615c04d4b73fa7",
+      "path": "raw/gpr1_crossref.response",
+      "contentType": "application/json",
+      "size": 19599
+    },
+    {
+      "key": "gpr1_science_supp",
+      "url": "https://www.science.org/doi/suppl/10.1126/science.adt8794/suppl_file/science.adt8794_sm.pdf",
+      "retrievedAt": "2026-09-04T23:41:34.658673+00:00",
+      "finalUrl": "https://www.science.org/doi/suppl/10.1126/science.adt8794/suppl_file/science.adt8794_sm.pdf",
+      "httpStatus": 403,
+      "bodySha256": "5ff3e0dddfbb9d836ee9a79937abb98b20b4f27449653723d580bab3dd25c02a",
+      "path": "raw/gpr1_science_supp.response",
+      "contentType": "text/html; charset=UTF-8",
+      "size": 6183
+    },
+    {
+      "key": "gpr1_simm_news",
+      "url": "https://simm.cas.cn/web/xwzx/ttxw/202511/t20251121_8014942.html",
+      "retrievedAt": "2026-09-04T23:42:13.531710+00:00",
+      "finalUrl": "https://simm.cas.cn/web/xwzx/ttxw/202511/t20251121_8014942.html",
+      "httpStatus": 200,
+      "bodySha256": "1f596101e66c0fca6bd0ca7d0a3a785eae98d269be1b9ffefff4846aeb68edff",
+      "path": "raw/gpr1_simm_news.response",
+      "contentType": "text/html",
+      "size": 185381
+    },
+    {
+      "key": "nb32_reference_pmc12820791",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12820791/fullTextXML",
+      "retrievedAt": "2026-09-04T23:42:13.534620+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12820791/fullTextXML",
+      "httpStatus": 200,
+      "bodySha256": "df4c7ada51520fd91a70767583be6e6b65d91e1985db75a7c0b6337c4566b905",
+      "path": "raw/nb32_reference_pmc12820791.response",
+      "contentType": "application/xml",
+      "size": 141639
+    },
+    {
+      "key": "nb32_reference_pmc12733242",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12733242/fullTextXML",
+      "retrievedAt": "2026-09-04T23:42:13.534934+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12733242/fullTextXML",
+      "httpStatus": 200,
+      "bodySha256": "0cb800f0702fa6fb2d0ac3eea21e29e86a367dfc961adebb9f7321c4843fea47",
+      "path": "raw/nb32_reference_pmc12733242.response",
+      "contentType": "application/xml",
+      "size": 150373
+    },
+    {
+      "key": "nb32_original_pmc7108872",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7108872/fullTextXML",
+      "retrievedAt": "2026-09-04T23:43:02.954270+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7108872/fullTextXML",
+      "httpStatus": 200,
+      "bodySha256": "06511a58da091ae9c2f369dcfafb501940e385696f45e5fd54521add453cbf84",
+      "path": "raw/nb32_original_pmc7108872.response",
+      "contentType": "application/xml",
+      "size": 146672
+    },
+    {
+      "key": "nb32_pmc5347553",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5347553/fullTextXML",
+      "retrievedAt": "2026-09-04T23:43:53.997094+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5347553/fullTextXML",
+      "httpStatus": 404,
+      "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "raw/nb32_pmc5347553.response",
+      "contentType": null,
+      "size": 0
+    },
+    {
+      "key": "nb32_pmc12055985",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12055985/fullTextXML",
+      "retrievedAt": "2026-09-04T23:43:53.997598+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12055985/fullTextXML",
+      "httpStatus": 200,
+      "bodySha256": "c4b8b43eef2f6f82f3c2233a8f1c65ac37cfd97faec43b25d90618aeed12840c",
+      "path": "raw/nb32_pmc12055985.response",
+      "contentType": "application/xml",
+      "size": 164978
+    },
+    {
+      "key": "nb32_gcgr_epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:37558880%20AND%20SRC:MED&format=json&resultType=core",
+      "retrievedAt": "2026-09-04T23:44:09.702122+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:37558880%20AND%20SRC:MED&format=json&resultType=core",
+      "httpStatus": 200,
+      "bodySha256": "02ab635bde1bd63ea8134071341f0ac26ae75aaf5f6bfe66776a85638ec82342",
+      "path": "raw/nb32_gcgr_epmc.response",
+      "contentType": "application/json;charset=UTF-8",
+      "size": 12374
+    },
+    {
+      "key": "nb32_pmc5347553_html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5347553/",
+      "retrievedAt": "2026-09-04T23:44:34.951921+00:00",
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5347553/",
+      "httpStatus": 200,
+      "bodySha256": "5c50867e8b3639a2a9179b3767309dc3b195c07f067e09367b8fe232ea13b418",
+      "path": "raw/nb32_pmc5347553_html.response",
+      "contentType": "text/html; charset=utf-8",
+      "size": 218868
+    },
+    {
+      "key": "nb32_gcgr_xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10447241/fullTextXML",
+      "retrievedAt": "2026-09-04T23:44:34.951522+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10447241/fullTextXML",
+      "httpStatus": 200,
+      "bodySha256": "2cdbe234e04b1a1d2506992508cee9dbd012a12cf4f44610eef153a8ab9d1aad",
+      "path": "raw/nb32_gcgr_xml.response",
+      "contentType": "application/xml",
+      "size": 147300
+    },
+    {
+      "key": "nb32_bibliography_search",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Nb32%20AND%20(arrestin%20OR%20Fab30)&format=json&resultType=core&pageSize=100",
+      "retrievedAt": "2026-09-04T23:46:08.892197+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=Nb32%20AND%20(arrestin%20OR%20Fab30)&format=json&resultType=core&pageSize=100",
+      "httpStatus": 200,
+      "bodySha256": "02d6a291d4b488b0d05d93f4a87889b823de8bcea9f1271f786224c35761d8ca",
+      "path": "raw/nb32_bibliography_search.response",
+      "contentType": "application/json;charset=UTF-8",
+      "size": 243972
+    },
+    {
+      "key": "nb32_sensor_pmc12452856",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12452856/fullTextXML",
+      "retrievedAt": "2026-09-04T23:46:43.543736+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12452856/fullTextXML",
+      "httpStatus": 200,
+      "bodySha256": "72958aac525ac0d2c6fdcdd918ccdec7003bdba8f13352c3e39b3560e52c18e2",
+      "path": "raw/nb32_sensor_pmc12452856.response",
+      "contentType": "application/xml",
+      "size": 139116
+    },
+    {
+      "key": "nb32_src_pmc13035853",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13035853/fullTextXML",
+      "retrievedAt": "2026-09-04T23:46:43.543173+00:00",
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13035853/fullTextXML",
+      "httpStatus": 200,
+      "bodySha256": "a99fb6eb29f7a8db6934db9c399a92b7a03f2df07dea239a061633183815a3f2",
+      "path": "raw/nb32_src_pmc13035853.response",
+      "contentType": "application/xml",
+      "size": 199060
+    },
+    {
+      "key": "gpr1_canonical_repeat1",
+      "url": "https://rest.uniprot.org/uniprotkb/P46091.fasta",
+      "retrievedAt": "2026-09-04T23:46:43.544463+00:00",
+      "finalUrl": "https://rest.uniprot.org/uniprotkb/P46091.fasta",
+      "httpStatus": 200,
+      "bodySha256": "c4ef48753f9a011370ca37d513193edf0a4cfbf835db4233c3403827c52de708",
+      "path": "raw/gpr1_canonical_repeat1.response",
+      "contentType": "text/plain;format=fasta",
+      "size": 452
+    },
+    {
+      "key": "gpr1_canonical_repeat2",
+      "url": "https://rest.uniprot.org/uniprotkb/P46091.fasta",
+      "retrievedAt": "2026-09-04T23:46:43.544837+00:00",
+      "finalUrl": "https://rest.uniprot.org/uniprotkb/P46091.fasta",
+      "httpStatus": 200,
+      "bodySha256": "c4ef48753f9a011370ca37d513193edf0a4cfbf835db4233c3403827c52de708",
+      "path": "raw/gpr1_canonical_repeat2.response",
+      "contentType": "text/plain;format=fasta",
+      "size": 452
+    },
+    {
+      "key": "v2r_canonical_repeat1",
+      "url": "https://rest.uniprot.org/uniprotkb/P30518.fasta",
+      "retrievedAt": "2026-09-04T23:48:26.238316+00:00",
+      "finalUrl": "https://rest.uniprot.org/uniprotkb/P30518.fasta",
+      "httpStatus": 200,
+      "bodySha256": "2765a12dbe3bcab34eabc7157f208560fdc421745e7e65dd49cf2ffc672972f2",
+      "path": "raw/v2r_canonical_repeat1.response",
+      "contentType": "text/plain;format=fasta",
+      "size": 466
+    },
+    {
+      "key": "v2r_canonical_repeat2",
+      "url": "https://rest.uniprot.org/uniprotkb/P30518.fasta",
+      "retrievedAt": "2026-09-04T23:48:26.239370+00:00",
+      "finalUrl": "https://rest.uniprot.org/uniprotkb/P30518.fasta",
+      "httpStatus": 200,
+      "bodySha256": "2765a12dbe3bcab34eabc7157f208560fdc421745e7e65dd49cf2ffc672972f2",
+      "path": "raw/v2r_canonical_repeat2.response",
+      "contentType": "text/plain;format=fasta",
+      "size": 466
+    }
+  ],
+  "gpr1Bibliography": {
+    "id": "41264711",
+    "doi": "10.1126/science.adt8794",
+    "pmcid": null,
+    "title": "Noncanonical agonist-dependent and -independent arrestin recruitment of GPR1.",
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1126/science.adt8794"
+        }
+      ]
+    }
+  },
+  "sourceReportedFacts": [
+    {
+      "source": "10.1073/pnas.2507384122",
+      "section": "Abstract",
+      "fact": "The authors explicitly identify nanobody32 as recognizing beta-arrestins and describe an intracellular sensor derived from it."
+    },
+    {
+      "source": "10.1073/pnas.2507384122",
+      "section": "Materials and Methods / General Reagents, Plasmids, and Cell Culture",
+      "fact": "The complete HA-Ib32 amino-acid sequence is explicitly published."
+    },
+    {
+      "source": "10.1038/s41586-023-06420-x",
+      "section": "Methods and Data availability",
+      "fact": "Nb32 is added to the GCGR/V2R-tail\u2013arrestin sample. The paper identifies 8JRU and 8JRV and reports a beta-arrestin/scFv30 expression fusion."
+    },
+    {
+      "source": "10.1038/s41594-019-0330-y",
+      "section": "Methods and Data Availability",
+      "fact": "Nb32 is used during megaplex preparation and 6NI2 is explicitly identified as an arrestin/V2-tail subcomplex deposition."
+    },
+    {
+      "source": "10.1038/s41467-026-69884-1",
+      "section": "Methods / Formation of SH3\u2013\u03b2arr1 and Src\u2013\u03b2arr1 complexes",
+      "fact": "The preparation combines Src/arrestin complexes with V2R phosphopeptide, Fab30 and Nb32."
+    }
+  ],
+  "roleInference": {
+    "classification": "SOURCE_SUPPORTED_AUXILIARY_BETA_ARRESTIN_REAGENT_ROLE_INFERENCE",
+    "basis": "The primary 2025 PNAS abstract identifies the target class, and its Methods sequence exactly matches all 114 Nb32 residues in each GPR1 candidate. Tagged full expression constructs differ.",
+    "appliesTo": [
+      "9UYH_3",
+      "9UYI_3",
+      "9UYJ_2",
+      "9UYL_4",
+      "9UYM_2",
+      "9UYN_3"
+    ],
+    "directGpr1BindingEvidenceEstablished": false,
+    "physicalAbsenceOfIncidentalReceptorContactsEstablished": false,
+    "gpr1PrimaryMethodsReviewed": false,
+    "gpr1PrimaryDepositionStatementReviewed": false,
+    "candidateEntityDisposition": "AUXILIARY_ROLE_SUPPORTED_PENDING_ENTRY_PRIMARY_SOURCE",
+    "entryDisposition": "PENDING_REQUIRED_METADATA",
+    "wholeEntryExclusionAuthority": false,
+    "limitation": "Reagent-family role is source supported; exact GPR1 sample provenance, scFv30 format and all source-only reagents still require the GPR1 primary Methods. Sequence matching does not establish universal receptor nonbinding."
+  },
+  "publishedSequence": {
+    "source": "10.1073/pnas.2507384122",
+    "haIb32Sequence": "MQVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSYPYDVPDYA",
+    "nb32Sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSS",
+    "nb32Length": 114,
+    "nb32Sha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e"
+  },
+  "nb32SequenceComparisons": [
+    {
+      "pdbId": "9UYH",
+      "entityId": "9UYH_3",
+      "fullSequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+      "fullSequenceLength": 120,
+      "exactCoreLength": 114,
+      "coreStart1": 1,
+      "coreEnd1": 114,
+      "prefix": "",
+      "suffix": "HHHHHH",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Escherichia phage EcSzw-2",
+          "taxonomyId": "2419741"
+        }
+      ]
+    },
+    {
+      "pdbId": "9UYI",
+      "entityId": "9UYI_3",
+      "fullSequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+      "fullSequenceLength": 120,
+      "exactCoreLength": 114,
+      "coreStart1": 1,
+      "coreEnd1": 114,
+      "prefix": "",
+      "suffix": "HHHHHH",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Escherichia phage EcSzw-2",
+          "taxonomyId": "2419741"
+        }
+      ]
+    },
+    {
+      "pdbId": "9UYJ",
+      "entityId": "9UYJ_2",
+      "fullSequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+      "fullSequenceLength": 120,
+      "exactCoreLength": 114,
+      "coreStart1": 1,
+      "coreEnd1": 114,
+      "prefix": "",
+      "suffix": "HHHHHH",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Escherichia phage EcSzw-2",
+          "taxonomyId": "2419741"
+        }
+      ]
+    },
+    {
+      "pdbId": "9UYL",
+      "entityId": "9UYL_4",
+      "fullSequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+      "fullSequenceLength": 120,
+      "exactCoreLength": 114,
+      "coreStart1": 1,
+      "coreEnd1": 114,
+      "prefix": "",
+      "suffix": "HHHHHH",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Escherichia phage EcSzw-2",
+          "taxonomyId": "2419741"
+        }
+      ]
+    },
+    {
+      "pdbId": "9UYM",
+      "entityId": "9UYM_2",
+      "fullSequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+      "fullSequenceLength": 120,
+      "exactCoreLength": 114,
+      "coreStart1": 1,
+      "coreEnd1": 114,
+      "prefix": "",
+      "suffix": "HHHHHH",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Escherichia phage EcSzw-2",
+          "taxonomyId": "2419741"
+        }
+      ]
+    },
+    {
+      "pdbId": "9UYN",
+      "entityId": "9UYN_3",
+      "fullSequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+      "fullSequenceLength": 120,
+      "exactCoreLength": 114,
+      "coreStart1": 1,
+      "coreEnd1": 114,
+      "prefix": "",
+      "suffix": "HHHHHH",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Escherichia phage EcSzw-2",
+          "taxonomyId": "2419741"
+        }
+      ]
+    },
+    {
+      "pdbId": "8JRU",
+      "entityId": "8JRU_3",
+      "fullSequenceSha256": "7bf5eda87e32452128db433cf2dd583f9f2fad528a8ef934f7ba4c6770cfa80f",
+      "fullSequenceLength": 126,
+      "exactCoreLength": 114,
+      "coreStart1": 3,
+      "coreEnd1": 116,
+      "prefix": "MA",
+      "suffix": "HHHHHHEPEA",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Escherichia phage EcSzw-2",
+          "taxonomyId": "2419741"
+        }
+      ]
+    },
+    {
+      "pdbId": "8JRV",
+      "entityId": "8JRV_4",
+      "fullSequenceSha256": "7bf5eda87e32452128db433cf2dd583f9f2fad528a8ef934f7ba4c6770cfa80f",
+      "fullSequenceLength": 126,
+      "exactCoreLength": 114,
+      "coreStart1": 3,
+      "coreEnd1": 116,
+      "prefix": "MA",
+      "suffix": "HHHHHHEPEA",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Escherichia phage EcSzw-2",
+          "taxonomyId": "2419741"
+        }
+      ]
+    },
+    {
+      "pdbId": "6NI2",
+      "entityId": "6NI2_1",
+      "fullSequenceSha256": "6cfbe81b90e6ff8d0cac3980d388927a682a5bc7911b591f33ef2d6b2051ee66",
+      "fullSequenceLength": 124,
+      "exactCoreLength": 114,
+      "coreStart1": 1,
+      "coreEnd1": 114,
+      "prefix": "",
+      "suffix": "HHHHHHEPEA",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Lama glama",
+          "taxonomyId": "9844"
+        }
+      ]
+    },
+    {
+      "pdbId": "9BT8",
+      "entityId": "9BT8_4",
+      "fullSequenceSha256": "6cfbe81b90e6ff8d0cac3980d388927a682a5bc7911b591f33ef2d6b2051ee66",
+      "fullSequenceLength": 124,
+      "exactCoreLength": 114,
+      "coreStart1": 1,
+      "coreEnd1": 114,
+      "prefix": "",
+      "suffix": "HHHHHHEPEA",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Lama glama",
+          "taxonomyId": "9844"
+        }
+      ]
+    },
+    {
+      "pdbId": "9CX3",
+      "entityId": "9CX3_1",
+      "fullSequenceSha256": "6cfbe81b90e6ff8d0cac3980d388927a682a5bc7911b591f33ef2d6b2051ee66",
+      "fullSequenceLength": 124,
+      "exactCoreLength": 114,
+      "coreStart1": 1,
+      "coreEnd1": 114,
+      "prefix": "",
+      "suffix": "HHHHHHEPEA",
+      "coreSequenceSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+      "comparisonClassification": "EXACT_PUBLISHED_NB32_SEQUENCE_SEGMENT",
+      "wholeExpressionConstructIdentical": false,
+      "sourceOrganismAnnotations": [
+        {
+          "scientificName": "Lama glama",
+          "taxonomyId": "9844"
+        }
+      ]
+    }
+  ],
+  "unresolvedReferenceConstructDiscrepancies": [
+    {
+      "pdbIds": [
+        "8JRU",
+        "8JRV"
+      ],
+      "primarySource": "10.1038/s41586-023-06420-x",
+      "section": "Methods / Expression and purification of Nb32",
+      "sourceReportedExpressionModules": "C-terminal PreScission sequence LEVLFQGP and an eight-histidine tag; the Methods also describe protease cleavage.",
+      "depositedSequenceObservation": "Both deposited Nb32 sequences have MA before the identical 114-residue sequence and HHHHHHEPEA after it.",
+      "status": "EXACT_TAG_AND_PROCESSING_HISTORY_NOT_RECONCILED",
+      "interpretation": "The exact 114-residue reagent relationship is retained. The GCGR Methods do not reconcile the complete deposited Nb32 sequence, and no unreported tag swap or cleavage explanation is inferred."
+    }
+  ],
+  "scfv30SequenceComparisons": [
+    {
+      "pdbId": "9UYH",
+      "entityId": "9UYH_5",
+      "fullSequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+      "exactFab30ChainSegments": [
+        {
+          "referenceEntityId": "6NI2_4",
+          "referenceStart1": 1,
+          "referenceEnd1": 108,
+          "candidateStart1": 1,
+          "candidateEnd1": 108,
+          "exactLength": 108,
+          "segmentSha256": "0082c83eb262b6983af47a1d609f2f2fdd6a0e02a67a83f110b188ca9cc044e4"
+        },
+        {
+          "referenceEntityId": "6NI2_3",
+          "referenceStart1": 4,
+          "referenceEnd1": 124,
+          "candidateStart1": 125,
+          "candidateEnd1": 245,
+          "exactLength": 121,
+          "segmentSha256": "f5689b472a57d3641b3e89c353e8fabc2f06b29a07dff2f9123476aee839f7a7"
+        }
+      ],
+      "classification": "EXACT_FAB30_SEGMENT_FORMAT_INFERENCE_REQUIRES_GPR1_PRIMARY_METHODS",
+      "domainBoundariesExperimentallyVerified": false
+    },
+    {
+      "pdbId": "9UYI",
+      "entityId": "9UYI_5",
+      "fullSequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+      "exactFab30ChainSegments": [
+        {
+          "referenceEntityId": "6NI2_4",
+          "referenceStart1": 1,
+          "referenceEnd1": 108,
+          "candidateStart1": 1,
+          "candidateEnd1": 108,
+          "exactLength": 108,
+          "segmentSha256": "0082c83eb262b6983af47a1d609f2f2fdd6a0e02a67a83f110b188ca9cc044e4"
+        },
+        {
+          "referenceEntityId": "6NI2_3",
+          "referenceStart1": 4,
+          "referenceEnd1": 124,
+          "candidateStart1": 125,
+          "candidateEnd1": 245,
+          "exactLength": 121,
+          "segmentSha256": "f5689b472a57d3641b3e89c353e8fabc2f06b29a07dff2f9123476aee839f7a7"
+        }
+      ],
+      "classification": "EXACT_FAB30_SEGMENT_FORMAT_INFERENCE_REQUIRES_GPR1_PRIMARY_METHODS",
+      "domainBoundariesExperimentallyVerified": false
+    },
+    {
+      "pdbId": "9UYJ",
+      "entityId": "9UYJ_5",
+      "fullSequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+      "exactFab30ChainSegments": [
+        {
+          "referenceEntityId": "6NI2_4",
+          "referenceStart1": 1,
+          "referenceEnd1": 108,
+          "candidateStart1": 1,
+          "candidateEnd1": 108,
+          "exactLength": 108,
+          "segmentSha256": "0082c83eb262b6983af47a1d609f2f2fdd6a0e02a67a83f110b188ca9cc044e4"
+        },
+        {
+          "referenceEntityId": "6NI2_3",
+          "referenceStart1": 4,
+          "referenceEnd1": 124,
+          "candidateStart1": 125,
+          "candidateEnd1": 245,
+          "exactLength": 121,
+          "segmentSha256": "f5689b472a57d3641b3e89c353e8fabc2f06b29a07dff2f9123476aee839f7a7"
+        }
+      ],
+      "classification": "EXACT_FAB30_SEGMENT_FORMAT_INFERENCE_REQUIRES_GPR1_PRIMARY_METHODS",
+      "domainBoundariesExperimentallyVerified": false
+    },
+    {
+      "pdbId": "9UYL",
+      "entityId": "9UYL_5",
+      "fullSequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+      "exactFab30ChainSegments": [
+        {
+          "referenceEntityId": "6NI2_4",
+          "referenceStart1": 1,
+          "referenceEnd1": 108,
+          "candidateStart1": 1,
+          "candidateEnd1": 108,
+          "exactLength": 108,
+          "segmentSha256": "0082c83eb262b6983af47a1d609f2f2fdd6a0e02a67a83f110b188ca9cc044e4"
+        },
+        {
+          "referenceEntityId": "6NI2_3",
+          "referenceStart1": 4,
+          "referenceEnd1": 124,
+          "candidateStart1": 125,
+          "candidateEnd1": 245,
+          "exactLength": 121,
+          "segmentSha256": "f5689b472a57d3641b3e89c353e8fabc2f06b29a07dff2f9123476aee839f7a7"
+        }
+      ],
+      "classification": "EXACT_FAB30_SEGMENT_FORMAT_INFERENCE_REQUIRES_GPR1_PRIMARY_METHODS",
+      "domainBoundariesExperimentallyVerified": false
+    },
+    {
+      "pdbId": "9UYM",
+      "entityId": "9UYM_3",
+      "fullSequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+      "exactFab30ChainSegments": [
+        {
+          "referenceEntityId": "6NI2_4",
+          "referenceStart1": 1,
+          "referenceEnd1": 108,
+          "candidateStart1": 1,
+          "candidateEnd1": 108,
+          "exactLength": 108,
+          "segmentSha256": "0082c83eb262b6983af47a1d609f2f2fdd6a0e02a67a83f110b188ca9cc044e4"
+        },
+        {
+          "referenceEntityId": "6NI2_3",
+          "referenceStart1": 4,
+          "referenceEnd1": 124,
+          "candidateStart1": 125,
+          "candidateEnd1": 245,
+          "exactLength": 121,
+          "segmentSha256": "f5689b472a57d3641b3e89c353e8fabc2f06b29a07dff2f9123476aee839f7a7"
+        }
+      ],
+      "classification": "EXACT_FAB30_SEGMENT_FORMAT_INFERENCE_REQUIRES_GPR1_PRIMARY_METHODS",
+      "domainBoundariesExperimentallyVerified": false
+    },
+    {
+      "pdbId": "9UYN",
+      "entityId": "9UYN_4",
+      "fullSequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+      "exactFab30ChainSegments": [
+        {
+          "referenceEntityId": "6NI2_4",
+          "referenceStart1": 1,
+          "referenceEnd1": 108,
+          "candidateStart1": 1,
+          "candidateEnd1": 108,
+          "exactLength": 108,
+          "segmentSha256": "0082c83eb262b6983af47a1d609f2f2fdd6a0e02a67a83f110b188ca9cc044e4"
+        },
+        {
+          "referenceEntityId": "6NI2_3",
+          "referenceStart1": 4,
+          "referenceEnd1": 124,
+          "candidateStart1": 125,
+          "candidateEnd1": 245,
+          "exactLength": 121,
+          "segmentSha256": "f5689b472a57d3641b3e89c353e8fabc2f06b29a07dff2f9123476aee839f7a7"
+        }
+      ],
+      "classification": "EXACT_FAB30_SEGMENT_FORMAT_INFERENCE_REQUIRES_GPR1_PRIMARY_METHODS",
+      "domainBoundariesExperimentallyVerified": false
+    }
+  ],
+  "gpr1ConstructSequenceComparisons": [
+    {
+      "pdbId": "9UYH",
+      "entityId": "9UYH_4",
+      "fullSequenceLength": 396,
+      "fullSequenceSha256": "94e48a6541b518df4aa98ee906ab9a9ed135f2eedc19454f036ff019edfa78cd",
+      "depositedPrefix": "WSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGP",
+      "depositedPrefixLength": 46,
+      "gpr1CanonicalAccession": "P46091",
+      "gpr1CanonicalStart1": 2,
+      "gpr1CanonicalEnd1": 322,
+      "gpr1DepositedStart1": 47,
+      "gpr1DepositedEnd1": 367,
+      "gpr1SequenceDifferences": [],
+      "terminalCanonicalAccession": "P30518",
+      "terminalCanonicalStart1": 343,
+      "terminalCanonicalEnd1": 371,
+      "terminalExactSequence": "ARGRTPPSLGPQDESCTTASSSLAKDTSS",
+      "classification": "COMPUTATIONAL_SEQUENCE_DECOMPOSITION_NOT_PRIMARY_EXPRESSION_CONSTRUCT_RECONCILIATION",
+      "cleavageHistoryVerified": false,
+      "experimentalTagProvenanceVerified": false,
+      "mutationPurposeVerified": false
+    },
+    {
+      "pdbId": "9UYI",
+      "entityId": "9UYI_4",
+      "fullSequenceLength": 396,
+      "fullSequenceSha256": "94e48a6541b518df4aa98ee906ab9a9ed135f2eedc19454f036ff019edfa78cd",
+      "depositedPrefix": "WSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGP",
+      "depositedPrefixLength": 46,
+      "gpr1CanonicalAccession": "P46091",
+      "gpr1CanonicalStart1": 2,
+      "gpr1CanonicalEnd1": 322,
+      "gpr1DepositedStart1": 47,
+      "gpr1DepositedEnd1": 367,
+      "gpr1SequenceDifferences": [],
+      "terminalCanonicalAccession": "P30518",
+      "terminalCanonicalStart1": 343,
+      "terminalCanonicalEnd1": 371,
+      "terminalExactSequence": "ARGRTPPSLGPQDESCTTASSSLAKDTSS",
+      "classification": "COMPUTATIONAL_SEQUENCE_DECOMPOSITION_NOT_PRIMARY_EXPRESSION_CONSTRUCT_RECONCILIATION",
+      "cleavageHistoryVerified": false,
+      "experimentalTagProvenanceVerified": false,
+      "mutationPurposeVerified": false
+    },
+    {
+      "pdbId": "9UYJ",
+      "entityId": "9UYJ_3",
+      "fullSequenceLength": 396,
+      "fullSequenceSha256": "94e48a6541b518df4aa98ee906ab9a9ed135f2eedc19454f036ff019edfa78cd",
+      "depositedPrefix": "WSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGP",
+      "depositedPrefixLength": 46,
+      "gpr1CanonicalAccession": "P46091",
+      "gpr1CanonicalStart1": 2,
+      "gpr1CanonicalEnd1": 322,
+      "gpr1DepositedStart1": 47,
+      "gpr1DepositedEnd1": 367,
+      "gpr1SequenceDifferences": [],
+      "terminalCanonicalAccession": "P30518",
+      "terminalCanonicalStart1": 343,
+      "terminalCanonicalEnd1": 371,
+      "terminalExactSequence": "ARGRTPPSLGPQDESCTTASSSLAKDTSS",
+      "classification": "COMPUTATIONAL_SEQUENCE_DECOMPOSITION_NOT_PRIMARY_EXPRESSION_CONSTRUCT_RECONCILIATION",
+      "cleavageHistoryVerified": false,
+      "experimentalTagProvenanceVerified": false,
+      "mutationPurposeVerified": false
+    },
+    {
+      "pdbId": "9UYL",
+      "entityId": "9UYL_1",
+      "fullSequenceLength": 396,
+      "fullSequenceSha256": "94e48a6541b518df4aa98ee906ab9a9ed135f2eedc19454f036ff019edfa78cd",
+      "depositedPrefix": "WSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGP",
+      "depositedPrefixLength": 46,
+      "gpr1CanonicalAccession": "P46091",
+      "gpr1CanonicalStart1": 2,
+      "gpr1CanonicalEnd1": 322,
+      "gpr1DepositedStart1": 47,
+      "gpr1DepositedEnd1": 367,
+      "gpr1SequenceDifferences": [],
+      "terminalCanonicalAccession": "P30518",
+      "terminalCanonicalStart1": 343,
+      "terminalCanonicalEnd1": 371,
+      "terminalExactSequence": "ARGRTPPSLGPQDESCTTASSSLAKDTSS",
+      "classification": "COMPUTATIONAL_SEQUENCE_DECOMPOSITION_NOT_PRIMARY_EXPRESSION_CONSTRUCT_RECONCILIATION",
+      "cleavageHistoryVerified": false,
+      "experimentalTagProvenanceVerified": false,
+      "mutationPurposeVerified": false
+    },
+    {
+      "pdbId": "9UYM",
+      "entityId": "9UYM_5",
+      "fullSequenceLength": 414,
+      "fullSequenceSha256": "b0f0f1143ad61d12bf198de4cfff8cd2a611b69fc31e387f859031feb23131ec",
+      "depositedPrefix": "MKTIIALSYIFCLVFAGSWSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGP",
+      "depositedPrefixLength": 64,
+      "gpr1CanonicalAccession": "P46091",
+      "gpr1CanonicalStart1": 2,
+      "gpr1CanonicalEnd1": 322,
+      "gpr1DepositedStart1": 65,
+      "gpr1DepositedEnd1": 385,
+      "gpr1SequenceDifferences": [],
+      "terminalCanonicalAccession": "P30518",
+      "terminalCanonicalStart1": 343,
+      "terminalCanonicalEnd1": 371,
+      "terminalExactSequence": "ARGRTPPSLGPQDESCTTASSSLAKDTSS",
+      "classification": "COMPUTATIONAL_SEQUENCE_DECOMPOSITION_NOT_PRIMARY_EXPRESSION_CONSTRUCT_RECONCILIATION",
+      "cleavageHistoryVerified": false,
+      "experimentalTagProvenanceVerified": false,
+      "mutationPurposeVerified": false
+    },
+    {
+      "pdbId": "9UYN",
+      "entityId": "9UYN_1",
+      "fullSequenceLength": 414,
+      "fullSequenceSha256": "28295aea997f515fa21d0f05f58f75a01b0fc46c3c18b919f649507c2ad61ee9",
+      "depositedPrefix": "MKTIIALSYIFCLVFAGSWSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGP",
+      "depositedPrefixLength": 64,
+      "gpr1CanonicalAccession": "P46091",
+      "gpr1CanonicalStart1": 2,
+      "gpr1CanonicalEnd1": 322,
+      "gpr1DepositedStart1": 65,
+      "gpr1DepositedEnd1": 385,
+      "gpr1SequenceDifferences": [
+        {
+          "canonicalPosition1": 143,
+          "canonicalResidue": "V",
+          "depositedResidue": "C"
+        }
+      ],
+      "terminalCanonicalAccession": "P30518",
+      "terminalCanonicalStart1": 343,
+      "terminalCanonicalEnd1": 371,
+      "terminalExactSequence": "ARGRTPPSLGPQDESCTTASSSLAKDTSS",
+      "classification": "COMPUTATIONAL_SEQUENCE_DECOMPOSITION_NOT_PRIMARY_EXPRESSION_CONSTRUCT_RECONCILIATION",
+      "cleavageHistoryVerified": false,
+      "experimentalTagProvenanceVerified": false,
+      "mutationPurposeVerified": false
+    }
+  ],
+  "allPolymerInventories": [
+    {
+      "pdbId": "9UYH",
+      "primaryCitation": {
+        "doi": "10.1126/science.adt8794",
+        "pmid": "41264711",
+        "title": "Noncanonical agonist-dependent and -independent arrestin recruitment of GPR1."
+      },
+      "polymerEntityCount": 5,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "9UYH_1",
+          "entityId": "1",
+          "description": "Retinoic acid receptor responder protein 2",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequence": "MKTIIALSYIFCLVFAELTEAQRRGLQVALEEFHKHPPVQWAFQETSVESAVDTPFPAGIFVRLEFKLQQTSCRKRDWKKPECKVRPNGRKRKCLACIKLGSEDKVLGRLVHCPIETQVLREAEEHQETQCLRVQRAGEDPHSFYFPGQFAFS",
+          "sequenceLength": 153,
+          "sequenceSha256": "a171d4f78614accae651615404145f799dfc6a9382f77636f001336e959fa41a",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q99969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYH_2",
+          "entityId": "2",
+          "description": "Beta-arrestin-1",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequence": "MGDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVDPVDGVVLVDPEYLKERRVYVTLTAAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEIPPNLPSSVTLQPGPEDTGKAIGVDYEVKAFVAENLEEKIHKRNSVRLVIEKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADIVLFNTAQYKVPVAMEEADDTVAPSSTFSKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPENETPVDTNL",
+          "sequenceLength": 376,
+          "sequenceSha256": "9a313b4c560db524f21bf1cd4622e0988ad2a797c988cb9fffc20fd6f8508587",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P49407",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYH_3",
+          "entityId": "3",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHH",
+          "sequenceLength": 120,
+          "sequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia phage EcSzw-2",
+              "taxonomyId": "2419741"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYH_4",
+          "entityId": "4",
+          "description": "Chemerin-like receptor 2,Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequence": "WSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGPEDLEETLFEEFENYSYDLDYYSLESDLEEKVQLGVVHWVSLVLYCLAFVLGIPGNAIVIWFTGFKWKKTVTTLWFLNLAIADFIFLLFLPLYISYVAMNFHWPFGIWLCKANSFTAQLNMFASVFFLTVISLDHYIHLIHPVLSHRHRTLKNSLIVIIFIWLLASLIGGPALYFRDTVEFNNHTLCYNNFQKHDPDLTLIRHHVLTWVKFIIGYLFPLLTMSICYLCLIFKVKKRSILISSRHFWTILVVVVAFVVCWTPYHLFSIWELTIHHNSYSHHVMQAGIPLSTGLAFLNSCLNPILYVLISKKFQARFRSSVAEIARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 396,
+          "sequenceSha256": "94e48a6541b518df4aa98ee906ab9a9ed135f2eedc19454f036ff019edfa78cd",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P46091",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYH_5",
+          "entityId": "5",
+          "description": "Single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKGTTAASGSSGGSSSGAEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSA",
+          "sequenceLength": 245,
+          "sequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": false
+    },
+    {
+      "pdbId": "9UYI",
+      "primaryCitation": {
+        "doi": "10.1126/science.adt8794",
+        "pmid": "41264711",
+        "title": "Noncanonical agonist-dependent and -independent arrestin recruitment of GPR1."
+      },
+      "polymerEntityCount": 5,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "9UYI_1",
+          "entityId": "1",
+          "description": "Retinoic acid receptor responder protein 2",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequence": "MKTIIALSYIFCLVFAELTEAQRRGLQVALEEFHKHPPVQWAFQETSVESAVDTPFPAGIFVRLEFKLQQTSCRKRDWKKPECKVRPNGRKRKCLACIKLGSEDKVLGRLVHCPIETQVLREAEEHQETQCLRVQRAGEDPHSFYFPGQFAFS",
+          "sequenceLength": 153,
+          "sequenceSha256": "a171d4f78614accae651615404145f799dfc6a9382f77636f001336e959fa41a",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q99969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYI_2",
+          "entityId": "2",
+          "description": "Beta-arrestin-1",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequence": "MGDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVDPVDGVVLVDPEYLKERRVYVTLTAAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEIPPNLPSSVTLQPGPEDTGKAIGVDYEVKAFVAENLEEKIHKRNSVRLVIEKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADIVLFNTAQYKVPVAMEEADDTVAPSSTFSKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPENETPVDTNL",
+          "sequenceLength": 376,
+          "sequenceSha256": "9a313b4c560db524f21bf1cd4622e0988ad2a797c988cb9fffc20fd6f8508587",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P49407",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYI_3",
+          "entityId": "3",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHH",
+          "sequenceLength": 120,
+          "sequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia phage EcSzw-2",
+              "taxonomyId": "2419741"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYI_4",
+          "entityId": "4",
+          "description": "Chemerin-like receptor 2,Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequence": "WSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGPEDLEETLFEEFENYSYDLDYYSLESDLEEKVQLGVVHWVSLVLYCLAFVLGIPGNAIVIWFTGFKWKKTVTTLWFLNLAIADFIFLLFLPLYISYVAMNFHWPFGIWLCKANSFTAQLNMFASVFFLTVISLDHYIHLIHPVLSHRHRTLKNSLIVIIFIWLLASLIGGPALYFRDTVEFNNHTLCYNNFQKHDPDLTLIRHHVLTWVKFIIGYLFPLLTMSICYLCLIFKVKKRSILISSRHFWTILVVVVAFVVCWTPYHLFSIWELTIHHNSYSHHVMQAGIPLSTGLAFLNSCLNPILYVLISKKFQARFRSSVAEIARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 396,
+          "sequenceSha256": "94e48a6541b518df4aa98ee906ab9a9ed135f2eedc19454f036ff019edfa78cd",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P46091",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYI_5",
+          "entityId": "5",
+          "description": "Single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKGTTAASGSSGGSSSGAEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSA",
+          "sequenceLength": 245,
+          "sequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": false
+    },
+    {
+      "pdbId": "9UYJ",
+      "primaryCitation": {
+        "doi": "10.1126/science.adt8794",
+        "pmid": "41264711",
+        "title": "Noncanonical agonist-dependent and -independent arrestin recruitment of GPR1."
+      },
+      "polymerEntityCount": 5,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "9UYJ_1",
+          "entityId": "1",
+          "description": "Beta-arrestin-1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequence": "MGDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVDPVDGVVLVDPEYLKERRVYVTLTAAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEIPPNLPSSVTLQPGPEDTGKAIGVDYEVKAFVAENLEEKIHKRNSVRLVIEKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADIVLFNTAQYKVPVAMEEADDTVAPSSTFSKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPENETPVDTNL",
+          "sequenceLength": 376,
+          "sequenceSha256": "9a313b4c560db524f21bf1cd4622e0988ad2a797c988cb9fffc20fd6f8508587",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P49407",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYJ_2",
+          "entityId": "2",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHH",
+          "sequenceLength": 120,
+          "sequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia phage EcSzw-2",
+              "taxonomyId": "2419741"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYJ_3",
+          "entityId": "3",
+          "description": "Chemerin-like receptor 2,Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequence": "WSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGPEDLEETLFEEFENYSYDLDYYSLESDLEEKVQLGVVHWVSLVLYCLAFVLGIPGNAIVIWFTGFKWKKTVTTLWFLNLAIADFIFLLFLPLYISYVAMNFHWPFGIWLCKANSFTAQLNMFASVFFLTVISLDHYIHLIHPVLSHRHRTLKNSLIVIIFIWLLASLIGGPALYFRDTVEFNNHTLCYNNFQKHDPDLTLIRHHVLTWVKFIIGYLFPLLTMSICYLCLIFKVKKRSILISSRHFWTILVVVVAFVVCWTPYHLFSIWELTIHHNSYSHHVMQAGIPLSTGLAFLNSCLNPILYVLISKKFQARFRSSVAEIARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 396,
+          "sequenceSha256": "94e48a6541b518df4aa98ee906ab9a9ed135f2eedc19454f036ff019edfa78cd",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P46091",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYJ_4",
+          "entityId": "4",
+          "description": "Retinoic acid receptor responder protein 2",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequence": "MKTIIALSYIFCLVFAELTEAQRRGLQVALEEFHKHPPVQWAFQETSVESAVDTPFPAGIFVRLEFKLQQTSCRKRDWKKPECKVRPNGRKRKCLACIKLGSEDKVLGRLVHCPIETQVLREAEEHQETQCLRVQRAGEDPHSFYFPGQFAFS",
+          "sequenceLength": 153,
+          "sequenceSha256": "a171d4f78614accae651615404145f799dfc6a9382f77636f001336e959fa41a",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q99969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYJ_5",
+          "entityId": "5",
+          "description": "Single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKGTTAASGSSGGSSSGAEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSA",
+          "sequenceLength": 245,
+          "sequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": false
+    },
+    {
+      "pdbId": "9UYL",
+      "primaryCitation": {
+        "doi": "10.1126/science.adt8794",
+        "pmid": "41264711",
+        "title": "Noncanonical agonist-dependent and -independent arrestin recruitment of GPR1."
+      },
+      "polymerEntityCount": 5,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "9UYL_1",
+          "entityId": "1",
+          "description": "Chemerin-like receptor 2,Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequence": "WSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGPEDLEETLFEEFENYSYDLDYYSLESDLEEKVQLGVVHWVSLVLYCLAFVLGIPGNAIVIWFTGFKWKKTVTTLWFLNLAIADFIFLLFLPLYISYVAMNFHWPFGIWLCKANSFTAQLNMFASVFFLTVISLDHYIHLIHPVLSHRHRTLKNSLIVIIFIWLLASLIGGPALYFRDTVEFNNHTLCYNNFQKHDPDLTLIRHHVLTWVKFIIGYLFPLLTMSICYLCLIFKVKKRSILISSRHFWTILVVVVAFVVCWTPYHLFSIWELTIHHNSYSHHVMQAGIPLSTGLAFLNSCLNPILYVLISKKFQARFRSSVAEIARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 396,
+          "sequenceSha256": "94e48a6541b518df4aa98ee906ab9a9ed135f2eedc19454f036ff019edfa78cd",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P46091",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYL_2",
+          "entityId": "2",
+          "description": "Retinoic acid receptor responder protein 2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequence": "MKTIIALSYIFCLVFAELTEAQRRGLQVALEEFHKHPPVQWAFQETSVESAVDTPFPAGIFVRLEFKLQQTSCRKRDWKKPECKVRPNGRKRKCLACIKLGSEDKVLGRLVHCPIETQVLREAEEHQETQCLRVQRAGEDPHSFYFPGQFAFS",
+          "sequenceLength": 153,
+          "sequenceSha256": "a171d4f78614accae651615404145f799dfc6a9382f77636f001336e959fa41a",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q99969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYL_3",
+          "entityId": "3",
+          "description": "Beta-arrestin-1",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequence": "MGDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVDPVDGVVLVDPEYLKERRVYVTLTAAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEIPPNLPSSVTLQPGPEDTGKAIGVDYEVKAFVAENLEEKIHKRNSVRLVIEKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADIVLFNTAQYKVPVAMEEADDTVAPSSTFSKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPENETPVDTNL",
+          "sequenceLength": 376,
+          "sequenceSha256": "9a313b4c560db524f21bf1cd4622e0988ad2a797c988cb9fffc20fd6f8508587",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P49407",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYL_4",
+          "entityId": "4",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHH",
+          "sequenceLength": 120,
+          "sequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia phage EcSzw-2",
+              "taxonomyId": "2419741"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYL_5",
+          "entityId": "5",
+          "description": "Single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKGTTAASGSSGGSSSGAEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSA",
+          "sequenceLength": 245,
+          "sequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": false
+    },
+    {
+      "pdbId": "9UYM",
+      "primaryCitation": {
+        "doi": "10.1126/science.adt8794",
+        "pmid": "41264711",
+        "title": "Noncanonical agonist-dependent and -independent arrestin recruitment of GPR1."
+      },
+      "polymerEntityCount": 5,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "9UYM_1",
+          "entityId": "1",
+          "description": "Retinoic acid receptor responder protein 2",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequence": "MKTIIALSYIFCLVFAELTEAQRRGLQVALEEFHKHPPVQWAFQETSVESAVDTPFPAGIFVRLEFKLQQTSCRKRDWKKPECKVRPNGRKRKCLACIKLGSEDKVLGRLVHCPIETQVLREAEEHQETQCLRVQRAGEDPHSFYFPGQFAFS",
+          "sequenceLength": 153,
+          "sequenceSha256": "a171d4f78614accae651615404145f799dfc6a9382f77636f001336e959fa41a",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q99969",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYM_2",
+          "entityId": "2",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHH",
+          "sequenceLength": 120,
+          "sequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia phage EcSzw-2",
+              "taxonomyId": "2419741"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYM_3",
+          "entityId": "3",
+          "description": "Single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKGTTAASGSSGGSSSGAEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSA",
+          "sequenceLength": 245,
+          "sequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYM_4",
+          "entityId": "4",
+          "description": "Beta-arrestin-2,Beta-arrestin-1",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequence": "MGEKPGTRVFKKSSPNGKLTVYLGKRDFVDHLDKVDPVDGVVLVDPDYLKDRKVFVTLTVAFRYGREDLDVLGLSFRKDLFIATYQAFPPVPNPPRPPTRLQDRLLRKLGQHAHPFFFTIPQNLPSSVTLQPGPEDTGKALGVDFEIRAFVAKSLEEKSHKRNSVRLVIRKVQFAPEKPGPQPSAETTRHFLMSDRSLHLEASLDKELYYHGEPLNVNVHVTNNSTKTVKKIKVSVRQYADIVLFSTAQYKVPVAQLEQDDQVSPSSTFSKVYTITPLLSDNREKRGLALDGKLKHEDTNLASSTIVKEGANKEVLGILVSYRVKVKLVVSRGGDVSVELPFVLMHPKPKEEPPHREVPENETPVDTNL",
+          "sequenceLength": 369,
+          "sequenceSha256": "5f632fa19ee01e034a19902f753eea9709c57491b0c8bb3368bed24357323840",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P32121",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P49407",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYM_5",
+          "entityId": "5",
+          "description": "Chemerin-like receptor 2,Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequence": "MKTIIALSYIFCLVFAGSWSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGPEDLEETLFEEFENYSYDLDYYSLESDLEEKVQLGVVHWVSLVLYCLAFVLGIPGNAIVIWFTGFKWKKTVTTLWFLNLAIADFIFLLFLPLYISYVAMNFHWPFGIWLCKANSFTAQLNMFASVFFLTVISLDHYIHLIHPVLSHRHRTLKNSLIVIIFIWLLASLIGGPALYFRDTVEFNNHTLCYNNFQKHDPDLTLIRHHVLTWVKFIIGYLFPLLTMSICYLCLIFKVKKRSILISSRHFWTILVVVVAFVVCWTPYHLFSIWELTIHHNSYSHHVMQAGIPLSTGLAFLNSCLNPILYVLISKKFQARFRSSVAEIARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 414,
+          "sequenceSha256": "b0f0f1143ad61d12bf198de4cfff8cd2a611b69fc31e387f859031feb23131ec",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P46091",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": false
+    },
+    {
+      "pdbId": "9UYN",
+      "primaryCitation": {
+        "doi": "10.1126/science.adt8794",
+        "pmid": "41264711",
+        "title": "Noncanonical agonist-dependent and -independent arrestin recruitment of GPR1."
+      },
+      "polymerEntityCount": 4,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "9UYN_1",
+          "entityId": "1",
+          "description": "Chemerin-like receptor 2,Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequence": "MKTIIALSYIFCLVFAGSWSHPQFEKGSGAGASAGSWSHPQFEKGSDYKDDDDKEFLEVLFQGPEDLEETLFEEFENYSYDLDYYSLESDLEEKVQLGVVHWVSLVLYCLAFVLGIPGNAIVIWFTGFKWKKTVTTLWFLNLAIADFIFLLFLPLYISYVAMNFHWPFGIWLCKANSFTAQLNMFASVFFLTVISLDHYIHLIHPCLSHRHRTLKNSLIVIIFIWLLASLIGGPALYFRDTVEFNNHTLCYNNFQKHDPDLTLIRHHVLTWVKFIIGYLFPLLTMSICYLCLIFKVKKRSILISSRHFWTILVVVVAFVVCWTPYHLFSIWELTIHHNSYSHHVMQAGIPLSTGLAFLNSCLNPILYVLISKKFQARFRSSVAEIARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 414,
+          "sequenceSha256": "28295aea997f515fa21d0f05f58f75a01b0fc46c3c18b919f649507c2ad61ee9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P46091",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYN_2",
+          "entityId": "2",
+          "description": "Beta-arrestin-1",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequence": "MGDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVDPVDGVVLVDPEYLKERRVYVTLTAAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEIPPNLPSSVTLQPGPEDTGKAIGVDYEVKAFVAENLEEKIHKRNSVRLVIEKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADIVLFNTAQCKVPVAMEEADDTVAPSSTFSKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPENETPVDTNL",
+          "sequenceLength": 376,
+          "sequenceSha256": "6ab453c2266b65689b36f5b9965a1ba2bd592aa9e2051a5f5956453823703e2a",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P49407",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYN_3",
+          "entityId": "3",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHH",
+          "sequenceLength": 120,
+          "sequenceSha256": "975f21c1871af51685e17a1231116f25a97bf88fbd6f7499f3f831b3d5689320",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia phage EcSzw-2",
+              "taxonomyId": "2419741"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9UYN_4",
+          "entityId": "4",
+          "description": "Single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKGTTAASGSSGGSSSGAEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSA",
+          "sequenceLength": 245,
+          "sequenceSha256": "6814a8231bb8f575e255282934c2ccefd13c60f00a685e7480d4ad2959b2bdb4",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": false
+    },
+    {
+      "pdbId": "8JRU",
+      "primaryCitation": {
+        "doi": "10.1038/s41586-023-06420-x",
+        "pmid": "37558880",
+        "title": "Tail engagement of arrestin at the glucagon receptor."
+      },
+      "polymerEntityCount": 3,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "8JRU_1",
+          "entityId": "1",
+          "description": "HA signal peptide,HPC4 purification tag,Glucagon receptor,C-terminal tail of Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequence": "GSMKTIIALSYIFCLVFAGAPEDQVDPRLIDGKGSGSAGSAGSQVMDFLFEKWKLYGDQCHHNLSLLPPPTELVCNRTFDKYSCWPDTPANTTANISCPWYLPWHHKVQHRFVFKRCGPDGQWVRGPRGQPWRDASQCQMDGEEIEVQKEVAKMYSSFQVMYTVGYSLSLGALLLALAILGGLSKLHCTRNAIHANLFASFVLKASSVLVIDGLLRTRYSQKIGDDLSVSTWLSDGAVAGCRVAAVFMQYGIVANYCWLLVEGLYLHNLLGLATLPERSFFSLYLGIGWGAPMLFVVPWAVVKCLFENVQCWTSNDNMGFWWILRFPVFLAILINFFIFVRIVQLLVAKLRARQMHHTDYKFRLAKSTLTLIPLLGVHEVVFAFVTDEHAQGTLRSAKLFFDLFLSSFQGLLVAVLYCFLNKEVQSELRRRWHRWRLGKVLWEERNTSNARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 478,
+          "sequenceSha256": "99c431f8e4d0cd44e9aa8640ac404e5b0d2d8d91ddb167c864425ccc094d84b7",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P03435",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P04070",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P47871",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            },
+            {
+              "scientificName": "Influenza A virus (A/Victoria/3/1975(H3N2))",
+              "taxonomyId": "392809"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRU_2",
+          "entityId": "2",
+          "description": "Beta-arrestin 1 and single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "B",
+            "C",
+            "D"
+          ],
+          "authAsymIds": [
+            "A",
+            "H",
+            "L"
+          ],
+          "sequence": "MGDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVEPVDGVVLVDPEYLKERRVYVTLTAAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEIPPNLPSSVTLQPGPEDTGKAIGVDYEVKAFVAENLEEKIHKRNSVRLVIEKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADIVLFNTAQYKVPVAMEEADDTVAPSSTFSKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPEHETPVDTNLSDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKGTTAASGSSGGSSSGAEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSAHHHHHH",
+          "sequenceLength": 627,
+          "sequenceSha256": "19192b4099a32225a3bfb0de73b4b8d281ad81c2e9e4b53344c707c797c54e48",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P17870",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRU_3",
+          "entityId": "3",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "MAQVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHHEPEA",
+          "sequenceLength": 126,
+          "sequenceSha256": "7bf5eda87e32452128db433cf2dd583f9f2fad528a8ef934f7ba4c6770cfa80f",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia phage EcSzw-2",
+              "taxonomyId": "2419741"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": null
+    },
+    {
+      "pdbId": "8JRV",
+      "primaryCitation": {
+        "doi": "10.1038/s41586-023-06420-x",
+        "pmid": "37558880",
+        "title": "Tail engagement of arrestin at the glucagon receptor."
+      },
+      "polymerEntityCount": 4,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "8JRV_1",
+          "entityId": "1",
+          "description": "HA signal peptide,HPC4 purification tag,Glucagon receptor,C-terminal tail of Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequence": "MKTIIALSYIFCLVFAGAPEDQVDPRLIDGKGSGSAGSAGSQVMDFLFEKWKLYGDQCHHNLSLLPPPTELVCNRTFDKYSCWPDTPANTTANISCPWYLPWHHKVQHRFVFKRCGPDGQWVRGPRGQPWRDASQCQMDGEEIEVQKEVAKMYSSFQVMYTVGYSLSLGALLLALAILGGLSKLHCTRNAIHANLFASFVLKASSVLVIDGLLRTRYSQKIGDDLSVSTWLSDGAVAGCRVAAVFMQYGIVANYCWLLVEGLYLHNLLGLATLPERSFFSLYLGIGWGAPMLFVVPWAVVKCLFENVQCWTSNDNMGFWWILRFPVFLAILINFFIFVRIVQLLVAKLRARQMHHTDYKFRLAKSTLTLIPLLGVHEVVFAFVTDEHAQGTLRSAKLFFDLFLSSFQGLLVAVLYCFLNKEVQSELRRRWHRWRLGKVLWEERNTSNARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 476,
+          "sequenceSha256": "9cef01743e4a3d2dafed812e7b38dafbd056ad1d394543ac5f7422999ac51f62",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P03435",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P04070",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P47871",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            },
+            {
+              "scientificName": "Influenza A virus (A/Victoria/3/1975(H3N2))",
+              "taxonomyId": "392809"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRV_2",
+          "entityId": "2",
+          "description": "Glucagon",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequence": "HSQGTFTSDYSKYLDSRRAQDFVQWLMNT",
+          "sequenceLength": 29,
+          "sequenceSha256": "e969a8e2244b7d17b982c387fc60e5491bd028fa13b5dc008cbb92b2721a143f",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01275",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRV_3",
+          "entityId": "3",
+          "description": "Beta-arrestin 1 and single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "C",
+            "D",
+            "E"
+          ],
+          "authAsymIds": [
+            "A",
+            "H",
+            "L"
+          ],
+          "sequence": "MGDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVEPVDGVVLVDPEYLKERRVYVTLTAAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEIPPNLPSSVTLQPGPEDTGKAIGVDYEVKAFVAENLEEKIHKRNSVRLVIEKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADIVLFNTAQYKVPVAMEEADDTVAPSSTFSKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPEHETPVDTNLSDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKGTTAASGSSGGSSSGAEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSAHHHHHH",
+          "sequenceLength": 627,
+          "sequenceSha256": "19192b4099a32225a3bfb0de73b4b8d281ad81c2e9e4b53344c707c797c54e48",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P49407",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRV_4",
+          "entityId": "4",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "MAQVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHHEPEA",
+          "sequenceLength": 126,
+          "sequenceSha256": "7bf5eda87e32452128db433cf2dd583f9f2fad528a8ef934f7ba4c6770cfa80f",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia phage EcSzw-2",
+              "taxonomyId": "2419741"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": null
+    },
+    {
+      "pdbId": "6NI2",
+      "primaryCitation": {
+        "doi": "10.1038/s41594-019-0330-y",
+        "pmid": "31740855",
+        "title": "Structure of an endosomal signaling GPCR-G protein-beta-arrestin megacomplex."
+      },
+      "polymerEntityCount": 5,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "6NI2_1",
+          "entityId": "1",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHHEPEA",
+          "sequenceLength": 124,
+          "sequenceSha256": "6cfbe81b90e6ff8d0cac3980d388927a682a5bc7911b591f33ef2d6b2051ee66",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        },
+        {
+          "rcsbId": "6NI2_2",
+          "entityId": "2",
+          "description": "Beta-arrestin-1",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "MGDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVEPVDGVVLVDPEYLKERRVYVTLTCAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEIPPNLPCSVTLQPGPEDTGKACGVDYEVKAFCAENLEEKIHKRNSVRLVIRKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADICLFNTAQYKCPVAMEEADDTVAPSSTFCKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPEHETPVDTNLIELDTNDDDIVFEDFAR",
+          "sequenceLength": 393,
+          "sequenceSha256": "830e9a3f58cda919be98e33ff82055a76bc1fb3421752edece90ac7c2e474acd",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P17870",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ]
+        },
+        {
+          "rcsbId": "6NI2_3",
+          "entityId": "3",
+          "description": "Fab30 Heavy Chain",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequence": "EISEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHHHHHHHH",
+          "sequenceLength": 237,
+          "sequenceSha256": "7a04dc4b5bc6c35c765ac8a7969f493197c93db7ae2acbfae5c54be17305854e",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "rcsbId": "6NI2_4",
+          "entityId": "4",
+          "description": "Fab30 Light Chain",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKRTVAAPSVFIFPPSDSQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+          "sequenceLength": 215,
+          "sequenceSha256": "552555d90d1f433c12193a0af42275a6556487dc6fc44a8c2ca5d3e214a848f2",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "rcsbId": "6NI2_5",
+          "entityId": "5",
+          "description": "Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "V"
+          ],
+          "sequence": "ARGRTPPSLGPQDESCTTASSSLAKD",
+          "sequenceLength": 26,
+          "sequenceSha256": "8e359dda9e7d33dad5cc487439f2cd5ac2758d7acaada7e0da0705a9da6c4a19",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": null
+    },
+    {
+      "pdbId": "9BT8",
+      "primaryCitation": {
+        "doi": "10.1038/s41467-026-69884-1",
+        "pmid": "41720803",
+        "title": "Mechanism of beta-arrestin 1 mediated Src activation via Src SH3 domain revealed by cryo-electron microscopy."
+      },
+      "polymerEntityCount": 6,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "9BT8_1",
+          "entityId": "1",
+          "description": "Proto-oncogene tyrosine-protein kinase Src",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequence": "MGSSHHHHHHDYDIPTTENLYFQGHMVTTFVALYDYESCTETDLSFKKGERLQIVNNTEGDWWLAHSLTTGQTGYIPSNYVAPSDSIQAEEWYFGKITRRESERLLLNPENPRGTFLVRESETTKGAYSLSVSDFDNAKGLNVKHYKIRKLDSGGFYITSRTQFSSLQQLVAYYSKHADGLSHRLTNVSPTSKPQTQGLAKDAWEIPRESLRLEVKLGQGSFGEVWMGTWNGTTRVAIKTLKPGTMSPEAFLQEAQVMKKLRHEKLVQLYAVVSEEPIYIVTEYMSKGSLLDFLKGEMGKYLRLPQLVDMAAQIASGMAYVERMNYVHRDLRAANILVGENLVSKVADFGLARLIEDNEYTARQGAKFPIKWTAPEAALYGRFTIKSDVWSFGILLTELTTKGRVPYPGMVNREVLDQVERGYRMPCPPECPESLHDLMCQCWRKDPEERPTFEYLQAFLEDYFTSTEPQYQPGENL",
+          "sequenceLength": 477,
+          "sequenceSha256": "92db9682fc15c5a510d84cf10f4bfdbb73948a63d2590c2fed0900dc9cf637bc",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P00523",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Gallus gallus",
+              "taxonomyId": "9031"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9BT8_2",
+          "entityId": "2",
+          "description": "Antibody fragment Fab30, heavy chain",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequence": "EISEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHHHHHHHH",
+          "sequenceLength": 237,
+          "sequenceSha256": "7a04dc4b5bc6c35c765ac8a7969f493197c93db7ae2acbfae5c54be17305854e",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bacteriophage sp.",
+              "taxonomyId": "38018"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9BT8_3",
+          "entityId": "3",
+          "description": "Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "V"
+          ],
+          "sequence": "ARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 29,
+          "sequenceSha256": "c5d6e6d0e1e60e3af96237d2fd6cb519bf40528930d04ab79b7ff049bb1e813f",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9BT8_4",
+          "entityId": "4",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHHEPEA",
+          "sequenceLength": 124,
+          "sequenceSha256": "6cfbe81b90e6ff8d0cac3980d388927a682a5bc7911b591f33ef2d6b2051ee66",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9BT8_5",
+          "entityId": "5",
+          "description": "Beta-arrestin-1",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "GDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVDPVDGVVLVDPEYLKERRVYVTLTVAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEICPNLPSSVTLQPGPEDTGKALGVDYEVKAFVAENLEEKIHKRNSVRLVIRKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADIVLFNTAQYKVPVAMEEADDTVAPSSTFSKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPESETPVDTNLIELDTNDDDIVFEDFAR",
+          "sequenceLength": 392,
+          "sequenceSha256": "00d6ca7c3ee1684b1395ddb7e1643a34037c478f2a14ac7298b549fc5eba8584",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P29066",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Rattus norvegicus",
+              "taxonomyId": "10116"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9BT8_6",
+          "entityId": "6",
+          "description": "Antibody fragment Fab30, light chain",
+          "labelAsymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKRTVAAPSVFIFPPSDSQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+          "sequenceLength": 215,
+          "sequenceSha256": "552555d90d1f433c12193a0af42275a6556487dc6fc44a8c2ca5d3e214a848f2",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bacteriophage sp.",
+              "taxonomyId": "38018"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": null
+    },
+    {
+      "pdbId": "9CX3",
+      "primaryCitation": {
+        "doi": "10.1038/s41467-026-69884-1",
+        "pmid": "41720803",
+        "title": "Mechanism of beta-arrestin 1 mediated Src activation via Src SH3 domain revealed by cryo-electron microscopy."
+      },
+      "polymerEntityCount": 6,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "9CX3_1",
+          "entityId": "1",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequence": "QVQLQESGGGLVQAGGSLRLSCVVSGFFFDTVTMAWYRRAPGKHRELVASATAGGTTTYADSVKDRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNTFVRSLSWGQGTQVTVSSHHHHHHEPEA",
+          "sequenceLength": 124,
+          "sequenceSha256": "6cfbe81b90e6ff8d0cac3980d388927a682a5bc7911b591f33ef2d6b2051ee66",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9CX3_2",
+          "entityId": "2",
+          "description": "Proto-oncogene tyrosine-protein kinase Src",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequence": "MGSSHHHHHHDYDIPTTENLYFQGHMVTTFVALYDYESCTETDLSFKKGERLQIVNNTEGDWWLAHSLTTGQTGYIPSNYVAPSD",
+          "sequenceLength": 85,
+          "sequenceSha256": "6e64545cf7d52719eb786de6e0fd5b0e38f7c275aa4bdf325e960e07e17479e9",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P00523",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Gallus gallus",
+              "taxonomyId": "9031"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9CX3_3",
+          "entityId": "3",
+          "description": "Antibody fragment Fab30, heavy chain",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequence": "EISEVQLVESGGGLVQPGGSLRLSCAASGFNVYSSSIHWVRQAPGKGLEWVASISSYYGYTYYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARSRQFWYSGLDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHHHHHHHH",
+          "sequenceLength": 237,
+          "sequenceSha256": "7a04dc4b5bc6c35c765ac8a7969f493197c93db7ae2acbfae5c54be17305854e",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9CX3_4",
+          "entityId": "4",
+          "description": "Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "V"
+          ],
+          "sequence": "ARGRTPPSLGPQDESCTTASSSLAKDTSS",
+          "sequenceLength": 29,
+          "sequenceSha256": "c5d6e6d0e1e60e3af96237d2fd6cb519bf40528930d04ab79b7ff049bb1e813f",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9CX3_5",
+          "entityId": "5",
+          "description": "Beta-arrestin-1",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequence": "GDKGTRVFKKASPNGKLTVYLGKRDFVDHIDLVDPVDGVVLVDPEYLKERRVYVTLTVAFRYGREDLDVLGLTFRKDLFVANVQSFPPAPEDKKPLTRLQERLIKKLGEHAYPFTFEICPNLPSSVTLQPGPEDTGKALGVDYEVKAFVAENLEEKIHKRNSVRLVIRKVQYAPERPGPQPTAETTRQFLMSDKPLHLEASLDKEIYYHGEPISVNVHVTNNTNKTVKKIKISVRQYADIVLFNTAQYKVPVAMEEADDTVAPSSTFSKVYTLTPFLANNREKRGLALDGKLKHEDTNLASSTLLREGANREILGIIVSYKVKVKLVVSRGGLLGDLASSDVAVELPFTLMHPKPKEEPPHREVPESETPVDTNLIELDTNDDDIVFEDFAR",
+          "sequenceLength": 392,
+          "sequenceSha256": "00d6ca7c3ee1684b1395ddb7e1643a34037c478f2a14ac7298b549fc5eba8584",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P29066",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Rattus norvegicus",
+              "taxonomyId": "10116"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9CX3_6",
+          "entityId": "6",
+          "description": "Antibody fragment Fab30, light chain",
+          "labelAsymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYKYVPVTFGQGTKVEIKRTVAAPSVFIFPPSDSQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+          "sequenceLength": 215,
+          "sequenceSha256": "552555d90d1f433c12193a0af42275a6556487dc6fc44a8c2ca5d3e214a848f2",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        }
+      ],
+      "primarySampleAccountingComplete": null
+    }
+  ],
+  "discoveryLimit": "The prior receptor scan lacked a canonical GPR1 profile: P46091 was unrecognized while V2R P30518 was recognized. Its no-observed-development-signal category cannot establish GPR1 independence. This packet supplies a captured canonical GPR1 sequence without modifying the frozen scan.",
+  "evidenceBoundary": {
+    "sectionsRead": "Primary abstracts, selected construct/expression/sample Methods and data availability only; bibliographic links for institutional pages. No paper Results or figure captions were read.",
+    "abstractExposureCaveat": "The GPR1 abstract contains qualitative receptor/arrestin state and interaction-pattern language. It was read under the abstract allowance; this is not a claim of complete prose blindness. No measured contacts, residue-pair assignments or native pose images were accessed.",
+    "additionalProceduralReading": "An exploratory extraction also displayed the PNAS sensor microscopy Methods. These concern optical measurement setup, not native complex pose or contact evidence.",
+    "irrelevantSearchHits": "PMC12055985 is an unrelated herpes-virus nanobody paper and was rejected after title-only inspection. PMC12820791 is commentary; PMC12733242 supplied no selected Nb32 Methods evidence. Their captured bodies were not used as role authority.",
+    "nativeCoordinateFilesAccessed": false,
+    "nativePoseImagesAccessed": false,
+    "nativeContactTablesAccessed": false,
+    "labelsAccessed": false,
+    "predictionOutputsAccessed": false
+  },
+  "summary": {
+    "gpr1EntryCount": 6,
+    "gpr1PolymerEntityCount": 29,
+    "referenceEntryCount": 5,
+    "totalInventoriedPolymerEntityCount": 53,
+    "gpr1Nb32AuxiliaryRoleInferences": 6,
+    "gpr1PrimarySourceEntryClosures": 0,
+    "entryExclusionsAdded": 0,
+    "eligibleTargetsAdded": 0,
+    "independentComponentsAdded": 0,
+    "formalLeakageEdgesAdded": 0,
+    "formalNoEdgesAdded": 0,
+    "targetFreezePermitted": false,
+    "wholeCensusComponentUpperBound": null
+  }
+}

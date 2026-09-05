@@ -1,0 +1,65 @@
+[
+  {
+    "bytes": 8887,
+    "file": "epmc-doi-query.json",
+    "sha256": "f62b1283b28231d64fe2510fb47ae1e8a36441675a08f208f13456e337a2758b",
+    "status": 200,
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1073/pnas.2508879122&format=json&resultType=core"
+  },
+  {
+    "bytes": 684,
+    "file": "gpcrdb-P11229-repeat-1.json",
+    "sha256": "51686ddbfe9cfc21e4ec938ad94d383e5985597970b75bc27c812932da79c9f3",
+    "status": 200,
+    "url": "https://gpcrdb.org/services/protein/accession/P11229/"
+  },
+  {
+    "bytes": 684,
+    "file": "gpcrdb-P11229-repeat-2.json",
+    "sha256": "51686ddbfe9cfc21e4ec938ad94d383e5985597970b75bc27c812932da79c9f3",
+    "status": 200,
+    "url": "https://gpcrdb.org/services/protein/accession/P11229/"
+  },
+  {
+    "bytes": 45253,
+    "file": "gpcrdb-acm1-residues-repeat-1.json",
+    "sha256": "b1d3cb63be7947bd8261e6c4b9dbb46011dabd02889d2ea58461209dce40432e",
+    "status": 200,
+    "url": "https://gpcrdb.org/services/residues/acm1_human/"
+  },
+  {
+    "bytes": 45253,
+    "file": "gpcrdb-acm1-residues-repeat-2.json",
+    "sha256": "b1d3cb63be7947bd8261e6c4b9dbb46011dabd02889d2ea58461209dce40432e",
+    "status": 200,
+    "url": "https://gpcrdb.org/services/residues/acm1_human/"
+  },
+  {
+    "bytes": 141770,
+    "file": "primary-article.xml",
+    "sha256": "503f0a22ad359331689046d116048a997afe5652b28043c26f87f0f227b98f17",
+    "status": 200,
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12625997/fullTextXML"
+  },
+  {
+    "bytes": 6186,
+    "file": "supplement-attempt.body",
+    "sha256": "7e604bb1db6a9fba44aa92609024201b11a942796bf1f4eb4f4acb30d9dd5712",
+    "status": 403,
+    "url": "https://www.pnas.org/doi/suppl/10.1073/pnas.2508879122/suppl_file/pnas.2508879122.sapp.pdf"
+  },
+  {
+    "bytes": 57792,
+    "file": "uniprot-P11229-repeat-1.json",
+    "sha256": "58ca178b55a9579fce440e61ee4c0dc0108f3f5c16e990983f9fec701dad8f2b",
+    "status": 200,
+    "url": "https://rest.uniprot.org/uniprotkb/P11229.json"
+  },
+  {
+    "bytes": 57792,
+    "file": "uniprot-P11229-repeat-2.json",
+    "sha256": "58ca178b55a9579fce440e61ee4c0dc0108f3f5c16e990983f9fec701dad8f2b",
+    "status": 200,
+    "url": "https://rest.uniprot.org/uniprotkb/P11229.json"
+  }
+]

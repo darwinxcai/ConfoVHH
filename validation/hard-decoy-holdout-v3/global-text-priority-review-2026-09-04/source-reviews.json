@@ -1,0 +1,917 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "scope": "Four entries prioritized by global receptor-text metadata/sequence screening; three primary publications.",
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v3/global-text-discovery-2026-09-04/manifest.json": "13d95b84e164969c273bc7dd28d880437bbb9d3f17dff614b97acb3a05f37c99",
+    "validation/hard-decoy-holdout-v3/global-text-discovery-2026-09-04/entries.jsonl": "fde2a0de338d34ea0e2baf56924b20bbc2de113b821a30af9c976b064d3a92d0",
+    "validation/hard-decoy-holdout-v3/global-text-screen-2026-09-04/manifest.json": "4c0c25de39f277122128e0a4bde4ad7df112a99e2d5f55f3066c377b3ab28a8f",
+    "validation/hard-decoy-holdout-v3/global-text-screen-2026-09-04/entity-screens.jsonl": "ddf6eef4bbd5f16bac633f5049e52ec5541d3f3a0ccbc9d8cf27020a28b2a267",
+    "validation/hard-decoy-holdout-v3/global-text-screen-2026-09-04/sequence-screens.jsonl": "473d3dcb13fe00a247c9f4be116537f14af797dfb091fa253a0840581d48d875",
+    "validation/hard-decoy-holdout-v3/global-text-screen-2026-09-04/review-queue.jsonl": "8aeab847adcb0c97ebf1219747fe9f8fdf9c12ba5979707b8c45db435a0afb95",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl": "8e2219f94d91bb3a8822e56a1e43f20cc652a86bc9458a9af76013f96e3c5be7"
+  },
+  "primaryExcerptFile": "primary-excerpts.json",
+  "fzd3SourceFile": "fzd3-source/source-facts.json",
+  "sourceCaptures": [
+    {
+      "id": "gpc2-7t62-core",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/7T62",
+      "status": 200,
+      "file": "sources/gpc2-7t62-core.body",
+      "bytes": 10271,
+      "sha256": "076fb8b376a8a26870e583eba87188b12aedef965e722b8835a249f1a58add34"
+    },
+    {
+      "id": "gpc2-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1016%2Fj.xcrm.2021.100297&format=json&resultType=core",
+      "status": 200,
+      "file": "sources/gpc2-epmc.body",
+      "bytes": 13809,
+      "sha256": "ffdd5b891f94ed423fe2a9871bec016f963cee0ab6b52899e7fac0e0e0503fff"
+    },
+    {
+      "id": "gpc2-primary-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8233664/fullTextXML",
+      "status": 200,
+      "file": "sources/gpc2-primary-xml.body",
+      "bytes": 176384,
+      "sha256": "5e399be1e5edcd65e1bbf134d44623eca5e426024e4c34f77ed01f51e1bfceb9"
+    },
+    {
+      "id": "mglur5-epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41586-019-0881-4&format=json&resultType=core",
+      "status": 200,
+      "file": "sources/mglur5-epmc.body",
+      "bytes": 12320,
+      "sha256": "8ad36af3dcc32b031f7d75231150b3f088313eaa4230407a92ede063962c919b"
+    },
+    {
+      "id": "mglur5-primary-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6709600/fullTextXML",
+      "status": 200,
+      "file": "sources/mglur5-primary-xml.body",
+      "bytes": 157262,
+      "sha256": "69361ac36bca6e4324ca9e1185ec09768c8c95f5d99f7e1e86c06f075c560f7a"
+    },
+    {
+      "id": "mglur5-publisher-html",
+      "url": "https://www.nature.com/articles/s41586-019-0881-4",
+      "status": 200,
+      "file": "sources/mglur5-publisher-html.body",
+      "bytes": 436282,
+      "sha256": "4c070dd4460d661c405c6e304338a34194388a455e5a32461e0ad2bca394ba2f"
+    },
+    {
+      "id": "uniprot-p41594",
+      "url": "https://rest.uniprot.org/uniprotkb/P41594.json",
+      "status": 200,
+      "file": "sources/uniprot-p41594.body",
+      "bytes": 79397,
+      "sha256": "8f5bd2dd3985b20087deaaa133b9f1d4d596bde00c0843e857452dfd341fb51e"
+    },
+    {
+      "id": "uniprot-q8n158",
+      "url": "https://rest.uniprot.org/uniprotkb/Q8N158.json",
+      "status": 200,
+      "file": "sources/uniprot-q8n158.body",
+      "bytes": 32116,
+      "sha256": "722842bcbbe239b67dcc6c1afdbef139e7ec2b9963f809c2a67b6ee979ea6394"
+    },
+    {
+      "id": "uniprot-q9npg1",
+      "url": "https://rest.uniprot.org/uniprotkb/Q9NPG1.json",
+      "status": 200,
+      "file": "sources/uniprot-q9npg1.body",
+      "bytes": 50100,
+      "sha256": "99a122c0c7f1ef288891e99de35ca07e7a44a316066cc143a770b0387f74b911"
+    }
+  ],
+  "additionalFzd3Captures": 2,
+  "exactDepositionLinks": [
+    {
+      "pdbId": "7T62",
+      "method": "Primary wwPDB deposition identifier joined to RCSB database_2",
+      "wwpdbId": "D_1000256119",
+      "primaryParagraphSha256": "cb7009d2a2130bc1b931c2a25984df0eb3cfec029a258edc7f05de4dccbdc0dc"
+    },
+    {
+      "pdbId": "8Q7O",
+      "method": "Exact PDB accession in primary Data availability",
+      "primaryParagraphSha256": "1a47c7456501ba0a219b5d765c1e25a92c8d2cb11fd4803bd53b337eff2a2967"
+    },
+    {
+      "pdbId": "6N4Y",
+      "method": "Exact PDB accession in primary Data availability",
+      "primaryParagraphSha256": "03bf975bb21827ec24a7cb34edd3e358c9ecb32fe1fc466f1edfac442a2724b6"
+    },
+    {
+      "pdbId": "6N50",
+      "method": "Exact PDB accession in primary Data availability",
+      "primaryParagraphSha256": "03bf975bb21827ec24a7cb34edd3e358c9ecb32fe1fc466f1edfac442a2724b6"
+    }
+  ],
+  "reviews": [
+    {
+      "pdbId": "6N4Y",
+      "title": "Metabotropic Glutamate Receptor 5 Extracellular Domain with Nb43",
+      "primaryCitation": {
+        "doi": "10.1038/s41586-019-0881-4",
+        "pmid": "30675062",
+        "title": "Structural insights into the activation of metabotropic glutamate receptors."
+      },
+      "polymerInventory": [
+        {
+          "authAsymIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "description": "Metabotropic glutamate receptor 5",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "6N4Y_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P41594",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MLLVNQSHQGFNKEHTSKMVSAIVLYVLLAAAAHSAFQSSERRVVAHMPGDIIIGALFSVHHQPTVDKVHERKCGAVREQYGIQRVEAMLHTLERINSDPTLLPNITLGCEIRDSCWHSAVALEQSIEFIRDSLISSEEEEGLVRCVDGSSSSFRSKKPIVGVIGPGSSSVAIQVQNLLQLFNIPQIAYSATSMDLSDKTLFKYFMRVVPSDAQQARAMVDIVKRYNWTYVSAVHTEGNYGESGMEAFKDMSAKEGICIAHSYKIYSNAGEQSFDKLLKKLTSHLPKARVVACFCEGMTVRGLLMAMRRLGLAGEFLLLGSDGWADRYDVTDGYQREAVGGITIKLQSPDVKWFDDYYLKLRPETNHRNPWFQEFWQHRFQCRLEGFPQENSKYNKTCNSSLTLKTHHVQDSKMGFVINAIYSMAYGLHNMQMSLCPGYAGLCDAMKPIDGRKLLESLMKTNFTGVSGDTILFDENGDSPGRYEIMNFKEMGKDYFDYINVGSWDNGELKMDDDEVWSKKSNIIRSVCSEPCEKGQIKVIRKGEVSCCWTCTPCKENEYVFDEYTCKACQLGSWPTDDLTGCDLIPVQHHHHHHHH",
+          "sequenceLength": 596,
+          "sequenceSha256": "9f7d10f4f548a42746d136b9b08c61ce8385d659bc2cc3d12bfa681b4a749f72",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "screenSummary": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "priorityTier": 5,
+            "numberedHeavyDomainCallCount": 0,
+            "referenceMatchCount": 0,
+            "developmentSequenceMatch": false,
+            "priorSequenceExposure": false
+          }
+        },
+        {
+          "authAsymIds": [
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "description": "Nanobody 43",
+          "entityId": "2",
+          "labelAsymIds": [
+            "E",
+            "F",
+            "G",
+            "H"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": true,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "6N4Y_2",
+          "referenceSequences": [],
+          "sequence": "QVQLVESGGGLVQAGGSLRLSCAASGRTFTSYAMGWFRQAPGKERESVAAISSSGGSTHYADSVKGRFTISRDNSKNTVYLQMNSLKPEDTAVYYCAAAMYGSRWPDWEYDYWGQGTQVTVSS",
+          "sequenceLength": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ],
+          "screenSummary": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "priorityTier": 2,
+            "numberedHeavyDomainCallCount": 1,
+            "referenceMatchCount": 6,
+            "developmentSequenceMatch": false,
+            "priorSequenceExposure": true
+          }
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "canonicalSequenceComparison": {
+        "receptorEntityId": "1",
+        "canonicalAccession": "P41594",
+        "canonicalLength": 1212,
+        "canonicalSequenceSha256": "d490de2ba2e67deb14f4897332180b775ed815aab47993463f5ff4aff2f464cd",
+        "exactCanonicalRange1Inclusive": [
+          21,
+          571
+        ],
+        "exactDepositedRange1Inclusive": [
+          38,
+          588
+        ],
+        "exactFragmentLength": 551,
+        "exactFragmentSha256": "d67a916f545c2fa1700cf30ff799a8e87f24956d095884a2029955ddc7e91424",
+        "depositedPrefixOutsideCanonicalFragment": "MLLVNQSHQGFNKEHTSKMVSAIVLYVLLAAAAHSAF",
+        "depositedSuffixOutsideCanonicalFragment": "HHHHHHHH",
+        "transmembraneAnnotationComparisons": [
+          {
+            "canonicalRange1Inclusive": [
+              581,
+              603
+            ],
+            "description": "Helical; Name=1",
+            "sequenceSha256": "d5c7fc4e3d7a596767c9d22741c7015754383c5a890174e1627c556858e0e1e6",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              614,
+              636
+            ],
+            "description": "Helical; Name=2",
+            "sequenceSha256": "8769aa162b38dfa9448ad3df944323198c8233c0b07a1feca5bfb22c5095967f",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              645,
+              667
+            ],
+            "description": "Helical; Name=3",
+            "sequenceSha256": "5cd835bcc034cf8006717bc61c7be42ffa9eddeb8b8d8852d7a5a92089b58876",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              694,
+              714
+            ],
+            "description": "Helical; Name=4",
+            "sequenceSha256": "227b9ef2489e83f2bfabf0056258ba88343aa103ce4e3aa51ccc16660bc04fa7",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              738,
+              759
+            ],
+            "description": "Helical; Name=5",
+            "sequenceSha256": "d792a767717bc107b7f84b35e91a9319138386bd4c923f0235adcf541478c384",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              773,
+              795
+            ],
+            "description": "Helical; Name=6",
+            "sequenceSha256": "ad1653e812cf7c98afde1ba6d40ad1a8accd3dc847f8fc098f371ad06aaac286",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              799,
+              820
+            ],
+            "description": "Helical; Name=7",
+            "sequenceSha256": "a81a3d81d14e511e1087418ce0f0c53305b2c57cd0c2f7cda4993aa2bfb28c09",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          }
+        ],
+        "boundary": "Canonical sequence and annotation comparison only; no resolved-coordinate or native-interface claim."
+      },
+      "sourceFacts": [
+        "Primary Data availability explicitly maps 6N4Y to mGlu5 ECD plus Nb43 and 6N50 to ECD plus Nb43 and L-quisqualate.",
+        "Primary ECD Methods specify human mGlu5 residues 21–569 followed by a hexahistidine tag and describe removal of that tag with carboxypeptidases.",
+        "Nb43 was expressed as a SUMO precursor, followed by ULP1 removal of the His-SUMO tag and separate purification; the ECD and Nb43 were subsequently combined.",
+        "Both deposited receptor sequences instead contain a 37-residue prefix, canonical P41594 residues 21–571 and an eight-histidine suffix. They therefore do not directly reproduce the stated purified ECD construct.",
+        "All seven captured canonical TM segment sequences are outside the matched extracellular fragment and absent as complete exact substrings from either deposited receptor."
+      ],
+      "status": "PRIMARY_ECD_NB43_SAMPLE_SUPPORTED_EXPERIMENTAL_DEPOSITED_CONSTRUCT_DISCREPANCY",
+      "unresolved": [
+        "Reconcile the deposited prefix, two additional canonical residues and retained eight-histidine suffix with Methods residues 21–569 and tag removal.",
+        "The two entries have identical deposited receptor and Nb43 sequences and share a publication; they are not two newly certified independent components.",
+        "The limited source-heading/model-building exposure in exposure-scope.json requires adjudication; no clean-blind claim is made."
+      ],
+      "developmentMetadataComparison": {
+        "referenceNodeCount": 17,
+        "exactReceptorAccessionMatches": [],
+        "exactPublicationDoiMatches": [],
+        "exactFullPolymerSequenceMatches": [],
+        "noMatchDoesNotEstablishNoEdge": true,
+        "formalLeakageGraphComplete": false
+      },
+      "formalExclusionAuthority": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "targetFreezePermitted": false
+    },
+    {
+      "pdbId": "6N50",
+      "title": "Metabotropic Glutamate Receptor 5 Extracellular Domain in Complex with Nb43 and L-quisqualic acid",
+      "primaryCitation": {
+        "doi": "10.1038/s41586-019-0881-4",
+        "pmid": "30675062",
+        "title": "Structural insights into the activation of metabotropic glutamate receptors."
+      },
+      "polymerInventory": [
+        {
+          "authAsymIds": [
+            "A",
+            "B",
+            "C"
+          ],
+          "description": "Metabotropic glutamate receptor 5",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A",
+            "B",
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "6N50_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P41594",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MLLVNQSHQGFNKEHTSKMVSAIVLYVLLAAAAHSAFQSSERRVVAHMPGDIIIGALFSVHHQPTVDKVHERKCGAVREQYGIQRVEAMLHTLERINSDPTLLPNITLGCEIRDSCWHSAVALEQSIEFIRDSLISSEEEEGLVRCVDGSSSSFRSKKPIVGVIGPGSSSVAIQVQNLLQLFNIPQIAYSATSMDLSDKTLFKYFMRVVPSDAQQARAMVDIVKRYNWTYVSAVHTEGNYGESGMEAFKDMSAKEGICIAHSYKIYSNAGEQSFDKLLKKLTSHLPKARVVACFCEGMTVRGLLMAMRRLGLAGEFLLLGSDGWADRYDVTDGYQREAVGGITIKLQSPDVKWFDDYYLKLRPETNHRNPWFQEFWQHRFQCRLEGFPQENSKYNKTCNSSLTLKTHHVQDSKMGFVINAIYSMAYGLHNMQMSLCPGYAGLCDAMKPIDGRKLLESLMKTNFTGVSGDTILFDENGDSPGRYEIMNFKEMGKDYFDYINVGSWDNGELKMDDDEVWSKKSNIIRSVCSEPCEKGQIKVIRKGEVSCCWTCTPCKENEYVFDEYTCKACQLGSWPTDDLTGCDLIPVQHHHHHHHH",
+          "sequenceLength": 596,
+          "sequenceSha256": "9f7d10f4f548a42746d136b9b08c61ce8385d659bc2cc3d12bfa681b4a749f72",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "screenSummary": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "priorityTier": 5,
+            "numberedHeavyDomainCallCount": 0,
+            "referenceMatchCount": 0,
+            "developmentSequenceMatch": false,
+            "priorSequenceExposure": false
+          }
+        },
+        {
+          "authAsymIds": [
+            "E"
+          ],
+          "description": "Nanobody 43",
+          "entityId": "2",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": true,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "6N50_2",
+          "referenceSequences": [],
+          "sequence": "QVQLVESGGGLVQAGGSLRLSCAASGRTFTSYAMGWFRQAPGKERESVAAISSSGGSTHYADSVKGRFTISRDNSKNTVYLQMNSLKPEDTAVYYCAAAMYGSRWPDWEYDYWGQGTQVTVSS",
+          "sequenceLength": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ],
+          "screenSummary": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "priorityTier": 2,
+            "numberedHeavyDomainCallCount": 1,
+            "referenceMatchCount": 6,
+            "developmentSequenceMatch": false,
+            "priorSequenceExposure": true
+          }
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "canonicalSequenceComparison": {
+        "receptorEntityId": "1",
+        "canonicalAccession": "P41594",
+        "canonicalLength": 1212,
+        "canonicalSequenceSha256": "d490de2ba2e67deb14f4897332180b775ed815aab47993463f5ff4aff2f464cd",
+        "exactCanonicalRange1Inclusive": [
+          21,
+          571
+        ],
+        "exactDepositedRange1Inclusive": [
+          38,
+          588
+        ],
+        "exactFragmentLength": 551,
+        "exactFragmentSha256": "d67a916f545c2fa1700cf30ff799a8e87f24956d095884a2029955ddc7e91424",
+        "depositedPrefixOutsideCanonicalFragment": "MLLVNQSHQGFNKEHTSKMVSAIVLYVLLAAAAHSAF",
+        "depositedSuffixOutsideCanonicalFragment": "HHHHHHHH",
+        "transmembraneAnnotationComparisons": [
+          {
+            "canonicalRange1Inclusive": [
+              581,
+              603
+            ],
+            "description": "Helical; Name=1",
+            "sequenceSha256": "d5c7fc4e3d7a596767c9d22741c7015754383c5a890174e1627c556858e0e1e6",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              614,
+              636
+            ],
+            "description": "Helical; Name=2",
+            "sequenceSha256": "8769aa162b38dfa9448ad3df944323198c8233c0b07a1feca5bfb22c5095967f",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              645,
+              667
+            ],
+            "description": "Helical; Name=3",
+            "sequenceSha256": "5cd835bcc034cf8006717bc61c7be42ffa9eddeb8b8d8852d7a5a92089b58876",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              694,
+              714
+            ],
+            "description": "Helical; Name=4",
+            "sequenceSha256": "227b9ef2489e83f2bfabf0056258ba88343aa103ce4e3aa51ccc16660bc04fa7",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              738,
+              759
+            ],
+            "description": "Helical; Name=5",
+            "sequenceSha256": "d792a767717bc107b7f84b35e91a9319138386bd4c923f0235adcf541478c384",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              773,
+              795
+            ],
+            "description": "Helical; Name=6",
+            "sequenceSha256": "ad1653e812cf7c98afde1ba6d40ad1a8accd3dc847f8fc098f371ad06aaac286",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              799,
+              820
+            ],
+            "description": "Helical; Name=7",
+            "sequenceSha256": "a81a3d81d14e511e1087418ce0f0c53305b2c57cd0c2f7cda4993aa2bfb28c09",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          }
+        ],
+        "boundary": "Canonical sequence and annotation comparison only; no resolved-coordinate or native-interface claim."
+      },
+      "sourceFacts": [
+        "Primary Data availability explicitly maps 6N4Y to mGlu5 ECD plus Nb43 and 6N50 to ECD plus Nb43 and L-quisqualate.",
+        "Primary ECD Methods specify human mGlu5 residues 21–569 followed by a hexahistidine tag and describe removal of that tag with carboxypeptidases.",
+        "Nb43 was expressed as a SUMO precursor, followed by ULP1 removal of the His-SUMO tag and separate purification; the ECD and Nb43 were subsequently combined.",
+        "Both deposited receptor sequences instead contain a 37-residue prefix, canonical P41594 residues 21–571 and an eight-histidine suffix. They therefore do not directly reproduce the stated purified ECD construct.",
+        "All seven captured canonical TM segment sequences are outside the matched extracellular fragment and absent as complete exact substrings from either deposited receptor."
+      ],
+      "status": "PRIMARY_ECD_NB43_SAMPLE_SUPPORTED_EXPERIMENTAL_DEPOSITED_CONSTRUCT_DISCREPANCY",
+      "unresolved": [
+        "Reconcile the deposited prefix, two additional canonical residues and retained eight-histidine suffix with Methods residues 21–569 and tag removal.",
+        "The two entries have identical deposited receptor and Nb43 sequences and share a publication; they are not two newly certified independent components.",
+        "The limited source-heading/model-building exposure in exposure-scope.json requires adjudication; no clean-blind claim is made."
+      ],
+      "developmentMetadataComparison": {
+        "referenceNodeCount": 17,
+        "exactReceptorAccessionMatches": [],
+        "exactPublicationDoiMatches": [],
+        "exactFullPolymerSequenceMatches": [],
+        "noMatchDoesNotEstablishNoEdge": true,
+        "formalLeakageGraphComplete": false
+      },
+      "formalExclusionAuthority": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "targetFreezePermitted": false
+    },
+    {
+      "pdbId": "7T62",
+      "title": "GPC2 HEP CT3 complex",
+      "primaryCitation": {
+        "doi": "10.1016/j.xcrm.2021.100297",
+        "pmid": "34195677",
+        "title": "CAR T cells targeting tumor-associated exons of glypican 2 regress neuroblastoma in mice."
+      },
+      "polymerInventory": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "description": "Glypican-2",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "7T62_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q8N158",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "GPGPGSEAKVTRSCAETRQVLGARGYSLNLIPPALISGEHLRVCPQEYTCCSSETEQRLIRETEATFRGLVEDSGSFLVHTLAARHRKFDEFFLEMLSVAQHSLTQLFSHSYGRLYAQHALIFNGLFSRLRDFYGESGEGLDDTLADFWAQLLERVFPLLHPQYSFPPDYLLCLSRLASSTDGSLQPFGDSPRRLRLQITRTLVAARAFVQGLETGRNVVSEALKVPVSEGCSQALMRLIGCPLCRGVPSLMPCQGFCLNVVRGCLSSRGLEPDWGNYLDGLLILADKLQGPFSFELTAESIGVKISEGLMYLQENSAKVSAQVFQECGPPDPVPARNRRAPPPREEAGRLWSMVTEEERPTTAAGTNLHRLVWELRERLARMRGFWARLSLTVCGDSRMAADASLEAAPCWTGAGRGRYLPPVVGGSPAEQVNNPELKVDASGPDVPTRRRRLQLRAATARMKTAALGHDLDGQDADEDASGSGGGQQYADDWMAGAVAPPARPPRPPYPPRRDGSGGKGGGGSARYNQGRSRSGGASIGFHTQTILILSLSALALLGPR",
+          "sequenceLength": 561,
+          "sequenceSha256": "d11b44b00fd97dda4f3d00bec0e309e8f36a7279f39e2fe92a00c5bec07970ee",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "screenSummary": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "priorityTier": 5,
+            "numberedHeavyDomainCallCount": 0,
+            "referenceMatchCount": 0,
+            "developmentSequenceMatch": false,
+            "priorSequenceExposure": false
+          }
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "description": "CT3",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "7T62_2",
+          "referenceSequences": [],
+          "sequence": "EVQLQQSGPELVKPGASVKMSCKASRFTFTDYNIHWVKQSPGKTLEWIGYINPNNGDIFYKQKFNGKATLTINKSSNTAYMELRSLTSEDSAVYYCVRSSNIRYTFDRFFDVWGTGTTVTVSSAKTTPPSVYPLAPGSAAQTNSMVTLGCLVKGYFPEPVTVTWNSGSLSSGVHTFPAVLESDLYTLSSSVTVPSSPRPSETVTCNVAHPASSTKVDKKIENVLTQSPAIMSASLGEKVTMSCRASSSVNYIYWYQQKSDASPKLWIYYTSNLAPGVPARFSGSGSGNSYSLTISSMEGEDAATYYCQQFSSSPSTFGTGTKLELKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNEC",
+          "sequenceLength": 433,
+          "sequenceSha256": "2cf52531516cb2ec157503dc5209285e2ee98de351a878354f1f50757182c3a5",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "screenSummary": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "priorityTier": 0,
+            "numberedHeavyDomainCallCount": 1,
+            "referenceMatchCount": 0,
+            "developmentSequenceMatch": false,
+            "priorSequenceExposure": false
+          }
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "canonicalSequenceComparison": {
+        "receptorEntityId": "1",
+        "canonicalAccession": "Q8N158",
+        "canonicalLength": 579,
+        "canonicalSequenceSha256": "362d573616dfe30cc9de9cee9b9df665283fa391c6c4e985698ef09e985d7295",
+        "exactCanonicalRange1Inclusive": [
+          19,
+          579
+        ],
+        "exactDepositedRange1Inclusive": [
+          1,
+          561
+        ],
+        "exactFragmentLength": 561,
+        "exactFragmentSha256": "d11b44b00fd97dda4f3d00bec0e309e8f36a7279f39e2fe92a00c5bec07970ee",
+        "depositedPrefixOutsideCanonicalFragment": "",
+        "depositedSuffixOutsideCanonicalFragment": "",
+        "transmembraneAnnotationComparisons": [],
+        "boundary": "Canonical sequence and annotation comparison only; no resolved-coordinate or native-interface claim."
+      },
+      "sourceFacts": [
+        "Primary Methods identify CT3 as a mouse monoclonal antibody selected through hybridoma generation, and prepare its antigen-binding fragment with a Fab preparation kit.",
+        "Separately prepared GPC2 and CT3 Fab were mixed at 1:1 molar ratio for a negative-stain EM sample.",
+        "Primary Data and code availability names wwPDB deposition D_1000256119; captured RCSB database_2 assigns that exact deposition identifier to 7T62.",
+        "UniProt Q8N158 annotates glypican-family membership and a GPI-anchor site; the entire deposited receptor sequence equals canonical residues 19–579."
+      ],
+      "status": "PRIMARY_MOUSE_FAB_AND_GLYPICAN_TARGET_SUPPORTED",
+      "unresolved": [
+        "The single 433-residue deposited CT3 entity must not be interpreted as an experimentally demonstrated single-chain VHH or as proof of a particular Fab chain topology.",
+        "The primary GPC2 preparation paragraph does not define the complete experimental GPC2 expression construct; native geometry remains uninspected."
+      ],
+      "developmentMetadataComparison": {
+        "referenceNodeCount": 17,
+        "exactReceptorAccessionMatches": [],
+        "exactPublicationDoiMatches": [],
+        "exactFullPolymerSequenceMatches": [],
+        "noMatchDoesNotEstablishNoEdge": true,
+        "formalLeakageGraphComplete": false
+      },
+      "formalExclusionAuthority": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "targetFreezePermitted": false
+    },
+    {
+      "pdbId": "8Q7O",
+      "title": "Crystal structure of the FZD3 cysteine-rich domain in complex with a nanobody (14478)",
+      "primaryCitation": {
+        "doi": "10.1038/s41467-024-51451-1",
+        "pmid": "39174501",
+        "title": "Structural insights into Frizzled3 through nanobody modulators."
+      },
+      "polymerInventory": [
+        {
+          "authAsymIds": [
+            "A",
+            "B"
+          ],
+          "description": "Nanobody 14478",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A",
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": true,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8Q7O_1",
+          "referenceSequences": [],
+          "sequence": "ETGQVQLVESGGGLVQAGGSLRLSCAASGSISSINAMGWYRQAPGKQRELVAAITSGGSTNYADSVKGRFTISRDNAKNTVYLQMNSLKPGDTAVYYCNLLYYIDYVEYDYWGQGTQVTVSSGT",
+          "sequenceLength": 124,
+          "sequenceSha256": "72a252b70c5f756ac2a6bd9db7c648fc96ac9ca54b802eaa5a11a5f5279fe653",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ],
+          "screenSummary": {
+            "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+            "priorityTier": 1,
+            "numberedHeavyDomainCallCount": 1,
+            "referenceMatchCount": 0,
+            "developmentSequenceMatch": false,
+            "priorSequenceExposure": false
+          }
+        },
+        {
+          "authAsymIds": [
+            "C",
+            "D"
+          ],
+          "description": "Frizzled-3",
+          "entityId": "2",
+          "labelAsymIds": [
+            "C",
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8Q7O_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9NPG1",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "ETGFSCEPITLRMCQDLPYNTTFMPNLLNHYDQQTAALAMEPFHPMVNLDCSRDFRPFLCALYAPICMEYGRVTLPCRRLCQRAYSECSKLMEMFGVPWPEDMECSRFPDCDEPYPGTLEVLFQ",
+          "sequenceLength": 124,
+          "sequenceSha256": "9ba076b1c6132e601586363149663c30c41f5226f966d1deb187faf2f00b0ab4",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "screenSummary": {
+            "status": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+            "priorityTier": 5,
+            "numberedHeavyDomainCallCount": 0,
+            "referenceMatchCount": 0,
+            "developmentSequenceMatch": false,
+            "priorSequenceExposure": false
+          }
+        }
+      ],
+      "allPolymerInventoryComplete": true,
+      "canonicalSequenceComparison": {
+        "receptorEntityId": "2",
+        "canonicalAccession": "Q9NPG1",
+        "canonicalLength": 666,
+        "canonicalSequenceSha256": "7eb2377b4fb4fb54fad64a5891ae343a962eaba39eb3bc05dbc2d6b860a46f2a",
+        "exactCanonicalRange1Inclusive": [
+          26,
+          138
+        ],
+        "exactDepositedRange1Inclusive": [
+          4,
+          116
+        ],
+        "exactFragmentLength": 113,
+        "exactFragmentSha256": "7573e76f98f2b8d8f0a00fe22f78e8166759bf60fb667b2d9f308a2dce6688e0",
+        "depositedPrefixOutsideCanonicalFragment": "ETG",
+        "depositedSuffixOutsideCanonicalFragment": "GTLEVLFQ",
+        "transmembraneAnnotationComparisons": [
+          {
+            "canonicalRange1Inclusive": [
+              206,
+              226
+            ],
+            "description": "Helical; Name=1",
+            "sequenceSha256": "ce906be2b709849dc8867e36eae2c55d3d8492b1bfa7cf9e0fcbe16b41371aa6",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              238,
+              258
+            ],
+            "description": "Helical; Name=2",
+            "sequenceSha256": "7ae9083be2896f12416ccf0f3a882a44d03c1d37d853cb90706b6bcfce86298e",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              289,
+              309
+            ],
+            "description": "Helical; Name=3",
+            "sequenceSha256": "7df2926a032f9fb046e0505fb4fae3aa2347b1e2c72f736737d60f1156cf91f7",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              329,
+              349
+            ],
+            "description": "Helical; Name=4",
+            "sequenceSha256": "751d8266c064914f965656e4b0fdf361d5a4f0a578ce5518e83126dc6bed1aab",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              375,
+              395
+            ],
+            "description": "Helical; Name=5",
+            "sequenceSha256": "e1175e8be88b42103d05bc4649018d57bc73f7b38961fa069342b352f881b5bb",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              421,
+              441
+            ],
+            "description": "Helical; Name=6",
+            "sequenceSha256": "900be51a1cbe23d831344685fc42bac18d436d4c683bee173ee44a537cf0df82",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          },
+          {
+            "canonicalRange1Inclusive": [
+              478,
+              498
+            ],
+            "description": "Helical; Name=7",
+            "sequenceSha256": "62daebcd999dc437b691bc7c0f7bcac099921eea72bc2e3f9383df59b21117a4",
+            "completeCanonicalSegmentPresentAsExactSubstring": false
+          }
+        ],
+        "boundary": "Canonical sequence and annotation comparison only; no resolved-coordinate or native-interface claim."
+      },
+      "sourceFacts": [
+        "Primary Data availability explicitly identifies 8Q7O as FZD3 cysteine-rich domain with Nb8; 8QW4 is a distinct Nb9-containing deposition.",
+        "Construct Methods specify human FZD3 CRD residues 26–138 and coexpression of tagged CRD with untagged Nb8; purification uses 3C protease and EndoF1.",
+        "The deposited receptor exactly contains canonical Q9NPG1 residues 26–138, with terminal sequence retained separately. The annotated TM1–TM7 segments are outside this receptor fragment."
+      ],
+      "status": "PRIMARY_CRD_NANOBODY_SAMPLE_SUPPORTED_ALIAS_AND_RESIDUAL_TAG_PROVENANCE_PENDING",
+      "unresolved": [
+        "Primary Nb8 versus deposited Nanobody 14478 requires exact binder alias/sequence reconciliation.",
+        "Methods describe precursor tags and cleavage, but do not explicitly state the complete deposited post-cleavage terminal sequence.",
+        "An extracellular-domain sample is not a full seven-transmembrane receptor input; no formal eligibility or exclusion follows automatically."
+      ],
+      "developmentMetadataComparison": {
+        "referenceNodeCount": 17,
+        "exactReceptorAccessionMatches": [
+          "8QW4"
+        ],
+        "exactPublicationDoiMatches": [
+          "8QW4"
+        ],
+        "exactFullPolymerSequenceMatches": [],
+        "noMatchDoesNotEstablishNoEdge": true,
+        "formalLeakageGraphComplete": false
+      },
+      "formalExclusionAuthority": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "targetFreezePermitted": false
+    }
+  ],
+  "summary": {
+    "reviewedEntries": 4,
+    "primaryPublicationCount": 3,
+    "inventoriedPolymerEntities": 8,
+    "primaryDepositionLinksVerified": 4,
+    "newEligibleTargets": 0,
+    "newIndependentComponentsCertified": 0,
+    "wholeCensusComponentUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  "evidenceBoundary": {
+    "nativeCoordinatesInspected": false,
+    "structuralImagesInspected": false,
+    "contactTablesInspected": false,
+    "dockqLabelsAccessed": false,
+    "predictionPerformanceOutputsAccessed": false,
+    "incidentalSourceProseExposure": true,
+    "exposureScopeFile": "exposure-scope.json",
+    "formalExclusionAuthority": false,
+    "formalLeakageGraphAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "absenceOfHiddenVhhEstablished": false
+  }
+}

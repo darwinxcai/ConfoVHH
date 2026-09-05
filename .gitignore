@@ -51,3 +51,7 @@ yarn-error.log*
 /.panel-extension-work/
 /.dockq-src/
 /tsconfig.tsbuildinfo
+
+# Exact derived census artifacts restored offline from the pinned gzip package.
+/validation/hard-decoy-holdout-v3/global-text-discovery-2026-09-04/entries.jsonl
+/validation/hard-decoy-holdout-v3/global-text-screen-2026-09-04/entity-screens.jsonl

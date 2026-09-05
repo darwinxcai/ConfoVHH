@@ -1,0 +1,31 @@
+{
+  "id": "uniprot-p41594",
+  "url": "https://rest.uniprot.org/uniprotkb/P41594.json",
+  "finalUrl": "https://rest.uniprot.org/uniprotkb/P41594.json",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:48:14.113998+00:00",
+  "finishedAt": "2026-09-04T23:48:24.076628+00:00",
+  "status": 200,
+  "headers": {
+    "Vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+    "Cache-Control": "public, max-age=43200",
+    "x-cache": "miss cached",
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Expose-Headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+    "X-API-Deployment-Date": "02-September-2026",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "Date": "Fri, 04 Sep 2026 23:48:23 GMT",
+    "Access-Control-Max-Age": "1728000",
+    "X-UniProt-Release": "2026_03",
+    "Transfer-Encoding": "chunked",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+    "Access-Control-Allow-Headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+    "X-UniProt-Release-Date": "02-September-2026"
+  },
+  "file": "sources/uniprot-p41594.body",
+  "bytes": 79397,
+  "sha256": "8f5bd2dd3985b20087deaaa133b9f1d4d596bde00c0843e857452dfd341fb51e"
+}

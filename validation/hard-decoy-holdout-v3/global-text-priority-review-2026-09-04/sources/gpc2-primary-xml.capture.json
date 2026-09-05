@@ -1,0 +1,24 @@
+{
+  "id": "gpc2-primary-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8233664/fullTextXML",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8233664/fullTextXML",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:49:09.973835+00:00",
+  "finishedAt": "2026-09-04T23:49:19.131588+00:00",
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/xml",
+    "Strict-Transport-Security": "max-age=0",
+    "Date": "Fri, 04 Sep 2026 23:49:18 GMT",
+    "Access-Control-Max-Age": "3600",
+    "Transfer-Encoding": "chunked",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=33FC7B1A807733D8DD935F539C6F878C; Path=/europepmc/webservices/; HttpOnly",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+  },
+  "file": "sources/gpc2-primary-xml.body",
+  "bytes": 176384,
+  "sha256": "5e399be1e5edcd65e1bbf134d44623eca5e426024e4c34f77ed01f51e1bfceb9"
+}
