@@ -36,8 +36,10 @@ concern 3P0G. These are not 33 independent informative biological experiments.
 
 1. **Verify the prepared templates in an inspected Boltz environment.** The
    official parser must preserve the intended coordinate mask and recover the
-   declared query/template mapping. Standard PDB parsing has been checked;
-   actual Boltz processing has not. PDB support in the historical execution
+   declared query/template mapping. Standard PDB parsing and the pinned loader's
+   Gemmi conversion have been checked; missing/padded sequence metadata was
+   corrected with preserved failing controls. Full Boltz processing has not.
+   PDB support in the historical execution
    wrapper must also be addressed explicitly. A parser check requires no GPU
    inference and must precede a prediction smoke test.
 2. **Complete the inputs for one reproducible prediction job.** Cached MSAs,
@@ -63,8 +65,8 @@ and then reuse their results as validation.
 
 ## Verification of this increment
 
-The selection and template scripts use Python's standard library. Their Node
-test wrappers run 14 and 10 synthetic regression tests respectively. The
+The selection and template preparation scripts use Python's standard library.
+Their Node test wrappers run 14 and 11 synthetic regression tests respectively. The
 synthetic coordinates and scores remain confined to tests. They never enter
 the manuscript data or figure.
 
@@ -76,6 +78,10 @@ coordinates within its float32 representation precision. The preparation
 script separately verifies exact source-to-export decimal coordinates and
 unchanged endpoint distances. Input, script, and generated-output hashes are
 recorded in each evidence directory.
+
+A separate Gemmi 0.6.5 conversion check verifies both corrected templates and
+detects four incomplete-metadata controls. It records the exact Boltz wheel and
+loader source inspected, but does not import or execute the full Boltz parser.
 
 Run the focused offline regressions from the repository root:
 

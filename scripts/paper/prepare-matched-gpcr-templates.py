@@ -130,6 +130,14 @@ def matched_mask(left, right):
 def write_pdb(path, mapped, mask):
     lines = ["REMARK 900 OPTIONAL DEVELOPMENT TEMPLATE. NOT PARSED BY BOLTZ.\n",
              "REMARK 900 RESIDUE IDS ARE THE SHARED 3P0G AUTHOR-BASED MAPPING.\n"]
+    # Gemmi setup_entities() does not infer full_sequence from ATOM records.
+    # The Boltz PDB loader passes that sequence to its polymer alignment.
+    components = [item["component"] for item in mask]
+    for start in range(0, len(components), 13):
+        record = (f"SEQRES {start // 13 + 1:3d} A {len(components):4d}  "
+                  + " ".join(components[start:start + 13]))
+        # A short final SEQRES record is misread by pinned Gemmi 0.6.5.
+        lines.append(record.ljust(80) + "\n")
     serial = 0
     for item in mask:
         position = item["shared_author_position"]
@@ -152,6 +160,7 @@ def verify_pdb(path, mapped, mask):
     expected = {(m["shared_author_position"], name): mapped[m["shared_author_position"]]["atoms"][name][0]
                 for m in mask for name in m["atom_names"]}
     actual = {}
+    declared_sequence = []
     for line in path.read_text().splitlines():
         if line.startswith("ATOM  "):
             require(line[21] == "A", "output chain identity mismatch")
@@ -159,8 +168,12 @@ def verify_pdb(path, mapped, mask):
             require(key not in actual, "duplicate output atom")
             actual[key] = {"component": line[17:20], "xyz": [float(line[30:38]), float(line[38:46]), float(line[46:54])],
                            "element": line[76:78].strip()}
+        elif line.startswith("SEQRES"):
+            require(line[11] == "A" and int(line[13:17]) == len(mask), "output sequence metadata mismatch")
+            declared_sequence.extend(line[19:].split())
         else:
             require(line.startswith(("REMARK", "TER", "END")), "unexpected output record")
+    require(declared_sequence == [item["component"] for item in mask], "output sequence coverage mismatch")
     require(actual.keys() == expected.keys(), "output/common-mask coverage mismatch")
     for key, row in expected.items():
         require(actual[key]["component"] == row["label_comp_id"] and actual[key]["element"] == row["type_symbol"],
@@ -172,6 +185,7 @@ def verify_pdb(path, mapped, mask):
     exported = math.dist(actual[(a, "CA")]["xyz"], actual[(b, "CA")]["xyz"])
     require(original == exported, "endpoint geometry changed")
     return {"atoms": len(actual), "residues": len(mask), "maximum_coordinate_change_A": 0.0,
+            "declared_seqres_residues": len(declared_sequence),
             "reference_endpoint_before_A": original, "reference_endpoint_after_A": exported,
             "endpoint_change_A": exported - original, "all_atom_identities_and_coordinates_match": True}
 

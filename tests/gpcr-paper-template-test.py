@@ -102,6 +102,22 @@ class MatchedTemplateTest(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "round source coordinates"):
                 templates.write_pdb(Path(temp) / "synthetic.pdb", self.left, mask)
 
+    def test_missing_or_incorrect_sequence_metadata_is_rejected(self):
+        mask, _ = templates.matched_mask(self.left, self.right)
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "synthetic.pdb"
+            templates.write_pdb(path, self.left, mask)
+            original = path.read_text()
+            self.assertTrue(all(len(line) == 80 for line in original.splitlines()
+                                if line.startswith("SEQRES")))
+            path.write_text("".join(line for line in original.splitlines(keepends=True)
+                                    if not line.startswith("SEQRES")))
+            with self.assertRaisesRegex(ValueError, "sequence coverage mismatch"):
+                templates.verify_pdb(path, self.left, mask)
+            path.write_text(original.replace("ARG ALA LEU", "ARG GLY LEU"))
+            with self.assertRaisesRegex(ValueError, "sequence coverage mismatch"):
+                templates.verify_pdb(path, self.left, mask)
+
 
 if __name__ == "__main__":
     unittest.main()

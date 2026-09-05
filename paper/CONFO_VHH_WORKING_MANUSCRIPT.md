@@ -357,7 +357,8 @@ software/checkpoint provenance before completion. Complete runtime and asset ver
 mapping remain outstanding. We prepared a separate optional pair of
 receptor-only templates with 275 identical residue identities and 2,155 shared
 heavy atoms per structure, preserving source coordinates exactly. These
-assets remain untested in the official Boltz parser and are not activated in
+assets now preserve their declared sequence through the pinned loader's Gemmi
+conversion, but remain untested in the full official Boltz parser and are not activated in
 an inference protocol; they do not replace historical template files.
 Matching template accessions or integer seeds alone cannot establish parity
 between predictors.

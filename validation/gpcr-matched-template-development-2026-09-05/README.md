@@ -5,8 +5,8 @@ These are new development inputs derived from experimentally determined
 [3P0G](https://www.rcsb.org/structure/3P0G) and
 [5JQH](https://www.rcsb.org/structure/5JQH) coordinates recovered in the verification
 bundle. They neither replace the historical 92-job template inputs nor activate
-the separately proposed 54-job design. No MSA retrieval, download, installation or
-inference occurred during preparation. The preparation script uses Python's standard
+the separately proposed 54-job design. No MSA retrieval or inference occurred.
+The preparation script uses Python's standard
 library only.
 
 Both PDB files contain **275 identical residue identities and the same 2,155 heavy
@@ -65,6 +65,24 @@ rotated, minimized or otherwise changed.
 
 ## Verification and next step
 
+The files now include padded PDB `SEQRES` records declaring exactly the retained
+275-residue sequence. A real Gemmi 0.6.5 conversion check caught two issues in
+earlier exports: omitting `SEQRES` produced an empty entity sequence, and an
+unpadded final sequence line was read as 285 residues. The corrected files retain
+275 sequence positions, all 2,155 atoms and all coordinates through the conversion
+used by Boltz's PDB loader. Four failing metadata controls are preserved in
+[`conversion-audit/`](conversion-audit/). These controls contain source coordinates
+with deliberately incomplete metadata; they are not inference inputs.
+
+This is **Gemmi conversion verification, not full Boltz parser validation**.
+The inspected Boltz 2.2.1 wheel has SHA-256
+`b8c62bbdede1922931d9203118f62c858f11aa699bf91fd4c05a5ed6a6d8b4fc`.
+Its PDB loader supports PDB input and converts it through Gemmi. The subsequent
+polymer parser uses chemical-component records, inserts absent atom slots, and
+can swap arginine NH1/NH2 coordinates. Those processed features still need to be
+checked in a complete environment. The conversion receipt records both source
+module hashes and the exact Gemmi wheel/native module used.
+
 `preparation.json` records the exact source reference/request/sequence hashes,
 script hash, output hashes and atom-by-atom preservation checks. These native files
 are different byte artifacts from the old Boltz template-provenance entries for
@@ -84,13 +102,32 @@ python3 -B scripts/paper/prepare-matched-gpcr-templates.py \
   --out /absolute/path/to/new-matched-template-output
 ```
 
+To reproduce the conversion check, use Python 3.12 on Linux x86-64 with the
+hash-verified Gemmi 0.6.5 wheel identified in
+[`conversion-verification.json`](conversion-audit/conversion-verification.json).
+The script verifies that its imported native module matches that wheel. It does
+not import or install Boltz, PyTorch, or model weights:
+
+```bash
+python3 scripts/paper/verify-gpcr-template-conversion.py \
+  --templates validation/gpcr-matched-template-development-2026-09-05 \
+  --boltz-wheel /path/to/boltz-2.2.1-py3-none-any.whl \
+  --gemmi-wheel /path/to/gemmi-0.6.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl \
+  --out /fresh/conversion-audit
+```
+
+Require exit status zero and the final `GPCR TEMPLATE CONVERSION OK` marker.
+The [official Boltz source](https://github.com/jwohlwend/boltz/tree/cb04aeccdd480fd4db707f0bbafde538397fa2ac)
+provides the loader and subsequent polymer parser. This check replays only the
+loader's conversion and independently checks its outputs with Gemmi.
+
 The next executable validation is an **input-parser-only pass in an inspected,
 pinned Boltz 2.2.1 environment**. Confirm that the PDB template loader recognizes
 one protein chain with 275 residues, preserves the intended shared atom mask and
 coordinates, and produces the declared query/template mappings for each construct.
 Save the actual processed mappings/features and hashes. Missing side-chain handling
-must be checked; this repository has not tested it. That environment is not supplied
-here, and these files are not parser-validation evidence. Any revised runner must
+must be checked in Boltz; the completed conversion check does not establish it.
+That environment is not supplied here. Any revised runner must
 explicitly support the PDB templates before use.
 
 Only after that check and separately verified cached MSAs, checkpoint and runtime

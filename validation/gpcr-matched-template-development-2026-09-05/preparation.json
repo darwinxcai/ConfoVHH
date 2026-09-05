@@ -16,6 +16,7 @@
     "3P0G": {
       "all_atom_identities_and_coordinates_match": true,
       "atoms": 2155,
+      "declared_seqres_residues": 275,
       "endpoint_change_A": 0.0,
       "maximum_coordinate_change_A": 0.0,
       "reference_endpoint_after_A": 14.130493303490859,
@@ -25,6 +26,7 @@
     "5JQH": {
       "all_atom_identities_and_coordinates_match": true,
       "atoms": 2155,
+      "declared_seqres_residues": 275,
       "endpoint_change_A": 0.0,
       "maximum_coordinate_change_A": 0.0,
       "reference_endpoint_after_A": 8.071600460875151,
@@ -44,8 +46,8 @@
   "native_cif_files_modified": false,
   "numbering_limit": "Source-specific author-number correspondence, checked against both submitted sequences and the existing R131/L272 versus R1131/L1272 endpoints; no generic GPCR numbering assignment is performed.",
   "outputs_sha256": {
-    "3P0G_shared_receptor_template.pdb": "de01a618a923ba25ad73ca39114d504774198095403c7d77ec2c66605f57c904",
-    "5JQH_shared_receptor_template.pdb": "e5d68eeaf7e121c04741d401b0360886b02f68a7c60528319bb0df0495bd7140",
+    "3P0G_shared_receptor_template.pdb": "2dad9ab3c0c96b3721c402b4d365815e08e3d0a2d8d3896155a1d2aecb56f0bc",
+    "5JQH_shared_receptor_template.pdb": "7f94c5e189a2b16b28bcd1e17689f50cf8a1e48590429ebacf447bf173776326",
     "excluded-atom-records.json": "6c9a8a8c42011b81753f996bf68f8bc162a0b9ffc0319438b3954455cd1ac819",
     "excluded-nonidentical-residues.json": "a2c974818cace5a6aae059d4763b302abc5639f277335a05c15584012808f751",
     "full-native-to-query-maps.json": "3283cfdf5110741a44758d22967792d5f244d527c08668e71f823b07adea07c8",
@@ -53,7 +55,7 @@
   },
   "protocol_activation": false,
   "schema": "confovhh.optional-matched-native-templates.v1",
-  "script_sha256": "711dd513c3d994033a65632957a9eb9fa3d718b4513877e13fb99cb15a00c06b",
+  "script_sha256": "13ddf1cdaa6a89d35fd8e461bc4ab841ad28ff26ddcaec4cada8ae47ea3c1bee",
   "shared_heavy_atoms_per_template": 2155,
   "shared_residues": 275,
   "source_reference_provenance": [
