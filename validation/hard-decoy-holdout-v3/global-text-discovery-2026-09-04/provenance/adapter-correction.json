@@ -1,0 +1,8 @@
+{
+  "originalScriptSha256": "c46a87cb17f3ac3e19a7151c66076d659dbbcbeb83a5c1be4a92a479e8c6c961",
+  "correctedScriptSha256": "8ec2dee77f63c846b36aaa26085193851bf2b51285ba89674c3f0886ea45250a",
+  "originalPlanSha256": "23c9a293021e3d453df8112e09ee06757e5dfc8c337e589219227facf711b1e6",
+  "continuationPlanSha256": "cd2206b22ccb7a43932435d7b8ef2b0f35a4d46abd9ee7f7f510441821eedfea",
+  "reason": "Older RCSB primary-citation titles contain valid escaped newlines rejected by the strict manifest parser. Original failed bodies and successful captures are preserved. The external-metadata adapter replaces only HT/LF/CR in citation-title values with spaces and records both text digests. The frozen parser, normalizer, GraphQL query, scientific sequences, query scopes and request bodies are unchanged.",
+  "reusedSearchCapturesPermittedOnlyAfterExactReplay": true
+}

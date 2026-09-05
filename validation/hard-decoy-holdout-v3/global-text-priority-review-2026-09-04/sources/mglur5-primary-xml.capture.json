@@ -1,0 +1,24 @@
+{
+  "id": "mglur5-primary-xml",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6709600/fullTextXML",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6709600/fullTextXML",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:49:09.974512+00:00",
+  "finishedAt": "2026-09-04T23:49:19.130744+00:00",
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/xml",
+    "Strict-Transport-Security": "max-age=0",
+    "Date": "Fri, 04 Sep 2026 23:49:18 GMT",
+    "Access-Control-Max-Age": "3600",
+    "Transfer-Encoding": "chunked",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=EBA72B2A1B64E6AC0D61EA03CEA15693; Path=/europepmc/webservices/; HttpOnly",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+  },
+  "file": "sources/mglur5-primary-xml.body",
+  "bytes": 157262,
+  "sha256": "69361ac36bca6e4324ca9e1185ec09768c8c95f5d99f7e1e86c06f075c560f7a"
+}

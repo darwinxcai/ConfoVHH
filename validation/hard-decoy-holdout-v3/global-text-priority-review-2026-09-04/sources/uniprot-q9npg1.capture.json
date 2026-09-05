@@ -1,0 +1,31 @@
+{
+  "id": "uniprot-q9npg1",
+  "url": "https://rest.uniprot.org/uniprotkb/Q9NPG1.json",
+  "finalUrl": "https://rest.uniprot.org/uniprotkb/Q9NPG1.json",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:48:22.731203+00:00",
+  "finishedAt": "2026-09-04T23:48:30.851835+00:00",
+  "status": 200,
+  "headers": {
+    "Vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+    "Cache-Control": "public, max-age=43200",
+    "x-cache": "miss cached",
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Expose-Headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+    "X-API-Deployment-Date": "02-September-2026",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "Date": "Fri, 04 Sep 2026 23:48:30 GMT",
+    "Access-Control-Max-Age": "1728000",
+    "X-UniProt-Release": "2026_03",
+    "Transfer-Encoding": "chunked",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+    "Access-Control-Allow-Headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+    "X-UniProt-Release-Date": "02-September-2026"
+  },
+  "file": "sources/uniprot-q9npg1.body",
+  "bytes": 50100,
+  "sha256": "99a122c0c7f1ef288891e99de35ca07e7a44a316066cc143a770b0387f74b911"
+}
