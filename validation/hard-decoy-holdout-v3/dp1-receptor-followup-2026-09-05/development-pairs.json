@@ -1,0 +1,869 @@
+[
+  {
+    "pairId": "Q13258|development:3P0G",
+    "referenceNode": "development:3P0G",
+    "referenceAccession": "P07550",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 26,
+      "identicalResidueColumns": 51,
+      "alignedResiduePairColumns": 222,
+      "alignmentColumns": 251,
+      "gapColumns": 29,
+      "sequenceLengthA": 236,
+      "sequenceLengthB": 237,
+      "identity": 0.203187250996,
+      "coverageA": 0.940677966102,
+      "coverageB": 0.936708860759
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "11e337496f10a66a35b7dc7264366d7dbc31323a2d42905d76f96342c32a0e3d",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.936708860759,
+      "rightCoverage": 0.940677966102
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:4MQS",
+    "referenceNode": "development:4MQS",
+    "referenceAccession": "P08172",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 7,
+      "identicalResidueColumns": 39,
+      "alignedResiduePairColumns": 216,
+      "alignmentColumns": 259,
+      "gapColumns": 43,
+      "sequenceLengthA": 238,
+      "sequenceLengthB": 237,
+      "identity": 0.150579150579,
+      "coverageA": 0.90756302521,
+      "coverageB": 0.911392405063
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "cec01700bfcbddfce55efc092e498ff939770788bb88fe77abde3794a49aac58",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.911392405063,
+      "rightCoverage": 0.90756302521
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:4XT1",
+    "referenceNode": "development:4XT1",
+    "referenceAccession": "P69332",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 18,
+      "identicalResidueColumns": 49,
+      "alignedResiduePairColumns": 210,
+      "alignmentColumns": 260,
+      "gapColumns": 50,
+      "sequenceLengthA": 233,
+      "sequenceLengthB": 237,
+      "identity": 0.188461538462,
+      "coverageA": 0.901287553648,
+      "coverageB": 0.886075949367
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "1e239aa540e5be37c6875af243ff8687b335fee3f79e386cfe65993320cf2d8b",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.886075949367,
+      "rightCoverage": 0.901287553648
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:5C1M",
+    "referenceNode": "development:5C1M",
+    "referenceAccession": "P42866",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 65,
+      "identicalResidueColumns": 53,
+      "alignedResiduePairColumns": 217,
+      "alignmentColumns": 253,
+      "gapColumns": 36,
+      "sequenceLengthA": 233,
+      "sequenceLengthB": 237,
+      "identity": 0.209486166008,
+      "coverageA": 0.931330472103,
+      "coverageB": 0.915611814346
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "d3ba3acb4abd77f0ab3932fa5c6fd196b88f1c69c05422dec03bc237ea858860",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.915611814346,
+      "rightCoverage": 0.931330472103
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:5JQH",
+    "referenceNode": "development:5JQH",
+    "referenceAccession": "P07550",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 26,
+      "identicalResidueColumns": 51,
+      "alignedResiduePairColumns": 222,
+      "alignmentColumns": 251,
+      "gapColumns": 29,
+      "sequenceLengthA": 236,
+      "sequenceLengthB": 237,
+      "identity": 0.203187250996,
+      "coverageA": 0.940677966102,
+      "coverageB": 0.936708860759
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "11e337496f10a66a35b7dc7264366d7dbc31323a2d42905d76f96342c32a0e3d",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.936708860759,
+      "rightCoverage": 0.940677966102
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:6B73",
+    "referenceNode": "development:6B73",
+    "referenceAccession": "P41145",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 51,
+      "identicalResidueColumns": 43,
+      "alignedResiduePairColumns": 215,
+      "alignmentColumns": 254,
+      "gapColumns": 39,
+      "sequenceLengthA": 232,
+      "sequenceLengthB": 237,
+      "identity": 0.169291338583,
+      "coverageA": 0.926724137931,
+      "coverageB": 0.907172995781
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "b0fbd6b03bc50a0cb5c1c04851d9f3ae1269084f25149f370437003d161d451c",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.907172995781,
+      "rightCoverage": 0.926724137931
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:6DO1",
+    "referenceNode": "development:6DO1",
+    "referenceAccession": "P30556",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 33,
+      "identicalResidueColumns": 48,
+      "alignedResiduePairColumns": 209,
+      "alignmentColumns": 260,
+      "gapColumns": 51,
+      "sequenceLengthA": 232,
+      "sequenceLengthB": 237,
+      "identity": 0.184615384615,
+      "coverageA": 0.900862068966,
+      "coverageB": 0.881856540084
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "0ecb1770e13b04a3162e2acd44db94cf06a68a897bc3e2e394f090fc415de786",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.881856540084,
+      "rightCoverage": 0.900862068966
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:6IBL",
+    "referenceNode": "development:6IBL",
+    "referenceAccession": "P07700",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 55,
+      "identicalResidueColumns": 46,
+      "alignedResiduePairColumns": 208,
+      "alignmentColumns": 270,
+      "gapColumns": 62,
+      "sequenceLengthA": 241,
+      "sequenceLengthB": 237,
+      "identity": 0.17037037037,
+      "coverageA": 0.863070539419,
+      "coverageB": 0.877637130802
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "2b1e192b0631eedea036f38598b397e7b860d6a68db49e57a44f718f4ad2c310",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.877637130802,
+      "rightCoverage": 0.863070539419
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:6KNM",
+    "referenceNode": "development:6KNM",
+    "referenceAccession": "P35414",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 54,
+      "identicalResidueColumns": 55,
+      "alignedResiduePairColumns": 212,
+      "alignmentColumns": 261,
+      "gapColumns": 49,
+      "sequenceLengthA": 236,
+      "sequenceLengthB": 237,
+      "identity": 0.210727969349,
+      "coverageA": 0.898305084746,
+      "coverageB": 0.894514767932
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "cd9d2cac631482bffa8ab888de49fdb492021d4d1462e1e73b8e534d8965f560",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.894514767932,
+      "rightCoverage": 0.898305084746
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:6O3C",
+    "referenceNode": "development:6O3C",
+    "referenceAccession": "P56726",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": -41,
+      "identicalResidueColumns": 45,
+      "alignedResiduePairColumns": 201,
+      "alignmentColumns": 273,
+      "gapColumns": 72,
+      "sequenceLengthA": 237,
+      "sequenceLengthB": 237,
+      "identity": 0.164835164835,
+      "coverageA": 0.848101265823,
+      "coverageB": 0.848101265823
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "6b8c5f7536e6d1b46fe27262d067e1f063eeeffadde7cd7487068c28970ea857",
+      "leftAlignmentSide": "A",
+      "leftCoverage": 0.848101265823,
+      "rightCoverage": 0.848101265823
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:6RNK",
+    "referenceNode": "development:6RNK",
+    "referenceAccession": "Q6IYF9",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 59,
+      "identicalResidueColumns": 61,
+      "alignedResiduePairColumns": 215,
+      "alignmentColumns": 270,
+      "gapColumns": 55,
+      "sequenceLengthA": 248,
+      "sequenceLengthB": 237,
+      "identity": 0.225925925926,
+      "coverageA": 0.866935483871,
+      "coverageB": 0.907172995781
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "1d341aae7d1494b0bafd1db17a1ab7641902c909dc76b2373c57bdf9de21bcb1",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.907172995781,
+      "rightCoverage": 0.866935483871
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:6VI4",
+    "referenceNode": "development:6VI4",
+    "referenceAccession": "P41145",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 51,
+      "identicalResidueColumns": 43,
+      "alignedResiduePairColumns": 215,
+      "alignmentColumns": 254,
+      "gapColumns": 39,
+      "sequenceLengthA": 232,
+      "sequenceLengthB": 237,
+      "identity": 0.169291338583,
+      "coverageA": 0.926724137931,
+      "coverageB": 0.907172995781
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "b0fbd6b03bc50a0cb5c1c04851d9f3ae1269084f25149f370437003d161d451c",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.907172995781,
+      "rightCoverage": 0.926724137931
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:7L1V",
+    "referenceNode": "development:7L1V",
+    "referenceAccession": "O43614",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 68,
+      "identicalResidueColumns": 48,
+      "alignedResiduePairColumns": 228,
+      "alignmentColumns": 245,
+      "gapColumns": 17,
+      "sequenceLengthA": 237,
+      "sequenceLengthB": 236,
+      "identity": 0.195918367347,
+      "coverageA": 0.962025316456,
+      "coverageB": 0.966101694915
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "33db26ec492aeade03e4630f6b89f5ea922f091fbedefc565063eb03fb37f168",
+      "leftAlignmentSide": "A",
+      "leftCoverage": 0.962025316456,
+      "rightCoverage": 0.966101694915
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:7YM8",
+    "referenceNode": "development:7YM8",
+    "referenceAccession": "P35348",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 83,
+      "identicalResidueColumns": 61,
+      "alignedResiduePairColumns": 217,
+      "alignmentColumns": 256,
+      "gapColumns": 39,
+      "sequenceLengthA": 236,
+      "sequenceLengthB": 237,
+      "identity": 0.23828125,
+      "coverageA": 0.919491525424,
+      "coverageB": 0.915611814346
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "4004d9ed21f470f47219d5ddd62f46558408ae6573c75fb3d0f3acba3b293344",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.915611814346,
+      "rightCoverage": 0.919491525424
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:8FCZ",
+    "referenceNode": "development:8FCZ",
+    "referenceAccession": "P02699",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 39,
+      "identicalResidueColumns": 51,
+      "alignedResiduePairColumns": 208,
+      "alignmentColumns": 260,
+      "gapColumns": 52,
+      "sequenceLengthA": 231,
+      "sequenceLengthB": 237,
+      "identity": 0.196153846154,
+      "coverageA": 0.900432900433,
+      "coverageB": 0.877637130802
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "fb288482a7d5f670567bccfef2f69c5f5cd85e6a9bc4ce92c846545aaa87a7b4",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.877637130802,
+      "rightCoverage": 0.900432900433
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:8QOT",
+    "referenceNode": "development:8QOT",
+    "referenceAccession": "P42866",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 65,
+      "identicalResidueColumns": 53,
+      "alignedResiduePairColumns": 217,
+      "alignmentColumns": 253,
+      "gapColumns": 36,
+      "sequenceLengthA": 233,
+      "sequenceLengthB": 237,
+      "identity": 0.209486166008,
+      "coverageA": 0.931330472103,
+      "coverageB": 0.915611814346
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "d3ba3acb4abd77f0ab3932fa5c6fd196b88f1c69c05422dec03bc237ea858860",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.915611814346,
+      "rightCoverage": 0.931330472103
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|development:8QW4",
+    "referenceNode": "development:8QW4",
+    "referenceAccession": "Q9NPG1",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": -5,
+      "identicalResidueColumns": 45,
+      "alignedResiduePairColumns": 207,
+      "alignmentColumns": 265,
+      "gapColumns": 58,
+      "sequenceLengthA": 235,
+      "sequenceLengthB": 237,
+      "identity": 0.169811320755,
+      "coverageA": 0.88085106383,
+      "coverageB": 0.873417721519
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "b774abb97a646522863d293be852dc5b347b4a4a04307d3de8bfbc046b1cc0b4",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.873417721519,
+      "rightCoverage": 0.88085106383
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": false,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": false
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  }
+]
