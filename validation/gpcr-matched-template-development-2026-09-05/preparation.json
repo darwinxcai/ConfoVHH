@@ -1,0 +1,90 @@
+{
+  "atom_mask_rule": "Identical shared heavy-atom names with one source conformer per name in each structure; all N/CA/C/O required; no coordinate-, score-, or prediction-based selection.",
+  "boltz_parser_validation": "not_performed",
+  "data_role": "Optional new development inputs; neither historical 92-job manifest nor proposed 54-job protocol activated",
+  "excluded_nonidentical_positions": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    96,
+    98
+  ],
+  "geometry_checks": {
+    "3P0G": {
+      "all_atom_identities_and_coordinates_match": true,
+      "atoms": 2155,
+      "endpoint_change_A": 0.0,
+      "maximum_coordinate_change_A": 0.0,
+      "reference_endpoint_after_A": 14.130493303490859,
+      "reference_endpoint_before_A": 14.130493303490859,
+      "residues": 275
+    },
+    "5JQH": {
+      "all_atom_identities_and_coordinates_match": true,
+      "atoms": 2155,
+      "endpoint_change_A": 0.0,
+      "maximum_coordinate_change_A": 0.0,
+      "reference_endpoint_after_A": 8.071600460875151,
+      "reference_endpoint_before_A": 8.071600460875151,
+      "residues": 275
+    }
+  },
+  "inference_runs": 0,
+  "limits": [
+    "Both inputs contain target-specific experimental structural information; this is not blind prediction.",
+    "Shared side-chain coverage is incomplete where either reference lacks atoms; downstream template parsing must verify treatment.",
+    "Coordinates retain experimental geometry but no longer include ligands, nanobodies, unshared residues or fusion coordinates.",
+    "One structure per endpoint confounds template identity with conformation; these assets alone do not establish a general effect."
+  ],
+  "mapping_rule": "Intersect observed 3P0G chain-A author positions with 5JQH chain-A author positions minus 1000; exact amino-acid identity required at every retained position; full native label_seq_id is checked against the submitted query before masking.",
+  "msa_retrievals": 0,
+  "native_cif_files_modified": false,
+  "numbering_limit": "Source-specific author-number correspondence, checked against both submitted sequences and the existing R131/L272 versus R1131/L1272 endpoints; no generic GPCR numbering assignment is performed.",
+  "outputs_sha256": {
+    "3P0G_shared_receptor_template.pdb": "de01a618a923ba25ad73ca39114d504774198095403c7d77ec2c66605f57c904",
+    "5JQH_shared_receptor_template.pdb": "e5d68eeaf7e121c04741d401b0360886b02f68a7c60528319bb0df0495bd7140",
+    "excluded-atom-records.json": "6c9a8a8c42011b81753f996bf68f8bc162a0b9ffc0319438b3954455cd1ac819",
+    "excluded-nonidentical-residues.json": "a2c974818cace5a6aae059d4763b302abc5639f277335a05c15584012808f751",
+    "full-native-to-query-maps.json": "3283cfdf5110741a44758d22967792d5f244d527c08668e71f823b07adea07c8",
+    "shared-residue-atom-mask.json": "4cce0420e4f8e1de866c81d761e41aff8b2689887c0bb2f8f63eaa827136247b"
+  },
+  "protocol_activation": false,
+  "schema": "confovhh.optional-matched-native-templates.v1",
+  "script_sha256": "711dd513c3d994033a65632957a9eb9fa3d718b4513877e13fb99cb15a00c06b",
+  "shared_heavy_atoms_per_template": 2155,
+  "shared_residues": 275,
+  "source_reference_provenance": [
+    {
+      "all_observed_residues_match_submitted_query": true,
+      "author_offset": 0,
+      "native_path": "references/3P0G.cif.gz",
+      "native_sha256": "25cfe2f425f962fe27c82cdc4f107598a2563d8a6c968e669ffe4e1d5611ae63",
+      "observed_native_residues_mapped": 284,
+      "query_length": 501,
+      "query_sha256": "e9052379ba6dca45a6a4148a53cc1d6ad790f05e4b4f0a9237afe2fcc8638926",
+      "reference": "3P0G",
+      "reference_polymer_chain": "A",
+      "request_path": "runs/3P0G_default_complex_seed1/fold_3p0g_default_complex_seed1_job_request.json",
+      "request_sequence_index_zero_based": 1,
+      "request_sha256": "93d1b61885370dfdbbbb4319abc85c474ea909565c452ea84934927686537f9d"
+    },
+    {
+      "all_observed_residues_match_submitted_query": true,
+      "author_offset": 1000,
+      "native_path": "references/5JQH.cif.gz",
+      "native_sha256": "4e3c8351601f421c9a073046438f81ceaedd1df6de4ab409eca79e40fdd32fe7",
+      "observed_native_residues_mapped": 391,
+      "query_length": 471,
+      "query_sha256": "a75c94a1f62e10ac15b6f98bc141b8e9ca968455db6003201060e0f940f3361c",
+      "reference": "5JQH",
+      "reference_polymer_chain": "A",
+      "request_path": "runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_job_request.json",
+      "request_sequence_index_zero_based": 1,
+      "request_sha256": "30847fb3933987ef27b2acdc7c245f412d185158f3bfbeda4f41af2ffd699aa9"
+    }
+  ],
+  "status": "PREPARED_NOT_BOLTZ_PARSED"
+}
