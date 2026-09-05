@@ -1,0 +1,1084 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+
+
+<meta name="Keywords" content="" lang="ja">
+<meta name="description" content="">
+
+
+
+
+
+
+<link href="https://www.c.u-tokyo.ac.jp/css/second.css?202512080311" rel="stylesheet" type="text/css" />
+
+<link href="https://www.c.u-tokyo.ac.jp/css/jquery.treeview.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="https://www.c.u-tokyo.ac.jp/js/common.js"></script>
+<script type="text/javascript" src="https://www.c.u-tokyo.ac.jp/js/jquery.js"></script>
+<script type="text/javascript" src="https://www.c.u-tokyo.ac.jp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="https://www.c.u-tokyo.ac.jp/js/jquery.page-scroller.js"></script>
+<script type="text/javascript" src="https://www.c.u-tokyo.ac.jp/js/jquery.treeview.js"></script>
+<script type="text/javascript" src="https://www.c.u-tokyo.ac.jp/js/treemenu.js"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+$("#navigation ul").treeview({
+persist: "location",
+collapsed: true,
+unique: false
+});
+});
+//-->
+</script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="https://www.c.u-tokyo.ac.jp/js/DOMAssistantCompressed-2.8.js"></script>
+<script type="text/javascript" src="https://www.c.u-tokyo.ac.jp/js/ie-css3.js"></script>
+<![endif]-->
+<title>【研究成果】骨代謝に関わるPTH1受容体のシグナル伝達複合体を可視化 ――安全性の高い効果的な骨粗しょう症治療薬の合理的設計に貢献―― - 総合情報ニュース - 総合情報ニュース</title>
+<!--2023.02.20設置コード-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-19LF1JRY01"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-19LF1JRY01');
+  gtag('config', 'UA-27190451-1');
+</script>
+
+
+</head>
+
+<body id="info">
+<div id="container">
+<div id="header">
+
+<!--Googleカスタム検索/グローバルテンプレート（2018.12.14）-->
+<div id="g_search">
+<form action="https://www.c.u-tokyo.ac.jp/search/" id="cse-search-box">
+<input name="cx" type="hidden" value="000808889254762976718:ras-dkud3vk" />
+<input name="ie" type="hidden" value="UTF-8" />
+<input name="q" type="text" id="search-window" />
+<input src="https://www.c.u-tokyo.ac.jp/images/common/bt_search.gif" name="sa" type="image" value="Search" id="search-bottom" />
+</form>
+
+<script type="text/javascript" src="https://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+</div>
+<!--Googleカスタム検索/グローバルテンプレート（2018.12.14）-->
+ 
+<div class="hamburger-menu">
+<input type="checkbox" id="menu-btn-check">
+<label for="menu-btn-check" class="menu-btn"><span></span></label>
+<!--メニュー-->
+<nav class="hamnav">
+<ul>
+<li><a href="https://www.c.u-tokyo.ac.jp/index.html">HOME</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/info/index.html" class="current">総合情報</a>
+ <ul>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/news/index.html">ニュース</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/about/booklet-gazette/bulletin/index.html">教養学部報</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/about/index.html">概要・基本データ</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/academics/index.html">教育プログラム</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/research/index.html">研究組織・活動</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/research/faculty/index.html">教員紹介・検索</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/index.html">教育・研究サポート施設</a></li>
+ </ul>
+</li>
+<li><a href="https://www.c.u-tokyo.ac.jp/admission/index.html">入学・進学希望の方</a>
+ <ul>
+ <li><a href="https://www.c.u-tokyo.ac.jp/admission/news/index.html">入学・進学ニュース</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/admission/exam/index.html">学部入試</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/guidance/">教養学部後期課程</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/admission/graduateschool/index.html">大学院入試</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/admission/researcher/index.html">研究生・聴講生</a></li>
+ </ul>
+</li>
+<li><a href="https://www.globalkomaba.c.u-tokyo.ac.jp/" target="_blank">留学生・留学希望の方</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/students/index.html">在学生の方</a>
+ <ul>
+ <li><a href="https://www.c.u-tokyo.ac.jp/zenki/index.html">前期課程（1・2年生）</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/fas/index.html">後期課程（3・4年生）</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/graduate/index.html">大学院生</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/campuslife/index.html">学生生活支援</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/consultation/index.html">各種相談窓口</a></li>
+ </ul>
+</li>
+<li><a href="https://www.c.u-tokyo.ac.jp/alumni/index.html">卒業生の方</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/parents/index.html">保護者の方</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/faculty-intro/index.html">教職員の方</a></li>
+</ul>
+
+
+
+</nav>
+</div>
+<div id="language">
+<ul>
+<li><a href="https://www.c.u-tokyo.ac.jp/eng_site/"><img src="https://www.c.u-tokyo.ac.jp/images/common/bt_english.gif" alt="東京大学" width="91" height="42" class="rollover" /></a></li>
+</ul>
+</div>
+<div id="header_title">
+<ul>
+<li><a target="_blank" href="https://www.facebook.com/UTokyo.Komaba.J"><img src="https://www.c.u-tokyo.ac.jp/images/common/fb-icons.png" alt="Facebook" height="25" /></a></li>
+<li><a target="_blank" href="https://twitter.com/UTokyo_Komaba_J"><img src="https://www.c.u-tokyo.ac.jp/images/common/twitter-icons.png" alt="Twitter" height="25" /></a></li>
+<li><a target="_blank" href="https://www.youtube.com/@utokyo_komaba"><img src="https://www.c.u-tokyo.ac.jp/images/common/youtube-icons.png" alt="Youtube" height="25" /></a></li>
+<li><a target="_blank" href="https://www.instagram.com/utokyo_komaba/"><img src="https://www.c.u-tokyo.ac.jp/images/common/instagram-icons.png" alt="Instagram" height="25" /></a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/sitemap/index.html"><img src="https://www.c.u-tokyo.ac.jp/images/common/bt_sitemap.png" alt="サイトマップ" width="90" height="25" class="rollover" /></a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/visitors/maps-directions/index.html"><img src="https://www.c.u-tokyo.ac.jp/images/common/bt_access.png" alt="交通アクセス" width="91" height="25" class="rollover" /></a></li>
+</ul>
+<p id="komaba"><a href="https://www.c.u-tokyo.ac.jp/index.html"><img src="https://www.c.u-tokyo.ac.jp/images/common/logo.png" alt="東京大学　大学院総合文化研究科・教養学部" width="360" height="47" /></a></p>
+<p id="hongo"><a href="https://www.u-tokyo.ac.jp/" target="_blank"><img src="https://www.c.u-tokyo.ac.jp/images/common/logo_univ.png" width="134" height="39" /></a></p>
+</div>
+<div class="global_navi_n">
+<ul>
+<li><a href="https://www.c.u-tokyo.ac.jp/index.html">HOME</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/info/index.html" class="current">総合情報</a>
+ <ul>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/news/index.html">ニュース</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/about/booklet-gazette/bulletin/index.html">教養学部報</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/about/index.html">概要・基本データ</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/academics/index.html">教育プログラム</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/research/index.html">研究組織・活動</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/research/faculty/index.html">教員紹介・検索</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/index.html">教育・研究サポート施設</a></li>
+ </ul>
+</li>
+<li><a href="https://www.c.u-tokyo.ac.jp/admission/index.html">入学・進学希望の方</a>
+ <ul>
+ <li><a href="https://www.c.u-tokyo.ac.jp/admission/news/index.html">入学・進学ニュース</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/admission/exam/index.html">学部入試</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/guidance/">教養学部後期課程</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/admission/graduateschool/index.html">大学院入試</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/admission/researcher/index.html">研究生・聴講生</a></li>
+ </ul>
+</li>
+<li><a href="https://www.globalkomaba.c.u-tokyo.ac.jp/" target="_blank">留学生・留学希望の方</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/students/index.html">在学生の方</a>
+ <ul>
+ <li><a href="https://www.c.u-tokyo.ac.jp/zenki/index.html">前期課程（1・2年生）</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/fas/index.html">後期課程（3・4年生）</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/graduate/index.html">大学院生</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/campuslife/index.html">学生生活支援</a></li>
+ <li><a href="https://www.c.u-tokyo.ac.jp/consultation/index.html">各種相談窓口</a></li>
+ </ul>
+</li>
+<li><a href="https://www.c.u-tokyo.ac.jp/alumni/index.html">卒業生の方</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/parents/index.html">保護者の方</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/faculty-intro/index.html">教職員の方</a></li>
+</ul>
+
+
+
+</div>
+
+</div>
+<!--#header-->
+
+
+<div id="utilty">
+<p id="pan"><a href="http://www.c.u-tokyo.ac.jp/index.html">HOME</a>＞<a href="http://www.c.u-tokyo.ac.jp/info/index.html">総合情報</a>＞<a href="https://www.c.u-tokyo.ac.jp/info/news/index.html">ニュース</a>＞<a href="https://www.c.u-tokyo.ac.jp/info/news/topics/index.html">トピックス</a></p>
+<p id="update">最終更新日：2025.12.08</p>
+</div><!--#utilty-->
+
+<div id="contents">
+<div id="main">
+<h1>ニュース</h1>
+<div id="newslist">
+<p><img src="https://www.c.u-tokyo.ac.jp/images/common/news_topics.gif" width="53" height="18" alt="トピックス" />　2022.08.09</p>
+<h2>【研究成果】骨代謝に関わるPTH1受容体のシグナル伝達複合体を可視化 ――安全性の高い効果的な骨粗しょう症治療薬の合理的設計に貢献――</h2>
+<p style="text-align: right;">東京大学大学院理学系研究科</br>東京大学大学院総合文化研究科</br>東北大学大学院薬学研究科</p>
+<h3>発表者</h3>
+<p>
+小林 和弘（東京大学大学院理学系研究科 生物科学専攻 博士課程）</br>
+川上 耕季（東北大学大学院薬学研究科 助教）</br>
+草木迫 司（東京大学大学院理学系研究科 生物科学専攻 助教）</br>
+加藤 英明（東京大学大学院総合文化研究科 広域科学専攻／附属先進科学研究機構 兼 同大学院理学系研究科 生物科学専攻 准教授）</br>
+井上 飛鳥（東北大学大学院薬学研究科 教授）</br>
+濡木 理（東京大学大学院理学系研究科 生物科学専攻 教授）</br>
+</p>
+</br>
+<h3>発表のポイント</h3>
+<ul style="padding-left: 1.4em; text-indent: -1.4em;">
+<li>クライオ電子顕微鏡を用いて、骨代謝において中心的な役割を果たす副甲状腺ホルモン1型受容体（PTH1受容体）について、作用の異なる2 つのホルモン分子（副甲状ホルモン（PTH）と副甲状腺ホルモン関連ペプチド（PTHrP））が結合したシグナル伝達複合体構造を可視化しました。</li>
+<li>PTHとPTHrPが異なる様式で受容体に結合することを見出し、生理的応答の違いを規定する構造基盤を明らかにしました。</li>
+<li>PTH1受容体からPTHが脱離する過程の連続した構造変化を明らかにし、PTH1受容体の活性化サイクルを提唱しました。</li>
+</ul>
+</br>
+<h3>発表概要</h3>
+<p>
+　骨はヒトにおいて必須の臓器の1つであり、骨格の維持や臓器の保護、血中カルシウム濃度の調節など多くの役割を担います。PTHおよびPTHrPは、骨の形成から維持までのあらゆる過程における最重なペプチドであり、その機能はPTH1受容体と、Gタンパク質三量体の1つである刺激性Gタンパク質（Gsタンパク質）三量体を活性化することにより発揮されます。PTHとPTHrPはともに骨形成を促進することから、骨粗しょう症の治療薬として着目されている一方で、これらのホルモンはPTH1受容体を介して過剰なシグナルを伝達し、骨破壊をも促進するという副作用が知られています。PTHとPTHrPでは副作用の程度が異なることから、これらのホルモンによる作用機序の違いを理解することにより、副作用の低減された薬剤の創出が期待されています。しかし、これらのホルモンによりPTH1受容体が活性化される構造的なメカニズムは不明であり、副作用を生み出すメカニズムは明らかになっていませんでした。</br>
+</br>
+　今回、東京大学大学院理学系研究科の濡木理教授らのグループは、クライオ電子顕微鏡による単粒子構造解析法によりPTHおよびPTHrPと結合したPTH1受容体とGsタンパク質三量体で構成されるシグナル伝達複合体の立体構造を解明しました。PTH結合型PTH1受容体とPTHrP結合型PTH1受容体の構造比較から、2つのホルモンはPTH1受容体とそれぞれ異なる相互作用を形成することが明らかになり、東北大学大学院薬学研究科の井上飛鳥教授との共同研究により、PTHとPTHrPがPTH1受容体を活性化する際に重要な相互作用を特定しました。加えて、2つのホルモンの相互作用の違いから、副作用を発現するメカニズムを明らかにしました。</br>
+</br>
+　また、PTH結合型PTH1受容体とGsタンパク質複合体の試料からは計5種類の異なる状態の立体構造が得られ、計算機シミュレーション解析から、これらの構造状態はPTHが受容体から脱離する過程の構造変化を表していることを明らかにしました。</br>
+</br>
+　この研究成果により、PTHとPTHrPによる生理的応答の違いを規定する構造基盤の理解が深まり、副作用の少ない骨粗しょう症治療薬の開発が促進されることが期待されます。
+</br>
+</p>
+<figure>
+<img alt="20220809-pr-sobun-01-01.png" src="https://www.c.u-tokyo.ac.jp/info/news/topics/20220809-pr-sobun-01-01.png" width="80%" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" />
+<figcaption style="text-align: center;">図：PTH1受容体のシグナル伝達複合体の全体構造</figcaption>
+<figcaption>PTH結合型PTH1受容体とGsタンパク質（左図）、PTHrP結合型PTH1受容体とGsタンパク質（右図）のシグナル伝達複合体の全体構造を表している。Gsタンパク質はGαs, Gβ1, Gγ2の三量体から構成されており、今回の研究ではGαsには熱安定型変異体であるmini Gαsを用いることで構造決定に成功した。また、シグナル伝達複合体の安定性を向上させるために、複合体構造を認識する抗体、Nb35を用いている。</figcaption>
+</figure>
+</p>
+</br>
+<h3>発表雑誌</h3>
+<p>
+掲載誌：Molecular Cell</br>
+論文タイトル：Endogenous ligand recognition and structural transition of a human PTH receptor</br>
+著者：Kazuhiro Kobayashi<sup>（1）</sup>, Kouki Kawakami<sup>（2）</sup>, Tsukasa Kusakizako<sup>（1）</sup>, Hirotake Miyauchi<sup>（1）</sup>, Atsuhiro Tomita<sup>（1）</sup>, Kan Kobayashi<sup>（1）</sup>, Wataru Shihoya<sup>（1）</sup>, Keitaro Yamashita<sup>（1, 3）</sup>, Tomohiro Nishizawa<sup>（1, 4）</sup>, Hideaki E. Kato<sup>（1, 5）</sup>*, Asuka Inoue<sup>（2）</sup>*, Osamu Nureki<sup>（1）</sup>*.</br>
+*共同責任著者　（1） 東京大学大学院理学系研究科生物科学専攻 （2） 東北大学大学院薬学研究科分子細胞生物学分野　（3） MRC研究所　（4） 横浜市立大学大学院生命医科学研究科　（5） 東京大学大学院総合文化研究科広域科学専攻
+</br>
+DOI：<a href="https://www.sciencedirect.com/science/article/pii/S1097276522006608" target="_blank">10.1016/j.molcel.2022.07.003</a>
+</p>
+</br>
+<h3>発表詳細</h3>
+<p>
+詳細は<a href="https://www.s.u-tokyo.ac.jp/ja/press/2022/8014/" target="_blank">東京大学理学系研究科</a>のページをご覧ください。
+</p>
+</br>
+<p style="text-align: right;">
+―東京大学大学院総合文化研究科・教養学部 広報室―
+</p>
+</div>
+<p align="right"><a href="javascript:history.back();" class="maru2">前のページへ戻る</a></p>
+</div>
+<!--#main-->
+
+<div id="sidemenu">
+<p id="sidehead">総合情報</p>
+<div id="navigation">
+
+<ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/news/index.html">ニュース</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/news/important/index.html">重要なお知らせ</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/news/topics/index.html">トピックス</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/news/events/index.html">イベント</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/news/notice/index.html">お知らせ</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/news/employment/index.html">公募・募集</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/news/awardsandbook/index.html">受賞・書籍刊行等</a>
+</li>
+
+
+
+
+
+
+
+
+<li><a href="https://univtokyo.sharepoint.com/:f:/t/Teams.koho-jyoho.c/ElPNWWhnouFIhNqHAZSD56YBW-_LuJZyngZit2m1XSXddg" target="_blank">募集終了（学部内限定）<img src="https://www.c.u-tokyo.ac.jp/images/common/icon_window.gif" alt="" width="14" height="12" /></a>
+</li>
+
+
+
+
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/index.html">概要・基本データ</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/message/index.html">研究科長・学部長挨拶</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/ma_council/index.html">運営諮問会議</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/assessment/index.html">教養教育達成度調査</a>
+</li>
+
+
+
+
+
+
+
+
+<li><a href="https://www.youtube.com/channel/UCaivfqnRAIW7SjEmAYviGWA" target="_blank">紹介動画<img src="https://www.c.u-tokyo.ac.jp/images/common/icon_window.gif" alt="" width="14" height="12" /></a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/contact/index.html">お問い合わせ</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/contact/kengyou/index.html">兼業のご依頼について</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/contact/contact1/index.html">取材・撮影をご希望の方</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/contact/contact2/index.html">キャンパス見学をご希望の方</a>
+</li>
+
+
+
+
+
+
+
+
+<li><a href="http://www.c.u-tokyo.ac.jp/faculty/koho/index.html">教職員（学内のみ）</a>
+</li>
+
+
+
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/#booklet-gazette">刊行物</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/booklet-gazette/prospectus/index.html">プロスペクタス</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/booklet-gazette/bulletin/index.html">教養学部報</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/booklet-gazette/annualreport/index.html">活動報告</a>
+</li>
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/#history">沿革・歴史</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/history/development/index.html">大学院総合文化研究科・教養学部の歴史</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/history/campus/index.html">駒場キャンパスの歴史</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/history/chronology/index.html">年表</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/history/dean/index.html">歴代学部長</a>
+</li>
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/#facts">基本データ</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/facts/people/index.html">教職員数・学生数</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/facts/finances/index.html">決算額</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/facts/lands/index.html">土地・建物一覧</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/facts/organization/index.html">運営組織</a>
+</li>
+
+
+
+
+
+
+
+
+<li><a href="http://www.u-tokyo.ac.jp/gen03/book_j.html" target="_blank">東京大学の概要<img src="https://www.c.u-tokyo.ac.jp/images/common/icon_window.gif" alt="" width="14" height="12" /></a>
+</li>
+
+
+
+
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/#visitors">訪問者向け情報</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/visitors/events/index.html">公開イベント</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/visitors/maps-directions/index.html">交通アクセス・キャンパスマップ</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/visitors/restaurant/index.html">各種店舗情報</a>
+</li>
+
+
+</ul>
+</li>
+
+
+
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/academics/index.html">教育プログラム</a>
+
+<ul>
+
+
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/academics/zenki/index.html">教養学部前期課程</a>
+</li>
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/guidance/">教養学部後期課程</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/academics/grad/index.html">大学院総合文化研究科</a>
+</li>
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/index.html">研究組織・活動</a>
+
+<ul>
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/">教育・研究組織</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/iags/index.html">グローバル地域研究機構</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/komex/index.html">教養教育高度化機構</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/ieem/index.html">国際環境学教育機構</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/ijrem/index.html">国際日本研究教育機構</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/kis/index.html">先進科学研究機構</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/cawk/index.html">駒場アカデミック・ライティング・センター</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/rcis/index.html">複雑系生命システム研究センター</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/ecs/index.html">進化認知科学研究センター</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/utcp/index.html">共生のための国際哲学研究センター（UTCP）</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/ealai/index.html">東アジアリベラルアーツイニシアティブ（EALAI）</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/organization/gcc/index.html">グローバルコミュニケーション研究センター</a>
+</li>
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/sponsoredprograms/index.html">寄付講座・社会連携講座等</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/faculty/index.html">教員紹介・検索</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/faculty/newlyappointed/index.html">新任教員の紹介</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/faculty/list/index.html">学科・専攻別教員一覧</a>
+</li>
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/publications/index.html">定期刊行物</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="https://repository.dl.itc.u-tokyo.ac.jp/search?search_type=2&q=43" target="_blank">博士論文（UTokyo Repository）<img src="https://www.c.u-tokyo.ac.jp/images/common/icon_window.gif" alt="" width="14" height="12" /></a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/index.html">教育・研究サポート施設</a>
+
+<ul>
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/gym2/index.html">第2体育館</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/library/index.html">図書館</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/museum/index.html">博物館</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/forconsultation/index.html">学生相談施設</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/foreducation/index.html">教育支援施設</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/forexperiment/index.html">実験支援施設</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/foractivities/index.html">学生活動支援施設</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/io/index.html">国際交流・留学生支援施設</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/nursery/index.html">男女共同参画支援施設（駒場保育所）</a>
+</li>
+
+
+
+
+
+
+
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/erdar/index.html">教育研究データ分析室</a>
+</li>
+
+
+</ul>
+</li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+</div>
+<div id="common_link">
+<div id="sidebanner">
+<p style="text-align: center"><a href="https://www.c.u-tokyo.ac.jp/info/utas/"><img src="https://www.c.u-tokyo.ac.jp/images/common/banner-utas.png" alt="ユータスバナー"  width="80%"></a></p>
+</div>
+</div>
+<!--#common_link-->
+</div>
+<!--#sidemenu-->
+
+</div>
+<!--#contents-->
+
+<div id="footer">
+<div id="pagetop">
+<p><a href="#top"><img src="http://www.c.u-tokyo.ac.jp/images/common/bt_pagetop.gif" width="104" height="30" alt="Go to page top" /></a></p>
+</div>
+<!--#pagetop-->
+<div id="footer_navi">
+<div id="main_navi">
+<ul>
+<li><a href="http://www.c.u-tokyo.ac.jp/index.html">HOME</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/info/index.html">総合情報</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/admission/index.html">入学・進学をご希望の方</a></li>
+<li><a href="http://www.globalkomaba.c.u-tokyo.ac.jp/" target="_blank">留学生の方・留学希望の方</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/students/index.html">在学生の方</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/alumni/index.html">卒業生の方</a></li>
+<li><a href="http://www.c.u-tokyo.ac.jp/faculty-intro/index.html" target="_blank">教職員の方</a></li>
+</ul>
+</div><!--#main_navi-->
+<!--#sub_navi<div id="sub_navi">
+<ul>
+<li><a href="https://www.c.u-tokyo.ac.jp/info/about/index.html">概要・基本データ</a></li>
+<li class="line2"><a href="https://www.c.u-tokyo.ac.jp/info/academics/index.html">教育プログラム<br />
+（学部・研究科の紹介）</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/info/research/index.html">研究組織・活動</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/info/facilities/index.html">教育・研究サポート施設</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/admission/index.html">入学・進学案内</a></li>
+<li><a href="https://www.c.u-tokyo.ac.jp/students/index.html">教育・学生生活</a></li>
+<li><a href="https://utf.u-tokyo.ac.jp/project/pjt47" target="_blank">ご支援のお願い</a></li>
+</ul>
+</div>-->
+</div>
+<!--#footer_navi-->
+<div id="last">
+<ul>
+<li><a href="http://www.c.u-tokyo.ac.jp/sitemap/index.html">サイトマップ</a></li>
+<li><a href="http://www.c.u-tokyo.ac.jp/info/about/visitors/maps-directions/index.html">交通アクセス・キャンパスマップ</a></li>
+<li><a href="http://www.c.u-tokyo.ac.jp/info/about/contact/sitepolicy.html">このサイトについて</a></li>
+<li><a href="http://www.c.u-tokyo.ac.jp/info/about/contact/index.html">お問い合わせ</a></li>
+</ul>
+</div>
+<!--#last-->
+<div>
+<p id="copyright" name="copyright"><img src="http://www.c.u-tokyo.ac.jp/images/common/copyright.gif" alt="Copyright(C) The University of Tokyo All Rights Reserved." /></p>
+</div>
+</div>
+<!--#footer--> 
+
+</div>
+</body>
+</html>

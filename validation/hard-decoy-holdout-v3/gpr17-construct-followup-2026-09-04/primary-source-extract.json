@@ -1,0 +1,32 @@
+{
+  "articleIds": {
+    "pmcid": "PMC9464062",
+    "pmcid-ver": "PMC9464062.1",
+    "pmcaid": "9464062",
+    "pmcaiid": "9464062",
+    "pmid": "36105372",
+    "doi": "10.1002/mco2.159",
+    "publisher-id": "MCO2159"
+  },
+  "sections": [
+    {
+      "title": "Cloning and purification of GPR17‐Gi complex",
+      "sectionId": "mco2159-sec-0100",
+      "paragraphs": [
+        "The full‐length human GPR17 was cloned into pFastbac A vector (Thermo Fisher Cat# 10360014) with N‐terminal hemagglutinin (HA) signal sequence, FLAG epitope, and 3C cleavage site, as well as a C‐terminal His tag. The construction of the dominant‐negative Gαi1 (DNGαi1) with mutations (G203A and A326S) was identical to that of GPR17. Whereas the Gβ1γ2 was cloned into the pFastbac Dual vector. The Bac‐to‐Bac baculovirus expression system (Thermo Fisher Cat# 10360014) was used to co‐express GPR17, DNGαi1, and Gβ1γ2 in Spodoptera frugiperda Sf9 cells (Invitrogen Cat# A35243), which were grown in suspension at 27°C. Sf9 cells at 4 × 10 6 cells/ml density were infected with baculoviruses expressing GPR17, DNGαi1, and Gβ1γ2 at a ratio of 10:10:1. After 48 h, Sf9 cells were collected by centrifugation at 4000 g for 10 min and then stored at −80°C before protein purification.",
+        "Cell pellets were thawed and suspended by spinning in lysis buffer (10 mM Tris pH7.5, 0.5 mM EDTA) at 4°C for 60 min to facilitate complexes formation. Cell membranes were collected by centrifugation, and the supernatant was discarded. The sediment was homogenized by the dounce homogenizer in solubilization buffer containing NH buffer (20 mM HEPES pH 7.5, 100 mM NaCl), 10% glycerol, 10 mM MgCl2, 5 mM CaCl2, 1 mM MnCl2, 100 μg/ml benzamidine (Sigma–Aldrich Cat# 12072), 0.2 μg/ml leupeptin (Sigma‐Aldrich Cat# L5793), 25 μU/ml apyrase (NEB Cat# M0398S), and 100 μU/ml lambda protein phosphatase (NEB Cat# P0753S). Then, 1% DDM (n‐Dodecyl‐β‐D‐Maltoside, Anatrace Cat# D310) and 0.1% CHS (Sigma Cat#C6512) were added to the homogenate liquid and solubilized at 4°C for 2 h.",
+        "After centrifugation, the supernatant was collected, added with 2 mM CaCl2 and loaded onto the anti‐Flag M1 antibody affinity resin. The M1 resin was extensively washed with NH buffer containing 0.1% DDM, 0.01% CHS, and 2 mM CaCl2. After exchanging the 1% DDM buffer to 0.1% LMNG (Cat# 4216588) buffer with gradient steps, 10 × CMC buffer (NH buffer, 0.01% LMNG, 0.001% CHS, and 2 mM CaCl2) was used to further wash the M1 resin.",
+        "The GPR17‐Gi protein was eluted using 10 × CMC buffer without CaCl2 supplemented with 200 μg/ml Flag peptide (Sigma Cat# F3290), 5mM EDTA and 0.033% GDN (Anatrace Cat#GDN101).",
+        "The eluted protein was concentrated with Ultrafiltration tube (Merck, Amicon Ultra‐15ML) and incubated with the antibody fragment scFv16 for 2 h on ice at the molar ratio of 1:1.5. 18 The GPR17 complex was further purified with Superdex 200 Increase 10/300 column (GE Healthcare) that was pre‐equilibrated with 10 × CMC buffer with 0.033% GDN. The pure GPR17 complex was concentrated with an ultrafiltration tube and flash frozen in liquid nitrogen for further use."
+      ]
+    },
+    {
+      "title": "DATA AVAILABILITY STATEMENT",
+      "sectionId": "mco2159-sec-0220",
+      "paragraphs": [
+        "The data supporting this study are available from the corresponding author upon reasonable request. The cryo‐EM density map and structure coordinate of GPR17‐Gi complex have been deposited to the Protein Data Bank database (PDB) and Electron Microscopy Database (EMDB) under accession codes 7Y89 and EMD‐33682, respectively."
+      ]
+    }
+  ],
+  "extractionBoundary": "Exactly named construct/purification and data-availability sections; direct paragraphs only. No Results, figures, captions, contacts or coordinates inspected."
+}

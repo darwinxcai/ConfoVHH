@@ -1,0 +1,19 @@
+{
+  "id": "epmc-candidate-core",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.64898%2F2026.03.05.709805&format=json&resultType=core",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.64898%2F2026.03.05.709805&format=json&resultType=core",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:34:43.766714+00:00",
+  "finishedAt": "2026-09-04T23:35:09.959304+00:00",
+  "status": 504,
+  "headers": {
+    "Content-Type": "text/html",
+    "Strict-Transport-Security": "max-age=0",
+    "Date": "Fri, 04 Sep 2026 23:35:09 GMT",
+    "Connection": "close",
+    "Content-Length": "160"
+  },
+  "file": "sources/epmc-candidate-core.body",
+  "bytes": 160,
+  "sha256": "c9c89d274726b86306e1c97d80360f820bce86042c34c9bb2487aac4ada6d606"
+}

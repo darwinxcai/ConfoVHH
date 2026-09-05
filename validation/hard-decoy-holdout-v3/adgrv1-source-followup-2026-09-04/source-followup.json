@@ -1,0 +1,361 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "scope": "ADGRV1 species/construct sequence reconciliation and independent official publication routes; bounded LGR4 9S38 citation follow-up.",
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/source-reviews.json": "5552648047c11d88b0b5e38ce9b76dd758d70e1569e6c138ba0e786d469731f5",
+    "validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/incidental-prose-exposure.json": "0454f0854a4076c971040e699e3b2deb2e1ff5485c7733400db6cd2955e5452f",
+    "validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/sources/9fte-preprint-api.json": "3b9addeba98376c44822abedb085d5d91e7619124d7715113f0b3f61be126219",
+    "validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/sources/9fte-primary-index-evidence.json": "6ddb23d6a0eaf75e5bf5970ebd5b2f839daa4ff8ec87efd3ddc9680143fd04ad",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/source-reviews.json": "67765a9c985b84f73fe7fa36e16dd0068457cb56a10a2d20bcecff24f09e9c20",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json": "dc6ebf09ca1ea8e7c83c01ac442e907357a8e4c732e38d22b306432f06d4e281"
+  },
+  "sourceCaptures": [
+    {
+      "id": "biorxiv-advertised-jats",
+      "url": "https://www.biorxiv.org/content/early/2026/03/07/2026.03.05.709805.source.xml",
+      "status": 429,
+      "file": "sources/biorxiv-advertised-jats.body",
+      "bytes": 12038,
+      "sha256": "82a29d221621e761c68715bdaccab62b989c8a2e14e16681475ebf3072e076dd"
+    },
+    {
+      "id": "biorxiv-current-xml",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.03.05.709805v1.source.xml",
+      "status": 404,
+      "file": "sources/biorxiv-current-xml.body",
+      "bytes": 23296,
+      "sha256": "0c9e7bba77ca32593359b5b12d3ca0327c44f9fc63137877cd8956bf1f3c2465"
+    },
+    {
+      "id": "biorxiv-syndication",
+      "url": "https://syndication.highwire.org/content/doi/10.64898/2026.03.05.709805",
+      "status": 403,
+      "file": "sources/biorxiv-syndication.body",
+      "bytes": 275,
+      "sha256": "0ea4e124e74acc6a5bb9ad239481c02944358b9dcfd0739c1acfd66b27658143"
+    },
+    {
+      "id": "crossref-preprint",
+      "url": "https://api.crossref.org/works/10.64898/2026.03.05.709805",
+      "status": 200,
+      "file": "sources/crossref-preprint.body",
+      "bytes": 17070,
+      "sha256": "196a28c97e2574d0130b7f27206153f57efb2e181d710739f19f2cc40fd656f0"
+    },
+    {
+      "id": "emdb-50743",
+      "url": "https://www.ebi.ac.uk/emdb/api/entry/EMD-50743",
+      "status": 200,
+      "file": "sources/emdb-50743.body",
+      "bytes": 31830,
+      "sha256": "79379b316fc34159be248d0b83a09fbacbd5c5f3e258e621f004a44ef2ac3c18"
+    },
+    {
+      "id": "epmc-9s38",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%229S38%22&format=json&resultType=lite&pageSize=100",
+      "status": 200,
+      "file": "sources/epmc-9s38.body",
+      "bytes": 2575,
+      "sha256": "09dda4848a3c6d3008392e73c9363d7396bf1a39f7e304d94616c5bffd29e993"
+    },
+    {
+      "id": "epmc-candidate-core-retry",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A2026.03.05.709805+OR+DOI%3A10.64898%2F2026.03.05.709805&format=json&resultType=core",
+      "status": 503,
+      "file": "sources/epmc-candidate-core-retry.body",
+      "bytes": 190,
+      "sha256": "b429e25e7813a9e2b90dcec11d9cb5287751246128dd6c76a7349774829c5554"
+    },
+    {
+      "id": "epmc-candidate-core",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.64898%2F2026.03.05.709805&format=json&resultType=core",
+      "status": 504,
+      "file": "sources/epmc-candidate-core.body",
+      "bytes": 160,
+      "sha256": "c9c89d274726b86306e1c97d80360f820bce86042c34c9bb2487aac4ada6d606"
+    },
+    {
+      "id": "epmc-candidate-literal",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:2026.03.05.709805%20OR%20DOI:10.64898/2026.03.05.709805&format=json&resultType=core",
+      "status": 200,
+      "file": "sources/epmc-candidate-literal.body",
+      "bytes": 5165,
+      "sha256": "030000097d1c959242655ac8f3c10851b81d57817ef8f5fc9bf7c40082fd80f9"
+    },
+    {
+      "id": "epmc-direct-record",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:PPR1220841&format=json&resultType=core",
+      "status": 200,
+      "file": "sources/epmc-direct-record.body",
+      "bytes": 5124,
+      "sha256": "434980d67901f8d37ca779c776d4d5189a5982e5e25e728af089345f607e02f1"
+    },
+    {
+      "id": "epmc-preprint-xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PPR1220841/fullTextXML",
+      "status": 504,
+      "file": "sources/epmc-preprint-xml.body",
+      "bytes": 160,
+      "sha256": "c9c89d274726b86306e1c97d80360f820bce86042c34c9bb2487aac4ada6d606"
+    },
+    {
+      "id": "hal-preprint",
+      "url": "https://api.archives-ouvertes.fr/search/?q=doiId_s%3A%2210.64898%2F2026.03.05.709805%22&wt=json&fl=docid%2ChalId_s%2Ctitle_s%2CdoiId_s%2Curi_s%2CfileMain_s%2Cfiles_s%2Cabstract_s",
+      "status": 200,
+      "file": "sources/hal-preprint.body",
+      "bytes": 116,
+      "sha256": "316b596864c92e18c8f6688107ad49ecfc3fe632ebdc85efe82c65ed28ba8064"
+    },
+    {
+      "id": "hal-title",
+      "url": "https://api.archives-ouvertes.fr/search/?q=title_t%3A%22Structural+insights+into+the+inactive+state+of+the+adhesion+GPCR+ADGRV1%22&wt=json&fl=docid%2ChalId_s%2Ctitle_s%2CdoiId_s%2Curi_s%2CfileMain_s%2Cfiles_s%2Cabstract_s",
+      "status": 200,
+      "file": "sources/hal-title.body",
+      "bytes": 116,
+      "sha256": "316b596864c92e18c8f6688107ad49ecfc3fe632ebdc85efe82c65ed28ba8064"
+    },
+    {
+      "id": "pdbe-publications-9fte",
+      "url": "https://www.ebi.ac.uk/pdbe/api/pdb/entry/publications/9fte",
+      "status": 200,
+      "file": "sources/pdbe-publications-9fte.body",
+      "bytes": 2897,
+      "sha256": "9104e81455de3b8208ec668f5871d828f4a18071ac39dc08b32c8e602795804d"
+    },
+    {
+      "id": "pdbe-publications-9s38",
+      "url": "https://www.ebi.ac.uk/pdbe/api/pdb/entry/publications/9s38",
+      "status": 200,
+      "file": "sources/pdbe-publications-9s38.body",
+      "bytes": 491,
+      "sha256": "3bc9d036daf025b2b4d5e04c2135d2d7f376cd7b155c68471745d46a07ef347a"
+    },
+    {
+      "id": "pdbj-9fte-publications",
+      "url": "https://pdbj.org/emnavi/pap.php?str=pdb-9fte",
+      "status": 200,
+      "file": "sources/pdbj-9fte-publications.body",
+      "bytes": 71623,
+      "sha256": "9dd73541590a02f2d921cc33a35e966d9a0637706cd44bb710550813b1a7194c"
+    },
+    {
+      "id": "uniprot-b8jje0",
+      "url": "https://rest.uniprot.org/uniprotkb/B8JJE0.json",
+      "status": 200,
+      "file": "sources/uniprot-b8jje0.body",
+      "bytes": 34430,
+      "sha256": "01ad63018adf124c222312854cff365535f868b0e1e396034342e8d97b9a1f6c"
+    },
+    {
+      "id": "uniprot-mouse-adgrv1",
+      "url": "https://rest.uniprot.org/uniprotkb/search?query=%28gene%3AAdgrv1%29+AND+%28organism_id%3A10090%29&format=json&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Csequence&size=25",
+      "status": 200,
+      "file": "sources/uniprot-mouse-adgrv1.body",
+      "bytes": 38364,
+      "sha256": "ccbd7bfbafab99ab8a8e9d9ffa6d0be6a9f6c3757680ab5745130a61a4f0b9e3"
+    },
+    {
+      "id": "uniprot-q8wxg9",
+      "url": "https://rest.uniprot.org/uniprotkb/Q8WXG9.json",
+      "status": 200,
+      "file": "sources/uniprot-q8wxg9.body",
+      "bytes": 86743,
+      "sha256": "39034a30d8bab1242770c7f3a1271d113f82fd88c147c97c7f1cd1645feee016"
+    }
+  ],
+  "receptorSequenceComparison": {
+    "pdbId": "9FTE",
+    "entityId": "1",
+    "depositedSequenceLength": 426,
+    "depositedSequenceSha256": "ce080fdef9db00df7e4e58c13baee148c006f5edd21206c6a6c124a37b149a85",
+    "method": "Exact, case-sensitive canonical-sequence substring matching; all maximal prefix occurrences retained; no alignment or structure interpretation.",
+    "comparisons": [
+      {
+        "accession": "B8JJE0",
+        "organism": "Mus musculus",
+        "taxonomyId": 10090,
+        "canonicalLength": 6298,
+        "canonicalSequenceSha256": "e664f54c8116fd6f6a1a62f164e13c27bb56043fb8923250957526bfafab1011",
+        "maximalExactDepositedPrefixLength": 415,
+        "maximalExactPrefixCanonicalRanges1Inclusive": [
+          [
+            5884,
+            6298
+          ]
+        ],
+        "depositedRemainderAfterMaximalPrefix": "SGRHHHHHHHH",
+        "exactOccurrencesOfDepositedFirst415Residues": [
+          5884
+        ],
+        "exactOccurrencesOfCompleteDepositedSequence": [],
+        "interpretationBoundary": "Exact sequence observation only. No species-of-experiment, construct-design, direct-interface, eligibility or no-edge certification."
+      },
+      {
+        "accession": "Q8VHN7",
+        "organism": "Mus musculus",
+        "taxonomyId": 10090,
+        "canonicalLength": 6298,
+        "canonicalSequenceSha256": "91c5505c50d976efd2680f792ff53cc2d9988ac0f4baee05929dec5a34dd084d",
+        "maximalExactDepositedPrefixLength": 238,
+        "maximalExactPrefixCanonicalRanges1Inclusive": [
+          [
+            5884,
+            6121
+          ]
+        ],
+        "depositedRemainderAfterMaximalPrefix": "RHFWMLVLFVIFNSLQGLYVFVVYFILHNQTCCPMKASYTVEMNGHPGPSTAFFTPGSGIPPAGEINKSTQNLINAMEEVPSDWERSSFQQTSQASPDLKTSPQNGASFPSSGGYGPGSLIADEESQEFDDLIFALKTGAGLSVSDNESGQGSQEGGTLTDSQIVELRRIPIADTHLSGRHHHHHHHH",
+        "exactOccurrencesOfDepositedFirst415Residues": [],
+        "exactOccurrencesOfCompleteDepositedSequence": [],
+        "interpretationBoundary": "Exact sequence observation only. No species-of-experiment, construct-design, direct-interface, eligibility or no-edge certification."
+      },
+      {
+        "accession": "Q8WXG9",
+        "organism": "Homo sapiens",
+        "taxonomyId": 9606,
+        "canonicalLength": 6306,
+        "canonicalSequenceSha256": "2c0521995ac4bf858f04a17d83d9d7f050b9046cb111876acfad2e8fdd6c0f7a",
+        "maximalExactDepositedPrefixLength": 7,
+        "maximalExactPrefixCanonicalRanges1Inclusive": [
+          [
+            5891,
+            5897
+          ]
+        ],
+        "depositedRemainderAfterMaximalPrefix": "QTDNSSSYNEAFFSAGLICISGLCLAVVSHMFCARHSMFAAKLLTHMMVASLGTQILFLASAYASPHLSEESCSAVAAVAHYLYLCQFSWMLIQSVNFWYVLVVSDEHTERRCLLFCLLSWGLPSFVVILLILILRGIYHRSMPQIYGLIHGDLCFIPNIYAALFTAALVPLMCLVVVFVVFIHAYQLKPQWKGYDDVFRGRTNAAEIPLILYLFALISMTWLWGGLHMAYRHFWMLVLFVIFNSLQGLYVFVVYFILHNQTCCPMKASYTVEMNGHPGPSTAFFTPGSGIPPAGEINKSTQNLINAMEEVPSDWERSSFQQTSQASPDLKTSPQNGASFPSSGGYGPGSLIADEESQEFDDLIFALKTGAGLSVSDNESGQGSQEGGTLTDSQIVELRRIPIADTHLSGRHHHHHHHH",
+        "exactOccurrencesOfDepositedFirst415Residues": [],
+        "exactOccurrencesOfCompleteDepositedSequence": [],
+        "interpretationBoundary": "Exact sequence observation only. No species-of-experiment, construct-design, direct-interface, eligibility or no-edge certification."
+      }
+    ],
+    "mouseSingleRecordAndSearchSequenceAgreement": true,
+    "reviewedMouseCanonicalTailComparison": {
+      "accession": "Q8VHN7",
+      "depositedRange1Inclusive": [
+        1,
+        415
+      ],
+      "canonicalRange1Inclusive": [
+        5884,
+        6298
+      ],
+      "matches": 414,
+      "differences": [
+        {
+          "depositedPosition1": 239,
+          "canonicalPosition1": 6122,
+          "depositedResidue": "R",
+          "canonicalResidue": "G"
+        }
+      ],
+      "method": "Position-by-position comparison with the same-length canonical C-terminal 415 residues; no gaps or coordinate information.",
+      "variationOriginEstablished": false
+    },
+    "fact": "Deposited receptor residues 1–415 exactly match mouse B8JJE0 residues 5884–6298. The deposited sequence then appends SGRHHHHHHHH. The corresponding reviewed mouse Q8VHN7 fragment differs at one position (deposited R239 versus canonical G6122). The 415-residue block is not an exact substring of the captured human Q8WXG9 canonical sequence.",
+    "inference": "The deposited sequence supports its mouse annotation and is inconsistent with an unchanged fragment of the captured human canonical sequence. This does not establish which species or construct the experiment actually used.",
+    "unresolved": "Primary construct Methods are unavailable, so the preprint significance statement describing human ADGRV1 remains unreconciled; the origin and intended role of the terminal suffix are unverified."
+  },
+  "adgrv1Publication": {
+    "candidateDoi": "10.64898/2026.03.05.709805",
+    "europePmcId": "PPR1220841",
+    "candidateConfirmedBy": [
+      "bioRxiv metadata retained in prior package",
+      "Europe PMC DOI and record-ID queries",
+      "Crossref DOI metadata"
+    ],
+    "europePmcAvailabilityMetadata": {
+      "isOpenAccess": "N",
+      "inPMC": "N",
+      "hasPDF": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "availability": "Free",
+            "availabilityCode": "F",
+            "documentStyle": "doi",
+            "site": "DOI",
+            "url": "https://doi.org/10.64898/2026.03.05.709805"
+          }
+        ]
+      }
+    },
+    "pdbePrimaryCitation": {
+      "doi": null,
+      "title": "Cryo-EM structure of the adhesion GPCR ADGRV1 in complex with a nanobody",
+      "pubmed_id": null,
+      "type": "U"
+    },
+    "emdbPrimaryCitation": {
+      "title": "Cryo-EM structure of the adhesion GPCR ADGRV1 in complex with a nanobody",
+      "published": false,
+      "journal": "To Be Published"
+    },
+    "halDoiQueryResultCount": 0,
+    "halTitleQueryResultCount": 0,
+    "crossrefPublicDeliveryLinks": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.64898/2026.03.05.709805",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "exactPrimaryDepositionParagraphRetrieved": false,
+    "primaryConstructMethodsRetrieved": false,
+    "status": "CANDIDATE_CORROBORATED_EXACT_PRIMARY_DEPOSITION_AND_CONSTRUCT_PENDING",
+    "limitations": "PDBj publication links and PDBe/EMDB primary metadata retain unpublished attribution. Europe PMC gives only a DOI destination and no PMC/PDF record. HAL queries returned zero records, not proof of absence. Crossref syndication denied access; advertised bioRxiv JATS remained rate limited. Prior primary-PDF search-index exact-accession signal is not upgraded to a retrieved primary deposition statement."
+  },
+  "lgr4_9s38CitationFollowup": {
+    "primaryCitation": {
+      "doi": null,
+      "title": "Structure of LGR4 with NB21",
+      "pubmed_id": null,
+      "type": "U"
+    },
+    "europePmcQuery": "\"9S38\"",
+    "queryResultCount": 3,
+    "queryResults": [
+      {
+        "id": "38315524",
+        "source": "MED",
+        "doi": "10.2196/46637",
+        "title": "Effectiveness of Online and Remote Interventions for Mental Health in Children, Adolescents, and Young Adults After the Onset of the COVID-19 Pandemic: Systematic Review and Meta-Analysis."
+      },
+      {
+        "id": "19314049",
+        "source": "MED",
+        "doi": null,
+        "title": "Public Health Weekly Reports for July 5, 1907."
+      },
+      {
+        "id": "17246529",
+        "source": "MED",
+        "doi": "10.1093/genetics/12.4.348",
+        "title": "Differential Action of the Sugary Gene in Maize on Two Alternative Classes of Male Gametophytes."
+      }
+    ],
+    "queryRelevanceAssessment": "All three returned titles concern unrelated historical genetics/public health or mental-health interventions; none establishes deposition linkage.",
+    "priorExactSequenceLead": "All three polymer sequences match 9S37 in the archived review; exact sequence relatedness does not prove publication attribution.",
+    "priorStatus": "INVENTORY_REVIEWED_PRIMARY_LINK_PENDING",
+    "status": "UNPUBLISHED_METADATA_RECONFIRMED_PRIMARY_LINK_STILL_PENDING",
+    "absenceOfPublicationEstablished": false
+  },
+  "evidenceBoundary": {
+    "formalExclusionAuthority": false,
+    "formalLeakageGraphAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "eligibleTargetsAdded": 0,
+    "independentComponentsCleared": 0,
+    "targetFreezePermitted": false,
+    "wholeCensusComponentUpperBound": null,
+    "nativeCoordinatesInspected": false,
+    "structuralFiguresInspected": false,
+    "contactTablesInspected": false,
+    "dockqLabelsAccessed": false,
+    "performanceResultsAccessed": false,
+    "newStructuralResultsOrCaptionProseRead": false,
+    "priorExposureCaveatsRemainInForce": true,
+    "exposureScopeFile": "exposure-scope.json"
+  }
+}

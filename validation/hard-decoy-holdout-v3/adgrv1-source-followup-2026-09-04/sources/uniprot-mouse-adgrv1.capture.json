@@ -1,0 +1,32 @@
+{
+  "id": "uniprot-mouse-adgrv1",
+  "url": "https://rest.uniprot.org/uniprotkb/search?query=%28gene%3AAdgrv1%29+AND+%28organism_id%3A10090%29&format=json&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Csequence&size=25",
+  "finalUrl": "https://rest.uniprot.org/uniprotkb/search?query=%28gene%3AAdgrv1%29+AND+%28organism_id%3A10090%29&format=json&fields=accession%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Csequence&size=25",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:35:02.298850+00:00",
+  "finishedAt": "2026-09-04T23:35:10.088127+00:00",
+  "status": 200,
+  "headers": {
+    "Vary": "accept,accept-encoding,x-uniprot-release,x-api-deployment-date, User-Agent",
+    "Cache-Control": "public, max-age=43200",
+    "x-cache": "miss cached",
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Credentials": "true",
+    "Access-Control-Expose-Headers": "Link, X-Total-Results, X-UniProt-Release, X-UniProt-Release-Date, X-API-Deployment-Date",
+    "X-API-Deployment-Date": "02-September-2026",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "Date": "Fri, 04 Sep 2026 23:35:09 GMT",
+    "Access-Control-Max-Age": "1728000",
+    "X-UniProt-Release": "2026_03",
+    "X-Total-Results": "12",
+    "Transfer-Encoding": "chunked",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, PATCH, OPTIONS",
+    "Access-Control-Allow-Headers": "DNT,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range,Authorization",
+    "X-UniProt-Release-Date": "02-September-2026"
+  },
+  "file": "sources/uniprot-mouse-adgrv1.body",
+  "bytes": 38364,
+  "sha256": "ccbd7bfbafab99ab8a8e9d9ffa6d0be6a9f6c3757680ab5745130a61a4f0b9e3"
+}

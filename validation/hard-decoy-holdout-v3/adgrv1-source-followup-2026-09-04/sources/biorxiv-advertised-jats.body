@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attention Required | Cloudflare</title>
+    <style>
+        /* ===== Reset & Base ===== */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+            background: #fff;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+		img{
+			width:auto;
+		}
+
+        /* ===== Top Loading Bar ===== */
+        .top-bar-track {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #e0e0e0;
+            z-index: 1000;
+        }
+
+        .top-bar-progress {
+            height: 100%;
+            width: 0%;
+            background: #8e1530;
+            transition: width 0.3s linear;
+        }
+
+        /* Spinner that sits at the leading edge */
+        .top-bar-progress::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: -1px;
+            width: 8px;
+            height: 6px;
+            border-radius: 50%;
+            background: #f5c518;
+            box-shadow: 0 0 6px 1px #f5c518;
+        }
+
+        /* ===== Main Content ===== */
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px 80px;
+            text-align: center;
+        }
+
+        /* ===== Cloudflare Logo ===== */
+        .logo-container {
+            margin-bottom: 60px;
+        }
+
+        .logo-container svg {
+            height: 46px;
+            width: auto;
+        }
+
+        /* ===== Typography ===== */
+        .heading {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a2e;
+            margin-bottom: 30px;
+        }
+
+        .message {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #555;
+            max-width: 520px;
+        }
+
+        .message .countdown {
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+
+        /* ===== Ray ID / IP Meta ===== */
+        .meta-box {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid #eee;
+            width: 100%;
+            max-width: 360px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .meta-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #888;
+        }
+
+        .meta-row span:first-child {
+            color: #999;
+        }
+
+        .meta-row span:last-child {
+            color: #333;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+        }
+
+        .reveal-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+            color: #8e1530;
+            cursor: pointer;
+            text-decoration: underline dotted;
+        }
+
+        .reveal-btn:hover {
+            color: #6c1024;
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            text-align: center;
+            padding: 24px 20px;
+            font-size: 13px;
+            color: #888;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .footer a {
+            color: #4a6fa5;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .copy-btn {
+            background: none;
+            border: none;
+            padding: 0;
+            margin: 0;
+            font: inherit;
+            font-size: 13px;
+            color: #4a6fa5;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .copy-btn:hover {
+            text-decoration: underline;
+        }
+
+        .copy-toast {
+            display: inline-block;
+            margin-left: 8px;
+            font-size: 12px;
+            color: #2e7d32;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .copy-toast.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top loading / progress bar -->
+    <div class="top-bar-track">
+        <div class="top-bar-progress" id="progressBar"></div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <!-- Cloudflare Logo (inline SVG – no external dependency) -->
+        <div class="logo-container">
+            <svg viewBox="0 0 220 48" xmlns="http://www.w3.org/2000/svg" height="46" width="211" role="img" aria-label="Cloudflare">
+                <g>
+                    <path d="M52.5 30.2c.4-1.4.2-2.7-.5-3.6-.6-.8-1.7-1.3-3-1.4l-24.6-.3c-.2 0-.3-.1-.4-.2-.1-.1-.1-.3 0-.4.1-.3.4-.5.7-.5l24.8-.3c2.9-.1 6.1-2.5 7.2-5.3l1.4-3.7c.1-.2.1-.4 0-.6-1.6-7.3-8.1-12.7-15.9-12.7-7.1 0-13.2 4.5-15.5 10.9-1.5-1.1-3.4-1.7-5.5-1.5-3.7.4-6.7 3.4-7.1 7.1-.1.9 0 1.8.2 2.6C6.7 20.6 1 26.2 1 33.1c0 .6 0 1.3.1 1.9.1.3.3.5.6.5H51c.3 0 .6-.2.7-.5l.8-4.8z" fill="#f38020"/>
+                    <path d="M60.5 19.9h-.9c-.2 0-.3.1-.4.3l-1 3.4c-.4 1.4-.2 2.7.5 3.6.6.8 1.6 1.3 2.8 1.4l5.2.3c.2 0 .3.1.4.2.1.1.1.3 0 .4-.1.3-.4.5-.7.5l-5.4.3c-2.9.1-6.1 2.5-7.2 5.3l-.4 1c-.1.2 0 .4.2.4h18.7c.3 0 .5-.2.6-.4.3-1 .5-2.1.5-3.2 0-7.3-6-13.1-13.4-13.1z" fill="#faae40"/>
+                </g>
+                <text x="83" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="600" fill="#1a1a2e">cloudflare</text>
+            </svg>
+        </div>
+
+        
+
+        <p class="message">
+            We have received a high number of requests from this session.<br><br>
+            To keep the service fast and reliable for everyone, this page will reload
+            automatically in <span class="countdown" id="countdown">4</span> seconds.
+        </p>
+
+        <div class="meta-box">
+            <div class="meta-row">
+                <span>Ray ID</span>
+                <span>a360d297edaaafd7</span>
+            </div>
+		<div class="meta-row">
+			<span>Your IP</span>
+			<span>2a09:bac5:4450:31f5::4fa:60</span>
+		</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+    Need help?
+    <button type="button" class="copy-btn" id="copyDetailsBtn">Copy details for support</button>
+    <span class="copy-toast" id="copyToast">Copied! Paste into your email.</span>
+    </div>
+
+    <!-- ===== JavaScript – copy support details to clipboard ===== -->
+    <script>
+        (function () {
+            var btn   = document.getElementById('copyDetailsBtn');
+            var toast = document.getElementById('copyToast');
+            var toastTimer = null;
+
+            // Resolve the actual page URL, guarding against cases where this
+            // page is rendered inside an iframe (e.g. about:srcdoc previews).
+            function getPageUrl() {
+                var href = window.location.href;
+                var looksInvalid = !href || href.indexOf('about:') === 0 || href.indexOf('blob:') === 0;
+
+                if (looksInvalid) {
+                    // Try the parent frame's URL if same-origin access is allowed
+                    try {
+                        if (window.parent && window.parent !== window && window.parent.location.href) {
+                            return window.parent.location.href;
+                        }
+                    } catch (e) { /* cross-origin, fall through */ }
+
+                    // Fall back to the referrer, if any
+                    if (document.referrer) {
+                        return document.referrer;
+                    }
+
+                    return '(unavailable — please paste the page URL here)';
+                }
+
+                return href;
+            }
+
+            btn.addEventListener('click', function () {
+                var pageUrl = getPageUrl();
+
+                var details =
+                    'Support request: Cloudflare rate limit screen error\n' +
+                    'To: pub-requests@highwirepress.com\n' +
+                    'Subject: Cloudflare rate limit screen error\n\n' +
+                    'Hi Highwire Team,\n\n' +
+                    'I encountered the Cloudflare rate limit screen.\n\n' +
+                    'Page URL: ' + pageUrl + '\n' +
+                    'Ray ID: a360d297edaaafd7\n' +
+                    'IP Address: 2a09:bac5:4450:31f5::4fa:60\n\n' +
+                    'Thank you.';
+
+                function showToast() {
+                    if (toastTimer) clearTimeout(toastTimer);
+                    toast.classList.add('show');
+                    toastTimer = setTimeout(function () {
+                        toast.classList.remove('show');
+                    }, 3000);
+                }
+
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(details).then(showToast, function () {
+                        fallbackCopy(details, showToast);
+                    });
+                } else {
+                    fallbackCopy(details, showToast);
+                }
+            });
+
+            function fallbackCopy(text, cb) {
+                var ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.opacity = '0';
+                document.body.appendChild(ta);
+                ta.focus();
+                ta.select();
+                try {
+                    document.execCommand('copy');
+                } catch (e) {}
+                document.body.removeChild(ta);
+                if (cb) cb();
+            }
+        })();
+    </script>
+
+    
+
+    <!-- ===== JavaScript – countdown + progress bar ===== -->
+    <script>
+        (function () {
+            // ---- Configuration ----
+            var TOTAL_SECONDS = 30;              // total countdown time
+            var TICK_MS       = 100;            // refresh interval (ms)
+
+            // ---- DOM refs ----
+            var countdownEl  = document.getElementById('countdown');
+            var progressEl   = document.getElementById('progressBar');
+
+            // ---- State ----
+            var remaining = TOTAL_SECONDS * 1000; // in ms
+
+            // ---- Tick ----
+            var timer = setInterval(function () {
+                remaining -= TICK_MS;
+                if (remaining < 0) remaining = 0;
+
+                // Update countdown text (whole seconds)
+                var secs = Math.ceil(remaining / 1000);
+                countdownEl.textContent = secs;
+
+                // Update progress bar width
+                var pct = ((TOTAL_SECONDS * 1000 - remaining) / (TOTAL_SECONDS * 1000)) * 100;
+                progressEl.style.width = pct + '%';
+
+                // When done → reload (or you can redirect somewhere)
+                if (remaining <= 0) {
+                    clearInterval(timer);
+                    // Reload the page (simulates the Cloudflare behaviour)
+                    location.reload();
+                }
+            }, TICK_MS);
+        })();
+    </script>
+<script>window.__CF$cv$params={r:'a360d297edaaafd7',t:'MTc4ODU2NTA1Mg==',u:'01a06ec8db067792add0a60c3965564c',ut:'eBQl2dX2HRweqtfMASNh.fbSwVG8qb1aG.9CF.0wgIA-1788565052-1.2.1.1-5UDaOG8F0TaW1oa5cHQl7DyL9upWf2b9o233U0bD9Fw8iYYM0sbB3nI77AMzO03zLBOgSIdC3kU8jrhEuOibzuQc6oyTm7AEvyrvsa7KOOE',i:60};(function(){if(!document.body)return;var s=document.createElement('script');s.src='/cdn-cgi/challenge-platform/scripts/precursor/main.js';document.head.appendChild(s);})();</script></body>
+</html>
