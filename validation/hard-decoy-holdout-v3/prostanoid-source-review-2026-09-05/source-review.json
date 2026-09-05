@@ -1,0 +1,2897 @@
+{
+  "authority": {
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "freezeStatus": "BLOCKED",
+    "newFormallyClearedIndependentComponents": 0,
+    "studyStatus": "DRAFT",
+    "targetFreezePermitted": false,
+    "wholeCensusUpperBound": null
+  },
+  "constructChecks": {
+    "boundary": "Exact metadata sequence equalities and source discrepancies, not resolved structure coverage or experimental construct certification.",
+    "coordinateConvention": "All reported canonical ranges below are one-based inclusive; code slices are zero-based half-open.",
+    "dp1NatureActive": {
+      "depositedSuffixLength": 0,
+      "entries": [
+        "9AU0",
+        "9E9S"
+      ],
+      "exactCanonicalRange": [
+        1,
+        359
+      ],
+      "prefixLength": 26
+    },
+    "dp1NatureInactive": {
+      "depositedTerminalHistidineCount": 10,
+      "entries": [
+        "9EE5",
+        "9EI5",
+        "9EKH"
+      ],
+      "exactMutatedCanonicalRanges": [
+        [
+          1,
+          233
+        ],
+        [
+          258,
+          359
+        ]
+      ],
+      "interveningSequenceLength": 113,
+      "linkerVerified": "ERARSTL",
+      "methodsReportedHistidineTagCount": 8,
+      "prefixLength": 26,
+      "substitutions": [
+        "C130R",
+        "H263A",
+        "D319N"
+      ],
+      "suffixLength": 21,
+      "tagDiscrepancyResolved": false
+    },
+    "dp1PnasActive": {
+      "depositedSuffixLength": 0,
+      "entries": [
+        "8ZVZ",
+        "8ZW0"
+      ],
+      "exactCanonicalRange": [
+        1,
+        340
+      ],
+      "expressionToDepositionReconciled": false,
+      "methodsReportCterminalLgBiTAndOMBP_MBP": true,
+      "prefixLength": 128
+    },
+    "dp1PnasInactive": {
+      "entry": "9UWD",
+      "exactCanonicalRanges": [
+        [
+          1,
+          227
+        ],
+        [
+          258,
+          340
+        ]
+      ],
+      "experimentalConstructProvenanceResolved": false,
+      "interveningSequenceLength": 118
+    },
+    "ep2": {
+      "entries": [
+        "9JRO",
+        "9JRT"
+      ],
+      "exactCanonicalRanges": [
+        [
+          1,
+          224
+        ],
+        [
+          257,
+          358
+        ]
+      ],
+      "fullFusionProvenanceResolved": false,
+      "interveningSequenceLength": 112,
+      "linkersVerified": [
+        "ARRQL",
+        "ERARSTL"
+      ],
+      "prefixLength": 246
+    },
+    "ep4": {
+      "depositedCanonicalExtensionBeyondStatedBoundary": [
+        347,
+        366
+      ],
+      "depositedLength": 549,
+      "discrepancyResolved": false,
+      "entries": [
+        "9JQY",
+        "9JQZ"
+      ],
+      "exactMutatedCanonicalRanges": [
+        [
+          4,
+          217
+        ],
+        [
+          260,
+          366
+        ]
+      ],
+      "methodsStatedCterminalDeletion": [
+        347,
+        488
+      ],
+      "prefixLength": 228,
+      "substitutions": [
+        "N7Q",
+        "A62L",
+        "G106R",
+        "N177Q"
+      ]
+    }
+  },
+  "coverageDiscrepancy": {
+    "binderAbsenceEstablished": false,
+    "binderFusionEstablished": false,
+    "entry": "9UWD",
+    "heavyDomainCallCount": 0,
+    "paperDescribesFabAndNbPreparation": true,
+    "retainedPolymerCount": 1
+  },
+  "entries": [
+    {
+      "inputInventory": "global-text-discovery-2026-09-04/entries.jsonl",
+      "paper": "dp1-pnas",
+      "pdbId": "8ZVZ",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZVZ_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MGCLGNSKTEDQRNEEKAQREANKKIEKQLQKDKQVYRATHRLLLLGAGESGKNTIVKQMRILHVNGFNGEGGEEDPQAARSNSDGEKATKVQDIKNNLKEAIETIVAAMSNLVPPVELANPENQFRVDYILSVMNVPDFDFPPEFYEHAKALWEDEGVRACYERSNEYQLIDCAQYFLDKIDVIKQADYVPSDQDLLRCRVLTSGIFETKFQVDKVNFHMFDVGAQRDERRKWIQCFNDVTAIIFVVASSSYNMVIREDNQTNRLQAALKLFDSIWNNKWLRDTSVILFLNKQDLLAEKVLAGKSKIEDYFPEFARYTTPEDATPEPGEDPRVTRAKYFIRDEFLRISTASGDGRHYCYPHFTCSVDTENIRRVFNDCRDIIQRMHLRQYELL",
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZVZ_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MGSLLQSELDQLRQEAEQLKNQIRDARKACADATLSQITNNIDPVGRIQMRTRRTLRGHLAKIYAMHWGTDSRLLVSASQDGKLIIWDSYTTNKVHAIPLRSSWVMTCAYAPSGNYVACGGLDNICSIYNLKTREGNVRVSRELAGHTGYLSCCRFLDDNQIVTSSGDTTCALWDIETGQQTTTFTGHTGDVMSLSLAPDTRLFVSGACDASAKLWDVREGMCRQTFTGHESDINAICFFPNGNAFATGSDDATCRLFDLRADQELMTYSHDNIICGITSVSFSKSGRLLLAGYDDFNCNVWDALKADRAGVLAGHDNRVSCLGVTDDGMAVATGSWDSFLKIWN",
+          "sequenceLength": 345,
+          "sequenceSha256": "d053bff6096067864fc38540457be3b7929e6590c9adf2c8c05406764799ce47",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "D"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "Q13258",
+              "canonicalLength": 359,
+              "canonicalSequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 42,
+                  "canonicalStart1": 22,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 80,
+                  "canonicalStart1": 60,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 128,
+                  "canonicalStart1": 108,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 171,
+                  "canonicalStart1": 151,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 216,
+                  "canonicalStart1": 196,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 283,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 331,
+                  "canonicalStart1": 311,
+                  "exactCompleteCanonicalSegmentPresent": true
+                }
+              ],
+              "depositedLength": 468,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 128,
+                  "length": 340,
+                  "sequenceSha256": "c2f0fcbbcc711e32b37edfae632aa00c69c159568f425a440ecd31fe3dda0e3c"
+                }
+              ]
+            }
+          ],
+          "description": "Soluble cytochrome b562,Prostaglandin D2 receptor",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZVZ_3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MKTIIALSYIFCLVFAADLEDNWETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAYIQKYLGGSGGSMKSPFYRCQNTTSVEKGNSAVMGGVLFSTGLLGNLLALGLLARSGLGWCSRRPLRPLPSVFYMLVCGLTVTDLLGKCLLSPVVLAAYAQNRSLRVLAPALDNSLCQAFAFFMSFFGLSSTLQLLAMALECWLSLGHPFFYRRHITLRLGALVAPVVSAFSLAFCALPFMGFGKFVQYCPGTWCFIQMVHEEGSLSVLGYSVLYSSLMALLVLATVLCNLGAMRNLYAMHRRLQRHPRSCTRDCAEPRADGREASPQPLEELDHLLLLALMTVLFTMCSLPVIYRAYYGAFKDVKEKNRTSEEAEDLRALRFLSVISIVDPWIFIIFRSPVFRIFFHKIFI",
+          "sequenceLength": 468,
+          "sequenceSha256": "c0eccde035de856ee2fe3b43e61163b121ca947a9143e808470d39672d1b99c6",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia coli",
+              "taxonomyId": "562"
+            },
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "G"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZVZ_4",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MASNNTASIAQARKLVEQLKMEANIDRIKVSKAAADLMAYCEAHAKEDPLLTPVPASENPFREKKFFCAIL",
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "N"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "nanobody Nb35",
+          "entityId": "5",
+          "labelAsymIds": [
+            "E"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": true,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZVZ_5",
+          "referenceSequences": [],
+          "sequence": "MKYLLPTAAAGLLLLAAQPAMAQVQLQESGGGLVQPGGSLRLSCAASGFTFSNYKMNWVRQAPGKGLEWVSDISQSGASISYTGSVKGRFTISRDNAKNTLYLQMNSLKPEDTAVYYCARCPAPFTRDCFDVTSTTYAYRGQGTQVTVSSHHHHHH",
+          "sequenceLength": 156,
+          "sequenceSha256": "70985c1620a6cd48b1ed69e361feba9f26a15099f613acbd9b5f18d7f25c54ba",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "global-text-discovery-2026-09-04/entries.jsonl",
+      "paper": "dp1-pnas",
+      "pdbId": "8ZW0",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZW0_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MGCLGNSKTEDQRNEEKAQREANKKIEKQLQKDKQVYRATHRLLLLGAGESGKNTIVKQMRILHVNGFNGEGGEEDPQAARSNSDGEKATKVQDIKNNLKEAIETIVAAMSNLVPPVELANPENQFRVDYILSVMNVPDFDFPPEFYEHAKALWEDEGVRACYERSNEYQLIDCAQYFLDKIDVIKQADYVPSDQDLLRCRVLTSGIFETKFQVDKVNFHMFDVGAQRDERRKWIQCFNDVTAIIFVVASSSYNMVIREDNQTNRLQAALKLFDSIWNNKWLRDTSVILFLNKQDLLAEKVLAGKSKIEDYFPEFARYTTPEDATPEPGEDPRVTRAKYFIRDEFLRISTASGDGRHYCYPHFTCSVDTENIRRVFNDCRDIIQRMHLRQYELL",
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZW0_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MGSLLQSELDQLRQEAEQLKNQIRDARKACADATLSQITNNIDPVGRIQMRTRRTLRGHLAKIYAMHWGTDSRLLVSASQDGKLIIWDSYTTNKVHAIPLRSSWVMTCAYAPSGNYVACGGLDNICSIYNLKTREGNVRVSRELAGHTGYLSCCRFLDDNQIVTSSGDTTCALWDIETGQQTTTFTGHTGDVMSLSLAPDTRLFVSGACDASAKLWDVREGMCRQTFTGHESDINAICFFPNGNAFATGSDDATCRLFDLRADQELMTYSHDNIICGITSVSFSKSGRLLLAGYDDFNCNVWDALKADRAGVLAGHDNRVSCLGVTDDGMAVATGSWDSFLKIWN",
+          "sequenceLength": 345,
+          "sequenceSha256": "d053bff6096067864fc38540457be3b7929e6590c9adf2c8c05406764799ce47",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "D"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "Q13258",
+              "canonicalLength": 359,
+              "canonicalSequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 42,
+                  "canonicalStart1": 22,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 80,
+                  "canonicalStart1": 60,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 128,
+                  "canonicalStart1": 108,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 171,
+                  "canonicalStart1": 151,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 216,
+                  "canonicalStart1": 196,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 283,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 331,
+                  "canonicalStart1": 311,
+                  "exactCompleteCanonicalSegmentPresent": true
+                }
+              ],
+              "depositedLength": 468,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 128,
+                  "length": 340,
+                  "sequenceSha256": "c2f0fcbbcc711e32b37edfae632aa00c69c159568f425a440ecd31fe3dda0e3c"
+                }
+              ]
+            }
+          ],
+          "description": "Soluble cytochrome b562,Prostaglandin D2 receptor",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZW0_3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MKTIIALSYIFCLVFAADLEDNWETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAYIQKYLGGSGGSMKSPFYRCQNTTSVEKGNSAVMGGVLFSTGLLGNLLALGLLARSGLGWCSRRPLRPLPSVFYMLVCGLTVTDLLGKCLLSPVVLAAYAQNRSLRVLAPALDNSLCQAFAFFMSFFGLSSTLQLLAMALECWLSLGHPFFYRRHITLRLGALVAPVVSAFSLAFCALPFMGFGKFVQYCPGTWCFIQMVHEEGSLSVLGYSVLYSSLMALLVLATVLCNLGAMRNLYAMHRRLQRHPRSCTRDCAEPRADGREASPQPLEELDHLLLLALMTVLFTMCSLPVIYRAYYGAFKDVKEKNRTSEEAEDLRALRFLSVISIVDPWIFIIFRSPVFRIFFHKIFI",
+          "sequenceLength": 468,
+          "sequenceSha256": "c0eccde035de856ee2fe3b43e61163b121ca947a9143e808470d39672d1b99c6",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia coli",
+              "taxonomyId": "562"
+            },
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "G"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZW0_4",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MASNNTASIAQARKLVEQLKMEANIDRIKVSKAAADLMAYCEAHAKEDPLLTPVPASENPFREKKFFCAIL",
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "N"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "nanobody Nb35",
+          "entityId": "5",
+          "labelAsymIds": [
+            "E"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": true,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "8ZW0_5",
+          "referenceSequences": [],
+          "sequence": "MKYLLPTAAAGLLLLAAQPAMAQVQLQESGGGLVQPGGSLRLSCAASGFTFSNYKMNWVRQAPGKGLEWVSDISQSGASISYTGSVKGRFTISRDNAKNTLYLQMNSLKPEDTAVYYCARCPAPFTRDCFDVTSTTYAYRGQGTQVTVSSHHHHHH",
+          "sequenceLength": 156,
+          "sequenceSha256": "70985c1620a6cd48b1ed69e361feba9f26a15099f613acbd9b5f18d7f25c54ba",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "global-text-discovery-2026-09-04/entries.jsonl",
+      "paper": "dp1-nature",
+      "pdbId": "9AU0",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9AU0_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MGCLGNSKTEDQRNEEKAQREANKKIEKQLQKDKQVYRATHRLLLLGAGESGKNTIVKQMRILHVNGFNGEGGEEDPQAARSNSDGEKATKVQDIKNNLKEAIETIVAAMSNLVPPVELANPENQFRVDYILSVMNVPDFDFPPEFYEHAKALWEDEGVRACYERSNEYQLIDCAQYFLDKIDVIKQADYVPSDQDLLRCRVLTSGIFETKFQVDKVNFHMFDVGAQRDERRKWIQCFNDVTAIIFVVASSSYNMVIREDNQTNRLQAALKLFDSIWNNKWLRDTSVILFLNKQDLLAEKVLAGKSKIEDYFPEFARYTTPEDATPEPGEDPRVTRAKYFIRDEFLRISTASGDGRHYCYPHFTCAVDTENIRRVFNDCRDIIQRMHLRQYELL",
+          "sequenceLength": 394,
+          "sequenceSha256": "9f36d2e88f9078e6f8f276f104ea17e4ecb9be027264f21822b9b18c69cd6f57",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9AU0_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "A0A8D2K0M5",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "GPGSSQSELDQLRQEAEQLKNQIRDARKACADATLSQITNNIDPVGRIQMRTRRTLRGHLAKIYAMHWGTDSRLLVSASQDGKLIIWDSYTTNKVHAIPLRSSWVMTCAYAPSGNYVACGGLDNICSIYNLKTREGNVRVSRELAGHTGYLSCCRFLDDNQIVTSSGDTTCALWDIETGQQTTTFTGHTGDVMSLSLAPDTRLFVSGACDASAKLWDVREGMCRQTFTGHESDINAICFFPNGNAFATGSDDATCRLFDLRADQELMTYSHDNIICGITSVSFSKSGRLLLAGYDDFNCNVWDALKADRAGVLAGHDNRVSCLGVTDDGMAVATGSWDSFLKIWN",
+          "sequenceLength": 345,
+          "sequenceSha256": "d566c0285df820f343aa4aa2a02959642e32cef88268901e8419e465edfe4e10",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "C"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9AU0_3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MASNNTASIAQARKLVEQLKMEANIDRIKVSKAAADLMAYCEAHAKEDPLLTPVPASENPFREKKFFCAIL",
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "N"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Nanobody-35",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": true,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9AU0_4",
+          "referenceSequences": [],
+          "sequence": "MQVQLQESGGGLVQPGGSLRLSCAASGFTFSNYKMNWVRQAPGKGLEWVSDISQSGASISYTGSVKGRFTISRDNAKNTLYLQMNSLKPEDTAVYYCARCPAPFTRDCFDVTSTTYAYRGQGTQVTVSSHHHHHHEPEA",
+          "sequenceLength": 139,
+          "sequenceSha256": "07f7efc124c4d4941ca70fed18074927cee3a259dff91c5107b4bed509554de6",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "R"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "Q13258",
+              "canonicalLength": 359,
+              "canonicalSequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 42,
+                  "canonicalStart1": 22,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 80,
+                  "canonicalStart1": 60,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 128,
+                  "canonicalStart1": 108,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 171,
+                  "canonicalStart1": 151,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 216,
+                  "canonicalStart1": 196,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 283,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 331,
+                  "canonicalStart1": 311,
+                  "exactCompleteCanonicalSegmentPresent": true
+                }
+              ],
+              "depositedLength": 385,
+              "exactFullCanonicalSubstringStart0": 26,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 26,
+                  "length": 359,
+                  "sequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a"
+                }
+              ]
+            }
+          ],
+          "description": "Prostaglandin D2 receptor",
+          "entityId": "5",
+          "labelAsymIds": [
+            "E"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9AU0_5",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MKTIIALSYIFCLVFADYKDDDDGAPMKSPFYRCQNTTSVEKGNSAVMGGVLFSTGLLGNLLALGLLARSGLGWCSRRPLRPLPSVFYMLVCGLTVTDLLGKCLLSPVVLAAYAQNRSLRVLAPALDNSLCQAFAFFMSFFGLSSTLQLLAMALECWLSLGHPFFYRRHITLRLGALVAPVVSAFSLAFCALPFMGFGKFVQYCPGTWCFIQMVHEEGSLSVLGYSVLYSSLMALLVLATVLCNLGAMRNLYAMHRRLQRHPRSCTRDCAEPRADGREASPQPLEELDHLLLLALMTVLFTMCSLPVIYRAYYGAFKDVKEKNRTSEEAEDLRALRFLSVISIVDPWIFIIFRSPVFRIFFHKIFIRPLRYRSRCSNSTNMESSL",
+          "sequenceLength": 385,
+          "sequenceSha256": "cb3c2b05d0d7049f658670724daaff10fc4babcd3614a13d982060f012237922",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "global-text-discovery-2026-09-04/entries.jsonl",
+      "paper": "dp1-nature",
+      "pdbId": "9E9S",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9E9S_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MGCLGNSKTEDQRNEEKAQREANKKIEKQLQKDKQVYRATHRLLLLGAGESGKNTIVKQMRILHVNGFNGEGGEEDPQAARSNSDGEKATKVQDIKNNLKEAIETIVAAMSNLVPPVELANPENQFRVDYILSVMNVPDFDFPPEFYEHAKALWEDEGVRACYERSNEYQLIDCAQYFLDKIDVIKQADYVPSDQDLLRCRVLTSGIFETKFQVDKVNFHMFDVGAQRDERRKWIQCFNDVTAIIFVVASSSYNMVIREDNQTNRLQAALKLFDSIWNNKWLRDTSVILFLNKQDLLAEKVLAGKSKIEDYFPEFARYTTPEDATPEPGEDPRVTRAKYFIRDEFLRISTASGDGRHYCYPHFTCAVDTENIRRVFNDCRDIIQRMHLRQYELL",
+          "sequenceLength": 394,
+          "sequenceSha256": "9f36d2e88f9078e6f8f276f104ea17e4ecb9be027264f21822b9b18c69cd6f57",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9E9S_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "GPGSSQSELDQLRQEAEQLKNQIRDARKACADATLSQITNNIDPVGRIQMRTRRTLRGHLAKIYAMHWGTDSRLLVSASQDGKLIIWDSYTTNKVHAIPLRSSWVMTCAYAPSGNYVACGGLDNICSIYNLKTREGNVRVSRELAGHTGYLSCCRFLDDNQIVTSSGDTTCALWDIETGQQTTTFTGHTGDVMSLSLAPDTRLFVSGACDASAKLWDVREGMCRQTFTGHESDINAICFFPNGNAFATGSDDATCRLFDLRADQELMTYSHDNIICGITSVSFSKSGRLLLAGYDDFNCNVWDALKADRAGVLAGHDNRVSCLGVTDDGMAVATGSWDSFLKIWN",
+          "sequenceLength": 345,
+          "sequenceSha256": "d566c0285df820f343aa4aa2a02959642e32cef88268901e8419e465edfe4e10",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "C"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9E9S_3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MASNNTASIAQARKLVEQLKMEANIDRIKVSKAAADLMAYCEAHAKEDPLLTPVPASENPFREKKFFCAIL",
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "D"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "Q13258",
+              "canonicalLength": 359,
+              "canonicalSequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 42,
+                  "canonicalStart1": 22,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 80,
+                  "canonicalStart1": 60,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 128,
+                  "canonicalStart1": 108,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 171,
+                  "canonicalStart1": 151,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 216,
+                  "canonicalStart1": 196,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 283,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 331,
+                  "canonicalStart1": 311,
+                  "exactCompleteCanonicalSegmentPresent": true
+                }
+              ],
+              "depositedLength": 385,
+              "exactFullCanonicalSubstringStart0": 26,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 26,
+                  "length": 359,
+                  "sequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a"
+                }
+              ]
+            }
+          ],
+          "description": "Prostaglandin D2 receptor",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9E9S_4",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MKTIIALSYIFCLVFADYKDDDDGAPMKSPFYRCQNTTSVEKGNSAVMGGVLFSTGLLGNLLALGLLARSGLGWCSRRPLRPLPSVFYMLVCGLTVTDLLGKCLLSPVVLAAYAQNRSLRVLAPALDNSLCQAFAFFMSFFGLSSTLQLLAMALECWLSLGHPFFYRRHITLRLGALVAPVVSAFSLAFCALPFMGFGKFVQYCPGTWCFIQMVHEEGSLSVLGYSVLYSSLMALLVLATVLCNLGAMRNLYAMHRRLQRHPRSCTRDCAEPRADGREASPQPLEELDHLLLLALMTVLFTMCSLPVIYRAYYGAFKDVKEKNRTSEEAEDLRALRFLSVISIVDPWIFIIFRSPVFRIFFHKIFIRPLRYRSRCSNSTNMESSL",
+          "sequenceLength": 385,
+          "sequenceSha256": "cb3c2b05d0d7049f658670724daaff10fc4babcd3614a13d982060f012237922",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "N"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Nanobody35|Lama glama",
+          "entityId": "5",
+          "labelAsymIds": [
+            "E"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": true,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9E9S_5",
+          "referenceSequences": [],
+          "sequence": "MQVQLQESGGGLVQPGGSLRLSCAASGFTFSNYKMNWVRQAPGKGLEWVSDISQSGASISYTGSVKGRFTISRDNAKNTLYLQMNSLKPEDTAVYYCARCPAPFTRDCFDVTSTTYAYRGQGTQVTVSSHHHHHHEPEA",
+          "sequenceLength": 139,
+          "sequenceSha256": "07f7efc124c4d4941ca70fed18074927cee3a259dff91c5107b4bed509554de6",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "global-text-discovery-2026-09-04/entries.jsonl",
+      "paper": "dp1-nature",
+      "pdbId": "9EE5",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "H"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "anti-BRIL Fab Heavy Chain",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": false,
+            "constructRiskLexical": true,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EE5_1",
+          "referenceSequences": [],
+          "sequence": "EISEVQLVESGGGLVQPGGSLRLSCAASGFNVVDFSLHWVRQAPGKGLEWVAYISSSSGSTSYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARWGYWPGEPWWKAFDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKS",
+          "sequenceLength": 229,
+          "sequenceSha256": "67ddc585198e84dcceaf6b3917560c8c9321221942e6512a7461303f7f12f0cc",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "K"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "anti-Fab Nanobody synthetic construct",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EE5_2",
+          "referenceSequences": [],
+          "sequence": "GSQVQLQESGGGLVQPGGSLRLSCAASGRTISRYAMSWFRQAPGKEREFVAVARRSGDGAFYADSVQGRFTVSRDDAKNTVYLQMNSLKPEDTAVYYCAIDSDTFYSGSYDYWGQGTQVTVSS",
+          "sequenceLength": 123,
+          "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "L"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "anti-BRIL Fab Light Chain",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": false,
+            "constructRiskLexical": true,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EE5_3",
+          "referenceSequences": [],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYLYYSLVTFGQGTKVEIKRTVAAPSVFIFPPSDSQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG",
+          "sequenceLength": 214,
+          "sequenceSha256": "2f8a5df133fc6434f4a968720b7efc87730d9905589e892199dc69ce36e22877",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "Q13258",
+              "canonicalLength": 359,
+              "canonicalSequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 42,
+                  "canonicalStart1": 22,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 80,
+                  "canonicalStart1": 60,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 128,
+                  "canonicalStart1": 108,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 171,
+                  "canonicalStart1": 151,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 216,
+                  "canonicalStart1": 196,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 283,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": false
+                },
+                {
+                  "canonicalEnd1": 331,
+                  "canonicalStart1": 311,
+                  "exactCompleteCanonicalSegmentPresent": false
+                }
+              ],
+              "depositedLength": 495,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 26,
+                  "length": 129,
+                  "sequenceSha256": "27c3af6db2a905ecc9167a01ed5a845227311c1ed320b811c2ad86fce298c0ad"
+                },
+                {
+                  "canonicalStart0": 130,
+                  "depositedStart0": 156,
+                  "length": 103,
+                  "sequenceSha256": "c0e9d8b6845a28de8cb4a0fd54f8b4e01679713fcbe7e2f60cde342acc868336"
+                },
+                {
+                  "canonicalStart0": 263,
+                  "depositedStart0": 378,
+                  "length": 55,
+                  "sequenceSha256": "61d3934813fafd64196e634d247d70e5edb9f5fdc23b09d5b89fe36d330847ba"
+                },
+                {
+                  "canonicalStart0": 319,
+                  "depositedStart0": 434,
+                  "length": 40,
+                  "sequenceSha256": "74806f95b9d76e7dae87eb9d5f74124b98f3ba4bdd622193bbbfdb222fec334c"
+                }
+              ]
+            }
+          ],
+          "description": "Prostaglandin D2 receptor,Soluble cytochrome b562",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EE5_4",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MKTIIALSYIFCLVFADYKDDDDGAPMKSPFYRCQNTTSVEKGNSAVMGGVLFSTGLLGNLLALGLLARSGLGWCSRRPLRPLPSVFYMLVCGLTVTDLLGKCLLSPVVLAAYAQNRSLRVLAPALDNSLCQAFAFFMSFFGLSSTLQLLAMALERWLSLGHPFFYRRHITLRLGALVAPVVSAFSLAFCALPFMGFGKFVQYCPGTWCFIQMVHEEGSLSVLGYSVLYSSLMALLVLATVLCNLGAMRNLYAMHRRLQADLEDNWETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAYIQKYLERARSTLLEELDALLLLALMTVLFTMCSLPVIYRAYYGAFKDVKEKNRTSEEAEDLRALRFLSVISIVNPWIFIIFRSPVFRIFFHKIFIRPLRYRSRCSNSTNMESSLGRPLEVLFQGPHHHHHHHHHH",
+          "sequenceLength": 495,
+          "sequenceSha256": "85081d97d75102884eee79a8042afec628ea765118eec4147236331cb2764333",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "global-text-discovery-2026-09-04/entries.jsonl",
+      "paper": "dp1-nature",
+      "pdbId": "9EI5",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "Q13258",
+              "canonicalLength": 359,
+              "canonicalSequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 42,
+                  "canonicalStart1": 22,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 80,
+                  "canonicalStart1": 60,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 128,
+                  "canonicalStart1": 108,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 171,
+                  "canonicalStart1": 151,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 216,
+                  "canonicalStart1": 196,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 283,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": false
+                },
+                {
+                  "canonicalEnd1": 331,
+                  "canonicalStart1": 311,
+                  "exactCompleteCanonicalSegmentPresent": false
+                }
+              ],
+              "depositedLength": 495,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 26,
+                  "length": 129,
+                  "sequenceSha256": "27c3af6db2a905ecc9167a01ed5a845227311c1ed320b811c2ad86fce298c0ad"
+                },
+                {
+                  "canonicalStart0": 130,
+                  "depositedStart0": 156,
+                  "length": 103,
+                  "sequenceSha256": "c0e9d8b6845a28de8cb4a0fd54f8b4e01679713fcbe7e2f60cde342acc868336"
+                },
+                {
+                  "canonicalStart0": 263,
+                  "depositedStart0": 378,
+                  "length": 55,
+                  "sequenceSha256": "61d3934813fafd64196e634d247d70e5edb9f5fdc23b09d5b89fe36d330847ba"
+                },
+                {
+                  "canonicalStart0": 319,
+                  "depositedStart0": 434,
+                  "length": 40,
+                  "sequenceSha256": "74806f95b9d76e7dae87eb9d5f74124b98f3ba4bdd622193bbbfdb222fec334c"
+                }
+              ]
+            }
+          ],
+          "description": "Prostaglandin D2 receptor,Soluble cytochrome b562",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EI5_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MKTIIALSYIFCLVFADYKDDDDGAPMKSPFYRCQNTTSVEKGNSAVMGGVLFSTGLLGNLLALGLLARSGLGWCSRRPLRPLPSVFYMLVCGLTVTDLLGKCLLSPVVLAAYAQNRSLRVLAPALDNSLCQAFAFFMSFFGLSSTLQLLAMALERWLSLGHPFFYRRHITLRLGALVAPVVSAFSLAFCALPFMGFGKFVQYCPGTWCFIQMVHEEGSLSVLGYSVLYSSLMALLVLATVLCNLGAMRNLYAMHRRLQADLEDNWETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAYIQKYLERARSTLLEELDALLLLALMTVLFTMCSLPVIYRAYYGAFKDVKEKNRTSEEAEDLRALRFLSVISIVNPWIFIIFRSPVFRIFFHKIFIRPLRYRSRCSNSTNMESSLGRPLEVLFQGPHHHHHHHHHH",
+          "sequenceLength": 495,
+          "sequenceSha256": "85081d97d75102884eee79a8042afec628ea765118eec4147236331cb2764333",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "H"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "anti-BRIL Fab Heavy Chain",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": false,
+            "constructRiskLexical": true,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EI5_2",
+          "referenceSequences": [],
+          "sequence": "EISEVQLVESGGGLVQPGGSLRLSCAASGFNVVDFSLHWVRQAPGKGLEWVAYISSSSGSTSYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARWGYWPGEPWWKAFDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKS",
+          "sequenceLength": 229,
+          "sequenceSha256": "67ddc585198e84dcceaf6b3917560c8c9321221942e6512a7461303f7f12f0cc",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "K"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "anti-Fab Nanobody synthetic construct",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EI5_3",
+          "referenceSequences": [],
+          "sequence": "GSQVQLQESGGGLVQPGGSLRLSCAASGRTISRYAMSWFRQAPGKEREFVAVARRSGDGAFYADSVQGRFTVSRDDAKNTVYLQMNSLKPEDTAVYYCAIDSDTFYSGSYDYWGQGTQVTVSS",
+          "sequenceLength": 123,
+          "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "L"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "anti-BRIL Fab Light Chain",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": false,
+            "constructRiskLexical": true,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EI5_4",
+          "referenceSequences": [],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYLYYSLVTFGQGTKVEIKRTVAAPSVFIFPPSDSQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG",
+          "sequenceLength": 214,
+          "sequenceSha256": "2f8a5df133fc6434f4a968720b7efc87730d9905589e892199dc69ce36e22877",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "global-text-discovery-2026-09-04/entries.jsonl",
+      "paper": "dp1-nature",
+      "pdbId": "9EKH",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "Q13258",
+              "canonicalLength": 359,
+              "canonicalSequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 42,
+                  "canonicalStart1": 22,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 80,
+                  "canonicalStart1": 60,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 128,
+                  "canonicalStart1": 108,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 171,
+                  "canonicalStart1": 151,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 216,
+                  "canonicalStart1": 196,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 283,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": false
+                },
+                {
+                  "canonicalEnd1": 331,
+                  "canonicalStart1": 311,
+                  "exactCompleteCanonicalSegmentPresent": false
+                }
+              ],
+              "depositedLength": 495,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 26,
+                  "length": 129,
+                  "sequenceSha256": "27c3af6db2a905ecc9167a01ed5a845227311c1ed320b811c2ad86fce298c0ad"
+                },
+                {
+                  "canonicalStart0": 130,
+                  "depositedStart0": 156,
+                  "length": 103,
+                  "sequenceSha256": "c0e9d8b6845a28de8cb4a0fd54f8b4e01679713fcbe7e2f60cde342acc868336"
+                },
+                {
+                  "canonicalStart0": 263,
+                  "depositedStart0": 378,
+                  "length": 55,
+                  "sequenceSha256": "61d3934813fafd64196e634d247d70e5edb9f5fdc23b09d5b89fe36d330847ba"
+                },
+                {
+                  "canonicalStart0": 319,
+                  "depositedStart0": 434,
+                  "length": 40,
+                  "sequenceSha256": "74806f95b9d76e7dae87eb9d5f74124b98f3ba4bdd622193bbbfdb222fec334c"
+                }
+              ]
+            }
+          ],
+          "description": "Prostaglandin D2 receptor,Soluble cytochrome b562",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EKH_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MKTIIALSYIFCLVFADYKDDDDGAPMKSPFYRCQNTTSVEKGNSAVMGGVLFSTGLLGNLLALGLLARSGLGWCSRRPLRPLPSVFYMLVCGLTVTDLLGKCLLSPVVLAAYAQNRSLRVLAPALDNSLCQAFAFFMSFFGLSSTLQLLAMALERWLSLGHPFFYRRHITLRLGALVAPVVSAFSLAFCALPFMGFGKFVQYCPGTWCFIQMVHEEGSLSVLGYSVLYSSLMALLVLATVLCNLGAMRNLYAMHRRLQADLEDNWETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAYIQKYLERARSTLLEELDALLLLALMTVLFTMCSLPVIYRAYYGAFKDVKEKNRTSEEAEDLRALRFLSVISIVNPWIFIIFRSPVFRIFFHKIFIRPLRYRSRCSNSTNMESSLGRPLEVLFQGPHHHHHHHHHH",
+          "sequenceLength": 495,
+          "sequenceSha256": "85081d97d75102884eee79a8042afec628ea765118eec4147236331cb2764333",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "H"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "anti-BRIL Fab Heavy Chain",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": false,
+            "constructRiskLexical": true,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EKH_2",
+          "referenceSequences": [],
+          "sequence": "EISEVQLVESGGGLVQPGGSLRLSCAASGFNVVDFSLHWVRQAPGKGLEWVAYISSSSGSTSYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARWGYWPGEPWWKAFDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKS",
+          "sequenceLength": 229,
+          "sequenceSha256": "67ddc585198e84dcceaf6b3917560c8c9321221942e6512a7461303f7f12f0cc",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "K"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "anti-Fab Nanobody",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EKH_3",
+          "referenceSequences": [],
+          "sequence": "GSQVQLQESGGGLVQPGGSLRLSCAASGRTISRYAMSWFRQAPGKEREFVAVARRSGDGAFYADSVQGRFTVSRDDAKNTVYLQMNSLKPEDTAVYYCAIDSDTFYSGSYDYWGQGTQVTVSS",
+          "sequenceLength": 123,
+          "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "L"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "anti-BRIL Fab Light Chain",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": true,
+            "camelidSource": false,
+            "constructRiskLexical": true,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9EKH_4",
+          "referenceSequences": [],
+          "sequence": "SDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYLYYSLVTFGQGTKVEIKRTVAAPSVFIFPPSDSQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG",
+          "sequenceLength": 214,
+          "sequenceSha256": "2f8a5df133fc6434f4a968720b7efc87730d9905589e892199dc69ce36e22877",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "domain-remainder-2026-09-04/entries.jsonl",
+      "paper": "ep2-ep4",
+      "pdbId": "9JQY",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "H"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Heavy chain of Fab fragment",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JQY_1",
+          "referenceSequences": [],
+          "sequence": "MEWRWIFLFLLSGTTGVHSEIQLQQSGPELVKPGASVKVSCKASGFPFSTYNIYWVIQSHGKSLEWIGYIDPYNGGTSYNQKFRGKATLTVDKSSSTAYMHLNSLTSEDSAVYYCARRWYTYDGDWFAYWGQGTLVTVSAAKTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPRGPTIKPCPPCKCP",
+          "sequenceLength": 253,
+          "sequenceSha256": "912c0829931ea88c3a45052d7bbc4b0312ee677b72e4d50189ab3b382489548c",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "L"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Light chain of Fab fragment",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JQY_2",
+          "referenceSequences": [],
+          "sequence": "MDMRTPAQFLGILLLWFPGIKCDIKMTQSPSSMYVSLGERVTITCKASQDINRYLSWFQQKPGKSPKTLIYRANRMLDGVPSRFSGSGSGQDYSLTISSLEYEDMGNYYCLQYDEFPFTFGSGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNECVDENLYFQGASHHHHHHHH",
+          "sequenceLength": 255,
+          "sequenceSha256": "efbb8faf6f5071014f562a12b61a5be696ae558e94d9046432767fcb038cca27",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "P35408",
+              "canonicalLength": 488,
+              "canonicalSequenceSha256": "0c3feb9a2e6d6c63770c9e9d3f4b6664da11f74a182678e68fabb7586f538a97",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 43,
+                  "canonicalStart1": 20,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 79,
+                  "canonicalStart1": 56,
+                  "exactCompleteCanonicalSegmentPresent": false
+                },
+                {
+                  "canonicalEnd1": 115,
+                  "canonicalStart1": 97,
+                  "exactCompleteCanonicalSegmentPresent": false
+                },
+                {
+                  "canonicalEnd1": 160,
+                  "canonicalStart1": 136,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 211,
+                  "canonicalStart1": 185,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 295,
+                  "canonicalStart1": 268,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 332,
+                  "canonicalStart1": 313,
+                  "exactCompleteCanonicalSegmentPresent": true
+                }
+              ],
+              "depositedLength": 549,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 7,
+                  "depositedStart0": 232,
+                  "length": 54,
+                  "sequenceSha256": "f2055f4f799882d351db4601e3caad71531b9695682429a244975e41494471c9"
+                },
+                {
+                  "canonicalStart0": 62,
+                  "depositedStart0": 287,
+                  "length": 43,
+                  "sequenceSha256": "2ebc7a4ee3d438a40834ca97fe3db88e667b15488fe10c58f15c0e9ec5f6dd94"
+                },
+                {
+                  "canonicalStart0": 106,
+                  "depositedStart0": 331,
+                  "length": 70,
+                  "sequenceSha256": "38addf6313ebb7a7858029aab5c1c52dbe80f2e93fc5f5281cd72a06a57985c6"
+                },
+                {
+                  "canonicalStart0": 177,
+                  "depositedStart0": 402,
+                  "length": 40,
+                  "sequenceSha256": "0c72f79ee0b87d2a628b76e487169d349a0f7a792a621c5a525a66c2e4ba25bb"
+                },
+                {
+                  "canonicalStart0": 259,
+                  "depositedStart0": 442,
+                  "length": 107,
+                  "sequenceSha256": "7e8635cc2ea2b138ed3be9b49511a464bf170281ffcc374e30150c4e15216239"
+                }
+              ]
+            }
+          ],
+          "description": "GFP-like fluorescent chromoprotein,Prostaglandin E2 receptor EP4 subtype",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JQY_3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P35408",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "ASVIKPEMKIKLRMEGAVNGHKFVIEGEGIGKPYEGTQTLDLTVEEGAPLPFSYDILTPAFQYGNRAFTKYPEDIPDYFKQAFPEGYSWERSMTYEDQGICIATSDITMEGDCFFYEIRFDGTNFPPNGPVMQKKTLKWEPSTEKMYVEDGVLKGDVEMALLLEGGGHYRCDFKTTYKAKKDVRLPDAHEVDHRIEILSHDKDYNKVRLYEHAEARYSGGGSGGGGSAPGVQSSASLSPDRLNSPVTIPAVMFIFGVVGNLVAIVVLCKSRKEQKETTFYTLVCGLLVTDLLGTLLVSPVTIATYMKGQWPGGQPLCEYSTFILLFFSLSRLSIICAMSVERYLAINHAYFYSHYVDKRLAGLTLFAVYASNVLFCALPNMGLGSSRLQYPDTWCFIDWTTQVTAHAAYSYMYAGFSSFLILATVLCNVLVCGALLRMHRQFFRRIAGAEIQMVILLIATSLVVLICSIPLVVRVFVNQLYQPSLEREVSKNPDLQAIRIASVNPILDPWIYILLRKTVLSKAIEKIKCLFCRIGGSRRERSGQHCSDS",
+          "sequenceLength": 549,
+          "sequenceSha256": "9c9fe2c5dfdccd840d6fe8170453465e9a612876f138f18c788e7eefa1c62f13",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            },
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "domain-remainder-2026-09-04/entries.jsonl",
+      "paper": "ep2-ep4",
+      "pdbId": "9JQZ",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "H"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Heavy chain of Fab fragment",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JQZ_1",
+          "referenceSequences": [],
+          "sequence": "MEWRWIFLFLLSGTTGVHSEIQLQQSGPELVKPGASVKVSCKASGFPFSTYNIYWVIQSHGKSLEWIGYIDPYNGGTSYNQKFRGKATLTVDKSSSTAYMHLNSLTSEDSAVYYCARRWYTYDGDWFAYWGQGTLVTVSAAKTTAPSVYPLAPVCGDTTGSSVTLGCLVKGYFPEPVTLTWNSGSLSSGVHTFPAVLQSDLYTLSSSVTVTSSTWPSQSITCNVAHPASSTKVDKKIEPRGPTIKPCPPCKCP",
+          "sequenceLength": 253,
+          "sequenceSha256": "912c0829931ea88c3a45052d7bbc4b0312ee677b72e4d50189ab3b382489548c",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "P35408",
+              "canonicalLength": 488,
+              "canonicalSequenceSha256": "0c3feb9a2e6d6c63770c9e9d3f4b6664da11f74a182678e68fabb7586f538a97",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 43,
+                  "canonicalStart1": 20,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 79,
+                  "canonicalStart1": 56,
+                  "exactCompleteCanonicalSegmentPresent": false
+                },
+                {
+                  "canonicalEnd1": 115,
+                  "canonicalStart1": 97,
+                  "exactCompleteCanonicalSegmentPresent": false
+                },
+                {
+                  "canonicalEnd1": 160,
+                  "canonicalStart1": 136,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 211,
+                  "canonicalStart1": 185,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 295,
+                  "canonicalStart1": 268,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 332,
+                  "canonicalStart1": 313,
+                  "exactCompleteCanonicalSegmentPresent": true
+                }
+              ],
+              "depositedLength": 549,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 7,
+                  "depositedStart0": 232,
+                  "length": 54,
+                  "sequenceSha256": "f2055f4f799882d351db4601e3caad71531b9695682429a244975e41494471c9"
+                },
+                {
+                  "canonicalStart0": 62,
+                  "depositedStart0": 287,
+                  "length": 43,
+                  "sequenceSha256": "2ebc7a4ee3d438a40834ca97fe3db88e667b15488fe10c58f15c0e9ec5f6dd94"
+                },
+                {
+                  "canonicalStart0": 106,
+                  "depositedStart0": 331,
+                  "length": 70,
+                  "sequenceSha256": "38addf6313ebb7a7858029aab5c1c52dbe80f2e93fc5f5281cd72a06a57985c6"
+                },
+                {
+                  "canonicalStart0": 177,
+                  "depositedStart0": 402,
+                  "length": 40,
+                  "sequenceSha256": "0c72f79ee0b87d2a628b76e487169d349a0f7a792a621c5a525a66c2e4ba25bb"
+                },
+                {
+                  "canonicalStart0": 259,
+                  "depositedStart0": 442,
+                  "length": 107,
+                  "sequenceSha256": "7e8635cc2ea2b138ed3be9b49511a464bf170281ffcc374e30150c4e15216239"
+                }
+              ]
+            }
+          ],
+          "description": "GFP-like fluorescent chromoprotein,Prostaglandin E2 receptor EP4 subtype",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JQZ_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P35408",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "ASVIKPEMKIKLRMEGAVNGHKFVIEGEGIGKPYEGTQTLDLTVEEGAPLPFSYDILTPAFQYGNRAFTKYPEDIPDYFKQAFPEGYSWERSMTYEDQGICIATSDITMEGDCFFYEIRFDGTNFPPNGPVMQKKTLKWEPSTEKMYVEDGVLKGDVEMALLLEGGGHYRCDFKTTYKAKKDVRLPDAHEVDHRIEILSHDKDYNKVRLYEHAEARYSGGGSGGGGSAPGVQSSASLSPDRLNSPVTIPAVMFIFGVVGNLVAIVVLCKSRKEQKETTFYTLVCGLLVTDLLGTLLVSPVTIATYMKGQWPGGQPLCEYSTFILLFFSLSRLSIICAMSVERYLAINHAYFYSHYVDKRLAGLTLFAVYASNVLFCALPNMGLGSSRLQYPDTWCFIDWTTQVTAHAAYSYMYAGFSSFLILATVLCNVLVCGALLRMHRQFFRRIAGAEIQMVILLIATSLVVLICSIPLVVRVFVNQLYQPSLEREVSKNPDLQAIRIASVNPILDPWIYILLRKTVLSKAIEKIKCLFCRIGGSRRERSGQHCSDS",
+          "sequenceLength": 549,
+          "sequenceSha256": "9c9fe2c5dfdccd840d6fe8170453465e9a612876f138f18c788e7eefa1c62f13",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            },
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "L"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Light chain of Fab fragment",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JQZ_3",
+          "referenceSequences": [],
+          "sequence": "MDMRTPAQFLGILLLWFPGIKCDIKMTQSPSSMYVSLGERVTITCKASQDINRYLSWFQQKPGKSPKTLIYRANRMLDGVPSRFSGSGSGQDYSLTISSLEYEDMGNYYCLQYDEFPFTFGSGTKLEIKRADAAPTVSIFPPSSEQLTSGGASVVCFLNNFYPKDINVKWKIDGSERQNGVLNSWTDQDSKDSTYSMSSTLTLTKDEYERHNSYTCEATHKTSTSPIVKSFNRNECVDENLYFQGASHHHHHHHH",
+          "sequenceLength": 255,
+          "sequenceSha256": "efbb8faf6f5071014f562a12b61a5be696ae558e94d9046432767fcb038cca27",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "global-text-discovery-2026-09-04/entries.jsonl",
+      "paper": "ep2-ep4",
+      "pdbId": "9JRO",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "H"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Heavy chain of Fab fragment",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JRO_1",
+          "referenceSequences": [],
+          "sequence": "MEVQLVESGGGLVQPGGSLRLSCAASGFNVRSFSIHWVRQAPGKGLEWVAYISSSSGSTSYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARWGYWPGEPWWKAFDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKS",
+          "sequenceLength": 227,
+          "sequenceSha256": "d78fa81fab1b2520ee4ad56de07f4b188daf6f43bb602142970680e8ac518bb6",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "L"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Light chain of Fab fragment",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JRO_2",
+          "referenceSequences": [],
+          "sequence": "MDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYLYYSLVTFGQGTKVEIKRTVAAPSVFIFPPSDSQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG",
+          "sequenceLength": 214,
+          "sequenceSha256": "2124586ca9ac263c02ef4a09db650f72dd4919d31f8ad515689764abfe6692c2",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "N"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Nb",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JRO_3",
+          "referenceSequences": [],
+          "sequence": "GSQVQLQESGGGLVQPGGSLRLSCAASGRTISRYAMSWFRQAPGKEREFVAVARRSGDGAFYADSVQGRFTVSRDDAKTVYLQMNSLKPEDTAVYYCAIDSDTFYSGSYDYWGQGTQVTVSS",
+          "sequenceLength": 122,
+          "sequenceSha256": "0a583304264309bd03288f32d700633e9bfb1d6596cd9dc3e13dc8ed9bf6d72a",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "P0ABE7",
+              "canonicalLength": 128,
+              "canonicalSequenceSha256": "42ae01b6a01127c71d832ac7c67025cff6a5577f7d246d29100a291e665b83b2",
+              "canonicalTransmembraneSegments": [],
+              "depositedLength": 684,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 29,
+                  "depositedStart0": 482,
+                  "length": 35,
+                  "sequenceSha256": "31f21fff366b80ff99c47f72ed1d3042d759f45663ccbad0427e3ae42ab75593"
+                },
+                {
+                  "canonicalStart0": 76,
+                  "depositedStart0": 523,
+                  "length": 47,
+                  "sequenceSha256": "a7b0f99452b4d972466706b4612137357c179284c584ac2da8d5e5c36aa44e1f"
+                }
+              ]
+            },
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "P43116",
+              "canonicalLength": 358,
+              "canonicalSequenceSha256": "45183e6a553ea831b8ebd33161ff52536b787b31f7f577f9b5d2e6506d8b9598",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 47,
+                  "canonicalStart1": 24,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 91,
+                  "canonicalStart1": 66,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 132,
+                  "canonicalStart1": 112,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 176,
+                  "canonicalStart1": 152,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 223,
+                  "canonicalStart1": 199,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 286,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 323,
+                  "canonicalStart1": 300,
+                  "exactCompleteCanonicalSegmentPresent": true
+                }
+              ],
+              "depositedLength": 684,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 246,
+                  "length": 224,
+                  "sequenceSha256": "92335287e0c44dcdfac07cca09e601378371df22fbb167215f1c4be6eedc1396"
+                },
+                {
+                  "canonicalStart0": 256,
+                  "depositedStart0": 582,
+                  "length": 102,
+                  "sequenceSha256": "a495fc33aad83515c9cfae572fb334ea6556bd02d376dc93a54b7c3c172f8170"
+                }
+              ]
+            }
+          ],
+          "description": "GFP-like fluorescent chromoprotein,Prostaglandin E2 receptor EP2 subtype,Soluble cytochrome b562,Prostaglandin E2 receptor EP2 subtype,Soluble cytochrome b562",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JRO_4",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P0ABE7",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P43116",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "DYKDDDDAKHHHHHHHHHASVIKPEMKIKLRMEGAVNGHKFVIEGEGIGKPYEGTQTLDLTVEEGAPLPFSYDILTPAFQYGNRAFTKYPEDIPDYFKQAFPEGYSWERSMTYEDQGICIATSDITMEGDCFFYEIRFDGTNFPPNGPVMQKKTLKWEPSTEKMYVEDGVLKGDVEMALLLEGGGHYRCDFKTTYKAKKDVRLPDAHEVDHRIEILSHDKDYNKVRLYEHAEARYSGGGSGGGGSAMGNASNDSQSEDCETRQWLPPGESPAISSVMFSAGVLGNLIALALLARRWRGDVGCSAGRRSSLSLFHVLVTELVFTDLLGTCLISPVVLASYARNQTLVALAPESRACTYFAFAMTFFSLATMLMLFAMALERYLSIGHPYFYQRRVSRSGGLAVLPVIYAVSLLFCSLPLLDYGQYVQYCPGTWCFIRHGRTAYLQLYATLLLLLIVSVLACNFSVILNLIRARRQLADLEDNWETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQKGGSGGRSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAYIQKYLERARSTLAEETDHLILLAIMTITFAVCSLPFTIFAYMNETSSRKEKWDLQALRFLSINSIIDPWVFAILRPPVLRLMRSVLCCRISLRTQDATQTSCSTQSDASKQADL",
+          "sequenceLength": 684,
+          "sequenceSha256": "6492a148e4b226070a6f683bfb6938eda1fb573654849486e7fda1d76f35f15d",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia coli",
+              "taxonomyId": "562"
+            },
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            },
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "global-text-discovery-2026-09-04/entries.jsonl",
+      "paper": "ep2-ep4",
+      "pdbId": "9JRT",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "P0ABE7",
+              "canonicalLength": 128,
+              "canonicalSequenceSha256": "42ae01b6a01127c71d832ac7c67025cff6a5577f7d246d29100a291e665b83b2",
+              "canonicalTransmembraneSegments": [],
+              "depositedLength": 684,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 29,
+                  "depositedStart0": 482,
+                  "length": 35,
+                  "sequenceSha256": "31f21fff366b80ff99c47f72ed1d3042d759f45663ccbad0427e3ae42ab75593"
+                },
+                {
+                  "canonicalStart0": 76,
+                  "depositedStart0": 523,
+                  "length": 47,
+                  "sequenceSha256": "a7b0f99452b4d972466706b4612137357c179284c584ac2da8d5e5c36aa44e1f"
+                }
+              ]
+            },
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "P43116",
+              "canonicalLength": 358,
+              "canonicalSequenceSha256": "45183e6a553ea831b8ebd33161ff52536b787b31f7f577f9b5d2e6506d8b9598",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 47,
+                  "canonicalStart1": 24,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 91,
+                  "canonicalStart1": 66,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 132,
+                  "canonicalStart1": 112,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 176,
+                  "canonicalStart1": 152,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 223,
+                  "canonicalStart1": 199,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 286,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 323,
+                  "canonicalStart1": 300,
+                  "exactCompleteCanonicalSegmentPresent": true
+                }
+              ],
+              "depositedLength": 684,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 246,
+                  "length": 224,
+                  "sequenceSha256": "92335287e0c44dcdfac07cca09e601378371df22fbb167215f1c4be6eedc1396"
+                },
+                {
+                  "canonicalStart0": 256,
+                  "depositedStart0": 582,
+                  "length": 102,
+                  "sequenceSha256": "a495fc33aad83515c9cfae572fb334ea6556bd02d376dc93a54b7c3c172f8170"
+                }
+              ]
+            }
+          ],
+          "description": "GFP-like fluorescent chromoprotein,Prostaglandin E2 receptor EP2 subtype,Soluble cytochrome b562,Prostaglandin E2 receptor EP2 subtype,Soluble cytochrome b562",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JRT_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P0ABE7",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P43116",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "DYKDDDDAKHHHHHHHHHASVIKPEMKIKLRMEGAVNGHKFVIEGEGIGKPYEGTQTLDLTVEEGAPLPFSYDILTPAFQYGNRAFTKYPEDIPDYFKQAFPEGYSWERSMTYEDQGICIATSDITMEGDCFFYEIRFDGTNFPPNGPVMQKKTLKWEPSTEKMYVEDGVLKGDVEMALLLEGGGHYRCDFKTTYKAKKDVRLPDAHEVDHRIEILSHDKDYNKVRLYEHAEARYSGGGSGGGGSAMGNASNDSQSEDCETRQWLPPGESPAISSVMFSAGVLGNLIALALLARRWRGDVGCSAGRRSSLSLFHVLVTELVFTDLLGTCLISPVVLASYARNQTLVALAPESRACTYFAFAMTFFSLATMLMLFAMALERYLSIGHPYFYQRRVSRSGGLAVLPVIYAVSLLFCSLPLLDYGQYVQYCPGTWCFIRHGRTAYLQLYATLLLLLIVSVLACNFSVILNLIRARRQLADLEDNWETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQKGGSGGRSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAYIQKYLERARSTLAEETDHLILLAIMTITFAVCSLPFTIFAYMNETSSRKEKWDLQALRFLSINSIIDPWVFAILRPPVLRLMRSVLCCRISLRTQDATQTSCSTQSDASKQADL",
+          "sequenceLength": 684,
+          "sequenceSha256": "6492a148e4b226070a6f683bfb6938eda1fb573654849486e7fda1d76f35f15d",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia coli",
+              "taxonomyId": "562"
+            },
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            },
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "H"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Heavy chain of Fab fragment",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JRT_2",
+          "referenceSequences": [],
+          "sequence": "MEVQLVESGGGLVQPGGSLRLSCAASGFNVRSFSIHWVRQAPGKGLEWVAYISSSSGSTSYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCARWGYWPGEPWWKAFDYWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKS",
+          "sequenceLength": 227,
+          "sequenceSha256": "d78fa81fab1b2520ee4ad56de07f4b188daf6f43bb602142970680e8ac518bb6",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "N"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Nb",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 1,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JRT_3",
+          "referenceSequences": [],
+          "sequence": "GSQVQLQESGGGLVQPGGSLRLSCAASGRTISRYAMSWFRQAPGKEREFVAVARRSGDGAFYADSVQGRFTVSRDDAKTVYLQMNSLKPEDTAVYYCAIDSDTFYSGSYDYWGQGTQVTVSS",
+          "sequenceLength": 122,
+          "sequenceSha256": "0a583304264309bd03288f32d700633e9bfb1d6596cd9dc3e13dc8ed9bf6d72a",
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "L"
+          ],
+          "canonicalSequenceAnchors": [],
+          "description": "Light chain of Fab fragment",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9JRT_4",
+          "referenceSequences": [],
+          "sequence": "MDIQMTQSPSSLSASVGDRVTITCRASQSVSSAVAWYQQKPGKAPKLLIYSASSLYSGVPSRFSGSRSGTDFTLTISSLQPEDFATYYCQQYLYYSLVTFGQGTKVEIKRTVAAPSVFIFPPSDSQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRG",
+          "sequenceLength": 214,
+          "sequenceSha256": "2124586ca9ac263c02ef4a09db650f72dd4919d31f8ad515689764abfe6692c2",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    },
+    {
+      "inputInventory": "domain-remainder-2026-09-04/entries.jsonl",
+      "paper": "dp1-pnas",
+      "pdbId": "9UWD",
+      "polymers": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "canonicalSequenceAnchors": [
+            {
+              "boundary": "Deterministic exact matching anchors only, not an optimal alignment, construct adjudication, frozen receptor-threshold calculation, resolved coordinates, or proof of missing helices.",
+              "canonicalAccession": "Q13258",
+              "canonicalLength": 359,
+              "canonicalSequenceSha256": "4066262321e2a058a56a3ada9e594f943ab35ae2200824535230ca6ff9d3cc8a",
+              "canonicalTransmembraneSegments": [
+                {
+                  "canonicalEnd1": 42,
+                  "canonicalStart1": 22,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 80,
+                  "canonicalStart1": 60,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 128,
+                  "canonicalStart1": 108,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 171,
+                  "canonicalStart1": 151,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 216,
+                  "canonicalStart1": 196,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 283,
+                  "canonicalStart1": 263,
+                  "exactCompleteCanonicalSegmentPresent": true
+                },
+                {
+                  "canonicalEnd1": 331,
+                  "canonicalStart1": 311,
+                  "exactCompleteCanonicalSegmentPresent": true
+                }
+              ],
+              "depositedLength": 428,
+              "exactFullCanonicalSubstringStart0": -1,
+              "exactMatchingBlocksAtLeast12Residues": [
+                {
+                  "canonicalStart0": 0,
+                  "depositedStart0": 0,
+                  "length": 227,
+                  "sequenceSha256": "fa7a8ced50bfe960904c537dd1702ae0bc9bb9a4af15928fffe1f83be8a4375d"
+                },
+                {
+                  "canonicalStart0": 257,
+                  "depositedStart0": 345,
+                  "length": 83,
+                  "sequenceSha256": "32e3277d4b78241a473e09fa1f2d433f7df27ae3d91ae8f5843d5d11fbe0eca9"
+                }
+              ]
+            }
+          ],
+          "description": "Prostaglandin D2 receptor,Soluble cytochrome b562",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "numberedHeavyDomainCallCount": 0,
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9UWD_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MKSPFYRCQNTTSVEKGNSAVMGGVLFSTGLLGNLLALGLLARSGLGWCSRRPLRPLPSVFYMLVCGLTVTDLLGKCLLSPVVLAAYAQNRSLRVLAPALDNSLCQAFAFFMSFFGLSSTLQLLAMALECWLSLGHPFFYRRHITLRLGALVAPVVSAFSLAFCALPFMGFGKFVQYCPGTWCFIQMVHEEGSLSVLGYSVLYSSLMALLVLATVLCNLGAMRNLYAARRQLADLEDNWETLNDNLKVIEKADNAAQVKDALTKMRAAALDAQKATPPKLEDKSPDSPEMKDFRHGFDILVGQIDDALKLANEGKVKEAQAAAEQLKTTRNAYIQKYLERARSTLLEELDHLLLLALMTVLFTMCSLPVIYRAYYGAFKDVKEKNRTSEEAEDLRALRFLSVISIVDPWIFIIFRSPVFRIFFHKIFI",
+          "sequenceLength": 428,
+          "sequenceSha256": "f3f662a0d1ae915ae967e58f8bc93069de8e684fe7db9cf72c48061fab17b4fd",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia coli",
+              "taxonomyId": "562"
+            },
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "primaryDepositionLinkVerified": true
+    }
+  ],
+  "exposure": {
+    "cleanBlindCertification": false,
+    "evaluationLabelsAccessed": false,
+    "inspectedContent": "Bibliographic identifiers, Methods subsection titles, allowlisted preparation paragraphs, deposition statements, canonical sequences and annotations only.",
+    "nativeCoordinatesAccessed": false,
+    "nativePoseImagesAccessed": false,
+    "predictionOutputsAccessed": false,
+    "priorExposureRecordsRemainApplicable": true,
+    "rawXmlRetainedUnmodified": true,
+    "structuralContactTablesInspected": false,
+    "structuralResultsInspected": false
+  },
+  "groups": [
+    {
+      "doi": "10.1038/s44318-025-00611-0",
+      "entries": [
+        "9JRO",
+        "9JRT",
+        "9JQY",
+        "9JQZ"
+      ],
+      "independentComponentClaim": false,
+      "paper": "ep2-ep4",
+      "polymerCount": 14
+    },
+    {
+      "doi": "10.1038/s41467-025-64002-z",
+      "entries": [
+        "9AU0",
+        "9E9S",
+        "9EE5",
+        "9EI5",
+        "9EKH"
+      ],
+      "independentComponentClaim": false,
+      "paper": "dp1-nature",
+      "polymerCount": 22
+    },
+    {
+      "doi": "10.1073/pnas.2501902122",
+      "entries": [
+        "8ZVZ",
+        "8ZW0",
+        "9UWD"
+      ],
+      "independentComponentClaim": false,
+      "paper": "dp1-pnas",
+      "polymerCount": 11
+    }
+  ],
+  "historicalEp2NbMatch": {
+    "candidate": "9JRO_3",
+    "length": 122,
+    "reference": "8TB7_3",
+    "roleProofBySequenceAlone": false,
+    "sequenceSha256": "0a583304264309bd03288f32d700633e9bfb1d6596cd9dc3e13dc8ed9bf6d72a"
+  },
+  "interpretations": [
+    "EP2 and Nature DP1 preparation Methods support auxiliary anti-Fab roles. Sequence matches do not independently establish binding roles.",
+    "EP4 Methods describe a conventional anti-receptor Fab, not evidence of an eligible VHH.",
+    "The four DP1/Gs/Nb35 deposits support Nb35-containing sample identity. Direct binding role and full construct/tag reconciliation remain separate checks.",
+    "All eight DP1 deposits share canonical receptor annotation Q13258 across two publications; publication count is not independent-component count."
+  ],
+  "openItems": [
+    "Reconcile deposited GFP-like EP2/EP4 sequence with Methods that do not explicitly describe that fusion.",
+    "Resolve EP4 deposited canonical residues 347-366 despite the stated deletion of residues 347-488.",
+    "Resolve Nature DP1 inactive deposited ten-His terminus versus the reported eight-His tag.",
+    "Adjudicate deposited versus expressed boundaries, cleavage products and terminal tags in all construct classes.",
+    "Resolve 9UWD single-polymer coverage versus the primary FabBRIL/NbFab preparation without guessing absent chains or fusion topology.",
+    "Formally adjudicate development connections, binder lineage and prior exposure before eligibility or exclusion.",
+    "No new whole-census coverage or independent-component upper bound follows from this 12-entry review."
+  ],
+  "schemaVersion": "1.0",
+  "sourceFacts": {
+    "dp1-nature": [
+      "Sec13/14 identify BAG2 as anti-BRIL Fab and the Nb as anti-Fab; Sec16 explicitly calls the Nb Fab-stabilizing.",
+      "Sec12 describes replacement of DP1 R234-P257 with BRIL, an ERARSTL linker and C130R/H263A/D319N substitutions.",
+      "Sec17 describes co-expression of DP1 and Gs and addition of Nb35; the HA/FLAG/receptor/3C/linker/eGFP/eight-His construct is described in Sec12.",
+      "Data availability links all five entries and distinguishes BRIL/BAG2/Nb from Gs/Nb35 samples."
+    ],
+    "dp1-pnas": [
+      "s9 describes DP1 residues 1-340 with N-terminal prolactin/BRIL and C-terminal LgBiT/OMBP-MBP engineering.",
+      "s11 reports C-terminal six-His Nb35; s12 adds Nb35 to the DP1/Gs preparation.",
+      "s13 describes inactive DP1 receptor preparation with FabBRIL and NbFab; s22 links 9UWD as inactive apo-DP1.",
+      "The retained 9UWD inventory contains one receptor polymer and no positive heavy-domain call. This does not establish absent experimental antibodies or a binder fusion."
+    ],
+    "ep2-ep4": [
+      "Sec11 identifies anti-BRIL Fab and anti-Fab nanobody and mixes them with EP2 at 1:1.2:1.5.",
+      "Sec11 describes BRIL insertion between EP2 R224 and A257 with ARRQL and ERARSTL linkers, HA/FLAG/eight-His engineering.",
+      "Sec12 describes EP4 deletions 1-3, 218-259 and 347-488, N7Q/N177Q/A62L/G106R substitutions, and anti-EP4 Fab001 rather than a VHH reagent.",
+      "The four exact PDB identifiers are present in the primary deposition statement."
+    ]
+  }
+}

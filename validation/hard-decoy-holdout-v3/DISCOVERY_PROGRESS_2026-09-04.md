@@ -92,3 +92,13 @@ All three source packets pass independent relocated offline replay. These comple
 4. Establish a defensible census scope and independent-component count before applying the minimum of ten eligible components. Any smaller GPCR panel remains exploratory, and a broader membrane-protein study requires its own protocol.
 
 The verified source packages preserve their original responses, source hashes and non-authority fields. Offline replay tests cover the actual saved capture, normalization, sequence-screen and alias artifacts. The historical census, protocol locks and target-freeze state remain unchanged.
+
+## 5 September continuation: EP2/EP4 and DP1
+
+The [prostanoid source review](prostanoid-source-review-2026-09-05/README.md) completes the next two named source groups after PR #42, on top of the later paper work in PRs #43/#44. It verifies all 12 exact primary deposition links and accounts for 47 polymers across three papers. EP2 preparation Methods identify anti-BRIL Fab and anti-Fab Nb; EP4 uses conventional anti-EP4 Fab001. The DP1 sources distinguish Gs/Nb35 from BRIL/Fab/anti-Fab preparations. All eight DP1 entries share Q13258 across two papers, not eight independent components.
+
+The frozen development comparison reproduces all 18 VHH profiles and all 288 selected entity/reference pairs. Both EP2 Nbs and three DP1 anti-Fab Nbs pass the 8QOT criterion, yielding five development-review signals. Exact construct checks expose an EP4 boundary discrepancy (deposited residues 347–366 despite their stated deletion) and a DP1 ten-His versus eight-His discrepancy. PNAS 9UWD has one retained receptor polymer despite a Fab/Nb preparation described in Methods; neither binder absence nor a binder fusion is inferred. Exact sequence anchors do not certify expressed constructs or resolved structure coverage.
+
+Ten original source captures, allowlisted Methods/deposition extraction, deterministic offline replay and focused adversarial tests preserve the evidence. No native coordinates, structural Results, pose images, contact tables, prediction outputs or evaluation labels were inspected. Existing exposure restrictions remain. New formally cleared independent components: zero; whole-census upper bound: unknown; V3 DRAFT and freeze BLOCKED.
+
+Next executable work is targeted reconciliation of these range/tag/polymer discrepancies, followed by evidence-supported formal binder-role and development review. Do not repeat these three primary-source captures or treat the source groups as independent benchmark cases.

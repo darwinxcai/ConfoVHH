@@ -1,0 +1,211 @@
+{
+  "dp1-nature": {
+    "allowedMethods": [
+      {
+        "paragraphs": [
+          "For DP1 active state structure determination, the PTGDR gene (UniProt Q13258 ) encoding the human wild type (WT) DP1 receptor was codon-optimized for primary expression in insect cells and synthesized by GenScript. The construct includes an N-terminal hemagglutinin (HA) signal peptide (KTIIALSYIFCLVFA) to facilitate cell surface delivery and a Flag-tag epitope (DYKDDDD) for assessing surface expression. At the C-terminus, the construct features an HRV-3C protease cleavage site, followed by a flexible linker (GSGGGGSGGGG), enhanced green fluorescent protein (eGFP), and an 8×His tag for rapid screening of the expression system and purification purposes.",
+          "For the inactive state DP1 ICL3 bRIL construct, the human WT PTGDR gene was similarly codon-optimized and synthesized by GenScript, including the HA signal peptide and FLAG tag at the N-terminus, identical to the active construct. The bRIL fusion was inserted into ICL3, replacing residues R234-P257 and inserting a short linker (ERARSTL) at the TM6 side of the junction. The receptor sequence was followed by an HRV3C protease cleavage site and an 8×His tag at the C-terminus. Three point-mutations C130 3.50 R, H263 6.33 A, and D319 7.49 N were introduced using oligonucleotides (IDT) with internal mismatches and AccuPrime Pfx polymerase (Thermo Fisher Scientific) and verified by Sanger sequencing (Genewiz). The modified DP1 plasmids were subcloned into pFastBac vectors (Invitrogen) for baculovirus expression in insect cells."
+        ],
+        "sectionId": "Sec12",
+        "title": "DP1 construct design for cryo-EM structure determination"
+      },
+      {
+        "paragraphs": [
+          "The anti-bRIL Fab (BAG2) plasmid 56 (a gift from Dr. Kossiakoff), was expressed and purified according to published protocols 56 – 58 . Briefly, BAG2 Fab in the pRH2.2 vector was transformed into E. coli BL21 Rosetta cells, cultured overnight in Miller’s Luria Broth (LB) media with carbenicillin at 225 rpm and 37 °C. The culture was used to inoculate 1 L of 2× Yeast Extract Tryptone (YT) media with glucose, MgCl 2 , and carbenicillin, and grown until an OD600 of 0.6–0.8. Fab expression was induced with 1.0 mM IPTG, and the culture was incubated at 20 °C for 21 h. Cells were harvested, lysed in a lysing buffer containing 20 mM HEPES pH 7.5, 150 mM NaCl, DNaseI, and homemade protease inhibitor (PI) cocktail, and sonicated three times using a Q500 sonicator (Qsonica) with a standard probe 4220 and the following settings: Amp 95%, pulse on: 5 s, pulse off: 10 s, for a total of 3 min. The lysate was heated to 60–63 °C for 30 min to improve the purity of Fab by removing unstable bacterial proteins and Fab degradation products. The lysate mixture was further centrifuged, and the supernatant was purified using a HiTrap Protein L column (5 mL). The Fab was eluted, concentrated to 15 mg/mL using 30-kDa cutoff Amicon Ultra Centrifugal Filter (Millipore). The final buffer is exchanged to 20 mM HEPES pH 7.5, 150 mM NaCl, 20% glycerol, and flash-frozen for storage at −80 °C."
+        ],
+        "sectionId": "Sec13",
+        "title": "Expression and purification of an anti-bRIL Fab (BAG2)"
+      },
+      {
+        "paragraphs": [
+          "The anti-Fab nanobody (Nb) was also prepared as previously described 58 . The Nb vector was introduced into BL21 E. coli cells, which were cultured overnight in LB media with kanamycin at 37 °C. The next day, this culture was used to inoculate 1 L of Terrific Broth (TB) media supplemented with kanamycin and grown until the OD600 reached 0.6–0.8. The cells were then induced with 1.0 mM IPTG and incubated for an additional 18–20 h at 30 °C. After induction and incubation, the cells were harvested by centrifugation and stored at −80 °C. The cell pellet was resuspended in cold Tris-EDTA-Sucrose (TES) buffer containing 50 mM Tris pH 8.0, 0.5 mM EDTA, and 20% sucrose, then stirred for 1 h at 4 °C. An additional 40 mL TES was added and stirred for another hour at 4 °C, followed by centrifugation at 10,000 × g for 30 min. The resulting supernatant constituted the periplasmic extract, and the His-tagged Nb was purified using a Ni-NTA resin, eluted with 250 mM imidazole, and further purified via Superdex 200 10/300 GL. The purified Nb was concentrated to 10 mg/mL using a 10-kDa cutoff Amicon Ultra Centrifugal Filter (Millipore). The final buffer is exchanged to 20 mM HEPES pH 7.5, 150 mM NaCl, 20% glycerol, and flash-frozen for storage at −80 °C."
+        ],
+        "sectionId": "Sec14",
+        "title": "Expression and purification of an anti-Fab nanobody (Nb)"
+      },
+      {
+        "paragraphs": [
+          "The Nb35 plasmid 64 was introduced into BL21 E. coli cells and cultured overnight in LB media supplemented with 2% glucose, 1 mM MgCl 2 , and carbenicillin at 37 °C in a shaking incubator at 225 rpm. The following day, this culture was used to inoculate 1 L of TB media supplemented with 0.1% glucose, 1 mM MgCl 2 , and carbenicillin. The cells were grown until they reached an OD600 of 0.6–0.8, then induced with 1.0 mM IPTG. After induction, the temperature was reduced to 20 °C, and the cells were incubated for an additional 22 h. The cells were then harvested by centrifugation and stored at −80 °C. Nb35, which is expressed in the periplasmic space, was purified using nickel affinity chromatography followed by size exclusion chromatography, concentrated to 10 mg/mL, using a 10-kDa cutoff Amicon Ultra Centrifugal Filter (Millipore). The final buffer was exchanged to 20 mM HEPES pH 7.5, 150 mM NaCl, 20% glycerol, and flash-frozen in aliquots, stored at −80 °C for future use."
+        ],
+        "sectionId": "Sec15",
+        "title": "Expression and purification of Nb35"
+      },
+      {
+        "paragraphs": [
+          "The DP1 ICL3 bRIL construct was expressed in Spodoptera frugiperda ( Sf9 ) insect cells (Expression Systems, Cat# 94-001F) using the Bac-to-Bac baculovirus expression system (Invitrogen). Cells were infected at a density of ~2 × 10 6 cells/mL at MOI of 5 and grown for 48 h at 37 °C. Cells were harvested by centrifugation and stored at −80 °C. The frozen cell pellets were initially thawed and lysed in a hypotonic buffer (10 mM HEPES pH 7.5, 10 mM MgCl 2 , and 20 mM KCl) using dounce homogenizer, followed by centrifugation. The lysed cells were further washed two times using high osmotic buffer (10 mM HEPES pH 7.5, 1.0 M NaCl, 10 mM MgCl 2 , and 20 mM KCl) supplemented by homemade protease inhibitor (PI) cocktail (containing AEBSF, E-64, leupeptin, and aprotinin), thus separating soluble and membrane associated proteins from integral transmembrane proteins. Washed membranes were re-suspended and homogenized by douncing in a buffer containing 2 mg/mL iodoacetamide, 20 μM (S)-1-(2-chloro-5-(2,6-dimethyl-4-((4-methyl-3,4-dihydro-2H-benzo[b][1,4]oxazin-2-yl)methoxy)benzamido)phenyl)cyclopropane-1-carboxylic acid (ONO3030297) or (S)-2-(2-chloro-5-(2,6-dimethyl-4-((4-methyl-3,4-dihydro-2H-benzo[b][1,4]oxazin-2-yl)methoxy)benzamido)phenyl)acetic acid (ONO2550289) (a gift from ONO Pharmaceutical) 73 , and PI cocktail and incubated at 4 °C for 30 min. The membranes were then solubilized in a buffer containing 25 mM HEPES pH 7.5, 500 mM NaCl, 0.5% (w/v) lauryl maltose neopentyl glycol (LMNG, Anatrace) and 0.05% (w/v) cholesteryl hemisuccinate (CHS, Sigma-Aldrich) for 2 h at 4 °C. Insoluble debris was removed with ultracentrifugation at 60,000 × g for 50 min, and solubilized receptor was incubated with 20 mM imidazole and Talon (immobilized metal affinity chromatography IMAC) resin (Clontech) overnight at 4 °C. The following day, the receptor-bound resin was collected in a column and washed extensively with twenty column volume wash buffer-1 (25 mM HEPES pH 7.5, 800 mM NaCl, 20 μM ONO compound, 0.1% (w/v) LMNG, 0.01% (w/v) CHS, and 20 mM imidazole) and ten column volume wash buffer-2 (25 mM HEPES pH 7.5, 150 mM NaCl, 20 μM ONO compound, 0.05% (w/v) LMNG, 0.005% (w/v) CHS, and 30 mM imidazole). The DP1 ICL3 bRIL protein was then eluted using elution buffer (25 mM HEPES pH 7.5, 150 mM NaCl, 20 μM ONO compound, 0.02% (w/v) LMNG, 0.002% (w/v) CHS, and 250 mM imidazole).",
+          "To prepare the DP1 ICL3 bRIL-BAG2-Nb complex, the purified ligand-bound DP1 ICL3 bRIL was then incubated overnight at 4 °C with a 1.5-fold molar excess of BAG2 (anti-bRIL Fab) and a 2-fold molar excess of Nb (Fab-stabilizing nanobody). The following day, the mixture was injected into a Superdex 200 10/300 GL column, equilibrated with running buffer (20 mM HEPES pH 7.5, 100 mM NaCl, 0.00075% (w/v) LMNG, 0.000075% (w/v) CHS, 0.00025% (w/v) GDN, and 20 µM ONO compound). Fractions corresponding to the peak of the complex were collected and concentrated using a 100-kDa cutoff Amicon Ultra Centrifugal Filter (Millipore) for cryo-EM analysis."
+        ],
+        "sectionId": "Sec16",
+        "title": "Expression and purification of DP1 ICL3 bRIL-BAG2-Nb complex"
+      },
+      {
+        "paragraphs": [
+          "Human DP1, DNGα s , and Gβ 1 γ 2 were co-expressed in Sf9 insect cells using the Bac-to-Bac baculovirus expression system (Invitrogen). Cell cultures were grown to a density of ~2 × 10 6 cells/mL in ESF 921 serum-free medium (Expression Systems). Subsequently, the Sf9 cells were co-infected by three baculoviruses encoding DP1, DNGαs, and Gβ 1 γ 2 at a multiplicity of infection (MOI) of 5 at a 1:1:1 ratio. The cells were harvested by centrifugation 48 h after infection, and cell pellets were stored at −80 °C until further use. Frozen cell pellets were thawed in a hypotonic buffer containing 20 mM HEPES pH 7.5, 100 mM NaCl, 5 mM MgCl 2 , and 5 mM CaCl 2 , 0.1 mM TCEP supplemented with homemade PI cocktail. After homogenization, 25 mU/mL apyrase (New England Biolabs), 200 µM PGD2 or 20 µM BW245C, and 10 µg/mL Nb35 were added to the suspension and incubated at room temperature for 1 h. Membranes were collected by ultracentrifugation for 30 min and further solubilized with 20 mM HEPES (pH 7.5), 100 mM NaCl, 5 mM MgCl 2 , 5 mM CaCl 2 , 0.1 mM TCEP, 25 mU/mL apyrase, 0.5% (w/v) LMNG, and 0.05% (w/v) CHS for 2 h at 4 °C. The supernatant was isolated by centrifugation at 30,000 × g (Ti45, Beckman) for 45 min. The isolated supernatant was incubated with anti-GFP resin (made in-house) at 4 °C overnight. The resin was washed extensively with three washing steps in buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, 0.1 mM TCEP, and 200 µM PGD2 or 20 µM BW245C, supplemented with different concentration of detergents: 0.1% (w/v) LMNG, 0.01% (w/v) CHS in the first wash, 0.05% (w/v) LMNG, 0.005% (w/v) CHS in the second wash. The complex was eluted by incubating with 15–20 IU of HRV-3C protease (GenScript) overnight at 4 °C and further purified on a Superdex 200 10/300 GL column (GE Healthcare) in a running buffer (20 mM HEPES pH 7.5, 100 mM NaCl, 0.00075% (w/v) LMNG, 0.000075% (w/v) CHS, 0.00025% (w/v) GDN, 100 μM TCEP, and 200 µM PGD2 or 20 µM BW245C). The peak fractions of the complex bound to PGD2 and BW245C were collected and concentrated using a 100-kDa cut-off concentrator (Amicon) to approximately 4.2 mg/mL and 7.5 mg/mL for cryo-EM sample preparation, respectively."
+        ],
+        "sectionId": "Sec17",
+        "title": "Expression and purification of the human DP1-G s -Nb35 complex"
+      }
+    ],
+    "authors": [
+      "Davoudinasab Behnaz",
+      "Raskovalov Aleksey",
+      "Lee Woojin",
+      "Kim Donggyun",
+      "Kim Heesoo",
+      "Lam Jordy Homing",
+      "Han Gye Won",
+      "Katritch Vsevolod",
+      "Cherezov Vadim"
+    ],
+    "boundary": "Only named preparation Methods and data availability extracted. Full XML is retained unmodified; Results, captions, figures, model-building and contact tables are not rendered or inspected.",
+    "depositionParagraphs": [
+      "Structure coordinates have been deposited in the Protein Data Bank (PDB) and cryo-EM density maps have been deposited in the Electron Microscopy Data Bank (EMDB) under the following accession codes: inactive state apo DP1 ICL3 bRIL-BAG2-Nb: PDB 9EI5 and EMD-48077 (consensus map); inactive state ONO2550289-bound DP1 ICL3 bRIL-BAG2-Nb: PDB 9EE5 , EMD-47950 (composite map), EMD-71392 (consensus map), EMD-71379 (focused map #1, receptor), EMD-71393 (focused map #2, BAG2-Nb); inactive state ONO3030297-bound DP1 ICL3 bRIL-BAG2-Nb: PDB 9EKH , EMD-48122 (composite map), EMD-71651 (consensus map), EMD-71656 (focused map #1, receptor), EMD-71657 (focused map #2, BAG2-Nb); active PGD2-bound DP1-Gs-Nb35: PDB 9E9S , EMD-47802 (composite map), EMD-71658 (consensus map), EMD-71659 (focused map #1, receptor), EMD-71660 (focused map #2, Gs-Nb35); active BW245C-bound DP1-Gs-Nb35: PDB 9AU0 , EMDB-43839 [ https://www.ebi.ac.uk/pdbe/entry/emdb/EMD-43839 ] (composite map), EMD-71661 (consensus map), EMD-71662 (focused map #1, receptor), EMD-71663 (focused map #2, Gs-Nb35). Atomic coordinates for previously determined structures can be accessed via accession codes: 2RH1 , 3SN6 , 5YWY , 5YHL , 6AK3 , 6M9T , 6IIU , 6IIV , 7CX2 , 6WW2 , 7CX3 , 7CX4 , 7D7M , 7WU9 , 8GCM , 8GCP , 8GD9 , 8GDA , 8GDB , 8GDC , 8IQ4 , 8IQ6 , 8IUK , 8IUL , 8IUM , 8X79 , 8X7A , 8XJK , 8XJL , 8XJM , 8XJN , 8XJO . MD trajectories have been deposited to Zenodo under accession codes 15278219 (active, inactive, and apo states) and 15391966 (active state with protonated D72 2.50 ). Source Data are provided as a Source data file. Source data are provided with this paper."
+    ],
+    "doi": "10.1038/s41467-025-64002-z",
+    "linkedEntries": [
+      "9AU0",
+      "9E9S",
+      "9EE5",
+      "9EI5",
+      "9EKH"
+    ],
+    "permissions": [
+      "© The Author(s) 2025 2025 https://creativecommons.org/licenses/by-nc-nd/4.0/ Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0/ ."
+    ],
+    "pmcid": "PMC12508460",
+    "pmid": "41062467",
+    "sourceXmlSha256": "19c2d7bf3a43442d5b20968e2eac78fb09e136cf7d36c175432891cdc662fd10",
+    "title": "Structural insights into the mechanism of activation and inhibition of the prostaglandin D2 receptor 1"
+  },
+  "dp1-pnas": {
+    "allowedMethods": [
+      {
+        "paragraphs": [
+          "The gene encoding human DP1 (amino acids 1–340) was cloned into a pFastBac vector (Thermo Fisher Scientific) using the ClonExpress II One Step Cloning Kit (Vazyme Biotech). To facilitate expression and stabilization, a prolactin signal peptide and BRIL tag were added to the N-terminus, and an LgBiT tag was fused to the C-terminus. For purification, an OMBP-MBP tag was fused to the C-terminus of LgBiT. A dominant-negative (DN) Gα s format including mutations S54N, G226A, E268A, N271K, K274D, R280K, T284D and I285T was constructed to reduce the affinity of GDP/GTP -binding and increase the stability of G s complex. All the three components of G s -DN, rat Gβ1-SmBit, bovine G γ2 were also constructed into the pFastBac vector, respectively."
+        ],
+        "sectionId": "s9",
+        "title": "Constructs."
+      },
+      {
+        "paragraphs": [
+          "The expression of the protein constructs was carried out in High Five insect cells (Invitrogen) using the baculovirus method (Expression Systems). The insect cell cultures were grown in SIM HF Expression Medium (Sino Biological) until reaching a density of 3 to 4 million cells per mL. At this point, the cells were coinfected with five separate baculoviruses, each carrying the respective gene for human DP1, a Gα s chimera, G β , and G γ . After 48 h of infection, the cell culture was collected by centrifugation, and the resulting cell pellets were stored at −80 °C for subsequent purification steps."
+        ],
+        "sectionId": "s10",
+        "title": "Insect Cell Expression."
+      },
+      {
+        "paragraphs": [
+          "Nanobody 35 (Nb35) with a C-terminal histidine tag (His6) was expressed in Escherichia coli BL21 (DE3) bacteria. The bacterial culture was grown in Terrific Broth medium supplemented with 100 μg/mL ampicillin until reaching an optical density (OD600) of 0.6 at 37 °C. Protein expression was induced by adding 0.5 mM isopropyl-β-D-thiogalactoside (IPTG), and the culture was further incubated for 16 h at 18 °C. Cells were harvested by centrifugation (4,000 rpm, 20 min), and the Nb35 protein was extracted and purified by nickel-affinity chromatography as previously described ( 26 ).",
+          "The eluted protein was concentrated and subjected to size-exclusion chromatography using a HiLoad 16/600 Superdex 75 column (GE Healthcare) pre-equilibrated with a buffer containing 20 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES), pH 7.4, and 100 mM NaCl. The purified Nb35 was supplemented with 10% (vol/vol) glycerol, flash-frozen in liquid nitrogen, and stored at −80 °C until further use."
+        ],
+        "sectionId": "s11",
+        "title": "Expression and Purification of Nanobody 35."
+      },
+      {
+        "paragraphs": [
+          "Cell pellets were thawed in a buffer containing 20 mM HEPES (pH 7.4), 100 mM NaCl, 10 mM MgCl 2 , and CaCl 2 , 10 μM PGD 2 or BW245C supplemented with a Protease Inhibitor Cocktail (TargetMol). For the purification of the PGD 2 /BW245C-DP1-Gα s -Nb35 complex, membranes were solubilized with 0.5% (w/v) lauryl maltose neopentyl glycol (LMNG) (Anatrace) and 0.1% (w/v) cholesteryl hemisuccinate (CHS) (Anatrace) at 4 °C for 2 h. Insoluble material was removed by centrifugation at 70,000× g for 35 min, and the supernatant was immobilized on an amylose resin (Smart-Lifesciences).",
+          "The resin was then packed and washed with 10 column volumes of 20 mM HEPES (pH 7.4), 100 mM NaCl, 0.03% (w/v) LMNG, 0.006% CHS, 10 μM PGD 2 (MCE) or BW245C (MCE). Subsequently, the complex was washed with 10 column volumes of 20 mM HEPES (pH 7.4), 100 mM NaCl, 0.0075% (w/v) LMNG, 0.0025% (w/v) GDN (Anatrace), 0.0015% CHS, 10 μM PGD 2 or BW245C. Finally, the sample was eluted with 10 column volumes of 20 mM HEPES (pH 7.4), 100 mM NaCl, 0.0075% (w/v) LMNG, 0.0025% (w/v) GDN (Anatrace), 0.0015% CHS, 10 mM maltose, and 10 μM PGD 2 or BW245C. The eluent was incubated with Nb35 for 0.5 h.",
+          "Complex fractions were concentrated using a 100-kDa molecular weight cut-off (MWCO) Millipore concentrator for further purification. The complex was then subjected to size-exclusion chromatography on a Superose 6 Increase 10/300 GL column (GE Healthcare) pre-equilibrated with a size buffer containing 20 mM HEPES (pH 7.4), 100 mM NaCl, 0.00075% (w/v) LMNG, 0.00025% (w/v) GDN, 0.00015% CHS, and 10 μM PGD 2 or BW245C to separate the complexes. Eluted fractions were evaluated by SDS–PAGE, and those containing the desired complex were pooled and concentrated for cryo-EM experiments."
+        ],
+        "sectionId": "s12",
+        "title": "Complex Purification."
+      },
+      {
+        "paragraphs": [
+          "Cell pellets were thawed in a buffer containing 20 mM HEPES (pH 7.4), 150 mM NaCl, 10 mM MgCl2, and CaCl 2 , supplemented with a Protease Inhibitor Cocktail (TargetMol). For the purification of the inactive DP1 receptor-FabBRIL-NbFab complex, membranes were solubilized with 0.5% (w/v) lauryl maltose neopentyl glycol (LMNG) (Anatrace) and 0.1% (w/v) cholesteryl hemisuccinate (CHS) (Anatrace) at 4 °C for 2 h. Insoluble material was removed by centrifugation at 70,000× g for 35 min, and the supernatant was immobilized on a nickel affinity resin.",
+          "The resin was then packed into a column and washed with 25 column volumes of a buffer containing 20 mM HEPES (pH 7.4), 150 mM NaCl, 0.03% (w/v) LMNG, 0.006% CHS, and 55 mM imidazole. The inactive DP1 receptor was eluted with 10 column volumes of a buffer containing 20 mM HEPES (pH 7.4), 150 mM NaCl, 0.0075% (w/v) LMNG, 0.0025% (w/v) GDN (Anatrace), 0.0015% CHS, and 300 mM imidazole. The eluent was incubated with FabBRIL and NbFab for 2 h.",
+          "Complex fractions were concentrated using a 100-kDa molecular weight cut-off (MWCO) Millipore concentrator for further purification. The complex was then subjected to size-exclusion chromatography on a Superose 6 Increase 10/300 GL column (GE Healthcare) pre-equilibrated with a size buffer containing 20 mM HEPES (pH 7.4), 150 mM NaCl, 0.00075% (w/v) LMNG, 0.00025% (w/v) GDN, 0.00015% CHS to separate the complexes. Eluted fractions were evaluated by SDS-PAGE, and those containing the desired complex were pooled and concentrated for cryo-EM experiments."
+        ],
+        "sectionId": "s13",
+        "title": "Inactive DP1 Receptor Complex Purification."
+      }
+    ],
+    "authors": [
+      "Xu Jiuyin",
+      "Wu Yanli",
+      "Xu Youwei",
+      "Li Yang",
+      "He Xinheng",
+      "Zhang Heng",
+      "Wang James Jiqi",
+      "Hou Jingjing",
+      "Li Junrui",
+      "Hu Wen",
+      "Wu Kai",
+      "Yuan Qingning",
+      "Wu Canrong",
+      "Xu H Eric"
+    ],
+    "boundary": "Only named preparation Methods and data availability extracted. Full XML is retained unmodified; Results, captions, figures, model-building and contact tables are not rendered or inspected.",
+    "depositionParagraphs": [
+      "Cryo-EM maps have been deposited in the Electron Microscopy Data Bank under accession codes: EMD-60514 for PGD2-DP1-Gs complex ( 56 ); EMD-60513 for BW245C-DP1-Gs complex ( 57 ); and EMD-64550 for inactive apo-DP1 (58) . The atomic coordinates have been deposited in the Protein Data Bank under accession codes: 8ZW0 for PGD2-DP1-Gs complex ( 59 ); 8ZVZ for BW245C-DP1-Gs complex ( 60 ); and 9UWD for inactive apo-DP1 ( 61 ). All other data are included in the article and/or SI Appendix ."
+    ],
+    "doi": "10.1073/pnas.2501902122",
+    "linkedEntries": [
+      "8ZVZ",
+      "8ZW0",
+      "9UWD"
+    ],
+    "permissions": [
+      "Copyright © 2025 the Author(s). Published by PNAS. This article is distributed under Creative Commons Attribution-NonCommercial-NoDerivatives License 4.0 (CC BY-NC-ND) ."
+    ],
+    "pmcid": "PMC12146711",
+    "pmid": "40440061",
+    "sourceXmlSha256": "5e44e23ff486b407e3e65e0e33f0171fed7847db763f414e29aa50d691337185",
+    "title": "Molecular basis for ligand recognition and receptor activation of the prostaglandin D2 receptor DP1"
+  },
+  "ep2-ep4": {
+    "allowedMethods": [
+      {
+        "paragraphs": [
+          "The human EP2 receptor construct was engineered to express in its inactive conformation. It incorporated an HA signal peptide, FLAG tag, and 8×His tag at the N-terminus, with BRIL inserted into intracellular loop 3 (ICL3). The BRIL insertion was positioned between ICL3 residues R224 and A257 in wild-type EP2, utilizing two brief, modified linkers derived from the A2A adenosine receptor. These linkers consisted of ARRQL (connecting R224 to the N-terminus of BRIL) and ERARSTL (linking the C-terminus of BRIL to A257). The construct was introduced into a pFastBac1 vector using the ClonExpress II One Step Cloning Kit. Additionally, anti-BRIL Fab (FabBRIL) and anti-Fab nanobody (NbFab) were engineered with an N-terminal GP67 signal peptide and a C-terminal 8×His tag, then inserted into pFastBac1 vectors.",
+          "For protein expression, High-Five insect cells were employed using the baculovirus system. Cells were cultivated in ESF 921 serum-free medium until reaching a density of 2–3 million cells per mL, at which point they were infected with EP2 baculoviruses. After incubating at 27 °C, 120 rpm for 48 h, the culture was harvested via centrifugation, and the resulting cell pellets were cryopreserved at −80 °C.",
+          "The purification process began with resuspending cell pellets in a buffer composed of 20 mM HEPES, pH 7.4, 150 mM NaCl, 10 mM MgCl 2 , and 10 mM CaCl2, fortified with 1% (w/v) Protease Inhibitor Cocktail (TagetMol). Following homogenization by a Dounce homogenizer, membrane proteins were extracted by adding 0.5% (w/v) lauryl maltose neopentyl glycol (LMNG, Anatrace), 0.1% (w/v) cholesteryl hemisuccinate tris salt (CHS, Anatrace), and 10 μM PF-04418948 or TG6-129 antagonist for incubating 2 h at 4 °C. After removing insoluble matter by centrifugation at 30,000 rpm for 45 min, the supernatant was incubated with Ni-NTA affinity resin for 2 h at 4 °C. The resin was thoroughly washed with a wash buffer containing 20 mM HEPES, pH 7.4, 150 mM NaCl, 0.0075% (w/v) LMNG, 0.0015% CHS, 0.0025% glyco-diosgenin (GDN, Anatrace), 25 mM imidazole, 10 μM PF-04418948 or TG6-129 for 20 column volumes (CV), and then eluted with 5 CV of elution buffer (20 mM HEPES, pH 7.4, 150 mM NaCl, 0.0075% (w/v) LMNG, 0.0015% CHS, 0.0025% GDN, 300 mM imidazole, 10 μM PF-04418948 or TG6-129). The resin elution was concentrated using a 100-kDa MWCO Millipore concentrator and further refined via size exclusion chromatography on a Superdex 6 increase 10/300GL column (GE Healthcare) equilibrated with 20 mM HEPES, pH 7.4, 150 mM NaCl, 0.00075% (w/v) LMNG, 0.00015% CHS, 0.00025% (w/v) GDN, and 2 μM PF-04418948 or TG6-129.",
+          "To form the final complex, purified EP2 was combined with FabBRIL and NbFab in a 1:1.2:1.5 molar ratio and incubated on ice for 30 min. This mixture underwent a final purification step using a Superose 6 increase 10/300 GL column equilibrated with 20 mM HEPES, pH 7.4, 150 mM NaCl, 0.00075% (w/v) LMNG, 0.00015% CHS, 0.00025% (w/v) GDN, and 2 μM PF-04418948 or TG6-129. The fractions containing the EP2-FabBRIL-NbFab complex were identified by SDS-PAGE, pooled, and concentrated in preparation for cryo-EM analysis."
+        ],
+        "sectionId": "Sec11",
+        "title": "Construction, expression, and purification of EP2-BRIL-FabBRIL-NbFab complexes"
+      },
+      {
+        "paragraphs": [
+          "The human EP4 receptor construct was engineered for expression in its inactive conformation, following previously established protocols (Toyoda et al, 2019 ). Key modifications included the removal of N-terminal residues 1–3, C-terminal residues 347–488, and intracellular loop 3 (residues 218–259). In addition, N-linked glycosylation sites at positions 7 and 177 were altered to glutamine. According to the previously established protocols (Toyoda et al, 2019 ), to achieve substantially higher stability in the inactive state, the construct incorporated two strategic point mutations: Ala62 2.47 Leu and Gly106 3.39 Arg. To facilitate expression and purification, an HA signal peptide was introduced at the N-terminus, while an 8×His tag was appended to the C-terminus. This optimized construct was inserted into a pFastBac1 vector using the ClonExpress II One Step Cloning Kit.",
+          "Concurrently, the anti-EP4 Fab (Fab001) was developed based on the amino acid sequence of Fab001 (Toyoda et al, 2019 ). The Fab001 construct was engineered to include an N-terminal GP67 signal peptide and a C-terminal 8×His tag, and subsequently cloned into a pFastBac1 vector.",
+          "The expression and purification process for human EP4 mirrored that of human EP2, with one key distinction: the ligands used were 10 μM grapiprant or TG6-129 antagonist. To form the EP4-antagonist complexes, purified EP4 was incubated with Fab001 at a molar ratio of 1:1.2 on ice for 30 min. The resulting complex underwent concentration and further purification via size exclusion chromatography, utilizing a Superose 6 increase 10/300 GL column. The chromatography buffer consisted of 20 mM HEPES, pH 7.4, 150 mM NaCl, 0.00075% (w/v) LMNG, 0.00015% CHS, 0.00025% (w/v) GDN, and 2 μM grapiprant or TG6-129.",
+          "The fractions containing the EP4-Fab001 complex were identified through SDS-PAGE analysis. These fractions were then pooled, concentrated, and prepared for subsequent cryo-EM investigations, enabling structural studies of EP4 in complex with its antagonists."
+        ],
+        "sectionId": "Sec12",
+        "title": "Construction, expression, and purification of EP4-Fab001 complexes"
+      }
+    ],
+    "authors": [
+      "Wu Yanli",
+      "Zhang Heng",
+      "Xu Jiuyin",
+      "Wu Kai",
+      "Hu Wen",
+      "He Xinheng",
+      "Wang Gaoming",
+      "Wu Canrong",
+      "Xu H Eric"
+    ],
+    "boundary": "Only named preparation Methods and data availability extracted. Full XML is retained unmodified; Results, captions, figures, model-building and contact tables are not rendered or inspected.",
+    "depositionParagraphs": [
+      "The atomic coordinates and the cryo-EM density maps have been deposited in the Protein Data Bank (PDB) under accession numbers of 9JRO , 9JRT , 9JQZ , and 9JQY and Electron Microscopy Data Bank (EMDB) under accession codes EMD-61762 , EMD-61763 , EMD-61744 , and EMD-61743 for the EP2-PF-04418948 complex, the EP2-TG6-129 complex, the EP4-Grapiprant complex, and the EP4-TG6-129 complex, respectively.",
+      "The source data of this paper are collected in the following database record: biostudies:S-SCDT-10_1038-S44318-025-00611-0 ."
+    ],
+    "doi": "10.1038/s44318-025-00611-0",
+    "linkedEntries": [
+      "9JRO",
+      "9JRT",
+      "9JQY",
+      "9JQZ"
+    ],
+    "permissions": [
+      "© The Author(s) 2025 Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/ . Creative Commons Public Domain Dedication waiver http://creativecommons.org/publicdomain/zero/1.0/ applies to the data associated with this article, unless otherwise stated in a credit line to the data, but does not extend to the graphical or creative elements of illustrations, charts, or figures. This waiver removes legal barriers to the re-use and mining of research data. According to standard scholarly practice, it is recommended to provide appropriate citation and attribution whenever technically possible."
+    ],
+    "pmcid": "PMC12669672",
+    "pmid": "41162752",
+    "sourceXmlSha256": "2989d7c9462dfb4e559e32f54c3d127641532634ac97a41187ffa78f4b7fc955",
+    "title": "Structural insights into selective and dual antagonism of EP2 and EP4 prostaglandin receptors"
+  }
+}
