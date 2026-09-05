@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE",
+  "schema": "confovhh.gpcr-selection-development.v1",
+  "source_paired_csv_sha256": "94a0182d5e960e75641f5f891a2a8fefc8ac1fc942134cff253e83a1b5d3bc2c",
+  "script_sha256": "9ad9a7edc8dc3563a5e40637031f9a67688ef3936eb3f53b8b67367f7ac77928",
+  "runtime": {
+    "python_version": "3.12.13",
+    "python_implementation": "CPython",
+    "dependencies": "Python standard library only"
+  },
+  "confidence_inventory_sha256": "d41d7f9055c5ceb4189f124b3b535b48be602a976473cf2ba962f1777fbbd801",
+  "models": 165,
+  "jobs": 33,
+  "threshold": 0.23,
+  "threshold_origin": "Existing official DockQ acceptability boundary; not fitted in this analysis",
+  "tie_policy": "Preserve all exact exported-score maxima; show outcome bounds and uniform-among-ties expectations. Expectations are assumptions for summaries, not observed random draws.",
+  "uniform_baseline": "Analytic expectation of uniform selection among the five models in each job; no simulation or sampling",
+  "best_available": "Uses native labels and is a retrospective selection ceiling, not a deployable method",
+  "weighting": "Equal job weight for descriptive means; reference-specific summaries retained",
+  "interpretation": "Retrospective development analysis of coordinate-only ConfoVHH ranking against exported-confidence and other descriptive baselines; no independent-sample hypothesis test, calibrated efficacy estimate, ranking-policy change, binding claim or state-selectivity claim",
+  "outputs_sha256": {
+    "confidence-source-verification.json": "4b4a02361c5e471fee104fa9ddf87a5f86164a5056ad6237fdf8bc6a41506658",
+    "per-job-selection.csv": "4da82d725358f0abc56e27ba4d185e5029b34137a1de994e635b14ede087fff5",
+    "selection-analysis.json": "05f1d78973abf4e4cb0c181e450ec8568b92b65ea310343047933c6cd388dd2f"
+  }
+}

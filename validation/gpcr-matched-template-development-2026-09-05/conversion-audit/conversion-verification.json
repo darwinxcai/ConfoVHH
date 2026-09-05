@@ -1,0 +1,99 @@
+{
+  "schema": "confovhh.gpcr-template-gemmi-conversion.v1",
+  "status": "GEMMI_CONVERSION_VERIFIED_FULL_BOLTZ_PARSE_NOT_PERFORMED",
+  "runtime": {
+    "python_version": "3.12.13",
+    "gemmi_version": "0.6.5",
+    "gemmi_native_module_sha256": "93f3c38b727a15b95ebdb78727f436daca74784d67b6c73e5b757ea38792e096"
+  },
+  "wheel_sha256": {
+    "boltz": "b8c62bbdede1922931d9203118f62c858f11aa699bf91fd4c05a5ed6a6d8b4fc",
+    "gemmi": "305489477e80c6453d7a48ba78cde3e7496825ee54546bc25fcd2a900ed8d958"
+  },
+  "script_sha256": "b7a0709dd6e708ab76bd248b9206950a66a601aa881f1045b4ed35f832906335",
+  "boltz_loader_source_sha256": "7aa50724cd70fdbd8a4acaeba8ceca0bd76ba9cc95099592a1ddcd1e53081a69",
+  "boltz_polymer_source_sha256": "db99045c2931f8eb9a6b002cedc773d1fc5d46ee7f0823b4015d34bbce0fae34",
+  "shared_mask_sha256": "4cce0420e4f8e1de866c81d761e41aff8b2689887c0bb2f8f63eaa827136247b",
+  "templates": [
+    {
+      "reference": "3P0G",
+      "input_sha256": "2dad9ab3c0c96b3721c402b4d365815e08e3d0a2d8d3896155a1d2aecb56f0bc",
+      "residues": 275,
+      "atoms": 2155,
+      "sequence_matches_shared_mask": true,
+      "sequence_polymer_alignment": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||",
+      "all_atom_identities_and_coordinates_preserved": true,
+      "converted_author_chain": "A",
+      "converted_subchains": [
+        "A1"
+      ]
+    },
+    {
+      "reference": "5JQH",
+      "input_sha256": "7f94c5e189a2b16b28bcd1e17689f50cf8a1e48590429ebacf447bf173776326",
+      "residues": 275,
+      "atoms": 2155,
+      "sequence_matches_shared_mask": true,
+      "sequence_polymer_alignment": "|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||",
+      "all_atom_identities_and_coordinates_preserved": true,
+      "converted_author_chain": "A",
+      "converted_subchains": [
+        "A1"
+      ]
+    }
+  ],
+  "negative_controls": [
+    {
+      "reference": "3P0G",
+      "control": "missing_seqres",
+      "input_sha256": "de01a618a923ba25ad73ca39114d504774198095403c7d77ec2c66605f57c904",
+      "expected_sequence_residues": 275,
+      "observed_sequence_residues": 0,
+      "status": "EXPECTED_SEQUENCE_MISMATCH"
+    },
+    {
+      "reference": "3P0G",
+      "control": "unpadded_seqres",
+      "input_sha256": "6175ee67a773364f89609fa93614ecc4021fbddbcad2c8ca8b76edf6e01b0937",
+      "expected_sequence_residues": 275,
+      "observed_sequence_residues": 285,
+      "status": "EXPECTED_SEQUENCE_MISMATCH"
+    },
+    {
+      "reference": "5JQH",
+      "control": "missing_seqres",
+      "input_sha256": "e5d68eeaf7e121c04741d401b0360886b02f68a7c60528319bb0df0495bd7140",
+      "expected_sequence_residues": 275,
+      "observed_sequence_residues": 0,
+      "status": "EXPECTED_SEQUENCE_MISMATCH"
+    },
+    {
+      "reference": "5JQH",
+      "control": "unpadded_seqres",
+      "input_sha256": "f6b22634ba69682a2459ec7d82f7c3f1d888f5a74eb65e3feb08fdd5a45fb5e1",
+      "expected_sequence_residues": 275,
+      "observed_sequence_residues": 285,
+      "status": "EXPECTED_SEQUENCE_MISMATCH"
+    }
+  ],
+  "full_boltz_parser_executed": false,
+  "inference_runs": 0,
+  "limits": [
+    "Replays only the pinned loader's Gemmi PDB-to-mmCIF conversion, not parse_mmcif or parse_boltz_schema.",
+    "Full Boltz parsing additionally needs its dependencies and verified chemical-component cache.",
+    "The official polymer parser inserts absent atom slots and may swap arginine NH1/NH2 coordinates; processed features still require verification.",
+    "No actual query/template feature mapping or inference is claimed."
+  ],
+  "outputs_sha256": {
+    "3P0G_gemmi_converted.cif": "9d040eb14029987ac715075f92536454a2edf22030f8824c1fecdd4326e341a8",
+    "3P0G_missing_seqres.cif": "ebb5abf7488e9c6b309f4eb3340afffe476fcdde5588eef27fc53fd6dd470587",
+    "3P0G_missing_seqres.pdb": "de01a618a923ba25ad73ca39114d504774198095403c7d77ec2c66605f57c904",
+    "3P0G_unpadded_seqres.cif": "92f8b95a84d049e4eb7094f94cfb4bddb0d90ecf614eb8cc210691373e189fdb",
+    "3P0G_unpadded_seqres.pdb": "6175ee67a773364f89609fa93614ecc4021fbddbcad2c8ca8b76edf6e01b0937",
+    "5JQH_gemmi_converted.cif": "0aee02f4ce5707c0a1b0cb50e86def37706d975e3456677d2c1b7fbf3cd20abb",
+    "5JQH_missing_seqres.cif": "a4a5ab0bf5088f6e31fe23c24b53c64a854dfd7a8b72ebe502fe726cf51d62e8",
+    "5JQH_missing_seqres.pdb": "e5d68eeaf7e121c04741d401b0360886b02f68a7c60528319bb0df0495bd7140",
+    "5JQH_unpadded_seqres.cif": "9243c4f284594d695c69fd242460c4b57c39f46d569cd72b46df9fa10b19f7be",
+    "5JQH_unpadded_seqres.pdb": "f6b22634ba69682a2459ec7d82f7c3f1d888f5a74eb65e3feb08fdd5a45fb5e1"
+  }
+}
