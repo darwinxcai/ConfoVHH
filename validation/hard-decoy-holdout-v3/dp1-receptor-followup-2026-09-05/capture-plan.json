@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0",
+  "baseMainCommit": "6d0e0cb23b6670ddbd2328e97f39edc2881f712d",
+  "accessions": ["Q13258"],
+  "captureCount": 2,
+  "scopeReason": "Close the missing canonical DP1 profile in PR45 and include receptor-only 9UWD in a subsequent receptor review.",
+  "proteinEndpoint": "https://gpcrdb.org/services/protein/accession/Q13258/",
+  "residuesEndpointTemplate": "https://gpcrdb.org/services/residues/{entry_name}/",
+  "nextOfflineTasks": ["Compare DP1 against all 17 frozen development receptor profiles", "Compare DP1 with already retained EP2/EP4 canonical profiles and retain all 28 same-DP1 entry pairs"],
+  "authority": "Sequence review only; no formal graph, eligibility, exclusion or whole-census authority."
+}
