@@ -1,0 +1,179 @@
+{
+  "retrospective_development_only": true,
+  "completed_models": 165,
+  "jobs": 33,
+  "references": {
+    "3P0G": 45,
+    "4MQS": 30,
+    "5C1M": 30,
+    "5JQH": 60
+  },
+  "binary_0p23_crossings": 0,
+  "quality_bin_changes": 17,
+  "quality_bin_changes_by_reference": {
+    "4MQS": 17
+  },
+  "official_quality_counts": {
+    "acceptable": 15,
+    "incorrect": 75,
+    "medium": 70,
+    "high": 5
+  },
+  "max_absolute_score_change": 0.08200025536890843,
+  "legacy_threshold_warning": "The old custom scores were not standard DockQ. Applying DockQ bins to them here is only a numerical comparison of earlier labels, not endorsement of those labels.",
+  "changed_bins": [
+    {
+      "job": "4MQS_default_complex_seed1",
+      "model": "0",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.855,
+      "official_DockQ": 0.781202213389955,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_default_complex_seed1",
+      "model": "3",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.852,
+      "official_DockQ": 0.7747646445178176,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_default_complex_seed1",
+      "model": "4",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.801,
+      "official_DockQ": 0.7419342079061666,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_default_complex_seed2",
+      "model": "0",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.846,
+      "official_DockQ": 0.7724071798095623,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_default_complex_seed2",
+      "model": "1",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.8,
+      "official_DockQ": 0.7382869314387207,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_default_complex_seed2",
+      "model": "2",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.859,
+      "official_DockQ": 0.7769997446310916,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_default_complex_seed3",
+      "model": "1",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.834,
+      "official_DockQ": 0.769544614159138,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_default_complex_seed3",
+      "model": "4",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.843,
+      "official_DockQ": 0.783996471349163,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed1",
+      "model": "1",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.849,
+      "official_DockQ": 0.780653378240741,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed1",
+      "model": "2",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.831,
+      "official_DockQ": 0.7678669669463604,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "model": "0",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.833,
+      "official_DockQ": 0.7691456688125576,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "model": "1",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.831,
+      "official_DockQ": 0.7656925661112245,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "model": "2",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.831,
+      "official_DockQ": 0.7700174238963525,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "model": "3",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.817,
+      "official_DockQ": 0.7544839591143329,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed3",
+      "model": "1",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.821,
+      "official_DockQ": 0.7622651526215917,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed3",
+      "model": "3",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.834,
+      "official_DockQ": 0.7679302701825043,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed3",
+      "model": "4",
+      "reference": "4MQS",
+      "legacy_custom_score": 0.843,
+      "official_DockQ": 0.7891123332725952,
+      "legacy_threshold_bin_for_comparison_only": "high",
+      "official_DockQ_quality": "medium"
+    }
+  ]
+}

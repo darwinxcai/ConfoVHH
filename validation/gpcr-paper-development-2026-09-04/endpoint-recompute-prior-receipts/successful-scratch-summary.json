@@ -1,0 +1,36 @@
+{
+  "bioMmcifDictionaryParserSha256": "0b418606f5fea90a4841f54b9415ebd7351677f0a670c55e9c4ec4aaf72a3d8a",
+  "biopythonVersion": "1.88",
+  "createdAtUnix": 1788567162.5317001,
+  "dataRole": "independent-recomputation-of-supplied-retrospective-coordinates",
+  "independentBiologicalValidation": false,
+  "interpretation": "Confirms reproduction of the declared coarse endpoint measurement from retained coordinates. Does not independently validate generic-position assignments or establish full receptor state, ligand dependence, or binding.",
+  "maxAbsoluteDifferenceFromRoundedSourceAngstrom": 0.0004986129292490205,
+  "method": "Unique receptor chain with one D[RK]Y and one [CTS]W[A-Z]P motif; sequence matched to one submitted protein. C-alpha Euclidean distance from R/K in D[RK]Y to residue sixteen sequence positions before the motif proline. Residues ordered by mmCIF label_seq_id. Selected endpoint alpha carbons must each have exactly one conformer; non-endpoint alternate conformers do not affect the measurement. No supplied analysis module imported.",
+  "missingRawModelsUnverified": 105,
+  "modelsMatchingPublished0_001AngstromPrecision": 355,
+  "nativeDistancesAngstrom": {
+    "3P0G": 14.130493303490859,
+    "3UON": 8.503402260272061,
+    "4DKL": 6.467938234089748,
+    "4MQS": 13.90015309268211,
+    "5C1M": 12.938588060526543,
+    "5JQH": 8.071600460875151
+  },
+  "outputSha256": {
+    "per_model.csv": "b5fb7a7bc0b5fd723903c436c15134a5acbe5ac133b53b1d06253bf2b6fff878",
+    "per_model.jsonl": "74e4dde341ec5a4c34f618a467c6a0e39faa7402db474ae30d44e92f9f68a81f",
+    "reference_measurements.json": "7a2b189a49721c842f280abb131cd52a59cb06185098e70d12655345a55ea090"
+  },
+  "priorAttempt": "independent_tm3_tm6_v1/failure.json records an overly broad native alternate-conformer guard; no endpoint definition or data inclusion was changed.",
+  "python": "3.12.13 (main, Aug  7 2026, 02:25:39) [Clang 22.1.3 ]",
+  "rawJobs": 71,
+  "rawModelsRecomputed": 355,
+  "rawRoot": "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY",
+  "recomputedReferenceStructures": 6,
+  "reviewedCognateModelsRecomputed": 165,
+  "scriptSha256": "34ab888a664e8b407252c662d14ed9c375783db7909b57f892c1d84fb52748a4",
+  "sourceS2Sha256": "8a53fdab4034f551a63bdeb3fcb6685f5e5829b790f05a1dd2a149c5ae7137ca",
+  "sourceS5Sha256": "6bc9b0003d73ddd7ea90ac3fc24ddc0435cbd34b4d0fc0c3a7109c423562d8b7",
+  "status": "COMPLETE"
+}

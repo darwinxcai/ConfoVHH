@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "scope": "development_only",
+  "status": "BLOCKED_PENDING_REAL_INPUTS_AND_PINS",
+  "source_bundle_sha256": "2c3371ad78b08316a4111ac31082d815691b851c06417c06fef65005ebf8833a",
+  "job_manifest_sha256": "57d8b54c151ecbdcf9814f0f3b94fb6cb19c92476563f3aa03b373c94ed0387c",
+  "runner_sha256": "5210a960ac5d402cd1283430311516fef568b7718afe1ee708fa59e9a037a4cf",
+  "jobs": 92,
+  "planned_models": 460,
+  "distinct_sequences": 13,
+  "template_accessions": 34,
+  "verification": {
+    "offline_python_tests": 14,
+    "offline_python_tests_passed": 14,
+    "unconfigured_readiness_exit_code": 1,
+    "unconfigured_readiness_error": "missing artifact record",
+    "gpu_inference_runs": 0,
+    "msa_fetches": 0,
+    "model_or_template_downloads": 0,
+    "real_boltz_parser_validation": "not_performed",
+    "real_inference_smoke_test": "not_performed",
+    "completion_includes_stdout_stderr_hashes": true,
+    "post_execution_source_and_runtime_revalidation": true
+  },
+  "blockers": [
+    "Explicit inspected Boltz/Python/source, checkpoint and complete pre-staged cache pins",
+    "Local hashed A3M files with sequence-matched queries and generation provenance for required sequences",
+    "Template coordinate files matching imported source SHA-256 and byte counts",
+    "Actual template-chain selections and parsed residue-alignment evidence for each template-enabled job",
+    "Real end-to-end single-job pilot after prerequisites are satisfied"
+  ],
+  "comparison_limit": "Accession matching does not establish identical template features, MSAs or paired random seeds across AF3 and Boltz.",
+  "scientific_scoring": "Not implemented here; no legacy custom DockQ values treated as standard DockQ.",
+  "remaining_execution_integrity_limit": "Transient artifact changes restored between preflight and post-run checks are not detectable; immutable runtime/input storage is required to eliminate this time-of-check/time-of-use risk."
+}

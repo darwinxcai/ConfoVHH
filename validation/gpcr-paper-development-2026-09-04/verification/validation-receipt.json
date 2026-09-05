@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETE",
+  "date": "2026-09-05",
+  "analysis_base_commit": "5c913b6178adf0e71379e1881476e268c16ada1c",
+  "integrated_upstream_commit": "4e993cb562fa626f625048dcf92d5f860090d0ac",
+  "production_code_changed_by_this_work": false,
+  "full_release_gate": {
+    "exit_code": 0,
+    "node_tests_passed": 642,
+    "node_tests_failed": 0,
+    "adversarial_suites_passed": 33,
+    "release_artifact_smoke": "PASS",
+    "scope": "Started on analysis base; subsequent upstream PR41/42 files are unrelated census work. Production lib and dependency files are identical between these heads. Newly added GPCR wrappers also tested after final edits."
+  },
+  "final_focused_gate": {
+    "exit_code": 0,
+    "node_tests_passed": 27,
+    "underlying_gpcr_tests": 65,
+    "scoped_eslint": "PASS"
+  },
+  "official_scoring": {
+    "models": 165,
+    "failures": 0,
+    "native_control_pairs": 4,
+    "api_cli_prediction_pairs": 5
+  },
+  "confovhh_audit": {
+    "models": 165,
+    "jobs": 33,
+    "failures": 0
+  },
+  "endpoint_recomputation": {
+    "models": 355,
+    "precision_A": 0.001,
+    "matched": 355
+  },
+  "paper_build": {
+    "exit_code": 0,
+    "final_marker": "GPCR PAPER EVIDENCE BUILD OK",
+    "plotted_measured_models": 165,
+    "visual_inspection": "PNG inspected: legible labels, no clipping, all measured rows counted by figure receipt"
+  },
+  "logs_sha256": {
+    "focused-tests.log": "8d05a5f199698fb981eb44a4e101d138b5a880f7294503cfed7af254a7de0cdd",
+    "paper-build.log": "485796a253456138e9e2357097dadb9e0f23729602715d5023207d4f12b3d619",
+    "release-gate.log": "eb73a3314a18c5850350a6f3f836e49059890d60b55f29b012978db755a92001",
+    "scoped-lint.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "limitations": [
+    "No full PAE matrices",
+    "85 cognate raw models missing",
+    "No Boltz inference",
+    "Retrospective development only; no new held-out accuracy claim"
+  ]
+}

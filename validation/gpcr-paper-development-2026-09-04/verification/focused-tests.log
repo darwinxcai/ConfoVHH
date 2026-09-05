@@ -1,0 +1,35 @@
+✔ auditor validates reviewed cognate plans without depending on row order (2.336741ms)
+✔ auditor rejects controls, unreviewed references and wrong source request identities (1.599394ms)
+✔ auditor rejects duplicate records, byte aliases, partial five-model jobs and wrong filenames (1.512633ms)
+✔ auditor requires consistent reviewed receptor and VHH maps and excludes frozen data (0.870589ms)
+✔ a consistently swapped review map cannot bypass exact original receptor/VHH sequence checks (0.710357ms)
+✔ changed model bytes stop before production analysis (10.335382ms)
+✔ full-data PAE cannot be silently ignored or replaced with summary confidence (5.557712ms)
+✔ failed audit preserves a failed receipt and refuses to reuse its output directory (84.522595ms)
+✔ compact exports use unchanged tier-first ranking and preserve source hash and recurrence identity (1.424068ms)
+✔ partial production results or chain-map disagreements cannot produce successful exports (6.955921ms)
+✔ development Boltz runner rejects incomplete, mismatched, and tampered artifacts (528.948507ms)
+✔ development intake binds all 92 requests to 460 unique model records and separates reference eligibility (12.186206ms)
+✔ request chain roles preserve the original binder-first order and reversed-order rescue/controls (6.028967ms)
+✔ rejects duplicate models and incomplete ledgers instead of accepting total-count-only evidence (10.700826ms)
+✔ rejects wrong-job request filenames, seed metadata and cross-reference metric reassignment (9.545365ms)
+✔ rejects a noncognate binder disguised as a cognate condition (3.368595ms)
+✔ rejects within-condition receptor sequence drift and mismatched template policies (6.859476ms)
+✔ legacy scores never become official DockQ, standard quality labels, or validation claims (12.538951ms)
+✔ raw inventory is opt-in and an empty directory cannot certify any model or job (24.338252ms)
+✔ partial and empty coordinate files remain explicit and hashes do not certify biological identity (12.048258ms)
+✔ five nonempty filenames still require coordinate/reference identity review before scoring (11.132209ms)
+✔ recovered request metadata must match the original request bytes (7.441687ms)
+✔ ambiguous copies of the same job/model and symlink traversal fail closed (15.639169ms)
+✔ frozen holdout trees are outside the permitted development inventory (7.467516ms)
+✔ reports are deterministic under source order changes and across writes (22.421668ms)
+✔ official DockQ adapter rejects invalid inputs and preserves partial failure evidence (136.605447ms)
+✔ development summary joins identities, rejects corruption, and preserves complete groups and ties (101.467815ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 609.244482

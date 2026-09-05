@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "confovhh.gpcr-portable-review-plan.v1",
+  "sourceAbsolutePlanSha256": "76aa6b8dd5b2c3e9f3044fa6f82f7dbca8dcb30439c6a76944dee2058c05a71b",
+  "portablePlanSha256": "58f41b883e209fd91ba4103f9ae8085d23a5355852d7d6624d856b0743f71d13",
+  "dataRoot": "Use --data-root=<recovered VERIFY directory>; all plan paths are relative to that directory.",
+  "models": 165,
+  "jobs": 33,
+  "transformation": "Only modelPath, nativePath and requestPath converted from absolute paths to VERIFY-relative paths. Reviewed hashes, identities and mapping evidence unchanged."
+}
