@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-06",
+  "incidentClass": "INCIDENTAL_RETAINED_SOURCE_TEXT_RENDERING",
+  "trigger": "A broad local text search over an already-retained validation package printed raw mGlu5 article XML beyond the intended search result. No new network source or coordinate file was opened.",
+  "priorExposureRecord": {
+    "path": "validation/hard-decoy-holdout-v3/global-text-priority-review-2026-09-04/exposure-scope.json",
+    "sha256": "06454094fa17d299d78ba9e752cfaa342dd0662d390132340a8a5e5e2cab0e28",
+    "familyAlreadyNonCleanBlind": true
+  },
+  "affectedSource": {
+    "doi": "10.1038/s41586-019-0881-4",
+    "pdbIds": [
+      "6N4X",
+      "6N4Y",
+      "6N50",
+      "6N51",
+      "6N52"
+    ]
+  },
+  "exposureCategories": {
+    "figureCaptionsRead": true,
+    "qualitativeStructuralNarrativeRead": true,
+    "qualitativeContactRegionNarrativeRead": true,
+    "mutationAndStructuralInterpretationNarrativeRead": true,
+    "actualResiduePairAssignmentsRead": false,
+    "nativeCoordinateValuesRead": false,
+    "nativeRelativePoseInspected": false,
+    "structuralImagesRendered": false,
+    "structuralContactTablesRead": false,
+    "dockqCapriLabelsRead": false,
+    "predictionOutputsRead": false,
+    "benchmarkPerformanceResultsRead": false
+  },
+  "useRestrictions": {
+    "copiedRestrictedProseIntoAddendum": false,
+    "usedForEligibility": false,
+    "usedForBindingRole": false,
+    "usedForGraphEdge": false,
+    "usedForNoEdgeDecision": false,
+    "usedForComponentCount": false
+  },
+  "effect": {
+    "familyAlreadyRequiredExposureAdjudication": true,
+    "cleanBlindClaimPermitted": false,
+    "formalExposureClearanceGranted": false,
+    "scientificDispositionChanged": false,
+    "eligibleComponentCountChanged": false,
+    "wholeCensusBoundEstablished": false,
+    "targetFreezePermitted": false,
+    "note": "The incident expands the preserved prose-exposure scope for an already non-clean-blind family. It supplies no scientific evidence or decision authority."
+  }
+}
+
