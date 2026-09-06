@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedBy": "scripts/hard-decoy-v3/adjudicate-prostanoid-roles.mjs",
+  "inputs": [
+    {
+      "path": "validation/hard-decoy-holdout-v3/prostanoid-source-review-2026-09-05/source-review.json",
+      "bytes": 112725,
+      "sha256": "a3711c5ec52a423a5af1aa8175b29614542985cfd506cfee0c907d4b00e21e5a"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prostanoid-source-review-2026-09-05/allowed-sections.json",
+      "bytes": 31797,
+      "sha256": "e2efb6bf9e0a724b939faf9b6e40d036820294f627aacfee4c98b19da9b258cb"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prostanoid-source-review-2026-09-05/development-review.json",
+      "bytes": 610430,
+      "sha256": "3558bf29be20a65a5824a4afca50962d7eb1fe5b012755c04c7d5ae802dea4cb"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/dp1-receptor-followup-2026-09-05/summary.json",
+      "bytes": 1133,
+      "sha256": "426534ee487411ad126b2fe465ba0697ba3354e8d2d2b7e52b4cea05abca53b7"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/auxiliary-remainder-source-review-2026-09-04/source-reviews.json",
+      "bytes": 123944,
+      "sha256": "17e89335abe2b1539b515b3171c15efd4f532801db2e4c1a36f4515e7e6c4a5a"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/nb35-source-review-2026-09-04/source-reviews.json",
+      "bytes": 265730,
+      "sha256": "a4b54744bc101718d05eb96a50d65c2195ae95ae1398296fcf7e99d8606839c4"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/candidate-vhh-profiles.jsonl",
+      "bytes": 415683,
+      "sha256": "58d435ce89bd45c997aa89f0816340c273d24f5474e2d38c2bd2c85fce3cc39d"
+    }
+  ],
+  "outputSummary": {
+    "reviewedEntryCount": 12,
+    "reviewedPolymerCount": 47,
+    "entryAuxiliaryExclusionCount": 9,
+    "entryNoDirectTargetExclusionCount": 3,
+    "boundedEntryExclusionCount": 12,
+    "entryDispositionPendingCount": 0,
+    "sourceGroupIndependentComponentIncrement": 0,
+    "newFormallyClearedIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  }
+}
