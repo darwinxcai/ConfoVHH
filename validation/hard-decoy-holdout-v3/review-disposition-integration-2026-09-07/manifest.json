@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "package": "validation/hard-decoy-holdout-v3/review-disposition-integration-2026-09-07",
+  "inputs": {
+    "validation/hard-decoy-holdout-v3/prelabel-census-draft/disposition-contract.json": "805136877bd727ca22aae0c13284cfd4fd8aca5e8b2f868fe619d320e0c1f039",
+    "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/entry-dispositions.jsonl": "1687775f2495447475dbffccdc27b8ded042d7c235669635672b6d3afe61e894",
+    "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/dispositions.jsonl": "9743428646cf523c453940fede9d3e69388a42bfdadb5bf1e84e81bad8b1e24a",
+    "validation/hard-decoy-holdout-v3/no-direct-signal-role-audit-2026-09-04/source-backed-exclusions.jsonl": "6454d97cd8faa49108979b3ae1b64c8460f40e17d51cf41093c0aca59dc15848",
+    "validation/hard-decoy-holdout-v3/direct-signal-salvage-bound-2026-09-04/source-backed-exclusions.jsonl": "612330ba1c81ac8baf2e8aeeeef0de4c691030372e359fbde70718df73fbedd9",
+    "validation/hard-decoy-holdout-v3/auxiliary-remainder-source-review-2026-09-04/source-reviews.json": "17e89335abe2b1539b515b3171c15efd4f532801db2e4c1a36f4515e7e6c4a5a",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-priority-review-2026-09-04/source-reviews.json": "b2cc22d3261dfbeb861af09ed1f5e65fe3ba168063ba4deee61e6eca49610f9d",
+    "validation/hard-decoy-holdout-v3/prostanoid-role-adjudication-2026-09-06/source-reviews.json": "96f082310dc08afc727e0770f901f81e85c4e70dfa6dc417593e101f371c7853",
+    "validation/hard-decoy-holdout-v3/gpr1-nb32-entity-adjudication-2026-09-07/entity-adjudications.json": "895c45b71de637aae8cd52b649dfc332c153256a43c3cf49d302e65feb813f8d",
+    "validation/hard-decoy-holdout-v3/gcgr-nb32-role-adjudication-2026-09-07/source-reviews.json": "cf19c49067e15df4606f72ab11a279b3e6ee53faca64dc032ffbf6ff462e70be"
+  },
+  "deterministicOfflineReplay": true,
+  "networkAccessRequiredForVerification": false,
+  "masterDispositionLedgerRewritten": false,
+  "outputFiles": [
+    "README.md",
+    "contract-dispositions.jsonl",
+    "corroborations.jsonl",
+    "entity-only-adjudications.jsonl",
+    "legacy-code-normalizations.jsonl",
+    "manifest.json",
+    "normalization-backlog.jsonl",
+    "summary.json"
+  ]
+}
