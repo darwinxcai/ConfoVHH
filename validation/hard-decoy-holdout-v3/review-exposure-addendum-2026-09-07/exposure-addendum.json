@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-07",
+  "incidentClass": "INCIDENTAL_WEB_SEARCH_RESULT_RENDERING",
+  "incidents": [
+    {
+      "incidentId": "AMYLIN_NB35_RESULTS_PROSE",
+      "trigger": "A narrow primary-source lookup intended to recover preparation and deposition evidence rendered publisher-indexed and mirror-hosted structural Results prose in the search response. The publisher page itself remained behind an automated-browser verification loop.",
+      "affectedSource": {
+        "doi": "10.1126/science.abm9609",
+        "pdbIds": [
+          "7TYF",
+          "7TYH",
+          "7TYI",
+          "7TYL",
+          "7TYN",
+          "7TYO",
+          "7TYW",
+          "7TYX",
+          "7TYY",
+          "7TZF"
+        ]
+      },
+      "priorExposureRecord": null,
+      "exposureCategories": {
+        "structuralResultsProseRead": true,
+        "figureCaptionsRead": false,
+        "qualitativeStructuralNarrativeRead": true,
+        "qualitativeContactRegionNarrativeRead": false,
+        "actualResiduePairAssignmentsRead": false,
+        "nativeCoordinateValuesRead": false,
+        "nativeRelativePoseInspected": false,
+        "structuralImagesRendered": false,
+        "structuralContactTablesRead": false,
+        "dockqCapriLabelsRead": false,
+        "predictionOutputsRead": false,
+        "benchmarkPerformanceResultsRead": false
+      },
+      "effect": {
+        "familyPreviouslyRecordedNonCleanBlind": false,
+        "familyNowRequiresExposureAdjudication": true,
+        "sourceReviewAdvanced": false
+      }
+    },
+    {
+      "incidentId": "ADGRV1_SEARCH_SNIPPET_CONTACT_AND_PREDICTION_PROSE",
+      "trigger": "A narrow search for the unresolved ADGRV1 primary deposition and construct attribution returned an overbroad third-party full-text snippet containing structural contact prose, residue-pair assignments and prediction-output prose. No model, map, image, coordinate file or contact table was requested or opened.",
+      "affectedSource": {
+        "doi": "10.64898/2026.03.05.709805",
+        "pdbIds": [
+          "9FTE"
+        ]
+      },
+      "priorExposureRecord": {
+        "path": "validation/hard-decoy-holdout-v3/adgrv1-source-followup-2026-09-04/exposure-scope.json",
+        "sha256": "1e1ac56c38aff7157c5ab006819a67c459dc99b1eb5de471ecad450150da315e",
+        "familyAlreadyNonCleanBlind": true
+      },
+      "exposureCategories": {
+        "structuralResultsProseRead": true,
+        "figureCaptionsRead": false,
+        "qualitativeStructuralNarrativeRead": true,
+        "qualitativeContactRegionNarrativeRead": true,
+        "actualResiduePairAssignmentsRead": true,
+        "nativeCoordinateValuesRead": false,
+        "nativeRelativePoseInspected": false,
+        "structuralImagesRendered": false,
+        "structuralContactTablesRead": false,
+        "dockqCapriLabelsRead": false,
+        "predictionOutputsRead": true,
+        "benchmarkPerformanceResultsRead": false
+      },
+      "effect": {
+        "familyPreviouslyRecordedNonCleanBlind": true,
+        "familyNowRequiresExposureAdjudication": true,
+        "sourceReviewAdvanced": false
+      }
+    }
+  ],
+  "useRestrictions": {
+    "copiedRestrictedProseIntoAddendum": false,
+    "usedForEligibility": false,
+    "usedForBindingRole": false,
+    "usedForConstructAdjudication": false,
+    "usedForGraphEdge": false,
+    "usedForNoEdgeDecision": false,
+    "usedForComponentCount": false
+  },
+  "effect": {
+    "cleanBlindClaimPermittedForAffectedEntries": false,
+    "formalExposureClearanceGranted": false,
+    "scientificDispositionChanged": false,
+    "eligibleComponentCountChanged": false,
+    "wholeCensusBoundEstablished": false,
+    "targetFreezePermitted": false,
+    "note": "The two incidents are quarantined as exposure records only. They supply no scientific evidence or decision authority; prior and newly required exposure reviews remain open."
+  }
+}

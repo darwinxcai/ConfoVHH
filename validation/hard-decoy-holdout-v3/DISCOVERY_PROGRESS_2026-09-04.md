@@ -123,6 +123,12 @@ The [review-exposure addendum](review-exposure-addendum-2026-09-06/README.md) pr
 
 No coordinates, relative poses, structural images, structural contact tables, actual residue-pair assignments, DockQ/CAPRI labels, prediction outputs or performance results were accessed. No scientific disposition or independent-component count changes; no whole-census bound is established; target freeze remains blocked.
 
+### 7 September web-search exposure addendum
+
+The [second review-exposure addendum](review-exposure-addendum-2026-09-07/README.md) quarantines two overbroad web-search returns. A narrow amylin/Nb35 lookup rendered structural Results prose for ten entries, creating a new exposure-review requirement for that family. A narrow ADGRV1 attribution lookup rendered third-party contact, residue-pair and prediction-output prose for 9FTE, extending its already active exposure caveat. The exposed prose is not copied into the durable record and supplies no scientific authority.
+
+No coordinate or map file, structural image, contact table, native relative pose, DockQ/CAPRI label, benchmark output or model artifact was requested or inspected. Neither source review advanced; no eligibility, role, construct, graph or component decision changes. The formally cleared independent eligible-group count remains zero and target freeze remains blocked.
+
 ## 7 September continuation: GPR1/Nb32 candidate entities
 
 The [GPR1/Nb32 entity adjudication](gpr1-nb32-entity-adjudication-2026-09-07/README.md) converts the retained primary Nb32 role evidence into six bounded candidate-entity dispositions. Each deposited entity is explicitly named Nanobody 32 and contains the exact published 114-residue beta-arrestin-reagent sequence followed by six histidines. These facts jointly support `EXCLUDE_CANDIDATE_ENTITY_AUXILIARY_BINDER`; sequence identity alone remains nonauthoritative.
