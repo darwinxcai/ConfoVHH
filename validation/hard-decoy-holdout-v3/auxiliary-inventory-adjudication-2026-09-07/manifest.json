@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "package": "validation/hard-decoy-holdout-v3/auxiliary-inventory-adjudication-2026-09-07",
+  "input": {
+    "path": "validation/hard-decoy-holdout-v3/auxiliary-remainder-source-review-2026-09-04/source-reviews.json",
+    "sha256": "17e89335abe2b1539b515b3171c15efd4f532801db2e4c1a36f4515e7e6c4a5a"
+  },
+  "deterministicOfflineReplay": true,
+  "networkAccessRequiredForVerification": false,
+  "outputFiles": [
+    "README.md",
+    "manifest.json",
+    "source-reviews.json"
+  ]
+}

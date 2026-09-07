@@ -12,9 +12,9 @@ const parseJsonl = text => text.trimEnd().split("\n").map(line => JSON.parse(lin
 test("the review overlay integrates current contract dispositions without opening the freeze", async () => {
   assert.deepEqual(await verifyReviewDispositionIntegration(ROOT), {
     verified: true,
-    contractDispositionEntryCount: 66,
-    historicalPendingRowsWithContractDispositionOverlay: 19,
-    historicalRowsRemainingPendingIfOverlayApplied: 253,
+    contractDispositionEntryCount: 70,
+    historicalPendingRowsWithContractDispositionOverlay: 23,
+    historicalRowsRemainingPendingIfOverlayApplied: 249,
     normalizationBacklogEntryCount: 6,
     entityOnlyAdjudicationCount: 6,
     conflictingEntryCount: 0,
@@ -26,7 +26,7 @@ test("the review overlay integrates current contract dispositions without openin
 test("every integrated entry has one frozen contract code and no conflicting source review", async () => {
   const contract = JSON.parse(await readFile(path.join(ROOT, "validation/hard-decoy-holdout-v3/prelabel-census-draft/disposition-contract.json"), "utf8"));
   const rows = parseJsonl(await readFile(path.join(PACKAGE, "contract-dispositions.jsonl"), "utf8"));
-  assert.equal(rows.length, 66);
+  assert.equal(rows.length, 70);
   assert.equal(new Set(rows.map(row => row.pdbId)).size, rows.length);
   assert.ok(rows.every(row => Object.hasOwn(contract.dispositionCodes, row.dispositionCode)));
   assert.ok(rows.every(row => row.dispositionCode !== "PENDING_REQUIRED_METADATA"));
