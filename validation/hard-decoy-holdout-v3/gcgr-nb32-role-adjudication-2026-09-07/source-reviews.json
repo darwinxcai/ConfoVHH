@@ -1,0 +1,354 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-07",
+  "scope": "Bounded source-and-inventory disposition review of GCGR entries 8JRU and 8JRV; not a whole-census bound or master-ledger rewrite.",
+  "input": {
+    "path": "validation/hard-decoy-holdout-v3/gpr1-nb32-source-review-2026-09-04/source-review.json",
+    "sha256": "4d7d0d27b9c5189a34403fbdda0157d46432cfd2d04f69269abd6ac779b79439"
+  },
+  "evidenceBoundary": "Previously retained primary construct/sample Methods, exact deposition statement, complete polymer inventories and primary Nb32 role/sequence evidence only.",
+  "authority": {
+    "boundedEntryDispositionAuthority": true,
+    "formalEligibilityAuthority": false,
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "masterDispositionLedgerRewritten": false,
+    "wholeCensusDecisionMade": false,
+    "targetFreezePermitted": false
+  },
+  "reviews": [
+    {
+      "pdbId": "8JRU",
+      "primaryDoi": "10.1038/s41586-023-06420-x",
+      "primaryPmid": "37558880",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 3,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "8JRU_1",
+          "entityId": "1",
+          "description": "HA signal peptide,HPC4 purification tag,Glucagon receptor,C-terminal tail of Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 478,
+          "sequenceSha256": "99c431f8e4d0cd44e9aa8640ac404e5b0d2d8d91ddb167c864425ccc094d84b7",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P03435",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P04070",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P47871",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRU_2",
+          "entityId": "2",
+          "description": "Beta-arrestin 1 and single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "B",
+            "C",
+            "D"
+          ],
+          "authAsymIds": [
+            "A",
+            "H",
+            "L"
+          ],
+          "sequenceLength": 627,
+          "sequenceSha256": "19192b4099a32225a3bfb0de73b4b8d281ad81c2e9e4b53344c707c797c54e48",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P17870",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRU_3",
+          "entityId": "3",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 126,
+          "sequenceSha256": "7bf5eda87e32452128db433cf2dd583f9f2fad528a8ef934f7ba4c6770cfa80f",
+          "referenceSequences": []
+        }
+      ],
+      "vhhCandidate": {
+        "rcsbId": "8JRU_3",
+        "entityId": "3",
+        "description": "Nanobody 32",
+        "labelAsymIds": [
+          "E"
+        ],
+        "authAsymIds": [
+          "B"
+        ],
+        "sequenceLength": 126,
+        "sequenceSha256": "7bf5eda87e32452128db433cf2dd583f9f2fad528a8ef934f7ba4c6770cfa80f",
+        "referenceSequences": []
+      },
+      "roleEvidence": {
+        "classification": "PRIMARY_SAMPLE_METHODS_PLUS_NAMED_ENTITY_AND_EXACT_PUBLISHED_NB32_CORE",
+        "primarySampleFact": "The entry-linked primary preparation adds Nb32 to the GCGR/V2R-tail–arrestin sample and reports an arrestin/scFv30 expression fusion.",
+        "independentlySourceReviewedRole": "Nb32 recognizes beta-arrestin and is an auxiliary arrestin reagent.",
+        "identityEvidence": {
+          "metadataDescriptionMatchesNamedReagent": true,
+          "exactPublishedCoreLength": 114,
+          "exactPublishedCoreSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+          "depositedPrefix": "MA",
+          "depositedSuffix": "HHHHHHEPEA",
+          "wholeExpressionConstructIdentical": false,
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "coPresentAntibodyFormat": {
+        "entity": {
+          "rcsbId": "8JRU_2",
+          "entityId": "2",
+          "description": "Beta-arrestin 1 and single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "B",
+            "C",
+            "D"
+          ],
+          "authAsymIds": [
+            "A",
+            "H",
+            "L"
+          ],
+          "sequenceLength": 627,
+          "sequenceSha256": "19192b4099a32225a3bfb0de73b4b8d281ad81c2e9e4b53344c707c797c54e48",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P17870",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        "classification": "SOURCE_REPORTED_BETA_ARRESTIN_SCFV30_EXPRESSION_FUSION_NOT_VHH_TARGET",
+        "directReceptorVhhTargetEstablished": false
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The only deposited VHH candidate is source-supported auxiliary Nb32; the other antibody-format sequence is a source-reported beta-arrestin/scFv30 fusion rather than a deposited direct receptor–VHH target.",
+      "unresolvedConstructDiscrepancy": "The exact Nb32 core is established, but the primary Methods tag/cleavage description does not reconcile the complete deposited prefix and suffix.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false
+    },
+    {
+      "pdbId": "8JRV",
+      "primaryDoi": "10.1038/s41586-023-06420-x",
+      "primaryPmid": "37558880",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 4,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbId": "8JRV_1",
+          "entityId": "1",
+          "description": "HA signal peptide,HPC4 purification tag,Glucagon receptor,C-terminal tail of Vasopressin V2 receptor",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 476,
+          "sequenceSha256": "9cef01743e4a3d2dafed812e7b38dafbd056ad1d394543ac5f7422999ac51f62",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P03435",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P04070",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P30518",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P47871",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRV_2",
+          "entityId": "2",
+          "description": "Glucagon",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 29,
+          "sequenceSha256": "e969a8e2244b7d17b982c387fc60e5491bd028fa13b5dc008cbb92b2721a143f",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01275",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRV_3",
+          "entityId": "3",
+          "description": "Beta-arrestin 1 and single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "C",
+            "D",
+            "E"
+          ],
+          "authAsymIds": [
+            "A",
+            "H",
+            "L"
+          ],
+          "sequenceLength": 627,
+          "sequenceSha256": "19192b4099a32225a3bfb0de73b4b8d281ad81c2e9e4b53344c707c797c54e48",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P49407",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8JRV_4",
+          "entityId": "4",
+          "description": "Nanobody 32",
+          "labelAsymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 126,
+          "sequenceSha256": "7bf5eda87e32452128db433cf2dd583f9f2fad528a8ef934f7ba4c6770cfa80f",
+          "referenceSequences": []
+        }
+      ],
+      "vhhCandidate": {
+        "rcsbId": "8JRV_4",
+        "entityId": "4",
+        "description": "Nanobody 32",
+        "labelAsymIds": [
+          "F"
+        ],
+        "authAsymIds": [
+          "B"
+        ],
+        "sequenceLength": 126,
+        "sequenceSha256": "7bf5eda87e32452128db433cf2dd583f9f2fad528a8ef934f7ba4c6770cfa80f",
+        "referenceSequences": []
+      },
+      "roleEvidence": {
+        "classification": "PRIMARY_SAMPLE_METHODS_PLUS_NAMED_ENTITY_AND_EXACT_PUBLISHED_NB32_CORE",
+        "primarySampleFact": "The entry-linked primary preparation adds Nb32 to the GCGR/V2R-tail–arrestin sample and reports an arrestin/scFv30 expression fusion.",
+        "independentlySourceReviewedRole": "Nb32 recognizes beta-arrestin and is an auxiliary arrestin reagent.",
+        "identityEvidence": {
+          "metadataDescriptionMatchesNamedReagent": true,
+          "exactPublishedCoreLength": 114,
+          "exactPublishedCoreSha256": "6e4950ddc5187ddeca645f7135ee8748f8a15feef96ce96797b98e0d9e17a35e",
+          "depositedPrefix": "MA",
+          "depositedSuffix": "HHHHHHEPEA",
+          "wholeExpressionConstructIdentical": false,
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "coPresentAntibodyFormat": {
+        "entity": {
+          "rcsbId": "8JRV_3",
+          "entityId": "3",
+          "description": "Beta-arrestin 1 and single-chain fragment variable 30 (scFv30)",
+          "labelAsymIds": [
+            "C",
+            "D",
+            "E"
+          ],
+          "authAsymIds": [
+            "A",
+            "H",
+            "L"
+          ],
+          "sequenceLength": 627,
+          "sequenceSha256": "19192b4099a32225a3bfb0de73b4b8d281ad81c2e9e4b53344c707c797c54e48",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P49407",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        "classification": "SOURCE_REPORTED_BETA_ARRESTIN_SCFV30_EXPRESSION_FUSION_NOT_VHH_TARGET",
+        "directReceptorVhhTargetEstablished": false
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The only deposited VHH candidate is source-supported auxiliary Nb32; the other antibody-format sequence is a source-reported beta-arrestin/scFv30 fusion rather than a deposited direct receptor–VHH target.",
+      "unresolvedConstructDiscrepancy": "The exact Nb32 core is established, but the primary Methods tag/cleavage description does not reconcile the complete deposited prefix and suffix.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false
+    }
+  ],
+  "summary": {
+    "reviewedEntryCount": 2,
+    "reviewedPolymerCount": 7,
+    "entryAuxiliaryExclusionCount": 2,
+    "entryDispositionPendingCount": 0,
+    "eligibleTargetIncrement": 0,
+    "independentEligibleComponentIncrement": 0,
+    "formallyClearedIndependentComponentCount": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  "unresolved": [
+    "Nb32 tag and processing-history discrepancies remain explicit but do not change the bounded auxiliary role.",
+    "Formal receptor, VHH and publication graph integration remains pending.",
+    "This two-entry result is not a whole-census completeness or component bound."
+  ]
+}
