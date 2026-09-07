@@ -122,3 +122,11 @@ Next executable work is to apply the same bounded source-and-inventory adjudicat
 The [review-exposure addendum](review-exposure-addendum-2026-09-06/README.md) preserves an additional incident in which a broad local search over already-retained source material printed mGlu5 figure-caption and qualitative structural/contact narrative. The affected five-entry source family was already explicitly non-clean-blind and awaiting exposure adjudication. This expands its recorded prose-exposure scope without supplying evidence or authority for eligibility, binder role, graph edges, no-edge decisions or component counting.
 
 No coordinates, relative poses, structural images, structural contact tables, actual residue-pair assignments, DockQ/CAPRI labels, prediction outputs or performance results were accessed. No scientific disposition or independent-component count changes; no whole-census bound is established; target freeze remains blocked.
+
+## 7 September continuation: GPR1/Nb32 candidate entities
+
+The [GPR1/Nb32 entity adjudication](gpr1-nb32-entity-adjudication-2026-09-07/README.md) converts the retained primary Nb32 role evidence into six bounded candidate-entity dispositions. Each deposited entity is explicitly named Nanobody 32 and contains the exact published 114-residue beta-arrestin-reagent sequence followed by six histidines. These facts jointly support `EXCLUDE_CANDIDATE_ENTITY_AUXILIARY_BINDER`; sequence identity alone remains nonauthoritative.
+
+All six whole GPR1 entries remain pending because their co-present scFv30 entities, primary sample Methods and construct histories are unresolved. A new direct Science-page request remained HTTP 403 and supplied no reproducibly captured Methods evidence. The access attempt also exposed secondary structural prose in search output; its categories and affected entries are preserved without using that prose as evidence. No coordinates, receptor–VHH relative poses, structural images, contact tables, labels or predictions were accessed.
+
+The packet accounts for all 29 polymers but rewrites no master ledger and issues no entry-level eligibility or formal graph decision. New eligible targets and independent components: zero. The formally cleared count remains zero, the whole-census upper bound remains unknown, and target freeze remains blocked.
