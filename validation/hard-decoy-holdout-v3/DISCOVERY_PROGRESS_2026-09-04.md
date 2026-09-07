@@ -130,3 +130,9 @@ The [GPR1/Nb32 entity adjudication](gpr1-nb32-entity-adjudication-2026-09-07/REA
 All six whole GPR1 entries remain pending because their co-present scFv30 entities, primary sample Methods and construct histories are unresolved. A new direct Science-page request remained HTTP 403 and supplied no reproducibly captured Methods evidence. The access attempt also exposed secondary structural prose in search output; its categories and affected entries are preserved without using that prose as evidence. No coordinates, receptor–VHH relative poses, structural images, contact tables, labels or predictions were accessed.
 
 The packet accounts for all 29 polymers but rewrites no master ledger and issues no entry-level eligibility or formal graph decision. New eligible targets and independent components: zero. The formally cleared count remains zero, the whole-census upper bound remains unknown, and target freeze remains blocked.
+
+### GCGR/Nb32 source-and-inventory disposition
+
+The [GCGR/Nb32 role adjudication](gcgr-nb32-role-adjudication-2026-09-07/README.md) closes two additional rows from the other-strata queue. The exact primary paper identifies 8JRU and 8JRV, reports a beta-arrestin/scFv30 expression fusion, and adds Nb32 to the GCGR/V2R-tail–arrestin preparation. In each complete deposited inventory, the sole VHH candidate is named Nanobody 32 and contains the exact independently source-reviewed 114-residue Nb32 core. Both entries therefore receive bounded `EXCLUDE_AUXILIARY_BINDER` dispositions.
+
+All seven polymers and the unresolved Nb32 tag/processing discrepancy remain preserved. Sequence identity alone is not role proof; no formal graph or master-ledger rewrite follows automatically. The two exclusions add zero eligible targets or independent components. The formally cleared count remains zero, the whole-census bound remains unknown, and target freeze remains blocked.

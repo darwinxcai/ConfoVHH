@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "package": "validation/hard-decoy-holdout-v3/gcgr-nb32-role-adjudication-2026-09-07",
+  "input": {
+    "path": "validation/hard-decoy-holdout-v3/gpr1-nb32-source-review-2026-09-04/source-review.json",
+    "sha256": "4d7d0d27b9c5189a34403fbdda0157d46432cfd2d04f69269abd6ac779b79439"
+  },
+  "outputFiles": [
+    "README.md",
+    "manifest.json",
+    "source-reviews.json"
+  ],
+  "deterministicOfflineReplay": true,
+  "networkAccessRequiredForVerification": false
+}
