@@ -18,6 +18,7 @@ const INPUTS = [
   ["validation/hard-decoy-holdout-v3/prostanoid-role-adjudication-2026-09-06/source-reviews.json", "96f082310dc08afc727e0770f901f81e85c4e70dfa6dc417593e101f371c7853"],
   ["validation/hard-decoy-holdout-v3/gpr1-nb32-entity-adjudication-2026-09-07/entity-adjudications.json", "895c45b71de637aae8cd52b649dfc332c153256a43c3cf49d302e65feb813f8d"],
   ["validation/hard-decoy-holdout-v3/gcgr-nb32-role-adjudication-2026-09-07/source-reviews.json", "cf19c49067e15df4606f72ab11a279b3e6ee53faca64dc032ffbf6ff462e70be"],
+  ["validation/hard-decoy-holdout-v3/auxiliary-inventory-adjudication-2026-09-07/source-reviews.json", "f779877aa448f0ac6de98b2d87fa1fc1c8cada41c68dda2abe7bc1e870c283b4"],
 ];
 const PENDING = "PENDING_REQUIRED_METADATA";
 const NORMALIZATION_RULES = new Map([
@@ -94,6 +95,7 @@ async function derive(repositoryRoot = ROOT) {
   const prostanoidPath = INPUTS[7][0];
   const gpr1Path = INPUTS[8][0];
   const gcgrPath = INPUTS[9][0];
+  const auxiliaryInventoryPath = INPUTS[10][0];
 
   const contract = JSON.parse(get(contractPath));
   const contractCodes = new Set(Object.keys(contract.dispositionCodes));
@@ -137,6 +139,11 @@ async function derive(repositoryRoot = ROOT) {
   const gcgr = JSON.parse(get(gcgrPath));
   assert.equal(gcgr.authority.boundedEntryDispositionAuthority, true);
   for (const row of gcgr.reviews) ingest(row.pdbId, row.entryDisposition, gcgrPath, row.dispositionReason);
+
+  const auxiliaryInventory = JSON.parse(get(auxiliaryInventoryPath));
+  assert.equal(auxiliaryInventory.authority.boundedEntryDispositionAuthority, true);
+  assert.equal(auxiliaryInventory.summary.entryAuxiliaryExclusionCount, 4);
+  for (const row of auxiliaryInventory.reviews) ingest(row.pdbId, row.entryDisposition, auxiliaryInventoryPath, row.dispositionReason);
 
   const conflicts = [...records.values()].filter(row => row.codes.size > 1);
   assert.deepEqual(conflicts, [], "Conflicting contract dispositions require manual adjudication");
@@ -214,11 +221,11 @@ async function derive(repositoryRoot = ROOT) {
     wholeCensusUpperBound: null,
     targetFreezePermitted: false,
   };
-  assert.equal(summary.contractDispositionEntryCount, 66);
+  assert.equal(summary.contractDispositionEntryCount, 70);
   assert.deepEqual(summary.contractDispositionCounts, {
     EXCLUDE_ANNOTATION_EPITOPE_LEAKAGE: 0,
     EXCLUDE_AMBIGUOUS_EVIDENCE: 0,
-    EXCLUDE_AUXILIARY_BINDER: 27,
+    EXCLUDE_AUXILIARY_BINDER: 31,
     EXCLUDE_ENGINEERED_EPITOPE_GRAFT: 3,
     EXCLUDE_FUSION_DOMINATED_INTERFACE: 4,
     EXCLUDE_NO_DIRECT_RECEPTOR_VHH_INTERFACE: 6,

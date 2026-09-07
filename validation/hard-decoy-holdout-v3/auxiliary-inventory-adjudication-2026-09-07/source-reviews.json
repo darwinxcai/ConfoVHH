@@ -1,0 +1,632 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-07",
+  "scope": "Bounded complete-inventory adjudication of 8JBG, 8XVJ, 8XVK and 8XVL; not a whole-census decision.",
+  "input": {
+    "path": "validation/hard-decoy-holdout-v3/auxiliary-remainder-source-review-2026-09-04/source-reviews.json",
+    "sha256": "17e89335abe2b1539b515b3171c15efd4f532801db2e4c1a36f4515e7e6c4a5a"
+  },
+  "authority": {
+    "boundedEntryDispositionAuthority": true,
+    "formalEligibilityAuthority": false,
+    "formalLeakageGraphAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "masterDispositionLedgerRewritten": false,
+    "wholeCensusDecisionMade": false,
+    "targetFreezePermitted": false
+  },
+  "reviews": [
+    {
+      "pdbId": "8JBG",
+      "primaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41421-023-00564-w",
+        "pdbx_database_id_PubMed": 37391393,
+        "title": "Structural insights into neurokinin 3 receptor activation by endogenous and analogue peptide agonists."
+      },
+      "primaryDepositionLinkVerified": true,
+      "depositionLinkage": {
+        "classification": "SOURCE_REPORTED_FACT_PLUS_FROZEN_ENTITY_MAPPING",
+        "sourceId": "NK3R_2023",
+        "section": "Data availability statement",
+        "pdbIdExplicitlyNamed": true,
+        "sourceComplexLabel": "NKB-bound NK3R-Gq",
+        "frozenCandidateRcsbEntityId": "8JBG_3",
+        "entityNumberSource": "Frozen RCSB metadata; article text establishes reagent role and exact entry linkage, not entity numbering."
+      },
+      "polymerEntityCount": 6,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbEntityId": "8JBG_1",
+          "entityId": "1",
+          "description": "Neuromedin-K receptor (NK3R-pFastbac1)",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 1428,
+          "sequenceSha256": "3b742309a5c97edad8676ba3bf96b861d0b7affcf3a8566408a97fbe1f1509aa"
+        },
+        {
+          "rcsbEntityId": "8JBG_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "D"
+          ],
+          "sequenceLength": 377,
+          "sequenceSha256": "781b7ffe797a2f2c0fd2112837d49e112a6bf1caceb17ffc889d464f3671267a"
+        },
+        {
+          "rcsbEntityId": "8JBG_3",
+          "entityId": "3",
+          "description": "ScFv16 nanobody",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "E"
+          ],
+          "sequenceLength": 304,
+          "sequenceSha256": "2745d56c0420310e2806bc4336eff46f3e470cee362d0f4bd526759831ae43a1"
+        },
+        {
+          "rcsbEntityId": "8JBG_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213"
+        },
+        {
+          "rcsbEntityId": "8JBG_5",
+          "entityId": "5",
+          "description": "Neurokinin-B",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 10,
+          "sequenceSha256": "76d968d08850263bcd222cdf6399bc8fdaa85acf0476b6ebc0e869c438d4276f"
+        },
+        {
+          "rcsbEntityId": "8JBG_6",
+          "entityId": "6",
+          "description": "Guanine nucleotide-binding protein Gq (G324)",
+          "asymIds": [
+            "F"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequenceLength": 361,
+          "sequenceSha256": "a45990e8989fe61a8db5adae114cbbb09c4ca1312edb1dadd0de8e4aef9f03c7"
+        }
+      ],
+      "reviewedAuxiliaryEntity": {
+        "rcsbEntityId": "8JBG_3",
+        "entityId": "3",
+        "description": "ScFv16 nanobody",
+        "asymIds": [
+          "C"
+        ],
+        "authAsymIds": [
+          "E"
+        ],
+        "sequenceLength": 304,
+        "sequenceSha256": "2745d56c0420310e2806bc4336eff46f3e470cee362d0f4bd526759831ae43a1"
+      },
+      "roleEvidence": {
+        "classification": "SCFV16_G_PROTEIN_STABILIZER",
+        "sourceEvidence": {
+          "classification": "SOURCE_REPORTED_FACT",
+          "sourceId": "NK3R_2023",
+          "section": "Materials and methods / Construct cloning; Expression and purification of the NK3R-Gq complex; Results, first structure-preparation paragraph",
+          "claim": "The entry-linked sample uses scFv16 to stabilize engineered receptor-Gq complexes."
+        },
+        "sequenceIdentityAloneUsedAsRoleProof": false
+      },
+      "otherDepositedAntibodyEntities": [],
+      "sourceOnlyAntibodyReagents": [
+        {
+          "name": "Nb35",
+          "sourceId": "NK3R_2023",
+          "role": "G-protein stabilization reagent",
+          "presentAsSeparateFrozenEntity": false,
+          "sourceReportsModeled": true
+        }
+      ],
+      "preservedInventoryDiscrepancies": [
+        "The NKB article reports modeled Nb35, but the frozen six-entity table has no separate Nb35 entity. The source-to-deposition inventory discrepancy is unresolved without further metadata provenance review."
+      ],
+      "inventoryAdjudication": "The complete six-polymer deposition contains only the source-reviewed scFv16 G-protein stabilizer as an antibody-format entity; source-reported modeled Nb35 is not a separate deposited target.",
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "Every deposited VHH or antibody-format candidate is source-supported as an auxiliary stabilization/fiducial reagent or a conventional Fab; no deposited direct receptor-binding VHH target remains after complete inventory accounting.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "masterDispositionLedgerRewritten": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "targetFreezePermitted": false
+    },
+    {
+      "pdbId": "8XVJ",
+      "primaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41421-024-00705-9",
+        "pdbx_database_id_PubMed": 39075075,
+        "title": "Structural basis of antagonist selectivity in endothelin receptors."
+      },
+      "primaryDepositionLinkVerified": true,
+      "depositionLinkage": {
+        "classification": "SOURCE_REPORTED_FACT_PLUS_FROZEN_ENTITY_MAPPING",
+        "sourceId": "ETR_2024",
+        "section": "Data availability",
+        "pdbIdExplicitlyNamed": true,
+        "sourceComplexLabel": "Fab301-macitentan-ETA",
+        "frozenCandidateRcsbEntityId": "8XVJ_2",
+        "entityNumberSource": "Frozen RCSB metadata; article text establishes reagent role and exact entry linkage, not entity numbering."
+      },
+      "polymerEntityCount": 4,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbEntityId": "8XVJ_1",
+          "entityId": "1",
+          "description": "anti-BRIL Fab Heavy chain",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 266,
+          "sequenceSha256": "8d7c8000cf1459bf20068029589ecaf168b075af3e80d708cd94822d32359d34"
+        },
+        {
+          "rcsbEntityId": "8XVJ_2",
+          "entityId": "2",
+          "description": "anti-Fab Nanobody",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "K"
+          ],
+          "sequenceLength": 136,
+          "sequenceSha256": "72c47cbbcbc0ef7421403c457c40af18fee5c2e102ac25c80271e3378753a0b4"
+        },
+        {
+          "rcsbEntityId": "8XVJ_3",
+          "entityId": "3",
+          "description": "anti-BRIL Fab Light chain",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 235,
+          "sequenceSha256": "1e7aa0e348f22eb97786f85d59a974f7c23ecff5de1395801e91877aff16867f"
+        },
+        {
+          "rcsbEntityId": "8XVJ_4",
+          "entityId": "4",
+          "description": "Endoglucanase H,Endothelin-1 receptor,Soluble cytochrome b562",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 783,
+          "sequenceSha256": "114ce8438e78694789da21b29bbe5afbb3d56848b5238bf56a12368b599c7d97"
+        }
+      ],
+      "reviewedAuxiliaryEntity": {
+        "rcsbEntityId": "8XVJ_2",
+        "entityId": "2",
+        "description": "anti-Fab Nanobody",
+        "asymIds": [
+          "B"
+        ],
+        "authAsymIds": [
+          "K"
+        ],
+        "sequenceLength": 136,
+        "sequenceSha256": "72c47cbbcbc0ef7421403c457c40af18fee5c2e102ac25c80271e3378753a0b4"
+      },
+      "roleEvidence": {
+        "classification": "ANTI_FAB_FIDUCIAL_NANOBODY",
+        "sourceEvidence": {
+          "classification": "SOURCE_REPORTED_FACT",
+          "sourceId": "ETR_2024",
+          "section": "Results / Structure determination of antagonist-bound ETA structures; Materials and methods, antagonist-bound complex preparation",
+          "claim": "The entry-linked sample uses an anti-Fab nanobody in the receptor-associated Fab module."
+        },
+        "sequenceIdentityAloneUsedAsRoleProof": false
+      },
+      "otherDepositedAntibodyEntities": [
+        {
+          "rcsbEntityId": "8XVJ_1",
+          "entityId": "1",
+          "description": "anti-BRIL Fab Heavy chain",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 266,
+          "sequenceSha256": "8d7c8000cf1459bf20068029589ecaf168b075af3e80d708cd94822d32359d34"
+        },
+        {
+          "rcsbEntityId": "8XVJ_3",
+          "entityId": "3",
+          "description": "anti-BRIL Fab Light chain",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 235,
+          "sequenceSha256": "1e7aa0e348f22eb97786f85d59a974f7c23ecff5de1395801e91877aff16867f"
+        }
+      ],
+      "sourceOnlyAntibodyReagents": [
+        {
+          "name": "Fab301",
+          "sourceId": "ETR_2024",
+          "role": "Receptor-binding Fab, not a VHH",
+          "presentAsSeparateFrozenEntity": false,
+          "sourceReportsAdded": true
+        }
+      ],
+      "preservedInventoryDiscrepancies": [
+        "The paper describes and deposits a Fab301-containing complex, but frozen metadata lists only anti-BRIL Fab heavy/light chains and anti-Fab Nb. No separate Fab301 chain is present; exact inventory reconciliation remains pending."
+      ],
+      "inventoryAdjudication": "The complete four-polymer deposition contains one source-reviewed anti-Fab nanobody and conventional Fab heavy/light chains; source-reported Fab301 is not a separate deposited VHH target.",
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "Every deposited VHH or antibody-format candidate is source-supported as an auxiliary stabilization/fiducial reagent or a conventional Fab; no deposited direct receptor-binding VHH target remains after complete inventory accounting.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "masterDispositionLedgerRewritten": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "targetFreezePermitted": false
+    },
+    {
+      "pdbId": "8XVK",
+      "primaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41421-024-00705-9",
+        "pdbx_database_id_PubMed": 39075075,
+        "title": "Structural basis of antagonist selectivity in endothelin receptors."
+      },
+      "primaryDepositionLinkVerified": true,
+      "depositionLinkage": {
+        "classification": "SOURCE_REPORTED_FACT_PLUS_FROZEN_ENTITY_MAPPING",
+        "sourceId": "ETR_2024",
+        "section": "Data availability",
+        "pdbIdExplicitlyNamed": true,
+        "sourceComplexLabel": "Fab301-ambrisentan-ETA",
+        "frozenCandidateRcsbEntityId": "8XVK_2",
+        "entityNumberSource": "Frozen RCSB metadata; article text establishes reagent role and exact entry linkage, not entity numbering."
+      },
+      "polymerEntityCount": 4,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbEntityId": "8XVK_1",
+          "entityId": "1",
+          "description": "anti-BRIL Fab Heavy chain",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 266,
+          "sequenceSha256": "8d7c8000cf1459bf20068029589ecaf168b075af3e80d708cd94822d32359d34"
+        },
+        {
+          "rcsbEntityId": "8XVK_2",
+          "entityId": "2",
+          "description": "anti-Fab Nanobody",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "K"
+          ],
+          "sequenceLength": 136,
+          "sequenceSha256": "72c47cbbcbc0ef7421403c457c40af18fee5c2e102ac25c80271e3378753a0b4"
+        },
+        {
+          "rcsbEntityId": "8XVK_3",
+          "entityId": "3",
+          "description": "anti-BRIL Fab Light chain",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 235,
+          "sequenceSha256": "1e7aa0e348f22eb97786f85d59a974f7c23ecff5de1395801e91877aff16867f"
+        },
+        {
+          "rcsbEntityId": "8XVK_4",
+          "entityId": "4",
+          "description": "Endoglucanase H,Endothelin-1 receptor,Soluble cytochrome b562",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 783,
+          "sequenceSha256": "114ce8438e78694789da21b29bbe5afbb3d56848b5238bf56a12368b599c7d97"
+        }
+      ],
+      "reviewedAuxiliaryEntity": {
+        "rcsbEntityId": "8XVK_2",
+        "entityId": "2",
+        "description": "anti-Fab Nanobody",
+        "asymIds": [
+          "B"
+        ],
+        "authAsymIds": [
+          "K"
+        ],
+        "sequenceLength": 136,
+        "sequenceSha256": "72c47cbbcbc0ef7421403c457c40af18fee5c2e102ac25c80271e3378753a0b4"
+      },
+      "roleEvidence": {
+        "classification": "ANTI_FAB_FIDUCIAL_NANOBODY",
+        "sourceEvidence": {
+          "classification": "SOURCE_REPORTED_FACT",
+          "sourceId": "ETR_2024",
+          "section": "Results / Structure determination of antagonist-bound ETA structures; Materials and methods, antagonist-bound complex preparation",
+          "claim": "The entry-linked sample uses an anti-Fab nanobody in the receptor-associated Fab module."
+        },
+        "sequenceIdentityAloneUsedAsRoleProof": false
+      },
+      "otherDepositedAntibodyEntities": [
+        {
+          "rcsbEntityId": "8XVK_1",
+          "entityId": "1",
+          "description": "anti-BRIL Fab Heavy chain",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 266,
+          "sequenceSha256": "8d7c8000cf1459bf20068029589ecaf168b075af3e80d708cd94822d32359d34"
+        },
+        {
+          "rcsbEntityId": "8XVK_3",
+          "entityId": "3",
+          "description": "anti-BRIL Fab Light chain",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 235,
+          "sequenceSha256": "1e7aa0e348f22eb97786f85d59a974f7c23ecff5de1395801e91877aff16867f"
+        }
+      ],
+      "sourceOnlyAntibodyReagents": [
+        {
+          "name": "Fab301",
+          "sourceId": "ETR_2024",
+          "role": "Receptor-binding Fab, not a VHH",
+          "presentAsSeparateFrozenEntity": false,
+          "sourceReportsAdded": true
+        }
+      ],
+      "preservedInventoryDiscrepancies": [
+        "The paper describes and deposits a Fab301-containing complex, but frozen metadata lists only anti-BRIL Fab heavy/light chains and anti-Fab Nb. No separate Fab301 chain is present; exact inventory reconciliation remains pending."
+      ],
+      "inventoryAdjudication": "The complete four-polymer deposition contains one source-reviewed anti-Fab nanobody and conventional Fab heavy/light chains; source-reported Fab301 is not a separate deposited VHH target.",
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "Every deposited VHH or antibody-format candidate is source-supported as an auxiliary stabilization/fiducial reagent or a conventional Fab; no deposited direct receptor-binding VHH target remains after complete inventory accounting.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "masterDispositionLedgerRewritten": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "targetFreezePermitted": false
+    },
+    {
+      "pdbId": "8XVL",
+      "primaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41421-024-00705-9",
+        "pdbx_database_id_PubMed": 39075075,
+        "title": "Structural basis of antagonist selectivity in endothelin receptors."
+      },
+      "primaryDepositionLinkVerified": true,
+      "depositionLinkage": {
+        "classification": "SOURCE_REPORTED_FACT_PLUS_FROZEN_ENTITY_MAPPING",
+        "sourceId": "ETR_2024",
+        "section": "Data availability",
+        "pdbIdExplicitlyNamed": true,
+        "sourceComplexLabel": "Fab301-zibotentan-ETA",
+        "frozenCandidateRcsbEntityId": "8XVL_2",
+        "entityNumberSource": "Frozen RCSB metadata; article text establishes reagent role and exact entry linkage, not entity numbering."
+      },
+      "polymerEntityCount": 4,
+      "allDepositedPolymerEntities": [
+        {
+          "rcsbEntityId": "8XVL_1",
+          "entityId": "1",
+          "description": "anti-BRIL Fab Heavy chain",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 266,
+          "sequenceSha256": "8d7c8000cf1459bf20068029589ecaf168b075af3e80d708cd94822d32359d34"
+        },
+        {
+          "rcsbEntityId": "8XVL_2",
+          "entityId": "2",
+          "description": "anti-Fab Nanobody",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "K"
+          ],
+          "sequenceLength": 136,
+          "sequenceSha256": "72c47cbbcbc0ef7421403c457c40af18fee5c2e102ac25c80271e3378753a0b4"
+        },
+        {
+          "rcsbEntityId": "8XVL_3",
+          "entityId": "3",
+          "description": "anti-BRIL Fab Light chain",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 235,
+          "sequenceSha256": "1e7aa0e348f22eb97786f85d59a974f7c23ecff5de1395801e91877aff16867f"
+        },
+        {
+          "rcsbEntityId": "8XVL_4",
+          "entityId": "4",
+          "description": "Endoglucanase H,Endothelin-1 receptor,Soluble cytochrome b562",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 783,
+          "sequenceSha256": "114ce8438e78694789da21b29bbe5afbb3d56848b5238bf56a12368b599c7d97"
+        }
+      ],
+      "reviewedAuxiliaryEntity": {
+        "rcsbEntityId": "8XVL_2",
+        "entityId": "2",
+        "description": "anti-Fab Nanobody",
+        "asymIds": [
+          "B"
+        ],
+        "authAsymIds": [
+          "K"
+        ],
+        "sequenceLength": 136,
+        "sequenceSha256": "72c47cbbcbc0ef7421403c457c40af18fee5c2e102ac25c80271e3378753a0b4"
+      },
+      "roleEvidence": {
+        "classification": "ANTI_FAB_FIDUCIAL_NANOBODY",
+        "sourceEvidence": {
+          "classification": "SOURCE_REPORTED_FACT",
+          "sourceId": "ETR_2024",
+          "section": "Results / Structure determination of antagonist-bound ETA structures; Materials and methods, antagonist-bound complex preparation",
+          "claim": "The entry-linked sample uses an anti-Fab nanobody in the receptor-associated Fab module."
+        },
+        "sequenceIdentityAloneUsedAsRoleProof": false
+      },
+      "otherDepositedAntibodyEntities": [
+        {
+          "rcsbEntityId": "8XVL_1",
+          "entityId": "1",
+          "description": "anti-BRIL Fab Heavy chain",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 266,
+          "sequenceSha256": "8d7c8000cf1459bf20068029589ecaf168b075af3e80d708cd94822d32359d34"
+        },
+        {
+          "rcsbEntityId": "8XVL_3",
+          "entityId": "3",
+          "description": "anti-BRIL Fab Light chain",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 235,
+          "sequenceSha256": "1e7aa0e348f22eb97786f85d59a974f7c23ecff5de1395801e91877aff16867f"
+        }
+      ],
+      "sourceOnlyAntibodyReagents": [
+        {
+          "name": "Fab301",
+          "sourceId": "ETR_2024",
+          "role": "Receptor-binding Fab, not a VHH",
+          "presentAsSeparateFrozenEntity": false,
+          "sourceReportsAdded": true
+        }
+      ],
+      "preservedInventoryDiscrepancies": [
+        "The paper describes and deposits a Fab301-containing complex, but frozen metadata lists only anti-BRIL Fab heavy/light chains and anti-Fab Nb. No separate Fab301 chain is present; exact inventory reconciliation remains pending."
+      ],
+      "inventoryAdjudication": "The complete four-polymer deposition contains one source-reviewed anti-Fab nanobody and conventional Fab heavy/light chains; source-reported Fab301 is not a separate deposited VHH target.",
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "Every deposited VHH or antibody-format candidate is source-supported as an auxiliary stabilization/fiducial reagent or a conventional Fab; no deposited direct receptor-binding VHH target remains after complete inventory accounting.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "masterDispositionLedgerRewritten": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "targetFreezePermitted": false
+    }
+  ],
+  "summary": {
+    "reviewedEntryCount": 4,
+    "reviewedPolymerCount": 18,
+    "entryAuxiliaryExclusionCount": 4,
+    "entryDispositionPendingCount": 0,
+    "eligibleTargetIncrement": 0,
+    "independentEligibleComponentIncrement": 0,
+    "formallyClearedIndependentComponentCount": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  "unresolved": [
+    "The source-to-deposition naming discrepancies remain explicit; they do not create a deposited direct receptor-binding VHH target.",
+    "Formal receptor, VHH and publication graph integration remains pending.",
+    "This four-entry review is not a whole-census completeness or component bound."
+  ]
+}
