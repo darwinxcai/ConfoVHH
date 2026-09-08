@@ -43,6 +43,12 @@ concern 3P0G. These are not 33 independent informative biological experiments.
 
 ## Next executable work
 
+An [executable paired-selection metric](PAIRED_SELECTION_EVALUATION.md) now
+provides tie-aware top-1 comparisons, declared-group weighting, uncertainty and
+complete supplied-attempt accounting. It has been exercised only with synthetic
+labels. It does not score new complexes or constitute an independent evaluation;
+authorized frozen study inputs and the complete protocol are still required.
+
 1. **Complete reviewer reproduction against the proposed release.** Follow the
    [reviewer guide](REVIEWER_GUIDE.md), preserve both synthetic browser exports,
    and run the [export comparison](WORKFLOW_EVALUATION.md). The automated
