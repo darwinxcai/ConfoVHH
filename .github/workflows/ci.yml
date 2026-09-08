@@ -33,11 +33,18 @@ jobs:
           cache-dependency-path: package-lock.json
       - name: Install patched product dependencies
         run: npm ci
+      # audit-advisories.mjs already runs `npm audit --omit=dev` itself and fails
+      # on ANY advisory at or above moderate that is reachable from the
+      # production tree — "never waivable", allowlisted or not. A second bare
+      # `npm audit --omit=dev --audit-level=moderate` here added no coverage and
+      # cost reliability: it uses the legacy quick-audit endpoint, which npm is
+      # retiring, and which returned a spurious "400 Invalid package tree" on
+      # Node 22 while the identical step passed on Node 24 in the same run.
+      # Production coverage is unchanged; only the duplicate call is gone.
       - name: Verify dependency graph and advisories
         run: |
           npm ls --all
           node scripts/audit-advisories.mjs
-          npm audit --omit=dev --audit-level=moderate
       - name: Full offline release gate
         run: npm run test:release
       - name: Replay blocked hard-decoy v3 integration state
