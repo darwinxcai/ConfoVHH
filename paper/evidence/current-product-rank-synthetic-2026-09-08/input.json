@@ -1,0 +1,115 @@
+{
+  "schema": "confovhh-current-product-rank-input-v1",
+  "studyId": "SYNTHETIC-CURRENT-PRODUCT-RANK",
+  "generators": [
+    {
+      "id": "synthetic-generator",
+      "scoreName": "arbitrary-score",
+      "direction": "higher-better"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "synthetic-pose-0",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "synthetic-pose-1",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "synthetic-pose-2",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "synthetic-pose-3",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "synthetic-failure",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "failed",
+      "reason": "Synthetic accounting control"
+    }
+  ],
+  "features": [
+    {
+      "id": "synthetic-pose-0",
+      "auditArtifactSha256": "073d83e7047b4fb0858eff391f1e4078b0d241c8a1772b5bc14e72c840e54401",
+      "producerScore": 0.9,
+      "audit": {
+        "evidenceLevel": "supported",
+        "contactPairCount": 12,
+        "receptorInterfaceResidues": 4,
+        "vhhInterfaceResidues": 4,
+        "halfDeltaSasaInterfaceAreaAngstrom2": 100,
+        "severeClashCount": 0,
+        "maximumOverlapAngstrom": 0,
+        "imgtNumberingStatus": null
+      }
+    },
+    {
+      "id": "synthetic-pose-1",
+      "auditArtifactSha256": "073d83e7047b4fb0858eff391f1e4078b0d241c8a1772b5bc14e72c840e54401",
+      "producerScore": 0.2,
+      "audit": {
+        "evidenceLevel": "supported",
+        "contactPairCount": 12,
+        "receptorInterfaceResidues": 4,
+        "vhhInterfaceResidues": 4,
+        "halfDeltaSasaInterfaceAreaAngstrom2": 100,
+        "severeClashCount": 0,
+        "maximumOverlapAngstrom": 0,
+        "imgtNumberingStatus": null
+      }
+    },
+    {
+      "id": "synthetic-pose-2",
+      "auditArtifactSha256": "073d83e7047b4fb0858eff391f1e4078b0d241c8a1772b5bc14e72c840e54401",
+      "producerScore": 0.1,
+      "audit": {
+        "evidenceLevel": "supported",
+        "contactPairCount": 12,
+        "receptorInterfaceResidues": 4,
+        "vhhInterfaceResidues": 4,
+        "halfDeltaSasaInterfaceAreaAngstrom2": 100,
+        "severeClashCount": 0,
+        "maximumOverlapAngstrom": 0,
+        "imgtNumberingStatus": null
+      }
+    },
+    {
+      "id": "synthetic-pose-3",
+      "auditArtifactSha256": "5c841c5c74421dbff5d41019df9b1796600d5690caeae5c39f1db27ce324e616",
+      "producerScore": 0.9,
+      "audit": {
+        "evidenceLevel": "mixed",
+        "contactPairCount": 12,
+        "receptorInterfaceResidues": 4,
+        "vhhInterfaceResidues": 4,
+        "halfDeltaSasaInterfaceAreaAngstrom2": 9000,
+        "severeClashCount": 0,
+        "maximumOverlapAngstrom": 0,
+        "imgtNumberingStatus": null
+      }
+    }
+  ]
+}

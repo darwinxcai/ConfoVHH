@@ -1,0 +1,98 @@
+{
+  "schema": "confovhh-paired-selection-v1",
+  "studyId": "SYNTHETIC-CURRENT-PRODUCT-RANK",
+  "positiveOutcomeDefinition": "Arbitrary synthetic binary labels; no reference-pose or biological meaning.",
+  "method": {
+    "name": "current-product-scientific-ties",
+    "policySha256": "073eae70e8231b1ddb66da065b928070c6308a952067ab3ba5bc6f73f38bbff6"
+  },
+  "baseline": {
+    "name": "declared-producer-score-order",
+    "policySha256": "78c5c7171430946a939167c82ab82d5ce7c345dd0b0233f33a012bc0ee130efb"
+  },
+  "generators": [
+    "synthetic-generator"
+  ],
+  "attempts": [
+    {
+      "id": "synthetic-failure",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "failed",
+      "reason": "Synthetic accounting control"
+    },
+    {
+      "id": "synthetic-pose-0",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "synthetic-pose-1",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "synthetic-pose-2",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "synthetic-pose-3",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic-generator",
+      "status": "eligible",
+      "reason": ""
+    }
+  ],
+  "rankings": [
+    {
+      "id": "synthetic-pose-0",
+      "methodTier": 0,
+      "baselineTier": 0
+    },
+    {
+      "id": "synthetic-pose-1",
+      "methodTier": 0,
+      "baselineTier": 1
+    },
+    {
+      "id": "synthetic-pose-2",
+      "methodTier": 0,
+      "baselineTier": 2
+    },
+    {
+      "id": "synthetic-pose-3",
+      "methodTier": 1,
+      "baselineTier": 0
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "synthetic-pose-0",
+      "positive": 1
+    },
+    {
+      "id": "synthetic-pose-1",
+      "positive": 0
+    },
+    {
+      "id": "synthetic-pose-2",
+      "positive": 1
+    },
+    {
+      "id": "synthetic-pose-3",
+      "positive": 0
+    }
+  ]
+}

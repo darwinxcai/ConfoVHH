@@ -48,6 +48,10 @@ provides tie-aware top-1 comparisons, declared-group weighting, uncertainty and
 complete supplied-attempt accounting. It has been exercised only with synthetic
 labels. It does not score new complexes or constitute an independent evaluation;
 authorized frozen study inputs and the complete protocol are still required.
+The [current-product rank exporter](CURRENT_PRODUCT_RANK_EXPORT.md) now connects
+supplied audit features to that evaluator using exact shipped source identities
+and complete scientific ties. The [policy review](RANK_POLICY_REVIEW_2026-09-08.md)
+records why this current-product arm cannot substitute for frozen v3.
 
 1. **Complete reviewer reproduction against the proposed release.** Follow the
    [reviewer guide](REVIEWER_GUIDE.md), preserve both synthetic browser exports,

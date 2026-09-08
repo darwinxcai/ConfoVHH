@@ -52,6 +52,16 @@ are retained and explicitly marked as lacking outcome diversity. Removing an
 entire target from every supplied table cannot be detected without an external
 frozen inventory; the tool does not claim to certify source-population completeness.
 
+Top-1 success is **conditional on the eligible candidate pool**. A failed attempt
+remains in the accounting but does not lower this success rate when its stratum
+still has eligible candidates. This endpoint is not overall generation success
+or yield per attempted prediction.
+
+The [current-product rank exporter](CURRENT_PRODUCT_RANK_EXPORT.md) supplies
+verified feature-to-tier transformation using the shipped scorer. Its source
+identity and scientific ties are explicit. It is incompatible with the distinct
+frozen v3 preorder and does not authenticate upstream audit measurements.
+
 ## Replay the synthetic example
 
 From the repository root, choose an output filename that does not exist:
