@@ -142,7 +142,12 @@ def prepare(job, pins, base, template_provenance):
         key = f"{job['job']}:{template['chain_id']}:{pdb}"
         target = pins.get("template_chains", {}).get(key)
         require(isinstance(target, str) and target, f"template chain mapping absent: {key}")
-        template_inputs.append({"cif": str(path), "chain_id": template["chain_id"], "template_id": target})
+        suffix = path.suffix.lower()
+        require(suffix in {".pdb", ".cif", ".mmcif"}, f"unsupported template format: {path.name}")
+        template_format = "pdb" if suffix == ".pdb" else "cif"
+        # The official PDB loader can rename author chains to subchain IDs.
+        # Preserve the explicitly pinned parsed identity; never guess a suffix.
+        template_inputs.append({template_format: str(path), "chain_id": template["chain_id"], "template_id": target})
         sources.append({"kind": "template", "path": str(path), "sha256": record["sha256"]})
     document = {"version": 1, "sequences": sequences}
     if template_inputs:

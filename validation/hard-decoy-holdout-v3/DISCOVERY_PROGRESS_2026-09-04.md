@@ -2,6 +2,14 @@
 
 The original 287-entry keyword intersection is not the whole GPCR–VHH census. The broader discovery work below expands the evidence base without promoting candidates or rewriting frozen records. The formal GPCR study remains **DRAFT**, target freeze remains **BLOCKED**, and the whole-census independent-component upper bound remains **unknown**.
 
+**8 September publication continuation:** the user prioritized making the project
+publishable. [The publication progress record](../../paper/PROGRESS_2026-09-08.md)
+documents the tested PDB template-dispatch fix, official synthetic Boltz parser
+execution, reviewer replay, and software/application draft. Follow that record
+and its concrete submission gates for near-term project work. No scientific
+census disposition, exposure clearance, independent-group count, or frozen
+input changed in that increment.
+
 ## Completed discovery and review packages
 
 | Work package | Verified result | Scientific limit |

@@ -5,6 +5,13 @@ completed GPCR application, within-job selection audit, measured figure,
 primary-source context, and limitations. It is a software/application draft,
 not a submitted paper or a claim of independently validated ranking efficacy.
 
+The [software/application draft](SOFTWARE_PAPER.md) develops the near-term paper
+scope: auditable review, reuse, design rationale, related software, and the
+limitations demonstrated by the retained application. The
+[reviewer guide](REVIEWER_GUIDE.md) supplies an executable offline synthetic
+example; [submission readiness](SUBMISSION_READINESS.md) identifies the concrete
+publication gates. Additional census exclusions alone do not complete a paper.
+
 ## What the current evidence supports
 
 | Question | Completed evidence | Interpretation |
@@ -13,7 +20,7 @@ not a submitted paper or a claim of independently validated ranking efficacy.
 | Does a supported geometry flag identify the deposited interface? | Eight of fifteen supported flags have DockQ below 0.23 | The flag must remain evidence for review, not a native-pose classification |
 | Does ConfoVHH improve native-interface selection here? | 18/33 acceptable selections versus 19/33 for maximum exported score; only four mixed-quality jobs | No support for selection superiority in this retained set |
 | Can one receptor distance stand in for interface recovery? | 5JQH endpoint agreement co-occurs with poor official DockQ | The readouts must be evaluated separately |
-| Is a controlled template comparison ready to run? | Two coordinate-preserving templates with the same 275 residues and 2,155 heavy atoms | Input preparation is complete; official parsing, complete runtime/cache verification, and inference remain unfinished |
+| Is a controlled template comparison ready to run? | Two coordinate-preserving templates with the same 275 residues and 2,155 heavy atoms; a separate official Boltz synthetic parser smoke now passes | Real-template parsing, complete runtime/cache verification, and inference remain unfinished |
 
 The 33 jobs are nested within 15 conditions, four reference complexes, and
 three receptor targets. All four jobs with both acceptable and poor candidates
@@ -34,14 +41,18 @@ concern 3P0G. These are not 33 independent informative biological experiments.
 
 ## Next executable work
 
-1. **Verify the prepared templates in an inspected Boltz environment.** The
+1. **Verify the prepared templates in an inspected Boltz environment when
+   permitted by the current data-access boundary.** The
    official parser must preserve the intended coordinate mask and recover the
    declared query/template mapping. Standard PDB parsing and the pinned loader's
    Gemmi conversion have been checked; missing/padded sequence metadata was
-   corrected with preserved failing controls. Full Boltz processing has not.
-   PDB support in the historical execution
-   wrapper must also be addressed explicitly. A parser check requires no GPU
-   inference and must precede a prediction smoke test.
+   corrected with preserved failing controls. The
+   [official Boltz synthetic smoke](../scripts/paper/boltz-parser-README.md) now
+   exercises the complete schema parser, offset mapping, atom masks, and PDB
+   chain renaming. The wrapper now dispatches PDB versus CIF correctly.
+   Real-template processing has not been performed in this increment; the
+   synthetic result cannot satisfy job-specific parsing evidence. A parser check
+   requires no GPU inference and must precede a prediction smoke test.
 2. **Complete the inputs for one reproducible prediction job.** Cached MSAs,
    chemical-component/template features, exact runtime dependencies, and
    model/cache files must be verified locally. Existing checkpoint and wheel
@@ -82,6 +93,13 @@ recorded in each evidence directory.
 A separate Gemmi 0.6.5 conversion check verifies both corrected templates and
 detects four incomplete-metadata controls. It records the exact Boltz wheel and
 loader source inspected, but does not import or execute the full Boltz parser.
+
+On 8 September, a new, separately scoped official Boltz 2.2.1 execution used
+generated synthetic input only. Its receipt records 26 atom slots, 25 present
+atoms, correct offset mapping, and three rejected controls. The
+[replay instructions and limits](../scripts/paper/boltz-parser-README.md) retain
+the exact wheel/source identities and partial CPU environment. No native
+template, inference, or new scientific result is claimed.
 
 Run the focused offline regressions from the repository root:
 
