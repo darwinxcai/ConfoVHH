@@ -7,19 +7,16 @@ import { runPhraseOnlyChunk } from '../scripts/hard-decoy-v3/capture-phrase-only
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const BASE = 'validation/hard-decoy-holdout-v3/';
-const RECEIPT = `${BASE}phrase-only-union-2026-09-08/`;
 const sha = bytes => createHash('sha256').update(bytes).digest('hex');
 const read = relative => readFile(path.join(ROOT, relative));
 const parse = async relative => JSON.parse(await read(relative));
 const lines = bytes => String(bytes).trimEnd().split('\n');
 const jsonRows = bytes => lines(bytes).map(line => JSON.parse(line));
-const receipt = await parse(`${RECEIPT}summary.json`);
-
 // Validate actual identity and ordinal coverage, rather than only comparing counts.
-function validateMembership(pending, packets) {
+function validateMembership(pending, packets, indices = [0, 1, 2]) {
   assert.equal(new Set(pending).size, pending.length, 'Duplicate original membership');
   assert.deepEqual(pending, [...pending].sort(), 'Original membership order changed');
-  assert.deepEqual(packets.map(packet => packet.chunkIndex), [0, 1, 2], 'Missing or duplicate chunk');
+  assert.deepEqual(packets.map(packet => packet.chunkIndex), indices, 'Missing or duplicate chunk');
   const union = [];
   for (const packet of packets) {
     assert.equal(new Set(packet.ids).size, packet.ids.length, 'Duplicate within packet');
@@ -27,12 +24,15 @@ function validateMembership(pending, packets) {
     union.push(...packet.ids);
   }
   assert.equal(new Set(union).size, union.length, 'Duplicate across packets');
-  assert.deepEqual(union, pending.slice(0, 750), 'Union is not exact first 750 identifiers');
+  assert.deepEqual(union, pending.slice(0, indices.length * 250), 'Union ordinal coverage differs');
   const captured = new Set(union);
   return { ids: union, remaining: pending.filter(id => !captured.has(id)) };
 }
 
-for (const chunkIndex of [1, 2]) {
+for (const [receiptName, indices] of [['phrase-only-union-2026-09-08', [0, 1, 2]], ['phrase-only-union-through-003-2026-09-08', [0, 1, 2, 3]]]) {
+const RECEIPT = `${BASE}${receiptName}/`;
+const receipt = await parse(`${RECEIPT}summary.json`);
+for (const chunkIndex of (indices.length === 3 ? [1, 2] : [3])) {
   test(`retained phrase-only chunk ${chunkIndex} replays exactly without network`, async () => {
     const packet = receipt.packets.find(row => row.chunkIndex === chunkIndex);
     assert.ok(packet);
@@ -50,7 +50,7 @@ for (const chunkIndex of [1, 2]) {
   });
 }
 
-test('three-packet union verifies exact evidence hashes and recomputes identity, polymer and review accounting', async () => {
+test(`${indices.length}-packet union verifies exact evidence hashes and recomputes identity, polymer and review accounting`, async () => {
   const expectedChecksums = [];
   for (const name of ['README.md', 'summary.json']) expectedChecksums.push(`${sha(await read(`${RECEIPT}${name}`))}  ${name}\n`);
   assert.equal(String(await read(`${RECEIPT}checksums.sha256`)), expectedChecksums.join(''));
@@ -67,7 +67,7 @@ test('three-packet union verifies exact evidence hashes and recomputes identity,
   assert.equal(pending.length, 12262);
   assert.equal(receipt.packets[0].snapshotPath, `${BASE}phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe`);
   const packets = await Promise.all(receipt.packets.map(async packet => ({ chunkIndex: packet.chunkIndex, ids: lines(await read(packet.bindings['identifiers.txt'].path)) })));
-  const union = validateMembership(pending, packets);
+  const union = validateMembership(pending, packets, indices);
   const totals = {};
   for (const packet of receipt.packets) {
     const ids = packets.find(row => row.chunkIndex === packet.chunkIndex).ids;
@@ -121,6 +121,8 @@ test('three-packet union verifies exact evidence hashes and recomputes identity,
   assert.ok(Object.entries(receipt.authority).every(([key, value]) => ['independentEligibleGroupsAdded', 'wholeCensusComponentUpperBound'].includes(key) || value === false));
   assert.ok(Object.values(receipt.interpretation).every(value => typeof value === 'boolean'));
 });
+
+}
 
 test('union rejects duplicate, omitted, substituted and shifted identifiers even when total counts agree', () => {
   const pending = Array.from({ length: 1000 }, (_, index) => String(index).padStart(4, '0'));
