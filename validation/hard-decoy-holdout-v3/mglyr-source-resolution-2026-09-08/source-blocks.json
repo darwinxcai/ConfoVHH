@@ -1,0 +1,50 @@
+{
+  "schema": "confovhh-mglyr-selected-methods-v1",
+  "sourceDoi": "10.1038/s41467-026-68339-x",
+  "sourcePmcid": "PMC12834959",
+  "sourceUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12834959/fullTextXML",
+  "sourceResponseSha256": "5841cd77f7242c75562f2eb1237edb2ee43720f2cbf71bb70bf1b202f6890776",
+  "normalization": "sha256(UTF8(' '.join(''.join(p.itertext()).split())))",
+  "paragraphs": [
+    {
+      "id": "Sec11.p0",
+      "sectionId": "Sec11",
+      "sectionTitle": "cDNA constructs",
+      "paragraphIndex": 0,
+      "text": "Dopamine D2 receptor (cDNA Resource Center: #DRD0200001), RGS7 (GenBank: AY587875), Gβ5 (GenBank: NM_016194), GαoA (cDNA Resource Center: #GNA0OA0000) in pcDNA3.1(+) were purchased from cDNA Resource Center (https://www.cdna.org). masGRK3ct-Nluc, Venus-156-239-Gβ1, Venus-1-155-Gγ2 were synthesized by GenScript in pcDNA3.1 + . pCMV5 plasmid encoding GαoA was a gift from H. Itoh (Nara Institute of Science and Technology, Japan). GPR158 ectodomain (aa 1-417) was subcloned into a previously described Fc and 6xHis tagged vector32. Nanobody production was done using the pCANTAB vector (phage display) and promising candidates, including Nb20, were subcloned into pET28a. The complete sequence of Nb20 is as follows: MAEVQLQESGGGLVQAGGSLRLSCAASGSIGNIYIMGWYRQTPGPQRELVATIRTVRWTKYEDYADSVKGRFTISDDDAKNTVYLQMNSLKPEDTAVYYCNYKDYNAPSDGYWGQGTQVTVSSEPKTPKPQ. To generate control non-binding nanobody (Nb20*), Nb20 cDNA was mutated to replace 30IGNIYI35 sequence in CDR1 with 30GGAGAG35 sequence and 54RTVRWTKYE62 sequence in CDR2 with 54GAVGGAAAG62 sequence using direct mutagenesis by PCR with 2 sets of primers: CDR1 Forward primer: GCGGCGGTGCTGGCGCTGGCATGGGCTGGTACCGCCAG; CDR1 Reverse primer:",
+      "textSha256": "d8836cc14669c1a90798541934762cf2825e9e195190bae151c8febb20a47051"
+    },
+    {
+      "id": "Sec13.p0",
+      "sectionId": "Sec13",
+      "sectionTitle": "Llama immunization, phage display",
+      "paragraphIndex": 0,
+      "text": "One llama was immunized in strict accordance with good animal practices following the EU animal welfare legislation law with HEK293 cell membrane expressing mGlyR at Eurogentec (Belgium). Blood samples from immunized llama were harvested 87 days after immunization, and RNA from leukocytes was extracted using LeukoLOCK Total RNA Isolation system (Life Technologies #AM1923) accordingly to manufacturer instructions. Reverse transcription was performed on extracted RNA, and cDNA was amplified by PCR using 8 pairs of primers designed to amplify the variable heavy only domains (VHH) of non-conventional IgG2 and IgG3 and introduce NotI and SfiI cleavage sites, respectively (in bold in the following sequence).",
+      "textSha256": "36be7276e4a5ff2096b5ddda1fea0d369a2e188bb197050e59d7f6c43168f9ad"
+    },
+    {
+      "id": "Sec13.p9",
+      "sectionId": "Sec13",
+      "sectionTitle": "Llama immunization, phage display",
+      "paragraphIndex": 9,
+      "text": "Amplified cDNA was purified and digested with NotI and SfiI, following by ligation into the phagemid vector pCANTAB5 and electroporation of competent E. coli TG1 cells. Bacteria were grown in 2xYT broth containing 2% glucose at 37 °C under agitation until OD600nm reached 0.5. Subsequently, helper phage KM13 (2 × 1011 units) was added for 30 min at 37 °C without agitation. Infected bacteria were pelleted by centrifugation at 4000 g for 20 min at 4 °C, and the pellet was resuspended in 2xYT containing 120 µg/ml ampicillin and 50 µg/ml kanamycin. The phage library was grown overnight at 37 °C with agitation. Phages expressing a nanobody library were harvested and purified by centrifugation at 8000 g for 15 min at 4 °C, supernatant was precipitated using 20% of PEG6000/2.5 M NaCl for 1 h at 4 °C, followed by centrifugation at 8000 g for 15 min at 4 °C and pellet was resuspended in PBS-glycerol 15% and stored at +4 °C.",
+      "textSha256": "5e7caff275c5c6fc29ba2e7959c5eca4b79e2fb9ce3982840870105bb8faa6f7"
+    },
+    {
+      "id": "Sec14.p0",
+      "sectionId": "Sec14",
+      "sectionTitle": "Nanobody identification via phage library screening",
+      "paragraphIndex": 0,
+      "text": "To obtain anti-mGlyR-specific nanobody clones, two steps of depletion were first performed. Library containing 1012 phage units was incubated in the first well of a MaxiSorp plate (ThermoFisher Scientific #441653) coated with 100 µg of HEK293 cell membranes mock-transfected for 1 h at RT, and supernatant was transferred to a second identically coated well for 1 h at RT in order to reduce non-specific binders. A last step of selection was performed using the remaining phages incubated on one well coated with 100 µg of cell membranes expressing mGlyR for 2 h at RT. After washing, bound phages were eluted with Tris 50 mM pH = 8, 1 mM CaCl2, Trypsine 1 µg/ml for 15 min at RT. Eluted phages were recovered and amplified with E. coli TG1 cells infected in 2xYT broth containing ampicillin and 2% glucose overnight at 30 °C with agitation. Next day, 2 × 109 units of helper phage KM13 (AKA VCSM13 Agilent Technologies #2002521) were added to the amplified TG1 cells for 1 h at 37 °C, followed by centrifugation at 3000 g for 10 min at RT. Pellet was resuspended in 2xYT broth containing 100 µg/ml ampicillin and 25 µg/ml kanamycin and incubated overnight at 30 °C with agitation. To separate TG1 cells and amplified phages, the overnight culture was centrifuged at 3000 g for 30 min at 4 °C and phages in the supernatant were precipitated for 30 min on ice using 20% PEG-6000/NaCl 2.5 M, followed by a centrifugation at 10,000 g for 10 min at 4 °C. Pellet was resuspended in PBS with 15% glycerol and stored at −20 °C, and the rest was used in the second round of panning selection as described previously. A total of 3 rounds of panning were performed to identify 61 individual clones. Each clone was produced directly from individual TG1 colonies induced by isopropyl-β−26-D-thiogalactopyranoside (IPTG) for flow cytometry screening.",
+      "textSha256": "72d4cec5093b72439e5b8c75f8e1d405a781f30c8303bc7ac86400b23044151e"
+    },
+    {
+      "id": "Sec15.p0",
+      "sectionId": "Sec15",
+      "sectionTitle": "Protein production and purification",
+      "paragraphIndex": 0,
+      "text": "Individual nanobody cDNAs were fused with a c-myc and 8xhis tags at the C-terminus, subcloned into the pET28a vector using the in-fusion HD cloning kit (Takara Bio #102518) and sequenced. Freshly transformed E. coli BL21 DE3 (NEB # C2527H) with pET28a plasmid encoding nanobody was grown at 37 °C, shaking at 220 rpm in Terrific Broth (Kd Medical Inc #501018968) containing 50 µg/ml kanamycin until OD280nm = [0.6–0.8]. Protein expression was then induced by 1 mM Isopropyl β-D-1-thiogalactopyranoside (IPTG), and bacteria were grown overnight at 28 °C with shaking at 220 rpm. Bacteria were collected, centrifuged, and the pellet was lysed by sonication in LEW 1X at 4 °C. Periplasmic solution were harvested after centrifugation at 17,000 g, 30 min, 4 °C and purified on a Ni-IDA column (Macherey Nagel # 745160) according to manufacturer recommendations. Ecto-GPR158-Fc was produced in HEK293FT cells (supernatant) purified (Nickel column) dialyzed/concentrated (Amicon tube 30 kDa). Protein concentration in supernatant was determined using UV spectroscopy (Nanodrop).",
+      "textSha256": "221285e6848061d0b2e7ea4fb55a7c7fbfe45719c022d679deb22cd47281e540"
+    }
+  ]
+}

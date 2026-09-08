@@ -78,3 +78,31 @@ availability for the retained application inputs using the
 workflow-completion record. Prepare venue formatting after those deliverables
 are concrete. Census work continues only where it can supply a defensible new
 independent evaluation; additional exclusions alone do not complete this paper.
+
+## Reporting publication progress
+
+Keep two decisions separate in each continuation and user-facing progress
+update. The software/application paper is **not submission-ready** until its
+input-availability, independent-use and submission-record gates above are met.
+An independent predictive-performance paper is also **not submission-ready**:
+there are **0 formally cleared independent eligible groups**, and independent
+predictive accuracy is **unmeasured**. Passing software tests or resolving a
+bounded sequence comparison does not change either scientific quantity.
+
+| Work that can advance now | Evidence needed to close the next gate | Dependency |
+|---|---|---|
+| Source and construct review | Exact preparation provenance, retained source identities, formal overlap and exposure decisions for candidate groups | Permitted public metadata/Methods plus independent adjudication where required; inaccessible evidence remains unresolved |
+| Public software validation | All required checks pass on the exact proposed revision, including the unchanged exact-byte producer regression | Public source availability; an HTTP failure is not a passing provenance check |
+| Application replay scope | Accessible original retained inputs and redistribution terms, or an explicitly limited availability arrangement accepted by the selected venue | Actual input access and the relevant rights holder; do not invent a custodian or permission |
+| Independent workflow use | A real researcher's completed predefined task sheet with failures and feedback retained | Participant completion; automated or agent execution is not an independent participant |
+| Submission and archiving | Confirmed author facts/disclosures, venue requirements, and an archive bound to the reviewed release | Author participation and a completed validated release |
+| Predictive evaluation | Independently eligible groups, prospective input/policy provenance and the predeclared comparison executed under the applicable protocol | Eligibility and leakage clearance; the current-product adapter does not replace the unavailable frozen v3 engine or unspecified rounding convention |
+
+Each progress update should identify the completed evidence or implementation,
+validation on its exact revision, the independent-group count and whether any
+accuracy measurement became valid, and the precise remaining publication gates.
+Report a gate as complete only when its passing evidence exists. Do not derive a
+percentage complete or submission date from test counts, documents, elapsed
+time, or numbers of screened structures. Resolve the next executable gate
+without waiting for routine confirmation; retain a concrete continuation when a
+dependency requires unavailable evidence or human participation.

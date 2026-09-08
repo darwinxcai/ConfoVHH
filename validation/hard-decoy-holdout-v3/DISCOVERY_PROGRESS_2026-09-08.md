@@ -66,3 +66,49 @@ extracts current-product rank features directly; see
 Its examples use generated synthetic data only. The scientific next step remains
 resolving eligible independent data and its provenance, not treating successful
 software tests as predictive-performance evidence.
+
+## Additional source and candidate-union evidence
+
+The [source-resolution packet](mglyr-source-resolution-2026-09-08/README.md)
+now records the authors' reported Nb20 discovery route from five selected,
+licensed preparation/selection Methods paragraphs: llama immunization,
+leukocyte VHH library construction, depletion and phage selection, and the
+explicit Nb20 expression-vector link. This establishes the reported discovery
+route, not a complete parent/variant genealogy or an independence decision.
+General assay tags still do not establish the exact deposited cryo-EM reagent.
+
+An official Europe PMC supplementary-files route supplied the 2026 supplement.
+Its identity and the conservative extraction result are retained. No preparation
+block passed that selector; this does not show that the missing construct facts
+are absent from the supplement. The confirmed 2022 PMC attachment still returned
+challenge HTML. Exact receptor truncation and Nb20 N-terminal tag/preparation
+links therefore remain unresolved.
+
+The [bounded candidate comparison](mglyr-candidate-review-2026-09-08/README.md)
+adds 752 VHH source-row comparisons: all 285 frozen candidate profiles plus 467
+retained domain calls from six named screen inventories. These represent 239
+unique profile computations; one frozen VHH row remains unnumbered. All 6,357
+screen rows are accounted for, including 5,968 without a retained domain call.
+Those no-call rows do not establish absence of a binder or an overlap edge.
+
+The canonical receptor comparison preserves 290 rows: 287 frozen candidate
+rows plus separately retained DP1, proposed M1 and GPR158-family profiles. It
+computes 87 unique TM-sequence comparisons and retains 22 unresolved mappings.
+The proposed M1 canonical sequence is still not assigned to its deposited
+construct. The only threshold-positive comparisons in either arm are the query
+family itself. This is a result for the enumerated, hash-bound profile universe;
+it is not a formal no-edge ruling, global graph closure, census completeness or
+ancestry clearance. Existing prostanoid exclusions are preserved unchanged.
+
+These increments supersede the earlier missing-computation observations for
+the named retained candidate profiles. They leave source-level parent/variant
+adjudication, exact construct links, unprofiled material, global graph
+integration and exposure decisions open. Independent eligible groups added:
+**0**; formally cleared independent eligible groups remain **0**.
+
+Continue by verifying both packets, then pursue a legitimately accessible copy
+of the confirmed 2022 preparation supplement or another explicit primary
+preparation statement. A future safe extraction may inspect named preparation
+sections; do not inspect figures, captions, structural results or prohibited
+holdout data to fill a construct gap. Preserve the current source and selector
+records, and record any later evidence as a separate capture epoch.

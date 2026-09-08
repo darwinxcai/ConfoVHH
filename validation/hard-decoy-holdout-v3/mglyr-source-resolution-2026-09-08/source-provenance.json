@@ -1,0 +1,70 @@
+{
+  "schema": "confovhh-mglyr-source-provenance-v1",
+  "response": {
+    "name": "2026xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12834959/fullTextXML",
+    "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12834959/fullTextXML",
+    "retrievedUtc": "2026-09-08T16:30:56.223833+00:00",
+    "status": 200,
+    "bytes": 173132,
+    "sha256": "5841cd77f7242c75562f2eb1237edb2ee43720f2cbf71bb70bf1b202f6890776",
+    "contentType": "application/xml",
+    "isPdf": false,
+    "isZip": false
+  },
+  "articleTitle": "Targeting mGlyR with nanobodies for depression",
+  "attribution": "Laboute, T., Zucca, S., Sial, O. K., et al. (2026). Nature Communications. DOI: 10.1038/s41467-026-68339-x.",
+  "license": {
+    "xmlLocator": "./front/article-meta/permissions/license",
+    "url": "http://creativecommons.org/licenses/by/4.0/",
+    "text": "Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.",
+    "verification": "Article permissions explicitly report Creative Commons Attribution 4.0. Only selected Methods text is retained; no third-party images or figures are retained."
+  },
+  "extraction": {
+    "sourceScope": "./body/sec/sec, five exact preparation/library-discovery paragraphs",
+    "sectionsAndZeroBasedParagraphs": [
+      {
+        "id": "Sec11.p0",
+        "sectionId": "Sec11",
+        "sectionTitle": "cDNA constructs",
+        "paragraphIndex": 0,
+        "textSha256": "d8836cc14669c1a90798541934762cf2825e9e195190bae151c8febb20a47051"
+      },
+      {
+        "id": "Sec13.p0",
+        "sectionId": "Sec13",
+        "sectionTitle": "Llama immunization, phage display",
+        "paragraphIndex": 0,
+        "textSha256": "36be7276e4a5ff2096b5ddda1fea0d369a2e188bb197050e59d7f6c43168f9ad"
+      },
+      {
+        "id": "Sec13.p9",
+        "sectionId": "Sec13",
+        "sectionTitle": "Llama immunization, phage display",
+        "paragraphIndex": 9,
+        "textSha256": "5e7caff275c5c6fc29ba2e7959c5eca4b79e2fb9ce3982840870105bb8faa6f7"
+      },
+      {
+        "id": "Sec14.p0",
+        "sectionId": "Sec14",
+        "sectionTitle": "Nanobody identification via phage library screening",
+        "paragraphIndex": 0,
+        "textSha256": "72d4cec5093b72439e5b8c75f8e1d405a781f30c8303bc7ac86400b23044151e"
+      },
+      {
+        "id": "Sec15.p0",
+        "sectionId": "Sec15",
+        "sectionTitle": "Protein production and purification",
+        "paragraphIndex": 0,
+        "textSha256": "221285e6848061d0b2e7ea4fb55a7c7fbfe45719c022d679deb22cd47281e540"
+      }
+    ],
+    "changes": "XML markup removed; whitespace collapsed to single spaces. Paragraph wording otherwise unchanged. No results, captions, tables or figures retained.",
+    "rawFullArticleArchived": false,
+    "nativeCoordinatesInspected": false,
+    "nativeRelativePosesInspected": false,
+    "structuralContactTablesInspected": false,
+    "labelsAccessed": false,
+    "predictionOutputsAccessed": false
+  }
+}
