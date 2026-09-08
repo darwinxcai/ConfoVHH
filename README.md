@@ -139,6 +139,7 @@ The researcher-facing release is **v0.9.1**. The attested contact, clash, SASA, 
 - [Working manuscript and paper evidence](./paper/README.md) — retrospective application, selection limitations, reproducibility, and remaining experiments
 - [Software-paper draft](./paper/SOFTWARE_PAPER.md) — application-focused scope, design, related software, and limitations
 - [Reviewer guide](./paper/REVIEWER_GUIDE.md) — offline synthetic example and reproducibility boundaries
+- [Claim/evidence and data availability](./paper/DATA_AVAILABILITY.md) — exact public evidence bindings and unavailable-input boundaries
 - [Submission readiness](./paper/SUBMISSION_READINESS.md) — concrete evidence and author requirements still open
 - [Validation record](./VALIDATION.md) — study design, results, limitations, and exact evidence locations
 - [Release provenance](./PROVENANCE.md) — version layers and implementation snapshots

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PARTIAL_PUBLIC_REPRODUCIBILITY",
+  "reviewedBaselineCommit": "9aeadb8185a02da4e67967d9fbe12b1503d02e96",
+  "scope": "Software/application manuscript claims already reported from the retained development corpus, plus synthetic software-verification claims. This manifest is not an independent efficacy result.",
+  "artifacts": [
+    {
+      "id": "application-readme",
+      "path": "validation/gpcr-paper-development-2026-09-04/README.md",
+      "sha256": "6820d24fed5041705ffb991d1a6988900509867a50c7c410fc5e49a588f65f21",
+      "role": "Human-readable application scope, methods, results, limitations and replay routes",
+      "access": "PUBLIC_REPOSITORY"
+    },
+    {
+      "id": "application-package-checksums",
+      "path": "validation/gpcr-paper-development-2026-09-04/checksums.sha256",
+      "sha256": "ddeadb182b7f34bf2e9ea8c83aa73ecaae006df87bd5ef1dfb7c386e94f15108",
+      "role": "Hashes for the retained application evidence package",
+      "access": "PUBLIC_REPOSITORY"
+    },
+    {
+      "id": "application-summary",
+      "path": "validation/gpcr-paper-development-2026-09-04/paper-evidence/results/summary.json",
+      "sha256": "a5dd2d242382cf564fcc889c0f81a2bb57366c1834d1e76bbb74041ca6f30698",
+      "role": "Derived aggregate application results",
+      "access": "PUBLIC_REPOSITORY_DERIVED_RESULT"
+    },
+    {
+      "id": "application-summary-test",
+      "path": "tests/gpcr-paper-summary-test.py",
+      "sha256": "d3e6c6ea27a1c0a6f4962fe75b3f67fcac103ccadd9cbdefbb7df47639350d4e",
+      "role": "Independent standard-library replay assertions for the committed summaries",
+      "access": "PUBLIC_REPOSITORY"
+    },
+    {
+      "id": "application-summary-wrapper",
+      "path": "tests/gpcr-paper-summary.test.mjs",
+      "sha256": "ce2755e7e68494bdbcbbfedc79127df7323a7bf974bd9aa6b4247b6e646c03e7",
+      "role": "Node test wrapper for the application summary replay",
+      "access": "PUBLIC_REPOSITORY"
+    },
+    {
+      "id": "selection-readme",
+      "path": "validation/gpcr-selection-development-2026-09-05/README.md",
+      "sha256": "286cec51ff137ee53e02cbdcde9c778166b37178bf77e1174014e52bf4b849c2",
+      "role": "Human-readable selection analysis and limitations",
+      "access": "PUBLIC_REPOSITORY"
+    },
+    {
+      "id": "selection-analysis",
+      "path": "validation/gpcr-selection-development-2026-09-05/selection-analysis.json",
+      "sha256": "05f1d78973abf4e4cb0c181e450ec8568b92b65ea310343047933c6cd388dd2f",
+      "role": "Derived aggregate selection results",
+      "access": "PUBLIC_REPOSITORY_DERIVED_RESULT"
+    },
+    {
+      "id": "selection-provenance",
+      "path": "validation/gpcr-selection-development-2026-09-05/provenance.json",
+      "sha256": "94751abfa8523f6bbd1a5be3260fcb84151a1cfd710812a5929857a95cdd2b15",
+      "role": "Selection-analysis software and input provenance",
+      "access": "PUBLIC_REPOSITORY"
+    },
+    {
+      "id": "selection-test",
+      "path": "tests/gpcr-paper-selection-test.py",
+      "sha256": "3554bc5a33b1b535a38fac5c9c7864b880ae34a04625c2f196275676d11bf1aa",
+      "role": "Independent standard-library replay assertions for the committed selection analysis",
+      "access": "PUBLIC_REPOSITORY"
+    },
+    {
+      "id": "selection-wrapper",
+      "path": "tests/gpcr-paper-selection.test.mjs",
+      "sha256": "f14424b0ff22dc394d103b0a50279cc68882909eb70314a209763051b89ab952",
+      "role": "Node test wrapper for the selection replay",
+      "access": "PUBLIC_REPOSITORY"
+    },
+    {
+      "id": "reviewer-receipt",
+      "path": "paper/evidence/reviewer-demo-2026-09-08.json",
+      "sha256": "f3381a6711cb0a45e18e0c2c6b0128a31a8cd52ac476872e976be73d2655ba3e",
+      "role": "Synthetic parser, contact-oracle, export round-trip and tamper-rejection receipt",
+      "access": "PUBLIC_REPOSITORY_SYNTHETIC"
+    },
+    {
+      "id": "reviewer-runner",
+      "path": "scripts/paper/reviewer-demo.mjs",
+      "sha256": "6d27b66bae273d13a7c45603205cf6f319592cdacff3879d4133c95b13155741",
+      "role": "Deterministic generator and production-library replay for the synthetic reviewer example",
+      "access": "PUBLIC_REPOSITORY_SYNTHETIC"
+    },
+    {
+      "id": "boltz-parser-receipt",
+      "path": "tests/fixtures/boltz-parser-synthetic-2026-09-08/receipt.json",
+      "sha256": "2ca5db5bdc07eac9924c83b6640b212963ad8b63b892579a7915ad8e8b2a135b",
+      "role": "Official Boltz synthetic parser execution receipt",
+      "access": "PUBLIC_REPOSITORY_SYNTHETIC"
+    },
+    {
+      "id": "boltz-parser-runner",
+      "path": "scripts/paper/boltz-parser-smoke.py",
+      "sha256": "ae26d9c1ebfecb4df6ab5c4000b40a2d7bd04f055aaa8a61bbecb42a22229265",
+      "role": "Synthetic parser replay and retained-receipt verifier",
+      "access": "PUBLIC_REPOSITORY_SYNTHETIC"
+    }
+  ],
+  "claims": [
+    {
+      "id": "retained-application-corpus",
+      "manuscript": "paper/SOFTWARE_PAPER.md",
+      "text": "165 retained GPCR prediction models",
+      "evidenceArtifactIds": ["application-readme", "application-package-checksums", "application-summary", "application-summary-test", "application-summary-wrapper"],
+      "evidenceClass": "RETROSPECTIVE_DEVELOPMENT",
+      "reproducibility": "COMMITTED_DERIVED_REPLAY",
+      "interpretation": "Traceable application on a previously inspected retained subset, not an independent performance estimate."
+    },
+    {
+      "id": "supported-flags-below-boundary",
+      "manuscript": "paper/SOFTWARE_PAPER.md",
+      "text": "Eight of fifteen supported geometry flags occurred below DockQ 0.23.",
+      "evidenceArtifactIds": ["application-readme", "application-summary", "application-summary-test", "application-summary-wrapper"],
+      "evidenceClass": "RETROSPECTIVE_DEVELOPMENT",
+      "reproducibility": "COMMITTED_DERIVED_REPLAY",
+      "interpretation": "A supported geometry flag is not a native-pose classification."
+    },
+    {
+      "id": "selection-comparison",
+      "manuscript": "paper/SOFTWARE_PAPER.md",
+      "text": "ConfoVHH selected an acceptable model in 18 of 33 jobs, compared with 19 for a maximum-exported-score baseline and an analytical uniform-selection expectation of 18.",
+      "evidenceArtifactIds": ["selection-readme", "selection-analysis", "selection-provenance", "selection-test", "selection-wrapper"],
+      "evidenceClass": "RETROSPECTIVE_DEVELOPMENT",
+      "reproducibility": "COMMITTED_DERIVED_REPLAY",
+      "interpretation": "This retained development comparison does not support selection superiority."
+    },
+    {
+      "id": "limited-informative-jobs",
+      "manuscript": "paper/SOFTWARE_PAPER.md",
+      "text": "Only four jobs contained candidates on both sides of the acceptability boundary, and all four concerned the same reference, 3P0G.",
+      "evidenceArtifactIds": ["selection-readme", "selection-analysis", "selection-test", "selection-wrapper"],
+      "evidenceClass": "RETROSPECTIVE_DEVELOPMENT",
+      "reproducibility": "COMMITTED_DERIVED_REPLAY",
+      "interpretation": "Jobs are correlated and are not independent biological experiments."
+    },
+    {
+      "id": "application-missingness",
+      "manuscript": "paper/SOFTWARE_PAPER.md",
+      "text": "The retained set lacks full PAE and omits coordinates for 85 additional preliminary cognate models.",
+      "evidenceArtifactIds": ["application-readme", "application-summary"],
+      "evidenceClass": "RETROSPECTIVE_DEVELOPMENT",
+      "reproducibility": "SUMMARY_AVAILABLE_ORIGINAL_INPUTS_INCOMPLETE",
+      "interpretation": "Missing inputs are not assumed random and cannot be reconstructed from summaries."
+    },
+    {
+      "id": "reviewer-software-replay",
+      "manuscript": "paper/REVIEWER_GUIDE.md",
+      "text": "10 residue pairs and 90 atom contacts for the near input, zero for the separated input",
+      "evidenceArtifactIds": ["reviewer-receipt", "reviewer-runner"],
+      "evidenceClass": "SYNTHETIC_SOFTWARE_VERIFICATION",
+      "reproducibility": "PUBLIC_SYNTHETIC_REPLAY",
+      "interpretation": "Software mechanics only; not biological validation or independent human completion."
+    },
+    {
+      "id": "official-boltz-synthetic-parse",
+      "manuscript": "scripts/paper/boltz-parser-README.md",
+      "text": "returned 26 atom slots with 25 present atoms",
+      "evidenceArtifactIds": ["boltz-parser-receipt", "boltz-parser-runner"],
+      "evidenceClass": "SYNTHETIC_SOFTWARE_VERIFICATION",
+      "reproducibility": "PUBLIC_SYNTHETIC_REPLAY",
+      "interpretation": "No prepared real template, model checkpoint or inference was validated."
+    }
+  ],
+  "unavailableInputs": [
+    {
+      "id": "retained-original-coordinate-confidence-archives",
+      "effect": "Full public raw-to-result replay is unavailable until durable access and redistribution terms are resolved."
+    },
+    {
+      "id": "missing-preliminary-cognate-coordinates",
+      "count": 85,
+      "effect": "No claim may silently treat the retained subset as the complete preliminary corpus."
+    },
+    {
+      "id": "full-pae-matrices",
+      "effect": "PAE was not used in the reported retained application and must not be reconstructed from summary confidence values."
+    },
+    {
+      "id": "independent-user-completion",
+      "effect": "Automated and implementation-assisted replay cannot establish independent researcher usability."
+    }
+  ],
+  "boundaries": {
+    "nativeHoldoutArtifactsAccessedToCreateManifest": false,
+    "predictionOutputsAccessedToCreateManifest": false,
+    "newScientificAnalysisPerformed": false,
+    "syntheticValuesUsedAsStudyResults": false,
+    "selectionSuperioritySupported": false,
+    "formalIndependentEligibleGroupCount": 0,
+    "targetFreezePermitted": false,
+    "wholeCensusBoundEstablished": false
+  }
+}

@@ -9,7 +9,9 @@ The [software/application draft](SOFTWARE_PAPER.md) develops the near-term paper
 scope: auditable review, reuse, design rationale, related software, and the
 limitations demonstrated by the retained application. The
 [reviewer guide](REVIEWER_GUIDE.md) supplies an executable offline synthetic
-example; [submission readiness](SUBMISSION_READINESS.md) identifies the concrete
+example; the [claim/evidence manifest](CLAIM_EVIDENCE.json) and
+[data-availability record](DATA_AVAILABILITY.md) define public replay boundaries;
+and [submission readiness](SUBMISSION_READINESS.md) identifies the concrete
 publication gates. Additional census exclusions alone do not complete a paper.
 
 ## What the current evidence supports
@@ -105,6 +107,7 @@ Run the focused offline regressions from the repository root:
 
 ```bash
 node --test tests/gpcr-paper-selection.test.mjs tests/gpcr-paper-template.test.mjs
+node scripts/paper/verify-claim-evidence-manifest.mjs
 ```
 
 Full reproduction commands and success criteria appear in the linked evidence
