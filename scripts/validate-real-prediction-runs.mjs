@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import process from "node:process";
 
@@ -8,6 +7,7 @@ import {
   predictionRunFileById,
 } from "../lib/prediction-run.ts";
 import { executePredictionRunAuditJob } from "../lib/prediction-run-jobs.ts";
+import { fetchExactPublicFile } from "./fetch-exact-public-file.mjs";
 
 const ZENODO_BASE = "https://zenodo.org/api/records/17063524/files";
 const AF3_COMMIT = "a7458d1d26a35154cbfc3e24ec197352079970df";
@@ -77,22 +77,16 @@ const DATASETS = [
   },
 ];
 
-function sha256(value) {
-  return createHash("sha256").update(value).digest("hex");
-}
-
 function rounded(value) {
   return value == null ? null : Math.round(value * 1e6) / 1e6;
 }
 
 async function fetchExact(file) {
-  const response = await fetch(file.url, { redirect: "follow", signal: AbortSignal.timeout(120_000) });
-  assert.equal(response.ok, true, `${file.filename}: HTTP ${response.status}`);
-  const bytes = Buffer.from(await response.arrayBuffer());
-  assert.equal(bytes.byteLength, file.bytes, `${file.filename}: byte count changed`);
-  assert.equal(sha256(bytes), file.sha256, `${file.filename}: SHA-256 changed`);
-  const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
-  return { path: file.filename, bytes: bytes.byteLength, sha256: file.sha256, text };
+  return fetchExactPublicFile(file, {
+    onRetry: ({ reason, nextAttempt, maximumAttempts, delayMilliseconds }) => {
+      process.stderr.write(`${reason}; retry ${nextAttempt}/${maximumAttempts} in ${delayMilliseconds} ms.\n`);
+    },
+  });
 }
 
 async function mapConcurrent(values, limit, transform) {
