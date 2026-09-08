@@ -29,10 +29,14 @@ function validateMembership(pending, packets, indices = [0, 1, 2]) {
   return { ids: union, remaining: pending.filter(id => !captured.has(id)) };
 }
 
-for (const [receiptName, indices] of [['phrase-only-union-2026-09-08', [0, 1, 2]], ['phrase-only-union-through-003-2026-09-08', [0, 1, 2, 3]]]) {
+for (const [receiptName, indices, replayIndices] of [
+  ['phrase-only-union-2026-09-08', [0, 1, 2], [1, 2]],
+  ['phrase-only-union-through-003-2026-09-08', [0, 1, 2, 3], [3]],
+  ['phrase-only-union-through-007-2026-09-08', [0, 1, 2, 3, 4, 5, 6, 7], [4, 5, 6, 7]],
+]) {
 const RECEIPT = `${BASE}${receiptName}/`;
 const receipt = await parse(`${RECEIPT}summary.json`);
-for (const chunkIndex of (indices.length === 3 ? [1, 2] : [3])) {
+for (const chunkIndex of replayIndices) {
   test(`retained phrase-only chunk ${chunkIndex} replays exactly without network`, async () => {
     const packet = receipt.packets.find(row => row.chunkIndex === chunkIndex);
     assert.ok(packet);
@@ -52,7 +56,8 @@ for (const chunkIndex of (indices.length === 3 ? [1, 2] : [3])) {
 
 test(`${indices.length}-packet union verifies exact evidence hashes and recomputes identity, polymer and review accounting`, async () => {
   const expectedChecksums = [];
-  for (const name of ['README.md', 'summary.json']) expectedChecksums.push(`${sha(await read(`${RECEIPT}${name}`))}  ${name}\n`);
+  const inventory = indices.length === 8 ? ['README.md', 'lead-triage.json', 'summary.json'] : ['README.md', 'summary.json'];
+  for (const name of inventory) expectedChecksums.push(`${sha(await read(`${RECEIPT}${name}`))}  ${name}\n`);
   assert.equal(String(await read(`${RECEIPT}checksums.sha256`)), expectedChecksums.join(''));
   const bindings = [...receipt.inputBindings, ...receipt.packets.flatMap(packet => [...Object.values(packet.bindings), ...Object.values(packet.snapshotBindings)])];
   for (const binding of bindings) {
@@ -120,6 +125,49 @@ test(`${indices.length}-packet union verifies exact evidence hashes and recomput
   assert.equal(receipt.authority.wholeCensusComponentUpperBound, null);
   assert.ok(Object.entries(receipt.authority).every(([key, value]) => ['independentEligibleGroupsAdded', 'wholeCensusComponentUpperBound'].includes(key) || value === false));
   assert.ok(Object.values(receipt.interpretation).every(value => typeof value === 'boolean'));
+});
+
+if (indices.length === 8) test('all eleven new heavy-domain leads retain complete inventories and unresolved formal dispositions', async () => {
+  const triage = await parse(`${RECEIPT}lead-triage.json`);
+  const screens = (await Promise.all(receipt.packets.filter(packet => packet.chunkIndex >= 4)
+    .map(async packet => jsonRows(await read(packet.snapshotBindings['entity-screens.jsonl'].path))))).flat();
+  const leads = screens.filter(row => row.numberedHeavyDomainCallCount > 0);
+  const expected = [...new Set(leads.map(row => row.pdbId))].sort();
+  assert.deepEqual(triage.entries.map(row => row.pdbId).sort(), expected);
+  assert.equal(expected.length, 11);
+  for (const binding of triage.inputBindings) {
+    const bytes = await read(binding.path);
+    assert.equal(bytes.length, binding.bytes);
+    assert.equal(sha(bytes), binding.sha256);
+  }
+  for (const entry of triage.entries) {
+    const packet = receipt.packets.find(row => row.chunkIndex === entry.chunkIndex);
+    assert.equal(entry.sourceEntriesPath, packet.snapshotBindings['entries.jsonl'].path);
+    const line = lines(await read(entry.sourceEntriesPath)).find(row => JSON.parse(row).pdbId === entry.pdbId);
+    assert.equal(sha(line), entry.sourceEntryRawLineSha256);
+    const deposited = JSON.parse(line);
+    assert.equal(entry.completeInventory, true);
+    assert.equal(deposited.polymerEntityCountReported, entry.allPolymerInventory.length);
+    assert.deepEqual(entry.primaryCitation, deposited.primaryCitation);
+    assert.deepEqual(entry.candidateEntityIds, leads.filter(row => row.pdbId === entry.pdbId).map(row => row.entityId));
+    for (const [index, entity] of entry.allPolymerInventory.entries()) {
+      const original = deposited.polymerEntities[index];
+      for (const key of Object.keys(entity)) assert.deepEqual(entity[key], original[key]);
+      assert.equal(sha(original.sequence), entity.sequenceSha256);
+      assert.equal(original.sequence.length, entity.sequenceLength);
+    }
+    assert.equal(entry.formalDisposition, 'PENDING_DISPOSITION');
+    assert.equal(entry.primaryPreparationReviewed, false);
+    assert.equal(entry.directGpcrVhhCaseEstablished, false);
+  }
+  for (const id of ['25ST', '25SU']) {
+    const entry = triage.entries.find(row => row.pdbId === id);
+    assert.equal(entry.primaryCitation.doi, null);
+    assert.equal(entry.primaryCitation.pmid, null);
+    assert.ok(entry.allPolymerInventory.some(row => row.description === 'Single-chain variable fragment 16' && row.sequenceLength === 307));
+    assert.ok(entry.allPolymerInventory.some(row => row.description === 'Taste receptor type 2 member 4'));
+  }
+  assert.ok(Object.entries(triage.authority).every(([key, value]) => key === 'independentEligibleGroupsAdded' ? value === 0 : value === false));
 });
 
 }

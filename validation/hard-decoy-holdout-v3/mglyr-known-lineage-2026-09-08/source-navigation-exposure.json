@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "recordedAt": "2026-09-08T21:09:58.802275+00:00",
+  "eventTimePrecision": "Occurred during this continuation; exact read timestamps were not retained. This timestamp is record creation time.",
+  "events": [
+    {
+      "kind": "SEARCH_RESULT_PROSE_EXPOSURE",
+      "sources": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8926151/",
+        "https://www.researchgate.net/publication/356469773_Structure_of_the_class_C_orphan_GPCR_GPR158_in_complex_with_RGS7-Gb5"
+      ],
+      "detail": "A preparation-source search returned structural-result prose and figure-caption excerpts concerning earlier GPR158 publications. Subsequent searches filtered tool output to source titles and URLs. No values are repeated here."
+    },
+    {
+      "kind": "PATENT_PARAGRAPH_PREFIX_EXPOSURE",
+      "source": "https://patents.google.com/patent/WO2024118636A1/en",
+      "sourceResponseSha256": "a6cbe70f7cfaa8a88f5994d65dec368a0ec135b1f21f0df260bf4b8edd8a16c2",
+      "detail": "While locating Methods paragraphs, short paragraph prefixes from 0271 through 0274 included model-building/reconstruction prose and a table heading. Paragraph text was not selected for lineage analysis. No figure, image, table payload or coordinate file was opened."
+    }
+  ],
+  "followupMethodsParagraphsRead": [
+    "0259",
+    "0261",
+    "0264",
+    "0265",
+    "0266",
+    "0267"
+  ],
+  "interpretation": "These are additional exposure events, not a clean-blind state. Earlier exposure records remain intact. Formal exposure adjudication remains required.",
+  "scoringOrThresholdsTuned": false,
+  "nativeCoordinateFilesAccessed": false,
+  "predictionOutputFilesAccessed": false,
+  "formalExposureClearanceGranted": false,
+  "independentEligibleGroupsAdded": 0
+}

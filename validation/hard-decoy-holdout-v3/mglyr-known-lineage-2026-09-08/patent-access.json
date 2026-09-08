@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "retrieval": {
+    "url": "https://patents.google.com/patent/WO2024118636A1/en",
+    "finalUrl": "https://patents.google.com/patent/WO2024118636A1/en",
+    "status": 200,
+    "startedAt": "2026-09-08T21:06:18.136555+00:00",
+    "completedAt": "2026-09-08T21:06:25.528986+00:00",
+    "bytes": 648455,
+    "sha256": "a6cbe70f7cfaa8a88f5994d65dec368a0ec135b1f21f0df260bf4b8edd8a16c2",
+    "contentType": "text/html"
+  },
+  "fullResponseRetainedInRepository": false,
+  "selectedParagraphTextRetainedInRepository": false,
+  "paragraphNormalization": "Whitespace-collapsed HTML text in the description section, split at bracketed paragraph numbers; OCR artifacts retained.",
+  "selectedParagraphs": [
+    {
+      "paragraphNumber": "0259",
+      "characters": 1372,
+      "sha256": "46b58f66b73a9eb1fe3a31a28fc7bc91099c839ee35206d5df1d31689a9dfbe7"
+    },
+    {
+      "paragraphNumber": "0266",
+      "characters": 1158,
+      "sha256": "9c9262885f06a863dda756175f73695dbfb579f6bd37430e3812ad3505c8e15e"
+    },
+    {
+      "paragraphNumber": "0267",
+      "characters": 684,
+      "sha256": "b7b98701d4d2cc06432891c57764858c740ed6ade11f9ca74d3ec957b102dc78"
+    }
+  ],
+  "observations": [
+    "The public patent describes the Nb20 to Nb20* mutagenesis relationship.",
+    "The production paragraph describes general C-terminal myc/His tags.",
+    "The cryo-EM preparation paragraph points to prior preparation, leaving the exact deposited construct links unresolved."
+  ],
+  "independentSourceExperiment": false,
+  "exactCryoEmConstructResolved": false,
+  "formalEligibilityGranted": false,
+  "independentEligibleGroupsAdded": 0,
+  "upstreamResponseIndependentlyReplayableFromRepository": false
+}

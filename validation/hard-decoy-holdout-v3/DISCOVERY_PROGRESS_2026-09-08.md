@@ -237,3 +237,36 @@ union-evidence reviews found no material issues. New code/tests pass lint;
 source-packet checksums and the seven manuscript claims/14 artifact bindings
 verify. Hosted results for the exact pushed revision are recorded in PR #56;
 the starting revision's 833-test result is not reused as a later revision's gate.
+
+## Current continuation: packets 004–007 and known Nb20 lineage
+
+PR #56's fourth packet (003) was already complete at starting head `16c46a5`.
+This continuation adds four further complete repeated metadata packets, retaining
+the collector and every earlier packet unchanged. The
+[eight-packet union](phrase-only-union-through-007-2026-09-08/README.md) now covers
+exactly **2,000** identifiers and **3,227** polymers, with **274** review rows and
+**119** missing/noncanonical/engine-review entities. Exactly **10,262** identifiers
+remain uncaptured within the pinned phrase-only membership. No whole-census
+bound follows. All 80 new repeated requests succeeded and agreed.
+
+The accompanying triage binds all eleven new heavy-domain leads and their 39
+polymers. In particular, 25ST and 25SU contain TAS2R4 and an annotated scFv16;
+their deposited citation lacks DOI/PMID. These facts do not establish a direct
+GPCR–VHH case or its biological binding role. Preserve their pending format and
+source review, the other pending lead dispositions, and every unnumbered or
+missingness-review row. The absence of a numbered call is not absence evidence.
+
+The [known-lineage record](mglyr-known-lineage-2026-09-08/README.md) now captures
+Nb20* as a reported derivative of Nb20 from the existing licensed construct
+paragraph. Source positions are verified against the full source-reported
+sequence. A newly accessible public patent corroborates the preparation account
+without resolving exact cryo-EM tags or truncation. The relationship is a bounded
+documented ancestry fact, not a full global graph/independence decision. The
+source-navigation exposure record remains relevant to formal adjudication.
+
+Next fixed discovery batch: **index 8**, after checking current main/PR state.
+Continue exact construct-source and original-input availability work only through
+permitted routes supplying new evidence. Actual independent researcher completion
+and author/archival facts remain human dependencies. Formally cleared independent
+eligible groups remain **0**; predictive accuracy remains **unmeasured**. No frozen
+scientific policy, source packet, disposition or earlier exposure record changed.
