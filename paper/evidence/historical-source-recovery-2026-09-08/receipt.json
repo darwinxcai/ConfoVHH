@@ -1,0 +1,280 @@
+{
+  "capturedAt": "2026-09-08T15:43:55.118Z",
+  "nodeVersion": "v24.19.0",
+  "sourceSha256": {
+    "scripts/paper/verify-historical-source-archive.mjs": "dbe7d85320306a2066e39c7ed0b8508aabdec40941bd1e3d774cfe285757ced3",
+    "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f"
+  },
+  "result": {
+    "schema": "confovhh-historical-source-only-verification-v1",
+    "status": "PINNED_SOURCE_OBJECTS_VERIFIED",
+    "archiveLogicalPath": "validation/v0.5-engine-implementation-snapshot-v1",
+    "indexSha256": "d98f7766e660248d03771e3678bec5bfaf33da2072d45e034eb2e0596bf3b1e5",
+    "exactPinnedIndexVerified": true,
+    "attestations": [
+      {
+        "id": "public-regression",
+        "declaredSourceCommit": "5cb57617b54baa314513486885c402449f643406",
+        "declaredCombinedImplementationSha256": "7d98f49b97499c0cefb460c6b06673d2639c9aeef2adfdb2d1198e965766d5f7",
+        "combinedImplementationHashVerified": false,
+        "sources": [
+          {
+            "logicalPath": "lib/confovhh.ts",
+            "sha256": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+            "objectPath": "objects/15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+            "bytes": 83288,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/geometry-constants.ts",
+            "sha256": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+            "objectPath": "objects/43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+            "bytes": 429,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/geometry-fit.ts",
+            "sha256": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+            "objectPath": "objects/647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+            "bytes": 18908,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/mmcif.ts",
+            "sha256": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+            "objectPath": "objects/1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+            "bytes": 50533,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/vhh-numbering.ts",
+            "sha256": "221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+            "objectPath": "objects/221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+            "bytes": 4557,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "package-lock.json",
+            "sha256": "db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+            "objectPath": "objects/db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+            "bytes": 497085,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "package.json",
+            "sha256": "6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+            "objectPath": "objects/6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+            "bytes": 2562,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "scripts/benchmark-mmcif-assemblies.mjs",
+            "sha256": "1412c0db6fa055c75615b481dcebaa6dc3661884b412aa2d2381e1714c1ba42e",
+            "objectPath": "objects/1412c0db6fa055c75615b481dcebaa6dc3661884b412aa2d2381e1714c1ba42e",
+            "bytes": 9416,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "scripts/benchmark-public-pdbs.mjs",
+            "sha256": "ff3b296028330ebb0280921229cfaedd81664bebdab778260992e2169dcca37c",
+            "objectPath": "objects/ff3b296028330ebb0280921229cfaedd81664bebdab778260992e2169dcca37c",
+            "bytes": 7331,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "scripts/public-coordinate-download.mjs",
+            "sha256": "7134c92b5513e506c67eb8f416cdf83efe1b1579addb1b085e6280fde88f5488",
+            "objectPath": "objects/7134c92b5513e506c67eb8f416cdf83efe1b1579addb1b085e6280fde88f5488",
+            "bytes": 1986,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "scripts/run-v05-public-regression-attestation.mjs",
+            "sha256": "50b2d56cfdd792438e77c5f593f46033fb9c5fc1c2a89d71965e62bc92958808",
+            "objectPath": "objects/50b2d56cfdd792438e77c5f593f46033fb9c5fc1c2a89d71965e62bc92958808",
+            "bytes": 12771,
+            "sha256Verified": true
+          }
+        ],
+        "excludedMetadata": [
+          {
+            "logicalPath": "validation/mmcif-regression-manifest.v1.json",
+            "sha256": "5622c72b90f420462054f2f80fbe37924a4d6bfbcbf367a328f0b2fe356219e5",
+            "objectPath": "objects/5622c72b90f420462054f2f80fbe37924a4d6bfbcbf367a328f0b2fe356219e5",
+            "accessed": false
+          }
+        ]
+      },
+      {
+        "id": "dockq-regression-replay",
+        "declaredSourceCommit": "278ae1a74da133778fba5b17bc296a8e37f02e76",
+        "declaredCombinedImplementationSha256": "8926de3d4f9db9343a40659d8393d00db2f612572404c1b4bb8a7e41de3260d3",
+        "combinedImplementationHashVerified": false,
+        "sources": [
+          {
+            "logicalPath": "lib/audit-export.ts",
+            "sha256": "5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+            "objectPath": "objects/5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+            "bytes": 27883,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/audit-jobs.ts",
+            "sha256": "79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+            "objectPath": "objects/79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+            "bytes": 37549,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/audit-worker-protocol.ts",
+            "sha256": "2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+            "objectPath": "objects/2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+            "bytes": 2775,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/audit-worker.ts",
+            "sha256": "9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+            "objectPath": "objects/9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+            "bytes": 2627,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/confovhh.ts",
+            "sha256": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+            "objectPath": "objects/15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+            "bytes": 83288,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/coordinate-parser.ts",
+            "sha256": "0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+            "objectPath": "objects/0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+            "bytes": 1391,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/geometry-constants.ts",
+            "sha256": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+            "objectPath": "objects/43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+            "bytes": 429,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/geometry-fit.ts",
+            "sha256": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+            "objectPath": "objects/647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+            "bytes": 18908,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/mmcif.ts",
+            "sha256": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+            "objectPath": "objects/1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+            "bytes": 50533,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/pose-ensemble.ts",
+            "sha256": "c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+            "objectPath": "objects/c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+            "bytes": 60201,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/state-pair.ts",
+            "sha256": "d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+            "objectPath": "objects/d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+            "bytes": 67270,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "lib/vhh-numbering.ts",
+            "sha256": "221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+            "objectPath": "objects/221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+            "bytes": 4557,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "package-lock.json",
+            "sha256": "db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+            "objectPath": "objects/db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+            "bytes": 497085,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "package.json",
+            "sha256": "6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+            "objectPath": "objects/6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+            "bytes": 2562,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "scripts/dockq-batch.py",
+            "sha256": "53a8981abea8c25724afa34b082d872dec52661fb234897f3c7c5939f85608e2",
+            "objectPath": "objects/53a8981abea8c25724afa34b082d872dec52661fb234897f3c7c5939f85608e2",
+            "bytes": 4321,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "scripts/dockq-replay-comparison.mjs",
+            "sha256": "1f782eb097ffcf700e759d68c1cdcffc7d8a2511b2a2100e39c176d56358bfe8",
+            "objectPath": "objects/1f782eb097ffcf700e759d68c1cdcffc7d8a2511b2a2100e39c176d56358bfe8",
+            "bytes": 1691,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "scripts/run-dockq-development-pilot.mjs",
+            "sha256": "a67af203faa4b6fd6ebe365c6b47ebba66d8199c9db6651fb2ea532f65d2170d",
+            "objectPath": "objects/a67af203faa4b6fd6ebe365c6b47ebba66d8199c9db6651fb2ea532f65d2170d",
+            "bytes": 54643,
+            "sha256Verified": true
+          },
+          {
+            "logicalPath": "scripts/run-dockq-v05-regression-replay.mjs",
+            "sha256": "ee73137ef5343088e4a39a8571ce3408499cddc9b2f35f20b192b8a8c00bf37b",
+            "objectPath": "objects/ee73137ef5343088e4a39a8571ce3408499cddc9b2f35f20b192b8a8c00bf37b",
+            "bytes": 24431,
+            "sha256Verified": true
+          }
+        ],
+        "excludedMetadata": [
+          {
+            "logicalPath": "validation/dockq-development-pilot-v1/pilot-spec.json",
+            "sha256": "110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc",
+            "objectPath": "objects/110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc",
+            "accessed": false
+          },
+          {
+            "logicalPath": "validation/dockq-development-pilot-v1/source-manifest.json",
+            "sha256": "d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176",
+            "objectPath": "objects/d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176",
+            "accessed": false
+          }
+        ]
+      }
+    ],
+    "sourceReferenceCount": 29,
+    "uniqueSourceObjectCount": 22,
+    "duplicateSourceReferenceCount": 7,
+    "uniqueSourceBytes": 973648,
+    "excludedMetadataReferenceCount": 3,
+    "boundaries": {
+      "fullClosureVerified": false,
+      "exactFrozenCommitTreeEquivalenceEstablished": false,
+      "executionVerified": false,
+      "scientificAuthority": false,
+      "archivedSourcesExecuted": false,
+      "excludedMetadataObjectsAccessed": false,
+      "dependencyObjectsAccessed": false,
+      "historicalSummaryFilesAccessed": false,
+      "networkUsed": false
+    },
+    "limitations": [
+      "Verifies only allowlisted source object bytes bound by the pinned archive index; declared combined implementation hashes include excluded metadata and are not recomputed.",
+      "Recorded source commits are declarations. No equivalence to the frozen v3 commit 04c6bda2289157dd294c290609f6052aa0ef9195 or tree 1d0bc74ca7ca8d59de840b224e453bb61bd8e6b9 is established.",
+      "Executed-dependency metadata in the pinned index is not independently validated; dependency objects, historical summaries and excluded validation metadata objects are not read.",
+      "Source byte availability does not establish historical execution, rank policy equivalence, candidate eligibility, independence or predictive performance."
+    ]
+  }
+}

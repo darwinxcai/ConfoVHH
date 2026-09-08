@@ -29,6 +29,37 @@ These are access observations on this date, not proof that the commit or
 original source bytes are absent everywhere. No historical engine execution
 or source equivalence was established in this review.
 
+### Recoverable historical source subset
+
+A subsequent search of the 311 locally reachable commit/tree identity pairs
+found no match for the frozen tree. This search inspected commit metadata, not
+patches or scientific outputs. It is another bounded observation rather than
+proof of global absence.
+
+The retained `validation/v0.5-engine-implementation-snapshot-v1/index.json`
+does bind historical source objects. Its exact SHA-256 is
+`d98f7766e660248d03771e3678bec5bfaf33da2072d45e034eb2e0596bf3b1e5`.
+The [source-only verification receipt](evidence/historical-source-recovery-2026-09-08/README.md)
+checks that index and the allowlisted `lib/`, `scripts/`, `package.json` and
+`package-lock.json` object bytes, without executing or printing archived source
+bodies. The verifier reads no historical summary, excluded validation object or
+dependency object.
+
+| Recorded attestation | Declared source commit | Verified source references |
+| --- | --- | --- |
+| Public regression | `5cb57617b54baa314513486885c402449f643406` | 11 |
+| Development regression replay | `278ae1a74da133778fba5b17bc296a8e37f02e76` | 18 |
+
+These are 29 references to 22 unique source objects, totaling 973,648 unique
+bytes. Seven references repeat objects. Three validation-metadata references
+are explicitly excluded from byte access. The recorded combined implementation
+hashes remain declarations: their complete closures were not recomputed.
+
+This establishes availability and integrity of a historical source subset. It
+does **not** establish equivalence to commit `04c6bda...` or tree `1d0bc74...`,
+recover the execution environment, resolve the quantization rule, or authorize
+historical execution. Those remain separate prerequisites for the frozen arm.
+
 ## Frozen v2/v3 contract
 
 The contract defines this lexicographic scientific preorder, best first:
