@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { fetchExactPublicFile } from "../scripts/fetch-exact-public-file.mjs";
+import { fetchExactPublicFile, fetchExactPublicFiles } from "../scripts/fetch-exact-public-file.mjs";
 
 // All bodies are synthetic text. No real coordinates, confidence or labels.
 const BODY = Buffer.from("synthetic immutable public artifact\n");
@@ -134,4 +134,35 @@ test("a matching hash cannot authorize invalid UTF-8 or trigger a retry", async 
   const run = harness([new Response(invalid), new Response(BODY)]);
   await assert.rejects(run.run(file), /encoded data was not valid/u);
   assert.equal(run.requests.length, 1);
+});
+
+test("batch retrieval preserves order and enforces source-specific concurrency", async () => {
+  const files = Array.from({ length: 7 }, (_, index) => ({ filename: `synthetic-${index}` }));
+  for (const maximumConcurrency of [1, 4]) {
+    let active = 0;
+    let peak = 0;
+    const starts = [];
+    const result = await fetchExactPublicFiles(files, {
+      maximumConcurrency,
+      fetchOne: async (file) => {
+        starts.push(file.filename);
+        active++;
+        peak = Math.max(peak, active);
+        await new Promise(resolve => setTimeout(resolve, 2));
+        active--;
+        return `downloaded:${file.filename}`;
+      },
+    });
+    assert.equal(peak, maximumConcurrency);
+    assert.deepEqual(starts, files.map(file => file.filename));
+    assert.deepEqual(result, files.map(file => `downloaded:${file.filename}`));
+  }
+});
+
+test("batch retrieval rejects unbounded work and invalid concurrency", async () => {
+  await assert.rejects(fetchExactPublicFiles([]), /bounded file list/u);
+  await assert.rejects(fetchExactPublicFiles(Array.from({ length: 129 }, () => FILE)), /bounded file list/u);
+  for (const maximumConcurrency of [0, 5, 1.5]) {
+    await assert.rejects(fetchExactPublicFiles([FILE], { maximumConcurrency }), /maximum concurrency/u);
+  }
 });

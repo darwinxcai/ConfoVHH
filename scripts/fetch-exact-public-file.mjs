@@ -95,3 +95,24 @@ export async function fetchExactPublicFile(file, {
   const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
   return { path: file.filename, bytes: bytes.byteLength, sha256: file.sha256, text };
 }
+
+/** Preserve input order while limiting pressure on immutable public sources. */
+export async function fetchExactPublicFiles(files, {
+  maximumConcurrency = 4,
+  fetchOne = fetchExactPublicFile,
+} = {}) {
+  assert.ok(Array.isArray(files) && files.length >= 1 && files.length <= 128, "bounded file list required");
+  assert.ok(Number.isSafeInteger(maximumConcurrency) && maximumConcurrency >= 1 && maximumConcurrency <= 4,
+    "maximum concurrency must be between 1 and 4");
+  assert.equal(typeof fetchOne, "function", "fetch implementation required");
+  const output = new Array(files.length);
+  let cursor = 0;
+  async function worker() {
+    while (cursor < files.length) {
+      const index = cursor++;
+      output[index] = await fetchOne(files[index]);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(maximumConcurrency, files.length) }, worker));
+  return output;
+}
