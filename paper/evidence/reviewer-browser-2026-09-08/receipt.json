@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "synthetic software demonstration only",
+  "nodeVersion": "v24.19.0",
+  "sourceSha256": {
+    "lib/audit-export.ts": "5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+    "lib/audit-jobs.ts": "79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+    "lib/audit-worker-protocol.ts": "2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+    "lib/audit-worker.ts": "9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+    "lib/candidate-shortlist.ts": "bc4f378baea03582dadcb38d03436b805c4f1fe353c188bdcd24dbf096468f07",
+    "lib/confovhh.ts": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+    "lib/contact-explorer.ts": "e19259bc4faa8e9b1988e5364a93ccbe30cbfe00106dd184510292c6ec3ae8f9",
+    "lib/coordinate-parser.ts": "0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+    "lib/download.ts": "49dd98ff70e927c7e4903f0c8165d6f1af41c66102b6d1c180f7048e5a0b678f",
+    "lib/geometry-constants.ts": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+    "lib/geometry-fit.ts": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+    "lib/mmcif.ts": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+    "lib/pae-visualization.ts": "da766790f1d2e89fe00817b0ba394a0db67c6cbd10c030e34c70b3f2ef04ae3d",
+    "lib/pose-ensemble.ts": "c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+    "lib/pose-evidence-v06.ts": "83bbc4c48c22eadfdf2a8a288a9a46e05315feccba80279915e74b5c469742bc",
+    "lib/pose-ranking.ts": "6f0be122edcf7e6e8a70ea0f562dc0e1aa14dff4adf19b2bf2f67794711d0911",
+    "lib/prediction-run-jobs.ts": "6ccd6336a4e3193a7b429e0cb165e4508a8b1e7e2617b5aa45f673441175c704",
+    "lib/prediction-run-lifecycle.ts": "cdefe694472d28b22cb260b6992c96be03c3c737f0e0f4e4ade9c32c48821551",
+    "lib/prediction-run-worker-protocol.ts": "a32ab018c2dd7246125bed320b56b116ab9093f17921451373b59a39dd2bc1d8",
+    "lib/prediction-run-worker.ts": "8699fc4aaf8fbfd43db2e743aa4b754cbd6d02bf47b31ed78a04ea3011e24213",
+    "lib/prediction-run.ts": "c7ba1217d1310991d475532eb82fd8151463661f70c2c7360af271e8ff83ba38",
+    "lib/release-validation.ts": "81c682c3672d2cd46aaa558e1ac0cca59e1a21bf9a0a89e99606693602ebd79e",
+    "lib/research-workspace.ts": "bbf0b01cd5450658079b286b14a8728b68e743517a98d13307732000fbe0d415",
+    "lib/sha256.ts": "ea96e4c285008a4c500cc2409e6d3bd3a8f17698e6f29e4e3420eff441a2265f",
+    "lib/state-pair.ts": "d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+    "lib/topology-annotation.ts": "48dba5115e7d650815dfb7b4208bb5e349bcae6ec33b94f9d7a31a18c6dd7d6e",
+    "lib/user-footprint.ts": "cdeecd34293dfd081d70afd3e91fbe1747deffa2c2b27d8cab23bcf509aecfdd",
+    "lib/utils.ts": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+    "lib/vhh-numbering-v06.ts": "0d81880db9d9fa308150d7df64a0f1d05e3e9d8d3c552b4b736b842c789c3270",
+    "lib/vhh-numbering.ts": "32157450d56e24994c513fc09b40e7c66b4651c3cbf38b587bb4511a4d4ca1d7",
+    "package-lock.json": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+    "scripts/paper/reviewer-demo.mjs": "6d27b66bae273d13a7c45603205cf6f319592cdacff3879d4133c95b13155741"
+  },
+  "cases": [
+    {
+      "name": "near",
+      "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+      "residuePairs": 10,
+      "atomContacts": 90,
+      "exportRoundTrip": true,
+      "tamperedResultRejected": true
+    },
+    {
+      "name": "separated",
+      "coordinateSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+      "residuePairs": 0,
+      "atomContacts": 0,
+      "exportRoundTrip": true,
+      "tamperedResultRejected": true
+    }
+  ],
+  "artifactSha256": {
+    "synthetic-near.pdb": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+    "synthetic-near.audit.json": "f12d421e96984b1bd41d515c8893b4ff81e00d335543b9676f4511873c9a3c04",
+    "synthetic-separated.pdb": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+    "synthetic-separated.audit.json": "e7aca3526131b020e375708dc42fbd6c164fff794004b0238524594ec334fdbe"
+  },
+  "boundaries": {
+    "nativeOrPredictionDataRead": false,
+    "networkUsed": false,
+    "biologicalValidation": false,
+    "independentEligibleGroupsAdded": 0
+  }
+}

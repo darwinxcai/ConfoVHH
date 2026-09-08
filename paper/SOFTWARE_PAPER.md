@@ -99,6 +99,12 @@ not independent biological observations. The pose shortlist and ensemble view
 use separately documented ordering rules, so users should retain the method
 identity when comparing exported ranks.
 
+The [software methods supplement](SOFTWARE_METHODS.md) defines the exact
+geometry-tier thresholds, the two ranking orders, units, and missing-input
+behavior. Its source locations and SHA-256 identities bind these definitions to
+the unchanged implementation. The product's review tiers are distinct from the
+reference-dependent scientific endpoints used in the retrospective application.
+
 JSON, CSV, and Markdown exports retain source hashes and method provenance
 alongside review decisions. Distinct product, geometry-engine, and ranking-policy
 versions identify different implementation layers. This supports tracing an
@@ -115,6 +121,14 @@ without private data. Reusers should retain their inputs with the exported
 record and record the software revision. The repository provides a license,
 citation metadata, issue templates, contribution instructions, and automated
 release checks.
+
+For a concrete verification sequence, the [reviewer guide](REVIEWER_GUIDE.md)
+provides an offline synthetic example through export and integrity checks. The
+[data-availability record](DATA_AVAILABILITY.md) distinguishes that replay from
+reproduction of committed application summaries and unavailable raw inputs.
+From the repository root, `node scripts/paper/verify-claim-evidence-manifest.mjs`
+checks the central claim text and exact committed evidence identities. This
+check does not replace scientific validation or independent researcher use.
 
 Software verification addresses parsing, geometry, role and correspondence
 handling, exports, and failure behavior. Synthetic fixtures exercise adverse

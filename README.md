@@ -92,7 +92,9 @@ npm run dev
 
 Open the local address printed by the development server and load the β₂AR–Nb80 demo or your own complex.
 
-Run the complete offline release gate with:
+The browser application requires Node.js; the offline release tests additionally
+require Python 3 for the standard-library analysis regressions. After installing
+the dependencies above, run the complete offline release gate with:
 
 ```bash
 npm run test:release

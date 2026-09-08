@@ -42,6 +42,19 @@ Use the [workflow task sheet](WORKFLOW_EVALUATION.md). This sheet is ready for
 independent completion; no participant result is claimed. The tiny fragments
 cannot validate antibody numbering or scientific interpretation.
 
+After downloading both browser reports, run the task sheet's
+`verify-reviewer-exports.mjs` command. It validates source hashes, roles, policy,
+missingness and every measurement against the regenerated synthetic reference;
+only the export timestamp may differ. Keep its comparison receipt with the two
+exports. Report agreement does not authenticate a participant or establish
+independent completion.
+
+The [preserved automated browser execution](evidence/reviewer-browser-2026-09-08/README.md)
+exercises the task sheet through both downloads. It checks required role
+confirmation, its reset after replacement, visible missing-evidence states,
+and exact report agreement. This is an automated execution record; the
+independent completion sheet remains unfilled.
+
 ## Broader software checks
 
 ```bash

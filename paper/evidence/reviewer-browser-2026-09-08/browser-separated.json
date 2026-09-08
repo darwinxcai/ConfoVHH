@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "1.2.0",
+  "softwareVersion": "0.5.0",
+  "generatedAt": "2026-09-08T14:03:34.151Z",
+  "file": "synthetic-separated.pdb",
+  "structure": {
+    "title": "SYNTHETIC SOFTWARE EXAMPLE - NOT A PROTEIN MODEL",
+    "experimentalMethod": null,
+    "coordinateProvenance": "unknown",
+    "sourceFileSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+    "sourceFileBytes": 2559,
+    "selectedCoordinateFingerprint": "fnv1a64-3dp:a970bac221bf95e7",
+    "selectedGeometryFingerprint": "fnv1a64-se3-2dp:f43da64fba7dd22c",
+    "fingerprintPolicy": {
+      "selectedCoordinateFingerprint": "FNV-1a 64-bit screening identifier over the selected receptor/VHH atom identities and source-frame coordinates rounded to 0.001 Å; it changes under rigid-body transforms.",
+      "selectedGeometryFingerprint": "FNV-1a 64-bit screening identifier over the selected receptor/VHH atom identities in a deterministic SE(3)-canonical frame rounded to 0.01 Å; prefix fnv1a64-se3-2dp.",
+      "decisionBoundary": "Fingerprints are provenance and candidate-screening identifiers, not cryptographic digests. Near-duplicate decisions use an explicit proper-rotation fit with independent RMSD and maximum-residual thresholds."
+    },
+    "sourceFormat": "pdb",
+    "coordinateScope": "as-supplied",
+    "modelCount": 1,
+    "selectedModelId": "1",
+    "availableModelIds": [
+      "1"
+    ],
+    "selectedAssembly": null,
+    "availableAssemblies": [],
+    "modelPolicy": "Exactly one explicitly selected coordinate model is audited; model identifiers are preserved from the source parser.",
+    "assemblyPolicy": "Coordinates were analyzed as supplied. ConfoVHH applied no assembly transforms; the source file may already contain pre-expanded coordinates.",
+    "chainIdentityConfirmed": true,
+    "selectedChains": [
+      {
+        "id": "R",
+        "role": "receptor",
+        "sequence": "AAAA",
+        "residueCount": 4,
+        "atomCount": 16,
+        "backboneCompleteness": 1,
+        "labelAsymId": null,
+        "authAsymId": null,
+        "assemblyCopyIndex": null,
+        "assemblyGeneratorRowIndex": null,
+        "assemblyOperationIds": [],
+        "assemblyTransform": null
+      },
+      {
+        "id": "V",
+        "role": "VHH",
+        "sequence": "AAAA",
+        "residueCount": 4,
+        "atomCount": 16,
+        "backboneCompleteness": 1,
+        "labelAsymId": null,
+        "authAsymId": null,
+        "assemblyCopyIndex": null,
+        "assemblyGeneratorRowIndex": null,
+        "assemblyOperationIds": [],
+        "assemblyTransform": null
+      }
+    ],
+    "parserDiagnostics": {
+      "parserEngine": "ConfoVHH fixed-column PDB parser",
+      "ignoredAlternateLocations": 0,
+      "ignoredHydrogens": 0,
+      "duplicateAtomRecords": 0,
+      "malformedAtomRecords": 0,
+      "unsupportedResidueRecords": 0,
+      "zeroOccupancyAtomRecords": 0,
+      "residueNameConflicts": 0,
+      "alternateLocationPolicy": "One residue-level conformer is selected by summed occupancy; blank atoms are shared, with A then deterministic code-unit tie-breaks."
+    }
+  },
+  "pae": null,
+  "auditPolicy": {
+    "confidenceMode": "none",
+    "pae": "omitted",
+    "residueContactCutoffAngstrom": 4.5,
+    "polarProxyCutoffAngstrom": 3.5,
+    "saltBridgeProxyCutoffAngstrom": 4,
+    "severeClashOverlapAngstrom": 0.6,
+    "sasaProbeRadiusAngstrom": 1.4,
+    "sasaSpherePoints": 960,
+    "sasaRadii": "Element-based Bondi radii: H 1.20, C 1.70, N 1.55, O 1.52, S/P 1.80, Se 1.90 Å.",
+    "sasaOrientation": "source-coordinate-frame",
+    "sasaFrameAlgorithm": "source-coordinates-as-supplied-v1",
+    "sasaMaximumCandidateDistanceChecks": 25000000,
+    "sasaMaximumOcclusionChecks": 250000000,
+    "cdrAnnotation": "Sequence-aligned IMGT regions from immunum 1.3.0: CDR1 27–38, CDR2 56–65, CDR3 105–117.",
+    "paeSummary": "Directional median and 90th-percentile PAE over contacting receptor–VHH residue pairs using the user-confirmed AlphaFold row-aligned/column-evaluated convention and residue order; conservative summaries aggregate the worse direction for each contact pair, and lowPaeContactShare is the share of those conservative contact-pair values at or below 10 Å."
+  },
+  "audit": {
+    "version": "0.5.0",
+    "confidenceMode": "none",
+    "receptorChain": "R",
+    "vhhChain": "V",
+    "evidenceLevel": "not-assessable",
+    "contactPairCount": 0,
+    "atomContactCount": 0,
+    "receptorInterfaceResidues": 0,
+    "vhhInterfaceResidues": 0,
+    "polarContactProxyCount": 0,
+    "saltBridgeProxyCount": 0,
+    "severeClashCount": 0,
+    "possibleInterchainDisulfideCount": 0,
+    "maximumOverlapAngstrom": 0,
+    "paratopeProxyShare": null,
+    "cdr3ProxyShare": null,
+    "interfaceConfidence": null,
+    "interfaceConfidenceCoverage": null,
+    "deltaSasaAngstrom2": 0,
+    "receptorBuriedSurfaceAreaAngstrom2": 0,
+    "vhhBuriedSurfaceAreaAngstrom2": 0,
+    "halfDeltaSasaInterfaceAreaAngstrom2": 0,
+    "interfacePaeMedianAngstrom": null,
+    "interfacePaeP90Angstrom": null,
+    "receptorFrameToVhhPaeMedianAngstrom": null,
+    "vhhFrameToReceptorPaeMedianAngstrom": null,
+    "receptorFrameToVhhPaeP90Angstrom": null,
+    "vhhFrameToReceptorPaeP90Angstrom": null,
+    "lowPaeContactShare": null,
+    "paeFilename": null,
+    "paeOrderConfirmed": false,
+    "vhhNumbering": {
+      "status": "unavailable",
+      "scheme": "IMGT",
+      "engine": "immunum 1.3.0",
+      "confidence": null,
+      "cdrLengths": null,
+      "error": "Invalid sequence: sequence length 4 is below minimum 30"
+    },
+    "contacts": [],
+    "receptorInterfaceKeys": [],
+    "vhhInterfaceKeys": [],
+    "findings": [
+      {
+        "label": "Chain and coordinate plausibility",
+        "level": "review",
+        "evidence": "Receptor R: 4 residues, 100% complete backbone. VHH V: 4 residues, 100% complete backbone.",
+        "action": "Confirm biological chain identities and review missing backbone atoms or receptor fusion constructs."
+      },
+      {
+        "label": "IMGT V-domain annotation",
+        "level": "unavailable",
+        "evidence": "IMGT annotation unavailable: Invalid sequence: sequence length 4 is below minimum 30",
+        "action": "Sequence-aligned IMGT regions map the paratope footprint but do not establish antigen binding."
+      },
+      {
+        "label": "Contact breadth",
+        "level": "limited",
+        "evidence": "0 residue pairs across 0 receptor and 0 VHH residues.",
+        "action": "Check chain assignment or modeled pose."
+      },
+      {
+        "label": "Buried solvent-accessible area",
+        "level": "unavailable",
+        "evidence": "No cross-chain burial was detected.",
+        "action": "Use buried area as a descriptive footprint metric; it is not an affinity or binding-energy estimate."
+      },
+      {
+        "label": "Cross-chain PAE",
+        "level": "unavailable",
+        "evidence": "No matching PAE JSON was attached; relative-placement confidence was not assessed.",
+        "action": "Use the continuous directional values; no universal GPCR–VHH acceptance cutoff is applied."
+      },
+      {
+        "label": "Potential polar and electrostatic contacts",
+        "level": "unavailable",
+        "evidence": "0 donor–acceptor distance matches and 0 acidic/basic atom-pair proximities.",
+        "action": "These distance-only candidates do not affect the evidence label; protonation and angles are not modeled."
+      },
+      {
+        "label": "Steric quality",
+        "level": "supported",
+        "evidence": "0 contacting residue pairs contain a noncovalent heavy-atom van der Waals overlap of at least 0.6 Å; maximum overlap is 0.00 Å. 0 plausible Cys–Cys crosslink(s) were exempted.",
+        "action": "No severe cross-chain van der Waals overlaps were detected."
+      },
+      {
+        "label": "Reported coordinate confidence",
+        "level": "unavailable",
+        "evidence": "B-factor interpretation is off; no coordinate-confidence claim is made.",
+        "action": "Only enable pLDDT interpretation when the file format is known. Confidence does not establish binding."
+      }
+    ],
+    "warnings": [
+      "Favorable coordinate geometry is not evidence of affinity, specificity, kinetics, signaling, or biological binding.",
+      "Evidence bands use transparent screening heuristics and are not calibrated probabilities.",
+      "Cross-chain PAE is reported only when a dimension-matched square JSON matrix is supplied and its residue order is explicitly confirmed; it is never inferred from coordinates.",
+      "Membrane orientation and active/inactive state preference are not assessed.",
+      "IMGT regions use sequence alignment from immunum 1.3.0, not ANARCI's germline HMMs; unrecognized chains are left unnumbered.",
+      "IMGT positions are mapped to the observed coordinate sequence; unresolved residues absent from coordinate atom records can make experimental-structure mapping incomplete.",
+      "Buried area uses a 960-point Shrake–Rupley approximation with a 1.4 Å probe and protein heavy atoms only.",
+      "Finite-grid ΔSASA was evaluated in the source coordinate orientation; a whole-complex rotation can cause small discretization differences. Ensemble and paired workflows use ConfoVHH's deterministic canonical SASA frame instead.",
+      "Coordinates were analyzed as supplied; deposited-assembly and crystallographic-symmetry transforms were not generated."
+    ],
+    "methods": {
+      "residueContactCutoffAngstrom": 4.5,
+      "polarProxyCutoffAngstrom": 3.5,
+      "saltBridgeProxyCutoffAngstrom": 4,
+      "severeClashOverlapAngstrom": 0.6,
+      "sasaProbeRadiusAngstrom": 1.4,
+      "sasaSpherePoints": 960,
+      "sasaMaximumCandidateDistanceChecks": 25000000,
+      "sasaMaximumOcclusionChecks": 250000000,
+      "sasaRadii": "Element-based Bondi radii: H 1.20, C 1.70, N 1.55, O 1.52, S/P 1.80, Se 1.90 Å.",
+      "sasaOrientation": "source-coordinate-frame",
+      "sasaFrameAlgorithm": "source-coordinates-as-supplied-v1",
+      "cdrAnnotation": "Sequence-aligned IMGT regions from immunum 1.3.0: CDR1 27–38, CDR2 56–65, CDR3 105–117.",
+      "paeSummary": "Directional median and 90th-percentile PAE over contacting receptor–VHH residue pairs using the user-confirmed AlphaFold row-aligned/column-evaluated convention and residue order; conservative summaries aggregate the worse direction for each contact pair, and lowPaeContactShare is the share of those conservative contact-pair values at or below 10 Å."
+    },
+    "rationale": "No receptor–VHH residue contacts were detected at the configured cutoff.",
+    "auditAttestation": {
+      "schemaVersion": "1.0.0",
+      "inputFingerprint": "fnv1a32x2-audit-input:d136a12f99354171",
+      "resultFingerprint": "fnv1a32x2-audit-result:1b2b589149dd537f"
+    }
+  }
+}

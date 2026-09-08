@@ -105,7 +105,10 @@ export async function fetchExactPublicFile(file, {
   return { path: file.filename, bytes: bytes.byteLength, sha256: file.sha256, text };
 }
 
-/** Preserve input order while limiting pressure on immutable public sources. */
+/** Preserve input order while limiting pressure on immutable public sources.
+ * Stop dispatching after the first failure, then drain in-flight downloads
+ * before returning that failure. Already-started files keep their own bounds.
+ */
 export async function fetchExactPublicFiles(files, {
   maximumConcurrency = 4,
   fetchOne = fetchExactPublicFile,
@@ -116,12 +119,22 @@ export async function fetchExactPublicFiles(files, {
   assert.equal(typeof fetchOne, "function", "fetch implementation required");
   const output = new Array(files.length);
   let cursor = 0;
+  let failed = false;
+  let firstError;
   async function worker() {
-    while (cursor < files.length) {
+    while (!failed && cursor < files.length) {
       const index = cursor++;
-      output[index] = await fetchOne(files[index]);
+      try {
+        output[index] = await fetchOne(files[index]);
+      } catch (error) {
+        if (!failed) {
+          failed = true;
+          firstError = error;
+        }
+      }
     }
   }
   await Promise.all(Array.from({ length: Math.min(maximumConcurrency, files.length) }, worker));
+  if (failed) throw firstError;
   return output;
 }

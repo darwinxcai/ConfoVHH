@@ -39,9 +39,11 @@ so inspect them before sharing.
 3. Locate the contact count and missing-PAE state. No valid VHH numbering or
    antibody-loop identity should be inferred from these alanine fragments.
    Export **Single-pose audit JSON**.
-4. Repeat the same steps for `synthetic-separated.pdb`. The near case must have
-   contacts; the separated case must have zero contact pairs. Both must retain
-   absent PAE, rather than reporting zero uncertainty.
+4. Use **Replace coordinate** to load `synthetic-separated.pdb`. Confirm that
+   the earlier audit is cleared and the role-confirmation checkbox is reset,
+   then repeat the audit and export steps. The near case must have contacts;
+   the separated case must have zero contact pairs. Both must retain absent
+   PAE, rather than reporting zero uncertainty.
 5. Compare each browser export with its generated audit JSON and receipt.
    Match `structure.sourceFileSha256` to the corresponding case's
    `coordinateSha256`, confirm the selected chains, and compare
@@ -49,6 +51,33 @@ so inspect them before sharing.
    null and `auditPolicy.pae` is `omitted`. Compare software version and policy
    fields with the generated report. Export timestamps can differ; do not
    require browser and generated JSON files to have identical whole-file hashes.
+
+Use the offline comparison command after saving both browser exports:
+
+```bash
+node scripts/paper/verify-reviewer-exports.mjs \
+  --example=/tmp/confovhh-review-example \
+  --near=/path/to/near-browser-export.json \
+  --separated=/path/to/separated-browser-export.json \
+  --output=/tmp/confovhh-review-comparison.json
+```
+
+Choose a new output filename. The command refuses to overwrite existing files.
+It validates both browser reports with the production importer, checks the
+generator receipt against the current library, generator and dependency-lock
+hashes, and regenerates the synthetic reference locally. All report fields must
+match the corresponding reference except `generatedAt`; JSON whitespace and
+object-key order may differ. Source identities, role assignments, fixed policy,
+counts, other measurements and absent PAE remain exact requirements. Keep the
+generated reports unchanged, even their formatting, because their byte hashes
+are bound to the generator receipt. Use the same source revision as generation;
+if it has changed, preserve the earlier package and repeat in a new directory.
+
+A successful command writes a comparison receipt with hashes of both submitted
+exports. This verifies report agreement only. It cannot distinguish a browser
+export from a copied generated report, identify the participant, observe the
+role-confirmation gate or establish independent completion. Record those
+observations separately below. No scientific or biological validation follows.
 
 The receipt records a successful export round trip and rejection of a report
 whose contact count was altered. These are generator checks, not observations
@@ -70,6 +99,7 @@ Leave unperformed steps blank. Retain both browser exports with this record.
 | Role-confirmation gate observed | |
 | Near/separated counts matched receipt | |
 | Missing PAE and provenance matched | |
+| Export comparison command and receipt path | |
 | Failure messages or unexpected behavior | |
 | Assistance required; confusing instructions | |
 | Suggested improvement | |

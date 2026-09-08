@@ -171,6 +171,60 @@ test("batch retrieval rejects unbounded work and invalid concurrency", async () 
   }
 });
 
+test("batch failure stops queued downloads and drains in-flight work before rejecting with the first error", async () => {
+  const files = Array.from({ length: 7 }, (_, index) => ({ filename: `synthetic-${index}` }));
+  const pending = files.map(() => {
+    let resolve, reject;
+    const promise = new Promise((yes, no) => { resolve = yes; reject = no; });
+    return { promise, resolve, reject };
+  });
+  const starts = [];
+  const firstError = new Error("synthetic-1: HTTP 403");
+  let settled = false;
+  const batch = fetchExactPublicFiles(files, {
+    maximumConcurrency: 4,
+    fetchOne: (file) => {
+      const index = files.indexOf(file);
+      starts.push(index);
+      return pending[index].promise;
+    },
+  });
+  // Attach a rejection handler before releasing any deferred request.
+  const completion = batch.then(
+    () => { settled = true; assert.fail("failed batch must reject"); },
+    error => { settled = true; assert.equal(error, firstError); },
+  );
+  assert.deepEqual(starts, [0, 1, 2, 3]);
+  pending[1].reject(firstError);
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(settled, false, "batch must wait for the remaining in-flight downloads");
+
+  pending[2].resolve("synthetic result 2");
+  pending[0].reject(new Error("synthetic later provenance failure"));
+  await new Promise(resolve => setImmediate(resolve));
+  assert.deepEqual(starts, [0, 1, 2, 3], "successful survivors must not launch queued downloads");
+  assert.equal(settled, false, "even a second failure must leave the last in-flight request drained");
+
+  pending[3].resolve("synthetic result 3");
+  await completion;
+  assert.equal(settled, true);
+  assert.deepEqual(starts, [0, 1, 2, 3]);
+});
+
+test("a synchronous batch failure stops initial dispatch and preserves falsey rejection values", async () => {
+  const starts = [];
+  let rejected = false;
+  await fetchExactPublicFiles([FILE, FILE, FILE], {
+    maximumConcurrency: 4,
+    fetchOne: (file) => { starts.push(file); throw undefined; },
+  }).then(
+    () => assert.fail("synchronous failure must reject"),
+    error => { rejected = true; assert.equal(error, undefined); },
+  );
+  assert.equal(rejected, true);
+  assert.equal(starts.length, 1);
+});
+
 test("Zenodo public record URLs encode one bounded filename without API credentials", () => {
   assert.equal(
     zenodoRecordFileUrl(17063524, "synthetic file.json"),
