@@ -165,3 +165,75 @@ every unresolved screen and all earlier source/exposure records. No native
 coordinates, poses, contact tables, labels or real prediction outputs are
 authorized by this continuation. Formally cleared independent groups remain
 **0**; independent predictive accuracy remains **unmeasured**.
+
+## Phrase-only chunks 001–002 and executable tuple-contract verification
+
+The next two fixed lexical packets are complete and exactly replayable using
+the unchanged collector and metadata query:
+
+| Packet | Identifier range | Complete entry inventories | Polymers | Review rows | Missing/noncanonical/engine-review entities |
+| --- | --- | ---: | ---: | ---: | ---: |
+| [001](phrase-only-chunk-001-2026-09-08/) | 1CVH–1HCA | 250 | 381 | 30 | 13 |
+| [002](phrase-only-chunk-002-2026-09-08/) | 1HCI–1MG8 | 250 | 384 | 18 | 12 |
+
+Each packet has 20 successful repeated responses, with no failures, missing
+entries, incomplete inventories or disagreements. The new
+[three-packet union receipt](phrase-only-union-2026-09-08/README.md) verifies
+disjoint membership equal to the first 750 identifiers in the original saved
+12,262-identifier remainder. It contains **1,214 polymers**, **89 review rows**
+and **47 entities requiring missing/noncanonical/engine review**. The last count
+does not mean 47 absent sequences. The **11,512 uncaptured identifiers** refer
+only to this fixed membership, not a whole-census bound. This supersedes the
+earlier one-packet continuation count without rewriting the original packet.
+
+The two numbered-heavy-domain leads in chunk 001 are 1CZ8_3 and 1G6V_2.
+The [1CZ8 triage](phrase-only-1cz8-triage-2026-09-08/README.md) and
+[1G6V triage](phrase-only-1g6v-triage-2026-09-08/README.md) bind their complete
+five-polymer inventories to fresh exact Crossref and Europe PMC bibliography.
+These support conventional-Fab/VEGFA and camel single-domain-antibody CAB-CA05/
+carbonic-anhydrase contexts, respectively. Both advertised publisher XML routes
+timed out; preparation Methods remain unrecovered. Both formal dispositions
+remain pending. These positive contexts do not convert the sequence screen into
+eligibility, absence, no-edge or whole-census authority. Chunk 002 has no
+numbered-heavy-domain calls; unresolved screens remain in the review records,
+and a zero call count does not establish absence.
+
+The [partial prequantized tuple utility](../../paper/PREQUANTIZED_TUPLE_CONTRACT.md)
+now tests the seven priorities in the exact frozen scoring contract. It accepts
+already-assigned integer bin indices and performs no raw-feature rounding,
+current-product score substitution or real-feature export. All engine,
+upstream-bin, execution, eligibility and accuracy authorities remain false.
+The exact protocol-declared Git commit could not be retrieved by a blob-excluding
+Git fetch; the [access receipt](../../paper/evidence/frozen-source-retrieval-2026-09-08/README.md)
+does not establish absence elsewhere. Original engine identity and the
+scientific rounding convention remain unresolved. The repeated source-header
+prose exposure during review is appended to the existing exposure record,
+without changing any earlier adjudication or tuning a parameter.
+
+The new [GPR158/Nb20 deposition capture](mglyr-deposition-construct-2026-09-08/README.md)
+recovers explicit expression-host metadata for all six polymers in 9VOR/9VOS:
+HEK293 for both receptor entities and the RGS7/Gβ5 entities, and the deposited
+BL21-Gold(DE3)pLysS AG host label for both Nb20 entities. DOI, PMID and all six
+sequences agree with retained metadata. Null fragment/mutation/vector/plasmid
+fields are not absence evidence. Source ranges do not establish canonical
+truncation or tag cleavage. A new exact-DOI HAL metadata route confirms the cited
+2022 preparation article but supplies no requested file URL; no Methods were
+recovered through it. Exact cryo-EM receptor and Nb20 construct links remain
+open. The packet preserves 15 file hashes, seven request/response bindings and
+five prior input identities, without changing eligibility or exposure decisions.
+
+Next discovery work starts at fixed chunk index 3 after checking current
+repository and open-PR state. Preserve separate immutable packets and recompute
+cumulative progress from their verified identifier union. The software-paper
+input-availability and independent-user gates also remain active; additional
+metadata exclusions alone cannot complete publication. Formally cleared
+independent eligible groups remain **0** and independent predictive accuracy
+remains **unmeasured**.
+
+Focused verification for this increment passed **12/12 tests**: eight synthetic
+tuple-contract tests and four tests for exact new-packet replay, cumulative
+accounting and adversarial duplicate/omitted membership. Independent code and
+union-evidence reviews found no material issues. New code/tests pass lint;
+source-packet checksums and the seven manuscript claims/14 artifact bindings
+verify. Hosted results for the exact pushed revision are recorded in PR #56;
+the starting revision's 833-test result is not reused as a later revision's gate.

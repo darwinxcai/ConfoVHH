@@ -1,0 +1,112 @@
+{
+  "schema": "confovhh-phrase-only-1g6v-triage-v1",
+  "recordedUtc": "2026-09-08T18:04:47.181873+00:00",
+  "entryId": "1G6V",
+  "candidateEntityId": "1G6V_2",
+  "input": {
+    "snapshotPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd/entries.jsonl",
+    "snapshotSha256": "b2c374b8c58dc82b0522dcc096cce5358d7e4091736e5177a3809b0c83910f61",
+    "selectedRawLineSha256": "82e7ea615411e7abed2cc0974e2c136a7d9b00948867d5782bd636334f1c1635",
+    "selectedRowRule": "Exactly one JSONL object with pdbId equal to 1G6V; raw-line hash excludes the line-feed terminator."
+  },
+  "positiveSourceFacts": [
+    {
+      "classification": "DEPOSITED_METADATA_FACT",
+      "source": "selected-entry.json",
+      "fact": "The complete retained inventory contains a 260-residue carbonic-anhydrase entity annotated as Bos taurus with UniProt P00921, and a 126-residue antibody-heavy-chain entity annotated as Camelus dromedarius. Entity 2 is the numbered-heavy lead."
+    },
+    {
+      "classification": "DEPOSITED_TITLE_FACT",
+      "source": "selected-entry.json",
+      "fact": "The deposited entry title names camelid heavy-chain antibody fragment CAB-CA05 in a complex with bovine carbonic anhydrase."
+    },
+    {
+      "classification": "PRIMARY_CITATION_BIBLIOGRAPHY_FACT",
+      "source": "source-access.json",
+      "fact": "Fresh exact-identifier Europe PMC/PubMed and Crossref bibliography match DOI 10.1074/jbc.m102107200 and a publication describing a camel single-domain antibody."
+    }
+  ],
+  "allPolymerInventory": [
+    {
+      "rcsbEntityId": "1G6V_1",
+      "entityId": "1",
+      "depositedDescription": "CARBONIC ANHYDRASE",
+      "sequenceLength": 260,
+      "sequenceSha256": "e6a24c903c1ef211037c64a6835a8a484f48b17be1cae50d6998913f21acf7d4",
+      "labelAsymIds": [
+        "A"
+      ],
+      "authAsymIds": [
+        "A"
+      ],
+      "sourceOrganisms": [
+        {
+          "scientificName": "Bos taurus",
+          "taxonomyId": "9913"
+        }
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P00921",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ]
+    },
+    {
+      "rcsbEntityId": "1G6V_2",
+      "entityId": "2",
+      "depositedDescription": "ANTIBODY HEAVY CHAIN",
+      "sequenceLength": 126,
+      "sequenceSha256": "54eedea9b05d89b6092fd74c8193fe0bba8bac9abe993ee57c59eac44255c5be",
+      "labelAsymIds": [
+        "B"
+      ],
+      "authAsymIds": [
+        "K"
+      ],
+      "sourceOrganisms": [
+        {
+          "scientificName": "Camelus dromedarius",
+          "taxonomyId": "9838"
+        }
+      ],
+      "referenceSequences": []
+    }
+  ],
+  "auditInference": {
+    "classification": "POSITIVE_CAMEL_SINGLE_DOMAIN_ANTIBODY_CARBONIC_ANHYDRASE_CONTEXT_TRIAGE",
+    "statement": "The domain-screen lead has positive camel single-domain-antibody bibliography and deposited CAB-CA05/carbonic-anhydrase context. This supports a bounded format and target-context review lead, without providing the primary preparation-to-deposition construct mapping required for formal eligibility or exclusion.",
+    "notEstablished": [
+      "Exact expressed CAB-CA05 construct sequence, purification tags or processing from primary preparation Methods.",
+      "A primary preparation/deposition statement tying the complete candidate construct to the named reagent.",
+      "Direct-interface evidence, binder ancestry or formal overlap disposition.",
+      "A source-reviewed direct GPCR–VHH pair meeting frozen eligibility criteria.",
+      "Formal whole-entry exclusion, absence of every possible relevant binder or a whole-census bound."
+    ],
+    "annotationCaveat": "The CAB-CA05 identity and carbonic-anhydrase complex are deposited title/metadata statements. The matched bibliography establishes publication identity and single-domain-antibody context; it is not a preparation, direct-interface or affinity-validation record. Sequence length and camelid taxonomy alone carry no eligibility authority."
+  },
+  "disposition": {
+    "candidateFormatReview": "CAMEL_SINGLE_DOMAIN_ANTIBODY_CARBONIC_ANHYDRASE_CONTEXT_SOURCE_IDENTIFIED",
+    "formalDisposition": "PENDING_DISPOSITION",
+    "sourcePreparationReviewComplete": false,
+    "directInterfaceEvidenceStatus": "UNRESOLVED",
+    "formalEligibilityAuthority": false,
+    "wholeEntryExclusionAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "independenceCertified": false,
+    "targetFreezePermitted": false,
+    "newEligibleGroups": 0,
+    "wholeCensusBound": null
+  },
+  "continuation": "Retain the positive format/target context without converting it into a formal disposition. If formal disposition is required, obtain permitted primary preparation/construct and deposition evidence. Do not repeatedly retry the same failed publisher route without new access evidence.",
+  "exposure": {
+    "nativeCoordinatesInspected": false,
+    "nativeRelativePosesInspected": false,
+    "structuralContactTablesInspected": false,
+    "labelsAccessed": false,
+    "predictionOutputsAccessed": false,
+    "abstractsOrResultsFiguresOrCaptionsInspected": false
+  },
+  "scopeLimit": "This review concerns only 1G6V and its 2 deposited polymer entities. It supplies neither an absence proof nor any bound for the phrase-only remainder or whole census."
+}

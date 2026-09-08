@@ -1,0 +1,226 @@
+{
+  "schema": "confovhh-1g6v-source-access-v1",
+  "requests": [
+    {
+      "name": "crossref",
+      "entryId": "1G6V",
+      "url": "https://api.crossref.org/works/10.1074%2Fjbc.m102107200",
+      "requestedUtc": "2026-09-08T18:02:33.715921+00:00",
+      "fullResponseArchived": false,
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 13111,
+      "sha256": "dc7a90a84adebf1291dc749ef19b9d0b1611f427f274586e76646ae752b6d5fa",
+      "retrievedUtc": "2026-09-08T18:02:42.592853+00:00",
+      "bibliography": {
+        "DOI": "10.1074/jbc.m102107200",
+        "title": [
+          "Antigen Specificity and High Affinity Binding Provided by One Single Loop of a Camel Single-domain Antibody"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2001,
+              7
+            ]
+          ]
+        },
+        "author": [
+          {
+            "given": "Aline",
+            "family": "Desmyter",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Klaas",
+            "family": "Decanniere",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Serge",
+            "family": "Muyldermans",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Lode",
+            "family": "Wyns",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "publisher": "Elsevier BV",
+        "container-title": [
+          "Journal of Biological Chemistry"
+        ],
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0021925819301875?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0021925819301875?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://syndication.highwire.org/content/doi/10.1074/jbc.M102107200",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2001,
+                  7,
+                  1
+                ]
+              ],
+              "date-time": "2001-07-01T00:00:00Z",
+              "timestamp": 993945600000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2020,
+                  10,
+                  2
+                ]
+              ],
+              "date-time": "2020-10-02T00:00:00Z",
+              "timestamp": 1601596800000
+            },
+            "content-version": "vor",
+            "delay-in-days": 7033,
+            "URL": "http://creativecommons.org/licenses/by/4.0/"
+          }
+        ],
+        "URL": "https://doi.org/10.1074/jbc.m102107200"
+      }
+    },
+    {
+      "name": "epmc",
+      "entryId": "1G6V",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A11342547+AND+SRC%3AMED&format=json&resultType=core",
+      "requestedUtc": "2026-09-08T18:02:33.716339+00:00",
+      "fullResponseArchived": false,
+      "status": 200,
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 5486,
+      "sha256": "bad666c79693eecdf1b62df3e7087164796dfca20df6fcc4c53e79e5222f0923",
+      "retrievedUtc": "2026-09-08T18:02:43.251809+00:00",
+      "bibliography": [
+        {
+          "id": "11342547",
+          "source": "MED",
+          "pmid": "11342547",
+          "pmcid": null,
+          "doi": "10.1074/jbc.m102107200",
+          "title": "Antigen specificity and high affinity binding provided by one single loop of a camel single-domain antibody.",
+          "authorString": "Desmyter A, Decanniere K, Muyldermans S, Wyns L.",
+          "pubYear": "2001",
+          "isOpenAccess": "N",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "http://www.jbc.org/article/S0021925819301875/pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1074/jbc.M102107200"
+              }
+            ]
+          },
+          "license": "cc by",
+          "journalInfo": {
+            "issue": "28",
+            "volume": "276",
+            "journalIssueId": 988965,
+            "dateOfPublication": "2001 Jul",
+            "monthOfPublication": 7,
+            "yearOfPublication": 2001,
+            "printPublicationDate": "2001-07-01",
+            "journal": {
+              "title": "The Journal of biological chemistry",
+              "medlineAbbreviation": "J Biol Chem",
+              "essn": "1083-351X",
+              "issn": "0021-9258",
+              "isoabbreviation": "J Biol Chem",
+              "nlmid": "2985121R"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "advertised_publisher_xml",
+      "entryId": "1G6V",
+      "url": "https://api.elsevier.com/content/article/PII:S0021925819301875?httpAccept=text/xml",
+      "requestedUtc": "2026-09-08T18:03:00.692367+00:00",
+      "fullResponseArchived": false,
+      "status": "REQUEST_FAILED",
+      "errorType": "TimeoutError",
+      "error": "The read operation timed out",
+      "retrievedUtc": "2026-09-08T18:03:43.539517+00:00",
+      "primaryMethodsRetrieved": false
+    }
+  ],
+  "priorWebToolObservation": {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A11342547%20AND%20SRC%3AMED&format=json&resultType=lite",
+    "result": "WEB_TOOL_NON_RETRYABLE_SAFE_URL_ERROR",
+    "httpStatusKnown": false,
+    "responseBodyReceived": false,
+    "note": "The web-rendering tool did not retrieve the lite metadata URL. No HTTP status or general accessibility conclusion is inferred; the separately requested core metadata reduction above is the retained bibliography source."
+  },
+  "responseScope": "Exact bibliography, identifier and advertised access-location reductions only. Complete metadata bodies, abstracts, references and publisher error bodies were neither displayed nor archived.",
+  "primaryMethodsRetrieved": false,
+  "primaryDepositionStatementRetrieved": false,
+  "primaryLicenseVerified": false,
+  "licenseCaveat": "Europe PMC reports a cc by license and Crossref advertises a CC BY 4.0 link for the version of record; these metadata declarations are retained, but a primary license statement was not retrieved or independently verified.",
+  "accessCaveat": "The advertised publisher XML route was tried once and timed out without a complete response. No primary preparation or deposition text was recovered. This is not evidence of general inaccessibility or absent Methods."
+}

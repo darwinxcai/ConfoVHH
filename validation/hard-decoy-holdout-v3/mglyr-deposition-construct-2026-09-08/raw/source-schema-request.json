@@ -1,0 +1,1 @@
+{"query": "query { source: __type(name:\"EntitySrcGen\") { name fields { name } } entity: __type(name:\"RcsbPolymerEntity\") { name fields { name } } }"}

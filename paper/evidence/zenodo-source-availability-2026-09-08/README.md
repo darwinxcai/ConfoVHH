@@ -49,3 +49,10 @@ still describes this public record GET route. No record metadata
 or advertised alternative file link was recovered in this attempt; no producer
 file was requested. This adds an access observation, not a solution to the
 required file-download gate.
+
+The next continuation tried the public record HTML route through the web fetch
+tool. It reported upstream HTTP 429 and exposed neither response headers nor a
+retained response body. The observation is recorded in
+`record-html-rate-limit-receipt.json`; no retry followed the rate-limit response.
+No producer file was requested and no alternative file endpoint was recovered.
+The exact producer gate remains unchanged.

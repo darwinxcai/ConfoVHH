@@ -1,0 +1,130 @@
+{
+  "directInterfaceEvidenceStatus": "UNRESOLVED",
+  "dispositionStatus": "PENDING_DISPOSITION",
+  "experimentalMethods": [
+    "X-RAY DIFFRACTION",
+    "X-ray"
+  ],
+  "gpcrdb": {
+    "activationDistance": null,
+    "class": null,
+    "experimentalType": null,
+    "family": null,
+    "preferredChain": null,
+    "protein": null,
+    "publication": null,
+    "publicationDate": null,
+    "resolution": null,
+    "signallingProtein": null,
+    "species": null,
+    "state": null
+  },
+  "keywords": {
+    "pdbxKeywords": "LYASE/IMMUNE SYSTEM",
+    "text": "antibody, antigen, complex, immunoglobulin, LYASE-IMMUNE SYSTEM COMPLEX"
+  },
+  "metadataCompleteness": {
+    "allPolymerSequencesPresent": true,
+    "entryTitlePresent": true,
+    "polymerEntityCountMatches": true,
+    "preferredReceptorAuthChainUniquelyMapped": false,
+    "primaryCitationIdentified": true
+  },
+  "metadataSignals": {
+    "auxiliaryLexicalEntityIds": [],
+    "constructRiskEntityIds": [],
+    "vhhLikeEntityIds": [
+      "2"
+    ]
+  },
+  "nativeCoordinatesInspected": false,
+  "pdbId": "1G6V",
+  "polymerEntities": [
+    {
+      "authAsymIds": [
+        "A"
+      ],
+      "description": "CARBONIC ANHYDRASE",
+      "entityId": "1",
+      "labelAsymIds": [
+        "A"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": false,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": false,
+        "vhhLikeCandidate": false
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "1G6V_1",
+      "referenceSequences": [
+        {
+          "databaseAccession": "P00921",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ],
+      "sequence": "MSHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGHAFNVEFDDSQDKAVLKGGPLDGTYRLIQFHFHWGSLDGQGSEHTVDKKKYAAELHLVHWNTKYGDFGKAVQQPDGLAVLGIFLKVGSAKPGLQKVVDVLDSIKTKGKSADFTNFDPRGLLPESLDYWTYPGSLTTPPLLECVTWIVLKEPISVSSEQVLKFRKLNFNGEGEPEELMVDNWRPAQPLKNRQIKASFK",
+      "sequenceLength": 260,
+      "sequenceSha256": "e6a24c903c1ef211037c64a6835a8a484f48b17be1cae50d6998913f21acf7d4",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Bos taurus",
+          "taxonomyId": "9913"
+        }
+      ]
+    },
+    {
+      "authAsymIds": [
+        "K"
+      ],
+      "description": "ANTIBODY HEAVY CHAIN",
+      "entityId": "2",
+      "labelAsymIds": [
+        "B"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": true,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": true,
+        "vhhLikeCandidate": true
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "1G6V_2",
+      "referenceSequences": [],
+      "sequence": "QVQLVESGGGSVQAGGSLRLSCAASGYTVSTYCMGWFRQAPGKEREGVATILGGSTYYGDSVKGRFTISQDNAKNTVYLQMNSLKPEDTAIYYCAGSTVASTGWCSRLRPYDYHYRGQGTQVTVSS",
+      "sequenceLength": 126,
+      "sequenceSha256": "54eedea9b05d89b6092fd74c8193fe0bba8bac9abe993ee57c59eac44255c5be",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Camelus dromedarius",
+          "taxonomyId": "9838"
+        }
+      ]
+    }
+  ],
+  "polymerEntityCountReported": 2,
+  "primaryCitation": {
+    "doi": "10.1074/jbc.m102107200",
+    "pmid": "11342547",
+    "title": "Antigen specificity and high affinity binding provided by one single loop of a camel single-domain antibody."
+  },
+  "receptorMapping": {
+    "preferredAuthChainEntityIds": [],
+    "preferredLabelChainEntityIds": []
+  },
+  "releaseDate": "2000-11-22T00:00:00Z",
+  "resolutionAngstrom": [
+    3.5
+  ],
+  "sourceQueryIds": [
+    "C6_RETAINED_PHRASE_ONLY_OPERATIONAL_CHUNK"
+  ],
+  "title": "Complex of the camelid heavy-chain antibody fragment CAB-CA05 with bovine carbonic anhydrase"
+}

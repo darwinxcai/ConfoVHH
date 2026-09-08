@@ -1,0 +1,15 @@
+{
+  "schema": "confovhh-source-metadata-access-v1",
+  "recordedAt": "2026-09-08T18:02:54.178434+00:00",
+  "repository": "darwinxcai/ConfoVHH",
+  "requestedCommit": "04c6bda2289157dd294c290609f6052aa0ef9195",
+  "protocolDeclaredTree": "1d0bc74ca7ca8d59de840b224e453bb61bd8e6b9",
+  "command": "git fetch --filter=blob:none --no-tags origin 04c6bda2289157dd294c290609f6052aa0ef9195",
+  "exitCode": 128,
+  "stderr": "fatal: remote error: upload-pack: not our ref 04c6bda2289157dd294c290609f6052aa0ef9195",
+  "scope": "One exact-ref metadata retrieval attempt using the Git transport. This does not prove that no copy exists elsewhere.",
+  "requestedFileBlobs": false,
+  "frozenEngineVerified": false,
+  "executionPermitted": false,
+  "protocolChanged": false
+}

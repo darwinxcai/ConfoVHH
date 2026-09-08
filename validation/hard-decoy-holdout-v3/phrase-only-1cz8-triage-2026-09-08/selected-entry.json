@@ -1,0 +1,165 @@
+{
+  "directInterfaceEvidenceStatus": "UNRESOLVED",
+  "dispositionStatus": "PENDING_DISPOSITION",
+  "experimentalMethods": [
+    "X-RAY DIFFRACTION",
+    "X-ray"
+  ],
+  "gpcrdb": {
+    "activationDistance": null,
+    "class": null,
+    "experimentalType": null,
+    "family": null,
+    "preferredChain": null,
+    "protein": null,
+    "publication": null,
+    "publicationDate": null,
+    "resolution": null,
+    "signallingProtein": null,
+    "species": null,
+    "state": null
+  },
+  "keywords": {
+    "pdbxKeywords": "IMMUNE SYSTEM",
+    "text": "COMPLEX (ANTIBODY-ANTIGEN), CYSTINE KNOT, FAB FRAGMENT, IMMUNE SYSTEM"
+  },
+  "metadataCompleteness": {
+    "allPolymerSequencesPresent": true,
+    "entryTitlePresent": true,
+    "polymerEntityCountMatches": true,
+    "preferredReceptorAuthChainUniquelyMapped": false,
+    "primaryCitationIdentified": true
+  },
+  "metadataSignals": {
+    "auxiliaryLexicalEntityIds": [],
+    "constructRiskEntityIds": [],
+    "vhhLikeEntityIds": []
+  },
+  "nativeCoordinatesInspected": false,
+  "pdbId": "1CZ8",
+  "polymerEntities": [
+    {
+      "authAsymIds": [
+        "V",
+        "W"
+      ],
+      "description": "Vascular endothelial growth factor A",
+      "entityId": "1",
+      "labelAsymIds": [
+        "A",
+        "B"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": false,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": true,
+        "vhhLikeCandidate": false
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "1CZ8_1",
+      "referenceSequences": [
+        {
+          "databaseAccession": "P15692",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ],
+      "sequence": "VVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPK",
+      "sequenceLength": 94,
+      "sequenceSha256": "4825af7097354b0f992ae4369000c5d25e1f5ccb5aa1459dc2bbab7b2fc9d449",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Homo sapiens",
+          "taxonomyId": "9606"
+        }
+      ]
+    },
+    {
+      "authAsymIds": [
+        "L",
+        "X"
+      ],
+      "description": "LIGHT CHAIN OF NEUTRALIZING ANTIBODY",
+      "entityId": "2",
+      "labelAsymIds": [
+        "C",
+        "E"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": false,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": true,
+        "vhhLikeCandidate": false
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "1CZ8_2",
+      "referenceSequences": [],
+      "sequence": "DIQLTQSPSSLSASVGDRVTITCSASQDISNYLNWYQQKPGKAPKVLIYFTSSLHSGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQYSTVPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+      "sequenceLength": 214,
+      "sequenceSha256": "c677851d063181e81c434540e4850c453c5d7adee338fff8262aee500f6a88ab",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Mus musculus",
+          "taxonomyId": "10090"
+        }
+      ]
+    },
+    {
+      "authAsymIds": [
+        "H",
+        "Y"
+      ],
+      "description": "HEAVY CHAIN OF NEUTRALIZING ANTIBODY",
+      "entityId": "3",
+      "labelAsymIds": [
+        "D",
+        "F"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": false,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": true,
+        "vhhLikeCandidate": false
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "1CZ8_3",
+      "referenceSequences": [],
+      "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGYDFTHYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKRRFTFSLDTSKSTAYLQMNSLRAEDTAVYYCAKYPYYYGTSHWYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHL",
+      "sequenceLength": 231,
+      "sequenceSha256": "28cc00036d435bbe5847a67ad868131f944bce6d2a6a68c260240be6cb2be8ec",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Mus musculus",
+          "taxonomyId": "10090"
+        }
+      ]
+    }
+  ],
+  "polymerEntityCountReported": 3,
+  "primaryCitation": {
+    "doi": "10.1006/jmbi.1999.3192",
+    "pmid": "10543973",
+    "title": "Selection and analysis of an optimized anti-VEGF antibody: crystal structure of an affinity-matured Fab in complex with antigen."
+  },
+  "receptorMapping": {
+    "preferredAuthChainEntityIds": [],
+    "preferredLabelChainEntityIds": []
+  },
+  "releaseDate": "2000-03-20T00:00:00Z",
+  "resolutionAngstrom": [
+    2.4
+  ],
+  "sourceQueryIds": [
+    "C6_RETAINED_PHRASE_ONLY_OPERATIONAL_CHUNK"
+  ],
+  "title": "VASCULAR ENDOTHELIAL GROWTH FACTOR IN COMPLEX WITH AN AFFINITY MATURED ANTIBODY"
+}
