@@ -1,0 +1,79 @@
+{
+  "schema": "confovhh-input-archive-candidate-observation-v1",
+  "date": "2026-09-08",
+  "repositoryHead": "8d024d72bc22d04bee07501dfe031352d6e16304",
+  "source": "Authorized private file-index metadata response; filenames and sizes only",
+  "search": {
+    "queries": [
+      "\"GPCR_AI_verification_part\"",
+      "\"GPCR_handoff_bundle.zip\"",
+      "\"ConfoVHH_paper_evidence_2026-09-05.zip\""
+    ],
+    "titleOnly": true,
+    "resultFormat": "metadata_only",
+    "topK": 15
+  },
+  "records": [
+    {
+      "filename": "GPCR_AI_verification_part1.zip",
+      "reportedBytes": 13793027,
+      "indexCreatedAt": "2026-09-04T05:13:09.436277Z",
+      "archiveContentsInspected": false,
+      "exactArchiveHashVerified": false,
+      "originalModelMembershipVerified": false,
+      "redistributionTermsVerified": false,
+      "publicAccessEstablished": false
+    },
+    {
+      "filename": "GPCR_AI_verification_part2.zip",
+      "reportedBytes": 12436690,
+      "indexCreatedAt": "2026-09-04T05:13:07.199896Z",
+      "archiveContentsInspected": false,
+      "exactArchiveHashVerified": false,
+      "originalModelMembershipVerified": false,
+      "redistributionTermsVerified": false,
+      "publicAccessEstablished": false
+    },
+    {
+      "filename": "GPCR_AI_verification_part3.zip",
+      "reportedBytes": 8454290,
+      "indexCreatedAt": "2026-09-04T05:13:04.511625Z",
+      "archiveContentsInspected": false,
+      "exactArchiveHashVerified": false,
+      "originalModelMembershipVerified": false,
+      "redistributionTermsVerified": false,
+      "publicAccessEstablished": false
+    },
+    {
+      "filename": "GPCR_handoff_bundle.zip",
+      "reportedBytes": 3548223,
+      "indexCreatedAt": "2026-09-04T23:39:17.147890Z",
+      "archiveContentsInspected": false,
+      "exactArchiveHashVerified": false,
+      "originalModelMembershipVerified": false,
+      "redistributionTermsVerified": false,
+      "publicAccessEstablished": false
+    },
+    {
+      "filename": "ConfoVHH_paper_evidence_2026-09-05.zip",
+      "reportedBytes": 1680917,
+      "indexCreatedAt": "2026-09-05T00:27:17.971696Z",
+      "archiveContentsInspected": false,
+      "exactArchiveHashVerified": false,
+      "originalModelMembershipVerified": false,
+      "redistributionTermsVerified": false,
+      "publicAccessEstablished": false
+    }
+  ],
+  "interpretation": "These are candidate recovery routes. Filename and size observations do not establish archive contents, identity with retained inputs, presence of missing models or PAE, redistribution rights or public raw-to-result reproducibility.",
+  "authority": {
+    "archivePayloadsAccessed": false,
+    "predictionOutputsAccessed": false,
+    "nativeCoordinatesAccessed": false,
+    "newOriginalModelsVerified": 0,
+    "missingModelCountChanged": false,
+    "publicReproducibilityEstablished": false,
+    "newIndependentEligibleGroups": 0
+  },
+  "nextPermittedEvidence": "An archive custodian can supply a metadata-only member inventory and applicable redistribution terms. Any later payload access must independently satisfy the existing exposure restrictions; this receipt grants none."
+}

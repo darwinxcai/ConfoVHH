@@ -1,0 +1,165 @@
+{
+  "directInterfaceEvidenceStatus": "UNRESOLVED",
+  "dispositionStatus": "PENDING_DISPOSITION",
+  "experimentalMethods": [
+    "X-RAY DIFFRACTION",
+    "X-ray"
+  ],
+  "gpcrdb": {
+    "activationDistance": null,
+    "class": null,
+    "experimentalType": null,
+    "family": null,
+    "preferredChain": null,
+    "protein": null,
+    "publication": null,
+    "publicationDate": null,
+    "resolution": null,
+    "signallingProtein": null,
+    "species": null,
+    "state": null
+  },
+  "keywords": {
+    "pdbxKeywords": "IMMUNE SYSTEM",
+    "text": "COMPLEX (ANTIBODY-ANTIGEN), ANGIOGENIC FACTOR, IMMUNE SYSTEM"
+  },
+  "metadataCompleteness": {
+    "allPolymerSequencesPresent": true,
+    "entryTitlePresent": true,
+    "polymerEntityCountMatches": true,
+    "preferredReceptorAuthChainUniquelyMapped": false,
+    "primaryCitationIdentified": true
+  },
+  "metadataSignals": {
+    "auxiliaryLexicalEntityIds": [],
+    "constructRiskEntityIds": [],
+    "vhhLikeEntityIds": []
+  },
+  "nativeCoordinatesInspected": false,
+  "pdbId": "1BJ1",
+  "polymerEntities": [
+    {
+      "authAsymIds": [
+        "J",
+        "L"
+      ],
+      "description": "Fab fragment, light chain",
+      "entityId": "1",
+      "labelAsymIds": [
+        "A",
+        "E"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": false,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": true,
+        "vhhLikeCandidate": false
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "1BJ1_1",
+      "referenceSequences": [],
+      "sequence": "DIQMTQSPSSLSASVGDRVTITCSASQDISNYLNWYQQKPGKAPKVLIYFTSSLHSGVPSRFSGSGSGTDFTLTISSLQPEDFATYYCQQYSTVPWTFGQGTKVEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+      "sequenceLength": 214,
+      "sequenceSha256": "d1950121c2bcab186d1d8628b672b63b54d4bf6fd61c8868036323f4b638330f",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Mus musculus",
+          "taxonomyId": "10090"
+        }
+      ]
+    },
+    {
+      "authAsymIds": [
+        "H",
+        "K"
+      ],
+      "description": "Fab fragment, heavy chain",
+      "entityId": "2",
+      "labelAsymIds": [
+        "B",
+        "F"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": false,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": true,
+        "vhhLikeCandidate": false
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "1BJ1_2",
+      "referenceSequences": [],
+      "sequence": "EVQLVESGGGLVQPGGSLRLSCAASGYTFTNYGMNWVRQAPGKGLEWVGWINTYTGEPTYAADFKRRFTFSLDTSKSTAYLQMNSLRAEDTAVYYCAKYPHYYGSSHWYFDVWGQGTLVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCDKTHT",
+      "sequenceLength": 231,
+      "sequenceSha256": "4654391546d4c53904e23e74b1731c2135f9adfcfd799d52886b54907001f094",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Mus musculus",
+          "taxonomyId": "10090"
+        }
+      ]
+    },
+    {
+      "authAsymIds": [
+        "V",
+        "W"
+      ],
+      "description": "Vascular endothelial growth factor A",
+      "entityId": "3",
+      "labelAsymIds": [
+        "C",
+        "D"
+      ],
+      "metadataSignals": {
+        "auxiliaryLexical": false,
+        "camelidSource": false,
+        "constructRiskLexical": false,
+        "vhhDescription": false,
+        "vhhLength": true,
+        "vhhLikeCandidate": false
+      },
+      "polymerType": "Protein",
+      "polymerTypeDetail": "polypeptide(L)",
+      "rcsbId": "1BJ1_3",
+      "referenceSequences": [
+        {
+          "databaseAccession": "P15692",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ],
+      "sequence": "GQNHHEVVKFMDVYQRSYCHPIETLVDIFQEYPDEIEYIFKPSCVPLMRCGGCCNDEGLECVPTEESNITMQIMRIKPHQGQHIGEMSFLQHNKCECRPKKD",
+      "sequenceLength": 102,
+      "sequenceSha256": "7af9039ac76deadec47cbaf40a15fb496b4aa88f3044a41b1424fe0691c0c81d",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Homo sapiens",
+          "taxonomyId": "9606"
+        }
+      ]
+    }
+  ],
+  "polymerEntityCountReported": 3,
+  "primaryCitation": {
+    "doi": "10.1016/s0969-2126(98)00116-6",
+    "pmid": "9753694",
+    "title": "VEGF and the Fab fragment of a humanized neutralizing antibody: crystal structure of the complex at 2.4 A resolution and mutational analysis of the interface."
+  },
+  "receptorMapping": {
+    "preferredAuthChainEntityIds": [],
+    "preferredLabelChainEntityIds": []
+  },
+  "releaseDate": "1999-01-13T00:00:00Z",
+  "resolutionAngstrom": [
+    2.4
+  ],
+  "sourceQueryIds": [
+    "C6_RETAINED_PHRASE_ONLY_OPERATIONAL_CHUNK"
+  ],
+  "title": "VASCULAR ENDOTHELIAL GROWTH FACTOR IN COMPLEX WITH A NEUTRALIZING ANTIBODY"
+}

@@ -40,3 +40,12 @@ different bytes, skipping a required check, or merging a failing release.
 
 This availability observation has no eligibility, ancestry, independence,
 predictive-accuracy, or original GPCR–VHH input-reproducibility authority.
+
+A later continuation made one official record-metadata request at
+`2026-09-08T16:58:09.484287+00:00`, retaining its timeout observation in
+`record-metadata-165809Z-receipt.json`. The current
+[official developer documentation](https://developers.zenodo.org/#retrieve-a-record)
+still describes this public record GET route. No record metadata
+or advertised alternative file link was recovered in this attempt; no producer
+file was requested. This adds an access observation, not a solution to the
+required file-download gate.

@@ -112,3 +112,56 @@ preparation statement. A future safe extraction may inspect named preparation
 sections; do not inspect figures, captions, structural results or prohibited
 holdout data to fill a construct gap. Preserve the current source and selector
 records, and record any later evidence as a separate capture epoch.
+
+## Phrase-only discovery begins; source gaps remain explicit
+
+The first fixed lexical chunk of the saved phrase-only remainder is now
+captured: **250 of 12,262 identifiers**, from 10DJ through 1CVF. Ten batches of
+25 entries were each requested twice using the unchanged metadata-only GraphQL
+query. All 20 responses returned HTTP 200 and agreed after the existing
+metadata normalization. All 250 deposited polymer inventories are complete;
+449 polymer entities are retained. No identifier or failed response was dropped.
+The operational partition is not a biological sample or earlier scientific
+preregistration.
+
+The original producer source, collection plan, requests, responses and first
+derived snapshot are retained in
+[`phrase-only-chunk-000-2026-09-08`](phrase-only-chunk-000-2026-09-08/).
+The [reviewed offline finalization](phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe/README.md)
+is separately identified; it does not rewrite
+the original capture implementation. It distinguishes partial inventories from
+complete ones and the number outside this packet from a cumulative multi-packet
+count. At this checkpoint, this is the only captured chunk of the saved
+phrase-only remainder, leaving **12,012 identifiers outside this captured
+chunk**. This is not a whole-census completeness or component bound.
+
+The unchanged all-polymer sequence screen processes 227 distinct present
+sequences and retains 41 review rows, including 22 entities needing
+missing/noncanonical/engine review. Its one numbered-heavy-domain entry is
+1BJ1. The [follow-up triage](phrase-only-1bj1-triage-2026-09-08/README.md)
+verifies its complete three-polymer inventory: a 231-residue annotated Fab heavy
+chain, 214-residue annotated Fab light chain and 102-residue VEGFA entity. Fresh
+exact-DOI/PMID bibliography identifies the same VEGF–humanized-Fab paper. This
+supports conventional-Fab context, not a VHH eligibility decision or absence
+proof. Primary Methods were not retrieved, so formal disposition remains
+pending. The annotation/publication wording difference is retained.
+
+The [Nb35 follow-up](nb35-new-source-routes-2026-09-08/README.md) checked four
+genuinely new bibliography/access routes without recovering primary Methods.
+It also tested whether a narrower entity-only adjudication was possible from
+retained evidence. The available 126-residue computational match is not a
+primary-source definition of the complete Nb35 core; therefore it cannot carry
+the stronger identity authority used in the Nb32 precedent. The missing link
+is a primary complete-sequence/construct mapping or candidate-paper Methods
+explicitly identifying the reagent and its role. All 16 entries and 102 polymer
+records remain pending and unchanged.
+
+Next: verify the current phrase packet, then collect the next fixed chunk with
+`--chunk-index 1` into a new output directory. Aggregate progress by verified
+identifier union across packets; do not subtract only the latest chunk from the
+original denominator and call that cumulative progress. Inspect new review
+signals using preparation/deposition evidence and complete inventories. Preserve
+every unresolved screen and all earlier source/exposure records. No native
+coordinates, poses, contact tables, labels or real prediction outputs are
+authorized by this continuation. Formally cleared independent groups remain
+**0**; independent predictive accuracy remains **unmeasured**.

@@ -54,6 +54,18 @@ The paper may still report a retained-subset application only if the selected
 venue permits this arrangement and the public derived replay is described
 precisely.
 
+## Private archive recovery leads
+
+A [metadata-only archive search](evidence/input-archive-candidates-2026-09-08/README.md)
+located three verification archives and two handoff/evidence archives by exact
+filename, with their reported sizes. No archive payload or member was opened.
+These are possible recovery routes, not verified original-input availability:
+their contents, identity with retained inputs, missing-model/full-PAE membership
+and redistribution terms remain unknown. No missingness count or public
+reproducibility claim changes. A custodian-provided member inventory and
+distribution terms would allow the next metadata comparison without exposing
+restricted prediction or coordinate data.
+
 ## Provisional manuscript statement
 
 ConfoVHH source code, documentation, synthetic reviewer inputs and verification

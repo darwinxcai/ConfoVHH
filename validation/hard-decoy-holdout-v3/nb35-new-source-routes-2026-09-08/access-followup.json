@@ -1,0 +1,167 @@
+{
+  "schema": "confovhh-nb35-new-source-routes-v1",
+  "recordedUtc": "2026-09-08T17:01:00.684667+00:00",
+  "purpose": "Bounded search for a genuinely new accessible primary Methods route for historical pending Nb35 rows; prior failed downloads were not repeated.",
+  "priorEvidenceSha256": {
+    "validation/hard-decoy-holdout-v3/nb35-primary-followup-2026-09-04/README.md": "83500229910f19a5314e27b0ceb82093df543b6a3f84049742224ba4e4a69037",
+    "validation/hard-decoy-holdout-v3/nb35-primary-followup-2026-09-04/source-routes.json": "50b13d15b3e194cef4016be35a38f003ed3bb83d5097271935d3c716b9b26667",
+    "validation/hard-decoy-holdout-v3/nb35-primary-followup-2026-09-04/source-followup.json": "5d10c8e51ed0443f8e1c34f687df0f740a34828c93a8a15fe4503c747a0cf464"
+  },
+  "pendingGroups": [
+    {
+      "doi": "10.1126/science.abm9609",
+      "pdbIds": [
+        "7TYF",
+        "7TYH",
+        "7TYI",
+        "7TYL",
+        "7TYN",
+        "7TYO",
+        "7TYW",
+        "7TYX",
+        "7TYY",
+        "7TZF"
+      ]
+    },
+    {
+      "doi": "10.1016/j.molcel.2022.07.003",
+      "pdbIds": [
+        "7VVJ",
+        "7VVK",
+        "7VVL",
+        "7VVM",
+        "7VVN",
+        "7VVO"
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "name": "amylin_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1126/science.abm9609",
+      "status": 200,
+      "retrievedUtc": "2026-09-08T16:58:50.952235+00:00",
+      "bytes": 30085,
+      "sha256": "2eaa6c523b14b616ef75960ca1906e95b06d06cb7d5059fa85e90d813b925a17",
+      "bibliography": {
+        "id": "https://openalex.org/W4221133033",
+        "doi": "https://doi.org/10.1126/science.abm9609",
+        "title": "A structural basis for amylin receptor phenotype",
+        "publication_year": 2022
+      },
+      "locations": [
+        {
+          "landing_page_url": "https://doi.org/10.1126/science.abm9609",
+          "pdf_url": null,
+          "is_oa": false,
+          "license": null,
+          "version": "publishedVersion"
+        },
+        {
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35324283",
+          "pdf_url": null,
+          "is_oa": false,
+          "license": null,
+          "version": "publishedVersion"
+        }
+      ],
+      "rawResponseArchived": false,
+      "scope": "Bibliographic/access-location metadata only"
+    },
+    {
+      "name": "pth_openalex",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.molcel.2022.07.003",
+      "status": 200,
+      "retrievedUtc": "2026-09-08T16:58:51.050438+00:00",
+      "bytes": 39615,
+      "sha256": "588bbea6c271f6c1d092b5e6b403ed90ef7f48b9bc0d7c43fb352ff3628ab77e",
+      "bibliography": {
+        "id": "https://openalex.org/W4289937388",
+        "doi": "https://doi.org/10.1016/j.molcel.2022.07.003",
+        "title": "Endogenous ligand recognition and structural transition of a human PTH receptor",
+        "publication_year": 2022
+      },
+      "locations": [
+        {
+          "landing_page_url": "https://doi.org/10.1016/j.molcel.2022.07.003",
+          "pdf_url": "http://www.cell.com/article/S1097276522006608/pdf",
+          "is_oa": true,
+          "license": "cc-by",
+          "version": "publishedVersion"
+        },
+        {
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35932760",
+          "pdf_url": null,
+          "is_oa": false,
+          "license": null,
+          "version": "publishedVersion"
+        }
+      ],
+      "rawResponseArchived": false,
+      "scope": "Bibliographic/access-location metadata only"
+    },
+    {
+      "name": "pth_cell_html",
+      "url": "https://www.cell.com/molecular-cell/fulltext/S1097-2765(22)00660-8",
+      "error": "The read operation timed out",
+      "rawResponseArchived": false,
+      "scope": "Official publisher full-text HTML attempt; no response body received"
+    },
+    {
+      "name": "amylin_figshare_metadata_search",
+      "url": "https://api.figshare.com/v2/articles/search",
+      "requestMethod": "POST",
+      "requestPurpose": "Read-only public repository metadata search",
+      "query": {
+        "search_for": "\"A structural basis for amylin receptor phenotype\"",
+        "limit": 20
+      },
+      "status": 403,
+      "retrievedUtc": "2026-09-08T16:59:44.687344+00:00",
+      "bytes": 118,
+      "sha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4",
+      "rawResponseArchived": false,
+      "scope": "Public repository metadata search only; error body not retained"
+    }
+  ],
+  "observations": [
+    {
+      "classification": "BIBLIOGRAPHIC_ACCESS_METADATA",
+      "text": "The exact-DOI OpenAlex records match both titles. Returned locations contain DOI/PubMed entries and the already known PTH1R Cell PDF, with no additional institutional manuscript URL in these responses. This is a property of two returned records, not an exhaustive manuscript-availability result."
+    },
+    {
+      "classification": "METADATA_DECLARATION_NOT_PRIMARY_LICENSE_VERIFICATION",
+      "text": "OpenAlex describes the PTH1R Cell PDF as open access with cc-by licensing. The primary full text was not retrieved, so neither its Methods nor its own license statement was verified."
+    },
+    {
+      "classification": "ROUTE_LEVEL_ATTEMPT",
+      "text": "The previously unattempted official PTH1R full-text HTML route timed out. A public Figshare exact-title metadata search returned HTTP403. Neither provided primary Methods."
+    }
+  ],
+  "requiredEvidence": [
+    "Amylin Science 2022: primary construct and sample-preparation Methods, explicit Nb35 reagent-role evidence and a complete paper deposition statement for the ten retained entries.",
+    "PTH1R Molecular Cell 2022: primary construct and sample-preparation Methods, explicit Nb35 reagent-role evidence and a complete paper deposition statement for the six retained entries."
+  ],
+  "nextAction": "Stop repetitive download retries. Revisit only if a genuinely new institutional/author-manuscript route or a legitimately obtained source document becomes available; process preparation/deposition text only. Continue another authorized project task meanwhile.",
+  "result": {
+    "newPrimaryMethodsReviews": 0,
+    "newPrimaryDepositionStatements": 0,
+    "newSourceClearedRoles": 0,
+    "newEntryExclusions": 0,
+    "newIndependentEligibleGroups": 0,
+    "allSixteenEntriesRemainPending": true,
+    "targetFreezePermitted": false,
+    "scientificAuthority": false
+  },
+  "exposureBoundary": {
+    "searchOutputsReducedToUrls": true,
+    "metadataResponsesReducedBeforeDisplay": true,
+    "paperResultsInspected": false,
+    "figuresOrCaptionsInspected": false,
+    "structuralContactTablesInspected": false,
+    "nativeCoordinatesOrRelativePosesInspected": false,
+    "labelsOrPredictionOutputsAccessed": false,
+    "fullPaperBodiesArchived": false
+  },
+  "limitations": "Request failures and missing URLs in an aggregation record do not establish absence of Methods, universal inaccessibility, binder absence, eligibility or any census bound."
+}
