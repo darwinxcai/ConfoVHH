@@ -10,6 +10,13 @@ The latter's historical engine commit could not be retrieved in this check,
 and its quantization contract lacks an explicit rounding operation. Those
 blockers remain unresolved. This adapter is explicitly **not v3 compatible**.
 
+For authorized single-audit exports, the newer
+[audit-report bridge](AUDIT_REPORT_RANK_EXPORT.md) verifies exact report bytes,
+extracts the features and binds the upstream audit policy. Use its
+`comparisonFields` to retain that complete method identity in an evaluation.
+The feature-only API below remains a lower-level transformation with the
+limitations stated here.
+
 ## What is executed and verified
 
 `scripts/paper/export-current-product-ranks.mjs` imports the actual shipped
