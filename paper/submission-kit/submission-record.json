@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "confovhh-submission-record-1.0.0",
+  "purpose": "The submission facts only the author can supply. Every null or empty value below is an open submission gate. scripts/paper/submission-status.mjs reads this file and never infers a value that is not written here.",
+  "completedBy": null,
+  "completedOn": null,
+
+  "venue": {
+    "name": null,
+    "articleType": null,
+    "guidelinesUrl": null,
+    "guidelinesCheckedOn": null
+  },
+
+  "authors": [],
+  "_authorTemplate": {
+    "name": "Family name, given names as they should appear in print",
+    "affiliation": "Department, institution, city, country",
+    "orcid": null,
+    "email": null,
+    "corresponding": false,
+    "contributorRoles": [
+      "Pick from the CRediT taxonomy: Conceptualization, Data curation, Formal analysis, Funding acquisition, Investigation, Methodology, Project administration, Resources, Software, Supervision, Validation, Visualization, Writing - original draft, Writing - review and editing"
+    ]
+  },
+
+  "funding": null,
+  "competingInterests": null,
+  "aiDisclosure": null,
+  "dataAvailabilityStatement": null,
+
+  "softwareAvailability": {
+    "repositoryUrl": null,
+    "releaseTag": null,
+    "archiveDoi": null,
+    "license": null
+  },
+
+  "claimsAudit": {
+    "performedBy": null,
+    "performedOn": null,
+    "atCommit": null,
+    "statement": null
+  }
+}
