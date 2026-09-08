@@ -8,6 +8,15 @@ const TRANSIENT_NETWORK_CODES = new Set([
   "UND_ERR_CONNECT_TIMEOUT", "UND_ERR_HEADERS_TIMEOUT", "UND_ERR_BODY_TIMEOUT", "UND_ERR_SOCKET",
 ]);
 
+export function zenodoRecordFileUrl(recordId, filename) {
+  assert.match(String(recordId), /^[1-9][0-9]*$/u, "positive Zenodo record ID required");
+  assert.ok(typeof filename === "string" && filename.length >= 1 && filename.length <= 512,
+    "bounded Zenodo filename required");
+  assert.ok(!/[\\/\p{Cc}\p{Cf}]/u.test(filename) && filename !== "." && filename !== "..",
+    "Zenodo filename must be one path component");
+  return `https://zenodo.org/records/${recordId}/files/${encodeURIComponent(filename)}?download=1`;
+}
+
 function transientNetworkError(error, signal) {
   if (signal.aborted && ["TimeoutError", "AbortError"].includes(error?.name)) return true;
   const code = error?.cause?.code ?? error?.code;

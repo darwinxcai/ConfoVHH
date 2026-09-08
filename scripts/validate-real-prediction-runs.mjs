@@ -7,9 +7,9 @@ import {
   predictionRunFileById,
 } from "../lib/prediction-run.ts";
 import { executePredictionRunAuditJob } from "../lib/prediction-run-jobs.ts";
-import { fetchExactPublicFile, fetchExactPublicFiles } from "./fetch-exact-public-file.mjs";
+import { fetchExactPublicFile, fetchExactPublicFiles, zenodoRecordFileUrl } from "./fetch-exact-public-file.mjs";
 
-const ZENODO_BASE = "https://zenodo.org/api/records/17063524/files";
+const ZENODO_RECORD = 17063524;
 const AF3_COMMIT = "a7458d1d26a35154cbfc3e24ec197352079970df";
 const AF3_BASE = `https://raw.githubusercontent.com/martinovein/AF3_MiniPAE/${AF3_COMMIT}/data/example/p06730_o60516`;
 
@@ -28,7 +28,7 @@ const colabfoldFiles = [
   filename,
   bytes,
   sha256,
-  url: `${ZENODO_BASE}/${filename}/content`,
+  url: zenodoRecordFileUrl(ZENODO_RECORD, filename),
 }));
 
 const af3Files = [

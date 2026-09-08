@@ -1,7 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { fetchExactPublicFile, fetchExactPublicFiles } from "../scripts/fetch-exact-public-file.mjs";
+import {
+  fetchExactPublicFile,
+  fetchExactPublicFiles,
+  zenodoRecordFileUrl,
+} from "../scripts/fetch-exact-public-file.mjs";
 
 // All bodies are synthetic text. No real coordinates, confidence or labels.
 const BODY = Buffer.from("synthetic immutable public artifact\n");
@@ -164,5 +168,15 @@ test("batch retrieval rejects unbounded work and invalid concurrency", async () 
   await assert.rejects(fetchExactPublicFiles(Array.from({ length: 129 }, () => FILE)), /bounded file list/u);
   for (const maximumConcurrency of [0, 5, 1.5]) {
     await assert.rejects(fetchExactPublicFiles([FILE], { maximumConcurrency }), /maximum concurrency/u);
+  }
+});
+
+test("Zenodo public record URLs encode one bounded filename without API credentials", () => {
+  assert.equal(
+    zenodoRecordFileUrl(17063524, "synthetic file.json"),
+    "https://zenodo.org/records/17063524/files/synthetic%20file.json?download=1",
+  );
+  for (const [record, filename] of [[0, "x"], ["abc", "x"], [1, "../x"], [1, "a/b"], [1, "a\\b"], [1, "\u200bx"]]) {
+    assert.throws(() => zenodoRecordFileUrl(record, filename));
   }
 });
