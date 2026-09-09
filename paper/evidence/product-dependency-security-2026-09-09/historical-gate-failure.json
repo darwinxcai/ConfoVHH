@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs",
+    "verify",
+    "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29"
+  ],
+  "exitCode": 1,
+  "failure": "Pinned dependency lock digest drifted.",
+  "scope": "Lock verification failed before sequence inputs or matrix computation; no scientific outcomes recorded."
+}
