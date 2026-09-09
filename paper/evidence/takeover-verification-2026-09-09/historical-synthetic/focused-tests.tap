@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: fixed recipes cannot select arbitrary files, filter tests or add generation arguments
+ok 1 - fixed recipes cannot select arbitrary files, filter tests or add generation arguments
+  ---
+  duration_ms: 2.538854
+  type: 'test'
+  ...
+# Subtest: child environment drops Node hooks, test context, credentials and proxies
+ok 2 - child environment drops Node hooks, test context, credentials and proxies
+  ---
+  duration_ms: 0.222919
+  type: 'test'
+  ...
+# Subtest: TAP acceptance requires the complete exact test inventory and zero failures, skips or cancellations
+ok 3 - TAP acceptance requires the complete exact test inventory and zero failures, skips or cancellations
+  ---
+  duration_ms: 3.186715
+  type: 'test'
+  ...
+# Subtest: bounded identity verifies files and module resolution, with no execution authority
+ok 4 - bounded identity verifies files and module resolution, with no execution authority
+  ---
+  duration_ms: 39.201309
+  type: 'test'
+  ...
+# Subtest: manifest drift rejects before a missing dependency can be inspected
+ok 5 - manifest drift rejects before a missing dependency can be inspected
+  ---
+  duration_ms: 21.835963
+  type: 'test'
+  ...
+# Subtest: source, dependency and preserved synthetic input mutations reject
+ok 6 - source, dependency and preserved synthetic input mutations reject
+  ---
+  duration_ms: 88.955481
+  type: 'test'
+  ...
+# Subtest: additional libraries, package scopes, symlinks and shadowed dependency resolution reject
+ok 7 - additional libraries, package scopes, symlinks and shadowed dependency resolution reject
+  ---
+  duration_ms: 83.187822
+  type: 'test'
+  ...
+# Subtest: published plan pins the original full lock, source inventory and exactly two synthetic recipes
+ok 8 - published plan pins the original full lock, source inventory and exactly two synthetic recipes
+  ---
+  duration_ms: 3.171298
+  type: 'test'
+  ...
+# Subtest: runner rejects output overwrite, current workspace, missing original workspace and additional CLI arguments
+ok 9 - runner rejects output overwrite, current workspace, missing original workspace and additional CLI arguments
+  ---
+  duration_ms: 215.234892
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 590.341089

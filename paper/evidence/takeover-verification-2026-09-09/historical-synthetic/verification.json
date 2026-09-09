@@ -1,0 +1,60 @@
+{
+  "recordedAt": "2026-09-09T14:26:06.853318+00:00",
+  "newSourceSha256": {
+    "scripts/paper/run-historical-synthetic-replays.mjs": "df4b4fe40fbc0b355a3569b0d0f1c6d0ce90e9993858583f696b19e1c9765c05",
+    "tests/historical-synthetic-replays.test.mjs": "f1bab835af856b8f70296bea99d39e63859190a96461c812cf43f96d38a7bee3",
+    "paper/historical-synthetic-replay-plan-2026-09-09.json": "ee8562d564c968490d13b7dd34bb9d921dac93e12ec43bbce38be8fd4a96c6cc",
+    "paper/HISTORICAL_SYNTHETIC_REPLAYS.md": "3c883b165791290cb175f9919d87db24841ee8618871b785563ec0aac60a66fc"
+  },
+  "actualReplayStatus": "TWO_HISTORICAL_SYNTHETIC_REPLAYS_PASSED",
+  "originalTestCounts": {
+    "reviewer-exports": {
+      "tests": 1,
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "todo": 0
+    },
+    "audit-report-ranks": {
+      "tests": 11,
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "todo": 0
+    }
+  },
+  "focusedTests": {
+    "tests": 9,
+    "pass": 9,
+    "fail": 0,
+    "commandRecord": "focused-tests-command.json"
+  },
+  "scopedLint": {
+    "command": [
+      "./node_modules/.bin/eslint",
+      "scripts/paper/run-historical-synthetic-replays.mjs",
+      "tests/historical-synthetic-replays.test.mjs"
+    ],
+    "exitCode": 0,
+    "stdoutBytes": 0,
+    "stderrBytes": 0,
+    "observationSource": "exec_command and write_stdin completion in this session"
+  },
+  "independentAgentSourceReview": {
+    "scope": [
+      "scripts/paper/run-historical-synthetic-replays.mjs",
+      "tests/historical-synthetic-replays.test.mjs",
+      "paper/historical-synthetic-replay-plan-2026-09-09.json"
+    ],
+    "result": "No material issues found; read-only review, no independent test execution or biological data inspection."
+  },
+  "unchangedBoundaries": {
+    "historicalReceiptsModified": false,
+    "oldScriptsOrTestsModified": false,
+    "ciRoutingChanged": false,
+    "releaseGatePassed": false,
+    "predictiveAccuracyMeasured": false
+  }
+}

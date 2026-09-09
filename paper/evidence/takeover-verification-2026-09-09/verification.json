@@ -1,0 +1,64 @@
+{
+  "schema": "confovhh-takeover-verification-v1",
+  "basedOnCommit": "32a78f4d5f4c2d8ca52e99541bf5023b2d4915c7",
+  "sourceSha256": {
+    "scripts/paper/producer-score-sources.mjs": "60791d5799e96b3d4c4c280e04e5eef4f96f988102291cf79c89ceba7d6ae43d",
+    "scripts/paper/export-source-bound-coordinate-ranks.mjs": "d03f7565d8b4b9f59eb6f3d176844c6b46bbf743edb6e7857e42048be2e6e13c",
+    "scripts/paper/compare-selection-sets.mjs": "b0bd70ffd9fb65f9224bca27148758425fcdac948540b54b43b7b4f6804316f8",
+    "scripts/paper/run-historical-synthetic-replays.mjs": "df4b4fe40fbc0b355a3569b0d0f1c6d0ce90e9993858583f696b19e1c9765c05",
+    "scripts/paper/demo-source-bound-selection.mjs": "bf6135070b9e67d62c497ad13943d4690867b95a459a351973b6df1e58ee1738",
+    "tests/producer-score-sources.test.mjs": "826370e622d96ffe254f5a9b65cb507eec7fb332208178db5a9c9a7c62b33441",
+    "tests/source-bound-coordinate-ranks.test.mjs": "1154e43827756faa528dd43c09168d24cec0a47d3ffc12b495c50ac133020a1d",
+    "tests/selection-set-comparison.test.mjs": "b4bd52af2598f4bd9b6bdce912db9760fd59dd030167899d4ad9d998598d425c",
+    "tests/historical-synthetic-replays.test.mjs": "f1bab835af856b8f70296bea99d39e63859190a96461c812cf43f96d38a7bee3",
+    "package-lock.json": "fcbbf27caec4ea1ab4397790b6c51da6c0e2a90b18c1dfb2ed9ceddafdf2dabb"
+  },
+  "checks": [
+    {
+      "name": "node24-scoped",
+      "node": "24.19.0",
+      "tests": 71,
+      "passed": 71,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "name": "node22-new",
+      "node": "22.23.2",
+      "tests": 41,
+      "passed": 41,
+      "failed": 0,
+      "skipped": 0,
+      "workaround": "Existing scripts/run-node-tests.mjs applies --no-turbo-inline-js-wasm-calls on this exact version"
+    },
+    {
+      "name": "original-synthetic-replay",
+      "node": "24.19.0",
+      "tests": 12,
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0,
+      "receipt": "historical-synthetic/replay.json"
+    },
+    {
+      "name": "scoped-lint",
+      "passed": true
+    },
+    {
+      "name": "project-typecheck",
+      "passed": true
+    },
+    {
+      "name": "claim-evidence",
+      "passed": true,
+      "claims": 7,
+      "artifacts": 14,
+      "publicReproducibility": "partial",
+      "unavailableInputs": 4
+    }
+  ],
+  "fullCurrentReleasePassed": false,
+  "ciRoutingChanged": false,
+  "independentEligibleGroupsAdded": 0,
+  "predictiveAccuracyMeasured": false
+}

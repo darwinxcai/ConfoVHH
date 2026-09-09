@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "--test-reporter=tap",
+    "tests/historical-synthetic-replays.test.mjs"
+  ],
+  "cwd": "/workspace/scratch/1213a03cc5a3/ConfoVHH",
+  "exitCode": 0,
+  "stdoutSha256": "9e7947ed10a92f3ccbab7f86ba801fe61e07ccbac88f4206be8ec544031a84fd",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

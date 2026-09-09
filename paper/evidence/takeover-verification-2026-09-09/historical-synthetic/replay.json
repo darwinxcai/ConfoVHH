@@ -1,0 +1,95 @@
+{
+  "schema": "confovhh-two-historical-synthetic-replays-v1",
+  "status": "TWO_HISTORICAL_SYNTHETIC_REPLAYS_PASSED",
+  "startedAt": "2026-09-09T14:24:05.308Z",
+  "completedAt": "2026-09-09T14:24:07.607Z",
+  "sourceSha256": {
+    "scripts/paper/run-historical-synthetic-replays.mjs": "df4b4fe40fbc0b355a3569b0d0f1c6d0ce90e9993858583f696b19e1c9765c05",
+    "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+    "paper/historical-synthetic-replay-plan-2026-09-09.json": "ee8562d564c968490d13b7dd34bb9d921dac93e12ec43bbce38be8fd4a96c6cc"
+  },
+  "planSha256": "ee8562d564c968490d13b7dd34bb9d921dac93e12ec43bbce38be8fd4a96c6cc",
+  "environment": {
+    "node": "v24.19.0",
+    "v8": "13.6.233.17-node.51",
+    "platform": "linux",
+    "arch": "x64",
+    "sanitizedChildEnvironment": true
+  },
+  "identity": {
+    "sourceCommitClaim": "b19cae064f621f97fb460da0d401fba7aa140f1a",
+    "checkedFileCount": 63,
+    "inventoryCount": 3,
+    "dependencyResolvedInsideWorkspace": true
+  },
+  "executions": [
+    {
+      "recipeId": "reviewer-exports",
+      "startedAt": "2026-09-09T14:24:05.391Z",
+      "completedAt": "2026-09-09T14:24:05.835Z",
+      "arguments": [
+        "--test",
+        "--test-reporter=tap",
+        "--test-concurrency=1",
+        "--",
+        "tests/paper-reviewer-browser-evidence.test.mjs"
+      ],
+      "exitCode": 0,
+      "summary": {
+        "tests": 1,
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "cancelled": 0,
+        "todo": 0
+      },
+      "stdout": "TAP version 13\n# Subtest: preserved synthetic browser exports reproduce their source-bound comparison\nok 1 - preserved synthetic browser exports reproduce their source-bound comparison\n  ---\n  duration_ms: 151.684757\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 364.402729\n",
+      "stderr": "",
+      "stdoutSha256": "12df0a76338e62c41a6f2eef052781658ac9dd1f2b248b3fdfbe10efc77d8b52",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "recipeId": "audit-report-ranks",
+      "startedAt": "2026-09-09T14:24:05.852Z",
+      "completedAt": "2026-09-09T14:24:07.605Z",
+      "arguments": [
+        "--test",
+        "--test-reporter=tap",
+        "--test-concurrency=1",
+        "--",
+        "tests/audit-report-rank-export.test.mjs"
+      ],
+      "exitCode": 0,
+      "summary": {
+        "tests": 11,
+        "passed": 11,
+        "failed": 0,
+        "skipped": 0,
+        "cancelled": 0,
+        "todo": 0
+      },
+      "stdout": "TAP version 13\n# Subtest: validated synthetic audit reports feed the shipped ranker with scientific ties and full attempt accounting\nok 1 - validated synthetic audit reports feed the shipped ranker with scientific ties and full attempt accounting\n  ---\n  duration_ms: 46.483741\n  type: 'test'\n  ...\n# Subtest: report-byte mismatch and declared coordinate, chain or model mismatches reject\nok 2 - report-byte mismatch and declared coordinate, chain or model mismatches reject\n  ---\n  duration_ms: 12.636431\n  type: 'test'\n  ...\n# Subtest: freshly rehashed edits still must pass the production report validator\nok 3 - freshly rehashed edits still must pass the production report validator\n  ---\n  duration_ms: 7.450909\n  type: 'test'\n  ...\n# Subtest: geometry-only export rejects confidence inputs and mixed legitimate audit frames\nok 4 - geometry-only export rejects confidence inputs and mixed legitimate audit frames\n  ---\n  duration_ms: 42.952203\n  type: 'test'\n  ...\n# Subtest: comparison method identity binds the upstream audit policy, not only the final rank transformation\nok 5 - comparison method identity binds the upstream audit policy, not only the final rank transformation\n  ---\n  duration_ms: 78.294217\n  type: 'test'\n  ...\n# Subtest: strict parsing rejects duplicate keys, invalid UTF-8, extra outcomes and supplied features\nok 6 - strict parsing rejects duplicate keys, invalid UTF-8, extra outcomes and supplied features\n  ---\n  duration_ms: 2.491839\n  type: 'test'\n  ...\n# Subtest: missing, additional, duplicate and excluded report membership rejects without dropping failures\nok 7 - missing, additional, duplicate and excluded report membership rejects without dropping failures\n  ---\n  duration_ms: 2.715781\n  type: 'test'\n  ...\n# Subtest: caller mutation after invocation cannot change checked report bytes or ranking provenance\nok 8 - caller mutation after invocation cannot change checked report bytes or ranking provenance\n  ---\n  duration_ms: 52.788543\n  type: 'test'\n  ...\n# Subtest: missing producer confidence remains unavailable and is not recovered from report geometry\nok 9 - missing producer confidence remains unavailable and is not recovered from report geometry\n  ---\n  duration_ms: 27.062017\n  type: 'test'\n  ...\n# Subtest: CLI reads only declared ID files, refuses symlinks/traversal and never overwrites output\nok 10 - CLI reads only declared ID files, refuses symlinks/traversal and never overwrites output\n  ---\n  duration_ms: 1031.089307\n  type: 'test'\n  ...\n# Subtest: preserved synthetic reports, policy-bound rankings and separately supplied labels replay as one workflow\nok 11 - preserved synthetic reports, policy-bound rankings and separately supplied labels replay as one workflow\n  ---\n  duration_ms: 25.358318\n  type: 'test'\n  ...\n1..11\n# tests 11\n# suites 0\n# pass 11\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1669.334331\n",
+      "stderr": "",
+      "stdoutSha256": "31faa3b09a4f8c7c22d141ea4d94ac0022b5458f642838b84fcb73ea1b0803b0",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "boundaries": {
+    "originalSourcesExecutedInHistoricalWorkspace": true,
+    "historicalSourceAndInputIdentitiesCheckedBeforeAndAfterEachRecipe": true,
+    "syntheticCoordinatesAndLabelsRead": true,
+    "nativeOrPredictedBiologicalCoordinatesRead": false,
+    "biologicalOutcomeLabelsRead": false,
+    "liveBrowserExecuted": false,
+    "independentParticipantCompletionEstablished": false,
+    "currentProductReleasePassed": false,
+    "allHistoricalReplaysPassed": false,
+    "completeDependencyClosureVerified": false,
+    "securityIsolationEstablished": false,
+    "runtimeEquivalenceToOriginalExecutionEstablished": false,
+    "networkIsolationEstablished": false,
+    "integrationAuthorized": false,
+    "independentEligibleGroupsAdded": 0,
+    "predictiveAccuracyMeasured": false
+  }
+}

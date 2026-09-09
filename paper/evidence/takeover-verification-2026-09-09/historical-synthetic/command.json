@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "scripts/paper/run-historical-synthetic-replays.mjs",
+    "--workspace=/workspace/scratch/7e3ee89cbfdd/ConfoVHH",
+    "--output=/workspace/scratch/1213a03cc5a3/evidence/historical-synthetic/replay.json"
+  ],
+  "cwd": "/workspace/scratch/1213a03cc5a3/ConfoVHH",
+  "exitCode": 0,
+  "stdoutSha256": "874274f779fdf068677fad815f8605114d9922b433fcf305e4cf5cc390c14983",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

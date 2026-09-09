@@ -1,0 +1,132 @@
+{
+  "schema": "confovhh-selection-sets-v1",
+  "studyId": "SYNTHETIC-SOURCE-SELECTION-CONTROL",
+  "positiveOutcomeDefinition": "Arbitrary opposite labels across toy seeds for arithmetic control only; not biological pose accuracy.",
+  "method": {
+    "name": "coordinate-executed-current-product",
+    "policySha256": "a71516e7115e65e0ac682bc5cf8dd2f69429943c5ade9d0e0ed1ed3394addf1a"
+  },
+  "baseline": {
+    "name": "source-bound-producer-confidence",
+    "policySha256": "8e446278e8e2107f5d37d0a5282ee2c269251b585150c225f583b224c0f4fdb5"
+  },
+  "targets": [
+    {
+      "id": "toy-target",
+      "groupId": "toy-component"
+    }
+  ],
+  "generators": [
+    {
+      "id": "boltz-format-control",
+      "conditionIds": [
+        "arbitrary-control"
+      ]
+    }
+  ],
+  "selectionSets": [
+    {
+      "id": "toy-seed-1",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "conditionId": "arbitrary-control",
+      "seed": 1,
+      "plannedCandidates": 3
+    },
+    {
+      "id": "toy-seed-2",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "conditionId": "arbitrary-control",
+      "seed": 2,
+      "plannedCandidates": 2
+    }
+  ],
+  "attempts": [
+    {
+      "id": "toy-failure",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "failed",
+      "reason": "Generated no-output control",
+      "selectionSetId": "toy-seed-1"
+    },
+    {
+      "id": "toy-seed-1-model-0",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "eligible",
+      "reason": "",
+      "selectionSetId": "toy-seed-1"
+    },
+    {
+      "id": "toy-seed-1-model-1",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "eligible",
+      "reason": "",
+      "selectionSetId": "toy-seed-1"
+    },
+    {
+      "id": "toy-seed-2-model-0",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "eligible",
+      "reason": "",
+      "selectionSetId": "toy-seed-2"
+    },
+    {
+      "id": "toy-seed-2-model-1",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "eligible",
+      "reason": "",
+      "selectionSetId": "toy-seed-2"
+    }
+  ],
+  "rankings": [
+    {
+      "id": "toy-seed-1-model-0",
+      "methodTier": 0,
+      "baselineTier": 1
+    },
+    {
+      "id": "toy-seed-1-model-1",
+      "methodTier": 1,
+      "baselineTier": 0
+    },
+    {
+      "id": "toy-seed-2-model-0",
+      "methodTier": 0,
+      "baselineTier": 1
+    },
+    {
+      "id": "toy-seed-2-model-1",
+      "methodTier": 1,
+      "baselineTier": 0
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "toy-seed-1-model-0",
+      "positive": 1
+    },
+    {
+      "id": "toy-seed-1-model-1",
+      "positive": 0
+    },
+    {
+      "id": "toy-seed-2-model-0",
+      "positive": 0
+    },
+    {
+      "id": "toy-seed-2-model-1",
+      "positive": 1
+    }
+  ]
+}
