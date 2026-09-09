@@ -1,0 +1,33 @@
+{
+  "schema": "confovhh-public-development-msa-request-v1",
+  "scope": "3P0G-single-case-development-pilot-not-independent-v3",
+  "created_utc": "2026-09-09T15:11:55.152965+00:00",
+  "chains": [
+    {
+      "entity": 1,
+      "chain": "A",
+      "sequence": "DYKDDDDAMGQPGNGSAFLLAPNRSHAPDHDVTQQRDEVWVVGMGIVMSLIVLAIVFGNVLVITAIAKFERLQTVTNYFITSLACADLVMGLAVVPFGAAHILMKMWTFGNFWCEFWTSIDVLCVTASIETLCVIAVDRYFAITSPFKYQSLLTKNKARVIILMVWIVSGLTSFLPIQMHWYRATHQEAINCYAEETCCDFFTNQAYAIASSIVSFYVPLVIMVFVYSRVFQEAKRQLNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYKFCLKEHKALKTLGIIMGTFTLCWLPFFIVNIVHVIQDNLIRKEVYILLNWIGYVNSGFNPLIYCRSPDFRIAFQELLCLRRSSLKAYGNGYSSNGNTGEQSG",
+      "sequence_sha256": "e9052379ba6dca45a6a4148a53cc1d6ad790f05e4b4f0a9237afe2fcc8638926"
+    },
+    {
+      "entity": 2,
+      "chain": "B",
+      "sequence": "QVQLQESGGGLVQAGGSLRLSCAASGSIFSINTMGWYRQAPGKQRELVAAIHSGGSTNYANSVKGRFTISRDNAANTVYLQMNSLKPEDTAVYYCNVKDYGAVLYEYDYWGQGTQVTVSSHHHHHH",
+      "sequence_sha256": "3e4dbf73ccc8ab7a4fb2fedd17695befe7f2807f17650d8ef60080aef9a8562f"
+    }
+  ],
+  "endpoint": "https://api.colabfold.com/ticket/msa",
+  "mode": "env",
+  "paired": false,
+  "templates_requested": false,
+  "retry_policy": "at most two submissions on transport/server failure; save all request/response bytes; no biological-outcome feedback",
+  "timeout_minutes": 15,
+  "normalization": "preserve raw archive and A3M entries; concatenate query-specific UniRef and environmental records using pinned Boltz2.2.1 algorithm; verify first normalized query equals exact deposited sequence",
+  "hosted_database_version": "not yet attested; record returned metadata, do not invent version",
+  "prohibited_inputs": [
+    "experimental coordinate payloads",
+    "predicted poses",
+    "DockQ outcomes",
+    "native contacts"
+  ]
+}
