@@ -1,6 +1,13 @@
 # ConfoVHH software/application submission readiness
 
-Updated 8 September 2026. **Not submission-ready; venue undecided.**
+Updated 9 September 2026. **Not submission-ready; venue undecided.**
+
+The [latest continuation](PROGRESS_2026-09-09.md) records 3,000 complete
+discovery inventories, a bounded Node 22 runtime workaround and a manuscript
+reproducibility review. These advances do not close the original-input,
+independent-use or submission-record gates below. The reviewed manuscript now
+distinguishes full audit JSON from summary exports, explains notebook
+persistence, and states the retained browser receipt's build-identity limit.
 
 The near-term article describes an auditable model-review workflow and its
 completed retrospective application. Its success criterion is a useful,

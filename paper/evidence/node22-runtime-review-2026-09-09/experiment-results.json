@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "reviewDateUtc": "2026-09-09",
+  "scope": "Runtime execution and software assertions only; no scientific outcome measurements.",
+  "abortReproducible": true,
+  "abortTimingDependent": true,
+  "rawLogRetention": "Temporary diagnostics; hashes and concise structured outcomes retained here.",
+  "experiments": [
+    {
+      "experimentId": "default-runtime",
+      "nodeVersion": "22.23.2",
+      "runtimeFlags": [],
+      "testFiles": [
+        "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+      ],
+      "launcherUsed": false,
+      "outcome": "FAIL",
+      "testRunnerCounts": {
+        "tests": 6,
+        "pass": 5,
+        "fail": 1,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMilliseconds": 2592.124594,
+      "rawTemporaryLogBasename": "confovhh-node22-pregraph.log",
+      "rawTemporaryLogSha256": "c499c704a04677fb2207b73937d918126f3c4382606b6ae806d8320e4bed501b",
+      "rawLogArchivedInPacket": false,
+      "runtimeFailure": {
+        "message": "unreachable code",
+        "nativeStackFunction": "v8::internal::Deoptimizer::DoComputeBuiltinContinuation",
+        "signal": "SIGTRAP",
+        "failedScientificAssertionObserved": false
+      }
+    },
+    {
+      "experimentId": "deoptimization-trace-1",
+      "nodeVersion": "22.23.2",
+      "runtimeFlags": [
+        "--trace-deopt"
+      ],
+      "testFiles": [
+        "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+      ],
+      "launcherUsed": false,
+      "outcome": "FAIL",
+      "testRunnerCounts": {
+        "tests": 6,
+        "pass": 5,
+        "fail": 1,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMilliseconds": 30855.534549,
+      "rawTemporaryLogBasename": "confovhh-node22-pregraph-trace.log",
+      "rawTemporaryLogSha256": "12f6f76f85259e3605f1838ee569a53eccdae462049f1c7198419631d66be0ea",
+      "rawLogArchivedInPacket": false,
+      "runtimeFailure": {
+        "message": "unreachable code",
+        "nativeStackFunction": "v8::internal::Deoptimizer::DoComputeBuiltinContinuation",
+        "signal": "SIGTRAP",
+        "failedScientificAssertionObserved": false
+      }
+    },
+    {
+      "experimentId": "deoptimization-trace-2",
+      "nodeVersion": "22.23.2",
+      "runtimeFlags": [
+        "--trace-deopt"
+      ],
+      "testFiles": [
+        "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+      ],
+      "launcherUsed": false,
+      "outcome": "PASS",
+      "testRunnerCounts": {
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMilliseconds": 33909.489902,
+      "rawTemporaryLogBasename": "confovhh-node22-pregraph-trace2.log",
+      "rawTemporaryLogSha256": "3ee190b2e1363505480d272d54ad5da190f3c381742fcb8ab1c6a33275f5cb87",
+      "rawLogArchivedInPacket": false
+    },
+    {
+      "experimentId": "array-builtin-inlining-disabled",
+      "nodeVersion": "22.23.2",
+      "runtimeFlags": [
+        "--no-turbo-inline-array-builtins"
+      ],
+      "testFiles": [
+        "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+      ],
+      "launcherUsed": false,
+      "outcome": "PASS",
+      "testRunnerCounts": {
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMilliseconds": 41237.669854,
+      "rawTemporaryLogBasename": "confovhh-node22-no-array-inline.log",
+      "rawTemporaryLogSha256": "4e0af7a2ba2a5f7418ca909c6fd6d6bb7c9e7fb6fbb2b9e65795116c9dcf556b",
+      "rawLogArchivedInPacket": false
+    },
+    {
+      "experimentId": "js-wasm-inlining-disabled-1",
+      "nodeVersion": "22.23.2",
+      "runtimeFlags": [
+        "--no-turbo-inline-js-wasm-calls"
+      ],
+      "testFiles": [
+        "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+      ],
+      "launcherUsed": false,
+      "outcome": "PASS",
+      "testRunnerCounts": {
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMilliseconds": 44950.946004,
+      "rawTemporaryLogBasename": "confovhh-node22-no-wasm-inline.log",
+      "rawTemporaryLogSha256": "7bda6eb62a245e275649baa89adcb2e1b97715a9afc7af90ce0272f03d112659",
+      "rawLogArchivedInPacket": false
+    },
+    {
+      "experimentId": "js-wasm-inlining-disabled-2",
+      "nodeVersion": "22.23.2",
+      "runtimeFlags": [
+        "--no-turbo-inline-js-wasm-calls"
+      ],
+      "testFiles": [
+        "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+      ],
+      "launcherUsed": false,
+      "outcome": "PASS",
+      "testRunnerCounts": {
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMilliseconds": 46666.730737,
+      "rawTemporaryLogBasename": "confovhh-node22-no-wasm-inline2.log",
+      "rawTemporaryLogSha256": "8706f704a2086c7289a2b99d786c1ad7f222e3686c978012b25002d5cc143cd9",
+      "rawLogArchivedInPacket": false
+    },
+    {
+      "experimentId": "actual-launcher-pregraph",
+      "nodeVersion": "22.23.2",
+      "runtimeFlags": [
+        "--no-turbo-inline-js-wasm-calls"
+      ],
+      "testFiles": [
+        "tests/hard-decoy-v3-vhh-sequence-pregraph.test.mjs"
+      ],
+      "launcherUsed": true,
+      "outcome": "PASS",
+      "testRunnerCounts": {
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMilliseconds": 33846.445114,
+      "rawTemporaryLogBasename": "confovhh-node22-launcher-pregraph.log",
+      "rawTemporaryLogSha256": "22918bee70fbe455aaefc8e535b771ff1266d12494c0f7360c00970f28e40d0d",
+      "rawLogArchivedInPacket": false,
+      "launcherRevisionScope": "Before independent review added the argument delimiter; same runtime flag and assertion file selection."
+    },
+    {
+      "experimentId": "actual-launcher-regression-checks",
+      "nodeVersion": "22.23.2",
+      "runtimeFlags": [
+        "--no-turbo-inline-js-wasm-calls"
+      ],
+      "testFiles": [
+        "tests/node-test-launcher.test.mjs",
+        "tests/release-automation.test.mjs"
+      ],
+      "launcherUsed": true,
+      "outcome": "PASS",
+      "testRunnerCounts": {
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMilliseconds": 1458.161999,
+      "rawTemporaryLogBasename": "confovhh-node22-launcher-gate-checks.log",
+      "rawTemporaryLogSha256": "c9913b552a99e5d5f528732ae862d91ce9226cb469b5d3351bb71aff4b9bece5",
+      "rawLogArchivedInPacket": false,
+      "launcherRevisionScope": "Before independent review added the argument delimiter; same runtime flag and assertion file selection."
+    },
+    {
+      "experimentId": "final-reviewed-launcher-regression-checks",
+      "nodeVersion": "22.23.2",
+      "runtimeFlags": [
+        "--no-turbo-inline-js-wasm-calls"
+      ],
+      "testFiles": [
+        "tests/node-test-launcher.test.mjs",
+        "tests/release-automation.test.mjs"
+      ],
+      "launcherUsed": true,
+      "launcherRevisionScope": "Final source hashes bound in review-receipt.json; includes argument delimiter and filter-looking argument rejection check.",
+      "outcome": "PASS",
+      "testRunnerCounts": {
+        "tests": 6,
+        "pass": 6,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "durationMilliseconds": 2148.1127,
+      "rawTemporaryLogBasename": "confovhh-node22-final-launcher-gate-checks.log",
+      "rawTemporaryLogSha256": "c89667b3358d67b9c8bdc7c9de845d78f8df6c1383d6b6c76845b6b6ff0f89d7",
+      "rawLogArchivedInPacket": false
+    }
+  ]
+}

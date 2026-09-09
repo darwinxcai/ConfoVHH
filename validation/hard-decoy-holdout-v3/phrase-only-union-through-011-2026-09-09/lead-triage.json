@@ -1,0 +1,2327 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "All numbered-heavy-domain leads in newly captured chunks 008 through 011; deposition metadata only.",
+  "inputBindings": [
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-008-2026-09-09/snapshots/4b51bc4c1b0544d8eddde02d1a643abe03b867f9f36b7c0af681af1604f40360/entries.jsonl",
+      "bytes": 656136,
+      "sha256": "0429445d026ef80aec8ecd8d376dae8ce06bc5a976e6d4929d20e91b0547650c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-008-2026-09-09/snapshots/4b51bc4c1b0544d8eddde02d1a643abe03b867f9f36b7c0af681af1604f40360/entity-screens.jsonl",
+      "bytes": 784640,
+      "sha256": "68d5d395ef202041abcaf0a30a0efb9f19d7945842770dc5a0bd17e1e4101063"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "bytes": 836928,
+      "sha256": "b811c11aeaf1229c89ee0b7e28d61d80f3f13072e91ff17e2ba248c32bc09f31"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entity-screens.jsonl",
+      "bytes": 1107064,
+      "sha256": "b3c8c95bc32fddd4fc3fea999aa29492603d5e09a29fd4e1c192b47fc3ad5fc4"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-010-2026-09-09/snapshots/17b152391ee0c9b6612b0f4ad9c742cff01f23cbe961eeba5629a28a646cf61f/entries.jsonl",
+      "bytes": 720065,
+      "sha256": "d5c21c7c6ef0a8c7354059bd2359bd591fc758cd490f0be145cba5fd51194689"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-010-2026-09-09/snapshots/17b152391ee0c9b6612b0f4ad9c742cff01f23cbe961eeba5629a28a646cf61f/entity-screens.jsonl",
+      "bytes": 834338,
+      "sha256": "c53b05233e2f8d14cd67b7396d4896c6aa17cc3aeb54b3bc1a913f331f4528e1"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-011-2026-09-09/snapshots/3db7ded128316dba20130720faf04722fa7c6193a8c92a95f7cc3ba665966d83/entries.jsonl",
+      "bytes": 1093733,
+      "sha256": "6790a9a5d8a7759f60b66e67490952d7abeb9bc224cbde6688a5918780297e47"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-011-2026-09-09/snapshots/3db7ded128316dba20130720faf04722fa7c6193a8c92a95f7cc3ba665966d83/entity-screens.jsonl",
+      "bytes": 1727474,
+      "sha256": "bf0d5fe3766d9bc51630dd8515047442d7d6db2d48db6a842f6ba8e2fd8e780e"
+    }
+  ],
+  "entries": [
+    {
+      "pdbId": "2QR0",
+      "chunkIndex": 8,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-008-2026-09-09/snapshots/4b51bc4c1b0544d8eddde02d1a643abe03b867f9f36b7c0af681af1604f40360/entries.jsonl",
+      "sourceEntryRawLineSha256": "bd0c908ca1bab82ca380706a1d1e16235591710f9997878a96ded89536d5a8f1",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Fab-Fragment Light Chain",
+          "sequenceLength": 213,
+          "sequenceSha256": "e291af287ac4b56c7515d34b1eb32ae55b9e0b8ca02eb5c11f1f4157e3476d8a",
+          "authAsymIds": [
+            "A",
+            "E",
+            "G",
+            "K",
+            "M",
+            "Q",
+            "S",
+            "W"
+          ],
+          "labelAsymIds": [
+            "A",
+            "E",
+            "G",
+            "K",
+            "M",
+            "Q",
+            "S",
+            "W"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "2",
+          "description": "Fab-Fragment Heavy Chain",
+          "sequenceLength": 221,
+          "sequenceSha256": "c19d1447ac10712d09609fa92827d50992d6ddd516fecec6e08c83aff9d9d6bd",
+          "authAsymIds": [
+            "B",
+            "F",
+            "H",
+            "L",
+            "N",
+            "R",
+            "T",
+            "X"
+          ],
+          "labelAsymIds": [
+            "B",
+            "F",
+            "H",
+            "L",
+            "N",
+            "R",
+            "T",
+            "X"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01857",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "Vascular endothelial growth factor A",
+          "sequenceLength": 97,
+          "sequenceSha256": "5058769caffb2074f1e542e8514090288113de592499a037122725858227118f",
+          "authAsymIds": [
+            "C",
+            "D",
+            "I",
+            "J",
+            "O",
+            "P",
+            "U",
+            "V"
+          ],
+          "labelAsymIds": [
+            "C",
+            "D",
+            "I",
+            "J",
+            "O",
+            "P",
+            "U",
+            "V"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P15692",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1016/j.jmb.2007.08.005",
+        "pmid": "17825836",
+        "title": "High-throughput generation of synthetic antibodies from highly functional minimalist phage-displayed libraries"
+      },
+      "metadataContext": "VEGFA with conventional Fab heavy/light chains",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2VC2",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "11e36531e5fb5fbe965b7c79d09d035146fc75d25c4b81d4602feb7bde15128b",
+      "candidateEntityIds": [
+        "3"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "INTEGRIN ALPHA-IIB",
+          "sequenceLength": 452,
+          "sequenceSha256": "3177f679b02fc9af18ee63456835c350ef2d03f74c3495874b6530fd04f4ae59",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P08514",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "INTEGRIN BETA-3",
+          "sequenceLength": 461,
+          "sequenceSha256": "dd3765df2dbe2980029a554473632d470fca3d1ea1678333b7efc9891e2d6b70",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P05106",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "MONOCLONAL ANTIBODY 10E5 HEAVY CHAIN",
+          "sequenceLength": 221,
+          "sequenceSha256": "3c2e03e85bc9d4380a1e58e1611ef33083661ebffe16f9cd1fe9eb2f790909cc",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "4",
+          "description": "MONOCLONAL ANTIBODY 10E5 LIGHT CHAIN",
+          "sequenceLength": 214,
+          "sequenceSha256": "34773b25d89719d9f2c07aa09fca57731c771267c7a3a257580adbfab22fecc6",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1083/jcb.200801146",
+        "pmid": "18710925",
+        "title": "Structural Basis for Distinctive Recognition of Fibrinogen Gammac Peptide by the Platelet Integrin Alphaiibbeta3."
+      },
+      "metadataContext": "Integrin alpha-IIb/beta-3 with conventional 10E5 antibody heavy/light chains; all deposited peptides retained in inventory",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2VDK",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "12c75fd2754cec64280aadbaa8297525a449a24d382d68843e82dd3fe48ddd7d",
+      "candidateEntityIds": [
+        "3"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "INTEGRIN ALPHA-IIB",
+          "sequenceLength": 452,
+          "sequenceSha256": "3177f679b02fc9af18ee63456835c350ef2d03f74c3495874b6530fd04f4ae59",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P08514",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "INTEGRIN BETA-3",
+          "sequenceLength": 461,
+          "sequenceSha256": "dd3765df2dbe2980029a554473632d470fca3d1ea1678333b7efc9891e2d6b70",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P05106",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "MONOCLONAL ANTIBODY 10E5 HEAVY CHAIN",
+          "sequenceLength": 221,
+          "sequenceSha256": "3c2e03e85bc9d4380a1e58e1611ef33083661ebffe16f9cd1fe9eb2f790909cc",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "4",
+          "description": "MONOCLONAL ANTIBODY 10E5 LIGHT CHAIN",
+          "sequenceLength": 214,
+          "sequenceSha256": "34773b25d89719d9f2c07aa09fca57731c771267c7a3a257580adbfab22fecc6",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1083/jcb.200801146",
+        "pmid": "18710925",
+        "title": "Structural Basis for Distinctive Recognition of Fibrinogen Gammac Peptide by the Platelet Integrin Alphaiibbeta3."
+      },
+      "metadataContext": "Integrin alpha-IIb/beta-3 with conventional 10E5 antibody heavy/light chains; all deposited peptides retained in inventory",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2VDL",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "6a1840edee361497835220f778ea2feeb3c5ede87f062cec62133e274353f942",
+      "candidateEntityIds": [
+        "3"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "INTEGRIN ALPHA-IIB",
+          "sequenceLength": 452,
+          "sequenceSha256": "3177f679b02fc9af18ee63456835c350ef2d03f74c3495874b6530fd04f4ae59",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P08514",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "INTEGRIN BETA-3",
+          "sequenceLength": 461,
+          "sequenceSha256": "dd3765df2dbe2980029a554473632d470fca3d1ea1678333b7efc9891e2d6b70",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P05106",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "MONOCLONAL ANTIBODY 10E5 HEAVY CHAIN",
+          "sequenceLength": 221,
+          "sequenceSha256": "3c2e03e85bc9d4380a1e58e1611ef33083661ebffe16f9cd1fe9eb2f790909cc",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "4",
+          "description": "MONOCLONAL ANTIBODY 10E5 LIGHT CHAIN",
+          "sequenceLength": 214,
+          "sequenceSha256": "34773b25d89719d9f2c07aa09fca57731c771267c7a3a257580adbfab22fecc6",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1083/jcb.200801146",
+        "pmid": "18710925",
+        "title": "Structural Basis for Distinctive Recognition of Fibrinogen Gammac Peptide by the Platelet Integrin Alphaiibbeta3."
+      },
+      "metadataContext": "Integrin alpha-IIb/beta-3 with conventional 10E5 antibody heavy/light chains; all deposited peptides retained in inventory",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2VDM",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "5ff403db3ac32449ad82517d7521e893a476d96fdf6ab7cd572feb9cb54c18a0",
+      "candidateEntityIds": [
+        "3"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "INTEGRIN ALPHA-IIB",
+          "sequenceLength": 452,
+          "sequenceSha256": "3177f679b02fc9af18ee63456835c350ef2d03f74c3495874b6530fd04f4ae59",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P08514",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "INTEGRIN BETA-3",
+          "sequenceLength": 461,
+          "sequenceSha256": "dd3765df2dbe2980029a554473632d470fca3d1ea1678333b7efc9891e2d6b70",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P05106",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "MONOCLONAL ANTIBODY 10E5 HEAVY CHAIN",
+          "sequenceLength": 221,
+          "sequenceSha256": "3c2e03e85bc9d4380a1e58e1611ef33083661ebffe16f9cd1fe9eb2f790909cc",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "4",
+          "description": "MONOCLONAL ANTIBODY 10E5 LIGHT CHAIN",
+          "sequenceLength": 214,
+          "sequenceSha256": "34773b25d89719d9f2c07aa09fca57731c771267c7a3a257580adbfab22fecc6",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1083/jcb.200801146",
+        "pmid": "18710925",
+        "title": "Structural Basis for Distinctive Recognition of Fibrinogen Gammac Peptide by the Platelet Integrin Alphaiibbeta3."
+      },
+      "metadataContext": "Integrin alpha-IIb/beta-3 with conventional 10E5 antibody heavy/light chains; all deposited peptides retained in inventory",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2VDN",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "4a3088e32b1fbbdf6de211251cae339d013942ab652298a605d6a5e66e26d3fa",
+      "candidateEntityIds": [
+        "4"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "INTEGRIN ALPHA-IIB",
+          "sequenceLength": 452,
+          "sequenceSha256": "3177f679b02fc9af18ee63456835c350ef2d03f74c3495874b6530fd04f4ae59",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P08514",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "INTEGRIN BETA-3",
+          "sequenceLength": 461,
+          "sequenceSha256": "dd3765df2dbe2980029a554473632d470fca3d1ea1678333b7efc9891e2d6b70",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P05106",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "EPTIFIBATIDE",
+          "sequenceLength": 8,
+          "sequenceSha256": "64ccc0afa752d687d31903998e1393a7d9910875c469eae4eb19fe1771980224",
+          "authAsymIds": [
+            "C"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "4",
+          "description": "MONOCLONAL ANTIBODY 10E5 HEAVY CHAIN",
+          "sequenceLength": 221,
+          "sequenceSha256": "3c2e03e85bc9d4380a1e58e1611ef33083661ebffe16f9cd1fe9eb2f790909cc",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "5",
+          "description": "MONOCLONAL ANTIBODY 10E5 LIGHT CHAIN",
+          "sequenceLength": 214,
+          "sequenceSha256": "34773b25d89719d9f2c07aa09fca57731c771267c7a3a257580adbfab22fecc6",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1083/jcb.200801146",
+        "pmid": "18710925",
+        "title": "Structural Basis for Distinctive Recognition of Fibrinogen Gammac Peptide by the Platelet Integrin Alphaiibbeta3."
+      },
+      "metadataContext": "Integrin alpha-IIb/beta-3 with conventional 10E5 antibody heavy/light chains; all deposited peptides retained in inventory",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2VDO",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "e3f8091da4e4a4f960e3071c048f48065ac8480caa01de37ba7093b670cccdb3",
+      "candidateEntityIds": [
+        "4"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "INTEGRIN ALPHA-IIB",
+          "sequenceLength": 452,
+          "sequenceSha256": "3177f679b02fc9af18ee63456835c350ef2d03f74c3495874b6530fd04f4ae59",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P08514",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "INTEGRIN BETA-3",
+          "sequenceLength": 461,
+          "sequenceSha256": "dd3765df2dbe2980029a554473632d470fca3d1ea1678333b7efc9891e2d6b70",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P05106",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "FIBRINOGEN, GAMMA POLYPEPTIDE",
+          "sequenceLength": 12,
+          "sequenceSha256": "ba1f9014865fec77f583aba143e8b6fe53e2d134635d33dd8950942c8a8ebdee",
+          "authAsymIds": [
+            "C"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P02679",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "4",
+          "description": "MONOCLONAL ANTIBODY 10E5 HEAVY CHAIN",
+          "sequenceLength": 221,
+          "sequenceSha256": "3c2e03e85bc9d4380a1e58e1611ef33083661ebffe16f9cd1fe9eb2f790909cc",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "5",
+          "description": "MONOCLONAL ANTIBODY 10E5 LIGHT CHAIN",
+          "sequenceLength": 214,
+          "sequenceSha256": "34773b25d89719d9f2c07aa09fca57731c771267c7a3a257580adbfab22fecc6",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1083/jcb.200801146",
+        "pmid": "18710925",
+        "title": "Structural Basis for Distinctive Recognition of Fibrinogen Gammac Peptide by the Platelet Integrin Alphaiibbeta3."
+      },
+      "metadataContext": "Integrin alpha-IIb/beta-3 with conventional 10E5 antibody heavy/light chains; all deposited peptides retained in inventory",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2VDP",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "ab0069d47535db5258d6188b43f0b8c568ef308429fdbdcb10937ed40a401a00",
+      "candidateEntityIds": [
+        "4"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "INTEGRIN ALPHA-IIB",
+          "sequenceLength": 452,
+          "sequenceSha256": "3177f679b02fc9af18ee63456835c350ef2d03f74c3495874b6530fd04f4ae59",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P08514",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "INTEGRIN BETA-3",
+          "sequenceLength": 461,
+          "sequenceSha256": "dd3765df2dbe2980029a554473632d470fca3d1ea1678333b7efc9891e2d6b70",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P05106",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "FIBRINOGEN",
+          "sequenceLength": 10,
+          "sequenceSha256": "9ceeeca016636a03257ddad15785d2b7055c7133c0e2391b83ed3fb3a4cbe051",
+          "authAsymIds": [
+            "C"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P02679",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "4",
+          "description": "MONOCLONAL ANTIBODY 10E5 HEAVY CHAIN",
+          "sequenceLength": 221,
+          "sequenceSha256": "3c2e03e85bc9d4380a1e58e1611ef33083661ebffe16f9cd1fe9eb2f790909cc",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "5",
+          "description": "MONOCLONAL ANTIBODY 10E5 LIGHT CHAIN",
+          "sequenceLength": 214,
+          "sequenceSha256": "34773b25d89719d9f2c07aa09fca57731c771267c7a3a257580adbfab22fecc6",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1083/jcb.200801146",
+        "pmid": "18710925",
+        "title": "Structural Basis for Distinctive Recognition of Fibrinogen Gammac Peptide by the Platelet Integrin Alphaiibbeta3."
+      },
+      "metadataContext": "Integrin alpha-IIb/beta-3 with conventional 10E5 antibody heavy/light chains; all deposited peptides retained in inventory",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2VDQ",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "d393001d8ed5a55842dae92fe6a77beb332a19188f3c6634af87585e70f1c9c4",
+      "candidateEntityIds": [
+        "4"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "INTEGRIN ALPHA-IIB",
+          "sequenceLength": 452,
+          "sequenceSha256": "3177f679b02fc9af18ee63456835c350ef2d03f74c3495874b6530fd04f4ae59",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P08514",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "INTEGRIN BETA-3",
+          "sequenceLength": 461,
+          "sequenceSha256": "dd3765df2dbe2980029a554473632d470fca3d1ea1678333b7efc9891e2d6b70",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P05106",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "FIBRINOGEN, GAMMA POLYPEPTIDE",
+          "sequenceLength": 12,
+          "sequenceSha256": "25827d5750a2085b791a20cbd7c8bfcf057893e851dc9ffdb42b451d530f9114",
+          "authAsymIds": [
+            "C"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P02679",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "4",
+          "description": "MONOCLONAL ANTIBODY 10E5 HEAVY CHAIN",
+          "sequenceLength": 221,
+          "sequenceSha256": "3c2e03e85bc9d4380a1e58e1611ef33083661ebffe16f9cd1fe9eb2f790909cc",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "5",
+          "description": "MONOCLONAL ANTIBODY 10E5 LIGHT CHAIN",
+          "sequenceLength": 214,
+          "sequenceSha256": "34773b25d89719d9f2c07aa09fca57731c771267c7a3a257580adbfab22fecc6",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1083/jcb.200801146",
+        "pmid": "18710925",
+        "title": "Structural Basis for Distinctive Recognition of Fibrinogen Gammac Peptide by the Platelet Integrin Alphaiibbeta3."
+      },
+      "metadataContext": "Integrin alpha-IIb/beta-3 with conventional 10E5 antibody heavy/light chains; all deposited peptides retained in inventory",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2VDR",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "3fc3e2a95ea73f7cd5420272665a449ff4a1cf58c0cb8dd92def6c654b6c421c",
+      "candidateEntityIds": [
+        "4"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "INTEGRIN ALPHA-IIB",
+          "sequenceLength": 452,
+          "sequenceSha256": "3177f679b02fc9af18ee63456835c350ef2d03f74c3495874b6530fd04f4ae59",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P08514",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "INTEGRIN BETA-3",
+          "sequenceLength": 461,
+          "sequenceSha256": "dd3765df2dbe2980029a554473632d470fca3d1ea1678333b7efc9891e2d6b70",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P05106",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "FIBRINOGEN",
+          "sequenceLength": 10,
+          "sequenceSha256": "d729f7a95a17c16d59ce2389379dcf24647e662439014e82c5dabdea3622f887",
+          "authAsymIds": [
+            "C"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P02679",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "4",
+          "description": "MONOCLONAL ANTIBODY 10E5 HEAVY CHAIN",
+          "sequenceLength": 221,
+          "sequenceSha256": "3c2e03e85bc9d4380a1e58e1611ef33083661ebffe16f9cd1fe9eb2f790909cc",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "5",
+          "description": "MONOCLONAL ANTIBODY 10E5 LIGHT CHAIN",
+          "sequenceLength": 214,
+          "sequenceSha256": "34773b25d89719d9f2c07aa09fca57731c771267c7a3a257580adbfab22fecc6",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1083/jcb.200801146",
+        "pmid": "18710925",
+        "title": "Structural Basis for Distinctive Recognition of Fibrinogen Gammac Peptide by the Platelet Integrin Alphaiibbeta3."
+      },
+      "metadataContext": "Integrin alpha-IIb/beta-3 with conventional 10E5 antibody heavy/light chains; all deposited peptides retained in inventory",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2W9E",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "779c8fccc7914e6a9ee6186dad28e889db4cab331ca8240bfb522e3fa895d016",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "MAJOR PRION PROTEIN",
+          "sequenceLength": 113,
+          "sequenceSha256": "b1ec5614668b522bea8c9738d5aeb792be7f6735322e4fc455964c017be4ab87",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P04156",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "ICSM 18-ANTI-PRP THERAPEUTIC FAB HEAVY CHAIN",
+          "sequenceLength": 215,
+          "sequenceSha256": "67cf44d48aa1911653348ea350281283c9268b5e0993f2f1d7eb14d6482a58ce",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "ICSM 18-ANTI-PRP THERAPEUTIC FAB LIGHT CHAIN",
+          "sequenceLength": 212,
+          "sequenceSha256": "e256026b7f00e93979d51e638af19fdd511cb806918a78f0380b15ba47c739e9",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1073/pnas.0809170106",
+        "pmid": "19204296",
+        "title": "Crystal Structure of Human Prion Protein Bound to a Therapeutic Antibody."
+      },
+      "metadataContext": "Prion protein with conventional ICSM18 Fab heavy/light chains",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2X6M",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "cf992544ec57dbdb1e5d44e75bc02a16e5465bd60a39ff16d5ec929368f36b98",
+      "candidateEntityIds": [
+        "1"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "HEAVY CHAIN VARIABLE DOMAIN FROM DROMEDARY",
+          "sequenceLength": 126,
+          "sequenceSha256": "0d9f2cf0d7309651ab52b58971a71bc49c0b300a375be5d75599f2b6d0509ec6",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus dromedarius",
+              "taxonomyId": "9838"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "2",
+          "description": "ALPHA-SYNUCLEIN PEPTIDE",
+          "sequenceLength": 9,
+          "sequenceSha256": "4d4d29832a89b4cfec5db3428028eb1427a16ba0ef8dd8a62e93673b8e29ade5",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P37840",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1016/j.jmb.2010.07.001",
+        "pmid": "20620148",
+        "title": "Structure and Properties of a Complex of Alpha-Synuclein and a Single-Domain Camelid Antibody."
+      },
+      "metadataContext": "Dromedary heavy-chain variable domain with alpha-synuclein peptide",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "31IC",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "a63e3235551d2ee18a98e8427fcef4fd894e740fedd4cac4dae269e01afc6b81",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Excitatory amino acid transporter 3",
+          "sequenceLength": 487,
+          "sequenceSha256": "898d05739ff857606b10834f4853d9f5278c9c535abeee517fb65345a56a9728",
+          "authAsymIds": [
+            "A",
+            "B",
+            "C"
+          ],
+          "labelAsymIds": [
+            "A",
+            "B",
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P43005",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "B11 nanobody",
+          "sequenceLength": 166,
+          "sequenceSha256": "5ace382d7c2013fb65d65b01aeebd4a05d9e386cfe4c830ca4bcae422d501da7",
+          "authAsymIds": [
+            "D"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Vicugna pacos",
+              "taxonomyId": "30538"
+            }
+          ],
+          "referenceSequences": []
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structure of human excitatory amino acid transporter 3 (EAAT3) in complex with a nanobody"
+      },
+      "metadataContext": "EAAT3 transporter with deposited B11 nanobody; primary DOI and PMID absent",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "3BDY",
+      "chunkIndex": 9,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-009-2026-09-09/snapshots/628636a1d975aa1cf082c4eacff282768b9e63a0eb9d9b3c1ff2aea6f3bc85b9/entries.jsonl",
+      "sourceEntryRawLineSha256": "8f9558fcbf98af1642df5992495d7c46e9ecd7eadbe9cb94b19c0184fbd189f9",
+      "candidateEntityIds": [
+        "1"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Fab Fragment -Heavy Chain",
+          "sequenceLength": 230,
+          "sequenceSha256": "78752200c7649a75e45f168f7f8ed47b1088198e5ac34a90d76247d10b35dc15",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01857",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "Fab Fragment -Light Chain",
+          "sequenceLength": 218,
+          "sequenceSha256": "a08ce29807193d769a593170ba67671bc9297d37b6fbb78cff5d61a15831c871",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q7Z3Y4",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "Vascular endothelial growth factor A",
+          "sequenceLength": 102,
+          "sequenceSha256": "7af9039ac76deadec47cbaf40a15fb496b4aa88f3044a41b1424fe0691c0c81d",
+          "authAsymIds": [
+            "V"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P15692",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1126/science.1165480",
+        "pmid": "19299620",
+        "title": "Variants of the antibody herceptin that interact with HER2 and VEGF at the antigen binding site"
+      },
+      "metadataContext": "VEGFA with conventional bH1 Fab heavy/light chains",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "3CK0",
+      "chunkIndex": 10,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-010-2026-09-09/snapshots/17b152391ee0c9b6612b0f4ad9c742cff01f23cbe961eeba5629a28a646cf61f/entries.jsonl",
+      "sourceEntryRawLineSha256": "dccd4c772d6793c5463d047cea1ed1b5fb6bda32f2a461ca953d30931689e0f9",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "PROTEIN (IMMUNOGLOBULIN; LIGHT CHAIN)",
+          "sequenceLength": 216,
+          "sequenceSha256": "a093fdffc92e1a9d54184c27e19b7e71cb605ee23547586cc0f2d3c3621a0295",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01837",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "PROTEIN (IMMUNOGLOBULIN; HEAVY CHAIN)",
+          "sequenceLength": 219,
+          "sequenceSha256": "08d55212b9629e54b3e291ec47e0abe99d4b44297d05c95575bd3ba12e602636",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "PROTEIN (8-MER; HUMAN ANGIOTENSIN II)",
+          "sequenceLength": 8,
+          "sequenceSha256": "7aa421f3811bae411b69d083899b702abb1f49f8349099d2bbd0983733cee49b",
+          "authAsymIds": [
+            "P"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "synthetic construct",
+              "taxonomyId": "32630"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01019",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structures of Angiotensin II and a Phage-Display Selected Cyclic Peptide in Complex with Fab131: Making Angiotensin II Analogs"
+      },
+      "metadataContext": "Angiotensin II octapeptide with conventional immunoglobulin heavy/light chains; primary DOI and PMID absent",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "3FFD",
+      "chunkIndex": 10,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-010-2026-09-09/snapshots/17b152391ee0c9b6612b0f4ad9c742cff01f23cbe961eeba5629a28a646cf61f/entries.jsonl",
+      "sourceEntryRawLineSha256": "40f052b1b9800bed0ba7bc64e471c9a912430f6715c879e3ca36242f7996b676",
+      "candidateEntityIds": [
+        "1"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Monoclonal antibody, heavy chain, Fab fragment",
+          "sequenceLength": 218,
+          "sequenceSha256": "44437d55ef97ec5498f0ae3519384880f6542c80c4d5dffc2a7ff7ab53a53201",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "2",
+          "description": "Monoclonal antibody, light chain, Fab fragment",
+          "sequenceLength": 220,
+          "sequenceSha256": "2a59aed8e68aabcd41d20d2791813209c144f5927a32bb7cf1c22817daea8043",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "Parathyroid hormone-related protein",
+          "sequenceLength": 108,
+          "sequenceSha256": "dc283f984c9e7ac86f07301fd20b1ae7958cc06392c7a720f011f5460d8943b7",
+          "authAsymIds": [
+            "P"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P12272",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1074/jbc.m900044200",
+        "pmid": "19346515",
+        "title": "Structural basis for antibody discrimination between two hormones that recognize the parathyroid hormone receptor"
+      },
+      "metadataContext": "Parathyroid hormone-related protein with conventional monoclonal Fab heavy/light chains",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "3G6J",
+      "chunkIndex": 10,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-010-2026-09-09/snapshots/17b152391ee0c9b6612b0f4ad9c742cff01f23cbe961eeba5629a28a646cf61f/entries.jsonl",
+      "sourceEntryRawLineSha256": "967a351109144df0c5fc2e0da14e00970a775273a1ddc1b549f7b17787fa065e",
+      "candidateEntityIds": [
+        "4"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Complement C3 beta chain",
+          "sequenceLength": 644,
+          "sequenceSha256": "5e5f7c9c3d24e03a185ef1c090e1d725b42aeb7391c4aa1f37f4bff2c7f12ffd",
+          "authAsymIds": [
+            "A",
+            "C"
+          ],
+          "labelAsymIds": [
+            "A",
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01024",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "Complement C3 alpha chain",
+          "sequenceLength": 915,
+          "sequenceSha256": "8256d74a6270019205499f2ab8cf66bf6a793c63a2c0345fa5d2a5feadf346e8",
+          "authAsymIds": [
+            "B",
+            "D"
+          ],
+          "labelAsymIds": [
+            "B",
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01024",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "Fab light chain",
+          "sequenceLength": 214,
+          "sequenceSha256": "32f37de6690ad639123924f1d475eb9120effce60f98409519b352f5b589c52d",
+          "authAsymIds": [
+            "E",
+            "G"
+          ],
+          "labelAsymIds": [
+            "E",
+            "G"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "4",
+          "description": "Fab heavy chain",
+          "sequenceLength": 226,
+          "sequenceSha256": "de87ba2406dd5c5b1123279e663719fba355bab7f2220992f35861d944471e95",
+          "authAsymIds": [
+            "F",
+            "H"
+          ],
+          "labelAsymIds": [
+            "F",
+            "H"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": []
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1074/jbc.m809106200",
+        "pmid": "19196712",
+        "title": "Structural and Functional Analysis of a C3b-specific Antibody That Selectively Inhibits the Alternative Pathway of Complement"
+      },
+      "metadataContext": "Complement C3 alpha/beta chains with conventional Fab heavy/light chains",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "3JAB",
+      "chunkIndex": 11,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-011-2026-09-09/snapshots/3db7ded128316dba20130720faf04722fa7c6193a8c92a95f7cc3ba665966d83/entries.jsonl",
+      "sourceEntryRawLineSha256": "e9500bec3129d2f3adab7e0e3b2db21be9b5662110d7b1d212e7292301a9bf76",
+      "candidateEntityIds": [
+        "6"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "GafA domain of cone phosphodiesterase 6C",
+          "sequenceLength": 180,
+          "sequenceSha256": "9f44f5d49679e87f8441ddf4d58b29d41cef6e1d796bc1fc487e8226e10c9b92",
+          "authAsymIds": [
+            "A",
+            "M"
+          ],
+          "labelAsymIds": [
+            "A",
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "A0A0M3KKT0",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "GafB domain of phosphodiesterase 2A",
+          "sequenceLength": 185,
+          "sequenceSha256": "e9b38b84c0384464c5beea509f31df12c49f7adc4c223e1873f41a17d7a69147",
+          "authAsymIds": [
+            "B",
+            "N"
+          ],
+          "labelAsymIds": [
+            "C",
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P14099",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "phosphodiesterase 5/6 chimera catalytic domain",
+          "sequenceLength": 330,
+          "sequenceSha256": "304824cd4f8b02db0784b961fb6562fdd113299f0cc76da43c4056a6732f296f",
+          "authAsymIds": [
+            "C",
+            "O"
+          ],
+          "labelAsymIds": [
+            "E",
+            "G"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P16586",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "Q28156",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "4",
+          "description": "phosphodiesterase 6 gamma subunit inhibitory peptide",
+          "sequenceLength": 18,
+          "sequenceSha256": "26cdeb39d1dfd1567b46efb8c5d726a394abc5a95ca8ebc34542ab1c39b01f62",
+          "authAsymIds": [
+            "D",
+            "P"
+          ],
+          "labelAsymIds": [
+            "F",
+            "H"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P04972",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "5",
+          "description": "IgG1-kappa 2E8 light chain",
+          "sequenceLength": 214,
+          "sequenceSha256": "57a5a7816ea295eeb66eca66e4f57c1d01d609d9fe30e04b0824deb8ee0c831c",
+          "authAsymIds": [
+            "L",
+            "R"
+          ],
+          "labelAsymIds": [
+            "I",
+            "K"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "6",
+          "description": "IgG1-kappa 2E8 heavy chain",
+          "sequenceLength": 221,
+          "sequenceSha256": "485d818d5cf845b01266bca2df6e57ea4a12df26885f9c0654fef64ef0bad988",
+          "authAsymIds": [
+            "H",
+            "Q"
+          ],
+          "labelAsymIds": [
+            "J",
+            "L"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1074/jbc.m115.647636",
+        "pmid": "25809480",
+        "title": "Domain Organization and Conformational Plasticity of the G Protein Effector, PDE6."
+      },
+      "metadataContext": "Phosphodiesterase domains and inhibitory peptide with conventional 2E8 IgG1-kappa heavy/light chains",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "3JBQ",
+      "chunkIndex": 11,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-011-2026-09-09/snapshots/3db7ded128316dba20130720faf04722fa7c6193a8c92a95f7cc3ba665966d83/entries.jsonl",
+      "sourceEntryRawLineSha256": "9bc5490d5eec3e480348a488e73fb43fe911f6594a38e521187cae8310ca9c6a",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "IgG1-kappa 2E8 light chain",
+          "sequenceLength": 214,
+          "sequenceSha256": "57a5a7816ea295eeb66eca66e4f57c1d01d609d9fe30e04b0824deb8ee0c831c",
+          "authAsymIds": [
+            "L",
+            "l"
+          ],
+          "labelAsymIds": [
+            "A",
+            "I"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "2",
+          "description": "IgG1-kappa 2E8 heavy chain",
+          "sequenceLength": 220,
+          "sequenceSha256": "9d5ec79060936f8ec8986697111f81c4f9ab0b31f6daf83c502faae50f0375a4",
+          "authAsymIds": [
+            "H",
+            "h"
+          ],
+          "labelAsymIds": [
+            "B",
+            "J"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "phosphodiesterase 5/6 chimera catalytic domain",
+          "sequenceLength": 330,
+          "sequenceSha256": "304824cd4f8b02db0784b961fb6562fdd113299f0cc76da43c4056a6732f296f",
+          "authAsymIds": [
+            "B",
+            "F"
+          ],
+          "labelAsymIds": [
+            "C",
+            "F"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P16586",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "Q28156",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "4",
+          "description": "phosphodiesterase 6 gamma subunit inhibitory peptide",
+          "sequenceLength": 18,
+          "sequenceSha256": "26cdeb39d1dfd1567b46efb8c5d726a394abc5a95ca8ebc34542ab1c39b01f62",
+          "authAsymIds": [
+            "D",
+            "X"
+          ],
+          "labelAsymIds": [
+            "D",
+            "G"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P04972",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "5",
+          "description": "GafB domain of phosphodiesterase 2A",
+          "sequenceLength": 185,
+          "sequenceSha256": "e9b38b84c0384464c5beea509f31df12c49f7adc4c223e1873f41a17d7a69147",
+          "authAsymIds": [
+            "C",
+            "G"
+          ],
+          "labelAsymIds": [
+            "E",
+            "H"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P14099",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "6",
+          "description": "GafA domain of cone phosphodiesterase 6C",
+          "sequenceLength": 186,
+          "sequenceSha256": "8db68bfffe2fb048c62bcc4dc98e0feeec8ad0b95992a8e1a56eda899d2232f4",
+          "authAsymIds": [
+            "1",
+            "2"
+          ],
+          "labelAsymIds": [
+            "K",
+            "L"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P52731",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1074/jbc.m115.647636",
+        "pmid": "25809480",
+        "title": "Domain Organization and Conformational Plasticity of the G Protein Effector, PDE6."
+      },
+      "metadataContext": "Phosphodiesterase domains and inhibitory peptide with conventional 2E8 IgG1-kappa heavy/light chains",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    }
+  ],
+  "authority": {
+    "formalDispositionAssigned": false,
+    "wholeEntryExclusionAuthority": false,
+    "directBindingRoleEstablished": false,
+    "formalNoEdgeAuthority": false,
+    "independentEligibleGroupsAdded": 0,
+    "predictiveAccuracyMeasured": false,
+    "nativeCoordinatesAccessed": false,
+    "predictionOutputsAccessed": false,
+    "primaryArticleBodiesAccessed": false
+  }
+}

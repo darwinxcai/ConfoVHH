@@ -33,6 +33,7 @@ for (const [receiptName, indices, replayIndices] of [
   ['phrase-only-union-2026-09-08', [0, 1, 2], [1, 2]],
   ['phrase-only-union-through-003-2026-09-08', [0, 1, 2, 3], [3]],
   ['phrase-only-union-through-007-2026-09-08', [0, 1, 2, 3, 4, 5, 6, 7], [4, 5, 6, 7]],
+  ['phrase-only-union-through-011-2026-09-09', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], [8, 9, 10, 11]],
 ]) {
 const RECEIPT = `${BASE}${receiptName}/`;
 const receipt = await parse(`${RECEIPT}summary.json`);
@@ -56,7 +57,7 @@ for (const chunkIndex of replayIndices) {
 
 test(`${indices.length}-packet union verifies exact evidence hashes and recomputes identity, polymer and review accounting`, async () => {
   const expectedChecksums = [];
-  const inventory = indices.length === 8 ? ['README.md', 'lead-triage.json', 'summary.json'] : ['README.md', 'summary.json'];
+  const inventory = indices.length >= 8 ? ['README.md', 'lead-triage.json', 'summary.json'] : ['README.md', 'summary.json'];
   for (const name of inventory) expectedChecksums.push(`${sha(await read(`${RECEIPT}${name}`))}  ${name}\n`);
   assert.equal(String(await read(`${RECEIPT}checksums.sha256`)), expectedChecksums.join(''));
   const bindings = [...receipt.inputBindings, ...receipt.packets.flatMap(packet => [...Object.values(packet.bindings), ...Object.values(packet.snapshotBindings)])];
@@ -125,16 +126,30 @@ test(`${indices.length}-packet union verifies exact evidence hashes and recomput
   assert.equal(receipt.authority.wholeCensusComponentUpperBound, null);
   assert.ok(Object.entries(receipt.authority).every(([key, value]) => ['independentEligibleGroupsAdded', 'wholeCensusComponentUpperBound'].includes(key) || value === false));
   assert.ok(Object.values(receipt.interpretation).every(value => typeof value === 'boolean'));
+  if (indices.length === 12) {
+    const priorPath = `${BASE}phrase-only-union-through-007-2026-09-08/summary.json`;
+    const prior = await parse(priorPath);
+    assert.ok(receipt.inputBindings.some(binding => binding.path === priorPath));
+    assert.deepEqual(receipt.packets.slice(0, 8), prior.packets, 'Successor changed earlier packet evidence');
+    assert.deepEqual(receipt.union.chunkIndices, indices);
+    assert.equal(receipt.union.selectedOrdinalEndExclusive, 3000);
+    assert.equal(receipt.union.identifiersNotCapturedWithinPinnedPhraseOnlyMembership, 9262);
+    assert.equal(totals.successfulResponses, 240);
+    assert.equal(totals.failedAttempts, 2);
+  }
 });
 
-if (indices.length === 8) test('all eleven new heavy-domain leads retain complete inventories and unresolved formal dispositions', async () => {
+if (indices.length >= 8) test(`${receiptName}: all new heavy-domain leads retain complete inventories and unresolved formal dispositions`, async () => {
   const triage = await parse(`${RECEIPT}lead-triage.json`);
-  const screens = (await Promise.all(receipt.packets.filter(packet => packet.chunkIndex >= 4)
+  const screens = (await Promise.all(receipt.packets.filter(packet => replayIndices.includes(packet.chunkIndex))
     .map(async packet => jsonRows(await read(packet.snapshotBindings['entity-screens.jsonl'].path))))).flat();
   const leads = screens.filter(row => row.numberedHeavyDomainCallCount > 0);
   const expected = [...new Set(leads.map(row => row.pdbId))].sort();
   assert.deepEqual(triage.entries.map(row => row.pdbId).sort(), expected);
-  assert.equal(expected.length, 11);
+  assert.equal(expected.length, indices.length === 8 ? 11 : 19);
+  const expectedInputBindings = receipt.packets.filter(packet => replayIndices.includes(packet.chunkIndex))
+    .flatMap(packet => ['entries.jsonl', 'entity-screens.jsonl'].map(name => packet.snapshotBindings[name]));
+  assert.deepEqual(triage.inputBindings, expectedInputBindings, 'Triage evidence bindings differ from new packet scope');
   for (const binding of triage.inputBindings) {
     const bytes = await read(binding.path);
     assert.equal(bytes.length, binding.bytes);
@@ -150,6 +165,8 @@ if (indices.length === 8) test('all eleven new heavy-domain leads retain complet
     assert.equal(deposited.polymerEntityCountReported, entry.allPolymerInventory.length);
     assert.deepEqual(entry.primaryCitation, deposited.primaryCitation);
     assert.deepEqual(entry.candidateEntityIds, leads.filter(row => row.pdbId === entry.pdbId).map(row => row.entityId));
+    const inventoryKeys = ['entityId', 'description', 'sequenceLength', 'sequenceSha256', 'authAsymIds', 'labelAsymIds', 'sourceOrganisms', 'referenceSequences'];
+    assert.deepEqual(entry.allPolymerInventory, deposited.polymerEntities.map(entity => Object.fromEntries(inventoryKeys.map(key => [key, entity[key]]))), 'Triage must preserve every deposited polymer and inventory field');
     for (const [index, entity] of entry.allPolymerInventory.entries()) {
       const original = deposited.polymerEntities[index];
       for (const key of Object.keys(entity)) assert.deepEqual(entity[key], original[key]);
@@ -160,7 +177,16 @@ if (indices.length === 8) test('all eleven new heavy-domain leads retain complet
     assert.equal(entry.primaryPreparationReviewed, false);
     assert.equal(entry.directGpcrVhhCaseEstablished, false);
   }
-  for (const id of ['25ST', '25SU']) {
+  if (indices.length === 12) {
+    assert.equal(triage.entries.reduce((count, entry) => count + entry.allPolymerInventory.length, 0), 76);
+    const transporter = triage.entries.find(row => row.pdbId === '31IC');
+    assert.equal(transporter.primaryCitation.doi, null);
+    assert.equal(transporter.primaryCitation.pmid, null);
+    assert.deepEqual(transporter.allPolymerInventory.map(row => row.description), ['Excitatory amino acid transporter 3', 'B11 nanobody']);
+    const camelid = triage.entries.find(row => row.pdbId === '2X6M');
+    assert.deepEqual(camelid.allPolymerInventory.map(row => row.description), ['HEAVY CHAIN VARIABLE DOMAIN FROM DROMEDARY', 'ALPHA-SYNUCLEIN PEPTIDE']);
+  }
+  for (const id of indices.length === 8 ? ['25ST', '25SU'] : []) {
     const entry = triage.entries.find(row => row.pdbId === id);
     assert.equal(entry.primaryCitation.doi, null);
     assert.equal(entry.primaryCitation.pmid, null);

@@ -270,3 +270,27 @@ permitted routes supplying new evidence. Actual independent researcher completio
 and author/archival facts remain human dependencies. Formally cleared independent
 eligible groups remain **0**; predictive accuracy remains **unmeasured**. No frozen
 scientific policy, source packet, disposition or earlier exposure record changed.
+
+## 9 September continuation: packets 008–011
+
+The immutable [twelve-packet union](phrase-only-union-through-011-2026-09-09/README.md)
+adds 1,000 complete inventories and 2,089 polymers. Cumulative verified coverage
+is **3,000 entries**, **5,316 polymers**, **455 review rows** and **159
+missing/noncanonical/engine-review entities**. Categories overlap. The **9,262
+remaining identifiers** belong only to the pinned phrase-only partition.
+
+All 80 new repeated metadata requests ultimately returned HTTP 200. One HTTP 502
+attempt in packet 009 recovered through the unchanged collector's bounded retry;
+both response bodies are retained. There are no unresolved requests. All 19 new
+heavy-domain leads are bound to complete inventories covering 76 polymers.
+Camelid-domain/alpha-synuclein and EAAT3/nanobody metadata signals remain pending
+review; neither establishes an independent GPCR–VHH case. No article bodies,
+coordinates, labels, contact tables or prediction outputs were accessed for this
+increment. Eighteen focused offline tests pass, including exact packet replay.
+
+Next fixed discovery batch: **index 12**, after checking current main/PR state.
+The [publication continuation](../../paper/PROGRESS_2026-09-09.md) records the
+separate manuscript and release work and unresolved human/input dependencies.
+Formally cleared independent eligible groups remain **0**; predictive accuracy
+remains **unmeasured**. No formal disposition, leakage graph, frozen policy or
+earlier exposure adjudication changes.

@@ -2,7 +2,7 @@
 
 Darwin Cai
 
-Software/application draft, 8 September 2026. **Not submission-ready; venue
+Software/application draft, revised 9 September 2026. **Not submission-ready; venue
 undecided.** Author information and disclosure statements require the author's
 review. This draft describes the software contribution and the already reported
 retrospective application. The detailed numerical methods and results remain in
@@ -76,10 +76,13 @@ the application's coordinate-only evidence policy. The public repository's
 The interface is implemented in TypeScript and React. Parsing, numbering,
 geometry, PAE processing, and comparison run in bounded browser Web Workers.
 This separates expensive analysis from interface interaction and keeps selected
-structure and PAE files in the browser session. Local processing is a deliberate
-choice for researchers working with unpublished models; exported reports still
-require careful sharing because they contain derived interface information and
-researcher notes.
+structure and PAE files in the browser session. When a researcher explicitly
+saves a notebook entry, entered study context and a derived summary persist in
+that browser's local storage; raw coordinate and PAE files are not copied into
+the notebook. Local processing is a deliberate choice for researchers working
+with unpublished models. Saved summaries and exported reports may contain
+sensitive research information and are not a shared or remotely backed-up
+laboratory record.
 
 Input handling recognizes PDB and PDBx/mmCIF structures and several common
 prediction-output organizations. The researcher confirms chain assignments
@@ -105,12 +108,19 @@ behavior. Its source locations and SHA-256 identities bind these definitions to
 the unchanged implementation. The product's review tiers are distinct from the
 reference-dependent scientific endpoints used in the retrospective application.
 
-JSON, CSV, and Markdown exports retain source hashes and method provenance
-alongside review decisions. Distinct product, geometry-engine, and ranking-policy
-versions identify different implementation layers. This supports tracing an
-analysis after later software changes. Hashes identify bytes; they neither
-guarantee that the correct biological reference was selected nor make an
-unavailable input publicly reproducible.
+Canonical JSON audit reports retain structured measurements and method
+provenance; workspace JSON additionally carries researcher context. Candidate
+shortlist JSON and CSV preserve source hashes, ranking-policy identity, and
+researcher dispositions and notes. Markdown handoffs provide a human-readable
+summary with source identity and selected measurements. These formats are not
+interchangeable: Markdown rounds displayed measurements, and CSV does not carry
+the full audit. Retain the canonical JSON reports and original inputs for replay.
+Distinct product, geometry-engine, and ranking-policy versions identify different
+implementation layers. Hashes identify bytes; they neither guarantee that the
+correct biological reference was selected nor make an unavailable input publicly
+reproducible. Import validation checks report structure and internal consistency;
+it does not authenticate an author or recompute a submitted report from its
+original coordinates.
 
 ## Reuse and verification
 
@@ -192,8 +202,8 @@ gates or add an independent eligible group.
 
 ## Author information and AI assistance
 
-This draft was prepared with OpenAI Codex assistance on 8 September 2026 for
-document review, source lookup, organization, and writing. This statement does
+This draft was prepared and revised with OpenAI Codex assistance on 8–9 September
+2026 for document review, source lookup, organization, and writing. This statement does
 not constitute a complete project-wide AI disclosure. Before submission, the
 author must reconcile the tools and model versions used across code,
 documentation, and manuscript development and describe their scope. Author

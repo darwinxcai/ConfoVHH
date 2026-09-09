@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "reviewDateUtc": "2026-09-09",
+  "repository": "darwinxcai/ConfoVHH",
+  "baseRevision": "3df9d9573cbbb73d749d2b3315f396fbec7fe52a",
+  "patchCommittedAtReceiptCreation": false,
+  "failedHostedJob": {
+    "runId": 34279616607,
+    "jobId": 102240942802,
+    "nodeVersion": "22.23.2",
+    "step": "Full offline release gate",
+    "signal": "SIGTRAP",
+    "logExcerpt": "hosted-v8-abort.json",
+    "rawExcerptSha256": "8caa9c26e0e4c67c7576f505de8a35bcf022f33779b22285035b7c8bb4dca6bf",
+    "rawExcerptPreservedByteForByte": true
+  },
+  "localRuntime": {
+    "node": "22.23.2",
+    "v8": "12.4.254.21-node.56",
+    "platform": "linux",
+    "architecture": "x64",
+    "binarySha256": "3517c2df0b2f8cd7f422b4b8450ef81c6889f08eb03e281d6de9079b15e6a327"
+  },
+  "changedSourceFilesSha256": {
+    "package.json": "825b0fddb663495ff78c8d748ccf1cc4a86dfdcd11d333489619693a2abb6f8c",
+    "scripts/run-node-tests.mjs": "8e76fbed97a806f734ac83e2b89c3227b5ab821016f0fdc34cdfe648acb5cfda",
+    "tests/node-test-launcher.test.mjs": "babd01f73c35a2cada5aab87f8af5ded05edf8735f183ac65c4ca30a423839d5"
+  },
+  "unchangedGateAndScientificFilesSha256": {
+    ".github/workflows/ci.yml": "b972509e9199e04c03594dfe51eb03d2c79f40a5855fc9a343cf164938d2af19",
+    ".github/workflows/release.yml": "6053f8fa2c71a0463c5a74d283e84d8242c531fafa03c1d4ced9af15d5caf27b",
+    "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs": "5e46e17d7f14315bd9f87da60dffb7db7ce7a328c6db96e1e8f9fe8c9662ffeb",
+    "package-lock.json": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54"
+  },
+  "adoptedWorkaround": {
+    "affectedNodeVersionExact": "22.23.2",
+    "runtimeFlag": "--no-turbo-inline-js-wasm-calls",
+    "automaticRetry": false,
+    "runtimeDowngrade": false,
+    "testFileSelectionAltered": false,
+    "assertionsAltered": false,
+    "scientificProtocolAltered": false,
+    "frozenScientificFilesAltered": false
+  },
+  "additionalChecks": [
+    {
+      "check": "Focused launcher and release-automation assertions on local Node24.19.0",
+      "outcome": "PASS",
+      "testCount": 6,
+      "evidence": "Observed terminal command completion; no separate raw log retained."
+    },
+    {
+      "check": "ESLint on scripts/run-node-tests.mjs and tests/node-test-launcher.test.mjs",
+      "outcome": "PASS",
+      "evidence": "Observed exit code 0 using scripts/sites-env.sh and node_modules/.bin/eslint."
+    },
+    {
+      "check": "git diff --check",
+      "outcome": "PASS",
+      "evidence": "Observed exit code 0."
+    }
+  ],
+  "limits": {
+    "upstreamV8DefectPreciselyIdentified": false,
+    "allPossibleRuntimeFailuresResolved": false,
+    "fullReleaseGateOnCommittedPatchCompleted": false,
+    "freshHostedGateOnPatchCompleted": false,
+    "predictiveAccuracyAssessed": false,
+    "publicationReadinessClaimed": false
+  },
+  "finalArgumentBoundaryReview": {
+    "explicitArgumentDelimiterBeforeTestPaths": true,
+    "filterLookingArgumentCannotSkipFailingTest": true,
+    "finalSourceRuntimeCheckExperimentId": "final-reviewed-launcher-regression-checks",
+    "priorLauncherExperimentsPredateArgumentDelimiter": true
+  }
+}
