@@ -1,0 +1,191 @@
+{
+  "archive_sha256": "b10f999bb0c73bdb8bd6fbde4ec77491b273d35f231297ea796f53722dde25b8",
+  "chains": [
+    {
+      "chain": "A",
+      "entity": 1,
+      "first_query_exact_match": true,
+      "path": "normalized/chain_A.a3m",
+      "query_key": 101,
+      "query_length": 501,
+      "query_sha256": "e9052379ba6dca45a6a4148a53cc1d6ad790f05e4b4f0a9237afe2fcc8638926",
+      "record_count_including_repeated_queries": 15222,
+      "sha256": "b411a8591549e34e8869b4cca030f6c676fc47c08a2952db310532cd85a092a0"
+    },
+    {
+      "chain": "B",
+      "entity": 2,
+      "first_query_exact_match": true,
+      "path": "normalized/chain_B.a3m",
+      "query_key": 102,
+      "query_length": 126,
+      "query_sha256": "3e4dbf73ccc8ab7a4fb2fedd17695befe7f2807f17650d8ef60080aef9a8562f",
+      "record_count_including_repeated_queries": 12255,
+      "sha256": "af72c48f56f9f7279374c1ffe8e438d2dd5bfcf17d7d91a1604168a0af94d73d"
+    }
+  ],
+  "client_script_sha256": "f2874fc94bed84cf2ad774cc560c9935ba91f2dd7106d35381d351e668167ffa",
+  "completed_utc": "2026-09-09T15:16:15.519293+00:00",
+  "elapsed_seconds": 129.322,
+  "endpoint": "https://api.colabfold.com/ticket/msa",
+  "events": [
+    {
+      "completed_utc": "2026-09-09T15:14:20.109614+00:00",
+      "http_status": 200,
+      "label": "submit-01",
+      "method": "POST",
+      "request_body_sha256": "d68dbc54075a0975393bc979e54391e0520650ea7d4eb63f72356b1b50984f02",
+      "request_headers": {
+        "Accept-encoding": "identity",
+        "Connection": "close",
+        "Content-length": "662",
+        "Content-type": "application/x-www-form-urlencoded",
+        "User-agent": "boltz"
+      },
+      "response_body_bytes": 92,
+      "response_body_sha256": "c7e58958efd79cf9f810cb104489f7cc7b741817fe5a3837bd9e9aeea530ed0b",
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "92",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 15:14:19 GMT",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=15778800; includeSubDomains"
+      },
+      "started_utc": "2026-09-09T15:14:06.201678+00:00",
+      "url": "https://api.colabfold.com/ticket/msa"
+    },
+    {
+      "completed_utc": "2026-09-09T15:14:53.435030+00:00",
+      "http_status": 200,
+      "label": "poll-001",
+      "method": "GET",
+      "request_headers": {
+        "Accept-encoding": "identity",
+        "Connection": "close",
+        "User-agent": "boltz"
+      },
+      "response_body_bytes": 92,
+      "response_body_sha256": "1e4cdf337e9e20c5878cd6e5d9cc5c1096cb57e2a2b8ddcac7366ddfb42daf58",
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "92",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 15:14:53 GMT",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=15778800; includeSubDomains"
+      },
+      "started_utc": "2026-09-09T15:14:35.126764+00:00",
+      "url": "https://api.colabfold.com/ticket/31a431b4ec176c47ecaf52a31e14650c93dca29f2209a0e520422e52d0388f4a"
+    },
+    {
+      "completed_utc": "2026-09-09T15:15:18.086924+00:00",
+      "http_status": 200,
+      "label": "poll-002",
+      "method": "GET",
+      "request_headers": {
+        "Accept-encoding": "identity",
+        "Connection": "close",
+        "User-agent": "boltz"
+      },
+      "response_body_bytes": 92,
+      "response_body_sha256": "1e4cdf337e9e20c5878cd6e5d9cc5c1096cb57e2a2b8ddcac7366ddfb42daf58",
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "92",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 15:15:17 GMT",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=15778800; includeSubDomains"
+      },
+      "started_utc": "2026-09-09T15:15:08.451597+00:00",
+      "url": "https://api.colabfold.com/ticket/31a431b4ec176c47ecaf52a31e14650c93dca29f2209a0e520422e52d0388f4a"
+    },
+    {
+      "completed_utc": "2026-09-09T15:15:42.183487+00:00",
+      "http_status": 200,
+      "label": "poll-003",
+      "method": "GET",
+      "request_headers": {
+        "Accept-encoding": "identity",
+        "Connection": "close",
+        "User-agent": "boltz"
+      },
+      "response_body_bytes": 92,
+      "response_body_sha256": "1e4cdf337e9e20c5878cd6e5d9cc5c1096cb57e2a2b8ddcac7366ddfb42daf58",
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "92",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 15:15:41 GMT",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=15778800; includeSubDomains"
+      },
+      "started_utc": "2026-09-09T15:15:33.092199+00:00",
+      "url": "https://api.colabfold.com/ticket/31a431b4ec176c47ecaf52a31e14650c93dca29f2209a0e520422e52d0388f4a"
+    },
+    {
+      "completed_utc": "2026-09-09T15:16:05.261398+00:00",
+      "http_status": 200,
+      "label": "poll-004",
+      "method": "GET",
+      "request_headers": {
+        "Accept-encoding": "identity",
+        "Connection": "close",
+        "User-agent": "boltz"
+      },
+      "response_body_bytes": 93,
+      "response_body_sha256": "cd201615151e74227305c744e956548e28c7070091604019994d5252bfb2520a",
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "93",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 09 Sep 2026 15:16:05 GMT",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=15778800; includeSubDomains"
+      },
+      "started_utc": "2026-09-09T15:15:57.187514+00:00",
+      "url": "https://api.colabfold.com/ticket/31a431b4ec176c47ecaf52a31e14650c93dca29f2209a0e520422e52d0388f4a"
+    },
+    {
+      "completed_utc": "2026-09-09T15:16:15.171615+00:00",
+      "http_status": 200,
+      "label": "download-01",
+      "method": "GET",
+      "request_headers": {
+        "Accept-encoding": "identity",
+        "Connection": "close",
+        "User-agent": "boltz"
+      },
+      "response_body_bytes": 2676635,
+      "response_body_sha256": "b10f999bb0c73bdb8bd6fbde4ec77491b273d35f231297ea796f53722dde25b8",
+      "response_headers": {
+        "Connection": "close",
+        "Content-Length": "2676635",
+        "Content-Type": "application/gzip",
+        "Date": "Wed, 09 Sep 2026 15:16:13 GMT",
+        "Server": "nginx",
+        "Strict-Transport-Security": "max-age=15778800; includeSubDomains",
+        "content-disposition": "attachment; filename=\"31a431b4ec176c47ecaf52a31e14650c93dca29f2209a0e520422e52d0388f4a.tar.gz\""
+      },
+      "started_utc": "2026-09-09T15:16:05.293544+00:00",
+      "url": "https://api.colabfold.com/result/download/31a431b4ec176c47ecaf52a31e14650c93dca29f2209a0e520422e52d0388f4a"
+    }
+  ],
+  "hosted_database_version": "unknown; not attested by returned service metadata",
+  "max_submissions": 2,
+  "mode": "env",
+  "paired": false,
+  "pinned_boltz_mmseqs2_source_sha256": "7537c23ca2d6863639187b8815011d592ee433bb145e6fdc86082ca836d3a6e7",
+  "poll_interval_seconds": 15,
+  "request_body_sha256": "d68dbc54075a0975393bc979e54391e0520650ea7d4eb63f72356b1b50984f02",
+  "request_plan_sha256": "f6122ab49306199f9c7261b35661c4604957fb9dc486d58fc59ca868c70856c4",
+  "schema": "confovhh-public-development-msa-result-v1",
+  "scope": "3P0G-single-case-development-pilot-not-independent-v3",
+  "server_software_version": "unknown; not attested by returned service metadata",
+  "started_utc": "2026-09-09T15:14:06.197678+00:00",
+  "status": "COMPLETE",
+  "templates_requested": false,
+  "ticket_id": "31a431b4ec176c47ecaf52a31e14650c93dca29f2209a0e520422e52d0388f4a",
+  "total_time_bound_seconds": 900
+}

@@ -1,5 +1,7 @@
 # Boltz GPU runtime candidate
 
+**Later input recovery:** the separately frozen [single-case 3P0G pilot](../../validation/single-case-development-3p0g-2026-09-09/README.md) now has newly captured MSAs and verified real checkpoint/cache bytes. The input-blocker descriptions below record this runtime candidate’s earlier preparation state; they are not the current status of that new pilot. Actual GPU installation and inference remain pending.
+
 **Dependencies resolved; image not built, installed or tested on a GPU.** This
 directory prepares a technical runtime pilot. It does not clear a study target,
 recover an MSA, authorize an independent benchmark, or demonstrate pose-selection

@@ -1,0 +1,50 @@
+{
+  "schema": "confovhh-single-case-prelaunch-verification-v1",
+  "createdAtUtc": "2026-09-09T15:33:15.897831+00:00",
+  "kind": "software verification with synthetic inputs; no GPU or predictive accuracy result",
+  "commands": [
+    {
+      "args": [
+        "node",
+        "--test",
+        "tests/single-case-dockq.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "\u2714 complete tied-tier summaries retain every scientific tie and planned failures (501.904026ms)\n\u2714 serialization order never breaks selector or oracle ties; outcome values are unrounded (78.51823ms)\n\u2714 identical coordinate/reference inputs reject conflicting success values but allow exact duplicate outcomes (156.328954ms)\n\u2714 exact planned/source attempt and score bindings reject omissions, swaps and altered receipt fields (41.823587ms)\n\u2714 DockQ requires actual finite numbers in inclusive [0,1] and explicit null failures (70.584557ms)\n\u2714 failed or absent DockQ withholds the whole paired summary and records the lost outcome (37.391398ms)\n\u2714 a generated coordinate failing audit cannot be silently excluded from paired selection (109.072454ms)\n\u2714 missing producer confidence preserves coordinates and blocks paired ranks without imputation (193.315347ms)\n\u2714 all generation failures have no eligible comparison or best-generated oracle (50.053075ms)\n\u2714 CLI writes exact JSON receipt and readable actual table, exclusively without overwrite (580.556692ms)\n\u2139 tests 10\n\u2139 suites 0\n\u2139 pass 10\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 2250.268582\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "python3",
+        "-B",
+        "tests/single-case-generation.test.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "test_failed_runtime_smoke_prevents_all_inference (__main__.SingleCaseGenerationAccountingTests.test_failed_runtime_smoke_prevents_all_inference) ... ok\ntest_missing_input_fails_before_any_child_or_cache_preparation (__main__.SingleCaseGenerationAccountingTests.test_missing_input_fails_before_any_child_or_cache_preparation) ... ok\ntest_persistently_unreadable_partial_coordinate_retains_path_and_explicit_error (__main__.SingleCaseGenerationAccountingTests.test_persistently_unreadable_partial_coordinate_retains_path_and_explicit_error) ... ok\ntest_post_inference_digest_failure_reconciles_readable_coordinate_and_unlaunched_seed (__main__.SingleCaseGenerationAccountingTests.test_post_inference_digest_failure_reconciles_readable_coordinate_and_unlaunched_seed) ... ok\ntest_produced_coordinate_survives_missing_confidence (__main__.SingleCaseGenerationAccountingTests.test_produced_coordinate_survives_missing_confidence) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.033s\n\nOK\n"
+    },
+    {
+      "args": [
+        "python3",
+        "-B",
+        "tests/test_boltz_runtime_check.py"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": "............\n----------------------------------------------------------------------\nRan 12 tests in 0.032s\n\nOK\n"
+    },
+    {
+      "args": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "scripts/paper/compare-single-case-dockq.mjs",
+        "tests/single-case-dockq.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "python": "3.12.14",
+  "node": "v24.19.0"
+}

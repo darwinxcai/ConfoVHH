@@ -1,0 +1,46 @@
+{
+  "schema": "confovhh-single-case-execution-source-freeze-v1",
+  "createdAtUtc": "2026-09-09T15:33:15.911407+00:00",
+  "protocolSha256": "8d3174f717ede953d922466cec93e5397ff443474da6c8addbc904ce8fc8d6e9",
+  "publicDesignFreezeCommit": "7e353c0e7aa3aa0af53249ed655dfd8e087e2c10",
+  "stage": "before any candidate generation; after experimental reference controls",
+  "files": {
+    "scripts/paper/run-single-case-generation.py": {
+      "bytes": 12632,
+      "sha256": "2865eea96212b3733687c2dd459bb5a48096a842e0d61361ea86617a1b0d9745"
+    },
+    "scripts/paper/prepare-single-case-reference.py": {
+      "bytes": 15083,
+      "sha256": "1e7eeab1614fc2737cfbdf8f1f1c8cb87cee3cee8115079c156e0ca07ae367fc"
+    },
+    "scripts/paper/compare-single-case-dockq.mjs": {
+      "bytes": 22564,
+      "sha256": "2cd85ced313be9df88b2b2dc2147b146a081974f9e38c54702b572268b80fd92"
+    },
+    "scripts/cloud/check-boltz-runtime.py": {
+      "bytes": 16124,
+      "sha256": "e0e329e1c531717307c561723b46e333f374d413ebdc7a415c30d0c8a424152a"
+    },
+    "tests/single-case-generation.test.py": {
+      "bytes": 9215,
+      "sha256": "bb01a5406f9b24257b2834e95b1c3d908ae4d7f0fcc6106920e1dd1efe2c93e5"
+    },
+    "tests/single-case-dockq.test.mjs": {
+      "bytes": 12164,
+      "sha256": "0c93f47990c75418b69d8c6c78b803e18678f42debf3c29bcfc2e2f59e405a14"
+    },
+    "cloud/boltz-runtime-candidate/bootstrap-linux-py311.lock": {
+      "bytes": 553,
+      "sha256": "0c36241dd159935b274c1e2d24edc4d3c98e880fac6da444914736bd255d9956"
+    },
+    "cloud/boltz-runtime-candidate/requirements-linux-py311.lock": {
+      "bytes": 159241,
+      "sha256": "8f30f92bd06772f5bb86d0ce6e0e38daa8f4465fecdbd2bf11eeb23ddd19bb7a"
+    }
+  },
+  "generatedCandidateCount": 0,
+  "gpuInferenceExecuted": false,
+  "actualGpuInstallationAndRuntimeCheck": "pending",
+  "remainingAccessBlocker": "No authenticated Runpod control or execution connection available to session",
+  "softwareVerificationSha256": "659a4e2e13e596998be1ef5452f6b876468d91172f6312de7e3a308ff799f902"
+}

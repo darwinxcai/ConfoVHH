@@ -1,0 +1,36 @@
+{
+  "schema": "confovhh-public-development-msa-verification-v1",
+  "all_recorded_artifact_hashes_match": true,
+  "exact_pinned_parser_output_match": true,
+  "raw_a3m_bytes_match_archive": true,
+  "raw_a3m_sha256": {
+    "uniref.a3m": "64b0081a62c66067dd7fba64328f0e20e67f72ee51c7be511944779216ed404f",
+    "bfd.mgnify30.metaeuk30.smag30.a3m": "41e66d7e7304fc7eb7f16a0551f50d24d2f4e06cf9e6c6d2056685962517eb8a"
+  },
+  "chains": [
+    {
+      "chain": "A",
+      "query_length": 501,
+      "query_sha256": "e9052379ba6dca45a6a4148a53cc1d6ad790f05e4b4f0a9237afe2fcc8638926",
+      "normalized_sha256": "b411a8591549e34e8869b4cca030f6c676fc47c08a2952db310532cd85a092a0",
+      "total_records": 15222,
+      "exact_query_records": 2,
+      "nonquery_records": 15220,
+      "unique_full_sequence_rows": 15090,
+      "all_aligned_row_lengths_match_query": true,
+      "normalized_bytes": 8759728
+    },
+    {
+      "chain": "B",
+      "query_length": 126,
+      "query_sha256": "3e4dbf73ccc8ab7a4fb2fedd17695befe7f2807f17650d8ef60080aef9a8562f",
+      "normalized_sha256": "af72c48f56f9f7279374c1ffe8e438d2dd5bfcf17d7d91a1604168a0af94d73d",
+      "total_records": 12255,
+      "exact_query_records": 2,
+      "nonquery_records": 12253,
+      "unique_full_sequence_rows": 12070,
+      "all_aligned_row_lengths_match_query": true,
+      "normalized_bytes": 2323693
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "artifacts": [
+    {
+      "bytes": 318,
+      "file": "common_translation.api.json",
+      "sha256": "e7b2ec9018e54862f5e1077fea15a7350e32c5d01e35400419367c76fa69b41b"
+    },
+    {
+      "bytes": 0,
+      "file": "common_translation.api.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 260262,
+      "file": "control_common_translation.pdb",
+      "sha256": "bf8e95734f3b9698f97526afd5dcc0795eb0f7dd07d5fbaaad75dc0c6e94ed53"
+    },
+    {
+      "bytes": 260262,
+      "file": "control_vhh_plus1000A_x.pdb",
+      "sha256": "e6f44a789ce02391d9d43e77225890180683e0c401850a985ac2aa2094707c5c"
+    },
+    {
+      "bytes": 260262,
+      "file": "native_AB.pdb",
+      "sha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557"
+    },
+    {
+      "bytes": 299,
+      "file": "native_self.api.json",
+      "sha256": "1248bbd94fd741eab705b2502e36b7beab0fbd1eb58ee80e639c6a72e967ea12"
+    },
+    {
+      "bytes": 0,
+      "file": "native_self.api.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 722,
+      "file": "native_self.cli.json",
+      "sha256": "0cc8ae400e09ef86de029d0213b232040e824fd4bc61a82c4006f6080e6fd47a"
+    },
+    {
+      "bytes": 0,
+      "file": "native_self.cli.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1322,
+      "file": "native_self.cli.stdout.log",
+      "sha256": "add5069eea6e4d0bb8144cb336b19841918e618b68ce683964ae86996606660f"
+    },
+    {
+      "bytes": 310,
+      "file": "vhh_plus1000A_x.api.json",
+      "sha256": "879b5f55a22459e344a0ea9551eaab1afa1b2cb85ff8ebfdc8a04764d3499281"
+    },
+    {
+      "bytes": 0,
+      "file": "vhh_plus1000A_x.api.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "candidate_api_cli_crosscheck": "Not yet run; frozen first-successful-planned-candidate check remains required",
+  "checks": [
+    "original CIF, frozen metadata, exact observed atom and residue maps, identity assembly, PDB roundtrip verified",
+    "native self",
+    "common translation",
+    "VHH +1000 Angstrom x",
+    "native-self API/CLI"
+  ],
+  "cli_crosscheck": {
+    "absolute_DockQ_difference": 0.0,
+    "command": [
+      "/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/dockq/venv/bin/python",
+      "-m",
+      "DockQ.DockQ",
+      "/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/reference/preflight-v1/native_AB.pdb",
+      "/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/reference/preflight-v1/native_AB.pdb",
+      "--mapping",
+      "AB:AB",
+      "--n_cpu",
+      "1",
+      "--json",
+      "/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/reference/preflight-v1/native_self.cli.json"
+    ],
+    "exit_code": 0
+  },
+  "command": [
+    "/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/dockq/venv/bin/python",
+    "scripts/paper/prepare-single-case-reference.py",
+    "--reference-dir=/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/reference",
+    "--output-dir=/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/reference/preflight-v1"
+  ],
+  "completed_at_utc": "2026-09-09T15:21:53.782340+00:00",
+  "controls": {
+    "common_translation": {
+      "invocation": {
+        "capri_peptide": false,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "function": "DockQ.DockQ.run_on_all_native_interfaces",
+        "no_align": false
+      },
+      "metrics": {
+        "DockQ": 0.9999999996705649,
+        "F1": 1.0,
+        "LRMSD": 2.5855338754413598e-05,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "clashes": 0,
+        "fnat": 1.0,
+        "fnonnat": 0.0,
+        "iRMSD": 4.6934729831582635e-05,
+        "interface": "AB",
+        "model_total": 51,
+        "nat_correct": 51,
+        "nat_total": 51,
+        "nonnat_count": 0
+      },
+      "model_sha256": "bf8e95734f3b9698f97526afd5dcc0795eb0f7dd07d5fbaaad75dc0c6e94ed53",
+      "native_sha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557"
+    },
+    "native_self": {
+      "invocation": {
+        "capri_peptide": false,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "function": "DockQ.DockQ.run_on_all_native_interfaces",
+        "no_align": false
+      },
+      "metrics": {
+        "DockQ": 0.9999999999999876,
+        "F1": 1.0,
+        "LRMSD": 1.6424302496441576e-06,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "clashes": 0,
+        "fnat": 1.0,
+        "fnonnat": 0.0,
+        "iRMSD": 0.0,
+        "interface": "AB",
+        "model_total": 51,
+        "nat_correct": 51,
+        "nat_total": 51,
+        "nonnat_count": 0
+      },
+      "model_sha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557",
+      "native_sha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557"
+    },
+    "vhh_plus1000A_x": {
+      "invocation": {
+        "capri_peptide": false,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "function": "DockQ.DockQ.run_on_all_native_interfaces",
+        "no_align": false
+      },
+      "metrics": {
+        "DockQ": 2.736190426471351e-05,
+        "F1": 0.0,
+        "LRMSD": 1000.0000000000006,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "clashes": 0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 478.1575263447825,
+        "interface": "AB",
+        "model_total": 0,
+        "nat_correct": 0,
+        "nat_total": 51,
+        "nonnat_count": 0
+      },
+      "model_sha256": "e6f44a789ce02391d9d43e77225890180683e0c401850a985ac2aa2094707c5c",
+      "native_sha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557"
+    }
+  },
+  "coordinate_inventory": {
+    "all_occupancies": 1.0,
+    "alternate_conformers": 0,
+    "assembly": "1",
+    "atom_counts_by_label_chain": {
+      "A": 2290,
+      "B": 921,
+      "C": 27
+    },
+    "ligand": "label C/auth A/entity 3/P0G",
+    "mapping_native_to_model": {
+      "A": "A",
+      "B": "B"
+    },
+    "models": [
+      "1"
+    ],
+    "operation": "identity",
+    "protein_modeled_residues": {
+      "A": 284,
+      "B": 121
+    }
+  },
+  "coordinate_roundtrip_max_absolute_error_A": 3.784179682497779e-06,
+  "metadata": {
+    "A": {
+      "path": "validation/single-case-development-3p0g-2026-09-09/case/3P0G-A-label-auth-sequence.tsv",
+      "rows": 501,
+      "sha256": "d52abf9bf1a3f30a8c02bece6b28eb68d8d1d2625eb7b2af7a540a4a21c21aa9"
+    },
+    "B": {
+      "path": "validation/single-case-development-3p0g-2026-09-09/case/3P0G-B-label-auth-sequence.tsv",
+      "rows": 126,
+      "sha256": "ca133f322b3e3d190f208d0cd2b1eb152bbd99563e9520642ffdd3bad29e89a6"
+    }
+  },
+  "native_reference": {
+    "bytes": 260262,
+    "native_to_model": {
+      "A": "A",
+      "B": "B"
+    },
+    "path": "/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/reference/preflight-v1/native_AB.pdb",
+    "protein_atoms": 3211,
+    "sha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557"
+  },
+  "original_reference": {
+    "bytes": 396018,
+    "path": "/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/reference/3P0G.cif",
+    "retrieval": {
+      "bytes": 396018,
+      "coordinate_payload_accessed": true,
+      "http_status": 200,
+      "prior_local_freeze_commit": "f6360771a9e341643ffbb6f51974bf7bb28eb183",
+      "provided_to_generator": false,
+      "retrieved_at_utc": "2026-09-09T15:19:00.898287+00:00",
+      "scope": "public development reference authorized for the new single-case pilot; not protected v3 data",
+      "scoring_protocol_sha256": "8d3174f717ede953d922466cec93e5397ff443474da6c8addbc904ce8fc8d6e9",
+      "sha256": "ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88",
+      "url": "https://files.rcsb.org/download/3P0G.cif"
+    },
+    "retrieval_receipt_sha256": "3a9209be8674ab31692d18ab01f30228fce239a1b44ec883338030722af957e8",
+    "sha256": "ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88"
+  },
+  "original_reference_unchanged": true,
+  "preparation_policy": {
+    "altloc": "Fail closed unless every atom has blank/no alternate conformer",
+    "atoms": "Observed protein heavy atoms only",
+    "chains": [
+      "A",
+      "B"
+    ],
+    "coordinate_serialization": "Biopython PDBIO; verify each output coordinate within 0.00051 Angstrom of original mmCIF",
+    "excluded_nonpolymer": "P0G retained only in original CIF; not in protein DockQ reference",
+    "missing_residues": "No invented residues or coordinates",
+    "model": "1",
+    "numbering": "Preserve author residue numbers and insertion codes",
+    "occupancy": "Require all atoms occupancy 1"
+  },
+  "prior_freeze_commit": "f6360771a9e341643ffbb6f51974bf7bb28eb183",
+  "provided_to_generator": false,
+  "runtime": {
+    "DockQ_module_sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+    "DockQ_version": "2.1.3",
+    "all_installed_distributions": [
+      {
+        "name": "biopython",
+        "version": "1.88"
+      },
+      {
+        "name": "colorama",
+        "version": "0.4.6"
+      },
+      {
+        "name": "dockq",
+        "version": "2.1.3"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "numpy",
+        "version": "1.26.4"
+      },
+      {
+        "name": "parallelbar",
+        "version": "2.5"
+      },
+      {
+        "name": "tqdm",
+        "version": "4.70.0"
+      }
+    ],
+    "dependencies": {
+      "biopython": "1.88",
+      "colorama": "0.4.6",
+      "dockq": "2.1.3",
+      "networkx": "3.6.1",
+      "numpy": "1.26.4",
+      "parallelbar": "2.5",
+      "tqdm": "4.70.0"
+    },
+    "distribution_files": [
+      {
+        "path": "../../../bin/DockQ",
+        "sha256": "d6a740708ca188126faaa29aad51759fd13770faace227e802343019d6a2758d"
+      },
+      {
+        "path": "DockQ/DockQ.py",
+        "sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887"
+      },
+      {
+        "path": "DockQ/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "DockQ/__main__.py",
+        "sha256": "a2dc944b6fdaeb5c4f3574c452519449505756abbb96e2261179a2b643b57df5"
+      },
+      {
+        "path": "DockQ/constants.py",
+        "sha256": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18"
+      },
+      {
+        "path": "DockQ/operations.c",
+        "sha256": "03b74021997f9827fbdb270ec82504f7ea23d95a5212c967725f19b61f567d04"
+      },
+      {
+        "path": "DockQ/operations.cpython-312-x86_64-linux-gnu.so",
+        "sha256": "45da8dfa7dc131e0a34e9e464560b47c16e52e5ef29d211a9f054607df41a3c9"
+      },
+      {
+        "path": "DockQ/operations.pyx",
+        "sha256": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512"
+      },
+      {
+        "path": "DockQ/operations_nocy.py",
+        "sha256": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3"
+      },
+      {
+        "path": "DockQ/parsers.py",
+        "sha256": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/INSTALLER",
+        "sha256": "e6184ce10e266134fdcfa401e8f1a95005bcd4f18d16b62b757323e2833fe9a9"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/METADATA",
+        "sha256": "f8241586d348b2740360f4e2a186925883f02578b5a82a241780313017f3117e"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/RECORD",
+        "sha256": "751f715a68d817c6e2b00fb301785dcf6bd7f481e76452b96e4eef553c6d526b"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/REQUESTED",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/WHEEL",
+        "sha256": "50a33ada4b03e2377733a93969c1406b0f021e741fa63b68fca9634576f2a4fd"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/entry_points.txt",
+        "sha256": "41d30d6b08732681ff6fb00a39616cc3826a870fcada04068f9ae76dc81ca968"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/licenses/LICENSE",
+        "sha256": "1ac62f778ff853b0b7215565aa86a2b6fde946508552cb41b75a74e5e0c3df79"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/top_level.txt",
+        "sha256": "3115f3aabad257c4325edcaea708b6d6bab29712838e70964536c70e16ca7a17"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/uv_build.json",
+        "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    ],
+    "distribution_fingerprint_sha256": "9b32f4e77d271d522e98201cc2977389669400f21f19d75b649e2df4ac9c1117",
+    "helper_script_sha256": "a41b569d307d428a65f63b0f9559e25d4e68f9a37a6651ca009ce9497c8f3c76",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/workspace/scratch/1213a03cc5a3/single-case-pilot-prep/dockq/venv/bin/python",
+    "supporting_source_pin_origin": "validation/dockq-development-pilot-v1/summary.json software.installedDockqDistribution.files; historical artifact read only",
+    "supporting_source_sha256": {
+      "constants.py": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18",
+      "operations.pyx": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512",
+      "operations_nocy.py": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3",
+      "parsers.py": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+    }
+  },
+  "schema": "confovhh-single-case-reference-preflight-v1",
+  "scientific_protocol_sha256": "8d3174f717ede953d922466cec93e5397ff443474da6c8addbc904ce8fc8d6e9",
+  "scope": "Public development reference and synthetic controls only; no candidate performance or v3 execution",
+  "script_sha256": "1e7eeab1614fc2737cfbdf8f1f1c8cb87cee3cee8115079c156e0ca07ae367fc",
+  "started_at_utc": "2026-09-09T15:21:51.386317+00:00",
+  "status": "PASS_REFERENCE_PREFLIGHT_ONLY"
+}
