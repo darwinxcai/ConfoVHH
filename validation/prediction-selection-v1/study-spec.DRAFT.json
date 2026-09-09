@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "confovhh-study-spec-2.0.0",
+  "benchmarkId": "prediction-selection-v1",
+  "title": "Does ConfoVHH ranking select better poses than predictor confidence?",
+  "dataRole": "development-adjacent prospective evaluation",
+  "statusAtFreeze": "DRAFT - NOT FROZEN. This file has no authority until it is reviewed, renamed to study-spec.json, committed, and its digest recorded in checksums.sha256. No pose may be generated before that commit.",
+  "frozenAt": null,
+
+  "question": "Among candidate poses a real prediction pipeline generates for GPCR-VHH complexes, does the shipped ConfoVHH ranking select an acceptable pose more often than the predictor's own exported confidence score, and under what conditions does it fail?",
+
+  "motivation": "The 33-job retrospective analysis could not answer this. Of its 33 jobs, 16 contained only acceptable candidates and 13 contained none, leaving 4 jobs in which the choice of ranking rule could change the outcome, all from one reference complex. The 18-versus-19 headline rests on a single job. This study exists to obtain a usable number of informative jobs, and it is designed to report honestly when it does not.",
+
+  "protocolRelationship": "This is not the frozen hard-decoy holdout and may never be reported as it. It generates predictions and ranks them; the holdout scores curated decoys. Executing this study neither opens, modifies, nor satisfies any hard-decoy gate.",
+
+  "eligibility": {
+    "rule": "A target is eligible only if its PDB deposition date is later than the training-data cutoff of every predictor used in this study, and the receptor and VHH chains are unambiguous.",
+    "rationale": "A complex present in a predictor's training data is not a test of that predictor. Pre-cutoff targets measure memorisation and would make both arms look better without informing the comparison.",
+    "dateResolution": "The runner fetches deposition and initial-release dates from the RCSB entry API at execution time and records them verbatim in the result. It refuses to execute on any target whose date it cannot establish. Dates are never hardcoded in this specification, so that a specification author's recollection cannot contaminate eligibility.",
+    "cutoffResolution": "Each predictor's training cutoff is recorded from its own published model card or release documentation, with the URL and retrieval date. A predictor whose cutoff cannot be established from a primary source is not used.",
+    "holdoutReservation": "Before freezing, the target list must be reviewed against structures reserved for the hard-decoy holdout by someone with that authority, and the review recorded here. This specification's author did not read the holdout and cannot perform that check.",
+    "priorExposureDisclosure": "Any eligible target that also appears in validation/panel-extension-v1 must be labelled prior-perturbation-exposed in the result. The ranking policy was evaluated, not fitted, on those targets, and the distinction must be stated rather than assumed."
+  },
+
+  "generation": {
+    "predictors": "Recorded at freeze with exact version, checkpoint digest, and cache pins. Boltz is the intended primary; any predictor added later requires a new specification.",
+    "conditions": "Template availability is the intended source of quality spread: templates disabled, receptor-only templates, VHH-only templates, and a date-restricted template cutoff. Seeds vary within condition.",
+    "conditionRationale": "In the retrospective corpus, mixed-quality jobs arose under template-varied conditions. Conditions are chosen to produce candidate sets that span the acceptability boundary, because a job whose candidates are all acceptable or all unacceptable cannot discriminate between ranking rules.",
+    "modelsPerJob": "Recorded at freeze. Larger candidate sets raise the chance a job is informative.",
+    "preservation": "Every generated coordinate file, confidence output, log, and failure is retained and hashed. Failed and degenerate runs are retained, never silently dropped.",
+    "msaProvenance": "Alignment files are generated once per distinct sequence, hashed, and retained with their generation command and source database versions."
+  },
+
+  "labelling": {
+    "reference": "The deposited complex for each target.",
+    "scorer": "Unmodified DockQ 2.1.3, default protein-interface definitions, fixed native-to-model chain maps, no chain-map optimization.",
+    "acceptabilityCutoff": 0.23,
+    "sensitivityCutoffs": [0.21, 0.23, 0.25]
+  },
+
+  "scoreArms": [
+    {
+      "id": "pose_ranking_v0_6",
+      "role": "primary",
+      "direction": "descending",
+      "definition": "The shipped policy in lib/pose-ranking.ts, unchanged: evidence tier, then half-delta-SASA interface burial, ties preserved."
+    },
+    {
+      "id": "predictor_confidence",
+      "role": "primary comparator",
+      "direction": "descending",
+      "definition": "The predictor's own exported ranking score for each pose, at the precision the predictor exports. All maximal-score ties are retained and equal-weighted; the producer's internal tie-breaking is not available and is not guessed."
+    },
+    {
+      "id": "confovhh_evidence_v0_4",
+      "role": "baseline",
+      "direction": "descending",
+      "definition": "The ordering that shipped before the v0.6 promotion."
+    },
+    {
+      "id": "delta_sasa",
+      "role": "ablation",
+      "direction": "descending",
+      "definition": "Protein-heavy-atom delta SASA; burial with no tier gate."
+    },
+    {
+      "id": "clash_burden",
+      "role": "ablation",
+      "direction": "descending",
+      "definition": "Negative severe-clash residue-pair count."
+    },
+    {
+      "id": "cdr_contact_share",
+      "role": "ablation",
+      "direction": "descending",
+      "definition": "IMGT CDR contact share."
+    },
+    {
+      "id": "random_all_tied",
+      "role": "floor",
+      "direction": "none",
+      "definition": "All poses tied; the analytical expectation of uniform selection."
+    },
+    {
+      "id": "hindsight_best",
+      "role": "ceiling",
+      "direction": "descending",
+      "definition": "Highest DockQ. Uses the answer and is not a deployable rule; reported to bound what selection could achieve."
+    }
+  ],
+
+  "jobPartition": {
+    "rule": "Every job is classified from its own candidate set before any ranking arm is applied.",
+    "classes": {
+      "allAcceptable": "every candidate at or above the cutoff; no ranking rule can fail",
+      "allBelow": "no candidate at or above the cutoff; no ranking rule can succeed; this is a generation failure",
+      "mixed": "candidates on both sides; the only class in which ranking is tested"
+    },
+    "reporting": "The three counts are a primary reported result in their own right. They separate generation failure from ranking failure and prevent either from being mistaken for the other."
+  },
+
+  "endpoints": {
+    "primary": {
+      "population": "mixed jobs only",
+      "estimand": "the difference between pose_ranking_v0_6 and predictor_confidence in the proportion of mixed jobs where the selected pose is acceptable",
+      "form": "a paired estimate with a 95 percent interval, target-clustered bootstrap, reported as a difference and not as a hypothesis test",
+      "rationale": "At the sample size this study can plausibly reach, an interval is honest and a p-value is not."
+    },
+    "secondary": [
+      "the same difference over all jobs, which is diluted by uninformative jobs and reported only for comparability with the retrospective analysis",
+      "mean DockQ of the selected pose, per arm, equal-weighting jobs",
+      "target-macro average precision over all candidates, per arm",
+      "the three-class job partition by target and by condition",
+      "acceptable-selection rate per arm against the hindsight ceiling",
+      "the ablation arms, to attribute any effect to tier, burial, clash, or CDR share",
+      "discordant-pair count and direction, which is what the primary interval is actually built from"
+    ],
+    "aggregation": "per target first, then equal-weight target macro; retain the eligible denominator at every level"
+  },
+
+  "powerAndSufficiency": {
+    "note": "Written before generation so that an underpowered result cannot later be presented as a negative one.",
+    "minimumInformativeJobs": 30,
+    "minimumDiscordantPairs": 15,
+    "minimumTargets": 6,
+    "belowMinimum": "If the run yields fewer informative jobs, discordant pairs, or targets than these minima, the primary endpoint is reported as INCONCLUSIVE (UNDERPOWERED), with the interval shown and the shortfall stated. It is not reported as evidence of no difference, and it is not rescued by pooling in uninformative jobs.",
+    "expansionRule": "Falling below a minimum permits generating more jobs under the already-frozen conditions, on already-eligible targets. It never permits changing arms, cutoffs, endpoints, or the target list after DockQ output has been read."
+  },
+
+  "prespecifiedOutcomes": {
+    "note": "Every branch is published, whichever occurs.",
+    "helps": "On mixed jobs, the interval for the pose_ranking_v0_6 minus predictor_confidence difference lies entirely above zero. Reported as: the structural assessment adds selection value over predictor confidence on this population.",
+    "redundant": "The interval contains zero and the minima in powerAndSufficiency are met. Reported as: no detectable difference at this sample size, with the interval as the evidence, and the ablation arms used to say what the ranking is and is not capturing.",
+    "hurts": "The interval lies entirely below zero. Reported as a failure, in the manuscript and in the shipped policy's boundary text, which is amended to say the ranking should not be used to override predictor confidence.",
+    "inconclusive": "The minima are not met. Reported as underpowered, with the observed interval and the shortfall, and no directional claim.",
+    "noPostHocRescue": "After any DockQ output is read, no threshold, arm definition, direction, tie rule, missing-value rule, endpoint, target, condition, or population may be changed. A result landing in the failure or inconclusive branch is published as such."
+  },
+
+  "requiredControls": {
+    "nativeSelf": "DockQ equals 1 within numerical tolerance for every target's deposited complex against itself.",
+    "farTranslation": "A 100 angstrom translated binder scores below 0.01 with zero contacts and zero delta SASA.",
+    "confidenceParity": "Every exported predictor confidence value is checked against its original producer output file and that file's recorded hash.",
+    "pilotGate": "One complete end-to-end job, sequence through prediction, scoring, ranking and export, must pass every control above before any further generation. The pilot's cost and wall-clock are recorded and used to size the full run.",
+    "specDigest": "The runner recomputes this file's SHA-256 and refuses to execute unless it matches the digest recorded at freeze time."
+  },
+
+  "accessBoundary": {
+    "readsAnythingUnderHardDecoyHoldoutV3": false,
+    "usesNativeHoldoutCoordinates": false,
+    "hardDecoyProtocolModified": false,
+    "hardDecoyTargetFreezePermitted": false,
+    "hardDecoyExecutionAuthorized": false,
+    "tunesAnyShippedPolicy": false
+  },
+
+  "claimFlags": {
+    "establishesBindingAffinityOrSpecificity": false,
+    "establishesReceptorStateSelectivity": false,
+    "establishesTherapeuticRelevance": false,
+    "isTheHardDecoyHoldout": false
+  },
+
+  "interpretationBoundary": "DockQ measures geometric similarity to a deposited complex, not binding. Acceptable selection on this population says nothing about affinity, specificity, developability, or experimental outcome. A positive result would establish that structural assessment adds information over predictor confidence for choosing among generated poses of these targets, and nothing wider.",
+
+  "openBeforeFreeze": [
+    "Predictor version, checkpoint digest, and cache pins",
+    "Models per job and job count per condition",
+    "The eligible target list, after the holdout-reservation review",
+    "Each predictor's training cutoff with its primary source",
+    "Compute environment and the pilot's measured cost"
+  ]
+}
