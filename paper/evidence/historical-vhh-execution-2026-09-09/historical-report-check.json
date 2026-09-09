@@ -1,0 +1,13 @@
+{
+  "command": "env -u NODE_OPTIONS -u NODE_PATH node --test tests/audit-report-rank-export.test.mjs",
+  "workspaceSourceCommit": "b19cae064f621f97fb460da0d401fba7aa140f1a",
+  "nodeVersion": "24.19.0",
+  "exitCode": 0,
+  "tests": 11,
+  "passed": 11,
+  "failed": 0,
+  "skipped": 0,
+  "logSha256": "ef4e1396de35e5ce85cd8837e65eb07face7a3ebede2a2ea8e018bc10cc8c53d",
+  "inputScope": "Generated/preserved synthetic reports only; no biological outcome or coordinate input",
+  "automaticMigrationImplemented": false
+}

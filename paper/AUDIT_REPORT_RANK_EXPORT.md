@@ -1,5 +1,9 @@
 # Audit-report-bound current-product evaluation
 
+For a new execution from actual supplied coordinate bytes, use the
+[coordinate executor](COORDINATE_RANK_EXECUTION.md). The report-only module
+described here retains its original scope and historical receipts.
+
 The evaluator now accepts ranking inputs extracted directly from validated
 single-audit report bytes. Previously, the feature adapter accepted supplied
 values and a declared report hash without opening that report. This bridge

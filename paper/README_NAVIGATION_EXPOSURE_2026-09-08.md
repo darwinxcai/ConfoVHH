@@ -35,3 +35,18 @@ choose parameters. The new prequantized-tuple utility is derived from the
 existing frozen contract and synthetic ordering examples; it does not establish
 frozen-engine identity, a rounding rule, a clean-blind state or exposure
 clearance. Existing records and the need for formal adjudication remain intact.
+
+## Advertising/evaluation navigation on 9 September 2026
+
+A text search of the root `README.md` while checking the advertised product
+scope returned existing aggregate development selection/outcome prose and a
+case-specific development reference. The file SHA-256 was
+`d63a789812958d0608dedbde7cab096f4cfe46f0fb7a494bf03d3ec20d57891d`.
+Exact search time was not retained. Numerical outcomes are not repeated here.
+
+No linked native/prediction coordinate, structural contact table or per-pose
+outcome ledger was opened. New coordinate-execution verification uses generated
+synthetic fragments only; historical execution accesses unchanged permitted
+metadata. No score or threshold is tuned from the returned prose. This is an
+additional exposure event, not a clean-blind state or formal clearance. Earlier
+records and adjudication requirements remain intact.

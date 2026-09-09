@@ -47,3 +47,8 @@ archived release. Independent predictive evaluation additionally needs frozen
 engine/quantization provenance and construct, ancestry/overlap and exposure
 decisions. Dependency-security integration and the exact public producer HTTP
 403 remain software release blockers. Neither route is submission-ready.
+
+The later [coordinate-execution continuation](PROGRESS_2026-09-09_COORDINATES.md)
+records one completed historical replay, actual current-product coordinate
+execution and the user's requested [chat-side readiness accounting](CHAT_SIDE_READINESS.md).
+It preserves this earlier preflight receipt and its limits.

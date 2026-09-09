@@ -1,0 +1,96 @@
+{
+  "dateUtc": "2026-09-09",
+  "basedOnCurrentCommit": "22755724bc3b9345be43426aa0de27a87ad2e440",
+  "sourceSha256": {
+    "scripts/paper/export-coordinate-ranks.mjs": "b63809e6b18d157e27e367531f0081de78b31589e7a0bb430fdd82ad4c95f60a",
+    "scripts/paper/run-historical-vhh-replay.mjs": "a39e444ae5480f023b5d5f06f427f06fdc5c2a1d57add2638357f622f9fe98ae",
+    "tests/coordinate-rank-export.test.mjs": "0cff4ff9c7d82ec5a099ceff918abab7f3b22fe1533951d0d39beb8768032966",
+    "tests/historical-vhh-runner.test.mjs": "62987d25c1c694cc59de9cba7e8af0e09e740d5aae0faddcd0b6344e48109020",
+    "package-lock.json": "fcbbf27caec4ea1ab4397790b6c51da6c0e2a90b18c1dfb2ed9ceddafdf2dabb"
+  },
+  "checks": [
+    {
+      "name": "current-scoped",
+      "command": "env -u NODE_OPTIONS -u NODE_PATH node --test tests/historical-replay-environment.test.mjs tests/historical-vhh-runner.test.mjs tests/coordinate-rank-export.test.mjs tests/current-product-rank-export.test.mjs tests/current-product-rank-export-cli.test.mjs",
+      "exitCode": 0,
+      "tests": 34,
+      "passed": 34,
+      "failed": 0,
+      "skipped": 0,
+      "logSha256": "f7eca4a2bc8f2c9fe459c443c25f6ae996f3d789ddcbdc6d69c7a6c84f313d59"
+    },
+    {
+      "name": "node22-new-tests",
+      "command": "Node22.23.2 scripts/run-node-tests.mjs tests/coordinate-rank-export.test.mjs tests/historical-vhh-runner.test.mjs",
+      "exitCode": 0,
+      "tests": 11,
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "logSha256": "9b26b9ba131d7c84fce11fec489a869bbf818500e502145341a50ffb915718b5"
+    },
+    {
+      "name": "broader-patched-scope",
+      "command": "Current scope plus tests/audit-report-rank-export.test.mjs",
+      "exitCode": 1,
+      "tests": 45,
+      "passed": 44,
+      "failed": 1,
+      "skipped": 0,
+      "logSha256": "8428c98fd391bba847b0e496cce634a2b0dfb76f1bf4282c7ff8466936f689dc"
+    }
+  ],
+  "broaderFailure": {
+    "test": "preserved synthetic reports, policy-bound rankings and separately supplied labels replay as one workflow",
+    "reason": "Retained historical receipt binds original complete root lock; new current lock changes pipeline method identity",
+    "expectedLockSha256": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+    "currentLockSha256": "fcbbf27caec4ea1ab4397790b6c51da6c0e2a90b18c1dfb2ed9ceddafdf2dabb",
+    "frozenReceiptOrAssertionChanged": false
+  },
+  "productChecks": [
+    {
+      "name": "install",
+      "command": "npm ci",
+      "exitCode": 0,
+      "logSha256": "3e68b92280695ae832cd5628089b1cb0c9c6bbb62d743abdd0c72b3948843c0d"
+    },
+    {
+      "name": "graph",
+      "command": "npm ls --all",
+      "exitCode": 0,
+      "logSha256": "770837f6d6edc9b5511275e0f80d7f8c3974e1ffaa89b4c0fbaacf4449be1088"
+    },
+    {
+      "name": "advisories",
+      "command": "node scripts/audit-advisories.mjs",
+      "exitCode": 0,
+      "logSha256": "58087ef28098a44eeead1978777c3daab4de55cffb3996a506296e77d789030e"
+    },
+    {
+      "name": "production-audit",
+      "command": "npm audit --omit=dev --audit-level=moderate --json",
+      "exitCode": 0,
+      "logSha256": "eced0e07c1e83246b1cfc9c825772510c6002c7f169a018f7449d8d6ccd418fb"
+    },
+    {
+      "name": "lint",
+      "command": "npm run lint",
+      "exitCode": 0,
+      "logSha256": "5286c361ae98bee1f571bd5c6c7b9f6e0a6418cc1621fb7080ac707f256b9a46"
+    },
+    {
+      "name": "typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "logSha256": "9352419094162ef9ebad5d00f8c2ad86ce333d69cabd7a5b5432af17f2ce1feb"
+    },
+    {
+      "name": "build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "a9ef14e00040069c0b915714399eea39091047957f0c075eb7cb52f9fbc6935f"
+    }
+  ],
+  "fullPatchedReleasePassed": false,
+  "predictiveAccuracyMeasured": false
+}
