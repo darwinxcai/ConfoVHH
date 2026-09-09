@@ -1,0 +1,285 @@
+{
+  "schema": "confovhh-compiler-recovery-verification-v1",
+  "createdAtUtc": "2026-09-09T18:46:30.002528+00:00",
+  "baseCommit": "335617ae2744d8e9061464bafd62e166209d8c46",
+  "scope": "CPU preparation controls only; remote failure report and GPU correction not independently verified",
+  "status": "LOCAL_CONTROLS_PASS_GPU_PENDING",
+  "files": {
+    "scripts/cloud/check-boltz-toolchain.py": {
+      "bytes": 18931,
+      "sha256": "9ab433bbe35cbb3df042dff18aaad8719448bb55b160dd27f5d2d2d9f46d6ad4"
+    },
+    "tests/test_boltz_toolchain_check.py": {
+      "bytes": 13206,
+      "sha256": "29637b2de5c6bc49e2df5d16eafb9e2232bc8180f6953fca69771a1f705d1fc3"
+    },
+    "cloud/boltz-runtime-candidate/Dockerfile": {
+      "bytes": 2021,
+      "sha256": "ac29d257f5b1b6aa9c4a175ee5bbca9e84879a9b6c4a013b80b5a495facff4b8"
+    },
+    "cloud/boltz-runtime-candidate/Dockerfile.dockerignore": {
+      "bytes": 185,
+      "sha256": "13af7244ac696493ec36cdfe6ca81befc7fa973f6bcdd033911bb472fb8ae2a3"
+    },
+    "cloud/boltz-runtime-candidate/README.md": {
+      "bytes": 9416,
+      "sha256": "25ec1e458595145ce26f2bd39004fe018cac5142c8939a6c37c0e66b92f3eb0d"
+    }
+  },
+  "unchangedFreeze": {
+    "protocol": {
+      "bytes": 15130,
+      "sha256": "8d3174f717ede953d922466cec93e5397ff443474da6c8addbc904ce8fc8d6e9"
+    },
+    "executionSourceFreeze": {
+      "bytes": 2035,
+      "sha256": "9a2549e707d758f9f380997419adfe191778d26d151e651524419e8d535219e3"
+    },
+    "scoringIdentitiesMatched": 41,
+    "executionIdentitiesMatched": 8
+  },
+  "tests": {
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-I",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_boltz_toolchain_check.py",
+      "-v"
+    ],
+    "exitCode": 0,
+    "count": 13,
+    "skipped": 0,
+    "stdout": "",
+    "stderr": "test_bad_runtime_or_versions_prevent_toolchain_execution (test_boltz_toolchain_check.ToolchainCheckTests.test_bad_runtime_or_versions_prevent_toolchain_execution) ... ok\ntest_existing_output_is_preserved (test_boltz_toolchain_check.ToolchainCheckTests.test_existing_output_is_preserved) ... ok\ntest_failed_compilation_stops_jit (test_boltz_toolchain_check.ToolchainCheckTests.test_failed_compilation_stops_jit) ... ok\ntest_fresh_jit_uses_file_isolation_timeout_and_does_not_change_environment (test_boltz_toolchain_check.ToolchainCheckTests.test_fresh_jit_uses_file_isolation_timeout_and_does_not_change_environment) ... ok\ntest_gcc_then_clang_resolution_matches_triton (test_boltz_toolchain_check.ToolchainCheckTests.test_gcc_then_clang_resolution_matches_triton) ... ok\ntest_invalid_or_empty_cc_never_falls_back_or_records_value (test_boltz_toolchain_check.ToolchainCheckTests.test_invalid_or_empty_cc_never_falls_back_or_records_value) ... ok\ntest_jit_failure_prevents_pass_and_preserves_child_logs (test_boltz_toolchain_check.ToolchainCheckTests.test_jit_failure_prevents_pass_and_preserves_child_logs) ... ok\ntest_missing_active_python_headers_fails_before_compile (test_boltz_toolchain_check.ToolchainCheckTests.test_missing_active_python_headers_fails_before_compile) ... ok\ntest_missing_compiler_fails_and_writes_receipt (test_boltz_toolchain_check.ToolchainCheckTests.test_missing_compiler_fails_and_writes_receipt) ... ok\ntest_real_compiler_rejects_headers_for_another_python_version (test_boltz_toolchain_check.ToolchainCheckTests.test_real_compiler_rejects_headers_for_another_python_version) ... ok\ntest_real_cpu_compiler_control_is_never_full_pass (test_boltz_toolchain_check.ToolchainCheckTests.test_real_cpu_compiler_control_is_never_full_pass) ... ok\ntest_subprocess_timeout_retains_raw_logs_and_hashes (test_boltz_toolchain_check.ToolchainCheckTests.test_subprocess_timeout_retains_raw_logs_and_hashes) ... ok\ntest_unexpected_failure_writes_sanitized_receipt (test_boltz_toolchain_check.ToolchainCheckTests.test_unexpected_failure_writes_sanitized_receipt) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.587s\n\nOK\n"
+  },
+  "pinnedUpstreamCpuControl": {
+    "schema": "confovhh-pinned-triton-host-control-v1",
+    "sourceSha256": "080b3fac37f0380980543c8d48f2e227bae8860760eb66b23c81c4781fd259c2",
+    "sourceUrl": "https://raw.githubusercontent.com/triton-lang/triton/v3.3.1/python/triton/runtime/build.py",
+    "missingCompilerControl": {
+      "type": "RuntimeError",
+      "message": "Failed to find C compiler. Please specify via CC environment variable."
+    },
+    "compilerPath": "/usr/bin/gcc",
+    "compilerSha256": "6117c52522997d2aaccb2b52b3c6bf42c0a6c5edb1d718431fed6b2fc5fec234",
+    "compiledLibrarySha256": "0d350bf64ac22f6b1f1a0e51863404503434b2e7d6afc05f533a0a48df2b7f51",
+    "expected": 73,
+    "actual": 73,
+    "status": "CPU_HOST_COMPILE_CONTROL_PASS",
+    "gpuExercised": false,
+    "boltzInferenceExercised": false
+  },
+  "localCompilerOnlyReceipt": {
+    "checker": {
+      "bytes": 18931,
+      "path": "/workspace/scratch/1213a03cc5a3/ConfoVHH/scripts/cloud/check-boltz-toolchain.py",
+      "sha256": "9ab433bbe35cbb3df042dff18aaad8719448bb55b160dd27f5d2d2d9f46d6ad4"
+    },
+    "compiler": {
+      "cc_override_present": true,
+      "compile": {
+        "command": [
+          "/usr/bin/gcc",
+          "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-probe.c",
+          "-std=c11",
+          "-O0",
+          "-I/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12",
+          "-o",
+          "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-probe"
+        ],
+        "returncode": 0,
+        "status": "PASS",
+        "stderr": {
+          "bytes": 0,
+          "path": "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-build.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 0,
+          "path": "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-build.stdout.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "timeout_seconds": 30
+      },
+      "executable": {
+        "bytes": 1023032,
+        "path": "/usr/bin/gcc",
+        "sha256": "6117c52522997d2aaccb2b52b3c6bf42c0a6c5edb1d718431fed6b2fc5fec234"
+      },
+      "probe_executable": {
+        "bytes": 15968,
+        "path": "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-probe",
+        "sha256": "0c71f60a7710dcc274cfd24e4a067c44aba40d6c488931bd01198bf73ea115a5"
+      },
+      "resolution_method": "CC",
+      "resolution_reference": {
+        "compiler_rule": "CC when present (one executable, no shell); otherwise gcc, then clang",
+        "include_rule": "active sysconfig default scheme include; posix_local becomes posix_prefix",
+        "sha256": "080b3fac37f0380980543c8d48f2e227bae8860760eb66b23c81c4781fd259c2",
+        "url": "https://github.com/triton-lang/triton/blob/v3.3.1/python/triton/runtime/build.py"
+      },
+      "resolved_executable": {
+        "bytes": 1023032,
+        "path": "/usr/bin/x86_64-linux-gnu-gcc-13",
+        "sha256": "6117c52522997d2aaccb2b52b3c6bf42c0a6c5edb1d718431fed6b2fc5fec234"
+      },
+      "run": {
+        "command": [
+          "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-probe"
+        ],
+        "expected_output_matched": true,
+        "returncode": 0,
+        "status": "PASS",
+        "stderr": {
+          "bytes": 0,
+          "path": "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-run.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 23,
+          "path": "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-run.stdout.log",
+          "sha256": "4e1f6c7267ba09d748bec1678dc93f784c8b5131ef1dffc93d0501e5faaf8203"
+        },
+        "timeout_seconds": 10
+      },
+      "source": {
+        "bytes": 213,
+        "path": "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-probe.c",
+        "sha256": "bee48ab24601a8c93666ae31a323a7573933b5bc6f0df35606ffde5c84fa2cec"
+      },
+      "status": "PASS",
+      "version": {
+        "command": [
+          "/usr/bin/gcc",
+          "--version"
+        ],
+        "returncode": 0,
+        "status": "PASS",
+        "stderr": {
+          "bytes": 0,
+          "path": "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-version.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout": {
+          "bytes": 244,
+          "path": "/workspace/scratch/1213a03cc5a3/toolchain-recovery-prep/local-compiler-check/compiler-version.stdout.log",
+          "sha256": "cc08f972264fd3ba58abb3ebc6337013b225be267c91d2df9f29f066284fe2b6"
+        },
+        "timeout_seconds": 10
+      }
+    },
+    "created_at_utc": "2026-09-09T18:45:20.401149+00:00",
+    "failures": [],
+    "finished_at_utc": "2026-09-09T18:45:20.613308+00:00",
+    "limitations": [
+      "No model, input data, checkpoint, inference, or scientific output was exercised.",
+      "The frozen runtime check must be run separately; this helper does not replace it.",
+      "Compiler-only success proves no GPU or Boltz runtime readiness.",
+      "Source/executable identities are recorded; installed wheel contents are not reverified."
+    ],
+    "model_inference_runs": 0,
+    "python_headers": {
+      "exact_runtime_version_compile_assertion": true,
+      "files": {
+        "Python.h": {
+          "bytes": 2854,
+          "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12/Python.h",
+          "sha256": "729ef157f6026e6e1b3104593f87dddc597c3b83b60c7c2965878c62a56c6f7d"
+        },
+        "patchlevel.h": {
+          "bytes": 1301,
+          "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12/patchlevel.h",
+          "sha256": "66ff726e200a2eba15cfedee752bf6a59e20d6741a7c45f7a2c424dea649f473"
+        },
+        "pyconfig.h": {
+          "bytes": 55933,
+          "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12/pyconfig.h",
+          "sha256": "3a9546822f3c1b28caaedabf93cc862215f4cbff25a8d209edc08a21b908beba"
+        }
+      },
+      "include_directory": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/include/python3.12",
+      "required_python_hexversion": 51121904,
+      "status": "PASS",
+      "sysconfig_scheme": "posix_prefix"
+    },
+    "runtime": {
+      "base_prefix": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python",
+      "implementation": "CPython",
+      "isolated_flag": true,
+      "isolated_venv": false,
+      "machine": "x86_64",
+      "prefix": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python",
+      "python": "3.12.14",
+      "python_executable": {
+        "bytes": 30894944,
+        "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+      },
+      "python_hexversion": 51121904,
+      "python_major_minor": [
+        3,
+        12
+      ],
+      "system": "Linux"
+    },
+    "schema": "confovhh.boltz-toolchain-check.v1",
+    "scientific_readiness": false,
+    "scope": "compiler_only",
+    "status": "COMPILER_ONLY_PASS",
+    "triton_jit": {
+      "status": "SKIPPED"
+    }
+  },
+  "localCompilerOnlyTextArtifacts": {
+    "compiler-build.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    "compiler-build.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    "compiler-probe.c": {
+      "bytes": 213,
+      "sha256": "bee48ab24601a8c93666ae31a323a7573933b5bc6f0df35606ffde5c84fa2cec",
+      "text": "#include <Python.h>\n#include <stdio.h>\n_Static_assert(PY_VERSION_HEX == 51121904, \"Python headers differ from active runtime\");\nint main(void) { printf(\"CONFOVHH_C_OK:%u\\n\", (unsigned)PY_VERSION_HEX); return 0; }\n"
+    },
+    "compiler-run.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    "compiler-run.stdout.log": {
+      "bytes": 23,
+      "sha256": "4e1f6c7267ba09d748bec1678dc93f784c8b5131ef1dffc93d0501e5faaf8203",
+      "text": "CONFOVHH_C_OK:51121904\n"
+    },
+    "compiler-version.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "text": ""
+    },
+    "compiler-version.stdout.log": {
+      "bytes": 244,
+      "sha256": "cc08f972264fd3ba58abb3ebc6337013b225be267c91d2df9f29f066284fe2b6",
+      "text": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+    }
+  },
+  "gpuExercised": false,
+  "boltzInferenceExercised": false,
+  "correctedImageBuilt": false,
+  "remoteFailureArtifactsInspected": false,
+  "limitations": [
+    "Mocked GPU control-flow tests are not GPU execution evidence.",
+    "The local real compiler test used Python 3.12.14; cloud inference must use the frozen isolated Python 3.11 environment.",
+    "A real full toolchain JIT PASS and original runtime-check PASS are both required before inference.",
+    "OS packages resolve from apt; actual versions and compiler identities must be recorded."
+  ]
+}

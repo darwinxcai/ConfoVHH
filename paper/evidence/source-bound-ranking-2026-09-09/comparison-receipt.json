@@ -1,0 +1,238 @@
+{
+  "inputSha256": "7e0bc830be585209256279c1f9559461966db62f434965b3a23c884b833178e0",
+  "evaluatorSha256": "b0bd70ffd9fb65f9224bca27148758425fcdac948540b54b43b7b4f6804316f8",
+  "strictJsonParserSha256": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+  "nodeVersion": "v24.19.0",
+  "report": {
+    "schema": "confovhh-selection-sets-report-v1",
+    "studyId": "SYNTHETIC-SOURCE-SELECTION-CONTROL",
+    "positiveOutcomeDefinition": "Arbitrary opposite labels across toy seeds for arithmetic control only; not biological pose accuracy.",
+    "method": {
+      "name": "coordinate-executed-current-product",
+      "policySha256": "a71516e7115e65e0ac682bc5cf8dd2f69429943c5ade9d0e0ed1ed3394addf1a"
+    },
+    "baseline": {
+      "name": "source-bound-producer-confidence",
+      "policySha256": "8e446278e8e2107f5d37d0a5282ee2c269251b585150c225f583b224c0f4fdb5"
+    },
+    "status": "descriptive-comparison-complete",
+    "declaredGroupCount": 1,
+    "declaredTargetCount": 1,
+    "declaredGeneratorCount": 1,
+    "inventory": {
+      "selectionSets": 2,
+      "plannedCandidates": 5,
+      "recordedAttempts": 5,
+      "unrecordedAttempts": 0,
+      "eligible": 4,
+      "failed": 1,
+      "ineligible": 0,
+      "missingTargetGeneratorConditionCells": []
+    },
+    "attemptAccounting": [
+      {
+        "id": "toy-failure",
+        "groupId": "toy-component",
+        "targetId": "toy-target",
+        "generatorId": "boltz-format-control",
+        "status": "failed",
+        "reason": "Generated no-output control",
+        "selectionSetId": "toy-seed-1"
+      },
+      {
+        "id": "toy-seed-1-model-0",
+        "groupId": "toy-component",
+        "targetId": "toy-target",
+        "generatorId": "boltz-format-control",
+        "status": "eligible",
+        "reason": "",
+        "selectionSetId": "toy-seed-1"
+      },
+      {
+        "id": "toy-seed-1-model-1",
+        "groupId": "toy-component",
+        "targetId": "toy-target",
+        "generatorId": "boltz-format-control",
+        "status": "eligible",
+        "reason": "",
+        "selectionSetId": "toy-seed-1"
+      },
+      {
+        "id": "toy-seed-2-model-0",
+        "groupId": "toy-component",
+        "targetId": "toy-target",
+        "generatorId": "boltz-format-control",
+        "status": "eligible",
+        "reason": "",
+        "selectionSetId": "toy-seed-2"
+      },
+      {
+        "id": "toy-seed-2-model-1",
+        "groupId": "toy-component",
+        "targetId": "toy-target",
+        "generatorId": "boltz-format-control",
+        "status": "eligible",
+        "reason": "",
+        "selectionSetId": "toy-seed-2"
+      }
+    ],
+    "weighting": "equal groups; equal targets within group; equal generators within target; equal declared conditions within generator; equal selection sets within condition",
+    "selectionSets": [
+      {
+        "id": "toy-seed-1",
+        "targetId": "toy-target",
+        "generatorId": "boltz-format-control",
+        "conditionId": "arbitrary-control",
+        "seed": 1,
+        "plannedCandidates": 3,
+        "groupId": "toy-component",
+        "primaryWeight": 0.5,
+        "recordedAttempts": 3,
+        "unrecordedAttempts": 0,
+        "eligibleCandidates": 2,
+        "failedAttempts": 1,
+        "ineligibleAttempts": 0,
+        "positives": 1,
+        "mixedOutcomes": true,
+        "status": "assessable",
+        "method": {
+          "tier": 0,
+          "tiedCandidates": 1,
+          "expectedSuccess": 1
+        },
+        "baseline": {
+          "tier": 0,
+          "tiedCandidates": 1,
+          "expectedSuccess": 0
+        },
+        "values": {
+          "method": 1,
+          "baseline": 0,
+          "delta": 1
+        }
+      },
+      {
+        "id": "toy-seed-2",
+        "targetId": "toy-target",
+        "generatorId": "boltz-format-control",
+        "conditionId": "arbitrary-control",
+        "seed": 2,
+        "plannedCandidates": 2,
+        "groupId": "toy-component",
+        "primaryWeight": 0.5,
+        "recordedAttempts": 2,
+        "unrecordedAttempts": 0,
+        "eligibleCandidates": 2,
+        "failedAttempts": 0,
+        "ineligibleAttempts": 0,
+        "positives": 1,
+        "mixedOutcomes": true,
+        "status": "assessable",
+        "method": {
+          "tier": 0,
+          "tiedCandidates": 1,
+          "expectedSuccess": 0
+        },
+        "baseline": {
+          "tier": 0,
+          "tiedCandidates": 1,
+          "expectedSuccess": 1
+        },
+        "values": {
+          "method": 0,
+          "baseline": 1,
+          "delta": -1
+        }
+      }
+    ],
+    "groups": [
+      {
+        "groupId": "toy-component",
+        "targets": [
+          {
+            "targetId": "toy-target",
+            "generators": [
+              {
+                "generatorId": "boltz-format-control",
+                "conditions": [
+                  {
+                    "conditionId": "arbitrary-control",
+                    "selectionSetIds": [
+                      "toy-seed-1",
+                      "toy-seed-2"
+                    ],
+                    "status": "complete",
+                    "values": {
+                      "method": 0.5,
+                      "baseline": 0.5,
+                      "delta": 0
+                    }
+                  }
+                ],
+                "values": {
+                  "method": 0.5,
+                  "baseline": 0.5,
+                  "delta": 0
+                }
+              }
+            ],
+            "values": {
+              "method": 0.5,
+              "baseline": 0.5,
+              "delta": 0
+            }
+          }
+        ],
+        "values": {
+          "method": 0.5,
+          "baseline": 0.5,
+          "delta": 0
+        }
+      }
+    ],
+    "primary": {
+      "method": 0.5,
+      "baseline": 0.5,
+      "delta": 0
+    },
+    "mixedSecondary": {
+      "status": "descriptive-conditional-comparison-complete",
+      "selectionSetIds": [
+        "toy-seed-1",
+        "toy-seed-2"
+      ],
+      "selectionSetCount": 2,
+      "declaredGroupCount": 1,
+      "primaryWeightFraction": 1,
+      "weighting": "retain each selection set's original primary weight, then normalize by total weight of mixed sets",
+      "values": {
+        "method": 0.5,
+        "baseline": 0.5,
+        "delta": 0
+      }
+    },
+    "uncertainty": {
+      "method": "not-estimated",
+      "deltaInterval": null
+    },
+    "limitations": [
+      "Inventories, policy identities, set boundaries and group assignments are supplied declarations, not certified provenance, completeness or independence.",
+      "Every target is expected to have every declared generator and each of that generator's declared conditions; missing cells block aggregates.",
+      "Top-1 success is conditional on the eligible common candidate pool in each selection set; failed attempts remain recorded but this is not scheduled-job yield.",
+      "Any missing attempt or selection set, or a set with no eligible candidates, blocks primary and secondary aggregates. Unknown eligible outcomes reject.",
+      "Expected success assumes uniform choice within the complete best tied tier. Candidate IDs never break scientific ties.",
+      "Mixed-outcome analysis is secondary and conditional on this generator producing both positive and negative eligible candidates; all other sets remain in primary accounting.",
+      "Repeated seeds, conditions and additional poses do not certify additional independent biological groups. No uncertainty interval, power claim or superiority decision is made.",
+      "Hashes bind bytes and source identity; they do not establish pre-label freezing, blinded collection, authorized label access, training independence or external inventory completeness.",
+      "This separate component does not alter or complete the historical v3 protocol, the earlier paired-selection evaluator, or any scientific claim."
+    ],
+    "claims": {
+      "independentGroupsCertified": false,
+      "completeV3Evaluation": false,
+      "scheduledJobYieldEstimated": false,
+      "nearNativeRankingValidated": false,
+      "bindingValidated": false,
+      "scientificSuperiorityEstablished": false
+    }
+  }
+}

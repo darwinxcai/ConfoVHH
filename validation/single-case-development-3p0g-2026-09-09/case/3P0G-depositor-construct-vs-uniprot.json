@@ -1,0 +1,63 @@
+[
+  {
+    "segment": "human N segment",
+    "actual_length": 230,
+    "expected_length": 230,
+    "mismatches": [
+      {
+        "ref_pos": 16,
+        "ref_aa": "G",
+        "deposited_aa": "R"
+      },
+      {
+        "ref_pos": 27,
+        "ref_aa": "E",
+        "deposited_aa": "Q"
+      },
+      {
+        "ref_pos": 187,
+        "ref_aa": "N",
+        "deposited_aa": "E"
+      }
+    ],
+    "actual": "MGQPGNGSAFLLAPNRSHAPDHDVTQQRDEVWVVGMGIVMSLIVLAIVFGNVLVITAIAKFERLQTVTNYFITSLACADLVMGLAVVPFGAAHILMKMWTFGNFWCEFWTSIDVLCVTASIETLCVIAVDRYFAITSPFKYQSLLTKNKARVIILMVWIVSGLTSFLPIQMHWYRATHQEAINCYAEETCCDFFTNQAYAIASSIVSFYVPLVIMVFVYSRVFQEAKRQL",
+    "reference": "MGQPGNGSAFLLAPNGSHAPDHDVTQERDEVWVVGMGIVMSLIVLAIVFGNVLVITAIAKFERLQTVTNYFITSLACADLVMGLAVVPFGAAHILMKMWTFGNFWCEFWTSIDVLCVTASIETLCVIAVDRYFAITSPFKYQSLLTKNKARVIILMVWIVSGLTSFLPIQMHWYRATHQEAINCYANETCCDFFTNQAYAIASSIVSFYVPLVIMVFVYSRVFQEAKRQL"
+  },
+  {
+    "segment": "T4L segment",
+    "actual_length": 160,
+    "expected_length": 160,
+    "mismatches": [
+      {
+        "ref_pos": 12,
+        "ref_aa": "R",
+        "deposited_aa": "G"
+      },
+      {
+        "ref_pos": 54,
+        "ref_aa": "C",
+        "deposited_aa": "T"
+      },
+      {
+        "ref_pos": 97,
+        "ref_aa": "C",
+        "deposited_aa": "A"
+      },
+      {
+        "ref_pos": 137,
+        "ref_aa": "I",
+        "deposited_aa": "R"
+      }
+    ],
+    "actual": "NIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAY",
+    "reference": "NIFEMLRIDERLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNCNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRCALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSIWYNQTPNRAKRVITTFRTGTWDAY"
+  },
+  {
+    "segment": "human C segment",
+    "actual_length": 103,
+    "expected_length": 103,
+    "mismatches": [],
+    "actual": "KFCLKEHKALKTLGIIMGTFTLCWLPFFIVNIVHVIQDNLIRKEVYILLNWIGYVNSGFNPLIYCRSPDFRIAFQELLCLRRSSLKAYGNGYSSNGNTGEQSG",
+    "reference": "KFCLKEHKALKTLGIIMGTFTLCWLPFFIVNIVHVIQDNLIRKEVYILLNWIGYVNSGFNPLIYCRSPDFRIAFQELLCLRRSSLKAYGNGYSSNGNTGEQSG"
+  }
+]

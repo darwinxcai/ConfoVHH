@@ -1,0 +1,28 @@
+{
+  "revision": "6fdef46d763fee7fbb83ca5501ccceff43b85607",
+  "finished_utc": "2026-09-09T15:20:44.664020+00:00",
+  "all_artifacts_verified": true,
+  "receipts": [
+    "boltz2_conf.ckpt.receipt.json",
+    "boltz2_aff.ckpt.receipt.json",
+    "mols.tar.receipt.json"
+  ],
+  "models_loaded": false,
+  "pickle_objects_loaded": false,
+  "gpu_or_paid_resources_used": false,
+  "tar_inventory_status": "safe_headers_and_required_members_present",
+  "post_download_byte_verification": "post-download-byte-verification.json",
+  "independent_final_file_hashes_verified": true,
+  "verified_total_bytes": 6204362719,
+  "tar_inventory": "mols-tar-inventory.json",
+  "archive_extracted": false,
+  "ignored_partial_files": [
+    {
+      "filename": "mols.tar.partial",
+      "bytes": 1526726656,
+      "not_a_cache_input": true,
+      "action": "left untouched; older distinct inode, only final files independently verified"
+    }
+  ],
+  "source_metadata_sha256": "219d810e5e69a3d99267062498b75c06bba1e6c1d8b2e50378b7f64ce3da8487"
+}

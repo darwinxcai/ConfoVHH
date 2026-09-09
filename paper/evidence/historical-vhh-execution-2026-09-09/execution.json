@@ -1,0 +1,66 @@
+{
+  "schema": "confovhh-one-historical-vhh-replay-v1",
+  "status": "ONE_HISTORICAL_METADATA_REPLAY_PASSED",
+  "startedAt": "2026-09-09T13:44:11.946Z",
+  "completedAt": "2026-09-09T13:44:27.492Z",
+  "sourceSha256": {
+    "scripts/paper/run-historical-vhh-replay.mjs": "a39e444ae5480f023b5d5f06f427f06fdc5c2a1d57add2638357f622f9fe98ae",
+    "scripts/paper/verify-historical-replay-environment.mjs": "6713c20fdfc5060a7d3c150c40b07629d1edc0ec4b9d169b593f3fb98cff4f7d",
+    "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f"
+  },
+  "environmentPlanSha256": "8c18f86b5119bfb340c28ce5e6aa3d21f6a1d47210b7b053ff20d01a9e6a2eef",
+  "controlsSha256": {
+    "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json": "bc31adf14cf1222ebade348337facefb209c286c631f0da0bf640bd778b0688f",
+    "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/checksums.sha256": "9cca78fa06d568a56cd74da129752b28691e7a1d7e59afccec55cf18bc685578"
+  },
+  "historicalSourceClaim": "b19cae064f621f97fb460da0d401fba7aa140f1a",
+  "execution": {
+    "node": "v24.19.0",
+    "v8": "13.6.233.17-node.51",
+    "platform": "linux",
+    "arch": "x64",
+    "arguments": [
+      "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs",
+      "verify",
+      "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29"
+    ],
+    "producerLoadedFromHistoricalWorkspace": true,
+    "stdoutSha256": "479920036a1974ddb3a7d6fd41a2a85fd56ed8ce2a8b12ebd75f3327835542f0",
+    "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exitCode": 0
+  },
+  "result": {
+    "status": "VHH_SEQUENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_DIRECT_ROLE_AND_PARENT_ADJUDICATION",
+    "candidateNodeCount": 287,
+    "developmentNodeCount": 17,
+    "totalNodeCount": 304,
+    "totalMetadataProfileCount": 303,
+    "numberedProfileCount": 302,
+    "unavailableProfileCount": 1,
+    "allUnorderedPairCount": 46056,
+    "possibleMetadataSequenceEdgePairCount": 20859,
+    "candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge": 57,
+    "thresholdPregraphComponentCount": 34,
+    "exactFullSequenceEvidencePairCount": 2023,
+    "formallyClearedGroupCount": 0,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false,
+    "nativeHoldoutCoordinatesAccessed": false,
+    "dockqLabelsAccessed": false
+  },
+  "boundaries": {
+    "scientificMetadataRead": true,
+    "nativeOrPredictionCoordinatesRead": false,
+    "outcomeLabelsRead": false,
+    "oneHistoricalReplayPassed": true,
+    "allHistoricalReplaysPassed": false,
+    "currentProductReleasePassed": false,
+    "completeDependencyClosureVerified": false,
+    "securityIsolationEstablished": false,
+    "runtimeEquivalenceToOriginalExecutionEstablished": false,
+    "integrationAuthorized": false,
+    "frozenScoringEngineEstablished": false,
+    "independentEligibleGroupsAdded": 0,
+    "predictiveAccuracyMeasured": false
+  }
+}

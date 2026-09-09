@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceCommit": "b19cae064f621f97fb460da0d401fba7aa140f1a",
+  "producer": "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs",
+  "files": [
+    {
+      "path": "node_modules/immunum/immunum_bg.wasm",
+      "bytes": 698218,
+      "sha256": "68804983b37b3746f65d84c9c6c0e703361ea9191fe3edc3d0748cddad2c646b"
+    },
+    {
+      "path": "node_modules/immunum/immunum.js",
+      "bytes": 10138,
+      "sha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00"
+    },
+    {
+      "path": "node_modules/immunum/package.json",
+      "bytes": 564,
+      "sha256": "733c9d00636ec6b88ba3ff7584ecc2fb77380eb5d65750cdcacdd9214299b098"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 466779,
+      "sha256": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54"
+    },
+    {
+      "path": "package.json",
+      "bytes": 3161,
+      "sha256": "825b0fddb663495ff78c8d748ccf1cc4a86dfdcd11d333489619693a2abb6f8c"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-development-metadata.mjs",
+      "bytes": 39421,
+      "sha256": "7e04b0a5ce6545f74d82029af4f267ffeb747a9449abc6be123534eb2ba01ad7"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-disposition-seed.mjs",
+      "bytes": 27678,
+      "sha256": "00097827d3e6ae983ca75943d8a74c748ac80968574a083091a79a58c37c1c2b"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-exact-evidence-pregraph.mjs",
+      "bytes": 40524,
+      "sha256": "79bf92c0288fb115542d95c9930baaa3789207630c4e1e232b703caaf0e97df7"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs",
+      "bytes": 67510,
+      "sha256": "5e46e17d7f14315bd9f87da60dffb7db7ce7a328c6db96e1e8f9fe8c9662ffeb"
+    }
+  ]
+}

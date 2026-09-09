@@ -1,0 +1,122 @@
+{
+  "schema": "confovhh-historical-integration-replay-v1",
+  "status": "HISTORICAL_INTEGRATION_REPLAY_PASSED_SCIENTIFIC_GATES_BLOCKED",
+  "startedAt": "2026-09-09T14:56:24.379Z",
+  "completedAt": "2026-09-09T14:57:05.872Z",
+  "sourceSha256": {
+    "scripts/paper/run-historical-integration-replay.mjs": "e9a43efa371578bdca6b2d8cc0814243397196fd9b31317766639fc7550a2940",
+    "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+    "paper/historical-integration-replay-plan-2026-09-09.json": "30a126089b5dd3c0d93721aeda4edbbade2a4023167cc7f3a6901638cf6acf63"
+  },
+  "planSha256": "30a126089b5dd3c0d93721aeda4edbbade2a4023167cc7f3a6901638cf6acf63",
+  "environment": {
+    "node": "v24.19.0",
+    "v8": "13.6.233.17-node.51",
+    "platform": "linux",
+    "arch": "x64",
+    "sanitizedChildEnvironment": true
+  },
+  "identity": {
+    "sourceCommitClaim": "b19cae064f621f97fb460da0d401fba7aa140f1a",
+    "checkedFileCount": 190,
+    "inventoryCount": 11,
+    "dependencyResolvedInsideWorkspace": true
+  },
+  "executions": [
+    {
+      "recipeId": "integration-verifier",
+      "startedAt": "2026-09-09T14:56:25.685Z",
+      "completedAt": "2026-09-09T14:56:45.689Z",
+      "arguments": [
+        "scripts/hard-decoy-v3/verify-integration-state.mjs"
+      ],
+      "exitCode": 0,
+      "result": {
+        "status": "DRAFT",
+        "targetFreezeGate": "BLOCKED",
+        "selectedProtocol": "HARD_DECOY_PROTOCOL_V3.md",
+        "selectedDesign": "sealed-one-way-native-epitope-boolean-oracle",
+        "sourceEntries": 287,
+        "entryMetadataRows": 287,
+        "polymerEntities": 1401,
+        "repeatedRawResponses": 24,
+        "entryMetadataCaptures": 2,
+        "normalizedCaptureAgreement": true,
+        "dispositionRows": 287,
+        "resolvedDispositionRows": 15,
+        "pendingDispositionRows": 272,
+        "developmentMetadataNodes": 17,
+        "exactEvidenceNodes": 304,
+        "exactEvidenceUnorderedPairs": 46056,
+        "positiveExactOrAmbiguousEvidencePairs": 3013,
+        "candidateNodesConnectedToDevelopmentByDefiniteEvidence": 33,
+        "candidateNodesConnectedToDevelopmentByInclusiveEvidence": 262,
+        "vhhMetadataProfiles": 303,
+        "vhhNumberedProfiles": 302,
+        "vhhUnavailableProfiles": 1,
+        "vhhSequenceUnorderedPairs": 46056,
+        "possibleVhhSequenceEvidencePairs": 20859,
+        "vhhThresholdPregraphComponents": 34,
+        "candidateNodesConnectedToDevelopmentByPossibleVhhSequenceEvidence": 57,
+        "boundedAuditReviewedLedgerRecords": 13,
+        "boundedAuditReviewedPdbEntries": 20,
+        "provisionalGroups": 7,
+        "formallyClearedGroups": 0,
+        "requiredIndependentGroups": 10,
+        "approvalReady": false,
+        "executionAuthorized": false
+      },
+      "stdout": "{\n  \"status\": \"DRAFT\",\n  \"targetFreezeGate\": \"BLOCKED\",\n  \"selectedProtocol\": \"HARD_DECOY_PROTOCOL_V3.md\",\n  \"selectedDesign\": \"sealed-one-way-native-epitope-boolean-oracle\",\n  \"sourceEntries\": 287,\n  \"entryMetadataRows\": 287,\n  \"polymerEntities\": 1401,\n  \"repeatedRawResponses\": 24,\n  \"entryMetadataCaptures\": 2,\n  \"normalizedCaptureAgreement\": true,\n  \"dispositionRows\": 287,\n  \"resolvedDispositionRows\": 15,\n  \"pendingDispositionRows\": 272,\n  \"developmentMetadataNodes\": 17,\n  \"exactEvidenceNodes\": 304,\n  \"exactEvidenceUnorderedPairs\": 46056,\n  \"positiveExactOrAmbiguousEvidencePairs\": 3013,\n  \"candidateNodesConnectedToDevelopmentByDefiniteEvidence\": 33,\n  \"candidateNodesConnectedToDevelopmentByInclusiveEvidence\": 262,\n  \"vhhMetadataProfiles\": 303,\n  \"vhhNumberedProfiles\": 302,\n  \"vhhUnavailableProfiles\": 1,\n  \"vhhSequenceUnorderedPairs\": 46056,\n  \"possibleVhhSequenceEvidencePairs\": 20859,\n  \"vhhThresholdPregraphComponents\": 34,\n  \"candidateNodesConnectedToDevelopmentByPossibleVhhSequenceEvidence\": 57,\n  \"boundedAuditReviewedLedgerRecords\": 13,\n  \"boundedAuditReviewedPdbEntries\": 20,\n  \"provisionalGroups\": 7,\n  \"formallyClearedGroups\": 0,\n  \"requiredIndependentGroups\": 10,\n  \"approvalReady\": false,\n  \"executionAuthorized\": false\n}\n",
+      "stderr": "",
+      "stdoutSha256": "a699ab7058f492e3c0998581b4f02df47cdcf9f46a1949d6d68670f2e6c1a9b6",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "recipeId": "integration-tests",
+      "startedAt": "2026-09-09T14:56:46.073Z",
+      "completedAt": "2026-09-09T14:57:05.871Z",
+      "arguments": [
+        "--test",
+        "--test-reporter=tap",
+        "--test-concurrency=1",
+        "--",
+        "tests/hard-decoy-v3-integration-state.test.mjs"
+      ],
+      "exitCode": 0,
+      "result": {
+        "tests": 2,
+        "passed": 2,
+        "failed": 0,
+        "skipped": 0,
+        "cancelled": 0,
+        "todo": 0
+      },
+      "stdout": "TAP version 13\n# Subtest: the authoritative v3 integration state replays every current pre-label evidence layer and stays blocked\nok 1 - the authoritative v3 integration state replays every current pre-label evidence layer and stays blocked\n  ---\n  duration_ms: 19178.489456\n  type: 'test'\n  ...\n# Subtest: the integration-state policy rejects authority, label access, count drift, and threshold relaxation\nok 2 - the integration-state policy rejects authority, label access, count drift, and threshold relaxation\n  ---\n  duration_ms: 6.37533\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 19375.675171\n",
+      "stderr": "",
+      "stdoutSha256": "3aa4b33fbaf2b2a8a3aa3b14459811587f881f6ecc9fd12c2f15e928bee6fb62",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "boundaries": {
+    "originalSourcesExecutedInHistoricalWorkspace": true,
+    "historicalSourceAndInputIdentitiesCheckedBeforeAndAfterEachRecipe": true,
+    "metadataAndSequencesRead": true,
+    "sequenceNumberingDependencyExecuted": true,
+    "nativeOrPredictedBiologicalCoordinatesRead": false,
+    "biologicalOutcomeLabelsRead": false,
+    "originalEvidenceOverwritten": false,
+    "integrationStateRemainsDraft": true,
+    "targetFreezeRemainsBlocked": true,
+    "currentProductReleasePassed": false,
+    "allHistoricalReplaysPassed": false,
+    "mandatoryCiRoutingCompleted": false,
+    "completeDependencyClosureVerified": false,
+    "securityIsolationEstablished": false,
+    "runtimeEquivalenceToOriginalExecutionEstablished": false,
+    "networkIsolationEstablished": false,
+    "integrationAuthorized": false,
+    "frozenScoringEngineEstablished": false,
+    "independentEligibleGroupsAdded": 0,
+    "predictiveAccuracyMeasured": false
+  }
+}

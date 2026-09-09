@@ -89,5 +89,11 @@
     "wrangler": "4.127.1"
   },
   "type": "module",
-  "displayName": "ConfoVHH"
+  "displayName": "ConfoVHH",
+  "overrides": {
+    "baseline-browser-mapping": "2.11.0",
+    "miniflare": {
+      "sharp": "0.35.4"
+    }
+  }
 }

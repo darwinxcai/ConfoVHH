@@ -1,0 +1,53 @@
+{
+  "retrieved_at_utc": "2026-09-09T15:00:36.352963+00:00",
+  "image_tag": "docker.io/pytorch/pytorch:2.7.1-cuda12.6-cudnn9-runtime",
+  "immutable_reference": "docker.io/pytorch/pytorch@sha256:2b59b1b91885677814f78be1f8df48a25d5dc952eb6580eaecfefca510f9afd3",
+  "manifest_media_type": "application/vnd.docker.distribution.manifest.v2+json",
+  "manifest_digest_recomputed": true,
+  "config_digest_recomputed": true,
+  "architecture": "amd64",
+  "os": "linux",
+  "limitations": [
+    "Image not executed; no GPU or model test performed.",
+    "Python 3.11 minor corroborated by direct layer symlink entries; exact patch version not checked. Require runtime checks before inference.",
+    "Full image layers were not downloaded or hash-verified. Manifest and config bytes independently SHA256-verified.",
+    "Schema2 Docker manifest is not an OCI mediaType manifest although registries and container runtimes support it."
+  ],
+  "python_build_default": "3.11",
+  "python_patch_version": "not verified",
+  "manifest_digest_matches_registry_header": true,
+  "sources": [
+    {
+      "file": "tag-manifest.json",
+      "url": "https://registry-1.docker.io/v2/pytorch/pytorch/manifests/2.7.1-cuda12.6-cudnn9-runtime",
+      "description": "Exact HTTP response body, not reserialized. SHA256 matches Docker-Content-Digest response header."
+    },
+    {
+      "file": "image-config.json",
+      "url": "https://registry-1.docker.io/v2/pytorch/pytorch/blobs/sha256:a707d52180cc02f7c29b030237ba3fd3fc86d5fa3ed3a94b65e65495aa6a2713",
+      "description": "Exact HTTP response body. SHA256 matches manifest config descriptor."
+    },
+    {
+      "file": "official-v2.7.1-Dockerfile",
+      "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/Dockerfile",
+      "description": "Official release source uses ARG PYTHON_VERSION=3.11 and conda Python install."
+    },
+    {
+      "file": "official-v2.7.1-docker.Makefile",
+      "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/docker.Makefile",
+      "description": "Official release source defaults PYTHON_VERSION to 3.11, passed as build argument."
+    },
+    {
+      "url": "https://hub.docker.com/layers/pytorch/pytorch/2.7.1-cuda12.6-cudnn9-runtime/images/sha256-2b59b1b91885677814f78be1f8df48a25d5dc952eb6580eaecfefca510f9afd3",
+      "description": "Official public image page independently confirms Linux/amd64 and same manifest digest."
+    },
+    {
+      "file": "python-partial-layer-evidence.json",
+      "url": "https://registry-1.docker.io/v2/pytorch/pytorch/blobs/sha256:9c22ce1de23d994d418f39c480c60e9c034b012d4e15c699dfc36ad887046723",
+      "description": "Parsed tar entry metadata from first 13690880 compressed bytes; terminated at Python symlink. Full layer digest not recomputed; no layer bytes persisted."
+    }
+  ],
+  "python_minor_version": "3.11",
+  "python_evidence": "Official v2.7.1 build defaults and direct partial image-layer tar entries: /opt/conda/bin/python -> python3.11 and /opt/conda/bin/python3 -> python3.11.",
+  "published_header_note": "The client network/rate-limit address is omitted from the parsed response headers. Exact manifest/config bodies are unchanged."
+}

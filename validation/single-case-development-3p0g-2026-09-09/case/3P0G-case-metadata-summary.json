@@ -1,0 +1,90 @@
+{
+  "pdb_id": "3P0G",
+  "source_kind": "public_sequence_and_metadata_only",
+  "case_status": "eligible_for_explicit_development_exposed_single_case_pilot_only",
+  "biological_assembly_id": "1",
+  "assembly_gen": [
+    {
+      "assembly_id": "1",
+      "asym_id_list": [
+        "A",
+        "B",
+        "C"
+      ],
+      "oper_expression": "1",
+      "ordinal": 1
+    }
+  ],
+  "assembly_operators": [
+    {
+      "id": "1",
+      "matrix_1_1": 1.0,
+      "matrix_1_2": 0.0,
+      "matrix_1_3": 0.0,
+      "matrix_2_1": 0.0,
+      "matrix_2_2": 1.0,
+      "matrix_2_3": 0.0,
+      "matrix_3_1": 0.0,
+      "matrix_3_2": 0.0,
+      "matrix_3_3": 1.0,
+      "name": "1_555",
+      "symmetry_operation": "x,y,z",
+      "type": "identity operation",
+      "vector_1": 0.0,
+      "vector_2": 0.0,
+      "vector_3": 0.0
+    }
+  ],
+  "target_protein_pair": "A:B",
+  "entities": [
+    {
+      "entity_id": "1",
+      "label_asym_id": "A",
+      "auth_asym_id": "A",
+      "sequence": "DYKDDDDAMGQPGNGSAFLLAPNRSHAPDHDVTQQRDEVWVVGMGIVMSLIVLAIVFGNVLVITAIAKFERLQTVTNYFITSLACADLVMGLAVVPFGAAHILMKMWTFGNFWCEFWTSIDVLCVTASIETLCVIAVDRYFAITSPFKYQSLLTKNKARVIILMVWIVSGLTSFLPIQMHWYRATHQEAINCYAEETCCDFFTNQAYAIASSIVSFYVPLVIMVFVYSRVFQEAKRQLNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYKFCLKEHKALKTLGIIMGTFTLCWLPFFIVNIVHVIQDNLIRKEVYILLNWIGYVNSGFNPLIYCRSPDFRIAFQELLCLRRSSLKAYGNGYSSNGNTGEQSG",
+      "sequence_length": 501,
+      "sequence_sha256_no_newline": "e9052379ba6dca45a6a4148a53cc1d6ad790f05e4b4f0a9237afe2fcc8638926",
+      "modeled_residue_count": 284,
+      "unobserved_label_seq_ranges": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 30
+        },
+        {
+          "beg_seq_id": 236,
+          "end_seq_id": 401
+        },
+        {
+          "beg_seq_id": 481,
+          "end_seq_id": 501
+        }
+      ],
+      "source_entity_json": "3P0G-entity-1.json",
+      "source_instance_json": "3P0G-instance-A.json"
+    },
+    {
+      "entity_id": "2",
+      "label_asym_id": "B",
+      "auth_asym_id": "B",
+      "sequence": "QVQLQESGGGLVQAGGSLRLSCAASGSIFSINTMGWYRQAPGKQRELVAAIHSGGSTNYANSVKGRFTISRDNAANTVYLQMNSLKPEDTAVYYCNVKDYGAVLYEYDYWGQGTQVTVSSHHHHHH",
+      "sequence_length": 126,
+      "sequence_sha256_no_newline": "3e4dbf73ccc8ab7a4fb2fedd17695befe7f2807f17650d8ef60080aef9a8562f",
+      "modeled_residue_count": 121,
+      "unobserved_label_seq_ranges": [
+        {
+          "beg_seq_id": 1,
+          "end_seq_id": 1
+        },
+        {
+          "beg_seq_id": 123,
+          "end_seq_id": 126
+        }
+      ],
+      "source_entity_json": "3P0G-entity-2.json",
+      "source_instance_json": "3P0G-instance-B.json"
+    }
+  ],
+  "coordinate_payloads_opened_during_this_preparation": false,
+  "new_dockq_labels_opened_during_this_preparation": false,
+  "protected_v3_files_modified_or_payloads_opened": false
+}

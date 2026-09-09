@@ -1,0 +1,140 @@
+{
+  "schema": "confovhh-source-bound-coordinate-input-v1",
+  "studyId": "SYNTHETIC-SOURCE-SELECTION-CONTROL",
+  "generators": [
+    {
+      "id": "boltz-format-control",
+      "extractor": "boltz-confidence-score-v1"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "toy-seed-1-model-0",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "toy-seed-1-model-1",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "toy-seed-2-model-0",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "toy-seed-2-model-1",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "toy-failure",
+      "groupId": "toy-component",
+      "targetId": "toy-target",
+      "generatorId": "boltz-format-control",
+      "status": "failed",
+      "reason": "Generated no-output control"
+    }
+  ],
+  "coordinates": [
+    {
+      "id": "toy-seed-1-model-0",
+      "format": "pdb",
+      "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "chainRolesConfirmed": true
+    },
+    {
+      "id": "toy-seed-1-model-1",
+      "format": "pdb",
+      "coordinateSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "chainRolesConfirmed": true
+    },
+    {
+      "id": "toy-seed-2-model-0",
+      "format": "pdb",
+      "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "chainRolesConfirmed": true
+    },
+    {
+      "id": "toy-seed-2-model-1",
+      "format": "pdb",
+      "coordinateSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "chainRolesConfirmed": true
+    }
+  ],
+  "scoreSources": [
+    {
+      "id": "toy-seed-1-model-0",
+      "extractor": "boltz-confidence-score-v1",
+      "coordinatePath": "toy-seed-1/toy_model_0.pdb",
+      "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+      "source": {
+        "path": "toy-seed-1/confidence_toy_model_0.json",
+        "sha256": "fca8ccd3f9f84621f885fab3e93f30fb7a8f5b88ecd72a3bb294b57934fb5fd1",
+        "bytes": 25
+      }
+    },
+    {
+      "id": "toy-seed-1-model-1",
+      "extractor": "boltz-confidence-score-v1",
+      "coordinatePath": "toy-seed-1/toy_model_1.pdb",
+      "coordinateSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+      "source": {
+        "path": "toy-seed-1/confidence_toy_model_1.json",
+        "sha256": "3dc6d709f3efc264065cbed1a4d1cc4ade7cdb43465afce2ca91a34f216dff4b",
+        "bytes": 25
+      }
+    },
+    {
+      "id": "toy-seed-2-model-0",
+      "extractor": "boltz-confidence-score-v1",
+      "coordinatePath": "toy-seed-2/toy_model_0.pdb",
+      "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+      "source": {
+        "path": "toy-seed-2/confidence_toy_model_0.json",
+        "sha256": "fca8ccd3f9f84621f885fab3e93f30fb7a8f5b88ecd72a3bb294b57934fb5fd1",
+        "bytes": 25
+      }
+    },
+    {
+      "id": "toy-seed-2-model-1",
+      "extractor": "boltz-confidence-score-v1",
+      "coordinatePath": "toy-seed-2/toy_model_1.pdb",
+      "coordinateSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+      "source": {
+        "path": "toy-seed-2/confidence_toy_model_1.json",
+        "sha256": "3dc6d709f3efc264065cbed1a4d1cc4ade7cdb43465afce2ca91a34f216dff4b",
+        "bytes": 25
+      }
+    }
+  ]
+}

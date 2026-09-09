@@ -1,0 +1,65 @@
+{
+  "schema": "confovhh-boltz-runtime-candidate-v1",
+  "status": "DEPENDENCIES_RESOLVED_IMAGE_NOT_BUILT",
+  "recorded_at_utc": "2026-09-09T15:02:11.325346+00:00",
+  "scope": "technical_runtime_preparation_only",
+  "independent_study_authorized": false,
+  "python_minor": "3.11",
+  "target_platform": "x86_64-manylinux_2_28",
+  "resolver": {
+    "tool": "uv",
+    "version": "0.12.8",
+    "index": "https://pypi.org/simple",
+    "exit_code": 0,
+    "arguments": [
+      "pip",
+      "compile",
+      "requirements.in",
+      "--python-version",
+      "3.11",
+      "--python-platform",
+      "x86_64-manylinux_2_28",
+      "--generate-hashes",
+      "--no-header",
+      "--no-annotate",
+      "--no-config",
+      "--default-index",
+      "https://pypi.org/simple",
+      "--output-file",
+      "requirements-linux-py311.lock"
+    ],
+    "network_note": "Initial Torch 2.7.1 metadata request timed out. Bounded retry completed successfully. Resolver outputs record approved source distribution/wheel hashes; distributions were not all downloaded or installed."
+  },
+  "resolved_distribution_count": 92,
+  "files": {
+    "bootstrap.in": {
+      "bytes": 43,
+      "sha256": "5b4004d6ef583ce2822bff1798491051193e753a0a718b7bf8c2545bd2887913"
+    },
+    "requirements.in": {
+      "bytes": 185,
+      "sha256": "d347ad8cf44ce33c5312d78330afc0d7567f9537fa9d3630f94dbede76e32835"
+    },
+    "bootstrap-linux-py311.lock": {
+      "bytes": 553,
+      "sha256": "0c36241dd159935b274c1e2d24edc4d3c98e880fac6da444914736bd255d9956"
+    },
+    "requirements-linux-py311.lock": {
+      "bytes": 159241,
+      "sha256": "8f30f92bd06772f5bb86d0ce6e0e38daa8f4465fecdbd2bf11eeb23ddd19bb7a"
+    }
+  },
+  "boltz_wheel": {
+    "url": "https://files.pythonhosted.org/packages/98/55/3eb80fdcf250a0d7bcfcccb584cae200d820fcc158dcdf3f2dbfa4662811/boltz-2.2.1-py3-none-any.whl",
+    "sha256": "b8c62bbdede1922931d9203118f62c858f11aa699bf91fd4c05a5ed6a6d8b4fc",
+    "bytes": 268390,
+    "actual_bytes_verified": true,
+    "metadata_extracted_without_execution": true
+  },
+  "checkpoints_and_cache_downloaded": false,
+  "image_built": false,
+  "dependencies_installed": false,
+  "gpu_runtime_smoke_passed": false,
+  "model_inference_executed": false,
+  "predictive_performance_demonstrated": false
+}

@@ -1,0 +1,31 @@
+Decoded hosted job-log excerpts; retained lines are unchanged. This is not a full log.
+
+https://github.com/darwinxcai/ConfoVHH/actions/runs/34304741740/job/102318979679
+2026-09-09T02:49:46.1956096Z HEAD is now at 85dbb62 Merge b19cae064f621f97fb460da0d401fba7aa140f1a into 9aeadb8185a02da4e67967d9fbe12b1503d02e96
+2026-09-09T02:49:46.7324028Z node: v22.23.2
+2026-09-09T02:49:46.7324868Z npm: 10.9.8
+2026-09-09T02:50:16.1114398Z [advisories] 2 advisory finding(s) at or above moderate:
+2026-09-09T02:50:16.1115212Z   - GHSA-w5vr-8v7q-w6rv (moderate, baseline-browser-mapping) is reachable from the production dependency tree.
+2026-09-09T02:50:16.1116124Z     baseline-browser-mapping process termination on invalid input causes denial of service
+2026-09-09T02:50:16.1116714Z     https://github.com/advisories/GHSA-w5vr-8v7q-w6rv
+2026-09-09T02:50:16.1117189Z     Production advisories are never waivable. Resolve the dependency.
+2026-09-09T02:50:16.1118022Z   - GHSA-rgj7-g3m4-5g8c (high, sharp) is not allowlisted.
+2026-09-09T02:50:16.1118588Z     sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545
+2026-09-09T02:50:16.1119109Z     https://github.com/advisories/GHSA-rgj7-g3m4-5g8c
+2026-09-09T02:50:16.1119601Z     Resolve it, or add a reviewed entry to security-advisory-allowlist.json.
+2026-09-09T02:50:16.1171233Z ##[error]Process completed with exit code 1.
+
+https://github.com/darwinxcai/ConfoVHH/actions/runs/34304741740/job/102318979709
+2026-09-09T02:49:46.4353266Z HEAD is now at 85dbb62 Merge b19cae064f621f97fb460da0d401fba7aa140f1a into 9aeadb8185a02da4e67967d9fbe12b1503d02e96
+2026-09-09T02:49:47.3520976Z node: v24.20.0
+2026-09-09T02:49:47.3521469Z npm: 11.19.0
+2026-09-09T02:50:12.7606726Z [advisories] 2 advisory finding(s) at or above moderate:
+2026-09-09T02:50:12.7607511Z   - GHSA-w5vr-8v7q-w6rv (moderate, baseline-browser-mapping) is reachable from the production dependency tree.
+2026-09-09T02:50:12.7608181Z     baseline-browser-mapping process termination on invalid input causes denial of service
+2026-09-09T02:50:12.7608642Z     https://github.com/advisories/GHSA-w5vr-8v7q-w6rv
+2026-09-09T02:50:12.7609023Z     Production advisories are never waivable. Resolve the dependency.
+2026-09-09T02:50:12.7609378Z   - GHSA-rgj7-g3m4-5g8c (high, sharp) is not allowlisted.
+2026-09-09T02:50:12.7609751Z     sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545
+2026-09-09T02:50:12.7610095Z     https://github.com/advisories/GHSA-rgj7-g3m4-5g8c
+2026-09-09T02:50:12.7610423Z     Resolve it, or add a reviewed entry to security-advisory-allowlist.json.
+2026-09-09T02:50:12.7652078Z ##[error]Process completed with exit code 1.

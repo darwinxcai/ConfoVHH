@@ -1,0 +1,80 @@
+{
+  "schema": "confovhh-coordinate-rank-input-v1",
+  "studyId": "SYNTHETIC-COORDINATE-EXECUTION",
+  "generators": [
+    {
+      "id": "synthetic",
+      "scoreName": "arbitrary-fixture-score",
+      "direction": "higher-better"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "near-a",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "near-b",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "separated",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "failed",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "synthetic",
+      "status": "failed",
+      "reason": "Arbitrary synthetic failure for accounting verification"
+    }
+  ],
+  "coordinates": [
+    {
+      "id": "near-a",
+      "format": "pdb",
+      "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "chainRolesConfirmed": true,
+      "producerScore": 0.9
+    },
+    {
+      "id": "near-b",
+      "format": "pdb",
+      "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "chainRolesConfirmed": true,
+      "producerScore": 0.2
+    },
+    {
+      "id": "separated",
+      "format": "pdb",
+      "coordinateSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "chainRolesConfirmed": true,
+      "producerScore": 0.9
+    }
+  ]
+}

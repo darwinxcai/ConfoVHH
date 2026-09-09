@@ -1,0 +1,269 @@
+(node:5) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Node 22.23.2: replaying all requested tests with --no-turbo-inline-js-wasm-calls.
+(node:13) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+(Use `node --trace-warnings ...` to show where the warning was created)
+TAP version 13
+# (node:20) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: fixed recipes cannot select arbitrary files, filter tests or add generation arguments
+ok 1 - fixed recipes cannot select arbitrary files, filter tests or add generation arguments
+  ---
+  duration_ms: 3.037276
+  type: 'test'
+  ...
+# Subtest: child environment drops Node hooks, test context, credentials and proxies
+ok 2 - child environment drops Node hooks, test context, credentials and proxies
+  ---
+  duration_ms: 0.237191
+  type: 'test'
+  ...
+# Subtest: TAP acceptance requires the complete exact test inventory and zero failures, skips or cancellations
+ok 3 - TAP acceptance requires the complete exact test inventory and zero failures, skips or cancellations
+  ---
+  duration_ms: 4.106813
+  type: 'test'
+  ...
+# Subtest: bounded identity verifies files and module resolution, with no execution authority
+ok 4 - bounded identity verifies files and module resolution, with no execution authority
+  ---
+  duration_ms: 71.381085
+  type: 'test'
+  ...
+# Subtest: manifest drift rejects before a missing dependency can be inspected
+ok 5 - manifest drift rejects before a missing dependency can be inspected
+  ---
+  duration_ms: 10.488037
+  type: 'test'
+  ...
+# Subtest: source, dependency and preserved synthetic input mutations reject
+ok 6 - source, dependency and preserved synthetic input mutations reject
+  ---
+  duration_ms: 93.657649
+  type: 'test'
+  ...
+# Subtest: additional libraries, package scopes, symlinks and shadowed dependency resolution reject
+ok 7 - additional libraries, package scopes, symlinks and shadowed dependency resolution reject
+  ---
+  duration_ms: 111.422714
+  type: 'test'
+  ...
+# Subtest: published plan pins the original full lock, source inventory and exactly two synthetic recipes
+ok 8 - published plan pins the original full lock, source inventory and exactly two synthetic recipes
+  ---
+  duration_ms: 3.866184
+  type: 'test'
+  ...
+# Subtest: runner rejects output overwrite, current workspace, missing original workspace and additional CLI arguments
+ok 9 - runner rejects output overwrite, current workspace, missing original workspace and additional CLI arguments
+  ---
+  duration_ms: 172.998026
+  type: 'test'
+  ...
+# (node:40) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: extracts the reported AF3 rank, preserves negatives, and never reconstructs component scores
+ok 10 - extracts the reported AF3 rank, preserves negatives, and never reconstructs component scores
+  ---
+  duration_ms: 11.839624
+  type: 'test'
+  ...
+# Subtest: extracts Boltz confidence_score and explicitly selected whole-complex ipTM
+ok 11 - extracts Boltz confidence_score and explicitly selected whole-complex ipTM
+  ---
+  duration_ms: 5.108225
+  type: 'test'
+  ...
+# Subtest: missing file, missing field, explicit null and real zero remain distinct
+ok 12 - missing file, missing field, explicit null and real zero remain distinct
+  ---
+  duration_ms: 1.82994
+  type: 'test'
+  ...
+# Subtest: verifies exact bytes, not merely equivalent JSON, and rejects incorrect byte counts
+ok 13 - verifies exact bytes, not merely equivalent JSON, and rejects incorrect byte counts
+  ---
+  duration_ms: 1.640698
+  type: 'test'
+  ...
+# Subtest: rejects duplicate keys, escaped duplicate keys, nonfinite tokens and invalid JSON anywhere
+ok 14 - rejects duplicate keys, escaped duplicate keys, nonfinite tokens and invalid JSON anywhere
+  ---
+  duration_ms: 4.815708
+  type: 'test'
+  ...
+# Subtest: rejects coercions and out-of-range scores rather than normalizing them
+ok 15 - rejects coercions and out-of-range scores rather than normalizing them
+  ---
+  duration_ms: 3.621194
+  type: 'test'
+  ...
+# Subtest: forbids arbitrary score paths, caller scores and baseline-direction overrides
+ok 16 - forbids arbitrary score paths, caller scores and baseline-direction overrides
+  ---
+  duration_ms: 2.156029
+  type: 'test'
+  ...
+# Subtest: requires exact native filename, sample and directory association
+ok 17 - requires exact native filename, sample and directory association
+  ---
+  duration_ms: 2.201234
+  type: 'test'
+  ...
+# Subtest: rejects path traversal and alias forms without silently normalizing them
+ok 18 - rejects path traversal and alias forms without silently normalizing them
+  ---
+  duration_ms: 1.965405
+  type: 'test'
+  ...
+# Subtest: requires exact byte membership, unique attempts and unique coordinate paths
+ok 19 - requires exact byte membership, unique attempts and unique coordinate paths
+  ---
+  duration_ms: 3.088648
+  type: 'test'
+  ...
+# Subtest: bounds count, size, nesting and aggregate bytes; forbids shared or text input
+ok 20 - bounds count, size, nesting and aggregate bytes; forbids shared or text input
+  ---
+  duration_ms: 79.989329
+  type: 'test'
+  ...
+# Subtest: rejects invalid UTF-8 and malformed declared identities
+ok 21 - rejects invalid UTF-8 and malformed declared identities
+  ---
+  duration_ms: 0.828384
+  type: 'test'
+  ...
+# Subtest: policy mapping is immutable and present for empty eligible populations
+ok 22 - policy mapping is immutable and present for empty eligible populations
+  ---
+  duration_ms: 0.526063
+  type: 'test'
+  ...
+# Subtest: returned identities and values are stable after caller input mutation
+ok 23 - returned identities and values are stable after caller input mutation
+  ---
+  duration_ms: 5.041803
+  type: 'test'
+  ...
+# (node:48) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: selection-set boundaries prevent pooling from changing the scientific question
+ok 24 - selection-set boundaries prevent pooling from changing the scientific question
+  ---
+  duration_ms: 5.629413
+  type: 'test'
+  ...
+# Subtest: equal condition, generator, target and group weights resist unequal seed counts
+ok 25 - equal condition, generator, target and group weights resist unequal seed counts
+  ---
+  duration_ms: 6.325552
+  type: 'test'
+  ...
+# Subtest: ties use the entire best tier and are independent of candidate order or labels in IDs
+ok 26 - ties use the entire best tier and are independent of candidate order or labels in IDs
+  ---
+  duration_ms: 1.196011
+  type: 'test'
+  ...
+# Subtest: additional worse-ranked candidates do not change selection-set weights
+ok 27 - additional worse-ranked candidates do not change selection-set weights
+  ---
+  duration_ms: 7.897032
+  type: 'test'
+  ...
+# Subtest: all-positive and all-negative sets remain primary; mixed secondary preserves original weights
+ok 28 - all-positive and all-negative sets remain primary; mixed secondary preserves original weights
+  ---
+  duration_ms: 2.13632
+  type: 'test'
+  ...
+# Subtest: partial candidate failure is accounted for without claiming scheduled-job yield
+ok 29 - partial candidate failure is accounted for without claiming scheduled-job yield
+  ---
+  duration_ms: 0.634164
+  type: 'test'
+  ...
+# Subtest: an entirely failed selection set blocks primary and mixed aggregate without being deleted
+ok 30 - an entirely failed selection set blocks primary and mixed aggregate without being deleted
+  ---
+  duration_ms: 1.018122
+  type: 'test'
+  ...
+# Subtest: unrecorded candidates and undeclared cells cannot silently shrink the denominator
+ok 31 - unrecorded candidates and undeclared cells cannot silently shrink the denominator
+  ---
+  duration_ms: 0.797087
+  type: 'test'
+  ...
+# Subtest: unknown outcomes reject instead of becoming failure, even if ranks are complete
+ok 32 - unknown outcomes reject instead of becoming failure, even if ranks are complete
+  ---
+  duration_ms: 2.595539
+  type: 'test'
+  ...
+# Subtest: rejects malformed inventory, cross-set membership, duplicate rows and extra fields
+ok 33 - rejects malformed inventory, cross-set membership, duplicate rows and extra fields
+  ---
+  duration_ms: 3.405106
+  type: 'test'
+  ...
+# Subtest: file receipts bind input and implementation, reject overwrite and ambiguous JSON
+ok 34 - file receipts bind input and implementation, reject overwrite and ambiguous JSON
+  ---
+  duration_ms: 44.904081
+  type: 'test'
+  ...
+# (node:60) [UNDICI-EHPA] Warning: EnvHttpProxyAgent is experimental, expect them to change at any time.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: producer-file values determine baseline tiers while actual coordinates determine method ties
+ok 35 - producer-file values determine baseline tiers while actual coordinates determine method ties
+  ---
+  duration_ms: 165.27512
+  type: 'test'
+  ...
+# Subtest: missing source is explicit, method audits remain, and no paired ranking is fabricated
+ok 36 - missing source is explicit, method audits remain, and no paired ranking is fabricated
+  ---
+  duration_ms: 74.194151
+  type: 'test'
+  ...
+# Subtest: manual numeric overrides, wrong generator extraction, source/coordinate swaps and partial inventories reject
+ok 37 - manual numeric overrides, wrong generator extraction, source/coordinate swaps and partial inventories reject
+  ---
+  duration_ms: 9.607238
+  type: 'test'
+  ...
+# Subtest: capture is immutable across caller changes after invocation
+ok 38 - capture is immutable across caller changes after invocation
+  ---
+  duration_ms: 54.927632
+  type: 'test'
+  ...
+# Subtest: declared all-failed population survives without synthetic scores or a false audit claim
+ok 39 - declared all-failed population survives without synthetic scores or a false audit claim
+  ---
+  duration_ms: 62.371833
+  type: 'test'
+  ...
+# Subtest: one file-level confidence cannot be attached to a selected internal MODEL of an ensemble
+ok 40 - one file-level confidence cannot be attached to a selected internal MODEL of an ensemble
+  ---
+  duration_ms: 46.82573
+  type: 'test'
+  ...
+# Subtest: CLI reads the exact declared producer paths and rejects unexpected files, symlinks and overwrite
+ok 41 - CLI reads the exact declared producer paths and rejects unexpected files, symlinks and overwrite
+  ---
+  duration_ms: 790.040972
+  type: 'test'
+  ...
+1..41
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3194.877293

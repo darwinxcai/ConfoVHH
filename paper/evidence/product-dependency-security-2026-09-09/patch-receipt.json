@@ -1,0 +1,61 @@
+{
+  "scope": "Isolated product security patch; historical replay remains blocked",
+  "baseCommit": "b19cae064f621f97fb460da0d401fba7aa140f1a",
+  "recordedAtUtc": "2026-09-09T02:56:43.266431+00:00",
+  "runtime": "v24.19.0",
+  "npmVersion": "11.9.0",
+  "packageJsonSha256": "3ab167819e8851a37adf7f04999b0a01a0fcd55ec2f485bbf8f5c4aa333e921d",
+  "oldPackageLockSha256": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+  "patchedPackageLockSha256": "fcbbf27caec4ea1ab4397790b6c51da6c0e2a90b18c1dfb2ed9ceddafdf2dabb",
+  "immunumLockRecordUnchanged": true,
+  "immunumIdentities": {
+    "node_modules/immunum/package.json": {
+      "oldSha256": "733c9d00636ec6b88ba3ff7584ecc2fb77380eb5d65750cdcacdd9214299b098",
+      "patchedSha256": "733c9d00636ec6b88ba3ff7584ecc2fb77380eb5d65750cdcacdd9214299b098",
+      "byteIdentical": true
+    },
+    "node_modules/immunum/immunum.js": {
+      "oldSha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00",
+      "patchedSha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00",
+      "byteIdentical": true
+    },
+    "node_modules/immunum/immunum_bg.wasm": {
+      "oldSha256": "68804983b37b3746f65d84c9c6c0e703361ea9191fe3edc3d0748cddad2c646b",
+      "patchedSha256": "68804983b37b3746f65d84c9c6c0e703361ea9191fe3edc3d0748cddad2c646b",
+      "byteIdentical": true
+    }
+  },
+  "allScientificLibFilesUnchanged": true,
+  "install": {
+    "command": [
+      "npm",
+      "ci",
+      "--fetch-retries=0",
+      "--fetch-timeout=30000"
+    ],
+    "exitCode": 0
+  },
+  "checks": {
+    "lint": {
+      "exitCode": 0,
+      "warnings": 21
+    },
+    "typecheck": {
+      "exitCode": 0
+    },
+    "build": {
+      "exitCode": 0
+    }
+  },
+  "boundaries": {
+    "readyForIntegration": false,
+    "historicalContractsChanged": false,
+    "auditGateChanged": false,
+    "newAdvisoryExceptions": false,
+    "scientificCalculationsChanged": false,
+    "predictiveAccuracyMeasured": false,
+    "biologicalValidationAdded": false,
+    "freshBrowserExecution": false,
+    "fullReleaseGatePassed": false
+  }
+}

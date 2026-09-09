@@ -1,0 +1,33 @@
+[
+  {
+    "name": "dependency-graph",
+    "command": [
+      "npm",
+      "ls",
+      "--all"
+    ],
+    "exitCode": 0,
+    "logSha256": "efe25e851f9995cb670eb42d5c3088b68778e4c8d7e56f94a5a5db76c3f042d2"
+  },
+  {
+    "name": "advisory-gate",
+    "command": [
+      "node",
+      "scripts/audit-advisories.mjs"
+    ],
+    "exitCode": 0,
+    "logSha256": "58087ef28098a44eeead1978777c3daab4de55cffb3996a506296e77d789030e"
+  },
+  {
+    "name": "production-audit",
+    "command": [
+      "npm",
+      "audit",
+      "--omit=dev",
+      "--audit-level=moderate",
+      "--json"
+    ],
+    "exitCode": 0,
+    "logSha256": "eced0e07c1e83246b1cfc9c825772510c6002c7f169a018f7449d8d6ccd418fb"
+  }
+]

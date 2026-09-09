@@ -1,0 +1,45 @@
+{
+  "schema": "confovhh-3p0g-generation-inputs-v1",
+  "protocolSha256": "8d3174f717ede953d922466cec93e5397ff443474da6c8addbc904ce8fc8d6e9",
+  "files": {
+    "msa/chain_A.a3m": {
+      "bytes": 8759728,
+      "sha256": "b411a8591549e34e8869b4cca030f6c676fc47c08a2952db310532cd85a092a0"
+    },
+    "msa/chain_B.a3m": {
+      "bytes": 2323693,
+      "sha256": "af72c48f56f9f7279374c1ffe8e438d2dd5bfcf17d7d91a1604168a0af94d73d"
+    },
+    "msa-provenance.json": {
+      "bytes": 7725,
+      "sha256": "e99d65e99de41d7f9742a1e3867b2c145b5296a223abf8f841588de3520df99a"
+    },
+    "protocol.json": {
+      "bytes": 15130,
+      "sha256": "8d3174f717ede953d922466cec93e5397ff443474da6c8addbc904ce8fc8d6e9"
+    }
+  },
+  "prohibitedPayloadsIncluded": false,
+  "nativeCoordinatesIncluded": false,
+  "predictedCoordinatesIncluded": false,
+  "templateFilesIncluded": false,
+  "sequences": [
+    {
+      "entity": 1,
+      "chain": "A",
+      "sequence": "DYKDDDDAMGQPGNGSAFLLAPNRSHAPDHDVTQQRDEVWVVGMGIVMSLIVLAIVFGNVLVITAIAKFERLQTVTNYFITSLACADLVMGLAVVPFGAAHILMKMWTFGNFWCEFWTSIDVLCVTASIETLCVIAVDRYFAITSPFKYQSLLTKNKARVIILMVWIVSGLTSFLPIQMHWYRATHQEAINCYAEETCCDFFTNQAYAIASSIVSFYVPLVIMVFVYSRVFQEAKRQLNIFEMLRIDEGLRLKIYKDTEGYYTIGIGHLLTKSPSLNAAKSELDKAIGRNTNGVITKDEAEKLFNQDVDAAVRGILRNAKLKPVYDSLDAVRRAALINMVFQMGETGVAGFTNSLRMLQQKRWDEAAVNLAKSRWYNQTPNRAKRVITTFRTGTWDAYKFCLKEHKALKTLGIIMGTFTLCWLPFFIVNIVHVIQDNLIRKEVYILLNWIGYVNSGFNPLIYCRSPDFRIAFQELLCLRRSSLKAYGNGYSSNGNTGEQSG",
+      "sequence_sha256": "e9052379ba6dca45a6a4148a53cc1d6ad790f05e4b4f0a9237afe2fcc8638926"
+    },
+    {
+      "entity": 2,
+      "chain": "B",
+      "sequence": "QVQLQESGGGLVQAGGSLRLSCAASGSIFSINTMGWYRQAPGKQRELVAAIHSGGSTNYANSVKGRFTISRDNAANTVYLQMNSLKPEDTAVYYCNVKDYGAVLYEYDYWGQGTQVTVSSHHHHHH",
+      "sequence_sha256": "3e4dbf73ccc8ab7a4fb2fedd17695befe7f2807f17650d8ef60080aef9a8562f"
+    }
+  ],
+  "ligand": {
+    "id": "C",
+    "ccd": "P0G",
+    "role": "agonist identity only; no experimental ligand coordinates"
+  }
+}
