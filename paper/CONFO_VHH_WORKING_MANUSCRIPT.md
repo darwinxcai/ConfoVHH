@@ -2,11 +2,13 @@
 
 Darwin Cai
 
-Working manuscript, 5 September 2026. This draft integrates the completed
-retrospective GPCR application and subsequent selection audit. It is not a
-submitted manuscript or a claim of independent biological validation.
-Affiliation, contributions, funding, competing interests, and venue-specific
-formatting require completion before submission.
+Working manuscript, 9 September 2026. This draft integrates the completed
+retrospective GPCR application, the subsequent selection audit, and the
+pre-registered seventeen-complex perturbation panel. It is not a submitted
+manuscript or a claim of independent biological validation. Affiliation,
+contributions, funding, competing interests, AI-assistance disclosure, and
+venue-specific formatting require completion before submission; the submission
+record at `paper/submission-kit/` tracks what remains.
 
 ## Abstract
 
@@ -22,10 +24,18 @@ be used as a native-pose classification in the observed set. ConfoVHH selected
 an acceptable interface in 18 of 33 jobs, compared with 19 for maximum
 exported predictor score and an analytical uniform-selection expectation of
 18. Only four jobs contained both acceptable and poor candidates; all four
-concerned 3P0G. These retrospective observations support a traceable workflow
-for inspecting model evidence, but do not establish improved native-pose
-selection. Missing coordinates for 85 additional preliminary cognate models,
-absent full PAE, and limited target coverage constrain interpretation.
+concerned 3P0G, so this comparison is underpowered and does not establish
+improved native-pose selection. In a separate pre-registered study on a
+seventeen-complex panel of rigid-body perturbations, the same unchanged
+ranking reached a target-macro average precision of 0.838 (bootstrap
+0.815–0.862) on the twelve complexes not used during development, against
+0.635 for a random tie-breaking floor and 0.725 for its strongest single
+feature, and ranked an acceptable pose first on all twelve targets. The
+ordering therefore discriminates interface quality beyond the development set,
+while adding no measurable benefit over the predictor's own exported score on
+the predictions examined. Missing coordinates for 85 additional preliminary
+cognate models, absent full PAE, limited target coverage, and the perturbative
+construction of the panel constrain interpretation.
 
 ## Introduction
 
@@ -198,6 +208,36 @@ tie-weighted expectations involved no random draws. We reported results by
 reference complex and separately identified jobs with candidates on both
 sides of the acceptability boundary.
 
+### Pre-registered perturbation panel
+
+The retrospective corpus covers three receptor targets and had been examined
+during development. To ask whether the ranking depends on that small set, we
+ran a separate pre-registered study on a seventeen-complex public panel.
+
+The protocol was frozen before any pose existed and before the runner was
+written. The specification `validation/panel-extension-v1/study-spec.json`
+(SHA-256 `1ac4ccbb6530c72f95b1b1343c9615327abbdad4b43d37e286368ac778d3d825`) was
+committed at 17:57:15 UTC on 3 September 2026; the first runner commit followed
+at 18:02:07 UTC. It named the primary population, the comparator arms, the
+acceptance rule, and three outcome branches in advance, and prohibited post-hoc
+rescue. The twelve complexes the DockQ development pilot had never used form
+the primary endpoint. The five pilot complexes are reported separately and
+marked contaminated.
+
+Each target contributed 72 rigid-body perturbations of its deposited complex,
+1,224 poses in total; two duplicates were excluded and none errored, leaving
+1,222 poses labelled by unmodified DockQ 2.1.3 at the same 0.23 boundary, of
+which 775 were acceptable. Alongside the shipped ranking we ran the previous
+ordering, four single-feature ablations, and a random tie-breaking floor, so
+the composite is measured against the components it is built from. Metrics
+were aggregated target-macro with a hierarchical cluster bootstrap over 10,000
+replicates. Software: ConfoVHH 0.5.0, Node 22.18.0, DockQ 2.1.3.
+
+Every pose in this panel is a perturbation of a solved structure. The
+population is easier and differently shaped than predictor output, and this
+study is neither a prediction-selection experiment nor the separately
+pre-registered hard-decoy holdout, which remains unexecuted.
+
 ## Results
 
 ### Paired interface and receptor measurements
@@ -276,6 +316,47 @@ preceding audit. Across all 33 jobs, binary selection outcomes agreed in 32
 and favored the exported-score baseline in one. These observations do not
 support a claim of ConfoVHH selection superiority in this set.
 
+Only four of the 33 jobs could discriminate between selection rules at all.
+The comparison is correspondingly underpowered, and the one-job difference
+between ConfoVHH and the exported-score baseline should not be read as
+evidence for either rule.
+
+### Ranking generalization on the perturbation panel
+
+On the twelve previously unused complexes, the prespecified rule was met and
+the frozen outcome branch was `generalizes`. Average precision, aggregated
+target-macro, with bootstrap intervals over 10,000 replicates:
+
+| Ranking arm | Average precision | Interval | AUROC | Precision at 1 |
+|---|---:|---|---:|---:|
+| ConfoVHH ranking policy 0.6.0 | 0.838 | 0.815–0.862 | 0.762 | 1.000 |
+| Preceding evidence ordering 0.4 | 0.713 | 0.687–0.745 | 0.609 | 0.995 |
+| Interface burial alone | 0.725 | 0.685–0.762 | 0.698 | 0.000 |
+| CDR contact share alone | 0.693 | 0.659–0.732 | 0.664 | 0.350 |
+| Contact count alone | 0.645 | 0.601–0.687 | 0.570 | 0.083 |
+| Clash burden alone | 0.629 | 0.586–0.674 | 0.524 | 0.245 |
+| Random tie-breaking floor | 0.635 | 0.618–0.660 | 0.500 | 0.635 |
+
+The shipped interval overlaps no comparator interval. Its average-precision
+lift over the random floor is 1.32 (1.283–1.360).
+
+Two features of this table are more informative than the summary value.
+Interface burial alone reaches an average precision of 0.725 but ranks an
+unacceptable pose first on all twelve targets, whereas the composite ordering
+ranks an acceptable pose first on all twelve. Ordering quality averaged over a
+list and ordering quality at the position a reviewer reads first are separable
+properties. Second, per-target average precision ranges from 0.787 (5JQH-A-C)
+to 0.905 (6B73-B-C) with precision at 1 of exactly 1.000 on every target, so
+the panel result is not carried by a subset of agreeable structures.
+
+On all seventeen targets the shipped average precision is 0.816, and on the
+five reused pilot targets alone it is 0.764; both populations are contaminated
+and neither is the endpoint. These perturbation results establish that the
+ordering is not specific to the pilot's five complexes. They do not establish
+that it selects correct poses among predictor-generated candidates, and the
+study record sets its `establishesGeneralizationToPredictorOutput` flag to
+false.
+
 ## Figure 1
 
 ![ConfoVHH geometry and official DockQ for all 165 retained models](../validation/gpcr-paper-development-2026-09-04/paper-evidence/figures/confovhh-native-interface-recovery.png)
@@ -307,6 +388,26 @@ receptor readout, a coordinate evidence flag, a model confidence score, and a
 native-interface score answer different questions. Reporting these alongside
 each other makes their disagreement available for review. Whether that
 workflow improves experimental decisions remains unmeasured.
+
+Read together, the two studies locate the limitation more precisely than
+either does alone. On perturbed deposited complexes the ordering separates
+acceptable from unacceptable interfaces well ahead of chance and ahead of every
+component feature it is built from, so the geometric criterion is not inert.
+On predictor output it produced no measurable benefit over the exported
+confidence score. The most economical reading is that the ordering captures
+real interface geometry, and that for the predictions examined the producer's
+own confidence already carried that information. A weaker criterion and a
+redundant criterion are different failure modes with different remedies, and
+the perturbation panel argues against the first.
+
+That reading is provisional in both directions. The selection comparison had
+four informative jobs on one reference complex, which is too few to establish
+redundancy. The perturbation panel is easier than predictor output by
+construction and cannot establish the converse. Distinguishing the two
+requires a decoy population the ranking has not seen and that a predictor did
+not also score, which is the purpose of the separately pre-registered
+hard-decoy protocol; approximating it with the present data would forfeit that
+design.
 
 The present observations also separate generation and selection limitations.
 For thirteen retained jobs, all five candidates were below DockQ 0.23; changing
