@@ -1,5 +1,7 @@
 # 3P0G current-ConfoVHH development pilot
 
+**Later operator report:** an A100 attempt reportedly produced no poses because Triton could not find a system C compiler. The [compiler recovery addendum](COMPILER_RECOVERY.md) and additional JIT check now govern a technical retry. Earlier preparation evidence below is retained; remote failure artifacts and billing still require verification.
+
 **Inputs and reference controls are prepared; generation has not run and the
 ConfoVHH/confidence/DockQ comparison is unavailable.** No GPU has been allocated
 or charged by this session. The user reports a funded Runpod account, but

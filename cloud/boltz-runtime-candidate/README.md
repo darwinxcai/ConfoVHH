@@ -2,7 +2,9 @@
 
 **Later input recovery:** the separately frozen [single-case 3P0G pilot](../../validation/single-case-development-3p0g-2026-09-09/README.md) now has newly captured MSAs and verified real checkpoint/cache bytes. The input-blocker descriptions below record this runtime candidate’s earlier preparation state; they are not the current status of that new pilot. Actual GPU installation and inference remain pending.
 
-**Dependencies resolved; image not built, installed or tested on a GPU.** This
+**Runtime recovery update:** the operator reports a successful A100 package installation and original GPU smoke check, followed by inference failure because Triton could not find a C compiler. This chat has not inspected those remote logs. See the [compiler recovery record](../../validation/single-case-development-3p0g-2026-09-09/COMPILER_RECOVERY.md). The compiler/JIT fix below has not yet run on a GPU.
+
+**Original preparation state: dependencies resolved; image not built, installed or tested on a GPU here.** This
 directory prepares a technical runtime pilot. It does not clear a study target,
 recover an MSA, authorize an independent benchmark, or demonstrate pose-selection
 performance. The original frozen generator records remain unchanged.
@@ -30,14 +32,34 @@ are under `evidence/image/`. The dependency receipt under `evidence/` verifies
 the downloaded Boltz wheel's actual bytes against the previously recorded
 SHA-256; other resolved package artifacts have not all been downloaded. No
 final container digest, complete build reproducibility or GPU compatibility is
-claimed.
+claimed for the corrected image.
 
 ## Build and bounded runtime check
 
 For an initial technical session, a Pod can also start directly from the pinned
 official base image and install these locks into a new virtual environment.
-This avoids needing Docker inside the Pod. From a checkout of the recorded
-ConfoVHH commit, with `/workspace/confovhh-boltz` not already present:
+This avoids needing Docker inside the Pod. The base must receive the host C/C++
+toolchain before compilation. On this Ubuntu base, as root, run the following
+and retain the complete installation log and package inventory:
+
+```sh
+apt-get update
+DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends build-essential
+mkdir -p /workspace/runtime-results
+dpkg-query -W -f='${binary:Package}\t${Version}\t${Architecture}\n' > /workspace/runtime-results/os-packages.tsv
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
+```
+
+Use the active Python interpreter's own headers. Installing an arbitrary
+`python3-dev` package may supply a different Python minor version. The new
+compiler check verifies `Python.h` against the running interpreter and compiles
+and executes a small C program. OS package resolution is recorded, not claimed
+to be an immutable snapshot. Retain the final container digest if building an
+image, or the base digest plus installed package identities for a direct Pod.
+
+From a checkout of the recorded recovery commit, with
+`/workspace/confovhh-boltz` not already present:
 
 ```sh
 /opt/conda/bin/python -I -c 'import sys; assert sys.version_info[:2] == (3, 11)'
@@ -53,11 +75,14 @@ env -u PYTHONPATH -u PYTHONHOME /workspace/confovhh-boltz/bin/python -I \
   scripts/cloud/check-boltz-runtime.py \
   --lock cloud/boltz-runtime-candidate/requirements-linux-py311.lock \
   --output /workspace/runtime-results/runtime-smoke.json
+env -u PYTHONPATH -u PYTHONHOME /workspace/confovhh-boltz/bin/python -I \
+  scripts/cloud/check-boltz-toolchain.py \
+  --output /workspace/runtime-results/toolchain-jit
 ```
 
 Stop at any failed command. Retain the installation log, base-image digest,
-checkout identity and smoke receipt. These commands are prepared instructions;
-they have not been executed in this environment. For a reusable custom image,
+checkout identity and smoke receipt. The updated full commands are prepared instructions;
+they have not been executed on a GPU by this chat. For a reusable custom image,
 the same installation is represented by the candidate Dockerfile below.
 
 From the repository root, on a Docker-capable Linux/amd64 build host:
@@ -69,7 +94,7 @@ docker build --platform linux/amd64 \
 ```
 
 Keep the build log and final image digest. The Dockerfile-specific ignore file
-limits the build context to the two locks and runtime checker. The base and
+limits the build context to the two locks and both runtime checkers. The base and
 isolated virtual environment include large CUDA packages, so building needs
 substantial disk space and network transfer. No checkpoint, MSA or prediction
 data is part of the image. No hosted image has been published by this change.
@@ -81,9 +106,14 @@ runtime. Create an empty writable results directory first:
 docker run --rm --gpus all \
   --mount type=bind,src="$(pwd)/runtime-results",dst=/results \
   confovhh-boltz:runtime-candidate \
-  python /opt/confovhh-runtime/check-boltz-runtime.py \
+  python -I /opt/confovhh-runtime/check-boltz-runtime.py \
     --lock /opt/confovhh-runtime/requirements.lock \
     --output /results/runtime-smoke.json
+docker run --rm --gpus all \
+  --mount type=bind,src="$(pwd)/runtime-results",dst=/results \
+  confovhh-boltz:runtime-candidate \
+  python -I /opt/confovhh-runtime/check-boltz-toolchain.py \
+    --output /results/toolchain-jit
 ```
 
 The checker records package/runtime identities, CUDA and GPU information, an
@@ -93,7 +123,19 @@ runtime smoke check, **not a model inference, acceleration-kernel validation or
 scientific readiness certificate**. It neither downloads weights nor contacts
 an MSA service. Save this receipt and the image digest before ending the pod.
 
-## Inputs still required for a model pilot
+## Fresh compilation is required before retry
+
+The original GPU matmul/help check remains unchanged because it is frozen.
+A recovery controller must additionally require the new toolchain check's full
+`PASS` receipt before invoking the unchanged generation runner. A
+`COMPILER_ONLY_PASS` result does not authorize inference. The JIT check uses
+fresh Triton and TorchInductor cache directories, executes an explicit Triton
+GPU kernel, synchronizes, and compares its output with known values. A full
+pass exercises compilation/launch; it still does not prove every Boltz or
+cuEquivariance kernel works. Preserve failures and stop before inference if
+any check fails. Never disable kernels or change precision to make the test pass.
+
+## Inputs originally still required for a model pilot
 
 Boltz 2.2.1's inspected `download_boltz2()` checks for `mols.tar`, the extracted
 `mols/` directory, `boltz2_conf.ckpt` and `boltz2_aff.ckpt` before validating

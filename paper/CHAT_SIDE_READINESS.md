@@ -1,6 +1,10 @@
 # Coding and predictive-validation work executable in this chat
 
-Updated 9 September 2026. This record tracks repository, data-processing and
+Updated 9 September 2026.
+
+**Latest execution report:** the connected operator reports a zero-pose A100 failure caused by a missing Triton C compiler, with logs preserved and the Pod terminated. This chat has prepared a [compiler/JIT recovery](../validation/single-case-development-3p0g-2026-09-09/COMPILER_RECOVERY.md); the corrected GPU execution and resulting DockQ comparison are still pending. The operator report has not yet been independently checked against its raw artifacts.
+
+This record tracks repository, data-processing and
 computational-evaluation work. Author administration and researcher recruitment
 are outside this progress accounting.
 
