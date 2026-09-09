@@ -1,0 +1,1374 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceCommit": "b19cae064f621f97fb460da0d401fba7aa140f1a",
+  "recipes": [
+    {
+      "id": "integration-verifier",
+      "file": "scripts/hard-decoy-v3/verify-integration-state.mjs",
+      "format": "json"
+    },
+    {
+      "id": "integration-tests",
+      "file": "tests/hard-decoy-v3-integration-state.test.mjs",
+      "format": "tap",
+      "testNames": [
+        "the authoritative v3 integration state replays every current pre-label evidence layer and stays blocked",
+        "the integration-state policy rejects authority, label access, count drift, and threshold relaxation"
+      ]
+    }
+  ],
+  "expectedResult": {
+    "status": "DRAFT",
+    "targetFreezeGate": "BLOCKED",
+    "selectedProtocol": "HARD_DECOY_PROTOCOL_V3.md",
+    "selectedDesign": "sealed-one-way-native-epitope-boolean-oracle",
+    "sourceEntries": 287,
+    "entryMetadataRows": 287,
+    "polymerEntities": 1401,
+    "repeatedRawResponses": 24,
+    "entryMetadataCaptures": 2,
+    "normalizedCaptureAgreement": true,
+    "dispositionRows": 287,
+    "resolvedDispositionRows": 15,
+    "pendingDispositionRows": 272,
+    "developmentMetadataNodes": 17,
+    "exactEvidenceNodes": 304,
+    "exactEvidenceUnorderedPairs": 46056,
+    "positiveExactOrAmbiguousEvidencePairs": 3013,
+    "candidateNodesConnectedToDevelopmentByDefiniteEvidence": 33,
+    "candidateNodesConnectedToDevelopmentByInclusiveEvidence": 262,
+    "vhhMetadataProfiles": 303,
+    "vhhNumberedProfiles": 302,
+    "vhhUnavailableProfiles": 1,
+    "vhhSequenceUnorderedPairs": 46056,
+    "possibleVhhSequenceEvidencePairs": 20859,
+    "vhhThresholdPregraphComponents": 34,
+    "candidateNodesConnectedToDevelopmentByPossibleVhhSequenceEvidence": 57,
+    "boundedAuditReviewedLedgerRecords": 13,
+    "boundedAuditReviewedPdbEntries": 20,
+    "provisionalGroups": 7,
+    "formallyClearedGroups": 0,
+    "requiredIndependentGroups": 10,
+    "approvalReady": false,
+    "executionAuthorized": false
+  },
+  "files": [
+    {
+      "path": "HARD_DECOY_PROTOCOL.md",
+      "role": "control",
+      "bytes": 13056,
+      "sha256": "9a6c441d844069f52f87e60fa2cf00dfc671b588a19454d0479d188e4cb46c1f"
+    },
+    {
+      "path": "HARD_DECOY_PROTOCOL_V2.md",
+      "role": "control",
+      "bytes": 18475,
+      "sha256": "9c38f2d2f7ed2ce4acd5b6730fedd6a37151fe992a808bfefc4268888f862421"
+    },
+    {
+      "path": "HARD_DECOY_PROTOCOL_V3.md",
+      "role": "control",
+      "bytes": 17193,
+      "sha256": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376"
+    },
+    {
+      "path": "LEAKAGE_COMPONENT_DEVELOPMENT_PROTOCOL.md",
+      "role": "control",
+      "bytes": 7848,
+      "sha256": "fee5eb0b38c5e912668356740bb6c2d2dcb78eb77e0d27c6fdcacbed3092dff8"
+    },
+    {
+      "path": "node_modules/immunum/immunum.js",
+      "role": "dependency",
+      "bytes": 10138,
+      "sha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00"
+    },
+    {
+      "path": "node_modules/immunum/immunum_bg.wasm",
+      "role": "dependency",
+      "bytes": 698218,
+      "sha256": "68804983b37b3746f65d84c9c6c0e703361ea9191fe3edc3d0748cddad2c646b"
+    },
+    {
+      "path": "node_modules/immunum/package.json",
+      "role": "dependency",
+      "bytes": 564,
+      "sha256": "733c9d00636ec6b88ba3ff7584ecc2fb77380eb5d65750cdcacdd9214299b098"
+    },
+    {
+      "path": "package-lock.json",
+      "role": "manifest",
+      "bytes": 466779,
+      "sha256": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54"
+    },
+    {
+      "path": "package.json",
+      "role": "manifest",
+      "bytes": 3161,
+      "sha256": "825b0fddb663495ff78c8d748ccf1cc4a86dfdcd11d333489619693a2abb6f8c"
+    },
+    {
+      "path": "scripts/hard-decoy-v3/verify-design-record.mjs",
+      "role": "source",
+      "bytes": 11031,
+      "sha256": "eb7c4f2e3cfd910371ac9ba8955055a7a749283e6cbcfac726b5d1ef5a057c88"
+    },
+    {
+      "path": "scripts/hard-decoy-v3/verify-integration-state.mjs",
+      "role": "source",
+      "bytes": 34377,
+      "sha256": "ef650db9abbfa00a7860ff3e96c9ccecf9ad0beeff4ce2c003f34e7882222483"
+    },
+    {
+      "path": "scripts/hard-decoy/oracle/canonical-json.mjs",
+      "role": "source",
+      "bytes": 7733,
+      "sha256": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f"
+    },
+    {
+      "path": "scripts/hard-decoy/oracle/secure-io.mjs",
+      "role": "source",
+      "bytes": 4928,
+      "sha256": "50c61c3417bd4cf96b457b2c29bd1124ddadc3590d95a1b8b56253357699d55f"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-development-metadata.mjs",
+      "role": "source",
+      "bytes": 39421,
+      "sha256": "7e04b0a5ce6545f74d82029af4f267ffeb747a9449abc6be123534eb2ba01ad7"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-disposition-seed.mjs",
+      "role": "source",
+      "bytes": 27678,
+      "sha256": "00097827d3e6ae983ca75943d8a74c748ac80968574a083091a79a58c37c1c2b"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-entry-metadata.mjs",
+      "role": "source",
+      "bytes": 58995,
+      "sha256": "77afbf8b485976fd902de4f8377dcf9f02e90d93328a1da06546c8d7aae7c562"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-exact-evidence-pregraph.mjs",
+      "role": "source",
+      "bytes": 40524,
+      "sha256": "79bf92c0288fb115542d95c9930baaa3789207630c4e1e232b703caaf0e97df7"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-source-universe.mjs",
+      "role": "source",
+      "bytes": 42538,
+      "sha256": "fd9a652972a4372fe6e0cb85c06a451dcfb609368ac74b988e60c79e3c2606e0"
+    },
+    {
+      "path": "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs",
+      "role": "source",
+      "bytes": 67510,
+      "sha256": "5e46e17d7f14315bd9f87da60dffb7db7ce7a328c6db96e1e8f9fe8c9662ffeb"
+    },
+    {
+      "path": "scripts/hard-decoy/verify-v3-census-contracts.mjs",
+      "role": "source",
+      "bytes": 13387,
+      "sha256": "b960649b28d2f6574a192f2b8141569ebb8f2a40b5c6b896b676001a6bb52356"
+    },
+    {
+      "path": "scripts/hard-decoy/verify-v3-entry-metadata-contracts.mjs",
+      "role": "source",
+      "bytes": 19954,
+      "sha256": "418ef2f99a6aefef5cb35d0d03b24579f0f7405d725d65d07acddb48e7605564"
+    },
+    {
+      "path": "tests/hard-decoy-v3-integration-state.test.mjs",
+      "role": "source",
+      "bytes": 3468,
+      "sha256": "7ebfc48d7e36823bfc466c1a7ebc56c7576132212738a19d6989e72e15789b43"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v2/prelabel-census/checksums.sha256",
+      "role": "control",
+      "bytes": 1140,
+      "sha256": "e2020cf5863246058d3c89d974b49da0d5d41803904b899670712f1509609502"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json",
+      "role": "control",
+      "bytes": 4270,
+      "sha256": "d4cda5ecfa060dc2dc0d5147114946f8d059dce983d9fe4ac10a0c5509ad9778"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/DEVELOPMENT_METADATA_COMPLETION_2026-08-29.json",
+      "role": "control",
+      "bytes": 1787,
+      "sha256": "c04c62b46ccc5f2a9c64d26ee6f801208e1a9afe0e88e7db0c43eeb6a1e104c0"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/ENTRY_METADATA_SNAPSHOT_ATTESTATION_2026-08-29.json",
+      "role": "control",
+      "bytes": 2432,
+      "sha256": "a9663b3d7ca701ac3ef2d1d647e137c8d9d4c9c423173907c942a3b914084bf3"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/EXACT_EVIDENCE_PREGRAPH_ATTESTATION_2026-08-29.json",
+      "role": "control",
+      "bytes": 2419,
+      "sha256": "aafa8401a9401155a7c0ed0fa0cbc6bdf831720f4e5d8d5413fe15cd34c9e096"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json",
+      "role": "control",
+      "bytes": 10939,
+      "sha256": "e06e92945c8591d1ca64a12f8f352ecd682de36ffc9083e248ea2c3c52c64ec1"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/SOURCE_SNAPSHOT_ATTESTATION_2026-08-29.json",
+      "role": "control",
+      "bytes": 2731,
+      "sha256": "f53cefaa1d2f5e490b613b67bbbf243ffb7c6326479a469a3a9009ae5cca00b9"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/SOURCE_SNAPSHOT_IMPORT_RECEIPT_2026-08-29.json",
+      "role": "control",
+      "bytes": 1589,
+      "sha256": "c10c3283763986d62a02bdd7221e10e3d0afd9fad26f1414f8bbdf66a3348a51"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/VHH_NUMBERING_CORRECTION_2026-08-30.json",
+      "role": "control",
+      "bytes": 2162,
+      "sha256": "414c333525977126e84915fd9154af7403ad9cddc3552349f34b7c83cef0e461"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/VHH_SEQUENCE_PREGRAPH_ATTESTATION_2026-08-30.json",
+      "role": "control",
+      "bytes": 2973,
+      "sha256": "02d406cfd183cac0a913718d75bffdcd461c7e9ff435654fc320b7824ec07c88"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/README.md",
+      "role": "metadata-input",
+      "bytes": 5096,
+      "sha256": "957fd5a93b39d3de1ec64e23981c011398ac15eb9fa9c33f85c2c777a555fc51"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/access-state.json",
+      "role": "metadata-input",
+      "bytes": 1448,
+      "sha256": "722319b5ae655272dcfdb890196a723f23cc226d8d71cf756e635a327c13dbf5"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/audit-state.json",
+      "role": "metadata-input",
+      "bytes": 1762,
+      "sha256": "084f1e939e12603ba613db15e11564dfbea4a450911b6da948916ccad341ea72"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 569,
+      "sha256": "588077b4bda2b3589395fa71509c4be63747c425f43776168b155139a504b976"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/dispositions.jsonl",
+      "role": "metadata-input",
+      "bytes": 20155,
+      "sha256": "9743428646cf523c453940fede9d3e69388a42bfdadb5bf1e84e81bad8b1e24a"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/provenance.json",
+      "role": "metadata-input",
+      "bytes": 9129,
+      "sha256": "c587d85445cb61f8fd82f7958c376201dd286c4d7049c3754e63e5ae2c5ea55b"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/verify.mjs",
+      "role": "metadata-input",
+      "bytes": 5201,
+      "sha256": "937a4478cdc59c69f99327b38009f51920c21674e89bb166de28bf6dd2e4a79d"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/census-audit-2026-08-29/verify.test.mjs",
+      "role": "metadata-input",
+      "bytes": 2318,
+      "sha256": "77dc11e30adb1cb4979fb6025a79bb9259e21d2629b4998bae264a10b82b2c4e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/design-record/README.md",
+      "role": "metadata-input",
+      "bytes": 1320,
+      "sha256": "94c59fecf57aaa9cad1474febddeffd1c35d9ce3a04a743215320baed835c0f9"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/design-record/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 513,
+      "sha256": "dbc489509f38deb467016fa96a2f45a6d63c14a5804865569b222fa2bf1e97fd"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/design-record/design-state.json",
+      "role": "metadata-input",
+      "bytes": 1269,
+      "sha256": "fa08c26033e0b30ff8068f7102054de2b546921dae62384715e88be505497293"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/design-record/isolation-contract.json",
+      "role": "metadata-input",
+      "bytes": 1269,
+      "sha256": "6007ce6a0aadc062393d24a4ffe594bfd410252b8e360eb36d8befb893682458"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/design-record/oracle-contract.json",
+      "role": "metadata-input",
+      "bytes": 2951,
+      "sha256": "cb92543c2035661093c21a7faff5398b6752c89392323fdd1d6a2c9bcd068b6f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/design-record/precommit-inventory.json",
+      "role": "metadata-input",
+      "bytes": 800,
+      "sha256": "f831e0542c63931b07326ea651f9afded9148db2ecfdbbbebc0fd76df8ff8bd3"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/design-record/protocol-lock.json",
+      "role": "metadata-input",
+      "bytes": 1163,
+      "sha256": "0e036d5633ae69221343ef69ecb93207ee24e29bd51765a3a24c157f7c75d4b3"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-contract-2026-08-29.json",
+      "role": "control",
+      "bytes": 4924,
+      "sha256": "7054f6d17dc63d3f96e255b88ed3d228ddaba72b09dc3aa8230afa699cfb4f17"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/README.md",
+      "role": "metadata-input",
+      "bytes": 977,
+      "sha256": "9f04e18b4e1e1207407dbff318dd52a5b4f6949a16904382d14c1767399343f2"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 795,
+      "sha256": "add32255432d635d55657f200636d61134e726e5bf2071130df1dcf94b546758"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl",
+      "role": "metadata-input",
+      "bytes": 31442,
+      "sha256": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl",
+      "role": "metadata-input",
+      "bytes": 38849,
+      "sha256": "8e2219f94d91bb3a8822e56a1e43f20cc652a86bc9458a9af76013f96e3c5be7"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/manifest.json",
+      "role": "metadata-input",
+      "bytes": 4957,
+      "sha256": "ba6d827c5ccd7aed713f6eb0ec3913eb0d0efbb4ba1b3b913efb0313fbc12c7d"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/missing-entries.jsonl",
+      "role": "metadata-input",
+      "bytes": 6363,
+      "sha256": "b993c59f64d1f15e68c5fe8f481c75a1c7d12bae433a549e842a76ec2167f1f9"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/raw/rcsb-development-metadata-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 4723,
+      "sha256": "b3f7567b586c36946f4493d231c198e7d425bc038a5233ec9f8069b7bad13946"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/raw/rcsb-development-metadata-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 4723,
+      "sha256": "b3f7567b586c36946f4493d231c198e7d425bc038a5233ec9f8069b7bad13946"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/requests.jsonl",
+      "role": "metadata-input",
+      "bytes": 1208,
+      "sha256": "e19ef1df23271eb37d0a3c890e89d3ce9ea84d017db8e265e871917bab2675fb"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/summary.json",
+      "role": "metadata-input",
+      "bytes": 975,
+      "sha256": "444b631c311396b5bec766111dc2eb4b7c7cdbba72360920ffcfafb6bd909151"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/README.md",
+      "role": "metadata-input",
+      "bytes": 957,
+      "sha256": "34e5ed68b6d992b281c42ee3a930c2dc952c5be1679239051436e7e2a6f4be7d"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 326,
+      "sha256": "f175b92ed43f80ecda1ea12f960b9e7f41621113781512e555d08072a30518ab"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/entry-dispositions.jsonl",
+      "role": "metadata-input",
+      "bytes": 297332,
+      "sha256": "1687775f2495447475dbffccdc27b8ded042d7c235669635672b6d3afe61e894"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/manifest.json",
+      "role": "metadata-input",
+      "bytes": 3401,
+      "sha256": "5ed4d5e19c3e4b005a73e589c62da4d81c245f77a9395e817a23b8827ddd5f9f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29/summary.json",
+      "role": "metadata-input",
+      "bytes": 957,
+      "sha256": "404cb9687bc7564e71208e9e69557807eb56a7a276bf43d414ddc81e44d0d93e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/disposition-seed-contract-2026-08-29.json",
+      "role": "control",
+      "bytes": 3315,
+      "sha256": "469d9025eec0ef929a099922037fccbc1eb77452137d18309f7e92107ea40933"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-draft/README.md",
+      "role": "metadata-input",
+      "bytes": 986,
+      "sha256": "334407ab0cc9dd50a05c4c5c572afefcccfc02452cf60394d23b3316adde584d"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-draft/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 265,
+      "sha256": "0b70132e6e08c0dbff124fb2df3f79d7f0e08af16dd8e9f37e929d937f44dff8"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json",
+      "role": "metadata-input",
+      "bytes": 4019,
+      "sha256": "bbf10ef8ebf057dde42969fbd166bcbd2bd437902a76064d7ad8fcea9faa16b7"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql",
+      "role": "metadata-input",
+      "bytes": 1045,
+      "sha256": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/batch-plan.json",
+      "role": "metadata-input",
+      "bytes": 7596,
+      "sha256": "201688d6a1c6df8f26dfd0d8e12eeb02ee81fcaaab53f1863e170713d0168f0f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 3383,
+      "sha256": "c83637e796182e1b34607c033197ab8b4ecaf48b56dec38ff8e329c6a01d095e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/entities.jsonl",
+      "role": "metadata-input",
+      "bytes": 1293114,
+      "sha256": "a7572b82b7d3609527f34012f74b215872e31ab8bb54ce5c2b38d4e65b3c8c2d"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/entries.jsonl",
+      "role": "metadata-input",
+      "bytes": 1730437,
+      "sha256": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/manifest.json",
+      "role": "metadata-input",
+      "bytes": 34325,
+      "sha256": "dbf1d852cdf584c5eaffcc40b227ea0e27aa3b5d60a1709ab72ba5bd5d4f1a29"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-001-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 79708,
+      "sha256": "70b6248f4c34655880ac9cfd700ea845b315bfb0c3f77d77701896c1513fde5f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-001-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 79708,
+      "sha256": "0f28e57e1315e8b39e6e641da8ac9ea2816210e4703e70c59df5966725ada441"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-002-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 107772,
+      "sha256": "ef27b8507d1dc48cad5df70c7dacba673382750df12f37e72ee68e7dbdb99397"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-002-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 107772,
+      "sha256": "9ea7eec3ac1c3c7909c7d88ec14428faa32c0e1d4dafdf338b846910a1bfa2bb"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-003-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 110438,
+      "sha256": "d0a08f570f733d69b2ec5fe38df5fb2a3c14518fe2e7d5120843454ae2e507a8"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-003-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 110438,
+      "sha256": "af5a0189f72dd8cd254bf0bf1ae39491fa38350e35c6926938c3eef0642a1cab"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-004-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 120140,
+      "sha256": "e4c37d609bfe30f7270cdee945edd1b6b2452d92ff6f741d9242e40b62e24e25"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-004-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 120140,
+      "sha256": "c28b71dbd1cb095d95d78461239e064a9025ea2ac4947ed54a5d82c96447b963"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-005-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 132397,
+      "sha256": "042e40982b463ace878911a0171fde901315ec28b3bfd1273285d5803cd6289f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-005-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 132397,
+      "sha256": "33b0fb65fba2fb5839cbd51ae82006a4055ce397f7a4406c0df161f9a5328a46"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 124602,
+      "sha256": "ba42dd902b66d921af5fa42776b5d17ef010308443f6bd38655f3aaee39e26cb"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-006-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 124602,
+      "sha256": "74ffd19dab443160197132473ef7b716150ee88a32f1a1d43496536d07a50500"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-007-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 115950,
+      "sha256": "ac5faac852fa58dc8965702372f912e328c9d8cd1b4c6ee0fda6597e98e12f22"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-007-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 115950,
+      "sha256": "f401bcd50a6bddb45ba697b01d3e33ec5fd24549a2111d6cdd6b1f1966311ba6"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-008-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 114601,
+      "sha256": "60f163f6d531ad3df076a29d3b849ad8502e729ead20824e553827550a13fa86"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-008-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 114601,
+      "sha256": "e5d36cc3a113360b760263744adbe3a1a16acbe9b2f77d546510cc5c54509aff"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-009-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 123776,
+      "sha256": "780463518c6b1dc8917a50d656a6405cf68b71fd397a1417a9fd481b1666137e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-009-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 123776,
+      "sha256": "120026c6fb7160e8b321bdf1b7dca1f1cdbde9e3b2952af92781f29cf404acfc"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-010-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 112639,
+      "sha256": "9a09530f2e4df874c37b14a12bffcfc9f4b8807ba22b702d465437f26057a691"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-010-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 112639,
+      "sha256": "e0e4f130324d23c95a0478d9401873fa804a8bdbc0dbaa66a8d203d46f697b9d"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-011-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 127386,
+      "sha256": "875af7d9e25a2ecbb45c5731e904af558be22a512c5750476712a9552ca738d6"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-011-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 127386,
+      "sha256": "a703f5f0e4083c1664570ec2a19ca9d91d851d879a99c606d9ba98643c67a708"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-012-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 47161,
+      "sha256": "ec5687dddac87351846481849b20a1cb4c9b4de2e531efe9df05ad89332e2ff1"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/raw/rcsb-entry-metadata-batch-012-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 47161,
+      "sha256": "7b2ace66be421239576b8e6efd73fed0b259d40bb3d0271c719390480b199e2a"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/requests.jsonl",
+      "role": "metadata-input",
+      "bytes": 22428,
+      "sha256": "51bad6f6c8c07f6fefd38e1c207b63bd6a02040c4047d027f0f42e6def289469"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/summary.json",
+      "role": "metadata-input",
+      "bytes": 766,
+      "sha256": "599eb97262cdbe440079653f9bbacb1e3b8946b2b6437f1163c615c38f413349"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/summary.md",
+      "role": "metadata-input",
+      "bytes": 980,
+      "sha256": "75eca842a061faeca278515a977957392cfca2357659e61e07f1332558765cbf"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z/triage-signals.jsonl",
+      "role": "metadata-input",
+      "bytes": 152088,
+      "sha256": "7cb53cad9c3b4faee1972bd772c635787595476c77e50fa546f0e4540d3c1a51"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/batch-plan.json",
+      "role": "metadata-input",
+      "bytes": 7596,
+      "sha256": "201688d6a1c6df8f26dfd0d8e12eeb02ee81fcaaab53f1863e170713d0168f0f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 3383,
+      "sha256": "5fe666115b21325ce2bad42cb9412be0049e535e5a15031d8731b4d9828d879d"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entities.jsonl",
+      "role": "metadata-input",
+      "bytes": 1293114,
+      "sha256": "a7572b82b7d3609527f34012f74b215872e31ab8bb54ce5c2b38d4e65b3c8c2d"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "role": "metadata-input",
+      "bytes": 1730437,
+      "sha256": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/manifest.json",
+      "role": "metadata-input",
+      "bytes": 34325,
+      "sha256": "e74c0769d3c2911f1727469adfbd1ae0edf11fea995c550f2ccbf49aaea72a66"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-001-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 79708,
+      "sha256": "aefdf594028de87e00ab5f448e34a648383c44ba85d745d874184b0a880690c8"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-001-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 79708,
+      "sha256": "6e61faca780d4e7ea92d52ecc8f043bd58736b04f1d22c53f7702d309e7da05e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-002-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 107772,
+      "sha256": "59b389244cf92701ed95083677c963270ea0257bdd54a363211b8f4aebc3a267"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-002-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 107772,
+      "sha256": "da975418bc5c3f421c4231b0d4d038cd1a7293ff17b2012dc9d3607b20b21645"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-003-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 110438,
+      "sha256": "7acbb1dbabaf56e4fa04b1171deedd27b2aeab3241f3e77b850f576bf76013af"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-003-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 110438,
+      "sha256": "517f06f633f608db1d0ae91c057ebcbcc9ce8cd3521f09576727f0f500028d5f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-004-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 120140,
+      "sha256": "7450ecf78761ef820876e1cc12cf5c60d47bda8c427748487e2ad55d23ddc7a7"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-004-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 120140,
+      "sha256": "5c695b2376873a83d48ab0209b6f80e1c586af9e0e8f1ee81d455f0caf53b5b8"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-005-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 132397,
+      "sha256": "5f7dc21cbc39abfb457c2e1860758a3b41f73ca406ff410e1bb2205396c98e07"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-005-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 132397,
+      "sha256": "f0bc0d7abc452fff8a030b6e4d556457b190e148173189c4624c4a85f1b8e2a8"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 124602,
+      "sha256": "439dd54df96d7482cb5caa8a3ae739297a14e6b377a3908aa83bf2609b7b7265"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-006-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 124602,
+      "sha256": "fe5c2654f09731c4874204bf4e2ac919ca35165c549907fb6717678b281c12e2"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-007-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 115950,
+      "sha256": "f500e8d3a05149251371e1e39a78ac0df372d859c1c61cd9709a3714cf1fb552"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-007-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 115950,
+      "sha256": "fc3c37e0323992f48395dd182ce9dc86275f19ed84512ca0a100daef04ffe19f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-008-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 114601,
+      "sha256": "bbf9c7403f368c09bcec8bd72034292c106272c2f2dfa108eb912ebc2c4c55ea"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-008-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 114601,
+      "sha256": "80bbdbdac0488f1018aa27b1e4991d9fc857fad03c5df5594869a49af7004470"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-009-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 123776,
+      "sha256": "58cf6d29ffb96e41e4ace5de067d9eb6cf0696e72b0101c40b855127e1837193"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-009-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 123776,
+      "sha256": "333ab207e277846775f4123c577bd12eddc21dda60dfcc55752bbb3ddd920a2e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-010-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 112639,
+      "sha256": "ce63278141189d75afa5bfaaed5b844712d3c51a79ba9d8557d676692845e262"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-010-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 112639,
+      "sha256": "ba69ae437cc057acb938480441e5a4e8ff30435e14e5b16dc5acf7cb41d58ab6"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-011-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 127386,
+      "sha256": "77a654454ae78c12733da58190fc739906d6d072697465a35482f33191c7bfc9"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-011-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 127386,
+      "sha256": "0e273b5585528db588d624d7bbf14a54598accdcd82d4f270864d6b82bb10abc"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-012-repeat-1.json",
+      "role": "metadata-input",
+      "bytes": 47161,
+      "sha256": "e14c046d4149c3d418d752c52ea927f24e0dd8217c821b86d5c633739785d9a2"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/raw/rcsb-entry-metadata-batch-012-repeat-2.json",
+      "role": "metadata-input",
+      "bytes": 47161,
+      "sha256": "60b4e1a3f1fe3b75a81a8e7414d3e5096ef56d7f2968011a7f949d7792489a1f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/requests.jsonl",
+      "role": "metadata-input",
+      "bytes": 22428,
+      "sha256": "173a564aef5041ddcc6ebcd79424797f11a943d5ca430dc6bb6b13572e26a97a"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/summary.json",
+      "role": "metadata-input",
+      "bytes": 766,
+      "sha256": "599eb97262cdbe440079653f9bbacb1e3b8946b2b6437f1163c615c38f413349"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/summary.md",
+      "role": "metadata-input",
+      "bytes": 843,
+      "sha256": "e618aa2b168dc05e6a0ccc05ca8cecc9c659ddf82832d1281d1b5acf4475fe80"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/triage-signals.jsonl",
+      "role": "metadata-input",
+      "bytes": 152088,
+      "sha256": "7cb53cad9c3b4faee1972bd772c635787595476c77e50fa546f0e4540d3c1a51"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-contract-2026-08-29.json",
+      "role": "control",
+      "bytes": 5487,
+      "sha256": "06cd7544b3f61d8d4c768723656ae3e9a807d9a9090f59392ef2f015a78c6ced"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/README.md",
+      "role": "metadata-input",
+      "bytes": 1444,
+      "sha256": "ea0febd379141c9ae459f2bcac73024f3eca356039b58493e25b2c6266e5c113"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/candidate-candidate-evidence.jsonl",
+      "role": "metadata-input",
+      "bytes": 2401000,
+      "sha256": "37f1db3a1dc43494b9bd0b87b564e931e9172f9f20a797feaa5d318d8e90990e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/candidate-development-evidence.jsonl",
+      "role": "metadata-input",
+      "bytes": 116381,
+      "sha256": "700e6b4b4aed2218a301bfb2eac8ed0504002422dccef0a22e04c24a1a278f0c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/candidate-nodes.jsonl",
+      "role": "metadata-input",
+      "bytes": 331233,
+      "sha256": "1442fe120454a9242c54b37e7b95233c36646ca33c0dd8812fedd251eccf897f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 1019,
+      "sha256": "d0a4e22b0b4f879dd59b551dffbef4e2860fffebbf6bb458eb6280c850a08553"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/definite-evidence-components.jsonl",
+      "role": "metadata-input",
+      "bytes": 38408,
+      "sha256": "de8c517a7dbad21319524048dbed87af2f1f2eb7cad4df264b9067588865e44f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/development-development-evidence.jsonl",
+      "role": "metadata-input",
+      "bytes": 3153,
+      "sha256": "64285cc52a4cf713c84ef27b0540811f7a910ce4ea0ce616638088704207b175"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/development-nodes.jsonl",
+      "role": "metadata-input",
+      "bytes": 19285,
+      "sha256": "9b0f1b42b34e20206ccb7de4cd98df7b8be57c9d5cf30c0e050668224715a3ad"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/inclusive-evidence-components.jsonl",
+      "role": "metadata-input",
+      "bytes": 11450,
+      "sha256": "3435d09f70bf010a62612ae2a1628eee639f52ba9d37fafd2941bd9fb6402a71"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/manifest.json",
+      "role": "metadata-input",
+      "bytes": 5713,
+      "sha256": "832ae7ee6a641ed8ffcccc18eac5c38f4a92e8d8fa144a71362f94dcfc3b7362"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/pair-space-commitments.json",
+      "role": "metadata-input",
+      "bytes": 771,
+      "sha256": "9d2c35307b7d517361f74306255d97e4f907ff1c147012610c46e15c676a8ff1"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29/summary.json",
+      "role": "metadata-input",
+      "bytes": 1770,
+      "sha256": "c25c483c4c498c3f6d74d09b007799364727cc5cb73b137f09fda6225bdc7704"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prelabel-census-draft/README.md",
+      "role": "metadata-input",
+      "bytes": 885,
+      "sha256": "5e66f577c851c3b4005329cd7dd8e9e63cb2c8e64f73586c375565f7c1b0782b"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prelabel-census-draft/annotation-epitope-ontology.json",
+      "role": "metadata-input",
+      "bytes": 2943,
+      "sha256": "960a2a875c54c9651b4338a2bf43f782826ac4aa6b3bb09994248f4cd7cab6cb"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prelabel-census-draft/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 437,
+      "sha256": "550185e7d9d25cdc0d0610a94531cfe0bf8288fcb1c0bb77dce534b1d78d88cf"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prelabel-census-draft/disposition-contract.json",
+      "role": "metadata-input",
+      "bytes": 3260,
+      "sha256": "805136877bd727ca22aae0c13284cfd4fd8aca5e8b2f868fe619d320e0c1f039"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prelabel-census-draft/source-query-contract.json",
+      "role": "metadata-input",
+      "bytes": 4029,
+      "sha256": "1a480345f9910470d4474e134bedc1cab550ba04c0254c2e09184c1c7fddb825"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prelabel-census-draft/state.json",
+      "role": "metadata-input",
+      "bytes": 1392,
+      "sha256": "825b07ee77a219d30be2da2498f79af0b213446076757ac402aa6c64ac39e268"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-licenses-2026-08-29.json",
+      "role": "control",
+      "bytes": 2078,
+      "sha256": "35474077e829f0246c05537074cac226f4cb777dc3abec73cc8753263ed1e614"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 2072,
+      "sha256": "796aa0734da86791f8ccdef92c7de03da22bdafd7818a5c5e95d73b6b5d35ebc"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/manifest.json",
+      "role": "metadata-input",
+      "bytes": 12795,
+      "sha256": "c0b24e5a153bdf240afc2da436321ad2abbdf93800f4b9791d82ae15c9b7b0db"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/gpcrdb-api.txt",
+      "role": "metadata-input",
+      "bytes": 8580,
+      "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/gpcrdb-html.txt",
+      "role": "metadata-input",
+      "bytes": 8580,
+      "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-camelid.txt",
+      "role": "metadata-input",
+      "bytes": 940,
+      "sha256": "43fbe51adbd46533cc7855e8f5ce5f3e85752d45790e97b057a68b253a21b41c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-gpcrdb-intersection.txt",
+      "role": "metadata-input",
+      "bytes": 1435,
+      "sha256": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-megabody.txt",
+      "role": "metadata-input",
+      "bytes": 295,
+      "sha256": "c63071f001fb61779eafddfed99b5b41826f2f8c04f798ad4cd833fb6cf37d91"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-nanobody.txt",
+      "role": "metadata-input",
+      "bytes": 8800,
+      "sha256": "a66f26fce4498ba07dc2eb46bd5ba1c5440f671209775e9496ce7b82bd194795"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-union.txt",
+      "role": "metadata-input",
+      "bytes": 10325,
+      "sha256": "c154b8a9780f0d7a898a9fed77bbc54f2b18572830840d55ead625ede647f0ca"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-vhh.txt",
+      "role": "metadata-input",
+      "bytes": 2375,
+      "sha256": "0ad358494867265303e46afe24f7122508d98a6717c6d5ae26059b5e4adef614"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json",
+      "role": "metadata-input",
+      "bytes": 1014984,
+      "sha256": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-2.json",
+      "role": "metadata-input",
+      "bytes": 1014984,
+      "sha256": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-html-1.html",
+      "role": "metadata-input",
+      "bytes": 7918869,
+      "sha256": "e12185d20153e7e3844319f5ca1d24eb31ec05d2181442320dd6b40ac2be1f3c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-html-2.html",
+      "role": "metadata-input",
+      "bytes": 7918869,
+      "sha256": "e12185d20153e7e3844319f5ca1d24eb31ec05d2181442320dd6b40ac2be1f3c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/rcsb-camelid-1.json",
+      "role": "metadata-input",
+      "bytes": 12720,
+      "sha256": "948321f9af6561c79059e2d34bb4e3040aa7aeed67297249c9a733cd784e448f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/rcsb-camelid-2.json",
+      "role": "metadata-input",
+      "bytes": 12720,
+      "sha256": "da74547aa2fd3d8a676026d5435f49f9778d2e1d71f31b60534d5c6888fadd69"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/rcsb-megabody-1.json",
+      "role": "metadata-input",
+      "bytes": 4067,
+      "sha256": "accc0c86b8524180fcb2f0a5a5ed1b61123720a95476f896fb1b3d110fc58231"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/rcsb-megabody-2.json",
+      "role": "metadata-input",
+      "bytes": 4067,
+      "sha256": "c055163ae1eb15c394daf0606a67a7dc358ae441780f58b37dc37775691a22e1"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/rcsb-nanobody-1.json",
+      "role": "metadata-input",
+      "bytes": 118214,
+      "sha256": "50ad35bd5fd585367f461243f1884417a181ad56a6358516bb8911a0d1d2219a"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/rcsb-nanobody-2.json",
+      "role": "metadata-input",
+      "bytes": 118214,
+      "sha256": "f2b15f79aa2b810b1c6cb55b421de8f0613cfa01a459cbc6ef847d713a0a28fc"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/rcsb-vhh-1.json",
+      "role": "metadata-input",
+      "bytes": 31956,
+      "sha256": "7c157851bdc9edd59780e6e2c602ed175a1091fd2cb1d12c9c66243cb7ed4bf2"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/rcsb-vhh-2.json",
+      "role": "metadata-input",
+      "bytes": 31956,
+      "sha256": "a92983120541d7a2e62b8fc55d60028301752f6c1263ba3ba0b83a2362e79f2f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/source-universe.jsonl",
+      "role": "metadata-input",
+      "bytes": 50457,
+      "sha256": "f2bdfe58cb591a007f21685008eb3bea676f6c87b196fad63a223bed8e478879"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/summary.md",
+      "role": "metadata-input",
+      "bytes": 932,
+      "sha256": "61f0aca508bb1b0496835e8013aa1bc32ed9b635f18c9fc39d6301ba7647f4b0"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json",
+      "role": "control",
+      "bytes": 8474,
+      "sha256": "bc31adf14cf1222ebade348337facefb209c286c631f0da0bf640bd778b0688f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/README.md",
+      "role": "metadata-input",
+      "bytes": 1545,
+      "sha256": "e7b32f3620c324b0836f06cd46faa0efc8dd06f063f089ffdcc52c7f6c7fb833"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/candidate-candidate-vhh-matrix.jsonl",
+      "role": "metadata-input",
+      "bytes": 75079219,
+      "sha256": "cbf604066904a1fc60e762e12b300d4c774734b0f4735def1dd70302dd95fb34"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/candidate-development-vhh-matrix.jsonl",
+      "role": "metadata-input",
+      "bytes": 9323842,
+      "sha256": "198503d754a1242e8b73373c146d18a7451f0a1712114a04d28f17f352d07823"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/candidate-vhh-profiles.jsonl",
+      "role": "metadata-input",
+      "bytes": 415683,
+      "sha256": "58d435ce89bd45c997aa89f0816340c273d24f5474e2d38c2bd2c85fce3cc39d"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/checksums.sha256",
+      "role": "metadata-input",
+      "bytes": 938,
+      "sha256": "9cca78fa06d568a56cd74da129752b28691e7a1d7e59afccec55cf18bc685578"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/development-development-vhh-matrix.jsonl",
+      "role": "metadata-input",
+      "bytes": 269602,
+      "sha256": "db0383fcc0057010bdeaa80dbb98444af7dbd98bdf3e037482332965caf68e81"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/development-vhh-profiles.jsonl",
+      "role": "metadata-input",
+      "bytes": 26055,
+      "sha256": "1c791d337d628a1de397eb33cfe5685d76953e169bfbf1077798365fa9fa8730"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/manifest.json",
+      "role": "metadata-input",
+      "bytes": 6604,
+      "sha256": "f9f0b1e9c0d2f5560a5d2c985566e90ad5e035a7da9e311e2128686ce5809c6c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/pair-space-commitments.json",
+      "role": "metadata-input",
+      "bytes": 775,
+      "sha256": "d5fd4c403c2ed28f89e76e210f196ea166187fb189834b673107922c6e8f97ac"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/summary.json",
+      "role": "metadata-input",
+      "bytes": 2044,
+      "sha256": "b33af7abd4638ba82cc9e206607fb748af04d28a0f58435e4669f37b575b3985"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/threshold-pregraph-components.jsonl",
+      "role": "metadata-input",
+      "bytes": 20233,
+      "sha256": "e519ed741013ea4c2b039020404dcd7922a4aaff139709bc07f1926b4fb20af2"
+    }
+  ],
+  "exactInventories": {
+    "validation/hard-decoy-holdout-v3/design-record": [
+      "README.md",
+      "checksums.sha256",
+      "design-state.json",
+      "isolation-contract.json",
+      "oracle-contract.json",
+      "precommit-inventory.json",
+      "protocol-lock.json"
+    ],
+    "validation/hard-decoy-holdout-v3/prelabel-census-draft": [
+      "README.md",
+      "annotation-epitope-ontology.json",
+      "checksums.sha256",
+      "disposition-contract.json",
+      "source-query-contract.json",
+      "state.json"
+    ],
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft": [
+      "README.md",
+      "checksums.sha256",
+      "entry-metadata-contract.json",
+      "rcsb-entry-metadata.graphql"
+    ],
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29": [
+      "checksums.sha256",
+      "manifest.json",
+      "normalized/gpcrdb-api.txt",
+      "normalized/gpcrdb-html.txt",
+      "normalized/rcsb-camelid.txt",
+      "normalized/rcsb-gpcrdb-intersection.txt",
+      "normalized/rcsb-megabody.txt",
+      "normalized/rcsb-nanobody.txt",
+      "normalized/rcsb-union.txt",
+      "normalized/rcsb-vhh.txt",
+      "raw/gpcrdb-api-1.json",
+      "raw/gpcrdb-api-2.json",
+      "raw/gpcrdb-html-1.html",
+      "raw/gpcrdb-html-2.html",
+      "raw/rcsb-camelid-1.json",
+      "raw/rcsb-camelid-2.json",
+      "raw/rcsb-megabody-1.json",
+      "raw/rcsb-megabody-2.json",
+      "raw/rcsb-nanobody-1.json",
+      "raw/rcsb-nanobody-2.json",
+      "raw/rcsb-vhh-1.json",
+      "raw/rcsb-vhh-2.json",
+      "source-universe.jsonl",
+      "summary.md"
+    ],
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29": [
+      "batch-plan.json",
+      "checksums.sha256",
+      "entities.jsonl",
+      "entries.jsonl",
+      "manifest.json",
+      "raw/rcsb-entry-metadata-batch-001-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-001-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-002-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-002-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-003-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-003-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-004-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-004-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-005-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-005-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-006-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-007-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-007-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-008-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-008-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-009-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-009-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-010-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-010-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-011-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-011-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-012-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-012-repeat-2.json",
+      "requests.jsonl",
+      "summary.json",
+      "summary.md",
+      "triage-signals.jsonl"
+    ],
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29-replay-054318Z": [
+      "batch-plan.json",
+      "checksums.sha256",
+      "entities.jsonl",
+      "entries.jsonl",
+      "manifest.json",
+      "raw/rcsb-entry-metadata-batch-001-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-001-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-002-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-002-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-003-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-003-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-004-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-004-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-005-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-005-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-006-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-006-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-007-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-007-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-008-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-008-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-009-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-009-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-010-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-010-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-011-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-011-repeat-2.json",
+      "raw/rcsb-entry-metadata-batch-012-repeat-1.json",
+      "raw/rcsb-entry-metadata-batch-012-repeat-2.json",
+      "requests.jsonl",
+      "summary.json",
+      "summary.md",
+      "triage-signals.jsonl"
+    ],
+    "validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29": [
+      "README.md",
+      "checksums.sha256",
+      "entry-dispositions.jsonl",
+      "manifest.json",
+      "summary.json"
+    ],
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29": [
+      "README.md",
+      "checksums.sha256",
+      "development-nodes.jsonl",
+      "entities.jsonl",
+      "manifest.json",
+      "missing-entries.jsonl",
+      "raw/rcsb-development-metadata-repeat-1.json",
+      "raw/rcsb-development-metadata-repeat-2.json",
+      "requests.jsonl",
+      "summary.json"
+    ],
+    "validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29": [
+      "README.md",
+      "candidate-candidate-evidence.jsonl",
+      "candidate-development-evidence.jsonl",
+      "candidate-nodes.jsonl",
+      "checksums.sha256",
+      "definite-evidence-components.jsonl",
+      "development-development-evidence.jsonl",
+      "development-nodes.jsonl",
+      "inclusive-evidence-components.jsonl",
+      "manifest.json",
+      "pair-space-commitments.json",
+      "summary.json"
+    ],
+    "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29": [
+      "README.md",
+      "candidate-candidate-vhh-matrix.jsonl",
+      "candidate-development-vhh-matrix.jsonl",
+      "candidate-vhh-profiles.jsonl",
+      "checksums.sha256",
+      "development-development-vhh-matrix.jsonl",
+      "development-vhh-profiles.jsonl",
+      "manifest.json",
+      "pair-space-commitments.json",
+      "summary.json",
+      "threshold-pregraph-components.jsonl"
+    ],
+    "validation/hard-decoy-holdout-v3/census-audit-2026-08-29": [
+      "README.md",
+      "access-state.json",
+      "audit-state.json",
+      "checksums.sha256",
+      "dispositions.jsonl",
+      "provenance.json",
+      "verify.mjs",
+      "verify.test.mjs"
+    ]
+  }
+}

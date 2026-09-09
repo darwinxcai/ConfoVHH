@@ -1,0 +1,16 @@
+{
+  "status": "DEPENDENCY_CONFLICT",
+  "attempted_roots": [
+    "boltz[cuda]==2.2.1",
+    "torch==2.6.0",
+    "rdkit==2024.9.6",
+    "cuequivariance==0.5.0",
+    "cuequivariance-torch==0.5.0",
+    "cuequivariance-ops-cu12==0.5.0",
+    "cuequivariance-ops-torch-cu12==0.5.0"
+  ],
+  "python": "3.11",
+  "platform": "x86_64-manylinux_2_28",
+  "exit_code": 1,
+  "stderr": "  \u00d7 No solution found when resolving dependencies:\n  \u2570\u2500\u25b6 Because cuequivariance-ops-cu12==0.5.0 depends on\n      nvidia-cublas-cu12>=12.5.0 and torch==2.6.0 depends on\n      nvidia-cublas-cu12{platform_machine == 'x86_64' and sys_platform ==\n      'linux'}==12.4.5.8, we can conclude that cuequivariance-ops-cu12==0.5.0\n      and torch==2.6.0 are incompatible.\n      And because you require torch==2.6.0 and cuequivariance-ops-cu12==0.5.0,\n      we can conclude that your requirements are unsatisfiable.\n"
+}

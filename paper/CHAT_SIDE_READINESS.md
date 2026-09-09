@@ -14,8 +14,9 @@ provide a percentage of either track completed.
 | Parse, audit and export selected coordinates | PR #56's exact tree passed 864 tests on Node 22/24, full local Node 22 release checks, and hosted browser/accessibility, coverage and static build | Preserve these gates after source/dependency changes; exact public producer download still fails HTTP 403 |
 | Execute current-product ranking from coordinate and confidence bytes | [Source-bound execution](SOURCE_BOUND_COORDINATE_RANKING.md) verifies both supplied file identities, extracts fixed AF3/Boltz confidence fields, reruns the audit and exports tied ranks; generated cases pass | Authenticate actual prediction-run inputs/outputs and complete prospective attempt accounting; the filenames and hashes alone do not prove original-run association |
 | Keep prediction jobs separate during comparison | [Selection-set evaluation](SELECTION_SET_EVALUATION.md) selects within each declared job before averaging and retains nonmixed sets, failures, missingness and component weights | Freeze the actual population/job schedule, outcome definition, inference and uncertainty plan; execute on authorized data. The new component is descriptive and does not estimate scheduled-job yield |
-| Integrate patched dependencies without changing historical evidence | Draft PR #57 installs/builds with patched dependencies; one unchanged VHH metadata replay and [two additional synthetic recipes](HISTORICAL_SYNTHETIC_REPLAYS.md) execute in the original workspace | Route mandatory historical assertions to their verified environments while retaining current-product coverage; complete broader metadata recipes and required CI. No CI routing has changed |
+| Integrate patched dependencies without changing historical evidence | Draft PR #57 installs/builds with patched dependencies; unchanged VHH, [synthetic recipes](HISTORICAL_SYNTHETIC_REPLAYS.md), and [integration verifier plus its two original tests](HISTORICAL_INTEGRATION_REPLAY.md) execute in the original workspace; integration replays pass on Node 22/24 with 190 file identities unchanged | Route mandatory historical assertions to their verified environments while retaining current-product coverage; complete remaining metadata recipes and required CI. No CI routing has changed |
 | Assemble the evaluation population | Exact phrase-only discovery covers 3,000 entries; next fixed batch is 12, with 9,262 identifiers left in that partition | Resolve source/construct identity, ancestry/overlap and exposure accounting; complete eligibility and grouping. This partition is not a whole-census bound |
+| Prepare a bounded GPU runtime/pilot | [Cloud preparation](CLOUD_GPU_PREPARATION_2026-09-09.md) provides a digest-pinned base, resolved Boltz/CUDA dependency locks, candidate Dockerfile and runtime checker | Build and test the actual image; recover exact pilot MSAs and full cache provenance; obtain authenticated cloud access; execute and time one declared pilot. No GPU inference has run |
 | Measure independent pose-selection performance | Rank export and paired-comparison code exist and are tested synthetically; zero independent eligible groups are cleared | Freeze the applicable study population, method and baselines before outcomes; execute the prespecified comparison with uncertainty and failure accounting |
 | Bind technical methods to a validated release | Seven main claims bind to 14 public artifacts; methods/reviewer instructions exist | Complete original-input replay or explicit bounded reproducibility, reconcile current/historical execution, regenerate release-specific evidence and archive the verified version |
 
@@ -42,8 +43,8 @@ claim.
 ## Next coding actions
 
 1. Complete historical execution contexts and explicit CI routing while
-   preserving frozen hashes, receipts and all assertions. Three historical
-   recipes are not a release-wide migration.
+   preserving frozen hashes, receipts and all assertions. The completed fixed
+   historical recipes are not a release-wide migration.
 2. Apply the implemented confidence-file/coordinate binding to authenticated
    original prediction outputs under a separately frozen study. Keep the actual
    selection-set inventory and source/sample provenance separate from declarations.
