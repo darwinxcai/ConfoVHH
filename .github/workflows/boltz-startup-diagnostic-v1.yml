@@ -1,0 +1,109 @@
+name: Boltz pinned startup diagnostic v1
+
+on:
+  push:
+    branches: [work/boltz-startup-recovery-20260909]
+    paths:
+      - '.github/workflows/boltz-startup-diagnostic-v1.yml'
+      - 'scripts/cloud/diagnose-boltz-startup.py'
+      - 'scripts/cloud/boltz-runtime-bundle.py'
+      - 'cloud/boltz-runtime-candidate/STARTUP_OPERATIONS_V1.md'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: boltz-startup-diagnostic-v1
+  cancel-in-progress: false
+
+jobs:
+  cpu-build-and-diagnose:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 75
+    env:
+      BASE: docker.io/pytorch/pytorch@sha256:2b59b1b91885677814f78be1f8df48a25d5dc952eb6580eaecfefca510f9afd3
+      IMAGE: confovhh-boltz-cpu-diagnostic:v1.0.0
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          fetch-depth: 2
+      - name: Preserve source identity and free disposable runner SDK space
+        run: |
+          set -Eeuo pipefail
+          mkdir -p cpu-evidence build-context/cloud/boltz-runtime-candidate build-context/scripts/cloud
+          git rev-parse HEAD > cpu-evidence/source-commit.txt
+          git merge-base --is-ancestor 250350ab4b995e075edcb489c4f183e32b35efd6 HEAD
+          sha256sum cloud/boltz-runtime-candidate/Dockerfile cloud/boltz-runtime-candidate/*.lock scripts/cloud/check-boltz-runtime.py scripts/cloud/check-boltz-toolchain.py scripts/paper/run-single-case-generation.py > cpu-evidence/frozen-sources.sha256
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          expected={'cloud/boltz-runtime-candidate/Dockerfile':'ac29d257f5b1b6aa9c4a175ee5bbca9e84879a9b6c4a013b80b5a495facff4b8','cloud/boltz-runtime-candidate/bootstrap-linux-py311.lock':'0c36241dd159935b274c1e2d24edc4d3c98e880fac6da444914736bd255d9956','cloud/boltz-runtime-candidate/requirements-linux-py311.lock':'8f30f92bd06772f5bb86d0ce6e0e38daa8f4465fecdbd2bf11eeb23ddd19bb7a','scripts/cloud/check-boltz-runtime.py':'e0e329e1c531717307c561723b46e333f374d413ebdc7a415c30d0c8a424152a','scripts/cloud/check-boltz-toolchain.py':'9ab433bbe35cbb3df042dff18aaad8719448bb55b160dd27f5d2d2d9f46d6ad4','scripts/paper/run-single-case-generation.py':'2865eea96212b3733687c2dd459bb5a48096a842e0d61361ea86617a1b0d9745'}
+          for p,h in expected.items(): assert hashlib.sha256(Path(p).read_bytes()).hexdigest()==h,p
+          PY
+          cp cloud/boltz-runtime-candidate/Dockerfile cloud/boltz-runtime-candidate/*.lock build-context/cloud/boltz-runtime-candidate/
+          cp scripts/cloud/check-boltz-runtime.py scripts/cloud/check-boltz-toolchain.py build-context/scripts/cloud/
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h > cpu-evidence/runner-disk.txt
+          docker version > cpu-evidence/docker-version.txt
+      - name: Pull exact base and record its OS inventory
+        timeout-minutes: 10
+        run: |
+          set -Eeuo pipefail
+          docker pull --platform linux/amd64 "$BASE" 2>&1 | tee cpu-evidence/base-pull.log
+          docker image inspect "$BASE" > cpu-evidence/base-image-inspect.json
+          docker run --rm --platform linux/amd64 --entrypoint /usr/bin/dpkg-query "$BASE" -W '-f=${binary:Package}\t${Version}\t${Architecture}\n' > cpu-evidence/base-os-packages.tsv
+      - name: Build compiler and exact isolated dependencies on CPU
+        timeout-minutes: 30
+        run: |
+          set -Eeuo pipefail
+          docker build --platform linux/amd64 --progress plain -t "$IMAGE" -f build-context/cloud/boltz-runtime-candidate/Dockerfile build-context 2>&1 | tee cpu-evidence/build.log
+          docker image inspect "$IMAGE" > cpu-evidence/built-image-inspect.json
+      - name: Bounded startup diagnosis with raw streams and periodic stacks
+        timeout-minutes: 8
+        run: |
+          set -Eeuo pipefail
+          docker run --rm --platform linux/amd64 --entrypoint /opt/conda/bin/python \
+            -v "$PWD/scripts/cloud:/diagnostic-scripts:ro" -v "$PWD/cpu-evidence:/evidence" \
+            "$IMAGE" -I /diagnostic-scripts/diagnose-boltz-startup.py \
+            --python /opt/confovhh-boltz/bin/python --output /evidence/startup
+      - name: Export reusable environment and exact compiler packages
+        if: ${{ success() || failure() }}
+        timeout-minutes: 12
+        run: |
+          set -Eeuo pipefail
+          docker image inspect "$IMAGE" >/dev/null
+          docker run --rm --platform linux/amd64 --entrypoint /opt/conda/bin/python \
+            -v "$PWD/scripts/cloud:/diagnostic-scripts:ro" -v "$PWD/cpu-evidence:/evidence" \
+            "$IMAGE" -I /diagnostic-scripts/boltz-runtime-bundle.py --max-seconds 660 export \
+            --base-os-inventory /evidence/base-os-packages.tsv --output /evidence/reusable
+      - name: Bound artifact storage and retain bundle receipt separately
+        if: always()
+        run: |
+          set -Eeuo pipefail
+          sudo chown -R "$(id -u):$(id -g)" cpu-evidence
+          if [ -f cpu-evidence/reusable/bundle.json ]; then
+            cp cpu-evidence/reusable/bundle.json cpu-evidence/reusable-bundle-receipt.json
+            sha256sum cpu-evidence/reusable/bundle.json > cpu-evidence/reusable-bundle.sha256
+          fi
+          bytes=$(du -sb cpu-evidence | cut -f1)
+          test "$bytes" -le 12884901888
+      - name: Preserve startup diagnostic logs
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: confovhh-startup-diagnostics-v1-${{ github.sha }}
+          path: |
+            cpu-evidence/
+            !cpu-evidence/reusable/
+          retention-days: 1
+          compression-level: 6
+          if-no-files-found: error
+      - name: Preserve reusable runtime
+        if: success()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: confovhh-reusable-runtime-v1-${{ github.sha }}
+          path: cpu-evidence/reusable/
+          retention-days: 1
+          compression-level: 0
+          if-no-files-found: error
