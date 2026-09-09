@@ -1,0 +1,15 @@
+# Preparation recovery v2 — event logger argument correction
+
+This additive amendment corrects an external preparation-helper defect before any runtime gate or prediction. Preserve `prepare-startup-runtime-v1.py` (SHA-256 `2a86d743f355ca97a19a99805d4ef68c9e7cdea36ce5d508c7650f671bf42c95`), its failed receipt/logs, all execution-01 records and prior staging files unchanged.
+
+The demonstrated defect is the logger signature `event(name, **data)` combined with `event('child-start', **item)`, where `item` already contains `name`. Python supplies the `name` parameter twice and raises `TypeError` immediately after the child was started and added to the tracked-child list. The analogous `event('child-exit', name=..., exitCode=...)` also collides. This is an orchestration logging failure, not a Boltz, compiler, GPU runtime or scientific result.
+
+`prepare-startup-runtime-v2.py` changes the logger's first parameter to `event_name` and uses that value for the event-kind field, allowing the independent child `name` field to be retained. The only other source changes are the new execution ID `confovhh-3p0g-startup-recovery-20260909-02` and preparation/blocked-receipt schema versions. SHA-256: `07cd0d3048e3e24f57ec74364bb50ab5311058d4df48b21632a10b498f2308f5`.
+
+The test compiles the actual nested v2 event function, then exercises the exact `child-start` call with an expanded item containing `name`, the `child-exit` keyword call, and the process-group stop event. All three preserve event kind and metadata in both memory and the JSON-lines log without an exception. See `preparation-v2-event-test.json`. No subprocess, GPU gate or prediction runs in this test.
+
+The controller must confirm prior preparation groups stopped, retain the execution-01 result directory, and preserve prior extracted staging trees under `/workspace/staging-attempt-01` before creating new staging paths. Preserve the prior runtime-results alias with its old target recorded. Re-extract the same immutable source/input/runtime archives and create a new execution-02 launch manifest binding the v2 helper. No resume, package substitution, environment mutation, or silent overwrite behavior has been added to the helper.
+
+The pinned base, source commit, all archive hashes, `/opt` environment, compiler archives, dependency locks, cache files, seeds and scientific protocol remain unchanged. The original 60-second CLI timeout and the runner's 180-second outer runtime check remain mandatory; both original runtime PASS and full fresh GPU Triton JIT PASS are still required before inference. This preparation retry does not authorize a second scientific ten-candidate run.
+
+The same already allocated pod and approved cumulative budget apply. GPU time spent on this correction counts toward the 8,400-second total. Workload cutoff remains **2026-09-09 21:56:50.729 UTC**; normal stop target remains **22:02:20.729 UTC**, watchdog stop target **22:02:50.729 UTC**, and hard allocation deadline **22:03:50.729 UTC**. Stop and preserve if the remaining time is insufficient; this amendment grants no additional allowance.
