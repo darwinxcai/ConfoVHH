@@ -1,0 +1,245 @@
+{
+  "schema": "confovhh-1cz8-source-access-v1",
+  "requests": [
+    {
+      "name": "crossref",
+      "entryId": "1CZ8",
+      "url": "https://api.crossref.org/works/10.1006%2Fjmbi.1999.3192",
+      "requestedUtc": "2026-09-08T18:02:33.714339+00:00",
+      "fullResponseArchived": false,
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 17161,
+      "sha256": "af55ce89e24981724eaa37b207d0467e1f20cd042fec478f04da4c909e45f16c",
+      "retrievedUtc": "2026-09-08T18:02:42.605276+00:00",
+      "bibliography": {
+        "DOI": "10.1006/jmbi.1999.3192",
+        "title": [
+          "Selection and analysis of an optimized anti-VEGF antibody: crystal structure of an affinity-matured fab in complex with antigen 1 1Edited by I. A. Wilson"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1999,
+              11
+            ]
+          ]
+        },
+        "author": [
+          {
+            "given": "Yvonne",
+            "family": "Chen",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Christian",
+            "family": "Wiesmann",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Germaine",
+            "family": "Fuh",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Bing",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Hans W",
+            "family": "Christinger",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Patrick",
+            "family": "McKay",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Abraham M",
+            "family": "de Vos",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Henry B",
+            "family": "Lowman",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "publisher": "Elsevier BV",
+        "container-title": [
+          "Journal of Molecular Biology"
+        ],
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0022283699931923?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0022283699931923?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  1999,
+                  11,
+                  1
+                ]
+              ],
+              "date-time": "1999-11-01T00:00:00Z",
+              "timestamp": 941414400000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          }
+        ],
+        "URL": "https://doi.org/10.1006/jmbi.1999.3192"
+      }
+    },
+    {
+      "name": "epmc",
+      "entryId": "1CZ8",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A10543973+AND+SRC%3AMED&format=json&resultType=core",
+      "requestedUtc": "2026-09-08T18:02:33.715248+00:00",
+      "fullResponseArchived": false,
+      "status": 200,
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 9420,
+      "sha256": "5a9af15b33fa5415fa3ae5157415aee6a570f58e67bdb5151015c209e4cc00ab",
+      "retrievedUtc": "2026-09-08T18:02:43.685263+00:00",
+      "bibliography": [
+        {
+          "id": "10543973",
+          "source": "MED",
+          "pmid": "10543973",
+          "pmcid": null,
+          "doi": "10.1006/jmbi.1999.3192",
+          "title": "Selection and analysis of an optimized anti-VEGF antibody: crystal structure of an affinity-matured Fab in complex with antigen.",
+          "authorString": "Chen Y, Wiesmann C, Fuh G, Li B, Christinger HW, McKay P, de Vos AM, Lowman HB.",
+          "pubYear": "1999",
+          "isOpenAccess": "N",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1006/jmbi.1999.3192"
+              }
+            ]
+          },
+          "license": null,
+          "journalInfo": {
+            "issue": "4",
+            "volume": "293",
+            "journalIssueId": 974214,
+            "dateOfPublication": "1999 Nov",
+            "monthOfPublication": 11,
+            "yearOfPublication": 1999,
+            "printPublicationDate": "1999-11-01",
+            "journal": {
+              "title": "Journal of molecular biology",
+              "medlineAbbreviation": "J Mol Biol",
+              "essn": "1089-8638",
+              "issn": "0022-2836",
+              "isoabbreviation": "J Mol Biol",
+              "nlmid": "2985088R"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "advertised_publisher_xml",
+      "entryId": "1CZ8",
+      "url": "https://api.elsevier.com/content/article/PII:S0022283699931923?httpAccept=text/xml",
+      "requestedUtc": "2026-09-08T18:03:00.691582+00:00",
+      "fullResponseArchived": false,
+      "status": "REQUEST_FAILED",
+      "errorType": "TimeoutError",
+      "error": "The read operation timed out",
+      "retrievedUtc": "2026-09-08T18:03:43.535966+00:00",
+      "primaryMethodsRetrieved": false
+    }
+  ],
+  "priorWebToolObservation": {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A10543973%20AND%20SRC%3AMED&format=json&resultType=lite",
+    "result": "WEB_TOOL_NON_RETRYABLE_SAFE_URL_ERROR",
+    "httpStatusKnown": false,
+    "responseBodyReceived": false,
+    "note": "The web-rendering tool did not retrieve the lite metadata URL. No HTTP status or general accessibility conclusion is inferred; the separately requested core metadata reduction above is the retained bibliography source."
+  },
+  "responseScope": "Exact bibliography, identifier and advertised access-location reductions only. Complete metadata bodies, abstracts, references and publisher error bodies were neither displayed nor archived.",
+  "primaryMethodsRetrieved": false,
+  "primaryDepositionStatementRetrieved": false,
+  "primaryLicenseVerified": false,
+  "licenseCaveat": "Crossref advertises only an Elsevier text-and-data-mining license URL in this response. No primary license statement was retrieved or independently verified.",
+  "accessCaveat": "The advertised publisher XML route was tried once and timed out without a complete response. No primary preparation or deposition text was recovered. This is not evidence of general inaccessibility or absent Methods."
+}

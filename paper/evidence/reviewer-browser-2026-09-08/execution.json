@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "automated synthetic browser workflow only",
+  "browserVersion": "149.0.7827.0",
+  "nodeVersion": "v24.19.0",
+  "sourceSha256": {
+    "app/page.tsx": "005b623058d702b60a29ff08edefc1aa78710a74918984b9ceda1abc72c5e7e7",
+    "qa/tests/reviewer-workflow.spec.mjs": "01cbccfa3b9910ac5fd775acef8f813e03f1ac86d6dcc1e97d9522419c0ca085",
+    "qa/playwright.config.mjs": "74f4c3643debb1977dea938d059aa8553de75d2fb123bea49f7afa78a91f18cd",
+    "qa/package-lock.json": "41de0de8c9704a8704fff7f26be2564ab366513092ac8f57686ed8eada57f254",
+    "scripts/paper/verify-reviewer-exports.mjs": "9e6599fddca26ae15a315aa2b6f499f704ec7b13a180bcc74d973cb6895516f0"
+  },
+  "projectName": "chromium",
+  "baseURL": "http://127.0.0.1:4173",
+  "servedBuildIdentityVerified": false,
+  "observedCases": [
+    {
+      "name": "near",
+      "roleConfirmationRequired": true,
+      "roleInitiallyUnchecked": true,
+      "newFileClearedPriorConfirmation": false,
+      "displayedContactPairs": 10
+    },
+    {
+      "name": "separated",
+      "roleConfirmationRequired": true,
+      "roleInitiallyUnchecked": true,
+      "newFileClearedPriorConfirmation": true,
+      "displayedContactPairs": 0
+    }
+  ],
+  "offOriginRequests": [],
+  "pageErrors": [],
+  "comparison": {
+    "schemaVersion": "1.0.0",
+    "scope": "synthetic reviewer export comparison only",
+    "nodeVersion": "v24.19.0",
+    "generatorReceiptSha256": "f3381a6711cb0a45e18e0c2c6b0128a31a8cd52ac476872e976be73d2655ba3e",
+    "verifierSha256": "9e6599fddca26ae15a315aa2b6f499f704ec7b13a180bcc74d973cb6895516f0",
+    "sourceIdentitiesMatchCurrentCheckout": true,
+    "cases": [
+      {
+        "name": "near",
+        "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+        "generatedReportSha256": "f12d421e96984b1bd41d515c8893b4ff81e00d335543b9676f4511873c9a3c04",
+        "browserReportSha256": "244024b551c3249465a241c8257468280610a53c5723cbb5cf832d7dd9ccbf74",
+        "browserGeneratedAt": "2026-09-08T14:03:31.977Z",
+        "expectedGeneratedAt": "2026-09-08T00:00:00.000Z",
+        "residuePairs": 10,
+        "atomContacts": 90,
+        "productionImportValidation": true,
+        "semanticMatchExceptExportTimestamp": true,
+        "rolesConfirmedInReport": true,
+        "paeAbsent": true
+      },
+      {
+        "name": "separated",
+        "coordinateSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+        "generatedReportSha256": "e7aca3526131b020e375708dc42fbd6c164fff794004b0238524594ec334fdbe",
+        "browserReportSha256": "541327c373df0f74e58f91e53a08ae858cc656d92a0464f45fcc791764ac5767",
+        "browserGeneratedAt": "2026-09-08T14:03:34.151Z",
+        "expectedGeneratedAt": "2026-09-08T00:00:00.000Z",
+        "residuePairs": 0,
+        "atomContacts": 0,
+        "productionImportValidation": true,
+        "semanticMatchExceptExportTimestamp": true,
+        "rolesConfirmedInReport": true,
+        "paeAbsent": true
+      }
+    ],
+    "boundaries": {
+      "nativeOrPredictionDataRead": false,
+      "networkUsed": false,
+      "biologicalValidation": false,
+      "independentEligibleGroupsAdded": 0,
+      "participantIdentityVerified": false,
+      "independentCompletionEstablished": false,
+      "browserRoleGateObserved": false
+    }
+  },
+  "independentResearcherCompletion": false,
+  "biologicalValidation": false
+}

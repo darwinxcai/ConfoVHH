@@ -1,0 +1,131 @@
+{
+  "schema": "confovhh-phrase-only-1bj1-triage-v1",
+  "recordedUtc": "2026-09-08T17:10:58.079203+00:00",
+  "entryId": "1BJ1",
+  "candidateEntityId": "1BJ1_2",
+  "input": {
+    "snapshotPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/snapshots/6b638a563f3c09da056ed70247316fa214958a23fa6097786c6c7cb847a94b2d/entries.jsonl",
+    "snapshotSha256": "e9f873e24b3abced5f1f6d2e26c93d6fe794f69fdb3fb6632f044b08c07a9b3d",
+    "selectedRawLineSha256": "ab97f2e991e1eb7bdd4e1d6a073b8a19b31cef94b3947843b796ee9cf720fe8b",
+    "selectedRowRule": "Exactly one JSONL object with pdbId equal to 1BJ1; raw-line hash excludes the line-feed terminator."
+  },
+  "positiveSourceFacts": [
+    {
+      "classification": "DEPOSITED_METADATA_FACT",
+      "source": "selected-entry.json",
+      "fact": "The complete retained polymer inventory has one Fab-fragment light-chain entity, one Fab-fragment heavy-chain entity and one VEGFA-annotated entity."
+    },
+    {
+      "classification": "PRIMARY_CITATION_BIBLIOGRAPHY_FACT",
+      "source": "source-access.json",
+      "fact": "Fresh Europe PMC/PubMed and Crossref records match DOI 10.1016/s0969-2126(98)00116-6 and identify the publication as a VEGF complex with a humanized neutralizing-antibody Fab fragment."
+    }
+  ],
+  "allPolymerInventory": [
+    {
+      "rcsbEntityId": "1BJ1_1",
+      "entityId": "1",
+      "depositedDescription": "Fab fragment, light chain",
+      "sequenceLength": 214,
+      "sequenceSha256": "d1950121c2bcab186d1d8628b672b63b54d4bf6fd61c8868036323f4b638330f",
+      "labelAsymIds": [
+        "A",
+        "E"
+      ],
+      "authAsymIds": [
+        "J",
+        "L"
+      ],
+      "sourceOrganisms": [
+        {
+          "scientificName": "Mus musculus",
+          "taxonomyId": "10090"
+        }
+      ],
+      "referenceSequences": []
+    },
+    {
+      "rcsbEntityId": "1BJ1_2",
+      "entityId": "2",
+      "depositedDescription": "Fab fragment, heavy chain",
+      "sequenceLength": 231,
+      "sequenceSha256": "4654391546d4c53904e23e74b1731c2135f9adfcfd799d52886b54907001f094",
+      "labelAsymIds": [
+        "B",
+        "F"
+      ],
+      "authAsymIds": [
+        "H",
+        "K"
+      ],
+      "sourceOrganisms": [
+        {
+          "scientificName": "Mus musculus",
+          "taxonomyId": "10090"
+        }
+      ],
+      "referenceSequences": []
+    },
+    {
+      "rcsbEntityId": "1BJ1_3",
+      "entityId": "3",
+      "depositedDescription": "Vascular endothelial growth factor A",
+      "sequenceLength": 102,
+      "sequenceSha256": "7af9039ac76deadec47cbaf40a15fb496b4aa88f3044a41b1424fe0691c0c81d",
+      "labelAsymIds": [
+        "C",
+        "D"
+      ],
+      "authAsymIds": [
+        "V",
+        "W"
+      ],
+      "sourceOrganisms": [
+        {
+          "scientificName": "Homo sapiens",
+          "taxonomyId": "9606"
+        }
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P15692",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ]
+    }
+  ],
+  "auditInference": {
+    "classification": "POSITIVE_CONVENTIONAL_FAB_CONTEXT_TRIAGE",
+    "statement": "The numbered-heavy lead occurs in a deposition and publication explicitly described as a Fab complex. Heavy-domain recognition alone therefore does not establish that this is a VHH candidate.",
+    "notEstablished": [
+      "Exact experimentally expressed construct identity and processing from primary preparation Methods.",
+      "A source-reviewed direct GPCR-VHH pair meeting the frozen eligibility definition.",
+      "A formal whole-entry exclusion or proof of absence of every possible relevant binder."
+    ],
+    "annotationCaveat": "The antibody source-organism metadata report Mus musculus while the publication title describes a humanized antibody. Both are preserved; no unreported humanization, construct-origin or processing history is inferred."
+  },
+  "disposition": {
+    "candidateFormatReview": "CONVENTIONAL_FAB_CONTEXT_SOURCE_IDENTIFIED",
+    "formalDisposition": "PENDING_DISPOSITION",
+    "sourcePreparationReviewComplete": false,
+    "directInterfaceEvidenceStatus": "UNRESOLVED",
+    "formalEligibilityAuthority": false,
+    "wholeEntryExclusionAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "independenceCertified": false,
+    "targetFreezePermitted": false,
+    "newEligibleGroups": 0,
+    "wholeCensusBound": null
+  },
+  "continuation": "Retain as a conventional-Fab-context triage lead. Do not promote heavy-domain recognition to VHH eligibility or silently mark a formal exclusion. If formal disposition is needed, obtain permitted primary preparation/construct and deposition evidence; do not repeat the same failed routes without new access evidence.",
+  "exposure": {
+    "nativeCoordinatesInspected": false,
+    "nativeRelativePosesInspected": false,
+    "structuralContactTablesInspected": false,
+    "labelsAccessed": false,
+    "predictionOutputsAccessed": false,
+    "resultsFiguresOrCaptionsInspected": false
+  },
+  "scopeLimit": "This review concerns only 1BJ1 and its three deposited polymer entities. It supplies neither an absence proof nor any bound for the phrase-only remainder or the whole census."
+}

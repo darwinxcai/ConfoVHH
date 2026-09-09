@@ -1,0 +1,168 @@
+{
+  "schema": "confovhh-nb35-entity-evidence-gap-v1",
+  "recordedUtc": "2026-09-08T17:04:59.978134+00:00",
+  "task": "Assess whether retained sources support a new entity-only auxiliary Nb35 disposition while leaving whole-entry review pending.",
+  "scope": "Only the explicitly listed retained packets and their permitted source summaries/preparation paragraphs were examined; no network or restricted structural data access.",
+  "examinedSourceSha256": {
+    "validation/hard-decoy-holdout-v3/nb35-source-review-2026-09-04/source-reviews.json": "a4b54744bc101718d05eb96a50d65c2195ae95ae1398296fcf7e99d8606839c4",
+    "validation/hard-decoy-holdout-v3/nb35-primary-followup-2026-09-04/source-followup.json": "5d10c8e51ed0443f8e1c34f687df0f740a34828c93a8a15fe4503c747a0cf464",
+    "validation/hard-decoy-holdout-v3/gpr1-nb32-source-review-2026-09-04/README.md": "c90e25c9e33833d3687eedaddefb94be209da3bf5445f495b4de73efb809f317",
+    "validation/hard-decoy-holdout-v3/review-disposition-integration-2026-09-07/entity-only-adjudications.jsonl": "61ddc8c1e3ea6e9e42aa0ef899bcc7c817de1817688ab86ace1a9d8ac566176f",
+    "validation/hard-decoy-holdout-v3/prostanoid-source-review-2026-09-05/source-review.json": "a3711c5ec52a423a5af1aa8175b29614542985cfd506cfee0c907d4b00e21e5a",
+    "validation/hard-decoy-holdout-v3/prostanoid-source-review-2026-09-05/allowed-sections.json": "e2efb6bf9e0a724b939faf9b6e40d036820294f627aacfee4c98b19da9b258cb",
+    "validation/hard-decoy-holdout-v3/prostanoid-role-adjudication-2026-09-06/source-reviews.json": "96f082310dc08afc727e0770f901f81e85c4e70dfa6dc417593e101f371c7853"
+  },
+  "candidateInventory": [
+    {
+      "pdbId": "7TYF",
+      "entityId": "7TYF_5",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7TYH",
+      "entityId": "7TYH_4",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7TYI",
+      "entityId": "7TYI_4",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7TYL",
+      "entityId": "7TYL_4",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7TYN",
+      "entityId": "7TYN_6",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7TYO",
+      "entityId": "7TYO_4",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7TYW",
+      "entityId": "7TYW_7",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7TYX",
+      "entityId": "7TYX_7",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7TYY",
+      "entityId": "7TYY_7",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7TZF",
+      "entityId": "7TZF_7",
+      "entitySequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7VVJ",
+      "entityId": "7VVJ_4",
+      "entitySequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7VVK",
+      "entityId": "7VVK_4",
+      "entitySequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7VVL",
+      "entityId": "7VVL_4",
+      "entitySequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7VVM",
+      "entityId": "7VVM_4",
+      "entitySequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7VVN",
+      "entityId": "7VVN_4",
+      "entitySequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    },
+    {
+      "pdbId": "7VVO",
+      "entityId": "7VVO_4",
+      "entitySequenceSha256": "15e50cb5966bedaf896dc522a2c988edebc6ea17dfb37da54903314133b7a7df",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "PENDING_REQUIRED_METADATA"
+    }
+  ],
+  "retainedEvidence": {
+    "referenceEntity": "7FIM_1",
+    "referenceSourceId": "TIRZEPATIDE_2022",
+    "referenceSourceDoi": "10.1038/s41467-022-28683-0",
+    "referenceRoleSummary": "The retained primary-source summary identifies Nb35 as a G-alpha/G-beta interface binder used for complex stabilization.",
+    "sourceSummaryStorage": "The historical Nb35 review retains concise paraphrases and source references, not the complete primary article text.",
+    "sharedSequenceLength": 126,
+    "sharedSequenceSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+    "matchingCandidateCount": 16,
+    "fullSequenceToReferenceMatchCount": 0,
+    "recordedMappingBoundary": "The historical review explicitly identifies the shared segment boundaries as computational rather than experimentally determined domain boundaries.",
+    "candidatePaperReagentUseVerified": false,
+    "additionalDp1PreparationEvidence": "Retained DP1 Methods name Nb35 production and sample use and describe tags, but do not provide the missing complete-core sequence mapping for these historical candidates.",
+    "nb32PrecedentDistinction": "The GPR1/Nb32 packet cites a complete 114-residue nanobody sequence published in primary Methods. Its stronger primary sequence anchor is not supplied by the Nb35 substring comparison.",
+    "alreadyIntegratedNb35EntityAdjudicationsFound": 0
+  },
+  "decision": {
+    "status": "INSUFFICIENT_RETAINED_SOURCE_CHAIN_FOR_ENTITY_DISPOSITION",
+    "newEntityOverlayCreated": false,
+    "candidateEntityDispositionsChanged": 0,
+    "wholeEntryDispositionsChanged": 0,
+    "newIndependentEligibleGroups": 0,
+    "targetFreezePermitted": false,
+    "formalGraphAuthority": false,
+    "wholeEntryExclusionAuthority": false,
+    "reason": "Assigning the reference auxiliary role to these named candidates without a primary complete-core mapping or candidate-specific reagent identity/role statement would turn a name/sequence inference into a new entity disposition."
+  },
+  "missingPrimaryLink": [
+    "A primary complete Nb35 sequence and construct mapping establishing the reference and candidate core identity, including justified core boundaries; or",
+    "Candidate-paper preparation Methods explicitly establishing the deposited reagent identity and its auxiliary role."
+  ],
+  "unchangedScope": {
+    "pendingEntryCount": 16,
+    "previouslyAccountedPolymerCount": 102,
+    "frozenInputsChanged": false,
+    "previousSourceReviewsChanged": false
+  },
+  "continuationRule": "Do not repeat this entity-only adjudication attempt from the same reference role plus 126-residue substring. Reopen only when a qualifying primary mapping or candidate-specific Methods statement is added. Whole-entry sample, co-present-entity and deposition review remain separate requirements.",
+  "limitation": "No qualifying primary complete-core mapping was identified within the specifically listed retained evidence. This does not prove no such source exists elsewhere or that Nb35 lacks an auxiliary role in these preparations."
+}

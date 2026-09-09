@@ -1,0 +1,146 @@
+{
+  "schema": "confovhh-1bj1-source-access-v1",
+  "requests": [
+    {
+      "name": "epmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A9753694%20AND%20SRC%3AMED&format=json&resultType=core",
+      "status": 200,
+      "retrievedUtc": "2026-09-08T17:09:24.001659+00:00",
+      "bytes": 7964,
+      "sha256": "1546dc038f1f714b7cd548963d0407355dfcdd24d21ff4482926092f18255082",
+      "bibliography": [
+        {
+          "id": "9753694",
+          "source": "MED",
+          "pmid": "9753694",
+          "pmcid": null,
+          "doi": "10.1016/s0969-2126(98)00116-6",
+          "title": "VEGF and the Fab fragment of a humanized neutralizing antibody: crystal structure of the complex at 2.4 A resolution and mutational analysis of the interface.",
+          "authorString": "Muller YA, Chen Y, Christinger HW, Li B, Cunningham BC, Lowman HB, de Vos AM.",
+          "pubYear": "1998",
+          "isOpenAccess": "N",
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Unpaywall",
+                "url": "http://www.cell.com/article/S0969212698001166/pdf"
+              },
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/s0969-2126(98)00116-6"
+              }
+            ]
+          },
+          "license": null
+        }
+      ],
+      "fullResponseArchived": false
+    },
+    {
+      "name": "crossref",
+      "url": "https://api.crossref.org/works/10.1016%2Fs0969-2126%2898%2900116-6",
+      "status": 200,
+      "retrievedUtc": "2026-09-08T17:09:23.356986+00:00",
+      "bytes": 20806,
+      "sha256": "3d3436582a4c329277c078e99c4aded5cfd65347258251c46ac532393952a3c4",
+      "bibliography": {
+        "DOI": "10.1016/s0969-2126(98)00116-6",
+        "title": [
+          "VEGF and the Fab fragment of a humanized neutralizing antibody: crystal structure of the complex at 2.4 å resolution and mutational analysis of the interface"
+        ],
+        "published": {
+          "date-parts": [
+            [
+              1998,
+              9
+            ]
+          ]
+        },
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0969212698001166?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S0969212698001166?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "license": [
+          {
+            "start": {
+              "date-parts": [
+                [
+                  1998,
+                  9,
+                  1
+                ]
+              ],
+              "date-time": "1998-09-01T00:00:00Z",
+              "timestamp": 904608000000
+            },
+            "content-version": "tdm",
+            "delay-in-days": 0,
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+          },
+          {
+            "start": {
+              "date-parts": [
+                [
+                  2013,
+                  7,
+                  17
+                ]
+              ],
+              "date-time": "2013-07-17T00:00:00Z",
+              "timestamp": 1374019200000
+            },
+            "content-version": "vor",
+            "delay-in-days": 5433,
+            "URL": "https://www.elsevier.com/open-access/userlicense/1.0/"
+          }
+        ],
+        "URL": "https://doi.org/10.1016/s0969-2126(98)00116-6"
+      },
+      "fullResponseArchived": false
+    },
+    {
+      "name": "publisher_pdf",
+      "url": "https://www.cell.com/article/S0969212698001166/pdf",
+      "status": 502,
+      "retrievedUtc": "2026-09-08T17:09:57.377069+00:00",
+      "bytes": 150,
+      "sha256": "81074a9c8dfb24290e8fc4af14d20f67f5304618d27ac713628b1126e41dbd8e",
+      "contentType": "text/html",
+      "validPdf": false,
+      "fullResponseArchived": false
+    },
+    {
+      "name": "publisher_xml",
+      "url": "https://api.elsevier.com/content/article/PII:S0969212698001166?httpAccept=text/xml",
+      "status": 502,
+      "retrievedUtc": "2026-09-08T17:09:53.353255+00:00",
+      "bytes": 150,
+      "sha256": "81074a9c8dfb24290e8fc4af14d20f67f5304618d27ac713628b1126e41dbd8e",
+      "contentType": "text/html",
+      "validPdf": false,
+      "fullResponseArchived": false
+    }
+  ],
+  "responseScope": "Exact bibliography/identifier/access-location reductions only. Full metadata response bodies and publisher error HTML are not archived. No abstract, Results, captions or figures were exposed.",
+  "primaryMethodsRetrieved": false,
+  "primaryDepositionStatementRetrieved": false,
+  "primaryLicenseVerified": false,
+  "licenseCaveat": "Crossref supplies Elsevier TDM/open-access license URLs; these metadata declarations do not establish permissions for text that was not retrieved. No paper prose beyond bibliographic titles is retained.",
+  "accessCaveat": "Both advertised primary-content routes returned HTTP502 in this attempt. This is not an assertion of universal unavailability or absent Methods."
+}

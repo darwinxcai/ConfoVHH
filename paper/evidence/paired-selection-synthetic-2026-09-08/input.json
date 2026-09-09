@@ -1,0 +1,235 @@
+{
+  "schema": "confovhh-paired-selection-v1",
+  "studyId": "SYNTHETIC-ONLY",
+  "positiveOutcomeDefinition": "Arbitrary binary arithmetic controls; no biological meaning.",
+  "method": {
+    "name": "synthetic-method",
+    "policySha256": "1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "baseline": {
+    "name": "synthetic-baseline",
+    "policySha256": "2222222222222222222222222222222222222222222222222222222222222222"
+  },
+  "generators": [
+    "gen-a",
+    "gen-b"
+  ],
+  "attempts": [
+    {
+      "id": "t1.gen-a.0",
+      "groupId": "g1",
+      "targetId": "t1",
+      "generatorId": "gen-a",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t1.gen-a.1",
+      "groupId": "g1",
+      "targetId": "t1",
+      "generatorId": "gen-a",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t1.gen-b.0",
+      "groupId": "g1",
+      "targetId": "t1",
+      "generatorId": "gen-b",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t1.gen-b.1",
+      "groupId": "g1",
+      "targetId": "t1",
+      "generatorId": "gen-b",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t2.gen-a.0",
+      "groupId": "g1",
+      "targetId": "t2",
+      "generatorId": "gen-a",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t2.gen-a.1",
+      "groupId": "g1",
+      "targetId": "t2",
+      "generatorId": "gen-a",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t2.gen-b.0",
+      "groupId": "g1",
+      "targetId": "t2",
+      "generatorId": "gen-b",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t2.gen-b.1",
+      "groupId": "g1",
+      "targetId": "t2",
+      "generatorId": "gen-b",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t3.gen-a.0",
+      "groupId": "g2",
+      "targetId": "t3",
+      "generatorId": "gen-a",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t3.gen-a.1",
+      "groupId": "g2",
+      "targetId": "t3",
+      "generatorId": "gen-a",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t3.gen-b.0",
+      "groupId": "g2",
+      "targetId": "t3",
+      "generatorId": "gen-b",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "t3.gen-b.1",
+      "groupId": "g2",
+      "targetId": "t3",
+      "generatorId": "gen-b",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "failed-extra",
+      "groupId": "g1",
+      "targetId": "t1",
+      "generatorId": "gen-a",
+      "status": "failed",
+      "reason": "Synthetic failed attempt retained in accounting"
+    }
+  ],
+  "rankings": [
+    {
+      "id": "t1.gen-a.0",
+      "methodTier": 0,
+      "baselineTier": 1
+    },
+    {
+      "id": "t1.gen-a.1",
+      "methodTier": 1,
+      "baselineTier": 0
+    },
+    {
+      "id": "t1.gen-b.0",
+      "methodTier": 0,
+      "baselineTier": 1
+    },
+    {
+      "id": "t1.gen-b.1",
+      "methodTier": 1,
+      "baselineTier": 0
+    },
+    {
+      "id": "t2.gen-a.0",
+      "methodTier": 0,
+      "baselineTier": 0
+    },
+    {
+      "id": "t2.gen-a.1",
+      "methodTier": 1,
+      "baselineTier": 1
+    },
+    {
+      "id": "t2.gen-b.0",
+      "methodTier": 0,
+      "baselineTier": 0
+    },
+    {
+      "id": "t2.gen-b.1",
+      "methodTier": 1,
+      "baselineTier": 1
+    },
+    {
+      "id": "t3.gen-a.0",
+      "methodTier": 1,
+      "baselineTier": 0
+    },
+    {
+      "id": "t3.gen-a.1",
+      "methodTier": 0,
+      "baselineTier": 1
+    },
+    {
+      "id": "t3.gen-b.0",
+      "methodTier": 1,
+      "baselineTier": 0
+    },
+    {
+      "id": "t3.gen-b.1",
+      "methodTier": 0,
+      "baselineTier": 1
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "t1.gen-a.0",
+      "positive": 1
+    },
+    {
+      "id": "t1.gen-a.1",
+      "positive": 0
+    },
+    {
+      "id": "t1.gen-b.0",
+      "positive": 1
+    },
+    {
+      "id": "t1.gen-b.1",
+      "positive": 0
+    },
+    {
+      "id": "t2.gen-a.0",
+      "positive": 1
+    },
+    {
+      "id": "t2.gen-a.1",
+      "positive": 0
+    },
+    {
+      "id": "t2.gen-b.0",
+      "positive": 1
+    },
+    {
+      "id": "t2.gen-b.1",
+      "positive": 0
+    },
+    {
+      "id": "t3.gen-a.0",
+      "positive": 1
+    },
+    {
+      "id": "t3.gen-a.1",
+      "positive": 0
+    },
+    {
+      "id": "t3.gen-b.0",
+      "positive": 1
+    },
+    {
+      "id": "t3.gen-b.1",
+      "positive": 0
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "confovhh-audit-report-rank-input-v1",
+  "studyId": "SYNTHETIC-AUDIT-RANK",
+  "generators": [
+    {
+      "id": "generator",
+      "scoreName": "synthetic-score",
+      "direction": "higher-better"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "a-near",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "z-near",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "separated",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "failed",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "generator",
+      "status": "failed",
+      "reason": "Synthetic generation failure"
+    }
+  ],
+  "reports": [
+    {
+      "id": "a-near",
+      "reportSha256": "f12d421e96984b1bd41d515c8893b4ff81e00d335543b9676f4511873c9a3c04",
+      "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "producerScore": 0.9
+    },
+    {
+      "id": "z-near",
+      "reportSha256": "f12d421e96984b1bd41d515c8893b4ff81e00d335543b9676f4511873c9a3c04",
+      "coordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "producerScore": 0.2
+    },
+    {
+      "id": "separated",
+      "reportSha256": "e7aca3526131b020e375708dc42fbd6c164fff794004b0238524594ec334fdbe",
+      "coordinateSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+      "coordinateBytes": 2559,
+      "receptorChain": "R",
+      "vhhChain": "V",
+      "selectedModelId": "1",
+      "producerScore": 0.9
+    }
+  ]
+}

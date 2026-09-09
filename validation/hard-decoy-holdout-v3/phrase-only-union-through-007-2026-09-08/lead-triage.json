@@ -1,0 +1,1234 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "All numbered-heavy-domain leads in newly captured chunks 004 through 007; deposition metadata only.",
+  "inputBindings": [
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-004-2026-09-08/snapshots/4ba5a2d1357690769a42e91a171b624a1eea80690bb460edc56185f5cfd73d0f/entries.jsonl",
+      "bytes": 669654,
+      "sha256": "7fd42e0ee241a6deafa9c0e405889a5d93b17c9b9c3b0eb0d4aa3e7538979805"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-004-2026-09-08/snapshots/4ba5a2d1357690769a42e91a171b624a1eea80690bb460edc56185f5cfd73d0f/entity-screens.jsonl",
+      "bytes": 834340,
+      "sha256": "c087804bf7339de8b1d3a1dcb9a3d7bce091b31f33a750e8c83e301bf79cc96e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-005-2026-09-08/snapshots/959213c4a3f0509bf09a2c2570dce468aff1606abfe7e56d58658c0c7e2d43bb/entries.jsonl",
+      "bytes": 830546,
+      "sha256": "30fa0fa79da056b94721f27f1e229e9118ad121e487acd003df5e8d701786ed1"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-005-2026-09-08/snapshots/959213c4a3f0509bf09a2c2570dce468aff1606abfe7e56d58658c0c7e2d43bb/entity-screens.jsonl",
+      "bytes": 1143126,
+      "sha256": "4e57b0a939bf6233baa47404f16ad92f415be6e86683cf5e82effc8d44d8b454"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-006-2026-09-08/snapshots/fceeb89e02546480f27b57ddf64a1aa9e4fabfbffca010c602aaf4c4980dda9c/entries.jsonl",
+      "bytes": 676263,
+      "sha256": "9996a26ad46762fcd2114d520c79db6426fdd95f0e91c4e219c3d8ab27ecd68f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-006-2026-09-08/snapshots/fceeb89e02546480f27b57ddf64a1aa9e4fabfbffca010c602aaf4c4980dda9c/entity-screens.jsonl",
+      "bytes": 823150,
+      "sha256": "a57b862ec1b435e40ae8e0e47cfe4989acfb60e86ca3c9c26b8ffaf7b7c5d8f5"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-007-2026-09-08/snapshots/383596132cb523b3ac720f066ed3bdb8cf8a8d9cd4407fe776e20b11a6b8ab32/entries.jsonl",
+      "bytes": 598356,
+      "sha256": "d63b4fb2b813b7dd5b195b47537744189d37a13f316cf547cd51b15e41740056"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-007-2026-09-08/snapshots/383596132cb523b3ac720f066ed3bdb8cf8a8d9cd4407fe776e20b11a6b8ab32/entity-screens.jsonl",
+      "bytes": 736636,
+      "sha256": "c74e305154acb8da28d2950d792a1a503a4833c23d7e219e2bc9b8e6b2cab1aa"
+    }
+  ],
+  "entries": [
+    {
+      "pdbId": "1SY6",
+      "chunkIndex": 4,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-004-2026-09-08/snapshots/4ba5a2d1357690769a42e91a171b624a1eea80690bb460edc56185f5cfd73d0f/entries.jsonl",
+      "sourceEntryRawLineSha256": "9692e8b6adac69757294f6f4ccb9fa6b2645ae1b6ba4749944c54626f76ec43e",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "OKT3 Fab light chain",
+          "sequenceLength": 213,
+          "sequenceSha256": "b74ab24a1d7e06bf21ff66cd43a468c0610a3c4d35d1cf0949ab68e8d458488c",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q5XFY8",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "OKT3 Fab heavy chain",
+          "sequenceLength": 219,
+          "sequenceSha256": "486f7ebc433eff70719e57220bbe05449e67bebd09cdce7addc278d9378f638c",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P01865",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "T-cell surface glycoprotein CD3 gamma/epsilon chain",
+          "sequenceLength": 204,
+          "sequenceSha256": "fe01429cd3a1656a2cb5356bd4bcc453c8bf4c05c840a4570b70d7b81a96efc3",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P07766",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1073/pnas.0402295101",
+        "pmid": "15136729",
+        "title": "Crystal structure of the human T cell receptor CD3(epsilon)(gamma) heterodimer complexed to the therapeutic mAb OKT3."
+      },
+      "metadataContext": "Conventional OKT3 Fab and CD3 gamma/epsilon context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "1TZH",
+      "chunkIndex": 4,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-004-2026-09-08/snapshots/4ba5a2d1357690769a42e91a171b624a1eea80690bb460edc56185f5cfd73d0f/entries.jsonl",
+      "sourceEntryRawLineSha256": "3a34c0ffef2ea3e90e94e5913f8e29415c542b542e5cc1a3f8cc6717a7a91aaf",
+      "candidateEntityIds": [
+        "3"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Vascular endothelial growth factor A",
+          "sequenceLength": 102,
+          "sequenceSha256": "7af9039ac76deadec47cbaf40a15fb496b4aa88f3044a41b1424fe0691c0c81d",
+          "authAsymIds": [
+            "V",
+            "W"
+          ],
+          "labelAsymIds": [
+            "A",
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P15692",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "Fab YADS1 Light Chain",
+          "sequenceLength": 213,
+          "sequenceSha256": "6b238aa90bcd864041043476a596b4324742ec759da60b9def7b7c2124458b32",
+          "authAsymIds": [
+            "A",
+            "L"
+          ],
+          "labelAsymIds": [
+            "C",
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "Fab YADS1 Heavy Chain",
+          "sequenceLength": 229,
+          "sequenceSha256": "de4858d582bba228af6f1c28e2e44345b142300ed9edbf7f5ceee9395f055cde",
+          "authAsymIds": [
+            "B",
+            "H"
+          ],
+          "labelAsymIds": [
+            "D",
+            "F"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1073/pnas.0401786101",
+        "pmid": "15306681",
+        "title": "Synthetic antibodies from a four-amino-acid code: A dominant role for tyrosine in antigen recognition"
+      },
+      "metadataContext": "Conventional YADS1 Fab and VEGFA context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "1TZI",
+      "chunkIndex": 4,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-004-2026-09-08/snapshots/4ba5a2d1357690769a42e91a171b624a1eea80690bb460edc56185f5cfd73d0f/entries.jsonl",
+      "sourceEntryRawLineSha256": "c587483f8e0baf7bffc4436000bf50289638dcfcd60bdf226823e34fc0e02013",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Fab YADS2 Light Chain",
+          "sequenceLength": 214,
+          "sequenceSha256": "a8de2d070e023183d6d008fc812a2f5be67ead55ff5c183c52fa86df84f03ed3",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "2",
+          "description": "Fab YADS2 Heavy Chain",
+          "sequenceLength": 222,
+          "sequenceSha256": "d3a1d3892f095ab25d102fda54f0b6d403a3a44b09eddbcb09327e93b1bb2704",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "Vascular endothelial growth factor A",
+          "sequenceLength": 102,
+          "sequenceSha256": "7af9039ac76deadec47cbaf40a15fb496b4aa88f3044a41b1424fe0691c0c81d",
+          "authAsymIds": [
+            "V"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P15692",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1073/pnas.0401786101",
+        "pmid": "15306681",
+        "title": "Synthetic antibodies from a four-amino-acid code: A dominant role for tyrosine in antigen recognition"
+      },
+      "metadataContext": "Conventional YADS2 Fab and VEGFA context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "1V7M",
+      "chunkIndex": 4,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-004-2026-09-08/snapshots/4ba5a2d1357690769a42e91a171b624a1eea80690bb460edc56185f5cfd73d0f/entries.jsonl",
+      "sourceEntryRawLineSha256": "ab910e85cfe9e0a6092cbb5a6a711525843022b80bd5dc19ad04778ad9f8afbd",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Monoclonal TN1 Fab Light Chain",
+          "sequenceLength": 213,
+          "sequenceSha256": "ce2becc573a94664b1195dcd3ecd001c1fddbcd4d8e1b536187ec7343739db6b",
+          "authAsymIds": [
+            "L",
+            "M"
+          ],
+          "labelAsymIds": [
+            "A",
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "2",
+          "description": "Monoclonal TN1 Fab Heavy Chain",
+          "sequenceLength": 217,
+          "sequenceSha256": "e85d60b790e7a43f45e3bc1bf219b5ed39ea22ff177b0ad53014cfafd0125f14",
+          "authAsymIds": [
+            "H",
+            "I"
+          ],
+          "labelAsymIds": [
+            "B",
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "Thrombopoietin",
+          "sequenceLength": 163,
+          "sequenceSha256": "fede486a5c99f18492578a180d8ecb276d6d36185d2a17aef30d10974460aa64",
+          "authAsymIds": [
+            "V",
+            "X"
+          ],
+          "labelAsymIds": [
+            "C",
+            "F"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P40225",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1073/pnas.0308530100",
+        "pmid": "14769915",
+        "title": "Structure of the receptor-binding domain of human thrombopoietin determined by complexation with a neutralizing antibody fragment"
+      },
+      "metadataContext": "Conventional TN1 Fab and thrombopoietin context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "1V7N",
+      "chunkIndex": 4,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-004-2026-09-08/snapshots/4ba5a2d1357690769a42e91a171b624a1eea80690bb460edc56185f5cfd73d0f/entries.jsonl",
+      "sourceEntryRawLineSha256": "e17c687dd393b6ddb4c3e35bc54c136baf169a1e153b77fa6cf2a0b1a89d1373",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Monoclonal TN1 Fab Light Chain",
+          "sequenceLength": 213,
+          "sequenceSha256": "ce2becc573a94664b1195dcd3ecd001c1fddbcd4d8e1b536187ec7343739db6b",
+          "authAsymIds": [
+            "L",
+            "M",
+            "N",
+            "O"
+          ],
+          "labelAsymIds": [
+            "A",
+            "C",
+            "E",
+            "G"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "2",
+          "description": "Monoclonal TN1 Fab Heavy Chain",
+          "sequenceLength": 217,
+          "sequenceSha256": "e85d60b790e7a43f45e3bc1bf219b5ed39ea22ff177b0ad53014cfafd0125f14",
+          "authAsymIds": [
+            "H",
+            "I",
+            "J",
+            "K"
+          ],
+          "labelAsymIds": [
+            "B",
+            "D",
+            "F",
+            "H"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "Thrombopoietin",
+          "sequenceLength": 163,
+          "sequenceSha256": "bec9837d4e524d0299c861e6188ce5f2581af7505ee61b00f11b7fce25811367",
+          "authAsymIds": [
+            "V",
+            "X",
+            "Y",
+            "Z"
+          ],
+          "labelAsymIds": [
+            "I",
+            "J",
+            "K",
+            "L"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P40225",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1073/pnas.0308530100",
+        "pmid": "14769915",
+        "title": "Structure of the receptor-binding domain of human thrombopoietin determined by complexation with a neutralizing antibody fragment"
+      },
+      "metadataContext": "Conventional TN1 Fab and thrombopoietin context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "1XIW",
+      "chunkIndex": 5,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-005-2026-09-08/snapshots/959213c4a3f0509bf09a2c2570dce468aff1606abfe7e56d58658c0c7e2d43bb/entries.jsonl",
+      "sourceEntryRawLineSha256": "adc91516f21884d36b402f4ffd1881d7304bad87e864b63eef9888968e4087f7",
+      "candidateEntityIds": [
+        "4"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "T-cell surface glycoprotein CD3 epsilon chain",
+          "sequenceLength": 105,
+          "sequenceSha256": "eea0327c5020baa689d49be07d87fe2c6ec11cf754a6ad74201d49507de547fa",
+          "authAsymIds": [
+            "A",
+            "E"
+          ],
+          "labelAsymIds": [
+            "A",
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P07766",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "T-cell surface glycoprotein CD3 delta chain",
+          "sequenceLength": 79,
+          "sequenceSha256": "f682a866137e776de46844f1aed8500e1a33e3f47a5842752cf8740dd9072f37",
+          "authAsymIds": [
+            "B",
+            "F"
+          ],
+          "labelAsymIds": [
+            "B",
+            "F"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P04234",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "immunoglobulin light chain variable region",
+          "sequenceLength": 108,
+          "sequenceSha256": "831087f9634e061e9e0f223371205820140b75e8714ce9f6b0a9a016dffee007",
+          "authAsymIds": [
+            "C",
+            "G"
+          ],
+          "labelAsymIds": [
+            "C",
+            "G"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "PH0888",
+              "databaseName": "PIR",
+              "provenanceSource": "PDB"
+            }
+          ]
+        },
+        {
+          "entityId": "4",
+          "description": "immunoglobulin heavy chain variable region",
+          "sequenceLength": 122,
+          "sequenceSha256": "6b9e9975a1535d08388c22908855de125e1d3eb5a9be042258e11942932c1beb",
+          "authAsymIds": [
+            "D",
+            "H"
+          ],
+          "labelAsymIds": [
+            "D",
+            "H"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "PH0887",
+              "databaseName": "PIR",
+              "provenanceSource": "PDB"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1073/pnas.0407359101",
+        "pmid": "15534202",
+        "title": "Crystal structure of a human CD3-epsilon/delta dimer in complex with a UCHT1 single-chain antibody fragment."
+      },
+      "metadataContext": "UCHT1 antibody variable heavy/light chains and CD3 epsilon/delta context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "25ST",
+      "chunkIndex": 5,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-005-2026-09-08/snapshots/959213c4a3f0509bf09a2c2570dce468aff1606abfe7e56d58658c0c7e2d43bb/entries.jsonl",
+      "sourceEntryRawLineSha256": "5e919d8ea1d5d0515febfbd0f366e0f1e3c52a36297240abe836da046bc0fd61",
+      "candidateEntityIds": [
+        "4"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1,Guanine nucleotide-binding protein G(t) subunit alpha-3",
+          "sequenceLength": 239,
+          "sequenceSha256": "2f476b9eab0792266b42e5955725b2245ca806292d6c16b96eb9de9720a856ce",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "A8MTJ3",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P63096",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-3",
+          "sequenceLength": 351,
+          "sequenceSha256": "b387147ebce878011dcf6244e1247b5eaf5a942d37b53a8b741ed8f3d3d6c0f1",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P16520",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-13",
+          "sequenceLength": 67,
+          "sequenceSha256": "2ee6b30b56d0ad077de61dc50bcebf9716943743ed486ce8e4aa71c1e9e6f847",
+          "authAsymIds": [
+            "G"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9P2W3",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "4",
+          "description": "Single-chain variable fragment 16",
+          "sequenceLength": 307,
+          "sequenceSha256": "9b9c040161d8a24ab6693d609961445b37f7c6cc0fcbcf2ade5622f2e8997f5c",
+          "authAsymIds": [
+            "N"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "5",
+          "description": "Taste receptor type 2 member 4",
+          "sequenceLength": 365,
+          "sequenceSha256": "2284681b465a1a07ca46c12fab81ba8ce3d54ef694d29acf6ee49b68f92abea0",
+          "authAsymIds": [
+            "R"
+          ],
+          "labelAsymIds": [
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9NYW5",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "6",
+          "description": "TRP-TRP-TRP",
+          "sequenceLength": 3,
+          "sequenceSha256": "ca22f6284d521ce0027529e8e04b32e5db2c837b9910dc8147cf7ae4fde6bf6c",
+          "authAsymIds": [
+            "S"
+          ],
+          "labelAsymIds": [
+            "F"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": []
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Receptor hyper-flexibility of human bitter receptor TAS2R4 revealed by cryo-EM structures in apo and tripeptide-bound states"
+      },
+      "metadataContext": "TAS2R4 GPCR, scFv16, heterotrimeric G-protein and tripeptide context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "25SU",
+      "chunkIndex": 5,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-005-2026-09-08/snapshots/959213c4a3f0509bf09a2c2570dce468aff1606abfe7e56d58658c0c7e2d43bb/entries.jsonl",
+      "sourceEntryRawLineSha256": "f387df95a2f372aa12baa631bf0715e12df062e063493b8e108033a40117b563",
+      "candidateEntityIds": [
+        "2"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Taste receptor type 2 member 4",
+          "sequenceLength": 365,
+          "sequenceSha256": "2284681b465a1a07ca46c12fab81ba8ce3d54ef694d29acf6ee49b68f92abea0",
+          "authAsymIds": [
+            "R"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9NYW5",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "Single-chain variable fragment 16",
+          "sequenceLength": 307,
+          "sequenceSha256": "9b9c040161d8a24ab6693d609961445b37f7c6cc0fcbcf2ade5622f2e8997f5c",
+          "authAsymIds": [
+            "N"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-13",
+          "sequenceLength": 67,
+          "sequenceSha256": "2ee6b30b56d0ad077de61dc50bcebf9716943743ed486ce8e4aa71c1e9e6f847",
+          "authAsymIds": [
+            "G"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q9P2W3",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-3",
+          "sequenceLength": 351,
+          "sequenceSha256": "b387147ebce878011dcf6244e1247b5eaf5a942d37b53a8b741ed8f3d3d6c0f1",
+          "authAsymIds": [
+            "B"
+          ],
+          "labelAsymIds": [
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P16520",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "5",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1,Guanine nucleotide-binding protein G(t) subunit alpha-3",
+          "sequenceLength": 239,
+          "sequenceSha256": "2f476b9eab0792266b42e5955725b2245ca806292d6c16b96eb9de9720a856ce",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "A8MTJ3",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P63096",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Receptor hyper-flexibility of human bitter receptor TAS2R4 revealed by cryo-EM structures in apo and tripeptide-bound states"
+      },
+      "metadataContext": "TAS2R4 GPCR, scFv16 and heterotrimeric G-protein context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2BDN",
+      "chunkIndex": 5,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-005-2026-09-08/snapshots/959213c4a3f0509bf09a2c2570dce468aff1606abfe7e56d58658c0c7e2d43bb/entries.jsonl",
+      "sourceEntryRawLineSha256": "19b9cc289c160a19bb8890a577a79b8394a5c847f499b0b1229ea11e10275392",
+      "candidateEntityIds": [
+        "3"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Small inducible cytokine A2",
+          "sequenceLength": 76,
+          "sequenceSha256": "c5d6f41c1107ebe4d6ae282bd77d6c1eea1bf65c5b6d0c6ef90fb2bf7b505de2",
+          "authAsymIds": [
+            "A"
+          ],
+          "labelAsymIds": [
+            "A"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P13500",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "Antibody light chain 11K2",
+          "sequenceLength": 214,
+          "sequenceSha256": "1fcf084b2d79da6dc58863e15b8e345b325f332752220c22de56bc50ba04ecfc",
+          "authAsymIds": [
+            "L"
+          ],
+          "labelAsymIds": [
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "Antibody heavy chain 11K2",
+          "sequenceLength": 217,
+          "sequenceSha256": "2cb6773d6d6d730f262b218f7166dc700a353816b15195fb73652b8f74208cd4",
+          "authAsymIds": [
+            "H"
+          ],
+          "labelAsymIds": [
+            "C"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "referenceSequences": []
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1093/protein/gzl015",
+        "pmid": "16682434",
+        "title": "Structure activity relationships of monocyte chemoattractant proteins in complex with a blocking antibody."
+      },
+      "metadataContext": "Conventional 11K2 antibody heavy/light chains and CCL2 context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2FJG",
+      "chunkIndex": 6,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-006-2026-09-08/snapshots/fceeb89e02546480f27b57ddf64a1aa9e4fabfbffca010c602aaf4c4980dda9c/entries.jsonl",
+      "sourceEntryRawLineSha256": "cdc24feb14f1434d6059f2f7b2afafc0b0fc65d4b27fd857132e81b34c2ac077",
+      "candidateEntityIds": [
+        "3"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Vascular endothelial growth factor A",
+          "sequenceLength": 102,
+          "sequenceSha256": "7af9039ac76deadec47cbaf40a15fb496b4aa88f3044a41b1424fe0691c0c81d",
+          "authAsymIds": [
+            "V",
+            "W"
+          ],
+          "labelAsymIds": [
+            "A",
+            "B"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P15692",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "Fab light chain",
+          "sequenceLength": 214,
+          "sequenceSha256": "487497efbc1eff6f08ff0b11dab48248280bddca2cceffce53d48c0740d636b8",
+          "authAsymIds": [
+            "A",
+            "L"
+          ],
+          "labelAsymIds": [
+            "C",
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "Fab heavy chain",
+          "sequenceLength": 227,
+          "sequenceSha256": "bbddc5de628ab3ed6c87a0e3a9c5ed8912a9737d19b24dc886ce7bcdeaa5aff9",
+          "authAsymIds": [
+            "B",
+            "H"
+          ],
+          "labelAsymIds": [
+            "D",
+            "F"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": []
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1074/jbc.m507783200",
+        "pmid": "16373345",
+        "title": "Structure-function studies of two synthetic anti-vascular endothelial growth factor Fabs and comparison with the Avastin Fab."
+      },
+      "metadataContext": "Conventional Fab heavy/light chains and VEGFA context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    },
+    {
+      "pdbId": "2FJH",
+      "chunkIndex": 6,
+      "sourceEntriesPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-006-2026-09-08/snapshots/fceeb89e02546480f27b57ddf64a1aa9e4fabfbffca010c602aaf4c4980dda9c/entries.jsonl",
+      "sourceEntryRawLineSha256": "5ffdfc24a8efd9062701f1d8914e9b6414ec3d1cb8c5f719c81547049cdb1873",
+      "candidateEntityIds": [
+        "3"
+      ],
+      "allPolymerInventory": [
+        {
+          "entityId": "1",
+          "description": "Vascular endothelial growth factor A",
+          "sequenceLength": 102,
+          "sequenceSha256": "7af9039ac76deadec47cbaf40a15fb496b4aa88f3044a41b1424fe0691c0c81d",
+          "authAsymIds": [
+            "V",
+            "W"
+          ],
+          "labelAsymIds": [
+            "A",
+            "D"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": [
+            {
+              "databaseAccession": "P15692",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "entityId": "2",
+          "description": "Fab fragment light chain",
+          "sequenceLength": 214,
+          "sequenceSha256": "9843cf11c166e6320b7a6d3b39eb0635bed01824c59c84c41bbcf3b774389e15",
+          "authAsymIds": [
+            "A",
+            "L"
+          ],
+          "labelAsymIds": [
+            "B",
+            "E"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": []
+        },
+        {
+          "entityId": "3",
+          "description": "Fab fragment heavy chain",
+          "sequenceLength": 228,
+          "sequenceSha256": "43066ab61ef02930eb7112be29e78c401e01359795b946bb16f07b72ae52e669",
+          "authAsymIds": [
+            "B",
+            "H"
+          ],
+          "labelAsymIds": [
+            "C",
+            "F"
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ],
+          "referenceSequences": []
+        }
+      ],
+      "completeInventory": true,
+      "primaryCitation": {
+        "doi": "10.1074/jbc.m507783200",
+        "pmid": "16373345",
+        "title": "Structure-function studies of two synthetic anti-vascular endothelial growth factor Fabs and comparison with the Avastin Fab."
+      },
+      "metadataContext": "Conventional Fab heavy/light chains and VEGFA context",
+      "contextIsDepositionTriageNotFormalRoleAdjudication": true,
+      "formalDisposition": "PENDING_DISPOSITION",
+      "primaryPreparationReviewed": false,
+      "directGpcrVhhCaseEstablished": false
+    }
+  ],
+  "authority": {
+    "formalDispositionAssigned": false,
+    "wholeEntryExclusionAuthority": false,
+    "directBindingRoleEstablished": false,
+    "formalNoEdgeAuthority": false,
+    "independentEligibleGroupsAdded": 0,
+    "predictiveAccuracyMeasured": false,
+    "nativeCoordinatesAccessed": false,
+    "predictionOutputsAccessed": false,
+    "primaryArticleBodiesAccessed": false
+  }
+}

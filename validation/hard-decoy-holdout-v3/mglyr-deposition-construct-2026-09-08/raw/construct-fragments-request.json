@@ -1,0 +1,1 @@
+{"query": "query ConfoVHHConstructFragments($ids:[String!]!) { entries(entry_ids:$ids) { rcsb_id polymer_entities { rcsb_id rcsb_polymer_entity { pdbx_fragment pdbx_mutation src_method } } } }", "variables": {"ids": ["9VOR", "9VOS"]}}

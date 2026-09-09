@@ -1,0 +1,99 @@
+{
+  "inputSha256": "ca49246eb76d3155c5752be8a51f11436601abc89b6372c3791955f0c8fa85d3",
+  "evaluatorSha256": "08b8f3c1ef5a341e9d719e5162624b3a3153ca86ef02f5c91a1a3ac7a8e2c83e",
+  "strictJsonParserSha256": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+  "nodeVersion": "v24.19.0",
+  "report": {
+    "schema": "confovhh-paired-selection-report-v1",
+    "studyId": "SYNTHETIC-AUDIT-RANK",
+    "positiveOutcomeDefinition": "Arbitrary synthetic binary labels with no reference-pose or biological meaning.",
+    "method": {
+      "name": "audit-report-bound-current-product",
+      "policySha256": "a8cb5da73373ffa1d119ec0cbcd036afa5b38fd87f4e775320fcc4057ce0a5fe"
+    },
+    "baseline": {
+      "name": "declared-producer-score-order",
+      "policySha256": "6bc0714dadf80b3102d88b3706b0773790a642e22e45cc0bb7e179042a02deea"
+    },
+    "status": "descriptive-comparison-complete",
+    "attemptCounts": {
+      "eligible": 3,
+      "failed": 1,
+      "ineligible": 0
+    },
+    "declaredGroupCount": 1,
+    "mixedOutcomeStrata": 1,
+    "declaredGroupsWithMixedOutcomeStrata": 1,
+    "strata": [
+      {
+        "groupId": "synthetic-group",
+        "targetId": "synthetic-target",
+        "generatorId": "generator",
+        "attempted": 4,
+        "eligible": 3,
+        "positives": 1,
+        "mixedOutcomes": true,
+        "status": "assessable",
+        "method": {
+          "tiedCandidates": 2,
+          "expectedSuccess": 0.5
+        },
+        "baseline": {
+          "tiedCandidates": 2,
+          "expectedSuccess": 0.5
+        },
+        "delta": 0
+      }
+    ],
+    "groups": [
+      {
+        "groupId": "synthetic-group",
+        "targets": [
+          {
+            "targetId": "synthetic-target",
+            "values": {
+              "method": 0.5,
+              "baseline": 0.5,
+              "delta": 0
+            }
+          }
+        ],
+        "values": {
+          "method": 0.5,
+          "baseline": 0.5,
+          "delta": 0
+        }
+      }
+    ],
+    "macro": {
+      "method": 0.5,
+      "baseline": 0.5,
+      "delta": 0
+    },
+    "uncertainty": {
+      "method": "paired-group-then-target-percentile-bootstrap",
+      "confidenceLevel": 0.95,
+      "seed": 20260908,
+      "bootstrapReplicates": 0,
+      "deltaInterval": null,
+      "generatorAndPoseResampling": false
+    },
+    "leaveOneGroupOut": [],
+    "limitations": [
+      "Group identities and policy hashes are supplied declarations, not certified independence or verified policy execution.",
+      "Input integrity does not establish pre-label freezing, complete source-population capture, blinded collection, or authorized label access.",
+      "Expected top-1 success assumes uniform random choice within the best tied tier. Candidate IDs never break scientific ties.",
+      "Bootstrap uncertainty is conditional on representative independent groups and exchangeable targets within groups; it does not cover grouping, selection, training overlap, or missing-population bias.",
+      "A degenerate interval is possible and is not proof of certainty. Small group counts support limited generalization.",
+      "One paired baseline and one endpoint are evaluated; no multiplicity-adjusted superiority decision or full v3 endpoint evaluation is performed.",
+      "Fewer than ten declared groups; this does not meet the v3 independent-group minimum."
+    ],
+    "claims": {
+      "independentGroupsCertified": false,
+      "completeV3Evaluation": false,
+      "nearNativeRankingValidated": false,
+      "bindingValidated": false,
+      "scientificSuperiorityEstablished": false
+    }
+  }
+}

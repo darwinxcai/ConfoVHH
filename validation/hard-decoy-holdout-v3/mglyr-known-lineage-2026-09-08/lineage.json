@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "SOURCE_REPORTED_NAMED_DERIVATIVE_RECORDED",
+  "source": {
+    "path": "validation/hard-decoy-holdout-v3/mglyr-source-resolution-2026-09-08/source-blocks.json",
+    "bytes": 7469,
+    "sha256": "bac8a21e2ef7dd5f19e6669fbec095e0c2a501b82dcca36ac916128ceb676e59",
+    "doi": "10.1038/s41467-026-68339-x",
+    "pmcid": "PMC12834959",
+    "paragraphId": "Sec11.p0",
+    "paragraphTextSha256": "d8836cc14669c1a90798541934762cf2825e9e195190bae151c8febb20a47051",
+    "upstreamXmlSha256": "5841cd77f7242c75562f2eb1237edb2ee43720f2cbf71bb70bf1b202f6890776"
+  },
+  "relationship": {
+    "parentName": "Nb20",
+    "derivativeName": "Nb20*",
+    "type": "SOURCE_REPORTED_DIRECT_SITE_DIRECTED_DERIVATIVE",
+    "sourceReportedParentSequenceLength": 131,
+    "sourceReportedParentSequenceSha256": "dc98dd242f5929991a7780a20d2aa613270104a7b9c4e4d1431d721ab9b5b38b",
+    "coordinateSystem": "One-based positions in the 131-residue source-reported sequence; not an independently assigned IMGT numbering.",
+    "substitutions": [
+      {
+        "sourceRegionLabel": "CDR1",
+        "firstPosition": 30,
+        "lastPosition": 35,
+        "from": "IGNIYI",
+        "to": "GGAGAG"
+      },
+      {
+        "sourceRegionLabel": "CDR2",
+        "firstPosition": 54,
+        "lastPosition": 62,
+        "from": "RTVRWTKYE",
+        "to": "GAVGGAAAG"
+      }
+    ],
+    "inferredDerivativeSequenceLength": 131,
+    "inferredDerivativeSequenceSha256": "69c40cc79e90d8906834be52f899d513b4b9b73cfc29170bc4200c35cd4abf0e",
+    "inferredChangedPositions": [
+      30,
+      32,
+      33,
+      34,
+      35,
+      54,
+      55,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62
+    ],
+    "inferredDerivativeStatus": "INFERRED_FROM_REPORTED_REPLACEMENTS_NOT_OBSERVED_REAGENT_BYTES"
+  },
+  "interpretation": {
+    "knownParentRelationshipDocumented": true,
+    "sourceNamesHaveBeenLinkedToEveryDepositedEntity": false,
+    "allParentOrVariantRelationshipsResolved": false,
+    "inferredDerivativeIsAnObservedExpressedConstruct": false,
+    "sourceNonbindingLabelIsIndependentPerformanceEvidence": false,
+    "sourceRegionLabelsAreNewImgtAssignments": false
+  },
+  "authority": {
+    "exactCryoEmConstructResolved": false,
+    "completeAncestryCertified": false,
+    "formalLeakageGraphChanged": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityGranted": false,
+    "exposureClearanceGranted": false,
+    "independentEligibleGroupsAdded": 0,
+    "predictiveAccuracyMeasured": false,
+    "targetFreezePermitted": false,
+    "nativeCoordinatesAccessed": false,
+    "predictionOutputsAccessed": false,
+    "labelsAccessed": false,
+    "networkUsed": false
+  }
+}

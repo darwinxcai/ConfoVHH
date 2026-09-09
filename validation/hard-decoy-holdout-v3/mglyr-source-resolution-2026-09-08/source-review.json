@@ -1,0 +1,100 @@
+{
+  "schema": "confovhh-mglyr-source-resolution-v1",
+  "date": "2026-09-08",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "scope": {
+    "pdbIds": [
+      "9VOR",
+      "9VOS"
+    ],
+    "binder": "Nb20",
+    "receptor": "GPR158 / mGlyR",
+    "sourceDoi": "10.1038/s41467-026-68339-x"
+  },
+  "priorInputSha256": {
+    "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/construct-followup.json": "a5ce563ba0c7ef839deca77f9ca3f88880fb37c67fc2f922283483186bbe51af",
+    "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/retrieval-attempts.json": "3802051f69635c10777f3d32da6d9ef9c7068cfa9c33885946060bfe437f1308",
+    "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/bibliography-provenance.json": "d45b28a4e805e95c40ed06af7a0ae66418f8d9985b7b53051407a59c8c7d7870"
+  },
+  "evidence": [
+    {
+      "id": "immune-origin",
+      "classification": "SOURCE_REPORTED_FACT",
+      "paragraphIds": [
+        "Sec13.p0"
+      ],
+      "statement": "The authors report immunizing one llama with HEK293 membranes expressing mGlyR, collecting blood 87 days after immunization, and amplifying leukocyte-derived VHH cDNA."
+    },
+    {
+      "id": "library-vector",
+      "classification": "SOURCE_REPORTED_FACT",
+      "paragraphIds": [
+        "Sec13.p9"
+      ],
+      "statement": "The amplified cDNA was cloned into pCANTAB5 to produce a phage-displayed nanobody library in E. coli TG1."
+    },
+    {
+      "id": "panning-route",
+      "classification": "SOURCE_REPORTED_FACT",
+      "paragraphIds": [
+        "Sec14.p0"
+      ],
+      "statement": "The library was depleted on mock-transfected HEK293 membranes and selected on mGlyR-expressing membranes. The authors report three panning rounds and 61 individual clones for screening."
+    },
+    {
+      "id": "nb20-production-link",
+      "classification": "SOURCE_REPORTED_FACT",
+      "paragraphIds": [
+        "Sec11.p0"
+      ],
+      "statement": "The cDNA-constructs Methods explicitly include Nb20 among promising candidates subcloned from the phage-display workflow into pET28a and provide its complete sequence."
+    },
+    {
+      "id": "assay-tags",
+      "classification": "SOURCE_REPORTED_FACT",
+      "paragraphIds": [
+        "Sec15.p0"
+      ],
+      "statement": "The general nanobody production Methods describe C-terminal c-myc and 8xHis tags. This passage does not explicitly identify the deposited N-terminal prefix as the cryo-EM reagent."
+    }
+  ],
+  "interpretations": [
+    {
+      "classification": "AUDIT_INTERPRETATION",
+      "statement": "These linked Methods establish the authors’ reported immune-library discovery route for Nb20. They do not supply a complete genealogical comparison against development or census binders and therefore do not establish the absence of shared ancestry.",
+      "supportedByEvidenceIds": [
+        "immune-origin",
+        "library-vector",
+        "panning-route",
+        "nb20-production-link"
+      ]
+    },
+    {
+      "classification": "AUDIT_INTERPRETATION",
+      "statement": "The 61 screened clones are a source-level discovery inventory, not 61 benchmark cases or independent eligible groups.",
+      "supportedByEvidenceIds": [
+        "panning-route"
+      ]
+    }
+  ],
+  "resolution": {
+    "reportedDiscoveryRouteEstablished": true,
+    "exactCryoEmReceptorConstructEstablished": false,
+    "exactCryoEmNb20TagEstablished": false,
+    "completeBinderAncestryAdjudicated": false,
+    "formalEligibilityAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "independenceCertified": false,
+    "targetFreezePermitted": false,
+    "newFormalEligibleEntries": 0,
+    "newIndependentEligibleGroups": 0,
+    "priorDispositionsChanged": 0
+  },
+  "remainingEvidenceRequired": [
+    "A primary preparation statement linking the 2026 cryo-EM receptor to Q5T848 residues 1-775 followed by LEVLFQ.",
+    "A primary preparation statement linking the 2026 cryo-EM Nb20 reagent to MGSSHHHHHHHHLEVLFQGP followed by the published sequence without its initial methionine.",
+    "Complete development/census binder ancestry and global overlap integration, followed by formal exposure and eligibility adjudication."
+  ],
+  "bestNextLegitimateAccessPath": "The 2022 PMC page confirms the official NIHMS1769982-supplement-cryoEM_Supplement.docx attachment. A legitimately downloaded copy or a later successful official download can be subjected to a preparation-only extraction. The current 2026 supplement was obtained but no preparation block met the conservative selector; no absent-fact inference is authorized.",
+  "prohibitedDataAccessed": false
+}

@@ -1,0 +1,15 @@
+{
+  "schema": "confovhh-public-source-availability-v1",
+  "checkedAt": "2026-09-08T16:36:30.823930+00:00",
+  "request": {
+    "method": "GET",
+    "url": "https://zenodo.org/api/records/17063524",
+    "purpose": "One bounded same-URL retry after metadata read timeout. No producer file body access.",
+    "maximumSeconds": 25
+  },
+  "response": {
+    "curlExitCode": 28,
+    "status": "000",
+    "stderr": "curl: (28) Operation timed out after 25002 milliseconds with 0 bytes received\n"
+  }
+}

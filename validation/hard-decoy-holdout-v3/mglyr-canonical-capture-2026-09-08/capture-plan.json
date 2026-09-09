@@ -1,0 +1,14 @@
+{
+  "schema": "confovhh-mglyr-canonical-capture-plan-v1",
+  "accession": "Q5T848",
+  "species": "Homo sapiens",
+  "captureCount": 2,
+  "proteinEndpoint": "https://gpcrdb.org/services/protein/accession/Q5T848/",
+  "residuesEndpointTemplate": "https://gpcrdb.org/services/residues/{entry_name}/",
+  "allowedHosts": ["gpcrdb.org"],
+  "redirectsAllowed": false,
+  "maximumResponseBytes": 8388608,
+  "attemptsPerEndpoint": 2,
+  "retryStatuses": [429, 502, 503, 504],
+  "purpose": "Canonical sequence and residue annotations only; no structure, coordinate or article endpoint."
+}

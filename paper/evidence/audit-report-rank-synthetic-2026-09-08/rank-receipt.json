@@ -1,0 +1,412 @@
+{
+  "inputSha256": "0c16aa91875038fd0dacdae1ce11e2612b2229ebc35f84fb593d318fa06fadab",
+  "nodeVersion": "v24.19.0",
+  "result": {
+    "schema": "confovhh-audit-report-rank-export-v1",
+    "studyId": "SYNTHETIC-AUDIT-RANK",
+    "rankExport": {
+      "schema": "confovhh-current-product-rank-export-v1",
+      "studyId": "SYNTHETIC-AUDIT-RANK",
+      "method": {
+        "name": "current-product-scientific-ties",
+        "policySha256": "073eae70e8231b1ddb66da065b928070c6308a952067ab3ba5bc6f73f38bbff6"
+      },
+      "baseline": {
+        "name": "declared-producer-score-order",
+        "policySha256": "6bc0714dadf80b3102d88b3706b0773790a642e22e45cc0bb7e179042a02deea"
+      },
+      "generators": [
+        "generator"
+      ],
+      "attempts": [
+        {
+          "id": "a-near",
+          "groupId": "synthetic-group",
+          "targetId": "synthetic-target",
+          "generatorId": "generator",
+          "status": "eligible",
+          "reason": ""
+        },
+        {
+          "id": "failed",
+          "groupId": "synthetic-group",
+          "targetId": "synthetic-target",
+          "generatorId": "generator",
+          "status": "failed",
+          "reason": "Synthetic generation failure"
+        },
+        {
+          "id": "separated",
+          "groupId": "synthetic-group",
+          "targetId": "synthetic-target",
+          "generatorId": "generator",
+          "status": "eligible",
+          "reason": ""
+        },
+        {
+          "id": "z-near",
+          "groupId": "synthetic-group",
+          "targetId": "synthetic-target",
+          "generatorId": "generator",
+          "status": "eligible",
+          "reason": ""
+        }
+      ],
+      "rankings": [
+        {
+          "id": "a-near",
+          "methodTier": 0,
+          "baselineTier": 0
+        },
+        {
+          "id": "separated",
+          "methodTier": 1,
+          "baselineTier": 0
+        },
+        {
+          "id": "z-near",
+          "methodTier": 0,
+          "baselineTier": 1
+        }
+      ],
+      "methodRanks": [
+        {
+          "id": "a-near",
+          "methodTier": 0,
+          "evidenceTier": 1,
+          "burialScore": 115.06911754284889
+        },
+        {
+          "id": "separated",
+          "methodTier": 1,
+          "evidenceTier": 0,
+          "burialScore": null
+        },
+        {
+          "id": "z-near",
+          "methodTier": 0,
+          "evidenceTier": 1,
+          "burialScore": 115.06911754284889
+        }
+      ],
+      "missingProducerScoreIds": [],
+      "status": "rank-export-complete",
+      "provenance": {
+        "sourceSha256": {
+          "lib/pose-ranking.ts": "6f0be122edcf7e6e8a70ea0f562dc0e1aa14dff4adf19b2bf2f67794711d0911",
+          "lib/pose-evidence-v06.ts": "83bbc4c48c22eadfdf2a8a288a9a46e05315feccba80279915e74b5c469742bc",
+          "scripts/paper/export-current-product-ranks.mjs": "7782a6bdeeb36611ee574ff1ae35e4ac692d285d1ec28ce5f93781837627cf72",
+          "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f"
+        },
+        "methodPolicy": {
+          "adapter": "current-product-scientific-ties-v1",
+          "productPolicy": {
+            "version": "0.6.0",
+            "status": "integrated-into-decision-shortlist",
+            "studiedAs": "0.6.0-candidate.2",
+            "implementation": "lib/pose-evidence-v06.ts",
+            "developmentEvidence": "validation/v0.6-pose-evidence-candidate-v2",
+            "primaryRankingKey": "shipped v0.5 evidence tier, carried unchanged",
+            "secondaryRankingKey": "half-delta-SASA interface burial, carried unchanged",
+            "rankingScope": "within-target-only",
+            "fittedCoefficients": 0,
+            "newThresholdsIntroduced": 0,
+            "reordersAcrossShippedTiers": false,
+            "clashBurdenGatesRanking": true,
+            "minimumContactPairs": 1,
+            "minimumInterfaceResiduesPerChain": 3,
+            "sparseInterfaceContactPairs": 8,
+            "interpenetrationCautionOverlapAngstrom": 1.5
+          },
+          "sourceSha256": {
+            "lib/pose-ranking.ts": "6f0be122edcf7e6e8a70ea0f562dc0e1aa14dff4adf19b2bf2f67794711d0911",
+            "lib/pose-evidence-v06.ts": "83bbc4c48c22eadfdf2a8a288a9a46e05315feccba80279915e74b5c469742bc",
+            "scripts/paper/export-current-product-ranks.mjs": "7782a6bdeeb36611ee574ff1ae35e4ac692d285d1ec28ce5f93781837627cf72",
+            "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f"
+          },
+          "tieRule": "equal-evidenceTier-and-exact-burialScore-remain-tied",
+          "groupScope": "within-target-and-generator",
+          "quantization": "none",
+          "frozenV3Compatible": false
+        },
+        "baselinePolicy": {
+          "adapter": "declared-producer-score-order-v1",
+          "generators": [
+            {
+              "id": "generator",
+              "scoreName": "synthetic-score",
+              "direction": "higher-better"
+            }
+          ],
+          "missingScore": "entire-comparison-unavailable",
+          "tieRule": "equal-raw-scores-remain-tied",
+          "percentileValuesComputed": false,
+          "adapterSha256": "7782a6bdeeb36611ee574ff1ae35e4ac692d285d1ec28ce5f93781837627cf72"
+        },
+        "canonicalInputSha256": "05c64c34b0a594eafbd46ec2ae1d9fb0b4b6f4238e6da6f007fd27fd97f933d1",
+        "declaredAuditArtifactSha256": {
+          "a-near": "f12d421e96984b1bd41d515c8893b4ff81e00d335543b9676f4511873c9a3c04",
+          "separated": "e7aca3526131b020e375708dc42fbd6c164fff794004b0238524594ec334fdbe",
+          "z-near": "f12d421e96984b1bd41d515c8893b4ff81e00d335543b9676f4511873c9a3c04"
+        }
+      },
+      "claims": {
+        "frozenV3Compatible": false,
+        "independenceCertified": false,
+        "sourceAuditsVerified": false,
+        "prelabelFreezeCertified": false,
+        "biologicalValidation": false
+      },
+      "limitations": [
+        "Verifies current-product feature-to-rank transformation only; upstream audit values, source artifact hashes, roles, eligible population and grouping remain unverified declarations.",
+        "No complete audit engine, coordinate parser, historical frozen engine or outcome evaluator is executed by this adapter.",
+        "The current-product policy differs from the frozen v3 scientific preorder and cannot replace that arm.",
+        "Dense scientific ties replace unique UI display ranks; no ID or artifact hash breaks a scientific tie.",
+        "Producer score names and directions must be justified and frozen externally; no cross-generator raw-score comparison is performed.",
+        "An exported rank ledger alone proves neither pre-label chronology nor independent data collection; empty eligible strata remain for the downstream evaluator to block."
+      ]
+    },
+    "comparisonFields": {
+      "method": {
+        "name": "audit-report-bound-current-product",
+        "policySha256": "a8cb5da73373ffa1d119ec0cbcd036afa5b38fd87f4e775320fcc4057ce0a5fe"
+      },
+      "baseline": {
+        "name": "declared-producer-score-order",
+        "policySha256": "6bc0714dadf80b3102d88b3706b0773790a642e22e45cc0bb7e179042a02deea"
+      },
+      "generators": [
+        "generator"
+      ],
+      "attempts": [
+        {
+          "id": "a-near",
+          "groupId": "synthetic-group",
+          "targetId": "synthetic-target",
+          "generatorId": "generator",
+          "status": "eligible",
+          "reason": ""
+        },
+        {
+          "id": "failed",
+          "groupId": "synthetic-group",
+          "targetId": "synthetic-target",
+          "generatorId": "generator",
+          "status": "failed",
+          "reason": "Synthetic generation failure"
+        },
+        {
+          "id": "separated",
+          "groupId": "synthetic-group",
+          "targetId": "synthetic-target",
+          "generatorId": "generator",
+          "status": "eligible",
+          "reason": ""
+        },
+        {
+          "id": "z-near",
+          "groupId": "synthetic-group",
+          "targetId": "synthetic-target",
+          "generatorId": "generator",
+          "status": "eligible",
+          "reason": ""
+        }
+      ],
+      "rankings": [
+        {
+          "id": "a-near",
+          "methodTier": 0,
+          "baselineTier": 0
+        },
+        {
+          "id": "separated",
+          "methodTier": 1,
+          "baselineTier": 0
+        },
+        {
+          "id": "z-near",
+          "methodTier": 0,
+          "baselineTier": 1
+        }
+      ]
+    },
+    "provenance": {
+      "canonicalManifestSha256": "d0ef6bd3dee98fc0ea834facc59b1f05129f68f33e21473d703b31c168df768e",
+      "auditPolicy": {
+        "confidenceMode": "none",
+        "pae": "omitted",
+        "residueContactCutoffAngstrom": 4.5,
+        "polarProxyCutoffAngstrom": 3.5,
+        "saltBridgeProxyCutoffAngstrom": 4,
+        "severeClashOverlapAngstrom": 0.6,
+        "sasaProbeRadiusAngstrom": 1.4,
+        "sasaSpherePoints": 960,
+        "sasaRadii": "Element-based Bondi radii: H 1.20, C 1.70, N 1.55, O 1.52, S/P 1.80, Se 1.90 Å.",
+        "sasaOrientation": "source-coordinate-frame",
+        "sasaFrameAlgorithm": "source-coordinates-as-supplied-v1",
+        "sasaMaximumCandidateDistanceChecks": 25000000,
+        "sasaMaximumOcclusionChecks": 250000000,
+        "cdrAnnotation": "Sequence-aligned IMGT regions from immunum 1.3.0: CDR1 27–38, CDR2 56–65, CDR3 105–117.",
+        "paeSummary": "Directional median and 90th-percentile PAE over contacting receptor–VHH residue pairs using the user-confirmed AlphaFold row-aligned/column-evaluated convention and residue order; conservative summaries aggregate the worse direction for each contact pair, and lowPaeContactShare is the share of those conservative contact-pair values at or below 10 Å."
+      },
+      "auditPolicySha256": "da76c7fe9d145517b954ce4982ecc8935b7c725ba219466c2ebba646b8973f5d",
+      "pipelinePolicy": {
+        "schema": "confovhh-audit-report-rank-pipeline-policy-v1",
+        "featureRankMethodPolicySha256": "073eae70e8231b1ddb66da065b928070c6308a952067ab3ba5bc6f73f38bbff6",
+        "auditPolicySha256": "da76c7fe9d145517b954ce4982ecc8935b7c725ba219466c2ebba646b8973f5d",
+        "sourceSha256": {
+          "lib/audit-export.ts": "5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+          "lib/audit-jobs.ts": "79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+          "lib/audit-worker-protocol.ts": "2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+          "lib/audit-worker.ts": "9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+          "lib/candidate-shortlist.ts": "bc4f378baea03582dadcb38d03436b805c4f1fe353c188bdcd24dbf096468f07",
+          "lib/confovhh.ts": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+          "lib/contact-explorer.ts": "e19259bc4faa8e9b1988e5364a93ccbe30cbfe00106dd184510292c6ec3ae8f9",
+          "lib/coordinate-parser.ts": "0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+          "lib/download.ts": "49dd98ff70e927c7e4903f0c8165d6f1af41c66102b6d1c180f7048e5a0b678f",
+          "lib/geometry-constants.ts": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+          "lib/geometry-fit.ts": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+          "lib/mmcif.ts": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+          "lib/pae-visualization.ts": "da766790f1d2e89fe00817b0ba394a0db67c6cbd10c030e34c70b3f2ef04ae3d",
+          "lib/pose-ensemble.ts": "c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+          "lib/pose-evidence-v06.ts": "83bbc4c48c22eadfdf2a8a288a9a46e05315feccba80279915e74b5c469742bc",
+          "lib/pose-ranking.ts": "6f0be122edcf7e6e8a70ea0f562dc0e1aa14dff4adf19b2bf2f67794711d0911",
+          "lib/prediction-run-jobs.ts": "6ccd6336a4e3193a7b429e0cb165e4508a8b1e7e2617b5aa45f673441175c704",
+          "lib/prediction-run-lifecycle.ts": "cdefe694472d28b22cb260b6992c96be03c3c737f0e0f4e4ade9c32c48821551",
+          "lib/prediction-run-worker-protocol.ts": "a32ab018c2dd7246125bed320b56b116ab9093f17921451373b59a39dd2bc1d8",
+          "lib/prediction-run-worker.ts": "8699fc4aaf8fbfd43db2e743aa4b754cbd6d02bf47b31ed78a04ea3011e24213",
+          "lib/prediction-run.ts": "c7ba1217d1310991d475532eb82fd8151463661f70c2c7360af271e8ff83ba38",
+          "lib/release-validation.ts": "81c682c3672d2cd46aaa558e1ac0cca59e1a21bf9a0a89e99606693602ebd79e",
+          "lib/research-workspace.ts": "bbf0b01cd5450658079b286b14a8728b68e743517a98d13307732000fbe0d415",
+          "lib/sha256.ts": "ea96e4c285008a4c500cc2409e6d3bd3a8f17698e6f29e4e3420eff441a2265f",
+          "lib/state-pair.ts": "d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+          "lib/topology-annotation.ts": "48dba5115e7d650815dfb7b4208bb5e349bcae6ec33b94f9d7a31a18c6dd7d6e",
+          "lib/user-footprint.ts": "cdeecd34293dfd081d70afd3e91fbe1747deffa2c2b27d8cab23bcf509aecfdd",
+          "lib/utils.ts": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+          "lib/vhh-numbering-v06.ts": "0d81880db9d9fa308150d7df64a0f1d05e3e9d8d3c552b4b736b842c789c3270",
+          "lib/vhh-numbering.ts": "32157450d56e24994c513fc09b40e7c66b4651c3cbf38b587bb4511a4d4ca1d7",
+          "package-lock.json": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+          "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+          "scripts/paper/export-audit-report-ranks.mjs": "e4d7259d3ada7edbbe485b899a916d942b85283dde5e94e0adad05d0ef62b520",
+          "scripts/paper/export-current-product-ranks.mjs": "7782a6bdeeb36611ee574ff1ae35e4ac692d285d1ec28ce5f93781837627cf72"
+        },
+        "extraction": {
+          "reportValidator": "validateImportedSingleAuditReport",
+          "directAuditFields": [
+            "evidenceLevel",
+            "contactPairCount",
+            "receptorInterfaceResidues",
+            "vhhInterfaceResidues",
+            "halfDeltaSasaInterfaceAreaAngstrom2",
+            "severeClashCount",
+            "maximumOverlapAngstrom"
+          ],
+          "imgtNumberingStatus": "audit.vhhNumbering.status",
+          "reportBytes": "Exact declared SHA-256, strict UTF-8 JSON and production schema validation required.",
+          "sourceIdentity": "Declared source hash, byte count, chain roles and selected model must match report declarations; source bytes not verified."
+        },
+        "confidenceRule": "confidenceMode none; PAE omitted; one identical full auditPolicy across reports",
+        "frozenV3Compatible": false
+      },
+      "sourceSha256": {
+        "lib/audit-export.ts": "5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+        "lib/audit-jobs.ts": "79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+        "lib/audit-worker-protocol.ts": "2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+        "lib/audit-worker.ts": "9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+        "lib/candidate-shortlist.ts": "bc4f378baea03582dadcb38d03436b805c4f1fe353c188bdcd24dbf096468f07",
+        "lib/confovhh.ts": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+        "lib/contact-explorer.ts": "e19259bc4faa8e9b1988e5364a93ccbe30cbfe00106dd184510292c6ec3ae8f9",
+        "lib/coordinate-parser.ts": "0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+        "lib/download.ts": "49dd98ff70e927c7e4903f0c8165d6f1af41c66102b6d1c180f7048e5a0b678f",
+        "lib/geometry-constants.ts": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+        "lib/geometry-fit.ts": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+        "lib/mmcif.ts": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+        "lib/pae-visualization.ts": "da766790f1d2e89fe00817b0ba394a0db67c6cbd10c030e34c70b3f2ef04ae3d",
+        "lib/pose-ensemble.ts": "c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+        "lib/pose-evidence-v06.ts": "83bbc4c48c22eadfdf2a8a288a9a46e05315feccba80279915e74b5c469742bc",
+        "lib/pose-ranking.ts": "6f0be122edcf7e6e8a70ea0f562dc0e1aa14dff4adf19b2bf2f67794711d0911",
+        "lib/prediction-run-jobs.ts": "6ccd6336a4e3193a7b429e0cb165e4508a8b1e7e2617b5aa45f673441175c704",
+        "lib/prediction-run-lifecycle.ts": "cdefe694472d28b22cb260b6992c96be03c3c737f0e0f4e4ade9c32c48821551",
+        "lib/prediction-run-worker-protocol.ts": "a32ab018c2dd7246125bed320b56b116ab9093f17921451373b59a39dd2bc1d8",
+        "lib/prediction-run-worker.ts": "8699fc4aaf8fbfd43db2e743aa4b754cbd6d02bf47b31ed78a04ea3011e24213",
+        "lib/prediction-run.ts": "c7ba1217d1310991d475532eb82fd8151463661f70c2c7360af271e8ff83ba38",
+        "lib/release-validation.ts": "81c682c3672d2cd46aaa558e1ac0cca59e1a21bf9a0a89e99606693602ebd79e",
+        "lib/research-workspace.ts": "bbf0b01cd5450658079b286b14a8728b68e743517a98d13307732000fbe0d415",
+        "lib/sha256.ts": "ea96e4c285008a4c500cc2409e6d3bd3a8f17698e6f29e4e3420eff441a2265f",
+        "lib/state-pair.ts": "d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+        "lib/topology-annotation.ts": "48dba5115e7d650815dfb7b4208bb5e349bcae6ec33b94f9d7a31a18c6dd7d6e",
+        "lib/user-footprint.ts": "cdeecd34293dfd081d70afd3e91fbe1747deffa2c2b27d8cab23bcf509aecfdd",
+        "lib/utils.ts": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+        "lib/vhh-numbering-v06.ts": "0d81880db9d9fa308150d7df64a0f1d05e3e9d8d3c552b4b736b842c789c3270",
+        "lib/vhh-numbering.ts": "32157450d56e24994c513fc09b40e7c66b4651c3cbf38b587bb4511a4d4ca1d7",
+        "package-lock.json": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+        "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+        "scripts/paper/export-audit-report-ranks.mjs": "e4d7259d3ada7edbbe485b899a916d942b85283dde5e94e0adad05d0ef62b520",
+        "scripts/paper/export-current-product-ranks.mjs": "7782a6bdeeb36611ee574ff1ae35e4ac692d285d1ec28ce5f93781837627cf72"
+      },
+      "reportBindings": [
+        {
+          "id": "a-near",
+          "reportSha256": "f12d421e96984b1bd41d515c8893b4ff81e00d335543b9676f4511873c9a3c04",
+          "reportBytes": 15973,
+          "softwareVersion": "0.5.0",
+          "declaredCoordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+          "declaredCoordinateBytes": 2559,
+          "receptorChain": "R",
+          "vhhChain": "V",
+          "selectedModelId": "1",
+          "extractedFeaturesSha256": "0136abc24a5af8a5d89d09dadf17f05920cadbb048b2efa81e47cfc43d925aaf"
+        },
+        {
+          "id": "separated",
+          "reportSha256": "e7aca3526131b020e375708dc42fbd6c164fff794004b0238524594ec334fdbe",
+          "reportBytes": 10827,
+          "softwareVersion": "0.5.0",
+          "declaredCoordinateSha256": "c05eded17e94b42c1e3ec067511dfe1f1dd3adfa1f2a53c55d65147a97782434",
+          "declaredCoordinateBytes": 2559,
+          "receptorChain": "R",
+          "vhhChain": "V",
+          "selectedModelId": "1",
+          "extractedFeaturesSha256": "09e212adc8d32f4cc997794a6c4a9645e91740ecb3a745a05deb2692606f6b16"
+        },
+        {
+          "id": "z-near",
+          "reportSha256": "f12d421e96984b1bd41d515c8893b4ff81e00d335543b9676f4511873c9a3c04",
+          "reportBytes": 15973,
+          "softwareVersion": "0.5.0",
+          "declaredCoordinateSha256": "16085dd13e7ccca75b1e25e889c82721b143eebeb5f7012e7eaf06bfbd5dbd11",
+          "declaredCoordinateBytes": 2559,
+          "receptorChain": "R",
+          "vhhChain": "V",
+          "selectedModelId": "1",
+          "extractedFeaturesSha256": "0136abc24a5af8a5d89d09dadf17f05920cadbb048b2efa81e47cfc43d925aaf"
+        }
+      ],
+      "reportCount": 3,
+      "totalReportBytes": 42773,
+      "sourceScope": "All top-level lib/*.ts files, package-lock.json, this bridge, the current-product adapter and strict JSON parser; bytes identified, not historical execution authenticated."
+    },
+    "claims": {
+      "exactReportBytesVerified": true,
+      "reportSchemaValidated": true,
+      "featuresExtractedFromReports": true,
+      "declaredSourceIdentityConsistent": true,
+      "originalAuditExecutionVerified": false,
+      "coordinateBytesVerified": false,
+      "biologicalRolesVerified": false,
+      "censusIndependenceCertified": false,
+      "prelabelFreezeCertified": false,
+      "producerScoreSourcesVerified": false,
+      "frozenV3Compatible": false,
+      "biologicalValidation": false
+    },
+    "limitations": [
+      "Report hashes bind the supplied bytes and their extracted rank features; hashes do not authenticate a report author, original audit execution or truth of its contents.",
+      "Coordinate hashes, byte counts, chain roles and selected models are cross-checked declarations only. No coordinate bytes are opened or re-audited by this bridge.",
+      "The production import validator checks report schema and internal consistency; this is not independent verification of geometry or biological receptor/VHH identity.",
+      "One identical full geometry-only audit policy is required; absent report strata are preserved in the attempt inventory, not inferred successful.",
+      "Producer scores, eligible population, biological roles, grouping, chronology and scientific outcomes require separately authorized evidence and review.",
+      "This bridge executes the current-product rank policy only, which differs from the frozen v3 preorder. No predictive accuracy or biological validation is established."
+    ]
+  }
+}

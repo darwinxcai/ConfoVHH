@@ -9,7 +9,9 @@ The [software/application draft](SOFTWARE_PAPER.md) develops the near-term paper
 scope: auditable review, reuse, design rationale, related software, and the
 limitations demonstrated by the retained application. The
 [reviewer guide](REVIEWER_GUIDE.md) supplies an executable offline synthetic
-example; [submission readiness](SUBMISSION_READINESS.md) identifies the concrete
+example; the [claim/evidence manifest](CLAIM_EVIDENCE.json) and
+[data-availability record](DATA_AVAILABILITY.md) define public replay boundaries;
+and [submission readiness](SUBMISSION_READINESS.md) identifies the concrete
 publication gates. Additional census exclusions alone do not complete a paper.
 
 ## What the current evidence supports
@@ -41,6 +43,42 @@ concern 3P0G. These are not 33 independent informative biological experiments.
 
 ## Next executable work
 
+An [executable paired-selection metric](PAIRED_SELECTION_EVALUATION.md) now
+provides tie-aware top-1 comparisons, declared-group weighting, uncertainty and
+complete supplied-attempt accounting. It has been exercised only with synthetic
+labels. It does not score new complexes or constitute an independent evaluation;
+authorized frozen study inputs and the complete protocol are still required.
+The [current-product rank exporter](CURRENT_PRODUCT_RANK_EXPORT.md) now connects
+supplied audit features to that evaluator using exact shipped source identities
+and complete scientific ties. The [policy review](RANK_POLICY_REVIEW_2026-09-08.md)
+records why this current-product arm cannot substitute for frozen v3.
+
+1. **Complete reviewer reproduction against the proposed release.** Follow the
+   [reviewer guide](REVIEWER_GUIDE.md), preserve both synthetic browser exports,
+   and run the [export comparison](WORKFLOW_EVALUATION.md). The automated
+   browser regression checks role-confirmation reset, missing evidence, and
+   report agreement; a real independent researcher's completion remains a
+   separate requirement.
+2. **Resolve manuscript data availability and submission facts.** The
+   [data-availability record](DATA_AVAILABILITY.md) describes what can be
+   reproduced from public artifacts. Full raw-to-result reproduction needs
+   durable access and redistribution terms for the original archives. Author
+   contributions/disclosures, the exact reviewed release, and a stable archive
+   identifier remain open.
+3. **Recover the missing original outputs when permitted.** Eighty-five
+   preliminary cognate models, including the highlighted 3P0G pre-2011 seeds
+   2 and 3, remain unavailable for official scoring. Three additional
+   `af3_slim` archives were listed but their download failed with HTTP 502;
+   their contents remain unverified. The retained models also lack full
+   per-model PAE matrices. Record availability accurately if these cannot be
+   recovered; preserve the complete missing-input accounting.
+
+## Optional prospective extension
+
+These prediction tasks are separate from preparing the existing
+software/application contribution. They require the relevant data-access and
+compute authorization, and do not replace the publication work above.
+
 1. **Verify the prepared templates in an inspected Boltz environment when
    permitted by the current data-access boundary.** The
    official parser must preserve the intended coordinate mask and recover the
@@ -58,16 +96,6 @@ concern 3P0G. These are not 33 independent informative biological experiments.
    model/cache files must be verified locally. Existing checkpoint and wheel
    metadata do not establish a complete runnable environment. Record a
    successful single-job execution and its failures before scaling.
-3. **Recover the missing original outputs.** Eighty-five preliminary cognate
-   models, including the highlighted 3P0G pre-2011 seeds 2 and 3, remain
-   unavailable for official scoring. Three additional `af3_slim` archives
-   were listed but their download failed with HTTP 502; their contents remain
-   unverified. The retained models also lack full per-model PAE matrices.
-4. **Resolve manuscript data availability and human study evidence.** The
-   committed tables can reproduce the selection analysis. Full raw-to-result
-   reproduction still requires access to the original coordinate/confidence
-   archives. Durable data deposition, author metadata, and documented outside
-   use or a defined workflow evaluation remain open before submission.
 
 The independent hard-decoy protocol remains a separate project record. This
 retrospective analysis neither clears its target/component requirements nor
@@ -105,6 +133,7 @@ Run the focused offline regressions from the repository root:
 
 ```bash
 node --test tests/gpcr-paper-selection.test.mjs tests/gpcr-paper-template.test.mjs
+node scripts/paper/verify-claim-evidence-manifest.mjs
 ```
 
 Full reproduction commands and success criteria appear in the linked evidence

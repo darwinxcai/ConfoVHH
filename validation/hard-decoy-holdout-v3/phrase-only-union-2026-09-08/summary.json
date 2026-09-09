@@ -1,0 +1,299 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "EXACT_THREE_PACKET_OPERATIONAL_UNION_RETAINED",
+  "capturedAttribution": "Each packet retains its own capture times; this receipt combines retained metadata without new requests.",
+  "inputBindings": [
+    {
+      "path": "validation/hard-decoy-holdout-v3/global-text-discovery-2026-09-04/phrase-only-pending-identifiers.txt",
+      "bytes": 61310,
+      "sha256": "0860b4bc5539ad90eed5868e7c173b0f541ae54e4b71b9e2e4f07ba431ec8b75"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql",
+      "bytes": 1045,
+      "sha256": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0"
+    },
+    {
+      "path": "scripts/hard-decoy-v3/capture-phrase-only-chunk.mjs",
+      "bytes": 38802,
+      "sha256": "9e87495ca6961426d4d21fe7f8d0cde07f66f73540fc989bd085841afd749d37"
+    }
+  ],
+  "packets": [
+    {
+      "chunkIndex": 0,
+      "packetPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08",
+      "snapshotPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe",
+      "selectedOrdinalStartInclusive": 0,
+      "selectedOrdinalEndExclusive": 250,
+      "firstIdentifier": "10DJ",
+      "lastIdentifier": "1CVF",
+      "bindings": {
+        "collection-plan.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/collection-plan.json",
+          "bytes": 17130,
+          "sha256": "438e749d283412093ee0b1667b151a7103f34d088068ca7b8813d8dfac8db89d"
+        },
+        "identifiers.txt": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/identifiers.txt",
+          "bytes": 1250,
+          "sha256": "4e17f43f691be11013e63474335e8945db391d883ae307b2ec4a678f29436bd0"
+        }
+      },
+      "snapshotBindings": {
+        "manifest.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe/manifest.json",
+          "bytes": 4608,
+          "sha256": "d23c6f25b71a4f48da7a06356e6359c7f7566e953cf0c3985646518b307fe729"
+        },
+        "summary.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe/summary.json",
+          "bytes": 2426,
+          "sha256": "9e01710d7613b9c4a9cfc472c48ef921e8c0d889e3349b58cc66ab8ea9055be5"
+        },
+        "capture-bindings.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe/capture-bindings.json",
+          "bytes": 2742,
+          "sha256": "6b638a563f3c09da056ed70247316fa214958a23fa6097786c6c7cb847a94b2d"
+        },
+        "identifier-accounting.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe/identifier-accounting.jsonl",
+          "bytes": 43775,
+          "sha256": "2263fccc45dc21e33831d7c45bd2509713c436d1914e789f5571a5125d6584ac"
+        },
+        "entries.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe/entries.jsonl",
+          "bytes": 714312,
+          "sha256": "e9f873e24b3abced5f1f6d2e26c93d6fe794f69fdb3fb6632f044b08c07a9b3d"
+        },
+        "entity-screens.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe/entity-screens.jsonl",
+          "bytes": 968625,
+          "sha256": "149792766728ce5ca0a3bbe78d1f28d35269ae1986302e9fc77cd2424aec6992"
+        },
+        "review-queue.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-000-2026-09-08/snapshots/75aa996e3bdf68d433fb062ec9cc3e225b7cc12dc8583929518d9905af60cafe/review-queue.jsonl",
+          "bytes": 87409,
+          "sha256": "86d233c6661ce99be067bdc9c0aa1685e69720c8586b80a50f3b4c1b273992aa"
+        }
+      },
+      "counts": {
+        "intendedIdentifiers": 250,
+        "capturedEntries": 250,
+        "completePolymerInventoryEntries": 250,
+        "polymerEntities": 449,
+        "proteinOrUnknownTypeEntities": 448,
+        "nonProteinEntities": 1,
+        "reviewQueueEntities": 41,
+        "entitiesRequiringMissingNoncanonicalOrEngineErrorReview": 22,
+        "numberedHeavyDomainEntities": 1,
+        "successfulResponses": 20,
+        "failedAttempts": 0
+      },
+      "packetLocalNotCapturedByThisChunkWithinPinnedRemainder": 12012
+    },
+    {
+      "chunkIndex": 1,
+      "packetPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08",
+      "snapshotPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd",
+      "selectedOrdinalStartInclusive": 250,
+      "selectedOrdinalEndExclusive": 500,
+      "firstIdentifier": "1CVH",
+      "lastIdentifier": "1HCA",
+      "bindings": {
+        "collection-plan.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/collection-plan.json",
+          "bytes": 17132,
+          "sha256": "18cfc0804295e1d00ebf41d4a9d075c89f15e0652e6e8494cd3fff52385360ce"
+        },
+        "identifiers.txt": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/identifiers.txt",
+          "bytes": 1250,
+          "sha256": "6db732fc50805acf08565903356c126dfd6cf9d995d7ba8b254b395d0d4a4932"
+        }
+      },
+      "snapshotBindings": {
+        "manifest.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd/manifest.json",
+          "bytes": 4548,
+          "sha256": "981eeffd3e35980843989d2441ce40bccaa47310e4797c68c76ed67f44619a64"
+        },
+        "summary.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd/summary.json",
+          "bytes": 2426,
+          "sha256": "659e264ef85fe96d53231ec80ee780ad9d6d5d531fb0bc6a6d09d239c88af02f"
+        },
+        "capture-bindings.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd/capture-bindings.json",
+          "bytes": 2742,
+          "sha256": "5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd"
+        },
+        "identifier-accounting.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd/identifier-accounting.jsonl",
+          "bytes": 43775,
+          "sha256": "08eb23bb337962b060f2766c63b736c9487d6680689b8c75392fdd3f65d8ff5e"
+        },
+        "entries.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd/entries.jsonl",
+          "bytes": 660575,
+          "sha256": "b2c374b8c58dc82b0522dcc096cce5358d7e4091736e5177a3809b0c83910f61"
+        },
+        "entity-screens.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd/entity-screens.jsonl",
+          "bytes": 821500,
+          "sha256": "415b57de4cf63f55c3c09c5cbd089ee4343fcfec558fc2e1f803d10376a40921"
+        },
+        "review-queue.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd/review-queue.jsonl",
+          "bytes": 64808,
+          "sha256": "1b5741980e90080646fad7d8e045dd5fab81b31e702edfc6713a6456d207baf2"
+        }
+      },
+      "counts": {
+        "intendedIdentifiers": 250,
+        "capturedEntries": 250,
+        "completePolymerInventoryEntries": 250,
+        "polymerEntities": 381,
+        "proteinOrUnknownTypeEntities": 379,
+        "nonProteinEntities": 2,
+        "reviewQueueEntities": 30,
+        "entitiesRequiringMissingNoncanonicalOrEngineErrorReview": 13,
+        "numberedHeavyDomainEntities": 2,
+        "successfulResponses": 20,
+        "failedAttempts": 0
+      },
+      "packetLocalNotCapturedByThisChunkWithinPinnedRemainder": 12012
+    },
+    {
+      "chunkIndex": 2,
+      "packetPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08",
+      "snapshotPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/snapshots/a7eb0d9f3690902d4d9cffa00b9262d2bff595a1ff9a50c2774169226ac9f6dc",
+      "selectedOrdinalStartInclusive": 500,
+      "selectedOrdinalEndExclusive": 750,
+      "firstIdentifier": "1HCI",
+      "lastIdentifier": "1MG8",
+      "bindings": {
+        "collection-plan.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/collection-plan.json",
+          "bytes": 17132,
+          "sha256": "a845fa47d269b2a874dd6cd76cc1d5655e22ca4486603273193b6a7a263ec8b7"
+        },
+        "identifiers.txt": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/identifiers.txt",
+          "bytes": 1250,
+          "sha256": "df82be044daa60d78affc5b5c18a89174f17eb4cd7bad2700c2622a0bcfbf67f"
+        }
+      },
+      "snapshotBindings": {
+        "manifest.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/snapshots/a7eb0d9f3690902d4d9cffa00b9262d2bff595a1ff9a50c2774169226ac9f6dc/manifest.json",
+          "bytes": 4550,
+          "sha256": "91e15d721a5a4a49598955f64624b88081a2850c82148d2707cfcab898c81727"
+        },
+        "summary.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/snapshots/a7eb0d9f3690902d4d9cffa00b9262d2bff595a1ff9a50c2774169226ac9f6dc/summary.json",
+          "bytes": 2426,
+          "sha256": "27453e9f6058c6f1e8527f77f3274b100a4f32d18ce3ababdba59b9e78f573a5"
+        },
+        "capture-bindings.json": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/snapshots/a7eb0d9f3690902d4d9cffa00b9262d2bff595a1ff9a50c2774169226ac9f6dc/capture-bindings.json",
+          "bytes": 2742,
+          "sha256": "a7eb0d9f3690902d4d9cffa00b9262d2bff595a1ff9a50c2774169226ac9f6dc"
+        },
+        "identifier-accounting.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/snapshots/a7eb0d9f3690902d4d9cffa00b9262d2bff595a1ff9a50c2774169226ac9f6dc/identifier-accounting.jsonl",
+          "bytes": 43775,
+          "sha256": "76b33c26b966049e05756c9ee168436f6daf66b4d0b18dc58d8a091660828431"
+        },
+        "entries.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/snapshots/a7eb0d9f3690902d4d9cffa00b9262d2bff595a1ff9a50c2774169226ac9f6dc/entries.jsonl",
+          "bytes": 650864,
+          "sha256": "0be590a92a94e798e9c9b9df83a68adefbbf12f414e163cd2cd17affb797c54a"
+        },
+        "entity-screens.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/snapshots/a7eb0d9f3690902d4d9cffa00b9262d2bff595a1ff9a50c2774169226ac9f6dc/entity-screens.jsonl",
+          "bytes": 812188,
+          "sha256": "9e04c32997eb84d9e14583e68b63b777d7add7aa780cc2c966a6bdeedc076dcd"
+        },
+        "review-queue.jsonl": {
+          "path": "validation/hard-decoy-holdout-v3/phrase-only-chunk-002-2026-09-08/snapshots/a7eb0d9f3690902d4d9cffa00b9262d2bff595a1ff9a50c2774169226ac9f6dc/review-queue.jsonl",
+          "bytes": 38310,
+          "sha256": "5722e0bc7c4a7f733f40dc0c63bfd1e1715b00b6447c488369fb910c1cfa813c"
+        }
+      },
+      "counts": {
+        "intendedIdentifiers": 250,
+        "capturedEntries": 250,
+        "completePolymerInventoryEntries": 250,
+        "polymerEntities": 384,
+        "proteinOrUnknownTypeEntities": 375,
+        "nonProteinEntities": 9,
+        "reviewQueueEntities": 18,
+        "entitiesRequiringMissingNoncanonicalOrEngineErrorReview": 12,
+        "numberedHeavyDomainEntities": 0,
+        "successfulResponses": 20,
+        "failedAttempts": 0
+      },
+      "packetLocalNotCapturedByThisChunkWithinPinnedRemainder": 12012
+    }
+  ],
+  "union": {
+    "chunkIndices": [
+      0,
+      1,
+      2
+    ],
+    "originalPhraseOnlyMembershipCount": 12262,
+    "operationalRemainderCount": 12262,
+    "alreadyRetainedExclusionCount": 0,
+    "selectedOrdinalStartInclusive": 0,
+    "selectedOrdinalEndExclusive": 750,
+    "uniqueIntendedIdentifiers": 750,
+    "uniqueCapturedEntries": 750,
+    "uniqueCompletelyInventoriedEntries": 750,
+    "duplicateIdentifierCount": 0,
+    "identifiersNotCapturedWithinPinnedPhraseOnlyMembership": 11512,
+    "identifiersNotCompletelyInventoriedWithinPinnedPhraseOnlyMembership": 11512,
+    "identifierStreamSha256": "d4c2a3dc9d9b665bdbec53a10106d434053313ff28a4b9ce1ec190910eeddaf6",
+    "counts": {
+      "intendedIdentifiers": 750,
+      "capturedEntries": 750,
+      "completePolymerInventoryEntries": 750,
+      "polymerEntities": 1214,
+      "proteinOrUnknownTypeEntities": 1202,
+      "nonProteinEntities": 12,
+      "reviewQueueEntities": 89,
+      "entitiesRequiringMissingNoncanonicalOrEngineErrorReview": 47,
+      "numberedHeavyDomainEntities": 3,
+      "successfulResponses": 60,
+      "failedAttempts": 0
+    }
+  },
+  "interpretation": {
+    "lexicalPartitionIsBiologicalSelection": false,
+    "operationalPartitionIsScientificPreregistration": false,
+    "reviewQueueAndReviewRequiredAreSeparateOverlappingCategories": true,
+    "reviewRequiredMeansMissingNoncanonicalOrEngineErrorNotNecessarilyAbsentSequence": true,
+    "packetLocalRemainingCountsMustNotBeAddedOrUsedAsUnionRemaining": true,
+    "numberedHeavyDomainCallsEstablishVhhIdentity": false,
+    "zeroNumberedHeavyCallsEstablishAbsence": false,
+    "canonicalInventoryCompletenessIsRoleOrDiscoveryCompleteness": false
+  },
+  "authority": {
+    "broaderDiscoveryComplete": false,
+    "wholeCensusComponentUpperBound": null,
+    "formalDispositionAssigned": false,
+    "formalLeakageGraphAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "independentEligibleGroupsAdded": 0,
+    "predictiveAccuracyMeasured": false,
+    "targetFreezePermitted": false,
+    "nativeCoordinatesAccessed": false,
+    "nativeRelativePosesAccessed": false,
+    "contactTablesAccessed": false,
+    "labelsAccessed": false,
+    "predictionOutputsAccessed": false,
+    "primaryArticleBodiesAccessed": false
+  }
+}

@@ -7,9 +7,9 @@ import {
   predictionRunFileById,
 } from "../lib/prediction-run.ts";
 import { executePredictionRunAuditJob } from "../lib/prediction-run-jobs.ts";
-import { fetchExactPublicFile } from "./fetch-exact-public-file.mjs";
+import { fetchExactPublicFile, fetchExactPublicFiles, zenodoRecordFileUrl } from "./fetch-exact-public-file.mjs";
 
-const ZENODO_BASE = "https://zenodo.org/api/records/17063524/files";
+const ZENODO_RECORD = 17063524;
 const AF3_COMMIT = "a7458d1d26a35154cbfc3e24ec197352079970df";
 const AF3_BASE = `https://raw.githubusercontent.com/martinovein/AF3_MiniPAE/${AF3_COMMIT}/data/example/p06730_o60516`;
 
@@ -28,7 +28,7 @@ const colabfoldFiles = [
   filename,
   bytes,
   sha256,
-  url: `${ZENODO_BASE}/${filename}/content`,
+  url: zenodoRecordFileUrl(ZENODO_RECORD, filename),
 }));
 
 const af3Files = [
@@ -59,6 +59,7 @@ const DATASETS = [
     license: "CC-BY-4.0",
     biologicalContext: "Drosophila CtBP–Prospero peptide complex; not a GPCR–VHH complex.",
     validationPurpose: "Genuine PDB/two-decimal score-JSON intake, exact native pairing, full PAE, recurrence, and per-pose audit.",
+    downloadConcurrency: 1,
     files: colabfoldFiles,
     referenceFilename: colabfoldFiles.find((file) => file.filename.includes("unrelaxed_rank_001"))?.filename,
     expected: { files: 10, coordinates: 5, pae: 5, ignored: 0, receptorLength: 476, partnerLength: 7, mapping: "researcher-confirmed-complete-protein-order" },
@@ -71,6 +72,7 @@ const DATASETS = [
     license: "MIT repository; generated AlphaFold Server files redistributed by that repository.",
     biologicalContext: "P06730–O60516 protein complex; not a GPCR–VHH complex.",
     validationPurpose: "Genuine mmCIF/full-data JSON intake, exact model pairing, token-metadata PAE mapping, recurrence, and per-pose audit.",
+    downloadConcurrency: 4,
     files: af3Files,
     referenceFilename: "fold_p06730_o60516_model_0.cif",
     expected: { files: 16, coordinates: 5, pae: 5, ignored: 6, receptorLength: 163, partnerLength: 100, mapping: "token-residue-metadata-verified" },
@@ -89,19 +91,6 @@ async function fetchExact(file) {
   });
 }
 
-async function mapConcurrent(values, limit, transform) {
-  const output = new Array(values.length);
-  let cursor = 0;
-  async function worker() {
-    while (cursor < values.length) {
-      const index = cursor++;
-      output[index] = await transform(values[index]);
-    }
-  }
-  await Promise.all(Array.from({ length: Math.min(limit, values.length) }, worker));
-  return output;
-}
-
 function auditSource(file) {
   assert.ok(file?.text != null);
   return {
@@ -115,7 +104,10 @@ function auditSource(file) {
 }
 
 async function runDataset(dataset) {
-  const downloaded = await mapConcurrent(dataset.files, 4, fetchExact);
+  const downloaded = await fetchExactPublicFiles(dataset.files, {
+    maximumConcurrency: dataset.downloadConcurrency,
+    fetchOne: fetchExact,
+  });
   const rawFiles = downloaded.map((file) => ({ ...file, path: `${dataset.id}/${file.path}` }));
   const manifest = createPredictionRunManifest(rawFiles);
   assert.equal(manifest.totals.fileCount, dataset.expected.files);

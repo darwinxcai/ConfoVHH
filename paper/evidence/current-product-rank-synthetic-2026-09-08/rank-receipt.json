@@ -1,0 +1,186 @@
+{
+  "inputSha256": "03be4f618adf98cf9dbcc7a877209d2d8cdf69ba25aa37a154ca3a8a7fb217ee",
+  "nodeVersion": "v24.19.0",
+  "result": {
+    "schema": "confovhh-current-product-rank-export-v1",
+    "studyId": "SYNTHETIC-CURRENT-PRODUCT-RANK",
+    "method": {
+      "name": "current-product-scientific-ties",
+      "policySha256": "073eae70e8231b1ddb66da065b928070c6308a952067ab3ba5bc6f73f38bbff6"
+    },
+    "baseline": {
+      "name": "declared-producer-score-order",
+      "policySha256": "78c5c7171430946a939167c82ab82d5ce7c345dd0b0233f33a012bc0ee130efb"
+    },
+    "generators": [
+      "synthetic-generator"
+    ],
+    "attempts": [
+      {
+        "id": "synthetic-failure",
+        "groupId": "synthetic-group",
+        "targetId": "synthetic-target",
+        "generatorId": "synthetic-generator",
+        "status": "failed",
+        "reason": "Synthetic accounting control"
+      },
+      {
+        "id": "synthetic-pose-0",
+        "groupId": "synthetic-group",
+        "targetId": "synthetic-target",
+        "generatorId": "synthetic-generator",
+        "status": "eligible",
+        "reason": ""
+      },
+      {
+        "id": "synthetic-pose-1",
+        "groupId": "synthetic-group",
+        "targetId": "synthetic-target",
+        "generatorId": "synthetic-generator",
+        "status": "eligible",
+        "reason": ""
+      },
+      {
+        "id": "synthetic-pose-2",
+        "groupId": "synthetic-group",
+        "targetId": "synthetic-target",
+        "generatorId": "synthetic-generator",
+        "status": "eligible",
+        "reason": ""
+      },
+      {
+        "id": "synthetic-pose-3",
+        "groupId": "synthetic-group",
+        "targetId": "synthetic-target",
+        "generatorId": "synthetic-generator",
+        "status": "eligible",
+        "reason": ""
+      }
+    ],
+    "rankings": [
+      {
+        "id": "synthetic-pose-0",
+        "methodTier": 0,
+        "baselineTier": 0
+      },
+      {
+        "id": "synthetic-pose-1",
+        "methodTier": 0,
+        "baselineTier": 1
+      },
+      {
+        "id": "synthetic-pose-2",
+        "methodTier": 0,
+        "baselineTier": 2
+      },
+      {
+        "id": "synthetic-pose-3",
+        "methodTier": 1,
+        "baselineTier": 0
+      }
+    ],
+    "methodRanks": [
+      {
+        "id": "synthetic-pose-0",
+        "methodTier": 0,
+        "evidenceTier": 2,
+        "burialScore": 100
+      },
+      {
+        "id": "synthetic-pose-1",
+        "methodTier": 0,
+        "evidenceTier": 2,
+        "burialScore": 100
+      },
+      {
+        "id": "synthetic-pose-2",
+        "methodTier": 0,
+        "evidenceTier": 2,
+        "burialScore": 100
+      },
+      {
+        "id": "synthetic-pose-3",
+        "methodTier": 1,
+        "evidenceTier": 1,
+        "burialScore": 9000
+      }
+    ],
+    "missingProducerScoreIds": [],
+    "status": "rank-export-complete",
+    "provenance": {
+      "sourceSha256": {
+        "lib/pose-ranking.ts": "6f0be122edcf7e6e8a70ea0f562dc0e1aa14dff4adf19b2bf2f67794711d0911",
+        "lib/pose-evidence-v06.ts": "83bbc4c48c22eadfdf2a8a288a9a46e05315feccba80279915e74b5c469742bc",
+        "scripts/paper/export-current-product-ranks.mjs": "7782a6bdeeb36611ee574ff1ae35e4ac692d285d1ec28ce5f93781837627cf72",
+        "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f"
+      },
+      "methodPolicy": {
+        "adapter": "current-product-scientific-ties-v1",
+        "productPolicy": {
+          "version": "0.6.0",
+          "status": "integrated-into-decision-shortlist",
+          "studiedAs": "0.6.0-candidate.2",
+          "implementation": "lib/pose-evidence-v06.ts",
+          "developmentEvidence": "validation/v0.6-pose-evidence-candidate-v2",
+          "primaryRankingKey": "shipped v0.5 evidence tier, carried unchanged",
+          "secondaryRankingKey": "half-delta-SASA interface burial, carried unchanged",
+          "rankingScope": "within-target-only",
+          "fittedCoefficients": 0,
+          "newThresholdsIntroduced": 0,
+          "reordersAcrossShippedTiers": false,
+          "clashBurdenGatesRanking": true,
+          "minimumContactPairs": 1,
+          "minimumInterfaceResiduesPerChain": 3,
+          "sparseInterfaceContactPairs": 8,
+          "interpenetrationCautionOverlapAngstrom": 1.5
+        },
+        "sourceSha256": {
+          "lib/pose-ranking.ts": "6f0be122edcf7e6e8a70ea0f562dc0e1aa14dff4adf19b2bf2f67794711d0911",
+          "lib/pose-evidence-v06.ts": "83bbc4c48c22eadfdf2a8a288a9a46e05315feccba80279915e74b5c469742bc",
+          "scripts/paper/export-current-product-ranks.mjs": "7782a6bdeeb36611ee574ff1ae35e4ac692d285d1ec28ce5f93781837627cf72",
+          "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f"
+        },
+        "tieRule": "equal-evidenceTier-and-exact-burialScore-remain-tied",
+        "groupScope": "within-target-and-generator",
+        "quantization": "none",
+        "frozenV3Compatible": false
+      },
+      "baselinePolicy": {
+        "adapter": "declared-producer-score-order-v1",
+        "generators": [
+          {
+            "id": "synthetic-generator",
+            "scoreName": "arbitrary-score",
+            "direction": "higher-better"
+          }
+        ],
+        "missingScore": "entire-comparison-unavailable",
+        "tieRule": "equal-raw-scores-remain-tied",
+        "percentileValuesComputed": false,
+        "adapterSha256": "7782a6bdeeb36611ee574ff1ae35e4ac692d285d1ec28ce5f93781837627cf72"
+      },
+      "canonicalInputSha256": "f7ecc78df829ef0dd7a83465d1324ba6dd35f72725cc484e0f863375383d1dd9",
+      "declaredAuditArtifactSha256": {
+        "synthetic-pose-0": "073d83e7047b4fb0858eff391f1e4078b0d241c8a1772b5bc14e72c840e54401",
+        "synthetic-pose-1": "073d83e7047b4fb0858eff391f1e4078b0d241c8a1772b5bc14e72c840e54401",
+        "synthetic-pose-2": "073d83e7047b4fb0858eff391f1e4078b0d241c8a1772b5bc14e72c840e54401",
+        "synthetic-pose-3": "5c841c5c74421dbff5d41019df9b1796600d5690caeae5c39f1db27ce324e616"
+      }
+    },
+    "claims": {
+      "frozenV3Compatible": false,
+      "independenceCertified": false,
+      "sourceAuditsVerified": false,
+      "prelabelFreezeCertified": false,
+      "biologicalValidation": false
+    },
+    "limitations": [
+      "Verifies current-product feature-to-rank transformation only; upstream audit values, source artifact hashes, roles, eligible population and grouping remain unverified declarations.",
+      "No complete audit engine, coordinate parser, historical frozen engine or outcome evaluator is executed by this adapter.",
+      "The current-product policy differs from the frozen v3 scientific preorder and cannot replace that arm.",
+      "Dense scientific ties replace unique UI display ranks; no ID or artifact hash breaks a scientific tie.",
+      "Producer score names and directions must be justified and frozen externally; no cross-generator raw-score comparison is performed.",
+      "An exported rank ledger alone proves neither pre-label chronology nor independent data collection; empty eligible strata remain for the downstream evaluator to block."
+    ]
+  }
+}

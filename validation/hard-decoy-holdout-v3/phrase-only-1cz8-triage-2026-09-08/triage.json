@@ -1,0 +1,132 @@
+{
+  "schema": "confovhh-phrase-only-1cz8-triage-v1",
+  "recordedUtc": "2026-09-08T18:04:47.176479+00:00",
+  "entryId": "1CZ8",
+  "candidateEntityId": "1CZ8_3",
+  "input": {
+    "snapshotPath": "validation/hard-decoy-holdout-v3/phrase-only-chunk-001-2026-09-08/snapshots/5368648ac1d563ed964cf56f4683233b4deac21951d368b7dd3bfd18a714b8dd/entries.jsonl",
+    "snapshotSha256": "b2c374b8c58dc82b0522dcc096cce5358d7e4091736e5177a3809b0c83910f61",
+    "selectedRawLineSha256": "cee45df51ace449c774b0cc9eadf19bb6c7c115fae30c973588c1f1d33ad905b",
+    "selectedRowRule": "Exactly one JSONL object with pdbId equal to 1CZ8; raw-line hash excludes the line-feed terminator."
+  },
+  "positiveSourceFacts": [
+    {
+      "classification": "DEPOSITED_METADATA_FACT",
+      "source": "selected-entry.json",
+      "fact": "The complete retained inventory contains VEGFA annotated with UniProt P15692, a 214-residue neutralizing-antibody light chain and a 231-residue neutralizing-antibody heavy chain. The numbered-heavy lead is entity 3."
+    },
+    {
+      "classification": "PRIMARY_CITATION_BIBLIOGRAPHY_FACT",
+      "source": "source-access.json",
+      "fact": "Fresh exact-identifier Europe PMC/PubMed and Crossref metadata identify DOI 10.1006/jmbi.1999.3192 as a publication about an affinity-matured anti-VEGF Fab complex."
+    }
+  ],
+  "allPolymerInventory": [
+    {
+      "rcsbEntityId": "1CZ8_1",
+      "entityId": "1",
+      "depositedDescription": "Vascular endothelial growth factor A",
+      "sequenceLength": 94,
+      "sequenceSha256": "4825af7097354b0f992ae4369000c5d25e1f5ccb5aa1459dc2bbab7b2fc9d449",
+      "labelAsymIds": [
+        "A",
+        "B"
+      ],
+      "authAsymIds": [
+        "V",
+        "W"
+      ],
+      "sourceOrganisms": [
+        {
+          "scientificName": "Homo sapiens",
+          "taxonomyId": "9606"
+        }
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P15692",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ]
+    },
+    {
+      "rcsbEntityId": "1CZ8_2",
+      "entityId": "2",
+      "depositedDescription": "LIGHT CHAIN OF NEUTRALIZING ANTIBODY",
+      "sequenceLength": 214,
+      "sequenceSha256": "c677851d063181e81c434540e4850c453c5d7adee338fff8262aee500f6a88ab",
+      "labelAsymIds": [
+        "C",
+        "E"
+      ],
+      "authAsymIds": [
+        "L",
+        "X"
+      ],
+      "sourceOrganisms": [
+        {
+          "scientificName": "Mus musculus",
+          "taxonomyId": "10090"
+        }
+      ],
+      "referenceSequences": []
+    },
+    {
+      "rcsbEntityId": "1CZ8_3",
+      "entityId": "3",
+      "depositedDescription": "HEAVY CHAIN OF NEUTRALIZING ANTIBODY",
+      "sequenceLength": 231,
+      "sequenceSha256": "28cc00036d435bbe5847a67ad868131f944bce6d2a6a68c260240be6cb2be8ec",
+      "labelAsymIds": [
+        "D",
+        "F"
+      ],
+      "authAsymIds": [
+        "H",
+        "Y"
+      ],
+      "sourceOrganisms": [
+        {
+          "scientificName": "Mus musculus",
+          "taxonomyId": "10090"
+        }
+      ],
+      "referenceSequences": []
+    }
+  ],
+  "auditInference": {
+    "classification": "POSITIVE_CONVENTIONAL_FAB_CONTEXT_TRIAGE",
+    "statement": "The heavy-domain lead has positive deposited heavy/light-chain context and exact-publication Fab context. A heavy-domain call does not establish VHH format. The publication identity is a preparation-review lead rather than proof of an eligible GPCR–VHH pair.",
+    "notEstablished": [
+      "The exact expressed construct identity and processing from primary preparation Methods.",
+      "Binder ancestry or overlap with any other retained anti-VEGF antibody.",
+      "A source-reviewed direct GPCR–VHH pair meeting frozen eligibility criteria.",
+      "Formal whole-entry exclusion or proof that every possible relevant binder is absent."
+    ],
+    "annotationCaveat": "Deposited antibody source-organism metadata report Mus musculus. No unreported species composition, humanization or construct-processing history is inferred. The Crossref title carries an editorial suffix absent from PubMed and deposition metadata; the exact DOI and publication identity agree."
+  },
+  "disposition": {
+    "candidateFormatReview": "CONVENTIONAL_FAB_CONTEXT_SOURCE_IDENTIFIED",
+    "formalDisposition": "PENDING_DISPOSITION",
+    "sourcePreparationReviewComplete": false,
+    "directInterfaceEvidenceStatus": "UNRESOLVED",
+    "formalEligibilityAuthority": false,
+    "wholeEntryExclusionAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "independenceCertified": false,
+    "targetFreezePermitted": false,
+    "newEligibleGroups": 0,
+    "wholeCensusBound": null
+  },
+  "continuation": "Retain the positive format/target context without converting it into a formal disposition. If formal disposition is required, obtain permitted primary preparation/construct and deposition evidence. Do not repeatedly retry the same failed publisher route without new access evidence.",
+  "exposure": {
+    "nativeCoordinatesInspected": false,
+    "nativeRelativePosesInspected": false,
+    "structuralContactTablesInspected": false,
+    "labelsAccessed": false,
+    "predictionOutputsAccessed": false,
+    "abstractsOrResultsFiguresOrCaptionsInspected": false
+  },
+  "scopeLimit": "This review concerns only 1CZ8 and its 3 deposited polymer entities. It supplies neither an absence proof nor any bound for the phrase-only remainder or whole census."
+}

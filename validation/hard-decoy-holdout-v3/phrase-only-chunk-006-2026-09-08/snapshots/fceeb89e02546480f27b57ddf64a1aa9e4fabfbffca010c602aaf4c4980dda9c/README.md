@@ -1,0 +1,9 @@
+# Phrase-only discovery operational chunk 6
+
+This fixed lexical chunk covers 250 saved identifiers from a pinned operational remainder of 12262, preserving the original 12262-identifier phrase-only denominator. It is an operational partition, not a biological selection or earlier scientific preregistration. Existing exclusions require exact bound complete polymer inventories; sparse development metadata is not an exclusion.
+
+Only the unchanged metadata GraphQL query is requested, in 25-entry batches repeated twice. Successful normalized responses must agree before any entry enters the derived inventory or sequence screen. Repeated incomplete polymer inventories are retained with an unresolved status and do not count as completely inventoried entries. Packet-local remaining fields subtract this chunk alone; a global remaining count requires an explicit cross-packet identifier union. Missing responses, repeat disagreements and absent entries stay in the denominator. Failure diagnostic control whitespace is serialized as spaces with the original diagnostic UTF-8 digest retained; raw response bytes are unchanged. Failed attempts and request/response bytes remain immutable; collect resumes only requests without a saved successful response.
+
+The unchanged all-polymer IMGT sequence screen yields review signals, not VHH identity, receptor assignment, binding-role proof, eligibility, absence or independent components. Every intended identifier and every returned polymer are accounted. The remaining phrase-only and broader discovery routes remain incomplete. No coordinates, relative poses, contact tables, labels, predictions or article bodies are requested.
+
+This immutable state snapshot is identified by all capture-record hashes. Verify the enclosing packet with `node scripts/hard-decoy-v3/capture-phrase-only-chunk.mjs verify --output-directory PACKET --chunk-index 6`. Restore global text metadata first with the existing restoration command.

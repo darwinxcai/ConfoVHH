@@ -1,0 +1,81 @@
+{
+  "schema": "confovhh-paired-selection-v1",
+  "studyId": "SYNTHETIC-AUDIT-RANK",
+  "positiveOutcomeDefinition": "Arbitrary synthetic binary labels with no reference-pose or biological meaning.",
+  "method": {
+    "name": "audit-report-bound-current-product",
+    "policySha256": "a8cb5da73373ffa1d119ec0cbcd036afa5b38fd87f4e775320fcc4057ce0a5fe"
+  },
+  "baseline": {
+    "name": "declared-producer-score-order",
+    "policySha256": "6bc0714dadf80b3102d88b3706b0773790a642e22e45cc0bb7e179042a02deea"
+  },
+  "generators": [
+    "generator"
+  ],
+  "attempts": [
+    {
+      "id": "a-near",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "failed",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "generator",
+      "status": "failed",
+      "reason": "Synthetic generation failure"
+    },
+    {
+      "id": "separated",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "generator",
+      "status": "eligible",
+      "reason": ""
+    },
+    {
+      "id": "z-near",
+      "groupId": "synthetic-group",
+      "targetId": "synthetic-target",
+      "generatorId": "generator",
+      "status": "eligible",
+      "reason": ""
+    }
+  ],
+  "rankings": [
+    {
+      "id": "a-near",
+      "methodTier": 0,
+      "baselineTier": 0
+    },
+    {
+      "id": "separated",
+      "methodTier": 1,
+      "baselineTier": 0
+    },
+    {
+      "id": "z-near",
+      "methodTier": 0,
+      "baselineTier": 1
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "a-near",
+      "positive": 1
+    },
+    {
+      "id": "z-near",
+      "positive": 0
+    },
+    {
+      "id": "separated",
+      "positive": 0
+    }
+  ]
+}

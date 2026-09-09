@@ -1,0 +1,263 @@
+{
+  "schema": "confovhh-mglyr-deposition-construct-review-v1",
+  "date": "2026-09-08",
+  "scope": {
+    "pdbIds": [
+      "9VOR",
+      "9VOS"
+    ],
+    "sourceDoi": "10.1038/s41467-026-68339-x",
+    "sourcePmid": "41588006",
+    "priorPreparationDoi": "10.1126/science.abl4732"
+  },
+  "inputSha256": {
+    "validation/hard-decoy-holdout-v3/mglyr-source-resolution-2026-09-08/source-review.json": "6fe2237304c67bd651666769d6294b7477b8ee2d1efd3867c5bbd3da0eb59157",
+    "validation/hard-decoy-holdout-v3/mglyr-source-resolution-2026-09-08/source-blocks.json": "bac8a21e2ef7dd5f19e6669fbec095e0c2a501b82dcca36ac916128ceb676e59",
+    "validation/hard-decoy-holdout-v3/mglyr-source-resolution-2026-09-08/retrieval-attempts.json": "6460289c463a7699a6f438ed5961e8c30632a210b90fee4f1a3bd63c0c855e41",
+    "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/construct-followup.json": "a5ce563ba0c7ef839deca77f9ca3f88880fb37c67fc2f922283483186bbe51af",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl": "ab4ebb4597948b973af33ae55763c0f8a65fcbfe66db3748d24478ec33a429df"
+  },
+  "classification": "BOUNDED_PRIMARY_DEPOSITION_METADATA_REVIEW",
+  "entries": [
+    {
+      "rcsbId": "9VOR_1",
+      "description": "Metabotropic glycine receptor",
+      "sequenceLength": 781,
+      "sequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc",
+      "matchesRetainedSequence": true,
+      "sourceOrganism": "Homo sapiens",
+      "expressionHost": "Homo sapiens",
+      "expressionHostCellLine": "HEK293",
+      "depositedEntityRange": [
+        1,
+        781
+      ],
+      "rangeIsCanonicalReceptorRange": false,
+      "queriedSourceFieldsReturnedNull": [
+        "pdbx_gene_src_fragment",
+        "gene_src_details",
+        "pdbx_description",
+        "pdbx_gene_src_variant",
+        "pdbx_host_org_strain",
+        "pdbx_host_org_vector",
+        "pdbx_host_org_vector_type",
+        "host_org_details",
+        "plasmid_details",
+        "plasmid_name"
+      ],
+      "fragment": null,
+      "mutation": null,
+      "sourceMethodCode": "man"
+    },
+    {
+      "rcsbId": "9VOR_2",
+      "description": "Nb20",
+      "sequenceLength": 150,
+      "sequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc",
+      "matchesRetainedSequence": true,
+      "sourceOrganism": "Lama glama",
+      "expressionHost": "Escherichia coli 'BL21-Gold(DE3)pLysS AG'",
+      "expressionHostCellLine": null,
+      "depositedEntityRange": [
+        1,
+        150
+      ],
+      "rangeIsCanonicalReceptorRange": false,
+      "queriedSourceFieldsReturnedNull": [
+        "pdbx_gene_src_fragment",
+        "gene_src_details",
+        "pdbx_description",
+        "pdbx_gene_src_variant",
+        "pdbx_host_org_cell_line",
+        "pdbx_host_org_strain",
+        "pdbx_host_org_vector",
+        "pdbx_host_org_vector_type",
+        "host_org_details",
+        "plasmid_details",
+        "plasmid_name"
+      ],
+      "fragment": null,
+      "mutation": null,
+      "sourceMethodCode": "man"
+    },
+    {
+      "rcsbId": "9VOS_1",
+      "description": "Metabotropic glycine receptor",
+      "sequenceLength": 781,
+      "sequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc",
+      "matchesRetainedSequence": true,
+      "sourceOrganism": "Homo sapiens",
+      "expressionHost": "Homo sapiens",
+      "expressionHostCellLine": "HEK293",
+      "depositedEntityRange": [
+        1,
+        781
+      ],
+      "rangeIsCanonicalReceptorRange": false,
+      "queriedSourceFieldsReturnedNull": [
+        "pdbx_gene_src_fragment",
+        "gene_src_details",
+        "pdbx_description",
+        "pdbx_gene_src_variant",
+        "pdbx_host_org_strain",
+        "pdbx_host_org_vector",
+        "pdbx_host_org_vector_type",
+        "host_org_details",
+        "plasmid_details",
+        "plasmid_name"
+      ],
+      "fragment": null,
+      "mutation": null,
+      "sourceMethodCode": "man"
+    },
+    {
+      "rcsbId": "9VOS_2",
+      "description": "Isoform 2 of Regulator of G-protein signaling 7",
+      "sequenceLength": 469,
+      "sequenceSha256": "4ce9cd64aee861cc1f991498f67c539bef5c1e9a9ff49e039b4af0978495575c",
+      "matchesRetainedSequence": true,
+      "sourceOrganism": "Homo sapiens",
+      "expressionHost": "Homo sapiens",
+      "expressionHostCellLine": "HEK293",
+      "depositedEntityRange": [
+        1,
+        469
+      ],
+      "rangeIsCanonicalReceptorRange": false,
+      "queriedSourceFieldsReturnedNull": [
+        "pdbx_gene_src_fragment",
+        "gene_src_details",
+        "pdbx_description",
+        "pdbx_gene_src_variant",
+        "pdbx_host_org_strain",
+        "pdbx_host_org_vector",
+        "pdbx_host_org_vector_type",
+        "host_org_details",
+        "plasmid_details",
+        "plasmid_name"
+      ],
+      "fragment": null,
+      "mutation": null,
+      "sourceMethodCode": "man"
+    },
+    {
+      "rcsbId": "9VOS_3",
+      "description": "Guanine nucleotide-binding protein subunit beta-5",
+      "sequenceLength": 353,
+      "sequenceSha256": "3bbca653acaa5e0ebced223904c4a577ff749d9fb237a05d9026aa2b190df4bc",
+      "matchesRetainedSequence": true,
+      "sourceOrganism": "Mus musculus",
+      "expressionHost": "Homo sapiens",
+      "expressionHostCellLine": "HEK293",
+      "depositedEntityRange": [
+        1,
+        353
+      ],
+      "rangeIsCanonicalReceptorRange": false,
+      "queriedSourceFieldsReturnedNull": [
+        "pdbx_gene_src_fragment",
+        "gene_src_details",
+        "pdbx_description",
+        "pdbx_gene_src_variant",
+        "pdbx_host_org_strain",
+        "pdbx_host_org_vector",
+        "pdbx_host_org_vector_type",
+        "host_org_details",
+        "plasmid_details",
+        "plasmid_name"
+      ],
+      "fragment": null,
+      "mutation": null,
+      "sourceMethodCode": "man"
+    },
+    {
+      "rcsbId": "9VOS_4",
+      "description": "Nb20",
+      "sequenceLength": 150,
+      "sequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc",
+      "matchesRetainedSequence": true,
+      "sourceOrganism": "Lama glama",
+      "expressionHost": "Escherichia coli 'BL21-Gold(DE3)pLysS AG'",
+      "expressionHostCellLine": null,
+      "depositedEntityRange": [
+        1,
+        150
+      ],
+      "rangeIsCanonicalReceptorRange": false,
+      "queriedSourceFieldsReturnedNull": [
+        "pdbx_gene_src_fragment",
+        "gene_src_details",
+        "pdbx_description",
+        "pdbx_gene_src_variant",
+        "pdbx_host_org_cell_line",
+        "pdbx_host_org_strain",
+        "pdbx_host_org_vector",
+        "pdbx_host_org_vector_type",
+        "host_org_details",
+        "plasmid_details",
+        "plasmid_name"
+      ],
+      "fragment": null,
+      "mutation": null,
+      "sourceMethodCode": "man"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "host-link",
+      "classification": "DEPOSITION_REPORTED_METADATA",
+      "statement": "The receptor in both entries and both 9VOS auxiliary proteins have Homo sapiens / HEK293 expression-host metadata. Nb20 in both entries has expression-host name Escherichia coli BL21-Gold(DE3)pLysS AG, preserving the exact source spelling in the entity rows.",
+      "sourcePath": "raw/construct-metadata-response.json"
+    },
+    {
+      "id": "unfilled-construct-fields",
+      "classification": "CAPTURED_FIELD_OBSERVATION",
+      "statement": "The requested fragment, mutation, vector, plasmid and source-detail fields return null for these six entity records. This is a property of this response, not proof that no mutation, tag, fragment or construct record exists.",
+      "sourcePaths": [
+        "raw/construct-metadata-response.json",
+        "raw/construct-fragments-response.json"
+      ]
+    },
+    {
+      "id": "hal-location",
+      "classification": "REPOSITORY_METADATA_OBSERVATION",
+      "statement": "OpenAlex supplies a HAL location not tested in the retained prior access record. HAL confirms hal-04994632 with the exact cited 2022 DOI; its response to the selected fields contains no fileMain_s or linkExtUrl_s. No Methods document was obtained.",
+      "sourcePaths": [
+        "raw/prior-preparation-locations-response.json",
+        "raw/hal-repository-metadata-response.json"
+      ]
+    }
+  ],
+  "interpretations": [
+    {
+      "classification": "AUDIT_INTERPRETATION",
+      "statement": "Deposited sequence ranges 1-781 and 1-150 index deposited polymers. They do not independently establish canonical receptor truncation or cleavage/tag provenance."
+    },
+    {
+      "classification": "AUDIT_INTERPRETATION",
+      "statement": "The deposited Nb20 host label is more specific than the general E. coli BL21 DE3 label in retained Methods Sec15.p0. These labels do not establish matching cryo-EM and assay constructs, and their difference is not itself a biological contradiction."
+    },
+    {
+      "classification": "AUDIT_INTERPRETATION",
+      "statement": "OpenAlex OA/license flags are discovery metadata and are not treated as a primary-source license verification. HAL missing selected URL fields do not prove general file unavailability."
+    }
+  ],
+  "remainingEvidenceRequired": [
+    "A primary preparation statement mapping the cryo-EM receptor to Q5T848 residues 1-775 plus LEVLFQ.",
+    "A primary preparation statement mapping cryo-EM Nb20 to MGSSHHHHHHHHLEVLFQGP plus the published sequence without its initial methionine.",
+    "An exact construct or documented preparation link, rather than expression-host consistency alone."
+  ],
+  "nextUsefulMetadataOnlyAction": "Obtain an authorized custodian-provided bibliographic/member inventory for the named 2022 supplementary Methods, or follow a newly advertised official Methods attachment. Continue other discovery chunks while these preparation links remain unresolved.",
+  "resolution": {
+    "exactCryoEmReceptorConstructEstablished": false,
+    "exactCryoEmNb20TagEstablished": false,
+    "newIndependentEligibleGroups": 0,
+    "newFormalEligibleEntries": 0,
+    "priorDispositionsChanged": 0,
+    "formalEligibilityAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "targetFreezePermitted": false,
+    "independenceCertified": false,
+    "prohibitedDataAccessed": false
+  }
+}

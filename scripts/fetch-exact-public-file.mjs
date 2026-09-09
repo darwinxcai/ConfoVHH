@@ -8,6 +8,15 @@ const TRANSIENT_NETWORK_CODES = new Set([
   "UND_ERR_CONNECT_TIMEOUT", "UND_ERR_HEADERS_TIMEOUT", "UND_ERR_BODY_TIMEOUT", "UND_ERR_SOCKET",
 ]);
 
+export function zenodoRecordFileUrl(recordId, filename) {
+  assert.match(String(recordId), /^[1-9][0-9]*$/u, "positive Zenodo record ID required");
+  assert.ok(typeof filename === "string" && filename.length >= 1 && filename.length <= 512,
+    "bounded Zenodo filename required");
+  assert.ok(!/[\\/\p{Cc}\p{Cf}]/u.test(filename) && filename !== "." && filename !== "..",
+    "Zenodo filename must be one path component");
+  return `https://zenodo.org/records/${recordId}/files/${encodeURIComponent(filename)}?download=1`;
+}
+
 function transientNetworkError(error, signal) {
   if (signal.aborted && ["TimeoutError", "AbortError"].includes(error?.name)) return true;
   const code = error?.cause?.code ?? error?.code;
@@ -94,4 +103,38 @@ export async function fetchExactPublicFile(file, {
   assert.equal(createHash("sha256").update(bytes).digest("hex"), file.sha256, `${file.filename}: SHA-256 changed`);
   const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
   return { path: file.filename, bytes: bytes.byteLength, sha256: file.sha256, text };
+}
+
+/** Preserve input order while limiting pressure on immutable public sources.
+ * Stop dispatching after the first failure, then drain in-flight downloads
+ * before returning that failure. Already-started files keep their own bounds.
+ */
+export async function fetchExactPublicFiles(files, {
+  maximumConcurrency = 4,
+  fetchOne = fetchExactPublicFile,
+} = {}) {
+  assert.ok(Array.isArray(files) && files.length >= 1 && files.length <= 128, "bounded file list required");
+  assert.ok(Number.isSafeInteger(maximumConcurrency) && maximumConcurrency >= 1 && maximumConcurrency <= 4,
+    "maximum concurrency must be between 1 and 4");
+  assert.equal(typeof fetchOne, "function", "fetch implementation required");
+  const output = new Array(files.length);
+  let cursor = 0;
+  let failed = false;
+  let firstError;
+  async function worker() {
+    while (!failed && cursor < files.length) {
+      const index = cursor++;
+      try {
+        output[index] = await fetchOne(files[index]);
+      } catch (error) {
+        if (!failed) {
+          failed = true;
+          firstError = error;
+        }
+      }
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(maximumConcurrency, files.length) }, worker));
+  if (failed) throw firstError;
+  return output;
 }
