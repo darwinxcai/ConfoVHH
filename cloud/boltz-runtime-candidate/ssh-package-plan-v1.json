@@ -1,0 +1,45 @@
+{
+  "schema": "confovhh.base-preserving-ssh-package-plan.v1",
+  "addedPackages": {
+    "libbsd0:amd64": {
+      "version": "0.11.5-1",
+      "architecture": "amd64"
+    },
+    "libcbor0.8:amd64": {
+      "version": "0.8.0-2ubuntu1",
+      "architecture": "amd64"
+    },
+    "libedit2:amd64": {
+      "version": "3.1-20210910-1build1",
+      "architecture": "amd64"
+    },
+    "libfido2-1:amd64": {
+      "version": "1.10.0-1",
+      "architecture": "amd64"
+    },
+    "libmd0:amd64": {
+      "version": "1.0.4-1build1",
+      "architecture": "amd64"
+    },
+    "libwrap0:amd64": {
+      "version": "7.6.q-31build2",
+      "architecture": "amd64"
+    },
+    "openssh-client": {
+      "version": "1:8.9p1-3ubuntu0.17",
+      "architecture": "amd64"
+    },
+    "openssh-server": {
+      "version": "1:8.9p1-3ubuntu0.17",
+      "architecture": "amd64"
+    },
+    "openssh-sftp-server": {
+      "version": "1:8.9p1-3ubuntu0.17",
+      "architecture": "amd64"
+    },
+    "ucf": {
+      "version": "3.0043",
+      "architecture": "all"
+    }
+  }
+}
