@@ -1,0 +1,962 @@
+[
+  {
+    "id": "seed1_model_0",
+    "arm": "frozen-v06",
+    "key": [
+      1,
+      1367.632311505746
+    ],
+    "rank": 7,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ac4e88b64282ff815c3cb8bb07b2ebc564daf661f0e248fa49cf868b8039292a",
+    "confidenceSha256": "af61aadbbb22e66b8da440d91ccce373f1e62b268191028924d7330255d94b49",
+    "evidenceTier": 1,
+    "burial": 1367.632311505746,
+    "contacts": 68,
+    "clashes": 6,
+    "overlapBurden": 0.17006022825415304,
+    "confidence": 0.8893769383430481,
+    "DockQ": 0.41451984199389164
+  },
+  {
+    "id": "seed1_model_0",
+    "arm": "burial-only",
+    "key": [
+      1367.632311505746
+    ],
+    "rank": 5,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ac4e88b64282ff815c3cb8bb07b2ebc564daf661f0e248fa49cf868b8039292a",
+    "confidenceSha256": "af61aadbbb22e66b8da440d91ccce373f1e62b268191028924d7330255d94b49",
+    "evidenceTier": 1,
+    "burial": 1367.632311505746,
+    "contacts": 68,
+    "clashes": 6,
+    "overlapBurden": 0.17006022825415304,
+    "confidence": 0.8893769383430481,
+    "DockQ": 0.41451984199389164
+  },
+  {
+    "id": "seed1_model_0",
+    "arm": "predictor-confidence",
+    "key": [
+      0.8893769383430481
+    ],
+    "rank": 4,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ac4e88b64282ff815c3cb8bb07b2ebc564daf661f0e248fa49cf868b8039292a",
+    "confidenceSha256": "af61aadbbb22e66b8da440d91ccce373f1e62b268191028924d7330255d94b49",
+    "evidenceTier": 1,
+    "burial": 1367.632311505746,
+    "contacts": 68,
+    "clashes": 6,
+    "overlapBurden": 0.17006022825415304,
+    "confidence": 0.8893769383430481,
+    "DockQ": 0.41451984199389164
+  },
+  {
+    "id": "seed1_model_0",
+    "arm": "clash-fraction-v1",
+    "key": [
+      1246.958872255239
+    ],
+    "rank": 6,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ac4e88b64282ff815c3cb8bb07b2ebc564daf661f0e248fa49cf868b8039292a",
+    "confidenceSha256": "af61aadbbb22e66b8da440d91ccce373f1e62b268191028924d7330255d94b49",
+    "evidenceTier": 1,
+    "burial": 1367.632311505746,
+    "contacts": 68,
+    "clashes": 6,
+    "overlapBurden": 0.17006022825415304,
+    "confidence": 0.8893769383430481,
+    "DockQ": 0.41451984199389164
+  },
+  {
+    "id": "seed1_model_0",
+    "arm": "overlap-burial-v1",
+    "key": [
+      1168.8563361788565
+    ],
+    "rank": 5,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ac4e88b64282ff815c3cb8bb07b2ebc564daf661f0e248fa49cf868b8039292a",
+    "confidenceSha256": "af61aadbbb22e66b8da440d91ccce373f1e62b268191028924d7330255d94b49",
+    "evidenceTier": 1,
+    "burial": 1367.632311505746,
+    "contacts": 68,
+    "clashes": 6,
+    "overlapBurden": 0.17006022825415304,
+    "confidence": 0.8893769383430481,
+    "DockQ": 0.41451984199389164
+  },
+  {
+    "id": "seed1_model_1",
+    "arm": "frozen-v06",
+    "key": [
+      1,
+      1381.2205453445376
+    ],
+    "rank": 6,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "8e23af915f19ac6a734fe02ac9e435e8d2536ae1f0ed1cd64fe32ed6de3d2d28",
+    "confidenceSha256": "f4309d47d3dc1bbcff2a9170e7c60a4e9b0dc839b6213a3d88f723225754c416",
+    "evidenceTier": 1,
+    "burial": 1381.2205453445376,
+    "contacts": 69,
+    "clashes": 6,
+    "overlapBurden": 0.18941110623077653,
+    "confidence": 0.8619559407234192,
+    "DockQ": 0.3757359167773013
+  },
+  {
+    "id": "seed1_model_1",
+    "arm": "burial-only",
+    "key": [
+      1381.2205453445376
+    ],
+    "rank": 4,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "8e23af915f19ac6a734fe02ac9e435e8d2536ae1f0ed1cd64fe32ed6de3d2d28",
+    "confidenceSha256": "f4309d47d3dc1bbcff2a9170e7c60a4e9b0dc839b6213a3d88f723225754c416",
+    "evidenceTier": 1,
+    "burial": 1381.2205453445376,
+    "contacts": 69,
+    "clashes": 6,
+    "overlapBurden": 0.18941110623077653,
+    "confidence": 0.8619559407234192,
+    "DockQ": 0.3757359167773013
+  },
+  {
+    "id": "seed1_model_1",
+    "arm": "predictor-confidence",
+    "key": [
+      0.8619559407234192
+    ],
+    "rank": 6,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "8e23af915f19ac6a734fe02ac9e435e8d2536ae1f0ed1cd64fe32ed6de3d2d28",
+    "confidenceSha256": "f4309d47d3dc1bbcff2a9170e7c60a4e9b0dc839b6213a3d88f723225754c416",
+    "evidenceTier": 1,
+    "burial": 1381.2205453445376,
+    "contacts": 69,
+    "clashes": 6,
+    "overlapBurden": 0.18941110623077653,
+    "confidence": 0.8619559407234192,
+    "DockQ": 0.3757359167773013
+  },
+  {
+    "id": "seed1_model_1",
+    "arm": "clash-fraction-v1",
+    "key": [
+      1261.1144109667518
+    ],
+    "rank": 5,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "8e23af915f19ac6a734fe02ac9e435e8d2536ae1f0ed1cd64fe32ed6de3d2d28",
+    "confidenceSha256": "f4309d47d3dc1bbcff2a9170e7c60a4e9b0dc839b6213a3d88f723225754c416",
+    "evidenceTier": 1,
+    "burial": 1381.2205453445376,
+    "contacts": 69,
+    "clashes": 6,
+    "overlapBurden": 0.18941110623077653,
+    "confidence": 0.8619559407234192,
+    "DockQ": 0.3757359167773013
+  },
+  {
+    "id": "seed1_model_1",
+    "arm": "overlap-burial-v1",
+    "key": [
+      1161.2642072273916
+    ],
+    "rank": 6,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "8e23af915f19ac6a734fe02ac9e435e8d2536ae1f0ed1cd64fe32ed6de3d2d28",
+    "confidenceSha256": "f4309d47d3dc1bbcff2a9170e7c60a4e9b0dc839b6213a3d88f723225754c416",
+    "evidenceTier": 1,
+    "burial": 1381.2205453445376,
+    "contacts": 69,
+    "clashes": 6,
+    "overlapBurden": 0.18941110623077653,
+    "confidence": 0.8619559407234192,
+    "DockQ": 0.3757359167773013
+  },
+  {
+    "id": "seed1_model_2",
+    "arm": "frozen-v06",
+    "key": [
+      1,
+      1164.721862013725
+    ],
+    "rank": 9,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ad4c956c00273eab0a7aa7da317eda1799d1267747d2a42fb7b3cfbd2616a31b",
+    "confidenceSha256": "1f0f3e4aace424a8712907da7f849598795b53ebc34643255c2f4bfb3da39879",
+    "evidenceTier": 1,
+    "burial": 1164.721862013725,
+    "contacts": 52,
+    "clashes": 7,
+    "overlapBurden": 0.20133144256700555,
+    "confidence": 0.8491935729980469,
+    "DockQ": 0.20782171517087225
+  },
+  {
+    "id": "seed1_model_2",
+    "arm": "burial-only",
+    "key": [
+      1164.721862013725
+    ],
+    "rank": 7,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ad4c956c00273eab0a7aa7da317eda1799d1267747d2a42fb7b3cfbd2616a31b",
+    "confidenceSha256": "1f0f3e4aace424a8712907da7f849598795b53ebc34643255c2f4bfb3da39879",
+    "evidenceTier": 1,
+    "burial": 1164.721862013725,
+    "contacts": 52,
+    "clashes": 7,
+    "overlapBurden": 0.20133144256700555,
+    "confidence": 0.8491935729980469,
+    "DockQ": 0.20782171517087225
+  },
+  {
+    "id": "seed1_model_2",
+    "arm": "predictor-confidence",
+    "key": [
+      0.8491935729980469
+    ],
+    "rank": 7,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ad4c956c00273eab0a7aa7da317eda1799d1267747d2a42fb7b3cfbd2616a31b",
+    "confidenceSha256": "1f0f3e4aace424a8712907da7f849598795b53ebc34643255c2f4bfb3da39879",
+    "evidenceTier": 1,
+    "burial": 1164.721862013725,
+    "contacts": 52,
+    "clashes": 7,
+    "overlapBurden": 0.20133144256700555,
+    "confidence": 0.8491935729980469,
+    "DockQ": 0.20782171517087225
+  },
+  {
+    "id": "seed1_model_2",
+    "arm": "clash-fraction-v1",
+    "key": [
+      1007.9323805888006
+    ],
+    "rank": 8,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ad4c956c00273eab0a7aa7da317eda1799d1267747d2a42fb7b3cfbd2616a31b",
+    "confidenceSha256": "1f0f3e4aace424a8712907da7f849598795b53ebc34643255c2f4bfb3da39879",
+    "evidenceTier": 1,
+    "burial": 1164.721862013725,
+    "contacts": 52,
+    "clashes": 7,
+    "overlapBurden": 0.20133144256700555,
+    "confidence": 0.8491935729980469,
+    "DockQ": 0.20782171517087225
+  },
+  {
+    "id": "seed1_model_2",
+    "arm": "overlap-burial-v1",
+    "key": [
+      969.525828380007
+    ],
+    "rank": 8,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "ad4c956c00273eab0a7aa7da317eda1799d1267747d2a42fb7b3cfbd2616a31b",
+    "confidenceSha256": "1f0f3e4aace424a8712907da7f849598795b53ebc34643255c2f4bfb3da39879",
+    "evidenceTier": 1,
+    "burial": 1164.721862013725,
+    "contacts": 52,
+    "clashes": 7,
+    "overlapBurden": 0.20133144256700555,
+    "confidence": 0.8491935729980469,
+    "DockQ": 0.20782171517087225
+  },
+  {
+    "id": "seed1_model_3",
+    "arm": "frozen-v06",
+    "key": [
+      1,
+      1027.3088663810124
+    ],
+    "rank": 10,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "6586f58ee9a34f5351ca3bc11358646d849c27534d401f7680dc561bf0729d52",
+    "confidenceSha256": "4e1bd42f9cb28ca02c915ebba5bb3295f07f64bcf5d14bf916bffa1087577176",
+    "evidenceTier": 1,
+    "burial": 1027.3088663810124,
+    "contacts": 48,
+    "clashes": 2,
+    "overlapBurden": 0.14636819940358312,
+    "confidence": 0.8466022610664368,
+    "DockQ": 0.20512446299198026
+  },
+  {
+    "id": "seed1_model_3",
+    "arm": "burial-only",
+    "key": [
+      1027.3088663810124
+    ],
+    "rank": 9,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "6586f58ee9a34f5351ca3bc11358646d849c27534d401f7680dc561bf0729d52",
+    "confidenceSha256": "4e1bd42f9cb28ca02c915ebba5bb3295f07f64bcf5d14bf916bffa1087577176",
+    "evidenceTier": 1,
+    "burial": 1027.3088663810124,
+    "contacts": 48,
+    "clashes": 2,
+    "overlapBurden": 0.14636819940358312,
+    "confidence": 0.8466022610664368,
+    "DockQ": 0.20512446299198026
+  },
+  {
+    "id": "seed1_model_3",
+    "arm": "predictor-confidence",
+    "key": [
+      0.8466022610664368
+    ],
+    "rank": 8,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "6586f58ee9a34f5351ca3bc11358646d849c27534d401f7680dc561bf0729d52",
+    "confidenceSha256": "4e1bd42f9cb28ca02c915ebba5bb3295f07f64bcf5d14bf916bffa1087577176",
+    "evidenceTier": 1,
+    "burial": 1027.3088663810124,
+    "contacts": 48,
+    "clashes": 2,
+    "overlapBurden": 0.14636819940358312,
+    "confidence": 0.8466022610664368,
+    "DockQ": 0.20512446299198026
+  },
+  {
+    "id": "seed1_model_3",
+    "arm": "clash-fraction-v1",
+    "key": [
+      984.5043302818036
+    ],
+    "rank": 9,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "6586f58ee9a34f5351ca3bc11358646d849c27534d401f7680dc561bf0729d52",
+    "confidenceSha256": "4e1bd42f9cb28ca02c915ebba5bb3295f07f64bcf5d14bf916bffa1087577176",
+    "evidenceTier": 1,
+    "burial": 1027.3088663810124,
+    "contacts": 48,
+    "clashes": 2,
+    "overlapBurden": 0.14636819940358312,
+    "confidence": 0.8466022610664368,
+    "DockQ": 0.20512446299198026
+  },
+  {
+    "id": "seed1_model_3",
+    "arm": "overlap-burial-v1",
+    "key": [
+      896.1421530320597
+    ],
+    "rank": 9,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "6586f58ee9a34f5351ca3bc11358646d849c27534d401f7680dc561bf0729d52",
+    "confidenceSha256": "4e1bd42f9cb28ca02c915ebba5bb3295f07f64bcf5d14bf916bffa1087577176",
+    "evidenceTier": 1,
+    "burial": 1027.3088663810124,
+    "contacts": 48,
+    "clashes": 2,
+    "overlapBurden": 0.14636819940358312,
+    "confidence": 0.8466022610664368,
+    "DockQ": 0.20512446299198026
+  },
+  {
+    "id": "seed1_model_4",
+    "arm": "frozen-v06",
+    "key": [
+      2,
+      928.2626822950779
+    ],
+    "rank": 2,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "b0307346e9c3aa63f7643698afc3e9bee09d8a48e753847cd784e8ee804502cf",
+    "confidenceSha256": "b09e11920359d8efdb4c465bf96a0b3d69103f4cd5ba56bc3ae6f578b46eeeea",
+    "evidenceTier": 2,
+    "burial": 928.2626822950779,
+    "contacts": 41,
+    "clashes": 0,
+    "overlapBurden": 0.07623789066282158,
+    "confidence": 0.8166805505752563,
+    "DockQ": 0.17029171132592144
+  },
+  {
+    "id": "seed1_model_4",
+    "arm": "burial-only",
+    "key": [
+      928.2626822950779
+    ],
+    "rank": 10,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "b0307346e9c3aa63f7643698afc3e9bee09d8a48e753847cd784e8ee804502cf",
+    "confidenceSha256": "b09e11920359d8efdb4c465bf96a0b3d69103f4cd5ba56bc3ae6f578b46eeeea",
+    "evidenceTier": 2,
+    "burial": 928.2626822950779,
+    "contacts": 41,
+    "clashes": 0,
+    "overlapBurden": 0.07623789066282158,
+    "confidence": 0.8166805505752563,
+    "DockQ": 0.17029171132592144
+  },
+  {
+    "id": "seed1_model_4",
+    "arm": "predictor-confidence",
+    "key": [
+      0.8166805505752563
+    ],
+    "rank": 10,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "b0307346e9c3aa63f7643698afc3e9bee09d8a48e753847cd784e8ee804502cf",
+    "confidenceSha256": "b09e11920359d8efdb4c465bf96a0b3d69103f4cd5ba56bc3ae6f578b46eeeea",
+    "evidenceTier": 2,
+    "burial": 928.2626822950779,
+    "contacts": 41,
+    "clashes": 0,
+    "overlapBurden": 0.07623789066282158,
+    "confidence": 0.8166805505752563,
+    "DockQ": 0.17029171132592144
+  },
+  {
+    "id": "seed1_model_4",
+    "arm": "clash-fraction-v1",
+    "key": [
+      928.2626822950779
+    ],
+    "rank": 10,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "b0307346e9c3aa63f7643698afc3e9bee09d8a48e753847cd784e8ee804502cf",
+    "confidenceSha256": "b09e11920359d8efdb4c465bf96a0b3d69103f4cd5ba56bc3ae6f578b46eeeea",
+    "evidenceTier": 2,
+    "burial": 928.2626822950779,
+    "contacts": 41,
+    "clashes": 0,
+    "overlapBurden": 0.07623789066282158,
+    "confidence": 0.8166805505752563,
+    "DockQ": 0.17029171132592144
+  },
+  {
+    "id": "seed1_model_4",
+    "arm": "overlap-burial-v1",
+    "key": [
+      862.5069702046911
+    ],
+    "rank": 10,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "b0307346e9c3aa63f7643698afc3e9bee09d8a48e753847cd784e8ee804502cf",
+    "confidenceSha256": "b09e11920359d8efdb4c465bf96a0b3d69103f4cd5ba56bc3ae6f578b46eeeea",
+    "evidenceTier": 2,
+    "burial": 928.2626822950779,
+    "contacts": 41,
+    "clashes": 0,
+    "overlapBurden": 0.07623789066282158,
+    "confidence": 0.8166805505752563,
+    "DockQ": 0.17029171132592144
+  },
+  {
+    "id": "seed2_model_0",
+    "arm": "frozen-v06",
+    "key": [
+      1,
+      1512.5783279588954
+    ],
+    "rank": 3,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838",
+    "confidenceSha256": "1988bc83c97efe89dd94eaf4c119a262a1926822d19e4b9949c584343e5dd764",
+    "evidenceTier": 1,
+    "burial": 1512.5783279588954,
+    "contacts": 83,
+    "clashes": 6,
+    "overlapBurden": 0.12311061641491837,
+    "confidence": 0.9008827209472656,
+    "DockQ": 0.48462880897372757
+  },
+  {
+    "id": "seed2_model_0",
+    "arm": "burial-only",
+    "key": [
+      1512.5783279588954
+    ],
+    "rank": 1,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838",
+    "confidenceSha256": "1988bc83c97efe89dd94eaf4c119a262a1926822d19e4b9949c584343e5dd764",
+    "evidenceTier": 1,
+    "burial": 1512.5783279588954,
+    "contacts": 83,
+    "clashes": 6,
+    "overlapBurden": 0.12311061641491837,
+    "confidence": 0.9008827209472656,
+    "DockQ": 0.48462880897372757
+  },
+  {
+    "id": "seed2_model_0",
+    "arm": "predictor-confidence",
+    "key": [
+      0.9008827209472656
+    ],
+    "rank": 1,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838",
+    "confidenceSha256": "1988bc83c97efe89dd94eaf4c119a262a1926822d19e4b9949c584343e5dd764",
+    "evidenceTier": 1,
+    "burial": 1512.5783279588954,
+    "contacts": 83,
+    "clashes": 6,
+    "overlapBurden": 0.12311061641491837,
+    "confidence": 0.9008827209472656,
+    "DockQ": 0.48462880897372757
+  },
+  {
+    "id": "seed2_model_0",
+    "arm": "clash-fraction-v1",
+    "key": [
+      1403.2353162992163
+    ],
+    "rank": 1,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838",
+    "confidenceSha256": "1988bc83c97efe89dd94eaf4c119a262a1926822d19e4b9949c584343e5dd764",
+    "evidenceTier": 1,
+    "burial": 1512.5783279588954,
+    "contacts": 83,
+    "clashes": 6,
+    "overlapBurden": 0.12311061641491837,
+    "confidence": 0.9008827209472656,
+    "DockQ": 0.48462880897372757
+  },
+  {
+    "id": "seed2_model_0",
+    "arm": "overlap-burial-v1",
+    "key": [
+      1346.775914902485
+    ],
+    "rank": 1,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838",
+    "confidenceSha256": "1988bc83c97efe89dd94eaf4c119a262a1926822d19e4b9949c584343e5dd764",
+    "evidenceTier": 1,
+    "burial": 1512.5783279588954,
+    "contacts": 83,
+    "clashes": 6,
+    "overlapBurden": 0.12311061641491837,
+    "confidence": 0.9008827209472656,
+    "DockQ": 0.48462880897372757
+  },
+  {
+    "id": "seed2_model_1",
+    "arm": "frozen-v06",
+    "key": [
+      1,
+      1427.4961344460512
+    ],
+    "rank": 4,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b",
+    "confidenceSha256": "26e7ba392ce67e6b489acc536dd5c8842a7ead2583196d559512480379960b37",
+    "evidenceTier": 1,
+    "burial": 1427.4961344460512,
+    "contacts": 73,
+    "clashes": 4,
+    "overlapBurden": 0.07323145676794907,
+    "confidence": 0.9007269144058228,
+    "DockQ": 0.45530981662134734
+  },
+  {
+    "id": "seed2_model_1",
+    "arm": "burial-only",
+    "key": [
+      1427.4961344460512
+    ],
+    "rank": 2,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b",
+    "confidenceSha256": "26e7ba392ce67e6b489acc536dd5c8842a7ead2583196d559512480379960b37",
+    "evidenceTier": 1,
+    "burial": 1427.4961344460512,
+    "contacts": 73,
+    "clashes": 4,
+    "overlapBurden": 0.07323145676794907,
+    "confidence": 0.9007269144058228,
+    "DockQ": 0.45530981662134734
+  },
+  {
+    "id": "seed2_model_1",
+    "arm": "predictor-confidence",
+    "key": [
+      0.9007269144058228
+    ],
+    "rank": 2,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b",
+    "confidenceSha256": "26e7ba392ce67e6b489acc536dd5c8842a7ead2583196d559512480379960b37",
+    "evidenceTier": 1,
+    "burial": 1427.4961344460512,
+    "contacts": 73,
+    "clashes": 4,
+    "overlapBurden": 0.07323145676794907,
+    "confidence": 0.9007269144058228,
+    "DockQ": 0.45530981662134734
+  },
+  {
+    "id": "seed2_model_1",
+    "arm": "clash-fraction-v1",
+    "key": [
+      1349.2771681750346
+    ],
+    "rank": 2,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b",
+    "confidenceSha256": "26e7ba392ce67e6b489acc536dd5c8842a7ead2583196d559512480379960b37",
+    "evidenceTier": 1,
+    "burial": 1427.4961344460512,
+    "contacts": 73,
+    "clashes": 4,
+    "overlapBurden": 0.07323145676794907,
+    "confidence": 0.9007269144058228,
+    "DockQ": 0.45530981662134734
+  },
+  {
+    "id": "seed2_model_1",
+    "arm": "overlap-burial-v1",
+    "key": [
+      1330.091589697692
+    ],
+    "rank": 2,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b",
+    "confidenceSha256": "26e7ba392ce67e6b489acc536dd5c8842a7ead2583196d559512480379960b37",
+    "evidenceTier": 1,
+    "burial": 1427.4961344460512,
+    "contacts": 73,
+    "clashes": 4,
+    "overlapBurden": 0.07323145676794907,
+    "confidence": 0.9007269144058228,
+    "DockQ": 0.45530981662134734
+  },
+  {
+    "id": "seed2_model_2",
+    "arm": "frozen-v06",
+    "key": [
+      1,
+      1366.7861739208936
+    ],
+    "rank": 8,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff",
+    "confidenceSha256": "0166f3f387c970dfe9f332086cb70ebb81abcfef01d621f6854b3ae97fb33a89",
+    "evidenceTier": 1,
+    "burial": 1366.7861739208936,
+    "contacts": 72,
+    "clashes": 1,
+    "overlapBurden": 0.06271234157297763,
+    "confidence": 0.89376300573349,
+    "DockQ": 0.4766947196533409
+  },
+  {
+    "id": "seed2_model_2",
+    "arm": "burial-only",
+    "key": [
+      1366.7861739208936
+    ],
+    "rank": 6,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff",
+    "confidenceSha256": "0166f3f387c970dfe9f332086cb70ebb81abcfef01d621f6854b3ae97fb33a89",
+    "evidenceTier": 1,
+    "burial": 1366.7861739208936,
+    "contacts": 72,
+    "clashes": 1,
+    "overlapBurden": 0.06271234157297763,
+    "confidence": 0.89376300573349,
+    "DockQ": 0.4766947196533409
+  },
+  {
+    "id": "seed2_model_2",
+    "arm": "predictor-confidence",
+    "key": [
+      0.89376300573349
+    ],
+    "rank": 3,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff",
+    "confidenceSha256": "0166f3f387c970dfe9f332086cb70ebb81abcfef01d621f6854b3ae97fb33a89",
+    "evidenceTier": 1,
+    "burial": 1366.7861739208936,
+    "contacts": 72,
+    "clashes": 1,
+    "overlapBurden": 0.06271234157297763,
+    "confidence": 0.89376300573349,
+    "DockQ": 0.4766947196533409
+  },
+  {
+    "id": "seed2_model_2",
+    "arm": "clash-fraction-v1",
+    "key": [
+      1347.803032616437
+    ],
+    "rank": 3,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff",
+    "confidenceSha256": "0166f3f387c970dfe9f332086cb70ebb81abcfef01d621f6854b3ae97fb33a89",
+    "evidenceTier": 1,
+    "burial": 1366.7861739208936,
+    "contacts": 72,
+    "clashes": 1,
+    "overlapBurden": 0.06271234157297763,
+    "confidence": 0.89376300573349,
+    "DockQ": 0.4766947196533409
+  },
+  {
+    "id": "seed2_model_2",
+    "arm": "overlap-burial-v1",
+    "key": [
+      1286.129953001054
+    ],
+    "rank": 3,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff",
+    "confidenceSha256": "0166f3f387c970dfe9f332086cb70ebb81abcfef01d621f6854b3ae97fb33a89",
+    "evidenceTier": 1,
+    "burial": 1366.7861739208936,
+    "contacts": 72,
+    "clashes": 1,
+    "overlapBurden": 0.06271234157297763,
+    "confidence": 0.89376300573349,
+    "DockQ": 0.4766947196533409
+  },
+  {
+    "id": "seed2_model_3",
+    "arm": "frozen-v06",
+    "key": [
+      1,
+      1425.927814086937
+    ],
+    "rank": 5,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8",
+    "confidenceSha256": "3773c94234a3f6750b0cf519372d76bca2857228a50003efa9e0f1966bde2b2a",
+    "evidenceTier": 1,
+    "burial": 1425.927814086937,
+    "contacts": 72,
+    "clashes": 5,
+    "overlapBurden": 0.15829914098771541,
+    "confidence": 0.8840752840042114,
+    "DockQ": 0.4216895163471448
+  },
+  {
+    "id": "seed2_model_3",
+    "arm": "burial-only",
+    "key": [
+      1425.927814086937
+    ],
+    "rank": 3,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8",
+    "confidenceSha256": "3773c94234a3f6750b0cf519372d76bca2857228a50003efa9e0f1966bde2b2a",
+    "evidenceTier": 1,
+    "burial": 1425.927814086937,
+    "contacts": 72,
+    "clashes": 5,
+    "overlapBurden": 0.15829914098771541,
+    "confidence": 0.8840752840042114,
+    "DockQ": 0.4216895163471448
+  },
+  {
+    "id": "seed2_model_3",
+    "arm": "predictor-confidence",
+    "key": [
+      0.8840752840042114
+    ],
+    "rank": 5,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8",
+    "confidenceSha256": "3773c94234a3f6750b0cf519372d76bca2857228a50003efa9e0f1966bde2b2a",
+    "evidenceTier": 1,
+    "burial": 1425.927814086937,
+    "contacts": 72,
+    "clashes": 5,
+    "overlapBurden": 0.15829914098771541,
+    "confidence": 0.8840752840042114,
+    "DockQ": 0.4216895163471448
+  },
+  {
+    "id": "seed2_model_3",
+    "arm": "clash-fraction-v1",
+    "key": [
+      1326.9050492197885
+    ],
+    "rank": 4,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8",
+    "confidenceSha256": "3773c94234a3f6750b0cf519372d76bca2857228a50003efa9e0f1966bde2b2a",
+    "evidenceTier": 1,
+    "burial": 1425.927814086937,
+    "contacts": 72,
+    "clashes": 5,
+    "overlapBurden": 0.15829914098771541,
+    "confidence": 0.8840752840042114,
+    "DockQ": 0.4216895163471448
+  },
+  {
+    "id": "seed2_model_3",
+    "arm": "overlap-burial-v1",
+    "key": [
+      1231.0531568477265
+    ],
+    "rank": 4,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8",
+    "confidenceSha256": "3773c94234a3f6750b0cf519372d76bca2857228a50003efa9e0f1966bde2b2a",
+    "evidenceTier": 1,
+    "burial": 1425.927814086937,
+    "contacts": 72,
+    "clashes": 5,
+    "overlapBurden": 0.15829914098771541,
+    "confidence": 0.8840752840042114,
+    "DockQ": 0.4216895163471448
+  },
+  {
+    "id": "seed2_model_4",
+    "arm": "frozen-v06",
+    "key": [
+      2,
+      1058.4596798033813
+    ],
+    "rank": 1,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d",
+    "confidenceSha256": "b4b826def327112b88378654b9624218dfa02c6bb0204b59d0c1b6bb724714e4",
+    "evidenceTier": 2,
+    "burial": 1058.4596798033813,
+    "contacts": 46,
+    "clashes": 0,
+    "overlapBurden": 0.07001269406363081,
+    "confidence": 0.8201104402542114,
+    "DockQ": 0.1762564824406321
+  },
+  {
+    "id": "seed2_model_4",
+    "arm": "burial-only",
+    "key": [
+      1058.4596798033813
+    ],
+    "rank": 8,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d",
+    "confidenceSha256": "b4b826def327112b88378654b9624218dfa02c6bb0204b59d0c1b6bb724714e4",
+    "evidenceTier": 2,
+    "burial": 1058.4596798033813,
+    "contacts": 46,
+    "clashes": 0,
+    "overlapBurden": 0.07001269406363081,
+    "confidence": 0.8201104402542114,
+    "DockQ": 0.1762564824406321
+  },
+  {
+    "id": "seed2_model_4",
+    "arm": "predictor-confidence",
+    "key": [
+      0.8201104402542114
+    ],
+    "rank": 9,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d",
+    "confidenceSha256": "b4b826def327112b88378654b9624218dfa02c6bb0204b59d0c1b6bb724714e4",
+    "evidenceTier": 2,
+    "burial": 1058.4596798033813,
+    "contacts": 46,
+    "clashes": 0,
+    "overlapBurden": 0.07001269406363081,
+    "confidence": 0.8201104402542114,
+    "DockQ": 0.1762564824406321
+  },
+  {
+    "id": "seed2_model_4",
+    "arm": "clash-fraction-v1",
+    "key": [
+      1058.4596798033813
+    ],
+    "rank": 7,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d",
+    "confidenceSha256": "b4b826def327112b88378654b9624218dfa02c6bb0204b59d0c1b6bb724714e4",
+    "evidenceTier": 2,
+    "burial": 1058.4596798033813,
+    "contacts": 46,
+    "clashes": 0,
+    "overlapBurden": 0.07001269406363081,
+    "confidence": 0.8201104402542114,
+    "DockQ": 0.1762564824406321
+  },
+  {
+    "id": "seed2_model_4",
+    "arm": "overlap-burial-v1",
+    "key": [
+      989.2029185033552
+    ],
+    "rank": 7,
+    "status": "scored",
+    "reason": "",
+    "coordinateSha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d",
+    "confidenceSha256": "b4b826def327112b88378654b9624218dfa02c6bb0204b59d0c1b6bb724714e4",
+    "evidenceTier": 2,
+    "burial": 1058.4596798033813,
+    "contacts": 46,
+    "clashes": 0,
+    "overlapBurden": 0.07001269406363081,
+    "confidence": 0.8201104402542114,
+    "DockQ": 0.1762564824406321
+  }
+]

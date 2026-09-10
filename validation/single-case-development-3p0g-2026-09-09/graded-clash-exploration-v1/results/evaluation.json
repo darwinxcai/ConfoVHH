@@ -1,0 +1,88 @@
+{
+  "arms": [
+    {
+      "arm": "frozen-v06",
+      "selected": [
+        "seed2_model_4"
+      ],
+      "selectedDockQ": 0.1762564824406321,
+      "selectedDockQMin": 0.1762564824406321,
+      "selectedDockQMax": 0.1762564824406321,
+      "missingSelectedDockQ": 0,
+      "selectedTieCount": 1,
+      "bestAvailableMinusSelected": 0.30837232653309543,
+      "unscored": [],
+      "selectedMinusConfidence": -0.30837232653309543
+    },
+    {
+      "arm": "burial-only",
+      "selected": [
+        "seed2_model_0"
+      ],
+      "selectedDockQ": 0.48462880897372757,
+      "selectedDockQMin": 0.48462880897372757,
+      "selectedDockQMax": 0.48462880897372757,
+      "missingSelectedDockQ": 0,
+      "selectedTieCount": 1,
+      "bestAvailableMinusSelected": 0.0,
+      "unscored": [],
+      "selectedMinusConfidence": 0.0
+    },
+    {
+      "arm": "predictor-confidence",
+      "selected": [
+        "seed2_model_0"
+      ],
+      "selectedDockQ": 0.48462880897372757,
+      "selectedDockQMin": 0.48462880897372757,
+      "selectedDockQMax": 0.48462880897372757,
+      "missingSelectedDockQ": 0,
+      "selectedTieCount": 1,
+      "bestAvailableMinusSelected": 0.0,
+      "unscored": [],
+      "selectedMinusConfidence": 0.0
+    },
+    {
+      "arm": "clash-fraction-v1",
+      "selected": [
+        "seed2_model_0"
+      ],
+      "selectedDockQ": 0.48462880897372757,
+      "selectedDockQMin": 0.48462880897372757,
+      "selectedDockQMax": 0.48462880897372757,
+      "missingSelectedDockQ": 0,
+      "selectedTieCount": 1,
+      "bestAvailableMinusSelected": 0.0,
+      "unscored": [],
+      "selectedMinusConfidence": 0.0
+    },
+    {
+      "arm": "overlap-burial-v1",
+      "selected": [
+        "seed2_model_0"
+      ],
+      "selectedDockQ": 0.48462880897372757,
+      "selectedDockQMin": 0.48462880897372757,
+      "selectedDockQMax": 0.48462880897372757,
+      "missingSelectedDockQ": 0,
+      "selectedTieCount": 1,
+      "bestAvailableMinusSelected": 0.0,
+      "unscored": [],
+      "selectedMinusConfidence": 0.0
+    }
+  ],
+  "bestAvailableDockQ": 0.48462880897372757,
+  "bestAvailableCandidates": [
+    "seed2_model_0"
+  ],
+  "candidateCount": 10,
+  "resultRows": 50,
+  "missingDockQ": [],
+  "featuresSha256": "c817ab3a1f4560849cf621663b5dd31904a087efabb885cc22ff1cad9fd1c49e",
+  "ranksSha256": "62a6883409c8e135c565201316d6af04dac59fb91ab77acf583ac3282a4a8e49",
+  "outcomeSource": "validation/single-case-development-3p0g-2026-09-09/completed-pilot-execution03/original-evaluation/comparison-receipt.json",
+  "outcomeSha256": "e7bb88df1f79fea9d8f674058efe46b1940a045d5aec3cd5e3d6c7c849501e83",
+  "independentGroupCount": 0,
+  "exposedDevelopmentCaseCount": 1,
+  "newGpuGeneration": false
+}

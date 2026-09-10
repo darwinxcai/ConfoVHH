@@ -1,0 +1,127 @@
+{
+  "schema": "confovhh-exploratory-evidence-v1",
+  "originalPilotCommit": "75880d1b5f5772817dd986d9f30b77bcb6964bf5",
+  "localDeclarationCommit": "068dbbd9fe3a9287da44240823a646b4dec09391",
+  "boundaries": {
+    "outcomesAlreadyKnown": true,
+    "independentValidation": false,
+    "productionPolicyChanged": false,
+    "newGpuGeneration": false,
+    "originalNegativeResultPreserved": true,
+    "gradedPenaltyBeatsSimpleBaselinesOnThisCase": false
+  },
+  "claims": [
+    {
+      "id": "all-five-arms-reported",
+      "evidence": "results/all-arm-candidate-results.json",
+      "candidateArmRows": 50
+    },
+    {
+      "id": "four-alternatives-same-top-pose",
+      "evidence": "results/evaluation.json"
+    },
+    {
+      "id": "reference-free-features",
+      "evidence": "results/features.json"
+    },
+    {
+      "id": "byte-exact-replay",
+      "evidence": "replay-verification.json"
+    },
+    {
+      "id": "original-negative-preserved",
+      "evidence": "verification.json"
+    }
+  ],
+  "tests": {
+    "syntheticSelectorTestsPassed": 7,
+    "originalPilotEvidenceTestsPassed": 8
+  },
+  "artifacts": [
+    {
+      "path": "paper/GRADED_CLASH_EXPLORATION_2026-09-09.md",
+      "bytes": 7466,
+      "sha256": "2046fc3bbc7347271bcb4f80c20c5c0fd72123b27e2a9f0fe8e01d7823c0704f"
+    },
+    {
+      "path": "scripts/paper/graded-clash-selectors-v1.py",
+      "bytes": 11161,
+      "sha256": "f4a626ed75586c3d61c87e5ac35f9fec5b68c16b22434843a96104817f7524bb"
+    },
+    {
+      "path": "scripts/paper/verify-graded-clash-exploration-v1.py",
+      "bytes": 5303,
+      "sha256": "17e3e314e6d66a062a332acd0bdbd4c87a770fc3dcafb1554122b6be9bd249b9"
+    },
+    {
+      "path": "tests/test_graded_clash_selectors_v1.py",
+      "bytes": 2992,
+      "sha256": "37698aa3b5534b5754391f73caba1ad43a84b2379f8792335e828fa048ae0209"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/DECLARATION.md",
+      "bytes": 4672,
+      "sha256": "8f7cfa2608441e3f0398442f4741041a06f70abf998a1ba1b1747be9de3db0b7"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/README.md",
+      "bytes": 8295,
+      "sha256": "b1a9d2c402842c7858e20e0caa733a8f6e129423d112a47ca9caecf97cc110ca"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/freeze-v1.json",
+      "bytes": 1749,
+      "sha256": "238efd98f1fdea91702b4ec2fc9848444d81ecd41f7704799427266455b2aecb"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/replay-verification.json",
+      "bytes": 1453,
+      "sha256": "bce39309382e8c811b3bf75ebf9159aef8da18b93c5e768a9f5a09ad1ec1987e"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/results/all-arm-candidate-results.csv",
+      "bytes": 13966,
+      "sha256": "a3cd609c063937aa1b58f777177f35a058c8c820acad56dd14beb6332c8d7d77"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/results/all-arm-candidate-results.json",
+      "bytes": 28026,
+      "sha256": "80a1d113d2362fc2fe88540a6bd5de4ddd622da44cafa06bbf60f8e47125fff9"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/results/coordinate-only-contact-overlaps.json",
+      "bytes": 63201,
+      "sha256": "91c9b1c1cbb181ea30e477a9545f537403188d07391cb42dbe4c53eb5c2e1023"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/results/evaluation.json",
+      "bytes": 2706,
+      "sha256": "9a98231772627818ff70b3f80d57659462a9c115e99f4b11a54021982a8514f6"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/results/extraction-receipt.json",
+      "bytes": 6015,
+      "sha256": "ac85e126c13775b2ec080f621d076c3e3f264c16d0b9a310444cb13fa72d94f7"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/results/features.json",
+      "bytes": 3937,
+      "sha256": "c817ab3a1f4560849cf621663b5dd31904a087efabb885cc22ff1cad9fd1c49e"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/results/rank-receipt.json",
+      "bytes": 418,
+      "sha256": "119bcfae7be0ff88fa68cf6218ba32869180315236af380aee07cd13745d7ffe"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/results/ranks.json",
+      "bytes": 8426,
+      "sha256": "62a6883409c8e135c565201316d6af04dac59fb91ab77acf583ac3282a4a8e49"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/verification.json",
+      "bytes": 759,
+      "sha256": "e144018bceb9479f6bb56498c904f7efd198f1f53e1a6ca221e31c3ff86a5391"
+    }
+  ]
+}
