@@ -1,0 +1,124 @@
+[
+  {
+    "targetId": "exposed-3P0G",
+    "predictor": "Boltz 2.2.1",
+    "groupId": "related-2c1f99d217d234c4",
+    "method": "exploratory-predictor-native-confidence-v1",
+    "status": "selected",
+    "selectedIds": [
+      "seed2_model_0"
+    ],
+    "tieCount": 1,
+    "selectedDockQ": 0.48462880897372757,
+    "selectedDockQMinimum": 0.48462880897372757,
+    "selectedDockQMaximum": 0.48462880897372757,
+    "bestAvailableDockQ": 0.48462880897372757,
+    "bestAvailableIds": [
+      "seed2_model_0"
+    ],
+    "differenceFromBestAvailable": 0.0,
+    "planned": 10,
+    "coordinatesAvailable": 10,
+    "DockQAvailable": 10,
+    "missingPlanned": 0,
+    "missingSelectedOutcomes": 0,
+    "selectedDockQLower": 0.48462880897372757,
+    "selectedDockQUpper": 0.48462880897372757,
+    "fullPlannedPoolComplete": true,
+    "independentValidation": false
+  },
+  {
+    "targetId": "exposed-4MQS-legacy-default",
+    "predictor": "AlphaFold Server",
+    "groupId": "related-c660c7f204726c67",
+    "method": "exploratory-predictor-native-confidence-v1",
+    "status": "selected",
+    "selectedIds": [
+      "4MQS_default_complex_seed1_model_0",
+      "4MQS_default_complex_seed1_model_1",
+      "4MQS_default_complex_seed2_model_0"
+    ],
+    "tieCount": 3,
+    "selectedDockQ": 0.7624481254898955,
+    "selectedDockQMinimum": 0.7337349112967373,
+    "selectedDockQMaximum": 0.7812022505854656,
+    "bestAvailableDockQ": 0.8071198146116995,
+    "bestAvailableIds": [
+      "4MQS_default_complex_seed2_model_4"
+    ],
+    "differenceFromBestAvailable": -0.04467168912180397,
+    "planned": 10,
+    "coordinatesAvailable": 10,
+    "DockQAvailable": 10,
+    "missingPlanned": 0,
+    "missingSelectedOutcomes": 0,
+    "selectedDockQLower": 0.7624481254898955,
+    "selectedDockQUpper": 0.7624481254898955,
+    "fullPlannedPoolComplete": true,
+    "independentValidation": false
+  },
+  {
+    "targetId": "exposed-5C1M-legacy-default",
+    "predictor": "AlphaFold Server",
+    "groupId": "related-2c1f99d217d234c4",
+    "method": "exploratory-predictor-native-confidence-v1",
+    "status": "selected",
+    "selectedIds": [
+      "5C1M_default_complex_seed1_model_0",
+      "5C1M_default_complex_seed1_model_1",
+      "5C1M_default_complex_seed1_model_2",
+      "5C1M_default_complex_seed1_model_3",
+      "5C1M_default_complex_seed2_model_0",
+      "5C1M_default_complex_seed2_model_1",
+      "5C1M_default_complex_seed2_model_2"
+    ],
+    "tieCount": 7,
+    "selectedDockQ": 0.713463170877958,
+    "selectedDockQMinimum": 0.7079072045332313,
+    "selectedDockQMaximum": 0.7211712877419796,
+    "bestAvailableDockQ": 0.7211712877419796,
+    "bestAvailableIds": [
+      "5C1M_default_complex_seed1_model_1"
+    ],
+    "differenceFromBestAvailable": -0.007708116864021619,
+    "planned": 10,
+    "coordinatesAvailable": 10,
+    "DockQAvailable": 10,
+    "missingPlanned": 0,
+    "missingSelectedOutcomes": 0,
+    "selectedDockQLower": 0.713463170877958,
+    "selectedDockQUpper": 0.713463170877958,
+    "fullPlannedPoolComplete": true,
+    "independentValidation": false
+  },
+  {
+    "targetId": "exposed-5JQH-legacy-default",
+    "predictor": "AlphaFold Server",
+    "groupId": "related-2c1f99d217d234c4",
+    "method": "exploratory-predictor-native-confidence-v1",
+    "status": "selected",
+    "selectedIds": [
+      "5JQH_default_complex_seed1_model_0",
+      "5JQH_default_complex_seed1_model_1",
+      "5JQH_default_complex_seed1_model_2"
+    ],
+    "tieCount": 3,
+    "selectedDockQ": 0.08289528170065967,
+    "selectedDockQMinimum": 0.07800461846595462,
+    "selectedDockQMaximum": 0.08808053710536436,
+    "bestAvailableDockQ": 0.09313932033842964,
+    "bestAvailableIds": [
+      "5JQH_default_complex_seed1_model_4"
+    ],
+    "differenceFromBestAvailable": -0.010244038637769973,
+    "planned": 10,
+    "coordinatesAvailable": 5,
+    "DockQAvailable": 5,
+    "missingPlanned": 5,
+    "missingSelectedOutcomes": 0,
+    "selectedDockQLower": 0.08289528170065967,
+    "selectedDockQUpper": 0.08289528170065967,
+    "fullPlannedPoolComplete": false,
+    "independentValidation": false
+  }
+]

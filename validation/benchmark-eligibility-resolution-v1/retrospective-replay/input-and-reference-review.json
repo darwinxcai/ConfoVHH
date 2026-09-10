@@ -1,0 +1,146 @@
+[
+  {
+    "targetId": "exposed-4MQS-legacy-default",
+    "seed": 1,
+    "request": {
+      "path": "requests/fold_4mqs_default_complex_seed1_job_request.json",
+      "bytes": 820,
+      "sha256": "2867c252887c6fec2b9c6f4dbd8158e37acb9fbe728910aa1ac68fc536a02636"
+    },
+    "predictorDialect": "alphafoldserver",
+    "templateSettings": [
+      true,
+      true
+    ],
+    "newGeneration": false
+  },
+  {
+    "targetId": "exposed-4MQS-legacy-default",
+    "seed": 2,
+    "request": {
+      "path": "requests/fold_4mqs_default_complex_seed2_job_request.json",
+      "bytes": 820,
+      "sha256": "ef434a13e074bf9497f97b853e3d1df2056c5d96a03670d166867b46626cc229"
+    },
+    "predictorDialect": "alphafoldserver",
+    "templateSettings": [
+      true,
+      true
+    ],
+    "newGeneration": false
+  },
+  {
+    "targetId": "exposed-4MQS-legacy-default",
+    "referenceReview": {
+      "status": "cognate-reference-reviewed",
+      "evidence": "Previously exposed retrospective corpus: current S2 job/reference matches recovered scoring manifest; model/native file SHA-256 matches original scoring manifest; native file SHA-256 matches S5. Explicit receptor/VHH author-chain selectors reviewed. Both observed model chain sequences exactly match one complete submitted protein sequence, and each observed native sequence is a 100%-covered exact ordered subsequence of its matching model sequence. Polymer residue order comes from mmCIF label_seq_id; modified YCM is mapped to C solely for sequence review. Original CIF bytes unchanged. This establishes sequence-compatible deposited-pose reference provenance, not binding validation or a unique residue alignment; official DockQ retains its own sequence alignment. Source scoring manifest SHA-256 8fe08b09d4d647024b3b4a978da164d60b000af6a695d787b408212f6dd39c48; S5 SHA-256 6bc9b0003d73ddd7ea90ac3fc24ddc0435cbd34b4d0fc0c3a7109c423562d8b7."
+    },
+    "nativeOriginal": {
+      "path": "references/4MQS.cif",
+      "bytes": 367528,
+      "sha256": "ffa02f41badf80f86e1e961933835269ac1d88989faf8922105ddf8ee649fa6d"
+    },
+    "nativeEvaluated": {
+      "path": "references/4MQS.cif",
+      "bytes": 367528,
+      "sha256": "ffa02f41badf80f86e1e961933835269ac1d88989faf8922105ddf8ee649fa6d"
+    },
+    "interpretation": "Fixed historical role mapping and default DockQ sequence alignment; missing terminal/engineered regions not masked or repaired. Sequence-compatible deposited-pose comparison, not unique alignment or density certification."
+  },
+  {
+    "targetId": "exposed-5C1M-legacy-default",
+    "seed": 1,
+    "request": {
+      "path": "requests/fold_5c1m_default_complex_seed1_job_request.json",
+      "bytes": 765,
+      "sha256": "702af6e5ff7b7db4326a9f615f09a71be211a75954e7b1d8ecfda6a291332635"
+    },
+    "predictorDialect": "alphafoldserver",
+    "templateSettings": [
+      true,
+      true
+    ],
+    "newGeneration": false
+  },
+  {
+    "targetId": "exposed-5C1M-legacy-default",
+    "seed": 2,
+    "request": {
+      "path": "requests/fold_5c1m_default_complex_seed2_job_request.json",
+      "bytes": 765,
+      "sha256": "c07edaae03f077731fbad8c8582e61e7cf81c3da28b86df5a9f0f5e625582fbd"
+    },
+    "predictorDialect": "alphafoldserver",
+    "templateSettings": [
+      true,
+      true
+    ],
+    "newGeneration": false
+  },
+  {
+    "targetId": "exposed-5C1M-legacy-default",
+    "referenceReview": {
+      "status": "cognate-reference-reviewed",
+      "evidence": "Previously exposed retrospective corpus: current S2 job/reference matches recovered scoring manifest; model/native file SHA-256 matches original scoring manifest; native file SHA-256 matches S5. Explicit receptor/VHH author-chain selectors reviewed. Both observed model chain sequences exactly match one complete submitted protein sequence, and each observed native sequence is a 100%-covered exact ordered subsequence of its matching model sequence. Polymer residue order comes from mmCIF label_seq_id; modified YCM is mapped to C solely for sequence review. Original CIF bytes unchanged. This establishes sequence-compatible deposited-pose reference provenance, not binding validation or a unique residue alignment; official DockQ retains its own sequence alignment. Source scoring manifest SHA-256 8fe08b09d4d647024b3b4a978da164d60b000af6a695d787b408212f6dd39c48; S5 SHA-256 6bc9b0003d73ddd7ea90ac3fc24ddc0435cbd34b4d0fc0c3a7109c423562d8b7."
+    },
+    "nativeOriginal": {
+      "path": "references/5C1M.cif",
+      "bytes": 783145,
+      "sha256": "e561b0670e874a32fc07620e6fb44444d7b0102aff84b9826882eaa69c787096"
+    },
+    "nativeEvaluated": {
+      "path": "references/5C1M.cif",
+      "bytes": 783145,
+      "sha256": "e561b0670e874a32fc07620e6fb44444d7b0102aff84b9826882eaa69c787096"
+    },
+    "interpretation": "Fixed historical role mapping and default DockQ sequence alignment; missing terminal/engineered regions not masked or repaired. Sequence-compatible deposited-pose comparison, not unique alignment or density certification."
+  },
+  {
+    "targetId": "exposed-5JQH-legacy-default",
+    "seed": 1,
+    "request": {
+      "path": "requests/fold_5jqh_default_complex_seed1_job_request.json",
+      "bytes": 940,
+      "sha256": "30847fb3933987ef27b2acdc7c245f412d185158f3bfbeda4f41af2ffd699aa9"
+    },
+    "predictorDialect": "alphafoldserver",
+    "templateSettings": [
+      true,
+      true
+    ],
+    "newGeneration": false
+  },
+  {
+    "targetId": "exposed-5JQH-legacy-default",
+    "seed": 2,
+    "request": {
+      "path": "requests/fold_5jqh_default_complex_seed2_job_request.json",
+      "bytes": 940,
+      "sha256": "42463551ffb3e5b1b4cc514750cc8690b3aa26e02175dbc62a77ba74509a2bf0"
+    },
+    "predictorDialect": "alphafoldserver",
+    "templateSettings": [
+      true,
+      true
+    ],
+    "newGeneration": false
+  },
+  {
+    "targetId": "exposed-5JQH-legacy-default",
+    "referenceReview": {
+      "status": "cognate-reference-reviewed",
+      "evidence": "Previously exposed retrospective corpus: current S2 job/reference matches recovered scoring manifest; model/native file SHA-256 matches original scoring manifest; native file SHA-256 matches S5. Explicit receptor/VHH author-chain selectors reviewed. Both observed model chain sequences exactly match one complete submitted protein sequence, and each observed native sequence is a 100%-covered exact ordered subsequence of its matching model sequence. Polymer residue order comes from mmCIF label_seq_id; modified YCM is mapped to C solely for sequence review. Original CIF bytes unchanged. This establishes sequence-compatible deposited-pose reference provenance, not binding validation or a unique residue alignment; official DockQ retains its own sequence alignment. Source scoring manifest SHA-256 8fe08b09d4d647024b3b4a978da164d60b000af6a695d787b408212f6dd39c48; S5 SHA-256 6bc9b0003d73ddd7ea90ac3fc24ddc0435cbd34b4d0fc0c3a7109c423562d8b7."
+    },
+    "nativeOriginal": {
+      "path": "references/5JQH.cif.gz",
+      "bytes": 208351,
+      "sha256": "4e3c8351601f421c9a073046438f81ceaedd1df6de4ab409eca79e40fdd32fe7"
+    },
+    "nativeEvaluated": {
+      "path": "references/5JQH.cif",
+      "bytes": 807369,
+      "sha256": "f708f9a8952ddac094881cb29d9dea36dde3674eff6f64fa0283e26482adfb19"
+    },
+    "interpretation": "Fixed historical role mapping and default DockQ sequence alignment; missing terminal/engineered regions not masked or repaired. Sequence-compatible deposited-pose comparison, not unique alignment or density certification."
+  }
+]

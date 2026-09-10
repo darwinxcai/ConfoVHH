@@ -1,0 +1,1971 @@
+[
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "frozen-v06",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_4"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1367.632311505746
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1381.2205453445376
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1164.721862013725
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1027.3088663810124
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "frozen-v06",
+        "key": [
+          2,
+          928.2626822950779
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1512.5783279588954
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1427.4961344460512
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1366.7861739208936
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1425.927814086937
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "frozen-v06",
+        "key": [
+          2,
+          1058.4596798033813
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "burial-only",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "burial-only",
+        "key": [
+          1367.632311505746
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "burial-only",
+        "key": [
+          1381.2205453445376
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "burial-only",
+        "key": [
+          1164.721862013725
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "burial-only",
+        "key": [
+          1027.3088663810124
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "burial-only",
+        "key": [
+          928.2626822950779
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "burial-only",
+        "key": [
+          1512.5783279588954
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "burial-only",
+        "key": [
+          1427.4961344460512
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "burial-only",
+        "key": [
+          1366.7861739208936
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "burial-only",
+        "key": [
+          1425.927814086937
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "burial-only",
+        "key": [
+          1058.4596798033813
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "predictor-confidence",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8893769383430481
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8619559407234192
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8491935729980469
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8466022610664368
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8166805505752563
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "predictor-confidence",
+        "key": [
+          0.9008827209472656
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "predictor-confidence",
+        "key": [
+          0.9007269144058228
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "predictor-confidence",
+        "key": [
+          0.89376300573349
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8840752840042114
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8201104402542114
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "clash-fraction-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1246.958872255239
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1261.1144109667518
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1007.9323805888006
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "clash-fraction-v1",
+        "key": [
+          984.5043302818036
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "clash-fraction-v1",
+        "key": [
+          928.2626822950779
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1403.2353162992163
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1349.2771681750346
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1347.803032616437
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1326.9050492197885
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1058.4596798033813
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "overlap-burial-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1168.8563361788565
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1161.2642072273916
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "overlap-burial-v1",
+        "key": [
+          969.525828380007
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "overlap-burial-v1",
+        "key": [
+          896.1421530320597
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "overlap-burial-v1",
+        "key": [
+          862.5069702046911
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1346.775914902485
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1330.091589697692
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1286.129953001054
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1231.0531568477265
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "overlap-burial-v1",
+        "key": [
+          989.2029185033552
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-4MQS-legacy-default",
+    "groupId": "related-c660c7f204726c67",
+    "arm": "frozen-v06",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "4MQS_default_complex_seed2_model_2"
+    ],
+    "rows": [
+      {
+        "id": "4MQS_default_complex_seed1_model_0",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1225.3100000843338
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_1",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1304.3962840306758
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_2",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1188.9090512670641
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_3",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1236.0703685658873
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_4",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1247.3005268858801
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_0",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1272.4569491782345
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_1",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1316.4762719614114
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_2",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1351.7484367207103
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_3",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1310.8901347237152
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_4",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1313.1711260307545
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-4MQS-legacy-default",
+    "groupId": "related-c660c7f204726c67",
+    "arm": "burial-only",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "4MQS_default_complex_seed2_model_2"
+    ],
+    "rows": [
+      {
+        "id": "4MQS_default_complex_seed1_model_0",
+        "arm": "burial-only",
+        "key": [
+          1225.3100000843338
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_1",
+        "arm": "burial-only",
+        "key": [
+          1304.3962840306758
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_2",
+        "arm": "burial-only",
+        "key": [
+          1188.9090512670641
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_3",
+        "arm": "burial-only",
+        "key": [
+          1236.0703685658873
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_4",
+        "arm": "burial-only",
+        "key": [
+          1247.3005268858801
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_0",
+        "arm": "burial-only",
+        "key": [
+          1272.4569491782345
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_1",
+        "arm": "burial-only",
+        "key": [
+          1316.4762719614114
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_2",
+        "arm": "burial-only",
+        "key": [
+          1351.7484367207103
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_3",
+        "arm": "burial-only",
+        "key": [
+          1310.8901347237152
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_4",
+        "arm": "burial-only",
+        "key": [
+          1313.1711260307545
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-4MQS-legacy-default",
+    "groupId": "related-c660c7f204726c67",
+    "arm": "predictor-confidence",
+    "status": "abstain",
+    "reason": "No valid pool or a required score is unavailable; no candidate dropped",
+    "selected": [],
+    "rows": [
+      {
+        "id": "4MQS_default_complex_seed1_model_0",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_1",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_2",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_3",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_4",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_0",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_1",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_2",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_3",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_4",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-4MQS-legacy-default",
+    "groupId": "related-c660c7f204726c67",
+    "arm": "clash-fraction-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "4MQS_default_complex_seed2_model_1"
+    ],
+    "rows": [
+      {
+        "id": "4MQS_default_complex_seed1_model_0",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1163.0061017749608
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_1",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1243.2527082167378
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_2",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1168.758050398131
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_3",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1179.0209669397693
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_4",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1186.9472755849504
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_0",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1233.897647687985
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_1",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1297.396905701101
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_2",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1288.385228749427
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_3",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1291.0281629854771
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_4",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1275.6519510013043
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-4MQS-legacy-default",
+    "groupId": "related-c660c7f204726c67",
+    "arm": "overlap-burial-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "4MQS_default_complex_seed2_model_1"
+    ],
+    "rows": [
+      {
+        "id": "4MQS_default_complex_seed1_model_0",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1060.3590957659835
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_1",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1177.8902883975134
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_2",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1093.2829306097367
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_3",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1122.3660224395664
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed1_model_4",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1119.8452171227502
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_0",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1156.7227379686703
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_1",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1216.0503673773042
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_2",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1140.116003937725
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_3",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1164.1036481285328
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "4MQS_default_complex_seed2_model_4",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1207.8527368862246
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5C1M-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "frozen-v06",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "5C1M_default_complex_seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "5C1M_default_complex_seed1_model_0",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1428.0846345988602
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_1",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1466.2573448069656
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_2",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1386.8760901813625
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_3",
+        "arm": "frozen-v06",
+        "key": [
+          0,
+          1409.8952182691273
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_4",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1439.0236091677493
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_0",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1496.1391956527273
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_1",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1394.9221821696115
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_2",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1430.446574931132
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_3",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1376.4848117127012
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_4",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1432.4647451782616
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5C1M-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "burial-only",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "5C1M_default_complex_seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "5C1M_default_complex_seed1_model_0",
+        "arm": "burial-only",
+        "key": [
+          1428.0846345988602
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_1",
+        "arm": "burial-only",
+        "key": [
+          1466.2573448069656
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_2",
+        "arm": "burial-only",
+        "key": [
+          1386.8760901813625
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_3",
+        "arm": "burial-only",
+        "key": [
+          1409.8952182691273
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_4",
+        "arm": "burial-only",
+        "key": [
+          1439.0236091677493
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_0",
+        "arm": "burial-only",
+        "key": [
+          1496.1391956527273
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_1",
+        "arm": "burial-only",
+        "key": [
+          1394.9221821696115
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_2",
+        "arm": "burial-only",
+        "key": [
+          1430.446574931132
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_3",
+        "arm": "burial-only",
+        "key": [
+          1376.4848117127012
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_4",
+        "arm": "burial-only",
+        "key": [
+          1432.4647451782616
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5C1M-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "predictor-confidence",
+    "status": "abstain",
+    "reason": "No valid pool or a required score is unavailable; no candidate dropped",
+    "selected": [],
+    "rows": [
+      {
+        "id": "5C1M_default_complex_seed1_model_0",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_1",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_2",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_3",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_4",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_0",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_1",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_2",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_3",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_4",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5C1M-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "clash-fraction-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "5C1M_default_complex_seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "5C1M_default_complex_seed1_model_0",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1372.444973510593
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_1",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1412.6137834115889
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_2",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1368.3844089789445
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_3",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1356.3548935247302
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_4",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1400.1310791902426
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_0",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1459.6479957587583
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_1",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1339.125294882827
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_2",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1393.2921184394143
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_3",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1339.7785500670293
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_4",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1395.7348799172805
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5C1M-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "overlap-burial-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "5C1M_default_complex_seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "5C1M_default_complex_seed1_model_0",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1283.4302499757134
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_1",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1328.9905921858433
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_2",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1312.8298737846599
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_3",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1213.0042952296678
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed1_model_4",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1322.5022163351398
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_0",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1383.1720359009273
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_1",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1265.978178416156
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_2",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1273.8787920224459
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_3",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1252.7036446065845
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5C1M_default_complex_seed2_model_4",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1329.6663479050546
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5JQH-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "frozen-v06",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "5JQH_default_complex_seed1_model_2"
+    ],
+    "rows": [
+      {
+        "id": "5JQH_default_complex_seed1_model_0",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          795.3586876254487
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_1",
+        "arm": "frozen-v06",
+        "key": [
+          2,
+          779.0083890875788
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_2",
+        "arm": "frozen-v06",
+        "key": [
+          2,
+          901.9612188573793
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_3",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          781.9707650067386
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_4",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1062.319866616138
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5JQH-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "burial-only",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "5JQH_default_complex_seed1_model_4"
+    ],
+    "rows": [
+      {
+        "id": "5JQH_default_complex_seed1_model_0",
+        "arm": "burial-only",
+        "key": [
+          795.3586876254487
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_1",
+        "arm": "burial-only",
+        "key": [
+          779.0083890875788
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_2",
+        "arm": "burial-only",
+        "key": [
+          901.9612188573793
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_3",
+        "arm": "burial-only",
+        "key": [
+          781.9707650067386
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_4",
+        "arm": "burial-only",
+        "key": [
+          1062.319866616138
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5JQH-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "predictor-confidence",
+    "status": "abstain",
+    "reason": "No valid pool or a required score is unavailable; no candidate dropped",
+    "selected": [],
+    "rows": [
+      {
+        "id": "5JQH_default_complex_seed1_model_0",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_1",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_2",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_3",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_4",
+        "arm": "predictor-confidence",
+        "key": null,
+        "rank": null,
+        "status": "unavailable",
+        "reason": "Required feature missing or invalid"
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5JQH-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "clash-fraction-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "5JQH_default_complex_seed1_model_4"
+    ],
+    "rows": [
+      {
+        "id": "5JQH_default_complex_seed1_model_0",
+        "arm": "clash-fraction-v1",
+        "key": [
+          774.9648751222321
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_1",
+        "arm": "clash-fraction-v1",
+        "key": [
+          779.0083890875788
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_2",
+        "arm": "clash-fraction-v1",
+        "key": [
+          901.9612188573793
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_3",
+        "arm": "clash-fraction-v1",
+        "key": [
+          726.1157103634001
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_4",
+        "arm": "clash-fraction-v1",
+        "key": [
+          986.4398761435567
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-5JQH-legacy-default",
+    "groupId": "related-2c1f99d217d234c4",
+    "arm": "overlap-burial-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "5JQH_default_complex_seed1_model_4"
+    ],
+    "rows": [
+      {
+        "id": "5JQH_default_complex_seed1_model_0",
+        "arm": "overlap-burial-v1",
+        "key": [
+          735.1853838445189
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_1",
+        "arm": "overlap-burial-v1",
+        "key": [
+          733.595833855523
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_2",
+        "arm": "overlap-burial-v1",
+        "key": [
+          833.1845159432386
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_3",
+        "arm": "overlap-burial-v1",
+        "key": [
+          671.2709965437201
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "5JQH_default_complex_seed1_model_4",
+        "arm": "overlap-burial-v1",
+        "key": [
+          885.8578154520994
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  }
+]

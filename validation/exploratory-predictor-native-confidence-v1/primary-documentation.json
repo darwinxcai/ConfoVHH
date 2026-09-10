@@ -1,0 +1,34 @@
+{
+  "schema": "confovhh.predictor-native-primary-sources.v1",
+  "retrievedDate": "2026-09-10",
+  "sources": [
+    {
+      "id": "alphafold3-output",
+      "url": "https://github.com/google-deepmind/alphafold3/blob/e68269f0ee4ddce2d2ffee48f36ba0c5bf39a851/docs/output.md",
+      "publisher": "Google DeepMind",
+      "supports": "The full-complex ranking_score is higher-better, includes confidence, disorder and clash terms, and has documented range [-100,1.5]. The code documentation supports field semantics; it is not a claim that local open-source inference generated these server outputs.",
+      "quotation": "For ranking of the full complex use the `ranking_score` (higher is better)."
+    },
+    {
+      "id": "alphafold-server-request",
+      "url": "https://github.com/google-deepmind/alphafold/blob/c77e5d2a8961d1a353632c462914ff0a32a950f6/server/README.md",
+      "publisher": "Google DeepMind",
+      "supports": "Server exports include job_request JSON with names, seeds and sequences; alphafoldserver dialect and template flags are documented. The retained requests use schema version 3 while this document describes version 1; schema version must not be treated as model version or proof of present-day rerun compatibility."
+    },
+    {
+      "id": "alphafold-server-output-guide",
+      "url": "https://www.ebi.ac.uk/training/online/courses/alphafold/alphafold-3-and-alphafold-server/alphafold-server-your-gateway-to-alphafold-3/interpreting-results-from-alphafold-server/",
+      "publisher": "EMBL-EBI AlphaFold training documentation",
+      "supports": "Five structures and paired confidence files are exported per server job. Model/confidence suffix N is a rank with 0 first. This explicitly documents the server format, complementing developer field documentation.",
+      "quotation": "0 has the highest confidence"
+    },
+    {
+      "id": "boltz221-output",
+      "url": "https://github.com/jwohlwend/boltz/blob/v2.2.1/docs/prediction.md",
+      "publisher": "Boltz developers",
+      "supports": "confidence_score is the aggregated prediction-ranking field, range [0,1], higher confidence preferred; documented as 0.8*complex_plddt+0.2*iptm for complexes. Use the original exported score, not a recomputation.",
+      "quotation": "higher values indicate higher confidence."
+    }
+  ],
+  "noAlternativeMetricSubstitution": true
+}

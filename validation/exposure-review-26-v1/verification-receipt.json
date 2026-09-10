@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "seconds": 3.3837839160114527,
+  "entries": 26,
+  "observedResiduesChecked": 35886,
+  "counts": {
+    "reviewed": 26,
+    "excluded": 9,
+    "unresolved": 17,
+    "clearedTargets": 0,
+    "certifiedIndependentGroups": 0
+  },
+  "rawHashesChecked": 26,
+  "independentDenseContactChecks": [
+    {
+      "pdbId": "6N4Y",
+      "authorChains": [
+        "A",
+        "F"
+      ],
+      "contactResiduePairs": 48
+    },
+    {
+      "pdbId": "6N4Y",
+      "authorChains": [
+        "A",
+        "G"
+      ],
+      "contactResiduePairs": 2
+    },
+    {
+      "pdbId": "6N50",
+      "authorChains": [
+        "A",
+        "E"
+      ],
+      "contactResiduePairs": 50
+    },
+    {
+      "pdbId": "7DGE",
+      "authorChains": [
+        "A",
+        "C"
+      ],
+      "contactResiduePairs": 47
+    },
+    {
+      "pdbId": "7E9G",
+      "authorChains": [
+        "R",
+        "E"
+      ],
+      "contactResiduePairs": 57
+    },
+    {
+      "pdbId": "7E9G",
+      "authorChains": [
+        "S",
+        "E"
+      ],
+      "contactResiduePairs": 24
+    },
+    {
+      "pdbId": "7TRK",
+      "authorChains": [
+        "R",
+        "H"
+      ],
+      "contactResiduePairs": 0
+    },
+    {
+      "pdbId": "7TRK",
+      "authorChains": [
+        "A",
+        "H"
+      ],
+      "contactResiduePairs": 32
+    },
+    {
+      "pdbId": "8IA8",
+      "authorChains": [
+        "A",
+        "S"
+      ],
+      "contactResiduePairs": 0
+    },
+    {
+      "pdbId": "8J23",
+      "authorChains": [
+        "A",
+        "F"
+      ],
+      "contactResiduePairs": 0
+    },
+    {
+      "pdbId": "8XT9",
+      "authorChains": [
+        "C",
+        "A"
+      ],
+      "contactResiduePairs": 39
+    },
+    {
+      "pdbId": "9KGK",
+      "authorChains": [
+        "A",
+        "B"
+      ],
+      "contactResiduePairs": 53
+    },
+    {
+      "pdbId": "9FTE",
+      "authorChains": [
+        "A",
+        "B"
+      ],
+      "contactResiduePairs": 13
+    },
+    {
+      "pdbId": "9VOR",
+      "authorChains": [
+        "A",
+        "C"
+      ],
+      "contactResiduePairs": 15
+    },
+    {
+      "pdbId": "9VOR",
+      "authorChains": [
+        "B",
+        "C"
+      ],
+      "contactResiduePairs": 9
+    }
+  ],
+  "newGpuHours": 0,
+  "newPredictionOutcomesRead": 0,
+  "scope": "Native evidence identity and selected contact calculations; not a certificate of unresolved sample lineage or local-density quality."
+}

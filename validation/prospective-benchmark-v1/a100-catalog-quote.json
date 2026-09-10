@@ -1,0 +1,65 @@
+{
+  "recordedAtUtc": "2026-09-10 01:57:40 UTC",
+  "request": {
+    "id": "NVIDIA A100 80GB PCIe",
+    "cloud": "SECURE",
+    "count": 1,
+    "include": [
+      "AVAILABILITY"
+    ],
+    "product": [
+      "POD"
+    ]
+  },
+  "result": {
+    "availability": "LOW",
+    "community": true,
+    "cudaVersions": [
+      {
+        "available": true,
+        "version": "12.4"
+      },
+      {
+        "available": true,
+        "version": "12.8"
+      },
+      {
+        "available": true,
+        "version": "13.0"
+      },
+      {
+        "available": false,
+        "version": "13.2"
+      }
+    ],
+    "dataCenters": [
+      {
+        "availability": "LOW",
+        "id": "CA-MTL-3",
+        "name": "CA-MTL-3"
+      },
+      {
+        "availability": "LOW",
+        "id": "EU-RO-1",
+        "name": "EU-RO-1"
+      }
+    ],
+    "id": "NVIDIA A100 80GB PCIe",
+    "manufacturer": "NVIDIA",
+    "maxCount": {
+      "community": 6,
+      "secure": 8
+    },
+    "memory": 80,
+    "name": "A100 PCIe",
+    "pool": "AMPERE_80",
+    "price": {
+      "community": 1.19,
+      "secure": 1.59,
+      "serverless": 2.72
+    },
+    "secure": true
+  },
+  "allocationCreated": false,
+  "priceIsCatalogNotProvisionedBill": true
+}

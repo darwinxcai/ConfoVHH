@@ -1,0 +1,2461 @@
+{
+  "rows": [
+    {
+      "targetId": "exposed-3P0G",
+      "predictor": "Boltz 2.2.1",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "frozen-v06",
+      "status": "ranked",
+      "selectedIds": [
+        "seed2_model_4"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.1762564824406321,
+      "selectedDockQMinimum": 0.1762564824406321,
+      "selectedDockQMaximum": 0.1762564824406321,
+      "bestAvailableDockQ": 0.48462880897372757,
+      "bestAvailableIds": [
+        "seed2_model_0"
+      ],
+      "differenceFromBestAvailable": -0.30837232653309543,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.1762564824406321,
+      "selectedDockQUpper": 0.1762564824406321,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-3P0G",
+      "predictor": "Boltz 2.2.1",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "burial-only",
+      "status": "ranked",
+      "selectedIds": [
+        "seed2_model_0"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.48462880897372757,
+      "selectedDockQMinimum": 0.48462880897372757,
+      "selectedDockQMaximum": 0.48462880897372757,
+      "bestAvailableDockQ": 0.48462880897372757,
+      "bestAvailableIds": [
+        "seed2_model_0"
+      ],
+      "differenceFromBestAvailable": 0.0,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.48462880897372757,
+      "selectedDockQUpper": 0.48462880897372757,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-3P0G",
+      "predictor": "Boltz 2.2.1",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "predictor-confidence",
+      "status": "ranked",
+      "selectedIds": [
+        "seed2_model_0"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.48462880897372757,
+      "selectedDockQMinimum": 0.48462880897372757,
+      "selectedDockQMaximum": 0.48462880897372757,
+      "bestAvailableDockQ": 0.48462880897372757,
+      "bestAvailableIds": [
+        "seed2_model_0"
+      ],
+      "differenceFromBestAvailable": 0.0,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.48462880897372757,
+      "selectedDockQUpper": 0.48462880897372757,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-3P0G",
+      "predictor": "Boltz 2.2.1",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "clash-fraction-v1",
+      "status": "ranked",
+      "selectedIds": [
+        "seed2_model_0"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.48462880897372757,
+      "selectedDockQMinimum": 0.48462880897372757,
+      "selectedDockQMaximum": 0.48462880897372757,
+      "bestAvailableDockQ": 0.48462880897372757,
+      "bestAvailableIds": [
+        "seed2_model_0"
+      ],
+      "differenceFromBestAvailable": 0.0,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.48462880897372757,
+      "selectedDockQUpper": 0.48462880897372757,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-3P0G",
+      "predictor": "Boltz 2.2.1",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "overlap-burial-v1",
+      "status": "ranked",
+      "selectedIds": [
+        "seed2_model_0"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.48462880897372757,
+      "selectedDockQMinimum": 0.48462880897372757,
+      "selectedDockQMaximum": 0.48462880897372757,
+      "bestAvailableDockQ": 0.48462880897372757,
+      "bestAvailableIds": [
+        "seed2_model_0"
+      ],
+      "differenceFromBestAvailable": 0.0,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.48462880897372757,
+      "selectedDockQUpper": 0.48462880897372757,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-3P0G",
+      "predictor": "Boltz 2.2.1",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "exploratory-predictor-native-confidence-v1",
+      "status": "selected",
+      "selectedIds": [
+        "seed2_model_0"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.48462880897372757,
+      "selectedDockQMinimum": 0.48462880897372757,
+      "selectedDockQMaximum": 0.48462880897372757,
+      "bestAvailableDockQ": 0.48462880897372757,
+      "bestAvailableIds": [
+        "seed2_model_0"
+      ],
+      "differenceFromBestAvailable": 0.0,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.48462880897372757,
+      "selectedDockQUpper": 0.48462880897372757,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-4MQS-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-c660c7f204726c67",
+      "method": "frozen-v06",
+      "status": "ranked",
+      "selectedIds": [
+        "4MQS_default_complex_seed2_model_2"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.7769997704216133,
+      "selectedDockQMinimum": 0.7769997704216133,
+      "selectedDockQMaximum": 0.7769997704216133,
+      "bestAvailableDockQ": 0.8071198146116995,
+      "bestAvailableIds": [
+        "4MQS_default_complex_seed2_model_4"
+      ],
+      "differenceFromBestAvailable": -0.03012004419008618,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.7769997704216133,
+      "selectedDockQUpper": 0.7769997704216133,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-4MQS-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-c660c7f204726c67",
+      "method": "burial-only",
+      "status": "ranked",
+      "selectedIds": [
+        "4MQS_default_complex_seed2_model_2"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.7769997704216133,
+      "selectedDockQMinimum": 0.7769997704216133,
+      "selectedDockQMaximum": 0.7769997704216133,
+      "bestAvailableDockQ": 0.8071198146116995,
+      "bestAvailableIds": [
+        "4MQS_default_complex_seed2_model_4"
+      ],
+      "differenceFromBestAvailable": -0.03012004419008618,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.7769997704216133,
+      "selectedDockQUpper": 0.7769997704216133,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-4MQS-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-c660c7f204726c67",
+      "method": "predictor-confidence",
+      "status": "abstain",
+      "selectedIds": [],
+      "tieCount": 0,
+      "selectedDockQ": null,
+      "selectedDockQMinimum": null,
+      "selectedDockQMaximum": null,
+      "bestAvailableDockQ": 0.8071198146116995,
+      "bestAvailableIds": [
+        "4MQS_default_complex_seed2_model_4"
+      ],
+      "differenceFromBestAvailable": null,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.0,
+      "selectedDockQUpper": 1.0,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-4MQS-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-c660c7f204726c67",
+      "method": "clash-fraction-v1",
+      "status": "ranked",
+      "selectedIds": [
+        "4MQS_default_complex_seed2_model_1"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.7382870766476145,
+      "selectedDockQMinimum": 0.7382870766476145,
+      "selectedDockQMaximum": 0.7382870766476145,
+      "bestAvailableDockQ": 0.8071198146116995,
+      "bestAvailableIds": [
+        "4MQS_default_complex_seed2_model_4"
+      ],
+      "differenceFromBestAvailable": -0.06883273796408496,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.7382870766476145,
+      "selectedDockQUpper": 0.7382870766476145,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-4MQS-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-c660c7f204726c67",
+      "method": "overlap-burial-v1",
+      "status": "ranked",
+      "selectedIds": [
+        "4MQS_default_complex_seed2_model_1"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.7382870766476145,
+      "selectedDockQMinimum": 0.7382870766476145,
+      "selectedDockQMaximum": 0.7382870766476145,
+      "bestAvailableDockQ": 0.8071198146116995,
+      "bestAvailableIds": [
+        "4MQS_default_complex_seed2_model_4"
+      ],
+      "differenceFromBestAvailable": -0.06883273796408496,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.7382870766476145,
+      "selectedDockQUpper": 0.7382870766476145,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-4MQS-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-c660c7f204726c67",
+      "method": "exploratory-predictor-native-confidence-v1",
+      "status": "selected",
+      "selectedIds": [
+        "4MQS_default_complex_seed1_model_0",
+        "4MQS_default_complex_seed1_model_1",
+        "4MQS_default_complex_seed2_model_0"
+      ],
+      "tieCount": 3,
+      "selectedDockQ": 0.7624481254898955,
+      "selectedDockQMinimum": 0.7337349112967373,
+      "selectedDockQMaximum": 0.7812022505854656,
+      "bestAvailableDockQ": 0.8071198146116995,
+      "bestAvailableIds": [
+        "4MQS_default_complex_seed2_model_4"
+      ],
+      "differenceFromBestAvailable": -0.04467168912180397,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.7624481254898955,
+      "selectedDockQUpper": 0.7624481254898955,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5C1M-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "frozen-v06",
+      "status": "ranked",
+      "selectedIds": [
+        "5C1M_default_complex_seed2_model_0"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.7152758925509325,
+      "selectedDockQMinimum": 0.7152758925509325,
+      "selectedDockQMaximum": 0.7152758925509325,
+      "bestAvailableDockQ": 0.7211712877419796,
+      "bestAvailableIds": [
+        "5C1M_default_complex_seed1_model_1"
+      ],
+      "differenceFromBestAvailable": -0.0058953951910470925,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.7152758925509325,
+      "selectedDockQUpper": 0.7152758925509325,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5C1M-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "burial-only",
+      "status": "ranked",
+      "selectedIds": [
+        "5C1M_default_complex_seed2_model_0"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.7152758925509325,
+      "selectedDockQMinimum": 0.7152758925509325,
+      "selectedDockQMaximum": 0.7152758925509325,
+      "bestAvailableDockQ": 0.7211712877419796,
+      "bestAvailableIds": [
+        "5C1M_default_complex_seed1_model_1"
+      ],
+      "differenceFromBestAvailable": -0.0058953951910470925,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.7152758925509325,
+      "selectedDockQUpper": 0.7152758925509325,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5C1M-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "predictor-confidence",
+      "status": "abstain",
+      "selectedIds": [],
+      "tieCount": 0,
+      "selectedDockQ": null,
+      "selectedDockQMinimum": null,
+      "selectedDockQMaximum": null,
+      "bestAvailableDockQ": 0.7211712877419796,
+      "bestAvailableIds": [
+        "5C1M_default_complex_seed1_model_1"
+      ],
+      "differenceFromBestAvailable": null,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.0,
+      "selectedDockQUpper": 1.0,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5C1M-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "clash-fraction-v1",
+      "status": "ranked",
+      "selectedIds": [
+        "5C1M_default_complex_seed2_model_0"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.7152758925509325,
+      "selectedDockQMinimum": 0.7152758925509325,
+      "selectedDockQMaximum": 0.7152758925509325,
+      "bestAvailableDockQ": 0.7211712877419796,
+      "bestAvailableIds": [
+        "5C1M_default_complex_seed1_model_1"
+      ],
+      "differenceFromBestAvailable": -0.0058953951910470925,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.7152758925509325,
+      "selectedDockQUpper": 0.7152758925509325,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5C1M-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "overlap-burial-v1",
+      "status": "ranked",
+      "selectedIds": [
+        "5C1M_default_complex_seed2_model_0"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.7152758925509325,
+      "selectedDockQMinimum": 0.7152758925509325,
+      "selectedDockQMaximum": 0.7152758925509325,
+      "bestAvailableDockQ": 0.7211712877419796,
+      "bestAvailableIds": [
+        "5C1M_default_complex_seed1_model_1"
+      ],
+      "differenceFromBestAvailable": -0.0058953951910470925,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.7152758925509325,
+      "selectedDockQUpper": 0.7152758925509325,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5C1M-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "exploratory-predictor-native-confidence-v1",
+      "status": "selected",
+      "selectedIds": [
+        "5C1M_default_complex_seed1_model_0",
+        "5C1M_default_complex_seed1_model_1",
+        "5C1M_default_complex_seed1_model_2",
+        "5C1M_default_complex_seed1_model_3",
+        "5C1M_default_complex_seed2_model_0",
+        "5C1M_default_complex_seed2_model_1",
+        "5C1M_default_complex_seed2_model_2"
+      ],
+      "tieCount": 7,
+      "selectedDockQ": 0.713463170877958,
+      "selectedDockQMinimum": 0.7079072045332313,
+      "selectedDockQMaximum": 0.7211712877419796,
+      "bestAvailableDockQ": 0.7211712877419796,
+      "bestAvailableIds": [
+        "5C1M_default_complex_seed1_model_1"
+      ],
+      "differenceFromBestAvailable": -0.007708116864021619,
+      "planned": 10,
+      "coordinatesAvailable": 10,
+      "DockQAvailable": 10,
+      "missingPlanned": 0,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.713463170877958,
+      "selectedDockQUpper": 0.713463170877958,
+      "fullPlannedPoolComplete": true,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5JQH-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "frozen-v06",
+      "status": "ranked",
+      "selectedIds": [
+        "5JQH_default_complex_seed1_model_2"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.07800461846595462,
+      "selectedDockQMinimum": 0.07800461846595462,
+      "selectedDockQMaximum": 0.07800461846595462,
+      "bestAvailableDockQ": 0.09313932033842964,
+      "bestAvailableIds": [
+        "5JQH_default_complex_seed1_model_4"
+      ],
+      "differenceFromBestAvailable": -0.015134701872475023,
+      "planned": 10,
+      "coordinatesAvailable": 5,
+      "DockQAvailable": 5,
+      "missingPlanned": 5,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.07800461846595462,
+      "selectedDockQUpper": 0.07800461846595462,
+      "fullPlannedPoolComplete": false,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5JQH-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "burial-only",
+      "status": "ranked",
+      "selectedIds": [
+        "5JQH_default_complex_seed1_model_4"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.09313932033842964,
+      "selectedDockQMinimum": 0.09313932033842964,
+      "selectedDockQMaximum": 0.09313932033842964,
+      "bestAvailableDockQ": 0.09313932033842964,
+      "bestAvailableIds": [
+        "5JQH_default_complex_seed1_model_4"
+      ],
+      "differenceFromBestAvailable": 0.0,
+      "planned": 10,
+      "coordinatesAvailable": 5,
+      "DockQAvailable": 5,
+      "missingPlanned": 5,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.09313932033842964,
+      "selectedDockQUpper": 0.09313932033842964,
+      "fullPlannedPoolComplete": false,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5JQH-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "predictor-confidence",
+      "status": "abstain",
+      "selectedIds": [],
+      "tieCount": 0,
+      "selectedDockQ": null,
+      "selectedDockQMinimum": null,
+      "selectedDockQMaximum": null,
+      "bestAvailableDockQ": 0.09313932033842964,
+      "bestAvailableIds": [
+        "5JQH_default_complex_seed1_model_4"
+      ],
+      "differenceFromBestAvailable": null,
+      "planned": 10,
+      "coordinatesAvailable": 5,
+      "DockQAvailable": 5,
+      "missingPlanned": 5,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.0,
+      "selectedDockQUpper": 1.0,
+      "fullPlannedPoolComplete": false,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5JQH-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "clash-fraction-v1",
+      "status": "ranked",
+      "selectedIds": [
+        "5JQH_default_complex_seed1_model_4"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.09313932033842964,
+      "selectedDockQMinimum": 0.09313932033842964,
+      "selectedDockQMaximum": 0.09313932033842964,
+      "bestAvailableDockQ": 0.09313932033842964,
+      "bestAvailableIds": [
+        "5JQH_default_complex_seed1_model_4"
+      ],
+      "differenceFromBestAvailable": 0.0,
+      "planned": 10,
+      "coordinatesAvailable": 5,
+      "DockQAvailable": 5,
+      "missingPlanned": 5,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.09313932033842964,
+      "selectedDockQUpper": 0.09313932033842964,
+      "fullPlannedPoolComplete": false,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5JQH-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "overlap-burial-v1",
+      "status": "ranked",
+      "selectedIds": [
+        "5JQH_default_complex_seed1_model_4"
+      ],
+      "tieCount": 1,
+      "selectedDockQ": 0.09313932033842964,
+      "selectedDockQMinimum": 0.09313932033842964,
+      "selectedDockQMaximum": 0.09313932033842964,
+      "bestAvailableDockQ": 0.09313932033842964,
+      "bestAvailableIds": [
+        "5JQH_default_complex_seed1_model_4"
+      ],
+      "differenceFromBestAvailable": 0.0,
+      "planned": 10,
+      "coordinatesAvailable": 5,
+      "DockQAvailable": 5,
+      "missingPlanned": 5,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.09313932033842964,
+      "selectedDockQUpper": 0.09313932033842964,
+      "fullPlannedPoolComplete": false,
+      "independentValidation": false
+    },
+    {
+      "targetId": "exposed-5JQH-legacy-default",
+      "predictor": "AlphaFold Server",
+      "groupId": "related-2c1f99d217d234c4",
+      "method": "exploratory-predictor-native-confidence-v1",
+      "status": "selected",
+      "selectedIds": [
+        "5JQH_default_complex_seed1_model_0",
+        "5JQH_default_complex_seed1_model_1",
+        "5JQH_default_complex_seed1_model_2"
+      ],
+      "tieCount": 3,
+      "selectedDockQ": 0.08289528170065967,
+      "selectedDockQMinimum": 0.07800461846595462,
+      "selectedDockQMaximum": 0.08808053710536436,
+      "bestAvailableDockQ": 0.09313932033842964,
+      "bestAvailableIds": [
+        "5JQH_default_complex_seed1_model_4"
+      ],
+      "differenceFromBestAvailable": -0.010244038637769973,
+      "planned": 10,
+      "coordinatesAvailable": 5,
+      "DockQAvailable": 5,
+      "missingPlanned": 5,
+      "missingSelectedOutcomes": 0,
+      "selectedDockQLower": 0.08289528170065967,
+      "selectedDockQUpper": 0.08289528170065967,
+      "fullPlannedPoolComplete": false,
+      "independentValidation": false
+    }
+  ],
+  "withinJob": [
+    {
+      "targetId": "exposed-3P0G",
+      "jobId": "seed1",
+      "predictor": "Boltz 2.2.1",
+      "planned": 5,
+      "available": 5,
+      "status": "selected",
+      "selected": [
+        "seed1_model_0"
+      ],
+      "score": "0.8893769383430481",
+      "reason": "",
+      "exportedScoreSelection": {
+        "mean": 0.41451984199389164,
+        "minimum": 0.41451984199389164,
+        "maximum": 0.41451984199389164,
+        "missingSelectedOutcomes": 0,
+        "lower": 0.41451984199389164,
+        "upper": 0.41451984199389164
+      },
+      "documentedServerFileDockQ": null
+    },
+    {
+      "targetId": "exposed-3P0G",
+      "jobId": "seed2",
+      "predictor": "Boltz 2.2.1",
+      "planned": 5,
+      "available": 5,
+      "status": "selected",
+      "selected": [
+        "seed2_model_0"
+      ],
+      "score": "0.9008827209472656",
+      "reason": "",
+      "exportedScoreSelection": {
+        "mean": 0.48462880897372757,
+        "minimum": 0.48462880897372757,
+        "maximum": 0.48462880897372757,
+        "missingSelectedOutcomes": 0,
+        "lower": 0.48462880897372757,
+        "upper": 0.48462880897372757
+      },
+      "documentedServerFileDockQ": null
+    },
+    {
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "planned": 5,
+      "available": 5,
+      "status": "selected",
+      "selected": [
+        "4MQS_default_complex_seed1_model_0",
+        "4MQS_default_complex_seed1_model_1"
+      ],
+      "score": "0.91",
+      "reason": "",
+      "documentedServerSelectedFile": "4MQS_default_complex_seed1_model_0",
+      "uniqueSelectionRecoverableFromExportedScoreAlone": false,
+      "exportedScoreSelection": {
+        "mean": 0.7574685809411015,
+        "minimum": 0.7337349112967373,
+        "maximum": 0.7812022505854656,
+        "missingSelectedOutcomes": 0,
+        "lower": 0.7574685809411015,
+        "upper": 0.7574685809411015
+      },
+      "documentedServerFileDockQ": 0.7812022505854656
+    },
+    {
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "planned": 5,
+      "available": 5,
+      "status": "selected",
+      "selected": [
+        "4MQS_default_complex_seed2_model_0"
+      ],
+      "score": "0.91",
+      "reason": "",
+      "documentedServerSelectedFile": "4MQS_default_complex_seed2_model_0",
+      "uniqueSelectionRecoverableFromExportedScoreAlone": true,
+      "exportedScoreSelection": {
+        "mean": 0.7724072145874835,
+        "minimum": 0.7724072145874835,
+        "maximum": 0.7724072145874835,
+        "missingSelectedOutcomes": 0,
+        "lower": 0.7724072145874835,
+        "upper": 0.7724072145874835
+      },
+      "documentedServerFileDockQ": 0.7724072145874835
+    },
+    {
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "planned": 5,
+      "available": 5,
+      "status": "selected",
+      "selected": [
+        "5C1M_default_complex_seed1_model_0",
+        "5C1M_default_complex_seed1_model_1",
+        "5C1M_default_complex_seed1_model_2",
+        "5C1M_default_complex_seed1_model_3"
+      ],
+      "score": "0.87",
+      "reason": "",
+      "documentedServerSelectedFile": "5C1M_default_complex_seed1_model_0",
+      "uniqueSelectionRecoverableFromExportedScoreAlone": false,
+      "exportedScoreSelection": {
+        "mean": 0.7135417659811454,
+        "minimum": 0.7079072045332313,
+        "maximum": 0.7211712877419796,
+        "missingSelectedOutcomes": 0,
+        "lower": 0.7135417659811454,
+        "upper": 0.7135417659811454
+      },
+      "documentedServerFileDockQ": 0.7164056904019335
+    },
+    {
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "planned": 5,
+      "available": 5,
+      "status": "selected",
+      "selected": [
+        "5C1M_default_complex_seed2_model_0",
+        "5C1M_default_complex_seed2_model_1",
+        "5C1M_default_complex_seed2_model_2"
+      ],
+      "score": "0.87",
+      "reason": "",
+      "documentedServerSelectedFile": "5C1M_default_complex_seed2_model_0",
+      "uniqueSelectionRecoverableFromExportedScoreAlone": false,
+      "exportedScoreSelection": {
+        "mean": 0.7133583774070412,
+        "minimum": 0.7079142750292707,
+        "maximum": 0.7168849646409204,
+        "missingSelectedOutcomes": 0,
+        "lower": 0.7133583774070412,
+        "upper": 0.7133583774070412
+      },
+      "documentedServerFileDockQ": 0.7152758925509325
+    },
+    {
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "planned": 5,
+      "available": 5,
+      "status": "selected",
+      "selected": [
+        "5JQH_default_complex_seed1_model_0",
+        "5JQH_default_complex_seed1_model_1",
+        "5JQH_default_complex_seed1_model_2"
+      ],
+      "score": "0.38",
+      "reason": "",
+      "documentedServerSelectedFile": "5JQH_default_complex_seed1_model_0",
+      "uniqueSelectionRecoverableFromExportedScoreAlone": false,
+      "exportedScoreSelection": {
+        "mean": 0.08289528170065967,
+        "minimum": 0.07800461846595462,
+        "maximum": 0.08808053710536436,
+        "missingSelectedOutcomes": 0,
+        "lower": 0.08289528170065967,
+        "upper": 0.08289528170065967
+      },
+      "documentedServerFileDockQ": 0.08808053710536436
+    },
+    {
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "planned": 5,
+      "available": 0,
+      "status": "abstain",
+      "selected": [],
+      "score": null,
+      "reason": "No available coordinates",
+      "exportedScoreSelection": {
+        "mean": null,
+        "minimum": null,
+        "maximum": null,
+        "missingSelectedOutcomes": 0,
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "documentedServerFileDockQ": null
+    }
+  ],
+  "attempts": [
+    {
+      "id": "seed1_model_0",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed1",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 0,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed1_model_0.cif",
+        "bytes": 439694,
+        "sha256": "ac4e88b64282ff815c3cb8bb07b2ebc564daf661f0e248fa49cf868b8039292a"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed1_model_0.json",
+        "bytes": 908,
+        "sha256": "af61aadbbb22e66b8da440d91ccce373f1e62b268191028924d7330255d94b49"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.8893769383430481"
+    },
+    {
+      "id": "seed1_model_1",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed1",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 1,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed1_model_1.cif",
+        "bytes": 441278,
+        "sha256": "8e23af915f19ac6a734fe02ac9e435e8d2536ae1f0ed1cd64fe32ed6de3d2d28"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed1_model_1.json",
+        "bytes": 912,
+        "sha256": "f4309d47d3dc1bbcff2a9170e7c60a4e9b0dc839b6213a3d88f723225754c416"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.8619559407234192"
+    },
+    {
+      "id": "seed1_model_2",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed1",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 2,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed1_model_2.cif",
+        "bytes": 441071,
+        "sha256": "ad4c956c00273eab0a7aa7da317eda1799d1267747d2a42fb7b3cfbd2616a31b"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed1_model_2.json",
+        "bytes": 910,
+        "sha256": "1f0f3e4aace424a8712907da7f849598795b53ebc34643255c2f4bfb3da39879"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.8491935729980469"
+    },
+    {
+      "id": "seed1_model_3",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed1",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 3,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed1_model_3.cif",
+        "bytes": 440490,
+        "sha256": "6586f58ee9a34f5351ca3bc11358646d849c27534d401f7680dc561bf0729d52"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed1_model_3.json",
+        "bytes": 908,
+        "sha256": "4e1bd42f9cb28ca02c915ebba5bb3295f07f64bcf5d14bf916bffa1087577176"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.8466022610664368"
+    },
+    {
+      "id": "seed1_model_4",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed1",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 4,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed1_model_4.cif",
+        "bytes": 441687,
+        "sha256": "b0307346e9c3aa63f7643698afc3e9bee09d8a48e753847cd784e8ee804502cf"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed1_model_4.json",
+        "bytes": 915,
+        "sha256": "b09e11920359d8efdb4c465bf96a0b3d69103f4cd5ba56bc3ae6f578b46eeeea"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.8166805505752563"
+    },
+    {
+      "id": "seed2_model_0",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed2",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 0,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed2_model_0.cif",
+        "bytes": 439406,
+        "sha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed2_model_0.json",
+        "bytes": 907,
+        "sha256": "1988bc83c97efe89dd94eaf4c119a262a1926822d19e4b9949c584343e5dd764"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.9008827209472656"
+    },
+    {
+      "id": "seed2_model_1",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed2",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 1,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed2_model_1.cif",
+        "bytes": 440440,
+        "sha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed2_model_1.json",
+        "bytes": 911,
+        "sha256": "26e7ba392ce67e6b489acc536dd5c8842a7ead2583196d559512480379960b37"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.9007269144058228"
+    },
+    {
+      "id": "seed2_model_2",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed2",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 2,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed2_model_2.cif",
+        "bytes": 440891,
+        "sha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed2_model_2.json",
+        "bytes": 911,
+        "sha256": "0166f3f387c970dfe9f332086cb70ebb81abcfef01d621f6854b3ae97fb33a89"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.89376300573349"
+    },
+    {
+      "id": "seed2_model_3",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed2",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 3,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed2_model_3.cif",
+        "bytes": 440578,
+        "sha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed2_model_3.json",
+        "bytes": 911,
+        "sha256": "3773c94234a3f6750b0cf519372d76bca2857228a50003efa9e0f1966bde2b2a"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.8840752840042114"
+    },
+    {
+      "id": "seed2_model_4",
+      "targetId": "exposed-3P0G",
+      "jobId": "seed2",
+      "predictor": "Boltz 2.2.1",
+      "modelIndex": 4,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "pilot/3P0G_seed2_model_4.cif",
+        "bytes": 440993,
+        "sha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d"
+      },
+      "confidence": {
+        "path": "pilot/confidence_3P0G_seed2_model_4.json",
+        "bytes": 916,
+        "sha256": "b4b826def327112b88378654b9624218dfa02c6bb0204b59d0c1b6bb724714e4"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.8201104402542114"
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_0",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 0,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_model_0.cif",
+        "bytes": 314437,
+        "sha256": "7ba3a31fd3fc2e305f02177edb136c4395226df1c69a2c5e31914fc9a709b4c7"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_summary_confidences_0.json",
+        "bytes": 3683,
+        "sha256": "4b135e98f0744c48a131098596cf6f4661328ce0f94915161af72eac8e4ffee9"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.91",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:41)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_model_0.cif",
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_0.json"
+      ]
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_1",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 1,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_model_1.cif",
+        "bytes": 318196,
+        "sha256": "51179133e69488cbb7d9247ffde161cb4b499222f5d9336e2c44aaa9d62fd847"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_summary_confidences_1.json",
+        "bytes": 3681,
+        "sha256": "f6fae6796bc18a01c8c91ba9742b898c9e986ad2604a09ff063f7757ef2e7801"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.91",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:41)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_model_1.cif",
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_1.json"
+      ]
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_2",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 2,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_model_2.cif",
+        "bytes": 314437,
+        "sha256": "a1ccb38e3535a5da7c84b75b06c7e55c0cf3533ab87c60c57fdb3f17d030f525"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_summary_confidences_2.json",
+        "bytes": 3680,
+        "sha256": "ee74c63318a07c2ecf6c8746701a626112b73ae5723a5adf4af53e8727e445f1"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.9",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:41)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_model_2.cif",
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_2.json"
+      ]
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_3",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 3,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_model_3.cif",
+        "bytes": 314437,
+        "sha256": "cf91bcb333358e52862964359989fc043265dda46a50c3768820bf89128afcc3"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_summary_confidences_3.json",
+        "bytes": 3680,
+        "sha256": "9171ad3386032ef62a18ca0c53f3ae4e91553ebd64aace88030e7ba85539509e"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.9",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:41)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_model_3.cif",
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_3.json"
+      ]
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_4",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 4,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_model_4.cif",
+        "bytes": 318196,
+        "sha256": "2e3a0cf2bb33aaacf2ef4eeb2a9d59335dd9c74797f831427361307d5ab8a092"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed1_summary_confidences_4.json",
+        "bytes": 3681,
+        "sha256": "6c306269fa57b6112d737e81e4179dd1359c41d2cc216f0dea2e49c8ea2d394f"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.89",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:41)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_model_4.cif",
+        "VERIFY/runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_4.json"
+      ]
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_0",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 0,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_model_0.cif",
+        "bytes": 318198,
+        "sha256": "b2c8d84a2fd922043e1ad0c43d75a75c21979d70b70980ef2114d01b3120451c"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_summary_confidences_0.json",
+        "bytes": 3683,
+        "sha256": "827dbc40a6be6f2b7e40c02b0528fcff7fa16c41eb7258ff86e3c29f5aa5b01d"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.91",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:43)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_model_0.cif",
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_0.json"
+      ]
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_1",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 1,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_model_1.cif",
+        "bytes": 314439,
+        "sha256": "600a30b038c2ebd342807c9c42dbc823802e153b7de7e4427bc0adfa73bf2c7b"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_summary_confidences_1.json",
+        "bytes": 3679,
+        "sha256": "f86d3eb06dd4411e252dbe864695c1aa230479d4fba47ba4a6d7c33e9337f2f7"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.9",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:43)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_model_1.cif",
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_1.json"
+      ]
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_2",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 2,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_model_2.cif",
+        "bytes": 314439,
+        "sha256": "2860ac3d31ec2d933bfdcd706fdd8e77a25ad81be8d434e90c1d0a574139fa6b"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_summary_confidences_2.json",
+        "bytes": 3681,
+        "sha256": "b58deca279a3d47ec5ce449c9fc8c153e342cf81e39ea8352114363ed7eff781"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.9",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:43)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_model_2.cif",
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_2.json"
+      ]
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_3",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 3,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_model_3.cif",
+        "bytes": 314439,
+        "sha256": "c50790bfb0afcd19536a927a9f3ec1c8e6ad30ba7390b2a3ff81f30899141a1e"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_summary_confidences_3.json",
+        "bytes": 3680,
+        "sha256": "6ec98c3687cf82da2efb825929b2a0cd4f887855b509b36c8363e1b8811aed44"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.9",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:43)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_model_3.cif",
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_3.json"
+      ]
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_4",
+      "targetId": "exposed-4MQS-legacy-default",
+      "jobId": "4MQS_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 4,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_model_4.cif",
+        "bytes": 314439,
+        "sha256": "d7d3da9eb2ef21ecd6508ff5f85c9bab753e26553b73b0d092ae79ac1e5c6613"
+      },
+      "confidence": {
+        "path": "legacy/fold_4mqs_default_complex_seed2_summary_confidences_4.json",
+        "bytes": 3681,
+        "sha256": "147a0632bdfd8227b72b0b2bd7f0ee3309b8d12cef685713528bc98756b8b890"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.89",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:19:43)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_model_4.cif",
+        "VERIFY/runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_4.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_0",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 0,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_model_0.cif",
+        "bytes": 278731,
+        "sha256": "d90dbf2dc6eb1adb1b69421b1755021b82f88759f9550a119458e69410c707db"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_summary_confidences_0.json",
+        "bytes": 3298,
+        "sha256": "34b67fb68638944cc1f728a9db14a3b2014c79a9a9151632953c4d5981f0dcbf"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.87",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:21:52)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_model_0.cif",
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_0.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_1",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 1,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_model_1.cif",
+        "bytes": 278731,
+        "sha256": "6322ffdc51cfd890be6bdf2b70e90e66c90ae36687c033da3d5e2e068053395f"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_summary_confidences_1.json",
+        "bytes": 3298,
+        "sha256": "d7e83bc17a4e3dea36e28fe513c13faa9b597e82e0cda9b510da37fc47ce73dd"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.87",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:21:52)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_model_1.cif",
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_1.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_2",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 2,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_model_2.cif",
+        "bytes": 278731,
+        "sha256": "494149ff2f71d5f346fd1090834020b1416b0eee52278e1338079b51ec3ba6ee"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_summary_confidences_2.json",
+        "bytes": 3297,
+        "sha256": "96e29de3d61188f4645a688c16ba9f87b5733a938a39004184cd042939080968"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.87",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:21:52)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_model_2.cif",
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_2.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_3",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 3,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_model_3.cif",
+        "bytes": 278731,
+        "sha256": "abf3e436b74fbb30d5382136cf167a17cb14bd28660af26cc5e7be33367ed20c"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_summary_confidences_3.json",
+        "bytes": 3298,
+        "sha256": "5b40ab7c766c15992531996e70fde1e85c332cc106a4b198e328a4ff4aafc444"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.87",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:21:52)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_model_3.cif",
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_3.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_4",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 4,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_model_4.cif",
+        "bytes": 278731,
+        "sha256": "cc507120b47574047fefbfed04afb5b45c423c1a1bc9864eea1e193e0b9c8cb5"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed1_summary_confidences_4.json",
+        "bytes": 3297,
+        "sha256": "53ca576f6b111b193b6093d36a29132b763ce60d714ae60257edb0941aaff17a"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.85",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:21:52)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_model_4.cif",
+        "VERIFY/runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_4.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_0",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 0,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_model_0.cif",
+        "bytes": 278731,
+        "sha256": "0b8023fdc22408645d8dedbddcff964b0ba3b5e7a62b013d90e7745bcf87e6f4"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_summary_confidences_0.json",
+        "bytes": 3298,
+        "sha256": "873a111b93c39786aab69da4198a02c543cc6b57c3e5d1d8bcf3f78f988d4b4a"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.87",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:23:40)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_model_0.cif",
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_0.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_1",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 1,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_model_1.cif",
+        "bytes": 278731,
+        "sha256": "731840e59c466e30bd4f237c8be889033bc9ff30b83f2b9ae94fb5161b44b0c9"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_summary_confidences_1.json",
+        "bytes": 3298,
+        "sha256": "7db659181ea61614c4e0d99e38fc60e7b5f1fc2202994b7667420eaa05fdf555"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.87",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:23:40)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_model_1.cif",
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_1.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_2",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 2,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_model_2.cif",
+        "bytes": 278731,
+        "sha256": "2979745682373efe4a1bc5c15f4268692f33f7b95b218618c0c69db24c257413"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_summary_confidences_2.json",
+        "bytes": 3298,
+        "sha256": "4f792c679d8db12d1d345c62c123a311eea31f786a0b2abcfd9f7dacec1a537d"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.87",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:23:40)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_model_2.cif",
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_2.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_3",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 3,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_model_3.cif",
+        "bytes": 278731,
+        "sha256": "a7767d6e4a217e5b4910b33beeb1cce36a9cfd5b1e5dccbfd74a5f738e212919"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_summary_confidences_3.json",
+        "bytes": 3296,
+        "sha256": "af6a6b712fd12164ec1c3c8756f7899981292e10c99ebfab9fbd4b0219e0f40e"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.86",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:23:40)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_model_3.cif",
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_3.json"
+      ]
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_4",
+      "targetId": "exposed-5C1M-legacy-default",
+      "jobId": "5C1M_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 4,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_model_4.cif",
+        "bytes": 278731,
+        "sha256": "bca2d4965b7a919b50eb1e6b8fbd7b6a016f330725d495a75db87a522a1a57bb"
+      },
+      "confidence": {
+        "path": "legacy/fold_5c1m_default_complex_seed2_summary_confidences_4.json",
+        "bytes": 3297,
+        "sha256": "99e2679a2122ca86bb13b2fc5a50ba81d63a4cd2bf4ba1a1d4aa3dd02e8fc7db"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.86",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (baa66c34-2f7c-455c-9d77-f686cf8a9237 @ 2026-09-03 19:23:40)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_model_4.cif",
+        "VERIFY/runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_4.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_0",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 0,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_model_0.cif",
+        "bytes": 393819,
+        "sha256": "9deb62f819a3008178680d43dd0220dcb0b5963b3653631f40c1f7df54d465ac"
+      },
+      "confidence": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_summary_confidences_0.json",
+        "bytes": 334,
+        "sha256": "80fd7afb2c60a92375779d1e7c7af913230e860d6461df761fd3294d310ba306"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.38",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (38bdafbb-452b-401c-b1ea-27659c1dc621 @ 2026-06-24 01:23:42)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_model_0.cif",
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_0.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_1",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 1,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_model_1.cif",
+        "bytes": 393819,
+        "sha256": "1ecf4b32af9c251c36e837efaa86dec6e372aa929ce3d70e6cba3007c132d24a"
+      },
+      "confidence": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_summary_confidences_1.json",
+        "bytes": 327,
+        "sha256": "4ff46c7d195aead5dcda1212f6a4225c5cb1ede1081f4705cf741f88c200e190"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.38",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (38bdafbb-452b-401c-b1ea-27659c1dc621 @ 2026-06-24 01:23:42)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_model_1.cif",
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_1.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_2",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 2,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_model_2.cif",
+        "bytes": 393819,
+        "sha256": "a8b87ab20afe84f34b6e857644864184b1a16b0fb2a2ee2bdc60cee8182dc836"
+      },
+      "confidence": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_summary_confidences_2.json",
+        "bytes": 332,
+        "sha256": "b934fdcfafa4120b9e57e109d11144a93f68d3ef4110281763bf9323e4232241"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.38",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (38bdafbb-452b-401c-b1ea-27659c1dc621 @ 2026-06-24 01:23:42)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_model_2.cif",
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_2.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_3",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 3,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_model_3.cif",
+        "bytes": 393819,
+        "sha256": "29df0a795a5ab0a9d477d8c3152bce6306e6035b4f76f556adaba7c2fbff4c8d"
+      },
+      "confidence": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_summary_confidences_3.json",
+        "bytes": 329,
+        "sha256": "2cdacc90756871bd76f1718bbbe64c1d70916ed57b3fbd58802fcd24a7689708"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.37",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (38bdafbb-452b-401c-b1ea-27659c1dc621 @ 2026-06-24 01:23:42)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_model_3.cif",
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_3.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_4",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed1",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 4,
+      "coordinateAvailable": true,
+      "producerStatus": "generated",
+      "producerReason": "",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_model_4.cif",
+        "bytes": 393819,
+        "sha256": "8d953024d224d480b35a0d84fda061ae750ef6deebec26e69045b5fdd1c3c10b"
+      },
+      "confidence": {
+        "path": "legacy/fold_5jqh_default_complex_seed1_summary_confidences_4.json",
+        "bytes": 327,
+        "sha256": "bbad1b6e6a8e19fcfa96e822aae8640dd7d060ac0974dc02073d030243c7385f"
+      },
+      "scoreStatus": "available",
+      "exportedScore": "0.29",
+      "softwareName": [
+        "AlphaFold"
+      ],
+      "softwareVersion": [
+        "AlphaFold-beta-20231127 (38bdafbb-452b-401c-b1ea-27659c1dc621 @ 2026-06-24 01:23:42)"
+      ],
+      "citationTitle": [
+        "Accurate structure prediction of biomolecular interactions with AlphaFold 3"
+      ],
+      "embeddedModelName": [
+        "Top ranked model"
+      ],
+      "archiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_model_4.cif",
+        "VERIFY/runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_4.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_0",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 0,
+      "coordinateAvailable": false,
+      "producerStatus": "not-run",
+      "producerReason": "Historical planned attempt: coordinate absent from all three retained archives; original execution success unknown; no replacement.",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": null,
+      "confidence": null,
+      "scoreStatus": "missing",
+      "exportedScore": null,
+      "absentArchiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_model_0.cif",
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_summary_confidences_0.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_1",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 1,
+      "coordinateAvailable": false,
+      "producerStatus": "not-run",
+      "producerReason": "Historical planned attempt: coordinate absent from all three retained archives; original execution success unknown; no replacement.",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": null,
+      "confidence": null,
+      "scoreStatus": "missing",
+      "exportedScore": null,
+      "absentArchiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_model_1.cif",
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_summary_confidences_1.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_2",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 2,
+      "coordinateAvailable": false,
+      "producerStatus": "not-run",
+      "producerReason": "Historical planned attempt: coordinate absent from all three retained archives; original execution success unknown; no replacement.",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": null,
+      "confidence": null,
+      "scoreStatus": "missing",
+      "exportedScore": null,
+      "absentArchiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_model_2.cif",
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_summary_confidences_2.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_3",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 3,
+      "coordinateAvailable": false,
+      "producerStatus": "not-run",
+      "producerReason": "Historical planned attempt: coordinate absent from all three retained archives; original execution success unknown; no replacement.",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": null,
+      "confidence": null,
+      "scoreStatus": "missing",
+      "exportedScore": null,
+      "absentArchiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_model_3.cif",
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_summary_confidences_3.json"
+      ]
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_4",
+      "targetId": "exposed-5JQH-legacy-default",
+      "jobId": "5JQH_default_complex_seed2",
+      "predictor": "AlphaFold Server",
+      "modelIndex": 4,
+      "coordinateAvailable": false,
+      "producerStatus": "not-run",
+      "producerReason": "Historical planned attempt: coordinate absent from all three retained archives; original execution success unknown; no replacement.",
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "coordinate": null,
+      "confidence": null,
+      "scoreStatus": "missing",
+      "exportedScore": null,
+      "absentArchiveMembers": [
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_model_4.cif",
+        "VERIFY/runs/5JQH_default_complex_seed2/fold_5jqh_default_complex_seed2_summary_confidences_4.json"
+      ]
+    }
+  ],
+  "outcomes": [
+    {
+      "id": "seed1_model_0",
+      "status": "available",
+      "DockQ": 0.41451984199389164,
+      "reason": ""
+    },
+    {
+      "id": "seed1_model_1",
+      "status": "available",
+      "DockQ": 0.3757359167773013,
+      "reason": ""
+    },
+    {
+      "id": "seed1_model_2",
+      "status": "available",
+      "DockQ": 0.20782171517087225,
+      "reason": ""
+    },
+    {
+      "id": "seed1_model_3",
+      "status": "available",
+      "DockQ": 0.20512446299198026,
+      "reason": ""
+    },
+    {
+      "id": "seed1_model_4",
+      "status": "available",
+      "DockQ": 0.17029171132592144,
+      "reason": ""
+    },
+    {
+      "id": "seed2_model_0",
+      "status": "available",
+      "DockQ": 0.48462880897372757,
+      "reason": ""
+    },
+    {
+      "id": "seed2_model_1",
+      "status": "available",
+      "DockQ": 0.45530981662134734,
+      "reason": ""
+    },
+    {
+      "id": "seed2_model_2",
+      "status": "available",
+      "DockQ": 0.4766947196533409,
+      "reason": ""
+    },
+    {
+      "id": "seed2_model_3",
+      "status": "available",
+      "DockQ": 0.4216895163471448,
+      "reason": ""
+    },
+    {
+      "id": "seed2_model_4",
+      "status": "available",
+      "DockQ": 0.1762564824406321,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_0",
+      "status": "available",
+      "DockQ": 0.7812022505854656,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_1",
+      "status": "available",
+      "DockQ": 0.7337349112967373,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_2",
+      "status": "available",
+      "DockQ": 0.7300913850010482,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_3",
+      "status": "available",
+      "DockQ": 0.7747646490140442,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed1_model_4",
+      "status": "available",
+      "DockQ": 0.741934147388024,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_0",
+      "status": "available",
+      "DockQ": 0.7724072145874835,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_1",
+      "status": "available",
+      "DockQ": 0.7382870766476145,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_2",
+      "status": "available",
+      "DockQ": 0.7769997704216133,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_3",
+      "status": "available",
+      "DockQ": 0.7392421496588596,
+      "reason": ""
+    },
+    {
+      "id": "4MQS_default_complex_seed2_model_4",
+      "status": "available",
+      "DockQ": 0.8071198146116995,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_0",
+      "status": "available",
+      "DockQ": 0.7164056904019335,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_1",
+      "status": "available",
+      "DockQ": 0.7211712877419796,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_2",
+      "status": "available",
+      "DockQ": 0.7079072045332313,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_3",
+      "status": "available",
+      "DockQ": 0.7086828812474374,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed1_model_4",
+      "status": "available",
+      "DockQ": 0.7188799727537386,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_0",
+      "status": "available",
+      "DockQ": 0.7152758925509325,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_1",
+      "status": "available",
+      "DockQ": 0.7079142750292707,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_2",
+      "status": "available",
+      "DockQ": 0.7168849646409204,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_3",
+      "status": "available",
+      "DockQ": 0.6932696676446256,
+      "reason": ""
+    },
+    {
+      "id": "5C1M_default_complex_seed2_model_4",
+      "status": "available",
+      "DockQ": 0.7110534668888085,
+      "reason": ""
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_0",
+      "status": "available",
+      "DockQ": 0.08808053710536436,
+      "reason": ""
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_1",
+      "status": "available",
+      "DockQ": 0.08260068953066003,
+      "reason": ""
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_2",
+      "status": "available",
+      "DockQ": 0.07800461846595462,
+      "reason": ""
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_3",
+      "status": "available",
+      "DockQ": 0.0834767989491445,
+      "reason": ""
+    },
+    {
+      "id": "5JQH_default_complex_seed1_model_4",
+      "status": "available",
+      "DockQ": 0.09313932033842964,
+      "reason": ""
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_0",
+      "status": "missing",
+      "DockQ": null,
+      "reason": "No evaluable generated coordinates"
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_1",
+      "status": "missing",
+      "DockQ": null,
+      "reason": "No evaluable generated coordinates"
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_2",
+      "status": "missing",
+      "DockQ": null,
+      "reason": "No evaluable generated coordinates"
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_3",
+      "status": "missing",
+      "DockQ": null,
+      "reason": "No evaluable generated coordinates"
+    },
+    {
+      "id": "5JQH_default_complex_seed2_model_4",
+      "status": "missing",
+      "DockQ": null,
+      "reason": "No evaluable generated coordinates"
+    }
+  ],
+  "knownOutcomesBeforeDefinition": true,
+  "independentValidation": false,
+  "acrossTargetConfidenceScoreComparison": false
+}

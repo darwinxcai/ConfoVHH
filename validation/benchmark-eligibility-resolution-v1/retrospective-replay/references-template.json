@@ -1,0 +1,46 @@
+{
+  "schema": "confovhh-reference-evaluation-v1",
+  "scoreReceiptSha256": "BOUND_AFTER_SCORING",
+  "targets": [
+    {
+      "targetId": "exposed-3P0G",
+      "native": {
+        "path": "references/3P0G-native-AB.pdb",
+        "bytes": 260262,
+        "sha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557"
+      },
+      "nativeReceptorChain": "A",
+      "nativeVhhChain": "B"
+    },
+    {
+      "targetId": "exposed-4MQS-legacy-default",
+      "native": {
+        "path": "references/4MQS.cif",
+        "bytes": 367528,
+        "sha256": "ffa02f41badf80f86e1e961933835269ac1d88989faf8922105ddf8ee649fa6d"
+      },
+      "nativeReceptorChain": "A",
+      "nativeVhhChain": "B"
+    },
+    {
+      "targetId": "exposed-5C1M-legacy-default",
+      "native": {
+        "path": "references/5C1M.cif",
+        "bytes": 783145,
+        "sha256": "e561b0670e874a32fc07620e6fb44444d7b0102aff84b9826882eaa69c787096"
+      },
+      "nativeReceptorChain": "A",
+      "nativeVhhChain": "B"
+    },
+    {
+      "targetId": "exposed-5JQH-legacy-default",
+      "native": {
+        "path": "references/5JQH.cif",
+        "bytes": 807369,
+        "sha256": "f708f9a8952ddac094881cb29d9dea36dde3674eff6f64fa0283e26482adfb19"
+      },
+      "nativeReceptorChain": "A",
+      "nativeVhhChain": "C"
+    }
+  ]
+}

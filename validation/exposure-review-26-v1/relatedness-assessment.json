@@ -1,0 +1,141 @@
+{
+  "rule": "Existing receptor OR VHH OR parent/source-family links, transitive components; no threshold changes. These review groups retain prior components and add proved links, not a newly certified whole-inventory graph.",
+  "groups": [
+    {
+      "groupId": "ADGRV1-source-family",
+      "members": [
+        "9FTE"
+      ],
+      "independentCertified": false,
+      "priorComponentIds": [
+        "related-8fac35f7bffcb5a1"
+      ],
+      "knownDevelopmentConnection": [],
+      "basis": "Retained source component and historical exposure; RE02 origin documented but complete no-edge not certified."
+    },
+    {
+      "groupId": "C3aR-helper",
+      "members": [
+        "8IA8"
+      ],
+      "independentCertified": false,
+      "priorComponentIds": [
+        "related-46f3c83d7723556f"
+      ],
+      "knownDevelopmentConnection": [],
+      "basis": "Excluded scFv16-bearing entry; no target VHH to certify."
+    },
+    {
+      "groupId": "FFAR2-helper",
+      "members": [
+        "8J23"
+      ],
+      "independentCertified": false,
+      "priorComponentIds": [
+        "related-dd6449f138a4dbc7"
+      ],
+      "knownDevelopmentConnection": [],
+      "basis": "Excluded scFv16-bearing entry; no target VHH to certify."
+    },
+    {
+      "groupId": "LGR4-source-family",
+      "members": [
+        "8XT9",
+        "8XUM",
+        "9KGK",
+        "9KHH",
+        "9S37",
+        "9S38",
+        "9UOK"
+      ],
+      "independentCertified": false,
+      "priorComponentIds": [
+        "related-26ef5753e7bdf8cb",
+        "related-e7b57ba18b343462"
+      ],
+      "knownDevelopmentConnection": [],
+      "basis": "Same LGR4 and known NB52\u2192MB52 source; NB18/NB21 from LGR4 library. 9S38 all three deposited polymer sequences identical to 9S37: merge previous singleton, no independence inflation."
+    },
+    {
+      "groupId": "mGlu-source-family",
+      "members": [
+        "6N4X",
+        "6N4Y",
+        "6N50",
+        "6N51",
+        "6N52",
+        "7DGE",
+        "7E9G",
+        "7EPB",
+        "8T7H",
+        "8TAO"
+      ],
+      "independentCertified": false,
+      "priorComponentIds": [
+        "related-b842533ac5fc63ff"
+      ],
+      "knownDevelopmentConnection": [],
+      "basis": "Retain prior conservative mGlu source/family component; identical Nb43 across mGlu5 and engineered mGlu1; common DN13 core connects 7E9G/7EPB."
+    },
+    {
+      "groupId": "mGlyR-source-family",
+      "members": [
+        "9VOR",
+        "9VOS"
+      ],
+      "independentCertified": false,
+      "priorComponentIds": [
+        "related-e16577b880336b52"
+      ],
+      "knownDevelopmentConnection": [],
+      "basis": "Same receptor and identical Nb20; known Nb20* derivative retained."
+    },
+    {
+      "groupId": "muscarinic-development-connected",
+      "members": [
+        "7TRK",
+        "7TRP",
+        "7TRQ",
+        "7TRS"
+      ],
+      "independentCertified": false,
+      "priorComponentIds": [
+        "related-0ec23ed305eb8e26",
+        "related-22fc8f89b00b6850",
+        "related-2b21c8e6879726b0",
+        "related-e2988f0771c2442b"
+      ],
+      "knownDevelopmentConnection": [
+        "4MQS"
+      ],
+      "basis": "M4 and development M2 share GPCRdb prefix 001_001_002 under unchanged frozen rule."
+    }
+  ],
+  "newLinks": [
+    {
+      "from": "7TRK",
+      "to": "4MQS",
+      "basis": "GPCRdb first-three-level prefix 001_001_002"
+    },
+    {
+      "from": "7TRP",
+      "to": "4MQS",
+      "basis": "GPCRdb first-three-level prefix 001_001_002"
+    },
+    {
+      "from": "7TRQ",
+      "to": "4MQS",
+      "basis": "GPCRdb first-three-level prefix 001_001_002"
+    },
+    {
+      "from": "7TRS",
+      "to": "4MQS",
+      "basis": "GPCRdb first-three-level prefix 001_001_002"
+    },
+    {
+      "from": "9S38",
+      "to": "9S37",
+      "basis": "Exact sequence identity for all three deposited polymer entities"
+    }
+  ]
+}

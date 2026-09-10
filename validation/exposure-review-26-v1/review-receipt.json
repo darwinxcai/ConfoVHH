@@ -1,0 +1,28 @@
+{
+  "reviewStartedUtc": "2026-09-10T15:46:26.737718+00:00",
+  "reviewCompletedUtc": "2026-09-10T16:38:19.984212+00:00",
+  "nativeInspectionSeconds": 5.174621207988821,
+  "independentVerificationSeconds": 3.3837839160114527,
+  "newGpuHours": 0,
+  "newCloudChargesUsd": 0,
+  "predictionAttempts": 0,
+  "scoringImplementationChanged": false,
+  "initialCheckCorrections": [
+    {
+      "check": "native evidence helper",
+      "failure": "SciPy unavailable in reused environment",
+      "action": "Used installed Bio.PDB KDTree; no dependency install; original error retained locally."
+    },
+    {
+      "check": "PDF rendering",
+      "failure": "fitz unavailable",
+      "action": "Used bundled pypdfium2; no environment rebuild."
+    },
+    {
+      "check": "native identity verifier",
+      "failure": "Initial cross-entry entity-ID assumption used entity 2 for Nb20 in both mGlyR entries",
+      "action": "Corrected verifier to deposited entity 4 in 9VOS; author-chain roles and production native inspection were already correct. No scientific selector change or outcome rerun."
+    }
+  ],
+  "reviewElapsedSeconds": 3113.246494
+}

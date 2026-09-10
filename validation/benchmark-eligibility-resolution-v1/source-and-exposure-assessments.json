@@ -1,0 +1,49 @@
+{
+  "schema": "confovhh.eligibility-exposure-adjudication.v1",
+  "date": "2026-09-10",
+  "records": [
+    {
+      "pdbId": "7UL3",
+      "decision": "EXCLUDED_DEVELOPMENT_PARENT_AND_GRAFT",
+      "metadataScreenedBefore": true,
+      "structuralProseInspectedThisTurn": true,
+      "nativeCoordinatesInspectedThisTurn": true,
+      "methodDevelopmentBeforeCurrentFreeze": false,
+      "usedToModifyScoring": false,
+      "predictorTrainingExposure": "Possible; released before Boltz 2.2.1. Training membership not established; no training-novelty claim.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12014012/",
+      "sourceClaim": "The authors describe Nb6M as Nb6 antigen-binding loops on an alpaca scaffold and describe the H2R construct as carrying the KOR ICL3 swap.",
+      "frameworkIdenticalColumns": 75,
+      "frameworkAlignmentColumns": 91,
+      "cdr3IdenticalColumns": 15,
+      "cdr3AlignmentColumns": 15,
+      "thresholdPass": false,
+      "knownParentVeto": true,
+      "referenceRoles": "Author A receptor, C Nb6M; H/L NabFab helpers. A/C observed residues exactly map to their deposited entity sequences; 22 residue contact pairs at 4.5 A.",
+      "generationInputStatus": "Exact canonical construct FASTA bound for screening; no MSA/ligand generation seal made because fixed scientific exclusion is decisive.",
+      "remainingReferenceQuality": "No local-density certification or production DockQ target seal needed for excluded target."
+    },
+    {
+      "pdbId": "9W3K",
+      "decision": "EXCLUDED_DEVELOPMENT_VHH_SEQUENCE_RELATED",
+      "metadataScreenedBefore": true,
+      "structuralProseInspectedBefore": true,
+      "nativeCoordinatesInspectedThisTurn": true,
+      "methodDevelopmentBeforeCurrentFreeze": false,
+      "usedToModifyScoring": false,
+      "predictorTrainingExposure": "Unresolved; date alone does not establish model-training novelty, and Nb6/development-family overlap remains.",
+      "source": "validation/hard-decoy-holdout-v3/gpr151-source-review-2026-09-04/README.md",
+      "frameworkIdenticalColumns": 88,
+      "frameworkAlignmentColumns": 91,
+      "cdr3IdenticalColumns": 15,
+      "cdr3AlignmentColumns": 15,
+      "thresholdPass": true,
+      "knownParentVeto": "Not needed; no genealogical identity claim based only on sequence.",
+      "referenceRoles": "Author A receptor, B NB6; 23 residue contact pairs at 4.5 A. Exact full receptor and NB6 entity sequences agree with preserved metadata.",
+      "constructInterpretation": "Preserved sequence review identifies an exact KOR-like engineered segment. This and the deposited NB6 interface do not establish binding to endogenous GPR151.",
+      "generationInputStatus": "Exact canonical construct FASTA bound for screening; no MSA/ligand generation seal made because fixed sequence-relatedness exclusion is decisive.",
+      "remainingReferenceQuality": "No local-density certification or production DockQ target seal needed for excluded target."
+    }
+  ],
+  "distinctions": "Metadata screening, reading structural prose, opening native coordinates and use in method development are distinct events. Neither new native inspection entered the frozen selector. Training exposure is a separate unresolved issue."
+}

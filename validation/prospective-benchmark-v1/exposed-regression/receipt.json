@@ -1,0 +1,21 @@
+{
+  "schema": "confovhh-general-score-receipt-v1",
+  "status": "COMPLETE",
+  "planSha256": "4fa7845d122186db53acbad5c73e044f0eadba551b85b32c81f8c709bf4d096b",
+  "canonicalSavedPlanSha256": "4fa7845d122186db53acbad5c73e044f0eadba551b85b32c81f8c709bf4d096b",
+  "featuresSha256": "36e269d4f248a322c3691bb0d0c4841198e2f72093742fdad9b89c2dcd9a180b",
+  "attemptsSha256": "b05798a064fb71ea286195e187d274f0346ad8a110b373d31d5452d493983bbd",
+  "ranksSha256": "0879e2e80d55937f9050d0c6e74227f7b97656886ad0d77ec7ca9f266aa98d16",
+  "evaluatorSha256": "97c38df46ff91cb3786dab91084d1e39535a74a3ac313da9ad7d88a47af60fc6",
+  "engineLockSha256": "0bc8d6d23c3accfbfa1b35c956ea08bfba08b6f69a47d73e2307abacc799f559",
+  "outcomeInputs": [],
+  "arms": [
+    "frozen-v06",
+    "burial-only",
+    "predictor-confidence",
+    "clash-fraction-v1",
+    "overlap-burial-v1"
+  ],
+  "attemptCount": 10,
+  "independenceCertified": false
+}

@@ -1,0 +1,14 @@
+test_decimal_precision_not_collapsed (test_predictor_native_confidence_v1.NativeConfidenceTests.test_decimal_precision_not_collapsed) ... ok
+test_documented_predictor_ranges_are_distinct (test_predictor_native_confidence_v1.NativeConfidenceTests.test_documented_predictor_ranges_are_distinct) ... ok
+test_exact_export_ties (test_predictor_native_confidence_v1.NativeConfidenceTests.test_exact_export_ties) ... ok
+test_hash_and_duplicate_key_rejection (test_predictor_native_confidence_v1.NativeConfidenceTests.test_hash_and_duplicate_key_rejection) ... ok
+test_malformed_scores (test_predictor_native_confidence_v1.NativeConfidenceTests.test_malformed_scores) ... ok
+test_missing_confidence_abstains_whole_available_pool (test_predictor_native_confidence_v1.NativeConfidenceTests.test_missing_confidence_abstains_whole_available_pool) ... ok
+test_missing_coordinate_preserved_but_not_selectable (test_predictor_native_confidence_v1.NativeConfidenceTests.test_missing_coordinate_preserved_but_not_selectable) ... ok
+test_no_metric_substitution (test_predictor_native_confidence_v1.NativeConfidenceTests.test_no_metric_substitution) ... ok
+test_uniform_ties_and_missing_outcome_bounds (test_predictor_native_confidence_v1.NativeConfidenceTests.test_uniform_ties_and_missing_outcome_bounds) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

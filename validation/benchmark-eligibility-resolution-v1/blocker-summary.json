@@ -1,0 +1,56 @@
+{
+  "sourceSha256": "e6f789f2d45ea34e61303aad4a1728e2845bf3ee242fa9ea1fc347dd707afc07",
+  "originalBlocked": 270,
+  "overlappingReasons": [
+    {
+      "reason": "BLOCK_COMPLETE_PARENT_FAMILY_AND_NO_EDGE_REVIEW_MISSING",
+      "count": 270,
+      "classification": "unresolved-scientific-certification"
+    },
+    {
+      "reason": "BLOCK_DIRECT_RECEPTOR_VHH_ROLE_OR_CONSTRUCT_CERTIFICATION_INCOMPLETE",
+      "count": 270,
+      "classification": "unresolved-scientific-certification"
+    },
+    {
+      "reason": "BLOCK_ENGINEERED_ADRB2_GRAFT_RELATED_TO_DEVELOPMENT",
+      "count": 1,
+      "classification": "scientific-development-related-graft"
+    },
+    {
+      "reason": "BLOCK_GENERAL_BENCHMARK_INPUTS_AND_REFERENCE_FEASIBILITY_NOT_LOCKED",
+      "count": 270,
+      "classification": "mixed-administrative-artifact-and-scientific-mapping"
+    },
+    {
+      "reason": "BLOCK_POSSIBLE_RECEPTOR_OR_NANOBODY_CONNECTION_TO_DEVELOPMENT",
+      "count": 242,
+      "classification": "unresolved-scientific-relatedness"
+    },
+    {
+      "reason": "BLOCK_PRIOR_STRUCTURAL_OR_PREDICTION_PROSE_EXPOSURE_REVIEW",
+      "count": 31,
+      "classification": "recorded-prose-exposure-needs-disposition"
+    },
+    {
+      "reason": "BLOCK_RELATED_SOURCE_FAMILY_EXPOSURE_REVIEW",
+      "count": 228,
+      "classification": "unresolved-exposure-adjudication"
+    }
+  ],
+  "mutuallyExclusivePartitions": {
+    "possible-development-connection": 242,
+    "exposure-review-without-possible-sequence-connection": 26,
+    "three-generic-certification-blockers": 2
+  },
+  "administrativeOnlyCertifiedTargets": 0,
+  "newScientificExclusions": [
+    "7UL3",
+    "9W3K"
+  ],
+  "remainingBlocked": 268,
+  "totalExcludedIncludingOriginal": 80,
+  "clearedProspectiveTargets": [],
+  "certifiedIndependentGroups": [],
+  "scope": "Finite curated snapshot only. The 242 possible links are not 242 proved exclusions. No claim that all remaining targets are scientifically ineligible or that the global population is empty."
+}

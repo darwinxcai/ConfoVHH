@@ -1,0 +1,45 @@
+{
+  "schema": "confovhh.retrospective-compatibility-study.v1",
+  "status": "SEALED_BEFORE_REPLAY",
+  "prospective": false,
+  "independentValidation": false,
+  "referenceComplexes": [
+    "3P0G",
+    "4MQS",
+    "5C1M",
+    "5JQH"
+  ],
+  "selectionSets": 4,
+  "attempts": 40,
+  "selectionRule": "Keep original Boltz 3P0G ten-pose pilot. For every other previously reviewed cognate reference complex, use the original default condition, seeds 1 and 2, all five models; keep absent records. No selection based on outcomes.",
+  "groups": {
+    "related-2c1f99d217d234c4": [
+      "exposed-3P0G",
+      "exposed-5C1M-legacy-default",
+      "exposed-5JQH-legacy-default"
+    ],
+    "related-c660c7f204726c67": [
+      "exposed-4MQS-legacy-default"
+    ]
+  },
+  "independentGroupCount": 0,
+  "arms": [
+    "frozen-v06",
+    "burial-only",
+    "predictor-confidence",
+    "clash-fraction-v1",
+    "overlap-burial-v1"
+  ],
+  "comparisons": "All five target selections, exact ties, all failures and missing data. Four frozen contrasts retained descriptively. No inferential significance or independent-validation claim.",
+  "legacyPredictor": "AlphaFold server historical default template-enabled requests; not regenerated or represented as Boltz. Frozen geometric engine reused only for format-compatible coordinates. Internal helper generator ID is a historical constant, not origin authentication.",
+  "confidencePolicy": "Original confidence JSON preserved unchanged. Missing Boltz confidence_score causes frozen confidence arm abstention. Do not alias AF ranking_score or pLDDT.",
+  "noNewGeneration": true,
+  "noNewScoringVariants": true,
+  "wallClockLimitSeconds": 2700,
+  "estimatedLocalCpuMinutes": [
+    15,
+    45
+  ],
+  "newGpuHours": 0,
+  "newCloudCostUSD": 0
+}

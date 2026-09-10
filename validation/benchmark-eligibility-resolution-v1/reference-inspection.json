@@ -1,0 +1,6361 @@
+{
+  "schema": "confovhh.reference-eligibility-inspection.v1",
+  "results": [
+    {
+      "pdbId": "7UL3",
+      "sourceUrl": "https://files.rcsb.org/download/7UL3.cif",
+      "sha256": "9eb673876fbf20eed2610ed2836cbf2a1744452886eb6297fecb15599e79beec",
+      "bytes": 634855,
+      "model": "1",
+      "receptorAuthChain": "A",
+      "vhhAuthChain": "C",
+      "metadataVhhExactSequenceMatch": true,
+      "metadataReceptorExactSequenceMatch": true,
+      "fullInputLengths": {
+        "A": 400,
+        "C": 131
+      },
+      "fullInputSequenceSha256": {
+        "A": "746d98ca8d48c1eee189385573848c131e13da0c6ed86ed392ba38b69e219398",
+        "C": "5cce1ef6fc9e707b7456ebf5352ae7fe33691e4d191e66d21fc0b28bf49a564e"
+      },
+      "canonicalInputSequences": true,
+      "declaredResolutionAngstrom": [
+        3
+      ],
+      "screenedConstructFastaSha256": "15561eab96d1fc8a14f951081e092629f0c72f023d1855fa1cbbf5c119be68e4",
+      "observedResiduesAllMatchEntityLabelSequence": true,
+      "observedResidueCounts": {
+        "A": 268,
+        "C": 117
+      },
+      "minimumHeavyAtomSeparationAngstrom": 2.3240632521512814,
+      "interfaceResiduePairsWithin4_5Angstrom": 22,
+      "residueMapping": [
+        {
+          "authChain": "A",
+          "labelResidue": 55,
+          "authResidue": "16",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 56,
+          "authResidue": "17",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 57,
+          "authResidue": "18",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 58,
+          "authResidue": "19",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 59,
+          "authResidue": "20",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 60,
+          "authResidue": "21",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 61,
+          "authResidue": "22",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 62,
+          "authResidue": "23",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 63,
+          "authResidue": "24",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 64,
+          "authResidue": "25",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 65,
+          "authResidue": "26",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 66,
+          "authResidue": "27",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 67,
+          "authResidue": "28",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 68,
+          "authResidue": "29",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 69,
+          "authResidue": "30",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 70,
+          "authResidue": "31",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 71,
+          "authResidue": "32",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 72,
+          "authResidue": "33",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 73,
+          "authResidue": "34",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 74,
+          "authResidue": "35",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 75,
+          "authResidue": "36",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 76,
+          "authResidue": "37",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 77,
+          "authResidue": "38",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 78,
+          "authResidue": "39",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 79,
+          "authResidue": "40",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 80,
+          "authResidue": "41",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 81,
+          "authResidue": "42",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 82,
+          "authResidue": "43",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 83,
+          "authResidue": "44",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 84,
+          "authResidue": "45",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 85,
+          "authResidue": "46",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 86,
+          "authResidue": "47",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 87,
+          "authResidue": "48",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 88,
+          "authResidue": "49",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 89,
+          "authResidue": "50",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 90,
+          "authResidue": "51",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 91,
+          "authResidue": "52",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 92,
+          "authResidue": "53",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 93,
+          "authResidue": "54",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 94,
+          "authResidue": "55",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 95,
+          "authResidue": "56",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 96,
+          "authResidue": "57",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 97,
+          "authResidue": "58",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 98,
+          "authResidue": "59",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 99,
+          "authResidue": "60",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 100,
+          "authResidue": "61",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 101,
+          "authResidue": "62",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 102,
+          "authResidue": "63",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 103,
+          "authResidue": "64",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 104,
+          "authResidue": "65",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 105,
+          "authResidue": "66",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 106,
+          "authResidue": "67",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 107,
+          "authResidue": "68",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 108,
+          "authResidue": "69",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 109,
+          "authResidue": "70",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 110,
+          "authResidue": "71",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 111,
+          "authResidue": "72",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 112,
+          "authResidue": "73",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 113,
+          "authResidue": "74",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 114,
+          "authResidue": "75",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 115,
+          "authResidue": "76",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 116,
+          "authResidue": "77",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 117,
+          "authResidue": "78",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 118,
+          "authResidue": "79",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 119,
+          "authResidue": "80",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 120,
+          "authResidue": "81",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 121,
+          "authResidue": "82",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 122,
+          "authResidue": "83",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 123,
+          "authResidue": "84",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 124,
+          "authResidue": "85",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 125,
+          "authResidue": "86",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 126,
+          "authResidue": "87",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 127,
+          "authResidue": "88",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 128,
+          "authResidue": "89",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 129,
+          "authResidue": "90",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 130,
+          "authResidue": "91",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 131,
+          "authResidue": "92",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 132,
+          "authResidue": "93",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 133,
+          "authResidue": "94",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 134,
+          "authResidue": "95",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 135,
+          "authResidue": "96",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 136,
+          "authResidue": "97",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 137,
+          "authResidue": "98",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 138,
+          "authResidue": "99",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 139,
+          "authResidue": "100",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 140,
+          "authResidue": "101",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 141,
+          "authResidue": "102",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 142,
+          "authResidue": "103",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 143,
+          "authResidue": "104",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 144,
+          "authResidue": "105",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 145,
+          "authResidue": "106",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 146,
+          "authResidue": "107",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 147,
+          "authResidue": "108",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 148,
+          "authResidue": "109",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 149,
+          "authResidue": "110",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 150,
+          "authResidue": "111",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 151,
+          "authResidue": "112",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 152,
+          "authResidue": "113",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 153,
+          "authResidue": "114",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 154,
+          "authResidue": "115",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 155,
+          "authResidue": "116",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 156,
+          "authResidue": "117",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 157,
+          "authResidue": "118",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 158,
+          "authResidue": "119",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 159,
+          "authResidue": "120",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 160,
+          "authResidue": "121",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 161,
+          "authResidue": "122",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 162,
+          "authResidue": "123",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 163,
+          "authResidue": "124",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 164,
+          "authResidue": "125",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 165,
+          "authResidue": "126",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 166,
+          "authResidue": "127",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 167,
+          "authResidue": "128",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 168,
+          "authResidue": "129",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 169,
+          "authResidue": "130",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 170,
+          "authResidue": "131",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 171,
+          "authResidue": "132",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 172,
+          "authResidue": "133",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 173,
+          "authResidue": "134",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 174,
+          "authResidue": "135",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 175,
+          "authResidue": "136",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 176,
+          "authResidue": "137",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 177,
+          "authResidue": "138",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 178,
+          "authResidue": "139",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 179,
+          "authResidue": "140",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 180,
+          "authResidue": "141",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 181,
+          "authResidue": "142",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 182,
+          "authResidue": "143",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 183,
+          "authResidue": "144",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 184,
+          "authResidue": "145",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 185,
+          "authResidue": "146",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 186,
+          "authResidue": "147",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 187,
+          "authResidue": "148",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 188,
+          "authResidue": "149",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 189,
+          "authResidue": "150",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 190,
+          "authResidue": "151",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 191,
+          "authResidue": "152",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 192,
+          "authResidue": "153",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 193,
+          "authResidue": "154",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 194,
+          "authResidue": "155",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 195,
+          "authResidue": "156",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 196,
+          "authResidue": "157",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 197,
+          "authResidue": "158",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 213,
+          "authResidue": "174",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 214,
+          "authResidue": "175",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 215,
+          "authResidue": "176",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 216,
+          "authResidue": "177",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 217,
+          "authResidue": "178",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 218,
+          "authResidue": "179",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 219,
+          "authResidue": "180",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 220,
+          "authResidue": "181",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 221,
+          "authResidue": "182",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 222,
+          "authResidue": "183",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 223,
+          "authResidue": "184",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 224,
+          "authResidue": "185",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 225,
+          "authResidue": "186",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 226,
+          "authResidue": "187",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 227,
+          "authResidue": "188",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 228,
+          "authResidue": "189",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 229,
+          "authResidue": "190",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 230,
+          "authResidue": "191",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 231,
+          "authResidue": "192",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 232,
+          "authResidue": "193",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 233,
+          "authResidue": "194",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 234,
+          "authResidue": "195",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 235,
+          "authResidue": "196",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 236,
+          "authResidue": "197",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 237,
+          "authResidue": "198",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 238,
+          "authResidue": "199",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 239,
+          "authResidue": "200",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 240,
+          "authResidue": "201",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 241,
+          "authResidue": "202",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 242,
+          "authResidue": "203",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 243,
+          "authResidue": "204",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 244,
+          "authResidue": "205",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 245,
+          "authResidue": "206",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 246,
+          "authResidue": "207",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 247,
+          "authResidue": "208",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 248,
+          "authResidue": "209",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 249,
+          "authResidue": "210",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 250,
+          "authResidue": "211",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 251,
+          "authResidue": "212",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 252,
+          "authResidue": "213",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 253,
+          "authResidue": "214",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 254,
+          "authResidue": "215",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 255,
+          "authResidue": "216",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 257,
+          "authResidue": "222",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 258,
+          "authResidue": "223",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 259,
+          "authResidue": "224",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 260,
+          "authResidue": "225",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 261,
+          "authResidue": "226",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 262,
+          "authResidue": "227",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 263,
+          "authResidue": "228",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 264,
+          "authResidue": "229",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 265,
+          "authResidue": "230",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 266,
+          "authResidue": "231",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 267,
+          "authResidue": "232",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 268,
+          "authResidue": "233",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 269,
+          "authResidue": "234",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 270,
+          "authResidue": "235",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 271,
+          "authResidue": "236",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 272,
+          "authResidue": "237",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 273,
+          "authResidue": "238",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 274,
+          "authResidue": "239",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 275,
+          "authResidue": "240",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 276,
+          "authResidue": "241",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 277,
+          "authResidue": "242",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 278,
+          "authResidue": "243",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 279,
+          "authResidue": "244",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 280,
+          "authResidue": "245",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 281,
+          "authResidue": "246",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 282,
+          "authResidue": "247",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 283,
+          "authResidue": "248",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 284,
+          "authResidue": "249",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 285,
+          "authResidue": "250",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 286,
+          "authResidue": "251",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 287,
+          "authResidue": "252",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 288,
+          "authResidue": "253",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 289,
+          "authResidue": "254",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 290,
+          "authResidue": "255",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 291,
+          "authResidue": "256",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 292,
+          "authResidue": "257",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 293,
+          "authResidue": "258",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 294,
+          "authResidue": "259",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 295,
+          "authResidue": "260",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 296,
+          "authResidue": "261",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 297,
+          "authResidue": "262",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 298,
+          "authResidue": "263",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 299,
+          "authResidue": "264",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 300,
+          "authResidue": "265",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 301,
+          "authResidue": "266",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 302,
+          "authResidue": "267",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 303,
+          "authResidue": "268",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 304,
+          "authResidue": "269",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 305,
+          "authResidue": "270",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 306,
+          "authResidue": "271",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 307,
+          "authResidue": "272",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 308,
+          "authResidue": "273",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 309,
+          "authResidue": "274",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 310,
+          "authResidue": "275",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 311,
+          "authResidue": "276",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 312,
+          "authResidue": "277",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 313,
+          "authResidue": "278",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 314,
+          "authResidue": "279",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 315,
+          "authResidue": "280",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 316,
+          "authResidue": "281",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 317,
+          "authResidue": "282",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 318,
+          "authResidue": "283",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 319,
+          "authResidue": "284",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 320,
+          "authResidue": "285",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 321,
+          "authResidue": "286",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 322,
+          "authResidue": "287",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 323,
+          "authResidue": "288",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 324,
+          "authResidue": "289",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 325,
+          "authResidue": "290",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 326,
+          "authResidue": "291",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 327,
+          "authResidue": "292",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 328,
+          "authResidue": "293",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 329,
+          "authResidue": "294",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 330,
+          "authResidue": "295",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 331,
+          "authResidue": "296",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 332,
+          "authResidue": "297",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 333,
+          "authResidue": "298",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 334,
+          "authResidue": "299",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 335,
+          "authResidue": "300",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 336,
+          "authResidue": "301",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 337,
+          "authResidue": "302",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 338,
+          "authResidue": "303",
+          "labelChain": "A",
+          "entity": "1",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 2,
+          "authResidue": "4",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 3,
+          "authResidue": "5",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 4,
+          "authResidue": "6",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 5,
+          "authResidue": "7",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 6,
+          "authResidue": "8",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 7,
+          "authResidue": "9",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 8,
+          "authResidue": "10",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 9,
+          "authResidue": "11",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 10,
+          "authResidue": "12",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 11,
+          "authResidue": "13",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 12,
+          "authResidue": "14",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 13,
+          "authResidue": "15",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 14,
+          "authResidue": "16",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 15,
+          "authResidue": "17",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 16,
+          "authResidue": "18",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 17,
+          "authResidue": "19",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 18,
+          "authResidue": "20",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 19,
+          "authResidue": "21",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 20,
+          "authResidue": "22",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 21,
+          "authResidue": "23",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 22,
+          "authResidue": "24",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 23,
+          "authResidue": "25",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 24,
+          "authResidue": "26",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 25,
+          "authResidue": "27",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 29,
+          "authResidue": "31",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 30,
+          "authResidue": "32",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 31,
+          "authResidue": "33",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 32,
+          "authResidue": "34",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 33,
+          "authResidue": "35",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 34,
+          "authResidue": "36",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "MET"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 35,
+          "authResidue": "37",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 36,
+          "authResidue": "38",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 37,
+          "authResidue": "39",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 38,
+          "authResidue": "40",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 39,
+          "authResidue": "41",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 40,
+          "authResidue": "42",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 41,
+          "authResidue": "43",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 42,
+          "authResidue": "44",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 43,
+          "authResidue": "45",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 44,
+          "authResidue": "46",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 45,
+          "authResidue": "47",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 46,
+          "authResidue": "48",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 47,
+          "authResidue": "49",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 48,
+          "authResidue": "50",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 49,
+          "authResidue": "51",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 50,
+          "authResidue": "52",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 51,
+          "authResidue": "53",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 52,
+          "authResidue": "54",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "THR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 53,
+          "authResidue": "55",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 54,
+          "authResidue": "56",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 55,
+          "authResidue": "57",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 56,
+          "authResidue": "58",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 57,
+          "authResidue": "59",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "THR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 58,
+          "authResidue": "60",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 59,
+          "authResidue": "61",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 60,
+          "authResidue": "62",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 61,
+          "authResidue": "63",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 62,
+          "authResidue": "64",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 63,
+          "authResidue": "65",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 64,
+          "authResidue": "66",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 65,
+          "authResidue": "67",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 66,
+          "authResidue": "68",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 67,
+          "authResidue": "69",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 68,
+          "authResidue": "70",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "THR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 69,
+          "authResidue": "71",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 70,
+          "authResidue": "72",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 71,
+          "authResidue": "73",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 72,
+          "authResidue": "74",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 73,
+          "authResidue": "75",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 74,
+          "authResidue": "76",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 75,
+          "authResidue": "77",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 76,
+          "authResidue": "78",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 77,
+          "authResidue": "79",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "THR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 78,
+          "authResidue": "80",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 79,
+          "authResidue": "81",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 80,
+          "authResidue": "82",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 81,
+          "authResidue": "83",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 82,
+          "authResidue": "84",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "MET"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 83,
+          "authResidue": "85",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 84,
+          "authResidue": "86",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 85,
+          "authResidue": "87",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 86,
+          "authResidue": "88",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 87,
+          "authResidue": "89",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 88,
+          "authResidue": "90",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 89,
+          "authResidue": "91",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 90,
+          "authResidue": "92",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "THR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 91,
+          "authResidue": "93",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 92,
+          "authResidue": "94",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 93,
+          "authResidue": "95",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 94,
+          "authResidue": "96",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 95,
+          "authResidue": "97",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 96,
+          "authResidue": "98",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 97,
+          "authResidue": "99",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 98,
+          "authResidue": "100",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 99,
+          "authResidue": "101",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 100,
+          "authResidue": "102",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 101,
+          "authResidue": "103",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "THR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 102,
+          "authResidue": "104",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 103,
+          "authResidue": "105",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 104,
+          "authResidue": "106",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 105,
+          "authResidue": "107",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 106,
+          "authResidue": "108",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 107,
+          "authResidue": "109",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 108,
+          "authResidue": "110",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 109,
+          "authResidue": "111",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 110,
+          "authResidue": "112",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 111,
+          "authResidue": "113",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 112,
+          "authResidue": "114",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 113,
+          "authResidue": "115",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 114,
+          "authResidue": "116",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 115,
+          "authResidue": "117",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "THR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 116,
+          "authResidue": "118",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 117,
+          "authResidue": "119",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 118,
+          "authResidue": "120",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "THR"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 119,
+          "authResidue": "121",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 120,
+          "authResidue": "122",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        },
+        {
+          "authChain": "C",
+          "labelResidue": 121,
+          "authResidue": "123",
+          "labelChain": "B",
+          "entity": "2",
+          "residue": "SER"
+        }
+      ],
+      "scope": "Reference structural inspection for role and sequence mapping only; no prediction outcomes, no reference masks for selector, no density-based local-quality certification."
+    },
+    {
+      "pdbId": "9W3K",
+      "sourceUrl": "https://files.rcsb.org/download/9W3K.cif",
+      "sha256": "f4eb560bd3b1ec42abe61567c7964c372f3bbfbfa3c71b1ddf32c195dd982e43",
+      "bytes": 1003503,
+      "model": "1",
+      "receptorAuthChain": "A",
+      "vhhAuthChain": "B",
+      "metadataVhhExactSequenceMatch": true,
+      "metadataReceptorExactSequenceMatch": true,
+      "fullInputLengths": {
+        "A": 419,
+        "B": 127
+      },
+      "fullInputSequenceSha256": {
+        "A": "f8905ab49c5a6ac712c0146edb4d72e9bbbdd020355fa8ee3284037dfab8e018",
+        "B": "5f867337653ed65137392ad7fb5a69400c7fc6ec3feee464dbd84198385ced1d"
+      },
+      "canonicalInputSequences": true,
+      "declaredResolutionAngstrom": [
+        3.08
+      ],
+      "screenedConstructFastaSha256": "51d493723011535b55a6ad888041cf7bc0c923d929b6badc697881d4937ae493",
+      "observedResiduesAllMatchEntityLabelSequence": true,
+      "observedResidueCounts": {
+        "A": 275,
+        "B": 126
+      },
+      "minimumHeavyAtomSeparationAngstrom": 2.9119342368947665,
+      "interfaceResiduePairsWithin4_5Angstrom": 23,
+      "residueMapping": [
+        {
+          "authChain": "A",
+          "labelResidue": 19,
+          "authResidue": "19",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 20,
+          "authResidue": "20",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 21,
+          "authResidue": "21",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 22,
+          "authResidue": "22",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 23,
+          "authResidue": "23",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 24,
+          "authResidue": "24",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 25,
+          "authResidue": "25",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 26,
+          "authResidue": "26",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 27,
+          "authResidue": "27",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 28,
+          "authResidue": "28",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 29,
+          "authResidue": "29",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 30,
+          "authResidue": "30",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 31,
+          "authResidue": "31",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 32,
+          "authResidue": "32",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 33,
+          "authResidue": "33",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 34,
+          "authResidue": "34",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 35,
+          "authResidue": "35",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 36,
+          "authResidue": "36",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 37,
+          "authResidue": "37",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 38,
+          "authResidue": "38",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 39,
+          "authResidue": "39",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 40,
+          "authResidue": "40",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 41,
+          "authResidue": "41",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 42,
+          "authResidue": "42",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 43,
+          "authResidue": "43",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 44,
+          "authResidue": "44",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 45,
+          "authResidue": "45",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 46,
+          "authResidue": "46",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 47,
+          "authResidue": "47",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 48,
+          "authResidue": "48",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 49,
+          "authResidue": "49",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 50,
+          "authResidue": "50",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 51,
+          "authResidue": "51",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 52,
+          "authResidue": "52",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 53,
+          "authResidue": "53",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 54,
+          "authResidue": "54",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 55,
+          "authResidue": "55",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 56,
+          "authResidue": "56",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 57,
+          "authResidue": "57",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 58,
+          "authResidue": "58",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 59,
+          "authResidue": "59",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 60,
+          "authResidue": "60",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 61,
+          "authResidue": "61",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 62,
+          "authResidue": "62",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 63,
+          "authResidue": "63",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 64,
+          "authResidue": "64",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 65,
+          "authResidue": "65",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 72,
+          "authResidue": "72",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 73,
+          "authResidue": "73",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 74,
+          "authResidue": "74",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 75,
+          "authResidue": "75",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 76,
+          "authResidue": "76",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 77,
+          "authResidue": "77",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 78,
+          "authResidue": "78",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 79,
+          "authResidue": "79",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 80,
+          "authResidue": "80",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 81,
+          "authResidue": "81",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 82,
+          "authResidue": "82",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 83,
+          "authResidue": "83",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 84,
+          "authResidue": "84",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 85,
+          "authResidue": "85",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 86,
+          "authResidue": "86",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 87,
+          "authResidue": "87",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 88,
+          "authResidue": "88",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 89,
+          "authResidue": "89",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 90,
+          "authResidue": "90",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 91,
+          "authResidue": "91",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 92,
+          "authResidue": "92",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 93,
+          "authResidue": "93",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 94,
+          "authResidue": "94",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 95,
+          "authResidue": "95",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 96,
+          "authResidue": "96",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 97,
+          "authResidue": "97",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 98,
+          "authResidue": "98",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 99,
+          "authResidue": "99",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 100,
+          "authResidue": "100",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 101,
+          "authResidue": "101",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 102,
+          "authResidue": "102",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 103,
+          "authResidue": "103",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 104,
+          "authResidue": "104",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 105,
+          "authResidue": "105",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 106,
+          "authResidue": "106",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 107,
+          "authResidue": "107",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 108,
+          "authResidue": "108",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 109,
+          "authResidue": "109",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 110,
+          "authResidue": "110",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 111,
+          "authResidue": "111",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 112,
+          "authResidue": "112",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 113,
+          "authResidue": "113",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 114,
+          "authResidue": "114",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 115,
+          "authResidue": "115",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 116,
+          "authResidue": "116",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 117,
+          "authResidue": "117",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 118,
+          "authResidue": "118",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 119,
+          "authResidue": "119",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 120,
+          "authResidue": "120",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 121,
+          "authResidue": "121",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 122,
+          "authResidue": "122",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 123,
+          "authResidue": "123",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 124,
+          "authResidue": "124",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 125,
+          "authResidue": "125",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 126,
+          "authResidue": "126",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 127,
+          "authResidue": "127",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 128,
+          "authResidue": "128",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 129,
+          "authResidue": "129",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 130,
+          "authResidue": "130",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 131,
+          "authResidue": "131",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 132,
+          "authResidue": "132",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 133,
+          "authResidue": "133",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 134,
+          "authResidue": "134",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 135,
+          "authResidue": "135",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 136,
+          "authResidue": "136",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 137,
+          "authResidue": "137",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 138,
+          "authResidue": "138",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 139,
+          "authResidue": "139",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 140,
+          "authResidue": "140",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 141,
+          "authResidue": "141",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 154,
+          "authResidue": "154",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 155,
+          "authResidue": "155",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 156,
+          "authResidue": "156",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 157,
+          "authResidue": "157",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 158,
+          "authResidue": "158",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 159,
+          "authResidue": "159",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 160,
+          "authResidue": "160",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 161,
+          "authResidue": "161",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 162,
+          "authResidue": "162",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 163,
+          "authResidue": "163",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 164,
+          "authResidue": "164",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 165,
+          "authResidue": "165",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 166,
+          "authResidue": "166",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 167,
+          "authResidue": "167",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 168,
+          "authResidue": "168",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 169,
+          "authResidue": "169",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 170,
+          "authResidue": "170",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 171,
+          "authResidue": "171",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 172,
+          "authResidue": "172",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 173,
+          "authResidue": "173",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 174,
+          "authResidue": "174",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 175,
+          "authResidue": "175",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 176,
+          "authResidue": "176",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 177,
+          "authResidue": "177",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 178,
+          "authResidue": "178",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 179,
+          "authResidue": "179",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 180,
+          "authResidue": "180",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 181,
+          "authResidue": "181",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 182,
+          "authResidue": "182",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 183,
+          "authResidue": "183",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 184,
+          "authResidue": "184",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 185,
+          "authResidue": "185",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 186,
+          "authResidue": "186",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 187,
+          "authResidue": "187",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 188,
+          "authResidue": "188",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 189,
+          "authResidue": "189",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 190,
+          "authResidue": "190",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 191,
+          "authResidue": "191",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 192,
+          "authResidue": "192",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 193,
+          "authResidue": "193",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 194,
+          "authResidue": "194",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 195,
+          "authResidue": "195",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 196,
+          "authResidue": "196",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 197,
+          "authResidue": "197",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 198,
+          "authResidue": "198",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 199,
+          "authResidue": "199",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 200,
+          "authResidue": "200",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 201,
+          "authResidue": "201",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 202,
+          "authResidue": "202",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 203,
+          "authResidue": "203",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 204,
+          "authResidue": "204",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 205,
+          "authResidue": "205",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 206,
+          "authResidue": "206",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 207,
+          "authResidue": "207",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 208,
+          "authResidue": "208",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 209,
+          "authResidue": "209",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 210,
+          "authResidue": "210",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 211,
+          "authResidue": "211",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 212,
+          "authResidue": "212",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 213,
+          "authResidue": "213",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 214,
+          "authResidue": "214",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 215,
+          "authResidue": "215",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 216,
+          "authResidue": "216",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 217,
+          "authResidue": "217",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 218,
+          "authResidue": "218",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 219,
+          "authResidue": "219",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 220,
+          "authResidue": "220",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 221,
+          "authResidue": "221",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 222,
+          "authResidue": "222",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 223,
+          "authResidue": "223",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 224,
+          "authResidue": "224",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 225,
+          "authResidue": "225",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 226,
+          "authResidue": "226",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 227,
+          "authResidue": "227",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 228,
+          "authResidue": "228",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 229,
+          "authResidue": "229",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 230,
+          "authResidue": "230",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 231,
+          "authResidue": "231",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 232,
+          "authResidue": "232",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 233,
+          "authResidue": "233",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 234,
+          "authResidue": "234",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 235,
+          "authResidue": "235",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 236,
+          "authResidue": "236",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 237,
+          "authResidue": "237",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 238,
+          "authResidue": "238",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 239,
+          "authResidue": "239",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 240,
+          "authResidue": "240",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 241,
+          "authResidue": "241",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 242,
+          "authResidue": "242",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 243,
+          "authResidue": "243",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 244,
+          "authResidue": "244",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 245,
+          "authResidue": "245",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 246,
+          "authResidue": "246",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 247,
+          "authResidue": "247",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 248,
+          "authResidue": "248",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 249,
+          "authResidue": "249",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "THR"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 250,
+          "authResidue": "250",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 251,
+          "authResidue": "251",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 252,
+          "authResidue": "252",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 253,
+          "authResidue": "253",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 254,
+          "authResidue": "254",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 255,
+          "authResidue": "255",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 256,
+          "authResidue": "256",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 257,
+          "authResidue": "257",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 258,
+          "authResidue": "258",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 259,
+          "authResidue": "259",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 260,
+          "authResidue": "260",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 261,
+          "authResidue": "261",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 262,
+          "authResidue": "262",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 263,
+          "authResidue": "263",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 264,
+          "authResidue": "264",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 265,
+          "authResidue": "265",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 266,
+          "authResidue": "266",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 267,
+          "authResidue": "267",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 268,
+          "authResidue": "268",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 269,
+          "authResidue": "269",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 270,
+          "authResidue": "270",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 271,
+          "authResidue": "271",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 272,
+          "authResidue": "272",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 273,
+          "authResidue": "273",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 274,
+          "authResidue": "274",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 275,
+          "authResidue": "275",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 283,
+          "authResidue": "283",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 284,
+          "authResidue": "284",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 285,
+          "authResidue": "285",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 286,
+          "authResidue": "286",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 287,
+          "authResidue": "287",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 288,
+          "authResidue": "288",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 289,
+          "authResidue": "289",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 290,
+          "authResidue": "290",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 291,
+          "authResidue": "291",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 292,
+          "authResidue": "292",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 293,
+          "authResidue": "293",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 294,
+          "authResidue": "294",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 295,
+          "authResidue": "295",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 296,
+          "authResidue": "296",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 297,
+          "authResidue": "297",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 298,
+          "authResidue": "298",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 299,
+          "authResidue": "299",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 300,
+          "authResidue": "300",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 301,
+          "authResidue": "301",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 302,
+          "authResidue": "302",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 303,
+          "authResidue": "303",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 304,
+          "authResidue": "304",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 305,
+          "authResidue": "305",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 306,
+          "authResidue": "306",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 307,
+          "authResidue": "307",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 308,
+          "authResidue": "308",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 309,
+          "authResidue": "309",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "MET"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 310,
+          "authResidue": "310",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "SER"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 311,
+          "authResidue": "311",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 312,
+          "authResidue": "312",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 313,
+          "authResidue": "313",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 314,
+          "authResidue": "314",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 315,
+          "authResidue": "315",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 316,
+          "authResidue": "316",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 317,
+          "authResidue": "317",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "A",
+          "labelResidue": 318,
+          "authResidue": "318",
+          "labelChain": "D",
+          "entity": "4",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 2,
+          "authResidue": "2",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 3,
+          "authResidue": "3",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 4,
+          "authResidue": "4",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 5,
+          "authResidue": "5",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 6,
+          "authResidue": "6",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 7,
+          "authResidue": "7",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 8,
+          "authResidue": "8",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 9,
+          "authResidue": "9",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 10,
+          "authResidue": "10",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 11,
+          "authResidue": "11",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 12,
+          "authResidue": "12",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 13,
+          "authResidue": "13",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 14,
+          "authResidue": "14",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 15,
+          "authResidue": "15",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 16,
+          "authResidue": "16",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 17,
+          "authResidue": "17",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 18,
+          "authResidue": "18",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 19,
+          "authResidue": "19",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 20,
+          "authResidue": "20",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 21,
+          "authResidue": "21",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 22,
+          "authResidue": "22",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 23,
+          "authResidue": "23",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 24,
+          "authResidue": "24",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 25,
+          "authResidue": "25",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 26,
+          "authResidue": "26",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 27,
+          "authResidue": "27",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 28,
+          "authResidue": "28",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "THR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 29,
+          "authResidue": "29",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 30,
+          "authResidue": "30",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 31,
+          "authResidue": "31",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 32,
+          "authResidue": "32",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 33,
+          "authResidue": "33",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 34,
+          "authResidue": "34",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 35,
+          "authResidue": "35",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "MET"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 36,
+          "authResidue": "36",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 37,
+          "authResidue": "37",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 38,
+          "authResidue": "38",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 39,
+          "authResidue": "39",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 40,
+          "authResidue": "40",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 41,
+          "authResidue": "41",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 42,
+          "authResidue": "42",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 43,
+          "authResidue": "43",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 44,
+          "authResidue": "44",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 45,
+          "authResidue": "45",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 46,
+          "authResidue": "46",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 47,
+          "authResidue": "47",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 48,
+          "authResidue": "48",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 49,
+          "authResidue": "49",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 50,
+          "authResidue": "50",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 51,
+          "authResidue": "51",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 52,
+          "authResidue": "52",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 53,
+          "authResidue": "53",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "THR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 54,
+          "authResidue": "54",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 55,
+          "authResidue": "55",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 56,
+          "authResidue": "56",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 57,
+          "authResidue": "57",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 58,
+          "authResidue": "58",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "THR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 59,
+          "authResidue": "59",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 60,
+          "authResidue": "60",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 61,
+          "authResidue": "61",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 62,
+          "authResidue": "62",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 63,
+          "authResidue": "63",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 64,
+          "authResidue": "64",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 65,
+          "authResidue": "65",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 66,
+          "authResidue": "66",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 67,
+          "authResidue": "67",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 68,
+          "authResidue": "68",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "PHE"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 69,
+          "authResidue": "69",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "THR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 70,
+          "authResidue": "70",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 71,
+          "authResidue": "71",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 72,
+          "authResidue": "72",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 73,
+          "authResidue": "73",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 74,
+          "authResidue": "74",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 75,
+          "authResidue": "75",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 76,
+          "authResidue": "76",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 77,
+          "authResidue": "77",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 78,
+          "authResidue": "78",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "THR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 79,
+          "authResidue": "79",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 80,
+          "authResidue": "80",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 81,
+          "authResidue": "81",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 82,
+          "authResidue": "82",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 83,
+          "authResidue": "83",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "MET"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 84,
+          "authResidue": "84",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 85,
+          "authResidue": "85",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 86,
+          "authResidue": "86",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 87,
+          "authResidue": "87",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LYS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 88,
+          "authResidue": "88",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "PRO"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 89,
+          "authResidue": "89",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 90,
+          "authResidue": "90",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 91,
+          "authResidue": "91",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "THR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 92,
+          "authResidue": "92",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 93,
+          "authResidue": "93",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 94,
+          "authResidue": "94",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 95,
+          "authResidue": "95",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 96,
+          "authResidue": "96",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "CYS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 97,
+          "authResidue": "97",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ASN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 98,
+          "authResidue": "98",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ALA"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 99,
+          "authResidue": "99",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 100,
+          "authResidue": "100",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TYR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 101,
+          "authResidue": "101",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ARG"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 102,
+          "authResidue": "102",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "THR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 103,
+          "authResidue": "103",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 104,
+          "authResidue": "104",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ILE"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 105,
+          "authResidue": "105",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 106,
+          "authResidue": "106",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 107,
+          "authResidue": "107",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 108,
+          "authResidue": "108",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 109,
+          "authResidue": "109",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 110,
+          "authResidue": "110",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "ASP"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 111,
+          "authResidue": "111",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 112,
+          "authResidue": "112",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "TRP"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 113,
+          "authResidue": "113",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 114,
+          "authResidue": "114",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 115,
+          "authResidue": "115",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLY"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 116,
+          "authResidue": "116",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "THR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 117,
+          "authResidue": "117",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLN"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 118,
+          "authResidue": "118",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 119,
+          "authResidue": "119",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "THR"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 120,
+          "authResidue": "120",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "VAL"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 121,
+          "authResidue": "121",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 122,
+          "authResidue": "122",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "SER"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 123,
+          "authResidue": "123",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "LEU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 124,
+          "authResidue": "124",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "GLU"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 125,
+          "authResidue": "125",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 126,
+          "authResidue": "126",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "HIS"
+        },
+        {
+          "authChain": "B",
+          "labelResidue": 127,
+          "authResidue": "127",
+          "labelChain": "E",
+          "entity": "5",
+          "residue": "HIS"
+        }
+      ],
+      "scope": "Reference structural inspection for role and sequence mapping only; no prediction outcomes, no reference masks for selector, no density-based local-quality certification."
+    }
+  ]
+}

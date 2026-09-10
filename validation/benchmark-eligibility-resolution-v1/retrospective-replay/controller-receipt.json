@@ -1,0 +1,25 @@
+{
+  "status": "COMPLETED_WITH_DECLARED_MISSINGNESS_AND_ABSTENTIONS",
+  "seconds": 29.06599775000359,
+  "stages": [
+    {
+      "stage": "score",
+      "seconds": 12.763948958017863
+    },
+    {
+      "stage": "dockq",
+      "seconds": 13.408597250003368
+    },
+    {
+      "stage": "compare",
+      "seconds": 0.04055804101517424
+    }
+  ],
+  "cpuDeadlineSeconds": 2700,
+  "newGeneration": false,
+  "newGpuHours": 0,
+  "newCloudCostUSD": 0,
+  "bundleFreezeSha256": "899d27511a1a16ae6a3de0f459bf3603be27427ec0efe2a2f859231058d2eb1d",
+  "independentValidation": false,
+  "scope": "Retrospective compatibility/audit evaluation. Any exact test output is mechanically produced by the frozen implementation and has no confirmatory interpretation on these exposed groups."
+}

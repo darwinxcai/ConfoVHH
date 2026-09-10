@@ -1,0 +1,129 @@
+{
+  "schema": "confovhh.exploratory-native-confidence-freeze.v1",
+  "frozenAtUtc": "2026-09-10T15:25:59.628167+00:00",
+  "beforeSelectEvaluateExecution": true,
+  "knownCandidateDockQOutcomes": true,
+  "repositoryFiles": [
+    {
+      "path": "scripts/benchmark/predictor-native-confidence-v1.py",
+      "bytes": 14867,
+      "sha256": "c7fcfccf12184f8383a66c093fb02ff253c60c8244e21d0e41844e002fe785df"
+    },
+    {
+      "path": "tests/test_predictor_native_confidence_v1.py",
+      "bytes": 2749,
+      "sha256": "88028ab8d2a2b1eccc47f7f35328fd8786051da633cb304b1a5c57cba107d7a4"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/archive-provenance.json",
+      "bytes": 732,
+      "sha256": "de96a674542f72f065bbd1318abe8868fd574514d6a16c5225509c9041108582"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/controller-receipt.json",
+      "bytes": 768,
+      "sha256": "5e1c4516635cf8adadd4433d99f1c3c23c200121eea2371498602b652955cacf"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/dockq-crosschecks.json",
+      "bytes": 871,
+      "sha256": "a8f283625b87bf0fd725ecfa583f7a128c74e3b3441e26e23f848451280c8aa8"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/dockq-outcomes.json",
+      "bytes": 5885,
+      "sha256": "e7c08a3090fdc47ec83adf316d42d21dd369f4e04d298b3f22f9724e2cae7dc3"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/dockq-receipt.json",
+      "bytes": 379,
+      "sha256": "d927f1162d6c3ddab64da7a12803d3934eeb2aca0f48bdc2f6603d002b72a365"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/evaluation.json",
+      "bytes": 33871,
+      "sha256": "c5b0c5d7f2f5e00869a2c3bdacb0c77322a1fa4e6fb2da70307d2d77d1719bfe"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/freeze.json",
+      "bytes": 16817,
+      "sha256": "899d27511a1a16ae6a3de0f459bf3603be27427ec0efe2a2f859231058d2eb1d"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/input-and-reference-review.json",
+      "bytes": 7479,
+      "sha256": "abc66d7420bad90c06cb9baa6602a35342b63f8862261d513edd75b6bb218898"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/plan.json",
+      "bytes": 24769,
+      "sha256": "751b6b4481c3c38bef4b29ce49dd707250efb27bee9e7f63f0e406f2761c1be0"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/precheck.json",
+      "bytes": 1389,
+      "sha256": "e1ca5ea3ae35667f7502f9e7e855875edebd6216898ab5ad846e904e14dbb5c8"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/references-template.json",
+      "bytes": 1312,
+      "sha256": "1cf520482c340b13156f7fc368afdfe309802c542104a10105f610508ed2b6c5"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/score-attempts.json",
+      "bytes": 12461,
+      "sha256": "c404f4d10edad24b8a4f129a4160d6fe33f0e971ce8622a128fda767ad92c73e"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/score-features.json",
+      "bytes": 13952,
+      "sha256": "cf8fd8d35ab3d0b1904b884185e7ece8f3cc795ca40022489f9682d90dbb4fb8"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/score-ranks.json",
+      "bytes": 44492,
+      "sha256": "85ba2f7740903a29c5bba8c20eb91efe8e652474ee226c4229dfdb53927d9b0b"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/score-receipt.json",
+      "bytes": 937,
+      "sha256": "ef72dbd0654d5c9a3047c11927c4c92b5dd13fd7736e48836e2bb5205b75e098"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/study-design.json",
+      "bytes": 1765,
+      "sha256": "ba36f9d3598a8fe4fb63665e0a50228be6e9cad3838c5524267415e3ae091b86"
+    },
+    {
+      "path": "validation/exploratory-predictor-native-confidence-v1/PROTOCOL.md",
+      "bytes": 5443,
+      "sha256": "57e0ae790078d946b057768f46ba9ffeef2b674c7eb6c0010e1bead16ee76736"
+    },
+    {
+      "path": "validation/exploratory-predictor-native-confidence-v1/policy-v1.json",
+      "bytes": 1404,
+      "sha256": "ba8d630d97067e1c607484152df62462115a7bcb422679ec85b583a94904137d"
+    },
+    {
+      "path": "validation/exploratory-predictor-native-confidence-v1/primary-documentation.json",
+      "bytes": 2358,
+      "sha256": "bc4e1d882e95060407937d528b19908f01c57656b4c5afdc6fe18394f50c061c"
+    },
+    {
+      "path": "validation/exploratory-predictor-native-confidence-v1/provenance/provenance.json",
+      "bytes": 60286,
+      "sha256": "31ae5f1f3e747e54d82f61e20478f34c15ee59893a498cdc21463840017bc60a"
+    },
+    {
+      "path": "validation/exploratory-predictor-native-confidence-v1/test.stderr.log",
+      "bytes": 1393,
+      "sha256": "e2ac10c8d4d9346c0a1706de8f30994e5aff491ceb22fff8608e6f1940362fcc"
+    },
+    {
+      "path": "validation/exploratory-predictor-native-confidence-v1/test.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "replayPlanSha256": "751b6b4481c3c38bef4b29ce49dd707250efb27bee9e7f63f0e406f2761c1be0"
+}
