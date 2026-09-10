@@ -1,0 +1,226 @@
+{
+  "schema": "confovhh.eligibility-resolution-package.v1",
+  "kind": "Post-execution evidence package; original preparation freeze and pre-replay input freeze retained separately.",
+  "files": [
+    {
+      "path": "scripts/benchmark/inspect-eligibility-references-v1.py",
+      "bytes": 3987,
+      "sha256": "af01996133015ba56bdf8ac8bd617f4b140dd74a2a5e60dbcfc6c3d43fbc59ae"
+    },
+    {
+      "path": "scripts/benchmark/prepare-retrospective-replay-v1.py",
+      "bytes": 7947,
+      "sha256": "24f3b0d83146a602e28c2b39aaa526fac08da6d0822dc1f5fec850f04db62491"
+    },
+    {
+      "path": "scripts/benchmark/report-retrospective-replay-v1.py",
+      "bytes": 4822,
+      "sha256": "aa8c03f291f998d2695d936398f995e2db0195b245f4f0a38a85dbb7ee1af649"
+    },
+    {
+      "path": "scripts/benchmark/resolve-eligibility-v1.py",
+      "bytes": 4330,
+      "sha256": "c2af5852751eb6acabae8c7ce6ffdf8d84267acfd9577b4968c6cd9d038e6fcc"
+    },
+    {
+      "path": "scripts/benchmark/resolve-nb6-sequences-v1.mjs",
+      "bytes": 3214,
+      "sha256": "fd91f3ecc9a995ba926dd90cb6e1b133c26d7296900473c0b1d223b992617227"
+    },
+    {
+      "path": "scripts/benchmark/run-retrospective-replay-v1.py",
+      "bytes": 3802,
+      "sha256": "ab1808e380a2fa612959b9a2325a9671630b8c6582d5807dfb529a4a7bb2b112"
+    },
+    {
+      "path": "scripts/benchmark/verify-eligibility-resolution-v1.py",
+      "bytes": 3202,
+      "sha256": "816245e514140db980e82a29eeb456f0e23fb0ad72ca578215f7bd096bb526fd"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/7UL3-screened-constructs.fasta",
+      "bytes": 549,
+      "sha256": "15561eab96d1fc8a14f951081e092629f0c72f023d1855fa1cbbf5c119be68e4"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/9W3K-screened-constructs.fasta",
+      "bytes": 564,
+      "sha256": "51d493723011535b55a6ad888041cf7bc0c923d929b6badc697881d4937ae493"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/MANUSCRIPT_ADDENDUM.md",
+      "bytes": 1534,
+      "sha256": "e3ab208f0e4fc56c64725d5b8de8625d12b85a849c82aed57614fbbb61c9f54a"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/README.md",
+      "bytes": 12566,
+      "sha256": "9a033706ed8ed31004b60a0c38e0c643aa73e78d2ab2e15449300fba3ac38b21"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/blocked-entry-resolution.csv",
+      "bytes": 166022,
+      "sha256": "3c52fb5f861a20cfd417036430cad3b6fca2427bb3a7c8f0845b7984442b3297"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/blocked-entry-resolution.json",
+      "bytes": 261139,
+      "sha256": "12b1b5fe2c00f960ad52f8ad7871a7fe224506b89819426618002106ae4b8fba"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/blocker-summary.json",
+      "bytes": 2007,
+      "sha256": "5ba19f7fe8eef59b88af5b1e672df675322482cb02db4324433136b09ceb5521"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/cleared-targets.json",
+      "bytes": 358,
+      "sha256": "32a3ef66276eaed5f65d31b107ffac70f35d9c70de118a4ff32885fb6e77d95d"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/legacy-confidence-verification.json",
+      "bytes": 6715,
+      "sha256": "6bc4f77b270580c2b349dce6b9fed65c00328832d41bb35f1fdcc0322e5c4b0b"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/preparation-attempt-01/failure.txt",
+      "bytes": 289,
+      "sha256": "2941f0b286e2e51253d7cddd020f2a4cf08d2e54543fd9a9e4e34e84925cce3d"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/preparation-attempt-01/prepare-retrospective-replay-v1.py",
+      "bytes": 7892,
+      "sha256": "9d59559d69bace38c09dbd96d13e19b4fc60c9d3395a594f2fe83975de29b316"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/preparation-attempt-02/coordinate-precheck-failure.json",
+      "bytes": 3403,
+      "sha256": "7c8c4a76a57b4e0bc63f2b2c3f641b3be450abd58c95173c9aef86111ecfe33f"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/preparation-attempt-02/failure.txt",
+      "bytes": 570,
+      "sha256": "e1622f4c1e236c5ce021e0609d3f8e3e1f6c6c27e39850907becb99ab1681ca7"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/preparation-attempt-02/prepare-retrospective-replay-v1.py",
+      "bytes": 7888,
+      "sha256": "805aed496d808f6fbd3d68b66f66d9b6c1501c95f76d6d07c11b3d089ac305c9"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/reference-inspection.json",
+      "bytes": 153757,
+      "sha256": "f63bf9a43c4246813b8d833504cbeedc555971dab0df305fcc5069b42623ed89"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/relatedness-groups.json",
+      "bytes": 21476,
+      "sha256": "c67c4b7f02af4f37837ec14c74f87b66912016ee1287d86dcd9603c67b1214c3"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/all-20-selections.csv",
+      "bytes": 3768,
+      "sha256": "36720cd61f5b14db0332a4e682799f830f689ee205a83ad33d43e8ffc24dc09c"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/all-40-attempts.csv",
+      "bytes": 14969,
+      "sha256": "d91c4b5b55f3b46358f5625bc2d25a5ab6f121317e081e96e967006036f41c6b"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/archive-provenance.json",
+      "bytes": 732,
+      "sha256": "de96a674542f72f065bbd1318abe8868fd574514d6a16c5225509c9041108582"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/controller-receipt.json",
+      "bytes": 768,
+      "sha256": "5e1c4516635cf8adadd4433d99f1c3c23c200121eea2371498602b652955cacf"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/dockq-crosschecks.json",
+      "bytes": 871,
+      "sha256": "a8f283625b87bf0fd725ecfa583f7a128c74e3b3441e26e23f848451280c8aa8"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/dockq-outcomes.json",
+      "bytes": 5885,
+      "sha256": "e7c08a3090fdc47ec83adf316d42d21dd369f4e04d298b3f22f9724e2cae7dc3"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/dockq-receipt.json",
+      "bytes": 379,
+      "sha256": "d927f1162d6c3ddab64da7a12803d3934eeb2aca0f48bdc2f6603d002b72a365"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/evaluation.json",
+      "bytes": 33871,
+      "sha256": "c5b0c5d7f2f5e00869a2c3bdacb0c77322a1fa4e6fb2da70307d2d77d1719bfe"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/freeze.json",
+      "bytes": 16817,
+      "sha256": "899d27511a1a16ae6a3de0f459bf3603be27427ec0efe2a2f859231058d2eb1d"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/input-and-reference-review.json",
+      "bytes": 7479,
+      "sha256": "abc66d7420bad90c06cb9baa6602a35342b63f8862261d513edd75b6bb218898"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/plan.json",
+      "bytes": 24769,
+      "sha256": "751b6b4481c3c38bef4b29ce49dd707250efb27bee9e7f63f0e406f2761c1be0"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/precheck.json",
+      "bytes": 1389,
+      "sha256": "e1ca5ea3ae35667f7502f9e7e855875edebd6216898ab5ad846e904e14dbb5c8"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/references-template.json",
+      "bytes": 1312,
+      "sha256": "1cf520482c340b13156f7fc368afdfe309802c542104a10105f610508ed2b6c5"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/score-attempts.json",
+      "bytes": 12461,
+      "sha256": "c404f4d10edad24b8a4f129a4160d6fe33f0e971ce8622a128fda767ad92c73e"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/score-features.json",
+      "bytes": 13952,
+      "sha256": "cf8fd8d35ab3d0b1904b884185e7ece8f3cc795ca40022489f9682d90dbb4fb8"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/score-ranks.json",
+      "bytes": 44492,
+      "sha256": "85ba2f7740903a29c5bba8c20eb91efe8e652474ee226c4229dfdb53927d9b0b"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/score-receipt.json",
+      "bytes": 937,
+      "sha256": "ef72dbd0654d5c9a3047c11927c4c92b5dd13fd7736e48836e2bb5205b75e098"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/retrospective-replay/study-design.json",
+      "bytes": 1765,
+      "sha256": "ba36f9d3598a8fe4fb63665e0a50228be6e9cad3838c5524267415e3ae091b86"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/sequence-resolution.json",
+      "bytes": 59921,
+      "sha256": "964dfe6ec30aff3efd8194c23b0e112803f17b79ddd57a4c956ca4ac1df2be56"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/source-and-exposure-assessments.json",
+      "bytes": 3241,
+      "sha256": "7f51cb92c95deaabe295298e1fbf1d3d981591769701053d5f6fbc510454fa9a"
+    },
+    {
+      "path": "validation/benchmark-eligibility-resolution-v1/verification.json",
+      "bytes": 587,
+      "sha256": "9dde78a0a4dff056c3cc281a1747902f015e6309cf94cd4e8b3633ecbac13874"
+    }
+  ]
+}

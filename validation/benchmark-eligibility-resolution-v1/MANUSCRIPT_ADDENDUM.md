@@ -1,0 +1,7 @@
+# Evidence addendum: exposed multi-complex replay
+
+This record extends implementation coverage, not independent validation. The previously frozen five methods were replayed on 35 existing coordinates from four exposed reference complexes, with 40 planned records retained. Five legacy 5JQH coordinates were missing. All 35 coordinates received official DockQ evaluation with passing first-candidate API/CLI crosschecks. The three legacy predictor-confidence arms abstained because their source files do not contain the frozen Boltz confidence field.
+
+The original 3P0G negative result reproduced. Both exploratory graded methods selected a worse pose than burial alone on 4MQS (DockQ 0.738287 versus 0.777000); they tied burial on the other available target sets. These losses, missing records and abstentions are retained. This mixed-predictor retrospective exercise does not establish selection superiority, generalization, a calibrated meaning of structural warnings or audit utility for end users.
+
+Eligibility work resolved two apparent frontier entries as development-connected: 7UL3 through source-backed Nb6 parent/graft ancestry, despite failing the numerical framework threshold, and 9W3K through the frozen Nb6 sequence-relatedness rule and verified deposited chain roles. The remaining 268 curated blocked entries are not declared scientifically ineligible. There are still zero cleared independent groups. No target count, power claim or independent validation result is inferred from provisional relatedness components.

@@ -1,0 +1,1769 @@
+{
+  "schema": "confovhh.eligibility-sequence-resolution.v1",
+  "inputs": [
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "sha256": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/entries.jsonl",
+      "sha256": "6aa103cf88f5fb69874842da11ce5306a23429f7590a77210f892a40ef046017"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/development-vhh-profiles.jsonl",
+      "sha256": "1c791d337d628a1de397eb33cfe5685d76953e169bfbf1077798365fa9fa8730"
+    }
+  ],
+  "results": [
+    {
+      "pdbId": "7UL3",
+      "metadataTitle": "CryoEM Structure of Inactive H2R Bound to Famotidine, Nb6M, and NabFab",
+      "entity": {
+        "authAsymIds": [
+          "C"
+        ],
+        "description": "Nanobody 6M",
+        "entityId": "2",
+        "labelAsymIds": [
+          "B"
+        ],
+        "metadataSignals": {
+          "auxiliaryLexical": false,
+          "camelidSource": false,
+          "constructRiskLexical": false,
+          "vhhDescription": true,
+          "vhhLength": true,
+          "vhhLikeCandidate": true
+        },
+        "polymerType": "Protein",
+        "polymerTypeDetail": "polypeptide(L)",
+        "rcsbId": "7UL3_2",
+        "referenceSequences": [],
+        "sequence": "QRQLVESGGGLVQPGGSLRLSCAASGTIFRLYDMGWFRQAPGKEREGVASITSGGSTKYADSVKGRFTISRDNAKNTVYLQMNSLEPEDTAVYYCNAEYRTGIWEELLDGWGKGTPVTVSSHHHHHHEPEA",
+        "sequenceLength": 131,
+        "sequenceSha256": "5cce1ef6fc9e707b7456ebf5352ae7fe33691e4d191e66d21fc0b28bf49a564e",
+        "sourceOrganisms": [
+          {
+            "scientificName": "synthetic construct",
+            "taxonomyId": "32630"
+          }
+        ]
+      },
+      "numbering": {
+        "numberingStatus": "NUMBERED",
+        "numberingFailureCode": null,
+        "numberingFailureMessage": null,
+        "numberingScheme": "IMGT",
+        "numberingEngine": "immunum 1.3.0",
+        "detectedChain": "H",
+        "confidence": 0.6972119212150574,
+        "queryStart": 0,
+        "queryEnd": 120,
+        "frameworkSequence": "QRQLVESGGGLVQPGGSLRLSCAASMGWFRQAPGKEREGVASKYADSVKGRFTISRDNAKNTVYLQMNSLEPEDTAVYYCWGKGTPVTVSS",
+        "frameworkLength": 91,
+        "frameworkSequenceSha256": "5ecb64e0dbd2719874af034b3906f250d8760be6d2238f9809594efb27ee5a58",
+        "cdr3Sequence": "NAEYRTGIWEELLDG",
+        "cdr3Length": 15,
+        "cdr3SequenceSha256": "f305f7167779810dfd19bbf4dff35c95638c2fdab579bdace74f4a30d3685134",
+        "imgtRegionLengths": {
+          "FR1-IMGT": 25,
+          "CDR1-IMGT": 8,
+          "FR2-IMGT": 17,
+          "CDR2-IMGT": 7,
+          "FR3-IMGT": 38,
+          "CDR3-IMGT": 15,
+          "FR4-IMGT": 11
+        },
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true
+      },
+      "comparisons": [
+        {
+          "developmentId": "development:3P0G",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 405,
+            "identicalResidueColumns": 78,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.857142857143
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 0,
+            "identicalResidueColumns": 4,
+            "alignmentColumns": 16,
+            "gapColumns": 3,
+            "identity": 0.25
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 1,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:4MQS",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 387,
+            "identicalResidueColumns": 75,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.824175824176
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -18,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 17,
+            "gapColumns": 8,
+            "identity": 0.117647058824
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 4,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:4XT1",
+          "developmentEntityId": "3",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 419,
+            "identicalResidueColumns": 80,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.879120879121
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 4,
+            "identicalResidueColumns": 7,
+            "alignmentColumns": 15,
+            "gapColumns": 3,
+            "identity": 0.466666666667
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 3,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:5C1M",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 377,
+            "identicalResidueColumns": 74,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.813186813187
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -14,
+            "identicalResidueColumns": 3,
+            "alignmentColumns": 17,
+            "gapColumns": 2,
+            "identity": 0.176470588235
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 2,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:5JQH",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 408,
+            "identicalResidueColumns": 80,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.879120879121
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 0,
+            "identicalResidueColumns": 4,
+            "alignmentColumns": 15,
+            "gapColumns": 2,
+            "identity": 0.266666666667
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 2,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6B73",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 377,
+            "identicalResidueColumns": 74,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.813186813187
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -14,
+            "identicalResidueColumns": 3,
+            "alignmentColumns": 17,
+            "gapColumns": 2,
+            "identity": 0.176470588235
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 2,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6DO1",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 421,
+            "identicalResidueColumns": 82,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.901098901099
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -24,
+            "identicalResidueColumns": 3,
+            "alignmentColumns": 20,
+            "gapColumns": 5,
+            "identity": 0.15
+          },
+          "frameworkIdentitySatisfied": true,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 5,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6IBL",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 405,
+            "identicalResidueColumns": 78,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.857142857143
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 0,
+            "identicalResidueColumns": 4,
+            "alignmentColumns": 16,
+            "gapColumns": 3,
+            "identity": 0.25
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 1,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6KNM",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 403,
+            "identicalResidueColumns": 77,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.846153846154
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -5,
+            "identicalResidueColumns": 6,
+            "alignmentColumns": 23,
+            "gapColumns": 8,
+            "identity": 0.260869565217
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 8,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6O3C",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 418,
+            "identicalResidueColumns": 81,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.89010989011
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -21,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 18,
+            "gapColumns": 5,
+            "identity": 0.111111111111
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 1,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6RNK",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 402,
+            "identicalResidueColumns": 76,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.835164835165
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -16,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 22,
+            "gapColumns": 7,
+            "identity": 0.090909090909
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 7,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6VI4",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 386,
+            "identicalResidueColumns": 75,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.824175824176
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 83,
+            "identicalResidueColumns": 15,
+            "alignmentColumns": 15,
+            "gapColumns": 0,
+            "identity": 1
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": true,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 0,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:7L1V",
+          "developmentEntityId": "6",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 401,
+            "identicalResidueColumns": 79,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.868131868132
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -19,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 15,
+            "gapColumns": 7,
+            "identity": 0.133333333333
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 7,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:7YM8",
+          "developmentEntityId": "3",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 419,
+            "identicalResidueColumns": 81,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.89010989011
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -17,
+            "identicalResidueColumns": 3,
+            "alignmentColumns": 17,
+            "gapColumns": 8,
+            "identity": 0.176470588235
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 4,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:8FCZ",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 345,
+            "identicalResidueColumns": 70,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.769230769231
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -11,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 15,
+            "gapColumns": 6,
+            "identity": 0.133333333333
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 6,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:8QOT",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 437,
+            "identicalResidueColumns": 84,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.923076923077
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 8,
+            "identicalResidueColumns": 4,
+            "alignmentColumns": 17,
+            "gapColumns": 2,
+            "identity": 0.235294117647
+          },
+          "frameworkIdentitySatisfied": true,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 2,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:8QOT",
+          "developmentEntityId": "5",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 409,
+            "identicalResidueColumns": 79,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.868131868132
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -10,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 15,
+            "gapColumns": 1,
+            "identity": 0.133333333333
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 1,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:8QW4",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 403,
+            "identicalResidueColumns": 78,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.857142857143
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 7,
+            "identicalResidueColumns": 5,
+            "alignmentColumns": 15,
+            "gapColumns": 4,
+            "identity": 0.333333333333
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 4,
+          "thresholdCriterionSatisfied": false
+        }
+      ]
+    },
+    {
+      "pdbId": "9W3K",
+      "metadataTitle": "GPR151-Legobody complex",
+      "entity": {
+        "authAsymIds": [
+          "B"
+        ],
+        "description": "NB6",
+        "entityId": "5",
+        "labelAsymIds": [
+          "E"
+        ],
+        "metadataSignals": {
+          "auxiliaryLexical": false,
+          "camelidSource": false,
+          "constructRiskLexical": false,
+          "vhhDescription": false,
+          "vhhLength": true,
+          "vhhLikeCandidate": false
+        },
+        "polymerType": "Protein",
+        "polymerTypeDetail": "polypeptide(L)",
+        "rcsbId": "9W3K_5",
+        "referenceSequences": [],
+        "sequence": "MQVQLQESGGGLVQAGESLRLSCAASGTIFRLYDMGWYRRAPGKQRELVASITSGGSTKYGDSVKGRFTISRDNAKNTVYLQMSSLKPEDTAVYYCNAEYRTGIWEELLDGWGQGTQVTVSSLEHHH",
+        "sequenceLength": 127,
+        "sequenceSha256": "5f867337653ed65137392ad7fb5a69400c7fc6ec3feee464dbd84198385ced1d",
+        "sourceOrganisms": [
+          {
+            "scientificName": "Spodoptera frugiperda",
+            "taxonomyId": "7108"
+          }
+        ]
+      },
+      "numbering": {
+        "numberingStatus": "NUMBERED",
+        "numberingFailureCode": null,
+        "numberingFailureMessage": null,
+        "numberingScheme": "IMGT",
+        "numberingEngine": "immunum 1.3.0",
+        "detectedChain": "H",
+        "confidence": 0.6923536062240601,
+        "queryStart": 1,
+        "queryEnd": 121,
+        "frameworkSequence": "QVQLQESGGGLVQAGESLRLSCAASMGWYRRAPGKQRELVASKYGDSVKGRFTISRDNAKNTVYLQMSSLKPEDTAVYYCWGQGTQVTVSS",
+        "frameworkLength": 91,
+        "frameworkSequenceSha256": "6430f3d7375d9a1e95d915f6883dfeb3c47fbfc587771d965e394ad61cfcd7f9",
+        "cdr3Sequence": "NAEYRTGIWEELLDG",
+        "cdr3Length": 15,
+        "cdr3SequenceSha256": "f305f7167779810dfd19bbf4dff35c95638c2fdab579bdace74f4a30d3685134",
+        "imgtRegionLengths": {
+          "FR1-IMGT": 25,
+          "CDR1-IMGT": 8,
+          "FR2-IMGT": 17,
+          "CDR2-IMGT": 7,
+          "FR3-IMGT": 38,
+          "CDR3-IMGT": 15,
+          "FR4-IMGT": 11
+        },
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true
+      },
+      "comparisons": [
+        {
+          "developmentId": "development:3P0G",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 432,
+            "identicalResidueColumns": 83,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.912087912088
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 0,
+            "identicalResidueColumns": 4,
+            "alignmentColumns": 16,
+            "gapColumns": 3,
+            "identity": 0.25
+          },
+          "frameworkIdentitySatisfied": true,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 1,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:4MQS",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 394,
+            "identicalResidueColumns": 75,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.824175824176
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -18,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 17,
+            "gapColumns": 8,
+            "identity": 0.117647058824
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 4,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:4XT1",
+          "developmentEntityId": "3",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 420,
+            "identicalResidueColumns": 81,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.89010989011
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 4,
+            "identicalResidueColumns": 7,
+            "alignmentColumns": 15,
+            "gapColumns": 3,
+            "identity": 0.466666666667
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 3,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:5C1M",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 368,
+            "identicalResidueColumns": 72,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.791208791209
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -14,
+            "identicalResidueColumns": 3,
+            "alignmentColumns": 17,
+            "gapColumns": 2,
+            "identity": 0.176470588235
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 2,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:5JQH",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 433,
+            "identicalResidueColumns": 84,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.923076923077
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 0,
+            "identicalResidueColumns": 4,
+            "alignmentColumns": 15,
+            "gapColumns": 2,
+            "identity": 0.266666666667
+          },
+          "frameworkIdentitySatisfied": true,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 2,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6B73",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 368,
+            "identicalResidueColumns": 72,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.791208791209
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -14,
+            "identicalResidueColumns": 3,
+            "alignmentColumns": 17,
+            "gapColumns": 2,
+            "identity": 0.176470588235
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 2,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6DO1",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 442,
+            "identicalResidueColumns": 85,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.934065934066
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -24,
+            "identicalResidueColumns": 3,
+            "alignmentColumns": 20,
+            "gapColumns": 5,
+            "identity": 0.15
+          },
+          "frameworkIdentitySatisfied": true,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 5,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6IBL",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 432,
+            "identicalResidueColumns": 83,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.912087912088
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 0,
+            "identicalResidueColumns": 4,
+            "alignmentColumns": 16,
+            "gapColumns": 3,
+            "identity": 0.25
+          },
+          "frameworkIdentitySatisfied": true,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 1,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6KNM",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 383,
+            "identicalResidueColumns": 73,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.802197802198
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -5,
+            "identicalResidueColumns": 6,
+            "alignmentColumns": 23,
+            "gapColumns": 8,
+            "identity": 0.260869565217
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 8,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6O3C",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 434,
+            "identicalResidueColumns": 83,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.912087912088
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -21,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 18,
+            "gapColumns": 5,
+            "identity": 0.111111111111
+          },
+          "frameworkIdentitySatisfied": true,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 1,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6RNK",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 370,
+            "identicalResidueColumns": 71,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.78021978022
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -16,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 22,
+            "gapColumns": 7,
+            "identity": 0.090909090909
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 7,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:6VI4",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 454,
+            "identicalResidueColumns": 88,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.967032967033
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 83,
+            "identicalResidueColumns": 15,
+            "alignmentColumns": 15,
+            "gapColumns": 0,
+            "identity": 1
+          },
+          "frameworkIdentitySatisfied": true,
+          "cdr3IdentitySatisfied": true,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 0,
+          "thresholdCriterionSatisfied": true
+        },
+        {
+          "developmentId": "development:7L1V",
+          "developmentEntityId": "6",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 401,
+            "identicalResidueColumns": 79,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.868131868132
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -19,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 15,
+            "gapColumns": 7,
+            "identity": 0.133333333333
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 7,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:7YM8",
+          "developmentEntityId": "3",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 435,
+            "identicalResidueColumns": 83,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.912087912088
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -17,
+            "identicalResidueColumns": 3,
+            "alignmentColumns": 17,
+            "gapColumns": 8,
+            "identity": 0.176470588235
+          },
+          "frameworkIdentitySatisfied": true,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 4,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:8FCZ",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 337,
+            "identicalResidueColumns": 69,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.758241758242
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -11,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 15,
+            "gapColumns": 6,
+            "identity": 0.133333333333
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 6,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:8QOT",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 423,
+            "identicalResidueColumns": 81,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.89010989011
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 8,
+            "identicalResidueColumns": 4,
+            "alignmentColumns": 17,
+            "gapColumns": 2,
+            "identity": 0.235294117647
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 2,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:8QOT",
+          "developmentEntityId": "5",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 405,
+            "identicalResidueColumns": 77,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.846153846154
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": -10,
+            "identicalResidueColumns": 2,
+            "alignmentColumns": 15,
+            "gapColumns": 1,
+            "identity": 0.133333333333
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": true,
+          "cdr3LengthDifference": 1,
+          "thresholdCriterionSatisfied": false
+        },
+        {
+          "developmentId": "development:8QW4",
+          "developmentEntityId": "2",
+          "framework": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 415,
+            "identicalResidueColumns": 78,
+            "alignmentColumns": 91,
+            "gapColumns": 0,
+            "identity": 0.857142857143
+          },
+          "cdr3": {
+            "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+            "substitutionMatrix": "BLOSUM62",
+            "gapOpen": -10,
+            "gapExtension": -1,
+            "terminalGapsPenalized": true,
+            "stateTiePrecedence": [
+              "M",
+              "X",
+              "Y"
+            ],
+            "sequencePairCanonicalizedBytewise": true,
+            "alignmentScore": 7,
+            "identicalResidueColumns": 5,
+            "alignmentColumns": 15,
+            "gapColumns": 4,
+            "identity": 0.333333333333
+          },
+          "frameworkIdentitySatisfied": false,
+          "cdr3IdentitySatisfied": false,
+          "cdr3LengthSatisfied": false,
+          "cdr3LengthDifference": 4,
+          "thresholdCriterionSatisfied": false
+        }
+      ]
+    }
+  ]
+}
