@@ -1,0 +1,50 @@
+{
+  "schema": "confovhh-graded-clash-exploration-freeze-v1",
+  "declaredAtUtc": "2026-09-10T01:29:47.836368+00:00",
+  "parentCommit": "75880d1b5f5772817dd986d9f30b77bcb6964bf5",
+  "outcomesAlreadyKnown": true,
+  "preregistration": false,
+  "arms": [
+    "frozen-v06",
+    "burial-only",
+    "predictor-confidence",
+    "clash-fraction-v1",
+    "overlap-burial-v1"
+  ],
+  "additionalVariants": 0,
+  "noProductionChange": true,
+  "noNativeFeatures": true,
+  "syntheticTestsPassed": 7,
+  "artifacts": [
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/graded-clash-exploration-v1/DECLARATION.md",
+      "bytes": 4672,
+      "sha256": "8f7cfa2608441e3f0398442f4741041a06f70abf998a1ba1b1747be9de3db0b7"
+    },
+    {
+      "path": "scripts/paper/graded-clash-selectors-v1.py",
+      "bytes": 11161,
+      "sha256": "f4a626ed75586c3d61c87e5ac35f9fec5b68c16b22434843a96104817f7524bb"
+    },
+    {
+      "path": "tests/test_graded_clash_selectors_v1.py",
+      "bytes": 2992,
+      "sha256": "37698aa3b5534b5754391f73caba1ad43a84b2379f8792335e828fa048ae0209"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/protocol.json",
+      "bytes": 15130,
+      "sha256": "8d3174f717ede953d922466cec93e5397ff443474da6c8addbc904ce8fc8d6e9"
+    },
+    {
+      "path": "validation/single-case-development-3p0g-2026-09-09/completed-pilot-execution03/analysis-python-requirements.txt",
+      "bytes": 402,
+      "sha256": "2abe2408f4aef209c729bf959132c8d2f99df4863e812c90192a7f08aac76c02"
+    },
+    {
+      "path": "paper/evidence/single-case-3p0g-selection-failure-2026-09-09/claim-evidence-v1.json",
+      "bytes": 89228,
+      "sha256": "1f9d53aea00742a749d1a1e98ec61845b9677318c6708c0aa0666bfaff7d2ea0"
+    }
+  ]
+}

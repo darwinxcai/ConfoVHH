@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "all-arm-candidate-results.csv",
+      "sha256": "a3cd609c063937aa1b58f777177f35a058c8c820acad56dd14beb6332c8d7d77",
+      "exactBytesMatch": true
+    },
+    {
+      "path": "all-arm-candidate-results.json",
+      "sha256": "80a1d113d2362fc2fe88540a6bd5de4ddd622da44cafa06bbf60f8e47125fff9",
+      "exactBytesMatch": true
+    },
+    {
+      "path": "coordinate-only-contact-overlaps.json",
+      "sha256": "91c9b1c1cbb181ea30e477a9545f537403188d07391cb42dbe4c53eb5c2e1023",
+      "exactBytesMatch": true
+    },
+    {
+      "path": "evaluation.json",
+      "sha256": "9a98231772627818ff70b3f80d57659462a9c115e99f4b11a54021982a8514f6",
+      "exactBytesMatch": true
+    },
+    {
+      "path": "extraction-receipt.json",
+      "sha256": "ac85e126c13775b2ec080f621d076c3e3f264c16d0b9a310444cb13fa72d94f7",
+      "exactBytesMatch": true
+    },
+    {
+      "path": "features.json",
+      "sha256": "c817ab3a1f4560849cf621663b5dd31904a087efabb885cc22ff1cad9fd1c49e",
+      "exactBytesMatch": true
+    },
+    {
+      "path": "rank-receipt.json",
+      "sha256": "119bcfae7be0ff88fa68cf6218ba32869180315236af380aee07cd13745d7ffe",
+      "exactBytesMatch": true
+    },
+    {
+      "path": "ranks.json",
+      "sha256": "62a6883409c8e135c565201316d6af04dac59fb91ab77acf583ac3282a4a8e49",
+      "exactBytesMatch": true
+    }
+  ],
+  "freshExtractionAndRankingAndEvaluation": true,
+  "newGpuGeneration": false
+}
