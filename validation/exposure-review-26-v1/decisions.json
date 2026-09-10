@@ -1,0 +1,3330 @@
+{
+  "version": "exposure-review-26-v1",
+  "criteriaUnchanged": true,
+  "fixedPdbOrder": [
+    "6N4X",
+    "6N4Y",
+    "6N50",
+    "6N51",
+    "6N52",
+    "7DGE",
+    "7E9G",
+    "7EPB",
+    "7TRK",
+    "7TRP",
+    "7TRQ",
+    "7TRS",
+    "8IA8",
+    "8J23",
+    "8T7H",
+    "8TAO",
+    "8XT9",
+    "8XUM",
+    "9FTE",
+    "9KGK",
+    "9KHH",
+    "9S37",
+    "9S38",
+    "9UOK",
+    "9VOR",
+    "9VOS"
+  ],
+  "counts": {
+    "reviewed": 26,
+    "excluded": 9,
+    "unresolved": 17,
+    "clearedTargets": 0,
+    "certifiedIndependentGroups": 0
+  },
+  "entries": [
+    {
+      "pdbId": "6N4X",
+      "system": "mGlu5; no VHH",
+      "receptorAuthorChains": [
+        "A",
+        "B"
+      ],
+      "vhhOrAntibodyAuthorChains": [],
+      "decision": "excluded",
+      "decisiveEvidenceOrMissingFact": "No VHH polymer is deposited; no GPCR\u2013VHH accuracy interface exists.",
+      "constructAssessment": "Deposited mGlu5 877 aa; only part of the full-length receptor is observed.",
+      "remainingFacts": "No VHH candidate to certify.",
+      "recoveryRoute": "Remove this entry from the GPCR\u2013VHH target set; do not synthesize a missing binder.",
+      "primarySourceIds": [
+        "mglu5-2019"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/6N4X.cif",
+        "sha256": "63a580fba6ee5fe5b4620a07b7bcf620abd9ee6965fb8f2a9d292f22976cf43d",
+        "bytes": 931750
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B",
+          "description": "Metabotropic glutamate receptor 5",
+          "length": 877,
+          "sequenceSha256": "3640e4280c95623c93321cd13ce22a79417a0054cb73d4d2fc1616192988ff54"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        4.0
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F,G,H,I"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/review-exposure-addendum-2026-09-06/exposure-addendum.json",
+          "validation/hard-decoy-holdout-v3/global-text-priority-review-2026-09-04/exposure-scope.json"
+        ],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": []
+    },
+    {
+      "pdbId": "6N4Y",
+      "system": "mGlu5 ECD\u2013Nb43",
+      "receptorAuthorChains": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Direct Nb43 binding is supported, but the experimental construct does not yet reconcile with deposited sequence; mGlu exposure gate remains.",
+      "constructAssessment": "Deposited receptor 596 aa and Nb43 123 aa. Retained sequence check: 37-aa prefix + P41594 21\u2013571 + His8; Methods describe ECD 21\u2013569 with removable His6. Four separate receptor\u2013Nb43 assemblies are deposited.",
+      "remainingFacts": "Complete sample sequence including terminal tags/cleavage products is not reconciled; source-family exposure remains blocked; complete ancestry/no-edge certificate and interface-density certification are absent.",
+      "recoveryRoute": "Obtain exact cryo-EM/crystallization sample FASTA or plasmid sequence plus cleavage record from the named depositing laboratory; bind it to the accession. Complete the existing TM/IMGT/parentage checks and exposure adjudication. Exposure cannot be erased by supplying sequence.",
+      "primarySourceIds": [
+        "mglu5-2019"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/6N4Y.cif",
+        "sha256": "5df314d66575f48ab862be535a24d4d4b2f6950018db2b768842fd865f9602f1",
+        "bytes": 2072231
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B,C,D",
+          "description": "Metabotropic glutamate receptor 5",
+          "length": 596,
+          "sequenceSha256": "9f7d10f4f548a42746d136b9b08c61ce8385d659bc2cc3d12bfa681b4a749f72"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "E,F,G,H",
+          "description": "Nanobody 43",
+          "length": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.262
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "E"
+          ],
+          "labelChains": [
+            "A",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "A",
+            "F"
+          ],
+          "labelChains": [
+            "A",
+            "F"
+          ],
+          "residuePairsWithin4_5Angstrom": 48
+        },
+        {
+          "authorChains": [
+            "A",
+            "G"
+          ],
+          "labelChains": [
+            "A",
+            "G"
+          ],
+          "residuePairsWithin4_5Angstrom": 2
+        },
+        {
+          "authorChains": [
+            "A",
+            "H"
+          ],
+          "labelChains": [
+            "A",
+            "H"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "B",
+            "E"
+          ],
+          "labelChains": [
+            "B",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 49
+        },
+        {
+          "authorChains": [
+            "B",
+            "F"
+          ],
+          "labelChains": [
+            "B",
+            "F"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "B",
+            "G"
+          ],
+          "labelChains": [
+            "B",
+            "G"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "B",
+            "H"
+          ],
+          "labelChains": [
+            "B",
+            "H"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "C",
+            "E"
+          ],
+          "labelChains": [
+            "C",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "C",
+            "F"
+          ],
+          "labelChains": [
+            "C",
+            "F"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "C",
+            "G"
+          ],
+          "labelChains": [
+            "C",
+            "G"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "C",
+            "H"
+          ],
+          "labelChains": [
+            "C",
+            "H"
+          ],
+          "residuePairsWithin4_5Angstrom": 45
+        },
+        {
+          "authorChains": [
+            "D",
+            "E"
+          ],
+          "labelChains": [
+            "D",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "D",
+            "F"
+          ],
+          "labelChains": [
+            "D",
+            "F"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "D",
+            "G"
+          ],
+          "labelChains": [
+            "D",
+            "G"
+          ],
+          "residuePairsWithin4_5Angstrom": 48
+        },
+        {
+          "authorChains": [
+            "D",
+            "H"
+          ],
+          "labelChains": [
+            "D",
+            "H"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,F,I,M"
+        },
+        {
+          "assembly_id": "2",
+          "oper_expression": "1",
+          "asym_id_list": "B,E,J,N"
+        },
+        {
+          "assembly_id": "3",
+          "oper_expression": "1",
+          "asym_id_list": "C,H,K,O"
+        },
+        {
+          "assembly_id": "4",
+          "oper_expression": "1",
+          "asym_id_list": "D,G,L,P"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/review-exposure-addendum-2026-09-06/exposure-addendum.json",
+          "validation/hard-decoy-holdout-v3/global-text-priority-review-2026-09-04/exposure-scope.json"
+        ],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "biologicalInterfacesAuthorChains": [
+        [
+          "A",
+          "F"
+        ],
+        [
+          "B",
+          "E"
+        ],
+        [
+          "C",
+          "H"
+        ],
+        [
+          "D",
+          "G"
+        ]
+      ],
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED"
+      ]
+    },
+    {
+      "pdbId": "6N50",
+      "system": "mGlu5 ECD\u2013Nb43",
+      "receptorAuthorChains": [
+        "A",
+        "B",
+        "C"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "E"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Direct Nb43 binding is supported, but the experimental construct does not yet reconcile with deposited sequence; mGlu exposure gate remains.",
+      "constructAssessment": "Deposited receptor 596 aa and Nb43 123 aa. Retained sequence check: 37-aa prefix + P41594 21\u2013571 + His8; Methods describe ECD 21\u2013569 with removable His6. Only one Nb43 is modeled, in assembly 1; other receptor copies are not additional VHH targets.",
+      "remainingFacts": "Complete sample sequence including terminal tags/cleavage products is not reconciled; source-family exposure remains blocked; complete ancestry/no-edge certificate and interface-density certification are absent.",
+      "recoveryRoute": "Obtain exact cryo-EM/crystallization sample FASTA or plasmid sequence plus cleavage record from the named depositing laboratory; bind it to the accession. Complete the existing TM/IMGT/parentage checks and exposure adjudication. Exposure cannot be erased by supplying sequence.",
+      "primarySourceIds": [
+        "mglu5-2019"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/6N50.cif",
+        "sha256": "16d846ac16c7668d8d21437a530620cc16ffffd87daa8ec08ae0f68882d49d0e",
+        "bytes": 2388373
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B,C",
+          "description": "Metabotropic glutamate receptor 5",
+          "length": 596,
+          "sequenceSha256": "9f7d10f4f548a42746d136b9b08c61ce8385d659bc2cc3d12bfa681b4a749f72"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "E",
+          "description": "Nanobody 43",
+          "length": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.751
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "E"
+          ],
+          "labelChains": [
+            "A",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 50
+        },
+        {
+          "authorChains": [
+            "B",
+            "E"
+          ],
+          "labelChains": [
+            "B",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "C",
+            "E"
+          ],
+          "labelChains": [
+            "C",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,D,E,F,G"
+        },
+        {
+          "assembly_id": "2",
+          "oper_expression": "1",
+          "asym_id_list": "B,H,I"
+        },
+        {
+          "assembly_id": "3",
+          "oper_expression": "1",
+          "asym_id_list": "C,J,K,L"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/review-exposure-addendum-2026-09-06/exposure-addendum.json",
+          "validation/hard-decoy-holdout-v3/global-text-priority-review-2026-09-04/exposure-scope.json"
+        ],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "biologicalInterfacesAuthorChains": [
+        [
+          "A",
+          "E"
+        ]
+      ],
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED"
+      ]
+    },
+    {
+      "pdbId": "6N51",
+      "system": "mGlu5\u2013Nb43",
+      "receptorAuthorChains": [
+        "A",
+        "B"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "C",
+        "D"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Direct Nb43 binding; deposited receptor is a modeled-length sequence, not the complete expressed construct.",
+      "constructAssessment": "Deposited P41594 23\u2013826 (804 aa), Nb43 123 aa. Methods full-length P41594-2 construct 21\u2013865 with HA/FLAG and His6; do not crop input to modeled residues.",
+      "remainingFacts": "Complete sample sequence including terminal tags/cleavage products is not reconciled; source-family exposure remains blocked; complete ancestry/no-edge certificate and interface-density certification are absent.",
+      "recoveryRoute": "Obtain exact cryo-EM/crystallization sample FASTA or plasmid sequence plus cleavage record from the named depositing laboratory; bind it to the accession. Complete the existing TM/IMGT/parentage checks and exposure adjudication. Exposure cannot be erased by supplying sequence.",
+      "primarySourceIds": [
+        "mglu5-2019"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/6N51.cif",
+        "sha256": "bf2c3efe9f80cf6696bba1cb32b72ed46ce821262ce947c3d5fd808b7241e8e7",
+        "bytes": 1468829
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "B,A",
+          "description": "Metabotropic glutamate receptor 5",
+          "length": 804,
+          "sequenceSha256": "50e1a5daee17b68ca91df831f38dd3a7f0fbfa2bcfe01cc47387e1de50a9a09a"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "C,D",
+          "description": "Nanobody 43",
+          "length": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        4.0
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "B",
+            "C"
+          ],
+          "labelChains": [
+            "A",
+            "B"
+          ],
+          "residuePairsWithin4_5Angstrom": 2
+        },
+        {
+          "authorChains": [
+            "B",
+            "D"
+          ],
+          "labelChains": [
+            "A",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 39
+        },
+        {
+          "authorChains": [
+            "C",
+            "A"
+          ],
+          "labelChains": [
+            "B",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 42
+        },
+        {
+          "authorChains": [
+            "D",
+            "A"
+          ],
+          "labelChains": [
+            "C",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 1
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F,G,H,I,J"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/review-exposure-addendum-2026-09-06/exposure-addendum.json",
+          "validation/hard-decoy-holdout-v3/global-text-priority-review-2026-09-04/exposure-scope.json"
+        ],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED"
+      ]
+    },
+    {
+      "pdbId": "6N52",
+      "system": "mGlu5; no VHH",
+      "receptorAuthorChains": [
+        "A",
+        "B"
+      ],
+      "vhhOrAntibodyAuthorChains": [],
+      "decision": "excluded",
+      "decisiveEvidenceOrMissingFact": "No VHH polymer is deposited; no GPCR\u2013VHH accuracy interface exists.",
+      "constructAssessment": "Deposited mGlu5 871 aa; receptor-only apo structure.",
+      "remainingFacts": "No VHH candidate to certify.",
+      "recoveryRoute": "Remove this entry from the GPCR\u2013VHH target set.",
+      "primarySourceIds": [
+        "mglu5-2019"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/6N52.cif",
+        "sha256": "aa6f26bbf1dd0e678e55c76c9bd188cfeacaaf722a7c5b177e3f56bb20c1bda5",
+        "bytes": 1223355
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B",
+          "description": "Metabotropic glutamate receptor 5",
+          "length": 871,
+          "sequenceSha256": "1d6236c447a55dff6138cce3954926c4ff2941b9019a66f4819dfb7cddd972a4"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        4.0
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/review-exposure-addendum-2026-09-06/exposure-addendum.json",
+          "validation/hard-decoy-holdout-v3/global-text-priority-review-2026-09-04/exposure-scope.json"
+        ],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": []
+    },
+    {
+      "pdbId": "7DGE",
+      "system": "engineered mGlu1\u2013Nb43",
+      "receptorAuthorChains": [
+        "A",
+        "B"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "C",
+        "D"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Nb43 directly binds an engineered mGlu5-like epitope; this is not a new Nb lineage or independent mGlu family.",
+      "constructAssessment": "Q13255 31\u2013863, 833 aa; T363H/P369Q/P381E/H383F/L384P/L385Q/P388S. Nb43 123 aa exactly matches the mGlu5 Nb43. Supplement describes receptor N-terminal His10/HA/FLAG and C-terminal protease/His10 components, and Nb43 N-His6; deposited cores omit tags.",
+      "remainingFacts": "Complete sample sequence including terminal tags/cleavage products is not reconciled; source-family exposure remains blocked; complete ancestry/no-edge certificate and interface-density certification are absent.",
+      "recoveryRoute": "Obtain exact cryo-EM/crystallization sample FASTA or plasmid sequence plus cleavage record from the named depositing laboratory; bind it to the accession. Complete the existing TM/IMGT/parentage checks and exposure adjudication. Exposure cannot be erased by supplying sequence.",
+      "primarySourceIds": [
+        "mglu1-2020",
+        "mglu5-2019"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/7DGE.cif",
+        "sha256": "1dd8284c6cb8f6bdfc0e683133fa7b65b70a37294becabcecb9c861af9457d80",
+        "bytes": 1469076
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B",
+          "description": "Metabotropic glutamate receptor 1",
+          "length": 833,
+          "sequenceSha256": "d0235904b9a88ca5f7659e4b50063e6da86d3efbc9d4881589a89f35834ecd09"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "C,D",
+          "description": "nanobody",
+          "length": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.65
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "C"
+          ],
+          "labelChains": [
+            "A",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 47
+        },
+        {
+          "authorChains": [
+            "A",
+            "D"
+          ],
+          "labelChains": [
+            "A",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "B",
+            "C"
+          ],
+          "labelChains": [
+            "B",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "B",
+            "D"
+          ],
+          "labelChains": [
+            "B",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 45
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "METADATA_ONLY_IN_THIS_INVENTORY_NOT_CERTIFIED_UNEXPOSED",
+        "exposureSources": [],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED"
+      ]
+    },
+    {
+      "pdbId": "7E9G",
+      "system": "mGlu2\u2013DN13\u2013Gi/scFv16",
+      "receptorAuthorChains": [
+        "R",
+        "S"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "E",
+        "F"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "DN13 directly contacts both receptor protomers; exact sample/tag reconciliation and a meaningful fixed receptor-chain mapping remain unresolved.",
+      "constructAssessment": "Receptor Q14416 19\u2013825 with S601A and N-terminal 10-aa prefix; deposited total 817 aa. DN13 deposited 124 aa (118-aa core + LEVLFQ). Agonist-bound Methods use S601A/C-terminal truncation; do not transfer inactive-state N655Y/H815Y or heterodimer FKBP/FRB alterations.",
+      "remainingFacts": "Complete sample sequence including terminal tags/cleavage products is not reconciled; source-family exposure remains blocked; complete ancestry/no-edge certificate and interface-density certification are absent. The VHH has a dimer-spanning epitope: selecting one receptor chain discards documented contacts.",
+      "recoveryRoute": "Obtain exact cryo-EM/crystallization sample FASTA or plasmid sequence plus cleavage record from the named depositing laboratory; bind it to the accession. Complete the existing TM/IMGT/parentage checks and exposure adjudication. Exposure cannot be erased by supplying sequence. Recover the cryo-EM DN13 clone/tag sequence (the 2017 discovery reagent is not automatically the 2021 sample). A dimer-spanning interface cannot be silently reduced or given a new scoring rule.",
+      "primarySourceIds": [
+        "mglu2-gi-2021",
+        "dn13-2017"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/7E9G.cif",
+        "sha256": "63bf492cbff32e6453cea70cf53f02e3cb077499d7fb156cf740ec35b533d3b1",
+        "bytes": 2535928
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "R,S",
+          "description": "Metabotropic glutamate receptor 2",
+          "length": 817,
+          "sequenceSha256": "c5d40aabd6a630c9ce46d00b9f592e6ced39e3c4cd4ce9842b93334d4ec87882"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "A",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "length": 354,
+          "sequenceSha256": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "B",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "length": 351,
+          "sequenceSha256": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e"
+        },
+        {
+          "entity_id": "4",
+          "pdbx_strand_id": "C",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "length": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213"
+        },
+        {
+          "entity_id": "5",
+          "pdbx_strand_id": "D",
+          "description": "scFv16",
+          "length": 257,
+          "sequenceSha256": "6c8a1567f9cc9e7ae8b41491b2c623119d0363216eb221f1712a9a634cfe22f6"
+        },
+        {
+          "entity_id": "6",
+          "pdbx_strand_id": "E,F",
+          "description": "DN13",
+          "length": 124,
+          "sequenceSha256": "3422fa85ad152e93f236ec199456ac92c2e408a86277ed4cf2e17a5bc9eb51ad"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.5
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "R",
+            "E"
+          ],
+          "labelChains": [
+            "A",
+            "G"
+          ],
+          "residuePairsWithin4_5Angstrom": 57
+        },
+        {
+          "authorChains": [
+            "R",
+            "F"
+          ],
+          "labelChains": [
+            "A",
+            "H"
+          ],
+          "residuePairsWithin4_5Angstrom": 24
+        },
+        {
+          "authorChains": [
+            "S",
+            "E"
+          ],
+          "labelChains": [
+            "B",
+            "G"
+          ],
+          "residuePairsWithin4_5Angstrom": 24
+        },
+        {
+          "authorChains": [
+            "S",
+            "F"
+          ],
+          "labelChains": [
+            "B",
+            "H"
+          ],
+          "residuePairsWithin4_5Angstrom": 55
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F,G,H,I,J,K"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "METADATA_ONLY_IN_THIS_INVENTORY_NOT_CERTIFIED_UNEXPOSED",
+        "exposureSources": [],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "multimerMappingWarning": "Native VHH contacts both receptor protomers. Frozen selector geometry declares one receptor chain; a single-chain comparison would omit part of the experimental epitope. No concatenation, native cropping, or outcome-optimized remapping is authorized.",
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED",
+        "DIMER_SPANNING_REFERENCE_MAPPING_UNRESOLVED"
+      ]
+    },
+    {
+      "pdbId": "7EPB",
+      "system": "mGlu2\u2013DN13",
+      "receptorAuthorChains": [
+        "A",
+        "B"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "C",
+        "D"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "DN13 directly contacts both receptor protomers; exact sample/tag reconciliation and a meaningful fixed receptor-chain mapping remain unresolved.",
+      "constructAssessment": "Receptor Q14416 19\u2013825 with S601A and N-terminal 10-aa prefix; deposited total 851 aa. DN13 deposited 137 aa (same 118-aa DN13 core + GRPLEVLFQGPHHHHHHHH); deposited Anti-RON name conflicts with the primary DN13 identity. Agonist-bound Methods use S601A/C-terminal truncation; do not transfer inactive-state N655Y/H815Y or heterodimer FKBP/FRB alterations.",
+      "remainingFacts": "Complete sample sequence including terminal tags/cleavage products is not reconciled; source-family exposure remains blocked; complete ancestry/no-edge certificate and interface-density certification are absent. The VHH has a dimer-spanning epitope: selecting one receptor chain discards documented contacts.",
+      "recoveryRoute": "Obtain exact cryo-EM/crystallization sample FASTA or plasmid sequence plus cleavage record from the named depositing laboratory; bind it to the accession. Complete the existing TM/IMGT/parentage checks and exposure adjudication. Exposure cannot be erased by supplying sequence. Recover the cryo-EM DN13 clone/tag sequence (the 2017 discovery reagent is not automatically the 2021 sample). A dimer-spanning interface cannot be silently reduced or given a new scoring rule.",
+      "primarySourceIds": [
+        "mglu2-2021",
+        "dn13-2017"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/7EPB.cif",
+        "sha256": "c7af51551b708849c4037decbff4196a1cea10295f20032335ea9a8f3b065914",
+        "bytes": 1741016
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B",
+          "description": "Metabotropic glutamate receptor 2",
+          "length": 851,
+          "sequenceSha256": "91d0dbcbe71ec5f01a7a237b94d5e8130c5faa44b689e943c1bb823e17b28c1c"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "C,D",
+          "description": "Anti-RON nanobody",
+          "length": 137,
+          "sequenceSha256": "154e450d800e02f2a6acea9e0cee861c766bcaaa6ce89919aa521d129a015997"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.1
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "C"
+          ],
+          "labelChains": [
+            "A",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 51
+        },
+        {
+          "authorChains": [
+            "A",
+            "D"
+          ],
+          "labelChains": [
+            "A",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 22
+        },
+        {
+          "authorChains": [
+            "B",
+            "C"
+          ],
+          "labelChains": [
+            "B",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 23
+        },
+        {
+          "authorChains": [
+            "B",
+            "D"
+          ],
+          "labelChains": [
+            "B",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 55
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "METADATA_ONLY_IN_THIS_INVENTORY_NOT_CERTIFIED_UNEXPOSED",
+        "exposureSources": [],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "multimerMappingWarning": "Native VHH contacts both receptor protomers. Frozen selector geometry declares one receptor chain; a single-chain comparison would omit part of the experimental epitope. No concatenation, native cropping, or outcome-optimized remapping is authorized.",
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED",
+        "DIMER_SPANNING_REFERENCE_MAPPING_UNRESOLVED"
+      ]
+    },
+    {
+      "pdbId": "7TRK",
+      "system": "M4\u2013Gi\u2013scFv16",
+      "receptorAuthorChains": [
+        "R"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "H"
+      ],
+      "decision": "excluded",
+      "decisiveEvidenceOrMissingFact": "The antibody is scFv16 bound to G protein, with no receptor contact within 4.5 \u00c5; no separate VHH. M4 also shares the frozen muscarinic family prefix with development 4MQS.",
+      "constructAssessment": "M4 349 aa; Methods delete ICL3 242\u2013387 and mutate N3D/N9D/N13D. scFv16 248 aa, not a VHH; G\u03b1/\u03b2/\u03b3 retained in exact polymer inventory.",
+      "remainingFacts": "Exact tag record is unnecessary to establish the decisive no-VHH and development-family vetoes.",
+      "recoveryRoute": "Exclude; do not reinterpret scFv16 as a receptor-targeting VHH or count M4 separately from M2.",
+      "primarySourceIds": [
+        "m4-2023",
+        "gpcrdb-m4"
+      ],
+      "biologicalReviewGroup": "muscarinic-development-connected",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/7TRK.cif",
+        "sha256": "4c81ac3d6ad51a5cd29b0eb94e8933a53dc9f1ac64a7a2585eca545918b41321",
+        "bytes": 937345
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "R",
+          "description": "Muscarinic acetylcholine receptor M4",
+          "length": 349,
+          "sequenceSha256": "8e23e4e0c594186b35fa8f1589d64ef942beb050604352a3fbb14a3f63594f9d"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "B",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "length": 349,
+          "sequenceSha256": "1796efe26dc847109b06a8387852e0b4e8f6beb40718ffce284367f331695324"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "G",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "length": 70,
+          "sequenceSha256": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0"
+        },
+        {
+          "entity_id": "4",
+          "pdbx_strand_id": "H",
+          "description": "Antibody fragment scFv16",
+          "length": 248,
+          "sequenceSha256": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe"
+        },
+        {
+          "entity_id": "5",
+          "pdbx_strand_id": "A",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "length": 354,
+          "sequenceSha256": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        2.8
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "R",
+            "H"
+          ],
+          "labelChains": [
+            "A",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-0ec23ed305eb8e26"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "Known frozen muscarinic source-family connection to 4MQS/M2.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "scFv16 is a G-protein-binding single-chain antibody fragment, not the requested VHH. M4 shares the frozen muscarinic receptor-family prefix with development M2/4MQS.",
+      "blockingReasonCodes": []
+    },
+    {
+      "pdbId": "7TRP",
+      "system": "M4\u2013Gi\u2013scFv16",
+      "receptorAuthorChains": [
+        "R"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "H"
+      ],
+      "decision": "excluded",
+      "decisiveEvidenceOrMissingFact": "The antibody is scFv16 bound to G protein, with no receptor contact within 4.5 \u00c5; no separate VHH. M4 also shares the frozen muscarinic family prefix with development 4MQS.",
+      "constructAssessment": "M4 349 aa; Methods delete ICL3 242\u2013387 and mutate N3D/N9D/N13D. scFv16 248 aa, not a VHH; G\u03b1/\u03b2/\u03b3 retained in exact polymer inventory.",
+      "remainingFacts": "Exact tag record is unnecessary to establish the decisive no-VHH and development-family vetoes.",
+      "recoveryRoute": "Exclude; do not reinterpret scFv16 as a receptor-targeting VHH or count M4 separately from M2.",
+      "primarySourceIds": [
+        "m4-2023",
+        "gpcrdb-m4"
+      ],
+      "biologicalReviewGroup": "muscarinic-development-connected",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/7TRP.cif",
+        "sha256": "9173a5cee83d6af65836dcb99dcaba9edb884d218cc75f1adda20c5c7b5b65a1",
+        "bytes": 949676
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "R",
+          "description": "Muscarinic acetylcholine receptor M4",
+          "length": 349,
+          "sequenceSha256": "8e23e4e0c594186b35fa8f1589d64ef942beb050604352a3fbb14a3f63594f9d"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "B",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "length": 349,
+          "sequenceSha256": "1796efe26dc847109b06a8387852e0b4e8f6beb40718ffce284367f331695324"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "G",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "length": 70,
+          "sequenceSha256": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0"
+        },
+        {
+          "entity_id": "4",
+          "pdbx_strand_id": "H",
+          "description": "Antibody fragment scFv16",
+          "length": 248,
+          "sequenceSha256": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe"
+        },
+        {
+          "entity_id": "5",
+          "pdbx_strand_id": "A",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "length": 354,
+          "sequenceSha256": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        2.4
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "R",
+            "H"
+          ],
+          "labelChains": [
+            "A",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F,G"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-2b21c8e6879726b0"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "Known frozen muscarinic source-family connection to 4MQS/M2.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "scFv16 is a G-protein-binding single-chain antibody fragment, not the requested VHH. M4 shares the frozen muscarinic receptor-family prefix with development M2/4MQS.",
+      "blockingReasonCodes": []
+    },
+    {
+      "pdbId": "7TRQ",
+      "system": "M4\u2013Gi\u2013scFv16",
+      "receptorAuthorChains": [
+        "R"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "H"
+      ],
+      "decision": "excluded",
+      "decisiveEvidenceOrMissingFact": "The antibody is scFv16 bound to G protein, with no receptor contact within 4.5 \u00c5; no separate VHH. M4 also shares the frozen muscarinic family prefix with development 4MQS.",
+      "constructAssessment": "M4 349 aa; Methods delete ICL3 242\u2013387 and mutate N3D/N9D/N13D. scFv16 248 aa, not a VHH; G\u03b1/\u03b2/\u03b3 retained in exact polymer inventory.",
+      "remainingFacts": "Exact tag record is unnecessary to establish the decisive no-VHH and development-family vetoes.",
+      "recoveryRoute": "Exclude; do not reinterpret scFv16 as a receptor-targeting VHH or count M4 separately from M2.",
+      "primarySourceIds": [
+        "m4-2023",
+        "gpcrdb-m4"
+      ],
+      "biologicalReviewGroup": "muscarinic-development-connected",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/7TRQ.cif",
+        "sha256": "152c26f3d55c19e327c5b5b8a5d9a91f5f40d0eab04f713df3bafb4a795459a2",
+        "bytes": 944563
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "R",
+          "description": "Muscarinic acetylcholine receptor M4",
+          "length": 349,
+          "sequenceSha256": "8e23e4e0c594186b35fa8f1589d64ef942beb050604352a3fbb14a3f63594f9d"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "B",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "length": 349,
+          "sequenceSha256": "1796efe26dc847109b06a8387852e0b4e8f6beb40718ffce284367f331695324"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "G",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "length": 70,
+          "sequenceSha256": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0"
+        },
+        {
+          "entity_id": "4",
+          "pdbx_strand_id": "H",
+          "description": "Antibody fragment scFv16",
+          "length": 248,
+          "sequenceSha256": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe"
+        },
+        {
+          "entity_id": "5",
+          "pdbx_strand_id": "A",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "length": 354,
+          "sequenceSha256": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        2.5
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "R",
+            "H"
+          ],
+          "labelChains": [
+            "A",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F,G"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-22fc8f89b00b6850"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "Known frozen muscarinic source-family connection to 4MQS/M2.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "scFv16 is a G-protein-binding single-chain antibody fragment, not the requested VHH. M4 shares the frozen muscarinic receptor-family prefix with development M2/4MQS.",
+      "blockingReasonCodes": []
+    },
+    {
+      "pdbId": "7TRS",
+      "system": "M4\u2013Gi\u2013scFv16",
+      "receptorAuthorChains": [
+        "R"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "H"
+      ],
+      "decision": "excluded",
+      "decisiveEvidenceOrMissingFact": "The antibody is scFv16 bound to G protein, with no receptor contact within 4.5 \u00c5; no separate VHH. M4 also shares the frozen muscarinic family prefix with development 4MQS.",
+      "constructAssessment": "M4 349 aa; Methods delete ICL3 242\u2013387 and mutate N3D/N9D/N13D. scFv16 248 aa, not a VHH; G\u03b1/\u03b2/\u03b3 retained in exact polymer inventory.",
+      "remainingFacts": "Exact tag record is unnecessary to establish the decisive no-VHH and development-family vetoes.",
+      "recoveryRoute": "Exclude; do not reinterpret scFv16 as a receptor-targeting VHH or count M4 separately from M2.",
+      "primarySourceIds": [
+        "m4-2023",
+        "gpcrdb-m4"
+      ],
+      "biologicalReviewGroup": "muscarinic-development-connected",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/7TRS.cif",
+        "sha256": "9c0b578850430ebcdc6c8032b88491d2e5f933f0b2a7dc756f0890c23eba81f3",
+        "bytes": 930670
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "B",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "length": 349,
+          "sequenceSha256": "1796efe26dc847109b06a8387852e0b4e8f6beb40718ffce284367f331695324"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "G",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "length": 70,
+          "sequenceSha256": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "H",
+          "description": "Antibody fragment scFv16",
+          "length": 248,
+          "sequenceSha256": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe"
+        },
+        {
+          "entity_id": "4",
+          "pdbx_strand_id": "A",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "length": 354,
+          "sequenceSha256": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40"
+        },
+        {
+          "entity_id": "5",
+          "pdbx_strand_id": "R",
+          "description": "Muscarinic acetylcholine receptor M4",
+          "length": 349,
+          "sequenceSha256": "8e23e4e0c594186b35fa8f1589d64ef942beb050604352a3fbb14a3f63594f9d"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        2.8
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "H",
+            "R"
+          ],
+          "labelChains": [
+            "C",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-e2988f0771c2442b"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "Known frozen muscarinic source-family connection to 4MQS/M2.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "scFv16 is a G-protein-binding single-chain antibody fragment, not the requested VHH. M4 shares the frozen muscarinic receptor-family prefix with development M2/4MQS.",
+      "blockingReasonCodes": []
+    },
+    {
+      "pdbId": "8IA8",
+      "system": "C3aR\u2013Gi\u2013scFv16\u2013E7 peptide",
+      "receptorAuthorChains": [
+        "A"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "S"
+      ],
+      "decision": "excluded",
+      "decisiveEvidenceOrMissingFact": "scFv16 contacts G\u03b1/\u03b2, not C3aR; E7 is a 15-aa peptide, not a VHH.",
+      "constructAssessment": "Deposited C3aR 482 aa, scFv16 247 aa, E7 15 aa. Complete primary sample engineering is not verified.",
+      "remainingFacts": "Original-study citation and exact expressed construct remain unverified; these do not alter the no-VHH veto.",
+      "recoveryRoute": "Exclude using deposited chain identity/geometry; request an accession-specific paper from depositors only if another purpose requires its sample details.",
+      "primarySourceIds": [
+        "deposition-only"
+      ],
+      "biologicalReviewGroup": "C3aR-helper",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/8IA8.cif",
+        "sha256": "9956d98d66f1e61ac07ebb9fe9bbe45dec448ad645da9e756c95af5494ef0fbd",
+        "bytes": 938837
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "L",
+          "description": "ALA-SER-LYS-LEU-GLY-LEU-ALA-ARG",
+          "length": 15,
+          "sequenceSha256": "a5022cd23dd04d6a0bb4d7eeba169af7fdb86779cf16db09603f294406785cbc"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "A",
+          "description": "C3a anaphylatoxin chemotactic receptor",
+          "length": 482,
+          "sequenceSha256": "18970708361ef54ea67db455c8ae03a58dab07b4da84715aecded61cc0f8743d"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "C",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "length": 351,
+          "sequenceSha256": "5cf4c562852ca89cfbc44042224294521c4e5d46dc02e9dc225334f06a96ffe1"
+        },
+        {
+          "entity_id": "4",
+          "pdbx_strand_id": "B",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "length": 340,
+          "sequenceSha256": "731c013dfd2af08e5208366adc05c924fee47f2a726a6903d130383a4ff1b10c"
+        },
+        {
+          "entity_id": "5",
+          "pdbx_strand_id": "G",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "length": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213"
+        },
+        {
+          "entity_id": "6",
+          "pdbx_strand_id": "S",
+          "description": "scFv16",
+          "length": 247,
+          "sequenceSha256": "302f4bccac03ce8295badeb8d435cab8cb7d0139e3acf8903474d79ff7e9184a"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        2.86
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "S"
+          ],
+          "labelChains": [
+            "B",
+            "F"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-46f3c83d7723556f"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": false,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "Deposited scFv16 helper, not a separate receptor-targeting VHH. No target-VHH lineage exists in this entry.",
+      "blockingReasonCodes": []
+    },
+    {
+      "pdbId": "8J23",
+      "system": "FFAR2\u2013Gi\u2013scFv16",
+      "receptorAuthorChains": [
+        "A"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "F"
+      ],
+      "decision": "excluded",
+      "decisiveEvidenceOrMissingFact": "The antibody is scFv16 at the G protein, with zero receptor contact pairs; no separate VHH.",
+      "constructAssessment": "Deposited FFAR2 311 aa; scFv16 297 aa. Complete primary sample engineering is not verified.",
+      "remainingFacts": "Prior bounded citation review found 2025 reuse, not original deposition; 2024 primary main-text deposit list omits 8J23.",
+      "recoveryRoute": "Exclude; exact original citation would require depositor linkage or the missing 2024 supplement, not substitution of a reuse citation.",
+      "primarySourceIds": [
+        "deposition-only"
+      ],
+      "biologicalReviewGroup": "FFAR2-helper",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/8J23.cif",
+        "sha256": "83a014921316181b3a4d37d292fd753bafa36317bd99e82e8bd908189f2c843b",
+        "bytes": 912189
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A",
+          "description": "Free fatty acid receptor 2",
+          "length": 311,
+          "sequenceSha256": "fae9944fd301748992a41f85edbe0121960eac3ffacc6357620d9d45fe93b052"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "B",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "length": 354,
+          "sequenceSha256": "57f8013fce15aa580c1c618f1fb4f45d76af5361d9190eb56bbbebf5997999d1"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "C",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "length": 377,
+          "sequenceSha256": "b4fd284489df034753cbbe82158cb665e2a54eb925e2d346475ea13c445b573e"
+        },
+        {
+          "entity_id": "4",
+          "pdbx_strand_id": "D",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "length": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213"
+        },
+        {
+          "entity_id": "5",
+          "pdbx_strand_id": "F",
+          "description": "scFV16",
+          "length": 297,
+          "sequenceSha256": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.2
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "F"
+          ],
+          "labelChains": [
+            "A",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/publication-followup-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-dd6449f138a4dbc7"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": false,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "Deposited scFv16 helper, not a separate receptor-targeting VHH. No target-VHH lineage exists in this entry.",
+      "blockingReasonCodes": []
+    },
+    {
+      "pdbId": "8T7H",
+      "system": "mGlu5\u2013Nb43",
+      "receptorAuthorChains": [
+        "A",
+        "B"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "C",
+        "D"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Direct Nb43 binding, same receptor/Nb source family as exposed mGlu entries; complete experimental construct is not certified.",
+      "constructAssessment": "Deposited receptor 881 aa: 24-aa prefix and P41594 range 20\u2013876 as annotated; Nb43 123 aa matches 2019 Nb43. Publisher material recovered, but the inspected accessible text does not provide a complete sequence/tag reconciliation.",
+      "remainingFacts": "Complete sample sequence including terminal tags/cleavage products is not reconciled; source-family exposure remains blocked; complete ancestry/no-edge certificate and interface-density certification are absent.",
+      "recoveryRoute": "Obtain exact cryo-EM/crystallization sample FASTA or plasmid sequence plus cleavage record from the named depositing laboratory; bind it to the accession. Complete the existing TM/IMGT/parentage checks and exposure adjudication. Exposure cannot be erased by supplying sequence. Obtain accessible full Methods/sample plasmid for the 2024 preparation.",
+      "primarySourceIds": [
+        "mglu5-2024",
+        "mglu5-2019"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/8T7H.cif",
+        "sha256": "05c7e6c756cd092ec9286ebf1d623fea4b6222ed96abdcbce761830e08248eaa",
+        "bytes": 1397827
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B",
+          "description": "Metabotropic glutamate receptor 5",
+          "length": 881,
+          "sequenceSha256": "50a36419a8befd8fc45c62f063478bc3beaa7470e1c63c9437c54baf452d90dd"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "C,D",
+          "description": "Nanobody 43",
+          "length": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.3
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "C"
+          ],
+          "labelChains": [
+            "A",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 39
+        },
+        {
+          "authorChains": [
+            "A",
+            "D"
+          ],
+          "labelChains": [
+            "A",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "B",
+            "C"
+          ],
+          "labelChains": [
+            "B",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "B",
+            "D"
+          ],
+          "labelChains": [
+            "B",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 37
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "METADATA_ONLY_IN_THIS_INVENTORY_NOT_CERTIFIED_UNEXPOSED",
+        "exposureSources": [],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED"
+      ]
+    },
+    {
+      "pdbId": "8TAO",
+      "system": "mGlu5\u2013Nb43",
+      "receptorAuthorChains": [
+        "A",
+        "B"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "C",
+        "D"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Direct Nb43 binding, same receptor/Nb source family as exposed mGlu entries; complete experimental construct is not certified.",
+      "constructAssessment": "Deposited receptor 881 aa: 24-aa prefix and P41594 range 20\u2013876 as annotated; Nb43 123 aa matches 2019 Nb43. Publisher material recovered, but the inspected accessible text does not provide a complete sequence/tag reconciliation.",
+      "remainingFacts": "Complete sample sequence including terminal tags/cleavage products is not reconciled; source-family exposure remains blocked; complete ancestry/no-edge certificate and interface-density certification are absent.",
+      "recoveryRoute": "Obtain exact cryo-EM/crystallization sample FASTA or plasmid sequence plus cleavage record from the named depositing laboratory; bind it to the accession. Complete the existing TM/IMGT/parentage checks and exposure adjudication. Exposure cannot be erased by supplying sequence. Obtain accessible full Methods/sample plasmid for the 2024 preparation.",
+      "primarySourceIds": [
+        "mglu5-2024",
+        "mglu5-2019"
+      ],
+      "biologicalReviewGroup": "mGlu-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/8TAO.cif",
+        "sha256": "2972a51780f8a553bb4fa8e97bc8c097a01c173ad8695c6b9e3d1cd48e9975f6",
+        "bytes": 1439074
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B",
+          "description": "Metabotropic glutamate receptor 5",
+          "length": 881,
+          "sequenceSha256": "50a36419a8befd8fc45c62f063478bc3beaa7470e1c63c9437c54baf452d90dd"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "C,D",
+          "description": "Nb43",
+          "length": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        2.9
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "C"
+          ],
+          "labelChains": [
+            "A",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "A",
+            "D"
+          ],
+          "labelChains": [
+            "A",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 48
+        },
+        {
+          "authorChains": [
+            "B",
+            "C"
+          ],
+          "labelChains": [
+            "B",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 38
+        },
+        {
+          "authorChains": [
+            "B",
+            "D"
+          ],
+          "labelChains": [
+            "B",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F,G"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "METADATA_ONLY_IN_THIS_INVENTORY_NOT_CERTIFIED_UNEXPOSED",
+        "exposureSources": [],
+        "relatednessGroup": "related-b842533ac5fc63ff"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "Nb43 was selected following llama immunization with mGlu5; the same 123-aa sequence is reused, including engineered mGlu1. DN13 derives from the mGlu2 immunized-llama discovery program and has the same 118-aa core in both 2021 deposits. Nb43 and DN13 are not asserted to be the same clone; conservative receptor/source grouping connects them. Complete external parent-family/no-edge review remains incomplete.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED"
+      ]
+    },
+    {
+      "pdbId": "8XT9",
+      "system": "LGR4\u2013MB52",
+      "receptorAuthorChains": [
+        "C"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "A"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "The receptor-binding element is an engineered megabody. A partial modeled VHH domain cannot substitute for the full experimental input. No automatic auxiliary-binder exclusion. ",
+      "constructAssessment": "Primary LGR4 Methods describe residues 25\u2013833 with HA signal peptide/FLAG; deposited receptor lengths and sequence conflicts do not yet reconcile with that sample. NB52 is the parent of HopQ-scaffold MB52, which directly binds LGR4. LGR4 951 aa; MB52 represented by 110 aa.",
+      "remainingFacts": "Accession-specific purified receptor and binder sequences/cleavage products; full clone parentage (not just species/library); source-family exposure disposition; local interface-quality certificate and complete no-edge review. Compatibility of the complete megabody with the existing separate-VHH input contract is not certified.",
+      "recoveryRoute": "Ask the LGR4 depositing laboratory for accession-to-plasmid/sample mapping, full receptor/NB18/NB21/NB52/MB52 sequences, cleavage products, and clone-family crosswalk. Resolve differences using provenance, never modeled-residue cropping. This cannot by itself remove the established exposure-family block.",
+      "primarySourceIds": [
+        "lgr4-nb21-2025"
+      ],
+      "biologicalReviewGroup": "LGR4-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/8XT9.cif",
+        "sha256": "3c6d9bff6d2e7c3e786f284ead1e2c161936a302c2322c1659e5f815ae89431f",
+        "bytes": 698426
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "C",
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "length": 951,
+          "sequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "A",
+          "description": "MB52",
+          "length": 110,
+          "sequenceSha256": "4af784aa04f4f6acb6a5a00c33131b7a78fd50f0f3b61df2a2843d6755253d40"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.1
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "C",
+            "A"
+          ],
+          "labelChains": [
+            "A",
+            "B"
+          ],
+          "residuePairsWithin4_5Angstrom": 39
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-26ef5753e7bdf8cb"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "NB52 is the known parent of HopQ-fused MB52. NB18 and NB21 come from the LGR4 nanobody discovery/library program; they are not inferred to be identical clones. Known receptor/source relationship suffices for grouping. Full mature clone sequences and any affinity-maturation/grafting relationships beyond documented parents remain unverified.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED",
+        "COMPLETE_MEGABODY_INPUT_COMPATIBILITY_UNCERTIFIED"
+      ]
+    },
+    {
+      "pdbId": "8XUM",
+      "system": "LGR4\u2013MB52\u2013RSPO2",
+      "receptorAuthorChains": [
+        "A"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "C"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "The receptor-binding element is an engineered megabody. A partial modeled VHH domain cannot substitute for the full experimental input. No automatic auxiliary-binder exclusion. ",
+      "constructAssessment": "Primary LGR4 Methods describe residues 25\u2013833 with HA signal peptide/FLAG; deposited receptor lengths and sequence conflicts do not yet reconcile with that sample. NB52 is the parent of HopQ-scaffold MB52, which directly binds LGR4. LGR4 951 aa; MB52 110 aa; RSPO2 243 aa.",
+      "remainingFacts": "Accession-specific purified receptor and binder sequences/cleavage products; full clone parentage (not just species/library); source-family exposure disposition; local interface-quality certificate and complete no-edge review. Compatibility of the complete megabody with the existing separate-VHH input contract is not certified.",
+      "recoveryRoute": "Ask the LGR4 depositing laboratory for accession-to-plasmid/sample mapping, full receptor/NB18/NB21/NB52/MB52 sequences, cleavage products, and clone-family crosswalk. Resolve differences using provenance, never modeled-residue cropping. This cannot by itself remove the established exposure-family block.",
+      "primarySourceIds": [
+        "lgr4-nb21-2025"
+      ],
+      "biologicalReviewGroup": "LGR4-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/8XUM.cif",
+        "sha256": "bc6e3909992ab3457ea266a433803374c58fc71456a69d73fac576c9d686ee08",
+        "bytes": 793804
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "C",
+          "description": "MB52",
+          "length": 110,
+          "sequenceSha256": "4af784aa04f4f6acb6a5a00c33131b7a78fd50f0f3b61df2a2843d6755253d40"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "A",
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "length": 951,
+          "sequenceSha256": "8f414dfc5f20967b0669cf9d83253d6654d8435b71f5f9c401e050720c0dc5e4"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "B",
+          "description": "R-spondin-2",
+          "length": 243,
+          "sequenceSha256": "a0b17c6ce0efb6550b7451bd18aba46f3df2698f27df869bbbad84ea0dd77af1"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        2.9
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "C",
+            "A"
+          ],
+          "labelChains": [
+            "A",
+            "B"
+          ],
+          "residuePairsWithin4_5Angstrom": 35
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-26ef5753e7bdf8cb"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "NB52 is the known parent of HopQ-fused MB52. NB18 and NB21 come from the LGR4 nanobody discovery/library program; they are not inferred to be identical clones. Known receptor/source relationship suffices for grouping. Full mature clone sequences and any affinity-maturation/grafting relationships beyond documented parents remain unverified.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED",
+        "COMPLETE_MEGABODY_INPUT_COMPATIBILITY_UNCERTIFIED"
+      ]
+    },
+    {
+      "pdbId": "9FTE",
+      "system": "mouse ADGRV1\u03b2\u2013RE02",
+      "receptorAuthorChains": [
+        "A"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "B"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Primary preprint now verifies direct RE02 binding and deposition, but construct boundary/linker and prior contact/prediction-prose exposure remain unresolved.",
+      "constructAssessment": "Deposited receptor 426 aa: B8JJE0 5884\u20136298 + SGRHHHHHHHH; Methods specify mouse B8JJE0 5883\u20136298 + His8. RE02 147 aa includes cMyc/His region. Do not infer removal of an initiating residue without a sample record.",
+      "remainingFacts": "Exact mature sample/plasmid ends and RE02 clone lineage; prior exposure adjudication; complete TM/IMGT no-edge and local density certification. AlphaFold-assisted reference modeling is documented separately from training exposure.",
+      "recoveryRoute": "Obtain accession-bound receptor/RE02 FASTA and cleavage record from Achat/Wolff laboratory, including the 5883/5884 boundary and SGR linker; obtain clone provenance and EMDB-50743 validation. The paper-link/species blocker is resolved, not the exposure-family block.",
+      "primarySourceIds": [
+        "adgrv1-2026"
+      ],
+      "biologicalReviewGroup": "ADGRV1-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/9FTE.cif",
+        "sha256": "a0593108250c7ce66844a0b54eff3e07d380bb19a90469f3cf22d877cf0ff5ed",
+        "bytes": 350811
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A",
+          "description": "Adhesion G protein-coupled receptor V1",
+          "length": 426,
+          "sequenceSha256": "ce080fdef9db00df7e4e58c13baee148c006f5edd21206c6a6c124a37b149a85"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "B",
+          "description": "Nanobody RE02",
+          "length": 147,
+          "sequenceSha256": "8407e46fdb9a6ad459e90f1998375028aabd73347e30613422edfba9e4be7c6b"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.82
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "B"
+          ],
+          "labelChains": [
+            "A",
+            "B"
+          ],
+          "residuePairsWithin4_5Angstrom": 13
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/review-exposure-addendum-2026-09-07/exposure-addendum.json",
+          "validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/incidental-prose-exposure.json"
+        ],
+        "relatednessGroup": "related-8fac35f7bffcb5a1"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "AlphaFold-assisted model building explicitly reported"
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "RE02 originates from the ADGRV1 alpaca immunization/library program in the recovered primary preprint. No known ConfoVHH-development nanobody parent is established; absence of a parent is not certified.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED"
+      ]
+    },
+    {
+      "pdbId": "9KGK",
+      "system": "LGR4\u2013NB18 with MB52",
+      "receptorAuthorChains": [
+        "A"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "B",
+        "E"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "NB18 directly binds LGR4; full sample sequence and exposure/ancestry clearance are missing.",
+      "constructAssessment": "Deposited LGR4 950 aa, NB18 166 aa including signal/tag segments, MB52 148 aa partial representation. Primary LGR4 Methods describe residues 25\u2013833 with HA signal peptide/FLAG; deposited receptor lengths and sequence conflicts do not yet reconcile with that sample. NB52 is the parent of HopQ-scaffold MB52, which directly binds LGR4. ",
+      "remainingFacts": "Accession-specific purified receptor and binder sequences/cleavage products; full clone parentage (not just species/library); source-family exposure disposition; local interface-quality certificate and complete no-edge review.",
+      "recoveryRoute": "Ask the LGR4 depositing laboratory for accession-to-plasmid/sample mapping, full receptor/NB18/NB21/NB52/MB52 sequences, cleavage products, and clone-family crosswalk. Resolve differences using provenance, never modeled-residue cropping. This cannot by itself remove the established exposure-family block.",
+      "primarySourceIds": [
+        "lgr4-nb18-2025"
+      ],
+      "biologicalReviewGroup": "LGR4-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/9KGK.cif",
+        "sha256": "0a57a803a77e9a3a4cd80e936c8297c808e8b4eaad88a90f2269b4dc9954cfc1",
+        "bytes": 804851
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A",
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "length": 950,
+          "sequenceSha256": "b8b59019b5be4dcf30ebbf7f7dda3878431a4a3ce570fb1446c1b5160a77f0e8"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "E",
+          "description": "MB52",
+          "length": 148,
+          "sequenceSha256": "9e670ddabd80871b78cc72cff690f7f65fd18529ef0788a925a3f10e5dc0dcd8"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "B",
+          "description": "NB18",
+          "length": 166,
+          "sequenceSha256": "09781c0029b86d2048a21c68b66d0a8743e0ef60cf1415e8428c82f0e739b608"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        2.63
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "E"
+          ],
+          "labelChains": [
+            "A",
+            "B"
+          ],
+          "residuePairsWithin4_5Angstrom": 42
+        },
+        {
+          "authorChains": [
+            "A",
+            "B"
+          ],
+          "labelChains": [
+            "A",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 53
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-26ef5753e7bdf8cb"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "NB52 is the known parent of HopQ-fused MB52. NB18 and NB21 come from the LGR4 nanobody discovery/library program; they are not inferred to be identical clones. Known receptor/source relationship suffices for grouping. Full mature clone sequences and any affinity-maturation/grafting relationships beyond documented parents remain unverified.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED"
+      ]
+    },
+    {
+      "pdbId": "9KHH",
+      "system": "LGR4\u2013MB52\u2013Norrin-Fc",
+      "receptorAuthorChains": [
+        "C",
+        "D"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "A",
+        "B"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "The receptor-binding element is an engineered megabody. A partial modeled VHH domain cannot substitute for the full experimental input. No automatic auxiliary-binder exclusion. ",
+      "constructAssessment": "Primary LGR4 Methods describe residues 25\u2013833 with HA signal peptide/FLAG; deposited receptor lengths and sequence conflicts do not yet reconcile with that sample. NB52 is the parent of HopQ-scaffold MB52, which directly binds LGR4. LGR4 954 aa; MB52 556 aa (HopQ fusion); Norrin-Fc 409 aa.",
+      "remainingFacts": "Accession-specific purified receptor and binder sequences/cleavage products; full clone parentage (not just species/library); source-family exposure disposition; local interface-quality certificate and complete no-edge review. Compatibility of the complete megabody with the existing separate-VHH input contract is not certified.",
+      "recoveryRoute": "Ask the LGR4 depositing laboratory for accession-to-plasmid/sample mapping, full receptor/NB18/NB21/NB52/MB52 sequences, cleavage products, and clone-family crosswalk. Resolve differences using provenance, never modeled-residue cropping. This cannot by itself remove the established exposure-family block.",
+      "primarySourceIds": [
+        "lgr4-nb18-2025"
+      ],
+      "biologicalReviewGroup": "LGR4-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/9KHH.cif",
+        "sha256": "12de5ee6cbcc088df35651a8657c58a951ee7e8d8cc2c7007345c345c2bc380e",
+        "bytes": 1517692
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B",
+          "description": "MB52",
+          "length": 556,
+          "sequenceSha256": "8812c44a8fb96ff3278c0a09db9c6edeb0734c1f8a620b9a61b425c2f0aa6e90"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "E,F",
+          "description": "Norrin,Immunoglobulin gamma-1 heavy chain",
+          "length": 409,
+          "sequenceSha256": "859140b3705863139432eb57b39e6ccfdea0c01b7756597d4bf8d092e86908ae"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "C,D",
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "length": 954,
+          "sequenceSha256": "986e42b20c94fa080a7717713cafe7c866381ff8aedaf71269b77f8298a00d29"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.65
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "C"
+          ],
+          "labelChains": [
+            "A",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 38
+        },
+        {
+          "authorChains": [
+            "A",
+            "D"
+          ],
+          "labelChains": [
+            "A",
+            "F"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "B",
+            "C"
+          ],
+          "labelChains": [
+            "D",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 0
+        },
+        {
+          "authorChains": [
+            "B",
+            "D"
+          ],
+          "labelChains": [
+            "D",
+            "F"
+          ],
+          "residuePairsWithin4_5Angstrom": 38
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-26ef5753e7bdf8cb"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "NB52 is the known parent of HopQ-fused MB52. NB18 and NB21 come from the LGR4 nanobody discovery/library program; they are not inferred to be identical clones. Known receptor/source relationship suffices for grouping. Full mature clone sequences and any affinity-maturation/grafting relationships beyond documented parents remain unverified.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED",
+        "COMPLETE_MEGABODY_INPUT_COMPATIBILITY_UNCERTIFIED"
+      ]
+    },
+    {
+      "pdbId": "9S37",
+      "system": "LGR4\u2013NB21 with NB52/MB52",
+      "receptorAuthorChains": [
+        "D"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "B",
+        "A"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Direct NB21\u2013LGR4 deposited interface; sample sequence conflicts and exposure gate remain.",
+      "constructAssessment": "LGR4 792 aa (Q9BXB1 32\u2013823) with deposition conflicts K78A/W474A/T698G, not certified intentional mutations; NB21 125 aa; NB52 fragment 94 aa. Primary LGR4 Methods describe residues 25\u2013833 with HA signal peptide/FLAG; deposited receptor lengths and sequence conflicts do not yet reconcile with that sample. NB52 is the parent of HopQ-scaffold MB52, which directly binds LGR4. ",
+      "remainingFacts": "Accession-specific purified receptor and binder sequences/cleavage products; full clone parentage (not just species/library); source-family exposure disposition; local interface-quality certificate and complete no-edge review.",
+      "recoveryRoute": "Ask the LGR4 depositing laboratory for accession-to-plasmid/sample mapping, full receptor/NB18/NB21/NB52/MB52 sequences, cleavage products, and clone-family crosswalk. Resolve differences using provenance, never modeled-residue cropping. This cannot by itself remove the established exposure-family block.",
+      "primarySourceIds": [
+        "lgr4-nb21-2025"
+      ],
+      "biologicalReviewGroup": "LGR4-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/9S37.cif",
+        "sha256": "bf4494e260282ea2853b241e614536e1426b08c7662d4752ff87dc2fbaa55482",
+        "bytes": 768461
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "B",
+          "description": "NB21",
+          "length": 125,
+          "sequenceSha256": "f9bebf012c7b2e1d14540bc29a5053a2ede5da1d2a6df726063ba87c8d55b6c6"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "D",
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "length": 792,
+          "sequenceSha256": "6277fa37848f454db32ac180d606ebdc946efd5daeb8731a5426b2210b68177a"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "A",
+          "description": "NB52",
+          "length": 94,
+          "sequenceSha256": "429f96cc9bcfc0acd3389071194f32f1acd9f9c1db3cfd8501b8a5741fa5e28d"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.94
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "B",
+            "D"
+          ],
+          "labelChains": [
+            "A",
+            "B"
+          ],
+          "residuePairsWithin4_5Angstrom": 45
+        },
+        {
+          "authorChains": [
+            "D",
+            "A"
+          ],
+          "labelChains": [
+            "B",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 26
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-26ef5753e7bdf8cb"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "NB52 is the known parent of HopQ-fused MB52. NB18 and NB21 come from the LGR4 nanobody discovery/library program; they are not inferred to be identical clones. Known receptor/source relationship suffices for grouping. Full mature clone sequences and any affinity-maturation/grafting relationships beyond documented parents remain unverified.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED"
+      ]
+    },
+    {
+      "pdbId": "9S38",
+      "system": "LGR4\u2013NB21 with NB52/MB52",
+      "receptorAuthorChains": [
+        "D"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "B",
+        "A"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Direct NB21\u2013LGR4 deposited interface; exact original-paper linkage remains missing; sequence identity connects this to 9S37.",
+      "constructAssessment": "LGR4 792 aa (Q9BXB1 32\u2013823) with deposition conflicts K78A/W474A/T698G, not certified intentional mutations; NB21 125 aa; NB52 fragment 94 aa. Primary LGR4 Methods describe residues 25\u2013833 with HA signal peptide/FLAG; deposited receptor lengths and sequence conflicts do not yet reconcile with that sample. NB52 is the parent of HopQ-scaffold MB52, which directly binds LGR4. ",
+      "remainingFacts": "Accession-specific purified receptor and binder sequences/cleavage products; full clone parentage (not just species/library); source-family exposure disposition; local interface-quality certificate and complete no-edge review. Exact publication-to-accession evidence for 9S38 is missing.",
+      "recoveryRoute": "Ask the LGR4 depositing laboratory for accession-to-plasmid/sample mapping, full receptor/NB18/NB21/NB52/MB52 sequences, cleavage products, and clone-family crosswalk. Resolve differences using provenance, never modeled-residue cropping. This cannot by itself remove the established exposure-family block. Request explicit 9S38 sample/publication identity; identical polymers do not prove identical provenance.",
+      "primarySourceIds": [
+        "deposition-only"
+      ],
+      "biologicalReviewGroup": "LGR4-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/9S38.cif",
+        "sha256": "8643e95691826fb66fbe00dd83e7d720d42e721bc51d3b905eab7492582d7627",
+        "bytes": 764033
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "B",
+          "description": "NB21",
+          "length": 125,
+          "sequenceSha256": "f9bebf012c7b2e1d14540bc29a5053a2ede5da1d2a6df726063ba87c8d55b6c6"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "D",
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "length": 792,
+          "sequenceSha256": "6277fa37848f454db32ac180d606ebdc946efd5daeb8731a5426b2210b68177a"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "A",
+          "description": "NB52",
+          "length": 94,
+          "sequenceSha256": "429f96cc9bcfc0acd3389071194f32f1acd9f9c1db3cfd8501b8a5741fa5e28d"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.94
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "B",
+            "D"
+          ],
+          "labelChains": [
+            "A",
+            "B"
+          ],
+          "residuePairsWithin4_5Angstrom": 45
+        },
+        {
+          "authorChains": [
+            "D",
+            "A"
+          ],
+          "labelChains": [
+            "B",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 26
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-e7b57ba18b343462"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": false,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "NB52 is the known parent of HopQ-fused MB52. NB18 and NB21 come from the LGR4 nanobody discovery/library program; they are not inferred to be identical clones. Known receptor/source relationship suffices for grouping. Full mature clone sequences and any affinity-maturation/grafting relationships beyond documented parents remain unverified.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED",
+        "EXACT_ORIGINAL_PUBLICATION_LINK_MISSING"
+      ]
+    },
+    {
+      "pdbId": "9UOK",
+      "system": "LGR4\u2013MB52\u2013Norrin-Fc",
+      "receptorAuthorChains": [
+        "C"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "A"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "The receptor-binding element is an engineered megabody. A partial modeled VHH domain cannot substitute for the full experimental input. No automatic auxiliary-binder exclusion. ",
+      "constructAssessment": "Primary LGR4 Methods describe residues 25\u2013833 with HA signal peptide/FLAG; deposited receptor lengths and sequence conflicts do not yet reconcile with that sample. NB52 is the parent of HopQ-scaffold MB52, which directly binds LGR4. LGR4 954 aa; MB52 556 aa; Norrin-Fc 409 aa. Only 444 receptor residues observed in this local ECD reconstruction.",
+      "remainingFacts": "Accession-specific purified receptor and binder sequences/cleavage products; full clone parentage (not just species/library); source-family exposure disposition; local interface-quality certificate and complete no-edge review. Compatibility of the complete megabody with the existing separate-VHH input contract is not certified.",
+      "recoveryRoute": "Ask the LGR4 depositing laboratory for accession-to-plasmid/sample mapping, full receptor/NB18/NB21/NB52/MB52 sequences, cleavage products, and clone-family crosswalk. Resolve differences using provenance, never modeled-residue cropping. This cannot by itself remove the established exposure-family block.",
+      "primarySourceIds": [
+        "lgr4-nb18-2025"
+      ],
+      "biologicalReviewGroup": "LGR4-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/9UOK.cif",
+        "sha256": "4c394ef037369b9d8ffc7a183236720835c1a24ed1a5b47aad8a64bb1c2f15fa",
+        "bytes": 767735
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A",
+          "description": "MB52",
+          "length": 556,
+          "sequenceSha256": "8812c44a8fb96ff3278c0a09db9c6edeb0734c1f8a620b9a61b425c2f0aa6e90"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "C",
+          "description": "Leucine-rich repeat-containing G-protein coupled receptor 4",
+          "length": 954,
+          "sequenceSha256": "986e42b20c94fa080a7717713cafe7c866381ff8aedaf71269b77f8298a00d29"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "E,F",
+          "description": "Norrin,Immunoglobulin gamma-1 heavy chain",
+          "length": 409,
+          "sequenceSha256": "859140b3705863139432eb57b39e6ccfdea0c01b7756597d4bf8d092e86908ae"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.05
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "C"
+          ],
+          "labelChains": [
+            "A",
+            "B"
+          ],
+          "residuePairsWithin4_5Angstrom": 38
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/exposure-caveat.json"
+        ],
+        "relatednessGroup": "related-26ef5753e7bdf8cb"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "Not comprehensively audited; no assumption of absence."
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "knownParentageAndLimits": "NB52 is the known parent of HopQ-fused MB52. NB18 and NB21 come from the LGR4 nanobody discovery/library program; they are not inferred to be identical clones. Known receptor/source relationship suffices for grouping. Full mature clone sequences and any affinity-maturation/grafting relationships beyond documented parents remain unverified.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED",
+        "COMPLETE_MEGABODY_INPUT_COMPATIBILITY_UNCERTIFIED"
+      ]
+    },
+    {
+      "pdbId": "9VOR",
+      "system": "GPR158/mGlyR\u2013Nb20",
+      "receptorAuthorChains": [
+        "A",
+        "B"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "C",
+        "E"
+      ],
+      "decision": "unresolved",
+      "decisiveEvidenceOrMissingFact": "Nb20 directly spans receptor protomers; exact sample, local interface quality and exposure remain unresolved.",
+      "constructAssessment": "Receptor 781 aa: Q5T848 1\u2013775 + LEVLFQ. Nb20 150 aa with a 20-aa expression prefix. Known parent Nb20 and CDR-mutant Nb20* remain one lineage; no new independent clone is inferred.",
+      "remainingFacts": "Exact cryo-EM construct and tag cleavage versus assay reagent; dimer-spanning mapping; local Nb density (focused ECD map 4.14 \u00c5); AlphaFold-assisted Nb model; complete no-edge/exposure record.",
+      "recoveryRoute": "Request accession-bound cryo-EM FASTA/cleavage record and validate interface against deposited map/half maps. For 9VOS, only a documented depositor correction or a different separately screened eligible reference could address the resolution veto; do not relax it.",
+      "primarySourceIds": [
+        "mglyr-2026"
+      ],
+      "biologicalReviewGroup": "mGlyR-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/9VOR.cif",
+        "sha256": "ed0928ccbe1c31434519d3f8ac028ee13f05dd25d3b6e389ef334f923bda1a10",
+        "bytes": 1241897
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "A,B",
+          "description": "Metabotropic glycine receptor",
+          "length": 781,
+          "sequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "C,E",
+          "description": "Nb20",
+          "length": 150,
+          "sequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        3.47
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "A",
+            "C"
+          ],
+          "labelChains": [
+            "A",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 15
+        },
+        {
+          "authorChains": [
+            "A",
+            "E"
+          ],
+          "labelChains": [
+            "A",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 10
+        },
+        {
+          "authorChains": [
+            "B",
+            "C"
+          ],
+          "labelChains": [
+            "B",
+            "C"
+          ],
+          "residuePairsWithin4_5Angstrom": 9
+        },
+        {
+          "authorChains": [
+            "B",
+            "E"
+          ],
+          "labelChains": [
+            "B",
+            "D"
+          ],
+          "residuePairsWithin4_5Angstrom": 14
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/mglyr-known-lineage-2026-09-08/source-navigation-exposure.json",
+          "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/navigation-exposure-caveat.json",
+          "validation/hard-decoy-holdout-v3/mglyr-deposition-construct-2026-09-08/README.md",
+          "validation/hard-decoy-holdout-v3/mglyr-known-lineage-2026-09-08/lineage.json"
+        ],
+        "relatednessGroup": "related-e16577b880336b52"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "AlphaFold-assisted model building explicitly reported"
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "multimerMappingWarning": "Native VHH contacts both receptor protomers. Frozen selector geometry declares one receptor chain; a single-chain comparison would omit part of the experimental epitope. No concatenation, native cropping, or outcome-optimized remapping is authorized.",
+      "knownParentageAndLimits": "Nb20 was obtained from an immunized llama. Known Nb20* CDR derivative remains connected; the retained lineage.json supplies exact mutations. Complete no-edge certification remains absent.",
+      "blockingReasonCodes": [
+        "CONSTRUCT_SAMPLE_PROVENANCE_UNRESOLVED",
+        "EXPOSURE_FAMILY_REMAINS_BLOCKED",
+        "COMPLETE_ANCESTRY_NO_EDGE_NOT_CERTIFIED",
+        "LOCAL_INTERFACE_QUALITY_NOT_CERTIFIED",
+        "GENERATION_INPUTS_MSA_UNSEALED",
+        "DIMER_SPANNING_REFERENCE_MAPPING_UNRESOLVED"
+      ]
+    },
+    {
+      "pdbId": "9VOS",
+      "system": "GPR158/mGlyR\u2013Nb20\u2013RGS7/G\u03b25",
+      "receptorAuthorChains": [
+        "A",
+        "B"
+      ],
+      "vhhOrAntibodyAuthorChains": [
+        "H",
+        "I"
+      ],
+      "decision": "excluded",
+      "decisiveEvidenceOrMissingFact": "Deposited reconstruction resolution is 4.3 \u00c5, above the unchanged <=4.0 \u00c5 gate. Primary-paper values differ; the favorable value is not substituted.",
+      "constructAssessment": "Receptor 781 aa: Q5T848 1\u2013775 + LEVLFQ. Nb20 150 aa with a 20-aa expression prefix. Known parent Nb20 and CDR-mutant Nb20* remain one lineage; no new independent clone is inferred.",
+      "remainingFacts": "Exact cryo-EM construct and tag cleavage versus assay reagent; dimer-spanning mapping; local Nb density (focused ECD map 4.14 \u00c5); AlphaFold-assisted Nb model; complete no-edge/exposure record. Deposited 4.3 \u00c5 versus paper 3.89 \u00c5 discrepancy requires accession-specific resolution.",
+      "recoveryRoute": "Request accession-bound cryo-EM FASTA/cleavage record and validate interface against deposited map/half maps. For 9VOS, only a documented depositor correction or a different separately screened eligible reference could address the resolution veto; do not relax it.",
+      "primarySourceIds": [
+        "mglyr-2026"
+      ],
+      "biologicalReviewGroup": "mGlyR-source-family",
+      "depositedSource": {
+        "url": "https://files.rcsb.org/download/9VOS.cif",
+        "sha256": "2543b5840c4dbec818dec7e3ee8eedfd6750999afb0eea4095a28580bcdb831a",
+        "bytes": 1712515
+      },
+      "exactDepositedPolymers": [
+        {
+          "entity_id": "1",
+          "pdbx_strand_id": "B,A",
+          "description": "Metabotropic glycine receptor",
+          "length": 781,
+          "sequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc"
+        },
+        {
+          "entity_id": "2",
+          "pdbx_strand_id": "C",
+          "description": "Isoform 2 of Regulator of G-protein signaling 7",
+          "length": 469,
+          "sequenceSha256": "4ce9cd64aee861cc1f991498f67c539bef5c1e9a9ff49e039b4af0978495575c"
+        },
+        {
+          "entity_id": "3",
+          "pdbx_strand_id": "D",
+          "description": "Guanine nucleotide-binding protein subunit beta-5",
+          "length": 353,
+          "sequenceSha256": "3bbca653acaa5e0ebced223904c4a577ff749d9fb237a05d9026aa2b190df4bc"
+        },
+        {
+          "entity_id": "4",
+          "pdbx_strand_id": "H,I",
+          "description": "Nb20",
+          "length": 150,
+          "sequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc"
+        }
+      ],
+      "depositedResolutionAngstrom": [
+        4.3
+      ],
+      "nativeMapping": "All observed selected heavy-atom residue identities agree with deposited entity sequence. Full label/auth/residue/insertion maps retained in native-inspection.json.gz. Missing experimental residues remain missing; this is not a complete sample or local-density certificate.",
+      "receptorAntibodyContactChecks": [
+        {
+          "authorChains": [
+            "B",
+            "H"
+          ],
+          "labelChains": [
+            "A",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 13
+        },
+        {
+          "authorChains": [
+            "B",
+            "I"
+          ],
+          "labelChains": [
+            "A",
+            "F"
+          ],
+          "residuePairsWithin4_5Angstrom": 7
+        },
+        {
+          "authorChains": [
+            "A",
+            "H"
+          ],
+          "labelChains": [
+            "B",
+            "E"
+          ],
+          "residuePairsWithin4_5Angstrom": 15
+        },
+        {
+          "authorChains": [
+            "A",
+            "I"
+          ],
+          "labelChains": [
+            "B",
+            "F"
+          ],
+          "residuePairsWithin4_5Angstrom": 17
+        }
+      ],
+      "assemblyEvidence": [
+        {
+          "assembly_id": "1",
+          "oper_expression": "1",
+          "asym_id_list": "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,AA,BA,CA,DA"
+        }
+      ],
+      "assemblyScope": "All listed deposited assemblies use identity operator 1. Contact pairs spanning different deposited assemblies (notably mGlu5 crystals) are not treated as biological interfaces.",
+      "priorExposure": {
+        "priorDevelopment": false,
+        "priorDevelopmentRoles": [],
+        "exposureStatus": "PRIOR_PROSE_EXPOSURE_REVIEW_REQUIRED",
+        "exposureSources": [
+          "validation/hard-decoy-holdout-v3/mglyr-known-lineage-2026-09-08/source-navigation-exposure.json",
+          "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/navigation-exposure-caveat.json",
+          "validation/hard-decoy-holdout-v3/mglyr-deposition-construct-2026-09-08/README.md",
+          "validation/hard-decoy-holdout-v3/mglyr-known-lineage-2026-09-08/lineage.json"
+        ],
+        "relatednessGroup": "related-e16577b880336b52"
+      },
+      "currentReviewExposure": {
+        "metadataScreening": true,
+        "nativeCoordinatesAndContactsInspected": true,
+        "primaryTextAndMethodsInspected": true,
+        "methodDevelopmentUse": false,
+        "newPredictionOutcomesInspected": false,
+        "scope": "Post-implementation-freeze native eligibility review; no scoring/ranking adjustment. Historical prose exposure remains separately recorded."
+      },
+      "developmentRelationship": "No development sequence-connection flag in the original 26-entry roster; not a completed no-edge or ancestry certificate. Existing source-family exposure gate retained.",
+      "predictorTrainingExposure": {
+        "status": "UNKNOWN_NOT_CERTIFIED_TRAINING_NOVEL",
+        "note": "No target-specific membership/exclusion proof for the pinned Boltz checkpoint or its training/distillation/template sources. Release date alone is not a negative membership test. Reference-model assistance is separate from training overlap.",
+        "referenceModelAssistance": "AlphaFold-assisted model building explicitly reported"
+      },
+      "clearedIndependent": false,
+      "launchInputSeal": null,
+      "multimerMappingWarning": "Native VHH contacts both receptor protomers. Frozen selector geometry declares one receptor chain; a single-chain comparison would omit part of the experimental epitope. No concatenation, native cropping, or outcome-optimized remapping is authorized.",
+      "knownParentageAndLimits": "Nb20 was obtained from an immunized llama. Known Nb20* CDR derivative remains connected; the retained lineage.json supplies exact mutations. Complete no-edge certification remains absent.",
+      "blockingReasonCodes": []
+    }
+  ]
+}
