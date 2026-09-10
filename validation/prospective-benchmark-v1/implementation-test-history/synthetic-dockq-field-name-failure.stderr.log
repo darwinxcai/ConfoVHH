@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/work/ConfoVHH-prospective-benchmark/scripts/benchmark/dockq-outcomes.py", line 84, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/work/ConfoVHH-prospective-benchmark/scripts/benchmark/dockq-outcomes.py", line 78, in main
+    api_worker(*sys.argv[2:]);return
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/work/ConfoVHH-prospective-benchmark/scripts/benchmark/dockq-outcomes.py", line 18, in api_worker
+    print(json.dumps(dict(DockQ=float(row['DockQ']),fnat=float(row['fnat']),iRMSD=float(row['irms']),LRMSD=float(row['Lrms']),chainMap=mapping)))
+                                                                                        ~~~^^^^^^^^
+KeyError: 'irms'

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "generalEvaluatorSyntheticTests": 13,
+  "unchangedFiveMethodTests": 7,
+  "originalPilotEvidenceTests": 8,
+  "totalTestsPassed": 28,
+  "syntheticDockqApiCliCrosscheck": {
+    "status": "PASS",
+    "absoluteDifference": 0
+  },
+  "original311ArtifactVerification": "PASS",
+  "newCandidateOutcomesInspected": false,
+  "implementationDevelopmentUses": "Synthetic coordinates/outcomes and already-exposed 3P0G regression only.",
+  "correctedSyntheticImplementationFault": "DockQ field names iRMSD/LRMSD; preserved original KeyError log. No scoring formula changed."
+}

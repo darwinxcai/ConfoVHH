@@ -1,0 +1,79 @@
+{
+  "status": "NOT_FEASIBLE_WITH_CURRENT_CLEARED_INVENTORY",
+  "actualEligibleIndependentGroups": 0,
+  "actualEligibleTargets": 0,
+  "proposedGpuAllocationHours": 0,
+  "proposedNewComputeSpendUSD": 0,
+  "availableIndependentGroupUpperBound": null,
+  "primaryComparisons": 4,
+  "alphaFamilyWise": 0.05,
+  "planningMethod": "Exact one-sided binomial win test; ties count as non-wins; Bonferroni alpha/4 conservative bound for Holm",
+  "minimumGroupsEvenForAllWins": 7,
+  "minimumIsNotAdequatePower": true,
+  "planningScenariosNotInventoryCounts": [
+    {
+      "assumedIndependentGroupWinProbability": 0.65,
+      "requiredGroups": 104,
+      "minimumWins": 64,
+      "planningPower": 0.8011616892437667
+    },
+    {
+      "assumedIndependentGroupWinProbability": 0.7,
+      "requiredGroups": 58,
+      "minimumWins": 38,
+      "planningPower": 0.8139118179380292
+    },
+    {
+      "assumedIndependentGroupWinProbability": 0.75,
+      "requiredGroups": 37,
+      "minimumWins": 26,
+      "planningPower": 0.8059848692004707
+    },
+    {
+      "assumedIndependentGroupWinProbability": 0.8,
+      "requiredGroups": 24,
+      "minimumWins": 18,
+      "planningPower": 0.8110710551188802
+    }
+  ],
+  "historicalGenerationSeconds": 1401.48256499134,
+  "historicalCase": "Already-exposed 3P0G, 501+126 residues, two seeds/five samples",
+  "planningComparableCase": {
+    "inferenceMinutes": [
+      25,
+      40
+    ],
+    "reusedEnvironmentResumeChecksMinutes": [
+      5,
+      10
+    ],
+    "verifiedBackupAndShutdownMinutes": [
+      10,
+      15
+    ],
+    "totalGpuMinutes": [
+      40,
+      65
+    ],
+    "catalogHourlyUSD": 1.59,
+    "gpuOnlyUSD": [
+      1.06,
+      1.7225000000000001
+    ]
+  },
+  "notIncluded": [
+    "CPU MSA preparation",
+    "Persistent storage and transfer",
+    "New image/cache recovery if required",
+    "Longer constructs or different token counts",
+    "Capacity waiting and failures"
+  ],
+  "futureBatchFormula": "For T cleared comparable targets on one reused pod: 25T+15 to 40T+25 GPU minutes, plus any measured recovery; quote storage separately. T currently equals 0; do not instantiate a batch.",
+  "limitations": [
+    "No empirical group win probability is estimated from 3P0G.",
+    "Power scenarios assume independent identically distributed group wins and complete outcomes.",
+    "The catalog rate is not a reserved machine quote; refresh before allocation.",
+    "A complete deployable runtime/cache artifact and target-size budget must be verified before allocation."
+  ],
+  "planningPowerUnit": "Per primary comparison; joint four-contrast power is not asserted"
+}

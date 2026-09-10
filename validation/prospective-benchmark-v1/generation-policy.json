@@ -1,0 +1,31 @@
+{
+  "id": "boltz221",
+  "package": "boltz==2.2.1",
+  "runtimeCandidateDirectory": "cloud/boltz-runtime-candidate",
+  "baseImage": "docker.io/pytorch/pytorch@sha256:2b59b1b91885677814f78be1f8df48a25d5dc952eb6580eaecfefca510f9afd3",
+  "pythonMinor": "3.11",
+  "torch": "2.7.1",
+  "checkpointRevision": "6fdef46d763fee7fbb83ca5501ccceff43b85607",
+  "seeds": [
+    1,
+    2
+  ],
+  "diffusionSamplesPerSeed": 5,
+  "maxParallelSamples": 5,
+  "recyclingSteps": 3,
+  "samplingSteps": 200,
+  "stepScale": 1.5,
+  "usePotentials": true,
+  "useKernels": true,
+  "outputFormat": "mmcif",
+  "writeFullPae": true,
+  "templates": false,
+  "nativePoseOrContactInputs": false,
+  "liveMsaRetrievalDuringInference": false,
+  "msaMode": "per-chain unpaired with environmental database search; exact captured local A3Ms only",
+  "affinityPrediction": false,
+  "ligand": "Target-specific declared chemical identity only; none inferred from a native pose",
+  "adaptiveResamplingOrParameterChanges": false,
+  "scope": "Fixed defaults; exact target inputs and local A3M hashes absent because zero eligible targets",
+  "targetDependentSettingsChanges": false
+}

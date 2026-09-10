@@ -1,0 +1,572 @@
+[
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "development-adrenergic",
+    "arm": "frozen-v06",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_4"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1367.632311505746
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1381.2205453445376
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1164.721862013725
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1027.3088663810124
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "frozen-v06",
+        "key": [
+          2,
+          928.2626822950779
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1512.5783279588954
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1427.4961344460512
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1366.7861739208936
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "frozen-v06",
+        "key": [
+          1,
+          1425.927814086937
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "frozen-v06",
+        "key": [
+          2,
+          1058.4596798033813
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "development-adrenergic",
+    "arm": "burial-only",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "burial-only",
+        "key": [
+          1367.632311505746
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "burial-only",
+        "key": [
+          1381.2205453445376
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "burial-only",
+        "key": [
+          1164.721862013725
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "burial-only",
+        "key": [
+          1027.3088663810124
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "burial-only",
+        "key": [
+          928.2626822950779
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "burial-only",
+        "key": [
+          1512.5783279588954
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "burial-only",
+        "key": [
+          1427.4961344460512
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "burial-only",
+        "key": [
+          1366.7861739208936
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "burial-only",
+        "key": [
+          1425.927814086937
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "burial-only",
+        "key": [
+          1058.4596798033813
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "development-adrenergic",
+    "arm": "predictor-confidence",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8893769383430481
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8619559407234192
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8491935729980469
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8466022610664368
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8166805505752563
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "predictor-confidence",
+        "key": [
+          0.9008827209472656
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "predictor-confidence",
+        "key": [
+          0.9007269144058228
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "predictor-confidence",
+        "key": [
+          0.89376300573349
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8840752840042114
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "predictor-confidence",
+        "key": [
+          0.8201104402542114
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "development-adrenergic",
+    "arm": "clash-fraction-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1246.958872255239
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1261.1144109667518
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1007.9323805888006
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "clash-fraction-v1",
+        "key": [
+          984.5043302818036
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "clash-fraction-v1",
+        "key": [
+          928.2626822950779
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1403.2353162992163
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1349.2771681750346
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1347.803032616437
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1326.9050492197885
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "clash-fraction-v1",
+        "key": [
+          1058.4596798033813
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  },
+  {
+    "targetId": "exposed-3P0G",
+    "groupId": "development-adrenergic",
+    "arm": "overlap-burial-v1",
+    "status": "ranked",
+    "reason": "",
+    "selected": [
+      "seed2_model_0"
+    ],
+    "rows": [
+      {
+        "id": "seed1_model_0",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1168.8563361788565
+        ],
+        "rank": 5,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_1",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1161.2642072273916
+        ],
+        "rank": 6,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_2",
+        "arm": "overlap-burial-v1",
+        "key": [
+          969.525828380007
+        ],
+        "rank": 8,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_3",
+        "arm": "overlap-burial-v1",
+        "key": [
+          896.1421530320597
+        ],
+        "rank": 9,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed1_model_4",
+        "arm": "overlap-burial-v1",
+        "key": [
+          862.5069702046911
+        ],
+        "rank": 10,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_0",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1346.775914902485
+        ],
+        "rank": 1,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_1",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1330.091589697692
+        ],
+        "rank": 2,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_2",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1286.129953001054
+        ],
+        "rank": 3,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_3",
+        "arm": "overlap-burial-v1",
+        "key": [
+          1231.0531568477265
+        ],
+        "rank": 4,
+        "status": "scored",
+        "reason": ""
+      },
+      {
+        "id": "seed2_model_4",
+        "arm": "overlap-burial-v1",
+        "key": [
+          989.2029185033552
+        ],
+        "rank": 7,
+        "status": "scored",
+        "reason": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,175 @@
+{
+  "schema": "confovhh-benchmark-engine-lock-v1",
+  "engine": "../single-case-development-3p0g-2026-09-09/completed-pilot-execution03/frozen-source",
+  "files": {
+    "lib/audit-export.ts": {
+      "sha256": "5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+      "bytes": 27883
+    },
+    "lib/audit-jobs.ts": {
+      "sha256": "79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+      "bytes": 37549
+    },
+    "lib/audit-worker-protocol.ts": {
+      "sha256": "2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+      "bytes": 2775
+    },
+    "lib/audit-worker.ts": {
+      "sha256": "9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+      "bytes": 2627
+    },
+    "lib/candidate-shortlist.ts": {
+      "sha256": "bc4f378baea03582dadcb38d03436b805c4f1fe353c188bdcd24dbf096468f07",
+      "bytes": 9367
+    },
+    "lib/confovhh.ts": {
+      "sha256": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+      "bytes": 83288
+    },
+    "lib/contact-explorer.ts": {
+      "sha256": "e19259bc4faa8e9b1988e5364a93ccbe30cbfe00106dd184510292c6ec3ae8f9",
+      "bytes": 4102
+    },
+    "lib/coordinate-parser.ts": {
+      "sha256": "0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+      "bytes": 1391
+    },
+    "lib/download.ts": {
+      "sha256": "49dd98ff70e927c7e4903f0c8165d6f1af41c66102b6d1c180f7048e5a0b678f",
+      "bytes": 1608
+    },
+    "lib/geometry-constants.ts": {
+      "sha256": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+      "bytes": 429
+    },
+    "lib/geometry-fit.ts": {
+      "sha256": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+      "bytes": 18908
+    },
+    "lib/mmcif.ts": {
+      "sha256": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+      "bytes": 50533
+    },
+    "lib/pae-visualization.ts": {
+      "sha256": "da766790f1d2e89fe00817b0ba394a0db67c6cbd10c030e34c70b3f2ef04ae3d",
+      "bytes": 5165
+    },
+    "lib/pose-ensemble.ts": {
+      "sha256": "c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+      "bytes": 60201
+    },
+    "lib/pose-evidence-v06.ts": {
+      "sha256": "83bbc4c48c22eadfdf2a8a288a9a46e05315feccba80279915e74b5c469742bc",
+      "bytes": 13869
+    },
+    "lib/pose-ranking.ts": {
+      "sha256": "6f0be122edcf7e6e8a70ea0f562dc0e1aa14dff4adf19b2bf2f67794711d0911",
+      "bytes": 8529
+    },
+    "lib/prediction-run-jobs.ts": {
+      "sha256": "6ccd6336a4e3193a7b429e0cb165e4508a8b1e7e2617b5aa45f673441175c704",
+      "bytes": 56754
+    },
+    "lib/prediction-run-lifecycle.ts": {
+      "sha256": "cdefe694472d28b22cb260b6992c96be03c3c737f0e0f4e4ade9c32c48821551",
+      "bytes": 4168
+    },
+    "lib/prediction-run-worker-protocol.ts": {
+      "sha256": "a32ab018c2dd7246125bed320b56b116ab9093f17921451373b59a39dd2bc1d8",
+      "bytes": 2735
+    },
+    "lib/prediction-run-worker.ts": {
+      "sha256": "8699fc4aaf8fbfd43db2e743aa4b754cbd6d02bf47b31ed78a04ea3011e24213",
+      "bytes": 1472
+    },
+    "lib/prediction-run.ts": {
+      "sha256": "c7ba1217d1310991d475532eb82fd8151463661f70c2c7360af271e8ff83ba38",
+      "bytes": 31994
+    },
+    "lib/release-validation.ts": {
+      "sha256": "81c682c3672d2cd46aaa558e1ac0cca59e1a21bf9a0a89e99606693602ebd79e",
+      "bytes": 7430
+    },
+    "lib/research-workspace.ts": {
+      "sha256": "bbf0b01cd5450658079b286b14a8728b68e743517a98d13307732000fbe0d415",
+      "bytes": 103597
+    },
+    "lib/sha256.ts": {
+      "sha256": "ea96e4c285008a4c500cc2409e6d3bd3a8f17698e6f29e4e3420eff441a2265f",
+      "bytes": 4320
+    },
+    "lib/state-pair.ts": {
+      "sha256": "d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+      "bytes": 67270
+    },
+    "lib/topology-annotation.ts": {
+      "sha256": "48dba5115e7d650815dfb7b4208bb5e349bcae6ec33b94f9d7a31a18c6dd7d6e",
+      "bytes": 15503
+    },
+    "lib/user-footprint.ts": {
+      "sha256": "cdeecd34293dfd081d70afd3e91fbe1747deffa2c2b27d8cab23bcf509aecfdd",
+      "bytes": 14871
+    },
+    "lib/utils.ts": {
+      "sha256": "53f3d3d070f0a9082934da25b875f9499855c2b0693868dd28be8c23d8730f68",
+      "bytes": 177
+    },
+    "lib/vhh-numbering-v06.ts": {
+      "sha256": "0d81880db9d9fa308150d7df64a0f1d05e3e9d8d3c552b4b736b842c789c3270",
+      "bytes": 9829
+    },
+    "lib/vhh-numbering.ts": {
+      "sha256": "32157450d56e24994c513fc09b40e7c66b4651c3cbf38b587bb4511a4d4ca1d7",
+      "bytes": 5253
+    },
+    "node_modules/immunum/immunum.js": {
+      "sha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00",
+      "bytes": 10138
+    },
+    "node_modules/immunum/immunum_bg.wasm": {
+      "sha256": "68804983b37b3746f65d84c9c6c0e703361ea9191fe3edc3d0748cddad2c646b",
+      "bytes": 698218
+    },
+    "node_modules/immunum/package.json": {
+      "sha256": "733c9d00636ec6b88ba3ff7584ecc2fb77380eb5d65750cdcacdd9214299b098",
+      "bytes": 564
+    },
+    "package-lock.json": {
+      "sha256": "fcbbf27caec4ea1ab4397790b6c51da6c0e2a90b18c1dfb2ed9ceddafdf2dabb",
+      "bytes": 448017
+    },
+    "package.json": {
+      "sha256": "3ab167819e8851a37adf7f04999b0a01a0fcd55ec2f485bbf8f5c4aa333e921d",
+      "bytes": 3274
+    },
+    "scripts/hard-decoy/oracle/canonical-json.mjs": {
+      "sha256": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+      "bytes": 7733
+    },
+    "scripts/paper/export-audit-report-ranks.mjs": {
+      "sha256": "e4d7259d3ada7edbbe485b899a916d942b85283dde5e94e0adad05d0ef62b520",
+      "bytes": 16883
+    },
+    "scripts/paper/export-coordinate-ranks.mjs": {
+      "sha256": "b63809e6b18d157e27e367531f0081de78b31589e7a0bb430fdd82ad4c95f60a",
+      "bytes": 15747
+    },
+    "scripts/paper/export-current-product-ranks.mjs": {
+      "sha256": "7782a6bdeeb36611ee574ff1ae35e4ac692d285d1ec28ce5f93781837627cf72",
+      "bytes": 11805
+    },
+    "scripts/paper/export-source-bound-coordinate-ranks.mjs": {
+      "sha256": "d03f7565d8b4b9f59eb6f3d176844c6b46bbf743edb6e7857e42048be2e6e13c",
+      "bytes": 14168
+    },
+    "scripts/paper/producer-score-sources.mjs": {
+      "sha256": "60791d5799e96b3d4c4c280e04e5eef4f96f988102291cf79c89ceba7d6ae43d",
+      "bytes": 12504
+    }
+  },
+  "node": "24.19.0",
+  "python": "3.12.14",
+  "numpy": "1.26.4",
+  "biopython": "1.88",
+  "fiveMethodModuleSha256": "f4a626ed75586c3d61c87e5ac35f9fec5b68c16b22434843a96104817f7524bb"
+}
