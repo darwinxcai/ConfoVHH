@@ -1,0 +1,255 @@
+{
+  "checker": {
+    "bytes": 18931,
+    "path": "/workspace/ConfoVHH/scripts/cloud/check-boltz-toolchain.py",
+    "sha256": "9ab433bbe35cbb3df042dff18aaad8719448bb55b160dd27f5d2d2d9f46d6ad4"
+  },
+  "compiler": {
+    "cc_override_present": true,
+    "compile": {
+      "command": [
+        "/usr/bin/gcc",
+        "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-probe.c",
+        "-std=c11",
+        "-O0",
+        "-I/opt/conda/include/python3.11",
+        "-o",
+        "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-probe"
+      ],
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": {
+        "bytes": 0,
+        "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-build.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 0,
+        "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-build.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "timeout_seconds": 30
+    },
+    "executable": {
+      "bytes": 928584,
+      "path": "/usr/bin/gcc",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89"
+    },
+    "probe_executable": {
+      "bytes": 15968,
+      "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-probe",
+      "sha256": "69f1231d709053d8bc2751bd5e29c31db4bcdace39d09a3efda3c720f98629f2"
+    },
+    "resolution_method": "CC",
+    "resolution_reference": {
+      "compiler_rule": "CC when present (one executable, no shell); otherwise gcc, then clang",
+      "include_rule": "active sysconfig default scheme include; posix_local becomes posix_prefix",
+      "sha256": "080b3fac37f0380980543c8d48f2e227bae8860760eb66b23c81c4781fd259c2",
+      "url": "https://github.com/triton-lang/triton/blob/v3.3.1/python/triton/runtime/build.py"
+    },
+    "resolved_executable": {
+      "bytes": 928584,
+      "path": "/usr/bin/x86_64-linux-gnu-gcc-11",
+      "sha256": "821af3c74506283c179ca413bb33e6b528805a4dd8a5c09df125e5ad560a9e89"
+    },
+    "run": {
+      "command": [
+        "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-probe"
+      ],
+      "expected_output_matched": true,
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": {
+        "bytes": 0,
+        "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-run.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 23,
+        "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-run.stdout.log",
+        "sha256": "e57b4e4ec12989da2e641bdf112b8b2b9f0518c3f359227d27282b00906739bb"
+      },
+      "timeout_seconds": 10
+    },
+    "source": {
+      "bytes": 213,
+      "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-probe.c",
+      "sha256": "22f3c42d9abc730cbab178053bce615f7bb13348179f7692f5e519e1cdd20a35"
+    },
+    "status": "PASS",
+    "version": {
+      "command": [
+        "/usr/bin/gcc",
+        "--version"
+      ],
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": {
+        "bytes": 0,
+        "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-version.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 246,
+        "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-version.stdout.log",
+        "sha256": "9829ba25432aae95cc193accafa14bfab70abb264f797d07c47ba1dcdf4f31a1"
+      },
+      "timeout_seconds": 10
+    }
+  },
+  "created_at_utc": "2026-09-09T22:50:49.530785+00:00",
+  "distributions": {
+    "boltz": [
+      "2.2.1"
+    ],
+    "torch": [
+      "2.7.1"
+    ],
+    "triton": [
+      "3.3.1"
+    ]
+  },
+  "failures": [],
+  "finished_at_utc": "2026-09-09T22:50:53.929015+00:00",
+  "limitations": [
+    "No model, input data, checkpoint, inference, or scientific output was exercised.",
+    "The frozen runtime check must be run separately; this helper does not replace it.",
+    "Compiler-only success proves no GPU or Boltz runtime readiness.",
+    "Source/executable identities are recorded; installed wheel contents are not reverified."
+  ],
+  "model_inference_runs": 0,
+  "python_headers": {
+    "exact_runtime_version_compile_assertion": true,
+    "files": {
+      "Python.h": {
+        "bytes": 2854,
+        "path": "/opt/conda/include/python3.11/Python.h",
+        "sha256": "0996602e0860a811d9a526c410e5acf04c1ec91c0a27bc5edef3ea077ad46a27"
+      },
+      "patchlevel.h": {
+        "bytes": 1301,
+        "path": "/opt/conda/include/python3.11/patchlevel.h",
+        "sha256": "37a76b7c129853cab452ed1dc73651feb7b69c0be9e2104fb62c7745ec07d643"
+      },
+      "pyconfig.h": {
+        "bytes": 53272,
+        "path": "/opt/conda/include/python3.11/pyconfig.h",
+        "sha256": "64df96cf9fdbf068a8b937b747b0c816462b9b22e7029465962cfdaa0739709f"
+      }
+    },
+    "include_directory": "/opt/conda/include/python3.11",
+    "required_python_hexversion": 51056112,
+    "status": "PASS",
+    "sysconfig_scheme": "venv"
+  },
+  "runtime": {
+    "base_prefix": "/opt/conda",
+    "implementation": "CPython",
+    "isolated_flag": true,
+    "isolated_venv": true,
+    "machine": "x86_64",
+    "prefix": "/opt/confovhh-boltz",
+    "python": "3.11.13",
+    "python_executable": {
+      "bytes": 25382192,
+      "path": "/opt/confovhh-boltz/bin/python",
+      "sha256": "f95bbecba67975d3f8ef22e91549021d444509dabda3fb42bbb8d907970ed47e"
+    },
+    "python_hexversion": 51056112,
+    "python_major_minor": [
+      3,
+      11
+    ],
+    "system": "Linux"
+  },
+  "schema": "confovhh.boltz-toolchain-check.v1",
+  "scientific_readiness": false,
+  "scope": "compiler_and_fresh_triton_jit",
+  "status": "PASS",
+  "triton_jit": {
+    "cache": {
+      "fresh_empty_directories": true,
+      "temporary": true,
+      "torchinductor": "/tmp/confovhh-triton-fresh-kprxk18y/inductor",
+      "triton": "/tmp/confovhh-triton-fresh-kprxk18y/triton",
+      "triton_file_count": 9
+    },
+    "child": {
+      "command": [
+        "/opt/confovhh-boltz/bin/python",
+        "-I",
+        "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit-probe.py",
+        "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit-result.json"
+      ],
+      "returncode": 0,
+      "status": "PASS",
+      "stderr": {
+        "bytes": 326,
+        "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit.stderr.log",
+        "sha256": "3f79e970099219865b477b35c1b877d4901850661ac67922a544eed913a0169e"
+      },
+      "stdout": {
+        "bytes": 0,
+        "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit.stdout.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "timeout_seconds": 120
+    },
+    "result": {
+      "block_size": 256,
+      "cubin_sha256": "a4e741c78bbe739b1b458b8e3b7ee2d42d5a7f312f25a84aad7b643001f2e39e",
+      "cuda_synchronized": true,
+      "device": {
+        "compute_capability": [
+          8,
+          0
+        ],
+        "index": 0,
+        "name": "NVIDIA A100 80GB PCIe",
+        "total_memory_bytes": 85093777408
+      },
+      "distributions": {
+        "torch": "2.7.1",
+        "triton": "3.3.1"
+      },
+      "fresh_cache_cubin_count": 1,
+      "isolated_flag": true,
+      "kernel_executed": true,
+      "max_absolute_error": 0.0,
+      "modules": {
+        "torch": {
+          "path": "/opt/confovhh-boltz/lib/python3.11/site-packages/torch/__init__.py",
+          "sha256": "9801e75447c7f585545f989f8a21940b60e0c4cc888effb2f08e739664b4b904"
+        },
+        "triton": {
+          "path": "/opt/confovhh-boltz/lib/python3.11/site-packages/triton/__init__.py",
+          "sha256": "dd2410cadfa8cb04016107ee6dab2cdcdba3d3ca3c46a3ea9a58ba20f62d870c"
+        },
+        "triton.runtime.build": {
+          "path": "/opt/confovhh-boltz/lib/python3.11/site-packages/triton/runtime/build.py",
+          "sha256": "080b3fac37f0380980543c8d48f2e227bae8860760eb66b23c81c4781fd259c2"
+        }
+      },
+      "non_block_multiple": true,
+      "python_executable": "/opt/confovhh-boltz/bin/python",
+      "reference": "independent deterministic CPU values; exact float32 comparison",
+      "status": "PASS",
+      "torch_cuda_build_version": "12.6",
+      "torch_import_version": "2.7.1+cu126",
+      "triton_import_version": "3.3.1",
+      "vector_length": 1003
+    },
+    "result_file": {
+      "bytes": 1421,
+      "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit-result.json",
+      "sha256": "ca53ec9fa4fee15aed1941b552865e34e0864b6e91a1c00f927e51fbb438cf7d"
+    },
+    "source": {
+      "bytes": 4279,
+      "path": "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit-probe.py",
+      "sha256": "4a936ea4f38d1cc1b70d8b4c448d7f9f41c1b4405352b28ae7ca37780e0e46a2"
+    },
+    "status": "PASS",
+    "timeout_seconds": 120
+  }
+}

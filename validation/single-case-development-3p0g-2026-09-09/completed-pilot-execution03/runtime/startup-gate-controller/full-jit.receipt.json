@@ -1,0 +1,26 @@
+{
+  "cleanupActions": [],
+  "command": [
+    "/opt/confovhh-boltz/bin/python",
+    "-I",
+    "/workspace/ConfoVHH/scripts/cloud/check-boltz-toolchain.py",
+    "--output",
+    "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit"
+  ],
+  "completedAtUtc": "2026-09-09T22:50:54.003728+00:00",
+  "elapsedSeconds": 4.582500843331218,
+  "exitCode": 0,
+  "outerTimeoutSeconds": 240,
+  "predictionRequested": false,
+  "startedAtUtc": "2026-09-09T22:50:49.421263+00:00",
+  "status": "PASS",
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 178,
+    "sha256": "99a1daeac2ee3a36c0fa2bc4f943e87b6c2716404db17823c10130049b969754"
+  },
+  "timedOut": false
+}

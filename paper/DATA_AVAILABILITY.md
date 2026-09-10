@@ -1,6 +1,6 @@
 # Data and code availability for the software/application paper
 
-Updated 8 September 2026. This record distinguishes what a public reviewer can
+Updated 10 September 2026 (UTC). This record distinguishes what a public reviewer can
 reproduce now from what still requires external data access. It is suitable as
 the source for a venue-specific data-availability statement, but it is not a
 claim that all underlying application inputs are public.
@@ -25,7 +25,29 @@ claim that all underlying application inputs are public.
   and records input, output and implementation hashes. The official Boltz
   parser smoke is also synthetic. Neither is an application-study observation.
 
-## Partially reproducible
+## Separate completed ten-candidate pilot
+
+The repository now includes the [3P0G execution03 package](../validation/single-case-development-3p0g-2026-09-09/completed-pilot-execution03/README.md):
+ten raw coordinate and predictor-confidence files, all ten full PAE matrices,
+original generation/runtime/evaluation receipts, prior failed/not-run records,
+reference coordinates, and a byte-verified CPU ranking reproduction with
+post-outcome interface analysis. The frozen MSAs, protocol and dependency locks
+remain in their original locations. The package supplies coordinate-to-ranking
+replay; reproducing GPU generation is a separate operation requiring the pinned
+external model assets and runtime. No new generation is needed to inspect or
+replay this result.
+
+The [new pilot claim/evidence manifest](evidence/single-case-3p0g-selection-failure-2026-09-09/claim-evidence-v1.json)
+truthfully records new analysis and access to predictions and the native
+reference. It is separate from the unchanged historical seven-claim manifest.
+The original negative outcome and the post-outcome diagnostics are separately
+named. Verify the package with
+`python3 scripts/paper/verify-single-case-pilot-evidence.py`.
+This adds one development-exposed case, not independent validation, and does
+not recover any of the historical missing models or PAE matrices below.
+A stable archival identifier for the submitted release is still outstanding.
+
+## Partially reproducible historical application
 
 The public repository contains the retained derived application and selection
 artifacts, their provenance records, checksums and tests. These support replay
@@ -72,8 +94,8 @@ ConfoVHH source code, documentation, synthetic reviewer inputs and verification
 tests are publicly available in the project repository under the MIT license.
 The repository also contains checksummed derived tables and standard-library
 replay tests for the reported retrospective application and selection analysis.
-Full raw-to-result reproduction is not currently available because durable
-public access and redistribution terms for the original coordinate and
+For the historical 165-model application, full raw-to-result reproduction is
+not currently available because durable public access and redistribution terms for the original coordinate and
 confidence archives remain unresolved. Coordinates for 85 additional
 preliminary cognate models and full PAE matrices are unavailable; analyses and
 claims are therefore limited to the retained subset. The exact reviewed release

@@ -276,6 +276,49 @@ preceding audit. Across all 33 jobs, binary selection outcomes agreed in 32
 and favored the exported-score baseline in one. These observations do not
 support a claim of ConfoVHH selection superiority in this set.
 
+### Completed frozen ten-candidate 3P0G development pilot
+
+A separately frozen, previously exposed 3P0G development pilot generated ten
+Boltz 2.2.1 candidates from two seeds and five samples per seed. All ten
+coordinates, confidence outputs and DockQ evaluations were available. The
+unchanged ConfoVHH selection was `seed2_model_4` (DockQ
+0.1762564824406321), whereas maximum whole-complex predictor confidence
+selected `seed2_model_0` (DockQ 0.48462880897372757), also the best available
+candidate by DockQ. Each selection was a singleton; no multi-candidate ties,
+failures or missing results occurred in this completed pool. The
+ConfoVHH-minus-confidence difference was −0.30837232653309543.
+
+Independent CPU-only re-auditing reproduced every original geometry field and
+all ten ranks, with coordinate/confidence hashes, exact input sequences,
+chain A receptor/chain B VHH roles and 41 frozen source/dependency identities
+verified. A separate atom-distance calculation reproduced all contact and
+severe-clash counts. No scoring implementation correction was warranted in
+this tested path. The ranking first compares evidence tier, descending, then
+unrounded half-delta-SASA interface burial, descending. Only the two poses
+with zero severe-clash residue pairs received `supported` tier 2. Within that
+tier, `seed2_model_4` had burial 1058.4596798033813 Å², greater than
+`seed1_model_4` at 928.2626822950779 Å². The best-DockQ candidate had larger
+burial, 1512.5783279588954 Å², but six severe-clash pairs placed it in `mixed`
+tier 1. All eight mixed-tier poses had higher DockQ than both supported poses.
+
+Receptor-aligned inspection recovered 13 of 51 observed native contacts for
+the ConfoVHH selection, compared with 31 of 51 for the confidence/best
+selection. Four of the latter's six clash pairs involved the entirely
+unobserved T4-lysozyme insertion, one an unobserved receptor segment and one
+an observed receptor residue. Thus unobserved construct regions contribute
+strongly to the penalty, but do not account for every penalized clash.
+The selected pose also contacts the unobserved fusion and displaces the VHH
+from its deposited interface. Favorable local geometry is not evidence that
+the native interface was recovered.
+
+The [complete pilot and failure analysis](../validation/single-case-development-3p0g-2026-09-09/completed-pilot-execution03/README.md)
+contains the exact per-candidate table, original and new receipts, raw
+coordinates/confidence/PAE, aligned overlays and a terminal-tag mapping
+sensitivity analysis. This post-outcome development case is separate from
+the historical 165-model/33-job corpus and does not increase the number of
+independently eligible groups. Earlier zero-coordinate failures and not-run
+attempt records remain preserved outside the completed ten-candidate pool.
+
 ## Figure 1
 
 ![ConfoVHH geometry and official DockQ for all 165 retained models](../validation/gpcr-paper-development-2026-09-04/paper-evidence/figures/confovhh-native-interface-recovery.png)
@@ -333,6 +376,16 @@ summaries and an unknown internal tie policy. Hindsight selection supplies
 only an outcome-dependent ceiling. No ranking weights or thresholds were
 changed in response to these results.
 
+The completed ten-candidate pilot provides a further negative development
+example of a categorical clash gate dominating burial and interface recovery.
+Its engineered/unobserved receptor regions and ambiguous terminal His-tag
+sequence alignment limit structural interpretation. The preserved frozen
+DockQ result remains authoritative; a separate label-mapping diagnostic is
+reported without changing the original comparison. Any region mask, revised
+clash policy or new score motivated by these outcomes is exploratory
+development and requires prospectively specified evaluation on new held-out
+cases. No such redesigned selector is validated here.
+
 The evidence therefore supports a transparent account of selection behavior
 and identifiable failure cases within this development corpus. It does not
 provide independent validation, calibrated probabilities, experimental
@@ -351,7 +404,9 @@ cohort is unbalanced and its availability may be selective. It cannot establish
 population-level ranking performance, receptor-family generalization, binding
 affinity, specificity, membrane compatibility, or state selectivity.
 
-The Boltz arm has not been run. Its execution wrapper now preserves failed
+The historical multi-condition/template Boltz arm has not been run. The
+separate no-template ten-candidate pilot above is complete and must not be
+read as execution of that earlier arm. Its execution wrapper now preserves failed
 attempts, verifies exact output identities, and binds logs, cached inputs and
 software/checkpoint provenance before completion. Complete runtime and asset verification, cached MSAs, and template feature
 mapping remain outstanding. We prepared a separate optional pair of
@@ -385,8 +440,11 @@ verification inventory, and reproduction commands. Its summary calculation
 can be reproduced from the committed paired CSV using Python's standard
 library, without new predictions or access to a native structure.
 
-Raw predicted coordinates and original confidence JSON remain in the recovered
-verification archives and are not embedded in this repository. Their hashes
+For the historical 165-model application, raw predicted coordinates and
+original confidence JSON remain in the recovered verification archives and
+are not embedded in this repository. The separate completed ten-candidate
+pilot now includes those original files and full PAE in its committed package;
+this does not recover missing files from the historical corpus. Their hashes
 are recorded, but public data deposition and durable archive access must be
 resolved before presenting the full raw-to-result workflow as publicly
 reproducible. The new template assets are separately documented as development

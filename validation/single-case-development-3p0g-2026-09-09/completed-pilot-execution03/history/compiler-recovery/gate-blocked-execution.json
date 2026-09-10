@@ -1,0 +1,104 @@
+{
+  "status": "STOPPED_BEFORE_INFERENCE",
+  "createdAtUtc": "2026-09-09T19:30:16.927642+00:00",
+  "podId": "8d1hqgw7m22chh",
+  "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+  "runtimeGate": "FAIL",
+  "fullGpuJitGate": "NOT_RUN",
+  "generationRunnerLaunched": false,
+  "modelInferenceRuns": 0,
+  "plannedSlots": [
+    {
+      "id": "seed1_model_0",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    },
+    {
+      "id": "seed1_model_1",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    },
+    {
+      "id": "seed1_model_2",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    },
+    {
+      "id": "seed1_model_3",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    },
+    {
+      "id": "seed1_model_4",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    },
+    {
+      "id": "seed2_model_0",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    },
+    {
+      "id": "seed2_model_1",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    },
+    {
+      "id": "seed2_model_2",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    },
+    {
+      "id": "seed2_model_3",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    },
+    {
+      "id": "seed2_model_4",
+      "executionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+      "status": "not-run",
+      "reason": "Original runtime gate failed: boltz predict --help exceeded fixed 60-second timeout",
+      "coordinate": null,
+      "predictorConfidence": null,
+      "DockQ": null
+    }
+  ],
+  "previousAttemptRecordsPreservedSeparately": true,
+  "frozenParametersChanged": false
+}

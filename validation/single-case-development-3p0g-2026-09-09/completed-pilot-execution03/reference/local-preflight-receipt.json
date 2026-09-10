@@ -1,0 +1,213 @@
+{
+  "status": "PASS_REFERENCE_PREFLIGHT_LOCAL_REPRODUCTION",
+  "completedAtUtc": "2026-09-09T17:59:23.646336+00:00",
+  "referenceSha256": "ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88",
+  "nativeProteinSha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557",
+  "nativeProteinBytes": 260262,
+  "allThreeCoordinateArtifactsMatchFrozenBytes": true,
+  "metadata": {
+    "A": {
+      "sha256": "d52abf9bf1a3f30a8c02bece6b28eb68d8d1d2625eb7b2af7a540a4a21c21aa9",
+      "matchesPublishedDesignFreeze": true
+    },
+    "B": {
+      "sha256": "ca133f322b3e3d190f208d0cd2b1eb152bbd99563e9520642ffdd3bad29e89a6",
+      "matchesPublishedDesignFreeze": true
+    }
+  },
+  "runtime": {
+    "DockQ_version": "2.1.3",
+    "DockQ_module_sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+    "supporting_source_sha256": {
+      "parsers.py": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0",
+      "constants.py": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18",
+      "operations.pyx": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512",
+      "operations_nocy.py": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3"
+    },
+    "supporting_source_pin_origin": "validation/dockq-development-pilot-v1/summary.json software.installedDockqDistribution.files; historical artifact read only",
+    "distribution_files": [
+      {
+        "path": "../../../bin/DockQ",
+        "sha256": "c5c3b27cc799c9302c14a3bb80d75df5d9c780fdee5a82713d0a516d902af86e"
+      },
+      {
+        "path": "DockQ/DockQ.py",
+        "sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887"
+      },
+      {
+        "path": "DockQ/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "DockQ/__main__.py",
+        "sha256": "a2dc944b6fdaeb5c4f3574c452519449505756abbb96e2261179a2b643b57df5"
+      },
+      {
+        "path": "DockQ/constants.py",
+        "sha256": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18"
+      },
+      {
+        "path": "DockQ/operations.c",
+        "sha256": "b774929bd5e762bc4209c470b589bf063c8d80377dfe155f5ae17478580570fc"
+      },
+      {
+        "path": "DockQ/operations.cpython-312-darwin.so",
+        "sha256": "eb6494a974469e4a76043d36e11b916ac348c922dc16635a05478055561f4fb1"
+      },
+      {
+        "path": "DockQ/operations.pyx",
+        "sha256": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512"
+      },
+      {
+        "path": "DockQ/operations_nocy.py",
+        "sha256": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3"
+      },
+      {
+        "path": "DockQ/parsers.py",
+        "sha256": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/INSTALLER",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/METADATA",
+        "sha256": "f8241586d348b2740360f4e2a186925883f02578b5a82a241780313017f3117e"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/RECORD",
+        "sha256": "1a29d645caa1a00b173d14ec8718ce8afa8084569149f9c58b4b10c1201d5318"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/REQUESTED",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/WHEEL",
+        "sha256": "0fd4d7120fd09c4c32a84b930256e321515115a540e403e0d1402ba5fc7d257b"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/entry_points.txt",
+        "sha256": "41d30d6b08732681ff6fb00a39616cc3826a870fcada04068f9ae76dc81ca968"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/licenses/LICENSE",
+        "sha256": "1ac62f778ff853b0b7215565aa86a2b6fde946508552cb41b75a74e5e0c3df79"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/top_level.txt",
+        "sha256": "3115f3aabad257c4325edcaea708b6d6bab29712838e70964536c70e16ca7a17"
+      }
+    ],
+    "distribution_fingerprint_sha256": "85a96caf948ad40ef403ee5dbb6b2602944dbaef21cb31ebbe5a538fe509e765",
+    "dependencies": {
+      "biopython": "1.88",
+      "colorama": "0.4.6",
+      "dockq": "2.1.3",
+      "networkx": "3.6.1",
+      "numpy": "1.26.4",
+      "parallelbar": "2.5",
+      "tqdm": "4.70.0"
+    },
+    "all_installed_distributions": [
+      {
+        "name": "biopython",
+        "version": "1.88"
+      },
+      {
+        "name": "colorama",
+        "version": "0.4.6"
+      },
+      {
+        "name": "dockq",
+        "version": "2.1.3"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "numpy",
+        "version": "1.26.4"
+      },
+      {
+        "name": "parallelbar",
+        "version": "2.5"
+      },
+      {
+        "name": "pip",
+        "version": "25.0.1"
+      },
+      {
+        "name": "tqdm",
+        "version": "4.70.0"
+      }
+    ],
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "python_executable": "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/work/evaluation-venv/bin/python",
+    "platform": "macOS-14.6.1-arm64-arm-64bit"
+  },
+  "controls": {
+    "native_self": {
+      "DockQ": 0.999999999999908,
+      "iRMSD": 7.407573105697312e-07,
+      "LRMSD": 1.5335822229060223e-06,
+      "fnat": 1.0,
+      "fnonnat": 0.0,
+      "F1": 1.0,
+      "nat_total": 51,
+      "nat_correct": 51,
+      "model_total": 51,
+      "nonnat_count": 0,
+      "clashes": 0,
+      "chain_map": {
+        "A": "A",
+        "B": "B"
+      },
+      "interface": "AB"
+    },
+    "common_translation": {
+      "DockQ": 0.9999999996958966,
+      "iRMSD": 4.5093297982433e-05,
+      "LRMSD": 2.489017628245013e-05,
+      "fnat": 1.0,
+      "fnonnat": 0.0,
+      "F1": 1.0,
+      "nat_total": 51,
+      "nat_correct": 51,
+      "model_total": 51,
+      "nonnat_count": 0,
+      "clashes": 0,
+      "chain_map": {
+        "A": "A",
+        "B": "B"
+      },
+      "interface": "AB"
+    },
+    "vhh_plus1000A_x": {
+      "DockQ": 2.7361904265003003e-05,
+      "iRMSD": 478.15752632368395,
+      "LRMSD": 1000.0000000000003,
+      "fnat": 0.0,
+      "fnonnat": 0.0,
+      "F1": 0.0,
+      "nat_total": 51,
+      "nat_correct": 0,
+      "model_total": 0,
+      "nonnat_count": 0,
+      "clashes": 0,
+      "chain_map": {
+        "A": "A",
+        "B": "B"
+      },
+      "interface": "AB"
+    }
+  },
+  "nativeSelfApiCliDifference": 0.0,
+  "sourceHelpersUnmodified": true,
+  "providedToGenerator": false,
+  "originalPrivateFreezeCommitAvailable": false,
+  "publishedEquivalentCommitUsedForMetadataVerification": "7e353c0e7aa3aa0af53249ed655dfd8e087e2c10",
+  "originalReferencePreflightReceiptSha256": "0424fd56d7e48536fbae55fa92fe8728dc3c2a1946701f4e805705f0ceeb84c3",
+  "remainingCheck": "First successful planned candidate API/CLI agreement within 1e-6"
+}

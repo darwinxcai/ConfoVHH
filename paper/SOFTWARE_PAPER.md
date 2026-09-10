@@ -181,9 +181,27 @@ preliminary cognate models. Their absence is not established to be random.
 The detailed manuscript also reports that agreement in one receptor distance
 can coexist with poor VHH-interface recovery. Neither observation establishes
 binding affinity, state selectivity, membrane compatibility, or improved
-experimental decisions. All quantitative statements in this section summarize
-the existing manuscript; no new native structures, prediction outputs, or
-outcome tables were accessed to prepare this draft.
+experimental decisions. These historical paragraphs summarize the existing
+retained-corpus manuscript; no new native structures, prediction outputs or
+outcome tables were accessed to prepare that earlier section. The separate
+completed-pilot addendum below did access preserved predictions and the native
+reference for new post-outcome analysis.
+
+### Separate completed development pilot (9–10 September 2026)
+
+The [frozen ten-candidate 3P0G pilot](../validation/single-case-development-3p0g-2026-09-09/completed-pilot-execution03/README.md)
+completed with all coordinates, confidence and DockQ values present. ConfoVHH
+selected `seed2_model_4`, DockQ 0.1762564824406321; confidence selected
+`seed2_model_0`, DockQ 0.48462880897372757, also the best available candidate.
+There were no multi-candidate ties or missing results. Independent coordinate
+replay exactly reproduced the ranking and verified frozen file identities and
+chain roles. The tier gate placed both zero-clash poses ahead of eight higher-DockQ
+mixed-tier alternatives; burial then chose between those two supported poses. Aligned structural analysis documents native-interface
+displacement and clash contributions from unobserved receptor/fusion regions.
+No scoring implementation correction was supported. This is a negative,
+previously exposed development case, separate from the 165-model corpus and
+from independent validation. No new GPU generation was used for the analysis.
+Any scoring redesign requires new held-out evaluation.
 
 ## Availability and remaining publication work
 

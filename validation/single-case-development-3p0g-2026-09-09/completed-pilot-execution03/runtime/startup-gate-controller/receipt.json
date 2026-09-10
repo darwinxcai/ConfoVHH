@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "cleanupActions": [],
+      "command": [
+        "/opt/confovhh-boltz/bin/python",
+        "-I",
+        "/workspace/ConfoVHH/scripts/cloud/check-boltz-runtime.py",
+        "--lock",
+        "/workspace/ConfoVHH/cloud/boltz-runtime-candidate/requirements-linux-py311.lock",
+        "--output",
+        "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/runtime-smoke.json"
+      ],
+      "completedAtUtc": "2026-09-09T22:50:49.354194+00:00",
+      "elapsedSeconds": 9.930850315839052,
+      "exitCode": 0,
+      "label": "runtime",
+      "originalReceiptSha256": "53f4be67756ef6686474bf35f4506b3184e46c44d9810fe33cc2bc94a2990b23",
+      "outerTimeoutSeconds": 180,
+      "predictionRequested": false,
+      "startedAtUtc": "2026-09-09T22:50:39.423378+00:00",
+      "status": "PASS",
+      "stderr": {
+        "bytes": 326,
+        "sha256": "3f79e970099219865b477b35c1b877d4901850661ac67922a544eed913a0169e"
+      },
+      "stdout": {
+        "bytes": 183,
+        "sha256": "402dbea3d8a3bfed62e9b63ce8563ba5619f37cb610de0b46458f981d58bb800"
+      },
+      "timedOut": false
+    },
+    {
+      "cleanupActions": [],
+      "command": [
+        "/opt/confovhh-boltz/bin/python",
+        "-I",
+        "/workspace/ConfoVHH/scripts/cloud/check-boltz-toolchain.py",
+        "--output",
+        "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit"
+      ],
+      "completedAtUtc": "2026-09-09T22:50:54.003728+00:00",
+      "elapsedSeconds": 4.582500843331218,
+      "exitCode": 0,
+      "label": "full-jit",
+      "originalReceiptSha256": "11a803d04a6d33a54e4fe74e475720d203066aa0c71b5c8575f3dee597766cb4",
+      "outerTimeoutSeconds": 240,
+      "predictionRequested": false,
+      "startedAtUtc": "2026-09-09T22:50:49.421263+00:00",
+      "status": "PASS",
+      "stderr": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stdout": {
+        "bytes": 178,
+        "sha256": "99a1daeac2ee3a36c0fa2bc4f943e87b6c2716404db17823c10130049b969754"
+      },
+      "timedOut": false
+    }
+  ],
+  "completedAtUtc": "2026-09-09T22:50:54.061303+00:00",
+  "deadlineUtc": "2026-09-09T23:21:49.747930+00:00",
+  "executionId": "confovhh-3p0g-startup-recovery-20260909-03",
+  "predictionRequested": false,
+  "schema": "confovhh.startup-gate-controller.v1",
+  "scientificRunnerInvoked": false,
+  "startedAtUtc": "2026-09-09T22:50:39.372164+00:00",
+  "status": "BOTH_GPU_CHECKERS_PASSED_REQUIRES_FINAL_SOURCE_CACHE_RESTORE_GATES"
+}

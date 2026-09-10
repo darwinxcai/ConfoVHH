@@ -1,0 +1,152 @@
+{
+  "run": {
+    "args": [
+      "/opt/confovhh-boltz/bin/boltz",
+      "predict",
+      "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/3P0G_seed2.yaml",
+      "--out_dir",
+      "/workspace/executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw",
+      "--cache",
+      "/workspace/boltz-cache",
+      "--checkpoint",
+      "/workspace/boltz-cache/boltz2_conf.ckpt",
+      "--affinity_checkpoint",
+      "/workspace/boltz-cache/boltz2_aff.ckpt",
+      "--model",
+      "boltz2",
+      "--accelerator",
+      "gpu",
+      "--devices",
+      "1",
+      "--seed",
+      "2",
+      "--diffusion_samples",
+      "5",
+      "--max_parallel_samples",
+      "5",
+      "--recycling_steps",
+      "3",
+      "--sampling_steps",
+      "200",
+      "--step_scale",
+      "1.5",
+      "--output_format",
+      "mmcif",
+      "--write_full_pae",
+      "--use_potentials"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "elapsedSeconds": 252.15736181288958,
+    "logSha256": "813fe23ff436412ecdaa023ccb6830dbf66cd97543c32d84ad72fa10c1b8e2d9",
+    "seed": 2,
+    "inputSha256": "9487689b20a7b9029aaf75ef727f9358366861219172b950f3ccf90e30ebaf25"
+  },
+  "attempts": [
+    {
+      "id": "seed2_model_0",
+      "seed": 2,
+      "modelFileIndex": 0,
+      "status": "generated",
+      "reason": "",
+      "artifacts": {
+        "coordinate": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_0.cif",
+          "sha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838",
+          "bytes": 439406
+        },
+        "confidence": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_0.json",
+          "sha256": "1988bc83c97efe89dd94eaf4c119a262a1926822d19e4b9949c584343e5dd764",
+          "bytes": 907
+        }
+      },
+      "seedExitCode": 0,
+      "confidenceStatus": "present"
+    },
+    {
+      "id": "seed2_model_1",
+      "seed": 2,
+      "modelFileIndex": 1,
+      "status": "generated",
+      "reason": "",
+      "artifacts": {
+        "coordinate": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_1.cif",
+          "sha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b",
+          "bytes": 440440
+        },
+        "confidence": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_1.json",
+          "sha256": "26e7ba392ce67e6b489acc536dd5c8842a7ead2583196d559512480379960b37",
+          "bytes": 911
+        }
+      },
+      "seedExitCode": 0,
+      "confidenceStatus": "present"
+    },
+    {
+      "id": "seed2_model_2",
+      "seed": 2,
+      "modelFileIndex": 2,
+      "status": "generated",
+      "reason": "",
+      "artifacts": {
+        "coordinate": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_2.cif",
+          "sha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff",
+          "bytes": 440891
+        },
+        "confidence": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_2.json",
+          "sha256": "0166f3f387c970dfe9f332086cb70ebb81abcfef01d621f6854b3ae97fb33a89",
+          "bytes": 911
+        }
+      },
+      "seedExitCode": 0,
+      "confidenceStatus": "present"
+    },
+    {
+      "id": "seed2_model_3",
+      "seed": 2,
+      "modelFileIndex": 3,
+      "status": "generated",
+      "reason": "",
+      "artifacts": {
+        "coordinate": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_3.cif",
+          "sha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8",
+          "bytes": 440578
+        },
+        "confidence": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_3.json",
+          "sha256": "3773c94234a3f6750b0cf519372d76bca2857228a50003efa9e0f1966bde2b2a",
+          "bytes": 911
+        }
+      },
+      "seedExitCode": 0,
+      "confidenceStatus": "present"
+    },
+    {
+      "id": "seed2_model_4",
+      "seed": 2,
+      "modelFileIndex": 4,
+      "status": "generated",
+      "reason": "",
+      "artifacts": {
+        "coordinate": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_4.cif",
+          "sha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d",
+          "bytes": 440993
+        },
+        "confidence": {
+          "path": "raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_4.json",
+          "sha256": "b4b826def327112b88378654b9624218dfa02c6bb0204b59d0c1b6bb724714e4",
+          "bytes": 916
+        }
+      },
+      "seedExitCode": 0,
+      "confidenceStatus": "present"
+    }
+  ]
+}

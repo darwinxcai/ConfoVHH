@@ -14,6 +14,11 @@ example; the [claim/evidence manifest](CLAIM_EVIDENCE.json) and
 and [submission readiness](SUBMISSION_READINESS.md) identifies the concrete
 publication gates. Additional census exclusions alone do not complete a paper.
 
+The separately versioned [completed-pilot evidence record](evidence/single-case-3p0g-selection-failure-2026-09-09/claim-evidence-v1.json)
+adds ten preserved Boltz predictions and a reproduced negative selection result.
+It records actual prediction/native-reference access and new post-outcome
+analysis; the earlier seven-claim manifest remains unchanged as history.
+
 ## What the current evidence supports
 
 | Question | Completed evidence | Interpretation |
@@ -21,6 +26,7 @@ publication gates. Additional census exclusions alone do not complete a paper.
 | Can the workflow audit genuine GPCR predictions? | 165 reviewed cognate models; all officially rescored and audited with unchanged ConfoVHH | A traceable retrospective application |
 | Does a supported geometry flag identify the deposited interface? | Eight of fifteen supported flags have DockQ below 0.23 | The flag must remain evidence for review, not a native-pose classification |
 | Does ConfoVHH improve native-interface selection here? | 18/33 acceptable selections versus 19/33 for maximum exported score; only four mixed-quality jobs | No support for selection superiority in this retained set |
+| Does the new frozen ten-candidate pilot favor ConfoVHH selection? | All ten ranks reproduced; ConfoVHH DockQ 0.176256 versus confidence/best 0.484629; zero-clash tier gate explains selection | Negative development result; no independent validation or scoring redesign |
 | Can one receptor distance stand in for interface recovery? | 5JQH endpoint agreement co-occurs with poor official DockQ | The readouts must be evaluated separately |
 | Is a controlled template comparison ready to run? | Two coordinate-preserving templates with the same 275 residues and 2,155 heavy atoms; a separate official Boltz synthetic parser smoke now passes | Real-template parsing, complete runtime/cache verification, and inference remain unfinished |
 
@@ -29,6 +35,11 @@ three receptor targets. All four jobs with both acceptable and poor candidates
 concern 3P0G. These are not 33 independent informative biological experiments.
 
 ## Evidence locations
+
+- [Completed ten-candidate pilot and failure analysis](../validation/single-case-development-3p0g-2026-09-09/completed-pilot-execution03/README.md):
+  all coordinates/confidence/PAE, original outcomes and failed attempts, exact
+  rank replay, contact/clash census and receptor-aligned overlays. This separate
+  no-template pilot does not complete the optional matched-template arm.
 
 - [Paired development study](../validation/gpcr-paper-development-2026-09-04/README.md):
   reviewed inclusion, official DockQ 2.1.3, unchanged ConfoVHH audits, endpoint
@@ -45,8 +56,9 @@ concern 3P0G. These are not 33 independent informative biological experiments.
 
 An [executable paired-selection metric](PAIRED_SELECTION_EVALUATION.md) now
 provides tie-aware top-1 comparisons, declared-group weighting, uncertainty and
-complete supplied-attempt accounting. It has been exercised only with synthetic
-labels. It does not score new complexes or constitute an independent evaluation;
+complete supplied-attempt accounting. That general paired evaluator has been
+exercised only with synthetic labels. The separate single-case evaluator now
+has the completed development pilot linked above. Neither constitutes an independent evaluation;
 authorized frozen study inputs and the complete protocol are still required.
 The [current-product rank exporter](CURRENT_PRODUCT_RANK_EXPORT.md) now connects
 supplied audit features to that evaluator using exact shipped source identities

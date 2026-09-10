@@ -1,0 +1,249 @@
+{
+  "inputSha256": "017eaf055ed93978f6fe6936263745e35d71ad46b1f9f9d74dc193862b0fcdbd",
+  "evaluatorSha256": "2cd85ced313be9df88b2b2dc2147b146a081974f9e38c54702b572268b80fd92",
+  "strictJsonParserSha256": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+  "nodeVersion": "v24.19.0",
+  "report": {
+    "schema": "confovhh-single-case-dockq-report-v1",
+    "studyId": "single-case-development-3p0g-20260909",
+    "status": "descriptive-comparison-complete",
+    "plan": {
+      "targetId": "3P0G",
+      "generatorId": "boltz221",
+      "plannedCandidateIds": [
+        "seed1_model_0",
+        "seed1_model_1",
+        "seed1_model_2",
+        "seed1_model_3",
+        "seed1_model_4",
+        "seed2_model_0",
+        "seed2_model_1",
+        "seed2_model_2",
+        "seed2_model_3",
+        "seed2_model_4"
+      ],
+      "referenceSha256": "ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88"
+    },
+    "method": {
+      "name": "coordinate-executed-current-product",
+      "policySha256": "3139e1a8ecfec94dfd92be97e3635aeb4dc180dce30a3b353c38ac79ed382982"
+    },
+    "baseline": {
+      "name": "source-bound-producer-confidence",
+      "policySha256": "b26099cbc3fcc59b04452b17c57089460682dc99829469f46a90d4613ecb2383"
+    },
+    "policy": {
+      "schema": "confovhh-single-case-dockq-policy-v1",
+      "selectionUnit": "one-declared-joint-candidate-pool",
+      "ranking": "consume-source-bound-comparisonFields-rankings-without-recomputing-scoring",
+      "tieRule": "all-candidates-in-exact-lowest-integer-tier; uniform-selection-expectation",
+      "outcome": "finite-DockQ-in-inclusive-range-0-to-1",
+      "positiveThreshold": 0.23,
+      "primary": "mean-DockQ-of-complete-best-tied-tier",
+      "oracle": "maximum-available-DockQ-with-all-exact-ties",
+      "missing": "any-generated-candidate-without-successful-audit-or-DockQ-withholds-full-paired-comparison",
+      "confidenceMissing": "existing-source-bound-export-withholds-paired-rankings",
+      "generationFailures": "retain-in-planned-denominator; selection-conditional-on-generated-candidates",
+      "uncertainty": "none; one-development-case",
+      "frozenV3Compatible": false
+    },
+    "policySha256": "6c317d8ee470bf5a5b5369db590dc172522795db9d039039176805ebf4cbde63",
+    "inventory": {
+      "planned": 10,
+      "generated": 10,
+      "audited": 10,
+      "scored": 10,
+      "generationFailures": 0,
+      "auditFailures": 0,
+      "dockqFailures": 0,
+      "confidenceFailures": 0
+    },
+    "confo": {
+      "tier": 0,
+      "candidateIds": [
+        "seed2_model_4"
+      ],
+      "tiedCandidates": 1,
+      "meanDockQ": 0.1762564824406321,
+      "minDockQ": 0.1762564824406321,
+      "maxDockQ": 0.1762564824406321,
+      "fractionAtLeast023": 0,
+      "regretToBestAvailable": 0.30837232653309543
+    },
+    "predictor": {
+      "tier": 0,
+      "candidateIds": [
+        "seed2_model_0"
+      ],
+      "tiedCandidates": 1,
+      "meanDockQ": 0.48462880897372757,
+      "minDockQ": 0.48462880897372757,
+      "maxDockQ": 0.48462880897372757,
+      "fractionAtLeast023": 1,
+      "regretToBestAvailable": 0
+    },
+    "bestAvailableOracle": {
+      "candidateIds": [
+        "seed2_model_0"
+      ],
+      "DockQ": 0.48462880897372757,
+      "availableCandidates": 10,
+      "completeGeneratedPool": true
+    },
+    "difference": {
+      "meanDockQ": -0.30837232653309543,
+      "fractionAtLeast023": -1
+    },
+    "failures": [],
+    "candidateLedger": [
+      {
+        "id": "seed1_model_0",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "ac4e88b64282ff815c3cb8bb07b2ebc564daf661f0e248fa49cf868b8039292a",
+        "producerScore": 0.8893769383430481,
+        "methodTier": 6,
+        "baselineTier": 3,
+        "dockqStatus": "success",
+        "DockQ": 0.41451984199389164
+      },
+      {
+        "id": "seed1_model_1",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "8e23af915f19ac6a734fe02ac9e435e8d2536ae1f0ed1cd64fe32ed6de3d2d28",
+        "producerScore": 0.8619559407234192,
+        "methodTier": 5,
+        "baselineTier": 5,
+        "dockqStatus": "success",
+        "DockQ": 0.3757359167773013
+      },
+      {
+        "id": "seed1_model_2",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "ad4c956c00273eab0a7aa7da317eda1799d1267747d2a42fb7b3cfbd2616a31b",
+        "producerScore": 0.8491935729980469,
+        "methodTier": 8,
+        "baselineTier": 6,
+        "dockqStatus": "success",
+        "DockQ": 0.20782171517087225
+      },
+      {
+        "id": "seed1_model_3",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "6586f58ee9a34f5351ca3bc11358646d849c27534d401f7680dc561bf0729d52",
+        "producerScore": 0.8466022610664368,
+        "methodTier": 9,
+        "baselineTier": 7,
+        "dockqStatus": "success",
+        "DockQ": 0.20512446299198026
+      },
+      {
+        "id": "seed1_model_4",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "b0307346e9c3aa63f7643698afc3e9bee09d8a48e753847cd784e8ee804502cf",
+        "producerScore": 0.8166805505752563,
+        "methodTier": 1,
+        "baselineTier": 9,
+        "dockqStatus": "success",
+        "DockQ": 0.17029171132592144
+      },
+      {
+        "id": "seed2_model_0",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838",
+        "producerScore": 0.9008827209472656,
+        "methodTier": 2,
+        "baselineTier": 0,
+        "dockqStatus": "success",
+        "DockQ": 0.48462880897372757
+      },
+      {
+        "id": "seed2_model_1",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b",
+        "producerScore": 0.9007269144058228,
+        "methodTier": 3,
+        "baselineTier": 1,
+        "dockqStatus": "success",
+        "DockQ": 0.45530981662134734
+      },
+      {
+        "id": "seed2_model_2",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff",
+        "producerScore": 0.89376300573349,
+        "methodTier": 7,
+        "baselineTier": 2,
+        "dockqStatus": "success",
+        "DockQ": 0.4766947196533409
+      },
+      {
+        "id": "seed2_model_3",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8",
+        "producerScore": 0.8840752840042114,
+        "methodTier": 4,
+        "baselineTier": 4,
+        "dockqStatus": "success",
+        "DockQ": 0.4216895163471448
+      },
+      {
+        "id": "seed2_model_4",
+        "generationStatus": "success",
+        "auditStatus": "success",
+        "reason": "",
+        "coordinateSha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d",
+        "producerScore": 0.8201104402542114,
+        "methodTier": 0,
+        "baselineTier": 8,
+        "dockqStatus": "success",
+        "DockQ": 0.1762564824406321
+      }
+    ],
+    "provenance": {
+      "canonicalInputSha256": "7ce976370ec454020525c324ec45e974f6599f10382c61acdb15c505b9700957",
+      "sourceBoundInputSha256": "d872cff2463d5030d7751d3bdf6aee40d69a2427ba3ce6a26dfe42dcd92e5ebe",
+      "suppliedSourceBoundReceiptSha256": "4f6ec55ea441a7125683881895a9016c1e1d8fa88bb45bea35a865591f2b74c8"
+    },
+    "uncertainty": {
+      "estimated": false,
+      "confidenceInterval": null,
+      "pValue": null
+    },
+    "claims": {
+      "sourceReceiptBindingsChecked": true,
+      "originalCloudRunVerified": false,
+      "coordinateBytesReaudited": false,
+      "dockqExecutionVerified": false,
+      "preOutcomeFreezeVerified": false,
+      "independentValidation": false,
+      "frozenV3Compatible": false,
+      "scientificSuperiorityEstablished": false
+    },
+    "limitations": [
+      "One declared development case and joint candidate pool; repeated seeds are sampling runs, not independent biological comparisons.",
+      "Ranks are consumed from supplied bound receipts. Byte/hash consistency does not authenticate original prediction, audit or DockQ execution, chronology, completeness or biological roles.",
+      "Producer confidence describes the supplied whole complex and can include chains or ligands outside the receptor–VHH pair evaluated by DockQ.",
+      "Selection summaries are conditional on generated candidates; generation failures remain in planned accounting. Missing generated-candidate audit, confidence or DockQ blocks the full paired comparison.",
+      "Best available DockQ is an outcome-informed oracle, not a deployable selector. An incomplete available oracle does not establish the best candidate in the full generated pool.",
+      "No confidence intervals, significance tests, binding conclusions or general ranking-performance claims are made."
+    ]
+  }
+}

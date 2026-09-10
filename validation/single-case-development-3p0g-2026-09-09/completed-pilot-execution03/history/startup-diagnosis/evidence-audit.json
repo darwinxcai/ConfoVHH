@@ -1,0 +1,178 @@
+{
+  "schema": "confovhh.startup-evidence-audit.v1",
+  "auditedAtUtc": "2026-09-09T19:53:40.610373+00:00",
+  "priorExecutionId": "confovhh-3p0g-compiler-recovery-20260909-01",
+  "priorReceiptRetainedUnchanged": true,
+  "preservedManifestFilesReverified": 42,
+  "runtimeReceipt": {
+    "path": "outputs/compiler-recovery/preserved/executions/confovhh-3p0g-compiler-recovery-20260909-01/runtime-results/runtime-smoke.json",
+    "bytes": 173942,
+    "sha256": "d46d33cc01a85d0d80c42147e8f36db8e9edbfc2abf788dae17e8e5105b377ec"
+  },
+  "originalTimedChild": {
+    "command": [
+      "/workspace/confovhh-boltz/bin/boltz",
+      "predict",
+      "--help"
+    ],
+    "executable_sha256": "bc6f60bcb48d39c347668e18c38cf67a18d9d9ec6351d6f1fba2d051fded6ac8",
+    "interpreter": "/workspace/confovhh-boltz/bin/python",
+    "model_inference_requested": false,
+    "status": "FAIL",
+    "stderr": {
+      "bytes": 332,
+      "sha256": "616cbb2fb89a42b7d4cb7376d699730069d4ed29353660c41c53af19c12fe962"
+    },
+    "stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "timed_out": true,
+    "timeout_seconds": 60
+  },
+  "childRawStreamFilesOriginallySaved": false,
+  "rawStreamHandling": {
+    "implementation": "subprocess.run stdout=PIPE stderr=PIPE; both success and TimeoutExpired retain only bytes and SHA256; checker explicitly declines to save raw output",
+    "checkerLines": [
+      193,
+      244,
+      305
+    ],
+    "installLogCaptures": "Checker parent stdout/stderr, not the child PIPE streams"
+  },
+  "stderrReconstruction": {
+    "status": "EXACT_BYTE_MATCH_FROM_INDEPENDENT_SAVED_OUTPUT",
+    "artifact": {
+      "path": "outputs/startup-recovery/reconstructed-original-help-stderr.txt",
+      "bytes": 332,
+      "sha256": "616cbb2fb89a42b7d4cb7376d699730069d4ed29353660c41c53af19c12fe962"
+    },
+    "sources": [
+      {
+        "source": "outputs/compiler-recovery/preserved/executions/confovhh-3p0g-compiler-recovery-20260909-01/runtime-results/install.log",
+        "firstLine": 688,
+        "lastLine": 689,
+        "bytes": 332,
+        "sha256": "616cbb2fb89a42b7d4cb7376d699730069d4ed29353660c41c53af19c12fe962"
+      },
+      {
+        "source": "outputs/compiler-recovery/preserved/executions/confovhh-3p0g-compiler-recovery-20260909-01/runtime-results/import-diagnostic.log",
+        "firstLine": 354,
+        "lastLine": 355,
+        "bytes": 332,
+        "sha256": "616cbb2fb89a42b7d4cb7376d699730069d4ed29353660c41c53af19c12fe962"
+      }
+    ],
+    "contentMeaning": "Torch import emitted a pynvml deprecation FutureWarning. This warning is not an exception and does not identify the blocking frame or cause of the timeout."
+  },
+  "importDiagnostic": {
+    "purpose": "Post-failure import-only diagnosis; not a runtime-gate rerun and not inference",
+    "startedAtUtc": "2026-09-09T19:29:06.776237+00:00",
+    "completedAtUtc": "2026-09-09T19:30:36.843587+00:00",
+    "command": [
+      "/workspace/confovhh-boltz/bin/python",
+      "-I",
+      "-X",
+      "importtime",
+      "-c",
+      "import boltz.main"
+    ],
+    "timeoutSeconds": 90,
+    "timedOut": true,
+    "exitCode": -9,
+    "elapsedSeconds": 90.06738484092057,
+    "originalRuntimeGateRetained": "FAIL",
+    "inferenceExecuted": false,
+    "fullGpuJitGateReached": false,
+    "logSha256": "389ae03d723d51f12261e4508ead791e97dea3ee222bc77abc0fa7e1e1a32dc4",
+    "log": {
+      "path": "outputs/compiler-recovery/preserved/executions/confovhh-3p0g-compiler-recovery-20260909-01/runtime-results/import-diagnostic.log",
+      "bytes": 344872,
+      "sha256": "389ae03d723d51f12261e4508ead791e97dea3ee222bc77abc0fa7e1e1a32dc4"
+    },
+    "rawStreams": "stdout and stderr combined into one binary log; not separately distinguishable",
+    "periodicStackTracesSaved": false,
+    "timestampedProgressSaved": false,
+    "timeoutAction": "SIGKILL of process group after 90 seconds; return code -9",
+    "completedImportsSeconds": {
+      "torch": 27.608476,
+      "pytorch_lightning": 48.788183,
+      "boltz.data.feature.featurizer": 11.095142
+    },
+    "timingInterpretation": "Reported cumulative import times are nested, not additive; a completed import line is not a stack sample at timeout. Instrumentation can add overhead.",
+    "lastCompletedImport": "boltz.data.crop.affinity",
+    "startupEventuallyCompleted": "UNKNOWN",
+    "hangDemonstrated": false
+  },
+  "knownStoppingCondition": "The unchanged CLI help did not complete within 60 seconds; the separate import-only diagnostic did not complete within 90 seconds.",
+  "demonstratedRootCause": null,
+  "causeUncertainty": [
+    "No periodic stack trace identifies the frame active at either deadline.",
+    "No clean exit or unbounded completion was observed, so slow completion versus persistent hang is unresolved.",
+    "Network-mounted /workspace was reported in the earlier diagnosis, but a paired local-storage control, CPU/cgroup measurements and I/O profiling were not preserved. Storage or CPU attribution remains an untested hypothesis."
+  ],
+  "runnerInternalGate": {
+    "source": {
+      "path": "work/ConfoVHH-recovery/scripts/paper/run-single-case-generation.py",
+      "bytes": 12632,
+      "sha256": "2865eea96212b3733687c2dd459bb5a48096a842e0d61361ea86617a1b0d9745"
+    },
+    "lines": [
+      145,
+      152
+    ],
+    "checker": "work/ConfoVHH-recovery/scripts/cloud/check-boltz-runtime.py",
+    "wholeCheckerTimeoutSeconds": 180,
+    "nestedHelpTimeoutSeconds": 60,
+    "onFailure": "No inference attempted; original checker FAIL must remain FAIL.",
+    "amendmentRequirement": "Any necessary timeout or startup-location/cache behavior change needs a separately versioned operational amendment with evidence and explicit treatment of both external preflight and runner internal checker; retain original source and failed receipts."
+  },
+  "diagnosticHarnessRequirements": [
+    "Same digest-pinned Linux x86_64 base, active Python 3.11 isolated venv, unchanged bootstrap/dependency locks, compiler inventory and CC/CXX.",
+    "No checkpoints, sequences, templates, prediction input or inference execution. Exact help-only command is safe; instrumented wrapper argv must be recorded separately.",
+    "Separate raw stdout and stderr files saved from process start, plus byte counts and SHA256; do not substitute hash-only summaries.",
+    "Python -X importtime plus faulthandler.dump_traceback_later(15, repeat=True) before importing Boltz; save all thread stacks periodically and clear timer on completion.",
+    "Record bounded stage start/finish, wall and process CPU durations, monotonic deadlines, exit code, timeout kill signal and process-group termination.",
+    "Record filesystem/mount location, CPU entitlement/cgroup throttling and relevant cache state; demonstrate cause with a controlled paired test when needed.",
+    "Instrumented import timings are diagnosis, not a runtime-gate PASS. Run the original unchanged 60-second help gate only after addressing demonstrated cause, then require full GPU Triton JIT PASS before inference.",
+    "External controller must enforce remaining cumulative allocated GPU time independently of each runner, diagnostic or install timeout."
+  ],
+  "predictionState": {
+    "priorRuntimeGate": "FAIL",
+    "fullGpuJitGate": "NOT_RUN",
+    "coordinates": 0,
+    "recoverySlotsNotRun": 10
+  },
+  "sourceEvidence": [
+    {
+      "path": "outputs/compiler-recovery/preserved/executions/confovhh-3p0g-compiler-recovery-20260909-01/runtime-results/diagnostic-controller.py",
+      "bytes": 1513,
+      "sha256": "86e7297ba50cca452bc43e2111e62aa2d95ecab84796e8d9c04b4109b3ece143"
+    },
+    {
+      "path": "outputs/compiler-recovery/preserved/executions/confovhh-3p0g-compiler-recovery-20260909-01/runtime-results/import-diagnostic.json",
+      "bytes": 633,
+      "sha256": "6bc59bcebaa11c57aee185d18bf45ef76873be1e4265a85aa112bef76bb35bea"
+    },
+    {
+      "path": "outputs/compiler-recovery/preserved/executions/confovhh-3p0g-compiler-recovery-20260909-01/runtime-results/install.log",
+      "bytes": 53821,
+      "sha256": "a373765572f36a0a8ee9566cb0bfdb95e9648a44cd9273bf090104f595f43779"
+    },
+    {
+      "path": "outputs/compiler-recovery/preserved/executions/confovhh-3p0g-compiler-recovery-20260909-01/runtime-results/gate-blocked-execution.json",
+      "bytes": 3633,
+      "sha256": "dc00392b7d8478d9a53a4c9f394ab74ea7125c8dad019c4da29449bad745789a"
+    },
+    {
+      "path": "work/ConfoVHH-recovery/scripts/cloud/check-boltz-runtime.py",
+      "bytes": 16124,
+      "sha256": "e0e329e1c531717307c561723b46e333f374d413ebdc7a415c30d0c8a424152a"
+    },
+    {
+      "path": "work/ConfoVHH-recovery/scripts/paper/run-single-case-generation.py",
+      "bytes": 12632,
+      "sha256": "2865eea96212b3733687c2dd459bb5a48096a842e0d61361ea86617a1b0d9745"
+    }
+  ]
+}

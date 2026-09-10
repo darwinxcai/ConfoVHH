@@ -1,0 +1,162 @@
+/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/cuda/__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+Seed set to 1
+Checking input data.
+Processing 1 inputs with 1 threads.
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:07<00:00,  7.06s/it]100%|██████████| 1/1 [00:07<00:00,  7.06s/it]
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:76: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+Running structure prediction for 1 input.
+/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+You are using a CUDA device ('NVIDIA A100 80GB PCIe') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Predicting: |          | 0/? [00:00<?, ?it/s]Predicting:   0%|          | 0/1 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|          | 0/1 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/workspace/confovhh-boltz/bin/boltz", line 7, in <module>
+    sys.exit(cli())
+             ^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/boltz/main.py", line 1329, in predict
+    trainer.predict(
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 859, in predict
+    return call._call_and_handle_interrupt(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/trainer/call.py", line 47, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 898, in _predict_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 982, in _run
+    results = self._run_stage()
+              ^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/trainer/trainer.py", line 1021, in _run_stage
+    return self.predict_loop.run()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/loops/utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/loops/prediction_loop.py", line 125, in run
+    self._predict_step(batch, batch_idx, dataloader_idx, dataloader_iter)
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/loops/prediction_loop.py", line 255, in _predict_step
+    predictions = call._call_strategy_hook(trainer, "predict_step", *step_args)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/trainer/call.py", line 323, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/pytorch_lightning/strategies/strategy.py", line 438, in predict_step
+    return self.lightning_module.predict_step(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/boltz/model/models/boltz2.py", line 1130, in predict_step
+    raise e
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/boltz/model/models/boltz2.py", line 1059, in predict_step
+    out = self(
+          ^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/boltz/model/models/boltz2.py", line 464, in forward
+    z = z + template_module(
+            ^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/boltz/model/modules/trunkv2.py", line 498, in forward
+    v = v + self.pairformer(v, pair_mask, use_kernels=use_kernels)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/boltz/model/layers/pairformer.py", line 329, in forward
+    z = layer(
+        ^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/boltz/model/layers/pairformer.py", line 243, in forward
+    z = z + dropout * self.tri_mul_out(
+                      ^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/boltz/model/layers/triangular_mult.py", line 92, in forward
+    return kernel_triangular_mult(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py", line 838, in _fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/boltz/model/layers/triangular_mult.py", line 23, in kernel_triangular_mult
+    return triangle_multiplicative_update(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/cuequivariance_torch/primitives/triangle.py", line 209, in triangle_multiplicative_update
+    return f(
+           ^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/cuequivariance_ops_torch/tri_mul_fast.py", line 156, in triangle_multiplicative_update
+    x = layer_norm_transpose(
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/cuequivariance_ops_torch/fused_layer_norm_torch.py", line 304, in layer_norm_transpose
+    out = LayerNorm.apply(x, w, b, eps, elementwise_affine, layout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/torch/autograd/function.py", line 575, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/cuequivariance_ops_torch/fused_layer_norm_torch.py", line 72, in forward
+    layer_norm_transpose_forward_kernel[grid](
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/triton/runtime/jit.py", line 347, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/triton/runtime/jit.py", line 529, in run
+    device = driver.active.get_current_device()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/triton/runtime/driver.py", line 23, in __getattr__
+    self._initialize_obj()
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/triton/runtime/driver.py", line 20, in _initialize_obj
+    self._obj = self._init_fn()
+                ^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/triton/runtime/driver.py", line 9, in _create_driver
+    return actives[0]()
+           ^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/triton/backends/nvidia/driver.py", line 535, in __init__
+    self.utils = CudaUtils()  # TODO: make static
+                 ^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/triton/backends/nvidia/driver.py", line 89, in __init__
+    mod = compile_module_from_src(Path(os.path.join(dirname, "driver.c")).read_text(), "cuda_utils")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/triton/backends/nvidia/driver.py", line 66, in compile_module_from_src
+    so = _build(name, src_path, tmpdir, library_dirs(), include_dir, libraries)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/confovhh-boltz/lib/python3.11/site-packages/triton/runtime/build.py", line 18, in _build
+    raise RuntimeError("Failed to find C compiler. Please specify via CC environment variable.")
+RuntimeError: Failed to find C compiler. Please specify via CC environment variable.
+Predicting DataLoader 0:   0%|          | 0/1 [00:07<?, ?it/s]

@@ -1,0 +1,104 @@
+{
+  "createdAtUtc": "2026-09-09T20:57:23.409239+00:00",
+  "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+  "fullGpuJitGate": "NOT_RUN",
+  "generationRunnerLaunched": false,
+  "modelInferenceRuns": 0,
+  "plannedSlots": [
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed1_model_0",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    },
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed1_model_1",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    },
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed1_model_2",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    },
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed1_model_3",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    },
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed1_model_4",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    },
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed2_model_0",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    },
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed2_model_1",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    },
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed2_model_2",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    },
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed2_model_3",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    },
+    {
+      "DockQ": null,
+      "coordinate": null,
+      "executionId": "confovhh-3p0g-startup-recovery-20260909-01",
+      "id": "seed2_model_4",
+      "predictorConfidence": null,
+      "reason": "Runtime preparation failed before either GPU gate or inference",
+      "status": "not-run"
+    }
+  ],
+  "podId": "3kqs0n0qrg0pk7",
+  "reason": "main.<locals>.event() got multiple values for argument 'name'",
+  "runtimeGate": "NOT_RUN",
+  "schema": "confovhh.preparation-blocked-execution.v1",
+  "status": "STOPPED_BEFORE_GPU_GATES_AND_INFERENCE"
+}

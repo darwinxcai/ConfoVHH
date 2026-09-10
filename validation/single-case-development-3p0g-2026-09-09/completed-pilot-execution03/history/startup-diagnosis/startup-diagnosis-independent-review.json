@@ -1,0 +1,19 @@
+{
+  "schema": "confovhh.startup-diagnosis-independent-review.v1",
+  "reviewedAtUtc": "2026-09-09T20:44:03.737465+00:00",
+  "status": "EVIDENCE_REVIEW_PASS",
+  "cpuControlEvidenceFilesReverified": 109,
+  "exactDependencyVersionsRechecked": 92,
+  "originalFailedRuntimeReceiptUnchanged": true,
+  "originalStderrReconstructionHashMatches": true,
+  "originalBundleManifestUnchanged": true,
+  "aptNegativeAndPositiveCommandIdentical": true,
+  "aptBeforeAfterPackageInventoriesIdentical": true,
+  "aptStagedExactArchives": 45,
+  "aptControlNetworkInterfaces": [
+    "lo"
+  ],
+  "controllerLinuxSmoke": "PASS",
+  "newGpuAllocationMadeByReview": false,
+  "newPredictionsMadeByReview": 0
+}

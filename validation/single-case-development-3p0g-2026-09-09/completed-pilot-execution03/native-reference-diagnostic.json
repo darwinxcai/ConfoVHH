@@ -1,0 +1,947 @@
+{
+  "schema": "confovhh-post-outcome-native-diagnostic-v1",
+  "claimBoundary": "Experimental observed reference geometry diagnostic, excluded from the ten-candidate ranking pool; not an independent validation case.",
+  "referenceSha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557",
+  "scoringSettings": {
+    "confidenceMode": "none",
+    "pae": null,
+    "receptorChain": "A",
+    "vhhChain": "B",
+    "sasaFrame": "canonical-selected-geometry"
+  },
+  "chains": [
+    {
+      "id": "A",
+      "residueCount": 284,
+      "atomCount": 2290,
+      "backboneCompleteness": 1,
+      "sequence": "DVTQQRDEVWVVGMGIVMSLIVLAIVFGNVLVITAIAKFERLQTVTNYFITSLACADLVMGLAVVPFGAAHILMKMWTFGNFWCEFWTSIDVLCVTASIETLCVIAVDRYFAITSPFKYQSLLTKNKARVIILMVWIVSGLTSFLPIQMHWYRATHQEAINCYAEETCCDFFTNQAYAIASSIVSFYVPLVIMVFVYSRVFQEAKLKEHKALKTLGIIMGTFTLCWLPFFIVNIVHVIQDNLIRKEVYILLNWIGYVNSGFNPLIYCRSPDFRIAFQELLCLRR"
+    },
+    {
+      "id": "B",
+      "residueCount": 121,
+      "atomCount": 921,
+      "backboneCompleteness": 1,
+      "sequence": "VQLQESGGGLVQAGGSLRLSCAASGSIFSINTMGWYRQAPGKQRELVAAIHSGGSTNYANSVKGRFTISRDNAANTVYLQMNSLKPEDTAVYYCNVKDYGAVLYEYDYWGQGTQVTVSSHH"
+    }
+  ],
+  "audit": {
+    "version": "0.5.0",
+    "confidenceMode": "none",
+    "receptorChain": "A",
+    "vhhChain": "B",
+    "evidenceLevel": "supported",
+    "contactPairCount": 46,
+    "atomContactCount": 243,
+    "receptorInterfaceResidues": 21,
+    "vhhInterfaceResidues": 19,
+    "polarContactProxyCount": 4,
+    "saltBridgeProxyCount": 0,
+    "severeClashCount": 0,
+    "possibleInterchainDisulfideCount": 0,
+    "maximumOverlapAngstrom": 0.4408049726584502,
+    "paratopeProxyShare": 0.9565217391304348,
+    "cdr3ProxyShare": 0.5217391304347826,
+    "interfaceConfidence": null,
+    "interfaceConfidenceCoverage": null,
+    "deltaSasaAngstrom2": 1730.0802867578464,
+    "receptorBuriedSurfaceAreaAngstrom2": 861.4798327114846,
+    "vhhBuriedSurfaceAreaAngstrom2": 868.6004540463616,
+    "halfDeltaSasaInterfaceAreaAngstrom2": 865.0401433789232,
+    "interfacePaeMedianAngstrom": null,
+    "interfacePaeP90Angstrom": null,
+    "receptorFrameToVhhPaeMedianAngstrom": null,
+    "vhhFrameToReceptorPaeMedianAngstrom": null,
+    "receptorFrameToVhhPaeP90Angstrom": null,
+    "vhhFrameToReceptorPaeP90Angstrom": null,
+    "lowPaeContactShare": null,
+    "paeFilename": null,
+    "paeOrderConfirmed": false,
+    "vhhNumbering": {
+      "status": "numbered",
+      "scheme": "IMGT",
+      "engine": "immunum 1.3.0",
+      "confidence": 0.6937947869300842,
+      "cdrLengths": {
+        "cdr1": 8,
+        "cdr2": 7,
+        "cdr3": 14
+      },
+      "error": null
+    },
+    "contacts": [
+      {
+        "receptorResidue": "ARG A:131",
+        "vhhResidue": "VAL B:103",
+        "receptorResidueOrder": 109,
+        "vhhResidueOrder": 102,
+        "receptorResidueName": "ARG",
+        "vhhResidueName": "VAL",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112A",
+        "minimumDistance": 2.7791950273415496,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ILE A:135",
+        "vhhResidue": "HIS B:52",
+        "receptorResidueOrder": 113,
+        "vhhResidueOrder": 51,
+        "receptorResidueName": "ILE",
+        "vhhResidueName": "HIS",
+        "vhhRegion": "CDR2-IMGT",
+        "vhhImgtPosition": "57",
+        "minimumDistance": 2.9527549847557606,
+        "contactTypes": [
+          "potential polar contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PHE A:139",
+        "vhhResidue": "SER B:56",
+        "receptorResidueOrder": 117,
+        "vhhResidueOrder": 55,
+        "receptorResidueName": "PHE",
+        "vhhResidueName": "SER",
+        "vhhRegion": "CDR2-IMGT",
+        "vhhImgtPosition": "64",
+        "minimumDistance": 3.0227586737945185,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "THR A:136",
+        "vhhResidue": "HIS B:52",
+        "receptorResidueOrder": 114,
+        "vhhResidueOrder": 51,
+        "receptorResidueName": "THR",
+        "vhhResidueName": "HIS",
+        "vhhRegion": "CDR2-IMGT",
+        "vhhImgtPosition": "57",
+        "minimumDistance": 3.1142670084628263,
+        "contactTypes": [
+          "potential polar contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PHE A:139",
+        "vhhResidue": "THR B:57",
+        "receptorResidueOrder": 117,
+        "vhhResidueOrder": 56,
+        "receptorResidueName": "PHE",
+        "vhhResidueName": "THR",
+        "vhhRegion": "CDR2-IMGT",
+        "vhhImgtPosition": "65",
+        "minimumDistance": 3.226079044288902,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "GLU A:268",
+        "vhhResidue": "SER B:30",
+        "receptorResidueOrder": 208,
+        "vhhResidueOrder": 29,
+        "receptorResidueName": "GLU",
+        "vhhResidueName": "SER",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "35",
+        "minimumDistance": 3.2568710444228524,
+        "contactTypes": [
+          "potential polar contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ILE A:325",
+        "vhhResidue": "LEU B:104",
+        "receptorResidueOrder": 265,
+        "vhhResidueOrder": 103,
+        "receptorResidueName": "ILE",
+        "vhhResidueName": "LEU",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112",
+        "minimumDistance": 3.3122985976508836,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ARG A:131",
+        "vhhResidue": "LEU B:104",
+        "receptorResidueOrder": 109,
+        "vhhResidueOrder": 103,
+        "receptorResidueName": "ARG",
+        "vhhResidueName": "LEU",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112",
+        "minimumDistance": 3.325085863552998,
+        "contactTypes": [
+          "potential polar contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ALA A:271",
+        "vhhResidue": "GLY B:101",
+        "receptorResidueOrder": 211,
+        "vhhResidueOrder": 100,
+        "receptorResidueName": "ALA",
+        "vhhResidueName": "GLY",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "110",
+        "minimumDistance": 3.326144464691816,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "LYS A:267",
+        "vhhResidue": "ILE B:28",
+        "receptorResidueOrder": 207,
+        "vhhResidueOrder": 27,
+        "receptorResidueName": "LYS",
+        "vhhResidueName": "ILE",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "29",
+        "minimumDistance": 3.385603195886959,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ILE A:135",
+        "vhhResidue": "VAL B:103",
+        "receptorResidueOrder": 113,
+        "vhhResidueOrder": 102,
+        "receptorResidueName": "ILE",
+        "vhhResidueName": "VAL",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112A",
+        "minimumDistance": 3.388508373901416,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ILE A:135",
+        "vhhResidue": "ILE B:31",
+        "receptorResidueOrder": 113,
+        "vhhResidueOrder": 30,
+        "receptorResidueName": "ILE",
+        "vhhResidueName": "ILE",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "36",
+        "minimumDistance": 3.472527897656115,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PRO A:138",
+        "vhhResidue": "HIS B:52",
+        "receptorResidueOrder": 116,
+        "vhhResidueOrder": 51,
+        "receptorResidueName": "PRO",
+        "vhhResidueName": "HIS",
+        "vhhRegion": "CDR2-IMGT",
+        "vhhImgtPosition": "57",
+        "minimumDistance": 3.4906558123080527,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PRO A:330",
+        "vhhResidue": "TYR B:105",
+        "receptorResidueOrder": 270,
+        "vhhResidueOrder": 104,
+        "receptorResidueName": "PRO",
+        "vhhResidueName": "TYR",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "113",
+        "minimumDistance": 3.4979618351262785,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PHE A:139",
+        "vhhResidue": "ASN B:58",
+        "receptorResidueOrder": 117,
+        "vhhResidueOrder": 57,
+        "receptorResidueName": "PHE",
+        "vhhResidueName": "ASN",
+        "vhhRegion": "FR3-IMGT",
+        "vhhImgtPosition": "66",
+        "minimumDistance": 3.5014655503088985,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PRO A:138",
+        "vhhResidue": "TYR B:100",
+        "receptorResidueOrder": 116,
+        "vhhResidueOrder": 99,
+        "receptorResidueName": "PRO",
+        "vhhResidueName": "TYR",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "109",
+        "minimumDistance": 3.5404403680898247,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "TYR A:326",
+        "vhhResidue": "LEU B:104",
+        "receptorResidueOrder": 266,
+        "vhhResidueOrder": 103,
+        "receptorResidueName": "TYR",
+        "vhhResidueName": "LEU",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112",
+        "minimumDistance": 3.6120920530905587,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PRO A:138",
+        "vhhResidue": "THR B:33",
+        "receptorResidueOrder": 116,
+        "vhhResidueOrder": 32,
+        "receptorResidueName": "PRO",
+        "vhhResidueName": "THR",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "38",
+        "minimumDistance": 3.6133936956827712,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ILE A:278",
+        "vhhResidue": "VAL B:103",
+        "receptorResidueOrder": 218,
+        "vhhResidueOrder": 102,
+        "receptorResidueName": "ILE",
+        "vhhResidueName": "VAL",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112A",
+        "minimumDistance": 3.651990142374432,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ILE A:135",
+        "vhhResidue": "TYR B:100",
+        "receptorResidueOrder": 113,
+        "vhhResidueOrder": 99,
+        "receptorResidueName": "ILE",
+        "vhhResidueName": "TYR",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "109",
+        "minimumDistance": 3.6543308553003273,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ARG A:328",
+        "vhhResidue": "TYR B:105",
+        "receptorResidueOrder": 268,
+        "vhhResidueOrder": 104,
+        "receptorResidueName": "ARG",
+        "vhhResidueName": "TYR",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "113",
+        "minimumDistance": 3.6798028479797686,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ALA A:271",
+        "vhhResidue": "PHE B:29",
+        "receptorResidueOrder": 211,
+        "vhhResidueOrder": 28,
+        "receptorResidueName": "ALA",
+        "vhhResidueName": "PHE",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "30",
+        "minimumDistance": 3.7005433384842275,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "THR A:68",
+        "vhhResidue": "LEU B:104",
+        "receptorResidueOrder": 46,
+        "vhhResidueOrder": 103,
+        "receptorResidueName": "THR",
+        "vhhResidueName": "LEU",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112",
+        "minimumDistance": 3.7043737662390366,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ARG A:131",
+        "vhhResidue": "TYR B:105",
+        "receptorResidueOrder": 109,
+        "vhhResidueOrder": 104,
+        "receptorResidueName": "ARG",
+        "vhhResidueName": "TYR",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "113",
+        "minimumDistance": 3.7064404757125136,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PHE A:139",
+        "vhhResidue": "ALA B:50",
+        "receptorResidueOrder": 117,
+        "vhhResidueOrder": 49,
+        "receptorResidueName": "PHE",
+        "vhhResidueName": "ALA",
+        "vhhRegion": "FR2-IMGT",
+        "vhhImgtPosition": "55",
+        "minimumDistance": 3.7217178829137487,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "LYS A:267",
+        "vhhResidue": "SER B:27",
+        "receptorResidueOrder": 207,
+        "vhhResidueOrder": 26,
+        "receptorResidueName": "LYS",
+        "vhhResidueName": "SER",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "28",
+        "minimumDistance": 3.7305711358986295,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ALA A:271",
+        "vhhResidue": "ALA B:102",
+        "receptorResidueOrder": 211,
+        "vhhResidueOrder": 101,
+        "receptorResidueName": "ALA",
+        "vhhResidueName": "ALA",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "111",
+        "minimumDistance": 3.738872958526405,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ALA A:226",
+        "vhhResidue": "SER B:30",
+        "receptorResidueOrder": 204,
+        "vhhResidueOrder": 29,
+        "receptorResidueName": "ALA",
+        "vhhResidueName": "SER",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "35",
+        "minimumDistance": 3.7618624376763186,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ILE A:278",
+        "vhhResidue": "LEU B:104",
+        "receptorResidueOrder": 218,
+        "vhhResidueOrder": 103,
+        "receptorResidueName": "ILE",
+        "vhhResidueName": "LEU",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112",
+        "minimumDistance": 3.7718284690584745,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ALA A:226",
+        "vhhResidue": "ILE B:31",
+        "receptorResidueOrder": 204,
+        "vhhResidueOrder": 30,
+        "receptorResidueName": "ALA",
+        "vhhResidueName": "ILE",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "36",
+        "minimumDistance": 3.7913994777654345,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "THR A:274",
+        "vhhResidue": "VAL B:103",
+        "receptorResidueOrder": 214,
+        "vhhResidueOrder": 102,
+        "receptorResidueName": "THR",
+        "vhhResidueName": "VAL",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112A",
+        "minimumDistance": 3.797446510485697,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "LYS A:267",
+        "vhhResidue": "PHE B:29",
+        "receptorResidueOrder": 207,
+        "vhhResidueOrder": 28,
+        "receptorResidueName": "LYS",
+        "vhhResidueName": "PHE",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "30",
+        "minimumDistance": 3.808043723488479,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ARG A:131",
+        "vhhResidue": "TYR B:100",
+        "receptorResidueOrder": 109,
+        "vhhResidueOrder": 99,
+        "receptorResidueName": "ARG",
+        "vhhResidueName": "TYR",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "109",
+        "minimumDistance": 3.825876239503834,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "VAL A:222",
+        "vhhResidue": "VAL B:103",
+        "receptorResidueOrder": 200,
+        "vhhResidueOrder": 102,
+        "receptorResidueName": "VAL",
+        "vhhResidueName": "VAL",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112A",
+        "minimumDistance": 3.85159460483577,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ARG A:131",
+        "vhhResidue": "GLU B:106",
+        "receptorResidueOrder": 109,
+        "vhhResidueOrder": 105,
+        "receptorResidueName": "ARG",
+        "vhhResidueName": "GLU",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "114",
+        "minimumDistance": 3.8521169504572375,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PHE A:139",
+        "vhhResidue": "HIS B:52",
+        "receptorResidueOrder": 117,
+        "vhhResidueOrder": 51,
+        "receptorResidueName": "PHE",
+        "vhhResidueName": "HIS",
+        "vhhRegion": "CDR2-IMGT",
+        "vhhImgtPosition": "57",
+        "minimumDistance": 3.861523792494357,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "GLU A:268",
+        "vhhResidue": "PHE B:29",
+        "receptorResidueOrder": 208,
+        "vhhResidueOrder": 28,
+        "receptorResidueName": "GLU",
+        "vhhResidueName": "PHE",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "30",
+        "minimumDistance": 3.9590191967203188,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "LEU A:275",
+        "vhhResidue": "VAL B:103",
+        "receptorResidueOrder": 215,
+        "vhhResidueOrder": 102,
+        "receptorResidueName": "LEU",
+        "vhhResidueName": "VAL",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112A",
+        "minimumDistance": 3.9600517673384044,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ILE A:127",
+        "vhhResidue": "LEU B:104",
+        "receptorResidueOrder": 105,
+        "vhhResidueOrder": 103,
+        "receptorResidueName": "ILE",
+        "vhhResidueName": "LEU",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "112",
+        "minimumDistance": 3.9962085781400303,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "SER A:329",
+        "vhhResidue": "TYR B:105",
+        "receptorResidueOrder": 269,
+        "vhhResidueOrder": 104,
+        "receptorResidueName": "SER",
+        "vhhResidueName": "TYR",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "113",
+        "minimumDistance": 4.014574697274918,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "PHE A:139",
+        "vhhResidue": "ILE B:51",
+        "receptorResidueOrder": 117,
+        "vhhResidueOrder": 50,
+        "receptorResidueName": "PHE",
+        "vhhResidueName": "ILE",
+        "vhhRegion": "CDR2-IMGT",
+        "vhhImgtPosition": "56",
+        "minimumDistance": 4.080822711169894,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ALA A:134",
+        "vhhResidue": "TYR B:100",
+        "receptorResidueOrder": 112,
+        "vhhResidueOrder": 99,
+        "receptorResidueName": "ALA",
+        "vhhResidueName": "TYR",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "109",
+        "minimumDistance": 4.153387773854016,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "ALA A:226",
+        "vhhResidue": "PHE B:29",
+        "receptorResidueOrder": 204,
+        "vhhResidueOrder": 28,
+        "receptorResidueName": "ALA",
+        "vhhResidueName": "PHE",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "30",
+        "minimumDistance": 4.1617277662048,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "THR A:274",
+        "vhhResidue": "ALA B:102",
+        "receptorResidueOrder": 214,
+        "vhhResidueOrder": 101,
+        "receptorResidueName": "THR",
+        "vhhResidueName": "ALA",
+        "vhhRegion": "CDR3-IMGT",
+        "vhhImgtPosition": "111",
+        "minimumDistance": 4.1777949925768265,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "VAL A:222",
+        "vhhResidue": "ILE B:31",
+        "receptorResidueOrder": 200,
+        "vhhResidueOrder": 30,
+        "receptorResidueName": "VAL",
+        "vhhResidueName": "ILE",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "36",
+        "minimumDistance": 4.200448785546613,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      },
+      {
+        "receptorResidue": "LYS A:267",
+        "vhhResidue": "SER B:30",
+        "receptorResidueOrder": 207,
+        "vhhResidueOrder": 29,
+        "receptorResidueName": "LYS",
+        "vhhResidueName": "SER",
+        "vhhRegion": "CDR1-IMGT",
+        "vhhImgtPosition": "35",
+        "minimumDistance": 4.393291362976055,
+        "contactTypes": [
+          "close contact"
+        ],
+        "receptorConfidence": null,
+        "vhhConfidence": null
+      }
+    ],
+    "receptorInterfaceKeys": [
+      "A:68:",
+      "A:127:",
+      "A:131:",
+      "A:134:",
+      "A:135:",
+      "A:136:",
+      "A:138:",
+      "A:139:",
+      "A:222:",
+      "A:226:",
+      "A:267:",
+      "A:268:",
+      "A:271:",
+      "A:274:",
+      "A:275:",
+      "A:278:",
+      "A:325:",
+      "A:326:",
+      "A:328:",
+      "A:329:",
+      "A:330:"
+    ],
+    "vhhInterfaceKeys": [
+      "B:104:",
+      "B:103:",
+      "B:105:",
+      "B:106:",
+      "B:100:",
+      "B:52:",
+      "B:31:",
+      "B:33:",
+      "B:57:",
+      "B:58:",
+      "B:56:",
+      "B:50:",
+      "B:51:",
+      "B:29:",
+      "B:30:",
+      "B:27:",
+      "B:28:",
+      "B:102:",
+      "B:101:"
+    ],
+    "findings": [
+      {
+        "label": "Chain and coordinate plausibility",
+        "level": "supported",
+        "evidence": "Receptor A: 284 residues, 100% complete backbone. VHH B: 121 residues, 100% complete backbone.",
+        "action": "Confirm biological chain identities and review missing backbone atoms or receptor fusion constructs."
+      },
+      {
+        "label": "IMGT V-domain annotation",
+        "level": "review",
+        "evidence": "immunum 1.3.0 recognized an IGH V-domain with alignment confidence 0.69; CDR lengths 8/7/14.",
+        "action": "Sequence-aligned IMGT regions map the paratope footprint but do not establish antigen binding."
+      },
+      {
+        "label": "Contact breadth",
+        "level": "supported",
+        "evidence": "46 residue pairs across 21 receptor and 19 VHH residues.",
+        "action": "Inspect whether the footprint occupies the intended epitope."
+      },
+      {
+        "label": "Buried solvent-accessible area",
+        "level": "review",
+        "evidence": "Protein-heavy-atom ΔSASA 1730 Å²; ½ΔSASA interface-area convention 865 Å² (861 Å² receptor; 869 Å² VHH).",
+        "action": "Use buried area as a descriptive footprint metric; it is not an affinity or binding-energy estimate."
+      },
+      {
+        "label": "Cross-chain PAE",
+        "level": "unavailable",
+        "evidence": "No matching PAE JSON was attached; relative-placement confidence was not assessed.",
+        "action": "Use the continuous directional values; no universal GPCR–VHH acceptance cutoff is applied."
+      },
+      {
+        "label": "Potential polar and electrostatic contacts",
+        "level": "review",
+        "evidence": "4 donor–acceptor distance matches and 0 acidic/basic atom-pair proximities.",
+        "action": "These distance-only candidates do not affect the evidence label; protonation and angles are not modeled."
+      },
+      {
+        "label": "Steric quality",
+        "level": "supported",
+        "evidence": "0 contacting residue pairs contain a noncovalent heavy-atom van der Waals overlap of at least 0.6 Å; maximum overlap is 0.44 Å. 0 plausible Cys–Cys crosslink(s) were exempted.",
+        "action": "No severe cross-chain van der Waals overlaps were detected."
+      },
+      {
+        "label": "Reported coordinate confidence",
+        "level": "unavailable",
+        "evidence": "B-factor interpretation is off; no coordinate-confidence claim is made.",
+        "action": "Only enable pLDDT interpretation when the file format is known. Confidence does not establish binding."
+      }
+    ],
+    "warnings": [
+      "Favorable coordinate geometry is not evidence of affinity, specificity, kinetics, signaling, or biological binding.",
+      "Evidence bands use transparent screening heuristics and are not calibrated probabilities.",
+      "Cross-chain PAE is reported only when a dimension-matched square JSON matrix is supplied and its residue order is explicitly confirmed; it is never inferred from coordinates.",
+      "Membrane orientation and active/inactive state preference are not assessed.",
+      "IMGT regions use sequence alignment from immunum 1.3.0, not ANARCI's germline HMMs; unrecognized chains are left unnumbered.",
+      "IMGT positions are mapped to the observed coordinate sequence; unresolved residues absent from coordinate atom records can make experimental-structure mapping incomplete.",
+      "Buried area uses a 960-point Shrake–Rupley approximation with a 1.4 Å probe and protein heavy atoms only.",
+      "Coordinates were analyzed as supplied; deposited-assembly and crystallographic-symmetry transforms were not generated."
+    ],
+    "methods": {
+      "residueContactCutoffAngstrom": 4.5,
+      "polarProxyCutoffAngstrom": 3.5,
+      "saltBridgeProxyCutoffAngstrom": 4,
+      "severeClashOverlapAngstrom": 0.6,
+      "sasaProbeRadiusAngstrom": 1.4,
+      "sasaSpherePoints": 960,
+      "sasaMaximumCandidateDistanceChecks": 25000000,
+      "sasaMaximumOcclusionChecks": 250000000,
+      "sasaRadii": "Element-based Bondi radii: H 1.20, C 1.70, N 1.55, O 1.52, S/P 1.80, Se 1.90 Å.",
+      "sasaOrientation": "deterministic-proper-signed-frame",
+      "sasaFrameAlgorithm": "selected-heavy-atom-farthest-signed-frame-v1",
+      "cdrAnnotation": "Sequence-aligned IMGT regions from immunum 1.3.0: CDR1 27–38, CDR2 56–65, CDR3 105–117.",
+      "paeSummary": "Directional median and 90th-percentile PAE over contacting receptor–VHH residue pairs using the user-confirmed AlphaFold row-aligned/column-evaluated convention and residue order; conservative summaries aggregate the worse direction for each contact pair, and lowPaeContactShare is the share of those conservative contact-pair values at or below 10 Å."
+    },
+    "rationale": "The selected pose has 46 contacting residue pairs across 21 receptor and 19 VHH residues with no material severe-overlap burden. This is internally coherent coordinate geometry—not evidence of biological binding.",
+    "auditAttestation": {
+      "schemaVersion": "1.0.0",
+      "inputFingerprint": "fnv1a32x2-audit-input:0818a263037c2e7d",
+      "resultFingerprint": "fnv1a32x2-audit-result:a89a17f2c2d5683c"
+    }
+  },
+  "ranking": {
+    "version": "0.6.0-candidate.2",
+    "rankingScope": "within-target-only",
+    "evidenceTier": 2,
+    "shippedEvidenceLevel": "supported",
+    "boundary": "The rank key orders coordinate poses of the same complex under a fixed geometric policy. It does not establish binding, affinity, specificity, function, state selectivity, or pose correctness, and burial is not comparable between different complexes.",
+    "assessability": "assessable",
+    "burialScore": 865.0401433789232,
+    "notAssessableReason": null,
+    "cautions": []
+  }
+}

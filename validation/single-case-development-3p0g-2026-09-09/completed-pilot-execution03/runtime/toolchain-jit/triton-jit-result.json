@@ -1,0 +1,44 @@
+{
+  "block_size": 256,
+  "cubin_sha256": "a4e741c78bbe739b1b458b8e3b7ee2d42d5a7f312f25a84aad7b643001f2e39e",
+  "cuda_synchronized": true,
+  "device": {
+    "compute_capability": [
+      8,
+      0
+    ],
+    "index": 0,
+    "name": "NVIDIA A100 80GB PCIe",
+    "total_memory_bytes": 85093777408
+  },
+  "distributions": {
+    "torch": "2.7.1",
+    "triton": "3.3.1"
+  },
+  "fresh_cache_cubin_count": 1,
+  "isolated_flag": true,
+  "kernel_executed": true,
+  "max_absolute_error": 0.0,
+  "modules": {
+    "torch": {
+      "path": "/opt/confovhh-boltz/lib/python3.11/site-packages/torch/__init__.py",
+      "sha256": "9801e75447c7f585545f989f8a21940b60e0c4cc888effb2f08e739664b4b904"
+    },
+    "triton": {
+      "path": "/opt/confovhh-boltz/lib/python3.11/site-packages/triton/__init__.py",
+      "sha256": "dd2410cadfa8cb04016107ee6dab2cdcdba3d3ca3c46a3ea9a58ba20f62d870c"
+    },
+    "triton.runtime.build": {
+      "path": "/opt/confovhh-boltz/lib/python3.11/site-packages/triton/runtime/build.py",
+      "sha256": "080b3fac37f0380980543c8d48f2e227bae8860760eb66b23c81c4781fd259c2"
+    }
+  },
+  "non_block_multiple": true,
+  "python_executable": "/opt/confovhh-boltz/bin/python",
+  "reference": "independent deterministic CPU values; exact float32 comparison",
+  "status": "PASS",
+  "torch_cuda_build_version": "12.6",
+  "torch_import_version": "2.7.1+cu126",
+  "triton_import_version": "3.3.1",
+  "vector_length": 1003
+}

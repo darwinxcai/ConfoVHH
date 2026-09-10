@@ -1,0 +1,97 @@
+{
+  "run": {
+    "args": [
+      "/workspace/confovhh-boltz/bin/boltz",
+      "predict",
+      "/workspace/3p0g-pilot-output/3P0G_seed1.yaml",
+      "--out_dir",
+      "/workspace/3p0g-pilot-output/raw",
+      "--cache",
+      "/workspace/boltz-cache",
+      "--checkpoint",
+      "/workspace/boltz-cache/boltz2_conf.ckpt",
+      "--affinity_checkpoint",
+      "/workspace/boltz-cache/boltz2_aff.ckpt",
+      "--model",
+      "boltz2",
+      "--accelerator",
+      "gpu",
+      "--devices",
+      "1",
+      "--seed",
+      "1",
+      "--diffusion_samples",
+      "5",
+      "--max_parallel_samples",
+      "5",
+      "--recycling_steps",
+      "3",
+      "--sampling_steps",
+      "200",
+      "--step_scale",
+      "1.5",
+      "--output_format",
+      "mmcif",
+      "--write_full_pae",
+      "--use_potentials"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "elapsedSeconds": 294.26358469575644,
+    "logSha256": "044486931522723b5939a796a76a378385cc960e6b2a5fe6235b420c371d6152",
+    "seed": 1,
+    "inputSha256": "9487689b20a7b9029aaf75ef727f9358366861219172b950f3ccf90e30ebaf25"
+  },
+  "attempts": [
+    {
+      "id": "seed1_model_0",
+      "seed": 1,
+      "modelFileIndex": 0,
+      "status": "failed",
+      "reason": "Planned coordinate file missing; retain any partial outputs",
+      "artifacts": {},
+      "seedExitCode": 1,
+      "confidenceStatus": "missing"
+    },
+    {
+      "id": "seed1_model_1",
+      "seed": 1,
+      "modelFileIndex": 1,
+      "status": "failed",
+      "reason": "Planned coordinate file missing; retain any partial outputs",
+      "artifacts": {},
+      "seedExitCode": 1,
+      "confidenceStatus": "missing"
+    },
+    {
+      "id": "seed1_model_2",
+      "seed": 1,
+      "modelFileIndex": 2,
+      "status": "failed",
+      "reason": "Planned coordinate file missing; retain any partial outputs",
+      "artifacts": {},
+      "seedExitCode": 1,
+      "confidenceStatus": "missing"
+    },
+    {
+      "id": "seed1_model_3",
+      "seed": 1,
+      "modelFileIndex": 3,
+      "status": "failed",
+      "reason": "Planned coordinate file missing; retain any partial outputs",
+      "artifacts": {},
+      "seedExitCode": 1,
+      "confidenceStatus": "missing"
+    },
+    {
+      "id": "seed1_model_4",
+      "seed": 1,
+      "modelFileIndex": 4,
+      "status": "failed",
+      "reason": "Planned coordinate file missing; retain any partial outputs",
+      "artifacts": {},
+      "seedExitCode": 1,
+      "confidenceStatus": "missing"
+    }
+  ]
+}
