@@ -1,0 +1,65 @@
+{
+  "schema": "confovhh.startup-diagnosis.v1",
+  "originalRuntimeGate": "FAIL_PRESERVED",
+  "originalTimeoutSeconds": 60,
+  "originalTimedCommand": [
+    "/workspace/confovhh-boltz/bin/boltz",
+    "predict",
+    "--help"
+  ],
+  "originalRawStreamsSaved": false,
+  "originalStderrReconstructionVerified": true,
+  "originalLowLevelCause": "UNDETERMINED: prior environment removed and no active-frame or paired-resource evidence was saved",
+  "cpuBuildCommit": "257945495d8382702f2305a56e56ae662c628ef1",
+  "cpuWorkflowRun": 34398379988,
+  "cpuExactHelpSeconds": 7.135190593999994,
+  "cpuExactHelpExitCode": 0,
+  "instrumentedHelpSeconds": 5.480552887999977,
+  "instrumentedHelpExitCode": 0,
+  "periodicStackIntervalSeconds": 15,
+  "stackDumpsEmitted": 0,
+  "stackInterpretation": "Invocation completed before first scheduled15second dump; no hang was observed. Raw import timings and phase markers retained.",
+  "cpuConclusion": "Pinned Boltz startup completes; the prior timeout does not reproduce on the local-filesystem CPU build. No intrinsic startup deadlock or fatal warning demonstrated.",
+  "crossEnvironmentImportSeconds": {
+    "oldInterrupted": {
+      "torch": 27.608476,
+      "pytorch_lightning": 48.788183,
+      "boltz.data.feature.featurizer": 11.095142
+    },
+    "newCompletedInstrumented": {
+      "torch": 1.30964,
+      "pytorch_lightning": 1.614158,
+      "boltz.data.feature.featurizer": 0.401647,
+      "boltz.main": 4.440834
+    },
+    "caveat": "Nested cumulative timings are not additive; hardware, filesystem and cache state differ. These observations cannot isolate prior root cause."
+  },
+  "operationalMitigation": "Restore unchanged CPU-built environment/compiler closure to original Dockerfile /opt prefixes on local storage; unchanged 60-second child and180-second runner whole-check remain required. Real CPU restore passed; GPU checks remain required.",
+  "timeoutsModified": false,
+  "originalRunnerModified": false,
+  "gpuRuntimePassAsserted": false,
+  "gpuJitPassAsserted": false,
+  "predictionRuns": 0,
+  "bundleManifestSha256": "b2ea93126a22099ba7861dbd4822b29e075739c028f47934eebb98db6e6caa3c",
+  "archiveBytes": 3485961842,
+  "archiveSha256": "fc5a2e1881f41993ab7b9e0809fb2598ec0b6346fc6ee153c2209bb8d5dc334a",
+  "environmentEntries": 42990,
+  "artifactConnectorLimitBytes": 536870912,
+  "transportStatus": "Complete local byte-verified backup: 8 transport parts, 206 original bundle files and 42990 environment entries verified.",
+  "builtImageConfigDigest": "sha256:c52fdf325ee22ef2604d190f73d5e3a7cbfafdb6cd3345a7fecee54e6a77d0e3",
+  "baseImageDigestIndependentlyChecked": true,
+  "exactLockedVersionsIndependentlyChecked": 92,
+  "installedDistributions": 94,
+  "diagnosticArtifactSha256": "40aee98f639e3a4b50aebee448360c486f189b1e363a38a9b65486796ccda5b7",
+  "diagnosticRawFilesAllReverified": true,
+  "cpuRestoreControl": {
+    "runId": 34401282631,
+    "status": "CPU_RESTORE_CONTROL_COMPLETE",
+    "originalOfflineAptFailureReproduced": true,
+    "demonstratedFix": "Stage same verified45compiler archives in canonical APT cache before unchanged --no-download restore; CPU control network disabled.",
+    "exactHelpSeconds": 6.48246825,
+    "instrumentedHelpSeconds": 4.978466669,
+    "restoreIncludingPreverificationSeconds": 113.678576,
+    "allEvidenceFilesVerified": 109
+  }
+}

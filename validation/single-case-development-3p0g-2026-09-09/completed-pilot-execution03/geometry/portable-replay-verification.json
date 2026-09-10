@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "explicit_path_cli_replay": true,
+  "records": [
+    {
+      "path": "geometry-analysis.json",
+      "identical": true,
+      "sha256": "298a912f547e7e5fc93b0509e9a45a24425cfddf93046c16f1c454bbbc7af368"
+    },
+    {
+      "path": "dockq-sequence-mapping-audit.json",
+      "identical": true,
+      "sha256": "201fec7dc78fd87c5d2c1e5d134c9dce6ea7e5edfe611f3298cdd05652776bc7"
+    },
+    {
+      "path": "dockq-label-mapping-sensitivity.json",
+      "identical": true,
+      "sha256": "bc8724706d06f9a8a97ae783b2d00b95a6c2577a7ba49279ceccbef52091e0d5"
+    },
+    {
+      "path": "regional-contact-clash-census.csv",
+      "identical": true,
+      "sha256": "ef2c35e9de4c4696e15afca4589698695559b7038fccddb502250a9b50fa0266"
+    },
+    {
+      "path": "residue-mapping.json",
+      "identical": true,
+      "sha256": "01cbb2a1ae0b233519987aa215db41a2f6837bb4691f39e600769c81cfa25ddc"
+    }
+  ]
+}

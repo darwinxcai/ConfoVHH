@@ -1,0 +1,26 @@
+****************************************************************
+*                       DockQ                                  *
+*   Docking scoring for biomolecular models                    *
+*   DockQ score legend:                                        *
+*    0.00 <= DockQ <  0.23 - Incorrect                         *
+*    0.23 <= DockQ <  0.49 - Acceptable quality                *
+*    0.49 <= DockQ <  0.80 - Medium quality                    *
+*            DockQ >= 0.80 - High quality                      *
+*   Ref: Mirabello and Wallner, 'DockQ v2: Improved automatic  *
+*   quality measure for protein multimers, nucleic acids       *
+*   and small molecules'                                       *
+*                                                              *
+*   For comments, please email: bjorn.wallner@.liu.se          *
+****************************************************************
+Model  : /Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/outputs/startup-recovery/execution03-evaluation/artifacts/seed1_model_0/3P0G_seed1_model_0.cif
+Native : /Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/work/local-evaluation/reference-preflight/native_AB.pdb
+Total DockQ over 1 native interfaces: 0.415 with AB:AB model:native mapping
+Native chains: A, B
+	Model chains: A, B
+	DockQ: 0.415
+	iRMSD: 2.933
+	LRMSD: 8.721
+	fnat: 0.549
+	fnonnat: 0.517
+	F1: 0.514
+	clashes: 0

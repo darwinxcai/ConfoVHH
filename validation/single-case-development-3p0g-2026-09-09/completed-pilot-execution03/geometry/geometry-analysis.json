@@ -1,0 +1,1290 @@
+{
+  "status": "COMPLETE",
+  "analysis_type": "post_hoc_development_case_diagnosis_not_scoring_redesign",
+  "native_sha256": "ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88",
+  "native_protein_pdb_sha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557",
+  "reference_observed_residue_counts": {
+    "A": 284,
+    "B": 121
+  },
+  "exact_mapping_method": "mmCIF label_seq_id independently checked against depositor label-auth sequence table and full frozen input sequences",
+  "alignment_method": "proper-rotation least-squares fit on exact matched native-observed chain-A N,CA,C,O atoms; ligand residual uses native-observed chain-B N,CA,C,O; no fit to VHH",
+  "contact_definition": "independent all-heavy-atom distance<=4.5 A for product census; <=5.0 A for DockQ-style native contacts; native-unobserved pairs cannot be validated or scored as recovered native contacts",
+  "clash_definition": "unique interchain residue pairs with element-vdW-radius sum minus atom distance >=0.6 A; plausible CYS-SG/CYS-SG distances1.8\u20132.3 A excluded, matching frozen product",
+  "native_contact_count_5_A": 51,
+  "native_contact_count_4p5_A": 46,
+  "candidates": [
+    {
+      "id": "seed1_model_0",
+      "coordinate_sha256": "ac4e88b64282ff815c3cb8bb07b2ebc564daf661f0e248fa49cf868b8039292a",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 1.7390685996329458,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 8.62106743440844,
+      "ligand_CA_centroid_displacement_A": 7.45509766843095,
+      "all_residue_contacts_4p5_A": 68,
+      "all_atom_contacts_4p5_A": 398,
+      "all_residue_contacts_5_A": 89,
+      "matched_observed_residue_contacts_5_A": 58,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 28,
+      "native_contact_fraction": 0.5490196078431373,
+      "frozen_DockQ": 0.41451984199389164,
+      "frozen_DockQ_LRMSD_A": 8.720725927365194,
+      "frozen_DockQ_native_contacts_recovered": 28,
+      "all_reported_clash_residue_pairs": 6,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 43,
+          "atom_pairs": 254,
+          "clash_residue_pairs": 3
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 6,
+          "atom_pairs": 40,
+          "clash_residue_pairs": 0
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 19,
+          "atom_pairs": 104,
+          "clash_residue_pairs": 3
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": [
+        {
+          "A_label": 74,
+          "A_auth": "66",
+          "A_resname": "THR",
+          "B_label": 104,
+          "B_resname": "LEU",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 6,
+          "minimum_distance_A": 2.414344026790714,
+          "max_overlap_A": 0.6256559732092861,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OG1",
+              "B_atom": "O",
+              "distance_A": 2.414344026790714,
+              "overlap_A": 0.6256559732092861,
+              "A_bfactor": 94.327,
+              "B_bfactor": 84.922
+            }
+          ]
+        },
+        {
+          "A_label": 74,
+          "A_auth": "66",
+          "A_resname": "THR",
+          "B_label": 105,
+          "B_resname": "TYR",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 10,
+          "minimum_distance_A": 2.7732665383082096,
+          "max_overlap_A": 0.6267334616917903,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CG2",
+              "B_atom": "CB",
+              "distance_A": 2.7732665383082096,
+              "overlap_A": 0.6267334616917903,
+              "A_bfactor": 94.327,
+              "B_bfactor": 88.565
+            }
+          ]
+        },
+        {
+          "A_label": 241,
+          "A_auth": "227F",
+          "A_resname": "PHE",
+          "B_label": 74,
+          "B_resname": "ALA",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 15,
+          "minimum_distance_A": 2.548638567255073,
+          "max_overlap_A": 0.6713614327449267,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CE2",
+              "B_atom": "O",
+              "distance_A": 2.548638567255073,
+              "overlap_A": 0.6713614327449267,
+              "A_bfactor": 81.504,
+              "B_bfactor": 69.63
+            }
+          ]
+        },
+        {
+          "A_label": 242,
+          "A_auth": "227G",
+          "A_resname": "GLU",
+          "B_label": 28,
+          "B_resname": "ILE",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 4,
+          "minimum_distance_A": 2.425669698062784,
+          "max_overlap_A": 0.6143303019372159,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OE2",
+              "B_atom": "O",
+              "distance_A": 2.425669698062784,
+              "overlap_A": 0.6143303019372159,
+              "A_bfactor": 84.713,
+              "B_bfactor": 80.873
+            }
+          ]
+        },
+        {
+          "A_label": 298,
+          "A_auth": "229K",
+          "A_resname": "ASP",
+          "B_label": 25,
+          "B_resname": "SER",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 10,
+          "minimum_distance_A": 2.4257586587911,
+          "max_overlap_A": 0.6142413412089001,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OD1",
+              "B_atom": "OG",
+              "distance_A": 2.4257586587911,
+              "overlap_A": 0.6142413412089001,
+              "A_bfactor": 71.398,
+              "B_bfactor": 77.339
+            }
+          ]
+        },
+        {
+          "A_label": 408,
+          "A_auth": "272",
+          "A_resname": "LEU",
+          "B_label": 103,
+          "B_resname": "VAL",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 8,
+          "minimum_distance_A": 2.650387389364053,
+          "max_overlap_A": 0.7496126106359471,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CD2",
+              "B_atom": "CG1",
+              "distance_A": 2.650387389364053,
+              "overlap_A": 0.7496126106359471,
+              "A_bfactor": 93.396,
+              "B_bfactor": 86.516
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seed1_model_1",
+      "coordinate_sha256": "8e23af915f19ac6a734fe02ac9e435e8d2536ae1f0ed1cd64fe32ed6de3d2d28",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 2.480112196572633,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 11.073908190219562,
+      "ligand_CA_centroid_displacement_A": 9.480928844644101,
+      "all_residue_contacts_4p5_A": 69,
+      "all_atom_contacts_4p5_A": 428,
+      "all_residue_contacts_5_A": 102,
+      "matched_observed_residue_contacts_5_A": 63,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 30,
+      "native_contact_fraction": 0.5882352941176471,
+      "frozen_DockQ": 0.3757359167773013,
+      "frozen_DockQ_LRMSD_A": 11.206367604780146,
+      "frozen_DockQ_native_contacts_recovered": 30,
+      "all_reported_clash_residue_pairs": 6,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 42,
+          "atom_pairs": 245,
+          "clash_residue_pairs": 2
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 5,
+          "atom_pairs": 42,
+          "clash_residue_pairs": 1
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 22,
+          "atom_pairs": 141,
+          "clash_residue_pairs": 3
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": [
+        {
+          "A_label": 74,
+          "A_auth": "66",
+          "A_resname": "THR",
+          "B_label": 104,
+          "B_resname": "LEU",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 7,
+          "minimum_distance_A": 2.4147220614182494,
+          "max_overlap_A": 0.6252779385817506,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OG1",
+              "B_atom": "O",
+              "distance_A": 2.4147220614182494,
+              "overlap_A": 0.6252779385817506,
+              "A_bfactor": 93.394,
+              "B_bfactor": 84.868
+            }
+          ]
+        },
+        {
+          "A_label": 237,
+          "A_auth": "227B",
+          "A_resname": "GLN",
+          "B_label": 30,
+          "B_resname": "SER",
+          "A_region": "native_unobserved_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 16,
+          "minimum_distance_A": 2.555373920368602,
+          "max_overlap_A": 0.6646260796313976,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "O",
+              "B_atom": "CB",
+              "distance_A": 2.555373920368602,
+              "overlap_A": 0.6646260796313976,
+              "A_bfactor": 83.842,
+              "B_bfactor": 78.216
+            }
+          ]
+        },
+        {
+          "A_label": 241,
+          "A_auth": "227F",
+          "A_resname": "PHE",
+          "B_label": 74,
+          "B_resname": "ALA",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 9,
+          "minimum_distance_A": 2.541218450546903,
+          "max_overlap_A": 0.6787815494530967,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CZ",
+              "B_atom": "O",
+              "distance_A": 2.541218450546903,
+              "overlap_A": 0.6787815494530967,
+              "A_bfactor": 80.272,
+              "B_bfactor": 68.959
+            }
+          ]
+        },
+        {
+          "A_label": 242,
+          "A_auth": "227G",
+          "A_resname": "GLU",
+          "B_label": 28,
+          "B_resname": "ILE",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 4,
+          "minimum_distance_A": 2.413712471484539,
+          "max_overlap_A": 0.6262875285154612,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OE2",
+              "B_atom": "O",
+              "distance_A": 2.413712471484539,
+              "overlap_A": 0.6262875285154612,
+              "A_bfactor": 84.053,
+              "B_bfactor": 81.239
+            }
+          ]
+        },
+        {
+          "A_label": 301,
+          "A_auth": "229N",
+          "A_resname": "GLU",
+          "B_label": 27,
+          "B_resname": "SER",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 14,
+          "minimum_distance_A": 2.4241117281387834,
+          "max_overlap_A": 0.6158882718612166,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OE2",
+              "B_atom": "OG",
+              "distance_A": 2.4241117281387834,
+              "overlap_A": 0.6158882718612166,
+              "A_bfactor": 74.263,
+              "B_bfactor": 67.09
+            }
+          ]
+        },
+        {
+          "A_label": 467,
+          "A_auth": "331",
+          "A_resname": "ASP",
+          "B_label": 105,
+          "B_resname": "TYR",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 10,
+          "minimum_distance_A": 2.4226601345834706,
+          "max_overlap_A": 0.6173398654165294,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OD2",
+              "B_atom": "OH",
+              "distance_A": 2.4226601345834706,
+              "overlap_A": 0.6173398654165294,
+              "A_bfactor": 81.363,
+              "B_bfactor": 87.407
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seed1_model_2",
+      "coordinate_sha256": "ad4c956c00273eab0a7aa7da317eda1799d1267747d2a42fb7b3cfbd2616a31b",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 2.450616732079226,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 16.156508717620746,
+      "ligand_CA_centroid_displacement_A": 13.137788574479913,
+      "all_residue_contacts_4p5_A": 52,
+      "all_atom_contacts_4p5_A": 269,
+      "all_residue_contacts_5_A": 72,
+      "matched_observed_residue_contacts_5_A": 46,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 16,
+      "native_contact_fraction": 0.3137254901960784,
+      "frozen_DockQ": 0.20782171517087225,
+      "frozen_DockQ_LRMSD_A": 16.09260243742248,
+      "frozen_DockQ_native_contacts_recovered": 16,
+      "all_reported_clash_residue_pairs": 7,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 33,
+          "atom_pairs": 161,
+          "clash_residue_pairs": 4
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 19,
+          "atom_pairs": 108,
+          "clash_residue_pairs": 3
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": [
+        {
+          "A_label": 74,
+          "A_auth": "66",
+          "A_resname": "THR",
+          "B_label": 105,
+          "B_resname": "TYR",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 10,
+          "minimum_distance_A": 2.6502642385052857,
+          "max_overlap_A": 0.7497357614947142,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CG2",
+              "B_atom": "CB",
+              "distance_A": 2.6502642385052857,
+              "overlap_A": 0.7497357614947142,
+              "A_bfactor": 88.229,
+              "B_bfactor": 55.28
+            }
+          ]
+        },
+        {
+          "A_label": 139,
+          "A_auth": "131",
+          "A_resname": "ARG",
+          "B_label": 103,
+          "B_resname": "VAL",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 9,
+          "minimum_distance_A": 2.454232542527297,
+          "max_overlap_A": 0.6157674574727032,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "NH1",
+              "B_atom": "O",
+              "distance_A": 2.454232542527297,
+              "overlap_A": 0.6157674574727032,
+              "A_bfactor": 91.17,
+              "B_bfactor": 41.923
+            }
+          ]
+        },
+        {
+          "A_label": 150,
+          "A_auth": "142",
+          "A_resname": "GLN",
+          "B_label": 98,
+          "B_resname": "LYS",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 9,
+          "minimum_distance_A": 2.463051829783531,
+          "max_overlap_A": 0.6069481702164694,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OE1",
+              "B_atom": "NZ",
+              "distance_A": 2.463051829783531,
+              "overlap_A": 0.6069481702164694,
+              "A_bfactor": 75.984,
+              "B_bfactor": 75.406
+            }
+          ]
+        },
+        {
+          "A_label": 298,
+          "A_auth": "229K",
+          "A_resname": "ASP",
+          "B_label": 26,
+          "B_resname": "GLY",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 9,
+          "minimum_distance_A": 2.540205314949954,
+          "max_overlap_A": 0.6797946850500458,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CB",
+              "B_atom": "O",
+              "distance_A": 2.540205314949954,
+              "overlap_A": 0.6797946850500458,
+              "A_bfactor": 72.606,
+              "B_bfactor": 64.294
+            }
+          ]
+        },
+        {
+          "A_label": 298,
+          "A_auth": "229K",
+          "A_resname": "ASP",
+          "B_label": 76,
+          "B_resname": "ASN",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 5,
+          "minimum_distance_A": 2.458489999186492,
+          "max_overlap_A": 0.6115100008135084,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OD1",
+              "B_atom": "ND2",
+              "distance_A": 2.458489999186492,
+              "overlap_A": 0.6115100008135084,
+              "A_bfactor": 72.606,
+              "B_bfactor": 72.398
+            }
+          ]
+        },
+        {
+          "A_label": 302,
+          "A_auth": "229O",
+          "A_resname": "LYS",
+          "B_label": 74,
+          "B_resname": "ALA",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 8,
+          "minimum_distance_A": 2.5269642098375673,
+          "max_overlap_A": 0.6930357901624324,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CG",
+              "B_atom": "O",
+              "distance_A": 2.5269642098375673,
+              "overlap_A": 0.6930357901624324,
+              "A_bfactor": 80.805,
+              "B_bfactor": 60.695
+            }
+          ]
+        },
+        {
+          "A_label": 404,
+          "A_auth": "268",
+          "A_resname": "GLU",
+          "B_label": 29,
+          "B_resname": "PHE",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 7,
+          "minimum_distance_A": 2.5922038255314725,
+          "max_overlap_A": 0.6277961744685272,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OE2",
+              "B_atom": "CZ",
+              "distance_A": 2.5922038255314725,
+              "overlap_A": 0.6277961744685272,
+              "A_bfactor": 79.989,
+              "B_bfactor": 52.27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seed1_model_3",
+      "coordinate_sha256": "6586f58ee9a34f5351ca3bc11358646d849c27534d401f7680dc561bf0729d52",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 2.147172769566599,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 17.59572184179789,
+      "ligand_CA_centroid_displacement_A": 14.843687351775129,
+      "all_residue_contacts_4p5_A": 48,
+      "all_atom_contacts_4p5_A": 259,
+      "all_residue_contacts_5_A": 63,
+      "matched_observed_residue_contacts_5_A": 37,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 17,
+      "native_contact_fraction": 0.3333333333333333,
+      "frozen_DockQ": 0.20512446299198026,
+      "frozen_DockQ_LRMSD_A": 17.389131387598407,
+      "frozen_DockQ_native_contacts_recovered": 17,
+      "all_reported_clash_residue_pairs": 2,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 28,
+          "atom_pairs": 166,
+          "clash_residue_pairs": 1
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 2,
+          "atom_pairs": 10,
+          "clash_residue_pairs": 0
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 18,
+          "atom_pairs": 83,
+          "clash_residue_pairs": 1
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": [
+        {
+          "A_label": 150,
+          "A_auth": "142",
+          "A_resname": "GLN",
+          "B_label": 98,
+          "B_resname": "LYS",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 12,
+          "minimum_distance_A": 2.5868863672956337,
+          "max_overlap_A": 0.6631136327043663,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CD",
+              "B_atom": "NZ",
+              "distance_A": 2.5868863672956337,
+              "overlap_A": 0.6631136327043663,
+              "A_bfactor": 82.185,
+              "B_bfactor": 86.663
+            }
+          ]
+        },
+        {
+          "A_label": 245,
+          "A_auth": "227J",
+          "A_resname": "ARG",
+          "B_label": 29,
+          "B_resname": "PHE",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 10,
+          "minimum_distance_A": 2.588025170936326,
+          "max_overlap_A": 0.661974829063674,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "NH1",
+              "B_atom": "CE1",
+              "distance_A": 2.588025170936326,
+              "overlap_A": 0.661974829063674,
+              "A_bfactor": 85.564,
+              "B_bfactor": 71.448
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seed1_model_4",
+      "coordinate_sha256": "b0307346e9c3aa63f7643698afc3e9bee09d8a48e753847cd784e8ee804502cf",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 2.241820086336375,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 18.003608630689165,
+      "ligand_CA_centroid_displacement_A": 15.922599407306084,
+      "all_residue_contacts_4p5_A": 41,
+      "all_atom_contacts_4p5_A": 222,
+      "all_residue_contacts_5_A": 58,
+      "matched_observed_residue_contacts_5_A": 27,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 13,
+      "native_contact_fraction": 0.2549019607843137,
+      "frozen_DockQ": 0.17029171132592144,
+      "frozen_DockQ_LRMSD_A": 18.09758910209063,
+      "frozen_DockQ_native_contacts_recovered": 13,
+      "all_reported_clash_residue_pairs": 0,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 20,
+          "atom_pairs": 111,
+          "clash_residue_pairs": 0
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 6,
+          "atom_pairs": 26,
+          "clash_residue_pairs": 0
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 15,
+          "atom_pairs": 85,
+          "clash_residue_pairs": 0
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": []
+    },
+    {
+      "id": "seed2_model_0",
+      "coordinate_sha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 1.7355688786167587,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 6.896062659501128,
+      "ligand_CA_centroid_displacement_A": 6.0861507525594245,
+      "all_residue_contacts_4p5_A": 83,
+      "all_atom_contacts_4p5_A": 476,
+      "all_residue_contacts_5_A": 99,
+      "matched_observed_residue_contacts_5_A": 59,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 31,
+      "native_contact_fraction": 0.6078431372549019,
+      "frozen_DockQ": 0.48462880897372757,
+      "frozen_DockQ_LRMSD_A": 6.987879937872215,
+      "frozen_DockQ_native_contacts_recovered": 31,
+      "all_reported_clash_residue_pairs": 6,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 54,
+          "atom_pairs": 267,
+          "clash_residue_pairs": 1
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 8,
+          "atom_pairs": 75,
+          "clash_residue_pairs": 1
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 21,
+          "atom_pairs": 134,
+          "clash_residue_pairs": 4
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": [
+        {
+          "A_label": 242,
+          "A_auth": "227G",
+          "A_resname": "GLU",
+          "B_label": 28,
+          "B_resname": "ILE",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 4,
+          "minimum_distance_A": 2.4282275205795685,
+          "max_overlap_A": 0.6117724794204316,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OE2",
+              "B_atom": "O",
+              "distance_A": 2.4282275205795685,
+              "overlap_A": 0.6117724794204316,
+              "A_bfactor": 84.732,
+              "B_bfactor": 83.062
+            }
+          ]
+        },
+        {
+          "A_label": 297,
+          "A_auth": "229J",
+          "A_resname": "LYS",
+          "B_label": 1,
+          "B_resname": "GLN",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": false,
+          "atom_contacts": 13,
+          "minimum_distance_A": 2.5718818271841335,
+          "max_overlap_A": 0.6481181728158663,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CD",
+              "B_atom": "O",
+              "distance_A": 2.5718818271841335,
+              "overlap_A": 0.6481181728158663,
+              "A_bfactor": 69.317,
+              "B_bfactor": 54.812
+            }
+          ]
+        },
+        {
+          "A_label": 297,
+          "A_auth": "229J",
+          "A_resname": "LYS",
+          "B_label": 26,
+          "B_resname": "GLY",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 7,
+          "minimum_distance_A": 2.5885567795202027,
+          "max_overlap_A": 0.6614432204797973,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "NZ",
+              "B_atom": "CA",
+              "distance_A": 2.5885567795202027,
+              "overlap_A": 0.6614432204797973,
+              "A_bfactor": 69.317,
+              "B_bfactor": 73.479
+            }
+          ]
+        },
+        {
+          "A_label": 298,
+          "A_auth": "229K",
+          "A_resname": "ASP",
+          "B_label": 5,
+          "B_resname": "GLN",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 13,
+          "minimum_distance_A": 2.583749780203185,
+          "max_overlap_A": 0.636250219796815,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OD2",
+              "B_atom": "CD",
+              "distance_A": 2.583749780203185,
+              "overlap_A": 0.636250219796815,
+              "A_bfactor": 72.896,
+              "B_bfactor": 86.972
+            }
+          ]
+        },
+        {
+          "A_label": 405,
+          "A_auth": "269",
+          "A_resname": "HIS",
+          "B_label": 29,
+          "B_resname": "PHE",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 9,
+          "minimum_distance_A": 2.6502607464549595,
+          "max_overlap_A": 0.7497392535450405,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CD2",
+              "B_atom": "CE1",
+              "distance_A": 2.6502607464549595,
+              "overlap_A": 0.7497392535450405,
+              "A_bfactor": 91.8,
+              "B_bfactor": 87.364
+            }
+          ]
+        },
+        {
+          "A_label": 490,
+          "A_auth": "354",
+          "A_resname": "TYR",
+          "B_label": 1,
+          "B_resname": "GLN",
+          "A_region": "native_unobserved_beta2AR",
+          "B_native_observed": false,
+          "atom_contacts": 12,
+          "minimum_distance_A": 2.4628685113298268,
+          "max_overlap_A": 0.6071314886701735,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OH",
+              "B_atom": "N",
+              "distance_A": 2.4628685113298268,
+              "overlap_A": 0.6071314886701735,
+              "A_bfactor": 43.013,
+              "B_bfactor": 54.812
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seed2_model_1",
+      "coordinate_sha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 1.7301064160289872,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 7.6895535169586635,
+      "ligand_CA_centroid_displacement_A": 6.718477986735714,
+      "all_residue_contacts_4p5_A": 73,
+      "all_atom_contacts_4p5_A": 344,
+      "all_residue_contacts_5_A": 92,
+      "matched_observed_residue_contacts_5_A": 58,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 30,
+      "native_contact_fraction": 0.5882352941176471,
+      "frozen_DockQ": 0.45530981662134734,
+      "frozen_DockQ_LRMSD_A": 7.843172042839382,
+      "frozen_DockQ_native_contacts_recovered": 30,
+      "all_reported_clash_residue_pairs": 4,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 48,
+          "atom_pairs": 228,
+          "clash_residue_pairs": 2
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 6,
+          "atom_pairs": 36,
+          "clash_residue_pairs": 0
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 19,
+          "atom_pairs": 80,
+          "clash_residue_pairs": 2
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": [
+        {
+          "A_label": 139,
+          "A_auth": "131",
+          "A_resname": "ARG",
+          "B_label": 103,
+          "B_resname": "VAL",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 18,
+          "minimum_distance_A": 2.5740925352442177,
+          "max_overlap_A": 0.6234059050171123,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CD",
+              "B_atom": "O",
+              "distance_A": 2.5965940949828874,
+              "overlap_A": 0.6234059050171123,
+              "A_bfactor": 96.391,
+              "B_bfactor": 90.156
+            }
+          ]
+        },
+        {
+          "A_label": 298,
+          "A_auth": "229K",
+          "A_resname": "ASP",
+          "B_label": 25,
+          "B_resname": "SER",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 14,
+          "minimum_distance_A": 2.618020307980821,
+          "max_overlap_A": 0.6019796920191789,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OD1",
+              "B_atom": "CB",
+              "distance_A": 2.618020307980821,
+              "overlap_A": 0.6019796920191789,
+              "A_bfactor": 73.593,
+              "B_bfactor": 78.617
+            }
+          ]
+        },
+        {
+          "A_label": 301,
+          "A_auth": "229N",
+          "A_resname": "GLU",
+          "B_label": 26,
+          "B_resname": "GLY",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 14,
+          "minimum_distance_A": 2.5470321385290764,
+          "max_overlap_A": 0.6729678614709234,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OE1",
+              "B_atom": "C",
+              "distance_A": 2.5470321385290764,
+              "overlap_A": 0.6729678614709234,
+              "A_bfactor": 76.329,
+              "B_bfactor": 73.787
+            }
+          ]
+        },
+        {
+          "A_label": 408,
+          "A_auth": "272",
+          "A_resname": "LEU",
+          "B_label": 103,
+          "B_resname": "VAL",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 6,
+          "minimum_distance_A": 2.7592400205310157,
+          "max_overlap_A": 0.6407599794689842,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CD2",
+              "B_atom": "CG1",
+              "distance_A": 2.7592400205310157,
+              "overlap_A": 0.6407599794689842,
+              "A_bfactor": 94.537,
+              "B_bfactor": 90.156
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seed2_model_2",
+      "coordinate_sha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 1.8811399031534095,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 7.113796881338717,
+      "ligand_CA_centroid_displacement_A": 6.112870007958727,
+      "all_residue_contacts_4p5_A": 72,
+      "all_atom_contacts_4p5_A": 376,
+      "all_residue_contacts_5_A": 92,
+      "matched_observed_residue_contacts_5_A": 60,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 31,
+      "native_contact_fraction": 0.6078431372549019,
+      "frozen_DockQ": 0.4766947196533409,
+      "frozen_DockQ_LRMSD_A": 7.085004397682439,
+      "frozen_DockQ_native_contacts_recovered": 31,
+      "all_reported_clash_residue_pairs": 1,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 50,
+          "atom_pairs": 250,
+          "clash_residue_pairs": 1
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 7,
+          "atom_pairs": 42,
+          "clash_residue_pairs": 0
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 15,
+          "atom_pairs": 84,
+          "clash_residue_pairs": 0
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": [
+        {
+          "A_label": 408,
+          "A_auth": "272",
+          "A_resname": "LEU",
+          "B_label": 103,
+          "B_resname": "VAL",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 7,
+          "minimum_distance_A": 2.6444861785042475,
+          "max_overlap_A": 0.7555138214957524,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CD2",
+              "B_atom": "CG1",
+              "distance_A": 2.6444861785042475,
+              "overlap_A": 0.7555138214957524,
+              "A_bfactor": 93.928,
+              "B_bfactor": 90.952
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seed2_model_3",
+      "coordinate_sha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 1.8255504125914999,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 8.26009770502161,
+      "ligand_CA_centroid_displacement_A": 6.956636357253405,
+      "all_residue_contacts_4p5_A": 72,
+      "all_atom_contacts_4p5_A": 400,
+      "all_residue_contacts_5_A": 92,
+      "matched_observed_residue_contacts_5_A": 60,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 28,
+      "native_contact_fraction": 0.5490196078431373,
+      "frozen_DockQ": 0.4216895163471448,
+      "frozen_DockQ_LRMSD_A": 8.313941386383883,
+      "frozen_DockQ_native_contacts_recovered": 28,
+      "all_reported_clash_residue_pairs": 5,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 46,
+          "atom_pairs": 234,
+          "clash_residue_pairs": 2
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 5,
+          "atom_pairs": 33,
+          "clash_residue_pairs": 0
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 21,
+          "atom_pairs": 133,
+          "clash_residue_pairs": 3
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": [
+        {
+          "A_label": 71,
+          "A_auth": "63",
+          "A_resname": "ARG",
+          "B_label": 107,
+          "B_resname": "TYR",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 8,
+          "minimum_distance_A": 2.446161362073238,
+          "max_overlap_A": 0.6238386379267622,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "NH2",
+              "B_atom": "OH",
+              "distance_A": 2.446161362073238,
+              "overlap_A": 0.6238386379267622,
+              "A_bfactor": 81.192,
+              "B_bfactor": 86.302
+            }
+          ]
+        },
+        {
+          "A_label": 241,
+          "A_auth": "227F",
+          "A_resname": "PHE",
+          "B_label": 74,
+          "B_resname": "ALA",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 14,
+          "minimum_distance_A": 2.553049350149738,
+          "max_overlap_A": 0.6669506498502615,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CE2",
+              "B_atom": "O",
+              "distance_A": 2.553049350149738,
+              "overlap_A": 0.6669506498502615,
+              "A_bfactor": 83.023,
+              "B_bfactor": 69.821
+            }
+          ]
+        },
+        {
+          "A_label": 242,
+          "A_auth": "227G",
+          "A_resname": "GLU",
+          "B_label": 28,
+          "B_resname": "ILE",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": true,
+          "atom_contacts": 4,
+          "minimum_distance_A": 2.4230651119191986,
+          "max_overlap_A": 0.6169348880808014,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OE2",
+              "B_atom": "O",
+              "distance_A": 2.4230651119191986,
+              "overlap_A": 0.6169348880808014,
+              "A_bfactor": 86.516,
+              "B_bfactor": 82.522
+            }
+          ]
+        },
+        {
+          "A_label": 298,
+          "A_auth": "229K",
+          "A_resname": "ASP",
+          "B_label": 1,
+          "B_resname": "GLN",
+          "A_region": "T4_lysozyme_fusion",
+          "B_native_observed": false,
+          "atom_contacts": 8,
+          "minimum_distance_A": 2.4240173320749987,
+          "max_overlap_A": 0.6159826679250013,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "OD1",
+              "B_atom": "O",
+              "distance_A": 2.4240173320749987,
+              "overlap_A": 0.6159826679250013,
+              "A_bfactor": 74.608,
+              "B_bfactor": 56.48
+            }
+          ]
+        },
+        {
+          "A_label": 405,
+          "A_auth": "269",
+          "A_resname": "HIS",
+          "B_label": 29,
+          "B_resname": "PHE",
+          "A_region": "native_observed_beta2AR",
+          "B_native_observed": true,
+          "atom_contacts": 9,
+          "minimum_distance_A": 2.721393458157052,
+          "max_overlap_A": 0.6786065418429481,
+          "clash_atom_pairs": [
+            {
+              "A_atom": "CD2",
+              "B_atom": "CE1",
+              "distance_A": 2.721393458157052,
+              "overlap_A": 0.6786065418429481,
+              "A_bfactor": 92.266,
+              "B_bfactor": 85.675
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seed2_model_4",
+      "coordinate_sha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d",
+      "sequence_identity_to_frozen_input": true,
+      "receptor_backbone_atom_count": 1136,
+      "receptor_residue_count": 284,
+      "receptor_backbone_fit_RMSD_A": 2.0043653370076213,
+      "ligand_backbone_atom_count": 484,
+      "ligand_backbone_RMSD_after_receptor_fit_A": 17.79545920941364,
+      "ligand_CA_centroid_displacement_A": 14.643375022985945,
+      "all_residue_contacts_4p5_A": 46,
+      "all_atom_contacts_4p5_A": 268,
+      "all_residue_contacts_5_A": 62,
+      "matched_observed_residue_contacts_5_A": 36,
+      "native_contact_count_5_A": 51,
+      "native_contact_recovered_5_A": 13,
+      "native_contact_fraction": 0.2549019607843137,
+      "frozen_DockQ": 0.1762564824406321,
+      "frozen_DockQ_LRMSD_A": 17.91196466123485,
+      "frozen_DockQ_native_contacts_recovered": 13,
+      "all_reported_clash_residue_pairs": 0,
+      "regional_contacts_4p5_A": {
+        "native_observed_beta2AR": {
+          "residue_pairs": 25,
+          "atom_pairs": 155,
+          "clash_residue_pairs": 0
+        },
+        "native_unobserved_beta2AR": {
+          "residue_pairs": 3,
+          "atom_pairs": 7,
+          "clash_residue_pairs": 0
+        },
+        "T4_lysozyme_fusion": {
+          "residue_pairs": 18,
+          "atom_pairs": 106,
+          "clash_residue_pairs": 0
+        },
+        "engineered_N_terminal_tag": {
+          "residue_pairs": 0,
+          "atom_pairs": 0,
+          "clash_residue_pairs": 0
+        }
+      },
+      "clash_details": []
+    }
+  ]
+}

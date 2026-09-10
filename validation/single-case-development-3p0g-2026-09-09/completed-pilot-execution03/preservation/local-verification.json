@@ -1,0 +1,22 @@
+{
+  "schema": "confovhh.detached-backup-collector.v3",
+  "startedAtUtc": "2026-09-09T22:44:18.301441+00:00",
+  "status": "PASS",
+  "predictionRequested": false,
+  "cloudActionTaken": false,
+  "archive": {
+    "bytes": 42183233,
+    "path": "execution03-backup.tar.gz",
+    "sha256": "febc42e7ffac6e3edfbd26f2b10e742e6f50e5f44f204eb3855c8b6aaf461084"
+  },
+  "manifest": {
+    "bytes": 73894,
+    "path": "execution03-backup-manifest.json",
+    "sha256": "f57b8eb4ed46ce7c29a620e4aec89a6932170200ade3089ae68c367174ad834c"
+  },
+  "payloadFilesVerified": 311,
+  "totalMembersVerified": 312,
+  "tenSlotsVerified": true,
+  "sshTimeoutCount": 0,
+  "completedAtUtc": "2026-09-09T23:14:55.020298+00:00"
+}

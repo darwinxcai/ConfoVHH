@@ -1,0 +1,19 @@
+# CPU post-outcome analysis environment only. Does not replace GPU locks.
+# Python 3.12.14; Node v24.19.0; Darwin arm64.
+biopython==1.88
+colorama==0.4.6
+contourpy==1.3.3
+cycler==0.12.1
+dockq==2.1.3
+fonttools==4.64.0
+kiwisolver==1.5.1
+matplotlib==3.11.1
+networkx==3.6.1
+numpy==1.26.4
+packaging==26.3
+parallelbar==2.5
+pillow==12.3.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+six==1.17.0
+tqdm==4.70.0

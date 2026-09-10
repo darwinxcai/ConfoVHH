@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/retained-transfer-v2/retained-workspace-transfer-v2.py", line 221, in receive
+    result=extract_stream(reader,args.manifest,args.manifest_sha256,args.output/'data')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/retained-transfer-v2/retained-workspace-transfer-v2.py", line 182, in extract_stream
+    with tarfile.open(fileobj=reader,mode='r|') as archive:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/tarfile.py", line 1883, in open
+    t = cls(name, filemode, stream, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/tarfile.py", line 1761, in __init__
+    self.firstmember = self.next()
+                       ^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/tarfile.py", line 2745, in next
+    raise ReadError("empty file") from None
+tarfile.ReadError: empty file

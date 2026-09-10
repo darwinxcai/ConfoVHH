@@ -1,0 +1,21 @@
+{
+  "purpose": "Post-failure import-only diagnosis; not a runtime-gate rerun and not inference",
+  "startedAtUtc": "2026-09-09T19:29:06.776237+00:00",
+  "completedAtUtc": "2026-09-09T19:30:36.843587+00:00",
+  "command": [
+    "/workspace/confovhh-boltz/bin/python",
+    "-I",
+    "-X",
+    "importtime",
+    "-c",
+    "import boltz.main"
+  ],
+  "timeoutSeconds": 90,
+  "timedOut": true,
+  "exitCode": -9,
+  "elapsedSeconds": 90.06738484092057,
+  "originalRuntimeGateRetained": "FAIL",
+  "inferenceExecuted": false,
+  "fullGpuJitGateReached": false,
+  "logSha256": "389ae03d723d51f12261e4508ead791e97dea3ee222bc77abc0fa7e1e1a32dc4"
+}

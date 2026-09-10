@@ -1,0 +1,1338 @@
+{
+  "id": "seed1_model_2",
+  "contacts_4p5_A": [
+    {
+      "A_label": 71,
+      "A_auth": "63",
+      "A_resname": "ARG",
+      "B_label": 107,
+      "B_resname": "TYR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 7,
+      "minimum_distance_A": 2.9520455603699616,
+      "max_overlap_A": 0.2679544396300382,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 71,
+      "A_auth": "63",
+      "A_resname": "ARG",
+      "B_label": 105,
+      "B_resname": "TYR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 7,
+      "minimum_distance_A": 3.6993268640794637,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 74,
+      "A_auth": "66",
+      "A_resname": "THR",
+      "B_label": 104,
+      "B_resname": "LEU",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 6,
+      "minimum_distance_A": 2.6065212556969493,
+      "max_overlap_A": 0.4334787443030508,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 74,
+      "A_auth": "66",
+      "A_resname": "THR",
+      "B_label": 105,
+      "B_resname": "TYR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 10,
+      "minimum_distance_A": 2.6502642385052857,
+      "max_overlap_A": 0.7497357614947142,
+      "clash_atom_pairs": [
+        {
+          "A_atom": "CG2",
+          "B_atom": "CB",
+          "distance_A": 2.6502642385052857,
+          "overlap_A": 0.7497357614947142,
+          "A_bfactor": 88.229,
+          "B_bfactor": 55.28
+        }
+      ]
+    },
+    {
+      "A_label": 74,
+      "A_auth": "66",
+      "A_resname": "THR",
+      "B_label": 106,
+      "B_resname": "GLU",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 1,
+      "minimum_distance_A": 4.408273388595585,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 76,
+      "A_auth": "68",
+      "A_resname": "THR",
+      "B_label": 104,
+      "B_resname": "LEU",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 3,
+      "minimum_distance_A": 3.8967167839349064,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 139,
+      "A_auth": "131",
+      "A_resname": "ARG",
+      "B_label": 103,
+      "B_resname": "VAL",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 9,
+      "minimum_distance_A": 2.454232542527297,
+      "max_overlap_A": 0.6157674574727032,
+      "clash_atom_pairs": [
+        {
+          "A_atom": "NH1",
+          "B_atom": "O",
+          "distance_A": 2.454232542527297,
+          "overlap_A": 0.6157674574727032,
+          "A_bfactor": 91.17,
+          "B_bfactor": 41.923
+        }
+      ]
+    },
+    {
+      "A_label": 139,
+      "A_auth": "131",
+      "A_resname": "ARG",
+      "B_label": 104,
+      "B_resname": "LEU",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 2,
+      "minimum_distance_A": 4.390985808551424,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 143,
+      "A_auth": "135",
+      "A_resname": "ILE",
+      "B_label": 103,
+      "B_resname": "VAL",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 2,
+      "minimum_distance_A": 3.9820847380486515,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 146,
+      "A_auth": "138",
+      "A_resname": "PRO",
+      "B_label": 100,
+      "B_resname": "TYR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 1,
+      "minimum_distance_A": 4.1512705951792634,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 147,
+      "A_auth": "139",
+      "A_resname": "PHE",
+      "B_label": 58,
+      "B_resname": "ASN",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 18,
+      "minimum_distance_A": 3.4061646284494222,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 147,
+      "A_auth": "139",
+      "A_resname": "PHE",
+      "B_label": 33,
+      "B_resname": "THR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 4,
+      "minimum_distance_A": 3.2951928616850332,
+      "max_overlap_A": 0.10480713831496669,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 147,
+      "A_auth": "139",
+      "A_resname": "PHE",
+      "B_label": 50,
+      "B_resname": "ALA",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 7,
+      "minimum_distance_A": 3.566512330709093,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 147,
+      "A_auth": "139",
+      "A_resname": "PHE",
+      "B_label": 56,
+      "B_resname": "SER",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 8,
+      "minimum_distance_A": 3.4435552500431874,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 147,
+      "A_auth": "139",
+      "A_resname": "PHE",
+      "B_label": 57,
+      "B_resname": "THR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 6,
+      "minimum_distance_A": 4.017592206521216,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 147,
+      "A_auth": "139",
+      "A_resname": "PHE",
+      "B_label": 51,
+      "B_resname": "ILE",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 4,
+      "minimum_distance_A": 3.98193615687143,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 147,
+      "A_auth": "139",
+      "A_resname": "PHE",
+      "B_label": 52,
+      "B_resname": "HIS",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 6,
+      "minimum_distance_A": 3.5026693048873456,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 149,
+      "A_auth": "141",
+      "A_resname": "TYR",
+      "B_label": 106,
+      "B_resname": "GLU",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 2,
+      "minimum_distance_A": 3.7127821235294705,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 150,
+      "A_auth": "142",
+      "A_resname": "GLN",
+      "B_label": 98,
+      "B_resname": "LYS",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 9,
+      "minimum_distance_A": 2.463051829783531,
+      "max_overlap_A": 0.6069481702164694,
+      "clash_atom_pairs": [
+        {
+          "A_atom": "OE1",
+          "B_atom": "NZ",
+          "distance_A": 2.463051829783531,
+          "overlap_A": 0.6069481702164694,
+          "A_bfactor": 75.984,
+          "B_bfactor": 75.406
+        }
+      ]
+    },
+    {
+      "A_label": 150,
+      "A_auth": "142",
+      "A_resname": "GLN",
+      "B_label": 37,
+      "B_resname": "TYR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 2,
+      "minimum_distance_A": 4.008825650910749,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 150,
+      "A_auth": "142",
+      "A_resname": "GLN",
+      "B_label": 47,
+      "B_resname": "LEU",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 1,
+      "minimum_distance_A": 4.349216925539586,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 150,
+      "A_auth": "142",
+      "A_resname": "GLN",
+      "B_label": 100,
+      "B_resname": "TYR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 1,
+      "minimum_distance_A": 4.239516163526211,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 242,
+      "A_auth": "227G",
+      "A_resname": "GLU",
+      "B_label": 31,
+      "B_resname": "ILE",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 4,
+      "minimum_distance_A": 3.330217924295646,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 245,
+      "A_auth": "227J",
+      "A_resname": "ARG",
+      "B_label": 29,
+      "B_resname": "PHE",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 10,
+      "minimum_distance_A": 2.8286717570973137,
+      "max_overlap_A": 0.42132824290268633,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 297,
+      "A_auth": "229J",
+      "A_resname": "LYS",
+      "B_label": 27,
+      "B_resname": "SER",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 11,
+      "minimum_distance_A": 3.0414847723768066,
+      "max_overlap_A": 0.17851522762319316,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 297,
+      "A_auth": "229J",
+      "A_resname": "LYS",
+      "B_label": 28,
+      "B_resname": "ILE",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 8,
+      "minimum_distance_A": 3.187160302526373,
+      "max_overlap_A": 0.07965056872021403,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 297,
+      "A_auth": "229J",
+      "A_resname": "LYS",
+      "B_label": 29,
+      "B_resname": "PHE",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 7,
+      "minimum_distance_A": 3.408005152548922,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 297,
+      "A_auth": "229J",
+      "A_resname": "LYS",
+      "B_label": 99,
+      "B_resname": "ASP",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 1,
+      "minimum_distance_A": 4.369044410097017,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 298,
+      "A_auth": "229K",
+      "A_resname": "ASP",
+      "B_label": 26,
+      "B_resname": "GLY",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 9,
+      "minimum_distance_A": 2.540205314949954,
+      "max_overlap_A": 0.6797946850500458,
+      "clash_atom_pairs": [
+        {
+          "A_atom": "CB",
+          "B_atom": "O",
+          "distance_A": 2.540205314949954,
+          "overlap_A": 0.6797946850500458,
+          "A_bfactor": 72.606,
+          "B_bfactor": 64.294
+        }
+      ]
+    },
+    {
+      "A_label": 298,
+      "A_auth": "229K",
+      "A_resname": "ASP",
+      "B_label": 27,
+      "B_resname": "SER",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 3,
+      "minimum_distance_A": 4.098609630545463,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 298,
+      "A_auth": "229K",
+      "A_resname": "ASP",
+      "B_label": 28,
+      "B_resname": "ILE",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 2,
+      "minimum_distance_A": 4.339837435330962,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 298,
+      "A_auth": "229K",
+      "A_resname": "ASP",
+      "B_label": 24,
+      "B_resname": "ALA",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 3,
+      "minimum_distance_A": 3.7307558885968404,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 298,
+      "A_auth": "229K",
+      "A_resname": "ASP",
+      "B_label": 76,
+      "B_resname": "ASN",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 5,
+      "minimum_distance_A": 2.458489999186492,
+      "max_overlap_A": 0.6115100008135084,
+      "clash_atom_pairs": [
+        {
+          "A_atom": "OD1",
+          "B_atom": "ND2",
+          "distance_A": 2.458489999186492,
+          "overlap_A": 0.6115100008135084,
+          "A_bfactor": 72.606,
+          "B_bfactor": 72.398
+        }
+      ]
+    },
+    {
+      "A_label": 301,
+      "A_auth": "229N",
+      "A_resname": "GLU",
+      "B_label": 30,
+      "B_resname": "SER",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 15,
+      "minimum_distance_A": 3.304460961503404,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 301,
+      "A_auth": "229N",
+      "A_resname": "GLU",
+      "B_label": 76,
+      "B_resname": "ASN",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 6,
+      "minimum_distance_A": 3.35183541661878,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 301,
+      "A_auth": "229N",
+      "A_resname": "GLU",
+      "B_label": 28,
+      "B_resname": "ILE",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 1,
+      "minimum_distance_A": 3.8258000148073616,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 301,
+      "A_auth": "229N",
+      "A_resname": "GLU",
+      "B_label": 29,
+      "B_resname": "PHE",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 2,
+      "minimum_distance_A": 4.002566153232202,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 302,
+      "A_auth": "229O",
+      "A_resname": "LYS",
+      "B_label": 74,
+      "B_resname": "ALA",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 8,
+      "minimum_distance_A": 2.5269642098375673,
+      "max_overlap_A": 0.6930357901624324,
+      "clash_atom_pairs": [
+        {
+          "A_atom": "CG",
+          "B_atom": "O",
+          "distance_A": 2.5269642098375673,
+          "overlap_A": 0.6930357901624324,
+          "A_bfactor": 80.805,
+          "B_bfactor": 60.695
+        }
+      ]
+    },
+    {
+      "A_label": 302,
+      "A_auth": "229O",
+      "A_resname": "LYS",
+      "B_label": 75,
+      "B_resname": "ALA",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 4,
+      "minimum_distance_A": 3.853216601905479,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 305,
+      "A_auth": "229R",
+      "A_resname": "ASN",
+      "B_label": 74,
+      "B_resname": "ALA",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 4,
+      "minimum_distance_A": 3.731687817395769,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 305,
+      "A_auth": "229R",
+      "A_resname": "ASN",
+      "B_label": 73,
+      "B_resname": "ASN",
+      "A_region": "T4_lysozyme_fusion",
+      "B_native_observed": true,
+      "atom_contacts": 5,
+      "minimum_distance_A": 3.0497183960654466,
+      "max_overlap_A": 0.020281603934553694,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 403,
+      "A_auth": "267",
+      "A_resname": "LYS",
+      "B_label": 101,
+      "B_resname": "GLY",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 4,
+      "minimum_distance_A": 4.292604135207438,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 403,
+      "A_auth": "267",
+      "A_resname": "LYS",
+      "B_label": 102,
+      "B_resname": "ALA",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 4,
+      "minimum_distance_A": 4.243496220535609,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 404,
+      "A_auth": "268",
+      "A_resname": "GLU",
+      "B_label": 103,
+      "B_resname": "VAL",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 7,
+      "minimum_distance_A": 3.4031993026121765,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 404,
+      "A_auth": "268",
+      "A_resname": "GLU",
+      "B_label": 29,
+      "B_resname": "PHE",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 7,
+      "minimum_distance_A": 2.5922038255314725,
+      "max_overlap_A": 0.6277961744685272,
+      "clash_atom_pairs": [
+        {
+          "A_atom": "OE2",
+          "B_atom": "CZ",
+          "distance_A": 2.5922038255314725,
+          "overlap_A": 0.6277961744685272,
+          "A_bfactor": 79.989,
+          "B_bfactor": 52.27
+        }
+      ]
+    },
+    {
+      "A_label": 404,
+      "A_auth": "268",
+      "A_resname": "GLU",
+      "B_label": 101,
+      "B_resname": "GLY",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 4,
+      "minimum_distance_A": 2.8668934891446525,
+      "max_overlap_A": 0.17310651085534756,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 404,
+      "A_auth": "268",
+      "A_resname": "GLU",
+      "B_label": 100,
+      "B_resname": "TYR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 2,
+      "minimum_distance_A": 3.8359306761853764,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 407,
+      "A_auth": "271",
+      "A_resname": "ALA",
+      "B_label": 103,
+      "B_resname": "VAL",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 1,
+      "minimum_distance_A": 3.674896251066144,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 408,
+      "A_auth": "272",
+      "A_resname": "LEU",
+      "B_label": 103,
+      "B_resname": "VAL",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 3,
+      "minimum_distance_A": 3.969812594166128,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 411,
+      "A_auth": "275",
+      "A_resname": "LEU",
+      "B_label": 104,
+      "B_resname": "LEU",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 3,
+      "minimum_distance_A": 3.823123074267947,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 467,
+      "A_auth": "331",
+      "A_resname": "ASP",
+      "B_label": 105,
+      "B_resname": "TYR",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 9,
+      "minimum_distance_A": 2.73835824869574,
+      "max_overlap_A": 0.4816417513042599,
+      "clash_atom_pairs": []
+    },
+    {
+      "A_label": 467,
+      "A_auth": "331",
+      "A_resname": "ASP",
+      "B_label": 102,
+      "B_resname": "ALA",
+      "A_region": "native_observed_beta2AR",
+      "B_native_observed": true,
+      "atom_contacts": 1,
+      "minimum_distance_A": 4.496480320105938,
+      "max_overlap_A": 0,
+      "clash_atom_pairs": []
+    }
+  ],
+  "native_observed_contacts_5_A": [
+    {
+      "A_label": 71,
+      "B_label": 105,
+      "native": false
+    },
+    {
+      "A_label": 71,
+      "B_label": 107,
+      "native": false
+    },
+    {
+      "A_label": 74,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 74,
+      "B_label": 105,
+      "native": false
+    },
+    {
+      "A_label": 74,
+      "B_label": 106,
+      "native": false
+    },
+    {
+      "A_label": 76,
+      "B_label": 104,
+      "native": true
+    },
+    {
+      "A_label": 76,
+      "B_label": 103,
+      "native": false
+    },
+    {
+      "A_label": 77,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 139,
+      "B_label": 103,
+      "native": true
+    },
+    {
+      "A_label": 139,
+      "B_label": 104,
+      "native": true
+    },
+    {
+      "A_label": 143,
+      "B_label": 103,
+      "native": true
+    },
+    {
+      "A_label": 146,
+      "B_label": 100,
+      "native": true
+    },
+    {
+      "A_label": 146,
+      "B_label": 52,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 58,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 33,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 50,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 56,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 57,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 51,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 52,
+      "native": true
+    },
+    {
+      "A_label": 149,
+      "B_label": 106,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 98,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 37,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 47,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 50,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 58,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 100,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 106,
+      "native": false
+    },
+    {
+      "A_label": 402,
+      "B_label": 31,
+      "native": false
+    },
+    {
+      "A_label": 403,
+      "B_label": 101,
+      "native": false
+    },
+    {
+      "A_label": 403,
+      "B_label": 102,
+      "native": false
+    },
+    {
+      "A_label": 403,
+      "B_label": 105,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 103,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 101,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 29,
+      "native": true
+    },
+    {
+      "A_label": 404,
+      "B_label": 31,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 100,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 102,
+      "native": false
+    },
+    {
+      "A_label": 407,
+      "B_label": 103,
+      "native": true
+    },
+    {
+      "A_label": 407,
+      "B_label": 102,
+      "native": true
+    },
+    {
+      "A_label": 407,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 408,
+      "B_label": 103,
+      "native": false
+    },
+    {
+      "A_label": 411,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 465,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 467,
+      "B_label": 105,
+      "native": false
+    },
+    {
+      "A_label": 467,
+      "B_label": 102,
+      "native": false
+    }
+  ],
+  "full_model_contacts_5_A": [
+    {
+      "A_label": 71,
+      "B_label": 105,
+      "native": false
+    },
+    {
+      "A_label": 71,
+      "B_label": 107,
+      "native": false
+    },
+    {
+      "A_label": 74,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 74,
+      "B_label": 105,
+      "native": false
+    },
+    {
+      "A_label": 74,
+      "B_label": 106,
+      "native": false
+    },
+    {
+      "A_label": 76,
+      "B_label": 104,
+      "native": true
+    },
+    {
+      "A_label": 76,
+      "B_label": 103,
+      "native": false
+    },
+    {
+      "A_label": 77,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 139,
+      "B_label": 103,
+      "native": true
+    },
+    {
+      "A_label": 139,
+      "B_label": 104,
+      "native": true
+    },
+    {
+      "A_label": 143,
+      "B_label": 103,
+      "native": true
+    },
+    {
+      "A_label": 146,
+      "B_label": 100,
+      "native": true
+    },
+    {
+      "A_label": 146,
+      "B_label": 52,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 58,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 33,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 50,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 56,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 57,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 51,
+      "native": true
+    },
+    {
+      "A_label": 147,
+      "B_label": 52,
+      "native": true
+    },
+    {
+      "A_label": 149,
+      "B_label": 106,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 98,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 37,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 47,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 50,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 58,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 100,
+      "native": false
+    },
+    {
+      "A_label": 150,
+      "B_label": 106,
+      "native": false
+    },
+    {
+      "A_label": 242,
+      "B_label": 31,
+      "native": false
+    },
+    {
+      "A_label": 245,
+      "B_label": 30,
+      "native": false
+    },
+    {
+      "A_label": 245,
+      "B_label": 29,
+      "native": false
+    },
+    {
+      "A_label": 296,
+      "B_label": 26,
+      "native": false
+    },
+    {
+      "A_label": 296,
+      "B_label": 27,
+      "native": false
+    },
+    {
+      "A_label": 297,
+      "B_label": 27,
+      "native": false
+    },
+    {
+      "A_label": 297,
+      "B_label": 28,
+      "native": false
+    },
+    {
+      "A_label": 297,
+      "B_label": 29,
+      "native": false
+    },
+    {
+      "A_label": 297,
+      "B_label": 99,
+      "native": false
+    },
+    {
+      "A_label": 298,
+      "B_label": 26,
+      "native": false
+    },
+    {
+      "A_label": 298,
+      "B_label": 27,
+      "native": false
+    },
+    {
+      "A_label": 298,
+      "B_label": 28,
+      "native": false
+    },
+    {
+      "A_label": 298,
+      "B_label": 76,
+      "native": false
+    },
+    {
+      "A_label": 298,
+      "B_label": 24,
+      "native": false
+    },
+    {
+      "A_label": 298,
+      "B_label": 25,
+      "native": false
+    },
+    {
+      "A_label": 301,
+      "B_label": 30,
+      "native": false
+    },
+    {
+      "A_label": 301,
+      "B_label": 76,
+      "native": false
+    },
+    {
+      "A_label": 301,
+      "B_label": 28,
+      "native": false
+    },
+    {
+      "A_label": 301,
+      "B_label": 29,
+      "native": false
+    },
+    {
+      "A_label": 301,
+      "B_label": 73,
+      "native": false
+    },
+    {
+      "A_label": 302,
+      "B_label": 74,
+      "native": false
+    },
+    {
+      "A_label": 302,
+      "B_label": 75,
+      "native": false
+    },
+    {
+      "A_label": 302,
+      "B_label": 76,
+      "native": false
+    },
+    {
+      "A_label": 305,
+      "B_label": 73,
+      "native": false
+    },
+    {
+      "A_label": 305,
+      "B_label": 74,
+      "native": false
+    },
+    {
+      "A_label": 306,
+      "B_label": 74,
+      "native": false
+    },
+    {
+      "A_label": 402,
+      "B_label": 31,
+      "native": false
+    },
+    {
+      "A_label": 403,
+      "B_label": 101,
+      "native": false
+    },
+    {
+      "A_label": 403,
+      "B_label": 102,
+      "native": false
+    },
+    {
+      "A_label": 403,
+      "B_label": 105,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 103,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 101,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 29,
+      "native": true
+    },
+    {
+      "A_label": 404,
+      "B_label": 31,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 100,
+      "native": false
+    },
+    {
+      "A_label": 404,
+      "B_label": 102,
+      "native": false
+    },
+    {
+      "A_label": 407,
+      "B_label": 103,
+      "native": true
+    },
+    {
+      "A_label": 407,
+      "B_label": 102,
+      "native": true
+    },
+    {
+      "A_label": 407,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 408,
+      "B_label": 103,
+      "native": false
+    },
+    {
+      "A_label": 411,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 465,
+      "B_label": 104,
+      "native": false
+    },
+    {
+      "A_label": 467,
+      "B_label": 105,
+      "native": false
+    },
+    {
+      "A_label": 467,
+      "B_label": 102,
+      "native": false
+    }
+  ]
+}

@@ -1,5 +1,18 @@
 # 3P0G current-ConfoVHH development pilot
 
+**Completed result (9 September 2026; analysis 10 September UTC):** all ten
+frozen candidates generated and evaluated. ConfoVHH selected `seed2_model_4`
+(DockQ 0.1762564824406321); confidence and best available selected
+`seed2_model_0` (0.48462880897372757). Independent rank replay passed. The
+[complete result and failure analysis](completed-pilot-execution03/README.md)
+preserves original predictions, previous failed/not-run attempts and the
+negative conclusion. No new GPU generation was used for the analysis.
+
+## Historical preparation and operator reports
+
+The statements below describe earlier preparation states and allowances; they
+are retained as history and superseded by the completed result above.
+
 **Later operator report:** an A100 attempt reportedly produced no poses because Triton could not find a system C compiler. The [compiler recovery addendum](COMPILER_RECOVERY.md) and additional JIT check now govern a technical retry. Earlier preparation evidence below is retained; remote failure artifacts and billing still require verification.
 
 **Inputs and reference controls are prepared; generation has not run and the

@@ -1,0 +1,22 @@
+{
+  "schema": "confovhh.failed-host-allocation-segment.v1",
+  "podId": "o4losszjxyofk0",
+  "providerCreatedAt": "2026-09-09T22:09:32.618Z",
+  "stopConfirmedAtUtc": "2026-09-09T22:14:42+00:00",
+  "conservativelyCountedFromUtc": "2026-09-09T22:08:55.457767+00:00",
+  "providerCreationToStopSeconds": 309.382,
+  "countedGpuSeconds": 346.542233,
+  "previousCumulativeGpuSeconds": 7485.271,
+  "updatedCumulativeGpuSeconds": 7831.813233,
+  "cumulativeCeilingSeconds": 11100,
+  "remainingGpuSeconds": 3268.186767,
+  "generationSeconds": 0,
+  "predictionsLaunched": false,
+  "failureStage": "Provider OCI container initialization before Python",
+  "failure": "Host missing /dev/dri/card3 device mount",
+  "rawProviderLogFile": "migration-host-failure-logs.json",
+  "rawProviderLogSha256": "f9faf0a03a9771481d5764d505080097069191ec2506a149ab346e4d617ad4c9",
+  "transferStillRunningWhileBothGpuAllocationsStopped": true,
+  "uniqueScientificOutputsCreated": false,
+  "sourceRetained": true
+}

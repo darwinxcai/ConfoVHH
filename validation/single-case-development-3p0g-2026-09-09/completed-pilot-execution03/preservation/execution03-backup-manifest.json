@@ -1,0 +1,1569 @@
+{
+  "archive": "execution03-backup.tar.gz",
+  "createdAtUtc": "2026-09-09T23:14:38.168164+00:00",
+  "excludedReproduciblePayloads": [
+    "Reusable environment bundle preserved separately by exact manifest checksum",
+    "Checkpoint/chemical payloads identified by verified frozen hashes and fixed URLs"
+  ],
+  "executionId": "confovhh-3p0g-startup-recovery-20260909-03",
+  "files": [
+    {
+      "bytes": 2304,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/3P0G_seed1.log",
+      "sha256": "3d190af4c0b5ec42d99de9f96ba5cc2374e1a4992b4f4020e86e197781a0f915"
+    },
+    {
+      "bytes": 1036,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/3P0G_seed1.yaml",
+      "sha256": "9487689b20a7b9029aaf75ef727f9358366861219172b950f3ccf90e30ebaf25"
+    },
+    {
+      "bytes": 2304,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/3P0G_seed2.log",
+      "sha256": "813fe23ff436412ecdaa023ccb6830dbf66cd97543c32d84ad72fa10c1b8e2d9"
+    },
+    {
+      "bytes": 1036,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/3P0G_seed2.yaml",
+      "sha256": "9487689b20a7b9029aaf75ef727f9358366861219172b950f3ccf90e30ebaf25"
+    },
+    {
+      "bytes": 6722372,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/generation-receipt.json",
+      "sha256": "0bc29e4fe47f94aaf51b0dee2faedba663502e560833a8b6daf04f2d547e47c7"
+    },
+    {
+      "bytes": 4145,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/lightning_logs/version_0/hparams.yaml",
+      "sha256": "ea29a9dfecc50f5a50aee0c1ef489558966e9cbfd5bb2ccc771b76e1a7252a12"
+    },
+    {
+      "bytes": 439694,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/3P0G_seed1_model_0.cif",
+      "sha256": "ac4e88b64282ff815c3cb8bb07b2ebc564daf661f0e248fa49cf868b8039292a"
+    },
+    {
+      "bytes": 441278,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/3P0G_seed1_model_1.cif",
+      "sha256": "8e23af915f19ac6a734fe02ac9e435e8d2536ae1f0ed1cd64fe32ed6de3d2d28"
+    },
+    {
+      "bytes": 441071,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/3P0G_seed1_model_2.cif",
+      "sha256": "ad4c956c00273eab0a7aa7da317eda1799d1267747d2a42fb7b3cfbd2616a31b"
+    },
+    {
+      "bytes": 440490,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/3P0G_seed1_model_3.cif",
+      "sha256": "6586f58ee9a34f5351ca3bc11358646d849c27534d401f7680dc561bf0729d52"
+    },
+    {
+      "bytes": 441687,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/3P0G_seed1_model_4.cif",
+      "sha256": "b0307346e9c3aa63f7643698afc3e9bee09d8a48e753847cd784e8ee804502cf"
+    },
+    {
+      "bytes": 908,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/confidence_3P0G_seed1_model_0.json",
+      "sha256": "af61aadbbb22e66b8da440d91ccce373f1e62b268191028924d7330255d94b49"
+    },
+    {
+      "bytes": 912,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/confidence_3P0G_seed1_model_1.json",
+      "sha256": "f4309d47d3dc1bbcff2a9170e7c60a4e9b0dc839b6213a3d88f723225754c416"
+    },
+    {
+      "bytes": 910,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/confidence_3P0G_seed1_model_2.json",
+      "sha256": "1f0f3e4aace424a8712907da7f849598795b53ebc34643255c2f4bfb3da39879"
+    },
+    {
+      "bytes": 908,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/confidence_3P0G_seed1_model_3.json",
+      "sha256": "4e1bd42f9cb28ca02c915ebba5bb3295f07f64bcf5d14bf916bffa1087577176"
+    },
+    {
+      "bytes": 915,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/confidence_3P0G_seed1_model_4.json",
+      "sha256": "b09e11920359d8efdb4c465bf96a0b3d69103f4cd5ba56bc3ae6f578b46eeeea"
+    },
+    {
+      "bytes": 1515042,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pae_3P0G_seed1_model_0.npz",
+      "sha256": "ddef13f0af24c5b556b4aa73b496a304d83b81bb7fc4c8b4f377b51f9c322c08"
+    },
+    {
+      "bytes": 1514828,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pae_3P0G_seed1_model_1.npz",
+      "sha256": "ac26c19502d662e77fee1092e6fdfddee9c2f73c3c197f352d65f8a5671d1ae4"
+    },
+    {
+      "bytes": 1517250,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pae_3P0G_seed1_model_2.npz",
+      "sha256": "d46c15dd562278f4526378c42718f3492028a141e595679f269cbe1e46a1143c"
+    },
+    {
+      "bytes": 1517076,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pae_3P0G_seed1_model_3.npz",
+      "sha256": "58bf0f6d31272cc2f258a579ab4c530de4a3a014bca4079756b5c2d1eadea75f"
+    },
+    {
+      "bytes": 1517968,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pae_3P0G_seed1_model_4.npz",
+      "sha256": "00f1728f2b958793a05c856551e2e3a9fad5d2e59f4c0c15bb5bd1ae9f48d465"
+    },
+    {
+      "bytes": 1521860,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pde_3P0G_seed1_model_0.npz",
+      "sha256": "8314d09e0265be91c24f73ec73040bf0e9c5835b33f9e482fc1d15828d5268a3"
+    },
+    {
+      "bytes": 1531194,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pde_3P0G_seed1_model_1.npz",
+      "sha256": "e178bff8eb498d34546281a1d16b5ef2a02082bacebf1efe876cad4b8ae808e3"
+    },
+    {
+      "bytes": 1527374,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pde_3P0G_seed1_model_2.npz",
+      "sha256": "47abc6843aadd76013169ae29fe6b130a1a17f1f34c4e5c8bd25c06a3576386e"
+    },
+    {
+      "bytes": 1527909,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pde_3P0G_seed1_model_3.npz",
+      "sha256": "492c9d367df8254b5c1245020db988d7fbea422fe9b4b1ffdbe80fda753c83e0"
+    },
+    {
+      "bytes": 1527085,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/pde_3P0G_seed1_model_4.npz",
+      "sha256": "10b51da1cfb77aba05f1d9ad22bc6a4e1255fe4bbc56932d1e692d7f4780b07c"
+    },
+    {
+      "bytes": 2460,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/plddt_3P0G_seed1_model_0.npz",
+      "sha256": "56706bd7f40bd93d0215f2fb1d692bfa3b42b6d9d9df155f0acc2b934338358c"
+    },
+    {
+      "bytes": 2473,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/plddt_3P0G_seed1_model_1.npz",
+      "sha256": "b3899bcfae50483ca34325a956e5f59de93c3a42e69df2a69bc437c9ab09dfc1"
+    },
+    {
+      "bytes": 2475,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/plddt_3P0G_seed1_model_2.npz",
+      "sha256": "580737c0ef7bcdf2570f05ec82658513f2a2c900ace0b47e62c1e5ad8b4d2d59"
+    },
+    {
+      "bytes": 2463,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/plddt_3P0G_seed1_model_3.npz",
+      "sha256": "04c1c08abac00e2281e95b81b6bf9bce4ff65ab451c749a9af09e3d1ee471c5e"
+    },
+    {
+      "bytes": 2478,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/predictions/3P0G_seed1/plddt_3P0G_seed1_model_4.npz",
+      "sha256": "4c136b347588913a92557a3b7c77ca57be795e1e47df06d2873d6f034e490db5"
+    },
+    {
+      "bytes": 3909,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/processed/constraints/3P0G_seed1.npz",
+      "sha256": "61e6edd96dccfa86d7b8fba7784aa4f7e5077a3a8731562affcd5d430113e342"
+    },
+    {
+      "bytes": 794,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/processed/manifest.json",
+      "sha256": "087dc13a2205678d60660a757d054346caa06dc2f290a410c18e8445c6fd4433"
+    },
+    {
+      "bytes": 5,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/processed/mols/3P0G_seed1.pkl",
+      "sha256": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048"
+    },
+    {
+      "bytes": 1049913,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/processed/msa/3P0G_seed1_0.npz",
+      "sha256": "51e07b03752410892fced79b0d38590bdbcc2f874c03984723846dbcf633b51a"
+    },
+    {
+      "bytes": 412954,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/processed/msa/3P0G_seed1_1.npz",
+      "sha256": "aeba23156b38918bda0dfd2e35ebb9f16b3db56b0d0ed3841ba4c536086b460f"
+    },
+    {
+      "bytes": 779,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/processed/records/3P0G_seed1.json",
+      "sha256": "e695ce8104dcd187406edaef70883b168523704bd0e41d9d3c89852212d34f20"
+    },
+    {
+      "bytes": 12231,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed1/processed/structures/3P0G_seed1.npz",
+      "sha256": "2014d295fc18573b1da88d93983b959f67a6e58dd0cdc6c1694a8187a1e32f5c"
+    },
+    {
+      "bytes": 4145,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/lightning_logs/version_0/hparams.yaml",
+      "sha256": "ea29a9dfecc50f5a50aee0c1ef489558966e9cbfd5bb2ccc771b76e1a7252a12"
+    },
+    {
+      "bytes": 439406,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_0.cif",
+      "sha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838"
+    },
+    {
+      "bytes": 440440,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_1.cif",
+      "sha256": "0546d78a8acd5839570e37b77b35901bc4021b6c0bd3043dba9f4810f326826b"
+    },
+    {
+      "bytes": 440891,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_2.cif",
+      "sha256": "de44da1493e93bda88860d4889f1f0f8b9818b149356653d10885852474a47ff"
+    },
+    {
+      "bytes": 440578,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_3.cif",
+      "sha256": "d2302ffe4bdccd629d2a91b8df80b45fea6a659d0101f7e1b5a740f61f151fa8"
+    },
+    {
+      "bytes": 440993,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/3P0G_seed2_model_4.cif",
+      "sha256": "2fb7590e211e7c6475e3473b7b7f2c1a686f477633a48e52b003d9177b49735d"
+    },
+    {
+      "bytes": 907,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_0.json",
+      "sha256": "1988bc83c97efe89dd94eaf4c119a262a1926822d19e4b9949c584343e5dd764"
+    },
+    {
+      "bytes": 911,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_1.json",
+      "sha256": "26e7ba392ce67e6b489acc536dd5c8842a7ead2583196d559512480379960b37"
+    },
+    {
+      "bytes": 911,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_2.json",
+      "sha256": "0166f3f387c970dfe9f332086cb70ebb81abcfef01d621f6854b3ae97fb33a89"
+    },
+    {
+      "bytes": 911,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_3.json",
+      "sha256": "3773c94234a3f6750b0cf519372d76bca2857228a50003efa9e0f1966bde2b2a"
+    },
+    {
+      "bytes": 916,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/confidence_3P0G_seed2_model_4.json",
+      "sha256": "b4b826def327112b88378654b9624218dfa02c6bb0204b59d0c1b6bb724714e4"
+    },
+    {
+      "bytes": 1515971,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pae_3P0G_seed2_model_0.npz",
+      "sha256": "6cd4857de32d1bf3415fc7d8d298769263512c370d58fb6893e92278944071da"
+    },
+    {
+      "bytes": 1514315,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pae_3P0G_seed2_model_1.npz",
+      "sha256": "d233f6b22e8846970c5e79449162b3fe5e7a0abb94996511b88ae402af244c20"
+    },
+    {
+      "bytes": 1515378,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pae_3P0G_seed2_model_2.npz",
+      "sha256": "f64a857d17dad2c358f6dbe4fa935e36064d185763ec2a2f52009200d4091d5e"
+    },
+    {
+      "bytes": 1517271,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pae_3P0G_seed2_model_3.npz",
+      "sha256": "d53232c4b303d1de8cfb6f66c38424b4ffd3fee619918ee32798bec76c056920"
+    },
+    {
+      "bytes": 1516782,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pae_3P0G_seed2_model_4.npz",
+      "sha256": "6aa785e80415fd7ed2b3b4d2d9179fdd081516b0d282cacb4487748be480412f"
+    },
+    {
+      "bytes": 1513701,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pde_3P0G_seed2_model_0.npz",
+      "sha256": "341dd2ee51c664f5a57fe2f54253cac136fb91b0d3f0ad7e7be179a4c1f83e52"
+    },
+    {
+      "bytes": 1516162,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pde_3P0G_seed2_model_1.npz",
+      "sha256": "bd29f3977a89742964f7a70e481f8159a9683d9597f1d59b6d66ac98f04d92e2"
+    },
+    {
+      "bytes": 1519326,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pde_3P0G_seed2_model_2.npz",
+      "sha256": "4b276db9f8f8e38a95d673aa9408f81a09a45ab516ff6f080c4d6afb89ad785d"
+    },
+    {
+      "bytes": 1518872,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pde_3P0G_seed2_model_3.npz",
+      "sha256": "6cc2b2a3f8801015cda7b3f2c673ccd32681c9bf897fa2a7cf4600af396b4256"
+    },
+    {
+      "bytes": 1532744,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/pde_3P0G_seed2_model_4.npz",
+      "sha256": "f7cc6a603f7e7e9d2d7846629404bb340560305780439ff7aa554f03cae43e8c"
+    },
+    {
+      "bytes": 2448,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/plddt_3P0G_seed2_model_0.npz",
+      "sha256": "45eaa1752d184cfe3ae7af72531a80fda5d2411714fc0e29dc6bfb285540552d"
+    },
+    {
+      "bytes": 2451,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/plddt_3P0G_seed2_model_1.npz",
+      "sha256": "0adaf6f18417d1f953003c4e0ae08c637ccd176d04142a580d6879302e73a737"
+    },
+    {
+      "bytes": 2454,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/plddt_3P0G_seed2_model_2.npz",
+      "sha256": "9882fad77491b51857116c738f017fff32f4521d4f237c419e87f565e8d7a60c"
+    },
+    {
+      "bytes": 2472,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/plddt_3P0G_seed2_model_3.npz",
+      "sha256": "fa7fb3295792edf39965ccd8a2c33257e5766571970e7d2641f9c5750efef4b0"
+    },
+    {
+      "bytes": 2471,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/predictions/3P0G_seed2/plddt_3P0G_seed2_model_4.npz",
+      "sha256": "c1bd9be7dff9697a77e49da88d3e74ad92df215e57bc4b34ccd92b9ce18cd9cc"
+    },
+    {
+      "bytes": 3909,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/processed/constraints/3P0G_seed2.npz",
+      "sha256": "61e6edd96dccfa86d7b8fba7784aa4f7e5077a3a8731562affcd5d430113e342"
+    },
+    {
+      "bytes": 794,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/processed/manifest.json",
+      "sha256": "a32f7cd468352107bdb88f2dba4510a843b4184bc56fc760ebef9158517e2d9d"
+    },
+    {
+      "bytes": 5,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/processed/mols/3P0G_seed2.pkl",
+      "sha256": "926248e52d1fa532c317e37da24ed652ae64110f8219cb5e061668bd3091f048"
+    },
+    {
+      "bytes": 1049913,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/processed/msa/3P0G_seed2_0.npz",
+      "sha256": "51e07b03752410892fced79b0d38590bdbcc2f874c03984723846dbcf633b51a"
+    },
+    {
+      "bytes": 412954,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/processed/msa/3P0G_seed2_1.npz",
+      "sha256": "aeba23156b38918bda0dfd2e35ebb9f16b3db56b0d0ed3841ba4c536086b460f"
+    },
+    {
+      "bytes": 779,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/processed/records/3P0G_seed2.json",
+      "sha256": "a630d0a20a4183cdca026417f5c0775af4145e8d649eb2860b057b09e65a4270"
+    },
+    {
+      "bytes": 12231,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/raw/boltz_results_3P0G_seed2/processed/structures/3P0G_seed2.npz",
+      "sha256": "2014d295fc18573b1da88d93983b959f67a6e58dd0cdc6c1694a8187a1e32f5c"
+    },
+    {
+      "bytes": 173843,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/runtime-smoke.json",
+      "sha256": "a6ae645e2a5751fa00c2266a23b2d03f6b888f50113917ab79b75c0f1df89ee2"
+    },
+    {
+      "bytes": 511,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/runtime-smoke.log",
+      "sha256": "07e6e62306e8fa8b92e0450fbaa8b545e270558d5883045af201ba3fd3ef966f"
+    },
+    {
+      "bytes": 4839,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/seed1-receipt.json",
+      "sha256": "f9f79f7e5411094ba0db18829129af1b180459519a796b8f985639edcd790c00"
+    },
+    {
+      "bytes": 4840,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/3p0g-pilot-output/seed2-receipt.json",
+      "sha256": "e66d84187a486891eb2bbd6a03fc0baa2c04dd1db7dee00f2beea23fe1588c33"
+    },
+    {
+      "bytes": 1361,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/cache-download-receipt.json",
+      "sha256": "46b0f6487143a87e684293c2565d6b5ac8a1828923dbf67ccbe86d5377e76974"
+    },
+    {
+      "bytes": 320,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/cache-provenance.json",
+      "sha256": "815e593de9dc4c4df2be635ee39822d7d512ddb91849246dbe5fc1f1658643b9"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/compiler-cache/apt-cache-path.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 36,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/compiler-cache/apt-cache-path.stdout.log",
+      "sha256": "ae629384bc4c2946aa65e85b9c78db662757b613d8c95b97f9e1f101e25116bf"
+    },
+    {
+      "bytes": 19837,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/compiler-cache/receipt.json",
+      "sha256": "b5dfe7f18d85dbdfc9d1d3415df52724536475a1cbeda553175d476724865cc0"
+    },
+    {
+      "bytes": 16361,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/controller-attempt-ledger.json",
+      "sha256": "5e66491e827d0d01114c8e2280a69e231e904e8e562ca10cae07c40686ce5f22"
+    },
+    {
+      "bytes": 5548,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/controller-monitor-actions.jsonl",
+      "sha256": "06b55e9182b3f58a6841840f31a22509337b9aad7d45b807cbb2bdebeeacf8d4"
+    },
+    {
+      "bytes": 406,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/controller-monitor-launch.json",
+      "sha256": "8b6dd4bcabb9b75cfe9357fce2f319d63bd856b3444b8ad0149ad3c7dfd303fb"
+    },
+    {
+      "bytes": 8675,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/controller-monitor-receipt.json",
+      "sha256": "8625cbf405f00cf62261d1bdb847298c6ddb018796ce902a5cdeb2b4b422f30c"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/controller-wrapper.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/controller-wrapper.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 932,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/environment-binding.json",
+      "sha256": "38d3e624309f8f9414f9ec964d8200e8d272a8df8ce91a919c272773b3b3a396"
+    },
+    {
+      "bytes": 544,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/environment-verification/current-base-python.command.json",
+      "sha256": "ce6a592755170c32835fb8a978313b76f1d1bfca3b87d752b22a073e0688fd6f"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/environment-verification/current-base-python.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 379,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/environment-verification/current-base-python.stdout.log",
+      "sha256": "30a03f2b0cd1a7e9844069c3a088f5fe418e33ac69c10efb3405bf0cebdc24ea"
+    },
+    {
+      "bytes": 212,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/environment-verification/current-os-packages.command.json",
+      "sha256": "191a9adbd4e17597e95e299a00dd56f6b15dfff7885fad684f939f4bc27ae697"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/environment-verification/current-os-packages.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6157,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/environment-verification/current-os-packages.stdout.log",
+      "sha256": "a7d96d56476e3e4ad566480bf9407435a7eb75b4b640aab1f3096883728a221e"
+    },
+    {
+      "bytes": 369,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/environment-verification/receipt.json",
+      "sha256": "4e6e7deea0e21469a269fc39b739d1224a39ab9875c316070443a6bab1feb5ac"
+    },
+    {
+      "bytes": 5385,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/launch-manifest.json",
+      "sha256": "1fdaa66a9c3eaf4473807bdb49abea0556f370e23235d344b1f4286b897ef50a"
+    },
+    {
+      "bytes": 637,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/live-base-identity.json",
+      "sha256": "0a0b974d5071348132a941c5566f5841e6a98380dc79c43aeabfe4f7c7e2b85a"
+    },
+    {
+      "bytes": 545,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/base-python-after.command.json",
+      "sha256": "53d60cbd3b72e9b50d35c431d10ff2c4035c1b87e99db185108cdd281475d962"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/base-python-after.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 379,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/base-python-after.stdout.log",
+      "sha256": "30a03f2b0cd1a7e9844069c3a088f5fe418e33ac69c10efb3405bf0cebdc24ea"
+    },
+    {
+      "bytes": 545,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/base-python-before.command.json",
+      "sha256": "db188fc5cae0700b4f4b9c86146fbc146db93f994f26a034f651ded2ed0b53b6"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/base-python-before.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 379,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/base-python-before.stdout.log",
+      "sha256": "30a03f2b0cd1a7e9844069c3a088f5fe418e33ac69c10efb3405bf0cebdc24ea"
+    },
+    {
+      "bytes": 3416,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/offline-compiler-restore.command.json",
+      "sha256": "5fef76264590382d138be0b134e4f75368e258cae7b2ac875e4a61d3dfe50e7b"
+    },
+    {
+      "bytes": 74,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/offline-compiler-restore.stderr.log",
+      "sha256": "f77216c41aadf6c667ac1a602069951966cea350daab793ffe11ae0de1225ddc"
+    },
+    {
+      "bytes": 17109,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/offline-compiler-restore.stdout.log",
+      "sha256": "62aa7d42098cd6e81f7297fb22e90c94430b429c5a44331d1aece2538fc2071a"
+    },
+    {
+      "bytes": 212,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/os-packages-after.command.json",
+      "sha256": "96131d46c4b6a5285e14375a758944838daa325d328bef5fb2ccfaa0325b7bd1"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/os-packages-after.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6157,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/os-packages-after.stdout.log",
+      "sha256": "a7d96d56476e3e4ad566480bf9407435a7eb75b4b640aab1f3096883728a221e"
+    },
+    {
+      "bytes": 212,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/os-packages-before.command.json",
+      "sha256": "51cd880eba4af3db4b7656337471a93a5b7b532a8564b59b482eda9b1d513afe"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/os-packages-before.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4634,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/os-packages-before.stdout.log",
+      "sha256": "0c619f152191dd8c42d6c62e92d2681cd5fd24a8e4a84491d6063b46be3dde36"
+    },
+    {
+      "bytes": 206,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/pip-check.command.json",
+      "sha256": "49cac5de50d1a750dd902f94e158fccc700a3e115c67ab0d9fba349fc1b9de16"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/pip-check.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 30,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-logs/pip-check.stdout.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "bytes": 974,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/restore/restore-receipt.json",
+      "sha256": "6f02f3bca082da649ad543074beb7401636b36fe8747197ce6d11da4a9982718"
+    },
+    {
+      "bytes": 5404,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-before-preservation.json",
+      "sha256": "423ff1235ecaa77d59c266cd2de18a8bda2b26e7e350b339a1272ba63aab019c"
+    },
+    {
+      "bytes": 472,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/compiler-cache-stage.command.json",
+      "sha256": "5d1144abea8eea714269ae11063155d09a1c614b5d901eedcb01fcffffb1922d"
+    },
+    {
+      "bytes": 862,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/compiler-cache-stage.receipt.json",
+      "sha256": "b1727c07e089f12da4a3fe5e349916e5e411f29dc5eb66a73fc5cf5af7ef4fde"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/compiler-cache-stage.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/compiler-cache-stage.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 383,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/fresh-gpu-gates.command.json",
+      "sha256": "997db29db7e2e3240ce2d158cfccff7a4d9a6f00428ebe46650a8c75b745c5f8"
+    },
+    {
+      "bytes": 775,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/fresh-gpu-gates.receipt.json",
+      "sha256": "306a973802ea2303d31947a3033c5b1c84d327b774afe75c5697c080005058f0"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/fresh-gpu-gates.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2165,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/fresh-gpu-gates.stdout.log",
+      "sha256": "a6e39a7d85c020d398cf508efd5153bba43cf191d5a3a3fa223eaa7f20c9f4d4"
+    },
+    {
+      "bytes": 527,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/frozen-monitor.command.json",
+      "sha256": "d3c20ab8b6648cc16e12c30cbb1ba3aa8faec94075a93af1e6f4fd6a3fa79174"
+    },
+    {
+      "bytes": 919,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/frozen-monitor.receipt.json",
+      "sha256": "ccf29b8364fe2cadf4af893b4fb3a4e520166985fb61dda49b4bffa33e08e0c9"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/frozen-monitor.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1008,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/frozen-monitor.stdout.log",
+      "sha256": "f2c21c1ff706839995acdb144a841befc8346f2cebaadccf77c1be823fb6ad9f"
+    },
+    {
+      "bytes": 239,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/pip-check.command.json",
+      "sha256": "2e0781b1b7034954031b823a1b7e570b537fd1aa1b3f3af2172e0b37edada40e"
+    },
+    {
+      "bytes": 631,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/pip-check.receipt.json",
+      "sha256": "451c981fe2bda3d6c9cd81b17f719aadf80a7ab488de64654924fee1d153ce42"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/pip-check.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 30,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/pip-check.stdout.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "bytes": 688,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/restore.command.json",
+      "sha256": "d375e82fe464a855806a376ab739829730fee1b3c02ede311cc73c53da49b40d"
+    },
+    {
+      "bytes": 1080,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/restore.receipt.json",
+      "sha256": "78faef5fcaab5bc503b703dbaca78e9f849855707e97b05cb0caf8d0f25c270d"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/restore.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 190,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/resume-commands/restore.stdout.log",
+      "sha256": "1ab0889a92056c3ed3bae43f15d40c7e20d9df2df3eacc08ced5bf34ccb2f117"
+    },
+    {
+      "bytes": 50,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/runner-exit.txt",
+      "sha256": "02df10503cd3755dafb48aa22aa090fa3eb8fbe88c7cbfc7fdaaed5d7eee9e8d"
+    },
+    {
+      "bytes": 2049,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/runner-wrapper.log",
+      "sha256": "4c8c03bcbf31a011b0826bb36b979c0d6cfee1acf30641678c7c30f5021059fe"
+    },
+    {
+      "bytes": 173843,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/runtime-smoke.json",
+      "sha256": "53f4be67756ef6686474bf35f4506b3184e46c44d9810fe33cc2bc94a2990b23"
+    },
+    {
+      "bytes": 390,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gate-controller/full-jit.command.json",
+      "sha256": "8c3314b25c99b64536fdf094e03c142d907f4ca94a1da5b5609fd4f88503afb3"
+    },
+    {
+      "bytes": 781,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gate-controller/full-jit.receipt.json",
+      "sha256": "1406ebf29ac09fd81c771fd3aca8bf2f940e24702c3509d15eb0a03a492acd11"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gate-controller/full-jit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 178,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gate-controller/full-jit.stdout.log",
+      "sha256": "99a1daeac2ee3a36c0fa2bc4f943e87b6c2716404db17823c10130049b969754"
+    },
+    {
+      "bytes": 2585,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gate-controller/receipt.json",
+      "sha256": "0d95d8db420690ccdd05989bae6c0815926a6232c563f2d79de07e2029dddf97"
+    },
+    {
+      "bytes": 494,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gate-controller/runtime.command.json",
+      "sha256": "17e2d852be336f016b7894d2bb36569ea1e3d032cb7a466309ecffa6b46ceaba"
+    },
+    {
+      "bytes": 887,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gate-controller/runtime.receipt.json",
+      "sha256": "a828f28cdea25d39defd3b13cd1951370c57d4fc2e209134381284d4f7be544c"
+    },
+    {
+      "bytes": 326,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gate-controller/runtime.stderr.log",
+      "sha256": "3f79e970099219865b477b35c1b877d4901850661ac67922a544eed913a0169e"
+    },
+    {
+      "bytes": 183,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gate-controller/runtime.stdout.log",
+      "sha256": "402dbea3d8a3bfed62e9b63ce8563ba5619f37cb610de0b46458f981d58bb800"
+    },
+    {
+      "bytes": 1613,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/startup-gates-receipt.json",
+      "sha256": "42db670285cb9147c8bd0a8a76485df6db435cb82fe8d5c33cab64bf88e69b7e"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-build.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-build.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 15968,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-probe",
+      "sha256": "69f1231d709053d8bc2751bd5e29c31db4bcdace39d09a3efda3c720f98629f2"
+    },
+    {
+      "bytes": 213,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-probe.c",
+      "sha256": "22f3c42d9abc730cbab178053bce615f7bb13348179f7692f5e519e1cdd20a35"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-run.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 23,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-run.stdout.log",
+      "sha256": "e57b4e4ec12989da2e641bdf112b8b2b9f0518c3f359227d27282b00906739bb"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-version.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 246,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/compiler-version.stdout.log",
+      "sha256": "9829ba25432aae95cc193accafa14bfab70abb264f797d07c47ba1dcdf4f31a1"
+    },
+    {
+      "bytes": 9780,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/receipt.json",
+      "sha256": "11a803d04a6d33a54e4fe74e475720d203066aa0c71b5c8575f3dee597766cb4"
+    },
+    {
+      "bytes": 4279,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit-probe.py",
+      "sha256": "4a936ea4f38d1cc1b70d8b4c448d7f9f41c1b4405352b28ae7ca37780e0e46a2"
+    },
+    {
+      "bytes": 1421,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit-result.json",
+      "sha256": "ca53ec9fa4fee15aed1941b552865e34e0864b6e91a1c00f927e51fbb438cf7d"
+    },
+    {
+      "bytes": 326,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit.stderr.log",
+      "sha256": "3f79e970099219865b477b35c1b877d4901850661ac67922a544eed913a0169e"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-03/runtime-results/toolchain-jit/triton-jit.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1967,
+      "path": "generation-inputs/manifest.json",
+      "sha256": "1a236f8141f281c0da04979fc182461c8c68cf76d20795b00f44b3ceb1e0bc82"
+    },
+    {
+      "bytes": 8759728,
+      "path": "generation-inputs/msa/chain_A.a3m",
+      "sha256": "b411a8591549e34e8869b4cca030f6c676fc47c08a2952db310532cd85a092a0"
+    },
+    {
+      "bytes": 2323693,
+      "path": "generation-inputs/msa/chain_B.a3m",
+      "sha256": "af72c48f56f9f7279374c1ffe8e438d2dd5bfcf17d7d91a1604168a0af94d73d"
+    },
+    {
+      "bytes": 7725,
+      "path": "generation-inputs/msa-provenance.json",
+      "sha256": "e99d65e99de41d7f9742a1e3867b2c145b5296a223abf8f841588de3520df99a"
+    },
+    {
+      "bytes": 15130,
+      "path": "generation-inputs/protocol.json",
+      "sha256": "8d3174f717ede953d922466cec93e5397ff443474da6c8addbc904ce8fc8d6e9"
+    },
+    {
+      "bytes": 780,
+      "path": "ConfoVHH/SHA256SUMS",
+      "sha256": "11dd268f6fd8142bb0c6175a5b3364659f05f18a21bcb3099f508820e6584a1b"
+    },
+    {
+      "bytes": 2021,
+      "path": "ConfoVHH/cloud/boltz-runtime-candidate/Dockerfile",
+      "sha256": "ac29d257f5b1b6aa9c4a175ee5bbca9e84879a9b6c4a013b80b5a495facff4b8"
+    },
+    {
+      "bytes": 9416,
+      "path": "ConfoVHH/cloud/boltz-runtime-candidate/README.md",
+      "sha256": "25ec1e458595145ce26f2bd39004fe018cac5142c8939a6c37c0e66b92f3eb0d"
+    },
+    {
+      "bytes": 553,
+      "path": "ConfoVHH/cloud/boltz-runtime-candidate/bootstrap-linux-py311.lock",
+      "sha256": "0c36241dd159935b274c1e2d24edc4d3c98e880fac6da444914736bd255d9956"
+    },
+    {
+      "bytes": 159241,
+      "path": "ConfoVHH/cloud/boltz-runtime-candidate/requirements-linux-py311.lock",
+      "sha256": "8f30f92bd06772f5bb86d0ce6e0e38daa8f4465fecdbd2bf11eeb23ddd19bb7a"
+    },
+    {
+      "bytes": 16124,
+      "path": "ConfoVHH/scripts/cloud/check-boltz-runtime.py",
+      "sha256": "e0e329e1c531717307c561723b46e333f374d413ebdc7a415c30d0c8a424152a"
+    },
+    {
+      "bytes": 18931,
+      "path": "ConfoVHH/scripts/cloud/check-boltz-toolchain.py",
+      "sha256": "9ab433bbe35cbb3df042dff18aaad8719448bb55b160dd27f5d2d2d9f46d6ad4"
+    },
+    {
+      "bytes": 12632,
+      "path": "ConfoVHH/scripts/paper/run-single-case-generation.py",
+      "sha256": "2865eea96212b3733687c2dd459bb5a48096a842e0d61361ea86617a1b0d9745"
+    },
+    {
+      "bytes": 3304,
+      "path": "ConfoVHH/source-subset-receipt.json",
+      "sha256": "35a042823c6475be0240546880c571d1a418655769f77b41a3b58bc99b9a5430"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/frozen-cache-download.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/frozen-cache-download.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3474,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/gate-blocked-execution.json",
+      "sha256": "d40ac522d37cbaf38b1e2eb3d0d71b1185468df2f57cbd2756d313beb16aa133"
+    },
+    {
+      "bytes": 3752,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/launch-manifest.json",
+      "sha256": "abadd8311620b8742f2af9b0562491243143055882aa8c31688b4f84b5bdd2ce"
+    },
+    {
+      "bytes": 624,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/live-base-identity.json",
+      "sha256": "8eec3a8e65d65f2860f3d23e77512d69ce73701b4888f0fa9ccad8ac5159f962"
+    },
+    {
+      "bytes": 134,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/preparation-actions.jsonl",
+      "sha256": "0739e918de199348393e80802ead8cbc13c9f05dc364744567df3d530865805d"
+    },
+    {
+      "bytes": 506,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/preparation-error.log",
+      "sha256": "ebead6b58192f344360e680ec94c866288a537b453d73748aa313914395c756f"
+    },
+    {
+      "bytes": 1531,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/preparation-receipt.json",
+      "sha256": "605040d867dc2807c71633b9adc52544569bc76aec353b8e20998fc2d46d50cf"
+    },
+    {
+      "bytes": 805,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/remote-input-verification.json",
+      "sha256": "8ad43a512d8891c58ae469d014697a5ed65921bdc79bdc30d95cd325977564c0"
+    },
+    {
+      "bytes": 424,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-01/runtime-results/staging-preservation-move.json",
+      "sha256": "5725e4881b5e738e80c21c0c869aeaf39cf28cafc4c39886a4242179af3ee1a2"
+    },
+    {
+      "bytes": 1361,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/cache-download-receipt.json",
+      "sha256": "46b0f6487143a87e684293c2565d6b5ac8a1828923dbf67ccbe86d5377e76974"
+    },
+    {
+      "bytes": 97,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/chemical-cache-controller-launch.json",
+      "sha256": "0da80febf0f85621ca6617b12c451145bad7c5caabb14f2de1653dfbd5b76507"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/chemical-cache-controller.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/chemical-cache-controller.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5429817,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/chemical-cache-preparation-v1/inventory.json",
+      "sha256": "140e24175a09db9846c228cf8a572633c175d92916b9f88fd45b9106127f15ee"
+    },
+    {
+      "bytes": 573,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/chemical-cache-preparation-v1/receipt.json",
+      "sha256": "3a76d7c3cd0121f66e9f02aba4b729714d17f927f356338fc5b0dcee4ec14fc4"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/compiler-cache/apt-cache-path.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 36,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/compiler-cache/apt-cache-path.stdout.log",
+      "sha256": "ae629384bc4c2946aa65e85b9c78db662757b613d8c95b97f9e1f101e25116bf"
+    },
+    {
+      "bytes": 19837,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/compiler-cache/receipt.json",
+      "sha256": "2f8db1cfd92fdf9b86be10ff58ef915b648e369db3b867a2b54c5e1057c41d20"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/compiler-cache-stage.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/compiler-cache-stage.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/frozen-cache-download.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1012,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/frozen-cache-download.stdout.log",
+      "sha256": "34d1e05233dca8e45421cd65774ba7f54c5d8a5f1a79b9150462200ddd030eab"
+    },
+    {
+      "bytes": 3355,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/gate-blocked-execution.json",
+      "sha256": "26713c0ca23b26a5d721cf8224240ed5f6d5166469c2db9b99b5cf73304c16dd"
+    },
+    {
+      "bytes": 4226,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/launch-manifest.json",
+      "sha256": "b26d1f3b3051fdb02922d185e5d6569bf272c9b7c2596073e318a6c56560b373"
+    },
+    {
+      "bytes": 624,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/live-base-identity.json",
+      "sha256": "8eec3a8e65d65f2860f3d23e77512d69ce73701b4888f0fa9ccad8ac5159f962"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/offline-runtime-restore.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 190,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/offline-runtime-restore.stdout.log",
+      "sha256": "dc060efe67a7c05159eefd33d184cc0bcc41ff933c731eec25946179f198a064"
+    },
+    {
+      "bytes": 106,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/pre-backup-quiescence.json",
+      "sha256": "f79b95f0096d9579491f340d952ee14ebd168165d46f9e4bfb583f5c642c0f88"
+    },
+    {
+      "bytes": 1993,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/preparation-actions.jsonl",
+      "sha256": "b7e64c9577297614636e35a03f97799477d4e2c22c6c2970a652e9a390fd873e"
+    },
+    {
+      "bytes": 6113,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/preparation-receipt.json",
+      "sha256": "9ca6dfb009638f95ebac55a00fe4092ac87419dfc614583f0ff219334eae842d"
+    },
+    {
+      "bytes": 805,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/remote-input-verification.json",
+      "sha256": "e95ba3e4966c9a622275af4d0fa9006aaa7ca77a5cf9307dad7bcb044f084439"
+    },
+    {
+      "bytes": 545,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/base-python-after.command.json",
+      "sha256": "902eb8e2485a30a90b3b5cb8d55768010f9b436a76329f92275fe80a49e2a4ce"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/base-python-after.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 379,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/base-python-after.stdout.log",
+      "sha256": "30a03f2b0cd1a7e9844069c3a088f5fe418e33ac69c10efb3405bf0cebdc24ea"
+    },
+    {
+      "bytes": 545,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/base-python-before.command.json",
+      "sha256": "2610d2b434dcc7060b9eda3721a1ae90845992c3f323a7ed3da09d2083a541dc"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/base-python-before.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 379,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/base-python-before.stdout.log",
+      "sha256": "30a03f2b0cd1a7e9844069c3a088f5fe418e33ac69c10efb3405bf0cebdc24ea"
+    },
+    {
+      "bytes": 3416,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/offline-compiler-restore.command.json",
+      "sha256": "415b01cb340f8032c1fb4054af781de712551f8fd896ffe538902e326df39a36"
+    },
+    {
+      "bytes": 74,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/offline-compiler-restore.stderr.log",
+      "sha256": "f77216c41aadf6c667ac1a602069951966cea350daab793ffe11ae0de1225ddc"
+    },
+    {
+      "bytes": 17109,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/offline-compiler-restore.stdout.log",
+      "sha256": "62aa7d42098cd6e81f7297fb22e90c94430b429c5a44331d1aece2538fc2071a"
+    },
+    {
+      "bytes": 212,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/os-packages-after.command.json",
+      "sha256": "a175a054d1ae1f2ce6f5f95a4e919c20f8ae98e6a8a8faaeddd388e50bd35945"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/os-packages-after.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 6157,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/os-packages-after.stdout.log",
+      "sha256": "a7d96d56476e3e4ad566480bf9407435a7eb75b4b640aab1f3096883728a221e"
+    },
+    {
+      "bytes": 211,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/os-packages-before.command.json",
+      "sha256": "842addd7c671cedce4a0d71d5cafb88564a6e727ea00a7fc11e67081b8c194c0"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/os-packages-before.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4634,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/os-packages-before.stdout.log",
+      "sha256": "0c619f152191dd8c42d6c62e92d2681cd5fd24a8e4a84491d6063b46be3dde36"
+    },
+    {
+      "bytes": 207,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/pip-check.command.json",
+      "sha256": "821d23c7c785a9d2ca7918086d2132bd837b80cefafa61f374c992cf8203ca66"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/pip-check.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 30,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-logs/pip-check.stdout.log",
+      "sha256": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09"
+    },
+    {
+      "bytes": 974,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/restore/restore-receipt.json",
+      "sha256": "36dd6ba91085346f0aa115758ce48c8c7451ab0caa6389616866c7618f75c3c5"
+    },
+    {
+      "bytes": 173843,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/runtime-smoke.json",
+      "sha256": "b67c7cf3f206023d4104d5c8c44764329a2d466dc61c9a32a7465dc75d28fdc8"
+    },
+    {
+      "bytes": 390,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/startup-gate-controller/full-jit.command.json",
+      "sha256": "a13d177b5dc2d9499e44c3f04c85648f5d71eeed6d9d6e52226b6d8cc5b03a66"
+    },
+    {
+      "bytes": 782,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/startup-gate-controller/full-jit.receipt.json",
+      "sha256": "3ca6f204664e233c763d9f4ceb0b33367a997a522b5a97a337e047e490c969bf"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/startup-gate-controller/full-jit.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 178,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/startup-gate-controller/full-jit.stdout.log",
+      "sha256": "700313dbda77cd879e1cd2c9a998381a10665736aa2ab3e4e45f5f9d91e80f66"
+    },
+    {
+      "bytes": 2579,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/startup-gate-controller/receipt.json",
+      "sha256": "decf6d35fb75f0ff2cd2a4e900c69be5b090165a863a98ce891dddb3bf1c170f"
+    },
+    {
+      "bytes": 494,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/startup-gate-controller/runtime.command.json",
+      "sha256": "a0b340808647a479449ead4f1b4665e6581c0632c21ebd6833c51faff40db05c"
+    },
+    {
+      "bytes": 888,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/startup-gate-controller/runtime.receipt.json",
+      "sha256": "f67c40c0b108b3eb1e9c540675017812b21b895009f796ad7cf53b253f392f2d"
+    },
+    {
+      "bytes": 326,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/startup-gate-controller/runtime.stderr.log",
+      "sha256": "3f79e970099219865b477b35c1b877d4901850661ac67922a544eed913a0169e"
+    },
+    {
+      "bytes": 183,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/startup-gate-controller/runtime.stdout.log",
+      "sha256": "95704c46753d035e291c8e8553df3f5959f8ae6afa6c93bbb93e584708892af3"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/compiler-build.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/compiler-build.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 15968,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/compiler-probe",
+      "sha256": "69f1231d709053d8bc2751bd5e29c31db4bcdace39d09a3efda3c720f98629f2"
+    },
+    {
+      "bytes": 213,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/compiler-probe.c",
+      "sha256": "22f3c42d9abc730cbab178053bce615f7bb13348179f7692f5e519e1cdd20a35"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/compiler-run.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 23,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/compiler-run.stdout.log",
+      "sha256": "e57b4e4ec12989da2e641bdf112b8b2b9f0518c3f359227d27282b00906739bb"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/compiler-version.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 246,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/compiler-version.stdout.log",
+      "sha256": "9829ba25432aae95cc193accafa14bfab70abb264f797d07c47ba1dcdf4f31a1"
+    },
+    {
+      "bytes": 9780,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/receipt.json",
+      "sha256": "8254e9a910327b7676feef0d37ad34c51c84e0eb16cd86513525dd3542a33b89"
+    },
+    {
+      "bytes": 4279,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/triton-jit-probe.py",
+      "sha256": "4a936ea4f38d1cc1b70d8b4c448d7f9f41c1b4405352b28ae7ca37780e0e46a2"
+    },
+    {
+      "bytes": 1421,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/triton-jit-result.json",
+      "sha256": "9278c5cec08b08e9d3980a678e56b8ec07db3df87205efab019b6053d6146de9"
+    },
+    {
+      "bytes": 326,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/triton-jit.stderr.log",
+      "sha256": "3f79e970099219865b477b35c1b877d4901850661ac67922a544eed913a0169e"
+    },
+    {
+      "bytes": 0,
+      "path": "executions/confovhh-3p0g-startup-recovery-20260909-02/runtime-results/toolchain-jit/triton-jit.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2940,
+      "path": "resume-v3/RESUME_EXECUTION03_V1.md",
+      "sha256": "dabe47aba480d0df6c1144a291e42e227682e11cff0295664a45e73ece5d1b94"
+    },
+    {
+      "bytes": 2910,
+      "path": "resume-v3/RESUME_OPERATIONS_V3.md",
+      "sha256": "a826120c386db8d7c7677ff5cb1ec51c58d5b1f338af202af93556722763f043"
+    },
+    {
+      "bytes": 2575,
+      "path": "resume-v3/SSH_KEY_FILESYSTEM_V1.md",
+      "sha256": "0a3c6a9c89df50511348d8a9369aa2bee00f706ea5ce32d6d07b12b53e8afdce"
+    },
+    {
+      "bytes": 4284,
+      "path": "resume-v3/collect-verified-backup-v3.py",
+      "sha256": "9cb1a58458f74a77a162c21d844700776bafd0f4269f9c82f3ed5fec30a8f15e"
+    },
+    {
+      "bytes": 18757,
+      "path": "resume-v3/monitor-frozen-startup-v2.py",
+      "sha256": "76f3cf7dd3dd0f0b3b5f09a0c53c6d759fad438209ef45ad9c3928862930ce10"
+    },
+    {
+      "bytes": 10746,
+      "path": "resume-v3/preserve-execution-v2.py",
+      "sha256": "888647885bbc0ad10bcda2aeb27e548475a1e40864be7781410da2f387e3f43a"
+    },
+    {
+      "bytes": 10547,
+      "path": "resume-v3/resume-execution03.py",
+      "sha256": "fe5ab5edd842848395a97e911c9176f53c93392f96e43e5d0daa43a3f9d56b9e"
+    },
+    {
+      "bytes": 2575,
+      "path": "resume-v3/resume-ssh-v3.py",
+      "sha256": "c214040b7b01c97a812c194b0d7e2f397753b4669cd6e396a4554de005fb4d8c"
+    },
+    {
+      "bytes": 848,
+      "path": "resume-v3/retained-transfer-proof/failed-launch-v2/launch.json",
+      "sha256": "dcb45b9e6be80083888db23d458230a2cf8db49786595a9e8c5df2665c8a49df"
+    },
+    {
+      "bytes": 1369,
+      "path": "resume-v3/retained-transfer-proof/failed-launch-v2/stderr.log",
+      "sha256": "50b972899ae0080e6d6ccc940725fc54e30d2026caed05adb02356c6af8bfad3"
+    },
+    {
+      "bytes": 0,
+      "path": "resume-v3/retained-transfer-proof/failed-launch-v2/stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 958,
+      "path": "resume-v3/retained-transfer-proof/failed-receive-v2/failure.log",
+      "sha256": "704a0669e71b42d6b600d5a4b0f7d0ebfc1dda3956c5ab292c3bc1011b658d4f"
+    },
+    {
+      "bytes": 353,
+      "path": "resume-v3/retained-transfer-proof/failed-receive-v2/receipt.json",
+      "sha256": "b272c2dea8f68b37999ef609dc1ffec846c94c6e7594777f8936f8da49f49674"
+    },
+    {
+      "bytes": 514,
+      "path": "resume-v3/retained-transfer-proof/failed-receive-v2/source-stderr.log",
+      "sha256": "80fa65f0e97cef811f2b88c73999b8daa02e629bd7e5c872bea64feac4edc174"
+    },
+    {
+      "bytes": 900,
+      "path": "resume-v3/retained-transfer-proof/launch-v3/launch.json",
+      "sha256": "cc25a46240dc384268fb7eda707547465fa80b32306621a82c7cb04a503a3c0b"
+    },
+    {
+      "bytes": 0,
+      "path": "resume-v3/retained-transfer-proof/launch-v3/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 990,
+      "path": "resume-v3/retained-transfer-proof/launch-v3/stdout.log",
+      "sha256": "3dfdd4b22979a8dbc212a1c79c8f81dd86e97646acb0193f8988fd1aab2b2c32"
+    },
+    {
+      "bytes": 528,
+      "path": "resume-v3/retained-transfer-proof/receive-v3/promotion.json",
+      "sha256": "5144d465aa077390871cc3e5f4b7f57e0c03201945b198cf013662dd998f9e19"
+    },
+    {
+      "bytes": 1060,
+      "path": "resume-v3/retained-transfer-proof/receive-v3/receipt.json",
+      "sha256": "ed897fc7fce54566367c4e4e86b9172d12279a4a07835f85939eba86f91aa6a8"
+    },
+    {
+      "bytes": 448,
+      "path": "resume-v3/retained-transfer-proof/receive-v3/source-stderr.log",
+      "sha256": "e6580fb4040b05ab5149be05441218291cce9942faaa0f6359d868451c1cbc89"
+    },
+    {
+      "bytes": 3158,
+      "path": "resume-v3/retained-transfer-v2/ARCHIVED_CACHE_TRANSFER_V2.md",
+      "sha256": "d2a2f839a56145ddaecf67db0f0cee1b9cc53ab5582db2f536437d51ec9c6e1e"
+    },
+    {
+      "bytes": 2763,
+      "path": "resume-v3/retained-transfer-v2/controls.json",
+      "sha256": "45946a71524df6e8cc931f322e56ed3c2a753dc08cc60d560076cbf692b488ef"
+    },
+    {
+      "bytes": 1002,
+      "path": "resume-v3/retained-transfer-v2/derivation-review.json",
+      "sha256": "8e098aafe2f61cc7cf794190595b64d5e587d4a4c0a270ba7b93368a2416cd97"
+    },
+    {
+      "bytes": 2672,
+      "path": "resume-v3/retained-transfer-v2/derive-archived-cache-v2.py",
+      "sha256": "39e8ec3fce43b9601ef791df32cb21b3774ea5e18fd62358a653c7ff6bdf7f74"
+    },
+    {
+      "bytes": 120028,
+      "path": "resume-v3/retained-transfer-v2/manifest-v2.json",
+      "sha256": "1e064a1d429f25234b1055332c46698f961229eb80ee55b9aeb481595edf93d3"
+    },
+    {
+      "bytes": 543,
+      "path": "resume-v3/retained-transfer-v2/policy-v2.json",
+      "sha256": "45321f9797a116b86e2c4dc0e990132a554055028f52fb2e72fb7bf4aa0bc35b"
+    },
+    {
+      "bytes": 1431,
+      "path": "resume-v3/retained-transfer-v2/release-manifest.json",
+      "sha256": "9610489c7140b55ea0f09cba4fb64eb5736ebf71d50db9f84744267bbe3b6c76"
+    },
+    {
+      "bytes": 21565,
+      "path": "resume-v3/retained-transfer-v2/retained-workspace-transfer-v2.py",
+      "sha256": "88110ed2b36362784172877e3bb41e94b202e93933926190f5804c9052502dac"
+    },
+    {
+      "bytes": 8839,
+      "path": "resume-v3/retained-transfer-v2/test-retained-transfer-v2.py",
+      "sha256": "578a2dc4bb65d6cafb1a2bf99614a26b604b897d691e87af11726543bd04f633"
+    },
+    {
+      "bytes": 1404,
+      "path": "resume-v3/run-frozen-startup-v3.sh",
+      "sha256": "f0a9484cc9eabc7e0476b4b1159e1f37d676a776b17e51490974d964027aa56d"
+    },
+    {
+      "bytes": 9621,
+      "path": "resume-v3/run-startup-gates-v1.py",
+      "sha256": "1ab6d4482195b9e4d2f5b7450d29ab1529f16da6b29aa8cf0761faaca54db4e5"
+    },
+    {
+      "bytes": 13306,
+      "path": "resume-v3/runpod-deadline-daemon-v1.py",
+      "sha256": "9a8da08363a0ec8a3f3c6d8679f6c9a7912af91183ba963abd4d22361dc4692a"
+    },
+    {
+      "bytes": 1081,
+      "path": "resume-v3/stage-manifest.json",
+      "sha256": "9bcbe5a809d410499614cbda2d1bf184bf6450eb737a84dee2ebf0efd23ae07d"
+    },
+    {
+      "bytes": 102,
+      "path": "resume-v3/transfer-key-cleanup.json",
+      "sha256": "1db91942ff16f76b3b5567275fd3f768ab9f22e093717fa34da50a02fd84e6c7"
+    },
+    {
+      "bytes": 10700,
+      "path": "resume-v3/verify-startup-gates-v3.py",
+      "sha256": "4c7911007518705f757109ff96454ff931fdb955f8346ba5ad8a39f2c949495e"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/apt-index-refresh.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1544,
+      "path": "ssh-bootstrap-resume-v3/apt-index-refresh.stdout.log",
+      "sha256": "ff4f4ec9bdc7d7864e8a11f148bf4524319f10f12606919256c11319f3a1d65c"
+    },
+    {
+      "bytes": 22659,
+      "path": "ssh-bootstrap-resume-v3/bootstrap-receipt.json",
+      "sha256": "31f578caf1e3b08052c87cb3aaf0a6ef048a8f269ae904aa61f3a59c10d465a3"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/hold-installed-base-packages.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2806,
+      "path": "ssh-bootstrap-resume-v3/hold-installed-base-packages.stdout.log",
+      "sha256": "1a4bb7a14320f64310aac022ab0744c59758a1354f4616832c9a06d9813a40a2"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/host-key-generation.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 43,
+      "path": "ssh-bootstrap-resume-v3/host-key-generation.stdout.log",
+      "sha256": "74630454fa365f8ea994bdb6119718592390fd5bbde5f913be43ee81d824de80"
+    },
+    {
+      "bytes": 74,
+      "path": "ssh-bootstrap-resume-v3/minimal-ssh-install.stderr.log",
+      "sha256": "f77216c41aadf6c667ac1a602069951966cea350daab793ffe11ae0de1225ddc"
+    },
+    {
+      "bytes": 5842,
+      "path": "ssh-bootstrap-resume-v3/minimal-ssh-install.stdout.log",
+      "sha256": "70d7c93e754db90734712b02ab80d514e35ec8a1b71f59a5ea61471450cc4900"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/package-selections-before.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 3092,
+      "path": "ssh-bootstrap-resume-v3/package-selections-before.stdout.log",
+      "sha256": "8c53532ebcbd7f71229ac54b6163ccf69eb048bf8921e1cb78dc43dca435d81c"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/packages-after.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4634,
+      "path": "ssh-bootstrap-resume-v3/packages-after.stdout.log",
+      "sha256": "0c619f152191dd8c42d6c62e92d2681cd5fd24a8e4a84491d6063b46be3dde36"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/packages-before.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4281,
+      "path": "ssh-bootstrap-resume-v3/packages-before.stdout.log",
+      "sha256": "612878ee79362ba7d62bde29eb543d53432af4dd44e8bd5118c5ee0f5571e392"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/restore-original-package-selections.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/restore-original-package-selections.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1041,
+      "path": "ssh-bootstrap-resume-v3/ssh-package-plan.json",
+      "sha256": "4c2f2c6bebfd78edafba133cc9b60ecc3467ab821518a3a96d9e6d7cbd1ac5dd"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/sshd-configuration-check.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "ssh-bootstrap-resume-v3/sshd-configuration-check.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 279,
+      "path": "deadline-resume-v3/config.json",
+      "sha256": "a736c9fe14a42a4ff94e9aa23f0eab0aecabb6fb9bf13465f84525dcb0e3994c"
+    },
+    {
+      "bytes": 5818,
+      "path": "prepare-compiler-cache-v1.py",
+      "sha256": "2daf86b195ed53c8d8ff31219837da0039e25001a22cc5fb5f0b2d486fb3aa90"
+    },
+    {
+      "bytes": 14969,
+      "path": "compiler-cache-mapping-v1.json",
+      "sha256": "181ff9b1f7e4fdf7093d1b85eea5b72a4702ef42014e5f473722096f0539b7b6"
+    },
+    {
+      "bytes": 23744,
+      "path": "boltz-runtime-bundle.py",
+      "sha256": "a290e798628defaceff074141f5a02fc6dbe556080f905f8bb6e7dff70def7d9"
+    },
+    {
+      "bytes": 637,
+      "path": "live-base-identity-resume-v3.json",
+      "sha256": "0a0b974d5071348132a941c5566f5841e6a98380dc79c43aeabfe4f7c7e2b85a"
+    },
+    {
+      "bytes": 5385,
+      "path": "launch-manifest-execution03.json",
+      "sha256": "1fdaa66a9c3eaf4473807bdb49abea0556f370e23235d344b1f4286b897ef50a"
+    }
+  ],
+  "podId": "abdekse8y3s81h",
+  "priorExecutions": "Retained separately without modification",
+  "schema": "confovhh.execution-output-manifest.v2"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "newRepositoryPackagePathsReplayed": true,
+  "newGpuGeneration": false,
+  "records": [
+    {
+      "canonicalPath": "reproduction/candidate-table.json",
+      "sha256": "c688b6603f01c086f831f89ee659e99e64c3bd0d3dfd448b71d8cf7141b135b5",
+      "identical": true
+    },
+    {
+      "canonicalPath": "reproduction/independent-contact-clash-geometry.json",
+      "sha256": "a8e38be46aa27f38ed6eedfff8e7a248b80f6ad4786be053944b2217fc4dd8a9",
+      "identical": true
+    },
+    {
+      "canonicalPath": "geometry/geometry-analysis.json",
+      "sha256": "298a912f547e7e5fc93b0509e9a45a24425cfddf93046c16f1c454bbbc7af368",
+      "identical": true
+    },
+    {
+      "canonicalPath": "geometry/dockq-label-mapping-sensitivity.json",
+      "sha256": "bc8724706d06f9a8a97ae783b2d00b95a6c2577a7ba49279ceccbef52091e0d5",
+      "identical": true
+    },
+    {
+      "canonicalPath": "geometry/residue-mapping.json",
+      "sha256": "01cbb2a1ae0b233519987aa215db41a2f6837bb4691f39e600769c81cfa25ddc",
+      "identical": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "confovhh.execution03.final-pod-status.v1",
+  "podActions": [
+    {
+      "podId": "abdekse8y3s81h",
+      "gpu": "A100 PCIe 80 GB",
+      "stopAction": {"status": "EXITED"},
+      "terminateAction": {"status": 204},
+      "verifiedAbsent": true
+    },
+    {
+      "podId": "3kqs0n0qrg0pk7",
+      "role": "CPU-only recovery source",
+      "terminateReceipt": "cpu-source-terminated.json",
+      "verifiedAbsent": true
+    },
+    {
+      "podId": "o4losszjxyofk0",
+      "role": "failed migration target",
+      "terminateReceipt": "migration-target-terminated.json",
+      "verifiedAbsent": true
+    }
+  ],
+  "finalListPods": {"pods": []},
+  "verifiedAtUtc": "2026-09-09T23:30:46Z",
+  "verificationNote": "Runpod list_pods after the A100 terminate action returned an empty pod list. All three created resources are absent; preservation and checksum receipts are retained separately."
+}

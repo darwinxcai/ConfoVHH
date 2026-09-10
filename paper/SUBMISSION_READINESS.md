@@ -2,6 +2,13 @@
 
 Updated 9 September 2026. **Not submission-ready; venue undecided.**
 
+The separately [completed ten-candidate pilot and failure analysis](../validation/single-case-development-3p0g-2026-09-09/completed-pilot-execution03/README.md)
+now provides raw coordinate-to-rank replay and a verified negative selection
+result. This closes neither the historical missing-input gate nor the
+independent-use, independent-validation or submission-record gates. Its ten
+samples are one previously exposed development case; independently eligible
+groups remain zero.
+
 The [latest continuation](PROGRESS_2026-09-09.md) records 3,000 complete
 discovery inventories, a bounded Node 22 runtime workaround and a manuscript
 reproducibility review. These advances do not close the original-input,

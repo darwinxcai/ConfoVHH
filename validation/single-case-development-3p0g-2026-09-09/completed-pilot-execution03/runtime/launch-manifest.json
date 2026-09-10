@@ -1,0 +1,126 @@
+{
+  "executionId": "confovhh-3p0g-startup-recovery-20260909-03",
+  "sourceCommit": "250350ab4b995e075edcb489c4f183e32b35efd6",
+  "originalFreezeCommit": "335617ae2744d8e9061464bafd62e166209d8c46",
+  "operationsCommit": "78db59ba2a200d3e908d48b53b4addd721991b81",
+  "operationsTree": "1077fff91aec5e412269449af7803f8ac85ef324",
+  "podId": "abdekse8y3s81h",
+  "deadlines": {
+    "pod_id": "abdekse8y3s81h",
+    "expected_created_at_utc": null,
+    "allocation_counted_from_utc": "2026-09-09T22:34:21.561163+00:00",
+    "hard_deadline_utc": "2026-09-09T23:28:49.747930+00:00",
+    "previous_gpu_seconds": 7831.813233,
+    "approved_cumulative_gpu_seconds": 11100,
+    "remainingGpuSeconds": 3268.186767,
+    "workloadDeadlineUtc": "2026-09-09T23:21:49.747930+00:00",
+    "preservationDeadlineUtc": "2026-09-09T23:26:49.747930+00:00",
+    "stopDaemonDeadlineUtc": "2026-09-09T23:27:49.747930+00:00",
+    "countBasis": "Conservative before successful provider allocation request; stopped and CPU-only intervals excluded from GPU time",
+    "providerCreatedAt": "2026-09-09T22:34:35.304Z"
+  },
+  "retainedSourceManifestSha256": "d7c34cf2f601be5ecf424363e367657e9550ceef0fc4ab344cffb3034a5689ca",
+  "retainedSourceFiles": 45527,
+  "retainedSourceBytes": 11612476118,
+  "operationalAmendments": [
+    {
+      "version": "retained-transfer-v1",
+      "location": "local preserved package",
+      "publicationStatus": "No new GitHub commit; publication blocked",
+      "helperSha256": "b093b43f5955db2a88f14f7aa0c809af81dd21b266f7aec3c00517c792f99188",
+      "policySha256": "0616860ac867cb3a30330a74d76071be30a367c8b246201f7fdd07d218cf79bc"
+    },
+    {
+      "version": "unique-boot-v1",
+      "scientificSettingsChanged": false
+    },
+    {
+      "version": "retained-transfer-v2",
+      "location": "local preserved package",
+      "helperSha256": "88110ed2b36362784172877e3bb41e94b202e93933926190f5804c9052502dac",
+      "manifestSha256": "1e064a1d429f25234b1055332c46698f961229eb80ee55b9aeb481595edf93d3",
+      "retainedFiles": 300,
+      "payloadBytes": 9791777299,
+      "omittedOnly": "Derived boltz-cache/mols files; original frozen runner reconstructs them from unchanged verified mols.tar",
+      "scientificSettingsChanged": false,
+      "policySha256": "45321f9797a116b86e2c4dc0e990132a554055028f52fb2e72fb7bf4aa0bc35b"
+    },
+    {
+      "version": "ssh-key-filesystem-v1",
+      "cause": "MFS coerces permissions to0666; SSH rejects temporary key",
+      "resolution": "Same one-use key moved to target local /opt with verified0600; no source authentication or payload on failed attempt",
+      "priorFailedReceipt": "retained-incoming-v2/receipt.json",
+      "newTransferOutput": "retained-incoming-v3",
+      "scientificSettingsChanged": false,
+      "documentSha256": "0a3c6a9c89df50511348d8a9369aa2bee00f706ea5ce32d6d07b12b53e8afdce",
+      "documentBytes": 2575
+    }
+  ],
+  "files": {
+    "run-startup-gates-v1.py": {
+      "bytes": 9621,
+      "sha256": "1ab6d4482195b9e4d2f5b7450d29ab1529f16da6b29aa8cf0761faaca54db4e5"
+    },
+    "monitor-frozen-startup-v2.py": {
+      "bytes": 18757,
+      "sha256": "76f3cf7dd3dd0f0b3b5f09a0c53c6d759fad438209ef45ad9c3928862930ce10"
+    },
+    "collect-verified-backup-v3.py": {
+      "bytes": 4284,
+      "sha256": "9cb1a58458f74a77a162c21d844700776bafd0f4269f9c82f3ed5fec30a8f15e"
+    },
+    "RESUME_EXECUTION03_V1.md": {
+      "bytes": 2940,
+      "sha256": "dabe47aba480d0df6c1144a291e42e227682e11cff0295664a45e73ece5d1b94"
+    },
+    "stage-manifest.json": {
+      "bytes": 1081,
+      "sha256": "9bcbe5a809d410499614cbda2d1bf184bf6450eb737a84dee2ebf0efd23ae07d"
+    },
+    "resume-execution03.py": {
+      "bytes": 10547,
+      "sha256": "fe5ab5edd842848395a97e911c9176f53c93392f96e43e5d0daa43a3f9d56b9e"
+    },
+    "verify-startup-gates-v3.py": {
+      "bytes": 10700,
+      "sha256": "4c7911007518705f757109ff96454ff931fdb955f8346ba5ad8a39f2c949495e"
+    },
+    "run-frozen-startup-v3.sh": {
+      "bytes": 1404,
+      "sha256": "f0a9484cc9eabc7e0476b4b1159e1f37d676a776b17e51490974d964027aa56d"
+    },
+    "resume-ssh-v3.py": {
+      "bytes": 2575,
+      "sha256": "c214040b7b01c97a812c194b0d7e2f397753b4669cd6e396a4554de005fb4d8c"
+    },
+    "RESUME_OPERATIONS_V3.md": {
+      "bytes": 2910,
+      "sha256": "a826120c386db8d7c7677ff5cb1ec51c58d5b1f338af202af93556722763f043"
+    },
+    "preserve-execution-v2.py": {
+      "bytes": 10746,
+      "sha256": "888647885bbc0ad10bcda2aeb27e548475a1e40864be7781410da2f387e3f43a"
+    },
+    "runpod-deadline-daemon-v1.py": {
+      "bytes": 13306,
+      "sha256": "9a8da08363a0ec8a3f3c6d8679f6c9a7912af91183ba963abd4d22361dc4692a"
+    },
+    "live-base-identity-resume-v3.json": {
+      "bytes": 637,
+      "sha256": "0a0b974d5071348132a941c5566f5841e6a98380dc79c43aeabfe4f7c7e2b85a"
+    },
+    "healthy-gpu-provider-identity-v5.json": {
+      "bytes": 1034,
+      "sha256": "2a6b238636a9dcd4c96fea00d5ca23ab4ab568ebef596f7699e9e3c973c5fa99"
+    },
+    "healthy-gpu-deadlines-v5.json": {
+      "bytes": 690,
+      "sha256": "f929e50383540cd325512d8404daead6dcbff8704d687ecbe84806157c1f03ef"
+    },
+    "healthy-gpu-entrypoint-v5.py": {
+      "bytes": 33954,
+      "sha256": "b12b645dd6e9751d9fdcc674261494a935aea2976c711496926c88a5a688f134"
+    }
+  },
+  "retainedSourceProvenanceScope": "Historical fresh full source verification; actual transport uses archived-cache v2 manifest"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "startedAtUtc": "2026-09-10T00:38:06.931392+00:00",
+  "completedAtUtc": "2026-09-10T00:38:08.894929+00:00",
+  "scriptSha256": "5864a88147b560de33ef098e8ad5669fabf62f055f7a2097f522f720e8c6e27c",
+  "replaySha256": "903ba4c2ff42925df2dc3d04c75133be4f649facd0ecc2131e6e148345092eb3",
+  "originalSourceBoundReceiptSha256": "0c6f3dc2086730d18963d6c054a8d1d4cdcc138687399492e08ab1d80ef58e38",
+  "rankingsExactlyMatch": true,
+  "fullFreshAuditsExactlyMatch": true,
+  "independentContactAndClashCountsMatch": true,
+  "independentRankTupleSortingMatches": true,
+  "sourceFileCount": 41,
+  "candidateCount": 10,
+  "allCandidateIdsAndRolesAndHashesVerified": true,
+  "noNewGpuGeneration": true,
+  "scoringChanges": false,
+  "bugFoundInTestedPath": false,
+  "originalResultPreserved": true,
+  "limitations": [
+    "Post-outcome replay of one development case, not independent validation.",
+    "DockQ values loaded from checksum-verified preserved frozen evaluation; DockQ itself not rerun by this ranking script.",
+    "Tier check relies on independently verified full backbone completeness of these fully modeled chains."
+  ]
+}

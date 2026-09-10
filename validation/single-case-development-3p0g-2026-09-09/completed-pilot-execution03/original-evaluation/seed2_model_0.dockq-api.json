@@ -1,0 +1,23 @@
+{
+  "id": "seed2_model_0",
+  "coordinateSha256": "4d60a660c6b681fb358615971121d17a3e46d7fcf1ec5faaaf80bded0e965838",
+  "nativeProteinSha256": "f9c2b4e63bcf9beda92cfd147686186e24e1f098472e15447fa1f76cbbdbb557",
+  "metrics": {
+    "DockQ": 0.48462880897372757,
+    "iRMSD": 2.602707860168869,
+    "LRMSD": 6.987879937872215,
+    "fnat": 0.6078431372549019,
+    "fnonnat": 0.4745762711864407,
+    "F1": 0.5636363636363636,
+    "nat_total": 51,
+    "nat_correct": 31,
+    "model_total": 59,
+    "nonnat_count": 28,
+    "clashes": 0,
+    "chain_map": {
+      "A": "A",
+      "B": "B"
+    },
+    "interface": "AB"
+  }
+}
