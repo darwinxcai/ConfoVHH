@@ -1,0 +1,34 @@
+{
+  "schema": "confovhh.exploratory-predictor-native-confidence.v1",
+  "baseline": "exploratory-predictor-native-confidence-v1",
+  "knownCandidateOutcomesBeforeDefinition": true,
+  "fields": {
+    "AlphaFold Server": {
+      "field": "ranking_score",
+      "direction": "higher-better",
+      "range": [
+        -100,
+        1.5
+      ]
+    },
+    "Boltz 2.2.1": {
+      "field": "confidence_score",
+      "direction": "higher-better",
+      "range": [
+        0,
+        1
+      ]
+    }
+  },
+  "pooling": "Same PR60 target, seeds 1 and 2, five models each; fixed available coordinate pool; never compare across targets/predictors.",
+  "ties": "All exact decimal exported-score maxima; uniform selected DockQ mean and range, no ID/index/outcome tie break.",
+  "missing": "Five missing coordinates retained; any missing/invalid score in available pool causes whole-target abstention; missing selected DockQ withholds mean and gives [0,1] bounds.",
+  "bestAvailable": "Highest preserved DockQ in available target pool, all ties; signed selected minus best; planned completeness explicit.",
+  "withinJob": "Validate documented model-0 native selection against exported maxima; report separately and never use it to break score ties.",
+  "frozenMethodsReplaced": false,
+  "newGeneration": false,
+  "independentValidation": false,
+  "localCpuBudgetSeconds": 300,
+  "newGpuHours": 0,
+  "newCloudCostUSD": 0
+}

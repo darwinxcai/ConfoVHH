@@ -1,0 +1,27 @@
+# Exploratory predictor-native confidence baseline v1: pre-execution definition
+
+All candidate DockQ outcomes and earlier selection results are already known. This is a separately versioned retrospective analysis requested after PR #60, not a prospective benchmark or scoring redesign. The five frozen methods, including the three legacy confidence abstentions, remain byte-identical. This baseline is an additional descriptive comparator and does not replace their records or amend their primary comparisons.
+
+## Definition and admissible inputs
+
+For legacy AlphaFold Server predictions of 4MQS, 5C1M and 5JQH, maximize the original exported `ranking_score`. For the original Boltz 2.2.1 3P0G pilot, maximize the existing original `confidence_score`. Both directions are higher-better, independently supported by developer documentation. Do not recompute from rounded pTM/ipTM/disorder values, substitute another field, or rename fields in source files. AlphaFold ranking scores may be negative or exceed one; they are not Boltz scores or calibrated probabilities. Never compare or average these confidence numbers across targets or predictors.
+
+The same PR #60 selection pools are retained: seeds 1 and 2, five model indices per seed, four target complexes and all 40 planned records. Availability is fixed from the preceding coordinate replay: 35 available and five missing 5JQH seed-2 records. There is no new generation, additional candidate, changed condition, coordinate repair, native-derived feature, or outcome-conditioned inclusion. The pooled same-target comparison across two independently submitted server jobs is a study-defined exploratory extension; it is not a reconstruction of a server UI choice across separate jobs. Its request sequences and all settings apart from names/seeds must match.
+
+Select the maximum original decimal JSON score among that target's coordinate-available pool. Read numbers as exact decimals at the **exported precision**. Every numerically equal maximum is a tie; do not use model index, seed, ID, file order or DockQ to break it. Keep all tied IDs. For performance reporting, use their uniform mean DockQ, range, and individual values. Uniform choice is a reporting convention, not an observed random draw or recovered internal predictor tie-break.
+
+If a coordinate is absent, keep its planned record and reason; it cannot be selected or supplied a fabricated DockQ. If any available coordinate lacks a valid native field, the entire target baseline abstains. An empty pool also abstains. Missing selected DockQ withholds the complete mean; give lower/upper bounds by assigning unknown DockQ 0/1, preserving all selected IDs. Best available uses every available, evaluable coordinate in the same fixed target pool and retains all exact DockQ ties. Report signed difference as selected mean minus best available. Mark planned-pool incompleteness even if every available coordinate has DockQ.
+
+## Within-job reproduction check
+
+Before applying the baseline, verify every original request and source coordinate/confidence association against preserved hashes and archive membership. Inspect actual mmCIF software metadata, record every software/build label and date, and keep provider provenance separate from a cryptographic provider attestation. The AlphaFold request `version` field identifies an export schema, not the model version.
+
+For each available AlphaFold Server job, verify model indices 0–4 and nonincreasing exported ranking scores. The server output guide documents suffix 0 as first-ranked. Record this documented native choice and whether it belongs to the exported-score maximum set. If the latter contains multiple IDs, the scalar exports alone do not recover the unique internal choice; report that limit. The documented model-0 record is reported separately for provenance, and is not used as a tie-break in the exploratory pooled baseline. Contradictory order or associations stop the analysis for diagnosis. The absent 5JQH job remains unavailable.
+
+## Reporting and claim boundary
+
+Produce one combined table with all five original methods and the new baseline for each complex (24 rows), including full selected IDs, mean/range, best-available IDs/DockQ, signed difference, tie count, and coordinate/outcome/planned coverage. Preserve all 40 attempt records. Also retain the within-job maximum sets and documented server model-0 choices.
+
+Separate Boltz and AlphaFold rows. Retain the previous provisional relatedness components: 3P0G, 5C1M and 5JQH in one, 4MQS in another. These are exposed development cases, not two certified independent groups. No cross-target confidence ranking, pooled efficacy estimate, p-value, independent-validation or superiority claim is made. Historical AlphaFold default requests used templates; predictor-training membership is unresolved. The two predictor workflows, export dates, uncertainty calibration and confidence definitions differ.
+
+The definition, script, synthetic tests, documentation, provenance and exact preceding outcome bindings are hash-frozen before select/evaluate execution. Selection runs without reading DockQ; a separate command joins the already-known, hash-bound PR #60 DockQ outcomes. No DockQ regeneration is required. Budget: under five local CPU minutes, zero GPU hours and zero new cloud charges. Scientific definitions are not changed after execution; any operational failure is preserved and diagnosed.
