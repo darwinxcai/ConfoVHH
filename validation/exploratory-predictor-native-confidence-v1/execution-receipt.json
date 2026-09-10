@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE",
+  "startedAfterFreezeCommit": "4375c48",
+  "finishedAtUtc": "2026-09-10T15:26:22.728882+00:00",
+  "wallSeconds": 0.07943437501671724,
+  "stages": [
+    {
+      "stage": "select",
+      "seconds": 0.039622708020033315,
+      "command": [
+        "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/work/ConfoVHH-native-confidence/../evaluation-venv/bin/python",
+        "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/work/ConfoVHH-native-confidence/scripts/benchmark/predictor-native-confidence-v1.py",
+        "select",
+        "--bundle",
+        "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/outputs/benchmark-eligibility-resolution/retrospective-replay-v1.1",
+        "--output",
+        "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/outputs/predictor-native-confidence/selection"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "seconds": 0.03970091600785963,
+      "command": [
+        "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/work/ConfoVHH-native-confidence/../evaluation-venv/bin/python",
+        "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/work/ConfoVHH-native-confidence/scripts/benchmark/predictor-native-confidence-v1.py",
+        "evaluate",
+        "--selections",
+        "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/outputs/predictor-native-confidence/selection",
+        "--output",
+        "/Users/darwin/Documents/Codex/2026-09-09/runpod-official-plugin-runpod-openai-curated-2/outputs/predictor-native-confidence/evaluation"
+      ]
+    }
+  ],
+  "localCpuDeadlineSeconds": 300,
+  "newGeneration": false,
+  "newGpuHours": 0,
+  "newCloudCostUSD": 0
+}
