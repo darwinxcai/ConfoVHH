@@ -1,0 +1,65 @@
+{
+  "archivedOriginalSha256": "982ba31c27ab0c3d66c3a5d7cafd390f65c3b2d9bdbe2509ebd875604839b138",
+  "localPathRedaction": "<ARTIFACT_ROOT> replaces the execution directory only; original bytes retained in evidence archive",
+  "data": {
+    "retrieved_utc": "2026-09-24",
+    "zenodo_record": "https://zenodo.org/records/19061737",
+    "github_commit": "8b90e9f5052d74cddd798ffe59dc32b405d8e5ef",
+    "files": [
+      {
+        "url": "https://zenodo.org/api/records/19061737/files/chai1_predictions_saturation.tar/content",
+        "local_path": "<ARTIFACT_ROOT>/champloo_data/chai1_predictions_saturation.tar",
+        "bytes": 1434293182,
+        "published_checksum": "md5:a73b8e00dfe82aa750a632ef7fa6a001",
+        "verified_md5": "a73b8e00dfe82aa750a632ef7fa6a001",
+        "sha256": "7b9aff61877bb7c1f31375258987dff7e392658be2ac02e84fdf85a6d4142c44"
+      },
+      {
+        "url": "https://zenodo.org/api/records/19061737/files/chai1_saturation_combined.csv/content",
+        "local_path": "<ARTIFACT_ROOT>/champloo_data/chai1_saturation_combined.csv",
+        "bytes": 3992152,
+        "published_checksum": "md5:8b17e6e94237e88bdea862f731798c15",
+        "verified_md5": "8b17e6e94237e88bdea862f731798c15",
+        "sha256": "db7a9c700dffc7f7e9459b6f3291cd3454abb9cea18aba4e164ac589301179ee"
+      },
+      {
+        "url": "https://zenodo.org/api/records/19061737/files/log_mappings.csv/content",
+        "local_path": "<ARTIFACT_ROOT>/champloo_data/log_mappings.csv",
+        "bytes": 761904,
+        "published_checksum": "md5:579f1d43c54a0815faf3a37e97771f70",
+        "verified_md5": "579f1d43c54a0815faf3a37e97771f70",
+        "sha256": "8c3292fa8ea76cac36a745a4b49513a871bfe7ddb31c5fb87391bd733663aed1"
+      },
+      {
+        "url": "https://zenodo.org/api/records/19061737/files/README%20VHH-Ag%20Structure%20Prediction%20Saturation.md/content",
+        "local_path": "<ARTIFACT_ROOT>/champloo_data/saturation_README.md",
+        "bytes": 8479,
+        "published_checksum": "md5:77cd669c7f4c367d15b7bc8406c67a41",
+        "verified_md5": "77cd669c7f4c367d15b7bc8406c67a41",
+        "sha256": "1cab17afbd094689abf180948a4dea2084301e73ce0a0b76b0687ab38c3151b7"
+      },
+      {
+        "url": "https://zenodo.org/api/records/19061737/files/topmodel_structure_accuracy.zip/content",
+        "local_path": "<ARTIFACT_ROOT>/champloo_data/topmodel_structure_accuracy.zip",
+        "bytes": 15977057,
+        "published_checksum": "md5:56a62bdfcbc1199bd4a1a68cb027b047",
+        "verified_md5": "56a62bdfcbc1199bd4a1a68cb027b047",
+        "sha256": "a2f1bd3ddf0c31efbf7e8fe730b767b72703fb8cb5bbb7430f43d3abd921f341"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/csi-greifflab/ab_ag_champloo/8b90e9f5052d74cddd798ffe59dc32b405d8e5ef/README.md",
+        "local_path": "<ARTIFACT_ROOT>/champloo_data/upstream_README.md",
+        "bytes": 2019,
+        "verified_git_blob_sha1": "cc7e5cda0a6e8a49d5b87f2c74898b4d426469f9",
+        "sha256": "d965417208b411dd23c54488110acf1cc06ddcd90f9b0d862c94c8ca98e250c1"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/csi-greifflab/ab_ag_champloo/8b90e9f5052d74cddd798ffe59dc32b405d8e5ef/supplementary_tables/Supplementary_Table_1_final_experimental_vhh_ag_systems.csv",
+        "local_path": "<ARTIFACT_ROOT>/champloo_data/supplementary_table_1.csv",
+        "bytes": 147235,
+        "verified_git_blob_sha1": "03f0aafc5abf80379ec62a744154116177c8dfab",
+        "sha256": "28bc0d512c5af21fce76ec46913935d57fbaa9c3f4f9e756907e82204fc86be2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "query": {
+    "type": "group",
+    "logical_operator": "and",
+    "nodes": [
+      {
+        "type": "group",
+        "logical_operator": "or",
+        "nodes": [
+          {
+            "type": "terminal",
+            "service": "full_text",
+            "parameters": {
+              "value": "nanobody"
+            }
+          },
+          {
+            "type": "terminal",
+            "service": "full_text",
+            "parameters": {
+              "value": "VHH"
+            }
+          },
+          {
+            "type": "terminal",
+            "service": "full_text",
+            "parameters": {
+              "value": "sybody"
+            }
+          },
+          {
+            "type": "terminal",
+            "service": "full_text",
+            "parameters": {
+              "value": "megabody"
+            }
+          },
+          {
+            "type": "terminal",
+            "service": "full_text",
+            "parameters": {
+              "value": "single-domain antibody"
+            }
+          },
+          {
+            "type": "terminal",
+            "service": "full_text",
+            "parameters": {
+              "value": "single domain antibody"
+            }
+          }
+        ]
+      },
+      {
+        "type": "terminal",
+        "service": "text",
+        "parameters": {
+          "attribute": "rcsb_accession_info.initial_release_date",
+          "operator": "greater",
+          "value": "2026-09-10"
+        }
+      },
+      {
+        "type": "terminal",
+        "service": "text",
+        "parameters": {
+          "attribute": "rcsb_accession_info.initial_release_date",
+          "operator": "less_or_equal",
+          "value": "2026-09-24"
+        }
+      }
+    ]
+  },
+  "return_type": "entry",
+  "request_options": {
+    "return_all_hits": true
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "archivedOriginalSha256": "d3b4b592b2a5e31ed8e24c8d16663a351cdd8132138cfa54912644bb5e827426",
+  "localPathRedaction": "<ARTIFACT_ROOT> replaces the execution directory only; original bytes retained in evidence archive",
+  "data": [
+    {
+      "setId": "champloo_6ibb",
+      "id": "6IBB_baseline_t0_d0",
+      "apiDockQ": 0.0037250952497181566,
+      "cliDockQ": 0.0037250952497181566,
+      "absoluteDifference": 0.0,
+      "command": [
+        "<ARTIFACT_ROOT>/.venv/bin/python",
+        "-m",
+        "DockQ",
+        "<ARTIFACT_ROOT>/champloo_data/extracted/t1_d5/system_18_18_6IBB_6IBB_13451755/predictions/pred.model_idx_0.cif",
+        "<ARTIFACT_ROOT>/champloo_data/6IBB_rcsb.pdb",
+        "--mapping",
+        "BA:CD",
+        "--json",
+        "execution-20260924/outcomes/6IBB_baseline_t0_d0/cli.json",
+        "--n_cpu",
+        "1"
+      ]
+    },
+    {
+      "setId": "lightdock_original_3p0g",
+      "id": "ld_original_swarm_49_45",
+      "apiDockQ": 0.2496482610045904,
+      "cliDockQ": 0.2496482610045904,
+      "absoluteDifference": 0.0,
+      "command": [
+        "<ARTIFACT_ROOT>/.venv/bin/python",
+        "-m",
+        "DockQ",
+        "<ARTIFACT_ROOT>/lightdock_data/original/coordinates/top100/swarm_49_45.pdb",
+        "<ARTIFACT_ROOT>/lightdock_data/3p0g_bound.pdb",
+        "--mapping",
+        "AB:AB",
+        "--json",
+        "execution-20260924/outcomes/ld_original_swarm_49_45/cli.json",
+        "--n_cpu",
+        "1"
+      ]
+    },
+    {
+      "setId": "lightdock_refined_3p0g",
+      "id": "ld_refined_3p0g_92w",
+      "apiDockQ": 0.2669362520564605,
+      "cliDockQ": 0.2669362520564605,
+      "absoluteDifference": 0.0,
+      "command": [
+        "<ARTIFACT_ROOT>/.venv/bin/python",
+        "-m",
+        "DockQ",
+        "<ARTIFACT_ROOT>/lightdock_data/refined/coordinates/models/3p0g_92w.pdb",
+        "<ARTIFACT_ROOT>/lightdock_data/3p0g_bound.pdb",
+        "--mapping",
+        "AB:AB",
+        "--json",
+        "execution-20260924/outcomes/ld_refined_3p0g_92w/cli.json",
+        "--n_cpu",
+        "1"
+      ]
+    }
+  ]
+}
