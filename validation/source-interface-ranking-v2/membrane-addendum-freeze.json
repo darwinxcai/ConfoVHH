@@ -1,0 +1,13 @@
+{
+  "frozenAtUTC": "2026-09-24T20:59:05Z",
+  "sha256": "ddfde9c5c9092f7d7e28c797f026b6a623297ffb92a9ef57c3ba5b64e8f625cb",
+  "featureCalculationsAtFreeze": false,
+  "rankingCalculationsAtFreeze": false,
+  "nativeOutcomeJoinAtFreeze": false,
+  "feature": "M=-fraction of NB heavy atoms at distance<2.5A from any supplied phosphate bead",
+  "fitGate": "271 matching receptor CA with full coverage; proper Kabsch RMSD<=2A",
+  "arms": [
+    "G-membrane",
+    "H-membrane"
+  ]
+}
