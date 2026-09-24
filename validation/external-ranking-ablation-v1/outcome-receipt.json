@@ -1,0 +1,35 @@
+{
+  "schema": "confovhh-external-development-outcome-receipt-v1",
+  "studyId": "external-ranking-ablation-v1",
+  "startedAtUtc": "2026-09-24T20:19:18.932780+00:00",
+  "completedAtUtc": "2026-09-24T20:20:57.263033+00:00",
+  "elapsedSeconds": 98.33120749983937,
+  "referenceManifestSha256": "1c3e3bb63107085fedbf7f17b01726b3ce89d8336b30f403b56ef07452a0b726",
+  "scoreReceiptSha256": "63416f4f05073e96fc9f8b620ef5b9f768caf288b28b513b6bbf085b3148d07a",
+  "sourceRanksSha256": "f74be49c8233bb6a2d06b25279a787ee99e5ea7a6182a705c01418c7692b7804",
+  "savedRanksSha256": "f74be49c8233bb6a2d06b25279a787ee99e5ea7a6182a705c01418c7692b7804",
+  "savedReferenceManifestSha256": "1c3e3bb63107085fedbf7f17b01726b3ce89d8336b30f403b56ef07452a0b726",
+  "analyzerSha256": "d3034ee749ab683b8c9635655c99b2fee60b0a28b260af1bf8e5b986afd6d532",
+  "versions": {
+    "DockQ": "2.1.3",
+    "biopython": "1.88",
+    "numpy": "1.26.4"
+  },
+  "python": "3.12.14",
+  "plannedCount": 395,
+  "outcomeStatusCounts": {
+    "evaluated": 395
+  },
+  "files": {
+    "outcomes.json": "765fcdcbf80d48808d19242b415d2a8c9259e5e91bdb703af80f44a6de9ba107",
+    "analysis.json": "01943a2fcb1ff41649cf07005cf64820d6df0362c2962107e73337798cefce34",
+    "crosschecks.json": "d3b4b592b2a5e31ed8e24c8d16663a351cdd8132138cfa54912644bb5e827426"
+  },
+  "crosscheckedSets": [
+    "champloo_6ibb",
+    "lightdock_original_3p0g",
+    "lightdock_refined_3p0g"
+  ],
+  "status": "COMPLETE",
+  "outcomePolicy": "Original unchanged coordinates; selected first model; fixed native-to-model chain mapping; default sequence alignment; source supplied DockQ not used"
+}
