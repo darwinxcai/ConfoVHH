@@ -1,0 +1,55 @@
+{
+  "schema": "confovhh-ranking-v2-hardening-code-freeze-v1",
+  "frozenAtUtc": "2026-09-24T21:43:29.616253+00:00",
+  "reason": "Narrow identity and membership hardening after independent review; no selector formula, weight, percentile, tie or metric changes",
+  "previousSelectorSha256": "8bbce8cb3e375fa0a7dc1fa7cdc2343818a427f8b198368910099170964dcf9b",
+  "files": {
+    "scripts/external-ranking-v2/score.mjs": {
+      "sha256": "10590af77f2c9debcdc0d12f0140aeb6ed6b105317fcfce152cd6841f46686b4",
+      "bytes": 22617
+    },
+    "scripts/external-ranking-v2/evaluate_saved.py": {
+      "sha256": "959ac5df31ed1c216b2323684dbacac05ac53d9c3fe3f854cc8888b433e59070",
+      "bytes": 14730
+    },
+    "tests/external-ranking-v2.test.mjs": {
+      "sha256": "2ed84ff4803cf36fe63fb42cb3f9bbbeddf4ba30a4151e6ffb9dc988153ac1d0",
+      "bytes": 12443
+    },
+    "scripts/external-ranking-v2/test_evaluate_saved.py": {
+      "sha256": "2ac42cec411ee2d6c670511c9825a9fb7b2bae47f4efa048e71c4e26e5e86ff1",
+      "bytes": 5893
+    },
+    "scripts/external-ranking/score.mjs": {
+      "sha256": "7cb9ee68332dd09c9e2a37e3a5566793a2840eadd6b46abe342a9aaf0353e148",
+      "bytes": 20336
+    },
+    "scripts/external-ranking/analyze.py": {
+      "sha256": "d3034ee749ab683b8c9635655c99b2fee60b0a28b260af1bf8e5b986afd6d532",
+      "bytes": 23232
+    }
+  },
+  "changes": [
+    "Selector checks ledger set/generator/producer status and scored feature membership",
+    "Selector verifies current original adapter against source receipt",
+    "Evaluator verifies copied original ledger digest and complete extended feature/component membership",
+    "Evaluator rejects boolean and nonfinite outcome scalars"
+  ],
+  "tests": {
+    "nodeOriginalAndV2": {
+      "passed": 12,
+      "failed": 0
+    },
+    "pythonEvaluation": {
+      "passed": 8,
+      "failed": 0
+    }
+  },
+  "scope": {
+    "formulasChanged": false,
+    "originalModulesChanged": false,
+    "productionRankerChanged": false,
+    "original395ArtifactsPreserved": true
+  },
+  "next": "Replay original395 and compare exact saved features/ranks; execute expanded v2 using this frozen code"
+}

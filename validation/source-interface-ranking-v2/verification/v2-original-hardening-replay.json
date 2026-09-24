@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "exactMatches": {
+    "features.json": true,
+    "ranks.json": true,
+    "attempts.json": true,
+    "percentiles.json": true
+  },
+  "originalSelector": "8bbce8cb3e375fa0a7dc1fa7cdc2343818a427f8b198368910099170964dcf9b",
+  "hardenedSelector": "10590af77f2c9debcdc0d12f0140aeb6ed6b105317fcfce152cd6841f46686b4",
+  "explanation": "Validation changes only; exact scientific outputs preserved. Original evaluation numerical metrics unchanged after correcting group display label Nb8 to Nb6."
+}

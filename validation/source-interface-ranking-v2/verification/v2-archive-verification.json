@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "archiveSha256": "03abee56b5921ba209b8a8c9df4ccd5b35d4f2526abb6fdfc8696b3bbe7d759e",
+  "freshExtractionDirectory": "/private/var/folders/y4/3xttp5z13nl_wd2k27zw2t040000gn/T/confovhh-v2-evidence-bb4rd_92",
+  "verifiedPayloadFiles": 11523,
+  "cohortReplays": [
+    {
+      "cohort": "original",
+      "exactReplay": {
+        "features.json": true,
+        "ranks.json": true,
+        "attempts.json": true,
+        "percentiles.json": true
+      },
+      "savedOutcomeEvaluationExact": true,
+      "independentNumericalVerification": "PASS",
+      "savedReceiptSha256": "4803cadeb3508765c9c7a2a48a819f51622fd62b83c4aba26196e55f67cf9c41",
+      "freshReceiptSha256": "df8be37837559888ff1940d047cc9bc2bc1805ced881bea38dc6d5a150e5ff87"
+    },
+    {
+      "cohort": "af2ig",
+      "exactReplay": {
+        "features.json": true,
+        "ranks.json": true,
+        "attempts.json": true,
+        "percentiles.json": true
+      },
+      "savedOutcomeEvaluationExact": true,
+      "independentNumericalVerification": "PASS",
+      "savedReceiptSha256": "e178d9ceb3e72faa570763448b242ee6793a9a486b50c430539a3ad1399229af",
+      "freshReceiptSha256": "e178d9ceb3e72faa570763448b242ee6793a9a486b50c430539a3ad1399229af"
+    },
+    {
+      "cohort": "rf3",
+      "exactReplay": {
+        "features.json": true,
+        "ranks.json": true,
+        "attempts.json": true,
+        "percentiles.json": true
+      },
+      "savedOutcomeEvaluationExact": true,
+      "independentNumericalVerification": "PASS",
+      "savedReceiptSha256": "462d7b914005442cfda9fe9e1d9a2a246f33ed468ce8a05bd2a384d7e97fa66b",
+      "freshReceiptSha256": "462d7b914005442cfda9fe9e1d9a2a246f33ed468ce8a05bd2a384d7e97fa66b"
+    },
+    {
+      "cohort": "boltz",
+      "exactReplay": {
+        "features.json": true,
+        "ranks.json": true,
+        "attempts.json": true,
+        "percentiles.json": true
+      },
+      "savedOutcomeEvaluationExact": true,
+      "independentNumericalVerification": "PASS",
+      "savedReceiptSha256": "07484f2ce24f553c5a28f94a55091293b62f3766cb787d290010c7f3809c3b73",
+      "freshReceiptSha256": "07484f2ce24f553c5a28f94a55091293b62f3766cb787d290010c7f3809c3b73"
+    }
+  ],
+  "scriptSha256": "2f090dc2d6f9c685ef0c943ba3c09b47471cbc2e720764d4789390fecbf4070d"
+}
