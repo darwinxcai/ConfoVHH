@@ -1,0 +1,31 @@
+{
+  "schema": "ppm3-fixed-ranking-evaluation-receipt-v1",
+  "startedAtUtc": "2026-09-24T23:32:12.607512+00:00",
+  "completedAtUtc": "2026-09-24T23:32:12.795031+00:00",
+  "rankSealSha256": "98066fab30c600d7c0ab1e5d2b9df4922efaac22ebd42397a5d0c8f899298f24",
+  "independentRankVerificationSha256": "1117f2dc898764b2a9976d5e58e8fe3148678915d59fc96a9d07f79f6f243e9e",
+  "rootRankingFreezeSha256": "49d547cbc8dea9a95b5ddb4fe724b35e3fb2994e1e15e259fd2bdd2a7a0be628",
+  "outcomeReceiptSha256": "99b90a55262caa47eea5d9ed2509853a4a2ed5937f980b6a0adea28f9109dbe2",
+  "outcomesSha256": "6440f8277480c73612f3d994c7318d0f030350ec56824691943b303d36cd1f95",
+  "sourceScoreReceiptSha256": "311a20a985ee2701e504aefa1745d69ce1b15e9bd0bf442625d61361c31a14e6",
+  "v2ScoreReceiptSha256": "07484f2ce24f553c5a28f94a55091293b62f3766cb787d290010c7f3809c3b73",
+  "analyzerSha256": "8b8a638cd697bd70e9b608becbd69520c9dbd26d57a09a4e369ab28277068beb",
+  "v1AnalyzerSha256": "d3034ee749ab683b8c9635655c99b2fee60b0a28b260af1bf8e5b986afd6d532",
+  "v2AnalyzerSha256": "959ac5df31ed1c216b2323684dbacac05ac53d9c3fe3f854cc8888b433e59070",
+  "verification": {
+    "coordinateAndReferenceHashesVerified": 200,
+    "completeAttemptMembershipPerArm": 200,
+    "rankKeysPercentilesAndSelectionsIndependentlyVerified": true,
+    "top1Top5Top10AndAUROCIndependentlyVerified": true,
+    "ranksSealedBeforeOutcomeJoin": true
+  },
+  "files": {
+    "evaluation-manifest.json": "bf628fe69be960a02801e9857fb9cc91899b183bb64fa0252da73ccdd5bb15f9",
+    "analysis.json": "f92f149e344bcc306425c3d13a6fa625ca60f6c18e555acb62cbe35ed70189da",
+    "metrics.json": "b10ed4bb8eadc1e2800e39de9dd0d91fc1ae76c2a3720074d2a4140273017181",
+    "comparisons.json": "20f54be5f304417bb4a1a800a37c98029eac2f51621020eee715b48a9ea948d5",
+    "metrics.csv": "179e33bb84e62d5f492d68ae41dda825f24962816ac54a8a5c495ec7afdec665",
+    "comparisons.csv": "9fbebb692ccd09a0ad23c03748c5c7fb8495ad07d5c528e94fb4d702c76d01c3"
+  },
+  "status": "COMPLETE_WITH_PRESPECIFIED_8TH4_ABSTENTION"
+}

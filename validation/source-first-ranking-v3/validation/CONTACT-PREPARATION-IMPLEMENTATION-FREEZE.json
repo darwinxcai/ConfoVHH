@@ -1,0 +1,201 @@
+{
+  "schema": "confovhh-round3-contact-preparation-implementation-freeze-v1",
+  "frozenAtUtc": "2026-09-25T00:44:06.840740+00:00",
+  "scope": "Experimental prediction-only v3 contact evidence recovery and exact prescribed-role reuse validation; no production default or ranking formula changes",
+  "method": {
+    "schema": "confovhh-frozen-contact-phase-method-v1",
+    "derivation": "unchanged-frozen-source-prefix-before-interface-confidence-and-sasa-v1",
+    "engineLockSha256": "0bc8d6d23c3accfbfa1b35c956ea08bfba08b6f69a47d73e2307abacc799f559",
+    "frozenInterfaceSourceSha256": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+    "scientificPrefixSha256": "5dc3a854771e5d715f08244371b9bdc6b38f8be382f5a89895f71da99554de5e",
+    "adapterSha256": "5bf6cdd8765c3eaced1758ffebf9a8c15fe7199062d2e25f43f1fda52da647c3",
+    "contactCutoffAngstromInclusive": 4.5,
+    "maximumCandidateAtomPairs": 5000000,
+    "maximumUniqueResiduePairs": 50000,
+    "sasaExecuted": false,
+    "fullAuditAtomLimitApplied": false,
+    "fullAuditLimitsChanged": false,
+    "allParsedSelectedRoleAtomsRetained": true,
+    "additionalAtomTrimming": false
+  },
+  "implementation": [
+    {
+      "path": "ConfoVHH/scripts/external-ranking-v3/policy.mjs",
+      "bytes": 25993,
+      "sha256": "8e35a0672b4283e9b8a0d011c0f1a703f48b5a0b62ac1eecc65760a8caf403bc"
+    },
+    {
+      "path": "ConfoVHH/scripts/external-ranking-v3/score.mjs",
+      "bytes": 18416,
+      "sha256": "07e5755f49bb48cfd1b989a5da44c538962af13878dfe5d4e4b97497bb0591c8"
+    },
+    {
+      "path": "ConfoVHH/scripts/external-ranking-v3/contact-only.mjs",
+      "bytes": 8063,
+      "sha256": "5bf6cdd8765c3eaced1758ffebf9a8c15fe7199062d2e25f43f1fda52da647c3"
+    },
+    {
+      "path": "ConfoVHH/scripts/external-ranking-v3/verify-contact-evidence.mjs",
+      "bytes": 6413,
+      "sha256": "1dd974254308ea2df91405f0a16e7d5c669db7c195f3124472e4791b270da87c"
+    },
+    {
+      "path": "ConfoVHH/scripts/external-ranking-v3/evaluate.py",
+      "bytes": 12492,
+      "sha256": "eb3d6960877cfe6041009ec92cf1585cb09f7684ab06676d9e5776ce364a9934"
+    },
+    {
+      "path": "ConfoVHH/scripts/external-ranking-v3/CONTACT-EVIDENCE.md",
+      "bytes": 5097,
+      "sha256": "717a0c55e46d5cf9666080f0d03358ab6793f242c06157c583e6c5c047b4a52e"
+    },
+    {
+      "path": "ConfoVHH/tests/external-ranking-v3.test.mjs",
+      "bytes": 15911,
+      "sha256": "9e20f5388bcb4eb8083a9178f7f6b2ef65d18c82e620bc37db73d0de24f6cf70"
+    },
+    {
+      "path": "ConfoVHH/tests/external-ranking-v3-contact.test.mjs",
+      "bytes": 5362,
+      "sha256": "8d8e63e5ab71c708bd2ae092f2c53878dafc2dba3c39d5e924326e01e35b1343"
+    },
+    {
+      "path": "round3-control/prepare_prediction_scoring.py",
+      "bytes": 32046,
+      "sha256": "c921848f7bec359e503b7b4433d66e0a5adf3b1d9abab807691c334b703655e5"
+    },
+    {
+      "path": "round3-control/test_prepare_prediction_scoring.py",
+      "bytes": 13515,
+      "sha256": "6591b16b56d4d0ddf7c164c88aa3609be89d432b7434f9ce8884291f0ad0afb6"
+    },
+    {
+      "path": "round3-control/verify_reused_view_roles.py",
+      "bytes": 2110,
+      "sha256": "8b2318c7d28575c4af850ad7619df99c3d59d609891869f2c20bb26f17d1c41a"
+    },
+    {
+      "path": "round3-benchmark/scoring-view/canonicalize_view.py",
+      "bytes": 12667,
+      "sha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c"
+    },
+    {
+      "path": "round3-ranking/calibration-tools/calibrate.py",
+      "bytes": 24128,
+      "sha256": "8f7dbbd3ff1582481b0d97e56cdf13abb1a5117e7af2a240e6341ec5c3d71a1f"
+    },
+    {
+      "path": "round3-ranking/calibration-tools/generate_grid.mjs",
+      "bytes": 4001,
+      "sha256": "86f6984df1f2df564551bfd9b340548ab4661edc4627bd3f4d5ac1195ba82905"
+    },
+    {
+      "path": "round3-ranking/calibration-tools/synthetic_fixture.mjs",
+      "bytes": 3031,
+      "sha256": "85da8610a6c9918a8936b8dd5407e66b4aec4a099368653907a982e98096a9a3"
+    },
+    {
+      "path": "round3-ranking/calibration-tools/test_calibrate.py",
+      "bytes": 16300,
+      "sha256": "2e7768a4c08ab895f43c0012c3e5ad92c406072321406844b179f2f5946dea43"
+    },
+    {
+      "path": "round3-ranking/contact-only-validation/compare.mjs",
+      "bytes": 4934,
+      "sha256": "b54a1eca01e4949d29bbdb919fd2034af2d6cc0237fab7f07a5a5eff7f1904af"
+    },
+    {
+      "path": "round3-ranking/freeze_contact_preparation.py",
+      "bytes": 5499,
+      "sha256": "8df38ef9025abfe7802c56da86f4061775d32ad8fb652e0cfaab4f5b8d0ae202"
+    }
+  ],
+  "tests": [
+    {
+      "suite": "node",
+      "passed": 28,
+      "failed": 0,
+      "log": {
+        "path": "round3-ranking/contact-only-validation/final-test-node.log",
+        "bytes": 3422,
+        "sha256": "7a168969efb8e5000965a903f149fb0842dcef46d973083b99087f2644e970de"
+      }
+    },
+    {
+      "suite": "evaluation",
+      "passed": 9,
+      "failed": 0,
+      "log": {
+        "path": "round3-ranking/contact-only-validation/final-test-evaluation.log",
+        "bytes": 97,
+        "sha256": "8abe6ea45b8678cf08ff74e15fd22bd04109abca59a04ba113267db6e3d3c11f"
+      }
+    },
+    {
+      "suite": "preparation",
+      "passed": 11,
+      "failed": 0,
+      "log": {
+        "path": "round3-ranking/contact-only-validation/final-test-preparation.log",
+        "bytes": 98,
+        "sha256": "90064deac99ac0247a55ac3809e1afcc806f79f2966ba68a30730f72202e2f72"
+      }
+    },
+    {
+      "suite": "calibration",
+      "passed": 12,
+      "failed": 0,
+      "log": {
+        "path": "round3-ranking/contact-only-validation/final-test-calibration.log",
+        "bytes": 98,
+        "sha256": "93a949f5daf93499cd15494edd18b35bb58c217d67e7f13b33c5797bafe96999"
+      }
+    }
+  ],
+  "totalPassed": 60,
+  "failed": 0,
+  "crosscheck": {
+    "path": "round3-ranking/contact-only-validation/crosscheck-final.json",
+    "bytes": 1167634,
+    "sha256": "7a38d46c05c2d0f68fc585ec0f711bd36cdeaf624bad07f6a831fa4118326352"
+  },
+  "roleReuseVerification": {
+    "path": "round3-control/ROLE-REUSE-HARDENING-VERIFICATION.json",
+    "bytes": 67727,
+    "sha256": "5c4fdc4357ac3c1aff3fd4f58567b109572bb0170dbc0446ed448167cf4398bb"
+  },
+  "finalSmokeReplays": [
+    {
+      "path": "round3-ranking/contact-only-validation/final-replay-development.json",
+      "bytes": 295,
+      "sha256": "a90ecb852879e1cfa22d4bf52a2d9eebd405ac8f76e9387e9d70cb7312a02d8f"
+    },
+    {
+      "path": "round3-ranking/contact-only-validation/final-replay-prospective.json",
+      "bytes": 295,
+      "sha256": "1fb73e79ef2d4986859c3b08718676635c60d653b367dabf885c9af008e57f1e"
+    }
+  ],
+  "originalSmokeScientificRankComparison": [
+    {
+      "original": "smoke-development-hardened-v3-development",
+      "updated": "smoke-contact-final-v3-development",
+      "allSelectedIdsRanksKeysUnchanged": true,
+      "wholeRecordMayChangeBecauseInterfaceAvailabilityMetadataChanges": true
+    },
+    {
+      "original": "smoke-prospective-check-v3-prospective",
+      "updated": "smoke-contact-final-v3-prospective",
+      "allSelectedIdsRanksKeysUnchanged": true,
+      "wholeRecordMayChangeBecauseInterfaceAvailabilityMetadataChanges": true
+    }
+  ],
+  "fixedFullAuditMismatches": 0,
+  "fullAuditsExactlyMatched": 1058,
+  "standaloneContactSmokeRecovered": 7,
+  "calibrationToleranceSelected": false,
+  "newQualityOutcomeInputs": [],
+  "referenceInputs": [],
+  "finalCohortScoringPerformedHere": false,
+  "preparationReadyForCompleteDevelopmentCohort": true
+}

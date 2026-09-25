@@ -1,0 +1,75 @@
+{
+  "schema": "confovhh-round3-outcome-tools-validation-v1",
+  "recordedAtUtc": "2026-09-25T00:45:50.789358+00:00",
+  "unitTestsPassed": 9,
+  "unitTestsFailed": 0,
+  "unitTestCommand": ".venv/bin/python -W ignore::ResourceWarning round3-benchmark/outcome-tools/test_outcome_adapter.py",
+  "unitTestSource": {
+    "path": "round3-benchmark/outcome-tools/test_outcome_adapter.py",
+    "bytes": 14004,
+    "sha256": "300560ecfdb3cdcec1c74067867b0dc571b3e3744f65e515a2f9f440154f02df"
+  },
+  "finalSmokePreflights": [
+    {
+      "request": {
+        "path": "round3-benchmark/outcome-tools/smoke-contact-final-development-preflight-request.json",
+        "bytes": 1364,
+        "sha256": "1ef07c41ad882d6c52c25d06162a3d09062feead819230000b89ca5185af6e74"
+      },
+      "rankingReceipts": [
+        {
+          "path": "round3-ranking/smoke-contact-final-v3-development/receipt.json",
+          "bytes": 4926,
+          "sha256": "4284f446891e6df35da12165cf029320ce6d498c73dc3af3b914bff2dbb8b330"
+        }
+      ],
+      "role": "development",
+      "plannedCount": 100,
+      "canonicalViews": 50,
+      "result": "PASS",
+      "outcomesComputed": false
+    },
+    {
+      "request": {
+        "path": "round3-benchmark/outcome-tools/smoke-contact-final-prospective-preflight-request.json",
+        "bytes": 1846,
+        "sha256": "23b5dfd056d9b10d03336e5d0c2a6c3df28d9e6f21074bfeafd23f4c1568ac2f"
+      },
+      "rankingReceipts": [
+        {
+          "path": "round3-ranking/smoke-contact-final-v3-prospective/receipt.json",
+          "bytes": 4929,
+          "sha256": "d930bf7e3552e96802564734c23a8313534529ffd8f1f1cf811e5a9d7f6a110b"
+        }
+      ],
+      "role": "prospective",
+      "plannedCount": 200,
+      "canonicalViews": 20,
+      "result": "PASS",
+      "outcomesComputed": false
+    }
+  ],
+  "nativeSelfControls": 18,
+  "maxNativeSelfAbsoluteDockQError": 1.228650514661922e-11,
+  "oldPairCliApiAbsoluteDifferences": {
+    "DockQ": 0.0,
+    "fnat": 0.0,
+    "iRMSD": 0.0,
+    "LRMSD": 0.0
+  },
+  "syntheticFixedDimerMaximumDockQDifference": 2.7163797988727367e-08,
+  "nativeFixedSymmetryMaximaPass": true,
+  "freshPredictionNativeComparisons": 0,
+  "controls": [
+    {
+      "path": "round3-benchmark/outcome-tools/metric-controls-v3/receipt.json",
+      "bytes": 6413,
+      "sha256": "ba3a69c03f322541d3a679670da5f2406b8f12ea2b0722425634f147193cbdb9"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/native-symmetry-controls-v1/receipt.json",
+      "bytes": 1829,
+      "sha256": "37497f982049dc841952954cebca336fb145c66d3c71f773b05b671816ee78d4"
+    }
+  ]
+}

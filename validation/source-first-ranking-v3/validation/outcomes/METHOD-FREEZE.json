@@ -1,0 +1,46 @@
+{
+  "schema": "confovhh-round3-fixed-dockq-method-freeze-v1",
+  "frozenAtUtc": "2026-09-25T00:33:29.246067+00:00",
+  "freshPredictionNativeComparisonsBeforeFreeze": 0,
+  "functionSourceSha256": {
+    "runtime_segments": "91a963716b3a64df955bcbd5bc66dc7e720e5f6a7c9581571bd158bce549e7d9",
+    "aligned_segments": "b0a0ca68c2e50f9268c2c9880bef0937286311661c640ba778d8a41bff4be04b",
+    "dockq_api": "8301560ab81376b532b29d1c5f91e6b198bd2f150b4fadc79a641a054b17327f",
+    "combine_views": "778e70b514c5092530e719ea091e30ca7db3142c9ab24ac58caf72153b652c93"
+  },
+  "referenceInventorySha256": "a7b197c0393462809792f9cf00eef01231c32932d5c53b07f0c9375c30e796b0",
+  "DockQVersion": "2.1.3",
+  "DockQFiles": {
+    "DockQ.py": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "__main__.py": "a2dc944b6fdaeb5c4f3574c452519449505756abbb96e2261179a2b643b57df5",
+    "constants.py": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18",
+    "operations.cpython-312-darwin.so": "1e3871f2f42e32ca87cd3b8f679a576ef5f10e9fe1eb045e86c9cd0338463f27",
+    "operations_nocy.py": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3",
+    "parsers.py": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+  },
+  "BioVersion": "1.88",
+  "numpyVersion": "1.26.4",
+  "modelChains": [
+    "R",
+    "V"
+  ],
+  "contextChainsIgnored": true,
+  "receptorCorrespondence": "Fixed ordered original-protomer segments; independent sequence alignment per segment (match5 mismatch0 gap-open-4 gap-extend-0.5 first optimum), no crossing of boundaries; preserve full native union denominator.",
+  "predictionSelectedNbFixed": true,
+  "referenceRule": "Exactly 4 fixed native views for CASR and GRM5, 1 for all other sets; maximum only after every view evaluated, otherwise unavailable; exact maximum ties all retained.",
+  "coordinateChanges": false,
+  "inMemoryResidueTraversalOrder": "Reorder only by authenticated original-protomer mapping segments, keeping every parsed coordinate/identity unchanged.",
+  "workerTimeoutSeconds": 600,
+  "sourceRankingAuthentication": "Final v3 contact-evidence validator is a pending authentication-only dependency; numerical methods above are frozen now.",
+  "controls": [
+    {
+      "path": "round3-benchmark/outcome-tools/metric-controls-v3/receipt.json",
+      "sha256": "ba3a69c03f322541d3a679670da5f2406b8f12ea2b0722425634f147193cbdb9"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/native-symmetry-controls-v1/receipt.json",
+      "sha256": "37497f982049dc841952954cebca336fb145c66d3c71f773b05b671816ee78d4"
+    }
+  ]
+}

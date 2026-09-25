@@ -1,0 +1,422 @@
+{
+  "schema": "confovhh-round3-compact-publication-source-map-v1",
+  "fullArchiveSha256": "707e21e7668e8f0e2fced4c594c508a61f0e6d950e2cbcd52988a815ec0999f0",
+  "unchangedSourceCopies": [
+    {
+      "source": "REPORT-V3.md",
+      "publicationPath": "validation/source-first-ranking-v3/REPORT.md",
+      "bytes": 19007,
+      "sha256": "2ee80f26773a2c5567fe9fc17a26bf4dfeb35e6c5bc566f8680aa3b6161b8b06"
+    },
+    {
+      "source": "V3_REPLAY.md",
+      "publicationPath": "validation/source-first-ranking-v3/REPLAY.md",
+      "bytes": 5741,
+      "sha256": "47d818614a5c50274197ecddf3bceda880b52b2e2ef0909f079568b80e859003"
+    },
+    {
+      "source": "round3-control/PROTOCOL.md",
+      "publicationPath": "validation/source-first-ranking-v3/design/PROTOCOL.md",
+      "bytes": 5893,
+      "sha256": "9cf1b2444c67dbaccbe3c8a8c826e980ac4877d790f955d6ab6b9233d03680b5"
+    },
+    {
+      "source": "round3-control/CONTACT-ONLY-METHOD-ADDENDUM.md",
+      "publicationPath": "validation/source-first-ranking-v3/design/CONTACT-ONLY-METHOD-ADDENDUM.md",
+      "bytes": 3354,
+      "sha256": "7466270d09739a860c6555ef5adf321a1a9fc7f942b36c91ac294ada81d66703"
+    },
+    {
+      "source": "round3-control/REPORTING-SPEC.json",
+      "publicationPath": "validation/source-first-ranking-v3/design/REPORTING-SPEC.json",
+      "bytes": 2240,
+      "sha256": "91d89ebb71c1850915618d3b3cdcd2dad34aabd070715f8b9cfd700d38ab86d3"
+    },
+    {
+      "source": "round3-control/REPORTING-TIE-CLARIFICATION.json",
+      "publicationPath": "validation/source-first-ranking-v3/design/REPORTING-TIE-CLARIFICATION.json",
+      "bytes": 1106,
+      "sha256": "417c80df45da46e54eb037add16674cde832c45d845bc01674caab44737b71a3"
+    },
+    {
+      "source": "round3-control/EXECUTION-FREEZE.json",
+      "publicationPath": "validation/source-first-ranking-v3/design/EXECUTION-FREEZE.json",
+      "bytes": 1721,
+      "sha256": "851e83c562ae163817b2ef07389c3e6664ae7e0432d1a7c6a223d4003cdfb0f5"
+    },
+    {
+      "source": "round3-control/PRE-OUTCOME-METHOD-FREEZE.json",
+      "publicationPath": "validation/source-first-ranking-v3/design/PRE-OUTCOME-METHOD-FREEZE.json",
+      "bytes": 1300,
+      "sha256": "ca9b0d1464a7dfd1c2630ce33fa85b3a76920dfc77ae837b80c57524a75aab15"
+    },
+    {
+      "source": "round3-control/FINAL-CALIBRATION-FREEZE.json",
+      "publicationPath": "validation/source-first-ranking-v3/design/FINAL-CALIBRATION-FREEZE.json",
+      "bytes": 1958,
+      "sha256": "1f29206c405001d59dad23583bfd62301828899fe42974e47f5bba78ae36a2b2"
+    },
+    {
+      "source": "round3-control/analysis-requirements-lock.txt",
+      "publicationPath": "validation/source-first-ranking-v3/design/analysis-requirements-lock.txt",
+      "bytes": 307,
+      "sha256": "65a4b932b3ed275f4a01edbd9036a7391e7ff5e0891bc232ca745ad739291839"
+    },
+    {
+      "source": "round3-benchmark/chain-map-manifest.json",
+      "publicationPath": "validation/source-first-ranking-v3/design/chain-map-manifest.json",
+      "bytes": 8633,
+      "sha256": "7c6e916e57e55bda6ce05ab6727e514f26acc8d456d44665715ef4fad3c5c44d"
+    },
+    {
+      "source": "round3-benchmark/ENROLLMENT.freeze.json",
+      "publicationPath": "validation/source-first-ranking-v3/design/ENROLLMENT.freeze.json",
+      "bytes": 177397,
+      "sha256": "5b916d571ab50bac9f9f46f0a7835a404657d761615ccc22038d028b498e71c7"
+    },
+    {
+      "source": "round3-benchmark/planned-attempt-ledger.csv",
+      "publicationPath": "validation/source-first-ranking-v3/design/planned-attempt-ledger.csv",
+      "bytes": 8816,
+      "sha256": "473f7af510bc5fd31f219082059a79f58dafd2fc943994aa25f72cfde9ff3ca5"
+    },
+    {
+      "source": "round3-ranking/CONTACT-PREPARATION-IMPLEMENTATION-FREEZE.json",
+      "publicationPath": "validation/source-first-ranking-v3/validation/CONTACT-PREPARATION-IMPLEMENTATION-FREEZE.json",
+      "bytes": 7440,
+      "sha256": "e7e8bb1e6a67e3079a04391970082047101e73e396eab43367ba930ffedf50bf"
+    },
+    {
+      "source": "round3-ranking/REGRESSION-FINAL-REPORT.md",
+      "publicationPath": "validation/source-first-ranking-v3/validation/REGRESSION-FINAL-REPORT.md",
+      "bytes": 1841,
+      "sha256": "87c108d9db872fd1df90c374f9068e4a759ebc9129d61a2592326566bc7309ab"
+    },
+    {
+      "source": "round3-ranking/regression-final-summary.json",
+      "publicationPath": "validation/source-first-ranking-v3/validation/regression-final-summary.json",
+      "bytes": 19614,
+      "sha256": "c1fe6ae3abf0d7e5955f58637be5de80def6c40ac07db8d6b2db2f754b9cecee"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/METHOD-FREEZE.json",
+      "publicationPath": "validation/source-first-ranking-v3/validation/outcomes/METHOD-FREEZE.json",
+      "bytes": 2689,
+      "sha256": "2914ec4b58f128427e3b6ba5f3d28da3dd6ae71770c1e969b350c5b78f383b29"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/IMPLEMENTATION-FREEZE.json",
+      "publicationPath": "validation/source-first-ranking-v3/validation/outcomes/IMPLEMENTATION-FREEZE.json",
+      "bytes": 4308,
+      "sha256": "cbd4b77ee319c547bae3900188c459fe36670886190b15c11c536d8a44367ab6"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/VALIDATION.json",
+      "publicationPath": "validation/source-first-ranking-v3/validation/outcomes/VALIDATION.json",
+      "bytes": 2589,
+      "sha256": "cc2f080704c0e9fa0f195c3c6e9e9b055a432ab95dca710e8ac53cd56c5ea999"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/DEVELOPMENT-RESULTS.md",
+      "publicationPath": "validation/source-first-ranking-v3/validation/outcomes/DEVELOPMENT-RESULTS.md",
+      "bytes": 5152,
+      "sha256": "b188c0c85f963d6ef9149095d5d46ba4ed5917f372fc95e3bc50e35cd0f56dae"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/DEVELOPMENT-RESULTS.receipt.json",
+      "publicationPath": "validation/source-first-ranking-v3/validation/outcomes/DEVELOPMENT-RESULTS.receipt.json",
+      "bytes": 1351,
+      "sha256": "5475499f559b0182a0fc1ac26967da771456343f9d34aa45646ae912b56b2094"
+    },
+    {
+      "source": "round3-benchmark/training-exposure/TRAINING-EXPOSURE-LIMITATION.md",
+      "publicationPath": "validation/source-first-ranking-v3/design/training-exposure/TRAINING-EXPOSURE-LIMITATION.md",
+      "bytes": 4128,
+      "sha256": "8a8076ead3ccb7070795e6e9a752df5fd00d3dbb3584cff4c1cd56427c9e6ef4"
+    },
+    {
+      "source": "round3-benchmark/training-exposure/receipt.json",
+      "publicationPath": "validation/source-first-ranking-v3/design/training-exposure/receipt.json",
+      "bytes": 1977,
+      "sha256": "2bf61a45544f899a35f2756c96e980a07aef58386fe7bf699d22f2af6022820c"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/prospective-review/review.json",
+      "publicationPath": "validation/source-first-ranking-v3/validation/outcomes/prospective-review/review.json",
+      "bytes": 145663,
+      "sha256": "05e6483b0719eac6e7049d5c6ec0e5ac5b68bc5e0064fd92c113cd7c1d9bd497"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/prospective-review/summary.csv",
+      "publicationPath": "validation/source-first-ranking-v3/validation/outcomes/prospective-review/summary.csv",
+      "bytes": 5649,
+      "sha256": "35b8c11b09731baa0d0700379028b35501c1cca0a72289514cdb2e35a124377e"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/PROSPECTIVE-RESULTS.md",
+      "publicationPath": "validation/source-first-ranking-v3/validation/outcomes/prospective-review/PROSPECTIVE-RESULTS.md",
+      "bytes": 4047,
+      "sha256": "c842f9e6e3f12f3b30d80a0c71690fd22b9374633c7c3c74b5ed4f0d27d9735e"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/prospective-review/receipt.json",
+      "publicationPath": "validation/source-first-ranking-v3/validation/outcomes/prospective-review/receipt.json",
+      "bytes": 5209,
+      "sha256": "5df8e9eb64627a46cc850b2e12e02815c5450a9962452dd322d6bd56e5df3be6"
+    },
+    {
+      "source": "round3-membrane/ranking-evaluation/REPORT.md",
+      "publicationPath": "validation/source-first-ranking-v3/results/membrane/REPORT.md",
+      "bytes": 6602,
+      "sha256": "a699233b8939a50f362b800679f9f0aa99e3e5428cf24db16cf0eaaf61505f52"
+    },
+    {
+      "source": "round3-membrane/ranking-evaluation/metrics.csv",
+      "publicationPath": "validation/source-first-ranking-v3/results/membrane/metrics.csv",
+      "bytes": 3515,
+      "sha256": "179e33bb84e62d5f492d68ae41dda825f24962816ac54a8a5c495ec7afdec665"
+    },
+    {
+      "source": "round3-membrane/ranking-evaluation/comparisons.csv",
+      "publicationPath": "validation/source-first-ranking-v3/results/membrane/comparisons.csv",
+      "bytes": 4991,
+      "sha256": "9fbebb692ccd09a0ad23c03748c5c7fb8495ad07d5c528e94fb4d702c76d01c3"
+    },
+    {
+      "source": "round3-membrane/ranking-evaluation/negative-cases.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/membrane/negative-cases.json",
+      "bytes": 6222,
+      "sha256": "322bf1f1d1d1ff49d94c1af43c6c6f34d54c2493d0b9addb71eb0cf062e70ad6"
+    },
+    {
+      "source": "round3-membrane/ranking-evaluation/evaluation-receipt.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/membrane/evaluation-receipt.json",
+      "bytes": 2007,
+      "sha256": "7e66297a8dd7134c97ee92c109310567f58e20571233ab864bb4e8ba16b84210"
+    },
+    {
+      "source": "round3-membrane/AF2IG_DIAGNOSIS.md",
+      "publicationPath": "validation/source-first-ranking-v3/results/AF2IG-DIAGNOSIS.md",
+      "bytes": 5102,
+      "sha256": "dc75f048c9bfed997d70a4e3bec4e0ed27d2fd5b48872111b8efba58058a48d6"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-development/compact-metrics.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/development/compact-metrics.json",
+      "bytes": 6615,
+      "sha256": "7a8e4fe66fb7ca9ff8211a19fff2351eda7e24769f96586c06c98bf58503ae8f"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-development/comparisons.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/development/comparisons.json",
+      "bytes": 5313,
+      "sha256": "bceae4a05379b64e9f1fe22ffecd5e2bb2520fdd2f72cc3fe238de28198ad459"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-development/strata.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/development/strata.json",
+      "bytes": 9798,
+      "sha256": "dcbb49ef925ec2b840d03439e8d1969b98d0d628df98ce622b778b8c66a796ec"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-development/set-quality.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/development/set-quality.json",
+      "bytes": 863,
+      "sha256": "828f49cd36004627c0e545bc27d54da001f86080dd5f5fbc9b032c58b62aa72d"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-development/unchanged-physical-comparator.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/development/unchanged-physical-comparator.json",
+      "bytes": 1784,
+      "sha256": "46db0763c39bf892a29ef1623cfebec6d29e2a23a91fc18db0a5d20f54b105fb"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-development/independent-first-choice-checks.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/development/independent-first-choice-checks.json",
+      "bytes": 2460,
+      "sha256": "16edbaa1a8ab44d533961b18ca6e4e61f204f3777e666ff164ffd3d319baf5a6"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-development/receipt.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/development/receipt.json",
+      "bytes": 2772,
+      "sha256": "5fd63502b3d1018fe3a62bd0d01bc759d8f7a6368e8bd4718fe5240c16801a0c"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-prospective/compact-metrics.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/prospective/compact-metrics.json",
+      "bytes": 17839,
+      "sha256": "297ea8b069da5dda6e66d4f22849976bdfada8910bcffc5c1b5173289422452b"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-prospective/comparisons.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/prospective/comparisons.json",
+      "bytes": 14295,
+      "sha256": "5b0efe7fa7863b158700f48946992cfff6f16f1cdb800ad81d7f497c18437ca6"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-prospective/strata.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/prospective/strata.json",
+      "bytes": 38155,
+      "sha256": "ace3d43ba55c267ea4cdb2ddb8ab4bc7f635391be94d043283fe8a5cab2b4988"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-prospective/set-quality.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/prospective/set-quality.json",
+      "bytes": 1729,
+      "sha256": "ba1c3fc167b403440846b568852f604abcb798664bfa574838eead3165d85403"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-prospective/unchanged-physical-comparator.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/prospective/unchanged-physical-comparator.json",
+      "bytes": 3467,
+      "sha256": "aa6549490729274e7251e76bdcb15f9d03132f267e5a764a8612ddd4734b67aa"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-prospective/independent-first-choice-checks.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/prospective/independent-first-choice-checks.json",
+      "bytes": 6675,
+      "sha256": "848d84d967aeffdfab7de7b3dc0e4149b95271f9ed78b87b8b550e81117617dd"
+    },
+    {
+      "source": "round3-ranking/fresh-evaluation-prospective/receipt.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/prospective/receipt.json",
+      "bytes": 3088,
+      "sha256": "82e09c81b9262f6c76ac67620a3f7ac53ae778c7d8ba412d5ff205d3c3db6f18"
+    },
+    {
+      "source": "round3-ranking/fresh-pair-calibration/calibration.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/calibration/calibration.json",
+      "bytes": 640,
+      "sha256": "a7608918df14f2174ca10598e41bf7cb65ac8fd5c08d7c7d611719ef2df9199d"
+    },
+    {
+      "source": "round3-ranking/fresh-pair-calibration/analysis-receipt.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/calibration/analysis-receipt.json",
+      "bytes": 3071,
+      "sha256": "86c72bb08064231418251e349fb61f38fe1e5428c1b6644d970f242766434a7e"
+    },
+    {
+      "source": "round3-ranking/fresh-pair-calibration/receipt.json",
+      "publicationPath": "validation/source-first-ranking-v3/results/calibration/receipt.json",
+      "bytes": 746,
+      "sha256": "a037088fbc5df229947a26b38db66bac5a8a9318d91ef98015e417bea3e02285"
+    },
+    {
+      "source": "round3-ranking/final-figures/fresh-ranking-comparison.svg",
+      "publicationPath": "validation/source-first-ranking-v3/results/fresh-ranking-comparison.svg",
+      "bytes": 119220,
+      "sha256": "453df96ffba38b653cb7520b85f529bf9046f3367777f249bc0a7e522e3fac09"
+    },
+    {
+      "source": "round3-control/prepare_prediction_scoring.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-control/prepare_prediction_scoring.py",
+      "bytes": 32046,
+      "sha256": "c921848f7bec359e503b7b4433d66e0a5adf3b1d9abab807691c334b703655e5"
+    },
+    {
+      "source": "round3-control/evaluate_fresh.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-control/evaluate_fresh.py",
+      "bytes": 11486,
+      "sha256": "847bbe0fd67a091d1203112629eaabe11bb9663ca2738dddfbc35c1de1dd9212"
+    },
+    {
+      "source": "round3-control/build_round3_evidence.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-control/build_round3_evidence.py",
+      "bytes": 12086,
+      "sha256": "904fd51ef3d673e0cc1906f44976ba6021b787399a32e6986ee66ab4224460be"
+    },
+    {
+      "source": "round3-control/verify_round3_archive.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-control/verify_round3_archive.py",
+      "bytes": 11412,
+      "sha256": "18f5d4ee31aa452b2cb72a45c2e5443b89b8453de9bfb399f4e0061a21dd6085"
+    },
+    {
+      "source": "round3-control/plot_fresh.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-control/plot_fresh.py",
+      "bytes": 5455,
+      "sha256": "5a952ae47e2dcd309a4bf6584bde44d1959041ff292122a48a485df4caa0050e"
+    },
+    {
+      "source": "round3-benchmark/scoring-view/canonicalize_view.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-benchmark/scoring-view/canonicalize_view.py",
+      "bytes": 12667,
+      "sha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/outcome_adapter.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-benchmark/outcome-tools/outcome_adapter.py",
+      "bytes": 45864,
+      "sha256": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/prepare_request.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-benchmark/outcome-tools/prepare_request.py",
+      "bytes": 2137,
+      "sha256": "42c9e5d6fb235354a71a66a417efe459e9ec2ba325098aaf66fe39f247e74944"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/README.md",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-benchmark/outcome-tools/README.md",
+      "bytes": 11263,
+      "sha256": "ab644aca61a6fc5b8923792a7754d5a7feaf5420a2b35caa1284279832c1e4e0"
+    },
+    {
+      "source": "round3-benchmark/outcome-tools/test_outcome_adapter.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-benchmark/outcome-tools/test_outcome_adapter.py",
+      "bytes": 14004,
+      "sha256": "300560ecfdb3cdcec1c74067867b0dc571b3e3744f65e515a2f9f440154f02df"
+    },
+    {
+      "source": "round3-ranking/calibration-tools/calibrate.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-ranking/calibration-tools/calibrate.py",
+      "bytes": 24128,
+      "sha256": "8f7dbbd3ff1582481b0d97e56cdf13abb1a5117e7af2a240e6341ec5c3d71a1f"
+    },
+    {
+      "source": "round3-ranking/calibration-tools/generate_grid.mjs",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-ranking/calibration-tools/generate_grid.mjs",
+      "bytes": 4001,
+      "sha256": "86f6984df1f2df564551bfd9b340548ab4661edc4627bd3f4d5ac1195ba82905"
+    },
+    {
+      "source": "round3-ranking/calibration-tools/synthetic_fixture.mjs",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-ranking/calibration-tools/synthetic_fixture.mjs",
+      "bytes": 3031,
+      "sha256": "85da8610a6c9918a8936b8dd5407e66b4aec4a099368653907a982e98096a9a3"
+    },
+    {
+      "source": "round3-ranking/calibration-tools/test_calibrate.py",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-ranking/calibration-tools/test_calibrate.py",
+      "bytes": 16300,
+      "sha256": "2e7768a4c08ab895f43c0012c3e5ad92c406072321406844b179f2f5946dea43"
+    },
+    {
+      "source": "round3-ranking/calibration-tools/README.md",
+      "publicationPath": "validation/source-first-ranking-v3/replay-tools/round3-ranking/calibration-tools/README.md",
+      "bytes": 11668,
+      "sha256": "3f8ecbed48b2ceeee8e6b3e655517a426358158f072cbf68c5839cd8491e2ab4"
+    },
+    {
+      "source": "round3-archive-receipt.json",
+      "publicationPath": "validation/source-first-ranking-v3/evidence/round3-archive-receipt.json",
+      "bytes": 821,
+      "sha256": "102721e5cbd47e9e09a02c35197a2c2fecba0ecb83f5921d8200ced9100c5659"
+    },
+    {
+      "source": "round3-archive-verification.json",
+      "publicationPath": "validation/source-first-ranking-v3/evidence/round3-archive-verification.json",
+      "bytes": 3806,
+      "sha256": "70a45b928fa08b50b8a1282552630fddf7824707bcb59f7f032997cb031cb596"
+    }
+  ],
+  "derivedSources": [
+    {
+      "source": "round3-ranking/fresh-pair-calibration/analysis.json",
+      "sha256": "fc286375e6b9ff12cc75552055d4049d31039c3eebc8f1056e35cc80b599fc89",
+      "publicationPath": "validation/source-first-ranking-v3/results/calibration/selection-summary.json",
+      "operation": "Remove only evaluations field; preserve other fields as JSON"
+    }
+  ]
+}

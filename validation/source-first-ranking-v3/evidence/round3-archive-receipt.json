@@ -1,0 +1,21 @@
+{
+  "schema": "confovhh-round3-archive-receipt-v1",
+  "path": "confovhh-source-first-ranking-v3.zip",
+  "bytes": 2807145844,
+  "sha256": "707e21e7668e8f0e2fced4c594c508a61f0e6d950e2cbcd52988a815ec0999f0",
+  "payloadFileCount": 22247,
+  "baseArchiveSha256": "03abee56b5921ba209b8a8c9df4ccd5b35d4f2526abb6fdfc8696b3bbe7d759e",
+  "builderSha256": "904fd51ef3d673e0cc1906f44976ba6021b787399a32e6986ee66ab4224460be",
+  "reportReceipts": [
+    {
+      "path": "round3-ranking/fresh-evaluation-development/receipt.json",
+      "bytes": 2772,
+      "sha256": "5fd63502b3d1018fe3a62bd0d01bc759d8f7a6368e8bd4718fe5240c16801a0c"
+    },
+    {
+      "path": "round3-ranking/fresh-evaluation-prospective/receipt.json",
+      "bytes": 3088,
+      "sha256": "82e09c81b9262f6c76ac67620a3f7ac53ae778c7d8ba412d5ff205d3c3db6f18"
+    }
+  ]
+}

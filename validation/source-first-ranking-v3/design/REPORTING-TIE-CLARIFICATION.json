@@ -1,0 +1,11 @@
+{
+  "schema": "confovhh-round3-reporting-tie-clarification-v1",
+  "preparedBeforeFreshOutcomeEvaluation": true,
+  "acceptableChoiceChange": "For every set, subtract source-only acceptable-first-choice probability from the policy's probability, using the already frozen uniform scientific-tie convention",
+  "acceptableChoiceProbabilityDecrease": "max(sourceProbability - policyProbability, 0)",
+  "acceptableChoiceProbabilityIncrease": "max(policyProbability - sourceProbability, 0)",
+  "interpretation": "These are marginal probability changes, not joint probabilities of a paired random draw. No coupling of different policy ties is assumed and probabilities are never multiplied independently to invent losses or rescues",
+  "setCounts": "Report counts of sets with a decrease/increase. Untied 1-to-0 or 0-to-1 changes may additionally be described as regressed/rescued cases",
+  "missingOutcomes": "Any required unavailable probability leaves the comparison undefined; do not substitute zero",
+  "purpose": "Clarify reporting vocabulary without changing the ranking, calibration or evaluation rules"
+}

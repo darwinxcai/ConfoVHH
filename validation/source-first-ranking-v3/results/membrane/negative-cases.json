@@ -1,0 +1,251 @@
+{
+  "substantiveThresholdForPresentationOnly": 1e-12,
+  "substantiveNegativeComparisons": [
+    {
+      "setId": "junker-6KNM-boltz",
+      "arm": "G-PPM3",
+      "baseline": "producer-score",
+      "lowerMetrics": [
+        "spearman",
+        "top1MeanDockQ",
+        "top5MeanDockQ",
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.23518456202667135,
+        "top1MeanDockQ": -0.04311391397600228,
+        "top5MeanDockQ": -0.006280453531930297,
+        "top10MeanDockQ": -0.006367753902067341
+      }
+    },
+    {
+      "setId": "junker-6KNM-boltz",
+      "arm": "G-PPM3",
+      "baseline": "frozen-v06",
+      "lowerMetrics": [
+        "spearman",
+        "top1MeanDockQ",
+        "top5MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.11840184894143724,
+        "top1MeanDockQ": -0.019266055858574216,
+        "top5MeanDockQ": -0.015257528968893652
+      }
+    },
+    {
+      "setId": "junker-6KNM-boltz",
+      "arm": "G-PPM3",
+      "baseline": "overlap-burial-v1",
+      "lowerMetrics": [
+        "spearman",
+        "top1MeanDockQ",
+        "top5MeanDockQ",
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.21991445398345405,
+        "top1MeanDockQ": -0.019266055858574216,
+        "top5MeanDockQ": -0.015257528968893652,
+        "top10MeanDockQ": -0.007552832979042523
+      }
+    },
+    {
+      "setId": "junker-6KNM-boltz",
+      "arm": "G-PPM3",
+      "baseline": "hybrid-SG",
+      "lowerMetrics": [
+        "spearman",
+        "top1MeanDockQ",
+        "top5MeanDockQ",
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.20053040131910133,
+        "top1MeanDockQ": -0.05506591000483385,
+        "top5MeanDockQ": -0.02554378730619833,
+        "top10MeanDockQ": -0.00384492521555857
+      }
+    },
+    {
+      "setId": "junker-6KNM-boltz",
+      "arm": "H-PPM3",
+      "baseline": "producer-score",
+      "lowerMetrics": [
+        "spearman",
+        "top1MeanDockQ",
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.08816478167181449,
+        "top1MeanDockQ": -0.03338340785436067,
+        "top10MeanDockQ": -0.002132123129448882
+      }
+    },
+    {
+      "setId": "junker-6KNM-boltz",
+      "arm": "H-PPM3",
+      "baseline": "frozen-v06",
+      "lowerMetrics": [
+        "top1MeanDockQ",
+        "top5MeanDockQ"
+      ],
+      "deltas": {
+        "top1MeanDockQ": -0.009535549736932603,
+        "top5MeanDockQ": -0.0073771352849765215
+      }
+    },
+    {
+      "setId": "junker-6KNM-boltz",
+      "arm": "H-PPM3",
+      "baseline": "overlap-burial-v1",
+      "lowerMetrics": [
+        "spearman",
+        "top1MeanDockQ",
+        "top5MeanDockQ",
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.07289467362859721,
+        "top1MeanDockQ": -0.009535549736932603,
+        "top5MeanDockQ": -0.0073771352849765215,
+        "top10MeanDockQ": -0.0033172022064240636
+      }
+    },
+    {
+      "setId": "junker-6KNM-boltz",
+      "arm": "H-PPM3",
+      "baseline": "hybrid-SG",
+      "lowerMetrics": [
+        "spearman",
+        "top1MeanDockQ",
+        "top5MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.05351062096424447,
+        "top1MeanDockQ": -0.04533540388319224,
+        "top5MeanDockQ": -0.017663393622281198
+      }
+    },
+    {
+      "setId": "junker-8QOT-boltz",
+      "arm": "G-PPM3",
+      "baseline": "producer-score",
+      "lowerMetrics": [
+        "spearman",
+        "auroc023",
+        "top1MeanDockQ",
+        "top5MeanDockQ",
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.6224086272560234,
+        "auroc023": -0.37499999999999994,
+        "top1MeanDockQ": -0.12444769762731289,
+        "top5MeanDockQ": -0.04869376266114023,
+        "top10MeanDockQ": -0.03938813453581924
+      }
+    },
+    {
+      "setId": "junker-8QOT-boltz",
+      "arm": "G-PPM3",
+      "baseline": "frozen-v06",
+      "lowerMetrics": [
+        "spearman"
+      ],
+      "deltas": {
+        "spearman": -0.013717150665387201
+      }
+    },
+    {
+      "setId": "junker-8QOT-boltz",
+      "arm": "G-PPM3",
+      "baseline": "hybrid-SG",
+      "lowerMetrics": [
+        "spearman",
+        "auroc023",
+        "top1MeanDockQ",
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.3094849853067377,
+        "auroc023": -0.14062499999999994,
+        "top1MeanDockQ": -0.008157714816090511,
+        "top10MeanDockQ": -0.027536859542232506
+      }
+    },
+    {
+      "setId": "junker-8QOT-boltz",
+      "arm": "H-PPM3",
+      "baseline": "producer-score",
+      "lowerMetrics": [
+        "spearman",
+        "auroc023",
+        "top1MeanDockQ",
+        "top5MeanDockQ",
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "spearman": -0.14997694597693279,
+        "auroc023": -0.04166666666666663,
+        "top1MeanDockQ": -0.11628998281122238,
+        "top5MeanDockQ": -0.04692732023672652,
+        "top10MeanDockQ": -0.015310687615013974
+      }
+    },
+    {
+      "setId": "junker-8QOT-boltz",
+      "arm": "H-PPM3",
+      "baseline": "hybrid-SG",
+      "lowerMetrics": [
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "top10MeanDockQ": -0.003459412621427238
+      }
+    },
+    {
+      "setId": "junker-8TH3-boltz",
+      "arm": "G-PPM3",
+      "baseline": "producer-score",
+      "lowerMetrics": [
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "top10MeanDockQ": -0.0006218764259751097
+      }
+    },
+    {
+      "setId": "junker-8TH3-boltz",
+      "arm": "G-PPM3",
+      "baseline": "hybrid-SG",
+      "lowerMetrics": [
+        "top5MeanDockQ",
+        "top10MeanDockQ"
+      ],
+      "deltas": {
+        "top5MeanDockQ": -0.0014230004870467994,
+        "top10MeanDockQ": -0.0006235617945712368
+      }
+    }
+  ],
+  "numericalRoundoffDiagnostics": [
+    {
+      "setId": "junker-8TH3-boltz",
+      "arm": "G-PPM3",
+      "baseline": "hybrid-SG",
+      "roundoffMetrics": {
+        "top10CorrectCount": -1.7763568394002505e-15
+      }
+    },
+    {
+      "setId": "junker-8TH3-boltz",
+      "arm": "H-PPM3",
+      "baseline": "hybrid-SG",
+      "roundoffMetrics": {
+        "top10CorrectCount": -1.7763568394002505e-15
+      }
+    }
+  ],
+  "metricAndRankValuesChanged": false
+}

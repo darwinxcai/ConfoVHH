@@ -1,0 +1,51 @@
+{
+  "schema": "confovhh-round3-parent-calibration-freeze-v1",
+  "frozenAtUtc": "2026-09-25T00:58:45.763516+00:00",
+  "status": "FROZEN_ZERO",
+  "maximumPreferredScoreGap": 0,
+  "allCalibrationOutputHashesVerified": true,
+  "prospectiveOutcomeInputsOpened": false,
+  "files": [
+    {
+      "path": "round3-ranking/final-calibration-input.json",
+      "bytes": 1173,
+      "sha256": "b6e3e8be481d98cfa9434a00ec2c8ced615360bc0f9153940fa29068a0ccf8d5"
+    },
+    {
+      "path": "round3-ranking/fresh-pair-calibration/receipt.json",
+      "bytes": 746,
+      "sha256": "a037088fbc5df229947a26b38db66bac5a8a9318d91ef98015e417bea3e02285"
+    },
+    {
+      "path": "round3-ranking/fresh-pair-calibration/calibration.json",
+      "bytes": 640,
+      "sha256": "a7608918df14f2174ca10598e41bf7cb65ac8fd5c08d7c7d611719ef2df9199d"
+    },
+    {
+      "path": "round3-ranking/fresh-pair-calibration/analysis-receipt.json",
+      "bytes": 3071,
+      "sha256": "86c72bb08064231418251e349fb61f38fe1e5428c1b6644d970f242766434a7e"
+    },
+    {
+      "path": "round3-ranking/fresh-outcomes-development/receipt.json",
+      "bytes": 23581,
+      "sha256": "56234e8ac1f10f09e8e8ed54f39079e8eca77d166260870d89c407e69487ca79"
+    },
+    {
+      "path": "round3-ranking/fresh-evaluation-development/receipt.json",
+      "bytes": 2772,
+      "sha256": "5fd63502b3d1018fe3a62bd0d01bc759d8f7a6368e8bd4718fe5240c16801a0c"
+    },
+    {
+      "path": "round3-control/PRE-OUTCOME-METHOD-FREEZE.json",
+      "bytes": 1300,
+      "sha256": "ca9b0d1464a7dfd1c2630ce33fa85b3a76920dfc77ae837b80c57524a75aab15"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/IMPLEMENTATION-FREEZE.json",
+      "bytes": 4308,
+      "sha256": "cbd4b77ee319c547bae3900188c459fe36670886190b15c11c536d8a44367ab6"
+    }
+  ],
+  "policy": "Use frozen gap0 only for exact pinned pair-context provenance. Dimer and helix contexts retain exact-source-tie fallback. Do not retune after prospective outcomes."
+}

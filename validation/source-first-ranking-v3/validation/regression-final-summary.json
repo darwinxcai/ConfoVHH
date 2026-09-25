@@ -1,0 +1,546 @@
+{
+  "schema": "confovhh-final-historical-v3-regression-v1",
+  "completedAtUtc": "2026-09-25T00:49:52.254511+00:00",
+  "implementationFreeze": {
+    "path": "round3-ranking/CONTACT-PREPARATION-IMPLEMENTATION-FREEZE.json",
+    "bytes": 7440,
+    "sha256": "e7e8bb1e6a67e3079a04391970082047101e73e396eab43367ba930ffedf50bf"
+  },
+  "runner": {
+    "path": "round3-ranking/replay_final_historical.py",
+    "bytes": 14187,
+    "sha256": "ffc2bbbb101964a1944648e179ee218526168797839fae9e772aa0c7857dabe7"
+  },
+  "plannedPoses": 995,
+  "selectionSets": 15,
+  "biologicalGroups": 5,
+  "calibrationApplied": false,
+  "historicalOutcomeReuseOnly": true,
+  "freshDevelopmentOrProspectiveOutcomeInputs": [],
+  "predictionReplays": [
+    {
+      "cohort": "original",
+      "plannedCount": 395,
+      "unchangedHistoricalInput": {
+        "path": "round3-ranking/regression-input-original.json",
+        "bytes": 1348,
+        "sha256": "157153cae408380cce55611df30439e8715f04a36b1612c633d17c0031d89d68"
+      },
+      "oldReceipt": {
+        "path": "round3-ranking/regression-original/receipt.json",
+        "bytes": 3746,
+        "sha256": "410578dbc8dbabe330bcee39dd314e15b3e9fdcef4abe0a09e1cf74a6b6e6255"
+      },
+      "finalReceipt": {
+        "path": "round3-ranking/regression-final-original/receipt.json",
+        "bytes": 4911,
+        "sha256": "7996638404cda4cac6a1a44d29b0d2a50e127c63548c96b8d857bd87b2119504"
+      },
+      "sourceScoreReceiptSha256": "63416f4f05073e96fc9f8b620ef5b9f768caf288b28b513b6bbf085b3148d07a",
+      "sourceManifestSha256": "c7cffbc6bae3c7a42d6591adb97df8a0a957de16d9b39c33b1d9efc2ee25a577",
+      "sourceRanksSha256": "f74be49c8233bb6a2d06b25279a787ee99e5ea7a6182a705c01418c7692b7804",
+      "finalFeaturesSha256": "b66c49e28451a4169664bcd3cdf50fa8ff8a4084fa89b00916575164221326f3",
+      "finalRanksSha256": "05460cbb2c9c1b9851eb916e1611ebd72fbc39d9a393eb5fb3be54f36733b9d0",
+      "finalBlocksSha256": "1e49eb8e7bccd745637f54d86aeffacf213ea37dd6ecd838ed01f6fb3cdab8d6",
+      "allScientificRanksKeysTiesSelectedIdsUnchanged": true,
+      "wholeRanksJsonUnchanged": true,
+      "wholeBlocksJsonUnchanged": true,
+      "existingFeatureFieldsUnchanged": true,
+      "scientificDifferences": [],
+      "featureDifferenceIds": [],
+      "savedReplay": {
+        "path": "round3-ranking/regression-final-replay-original.json",
+        "bytes": 295,
+        "sha256": "8856cc63bc8e0d3abfc44ccf5be196f00c1d5f1ef0fdd6caab4f9ab51c6bd9f5"
+      }
+    },
+    {
+      "cohort": "af2ig",
+      "plannedCount": 200,
+      "unchangedHistoricalInput": {
+        "path": "round3-ranking/regression-input-af2ig.json",
+        "bytes": 1169,
+        "sha256": "9f0b311d5b22c5cd472d495f156651f7d7fb4b5122bf467663de14cedd15beec"
+      },
+      "oldReceipt": {
+        "path": "round3-ranking/regression-af2ig/receipt.json",
+        "bytes": 3751,
+        "sha256": "7fecbe6cf46d8909cbaefa3df72f8d7e1567af9b5d11bf6b6700d82957f10e10"
+      },
+      "finalReceipt": {
+        "path": "round3-ranking/regression-final-af2ig/receipt.json",
+        "bytes": 4916,
+        "sha256": "4f97c2034b8195eef46f0e2cdaaee1eb2a65e6e322d8185795e78db06f3382b4"
+      },
+      "sourceScoreReceiptSha256": "2f242e0aa2e7e7df4040cb5b3012b8625c5760e5aa1de816f5c6d1da5b525fb9",
+      "sourceManifestSha256": "1419d5bb390d2236a31486eacd0248f0ebc98f94b43e4760ec096b8603c34bc6",
+      "sourceRanksSha256": "ae1d196513baf3e9e11d3762e2f71df6096710ec81ab7ee5e6dad1bb91707cf8",
+      "finalFeaturesSha256": "78815b4fe4c7d11d9c44e9584fbd1c8a5573aeb4cf79f33753a96bfe5a034682",
+      "finalRanksSha256": "b8beff8efbf492dda12623297839de7f702173bc4b46f1ce7438b3bd55e473d9",
+      "finalBlocksSha256": "deb5030ec2685cb4c1f260f9d25dda4ff60946d193584dfa6fa3fc8ac43ca544",
+      "allScientificRanksKeysTiesSelectedIdsUnchanged": true,
+      "wholeRanksJsonUnchanged": true,
+      "wholeBlocksJsonUnchanged": true,
+      "existingFeatureFieldsUnchanged": true,
+      "scientificDifferences": [],
+      "featureDifferenceIds": [],
+      "savedReplay": {
+        "path": "round3-ranking/regression-final-replay-af2ig.json",
+        "bytes": 295,
+        "sha256": "247c4894e39cb58c50fc4c1a451160857773252891109ac0d69bfcc5e445a352"
+      }
+    },
+    {
+      "cohort": "rf3",
+      "plannedCount": 200,
+      "unchangedHistoricalInput": {
+        "path": "round3-ranking/regression-input-rf3.json",
+        "bytes": 1155,
+        "sha256": "a1f75444b8ba165af0f97bcbc694adc979141cd1400438000b17ddcdd34a6c2e"
+      },
+      "oldReceipt": {
+        "path": "round3-ranking/regression-rf3/receipt.json",
+        "bytes": 3749,
+        "sha256": "846633b4d4fb8fe4310ee040729038607a4dd47bb26db886334c80d977a86cd2"
+      },
+      "finalReceipt": {
+        "path": "round3-ranking/regression-final-rf3/receipt.json",
+        "bytes": 4914,
+        "sha256": "2546376ac0945d081c4573dcc9312310061d9dfda97b82ead7ca53bfa4678012"
+      },
+      "sourceScoreReceiptSha256": "7faf07c57fdef8751244170ae0221a4be917b70faa2bb5f25cd66236e4d60cb8",
+      "sourceManifestSha256": "47c3da572f2f58b4370e26d2bd4faac7d92d23f43d3f24bda67a21678e35d4a4",
+      "sourceRanksSha256": "475f96d3f2a96484d8f62d3d2e74a2d1dfdfce535c26ca37d1b31e3767c22e6e",
+      "finalFeaturesSha256": "8b7f0370098400a8a2395dffb0f5344947f54a33154d5dade399ea9b9e3f3fe5",
+      "finalRanksSha256": "c9023aae69085eb72c47e8427835b250c12c16ca9c347ec79697fdec6253a0bc",
+      "finalBlocksSha256": "b05f5b4ab842f8deb6aae03142b86aaa86bb9d80972daf82c4a2401527567d9d",
+      "allScientificRanksKeysTiesSelectedIdsUnchanged": true,
+      "wholeRanksJsonUnchanged": true,
+      "wholeBlocksJsonUnchanged": true,
+      "existingFeatureFieldsUnchanged": true,
+      "scientificDifferences": [],
+      "featureDifferenceIds": [],
+      "savedReplay": {
+        "path": "round3-ranking/regression-final-replay-rf3.json",
+        "bytes": 295,
+        "sha256": "cd8793946961cca31bf37003a801d177ef8f347865390124f7c948a34e657b88"
+      }
+    },
+    {
+      "cohort": "boltz",
+      "plannedCount": 200,
+      "unchangedHistoricalInput": {
+        "path": "round3-ranking/regression-input-boltz.json",
+        "bytes": 1169,
+        "sha256": "a9529e2853f2fd91ba7fb46e6db3530595b20555c58b0137ddbc8f74e49e22f5"
+      },
+      "oldReceipt": {
+        "path": "round3-ranking/regression-boltz/receipt.json",
+        "bytes": 3751,
+        "sha256": "3f5b653234904f2610d22f5263a7b38bf6f873e1d8d93c54ee1227314c211f7d"
+      },
+      "finalReceipt": {
+        "path": "round3-ranking/regression-final-boltz/receipt.json",
+        "bytes": 4916,
+        "sha256": "d2491ff2390b06f1d12b2c794dd1a99f4499d810ff08b4bcfdffd76661251740"
+      },
+      "sourceScoreReceiptSha256": "311a20a985ee2701e504aefa1745d69ce1b15e9bd0bf442625d61361c31a14e6",
+      "sourceManifestSha256": "8a60e3fdb781fc66d7145d2ef0e88b9a1a39a2b9fb3603d4f061b1a4b540cb8d",
+      "sourceRanksSha256": "67e967d3569afff524c22818d8bef9fa56cedd197e998ff592d369f747edfcfc",
+      "finalFeaturesSha256": "18049a206384c6a86d7c4c8cd98c5e64a98de6d62188b1d01f56868781943fab",
+      "finalRanksSha256": "54d176913ff30b89e2449e90f40a695ed5748b7cf269d1065aa6a4679034ab34",
+      "finalBlocksSha256": "056c40dfc019b95bb0c956cca7a6f032cd63af959c2a25238c65bb8d853e624b",
+      "allScientificRanksKeysTiesSelectedIdsUnchanged": true,
+      "wholeRanksJsonUnchanged": true,
+      "wholeBlocksJsonUnchanged": true,
+      "existingFeatureFieldsUnchanged": true,
+      "scientificDifferences": [],
+      "featureDifferenceIds": [],
+      "savedReplay": {
+        "path": "round3-ranking/regression-final-replay-boltz.json",
+        "bytes": 295,
+        "sha256": "cd0aecfb8fb229e8d04db4db4b1e09b1b3315e93cfacae2f498e0c6406c13597"
+      }
+    }
+  ],
+  "historicalOutcomeAuthentication": [
+    {
+      "cohort": "original",
+      "boundHistoricalOutcomeReceipt": {
+        "path": "outcomes/receipt.json",
+        "bytes": 1603,
+        "sha256": "774df7043c38f84e041df99041d317661de0525fc8b9d0d5be17be18c4759a41"
+      },
+      "outcomesSha256": "765fcdcbf80d48808d19242b415d2a8c9259e5e91bdb703af80f44a6de9ba107",
+      "completeOutcomes": 395,
+      "oldEvaluation": {
+        "path": "round3-ranking/regression-evaluation-original.json",
+        "bytes": 266919,
+        "sha256": "845f45c14b63f6606d5c9fa0d1c2c55cef56e157cefd99fd557a94465b9a0c59"
+      },
+      "newEvaluation": {
+        "path": "round3-ranking/regression-final-evaluation-original.json",
+        "bytes": 267116,
+        "sha256": "87c7a3eac5a56eac90a3b3ed1ba5d88303c311dcb90630668090b1bac0f228de"
+      },
+      "identicalToPriorV3Evaluation": true
+    },
+    {
+      "cohort": "af2ig",
+      "boundHistoricalOutcomeReceipt": {
+        "path": "expansion-v2/outcomes-af2ig/receipt.json",
+        "bytes": 1627,
+        "sha256": "1df44bc2ab2f43fc12d8911464b4d0b9322546120fcd51393d2d76a5ef65c5f2"
+      },
+      "outcomesSha256": "6a08a09f449addc1c73288bcc7de902ec485c1cca979ef77addea8d85404c99a",
+      "completeOutcomes": 200,
+      "oldEvaluation": {
+        "path": "round3-ranking/regression-evaluation-af2ig.json",
+        "bytes": 200592,
+        "sha256": "b7571664dc64db36c13b06e87a2bcbd25228be4831d38b6935a442fd1240b7d5"
+      },
+      "newEvaluation": {
+        "path": "round3-ranking/regression-final-evaluation-af2ig.json",
+        "bytes": 200789,
+        "sha256": "3104900675279f5b45cea4a78a6fd816aabad7d005255479580e0a349cfde2b6"
+      },
+      "identicalToPriorV3Evaluation": true
+    },
+    {
+      "cohort": "rf3",
+      "boundHistoricalOutcomeReceipt": {
+        "path": "expansion-v2/outcomes-rf3/receipt.json",
+        "bytes": 1615,
+        "sha256": "bda809fb061c1d69379b677802d411e52f0eefc4fd57667b0001486e22465438"
+      },
+      "outcomesSha256": "299f1db9fb9a924830d678de354dbf0a50d4f586f223f37827baee00fa1eedef",
+      "completeOutcomes": 200,
+      "oldEvaluation": {
+        "path": "round3-ranking/regression-evaluation-rf3.json",
+        "bytes": 195216,
+        "sha256": "3d517d988ffc95c40c523e181e2faf8e8b284cf0e366e29db27b7cecfd478b3c"
+      },
+      "newEvaluation": {
+        "path": "round3-ranking/regression-final-evaluation-rf3.json",
+        "bytes": 195413,
+        "sha256": "041a882cc7996d4d4c8e03dc093ad28e9e46e6821cbe06f02cfef621cc1a9b70"
+      },
+      "identicalToPriorV3Evaluation": true
+    },
+    {
+      "cohort": "boltz",
+      "boundHistoricalOutcomeReceipt": {
+        "path": "expansion-v2/outcomes-boltz/receipt.json",
+        "bytes": 1626,
+        "sha256": "99b90a55262caa47eea5d9ed2509853a4a2ed5937f980b6a0adea28f9109dbe2"
+      },
+      "outcomesSha256": "6440f8277480c73612f3d994c7318d0f030350ec56824691943b303d36cd1f95",
+      "completeOutcomes": 200,
+      "oldEvaluation": {
+        "path": "round3-ranking/regression-evaluation-boltz.json",
+        "bytes": 200646,
+        "sha256": "b90d0f98d472aa852926db0043dcc54fc510c4b983e98248e9e5567743fea2ab"
+      },
+      "newEvaluation": {
+        "path": "round3-ranking/regression-final-evaluation-boltz.json",
+        "bytes": 200843,
+        "sha256": "96c5fd49b18eb54ead222ab6840e8e1a4d5a7cea1a788172ddf8c128e96c8aaf"
+      },
+      "identicalToPriorV3Evaluation": true
+    }
+  ],
+  "arms": [
+    {
+      "arm": "source-only",
+      "plannedSets": 15,
+      "availableSets": 15,
+      "acceptableFirstChoiceExpectedCount": 9.0,
+      "acceptableFirstChoiceExpectedRate": 0.6,
+      "changedFirstChoiceFromSourceSets": [],
+      "lostAcceptableSourceChoiceSets": []
+    },
+    {
+      "arm": "source-validity",
+      "plannedSets": 15,
+      "availableSets": 15,
+      "acceptableFirstChoiceExpectedCount": 9.0,
+      "acceptableFirstChoiceExpectedRate": 0.6,
+      "changedFirstChoiceFromSourceSets": [],
+      "lostAcceptableSourceChoiceSets": []
+    },
+    {
+      "arm": "source-validity-cdr-exact",
+      "plannedSets": 15,
+      "availableSets": 15,
+      "acceptableFirstChoiceExpectedCount": 9.0,
+      "acceptableFirstChoiceExpectedRate": 0.6,
+      "changedFirstChoiceFromSourceSets": [],
+      "lostAcceptableSourceChoiceSets": []
+    }
+  ],
+  "groupMetrics": [
+    {
+      "arm": "source-only",
+      "groups": [
+        {
+          "group": "ADRB2-Nb80",
+          "sets": [
+            "lightdock_original_3p0g",
+            "lightdock_refined_3p0g"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.25829225653052545,
+            "firstChoiceAcceptableProbability": 1.0
+          },
+          "selectionAvailableSets": 2,
+          "plannedSets": 2
+        },
+        {
+          "group": "AGTR1-AT118",
+          "sets": [
+            "junker-8TH3-af2ig",
+            "junker-8TH3-boltz",
+            "junker-8TH3-rf3",
+            "junker-8TH4-af2ig",
+            "junker-8TH4-boltz",
+            "junker-8TH4-rf3"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.34612667737804664,
+            "firstChoiceAcceptableProbability": 0.5
+          },
+          "selectionAvailableSets": 6,
+          "plannedSets": 6
+        },
+        {
+          "group": "APLNR-JN241",
+          "sets": [
+            "junker-6KNM-af2ig",
+            "junker-6KNM-boltz",
+            "junker-6KNM-rf3"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.30120036566603725,
+            "firstChoiceAcceptableProbability": 0.3333333333333333
+          },
+          "selectionAvailableSets": 3,
+          "plannedSets": 3
+        },
+        {
+          "group": "OPRM1-NbE",
+          "sets": [
+            "junker-8QOT-af2ig",
+            "junker-8QOT-boltz",
+            "junker-8QOT-rf3"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.32048282602739697,
+            "firstChoiceAcceptableProbability": 0.6666666666666666
+          },
+          "selectionAvailableSets": 3,
+          "plannedSets": 3
+        },
+        {
+          "group": "SUCNR1-Nb6",
+          "sets": [
+            "champloo_6ibb"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.8260701440501159,
+            "firstChoiceAcceptableProbability": 1.0
+          },
+          "selectionAvailableSets": 1,
+          "plannedSets": 1
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.41043445393042444,
+        "firstChoiceAcceptableProbability": 0.7
+      },
+      "policy": "No missing or abstaining set/group is removed from a macro mean"
+    },
+    {
+      "arm": "source-validity",
+      "groups": [
+        {
+          "group": "ADRB2-Nb80",
+          "sets": [
+            "lightdock_original_3p0g",
+            "lightdock_refined_3p0g"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.25829225653052545,
+            "firstChoiceAcceptableProbability": 1.0
+          },
+          "selectionAvailableSets": 2,
+          "plannedSets": 2
+        },
+        {
+          "group": "AGTR1-AT118",
+          "sets": [
+            "junker-8TH3-af2ig",
+            "junker-8TH3-boltz",
+            "junker-8TH3-rf3",
+            "junker-8TH4-af2ig",
+            "junker-8TH4-boltz",
+            "junker-8TH4-rf3"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.34612667737804664,
+            "firstChoiceAcceptableProbability": 0.5
+          },
+          "selectionAvailableSets": 6,
+          "plannedSets": 6
+        },
+        {
+          "group": "APLNR-JN241",
+          "sets": [
+            "junker-6KNM-af2ig",
+            "junker-6KNM-boltz",
+            "junker-6KNM-rf3"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.30120036566603725,
+            "firstChoiceAcceptableProbability": 0.3333333333333333
+          },
+          "selectionAvailableSets": 3,
+          "plannedSets": 3
+        },
+        {
+          "group": "OPRM1-NbE",
+          "sets": [
+            "junker-8QOT-af2ig",
+            "junker-8QOT-boltz",
+            "junker-8QOT-rf3"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.32048282602739697,
+            "firstChoiceAcceptableProbability": 0.6666666666666666
+          },
+          "selectionAvailableSets": 3,
+          "plannedSets": 3
+        },
+        {
+          "group": "SUCNR1-Nb6",
+          "sets": [
+            "champloo_6ibb"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.8260701440501159,
+            "firstChoiceAcceptableProbability": 1.0
+          },
+          "selectionAvailableSets": 1,
+          "plannedSets": 1
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.41043445393042444,
+        "firstChoiceAcceptableProbability": 0.7
+      },
+      "policy": "No missing or abstaining set/group is removed from a macro mean"
+    },
+    {
+      "arm": "source-validity-cdr-exact",
+      "groups": [
+        {
+          "group": "ADRB2-Nb80",
+          "sets": [
+            "lightdock_original_3p0g",
+            "lightdock_refined_3p0g"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.25829225653052545,
+            "firstChoiceAcceptableProbability": 1.0
+          },
+          "selectionAvailableSets": 2,
+          "plannedSets": 2
+        },
+        {
+          "group": "AGTR1-AT118",
+          "sets": [
+            "junker-8TH3-af2ig",
+            "junker-8TH3-boltz",
+            "junker-8TH3-rf3",
+            "junker-8TH4-af2ig",
+            "junker-8TH4-boltz",
+            "junker-8TH4-rf3"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.34612667737804664,
+            "firstChoiceAcceptableProbability": 0.5
+          },
+          "selectionAvailableSets": 6,
+          "plannedSets": 6
+        },
+        {
+          "group": "APLNR-JN241",
+          "sets": [
+            "junker-6KNM-af2ig",
+            "junker-6KNM-boltz",
+            "junker-6KNM-rf3"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.30120036566603725,
+            "firstChoiceAcceptableProbability": 0.3333333333333333
+          },
+          "selectionAvailableSets": 3,
+          "plannedSets": 3
+        },
+        {
+          "group": "OPRM1-NbE",
+          "sets": [
+            "junker-8QOT-af2ig",
+            "junker-8QOT-boltz",
+            "junker-8QOT-rf3"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.32048282602739697,
+            "firstChoiceAcceptableProbability": 0.6666666666666666
+          },
+          "selectionAvailableSets": 3,
+          "plannedSets": 3
+        },
+        {
+          "group": "SUCNR1-Nb6",
+          "sets": [
+            "champloo_6ibb"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.8260701440501159,
+            "firstChoiceAcceptableProbability": 1.0
+          },
+          "selectionAvailableSets": 1,
+          "plannedSets": 1
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.41043445393042444,
+        "firstChoiceAcceptableProbability": 0.7
+      },
+      "policy": "No missing or abstaining set/group is removed from a macro mean"
+    }
+  ],
+  "allNinePreviouslyAcceptableSourceChoicesPreserved": true,
+  "fullyAcceptableSourceFirstChoiceSets": [
+    "champloo_6ibb",
+    "lightdock_original_3p0g",
+    "lightdock_refined_3p0g",
+    "junker-8QOT-rf3",
+    "junker-8TH4-rf3",
+    "junker-6KNM-boltz",
+    "junker-8QOT-boltz",
+    "junker-8TH3-boltz",
+    "junker-8TH4-boltz"
+  ],
+  "setsWithNoAcceptablePoseInEntireHistoricalPool": [
+    "junker-6KNM-af2ig",
+    "junker-8QOT-af2ig",
+    "junker-8TH3-af2ig",
+    "junker-8TH4-af2ig",
+    "junker-6KNM-rf3",
+    "junker-8TH3-rf3"
+  ],
+  "allPriorArtifactsUnchanged": true,
+  "priorArtifactsHashChecked": 68,
+  "interpretation": "Descriptive historical regression check. Preserved source performance is not evidence of new ranking improvement or prospective generalization; no tolerance was fitted here."
+}

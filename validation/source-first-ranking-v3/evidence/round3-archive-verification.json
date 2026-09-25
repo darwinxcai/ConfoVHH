@@ -1,0 +1,59 @@
+{
+  "schema": "confovhh-round3-fresh-archive-verification-v1",
+  "completedUtc": "2026-09-25T02:47:15.386873+00:00",
+  "archiveSha256": "707e21e7668e8f0e2fced4c594c508a61f0e6d950e2cbcd52988a815ec0999f0",
+  "extractedRoot": "/private/var/folders/y4/3xttp5z13nl_wd2k27zw2t040000gn/T/confovhh-round3-verified-9clx2_ze/execution-20260924",
+  "payloadFileCount": 22247,
+  "allArchiveAndExtractedFileHashesVerified": true,
+  "usedOriginalLiveArtifactInputs": false,
+  "originalArtifactReadGuardActive": true,
+  "isolatedPython": true,
+  "cleanInjectionEnvironment": true,
+  "replayCwd": "/private/var/folders/y4/3xttp5z13nl_wd2k27zw2t040000gn/T/confovhh-round3-verified-9clx2_ze/execution-20260924",
+  "runtimeReused": "Explicit installed pinned Python packages and Node only; original task artifact access is rejected by the replay audit hook.",
+  "pythonRuntime": "/Users/darwin/.codex/.chatgpt-projects/g-p-6aa59cb340ec819196061ab30556efcf/execution-20260924/.venv/bin/python",
+  "nodeRuntime": "/Users/darwin/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+  "verifierSha256": "18f5d4ee31aa452b2cb72a45c2e5443b89b8453de9bfb399f4e0061a21dd6085",
+  "reports": [
+    {
+      "role": "development",
+      "planned": 100,
+      "outcomesAvailable": 100,
+      "allReportFilesByteExact": true,
+      "authenticationAndSavedRanksReplayed": true,
+      "files": {
+        "compact-metrics.json": "7a8e4fe66fb7ca9ff8211a19fff2351eda7e24769f96586c06c98bf58503ae8f",
+        "comparisons.csv": "53bb3f7c5c1105f6947b257429648f686999be069e79aa2ff6c02e45ed7e8c83",
+        "comparisons.json": "bceae4a05379b64e9f1fe22ffecd5e2bb2520fdd2f72cc3fe238de28198ad459",
+        "independent-first-choice-checks.json": "16edbaa1a8ab44d533961b18ca6e4e61f204f3777e666ff164ffd3d319baf5a6",
+        "metrics.csv": "4c086641405a99f33aa377f251543c17261536913cc7396d341a15dcd9cd15e8",
+        "metrics.json": "4e09e9efc58da53176e5055d691231315a8252dba9189ca9dd5a344fa22c01d0",
+        "set-quality.csv": "42643585552a613f59cf2af9e47e6e78486080e34baf7dbac58d4f7f9e4b20e9",
+        "set-quality.json": "828f49cd36004627c0e545bc27d54da001f86080dd5f5fbc9b032c58b62aa72d",
+        "strata.json": "dcbb49ef925ec2b840d03439e8d1969b98d0d628df98ce622b778b8c66a796ec",
+        "unchanged-physical-comparator.csv": "ef244b6c66271dd62892cd20688156f116c93f866de96c2f3e910f7fabf981df",
+        "unchanged-physical-comparator.json": "46db0763c39bf892a29ef1623cfebec6d29e2a23a91fc18db0a5d20f54b105fb"
+      }
+    },
+    {
+      "role": "prospective",
+      "planned": 200,
+      "outcomesAvailable": 200,
+      "allReportFilesByteExact": true,
+      "authenticationAndSavedRanksReplayed": true,
+      "files": {
+        "compact-metrics.json": "297ea8b069da5dda6e66d4f22849976bdfada8910bcffc5c1b5173289422452b",
+        "comparisons.csv": "417e2bd0791b9be2442e95a8bd3a650415bb753333668177ae2b3c2a53937244",
+        "comparisons.json": "5b0efe7fa7863b158700f48946992cfff6f16f1cdb800ad81d7f497c18437ca6",
+        "independent-first-choice-checks.json": "848d84d967aeffdfab7de7b3dc0e4149b95271f9ed78b87b8b550e81117617dd",
+        "metrics.csv": "beb3c37e7c8c0519a283e53e959fa66d3fb3285da539e7c9b5acbc24478df736",
+        "metrics.json": "82f94b1e5226de48c3e0c5d9c160d39037b88e3adcf8d457e5afabdce34b0864",
+        "set-quality.csv": "9e6ce9089361f773dc5b48828fd72e8a84dfcae5cfaf770c88764a5305aa0faf",
+        "set-quality.json": "ba1c3fc167b403440846b568852f604abcb798664bfa574838eead3165d85403",
+        "strata.json": "ace3d43ba55c267ea4cdb2ddb8ab4bc7f635391be94d043283fe8a5cab2b4988",
+        "unchanged-physical-comparator.csv": "78faa5964e49cb52f9b1078d395ed54b512ba0efbbfd81cfe58acab1edd13993",
+        "unchanged-physical-comparator.json": "aa6549490729274e7251e76bdcb15f9d03132f267e5a764a8612ddd4734b67aa"
+      }
+    }
+  ]
+}

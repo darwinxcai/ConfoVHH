@@ -1,0 +1,271 @@
+{
+  "status": "FROZEN_ZERO",
+  "calibrationAvailable": true,
+  "finalGap": 0,
+  "fullDevelopmentFit": {
+    "selectedGap": 0,
+    "admissibleFitAvailable": true,
+    "reason": "",
+    "candidates": [
+      {
+        "gap": 0,
+        "groupWeightedFirstChoiceGain": {
+          "value": 0.0,
+          "exact": "0"
+        },
+        "acceptableChoiceLossSets": [],
+        "admissible": true
+      },
+      {
+        "gap": 0.002,
+        "groupWeightedFirstChoiceGain": {
+          "value": -0.0014636045740993883,
+          "exact": "-878162744459633/600000000000000000"
+        },
+        "acceptableChoiceLossSets": [],
+        "admissible": true
+      },
+      {
+        "gap": 0.005,
+        "groupWeightedFirstChoiceGain": {
+          "value": -0.017941355519302173,
+          "exact": "-717654220772087/40000000000000000"
+        },
+        "acceptableChoiceLossSets": [],
+        "admissible": true
+      },
+      {
+        "gap": 0.01,
+        "groupWeightedFirstChoiceGain": {
+          "value": -0.017974827083641527,
+          "exact": "-718993083345661/40000000000000000"
+        },
+        "acceptableChoiceLossSets": [],
+        "admissible": true
+      },
+      {
+        "gap": 0.02,
+        "groupWeightedFirstChoiceGain": {
+          "value": -0.03496647295327765,
+          "exact": "-20979883771966589/600000000000000000"
+        },
+        "acceptableChoiceLossSets": [],
+        "admissible": true
+      }
+    ]
+  },
+  "leaveGroupOut": [
+    {
+      "heldOutGroup": "AGTR1-AT118",
+      "trainingSets": [
+        "dev_6knm",
+        "dev_8qot"
+      ],
+      "heldOutSets": [
+        "dev_8th3",
+        "dev_8th4"
+      ],
+      "fit": {
+        "selectedGap": 0,
+        "admissibleFitAvailable": true,
+        "reason": "",
+        "candidates": [
+          {
+            "gap": 0,
+            "groupWeightedFirstChoiceGain": {
+              "value": 0.0,
+              "exact": "0"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.002,
+            "groupWeightedFirstChoiceGain": {
+              "value": 0.0,
+              "exact": "0"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.005,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.02471662641780418,
+              "exact": "-1235831320890209/50000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.01,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.02471662641780418,
+              "exact": "-1235831320890209/50000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.02,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.02471662641780418,
+              "exact": "-1235831320890209/50000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          }
+        ]
+      },
+      "heldOutGroupFirstChoiceGain": {
+        "value": 0.0,
+        "exact": "0"
+      },
+      "heldOutAcceptableChoiceLossSets": []
+    },
+    {
+      "heldOutGroup": "APLNR-JN241",
+      "trainingSets": [
+        "dev_8qot",
+        "dev_8th3",
+        "dev_8th4"
+      ],
+      "heldOutSets": [
+        "dev_6knm"
+      ],
+      "fit": {
+        "selectedGap": 0,
+        "admissibleFitAvailable": true,
+        "reason": "",
+        "candidates": [
+          {
+            "gap": 0,
+            "groupWeightedFirstChoiceGain": {
+              "value": 0.0,
+              "exact": "0"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.002,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.0021954068611490826,
+              "exact": "-878162744459633/400000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.005,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.012304088270263013,
+              "exact": "-984327061621041/80000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.01,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.012354295616772037,
+              "exact": "-988343649341763/80000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.02,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.03784176442122622,
+              "exact": "-15136705768490489/400000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          }
+        ]
+      },
+      "heldOutGroupFirstChoiceGain": {
+        "value": 0.0,
+        "exact": "0"
+      },
+      "heldOutAcceptableChoiceLossSets": []
+    },
+    {
+      "heldOutGroup": "OPRM1-NbE",
+      "trainingSets": [
+        "dev_6knm",
+        "dev_8th3",
+        "dev_8th4"
+      ],
+      "heldOutSets": [
+        "dev_8qot"
+      ],
+      "fit": {
+        "selectedGap": 0,
+        "admissibleFitAvailable": true,
+        "reason": "",
+        "candidates": [
+          {
+            "gap": 0,
+            "groupWeightedFirstChoiceGain": {
+              "value": 0.0,
+              "exact": "0"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.002,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.0021954068611490826,
+              "exact": "-878162744459633/400000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.005,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.016803351869839334,
+              "exact": "-6721340747935733/400000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.01,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.016853559216348356,
+              "exact": "-6741423686539343/400000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          },
+          {
+            "gap": 0.02,
+            "groupWeightedFirstChoiceGain": {
+              "value": -0.04234102802080254,
+              "exact": "-16936411208321017/400000000000000000"
+            },
+            "acceptableChoiceLossSets": [],
+            "admissible": true
+          }
+        ]
+      },
+      "heldOutGroupFirstChoiceGain": {
+        "value": 0.0,
+        "exact": "0"
+      },
+      "heldOutAcceptableChoiceLossSets": []
+    }
+  ],
+  "leaveGroupOutPooledFirstChoiceGain": {
+    "value": 0.0,
+    "exact": "0"
+  },
+  "heldOutAcceptableChoiceLossSets": [],
+  "nonzeroGatePassed": false,
+  "zeroIsNotASafetyClaim": false,
+  "policy": "Development-selected tolerance, not measured confidence uncertainty; equal weight per biological group and equal sets within group; exact rational objective ties favor smaller gaps"
+}

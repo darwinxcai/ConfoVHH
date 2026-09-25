@@ -1,0 +1,18 @@
+{
+  "schema": "confovhh-source-gap-freeze-v1",
+  "calibrationId": "round3-boltz2-pair-gap",
+  "generatorId": "boltz2-pair",
+  "producerVersion": "2.2.1+b1ebfc46ecf57f5414e0d1a6f9027bbb122c53bc",
+  "scoreContext": "pair-confidence",
+  "scoreName": "confidence_score",
+  "direction": "higher-better",
+  "maximumPreferredScoreGap": 0,
+  "developmentGroupIds": [
+    "AGTR1-AT118",
+    "APLNR-JN241",
+    "OPRM1-NbE"
+  ],
+  "selectionRule": "development-selected-tolerance-not-confidence-uncertainty",
+  "frozenAtUtc": "2026-09-25T00:54:56.915833+00:00",
+  "evidenceSha256": "86c72bb08064231418251e349fb61f38fe1e5428c1b6644d970f242766434a7e"
+}

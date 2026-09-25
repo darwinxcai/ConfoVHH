@@ -1,0 +1,26 @@
+{
+  "schema": "confovhh-round3-reporting-spec-v1",
+  "preparedBeforeFreshOutcomeEvaluation": true,
+  "primaryComparison": "Frozen source-first policies versus source-only, with equal biological-group weighting and equal set weights inside each group",
+  "primaryEndpoint": "first-choice DockQ difference",
+  "practicalEndpoints": [
+    "acceptable-first-choice probability at DockQ >= 0.23",
+    "top-five mean DockQ and acceptable count with uniform boundary ties",
+    "source-correct probability lost and source-incorrect probability rescued",
+    "all planned, produced, input-valid and policy-eligible coverage",
+    "sets with at least one acceptable prediction"
+  ],
+  "fixedStrata": [
+    {"id":"development-calibration", "sets":["dev_6knm","dev_8qot","dev_8th3","dev_8th4"], "groups":3},
+    {"id":"new-outcome-group", "sets":["GRM5_NB43","LGR4_NB21"], "groups":2},
+    {"id":"new-outcome-group-exploratory-low-resolution", "sets":["CASR_NB2D11"], "groups":1},
+    {"id":"related-exposed-family", "sets":["CHRM1_NB1B4"], "groups":1},
+    {"id":"development-exposed", "sets":["ADRA1A_NB29","HCRTR2_SB51","RHO_NB2","FZD3_NB9"], "groups":4}
+  ],
+  "additionalDescriptiveComparator": "Unchanged frozen-v06 physical ranking on identical saved fresh prediction sets; keep it distinct from the primary source-only comparison",
+  "generationFollowup": "Compare new development set acceptable-pose coverage with the old AF2IG sets of the same released constructs, while explicitly retaining the changed predictor/MSA regime and unequal seed counts; do not claim an exact rerun or isolate a causal software bug fix",
+  "missingness": "Never replace unavailable quality by zero or silently remove an abstaining set from a group mean; conditional complete-case comparisons must be explicitly labeled",
+  "inference": "Descriptive exploration; seeds are not independent biological groups; no pose-level significance test and no reliable general improvement claim from two newly outcome-tested groups",
+  "publication": "Experimental scripts and review evidence only; no production default promotion in this round",
+  "plainLanguageSummary": "Report gains, losses, unchanged results, failed attempts, and what can and cannot yet be concluded"
+}

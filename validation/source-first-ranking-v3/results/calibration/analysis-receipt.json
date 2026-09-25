@@ -1,0 +1,49 @@
+{
+  "schema": "confovhh-round3-development-calibration-analysis-receipt-v1",
+  "status": "FROZEN_ZERO",
+  "calibrationAvailable": true,
+  "finalGap": 0,
+  "sourceRankingReceiptSha256": [
+    "6d5e69f16fe3c9f4a649c03ea5a912ab327a71553b38d4ea089c051bf666ca18"
+  ],
+  "producerProvenanceSha256": "c8f24a32e784ae5a5b172158a612ddc1820f6abbdcc1f22204164acf7eaeefff",
+  "executionFreezeSha256": "851e83c562ae163817b2ef07389c3e6664ae7e0432d1a7c6a223d4003cdfb0f5",
+  "predictionContactReplays": [
+    {
+      "schema": "confovhh-saved-contact-replay-v1",
+      "savedReceiptSha256": "6d5e69f16fe3c9f4a649c03ea5a912ab327a71553b38d4ea089c051bf666ca18",
+      "plannedCount": 100,
+      "standaloneReportsVerified": 0,
+      "standaloneReportsRecomputed": 0,
+      "savedRanksAndBlocksExact": true,
+      "outcomeInputs": []
+    }
+  ],
+  "outcomeMapSha256": "6f71bdff58f638a8c8a7f1f77853f31ae1580f3e4865f40e82ef5ed8b14a156a",
+  "analysisReceiptSha256": "df592e9e7957a88c33f125e0c336497eccfaf6a9f1fc44811e890572bceef0cf",
+  "analysisSha256": "fc286375e6b9ff12cc75552055d4049d31039c3eebc8f1056e35cc80b599fc89",
+  "predictionGridReceiptSha256": "c4d322129d6b1684e815a0ab139c99957a3a77e83c51fa6be4bd989b507c6a42",
+  "protocolSha256": "9cf1b2444c67dbaccbe3c8a8c826e980ac4877d790f955d6ab6b9233d03680b5",
+  "generationRunId": "round3-f70235e5c08bcac7",
+  "files": {
+    "prediction-request.json": "02a954c298fa7c8fecb8e4180a36b1ed9a349d4fecfc4300be4845fe470de9c8",
+    "prediction-grid.json": "3297d4cbb76c1e0c24cb714259b9e0b01bcabeb331bd5857cbfa9ae9f5a20e2f",
+    "prediction-grid-receipt.json": "c4d322129d6b1684e815a0ab139c99957a3a77e83c51fa6be4bd989b507c6a42",
+    "analysis.json": "fc286375e6b9ff12cc75552055d4049d31039c3eebc8f1056e35cc80b599fc89"
+  },
+  "implementation": {
+    "round3-ranking/calibration-tools/calibrate.py": "8f7dbbd3ff1582481b0d97e56cdf13abb1a5117e7af2a240e6341ec5c3d71a1f",
+    "round3-ranking/calibration-tools/generate_grid.mjs": "86f6984df1f2df564551bfd9b340548ab4661edc4627bd3f4d5ac1195ba82905",
+    "ConfoVHH/scripts/external-ranking-v3/policy.mjs": "8e35a0672b4283e9b8a0d011c0f1a703f48b5a0b62ac1eecc65760a8caf403bc",
+    "ConfoVHH/scripts/external-ranking-v3/score.mjs": "07e5755f49bb48cfd1b989a5da44c538962af13878dfe5d4e4b97497bb0591c8",
+    "ConfoVHH/scripts/external-ranking-v3/contact-only.mjs": "5bf6cdd8765c3eaced1758ffebf9a8c15fe7199062d2e25f43f1fda52da647c3",
+    "ConfoVHH/scripts/external-ranking-v3/verify-contact-evidence.mjs": "1dd974254308ea2df91405f0a16e7d5c669db7c195f3124472e4791b270da87c",
+    "ConfoVHH/scripts/external-ranking-v3/evaluate.py": "eb3d6960877cfe6041009ec92cf1585cb09f7684ab06676d9e5776ce364a9934"
+  },
+  "startedAtUtc": "2026-09-25T00:54:56.541991+00:00",
+  "frozenAtUtc": "2026-09-25T00:54:56.915833+00:00",
+  "prospectiveOutcomesRead": false,
+  "independentValidationClaim": false,
+  "productionDefaultChanged": false,
+  "authenticationBoundary": "Caller-supplied hash-bound attestation authenticates outcome artifacts; this runner verifies map/receipt/coordinate/seed membership and does not reopen native structures"
+}

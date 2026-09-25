@@ -1,0 +1,59 @@
+{
+  "schema": "confovhh-round3-frozen-report-evaluation-v1",
+  "completedAtUtc": "2026-09-25T02:26:34.590634+00:00",
+  "evaluationRole": "prospective",
+  "outcomeReceipt": {
+    "path": "round3-ranking/fresh-outcomes-prospective/receipt.json",
+    "bytes": 44969,
+    "sha256": "b110e82d83dc702e2bd60e4e123879f91f7919943c7c2a9c24bd24a3ad291c33"
+  },
+  "rankingReceipts": [
+    {
+      "path": "round3-ranking/fresh-v3-prospective/receipt.json",
+      "bytes": 4954,
+      "sha256": "528ff2ef2b5d5a70d8e49aca6603b948b72fc121aceb564969be4cccca11b69c"
+    }
+  ],
+  "reportingSpecificationSha256": "91d89ebb71c1850915618d3b3cdcd2dad34aabd070715f8b9cfd700d38ab86d3",
+  "tieClarificationSha256": "417c80df45da46e54eb037add16674cde832c45d845bc01674caab44737b71a3",
+  "implementation": {
+    "round3-control/evaluate_fresh.py": "847bbe0fd67a091d1203112629eaabe11bb9663ca2738dddfbc35c1de1dd9212",
+    "ConfoVHH/scripts/external-ranking-v3/evaluate.py": "eb3d6960877cfe6041009ec92cf1585cb09f7684ab06676d9e5776ce364a9934",
+    "ConfoVHH/scripts/external-ranking-v2/evaluate_saved.py": "959ac5df31ed1c216b2323684dbacac05ac53d9c3fe3f854cc8888b433e59070",
+    "round3-benchmark/outcome-tools/outcome_adapter.py": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562"
+  },
+  "planned": 200,
+  "sets": 8,
+  "biologicalGroups": 8,
+  "outcomesAvailable": 200,
+  "arms": [
+    "source-only",
+    "source-validity",
+    "source-validity-cdr-calibrated",
+    "source-validity-cdr-exact"
+  ],
+  "physicalAuditUnavailableReasons": {
+    "Error: Coordinate audit exceeds the 12,000-atom execution limit or is empty": 50,
+    "Error: The selected chains require more than 250 million worst-case SASA surface-point occlusion checks. Reduce the coordinate file to the receptor and VHH chains and try again.": 25
+  },
+  "files": {
+    "compact-metrics.json": "297ea8b069da5dda6e66d4f22849976bdfada8910bcffc5c1b5173289422452b",
+    "comparisons.csv": "417e2bd0791b9be2442e95a8bd3a650415bb753333668177ae2b3c2a53937244",
+    "comparisons.json": "5b0efe7fa7863b158700f48946992cfff6f16f1cdb800ad81d7f497c18437ca6",
+    "independent-first-choice-checks.json": "848d84d967aeffdfab7de7b3dc0e4149b95271f9ed78b87b8b550e81117617dd",
+    "metrics.csv": "beb3c37e7c8c0519a283e53e959fa66d3fb3285da539e7c9b5acbc24478df736",
+    "metrics.json": "82f94b1e5226de48c3e0c5d9c160d39037b88e3adcf8d457e5afabdce34b0864",
+    "set-quality.csv": "9e6ce9089361f773dc5b48828fd72e8a84dfcae5cfaf770c88764a5305aa0faf",
+    "set-quality.json": "ba1c3fc167b403440846b568852f604abcb798664bfa574838eead3165d85403",
+    "strata.json": "ace3d43ba55c267ea4cdb2ddb8ab4bc7f635391be94d043283fe8a5cab2b4988",
+    "unchanged-physical-comparator.csv": "78faa5964e49cb52f9b1078d395ed54b512ba0efbbfd81cfe58acab1edd13993",
+    "unchanged-physical-comparator.json": "aa6549490729274e7251e76bdcb15f9d03132f267e5a764a8612ddd4734b67aa"
+  },
+  "claims": {
+    "featuresOrRanksRecomputed": false,
+    "weightsOrRulesSelected": false,
+    "productionChanged": false,
+    "pairedTieDrawCouplingAssumed": false,
+    "missingValuesReplacedByZero": false
+  }
+}
