@@ -1,0 +1,55 @@
+{
+  "schema": "confovhh-round3-frozen-report-evaluation-v1",
+  "completedAtUtc": "2026-09-25T00:56:19.312804+00:00",
+  "evaluationRole": "development",
+  "outcomeReceipt": {
+    "path": "round3-ranking/fresh-outcomes-development/receipt.json",
+    "bytes": 23581,
+    "sha256": "56234e8ac1f10f09e8e8ed54f39079e8eca77d166260870d89c407e69487ca79"
+  },
+  "rankingReceipts": [
+    {
+      "path": "round3-ranking/fresh-v3-development/receipt.json",
+      "bytes": 4907,
+      "sha256": "6d5e69f16fe3c9f4a649c03ea5a912ab327a71553b38d4ea089c051bf666ca18"
+    }
+  ],
+  "reportingSpecificationSha256": "91d89ebb71c1850915618d3b3cdcd2dad34aabd070715f8b9cfd700d38ab86d3",
+  "tieClarificationSha256": "417c80df45da46e54eb037add16674cde832c45d845bc01674caab44737b71a3",
+  "implementation": {
+    "round3-control/evaluate_fresh.py": "847bbe0fd67a091d1203112629eaabe11bb9663ca2738dddfbc35c1de1dd9212",
+    "ConfoVHH/scripts/external-ranking-v3/evaluate.py": "eb3d6960877cfe6041009ec92cf1585cb09f7684ab06676d9e5776ce364a9934",
+    "ConfoVHH/scripts/external-ranking-v2/evaluate_saved.py": "959ac5df31ed1c216b2323684dbacac05ac53d9c3fe3f854cc8888b433e59070",
+    "round3-benchmark/outcome-tools/outcome_adapter.py": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562"
+  },
+  "planned": 100,
+  "sets": 4,
+  "biologicalGroups": 3,
+  "outcomesAvailable": 100,
+  "arms": [
+    "source-only",
+    "source-validity",
+    "source-validity-cdr-exact"
+  ],
+  "physicalAuditUnavailableReasons": {},
+  "files": {
+    "compact-metrics.json": "7a8e4fe66fb7ca9ff8211a19fff2351eda7e24769f96586c06c98bf58503ae8f",
+    "comparisons.csv": "53bb3f7c5c1105f6947b257429648f686999be069e79aa2ff6c02e45ed7e8c83",
+    "comparisons.json": "bceae4a05379b64e9f1fe22ffecd5e2bb2520fdd2f72cc3fe238de28198ad459",
+    "independent-first-choice-checks.json": "16edbaa1a8ab44d533961b18ca6e4e61f204f3777e666ff164ffd3d319baf5a6",
+    "metrics.csv": "4c086641405a99f33aa377f251543c17261536913cc7396d341a15dcd9cd15e8",
+    "metrics.json": "4e09e9efc58da53176e5055d691231315a8252dba9189ca9dd5a344fa22c01d0",
+    "set-quality.csv": "42643585552a613f59cf2af9e47e6e78486080e34baf7dbac58d4f7f9e4b20e9",
+    "set-quality.json": "828f49cd36004627c0e545bc27d54da001f86080dd5f5fbc9b032c58b62aa72d",
+    "strata.json": "dcbb49ef925ec2b840d03439e8d1969b98d0d628df98ce622b778b8c66a796ec",
+    "unchanged-physical-comparator.csv": "ef244b6c66271dd62892cd20688156f116c93f866de96c2f3e910f7fabf981df",
+    "unchanged-physical-comparator.json": "46db0763c39bf892a29ef1623cfebec6d29e2a23a91fc18db0a5d20f54b105fb"
+  },
+  "claims": {
+    "featuresOrRanksRecomputed": false,
+    "weightsOrRulesSelected": false,
+    "productionChanged": false,
+    "pairedTieDrawCouplingAssumed": false,
+    "missingValuesReplacedByZero": false
+  }
+}

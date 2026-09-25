@@ -1,0 +1,1170 @@
+[
+  {
+    "stratum": "new-outcome-group",
+    "arm": "source-only",
+    "groupCount": 2,
+    "setCount": 2,
+    "groups": [
+      {
+        "group": "GRM5-NB43",
+        "sets": [
+          "GRM5_NB43"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.7188240767447902,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.7575998684106884,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "LGR4-NB21",
+        "sets": [
+          "LGR4_NB21"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.10862972741755779,
+          "firstChoiceAcceptableProbability": 0.0,
+          "top5MeanDockQ": 0.10928547738044687,
+          "top5AcceptableCount": 0.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.413726902081174,
+      "firstChoiceAcceptableProbability": 0.5,
+      "top5MeanDockQ": 0.43344267289556765,
+      "top5AcceptableCount": 2.5,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 2,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "new-outcome-group",
+    "arm": "source-validity",
+    "groupCount": 2,
+    "setCount": 2,
+    "groups": [
+      {
+        "group": "GRM5-NB43",
+        "sets": [
+          "GRM5_NB43"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.7188240767447902,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.7575998684106884,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "LGR4-NB21",
+        "sets": [
+          "LGR4_NB21"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.10862972741755779,
+          "firstChoiceAcceptableProbability": 0.0,
+          "top5MeanDockQ": 0.10928547738044687,
+          "top5AcceptableCount": 0.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.413726902081174,
+      "firstChoiceAcceptableProbability": 0.5,
+      "top5MeanDockQ": 0.43344267289556765,
+      "top5AcceptableCount": 2.5,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 2,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "new-outcome-group",
+    "arm": "source-validity-cdr-calibrated",
+    "groupCount": 2,
+    "setCount": 2,
+    "groups": [
+      {
+        "group": "GRM5-NB43",
+        "sets": [
+          "GRM5_NB43"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.7188240767447902,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.7575998684106884,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "LGR4-NB21",
+        "sets": [
+          "LGR4_NB21"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.10862972741755779,
+          "firstChoiceAcceptableProbability": 0.0,
+          "top5MeanDockQ": 0.10928547738044687,
+          "top5AcceptableCount": 0.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.413726902081174,
+      "firstChoiceAcceptableProbability": 0.5,
+      "top5MeanDockQ": 0.43344267289556765,
+      "top5AcceptableCount": 2.5,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 2,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "new-outcome-group",
+    "arm": "source-validity-cdr-exact",
+    "groupCount": 2,
+    "setCount": 2,
+    "groups": [
+      {
+        "group": "GRM5-NB43",
+        "sets": [
+          "GRM5_NB43"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.7188240767447902,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.7575998684106884,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "LGR4-NB21",
+        "sets": [
+          "LGR4_NB21"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.10862972741755779,
+          "firstChoiceAcceptableProbability": 0.0,
+          "top5MeanDockQ": 0.10928547738044687,
+          "top5AcceptableCount": 0.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.413726902081174,
+      "firstChoiceAcceptableProbability": 0.5,
+      "top5MeanDockQ": 0.43344267289556765,
+      "top5AcceptableCount": 2.5,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 2,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "new-outcome-group-exploratory-low-resolution",
+    "arm": "source-only",
+    "groupCount": 1,
+    "setCount": 1,
+    "groups": [
+      {
+        "group": "CASR-NB2D11",
+        "sets": [
+          "CASR_NB2D11"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.008530482094752294,
+          "firstChoiceAcceptableProbability": 0.0,
+          "top5MeanDockQ": 0.014580916221263906,
+          "top5AcceptableCount": 0.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.014580916221263906,
+      "top5AcceptableCount": 0.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 1,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "new-outcome-group-exploratory-low-resolution",
+    "arm": "source-validity",
+    "groupCount": 1,
+    "setCount": 1,
+    "groups": [
+      {
+        "group": "CASR-NB2D11",
+        "sets": [
+          "CASR_NB2D11"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.008530482094752294,
+          "firstChoiceAcceptableProbability": 0.0,
+          "top5MeanDockQ": 0.014580916221263906,
+          "top5AcceptableCount": 0.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.014580916221263906,
+      "top5AcceptableCount": 0.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 1,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "new-outcome-group-exploratory-low-resolution",
+    "arm": "source-validity-cdr-calibrated",
+    "groupCount": 1,
+    "setCount": 1,
+    "groups": [
+      {
+        "group": "CASR-NB2D11",
+        "sets": [
+          "CASR_NB2D11"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.008530482094752294,
+          "firstChoiceAcceptableProbability": 0.0,
+          "top5MeanDockQ": 0.014580916221263906,
+          "top5AcceptableCount": 0.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.014580916221263906,
+      "top5AcceptableCount": 0.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 1,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "new-outcome-group-exploratory-low-resolution",
+    "arm": "source-validity-cdr-exact",
+    "groupCount": 1,
+    "setCount": 1,
+    "groups": [
+      {
+        "group": "CASR-NB2D11",
+        "sets": [
+          "CASR_NB2D11"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.008530482094752294,
+          "firstChoiceAcceptableProbability": 0.0,
+          "top5MeanDockQ": 0.014580916221263906,
+          "top5AcceptableCount": 0.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.014580916221263906,
+      "top5AcceptableCount": 0.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 1,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "related-exposed-family",
+    "arm": "source-only",
+    "groupCount": 1,
+    "setCount": 1,
+    "groups": [
+      {
+        "group": "CHRM1-NB1B4",
+        "sets": [
+          "CHRM1_NB1B4"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.2536101656318808,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.1466888684400947,
+          "top5AcceptableCount": 2.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.1466888684400947,
+      "top5AcceptableCount": 2.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 1,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "related-exposed-family",
+    "arm": "source-validity",
+    "groupCount": 1,
+    "setCount": 1,
+    "groups": [
+      {
+        "group": "CHRM1-NB1B4",
+        "sets": [
+          "CHRM1_NB1B4"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.2536101656318808,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.1466888684400947,
+          "top5AcceptableCount": 2.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.1466888684400947,
+      "top5AcceptableCount": 2.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 1,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "related-exposed-family",
+    "arm": "source-validity-cdr-calibrated",
+    "groupCount": 1,
+    "setCount": 1,
+    "groups": [
+      {
+        "group": "CHRM1-NB1B4",
+        "sets": [
+          "CHRM1_NB1B4"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.2536101656318808,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.1466888684400947,
+          "top5AcceptableCount": 2.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.1466888684400947,
+      "top5AcceptableCount": 2.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 1,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "related-exposed-family",
+    "arm": "source-validity-cdr-exact",
+    "groupCount": 1,
+    "setCount": 1,
+    "groups": [
+      {
+        "group": "CHRM1-NB1B4",
+        "sets": [
+          "CHRM1_NB1B4"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.2536101656318808,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.1466888684400947,
+          "top5AcceptableCount": 2.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.1466888684400947,
+      "top5AcceptableCount": 2.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 1,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "development-exposed",
+    "arm": "source-only",
+    "groupCount": 4,
+    "setCount": 4,
+    "groups": [
+      {
+        "group": "ADRA1A-NB29",
+        "sets": [
+          "ADRA1A_NB29"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.27600835323605155,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.3835212826842318,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "FZD3-NB9",
+        "sets": [
+          "FZD3_NB9"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.522720457966171,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.5337992562222437,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "HCRTR2-SB51",
+        "sets": [
+          "HCRTR2_SB51"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.4284261990492671,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.5123323098178345,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "RHO-NB2_RHO",
+        "sets": [
+          "RHO_NB2"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.7347082622301265,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.6994710830870303,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.490465818120404,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5322809829528351,
+      "top5AcceptableCount": 5.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 4,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "development-exposed",
+    "arm": "source-validity",
+    "groupCount": 4,
+    "setCount": 4,
+    "groups": [
+      {
+        "group": "ADRA1A-NB29",
+        "sets": [
+          "ADRA1A_NB29"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.27600835323605155,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.3835212826842318,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "FZD3-NB9",
+        "sets": [
+          "FZD3_NB9"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.522720457966171,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.5337992562222437,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "HCRTR2-SB51",
+        "sets": [
+          "HCRTR2_SB51"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.4284261990492671,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.5123323098178345,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "RHO-NB2_RHO",
+        "sets": [
+          "RHO_NB2"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.7347082622301265,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.6994710830870303,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.490465818120404,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5322809829528351,
+      "top5AcceptableCount": 5.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 4,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "development-exposed",
+    "arm": "source-validity-cdr-calibrated",
+    "groupCount": 4,
+    "setCount": 4,
+    "groups": [
+      {
+        "group": "ADRA1A-NB29",
+        "sets": [
+          "ADRA1A_NB29"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.27600835323605155,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.3835212826842318,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "FZD3-NB9",
+        "sets": [
+          "FZD3_NB9"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.522720457966171,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.5337992562222437,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "HCRTR2-SB51",
+        "sets": [
+          "HCRTR2_SB51"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.4284261990492671,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.5123323098178345,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "RHO-NB2_RHO",
+        "sets": [
+          "RHO_NB2"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.7347082622301265,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.6994710830870303,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.490465818120404,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5322809829528351,
+      "top5AcceptableCount": 5.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 4,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  },
+  {
+    "stratum": "development-exposed",
+    "arm": "source-validity-cdr-exact",
+    "groupCount": 4,
+    "setCount": 4,
+    "groups": [
+      {
+        "group": "ADRA1A-NB29",
+        "sets": [
+          "ADRA1A_NB29"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.27600835323605155,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.3835212826842318,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "FZD3-NB9",
+        "sets": [
+          "FZD3_NB9"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.522720457966171,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.5337992562222437,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "HCRTR2-SB51",
+        "sets": [
+          "HCRTR2_SB51"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.4284261990492671,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.5123323098178345,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      },
+      {
+        "group": "RHO-NB2_RHO",
+        "sets": [
+          "RHO_NB2"
+        ],
+        "means": {
+          "firstChoiceDockQ": 0.7347082622301265,
+          "firstChoiceAcceptableProbability": 1.0,
+          "top5MeanDockQ": 0.6994710830870303,
+          "top5AcceptableCount": 5.0,
+          "firstChoiceDockQChange": 0.0,
+          "acceptableProbabilityChange": 0.0,
+          "acceptableProbabilityDecrease": 0.0,
+          "acceptableProbabilityIncrease": 0.0
+        },
+        "unavailableSets": {
+          "firstChoiceDockQ": [],
+          "firstChoiceAcceptableProbability": [],
+          "top5MeanDockQ": [],
+          "top5AcceptableCount": [],
+          "firstChoiceDockQChange": [],
+          "acceptableProbabilityChange": [],
+          "acceptableProbabilityDecrease": [],
+          "acceptableProbabilityIncrease": []
+        }
+      }
+    ],
+    "equalGroupMeans": {
+      "firstChoiceDockQ": 0.490465818120404,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5322809829528351,
+      "top5AcceptableCount": 5.0,
+      "firstChoiceDockQChange": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": 0.0,
+      "acceptableProbabilityIncrease": 0.0
+    },
+    "selectionAvailableSets": 4,
+    "setsWithAcceptableProbabilityDecrease": [],
+    "setsWithAcceptableProbabilityIncrease": []
+  }
+]

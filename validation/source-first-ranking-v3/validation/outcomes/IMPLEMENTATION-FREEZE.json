@@ -1,0 +1,97 @@
+{
+  "schema": "confovhh-round3-outcome-implementation-freeze-v1",
+  "frozenAtUtc": "2026-09-25T00:45:50.790239+00:00",
+  "outcomesOpenedBeforeFreeze": false,
+  "freshPredictionNativeComparisons": 0,
+  "method": {
+    "path": "round3-benchmark/outcome-tools/METHOD-FREEZE.json",
+    "bytes": 2689,
+    "sha256": "2914ec4b58f128427e3b6ba5f3d28da3dd6ae71770c1e969b350c5b78f383b29"
+  },
+  "implementation": {
+    "adapterSha256": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562",
+    "methodFreezeSha256": "2914ec4b58f128427e3b6ba5f3d28da3dd6ae71770c1e969b350c5b78f383b29",
+    "canonicalizerSha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c",
+    "contactEvidenceVerifierSha256": "1dd974254308ea2df91405f0a16e7d5c669db7c195f3124472e4791b270da87c",
+    "NodeVerifierVersion": "v24.19.0",
+    "DockQVersion": "2.1.3",
+    "DockQFiles": {
+      "DockQ.py": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+      "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "__main__.py": "a2dc944b6fdaeb5c4f3574c452519449505756abbb96e2261179a2b643b57df5",
+      "constants.py": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18",
+      "operations.cpython-312-darwin.so": "1e3871f2f42e32ca87cd3b8f679a576ef5f10e9fe1eb045e86c9cd0338463f27",
+      "operations_nocy.py": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3",
+      "parsers.py": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+    },
+    "BioVersion": "1.88",
+    "numpyVersion": "1.26.4",
+    "alignment": "separate ordered receptor segments and fixed VHH; DockQ 5/0/-4/-0.5 sequence scores; first optimum; concat fixed correspondences; unchanged calc_DockQ",
+    "perViewTimeoutSeconds": 600
+  },
+  "files": [
+    {
+      "path": "round3-benchmark/outcome-tools/outcome_adapter.py",
+      "bytes": 45864,
+      "sha256": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/prepare_references.py",
+      "bytes": 2907,
+      "sha256": "87af130d5c1a6deaf13f9f9d99efca344fdde61c7cfe6f4a090c47100c223a6f"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/prepare_request.py",
+      "bytes": 2137,
+      "sha256": "42c9e5d6fb235354a71a66a417efe459e9ec2ba325098aaf66fe39f247e74944"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/test_outcome_adapter.py",
+      "bytes": 14004,
+      "sha256": "300560ecfdb3cdcec1c74067867b0dc571b3e3744f65e515a2f9f440154f02df"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/run_metric_controls.py",
+      "bytes": 5758,
+      "sha256": "ae70c8e4434cdb63fab2887d731b4db67f7371951f2d2e695ba86a6f0dfc2005"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/run_native_symmetry_controls.py",
+      "bytes": 2144,
+      "sha256": "7f8bb0b5e914755689693bc61ae54c04e341d9c2811d84d30cbb91679a12f669"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/README.md",
+      "bytes": 11263,
+      "sha256": "ab644aca61a6fc5b8923792a7754d5a7feaf5420a2b35caa1284279832c1e4e0"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/reference-inventory.json",
+      "bytes": 15202,
+      "sha256": "a7b197c0393462809792f9cf00eef01231c32932d5c53b07f0c9375c30e796b0"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/VALIDATION.json",
+      "bytes": 2589,
+      "sha256": "cc2f080704c0e9fa0f195c3c6e9e9b055a432ab95dca710e8ac53cd56c5ea999"
+    }
+  ],
+  "contactPreparationImplementationFreeze": {
+    "path": "round3-ranking/CONTACT-PREPARATION-IMPLEMENTATION-FREEZE.json",
+    "bytes": 7440,
+    "sha256": "e7e8bb1e6a67e3079a04391970082047101e73e396eab43367ba930ffedf50bf"
+  },
+  "referenceSourceInventories": [
+    {
+      "path": "expansion-v2/af2ig-reference-inventory.json",
+      "bytes": 37378,
+      "sha256": "b2b196a58a943bd6bfb1460dfa13fe3391bec23e43f8dc0371bdf9ada86d840c"
+    },
+    {
+      "path": "round3-benchmark/scoring-view/native-reference-view-inventory.json",
+      "bytes": 10865,
+      "sha256": "465866f61e9cfda2d61df925206f3bc386cddec17b59d1545f7adab4fc154b64"
+    }
+  ],
+  "evaluationStillRequires": "Final completed cohort request, new rank seal, and root instruction; prospective also requires a matching root-authored release binding."
+}

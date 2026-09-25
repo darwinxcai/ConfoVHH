@@ -1,0 +1,53 @@
+{
+  "schema": "confovhh-training-exposure-qualification-receipt-v1",
+  "createdAtUtc": "2026-09-25T01:23:20.459816+00:00",
+  "status": "COMPLETE_DATE_ONLY_MEMBERSHIP_UNVERIFIED",
+  "files": [
+    {
+      "path": "round3-benchmark/training-exposure/TRAINING-EXPOSURE-LIMITATION.md",
+      "bytes": 4128,
+      "sha256": "8a8076ead3ccb7070795e6e9a752df5fd00d3dbb3584cff4c1cd56427c9e6ef4"
+    },
+    {
+      "path": "round3-benchmark/training-exposure/qualify_dates.py",
+      "bytes": 4792,
+      "sha256": "d5fb32d302db9a408d62fa982b6ff44b7c9b202e56a3735f8465aa7f67c2b8ce"
+    },
+    {
+      "path": "round3-benchmark/training-exposure/date-qualification.json",
+      "bytes": 10648,
+      "sha256": "df0c6f086bcf76dfd762b77ae97588d087fd0d7b1acc403ae8a16539fe97d5ac"
+    },
+    {
+      "path": "round3-benchmark/training-exposure/date-qualification.csv",
+      "bytes": 757,
+      "sha256": "2d6d808b6a8516c8b0f10183c4a5576a308e2b6c74b32f1fba89a14f66c07175"
+    },
+    {
+      "path": "round3-benchmark/training-exposure/source-retrieval.json",
+      "bytes": 1455,
+      "sha256": "dbdaa2324b01510837eed036f7d6f3f2fa2e1d4e4894fe950da5eb88d3eaa0f8"
+    },
+    {
+      "path": "round3-benchmark/training-exposure/sources/boltz-pinned-training.md",
+      "bytes": 10865,
+      "sha256": "4574fa3cac9d086708dce59de68a144dc337722af3242db9adfd6798bb37e21c"
+    },
+    {
+      "path": "round3-benchmark/training-exposure/sources/boltz2-author-paper.pdf",
+      "bytes": 7603616,
+      "sha256": "abe2b7fc0c3976bc1c8e39369c9d3ab7c7d49595d7b2523d56bf16470617194e"
+    },
+    {
+      "path": "round3-benchmark/training-exposure/sources/boltz2-pmc.html",
+      "bytes": 233424,
+      "sha256": "f486790e9d879eba2dc19fb040970a461af87a8869f5e26befad5225508fd086"
+    }
+  ],
+  "preCutoffPotentialOverlap": 3,
+  "postCutoffReportedPdbWindow": 5,
+  "actualMembershipVerified": 0,
+  "prospectiveOutcomesOpened": false,
+  "nativeCoordinatesOpened": false,
+  "benchmarkOrRankingChanges": false
+}

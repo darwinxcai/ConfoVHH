@@ -1,0 +1,242 @@
+{
+  "nativeFilesExcludedFromLaunch": true,
+  "targets": [
+    {
+      "id": "CASR_NB2D11",
+      "gene": "CASR",
+      "lineage": "NB2D11",
+      "pdb": "7E6U",
+      "receptorEntity": "1",
+      "nbEntity": "2",
+      "receptorChains": [
+        "A",
+        "B"
+      ],
+      "selectedNb": "C",
+      "contextChains": [
+        "D"
+      ],
+      "nativeReceptorChains": [
+        "A",
+        "C"
+      ],
+      "nativeSelectedNb": "B",
+      "nativeContextChains": [
+        "D"
+      ],
+      "priorExposure": "prior-metadata-census; no ranking-outcome use located in reviewed registry",
+      "analysisStratum": "new-outcome-group-exploratory-low-resolution",
+      "contextRegime": "two-receptors-two-Nbs",
+      "caveat": "Native reference overall resolution 6.0 A; secondary exploratory only. Preserve disulfide-linked obligate receptor dimer. Source confidence applies to full 2+2 prediction.",
+      "nativeReleaseDate": "2021-09-22T00:00:00.000+00:00",
+      "primaryPublicationDoi": "10.7554/eLife.68578",
+      "residueTokens": 2010,
+      "predictorTrainingExposure": "not certified independent of predictor training; exact PDB release recorded and actual Boltz2 training inclusion unknown"
+    },
+    {
+      "id": "GRM5_NB43",
+      "gene": "GRM5",
+      "lineage": "NB43",
+      "pdb": "6N51",
+      "receptorEntity": "1",
+      "nbEntity": "2",
+      "receptorChains": [
+        "A",
+        "B"
+      ],
+      "selectedNb": "C",
+      "contextChains": [
+        "D"
+      ],
+      "nativeReceptorChains": [
+        "A",
+        "B"
+      ],
+      "nativeSelectedNb": "C",
+      "nativeContextChains": [
+        "D"
+      ],
+      "priorExposure": "prior-metadata-census of same Nb43 lineage/GRM5; no ranking-outcome use located in reviewed registry",
+      "analysisStratum": "new-outcome-group",
+      "contextRegime": "two-receptors-two-Nbs",
+      "caveat": "Obligate receptor dimer; selected Nb contacts both receptor protomers. Source confidence applies to full 2+2 prediction.",
+      "nativeReleaseDate": "2019-01-23T00:00:00.000+00:00",
+      "primaryPublicationDoi": "10.1038/s41586-019-0881-4",
+      "residueTokens": 1854,
+      "predictorTrainingExposure": "not certified independent of predictor training; exact PDB release recorded and actual Boltz2 training inclusion unknown"
+    },
+    {
+      "id": "CHRM1_NB1B4",
+      "gene": "CHRM1",
+      "lineage": "NB1B4",
+      "pdb": "9UCP",
+      "receptorEntity": "1",
+      "nbEntity": "3",
+      "receptorChains": [
+        "A"
+      ],
+      "selectedNb": "B",
+      "contextChains": [
+        "C"
+      ],
+      "helperEntity": "2",
+      "nativeReceptorChains": [
+        "A"
+      ],
+      "nativeSelectedNb": "C",
+      "nativeContextChains": [
+        "B"
+      ],
+      "priorExposure": "prior-source-review and receptor-family relation to ranking-development CHRM2",
+      "analysisStratum": "related-exposed-family",
+      "contextRegime": "receptor-Nb-G11-helix",
+      "caveat": "Experimental receptor/G11 helix is a covalent fusion, but deposited polymer metadata separates a 27-aa helix. Predict exact deposited polymer sequences as three chains; no invented linker or claim of full experimental covalent topology.",
+      "nativeReleaseDate": "2025-10-29T00:00:00.000+00:00",
+      "primaryPublicationDoi": "10.1073/pnas.2508879122",
+      "residueTokens": 584,
+      "predictorTrainingExposure": "not certified independent of predictor training; exact PDB release recorded and actual Boltz2 training inclusion unknown"
+    },
+    {
+      "id": "LGR4_NB21",
+      "gene": "LGR4",
+      "lineage": "NB21",
+      "pdb": "9S37",
+      "receptorEntity": "2",
+      "nbEntity": "1",
+      "receptorChains": [
+        "A"
+      ],
+      "selectedNb": "B",
+      "contextChains": [],
+      "nativeReceptorChains": [
+        "D"
+      ],
+      "nativeSelectedNb": "B",
+      "nativeContextChains": [
+        "A"
+      ],
+      "priorExposure": "prior-metadata-census and primary-source narrative; no ranking-outcome use located in reviewed registry",
+      "analysisStratum": "new-outcome-group",
+      "contextRegime": "pair-only",
+      "caveat": "Native helper NB52 has no direct selected-Nb contact and is not the enrolled binder. Pair-only receptor/NB21 regime omits the helper and any helper-induced conformational support.",
+      "nativeReleaseDate": "2025-07-30T00:00:00.000+00:00",
+      "primaryPublicationDoi": "10.1038/s41467-025-63410-5",
+      "residueTokens": 917,
+      "predictorTrainingExposure": "not certified independent of predictor training; exact PDB release recorded and actual Boltz2 training inclusion unknown"
+    },
+    {
+      "id": "ADRA1A_NB29",
+      "gene": "ADRA1A",
+      "lineage": "NB29",
+      "pdb": "7YM8",
+      "receptorEntity": "2",
+      "nbEntity": "3",
+      "receptorChains": [
+        "A"
+      ],
+      "selectedNb": "B",
+      "contextChains": [],
+      "nativeReceptorChains": [
+        "A"
+      ],
+      "nativeSelectedNb": "D",
+      "nativeContextChains": [
+        "B"
+      ],
+      "priorExposure": "ranking-development public native panel",
+      "analysisStratum": "development-exposed",
+      "contextRegime": "pair-only",
+      "caveat": "Pair-only regime omits miniGsq; native binder contacts receptor only. Preserve deposited receptor/VHH sequence tags and modifications.",
+      "nativeReleaseDate": "2023-07-05T00:00:00.000+00:00",
+      "primaryPublicationDoi": "10.1038/s41467-023-39310-x",
+      "residueTokens": 624,
+      "predictorTrainingExposure": "not certified independent of predictor training; exact PDB release recorded and actual Boltz2 training inclusion unknown"
+    },
+    {
+      "id": "HCRTR2_SB51",
+      "gene": "HCRTR2",
+      "lineage": "SB51",
+      "pdb": "7L1V",
+      "receptorEntity": "5",
+      "nbEntity": "6",
+      "receptorChains": [
+        "A"
+      ],
+      "selectedNb": "B",
+      "contextChains": [],
+      "nativeReceptorChains": [
+        "R"
+      ],
+      "nativeSelectedNb": "S",
+      "nativeContextChains": [
+        "A",
+        "B",
+        "C",
+        "H"
+      ],
+      "priorExposure": "ranking-development public native panel",
+      "analysisStratum": "development-exposed",
+      "contextRegime": "pair-only",
+      "caveat": "Pair-only regime omits G-protein/scFv helpers; selected Sb51 contacts receptor only.",
+      "nativeReleaseDate": "2021-02-10T00:00:00.000+00:00",
+      "primaryPublicationDoi": "10.1038/s41467-021-21087-6",
+      "residueTokens": 492,
+      "predictorTrainingExposure": "not certified independent of predictor training; exact PDB release recorded and actual Boltz2 training inclusion unknown"
+    },
+    {
+      "id": "RHO_NB2",
+      "gene": "RHO",
+      "lineage": "NB2_RHO",
+      "pdb": "8FCZ",
+      "receptorEntity": "1",
+      "nbEntity": "2",
+      "receptorChains": [
+        "A"
+      ],
+      "selectedNb": "B",
+      "contextChains": [],
+      "nativeReceptorChains": [
+        "A"
+      ],
+      "nativeSelectedNb": "C",
+      "nativeContextChains": [
+        "B",
+        "D"
+      ],
+      "priorExposure": "ranking-development public native panel",
+      "analysisStratum": "development-exposed",
+      "contextRegime": "pair-only",
+      "caveat": "Deterministic native pair A/C; second crystallographic receptor/Nb copy is not a replicate group. Deposited receptor sequence is bovine rhodopsin.",
+      "nativeReleaseDate": "2023-08-30T00:00:00.000+00:00",
+      "primaryPublicationDoi": "10.1038/s41467-023-40911-9",
+      "residueTokens": 474,
+      "predictorTrainingExposure": "not certified independent of predictor training; exact PDB release recorded and actual Boltz2 training inclusion unknown"
+    },
+    {
+      "id": "FZD3_NB9",
+      "gene": "FZD3",
+      "lineage": "NB9",
+      "pdb": "8QW4",
+      "receptorEntity": "1",
+      "nbEntity": "2",
+      "receptorChains": [
+        "A"
+      ],
+      "selectedNb": "B",
+      "contextChains": [],
+      "nativeReceptorChains": [
+        "A"
+      ],
+      "nativeSelectedNb": "B",
+      "nativeContextChains": [],
+      "priorExposure": "ranking-development public native panel",
+      "analysisStratum": "development-exposed",
+      "contextRegime": "pair-only",
+      "caveat": "Exact deposited binder is Nb9, not Nb8. Native reference and exact sequence identity govern this enrollment.",
+      "nativeReleaseDate": "2024-09-04T00:00:00.000+00:00",
+      "primaryPublicationDoi": "10.1038/s41467-024-51451-1",
+      "residueTokens": 650,
+      "predictorTrainingExposure": "not certified independent of predictor training; exact PDB release recorded and actual Boltz2 training inclusion unknown"
+    }
+  ]
+}

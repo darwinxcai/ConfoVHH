@@ -1,0 +1,5193 @@
+{
+  "schema": "confovhh-independent-prospective-review-v1",
+  "status": "PASS",
+  "completedAtUtc": "2026-09-25T02:32:45.849543+00:00",
+  "outcomeCoverage": {
+    "planned": 200,
+    "evaluated": 200,
+    "unavailable": 0
+  },
+  "compact": [
+    {
+      "setId": "ADRA1A_NB29",
+      "arm": "source-only",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.27600835323605155,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.3835212826842318,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 11.0,
+      "selectedIds": [
+        "ADRA1A_NB29_seed03"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "ADRA1A_NB29",
+      "arm": "source-validity",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.27600835323605155,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.3835212826842318,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 11.0,
+      "selectedIds": [
+        "ADRA1A_NB29_seed03"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "ADRA1A_NB29",
+      "arm": "source-validity-cdr-exact",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.27600835323605155,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.3835212826842318,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 11.0,
+      "selectedIds": [
+        "ADRA1A_NB29_seed03"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "ADRA1A_NB29",
+      "arm": "source-validity-cdr-calibrated",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.27600835323605155,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.3835212826842318,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 11.0,
+      "selectedIds": [
+        "ADRA1A_NB29_seed03"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "arm": "source-only",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.014580916221263906,
+      "top5AcceptableCount": 0.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 0.0,
+      "selectedIds": [
+        "CASR_NB2D11_seed20"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "arm": "source-validity",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.014580916221263906,
+      "top5AcceptableCount": 0.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 0.0,
+      "selectedIds": [
+        "CASR_NB2D11_seed20"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "arm": "source-validity-cdr-exact",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.014580916221263906,
+      "top5AcceptableCount": 0.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 0.0,
+      "selectedIds": [
+        "CASR_NB2D11_seed20"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "arm": "source-validity-cdr-calibrated",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.014580916221263906,
+      "top5AcceptableCount": 0.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 0.0,
+      "selectedIds": [
+        "CASR_NB2D11_seed20"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "arm": "source-only",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.14668886844009468,
+      "top5AcceptableCount": 2.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 3.0,
+      "selectedIds": [
+        "CHRM1_NB1B4_seed00"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "arm": "source-validity",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.14668886844009468,
+      "top5AcceptableCount": 2.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 3.0,
+      "selectedIds": [
+        "CHRM1_NB1B4_seed00"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "arm": "source-validity-cdr-exact",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.14668886844009468,
+      "top5AcceptableCount": 2.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 3.0,
+      "selectedIds": [
+        "CHRM1_NB1B4_seed00"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "arm": "source-validity-cdr-calibrated",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.14668886844009468,
+      "top5AcceptableCount": 2.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 3.0,
+      "selectedIds": [
+        "CHRM1_NB1B4_seed00"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "FZD3_NB9",
+      "arm": "source-only",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.522720457966171,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5337992562222437,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 24.0,
+      "selectedIds": [
+        "FZD3_NB9_seed11"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "FZD3_NB9",
+      "arm": "source-validity",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.522720457966171,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5337992562222437,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 24.0,
+      "selectedIds": [
+        "FZD3_NB9_seed11"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "FZD3_NB9",
+      "arm": "source-validity-cdr-exact",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.522720457966171,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5337992562222437,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 24.0,
+      "selectedIds": [
+        "FZD3_NB9_seed11"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "FZD3_NB9",
+      "arm": "source-validity-cdr-calibrated",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.522720457966171,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5337992562222437,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 24.0,
+      "selectedIds": [
+        "FZD3_NB9_seed11"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "GRM5_NB43",
+      "arm": "source-only",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.7188240767447902,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.7575998684106883,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 25.0,
+      "selectedIds": [
+        "GRM5_NB43_seed08"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "GRM5_NB43",
+      "arm": "source-validity",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.7188240767447902,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.7575998684106883,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 25.0,
+      "selectedIds": [
+        "GRM5_NB43_seed08"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "GRM5_NB43",
+      "arm": "source-validity-cdr-exact",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.7188240767447902,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.7575998684106883,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 25.0,
+      "selectedIds": [
+        "GRM5_NB43_seed08"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "GRM5_NB43",
+      "arm": "source-validity-cdr-calibrated",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.7188240767447902,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.7575998684106883,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 25.0,
+      "selectedIds": [
+        "GRM5_NB43_seed08"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "arm": "source-only",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.4284261990492671,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5123323098178346,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 25.0,
+      "selectedIds": [
+        "HCRTR2_SB51_seed20"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "arm": "source-validity",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.4284261990492671,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5123323098178346,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 25.0,
+      "selectedIds": [
+        "HCRTR2_SB51_seed20"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "arm": "source-validity-cdr-exact",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.4284261990492671,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5123323098178346,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 25.0,
+      "selectedIds": [
+        "HCRTR2_SB51_seed20"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "arm": "source-validity-cdr-calibrated",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.4284261990492671,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.5123323098178346,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 25.0,
+      "selectedIds": [
+        "HCRTR2_SB51_seed20"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "LGR4_NB21",
+      "arm": "source-only",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.10862972741755779,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.10928547738044687,
+      "top5AcceptableCount": 0.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 0.0,
+      "selectedIds": [
+        "LGR4_NB21_seed16"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "LGR4_NB21",
+      "arm": "source-validity",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.10862972741755779,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.10928547738044687,
+      "top5AcceptableCount": 0.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 0.0,
+      "selectedIds": [
+        "LGR4_NB21_seed16"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "LGR4_NB21",
+      "arm": "source-validity-cdr-exact",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.10862972741755779,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.10928547738044687,
+      "top5AcceptableCount": 0.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 0.0,
+      "selectedIds": [
+        "LGR4_NB21_seed16"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "LGR4_NB21",
+      "arm": "source-validity-cdr-calibrated",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.10862972741755779,
+      "firstChoiceAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.10928547738044687,
+      "top5AcceptableCount": 0.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 0.0,
+      "selectedIds": [
+        "LGR4_NB21_seed16"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "RHO_NB2",
+      "arm": "source-only",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.7347082622301265,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.6994710830870302,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 22.0,
+      "selectedIds": [
+        "RHO_NB2_seed11"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "RHO_NB2",
+      "arm": "source-validity",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.7347082622301265,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.6994710830870302,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 22.0,
+      "selectedIds": [
+        "RHO_NB2_seed11"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "RHO_NB2",
+      "arm": "source-validity-cdr-exact",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.7347082622301265,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.6994710830870302,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 22.0,
+      "selectedIds": [
+        "RHO_NB2_seed11"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    },
+    {
+      "setId": "RHO_NB2",
+      "arm": "source-validity-cdr-calibrated",
+      "status": "ranked",
+      "planned": 25,
+      "produced": 25,
+      "inputValid": 25,
+      "policyEligible": 25,
+      "selectionAvailable": true,
+      "firstChoiceDockQ": 0.7347082622301265,
+      "firstChoiceAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.6994710830870302,
+      "top5AcceptableCount": 5.0,
+      "allPlannedOutcomesAvailable": true,
+      "acceptablePoseCount": 22.0,
+      "selectedIds": [
+        "RHO_NB2_seed11"
+      ],
+      "interfaceSupport": "contacting-candidates-present"
+    }
+  ],
+  "comparisons": [
+    {
+      "setId": "ADRA1A_NB29",
+      "arm": "source-only",
+      "sourceFirstChoiceDockQ": 0.27600835323605155,
+      "policyFirstChoiceDockQ": 0.27600835323605155,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "ADRA1A_NB29",
+      "arm": "source-validity",
+      "sourceFirstChoiceDockQ": 0.27600835323605155,
+      "policyFirstChoiceDockQ": 0.27600835323605155,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "ADRA1A_NB29",
+      "arm": "source-validity-cdr-exact",
+      "sourceFirstChoiceDockQ": 0.27600835323605155,
+      "policyFirstChoiceDockQ": 0.27600835323605155,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "ADRA1A_NB29",
+      "arm": "source-validity-cdr-calibrated",
+      "sourceFirstChoiceDockQ": 0.27600835323605155,
+      "policyFirstChoiceDockQ": 0.27600835323605155,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "arm": "source-only",
+      "sourceFirstChoiceDockQ": 0.008530482094752294,
+      "policyFirstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 0.0,
+      "policyAcceptableProbability": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "arm": "source-validity",
+      "sourceFirstChoiceDockQ": 0.008530482094752294,
+      "policyFirstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 0.0,
+      "policyAcceptableProbability": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "arm": "source-validity-cdr-exact",
+      "sourceFirstChoiceDockQ": 0.008530482094752294,
+      "policyFirstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 0.0,
+      "policyAcceptableProbability": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "arm": "source-validity-cdr-calibrated",
+      "sourceFirstChoiceDockQ": 0.008530482094752294,
+      "policyFirstChoiceDockQ": 0.008530482094752294,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 0.0,
+      "policyAcceptableProbability": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "arm": "source-only",
+      "sourceFirstChoiceDockQ": 0.2536101656318808,
+      "policyFirstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "arm": "source-validity",
+      "sourceFirstChoiceDockQ": 0.2536101656318808,
+      "policyFirstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "arm": "source-validity-cdr-exact",
+      "sourceFirstChoiceDockQ": 0.2536101656318808,
+      "policyFirstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "arm": "source-validity-cdr-calibrated",
+      "sourceFirstChoiceDockQ": 0.2536101656318808,
+      "policyFirstChoiceDockQ": 0.2536101656318808,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "FZD3_NB9",
+      "arm": "source-only",
+      "sourceFirstChoiceDockQ": 0.522720457966171,
+      "policyFirstChoiceDockQ": 0.522720457966171,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "FZD3_NB9",
+      "arm": "source-validity",
+      "sourceFirstChoiceDockQ": 0.522720457966171,
+      "policyFirstChoiceDockQ": 0.522720457966171,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "FZD3_NB9",
+      "arm": "source-validity-cdr-exact",
+      "sourceFirstChoiceDockQ": 0.522720457966171,
+      "policyFirstChoiceDockQ": 0.522720457966171,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "FZD3_NB9",
+      "arm": "source-validity-cdr-calibrated",
+      "sourceFirstChoiceDockQ": 0.522720457966171,
+      "policyFirstChoiceDockQ": 0.522720457966171,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "GRM5_NB43",
+      "arm": "source-only",
+      "sourceFirstChoiceDockQ": 0.7188240767447902,
+      "policyFirstChoiceDockQ": 0.7188240767447902,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "GRM5_NB43",
+      "arm": "source-validity",
+      "sourceFirstChoiceDockQ": 0.7188240767447902,
+      "policyFirstChoiceDockQ": 0.7188240767447902,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "GRM5_NB43",
+      "arm": "source-validity-cdr-exact",
+      "sourceFirstChoiceDockQ": 0.7188240767447902,
+      "policyFirstChoiceDockQ": 0.7188240767447902,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "GRM5_NB43",
+      "arm": "source-validity-cdr-calibrated",
+      "sourceFirstChoiceDockQ": 0.7188240767447902,
+      "policyFirstChoiceDockQ": 0.7188240767447902,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "arm": "source-only",
+      "sourceFirstChoiceDockQ": 0.4284261990492671,
+      "policyFirstChoiceDockQ": 0.4284261990492671,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "arm": "source-validity",
+      "sourceFirstChoiceDockQ": 0.4284261990492671,
+      "policyFirstChoiceDockQ": 0.4284261990492671,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "arm": "source-validity-cdr-exact",
+      "sourceFirstChoiceDockQ": 0.4284261990492671,
+      "policyFirstChoiceDockQ": 0.4284261990492671,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "arm": "source-validity-cdr-calibrated",
+      "sourceFirstChoiceDockQ": 0.4284261990492671,
+      "policyFirstChoiceDockQ": 0.4284261990492671,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "LGR4_NB21",
+      "arm": "source-only",
+      "sourceFirstChoiceDockQ": 0.10862972741755779,
+      "policyFirstChoiceDockQ": 0.10862972741755779,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 0.0,
+      "policyAcceptableProbability": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "LGR4_NB21",
+      "arm": "source-validity",
+      "sourceFirstChoiceDockQ": 0.10862972741755779,
+      "policyFirstChoiceDockQ": 0.10862972741755779,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 0.0,
+      "policyAcceptableProbability": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "LGR4_NB21",
+      "arm": "source-validity-cdr-exact",
+      "sourceFirstChoiceDockQ": 0.10862972741755779,
+      "policyFirstChoiceDockQ": 0.10862972741755779,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 0.0,
+      "policyAcceptableProbability": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "LGR4_NB21",
+      "arm": "source-validity-cdr-calibrated",
+      "sourceFirstChoiceDockQ": 0.10862972741755779,
+      "policyFirstChoiceDockQ": 0.10862972741755779,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 0.0,
+      "policyAcceptableProbability": 0.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "RHO_NB2",
+      "arm": "source-only",
+      "sourceFirstChoiceDockQ": 0.7347082622301265,
+      "policyFirstChoiceDockQ": 0.7347082622301265,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "RHO_NB2",
+      "arm": "source-validity",
+      "sourceFirstChoiceDockQ": 0.7347082622301265,
+      "policyFirstChoiceDockQ": 0.7347082622301265,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "RHO_NB2",
+      "arm": "source-validity-cdr-exact",
+      "sourceFirstChoiceDockQ": 0.7347082622301265,
+      "policyFirstChoiceDockQ": 0.7347082622301265,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    },
+    {
+      "setId": "RHO_NB2",
+      "arm": "source-validity-cdr-calibrated",
+      "sourceFirstChoiceDockQ": 0.7347082622301265,
+      "policyFirstChoiceDockQ": 0.7347082622301265,
+      "firstChoiceDockQChange": 0.0,
+      "sourceAcceptableProbability": 1.0,
+      "policyAcceptableProbability": 1.0,
+      "acceptableProbabilityChange": 0.0,
+      "acceptableProbabilityDecrease": -0.0,
+      "acceptableProbabilityIncrease": 0.0,
+      "firstChoiceIdsChanged": false
+    }
+  ],
+  "strata": [
+    {
+      "stratum": "new-outcome-group",
+      "arm": "source-only",
+      "groupCount": 2,
+      "setCount": 2,
+      "groups": [
+        {
+          "group": "GRM5-NB43",
+          "sets": [
+            "GRM5_NB43"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.7188240767447902,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.7575998684106883,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "LGR4-NB21",
+          "sets": [
+            "LGR4_NB21"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.10862972741755779,
+            "firstChoiceAcceptableProbability": 0.0,
+            "top5MeanDockQ": 0.10928547738044687,
+            "top5AcceptableCount": 0.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.413726902081174,
+        "firstChoiceAcceptableProbability": 0.5,
+        "top5MeanDockQ": 0.4334426728955676,
+        "top5AcceptableCount": 2.5,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 2,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "new-outcome-group",
+      "arm": "source-validity",
+      "groupCount": 2,
+      "setCount": 2,
+      "groups": [
+        {
+          "group": "GRM5-NB43",
+          "sets": [
+            "GRM5_NB43"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.7188240767447902,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.7575998684106883,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "LGR4-NB21",
+          "sets": [
+            "LGR4_NB21"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.10862972741755779,
+            "firstChoiceAcceptableProbability": 0.0,
+            "top5MeanDockQ": 0.10928547738044687,
+            "top5AcceptableCount": 0.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.413726902081174,
+        "firstChoiceAcceptableProbability": 0.5,
+        "top5MeanDockQ": 0.4334426728955676,
+        "top5AcceptableCount": 2.5,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 2,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "new-outcome-group",
+      "arm": "source-validity-cdr-calibrated",
+      "groupCount": 2,
+      "setCount": 2,
+      "groups": [
+        {
+          "group": "GRM5-NB43",
+          "sets": [
+            "GRM5_NB43"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.7188240767447902,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.7575998684106883,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "LGR4-NB21",
+          "sets": [
+            "LGR4_NB21"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.10862972741755779,
+            "firstChoiceAcceptableProbability": 0.0,
+            "top5MeanDockQ": 0.10928547738044687,
+            "top5AcceptableCount": 0.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.413726902081174,
+        "firstChoiceAcceptableProbability": 0.5,
+        "top5MeanDockQ": 0.4334426728955676,
+        "top5AcceptableCount": 2.5,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 2,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "new-outcome-group",
+      "arm": "source-validity-cdr-exact",
+      "groupCount": 2,
+      "setCount": 2,
+      "groups": [
+        {
+          "group": "GRM5-NB43",
+          "sets": [
+            "GRM5_NB43"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.7188240767447902,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.7575998684106883,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "LGR4-NB21",
+          "sets": [
+            "LGR4_NB21"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.10862972741755779,
+            "firstChoiceAcceptableProbability": 0.0,
+            "top5MeanDockQ": 0.10928547738044687,
+            "top5AcceptableCount": 0.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.413726902081174,
+        "firstChoiceAcceptableProbability": 0.5,
+        "top5MeanDockQ": 0.4334426728955676,
+        "top5AcceptableCount": 2.5,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 2,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "new-outcome-group-exploratory-low-resolution",
+      "arm": "source-only",
+      "groupCount": 1,
+      "setCount": 1,
+      "groups": [
+        {
+          "group": "CASR-NB2D11",
+          "sets": [
+            "CASR_NB2D11"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.008530482094752294,
+            "firstChoiceAcceptableProbability": 0.0,
+            "top5MeanDockQ": 0.014580916221263906,
+            "top5AcceptableCount": 0.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.008530482094752294,
+        "firstChoiceAcceptableProbability": 0.0,
+        "top5MeanDockQ": 0.014580916221263906,
+        "top5AcceptableCount": 0.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 1,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "new-outcome-group-exploratory-low-resolution",
+      "arm": "source-validity",
+      "groupCount": 1,
+      "setCount": 1,
+      "groups": [
+        {
+          "group": "CASR-NB2D11",
+          "sets": [
+            "CASR_NB2D11"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.008530482094752294,
+            "firstChoiceAcceptableProbability": 0.0,
+            "top5MeanDockQ": 0.014580916221263906,
+            "top5AcceptableCount": 0.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.008530482094752294,
+        "firstChoiceAcceptableProbability": 0.0,
+        "top5MeanDockQ": 0.014580916221263906,
+        "top5AcceptableCount": 0.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 1,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "new-outcome-group-exploratory-low-resolution",
+      "arm": "source-validity-cdr-calibrated",
+      "groupCount": 1,
+      "setCount": 1,
+      "groups": [
+        {
+          "group": "CASR-NB2D11",
+          "sets": [
+            "CASR_NB2D11"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.008530482094752294,
+            "firstChoiceAcceptableProbability": 0.0,
+            "top5MeanDockQ": 0.014580916221263906,
+            "top5AcceptableCount": 0.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.008530482094752294,
+        "firstChoiceAcceptableProbability": 0.0,
+        "top5MeanDockQ": 0.014580916221263906,
+        "top5AcceptableCount": 0.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 1,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "new-outcome-group-exploratory-low-resolution",
+      "arm": "source-validity-cdr-exact",
+      "groupCount": 1,
+      "setCount": 1,
+      "groups": [
+        {
+          "group": "CASR-NB2D11",
+          "sets": [
+            "CASR_NB2D11"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.008530482094752294,
+            "firstChoiceAcceptableProbability": 0.0,
+            "top5MeanDockQ": 0.014580916221263906,
+            "top5AcceptableCount": 0.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.008530482094752294,
+        "firstChoiceAcceptableProbability": 0.0,
+        "top5MeanDockQ": 0.014580916221263906,
+        "top5AcceptableCount": 0.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 1,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "related-exposed-family",
+      "arm": "source-only",
+      "groupCount": 1,
+      "setCount": 1,
+      "groups": [
+        {
+          "group": "CHRM1-NB1B4",
+          "sets": [
+            "CHRM1_NB1B4"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.2536101656318808,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.14668886844009468,
+            "top5AcceptableCount": 2.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.2536101656318808,
+        "firstChoiceAcceptableProbability": 1.0,
+        "top5MeanDockQ": 0.14668886844009468,
+        "top5AcceptableCount": 2.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 1,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "related-exposed-family",
+      "arm": "source-validity",
+      "groupCount": 1,
+      "setCount": 1,
+      "groups": [
+        {
+          "group": "CHRM1-NB1B4",
+          "sets": [
+            "CHRM1_NB1B4"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.2536101656318808,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.14668886844009468,
+            "top5AcceptableCount": 2.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.2536101656318808,
+        "firstChoiceAcceptableProbability": 1.0,
+        "top5MeanDockQ": 0.14668886844009468,
+        "top5AcceptableCount": 2.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 1,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "related-exposed-family",
+      "arm": "source-validity-cdr-calibrated",
+      "groupCount": 1,
+      "setCount": 1,
+      "groups": [
+        {
+          "group": "CHRM1-NB1B4",
+          "sets": [
+            "CHRM1_NB1B4"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.2536101656318808,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.14668886844009468,
+            "top5AcceptableCount": 2.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.2536101656318808,
+        "firstChoiceAcceptableProbability": 1.0,
+        "top5MeanDockQ": 0.14668886844009468,
+        "top5AcceptableCount": 2.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 1,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "related-exposed-family",
+      "arm": "source-validity-cdr-exact",
+      "groupCount": 1,
+      "setCount": 1,
+      "groups": [
+        {
+          "group": "CHRM1-NB1B4",
+          "sets": [
+            "CHRM1_NB1B4"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.2536101656318808,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.14668886844009468,
+            "top5AcceptableCount": 2.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.2536101656318808,
+        "firstChoiceAcceptableProbability": 1.0,
+        "top5MeanDockQ": 0.14668886844009468,
+        "top5AcceptableCount": 2.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 1,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "development-exposed",
+      "arm": "source-only",
+      "groupCount": 4,
+      "setCount": 4,
+      "groups": [
+        {
+          "group": "ADRA1A-NB29",
+          "sets": [
+            "ADRA1A_NB29"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.27600835323605155,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.3835212826842318,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "FZD3-NB9",
+          "sets": [
+            "FZD3_NB9"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.522720457966171,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.5337992562222437,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "HCRTR2-SB51",
+          "sets": [
+            "HCRTR2_SB51"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.4284261990492671,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.5123323098178346,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "RHO-NB2_RHO",
+          "sets": [
+            "RHO_NB2"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.7347082622301265,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.6994710830870302,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.490465818120404,
+        "firstChoiceAcceptableProbability": 1.0,
+        "top5MeanDockQ": 0.5322809829528351,
+        "top5AcceptableCount": 5.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 4,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "development-exposed",
+      "arm": "source-validity",
+      "groupCount": 4,
+      "setCount": 4,
+      "groups": [
+        {
+          "group": "ADRA1A-NB29",
+          "sets": [
+            "ADRA1A_NB29"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.27600835323605155,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.3835212826842318,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "FZD3-NB9",
+          "sets": [
+            "FZD3_NB9"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.522720457966171,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.5337992562222437,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "HCRTR2-SB51",
+          "sets": [
+            "HCRTR2_SB51"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.4284261990492671,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.5123323098178346,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "RHO-NB2_RHO",
+          "sets": [
+            "RHO_NB2"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.7347082622301265,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.6994710830870302,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.490465818120404,
+        "firstChoiceAcceptableProbability": 1.0,
+        "top5MeanDockQ": 0.5322809829528351,
+        "top5AcceptableCount": 5.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 4,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "development-exposed",
+      "arm": "source-validity-cdr-calibrated",
+      "groupCount": 4,
+      "setCount": 4,
+      "groups": [
+        {
+          "group": "ADRA1A-NB29",
+          "sets": [
+            "ADRA1A_NB29"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.27600835323605155,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.3835212826842318,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "FZD3-NB9",
+          "sets": [
+            "FZD3_NB9"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.522720457966171,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.5337992562222437,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "HCRTR2-SB51",
+          "sets": [
+            "HCRTR2_SB51"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.4284261990492671,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.5123323098178346,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "RHO-NB2_RHO",
+          "sets": [
+            "RHO_NB2"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.7347082622301265,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.6994710830870302,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.490465818120404,
+        "firstChoiceAcceptableProbability": 1.0,
+        "top5MeanDockQ": 0.5322809829528351,
+        "top5AcceptableCount": 5.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 4,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    },
+    {
+      "stratum": "development-exposed",
+      "arm": "source-validity-cdr-exact",
+      "groupCount": 4,
+      "setCount": 4,
+      "groups": [
+        {
+          "group": "ADRA1A-NB29",
+          "sets": [
+            "ADRA1A_NB29"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.27600835323605155,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.3835212826842318,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "FZD3-NB9",
+          "sets": [
+            "FZD3_NB9"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.522720457966171,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.5337992562222437,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "HCRTR2-SB51",
+          "sets": [
+            "HCRTR2_SB51"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.4284261990492671,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.5123323098178346,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        },
+        {
+          "group": "RHO-NB2_RHO",
+          "sets": [
+            "RHO_NB2"
+          ],
+          "means": {
+            "firstChoiceDockQ": 0.7347082622301265,
+            "firstChoiceAcceptableProbability": 1.0,
+            "top5MeanDockQ": 0.6994710830870302,
+            "top5AcceptableCount": 5.0,
+            "firstChoiceDockQChange": 0.0,
+            "acceptableProbabilityChange": 0.0,
+            "acceptableProbabilityDecrease": 0.0,
+            "acceptableProbabilityIncrease": 0.0
+          },
+          "unavailableSets": {
+            "firstChoiceDockQ": [],
+            "firstChoiceAcceptableProbability": [],
+            "top5MeanDockQ": [],
+            "top5AcceptableCount": [],
+            "firstChoiceDockQChange": [],
+            "acceptableProbabilityChange": [],
+            "acceptableProbabilityDecrease": [],
+            "acceptableProbabilityIncrease": []
+          }
+        }
+      ],
+      "equalGroupMeans": {
+        "firstChoiceDockQ": 0.490465818120404,
+        "firstChoiceAcceptableProbability": 1.0,
+        "top5MeanDockQ": 0.5322809829528351,
+        "top5AcceptableCount": 5.0,
+        "firstChoiceDockQChange": 0.0,
+        "acceptableProbabilityChange": 0.0,
+        "acceptableProbabilityDecrease": 0.0,
+        "acceptableProbabilityIncrease": 0.0
+      },
+      "selectionAvailableSets": 4,
+      "setsWithAcceptableProbabilityDecrease": [],
+      "setsWithAcceptableProbabilityIncrease": []
+    }
+  ],
+  "setQuality": [
+    {
+      "setId": "ADRA1A_NB29",
+      "group": "ADRA1A-NB29",
+      "planned": 25,
+      "outcomesAvailable": 25,
+      "acceptableCountKnown": 11,
+      "containsAcceptable": true,
+      "bestKnownDockQ": 0.5739479877401295
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "group": "CASR-NB2D11",
+      "planned": 25,
+      "outcomesAvailable": 25,
+      "acceptableCountKnown": 0,
+      "containsAcceptable": false,
+      "bestKnownDockQ": 0.023783199285549988
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "group": "CHRM1-NB1B4",
+      "planned": 25,
+      "outcomesAvailable": 25,
+      "acceptableCountKnown": 3,
+      "containsAcceptable": true,
+      "bestKnownDockQ": 0.3028111958445822
+    },
+    {
+      "setId": "FZD3_NB9",
+      "group": "FZD3-NB9",
+      "planned": 25,
+      "outcomesAvailable": 25,
+      "acceptableCountKnown": 24,
+      "containsAcceptable": true,
+      "bestKnownDockQ": 0.5912889012848029
+    },
+    {
+      "setId": "GRM5_NB43",
+      "group": "GRM5-NB43",
+      "planned": 25,
+      "outcomesAvailable": 25,
+      "acceptableCountKnown": 25,
+      "containsAcceptable": true,
+      "bestKnownDockQ": 0.8180546504593789
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "group": "HCRTR2-SB51",
+      "planned": 25,
+      "outcomesAvailable": 25,
+      "acceptableCountKnown": 25,
+      "containsAcceptable": true,
+      "bestKnownDockQ": 0.659087483092095
+    },
+    {
+      "setId": "LGR4_NB21",
+      "group": "LGR4-NB21",
+      "planned": 25,
+      "outcomesAvailable": 25,
+      "acceptableCountKnown": 0,
+      "containsAcceptable": false,
+      "bestKnownDockQ": 0.1690641982276729
+    },
+    {
+      "setId": "RHO_NB2",
+      "group": "RHO-NB2_RHO",
+      "planned": 25,
+      "outcomesAvailable": 25,
+      "acceptableCountKnown": 22,
+      "containsAcceptable": true,
+      "bestKnownDockQ": 0.7875828132592204
+    }
+  ],
+  "diagnostics": {
+    "source": {
+      "present": 200
+    },
+    "validity": {
+      "valid": 200
+    },
+    "interface": {
+      "contacting": 200
+    },
+    "cdr": {
+      "available": 200
+    },
+    "contactEvidence": {
+      "full-audit": 125,
+      "standalone-contact": 75
+    },
+    "missingCdrReasons": {}
+  },
+  "cdrActions": {
+    "ADRA1A_NB29/source-only": {
+      "not-used": 25
+    },
+    "ADRA1A_NB29/source-validity": {
+      "not-used": 25
+    },
+    "ADRA1A_NB29/source-validity-cdr-exact": {
+      "source-singleton": 25
+    },
+    "ADRA1A_NB29/source-validity-cdr-calibrated": {
+      "source-singleton": 25
+    },
+    "CASR_NB2D11/source-only": {
+      "not-used": 25
+    },
+    "CASR_NB2D11/source-validity": {
+      "not-used": 25
+    },
+    "CASR_NB2D11/source-validity-cdr-exact": {
+      "source-singleton": 25
+    },
+    "CASR_NB2D11/source-validity-cdr-calibrated": {
+      "source-singleton": 25
+    },
+    "CHRM1_NB1B4/source-only": {
+      "not-used": 25
+    },
+    "CHRM1_NB1B4/source-validity": {
+      "not-used": 25
+    },
+    "CHRM1_NB1B4/source-validity-cdr-exact": {
+      "source-singleton": 25
+    },
+    "CHRM1_NB1B4/source-validity-cdr-calibrated": {
+      "source-singleton": 25
+    },
+    "FZD3_NB9/source-only": {
+      "not-used": 25
+    },
+    "FZD3_NB9/source-validity": {
+      "not-used": 25
+    },
+    "FZD3_NB9/source-validity-cdr-exact": {
+      "source-singleton": 25
+    },
+    "FZD3_NB9/source-validity-cdr-calibrated": {
+      "source-singleton": 25
+    },
+    "GRM5_NB43/source-only": {
+      "not-used": 25
+    },
+    "GRM5_NB43/source-validity": {
+      "not-used": 25
+    },
+    "GRM5_NB43/source-validity-cdr-exact": {
+      "source-singleton": 25
+    },
+    "GRM5_NB43/source-validity-cdr-calibrated": {
+      "source-singleton": 25
+    },
+    "HCRTR2_SB51/source-only": {
+      "not-used": 25
+    },
+    "HCRTR2_SB51/source-validity": {
+      "not-used": 25
+    },
+    "HCRTR2_SB51/source-validity-cdr-exact": {
+      "source-singleton": 25
+    },
+    "HCRTR2_SB51/source-validity-cdr-calibrated": {
+      "source-singleton": 25
+    },
+    "LGR4_NB21/source-only": {
+      "not-used": 25
+    },
+    "LGR4_NB21/source-validity": {
+      "not-used": 25
+    },
+    "LGR4_NB21/source-validity-cdr-exact": {
+      "source-singleton": 25
+    },
+    "LGR4_NB21/source-validity-cdr-calibrated": {
+      "source-singleton": 25
+    },
+    "RHO_NB2/source-only": {
+      "not-used": 25
+    },
+    "RHO_NB2/source-validity": {
+      "not-used": 25
+    },
+    "RHO_NB2/source-validity-cdr-exact": {
+      "source-singleton": 25
+    },
+    "RHO_NB2/source-validity-cdr-calibrated": {
+      "source-singleton": 25
+    }
+  },
+  "fixedViewAudit": {
+    "evaluatedReferenceViews": 350,
+    "singleViewPoses": 150,
+    "dimerPoses": 50
+  },
+  "perPoseFixedViewAudit": [
+    {
+      "id": "ADRA1A_NB29_seed00",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.0041342499091572655
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed01",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.4665543784046953
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed02",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.38668512779864256
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed03",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.27600835323605155
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed04",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.004700072077016158
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed05",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.0040194912318200155
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed06",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.4328054066346568
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed07",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.31727826338260334
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed08",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.3262544368983165
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed09",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.1032515754863132
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed10",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.00398282577529285
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed11",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.005323557788638034
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed12",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.005330065393736189
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed13",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.48995042771729636
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed14",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.004457617779349555
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed15",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.3087663215786405
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed16",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.004755003532962781
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed17",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5739479877401295
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed18",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.0034869813979520035
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed19",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.004477257084291449
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed20",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.0050424674207931825
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed21",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.004775725250991692
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed22",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.4326531056736138
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed23",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.0028842917293100344
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29_seed24",
+      "setId": "ADRA1A_NB29",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.2483118389727217
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed00",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.007933879595205105,
+        "assignment-01": 0.005623148419398397,
+        "assignment-02": 0.005894312177357639,
+        "assignment-03": 0.007333065185239106
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed01",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.010153937226909862,
+        "assignment-01": 0.005168319813720355,
+        "assignment-02": 0.005257135309449386,
+        "assignment-03": 0.009301329884903243
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed02",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.008692425958876008,
+        "assignment-01": 0.0048316938158415685,
+        "assignment-02": 0.004894464199570679,
+        "assignment-03": 0.007972455058786817
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed03",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.010455890253181012,
+        "assignment-01": 0.004789497718401252,
+        "assignment-02": 0.0048184712361761745,
+        "assignment-03": 0.00952147552604934
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed04",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.01865134791826129,
+        "assignment-01": 0.006579630320349846,
+        "assignment-02": 0.006647293697936371,
+        "assignment-03": 0.016139261114174946
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed05",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.011109477121329236,
+        "assignment-01": 0.005026014921987732,
+        "assignment-02": 0.005032687494934688,
+        "assignment-03": 0.010043637404171067
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed06",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.009906324158869226,
+        "assignment-01": 0.004790659691563879,
+        "assignment-02": 0.004840023255486034,
+        "assignment-03": 0.009045865013215729
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed07",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.00807956144087242,
+        "assignment-01": 0.0055534995198801675,
+        "assignment-02": 0.005813396578067055,
+        "assignment-03": 0.007377675792297886
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed08",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.009532947311939198,
+        "assignment-01": 0.004852467449874235,
+        "assignment-02": 0.004891187745923365,
+        "assignment-03": 0.008715649725676084
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed09",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.01978616697083085,
+        "assignment-01": 0.006562082402117631,
+        "assignment-02": 0.006647512992950158,
+        "assignment-03": 0.016960488181574574
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed10",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.014269389153524326,
+        "assignment-01": 0.005853583576063425,
+        "assignment-02": 0.005868949683539245,
+        "assignment-03": 0.012784249162646824
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed11",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.008699719014628867,
+        "assignment-01": 0.004965712518732731,
+        "assignment-02": 0.005151861000786948,
+        "assignment-03": 0.007902417183310678
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed12",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.0060436178234116,
+        "assignment-01": 0.0040939999567038005,
+        "assignment-02": 0.004194240883710172,
+        "assignment-03": 0.005532639496970917
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed13",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.010567702287291402,
+        "assignment-01": 0.023783199285549988,
+        "assignment-02": 0.021088697790223255,
+        "assignment-03": 0.01083988451262653
+      },
+      "maximizingReferenceIds": [
+        "assignment-01"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed14",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.00810415276154889,
+        "assignment-01": 0.004939893388676015,
+        "assignment-02": 0.005128422840410493,
+        "assignment-03": 0.007411059799463219
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed15",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.010981280364384255,
+        "assignment-01": 0.005127456543061307,
+        "assignment-02": 0.005173627100335038,
+        "assignment-03": 0.009973795746348631
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed16",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.023519482344576518,
+        "assignment-01": 0.006892334179418924,
+        "assignment-02": 0.006981360024841222,
+        "assignment-03": 0.020013090828018196
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed17",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.017985834046518736,
+        "assignment-01": 0.006202235417750588,
+        "assignment-02": 0.006206190671262618,
+        "assignment-03": 0.01610077992178863
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed18",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.0091982542070901,
+        "assignment-01": 0.0058630319237214954,
+        "assignment-02": 0.006074979643832453,
+        "assignment-03": 0.008375413664809995
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed19",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.01512552750161965,
+        "assignment-01": 0.005822456131317315,
+        "assignment-02": 0.005822093097551567,
+        "assignment-03": 0.013558075195075521
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed20",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.008530482094752294,
+        "assignment-01": 0.005596935647893848,
+        "assignment-02": 0.005792343954039558,
+        "assignment-03": 0.00781535612021275
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed21",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.009453997487851674,
+        "assignment-01": 0.004523925593425304,
+        "assignment-02": 0.004548878603049148,
+        "assignment-03": 0.008627675987357817
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed22",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.008716414353109152,
+        "assignment-01": 0.00581036487237943,
+        "assignment-02": 0.006039243407974755,
+        "assignment-03": 0.007958959170690233
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed23",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.018065662406084784,
+        "assignment-01": 0.009368813012163012,
+        "assignment-02": 0.00872219791518862,
+        "assignment-03": 0.018515627871707314
+      },
+      "maximizingReferenceIds": [
+        "assignment-03"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11_seed24",
+      "setId": "CASR_NB2D11",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.009418958115665966,
+        "assignment-01": 0.004325819885081708,
+        "assignment-02": 0.004224814158462835,
+        "assignment-03": 0.008716583224305434
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed00",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.2536101656318808
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed01",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.04342810002533409
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed02",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.20783125946843084
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed03",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.07517730334829624
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed04",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.11222732743326236
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed05",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.07093182659886575
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed06",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.06625688227007305
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed07",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.057893760361373926
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed08",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.2931913179468833
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed09",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.12258801838068968
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed10",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.05435646260981961
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed11",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.07345981127230124
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed12",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.059222925820896256
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed13",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.17916296049525893
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed14",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.3028111958445822
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed15",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.07773158480269991
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed16",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.06266305409981061
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed17",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.0780562237517967
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed18",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.05251248106423812
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed19",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.16467307158503108
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed20",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.21088554773090964
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed21",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.08602039942694488
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed22",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.08588338651034218
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed23",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.07089991448231028
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4_seed24",
+      "setId": "CHRM1_NB1B4",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.053710463320520645
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed00",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5091411317162909
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed01",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5316553349654111
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed02",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5663291167308572
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed03",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5051418757330619
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed04",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.4968712945877279
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed05",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5520425405417142
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed06",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5746779383751051
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed07",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.48117194534378904
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed08",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5041365728232238
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed09",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.17087569618844967
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed10",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5596675760726534
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed11",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.522720457966171
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed12",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5297023671555087
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed13",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5672604580291941
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed14",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5912889012848029
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed15",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.4449171716088746
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed16",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5261235772994527
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed17",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.531778693506929
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed18",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5172852652527561
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed19",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5200090268109023
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed20",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5330328864995003
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed21",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.564291880614511
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed22",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5179212265431429
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed23",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5353918118762647
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "FZD3_NB9_seed24",
+      "setId": "FZD3_NB9",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.4854732723197392
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed00",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.8180546504593789,
+        "assignment-01": 0.006005652466217839,
+        "assignment-02": 0.006001195334552754,
+        "assignment-03": 0.8157647420156945
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed01",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7756629164349279,
+        "assignment-01": 0.005688270440359137,
+        "assignment-02": 0.0056860389331620425,
+        "assignment-03": 0.7645456724139145
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed02",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7846161890122488,
+        "assignment-01": 0.005800515221848757,
+        "assignment-02": 0.0057950652475038745,
+        "assignment-03": 0.7907523192686593
+      },
+      "maximizingReferenceIds": [
+        "assignment-03"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed03",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.741466710743402,
+        "assignment-01": 0.005867217129967202,
+        "assignment-02": 0.005862130936107496,
+        "assignment-03": 0.7407941130521246
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed04",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7354648945097012,
+        "assignment-01": 0.005670795696362647,
+        "assignment-02": 0.00566541928913547,
+        "assignment-03": 0.7381447995974592
+      },
+      "maximizingReferenceIds": [
+        "assignment-03"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed05",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.8082944730076669,
+        "assignment-01": 0.0058426566500779905,
+        "assignment-02": 0.005838678523084908,
+        "assignment-03": 0.8102973611695726
+      },
+      "maximizingReferenceIds": [
+        "assignment-03"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed06",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7685217249607622,
+        "assignment-01": 0.0057823731517072895,
+        "assignment-02": 0.0057758860562951014,
+        "assignment-03": 0.7638222289695217
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed07",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7848453775285505,
+        "assignment-01": 0.005874274533315654,
+        "assignment-02": 0.005870950851724785,
+        "assignment-03": 0.7825607592888826
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed08",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7174092164359448,
+        "assignment-01": 0.0057877397495181525,
+        "assignment-02": 0.005782406665172462,
+        "assignment-03": 0.7188240767447902
+      },
+      "maximizingReferenceIds": [
+        "assignment-03"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed09",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7827211982225534,
+        "assignment-01": 0.006053182790089598,
+        "assignment-02": 0.006047743851608184,
+        "assignment-03": 0.7936803246911124
+      },
+      "maximizingReferenceIds": [
+        "assignment-03"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed10",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7938723097770973,
+        "assignment-01": 0.005793553174803751,
+        "assignment-02": 0.005789346467731097,
+        "assignment-03": 0.7915430167639133
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed11",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7176797554824274,
+        "assignment-01": 0.005902328656900885,
+        "assignment-02": 0.005897373722911063,
+        "assignment-03": 0.7160489943386681
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed12",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7892702291669688,
+        "assignment-01": 0.005912530135259532,
+        "assignment-02": 0.0059042744166463755,
+        "assignment-03": 0.7967397032613001
+      },
+      "maximizingReferenceIds": [
+        "assignment-03"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed13",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7298170737923811,
+        "assignment-01": 0.005900430193104322,
+        "assignment-02": 0.005895128650366125,
+        "assignment-03": 0.7205438764556042
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed14",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.8072565453866338,
+        "assignment-01": 0.005942892649034587,
+        "assignment-02": 0.005938548293942744,
+        "assignment-03": 0.8131098748554612
+      },
+      "maximizingReferenceIds": [
+        "assignment-03"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed15",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7535402574422122,
+        "assignment-01": 0.005771053772402786,
+        "assignment-02": 0.005767120598045396,
+        "assignment-03": 0.7521690004407907
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed16",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7753045003076632,
+        "assignment-01": 0.0061361977047464196,
+        "assignment-02": 0.006130977346937132,
+        "assignment-03": 0.773208042174013
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed17",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.794504642596601,
+        "assignment-01": 0.005873482121630344,
+        "assignment-02": 0.00586916767827337,
+        "assignment-03": 0.7864287230972747
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed18",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7318337046603229,
+        "assignment-01": 0.005639477236536398,
+        "assignment-02": 0.005633743468340978,
+        "assignment-03": 0.724354381897217
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed19",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7490380966399126,
+        "assignment-01": 0.0058397755069858155,
+        "assignment-02": 0.0058357429303934755,
+        "assignment-03": 0.747054809477952
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed20",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.8105715289332984,
+        "assignment-01": 0.005902303862789733,
+        "assignment-02": 0.005895556151602681,
+        "assignment-03": 0.8055022480028189
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed21",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7959318156964863,
+        "assignment-01": 0.006033070231931136,
+        "assignment-02": 0.006029724588717508,
+        "assignment-03": 0.7860647406550614
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed22",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7334806509362045,
+        "assignment-01": 0.0061290936789077126,
+        "assignment-02": 0.006124426856433995,
+        "assignment-03": 0.72317160825328
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed23",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7759393537633253,
+        "assignment-01": 0.005660553822978891,
+        "assignment-02": 0.005656554434744704,
+        "assignment-03": 0.7754499361246413
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "GRM5_NB43_seed24",
+      "setId": "GRM5_NB43",
+      "fixedViews": 4,
+      "returnedViews": 4,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7604514346517584,
+        "assignment-01": 0.006112115616646742,
+        "assignment-02": 0.006108566483146858,
+        "assignment-03": 0.7628377525835776
+      },
+      "maximizingReferenceIds": [
+        "assignment-03"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed00",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.46155107904487486
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed01",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5343729579904507
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed02",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5837504328839694
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed03",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.49757593941628864
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed04",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5556024234026494
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed05",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.426541349331467
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed06",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6555689603925511
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed07",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.659087483092095
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed08",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6572952349396327
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed09",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.64709857418149
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed10",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.634378563303756
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed11",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5474754550204816
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed12",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6230832494091149
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed13",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6244622329380262
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed14",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.4627490796669174
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed15",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5992670427060126
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed16",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6486840475252942
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed17",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.576344178986618
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed18",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5837719414166043
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed19",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6071432790537493
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed20",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.4284261990492671
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed21",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5740493175517266
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed22",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6576564866706182
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed23",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5488727417401079
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51_seed24",
+      "setId": "HCRTR2_SB51",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.45839146611350295
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed00",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.12042202456523843
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed01",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.13347808049764612
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed02",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.08823842837164404
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed03",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.09016293565510192
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed04",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.1344914946142393
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed05",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.10142894860231329
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed06",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.050536011850039864
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed07",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.11809927990572423
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed08",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.0081918945755582
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed09",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.12182192514940093
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed10",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.16531524606821293
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed11",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.09578594435322807
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed12",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.10426805359955371
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed13",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.09158809356683595
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed14",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.1690641982276729
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed15",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.11095700758972259
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed16",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.10862972741755779
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed17",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.11613728919426482
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed18",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.08485706964556931
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed19",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.12014730002321489
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed20",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.10752598136759539
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed21",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.07842326715224797
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed22",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.07368649068870954
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed23",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.13468431416763646
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "LGR4_NB21_seed24",
+      "setId": "LGR4_NB21",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.08434143572755676
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed00",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6410730533860741
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed01",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6085426240504869
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed02",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5687826949508922
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed03",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6409965046461058
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed04",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6765316683180523
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed05",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6139299328288225
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed06",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.4777610600278385
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed07",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6781720035641493
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed08",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5883069654167424
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed09",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.1617975762023988
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed10",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7483838003285523
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed11",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7347082622301265
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed12",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7737840212114704
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed13",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7875828132592204
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed14",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6671880488721945
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed15",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7316528063509539
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed16",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.15536243547889408
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed17",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.7064844401354672
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed18",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.585607486231178
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed19",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6590254386352893
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed20",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.5616048755826082
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed21",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6814282780086964
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed22",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6129781765972705
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed23",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.13645056917969425
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    },
+    {
+      "id": "RHO_NB2_seed24",
+      "setId": "RHO_NB2",
+      "fixedViews": 1,
+      "returnedViews": 1,
+      "status": "evaluated",
+      "viewDockQ": {
+        "assignment-00": 0.6360838598367154
+      },
+      "maximizingReferenceIds": [
+        "assignment-00"
+      ]
+    }
+  ],
+  "unavailable": [],
+  "prospectiveOutcomesReadAfterCompletion": true,
+  "outcomesRecomputed": false,
+  "rulesChanged": false,
+  "physicalComparatorScope": "Existing physical comparator files are hash-bound but their arithmetic is outside this independent four-policy review"
+}

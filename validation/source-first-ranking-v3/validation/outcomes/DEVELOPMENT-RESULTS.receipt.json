@@ -1,0 +1,38 @@
+{
+  "schema": "confovhh-development-interpretation-receipt-v1",
+  "status": "PASS",
+  "createdAtUtc": "2026-09-25T01:09:33.061235+00:00",
+  "files": [
+    {
+      "path": "round3-benchmark/outcome-tools/DEVELOPMENT-RESULTS.md",
+      "bytes": 5152,
+      "sha256": "b188c0c85f963d6ef9149095d5d46ba4ed5917f372fc95e3bc50e35cd0f56dae"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/development-review/receipt.json",
+      "bytes": 518,
+      "sha256": "f0cb0c19247f0557f24b190031fca2d2b9b49d3368468d4638e11227d08041ad"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/development-review/review.json",
+      "bytes": 500537,
+      "sha256": "5d79bd0fbf632b1e9d9c658bea82287e6608df4cd1108f7e61421d328aa1b142"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/development-review/generation-comparison.csv",
+      "bytes": 1765,
+      "sha256": "5461dbd2c91f5f06ce6c6eda2a33d5c5033ed41327284af8803bbf295e794b48"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/review_development.py",
+      "bytes": 12534,
+      "sha256": "0945343deed5e6de790bc374e845356d7fe189f64914edb19d005fe8a80ac98a"
+    },
+    {
+      "path": "round3-control/FINAL-CALIBRATION-FREEZE.json",
+      "bytes": 1958,
+      "sha256": "1f29206c405001d59dad23583bfd62301828899fe42974e47f5bba78ae36a2b2"
+    }
+  ],
+  "prospectiveOutcomesRead": false
+}
