@@ -1,0 +1,69 @@
+{
+  "schema": "confovhh-round4-descriptive-figures-v1",
+  "reportReceipts": [
+    {
+      "path": "round4-analysis/new900-analysis/receipt.json",
+      "bytes": 1940,
+      "sha256": "ea7e35c95fee281c7656dd88ea5f872e7b593b770cb615f97cc047e1535a4ea0"
+    },
+    {
+      "path": "round4-reporting/reserved-summary/receipt.json",
+      "bytes": 3139,
+      "sha256": "aa7854f4d3bdb9e022fa6f4552880058066434d030fd4d447027460b7a97124e"
+    }
+  ],
+  "reportMembers": [
+    {
+      "path": "round4-analysis/new900-analysis/comparison.json",
+      "bytes": 210620,
+      "sha256": "82202117a92d11d3f4b3066b1f8c2631689420246ec2210fd28fd7afe1e62f76"
+    },
+    {
+      "path": "round4-reporting/reserved-summary/summary.json",
+      "bytes": 9469,
+      "sha256": "13745ca86b406b73d1977d2a767e174fc8a59a01bf97dd8726528aef1f4d3650"
+    }
+  ],
+  "implementation": {
+    "path": "round4-analysis/figures/plot_results.py",
+    "bytes": 11714,
+    "sha256": "d997bd3ace5a756c7558ea2fb1d478d31f45636ce429445c4de1874ee26c1c4b"
+  },
+  "matplotlibVersion": "3.10.8",
+  "files": [
+    {
+      "path": "round4-analysis/figures/final-results/generation-comparison.png",
+      "bytes": 280076,
+      "sha256": "cdd3c15d5d48f6eea9e916872330eee521fe0cea90d759ec1094f81bc6bfca21"
+    },
+    {
+      "path": "round4-analysis/figures/final-results/generation-comparison.svg",
+      "bytes": 172505,
+      "sha256": "257a75a062f4181572fc3ecea830ae166e3c10364e2d13317b112c4f10c0a37e"
+    },
+    {
+      "path": "round4-analysis/figures/final-results/generation-comparison.pdf",
+      "bytes": 38645,
+      "sha256": "4526aa69ede3eb80b3dc68edd0b1427b3288ac281cbe1e392841d9eb90541de6"
+    },
+    {
+      "path": "round4-analysis/figures/final-results/reserved-results.png",
+      "bytes": 140809,
+      "sha256": "5be08603c3aa14e402778ab2057d61ffc93e22282c9efb0b2b4a2d5819463aad"
+    },
+    {
+      "path": "round4-analysis/figures/final-results/reserved-results.svg",
+      "bytes": 99069,
+      "sha256": "4bf7cb79aa37b7937c79e18d64d983fd667132592ea15ad697ba3eef0425f4f4"
+    },
+    {
+      "path": "round4-analysis/figures/final-results/reserved-results.pdf",
+      "bytes": 28275,
+      "sha256": "62100400937dc7f06e38fa337423532117080f385ca47e312dc2f65db26e68e1"
+    }
+  ],
+  "rankingOrSelectionChanged": false,
+  "outcomesRecomputed": false,
+  "structuralQualityValuesUnchanged": true,
+  "missingValuesZeroFilled": false
+}

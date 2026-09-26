@@ -1,0 +1,57 @@
+{
+  "schema": "confovhh-round4-independent-combined-development-contract-review-v1",
+  "status": "PASS",
+  "reviewedAtUtc": "2026-09-25T05:08:01.591946+00:00",
+  "inputBindings": [
+    {
+      "path": "round4-ranking/combine_development.py",
+      "bytes": 17219,
+      "sha256": "b9b1cadc32768d16738ec8265f052302dbbffd4313dda93393fe0b00ed82cffe"
+    },
+    {
+      "path": "round4-ranking/test_combine_development.py",
+      "bytes": 8788,
+      "sha256": "b074f46748adc360b564718944562589e4063da86119514eec43645cf2bab83d"
+    },
+    {
+      "path": "round4-ranking/COMBINED-DEVELOPMENT.md",
+      "bytes": 5443,
+      "sha256": "60fa34372fc4ecb7a4e1d04fae50b38182775e00e3dbf5485ede274513790650"
+    },
+    {
+      "path": "round4-outcomes/combined-development-review-tests.log",
+      "bytes": 1983,
+      "sha256": "c49894df45cd1d8cebaabf29ed3b0df74c0912f16f0717930df4a19609378a9a"
+    },
+    {
+      "path": "round4-outcomes/IMPLEMENTATION-FREEZE.json",
+      "bytes": 7596,
+      "sha256": "190329a887cb579c35f76f0a3c780fc35964d6a330e52e693d3f5bcfd05dde15"
+    },
+    {
+      "path": "round4-ranking/FEATURE-ADAPTER-FREEZE.json",
+      "bytes": 5289,
+      "sha256": "b0d59c38d86e5e3ebecc1cefba3b9ca4ad15d49d9c5f68ea8ded2cb9956eb685"
+    }
+  ],
+  "independentlyRerunSyntheticTests": 12,
+  "remainingBlockingFindings": [],
+  "checks": [
+    "Explicit false/missing join authorization is rejected before authenticated payload or new label access.",
+    "New source receipt is replayed and must be final development with all900 attempts and the exact approved cohort.",
+    "Authenticated outcome receipt must seal the same source/preparation receipt and cohort before labels join.",
+    "Exact old300/new900 identity rosters yield1200 retained attempts and48 target/arm/seed-batch pools.",
+    "New outcome identities include coordinates, target, arm, batch, seed and original/normalized producer status.",
+    "Generated missing DockQ remains null and blocks fit proposal; failed/interrupted generation remains retained without fabricated labels.",
+    "Feature rows are copied without changes; baseline producer profiles must match and alternate regimes remain distinct from baseline.",
+    "No model is fit by the join; the proposed fit release is separate and initially unauthorized."
+  ],
+  "newDevelopmentOutcomesRead": false,
+  "newReservedOutcomesRead": false,
+  "modelsFit": 0,
+  "filesEditedByReviewer": [],
+  "limitations": [
+    "Review scope is the combined-development join only; the separately revised fit verifier was not audited here.",
+    "Actual1200-data execution remains gated by a later explicit parent join release."
+  ]
+}

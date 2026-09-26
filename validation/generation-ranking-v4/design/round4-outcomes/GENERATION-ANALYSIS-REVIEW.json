@@ -1,0 +1,82 @@
+{
+  "schema": "confovhh-round4-independent-generation-analysis-review-v1",
+  "status": "PASS",
+  "reviewedAtUtc": "2026-09-25T04:56:27.133844+00:00",
+  "inputBindings": [
+    {
+      "path": "round4-analysis/analyze_generation.py",
+      "bytes": 24835,
+      "sha256": "f9e19da9e080f59e5ce93193d574d3219f9ff1f9563eda4cd4fca8e64c8f736f"
+    },
+    {
+      "path": "round4-analysis/test_analyze_generation.py",
+      "bytes": 11736,
+      "sha256": "8e36fe0bdad9e32aec5d6998fa10e6d1c2cc4481c1d7ba389c8f3747c6b9d56d"
+    },
+    {
+      "path": "round4-analysis/README.md",
+      "bytes": 5827,
+      "sha256": "1b9d2ee4956cc3287e110d709deae1e6f587a1d70f2e47dc276a0025ab616c0f"
+    },
+    {
+      "path": "round4-outcomes/review_generation_analysis.py",
+      "bytes": 3831,
+      "sha256": "ce8016b2b07b93293711685ea1a7f0437ff5e7521c6d782f82fa653ecc620ad3"
+    },
+    {
+      "path": "round4-outcomes/generation-analysis-suite-review.log",
+      "bytes": 2997,
+      "sha256": "212ab083b0749d04f499e26c23c63234bde1f61bf082e1d15bed0c94f1f278e6"
+    },
+    {
+      "path": "round4-outcomes/generation-analysis-independent-controls-final.log",
+      "bytes": 1220,
+      "sha256": "7fdd47cbc8e74038fadb3dbe5f062c04ec35d523df96fb74df33b5f1e03a57c9"
+    },
+    {
+      "path": "round4-outcomes/IMPLEMENTATION-FREEZE.json",
+      "bytes": 7596,
+      "sha256": "190329a887cb579c35f76f0a3c780fc35964d6a330e52e693d3f5bcfd05dde15"
+    },
+    {
+      "path": "round4-planning/ANALYSIS-DECISIONS.md",
+      "bytes": 6703,
+      "sha256": "7f76db198e105eb3ba5d5a5667bed499a43bfa2b4b23a34519169edb7ea7e6de"
+    },
+    {
+      "path": "round4-planning/ANALYSIS-DECISIONS-FREEZE.json",
+      "bytes": 847,
+      "sha256": "cd2b00f7fa2225c1de38cdf272fb710fb399e6569eb69d601722e506545d4d95"
+    }
+  ],
+  "tests": {
+    "authorSuiteIndependentlyRerun": 24,
+    "additionalIndependentArithmeticControls": 7,
+    "passed": 31,
+    "failed": 0
+  },
+  "resolvedFindings": [
+    {
+      "finding": "Method freeze accepted any listed files without mandatory implementation membership.",
+      "resolution": "Exact mandatory 23-file roster now enforced before new data access; synthetic omission rejection passed."
+    }
+  ],
+  "checks": [
+    "Only new 900 IDs, three generation arms and seeds 25\u201349 are accepted; original 300 remain separate.",
+    "Source ranks are authenticated/replayed unchanged; exact coordinate, arm, seed, producer status and outcome membership joins are required.",
+    "Whole scientific tie blocks receive exact rational first-choice/top-five expected weights; missing selected labels are not dropped.",
+    "Equal biological-group then equal target weights preserve the paired AGTR1 group rather than counting it twice.",
+    "Generation failures remain in planned-attempt yield denominators; missing generated outcomes block arm selection.",
+    "Prespecified pair-only 0.02 gain/no acceptable-first loss/unchanged coverage gate uses exact arithmetic; dimer/helix/CASR cannot drive pair arm choice.",
+    "Paired bootstrap resamples whole biological groups with fixed PCG64 seed and preserves explicit missingness.",
+    "CLI requires explicit parent analysis release, exact frozen method roster, final non-snapshot source preparation, authenticated outcome receipt and bound recorded timing."
+  ],
+  "remainingBlockingFindings": [],
+  "newDevelopmentOutcomesRead": false,
+  "newReservedOutcomesRead": false,
+  "scientificNumericalCodeChangedByReviewer": false,
+  "limitations": [
+    "End-to-end execution with actual new900 labels was not run and remains gated by parent release.",
+    "Bootstrap intervals are descriptive on a small development group panel, not evidence of general superiority."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "evaluationRole": "development",
+  "reportingFreeze": {
+    "path": "round4-reporting/REPORTING-FREEZE.json",
+    "bytes": 2321,
+    "sha256": "7d391c58dae4f4275f73b9e381c3b84b4a4d161eff56ffe0e49dd0e0280ee552"
+  },
+  "generationAnalysisReceipt": {
+    "path": "round4-analysis/new900-analysis/receipt.json",
+    "bytes": 1940,
+    "sha256": "ea7e35c95fee281c7656dd88ea5f872e7b593b770cb615f97cc047e1535a4ea0"
+  },
+  "combinedJoinReceipt": {
+    "path": "round4-ranking/combined-development1200/receipt.json",
+    "bytes": 1941,
+    "sha256": "017b0d9df4568619b748e7d50326544b5ff44c2d93ac4bef454179895478b8a4"
+  },
+  "schema": "confovhh-round4-final-selection-release-v1",
+  "authorizeFinalSelection": true,
+  "fitReceipt": {
+    "path": "round4-ranking/fit-development-1200/receipt.json",
+    "bytes": 2184,
+    "sha256": "a43fdd7fcc8b73f37be0aeb034d8715c09954009c49a967d52ff4e17abbdee28"
+  },
+  "fitVerification": {
+    "path": "round4-ranking/fit-development-1200-independent-verification.json",
+    "bytes": 1445,
+    "sha256": "8e022ca124fb0bf82cbbefebb49e98769e8e2be4803bb9a9a1a61e065c4596f1"
+  }
+}

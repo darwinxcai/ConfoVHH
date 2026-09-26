@@ -1,0 +1,48 @@
+{
+  "schema": "confovhh-round4-combined-development-join-receipt-v1",
+  "status": "READY_FOR_SEPARATE_FIT_RELEASE",
+  "joinRelease": {
+    "path": "round4-ranking/combined1200-join-release.authorized.json",
+    "bytes": 1427,
+    "sha256": "3bd9008e6c7b8e65dd5e33305806ed7b7cb1475098e11a1a75ea28b67b6a7cf9"
+  },
+  "implementation": {
+    "joinAdapterSha256": "b9b1cadc32768d16738ec8265f052302dbbffd4313dda93393fe0b00ed82cffe",
+    "ranker": {
+      "ranker.py": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604",
+      "artifacts.py": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5",
+      "run.py": "a2948242f196d358c46aa723e59c864d1009bb84be5abb13fdb518fca157ae04"
+    },
+    "featureFreezeSha256": "b0d59c38d86e5e3ebecc1cefba3b9ca4ad15d49d9c5f68ea8ded2cb9956eb685",
+    "outcomeFreezeSha256": "190329a887cb579c35f76f0a3c780fc35964d6a330e52e693d3f5bcfd05dde15",
+    "outcomeAdapterSha256": "ecff170ddb66c91c1b4e2d65539721648891743436491b0bc01ab311673bc6b2"
+  },
+  "files": [
+    {
+      "path": "round4-ranking/combined-development1200/predictions.json",
+      "bytes": 1933887,
+      "sha256": "fe0b29e3b17fda7930ea27d31fbebda914bd28c29186a8e9dd5456b302da87c2"
+    },
+    {
+      "path": "round4-ranking/combined-development1200/labels.json",
+      "bytes": 64620,
+      "sha256": "47c3b213ef52aded02b9198fbb003ab03d8e7f2a8d1b9569dc1b27a4a2d4994b"
+    },
+    {
+      "path": "round4-ranking/combined-development1200/join-status.json",
+      "bytes": 82772,
+      "sha256": "4e27e8efbd929f0b7644a766ca4f6751070bc54f8c504c12e9c7b43017c8d987"
+    },
+    {
+      "path": "round4-ranking/combined-development1200/fit-release.proposed.json",
+      "bytes": 39374,
+      "sha256": "9a91f9987036ab828c1a3b5a3a0fd3a4ca6ae7f9554192da927a5571e8c59d89"
+    }
+  ],
+  "planned": 1200,
+  "fitEligible": true,
+  "fitReleaseProposed": true,
+  "fitAuthorized": false,
+  "modelsFit": 0,
+  "reservedOutcomesRead": false
+}

@@ -1,0 +1,581 @@
+{
+  "schema": "confovhh-round4-outcome-reference-inventory-v1",
+  "sources": [
+    {
+      "path": "round3-benchmark/outcome-tools/reference-inventory.json",
+      "bytes": 15202,
+      "sha256": "a7b197c0393462809792f9cf00eef01231c32932d5c53b07f0c9375c30e796b0"
+    },
+    {
+      "path": "round4-benchmark/reference-view-inventory.json",
+      "bytes": 4816,
+      "sha256": "059c34d0d30f3ba9663d2ec7a4502e409ff312aea9c6b1f356ab1f74be254fc0"
+    },
+    {
+      "path": "round4-benchmark/ENROLLMENT.freeze.json",
+      "bytes": 21572,
+      "sha256": "f43d145a873d2ccf6aeae8407fabc4596584bea9a82d8402c29f6d5361f096cb"
+    }
+  ],
+  "predictionSelectedNbFixed": true,
+  "targets": [
+    {
+      "id": "dev_6knm",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "B"
+          ],
+          "originalAuthSelectedNb": "A",
+          "coordinate": {
+            "path": "round3-benchmark/outcome-tools/references/dev_6knm/assignment-00.cif",
+            "bytes": 326694,
+            "sha256": "0f76f75151f11a13cb0a7b565cf0c74d7ec1e638c1ab909f1f6d299ca296f45e"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/outcome-tools/references/dev_6knm/assignment-00.receipt.json",
+            "bytes": 11418,
+            "sha256": "8b427e72801743593d19312ac2c2d6cc89d9ff1d65742a00a969d710c3ea87e6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dev_8qot",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "B"
+          ],
+          "originalAuthSelectedNb": "A",
+          "coordinate": {
+            "path": "round3-benchmark/outcome-tools/references/dev_8qot/assignment-00.cif",
+            "bytes": 277637,
+            "sha256": "b0518e74f2442227cd51623cc4ddb89ed6e85c9c1b52da95f42b75c5b9a4901e"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/outcome-tools/references/dev_8qot/assignment-00.receipt.json",
+            "bytes": 2493,
+            "sha256": "699f36e39bfa7aa6b6b1d040402886f3e20be1d139ceadc0aba90fc4bead23c6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dev_8th3",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "B"
+          ],
+          "originalAuthSelectedNb": "A",
+          "coordinate": {
+            "path": "round3-benchmark/outcome-tools/references/dev_8th3/assignment-00.cif",
+            "bytes": 344007,
+            "sha256": "6684ae7582cc7e5d2f387a617ede5845211eeeaa1c4aad8fd32dae5312fdc5b3"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/outcome-tools/references/dev_8th3/assignment-00.receipt.json",
+            "bytes": 14494,
+            "sha256": "5761ce7f94fd1f6eff5935062ccf29256a790a43ed5db2ae9909e840ad541ad7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dev_8th4",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "B"
+          ],
+          "originalAuthSelectedNb": "A",
+          "coordinate": {
+            "path": "round3-benchmark/outcome-tools/references/dev_8th4/assignment-00.cif",
+            "bytes": 341745,
+            "sha256": "5378b5b30ca386f4babb6431c7fec10c67fd7c721f7d297b9fe1973b7884dd50"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/outcome-tools/references/dev_8th4/assignment-00.receipt.json",
+            "bytes": 14545,
+            "sha256": "b5709e1e1434cb0b484bdcb3dda154b614046a9c90b5b9a0da919930cf992170"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CASR_NB2D11",
+      "predictionReceptorChains": [
+        "A",
+        "B"
+      ],
+      "predictionSelectedNb": "C",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "A",
+            "C"
+          ],
+          "originalAuthSelectedNb": "B",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/CASR_NB2D11/assignment-00.cif",
+            "bytes": 1309798,
+            "sha256": "e61919db767d3d14bc5184bad43fac0f97e1ca59e1cbc16e65238910b0445887"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/CASR_NB2D11/assignment-00.receipt.json",
+            "bytes": 6187,
+            "sha256": "8e059f2db5da8ff8f2a276683ae6a504c835872da556bf433f62938946b3f85b"
+          }
+        },
+        {
+          "id": "assignment-01",
+          "originalAuthReceptorChains": [
+            "A",
+            "C"
+          ],
+          "originalAuthSelectedNb": "D",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/CASR_NB2D11/assignment-01.cif",
+            "bytes": 1309798,
+            "sha256": "301de42f171af5cd921042bc9a17a6be1fd81c8a6fad06c534f9d1554d462fe3"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/CASR_NB2D11/assignment-01.receipt.json",
+            "bytes": 6187,
+            "sha256": "3f0e0bc040157b6c4eb2845bc277f89aec82db34b4385ccd1b7d9766ced51138"
+          }
+        },
+        {
+          "id": "assignment-02",
+          "originalAuthReceptorChains": [
+            "C",
+            "A"
+          ],
+          "originalAuthSelectedNb": "B",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/CASR_NB2D11/assignment-02.cif",
+            "bytes": 1309798,
+            "sha256": "dbd58278aa204782636070624ea10196c2664a001411820d8fb98e9685b39386"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/CASR_NB2D11/assignment-02.receipt.json",
+            "bytes": 6187,
+            "sha256": "41f572d713041bf60d070d52d60d0af96d5942832b4bbbdf53a4ea5964ac2e61"
+          }
+        },
+        {
+          "id": "assignment-03",
+          "originalAuthReceptorChains": [
+            "C",
+            "A"
+          ],
+          "originalAuthSelectedNb": "D",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/CASR_NB2D11/assignment-03.cif",
+            "bytes": 1309798,
+            "sha256": "165d5e739953aa66a0579f0b45df5342cef86c602c71416afb8f021f9225b0eb"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/CASR_NB2D11/assignment-03.receipt.json",
+            "bytes": 6187,
+            "sha256": "350ad857e5ba2e3858fd3043164f2cdeb9d22152b91baf2f458d60a190a2a368"
+          }
+        }
+      ]
+    },
+    {
+      "id": "GRM5_NB43",
+      "predictionReceptorChains": [
+        "A",
+        "B"
+      ],
+      "predictionSelectedNb": "C",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "A",
+            "B"
+          ],
+          "originalAuthSelectedNb": "C",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/GRM5_NB43/assignment-00.cif",
+            "bytes": 1325000,
+            "sha256": "f0d207a8e3ef584f85c1894b3d7ca8bbfe37f34a1c74095e670bc305c73352eb"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/GRM5_NB43/assignment-00.receipt.json",
+            "bytes": 6122,
+            "sha256": "5cd67cafb5d8323856aace7119342b0c88928267aa94bee0fe033f6ba57374e8"
+          }
+        },
+        {
+          "id": "assignment-01",
+          "originalAuthReceptorChains": [
+            "A",
+            "B"
+          ],
+          "originalAuthSelectedNb": "D",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/GRM5_NB43/assignment-01.cif",
+            "bytes": 1325000,
+            "sha256": "05f9c0be324a402545b3654091afd3d7749d8d5e06b914febe6e4c9fa436842a"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/GRM5_NB43/assignment-01.receipt.json",
+            "bytes": 6122,
+            "sha256": "826b55ebb6bff192437f7b64037691bbc258c59e1680f04ba01dbadfcebfa270"
+          }
+        },
+        {
+          "id": "assignment-02",
+          "originalAuthReceptorChains": [
+            "B",
+            "A"
+          ],
+          "originalAuthSelectedNb": "C",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/GRM5_NB43/assignment-02.cif",
+            "bytes": 1325000,
+            "sha256": "c11c8acc2b787abb2224eb79ed8f2f5cba0ca6664f4bcca9edad912d88f038a9"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/GRM5_NB43/assignment-02.receipt.json",
+            "bytes": 6126,
+            "sha256": "3bbeca366758445df89df4ed56d173862c7392ba39d696127c865ed1f5fba9bf"
+          }
+        },
+        {
+          "id": "assignment-03",
+          "originalAuthReceptorChains": [
+            "B",
+            "A"
+          ],
+          "originalAuthSelectedNb": "D",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/GRM5_NB43/assignment-03.cif",
+            "bytes": 1325000,
+            "sha256": "41605fc982773dc0b979dcb554698a76e814280d6abd86adc9a8af1ca63c1e39"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/GRM5_NB43/assignment-03.receipt.json",
+            "bytes": 6126,
+            "sha256": "e7507cb3b9cdfc2ec91f78ae822714abef8e222c89a179e8325a28da51b2aad3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "CHRM1_NB1B4",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "A"
+          ],
+          "originalAuthSelectedNb": "C",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/CHRM1_NB1B4/assignment-00.cif",
+            "bytes": 325490,
+            "sha256": "9f824f5264602f710d6e933ec8017885d6262ab1a010ed555f2ae64b04b0f306"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/CHRM1_NB1B4/assignment-00.receipt.json",
+            "bytes": 4207,
+            "sha256": "26551ee6171c8b667a9bcf80fdd290cc1b5776f2fafe55847dd637461de6b784"
+          }
+        }
+      ]
+    },
+    {
+      "id": "LGR4_NB21",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "D"
+          ],
+          "originalAuthSelectedNb": "B",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/LGR4_NB21/assignment-00.cif",
+            "bytes": 656218,
+            "sha256": "b2121051babc2f7618a02303baaec956fbff7b4f40a7e5310bc1029a35f819b7"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/LGR4_NB21/assignment-00.receipt.json",
+            "bytes": 3559,
+            "sha256": "8fe9d167c7694346b726bb408bd603397e8edf193edb108a04619fc6b7888397"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ADRA1A_NB29",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "A"
+          ],
+          "originalAuthSelectedNb": "D",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/ADRA1A_NB29/assignment-00.cif",
+            "bytes": 386652,
+            "sha256": "a502f3c1e4d2e26c71a098bf7a0496273caa3dce16537eddb89bf5ac739ebcb6"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/ADRA1A_NB29/assignment-00.receipt.json",
+            "bytes": 7676,
+            "sha256": "dd037cd62533a7befb22ecf3ab973bbc2ea8027ba5ef866811ed941c70b223b4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HCRTR2_SB51",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "R"
+          ],
+          "originalAuthSelectedNb": "S",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/HCRTR2_SB51/assignment-00.cif",
+            "bytes": 971028,
+            "sha256": "d9b9c9cb60a291a9326fd5b2786ba8e32fa2ea6ab2c7d58337c009034441e1e0"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/HCRTR2_SB51/assignment-00.receipt.json",
+            "bytes": 6410,
+            "sha256": "ac7b16b04ff392ba93b5a3a70a90f8639c30771401427bd5f5e3f93ffc8ef5d7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "RHO_NB2",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "A"
+          ],
+          "originalAuthSelectedNb": "C",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/RHO_NB2/assignment-00.cif",
+            "bytes": 632862,
+            "sha256": "282760e864f7b659b360d35fb5dae8cb942a8016380c949090ff95d680cf547b"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/RHO_NB2/assignment-00.receipt.json",
+            "bytes": 7157,
+            "sha256": "b246a842ae2d2f68299f92b5786b65f5688d70bef1b78346fb91f63e217852a8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "FZD3_NB9",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "assignment-00",
+          "originalAuthReceptorChains": [
+            "A"
+          ],
+          "originalAuthSelectedNb": "B",
+          "coordinate": {
+            "path": "round3-benchmark/scoring-view/native/FZD3_NB9/assignment-00.cif",
+            "bytes": 300016,
+            "sha256": "9a045d20ea96b067a2d011e02f78a87e9131170d04759dee58a9d1cf94169a14"
+          },
+          "viewReceipt": {
+            "path": "round3-benchmark/scoring-view/native/FZD3_NB9/assignment-00.receipt.json",
+            "bytes": 5177,
+            "sha256": "7875d03fddc83c91d9e075c4b7acbb7ad7a3f0ae024ddc2925ea467bbf5eecc5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ADGRV1_RE02",
+      "predictionReceptorChains": [
+        "A"
+      ],
+      "predictionSelectedNb": "B",
+      "views": [
+        {
+          "id": "ADGRV1_RE02__R-A__V-B",
+          "originalAuthReceptorChains": [
+            "A"
+          ],
+          "originalAuthSelectedNb": "B",
+          "coordinate": {
+            "path": "round4-benchmark/reference-views/ADGRV1_RE02__R-A__V-B.cif",
+            "sha256": "572f1be6f6d29bc65b70fb46f779a63e1d59d3c53c803157758d1ecee6bb056b",
+            "bytes": 243204
+          },
+          "viewReceipt": {
+            "path": "round4-benchmark/reference-views/ADGRV1_RE02__R-A__V-B.receipt.json",
+            "sha256": "4bfb3e3ed1e69e59dde7f91ce81b5775ee5fd8e2a2ad602005576e57da51bcdc",
+            "bytes": 5189
+          }
+        }
+      ]
+    },
+    {
+      "id": "GPR158_NB20",
+      "predictionReceptorChains": [
+        "A",
+        "B"
+      ],
+      "predictionSelectedNb": "C",
+      "views": [
+        {
+          "id": "GPR158_NB20__R-AB__V-C",
+          "originalAuthReceptorChains": [
+            "A",
+            "B"
+          ],
+          "originalAuthSelectedNb": "C",
+          "coordinate": {
+            "path": "round4-benchmark/reference-views/GPR158_NB20__R-AB__V-C.cif",
+            "sha256": "62756df65040284b62a0988e2b7a2e89781c55c3eed4f986331a9dbf7ebb4c55",
+            "bytes": 1102116
+          },
+          "viewReceipt": {
+            "path": "round4-benchmark/reference-views/GPR158_NB20__R-AB__V-C.receipt.json",
+            "sha256": "c93bc99c9ffb9bf22ba18c2908dabc6b80ac970427996ef791fdd93fe6639473",
+            "bytes": 19579
+          }
+        },
+        {
+          "id": "GPR158_NB20__R-AB__V-E",
+          "originalAuthReceptorChains": [
+            "A",
+            "B"
+          ],
+          "originalAuthSelectedNb": "E",
+          "coordinate": {
+            "path": "round4-benchmark/reference-views/GPR158_NB20__R-AB__V-E.cif",
+            "sha256": "6edf0a927f36463dbe7cc5eeadcd7e59aaef799f301d6086c5f69a9619579d69",
+            "bytes": 1102116
+          },
+          "viewReceipt": {
+            "path": "round4-benchmark/reference-views/GPR158_NB20__R-AB__V-E.receipt.json",
+            "sha256": "4884990f59733a2a47ec995b11d18f7400212ebab90f070e29f3ba5064f1fc7f",
+            "bytes": 19579
+          }
+        },
+        {
+          "id": "GPR158_NB20__R-BA__V-C",
+          "originalAuthReceptorChains": [
+            "B",
+            "A"
+          ],
+          "originalAuthSelectedNb": "C",
+          "coordinate": {
+            "path": "round4-benchmark/reference-views/GPR158_NB20__R-BA__V-C.cif",
+            "sha256": "a8805682d84a12f57f278d06af2519c02a682b8acabd114c94c5772475fcb3b2",
+            "bytes": 1102116
+          },
+          "viewReceipt": {
+            "path": "round4-benchmark/reference-views/GPR158_NB20__R-BA__V-C.receipt.json",
+            "sha256": "e0298c047c7f7f401eff80f028da64f6daafc8cef8f72cc7d4b0d360a10e10c9",
+            "bytes": 19578
+          }
+        },
+        {
+          "id": "GPR158_NB20__R-BA__V-E",
+          "originalAuthReceptorChains": [
+            "B",
+            "A"
+          ],
+          "originalAuthSelectedNb": "E",
+          "coordinate": {
+            "path": "round4-benchmark/reference-views/GPR158_NB20__R-BA__V-E.cif",
+            "sha256": "411677d173955fb2288f0922b841522e7acae7606bc4006f5e25641395b05475",
+            "bytes": 1102116
+          },
+          "viewReceipt": {
+            "path": "round4-benchmark/reference-views/GPR158_NB20__R-BA__V-E.receipt.json",
+            "sha256": "0adfe24a17ce0726bcb2274222523996793c46b6753e279be8c46391c52141f9",
+            "bytes": 19578
+          }
+        }
+      ]
+    },
+    {
+      "id": "MC4R_PN162",
+      "predictionReceptorChains": [
+        "E"
+      ],
+      "predictionSelectedNb": "F",
+      "views": [
+        {
+          "id": "MC4R_PN162__R-A__V-D",
+          "originalAuthReceptorChains": [
+            "A"
+          ],
+          "originalAuthSelectedNb": "D",
+          "coordinate": {
+            "path": "round4-benchmark/reference-views/MC4R_PN162__R-A__V-D.cif",
+            "sha256": "ef3dc94de06e6f3a18518c81be4f517e8322f8591e950fe1500b6e5edd63cffb",
+            "bytes": 722434
+          },
+          "viewReceipt": {
+            "path": "round4-benchmark/reference-views/MC4R_PN162__R-A__V-D.receipt.json",
+            "sha256": "c96750d41c4c5357a6f29e031a0ca84d6bcfdfe154cc327621ceff5377da9049",
+            "bytes": 13443
+          }
+        }
+      ]
+    }
+  ]
+}

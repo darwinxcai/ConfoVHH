@@ -1,0 +1,116 @@
+{
+  "schema": "confovhh-round4-focused-eligibility-ledger-v1",
+  "scope": "Mammalian cellular GPCR\u2013nanobody complexes; no viral/pathogen/toxin systems.",
+  "searchScope": "Finite fresh RCSB full-text nanobody GPCR query plus targeted ACKR3/VUN701/RE02 searches and primary-paper leads; not an exhaustive PDB census.",
+  "entryMetadataRefreshCount": 407,
+  "focusedCases": [
+    {
+      "id": "9FTE",
+      "receptorNb": "ADGRV1 / RE02",
+      "disposition": "QUALIFIED_PARENT_ACCEPTED_PAIR_NEW_OUTCOME",
+      "reason": "One exact deposited mouse pair; metadata/structural-prose exposure and experimental-species discrepancy retained. No global independence certificate."
+    },
+    {
+      "id": "9VOR",
+      "receptorNb": "GPR158 / Nb20",
+      "disposition": "QUALIFIED_PARENT_ACCEPTED_CONTEXT_BASELINE",
+      "reason": "Full2+2 protein context; Nb spans both receptor protomers. Weak local ECD/Nb density makes this exploratory baseline coverage."
+    },
+    {
+      "id": "9VOS",
+      "receptorNb": "GPR158 / Nb20 with RGS7-Gbeta5",
+      "disposition": "ALTERNATE_CONTEXT_SAME_GROUP_NOT_SEPARATE_ENROLLMENT",
+      "reason": "Same receptor and identical150aaNb as9VOR, with RGS7/Gbeta5 added. Not the paper Nb20* mutant and not an independent lineage."
+    },
+    {
+      "id": "8QJ2",
+      "receptorNb": "MC4R / pN162",
+      "disposition": "QUALIFIED_PARENT_ACCEPTED_CONTEXT_BASELINE",
+      "reason": "Complete wild-type MC4R sequence is an exact substring of deposited fusion. Correct prior deposited-graft blocker; preserve beta2AR/Cb80 discovery immunogen exposure and all6protein context."
+    },
+    {
+      "id": "7DGE",
+      "receptorNb": "GRM1 / Nb43",
+      "disposition": "EXCLUDE_RESERVED_RELATED_RECEPTOR_AND_IDENTICAL_NB",
+      "reason": "Nb entity sequence exactly equals current GRM5_NB43. GRM1/GRM5 conservative mGlu family also overlaps. Full2+2 reference does not create a new independent learner group."
+    },
+    {
+      "id": "7E9G",
+      "receptorNb": "GRM2 / DN13",
+      "disposition": "RELATED_FAMILY_CONTEXT_COVERAGE_NOT_SELECTED",
+      "reason": "Related mGlu family to GRM5 development. Nb contacts both protomers; deposited8protein context. Not a pair-only independent reserve."
+    },
+    {
+      "id": "9W3K",
+      "receptorNb": "GPR151 / Nb6",
+      "disposition": "EXCLUDE_RESERVED_DEVELOPMENT_NB_AND_ENGINEERED_BINDING_SITE",
+      "reason": "Known KOR-derived receptor segment and Nb6 lineage connection. Fresh direct-Nb sequence passes old developmentNb6 framework/CDR3 threshold. Cannot claim endogenous GPR151 binding independence."
+    },
+    {
+      "id": "7UL3",
+      "receptorNb": "HRH2 / Nb6M",
+      "disposition": "EXCLUDE_RESERVED_KNOWN_PARENT_LINEAGE_AND_KOR_GRAFT",
+      "reason": "Primary source-backed Nb6M CDR graft from developmentNb6 overrides its negative old framework/CDR3 threshold. RCSB receptor explicitly maps both HRH2 and OPRK1; NabFab context also present."
+    },
+    {
+      "id": "8ZPL",
+      "receptorNb": "CXCR4 / Nb6",
+      "disposition": "EXCLUDE_RESERVED_DEVELOPMENT_NB_SEQUENCE",
+      "reason": "SelectedNb passes old developmentNb6 framework/CDR3 threshold with identicalCDR3. No independent target-Nb lineage claim; receptor-engineering provenance remains separately unresolved in this bounded pass."
+    },
+    {
+      "id": "9UWI",
+      "receptorNb": "AVPR1A / atosiban",
+      "disposition": "EXCLUDE_NO_DEPOSITED_NANOBODY",
+      "reason": "Official polymer entities are receptor and10aa atosiban peptide only. Full-text discovery hit does not establish a GPCR\u2013Nb complex."
+    },
+    {
+      "id": "8UEK",
+      "receptorNb": "isolated VUN701",
+      "disposition": "EXCLUDE_ISOLATED_NB_NO_RECEPTOR_NATIVE",
+      "reason": "NMR structure of VUN701 alone; cannot serve as ACKR3\u2013VUN701 complex reference."
+    },
+    {
+      "id": "ACKR3_2026",
+      "receptorNb": "ACKR3 / VUN701 variants",
+      "disposition": "BLOCK_PUBLIC_COMPLEX_REFERENCE_NOT_LOCATED",
+      "reason": "Primary preprint describes3complexes, but bounded fresh RCSB VUN701 search returned only8UEK and ACKR3 search14entries returned no describedVUN701complex. No eligible native coordinates located; no assertion of global nonexistence."
+    },
+    {
+      "id": "9XVZ",
+      "receptorNb": "GABAB / Nb4C10 study",
+      "disposition": "EXCLUDE_NB_POSE_UNRESOLVED_AND_ENTRY_UNAVAILABLE",
+      "reason": "Primary2026paper explicitly says Nb4C10 density is unresolved. Its cited9XVZ returned404 from official RCSB during this pass. Nb assay data cannot substitute for a resolved complex native."
+    }
+  ],
+  "proposedCaseCount": 3,
+  "pairLearnerTestGroupCount": 1,
+  "contextBaselineGroupCount": 2,
+  "historicallyUntouchedGroupCountCertified": 0,
+  "trainingUnseenGroupCountCertified": 0,
+  "pendingUnreviewedSearchHitsRemainInLedger": true,
+  "limits": [
+    "A search hit or title is not direct receptor-binding role proof.",
+    "Unreviewed or metadata-only entries are retained as unqualified, not silently excluded by predicted quality.",
+    "No predicted model, native-relative prediction metric, or ranking outcome was used for eligibility. Native-self controls are separate format checks.",
+    "Metadata and source-prose exposure differ from outcome/tuning exposure; neither absent registry membership nor a negative sequence threshold establishes clean historical independence."
+  ],
+  "bindings": [
+    {
+      "path": "ConfoVHH/validation/prospective-benchmark-v1/inventory/curated-target-inventory.json",
+      "sha256": "e6f789f2d45ea34e61303aad4a1728e2845bf3ee242fa9ea1fc347dd707afc07"
+    },
+    {
+      "path": "round4-benchmark/discovery-refresh-ledger.jsonl",
+      "sha256": "ce299f14a04fd730819e3af8d2cc686f484925a2ae8f9ea7627836693f57259e"
+    },
+    {
+      "path": "round4-benchmark/candidate-nb-sequence-audit.json",
+      "sha256": "94c9bb63c0617ea5680e63cf52554084f46297bf8654388ca3c182bc209c0f90"
+    },
+    {
+      "path": "round4-benchmark/construct-reconciliation-and-corrections.json",
+      "sha256": "85f759ebf19ccd86d82158415883c4412e3b8fe9ffb676a521e385546baae76c"
+    }
+  ]
+}

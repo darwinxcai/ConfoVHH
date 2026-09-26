@@ -1,0 +1,55 @@
+{
+  "schema": "confovhh-round4-ranker-implementation-freeze-v1",
+  "status": "PASS",
+  "implementation": {
+    "ranker.py": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604",
+    "artifacts.py": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5",
+    "run.py": "a2948242f196d358c46aa723e59c864d1009bb84be5abb13fdb518fca157ae04"
+  },
+  "files": [
+    {
+      "path": "round4-ranking/PROTOCOL-DRAFT.md",
+      "bytes": 8898,
+      "sha256": "66dd0618ba4e404d35b5abea96a6d0c269cabb9d03ae6aaceccf00710f2bffa4"
+    },
+    {
+      "path": "round4-ranking/README.md",
+      "bytes": 4303,
+      "sha256": "e29762d9b8452eb699cbf76229e65809e7a4b7a5b7b227591f88031c8b5b6362"
+    },
+    {
+      "path": "round4-ranking/test_ranker.py",
+      "bytes": 13135,
+      "sha256": "b3ae080724fabc4fb77686d5fb889fbaa32d123203089942be1f2eaa21f99bea"
+    },
+    {
+      "path": "round4-ranking/verify_source_regression.py",
+      "bytes": 1698,
+      "sha256": "0862ea6b85cadd2db2cda33721db99a2139e0aeba4bd1af756bfc6a4fc16cdc9"
+    }
+  ],
+  "tests": {
+    "count": 23,
+    "failures": 0,
+    "errors": 0,
+    "log": "test_absent_labels_and_wrong_membership_refuse_fit (test_ranker.RankerTests.test_absent_labels_and_wrong_membership_refuse_fit) ... ok\ntest_boolean_nonfinite_duplicate_rejected (test_ranker.RankerTests.test_boolean_nonfinite_duplicate_rejected) ... ok\ntest_centered_ridge_matches_independent_pair_differences (test_ranker.RankerTests.test_centered_ridge_matches_independent_pair_differences) ... ok\ntest_clear_shared_signal_can_fit_without_losing_acceptable (test_ranker.RankerTests.test_clear_shared_signal_can_fit_without_losing_acceptable) ... ok\ntest_constant_feature_retained_zero_coefficient (test_ranker.RankerTests.test_constant_feature_retained_zero_coefficient) ... ok\ntest_exact_decimal_constant_labels_have_zero_coefficients (test_ranker.RankerTests.test_exact_decimal_constant_labels_have_zero_coefficients) ... ok\ntest_failed_attempt_kept_without_poisoning_produced (test_ranker.RankerTests.test_failed_attempt_kept_without_poisoning_produced) ... ok\ntest_fit_release_requires_explicit_authorization (test_ranker.RankerTests.test_fit_release_requires_explicit_authorization) ... ok\ntest_heldout_features_cannot_change_normalization (test_ranker.RankerTests.test_heldout_features_cannot_change_normalization) ... ok\ntest_heldout_labels_cannot_change_fitted_outer_model (test_ranker.RankerTests.test_heldout_labels_cannot_change_fitted_outer_model) ... ok\ntest_injected_outcome_and_arbitrary_feature_rejected (test_ranker.RankerTests.test_injected_outcome_and_arbitrary_feature_rejected) ... ok\ntest_inner_loss_guard_rejects_quality_gain_with_success_loss (test_ranker.RankerTests.test_inner_loss_guard_rejects_quality_gain_with_success_loss) ... ok\ntest_invalid_no_contact_and_context_are_separate (test_ranker.RankerTests.test_invalid_no_contact_and_context_are_separate) ... ok\ntest_minimum_groups_counts_only_complete_usable_pools (test_ranker.RankerTests.test_minimum_groups_counts_only_complete_usable_pools) ... ok\ntest_new_producer_regime_fallback (test_ranker.RankerTests.test_new_producer_regime_fallback) ... ok\ntest_no_produced_pool_retains_all_attempts (test_ranker.RankerTests.test_no_produced_pool_retains_all_attempts) ... ok\ntest_normalized_regime_ignores_only_nonscientific_controls (test_ranker.RankerTests.test_normalized_regime_ignores_only_nonscientific_controls) ... ok\ntest_optional_missing_pool_fallback_not_partial (test_ranker.RankerTests.test_optional_missing_pool_fallback_not_partial) ... ok\ntest_produced_missing_source_abstains_whole_pool (test_ranker.RankerTests.test_produced_missing_source_abstains_whole_pool) ... ok\ntest_scientific_tie_top5_boundary_and_shuffle (test_ranker.RankerTests.test_scientific_tie_top5_boundary_and_shuffle) ... ok\ntest_source_exact_and_lower_direction (test_ranker.RankerTests.test_source_exact_and_lower_direction) ... ok\ntest_tampered_binding_and_path_escape (test_ranker.RankerTests.test_tampered_binding_and_path_escape) ... ok\ntest_weight_hierarchy_and_duplicate_cell (test_ranker.RankerTests.test_weight_hierarchy_and_duplicate_cell) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.074s\n\nOK\n"
+  },
+  "grouping": {
+    "path": "round4-benchmark/development-group-map.json",
+    "bytes": 8735,
+    "sha256": "68e5f1de57b3f6a50193e9b4c10b230388d639ca7cd9ddd68f6a19eb18dab270"
+  },
+  "fitReleaseProposal": {
+    "path": "round4-ranking/fit-release-v2.proposed.json",
+    "bytes": 8402,
+    "sha256": "41405575fe4be73dbf9f41c27a3655c771ce09a71d4d63cdd8dc0b9d62811465"
+  },
+  "supersedes": {
+    "path": "round4-ranking/IMPLEMENTATION-FREEZE.json",
+    "bytes": 4581,
+    "sha256": "82feb08e412b7f246046d6c2bf165de3e45966ffb433c375bff9ae0e7a6290e2"
+  },
+  "amendment": "Exact-constant features and labels center to exact zero despite floating mean rounding; no change to model family, grid, features, folds, objective or source baseline. Prior proposal was never authorized and no real-data fits had run.",
+  "actualDevelopmentModelFitsCompleted": 0,
+  "reservedOutcomesRead": false
+}

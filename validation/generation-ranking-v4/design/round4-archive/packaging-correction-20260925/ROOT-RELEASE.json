@@ -1,0 +1,77 @@
+{
+  "schema": "confovhh-round4-packaging-correction-root-release-v1",
+  "status": "AUTHORIZED_AFTER_LOCAL_REVIEW",
+  "createdUtc": "2026-09-25T17:30:22.343131+00:00",
+  "issue": "Whole-tree scanner correctly matched one deliberate all-A dummy credential in an unchanged independently reviewed test source. No actual credential was found by this scan.",
+  "correction": "Require exact reviewed test path suffix, byte length and SHA256, independently rehash source bytes, and require its sole match to be the known all-A dummy. Record and replay the separate exception roster.",
+  "originalScientificArtifactsChanged": false,
+  "sourceTestPreservedByteForByte": true,
+  "scientificSelectionOrMetricsChanged": false,
+  "newScientificOutcomesReadForCorrection": false,
+  "newIndependentAgentReviewPerformed": false,
+  "reviewScope": "Root local source/diff review, seven new boundary controls, original 35 archive/isolation controls and rerun of four previously independent controls. Historical independent review is retained and is not relabeled as reviewing this revision.",
+  "files": [
+    {
+      "path": "round4-archive/archive_common.py",
+      "bytes": 23611,
+      "sha256": "519f22412df1dbe8801dd3ef44686406a4e9c34e0c8f861257c081f9b7dfa279"
+    },
+    {
+      "path": "round4-archive/build_evidence.py",
+      "bytes": 6557,
+      "sha256": "a671cbb2048d56d1093a2be632a260cd94681860215cef18ee5e0c37b152b8b7"
+    },
+    {
+      "path": "round4-archive/verify_archive.py",
+      "bytes": 13583,
+      "sha256": "e36de8a36feaddf92f2354608528eb312aec1d52b4d5831f55c72a56af529c2e"
+    },
+    {
+      "path": "round4-archive/replay_science.py",
+      "bytes": 6507,
+      "sha256": "e2bfd1819cba3b10136baea76582dd8f6de6157bd15757dfff0b68c97b51b37d"
+    },
+    {
+      "path": "round4-archive/test_archive.py",
+      "bytes": 24770,
+      "sha256": "dd3ec57a12dacc915eb771018e926bf4cf2591083a2a5e1e8805e01cb6a12664"
+    },
+    {
+      "path": "round4-archive/README.md",
+      "bytes": 8534,
+      "sha256": "48b85463157d75ba32d18fc6bc0d5fbde8ea4b2acca94f94adfc591bd3301141"
+    }
+  ],
+  "tests": [
+    {
+      "path": "round4-archive/packaging-correction-20260925/TESTS-correction.log",
+      "bytes": 5321,
+      "sha256": "a338643cd1996696f6287d7f344d3f70ecea2811015ae4dc322c76fbfdc8542a"
+    },
+    {
+      "path": "round4-archive/packaging-correction-20260925/ORIGINAL-INDEPENDENT-CONTROLS.log",
+      "bytes": 722,
+      "sha256": "e0725445b6a350d2e4ddea738320947206904601aacb1a7fbe77e38c7d9eb93f"
+    }
+  ],
+  "structureReview": {
+    "path": "round4-archive/packaging-correction-20260925/STRUCTURAL-REVIEW.json",
+    "bytes": 1535,
+    "sha256": "f9ff4719616a7b8827fe9fc534f9b8cb5683417bfab92a370105c7653a626958"
+  },
+  "failedBuild": {
+    "path": "round4-archive/packaging-correction-20260925/round4-archive-build.log",
+    "bytes": 1116,
+    "sha256": "7bcb4a6629ec2cc78ad52482eb5db9f9ff59669bed320223dcb79a8ab5e820a7"
+  },
+  "diagnostic": {
+    "path": "round4-archive/packaging-correction-20260925/round4-archive-scan-diagnostic.json",
+    "bytes": 480,
+    "sha256": "9fbc8bb1e5fcca97c5bcef0f549d9d9358486d0ab8a0e2f6e2156e275095750e"
+  },
+  "priorFiles": {
+    "path": "round4-archive/packaging-correction-20260925/ORIGINALS.json",
+    "bytes": 2197,
+    "sha256": "86bef2296bb60423a656163300bcb426b70663f79709fd115b69c705e7b4bfaf"
+  }
+}

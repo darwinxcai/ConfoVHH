@@ -1,0 +1,23 @@
+{
+  "schema": "confovhh-round4-parent-enrollment-acceptance-v1",
+  "status": "ACCEPTED",
+  "createdUtc": "2026-09-25T04:13:56.900570+00:00",
+  "enrollment": {
+    "path": "round4-benchmark/ENROLLMENT.freeze.json",
+    "bytes": 21572,
+    "sha256": "f43d145a873d2ccf6aeae8407fabc4596584bea9a82d8402c29f6d5361f096cb"
+  },
+  "cases": [
+    "ADGRV1_RE02",
+    "GPR158_NB20",
+    "MC4R_PN162"
+  ],
+  "directBindingsVerified": 39,
+  "pairLearnerTestGroups": 1,
+  "fullContextBaselineTestGroups": 2,
+  "reservedPredictionsAuthorizedNow": false,
+  "inputAndMsaCaptureAuthorized": true,
+  "reservedOutcomeOpeningAuthorizedNow": false,
+  "finalPolicyAndGenerationFreezeRequiredBeforeReservedPredictions": true,
+  "broadSuperiorityAndProductionPromotionUnsupported": true
+}

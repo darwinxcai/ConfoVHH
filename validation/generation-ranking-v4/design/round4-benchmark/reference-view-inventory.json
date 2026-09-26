@@ -1,0 +1,148 @@
+{
+  "schema": "confovhh-round4-reference-view-inventory-v1",
+  "scoringPerformed": false,
+  "views": [
+    {
+      "targetId": "ADGRV1_RE02",
+      "id": "ADGRV1_RE02__R-A__V-B",
+      "receptorAuthOrder": [
+        "A"
+      ],
+      "selectedNbAuth": "B",
+      "view": {
+        "path": "reference-views/ADGRV1_RE02__R-A__V-B.cif",
+        "sha256": "572f1be6f6d29bc65b70fb46f779a63e1d59d3c53c803157758d1ecee6bb056b",
+        "bytes": 243204
+      },
+      "mapping": {
+        "path": "reference-views/ADGRV1_RE02__R-A__V-B.mapping.json",
+        "sha256": "87e463a73658382440e79bf65e0e09d7ab3531af0c9dd682f0fc3d7d857184bc",
+        "bytes": 2797338
+      },
+      "receipt": {
+        "path": "reference-views/ADGRV1_RE02__R-A__V-B.receipt.json",
+        "sha256": "4bfb3e3ed1e69e59dde7f91ce81b5775ee5fd8e2a2ad602005576e57da51bcdc",
+        "bytes": 5189
+      }
+    },
+    {
+      "targetId": "GPR158_NB20",
+      "id": "GPR158_NB20__R-AB__V-C",
+      "receptorAuthOrder": [
+        "A",
+        "B"
+      ],
+      "selectedNbAuth": "C",
+      "view": {
+        "path": "reference-views/GPR158_NB20__R-AB__V-C.cif",
+        "sha256": "62756df65040284b62a0988e2b7a2e89781c55c3eed4f986331a9dbf7ebb4c55",
+        "bytes": 1102116
+      },
+      "mapping": {
+        "path": "reference-views/GPR158_NB20__R-AB__V-C.mapping.json",
+        "sha256": "60775656b0cdedded36b68929681bd39c972466e6e677d30a00cbe9e560e4649",
+        "bytes": 10857252
+      },
+      "receipt": {
+        "path": "reference-views/GPR158_NB20__R-AB__V-C.receipt.json",
+        "sha256": "c93bc99c9ffb9bf22ba18c2908dabc6b80ac970427996ef791fdd93fe6639473",
+        "bytes": 19579
+      }
+    },
+    {
+      "targetId": "GPR158_NB20",
+      "id": "GPR158_NB20__R-AB__V-E",
+      "receptorAuthOrder": [
+        "A",
+        "B"
+      ],
+      "selectedNbAuth": "E",
+      "view": {
+        "path": "reference-views/GPR158_NB20__R-AB__V-E.cif",
+        "sha256": "6edf0a927f36463dbe7cc5eeadcd7e59aaef799f301d6086c5f69a9619579d69",
+        "bytes": 1102116
+      },
+      "mapping": {
+        "path": "reference-views/GPR158_NB20__R-AB__V-E.mapping.json",
+        "sha256": "4591124d7d5c0a289580baff2d41a34b9ab3b50cd82631baf4a697c88896fb6a",
+        "bytes": 10857254
+      },
+      "receipt": {
+        "path": "reference-views/GPR158_NB20__R-AB__V-E.receipt.json",
+        "sha256": "4884990f59733a2a47ec995b11d18f7400212ebab90f070e29f3ba5064f1fc7f",
+        "bytes": 19579
+      }
+    },
+    {
+      "targetId": "GPR158_NB20",
+      "id": "GPR158_NB20__R-BA__V-C",
+      "receptorAuthOrder": [
+        "B",
+        "A"
+      ],
+      "selectedNbAuth": "C",
+      "view": {
+        "path": "reference-views/GPR158_NB20__R-BA__V-C.cif",
+        "sha256": "a8805682d84a12f57f278d06af2519c02a682b8acabd114c94c5772475fcb3b2",
+        "bytes": 1102116
+      },
+      "mapping": {
+        "path": "reference-views/GPR158_NB20__R-BA__V-C.mapping.json",
+        "sha256": "b7aa6e03ea50364c8647522414f0553cb4e2692a142b072400911ba9911bcd68",
+        "bytes": 10857254
+      },
+      "receipt": {
+        "path": "reference-views/GPR158_NB20__R-BA__V-C.receipt.json",
+        "sha256": "e0298c047c7f7f401eff80f028da64f6daafc8cef8f72cc7d4b0d360a10e10c9",
+        "bytes": 19578
+      }
+    },
+    {
+      "targetId": "GPR158_NB20",
+      "id": "GPR158_NB20__R-BA__V-E",
+      "receptorAuthOrder": [
+        "B",
+        "A"
+      ],
+      "selectedNbAuth": "E",
+      "view": {
+        "path": "reference-views/GPR158_NB20__R-BA__V-E.cif",
+        "sha256": "411677d173955fb2288f0922b841522e7acae7606bc4006f5e25641395b05475",
+        "bytes": 1102116
+      },
+      "mapping": {
+        "path": "reference-views/GPR158_NB20__R-BA__V-E.mapping.json",
+        "sha256": "875dcd68971c5bef5d4eaf50d10dd014f8356a796d38ce51996ea2d4150071c3",
+        "bytes": 10857256
+      },
+      "receipt": {
+        "path": "reference-views/GPR158_NB20__R-BA__V-E.receipt.json",
+        "sha256": "0adfe24a17ce0726bcb2274222523996793c46b6753e279be8c46391c52141f9",
+        "bytes": 19578
+      }
+    },
+    {
+      "targetId": "MC4R_PN162",
+      "id": "MC4R_PN162__R-A__V-D",
+      "receptorAuthOrder": [
+        "A"
+      ],
+      "selectedNbAuth": "D",
+      "view": {
+        "path": "reference-views/MC4R_PN162__R-A__V-D.cif",
+        "sha256": "ef3dc94de06e6f3a18518c81be4f517e8322f8591e950fe1500b6e5edd63cffb",
+        "bytes": 722434
+      },
+      "mapping": {
+        "path": "reference-views/MC4R_PN162__R-A__V-D.mapping.json",
+        "sha256": "2fd87a0cc9c859bac9b87ec57ea2534dafa3d7ae2f993b4f3b7bdb89fa537c52",
+        "bytes": 8159183
+      },
+      "receipt": {
+        "path": "reference-views/MC4R_PN162__R-A__V-D.receipt.json",
+        "sha256": "c96750d41c4c5357a6f29e031a0ca84d6bcfdfe154cc327621ceff5377da9049",
+        "bytes": 13443
+      }
+    }
+  ]
+}

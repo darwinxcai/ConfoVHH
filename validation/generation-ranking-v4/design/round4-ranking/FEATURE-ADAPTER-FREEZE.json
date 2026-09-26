@@ -1,0 +1,113 @@
+{
+  "schema": "confovhh-round4-prediction-feature-adapter-freeze-v1",
+  "status": "PASS",
+  "frozenAtUtc": "2026-09-25T04:40:56.421002+00:00",
+  "implementation": {
+    "round4-ranking/prepare_features.py": "8c5efe6a837ff37f9201bdc6f711aeab7f3e2f6e922f0434f616d590e96c20d0",
+    "round4-ranking/contact_features.mjs": "980ab6d0d2f193ab6cb05e598c082e367a5ed2c67671cff19c8c72d7adc48cfa",
+    "round4-ranking/ranker.py": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604",
+    "round4-ranking/artifacts.py": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5",
+    "round4-ranking/IMPLEMENTATION-FREEZE-V2.json": "66b4469aa81e005ee58d885c0408b225de86435f62b71e59c7a72577948dfe41",
+    "round4-outcomes/prepare_predictions.py": "014e62316efd8d3342c777fe8d3c9e15e788648ee1fd8011b2bdfe2f27c1ec5a",
+    "ConfoVHH/scripts/external-ranking-v3/policy.mjs": "8e35a0672b4283e9b8a0d011c0f1a703f48b5a0b62ac1eecc65760a8caf403bc",
+    "ConfoVHH/scripts/external-ranking-v3/contact-only.mjs": "5bf6cdd8765c3eaced1758ffebf9a8c15fe7199062d2e25f43f1fda52da647c3",
+    "ConfoVHH/scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+    "ConfoVHH/validation/prospective-benchmark-v1/engine-lock.json": "0bc8d6d23c3accfbfa1b35c956ea08bfba08b6f69a47d73e2307abacc799f559"
+  },
+  "files": [
+    {
+      "path": "round4-ranking/prepare_features.py",
+      "bytes": 14952,
+      "sha256": "8c5efe6a837ff37f9201bdc6f711aeab7f3e2f6e922f0434f616d590e96c20d0"
+    },
+    {
+      "path": "round4-ranking/contact_features.mjs",
+      "bytes": 6378,
+      "sha256": "980ab6d0d2f193ab6cb05e598c082e367a5ed2c67671cff19c8c72d7adc48cfa"
+    },
+    {
+      "path": "round4-ranking/test_prepare_features.py",
+      "bytes": 5996,
+      "sha256": "c11fc07bd8ec3be20afe5deb0a3b3c9066efc5292be9662fefa6c8e869663655"
+    },
+    {
+      "path": "round4-ranking/test_contact_features.mjs",
+      "bytes": 1383,
+      "sha256": "66aea9a86e5fcb5d90ad40fd0ae31b5d7e41e5e5d1bf2dce0c01ee75fdd53873"
+    },
+    {
+      "path": "round4-ranking/verify_feature_adapter_smoke.py",
+      "bytes": 2805,
+      "sha256": "5aed3e14f3178ad3ceb738e90a8ebd627ece08d81331e491cfeac6815c6eb978"
+    },
+    {
+      "path": "round4-ranking/FEATURE-ADAPTER.md",
+      "bytes": 5401,
+      "sha256": "87616774b8eafd712c0bb9436e6ab4d0761458016fa3a8ab2cc55c86b5d69186"
+    },
+    {
+      "path": "round4-ranking/feature-adapter-python-tests.log",
+      "bytes": 1470,
+      "sha256": "503028f41cf7a0b24063d53da20cda9dd9cbbbf9d0eefec90457ec2403c419ee"
+    },
+    {
+      "path": "round4-ranking/feature-adapter-node-tests.log",
+      "bytes": 497,
+      "sha256": "c070c3f8593f4f3a29304b2c7585647b99c8b33b593ebcb12f5bd9440c582d7d"
+    },
+    {
+      "path": "round4-ranking/feature-adapter-smoke-replay.log",
+      "bytes": 93,
+      "sha256": "6c57d3ee4c625b9acb745f306d7b1047cd0c3ab4123ccee745124084ddda7563"
+    },
+    {
+      "path": "round4-ranking/FEATURE-ADAPTER-SMOKE-VERIFICATION.json",
+      "bytes": 2020,
+      "sha256": "6caaa030b47a60dba191e288da473d7267e7a05c3fe2efa60cde8fcedc8477cf"
+    },
+    {
+      "path": "round4-ranking/contact-adapter-historical-300/receipt.json",
+      "bytes": 3297,
+      "sha256": "151b6e604610d66ed22bc27ea1e062e64497701423365a7ef380fdfe238b0853"
+    }
+  ],
+  "frozenModelImplementation": {
+    "path": "round4-ranking/IMPLEMENTATION-FREEZE-V2.json",
+    "bytes": 5167,
+    "sha256": "66b4469aa81e005ee58d885c0408b225de86435f62b71e59c7a72577948dfe41"
+  },
+  "finalSmokeSourceReceipt": {
+    "path": "round4-ranking/smoke-features-five-final-adapter/source-rank-receipt.json",
+    "bytes": 2731,
+    "sha256": "74faab4cb0ddb256729b33fb96409e7c1bbda710be29be92610f7f2240bab24b"
+  },
+  "originalSmokePreserved": {
+    "path": "round4-ranking/smoke-features-five/source-rank-receipt.json",
+    "bytes": 2661,
+    "sha256": "f598b7d0da06cc88e2f28cca03e04a0d2ff04fa812e86bfe178df6300de9436e"
+  },
+  "checks": {
+    "pythonContractTests": 8,
+    "nodeContractTests": 6,
+    "historicalPredictionOnlyPosesExact": 300,
+    "actualSmokePoses": 5,
+    "smokePlannedRows": 900,
+    "scientificSmokePayloadsByteIdentical": true,
+    "rehashedSourceRankTamperRejected": true,
+    "rehashedContactTamperRejected": true,
+    "frozenRankerUnchanged": true
+  },
+  "amendmentsSinceInitialSmoke": [
+    "Explicit reserved MC4R full-context profile receptor-targetNb-Gs-auxiliaryNb35-confidence; source-only fallback, never pair profile.",
+    "Strict Boolean snapshot and integer/nonnegative internally consistent count validation before replay."
+  ],
+  "historicalCrosscheckQualification": "The saved 300-pose regression predates the two adapter-only amendments; contact helper, all frozen engine dependencies, feature transformer and ranker hashes are unchanged. No scientific contact calculation changed.",
+  "limits": [
+    "Smoke is explicitly incomplete and cannot release outcomes or fitting.",
+    "Final extraction requires an authenticated final preparation of every planned attempt; technical failures remain in the ledger.",
+    "No optional-feature caching, no full physical SASA computation, no inference/model/grid changes."
+  ],
+  "newOutcomesRead": false,
+  "modelFitsPerformedByAdapter": 0,
+  "cloudActionsPerformed": false
+}

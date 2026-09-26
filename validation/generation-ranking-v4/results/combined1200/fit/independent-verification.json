@@ -1,0 +1,41 @@
+{
+  "schema": "confovhh-round4-independent-fit-verification-v2",
+  "status": "PASS",
+  "planned": 1200,
+  "fitReceipt": {
+    "path": "round4-ranking/fit-development-1200/receipt.json",
+    "bytes": 2184,
+    "sha256": "a43fdd7fcc8b73f37be0aeb034d8715c09954009c49a967d52ff4e17abbdee28"
+  },
+  "verifier": {
+    "path": "round4-ranking/verify_fit_independent_v2.py",
+    "bytes": 21590,
+    "sha256": "e90c9780970c15ccf69f5e356d8afb1ffc584c6cb4923225cf108c75677dc35b"
+  },
+  "uniqueInnerModelsChecked": 528,
+  "families": {
+    "confidence": {
+      "outerGroupsVerified": 11,
+      "plannedRowsVerified": 1200,
+      "selectedPools": 48,
+      "plannedPools": 48,
+      "allPlannedFirstDockQ": 0.38711959096610576,
+      "pairScopeFirstDockQ": 0.4239147722016143,
+      "finalSelectedLambda": 10.0,
+      "finalKind": "ridge"
+    },
+    "interface": {
+      "outerGroupsVerified": 11,
+      "plannedRowsVerified": 1200,
+      "selectedPools": 48,
+      "plannedPools": 48,
+      "allPlannedFirstDockQ": 0.37921763081852145,
+      "pairScopeFirstDockQ": 0.41304957699868583,
+      "finalSelectedLambda": 10.0,
+      "finalKind": "ridge"
+    }
+  },
+  "method": "Independent unordered-pair differences and augmented least squares; all planned rank rows, exact ties, abstentions, empty pools, group/target/arm/batch weights, missingness, fold membership and fixed-grid selection checked.",
+  "reservedOutcomesRead": false,
+  "rulesChanged": false
+}

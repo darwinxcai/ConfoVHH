@@ -1,0 +1,458 @@
+{
+  "schema": "confovhh-round4-outcome-receipt-v1",
+  "evaluationRole": "reserved",
+  "startedAtUtc": "2026-09-25T15:07:45.145752+00:00",
+  "finishedAtUtc": "2026-09-25T15:11:25.419860+00:00",
+  "rankingSeal": {
+    "path": "round4-outcomes/reserved-ranking-seal.json",
+    "bytes": 86296,
+    "sha256": "9e5a045fc0d4860015c10da942ae1e4ee7fc28f5157436518e27f81257c1b59f"
+  },
+  "release": {
+    "path": "round4-outcomes/reserved-outcome-release.json",
+    "bytes": 355,
+    "sha256": "71e5df5b8445c8844256be34254362c136c20c9b78e86b8cc39d6bc3cbe12ade"
+  },
+  "request": {
+    "path": "round4-outcomes/reserved-outcome-request.json",
+    "bytes": 1091,
+    "sha256": "7f2ba548b7fa4cefb4be5918a7816297040f17d0724fbd81d63cc2c3632cd7d6"
+  },
+  "outcomeMap": {
+    "path": "round4-outcomes/final-reserved/outcome-map.json",
+    "bytes": 33880,
+    "sha256": "52b627754dc3169bde100c862e8af337f3eff695609e7890092f1aee1b5535fa"
+  },
+  "artifacts": [
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed00.json",
+      "bytes": 88337,
+      "sha256": "1a65478f7a629f1c57412824dd5c8a402223bdcf5e14aaa930f200274f05248b"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed00.json",
+      "bytes": 1153515,
+      "sha256": "ebc5d076e9326343e3bd653d6779492aa37f43c974c8a268e6aa993e40651f7c"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed00.json",
+      "bytes": 82128,
+      "sha256": "dea250b3676dbbd459f9c80742b65c082c4c23443fe1b3d75bca8de3f8aff917"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed01.json",
+      "bytes": 88337,
+      "sha256": "240b03ad8fb03c580f74e5f7926fe336e865e64675e93d263bbff513eec035da"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed01.json",
+      "bytes": 1153511,
+      "sha256": "1839188ab4a746cbf4915da448eb2d51b395ff410e7d8792abd0681b8a3ad121"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed01.json",
+      "bytes": 82128,
+      "sha256": "f32ca8d2bceb4dbbb7a260c9e889cce418e3a446d318fc823d4001d82cc2cdee"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed02.json",
+      "bytes": 88387,
+      "sha256": "486a8de676ca6f9b5d35200131a8ec6239ff0e01698dfcbb42c948b2dcf4102a"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed02.json",
+      "bytes": 1153500,
+      "sha256": "55fde4ab77ba69faa50c3bcfd66c597d42123ba5e6aca43792a7cfc25e4e98fc"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed02.json",
+      "bytes": 82124,
+      "sha256": "f2b515c53593d78ec6b2a808401933043f4c89d312093d9ec0ea11d3e42047e4"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed03.json",
+      "bytes": 88335,
+      "sha256": "09ceb2ea605831998ad276beb76b80f0ba2ca98cd2b299a5aa320e8fc6dcbddc"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed03.json",
+      "bytes": 1153465,
+      "sha256": "306362c33d00fd0c38090a71958eed3deacc7d7bc5762cef27359333228c4e96"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed03.json",
+      "bytes": 82125,
+      "sha256": "78ae8377e70b363c3f3774be1b2ab25f9768b4c639cc39077ffec3b573aa3599"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed04.json",
+      "bytes": 88339,
+      "sha256": "9a0d94da7082a9fd3181324b4d1911fcf01ba5ac1302e18906f2925cc85e03f0"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed04.json",
+      "bytes": 1153512,
+      "sha256": "d5ebccf01e6ba0a2da4476faa036bb5ac42780abab46a780a778c5c31439b245"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed04.json",
+      "bytes": 82125,
+      "sha256": "35b95e17d7ec065f9f4d305bb9a56573f4a0af25d653fbcf3101c104d609afe1"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed05.json",
+      "bytes": 88335,
+      "sha256": "80a300a1df3d84628db77d93179a7db378f7047507660620194447623b5ffb36"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed05.json",
+      "bytes": 1153516,
+      "sha256": "2d14ad23d9dd67786adf0c1ad050357d91ba105cafb152da51d9883c6efec985"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed05.json",
+      "bytes": 82125,
+      "sha256": "321106edd4f7a560bb4a3a9cc0165cbf8c87186e4e065b5da511f97b357fa2a3"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed06.json",
+      "bytes": 88334,
+      "sha256": "9d7310204cfb5915882d921cba604e4875c970095db3590a4477e0706ba80885"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed06.json",
+      "bytes": 1153497,
+      "sha256": "4e0c2033b5bcee8c71fdcb2ff0d9d3187c8dfa4871e6e2ea4c63fbaa762ee38f"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed06.json",
+      "bytes": 82127,
+      "sha256": "7a73e2e06063b255825ce639bc9b567769aab5451087d471b60b6eb354e2123b"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed07.json",
+      "bytes": 88387,
+      "sha256": "70fc36e58e29689e4ada856ee69d2e488ed3e218a001d7a95f280dd1c2e979cb"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed07.json",
+      "bytes": 1153520,
+      "sha256": "68def5fc8c16ce0109108486dc22d5fb11f2a5e65009eb5fea8af28925636d00"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed07.json",
+      "bytes": 82125,
+      "sha256": "06f17b413ff875844e3510a5c8bea92ac823d0927ec8e0e364b5bdb0eba540c4"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed08.json",
+      "bytes": 88339,
+      "sha256": "877e8935721258e661a78cc405e263011a3bad8be41c855565d14dbb14043963"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed08.json",
+      "bytes": 1153518,
+      "sha256": "fecac8ed931038d6b2dd8825b8d9f0871eb653b2c48539929b9a3b3d7e073702"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed08.json",
+      "bytes": 82125,
+      "sha256": "7fd1d0056a5cd08f3d965625954e984a9f27d30993aced45277cf0516ec6ccc9"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed09.json",
+      "bytes": 88339,
+      "sha256": "210c5b904c58f0f657cecafdbbd93a79ff7cf772cdebae23a44365a6f9c555b5"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed09.json",
+      "bytes": 1153489,
+      "sha256": "58c8d093d22bd670181f57ede39581666b600aaa129bd30391fb35278f2ca47e"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed09.json",
+      "bytes": 82116,
+      "sha256": "b0d845dd846c1dac833b5bc5f63fc0382790c3d693400b0fa22a36a4d544e2c1"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed10.json",
+      "bytes": 88389,
+      "sha256": "03e4b0d7d5bb5badb2cff3f2f9cb04aa15512a447b4e0cb5db0aafc8655852a7"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed10.json",
+      "bytes": 1153500,
+      "sha256": "d68fcde36bc0ffdb2c1a0c4f60d4993e19ad8de8c69d249e3cefc8345fc73c8a"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed10.json",
+      "bytes": 82127,
+      "sha256": "ddd750b725670586a96c70823b56ce6a851a3bf25be40c01410254d7558041e9"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed11.json",
+      "bytes": 88337,
+      "sha256": "7e737857b36fb4d80dccad7c9402d2813dafd94b413253127c8bc865cb5e1220"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed11.json",
+      "bytes": 1153490,
+      "sha256": "edddb2a0b6e6810e42e84692c71583e85963302b858010ddbb67fb6ac7eb678c"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed11.json",
+      "bytes": 82129,
+      "sha256": "3056db5e55d4094f2a4f7a35011e5c1eb9f92950fb38d53974d0a9a5f2cf171f"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed12.json",
+      "bytes": 88386,
+      "sha256": "cfaea4925a787499f7ee52b67204b6cbc5174a5f10a63d532636040e20ce5f16"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed12.json",
+      "bytes": 1153499,
+      "sha256": "ab9d53dc18b4296f4cd04570673c890e7dba3f58c988ae9fa87bdc20ffc96a18"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed12.json",
+      "bytes": 82128,
+      "sha256": "57539488d29ebffae0e41813b92d3be06a25463d5d4c5c433f6cddec8960bc08"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed13.json",
+      "bytes": 88372,
+      "sha256": "05fbf195aea9d79ee118572276f268494fca5e0abb0fe61bdfcbe1dcf8aa1ee5"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed13.json",
+      "bytes": 1153516,
+      "sha256": "bec03953e8258448781f07aa6eff6f9da98944da026eb7cfcc0ad8ab81e08d70"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed13.json",
+      "bytes": 82126,
+      "sha256": "c1018c17c108f239fc6d23072887ec36a4f3cdf2e81ef56d7c3fd1983d301eab"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed14.json",
+      "bytes": 88342,
+      "sha256": "f7d85017185b186ebe74ad67871635edf35a47b5b39ee8e6e050de60d4203e7e"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed14.json",
+      "bytes": 1153501,
+      "sha256": "0492277e9e318802ea4197d5e2df6b97449378b325893cf7cfc5b14b25026c84"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed14.json",
+      "bytes": 82126,
+      "sha256": "31f3adbe251e81783cb0ab3a51b7eb84bdb4525abd8a29302510b8b78d409f5c"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed15.json",
+      "bytes": 88340,
+      "sha256": "76f61b00d01a51c501fb1025dd213c11254576ec04d00e95fdd46ac2ee22131f"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed15.json",
+      "bytes": 1153498,
+      "sha256": "8574f43873c0b8af5308418771524133fc81be646939d6763b3ade2bd4515286"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed15.json",
+      "bytes": 82126,
+      "sha256": "5939a5de67d7d44022daeb072bada49e1d62610e709a1fea472b03fb74b91fb3"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed16.json",
+      "bytes": 88338,
+      "sha256": "959f556e88b74848408c881efc68ceea496678b7c69e552d1bdbe1f34e1f1cb1"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed16.json",
+      "bytes": 1153518,
+      "sha256": "8c32839c9698505b80349fdaf024283dabfee5797f09caf021abcfaf190895d5"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed16.json",
+      "bytes": 82125,
+      "sha256": "b0f9814918a26ed30b8f574a2c81cdf8600fcc2df5de0090b9b8ea57c3fb63c3"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed17.json",
+      "bytes": 88339,
+      "sha256": "c8efee8c00c7a0abe5f7064888ebb3772fae01611852a74771122730292d7f9f"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed17.json",
+      "bytes": 1153498,
+      "sha256": "2f038d2c372b3150b4ad8b26bd5592f6d8dbc95b0d78401caf925f5fae73ef4e"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed17.json",
+      "bytes": 82124,
+      "sha256": "e1726522b8ecb159b1765f54438bc9a510fcc0914336fe40df4146f61ca3d13d"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed18.json",
+      "bytes": 88336,
+      "sha256": "887827364501ba68d6d3abd6764f0563118a76099b378db0cdffcb1aebb12844"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed18.json",
+      "bytes": 1153486,
+      "sha256": "09ddc162507e8caa08f318cc85e994331d8ee37e66143af04c9ae2ef0f1b13cf"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed18.json",
+      "bytes": 82127,
+      "sha256": "615c22467a994d9bae8c1c04d24c4bbc2ce55d4c578704fbc41a6a3d51d2a108"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed19.json",
+      "bytes": 88378,
+      "sha256": "f0817f9434497b06fb1716ccfcf87d1cd11733fd4a312ea612f5fd3a408fb04a"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed19.json",
+      "bytes": 1153434,
+      "sha256": "f6a4889269a494ed03aba43790fa3c959a14053828024aea64c37170d81679c9"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed19.json",
+      "bytes": 82127,
+      "sha256": "07a75ec5ab6a6c7d0854914685a2afb927cb6e67a217505302396953630f749f"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed20.json",
+      "bytes": 88389,
+      "sha256": "8414e4a3f7797d7dc6dc7df9f290ed61ad8d2001238bd8cded6cf6ecb00ba654"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed20.json",
+      "bytes": 1153499,
+      "sha256": "0ca556dd10ccd0177f0aa9e5fd9a4d377033dfd0d320e3135f6420107b0545a4"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed20.json",
+      "bytes": 82124,
+      "sha256": "4c5f7fcc43a37942b457ccace55d3502e201455efd4d18ab3f7072f4eb291724"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed21.json",
+      "bytes": 88378,
+      "sha256": "1847b803cc142ab733e95c4aa75111fdaff6d79c4c686d547e0ea0d76009b584"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed21.json",
+      "bytes": 1153521,
+      "sha256": "4c92de38f357dfb3f17576abfb685b695406646ad1b4c6432c262d84e16e8e9c"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed21.json",
+      "bytes": 82129,
+      "sha256": "f13825ebd600fb479e8614bae9643f61b6fe7955c5509a252e4ce8a6e4cae17c"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed22.json",
+      "bytes": 88342,
+      "sha256": "272b83ea2bc06ba3359032775724accec368603d24a9b224c7ffc8c33d3d1fc3"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed22.json",
+      "bytes": 1153504,
+      "sha256": "7922a6370592d00ea158bbab56942fbffc4dfb788329b96610764ee0d301f320"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed22.json",
+      "bytes": 82125,
+      "sha256": "a87ac3e2abe0f1bffb5895a98603027cdcf24903a5a28a8b979748a6c290a101"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed23.json",
+      "bytes": 88335,
+      "sha256": "3af0e3d651407a6e8d26ff0c13157bd160a742b89ca695e0fb3591a934e3e3bd"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed23.json",
+      "bytes": 1153520,
+      "sha256": "6afc3d3fa0ab252df6ec5cb18a128e3d293a853017364ce0f32a8907360ba300"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed23.json",
+      "bytes": 82126,
+      "sha256": "e0eeb6382c18f6dde3751a91f04f8d48a5b6ce72e07369206f38a8cd347c2d90"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/ADGRV1_RE02__baseline__seed24.json",
+      "bytes": 88337,
+      "sha256": "735eb862c995582cdf7d581b320146a3e9ef65b46b6791e3b259e85600b557ad"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/GPR158_NB20__baseline__seed24.json",
+      "bytes": 1153501,
+      "sha256": "323fb85127cf19d9228c1dd1ded86c9c2aa96e16fd6a9d94733393e3a8c51dca"
+    },
+    {
+      "path": "round4-outcomes/final-reserved/artifacts/MC4R_PN162__baseline__seed24.json",
+      "bytes": 82126,
+      "sha256": "e6a225b3d85b7c228333ec3b5c1220ee01d70af29fe1a0f976650737d6a21be9"
+    }
+  ],
+  "implementation": {
+    "adapterSha256": "ecff170ddb66c91c1b4e2d65539721648891743436491b0bc01ab311673bc6b2",
+    "preparation": {
+      "prepareScriptSha256": "014e62316efd8d3342c777fe8d3c9e15e788648ee1fd8011b2bdfe2f27c1ec5a",
+      "round3PreparationSha256": "c921848f7bec359e503b7b4433d66e0a5adf3b1d9abab807691c334b703655e5",
+      "canonicalizerSha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c",
+      "round3ViewAuthenticationSha256": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562"
+    },
+    "metric": {
+      "schema": "confovhh-round4-explicit-mmcif-metric-v1",
+      "change": "Only format dispatch: two load_PDB expressions replaced by explicit pinned DockQ.MMCIFParser; every other numerical-function byte unchanged.",
+      "round3": {
+        "adapterSha256": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562",
+        "methodFreezeSha256": "2914ec4b58f128427e3b6ba5f3d28da3dd6ae71770c1e969b350c5b78f383b29",
+        "canonicalizerSha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c",
+        "contactEvidenceVerifierSha256": "1dd974254308ea2df91405f0a16e7d5c669db7c195f3124472e4791b270da87c",
+        "NodeVerifierVersion": "v24.19.0",
+        "DockQVersion": "2.1.3",
+        "DockQFiles": {
+          "DockQ.py": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "__main__.py": "a2dc944b6fdaeb5c4f3574c452519449505756abbb96e2261179a2b643b57df5",
+          "constants.py": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18",
+          "operations.cpython-312-darwin.so": "1e3871f2f42e32ca87cd3b8f679a576ef5f10e9fe1eb045e86c9cd0338463f27",
+          "operations_nocy.py": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3",
+          "parsers.py": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+        },
+        "BioVersion": "1.88",
+        "numpyVersion": "1.26.4",
+        "alignment": "separate ordered receptor segments and fixed VHH; DockQ 5/0/-4/-0.5 sequence scores; first optimum; concat fixed correspondences; unchanged calc_DockQ",
+        "perViewTimeoutSeconds": 600
+      },
+      "originalDockqApiSourceSha256": "8301560ab81376b532b29d1c5f91e6b198bd2f150b4fadc79a641a054b17327f",
+      "derivedDockqApiSourceSha256": "7395419cb4f5cc1415cf5de5155beab2943f5f142a685f6bd364d0991c8a43d7",
+      "helperSha256": "7a9116e549a599bcf479676724fb9dc5b9dddc3e8d9eae6c5b46e7f46bbc35e7",
+      "inputFormat": "mmCIF only; data_ header required",
+      "selectedChains": [
+        "R",
+        "V"
+      ],
+      "modelIndex": 0,
+      "authChains": true,
+      "parseHetatms": false,
+      "numericalMetricChanged": false,
+      "correspondenceChanged": false,
+      "originalFrozenFilesEdited": false
+    },
+    "perViewTimeoutSeconds": 600
+  },
+  "plannedCount": 75,
+  "evaluatedCount": 75,
+  "unavailableCount": 0,
+  "allPlannedIdsRetained": true,
+  "dimerAggregation": "exact max across all four fixed native views; any failed view makes the pose unavailable",
+  "explicitReleaseChecked": true
+}

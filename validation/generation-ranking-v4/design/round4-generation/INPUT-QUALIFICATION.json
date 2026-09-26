@@ -1,0 +1,346 @@
+{
+  "schema": "confovhh-round4-input-qualification-v1",
+  "status": "PASS",
+  "priorPlan": {
+    "path": "round3-cloud/launch-bundle/batch-plan.json",
+    "bytes": 6651,
+    "sha256": "f70235e5c08bcac715f1e2639e6bcd5c1f9bf045952a355c5a1cd77b1fd27d09"
+  },
+  "inputRecovery": [
+    {
+      "recoveryReceipt": {
+        "path": "round3-cloud/final-metadata/7xfv9dytrmigcc/metadata-dimers-20260925T015459593708Z/LOCAL-RECOVERY-RECEIPT.json",
+        "bytes": 9258,
+        "sha256": "702cd6b961a44e4e0307b91b2a08cd8963eeb97a85353be004e8836f5775c41b"
+      },
+      "archive": {
+        "path": "round3-cloud/final-metadata/7xfv9dytrmigcc/metadata-dimers-20260925T015459593708Z/metadata-dimers-20260925T015459593708Z.tar.gz",
+        "bytes": 61265134,
+        "sha256": "5f3f544b98f3fc2c58ba32ce0510d2c5fbf8c9673f63171b2048658de13c9a78"
+      },
+      "snapshotManifestSha256": "aa9e99295b8c73a0f61ccc0180c0113fa835f040f54c87f1f8b5061ae016bb29"
+    },
+    {
+      "recoveryReceipt": {
+        "path": "round3-cloud/final-metadata/ffs1s2s13iudjc/metadata-prospective-20260925T020227660479Z/LOCAL-RECOVERY-RECEIPT.json",
+        "bytes": 24509,
+        "sha256": "4cf407008dbbcb5b7ee4113b6855c70192f748a0710027d4b45a93a68aa48197"
+      },
+      "archive": {
+        "path": "round3-cloud/final-metadata/ffs1s2s13iudjc/metadata-prospective-20260925T020227660479Z/metadata-prospective-20260925T020227660479Z.tar.gz",
+        "bytes": 97205753,
+        "sha256": "ca6098d74081e62fd24adc27c33ddd4d93015f010a4378bf07d8a874972b2103"
+      },
+      "snapshotManifestSha256": "6853f3e14885465f99da904f42a29ef3a0475bc78da089b6c6495519cf8bbea0"
+    },
+    {
+      "recoveryReceipt": {
+        "path": "round3-cloud/final-metadata/sbc5urcw3yxcvc/metadata-development-20260925T005150462558Z/LOCAL-RECOVERY-RECEIPT.json",
+        "bytes": 16734,
+        "sha256": "fcd66e110127357d2ad4e3e6f4a9734fc022233c1c721fab6baa2bce4822791e"
+      },
+      "archive": {
+        "path": "round3-cloud/final-metadata/sbc5urcw3yxcvc/metadata-development-20260925T005150462558Z/metadata-development-20260925T005150462558Z.tar.gz",
+        "bytes": 63751148,
+        "sha256": "3d10011375ba60cf53557b313f78c9b8c581e7cc2137f1631f9d25ed7b843595"
+      },
+      "snapshotManifestSha256": "e0c134d73512cb5cf87679cc70f06bec0be5bac8842746e4cc661ea635c70a10"
+    }
+  ],
+  "depths": [
+    {
+      "setId": "dev_8qot",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "dev_8qot_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "dev_8qot_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 8797,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "b1ea9af62865fa815d0c773510f328aa61d5701bd5d37f117d90726d7d77e400"
+    },
+    {
+      "setId": "dev_6knm",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "dev_6knm_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "dev_6knm_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 9041,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "b125d81bd0ec55a286735aff46b9d5ae82b86e28d695fc33b93b10e6d7fc4e3a"
+    },
+    {
+      "setId": "dev_8th3",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "dev_8th3_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "dev_8th3_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 9019,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "d1c269c80f19b299474dd29c500ceccc02a61439e63d04e96622146a63ef9956"
+    },
+    {
+      "setId": "dev_8th4",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "dev_8th4_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "dev_8th4_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 8971,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "ddf07e4db0801be2becd64d2eb55c11590e71ef345925394f5a78c4217e8c296"
+    },
+    {
+      "setId": "RHO_NB2",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "RHO_NB2_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "RHO_NB2_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 9101,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "fa1e360118a059287e041de4350d1a235f24cbddaea660d847a9ab6fcfe31cc0"
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "HCRTR2_SB51_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "HCRTR2_SB51_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 9048,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "240e30f7ad820eca865e1f0427dbf907e8138c7513c99f8c0018d3411a6d21f1"
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "CHRM1_NB1B4_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "CHRM1_NB1B4_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "C",
+          "msaId": "CHRM1_NB1B4_2",
+          "rawProcessedRows": 419,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 9124,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "3a07b0b6e98a26b49155850cffa3aef6e6292564c03530133b8318f62d1ba300"
+    },
+    {
+      "setId": "ADRA1A_NB29",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "ADRA1A_NB29_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "ADRA1A_NB29_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 9020,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "cd9a93e66d9538cdd0f7ba4b0aa42f5c8f4411bd250958380a23a2dbd976e14e"
+    },
+    {
+      "setId": "FZD3_NB9",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "FZD3_NB9_0",
+          "rawProcessedRows": 7601,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "FZD3_NB9_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 8925,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "1db3ae3de06e73b818b6c7abbb0b23c0d187e116c15bb6b55f38aec407321e8a"
+    },
+    {
+      "setId": "LGR4_NB21",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "LGR4_NB21_0",
+          "rawProcessedRows": 4781,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "LGR4_NB21_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 9109,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "12e8785cc4b351098377e69ab1e79c4da7ab8c523c75ecc79a42d74cc0098819"
+    },
+    {
+      "setId": "GRM5_NB43",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "GRM5_NB43_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "GRM5_NB43_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "C",
+          "msaId": "GRM5_NB43_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "D",
+          "msaId": "GRM5_NB43_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 9103,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "3ac5cae4eacb7dfd32eba956faef814272172c690a5ae4a2c52d72ac679ff075"
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "chains": [
+        {
+          "chain": "A",
+          "msaId": "CASR_NB2D11_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "B",
+          "msaId": "CASR_NB2D11_0",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "C",
+          "msaId": "CASR_NB2D11_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        },
+        {
+          "chain": "D",
+          "msaId": "CASR_NB2D11_1",
+          "rawProcessedRows": 8192,
+          "queryMatchesExactInput": true
+        }
+      ],
+      "combinedModelMsaRows": 9103,
+      "subsampledModelMsaRows": 1024,
+      "rowReduction": true,
+      "pairingRowsSha256": "c45a3742aa90706bdf320a5585edeea3df0a6d8abe92315e45d8358060b7cfe3"
+    }
+  ],
+  "allExactQuerySequencesVerified": true,
+  "allTemplateAndContactConstraintsAbsent": true,
+  "pairedPrefixSource": {
+    "path": "round4-generation/source-inspection/boltz/data/feature/featurizerv2.py",
+    "bytes": 91444,
+    "sha256": "af1f9e6ec0c3d7289eb1f7503c3c1c3ee0d9f03436778dd4a7d412b8f7bd9f94"
+  },
+  "plan": {
+    "path": "round4-generation/bundle/batch-plan.json",
+    "bytes": 253882,
+    "sha256": "07de40673368c08f6bc6872489e84b100969a931b0161000411a57a039f05a59"
+  }
+}

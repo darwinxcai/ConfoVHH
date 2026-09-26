@@ -1,0 +1,187 @@
+{
+  "schema": "confovhh-round4-generation-analyzer-freeze-v1",
+  "status": "FROZEN_PENDING_PARENT_NEW900_ANALYSIS_RELEASE",
+  "createdUtc": "2026-09-25T04:57:25.468690+00:00",
+  "newLabelsReadAtFreeze": false,
+  "files": [
+    {
+      "path": "round4-analysis/analyze_generation.py",
+      "bytes": 24835,
+      "sha256": "f9e19da9e080f59e5ce93193d574d3219f9ff1f9563eda4cd4fca8e64c8f736f"
+    },
+    {
+      "path": "round4-analysis/test_analyze_generation.py",
+      "bytes": 11736,
+      "sha256": "8e36fe0bdad9e32aec5d6998fa10e6d1c2cc4481c1d7ba389c8f3747c6b9d56d"
+    },
+    {
+      "path": "round4-analysis/README.md",
+      "bytes": 5827,
+      "sha256": "1b9d2ee4956cc3287e110d709deae1e6f587a1d70f2e47dc276a0025ab616c0f"
+    },
+    {
+      "path": "round4-planning/ANALYSIS-DECISIONS.md",
+      "bytes": 6703,
+      "sha256": "7f76db198e105eb3ba5d5a5667bed499a43bfa2b4b23a34519169edb7ea7e6de"
+    },
+    {
+      "path": "round4-planning/ANALYSIS-DECISIONS-FREEZE.json",
+      "bytes": 847,
+      "sha256": "cd2b00f7fa2225c1de38cdf272fb710fb399e6569eb69d601722e506545d4d95"
+    },
+    {
+      "path": "round4-ranking/ranker.py",
+      "bytes": 19724,
+      "sha256": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604"
+    },
+    {
+      "path": "round4-ranking/prepare_features.py",
+      "bytes": 14952,
+      "sha256": "8c5efe6a837ff37f9201bdc6f711aeab7f3e2f6e922f0434f616d590e96c20d0"
+    },
+    {
+      "path": "round4-ranking/artifacts.py",
+      "bytes": 14528,
+      "sha256": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5"
+    },
+    {
+      "path": "round4-ranking/contact_features.mjs",
+      "bytes": 6378,
+      "sha256": "980ab6d0d2f193ab6cb05e598c082e367a5ed2c67671cff19c8c72d7adc48cfa"
+    },
+    {
+      "path": "round4-ranking/IMPLEMENTATION-FREEZE-V2.json",
+      "bytes": 5167,
+      "sha256": "66b4469aa81e005ee58d885c0408b225de86435f62b71e59c7a72577948dfe41"
+    },
+    {
+      "path": "round4-ranking/FEATURE-ADAPTER-FREEZE.json",
+      "bytes": 5289,
+      "sha256": "b0d59c38d86e5e3ebecc1cefba3b9ca4ad15d49d9c5f68ea8ded2cb9956eb685"
+    },
+    {
+      "path": "round4-outcomes/outcome_adapter.py",
+      "bytes": 28217,
+      "sha256": "ecff170ddb66c91c1b4e2d65539721648891743436491b0bc01ab311673bc6b2"
+    },
+    {
+      "path": "round4-outcomes/prepare_predictions.py",
+      "bytes": 18793,
+      "sha256": "014e62316efd8d3342c777fe8d3c9e15e788648ee1fd8011b2bdfe2f27c1ec5a"
+    },
+    {
+      "path": "round4-benchmark/explicit_mmcif_metric.py",
+      "bytes": 4330,
+      "sha256": "7a9116e549a599bcf479676724fb9dc5b9dddc3e8d9eae6c5b46e7f46bbc35e7"
+    },
+    {
+      "path": "round3-control/prepare_prediction_scoring.py",
+      "bytes": 32046,
+      "sha256": "c921848f7bec359e503b7b4433d66e0a5adf3b1d9abab807691c334b703655e5"
+    },
+    {
+      "path": "round3-benchmark/scoring-view/canonicalize_view.py",
+      "bytes": 12667,
+      "sha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/outcome_adapter.py",
+      "bytes": 45864,
+      "sha256": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562"
+    },
+    {
+      "path": "ConfoVHH/scripts/external-ranking-v3/contact-only.mjs",
+      "bytes": 8063,
+      "sha256": "5bf6cdd8765c3eaced1758ffebf9a8c15fe7199062d2e25f43f1fda52da647c3"
+    },
+    {
+      "path": "ConfoVHH/scripts/external-ranking-v3/policy.mjs",
+      "bytes": 25993,
+      "sha256": "8e35a0672b4283e9b8a0d011c0f1a703f48b5a0b62ac1eecc65760a8caf403bc"
+    },
+    {
+      "path": "ConfoVHH/scripts/hard-decoy/oracle/canonical-json.mjs",
+      "bytes": 7733,
+      "sha256": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f"
+    },
+    {
+      "path": "ConfoVHH/validation/prospective-benchmark-v1/engine-lock.json",
+      "bytes": 6387,
+      "sha256": "0bc8d6d23c3accfbfa1b35c956ea08bfba08b6f69a47d73e2307abacc799f559"
+    },
+    {
+      "path": "round4-generation/bundle/run_batch.py",
+      "bytes": 17782,
+      "sha256": "84d50accd523ffda8eb7d8669b3d8b7a1c6a177d8f7d6d88678856ecbb6b38cf"
+    },
+    {
+      "path": "round4-generation/bundle/GENERATION-FREEZE.json",
+      "bytes": 24409,
+      "sha256": "3c825b3e403e191cc90927939ff18943e8f1894cab0d08089b54e1230329dae0"
+    }
+  ],
+  "generationPlan": {
+    "path": "round4-generation/bundle/batch-plan.json",
+    "bytes": 253882,
+    "sha256": "07de40673368c08f6bc6872489e84b100969a931b0161000411a57a039f05a59"
+  },
+  "grouping": {
+    "path": "round4-benchmark/development-group-map.json",
+    "bytes": 8735,
+    "sha256": "68e5f1de57b3f6a50193e9b4c10b230388d639ca7cd9ddd68f6a19eb18dab270"
+  },
+  "numpyVersion": "1.26.4",
+  "testLog": {
+    "path": "round4-analysis/TESTS.log",
+    "bytes": 2997,
+    "sha256": "ff7a16b3addfea246f846877e410c7935e62cce8e36506a660be1fd7e083dbcd"
+  },
+  "independentReview": {
+    "path": "round4-outcomes/GENERATION-ANALYSIS-REVIEW.json",
+    "bytes": 3713,
+    "sha256": "1dde9981240f574988f306bf61fd675e4710ae51a7a1fa58dbc185ae9b52397d"
+  },
+  "outcomeImplementationFreeze": {
+    "path": "round4-outcomes/IMPLEMENTATION-FREEZE.json",
+    "bytes": 7596,
+    "sha256": "190329a887cb579c35f76f0a3c780fc35964d6a330e52e693d3f5bcfd05dde15"
+  },
+  "verifiedChecks": {
+    "ownSynthetic": 24,
+    "independentAdditionalArithmetic": 7,
+    "totalIndependentRerun": 31
+  },
+  "methods": {
+    "population": "new900 only; 12cases \u00d7 3arms \u00d7 25seeds25-49; old300 excluded",
+    "primaryScope": "9 pair cases / 8 qualified groups",
+    "allContextGroups": 11,
+    "weighting": "equal group then equal target",
+    "sourceRanking": "exact replay of frozen saved source scores/directions/tie blocks",
+    "acceptableThreshold": "0.23",
+    "usefulGainThreshold": "0.02",
+    "gate": "no per-target acceptable-first loss, unchanged per-target selection coverage, all produced baseline/candidate pair outcomes available",
+    "arithmetic": "Fraction(str(serialized numerical value)); exact rational tie and group weights; float conversion only after decision",
+    "armTiePreference": [
+      "baseline",
+      "broader",
+      "msa1024"
+    ],
+    "bootstrap": {
+      "rng": "numpy.random.PCG64",
+      "seed": 20260925,
+      "resamples": 10000,
+      "confidence": 0.95,
+      "quantile": "linear",
+      "unit": "paired whole biological group",
+      "incompleteOrLessThanTwoGroups": "unavailable"
+    },
+    "timing": "actual elapsedSeconds from authenticated producer receipts; elapsed_seconds must match when present; missing stays unavailable"
+  },
+  "parentApprovedBoundaryArithmeticBeforeLabels": true,
+  "parentApprovedBootstrapBeforeLabels": true,
+  "observedNewPredictionQualityLabelsRead": false,
+  "reservedOutcomesRead": false,
+  "cloudActionsByAnalyzer": false,
+  "productionPromotion": false,
+  "nextStep": "Parent may issue an explicit bound new900 analysis release only after complete authenticated source and outcome receipts exist. This freeze does not authorize label access."
+}

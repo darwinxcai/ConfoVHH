@@ -1,0 +1,46 @@
+{
+  "families": {
+    "confidence": {
+      "selectedFinalLambda": 10.0,
+      "finalModelKind": "ridge",
+      "nestedAllPlanned": {
+        "firstDockQGain": 0.012266790887560108,
+        "acceptableLossPools": [],
+        "acceptableRescuePools": [],
+        "coverageUnchanged": true,
+        "exploratoryUsefulGainGatePassed": false
+      },
+      "nestedLearnerSupported": {
+        "firstDockQGain": 0.016866837470395135,
+        "acceptableLossPools": [],
+        "acceptableRescuePools": [],
+        "coverageUnchanged": true,
+        "exploratoryUsefulGainGatePassed": false
+      }
+    },
+    "interface": {
+      "selectedFinalLambda": 10.0,
+      "finalModelKind": "ridge",
+      "nestedAllPlanned": {
+        "firstDockQGain": 0.004364830739975789,
+        "acceptableLossPools": [],
+        "acceptableRescuePools": [],
+        "coverageUnchanged": true,
+        "exploratoryUsefulGainGatePassed": false
+      },
+      "nestedLearnerSupported": {
+        "firstDockQGain": 0.006001642267466689,
+        "acceptableLossPools": [],
+        "acceptableRescuePools": [],
+        "coverageUnchanged": true,
+        "exploratoryUsefulGainGatePassed": false
+      }
+    }
+  },
+  "candidateGate": "Exploratory >=0.02 nested supported first DockQ gain, no acceptable loss, unchanged selection coverage",
+  "familyChoiceAfterOuterResultsIsExploratory": true,
+  "productionDefaultChanged": false,
+  "BoltzWeightsChanged": false,
+  "allTrainingDataDevelopmentExposed": true,
+  "reservedOutcomesRead": false
+}

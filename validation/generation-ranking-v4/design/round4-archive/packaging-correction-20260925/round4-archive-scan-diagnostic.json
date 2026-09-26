@@ -1,0 +1,15 @@
+{
+  "schema": "confovhh-round4-archive-scan-diagnostic-v1",
+  "createdUtc": "2026-09-25T17:26:12.068684+00:00",
+  "scannedFiles": 17894,
+  "failures": [
+    {
+      "path": "round4-outcomes/review_archive_controls.py",
+      "bytes": 2970,
+      "sha256": "a03dcd0daab92f084974d53ac2d9bc52eb4598876632507ee180a0f0b6fd35e2",
+      "reason": "Potential credential in selected artifact; content withheld"
+    }
+  ],
+  "fileContentsPrinted": false,
+  "selectedFilesModified": false
+}

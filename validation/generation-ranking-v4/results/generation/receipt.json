@@ -1,0 +1,56 @@
+{
+  "schema": "confovhh-round4-generation-analysis-receipt-v1",
+  "status": "COMPLETE",
+  "release": {
+    "path": "round4-analysis/new900-analysis-release.json",
+    "bytes": 1093,
+    "sha256": "c5f7a48ff92e57c1869cad7ced83725aba625387ba1223b06b14613f5c4d00b0"
+  },
+  "analysisFreeze": {
+    "path": "round4-analysis/ANALYZER-FREEZE.json",
+    "bytes": 6992,
+    "sha256": "27f819320c6ed67459d68dbad6389aced7daa1e2449c0db35c49015270ffdaa0"
+  },
+  "sourceRankingReceipt": {
+    "path": "round4-ranking/final-features-development/source-rank-receipt.json",
+    "bytes": 2710,
+    "sha256": "7528643f2b968de0b0c2aedc8e89f2432dfec5ca64b86fe865ab7e058dabb2f2"
+  },
+  "outcomeReceipt": {
+    "path": "round4-outcomes/final-development/receipt.json",
+    "bytes": 195241,
+    "sha256": "a8bc58e3d3c82312bc2dea6657df408fe185c638488b4f4eaecb416d838f84e5"
+  },
+  "generationPlan": {
+    "path": "round4-generation/bundle/batch-plan.json",
+    "bytes": 253882,
+    "sha256": "07de40673368c08f6bc6872489e84b100969a931b0161000411a57a039f05a59"
+  },
+  "grouping": {
+    "path": "round4-benchmark/development-group-map.json",
+    "bytes": 8735,
+    "sha256": "68e5f1de57b3f6a50193e9b4c10b230388d639ca7cd9ddd68f6a19eb18dab270"
+  },
+  "files": [
+    {
+      "path": "round4-analysis/new900-analysis/comparison.json",
+      "bytes": 210620,
+      "sha256": "82202117a92d11d3f4b3066b1f8c2631689420246ec2210fd28fd7afe1e62f76"
+    },
+    {
+      "path": "round4-analysis/new900-analysis/timing-bindings.json",
+      "bytes": 175878,
+      "sha256": "67f87487ca082c7548a451c8124652128bbb564c1e50aa28b1fac6d578f98fd7"
+    },
+    {
+      "path": "round4-analysis/new900-analysis/REPORT.md",
+      "bytes": 1718,
+      "sha256": "926c9fe4c2cc3361f91a67f26cd249f8bb223223154369144878e2afa345f0a9"
+    }
+  ],
+  "planned": 900,
+  "old300Included": false,
+  "reservedOutcomesRead": false,
+  "sourceRanksRecomputedAndVerified": true,
+  "outcomesAuthenticated": true
+}

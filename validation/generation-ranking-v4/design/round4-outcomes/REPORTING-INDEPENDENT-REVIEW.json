@@ -1,0 +1,83 @@
+{
+  "schema": "confovhh-round4-reporting-independent-review-v1",
+  "status": "PASS_BUILD_AND_SYNTHETIC_CONTROLS",
+  "reviewedAtUtc": "2026-09-25T05:45:59.692785+00:00",
+  "files": [
+    {
+      "path": "round4-reporting/report_common.py",
+      "bytes": 7704,
+      "sha256": "5999ff4ba342f4839037cf6dda8f83719c073acad6434be242c7acd746be32db"
+    },
+    {
+      "path": "round4-reporting/select_final.py",
+      "bytes": 18045,
+      "sha256": "772eb4a5002c5d8fc91a7382a0a8991450e7f89c7a926f0c476d619048499b54"
+    },
+    {
+      "path": "round4-reporting/summarize_reserved.py",
+      "bytes": 25322,
+      "sha256": "8264c8a8a901af5e96505e7c281685c1f1dd88c0be0d539e1d52293ba41141b8"
+    },
+    {
+      "path": "round4-reporting/test_reporting.py",
+      "bytes": 20613,
+      "sha256": "a9830abc4b52d2425ec69854d60d42361250c0ae52d78a35ffd1a29b433b8055"
+    },
+    {
+      "path": "round4-reporting/README.md",
+      "bytes": 9235,
+      "sha256": "2372196eae737fd45d7a2cae05652f501b93638943d53eefc660e9fc22c4cd6a"
+    }
+  ],
+  "controls": [
+    {
+      "path": "round4-outcomes/reporting-author-suite-review-v2.log",
+      "bytes": 3267,
+      "sha256": "dbb32bd7b06dcfc219c74ef24bdf83d2c14129943f5e57c08ed37c410cf6f5c7"
+    },
+    {
+      "path": "round4-outcomes/review_reporting_controls.py",
+      "bytes": 4739,
+      "sha256": "6a669c7f2fcdba1a76c441d85ca8e91f2db6d0da70fb5be26237bd6113020c33"
+    },
+    {
+      "path": "round4-outcomes/reporting-independent-controls.log",
+      "bytes": 1271,
+      "sha256": "00bdd09294f01db6c5431e06e51c2ecbdfa439c97f12d92f70a7bece08f56071"
+    }
+  ],
+  "authorSyntheticTestsIndependentlyRerun": 23,
+  "additionalIndependentSyntheticControlsPassed": 7,
+  "resolvedFindings": [
+    {
+      "issue": "Raw generation plan comparison rejected the runtime-only _sha256 added by the frozen cohort verifier.",
+      "resolution": "Require derived digest equal the authenticated binding; compare every remaining serialized field exactly. Added positive realistic-return-shape test and altered-digest/content rejections."
+    }
+  ],
+  "reviewedScope": [
+    "Explicit normal and incomplete reporting releases precede new outcome access.",
+    "Generation arithmetic replays unchanged frozen analyzer; model gate retains frozen floating arithmetic with no new tolerance.",
+    "Complete1200 join and independent fit crossbindings; exact family tie prefers confidence.",
+    "Incomplete source-only disposition retains every unknown label/reason without fit or source-winner claim.",
+    "Exact75/100 planned roster; selected alternative mandatory only for ADGRV1.",
+    "Complete failed/interrupted and unavailable retention; original statuses and reasons preserved.",
+    "Exact scientific top1/top5 ties including partial boundary support and unknown-label propagation.",
+    "Full-context source fallback, actual learned/source candidate counts, single learner group and no CI/general-superiority/promotion claim."
+  ],
+  "additionalControlTopics": [
+    "all25 failed in one pool",
+    "partial top5 boundary tie",
+    "unknown label within boundary tie",
+    "inclusive0.23 threshold and allnegative pools",
+    "adjacent floating gain threshold",
+    "zero learned candidates under source fallback",
+    "incomplete disposition independent generation gate"
+  ],
+  "remainingFindings": [],
+  "newProductionOutcomesRead": false,
+  "nativeQualityMetricsComputed": false,
+  "modelsFit": false,
+  "authorFilesEditedByReviewer": false,
+  "authorFilesFrozenByReviewer": false,
+  "limitations": "Code and synthetic cases only. Actual released source/outcome/fit/report replay remains a later root-controlled step."
+}

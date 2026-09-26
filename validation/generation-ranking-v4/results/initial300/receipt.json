@@ -1,0 +1,53 @@
+{
+  "schema": "confovhh-round4-ranking-execution-receipt-v1",
+  "implementation": {
+    "ranker.py": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604",
+    "artifacts.py": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5",
+    "run.py": "a2948242f196d358c46aa723e59c864d1009bb84be5abb13fdb518fca157ae04"
+  },
+  "files": {
+    "confidence-nested.json": {
+      "path": "round4-ranking/fit-development-300/confidence-nested.json",
+      "bytes": 10348718,
+      "sha256": "86e0cee02afafa5b642dffc4d607c62fd75b23bb0c15b956e246dee0f66b1e32"
+    },
+    "confidence-final-selection.json": {
+      "path": "round4-ranking/fit-development-300/confidence-final-selection.json",
+      "bytes": 942440,
+      "sha256": "1d9de173e60eccb1d73a1e32f4c3ff21313916f68d37fd56bdc1a3fed83bd7c0"
+    },
+    "confidence-model.json": {
+      "path": "round4-ranking/fit-development-300/confidence-model.json",
+      "bytes": 7895,
+      "sha256": "bbbb6e90c50ef8ec7db5638cca26a6db85fe07bfe9bb81a1daeae6e9b638f922"
+    },
+    "interface-nested.json": {
+      "path": "round4-ranking/fit-development-300/interface-nested.json",
+      "bytes": 10511590,
+      "sha256": "111459236ca18f047c78af702a2e160eb6a9a487286d7f9e6d657e272cb083be"
+    },
+    "interface-final-selection.json": {
+      "path": "round4-ranking/fit-development-300/interface-final-selection.json",
+      "bytes": 956176,
+      "sha256": "0244fc130a334271097e9a8f86f33485f544359db6371116b48eab2b2702d329"
+    },
+    "interface-model.json": {
+      "path": "round4-ranking/fit-development-300/interface-model.json",
+      "bytes": 7962,
+      "sha256": "c7faaf5e88fc0ca4a9161ce3f2b53aaad3a455fc87cb81fda23dad8508f8dc2d"
+    },
+    "summary.json": {
+      "path": "round4-ranking/fit-development-300/summary.json",
+      "bytes": 1725,
+      "sha256": "4a4303930a6ed7e103086108e8d01f820d1fa28336b83347764f7b2ee62810c3"
+    }
+  },
+  "status": "COMPLETE",
+  "release": {
+    "path": "round4-ranking/fit-release-v2.authorized.json",
+    "bytes": 8401,
+    "sha256": "e9f27baecbceab7ea6b59269690212f15c8390bf2fab33c6568fd95c47b7bc12"
+  },
+  "planned": 300,
+  "reservedOutcomesRead": false
+}

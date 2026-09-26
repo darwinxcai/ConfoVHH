@@ -1,0 +1,482 @@
+{
+  "schema": "confovhh-round4-qualified-reserved-enrollment-v1",
+  "status": "FROZEN_QUALIFICATION_REQUIRES_PARENT_EXECUTION_AND_OUTCOME_SEALS",
+  "recordedUtc": "2026-09-25T04:04:05.982355+00:00",
+  "parentAcceptance": "Root accepted all3 proposed cases and exact deposited-protein regimes, with onlyADGRV1 eligible for pair learner and GPR158/MC4R retained as full-context unchanged-source fallback/baseline coverage.",
+  "sourceProposal": {
+    "path": "PROPOSED-ENROLLMENT.json",
+    "bytes": 18957,
+    "sha256": "80365f27a5081be2fb8a3a0efbf938f61ec51e833938ca446e788d72d149264a"
+  },
+  "targets": [
+    {
+      "id": "ADGRV1_RE02",
+      "pdb": "9FTE",
+      "gene": "ADGRV1",
+      "nb": "RE02",
+      "receptorChains": [
+        "A"
+      ],
+      "selectedNb": "B",
+      "contextChains": [],
+      "context": "pair",
+      "analysisStratum": "metadata-and-structural-prose-exposed-new-outcome-test",
+      "learnerEligibleContext": true,
+      "limitations": [
+        "3.82\u00c5global reference;255/426 receptor and107/147Nb residues represented. All three IMGT CDRs represented, but native coordinates cannot validate missing receptor or terminal regions.",
+        "Mouse deposited construct versus human preprint species discrepancy remains unresolved. Exact deposited-protein construct benchmark only.",
+        "Fresh primary fulltext/pdf retrieval returned429; original preprint metadata/deposition provenance and retained prior source review support a limited deposited-pair claim, not a complete experimental construct provenance audit."
+      ],
+      "biologicalGroupId": "adhesion-adgrv1-re02",
+      "eligibilityStatus": "FROZEN_RESERVED_NEW_OUTCOME_CASE",
+      "historicalIndependenceCertified": false,
+      "priorExposure": "Repository metadata, source/structure prose and current reference qualification; no known ranking/outcome use identified in the bounded audited registry. Not an exhaustive historical absence claim.",
+      "nativeInputAllowed": false,
+      "generationRegime": "Exact deposited canonical protein sequences including tags/fusions and every specified protein context; no native coordinates/templates/contact restraints. Protein-only, without deposited lipids/detergents/glycans as generation inputs.",
+      "input": {
+        "path": "launch-inputs/ADGRV1_RE02.yaml",
+        "sha256": "2787c39398cfba82c75a3ae6046b33c92efa8e6ae5e0dbeb3689b46ca577bb0c",
+        "bytes": 777
+      },
+      "fasta": {
+        "path": "launch-inputs/ADGRV1_RE02.fasta",
+        "sha256": "3a6ece70960a13083877a9000c2e8921289ce45b51082db0115548b22e2cdab7",
+        "bytes": 682
+      },
+      "sequenceChains": [
+        {
+          "id": "A",
+          "entityId": "1",
+          "role": "receptor",
+          "length": 426,
+          "sequenceSha256": "ce080fdef9db00df7e4e58c13baee148c006f5edd21206c6a6c124a37b149a85"
+        },
+        {
+          "id": "B",
+          "entityId": "2",
+          "role": "target-nanobody",
+          "length": 147,
+          "sequenceSha256": "8407e46fdb9a6ad459e90f1998375028aabd73347e30613422edfba9e4be7c6b"
+        }
+      ],
+      "residueTokens": 573,
+      "initialPdbReleaseDate": "2026-01-14T00:00:00.000+00:00",
+      "reportedGlobalResolutionAngstrom": [
+        3.82
+      ],
+      "predictorTrainingExposure": "Entry released after reported Boltz2 experimentalPDB cutoff2023-06-01. This is not proof of receptor/Nb/interface novelty or absence from distilled/related training data.",
+      "reference": {
+        "path": "public-sources/qualification-native-reference/9FTE.cif",
+        "sha256": "a0593108250c7ce66844a0b54eff3e07d380bb19a90469f3cf22d877cf0ff5ed",
+        "bytes": 350811
+      },
+      "referenceAssignmentPolicy": "Fixed prediction selectedNb; only prespecified reference symmetry assignments. No prediction-side Nb selection and no outcome-based assignment enrollment.",
+      "referenceViews": [
+        {
+          "id": "ADGRV1_RE02__R-A__V-B",
+          "receptorAuthOrder": [
+            "A"
+          ],
+          "selectedNbAuth": "B",
+          "view": {
+            "path": "reference-views/ADGRV1_RE02__R-A__V-B.cif",
+            "sha256": "572f1be6f6d29bc65b70fb46f779a63e1d59d3c53c803157758d1ecee6bb056b",
+            "bytes": 243204
+          },
+          "mapping": {
+            "path": "reference-views/ADGRV1_RE02__R-A__V-B.mapping.json",
+            "sha256": "87e463a73658382440e79bf65e0e09d7ab3531af0c9dd682f0fc3d7d857184bc",
+            "bytes": 2797338
+          },
+          "receipt": {
+            "path": "reference-views/ADGRV1_RE02__R-A__V-B.receipt.json",
+            "sha256": "4bfb3e3ed1e69e59dde7f91ce81b5775ee5fd8e2a2ad602005576e57da51bcdc",
+            "bytes": 5189
+          }
+        }
+      ],
+      "missingResiduePolicy": "Keep full declared sequences in generation. Native missing residues stay absent; no filled-in native atoms, epitope masks or native-derived trims. Evaluation must disclose native resolved coverage."
+    },
+    {
+      "id": "GPR158_NB20",
+      "pdb": "9VOR",
+      "gene": "GPR158",
+      "nb": "Nb20",
+      "receptorChains": [
+        "A",
+        "B"
+      ],
+      "selectedNb": "C",
+      "contextChains": [
+        "D"
+      ],
+      "context": "two-receptors-two-Nbs",
+      "analysisStratum": "metadata-and-structural-prose-exposed-new-outcome-exploratory-baseline",
+      "learnerEligibleContext": false,
+      "limitations": [
+        "Nanobody contacts both receptor protomers; pair-only reduction is scientifically unsuitable. Keep full2+2 protein context.",
+        "Global deposition resolution3.47\u00c5 does not describe the weak ECD/Nb density. Primary paper reports localECD/Nb refinement4.14\u00c5 and cautions side-chain placement. Exploratory baseline coverage only.",
+        "Use deposited receptor781aa andNb150aa; original assay/reagent construct reconciliation is narrower than full biological validation.",
+        "9VOR is prespecified as the RGS-free structural class;9VOS is an alternate6-protein context of the sameNb lineage, never an independent group."
+      ],
+      "biologicalGroupId": "orphan-class-c-gpr158-nb20",
+      "eligibilityStatus": "FROZEN_RESERVED_NEW_OUTCOME_CASE",
+      "historicalIndependenceCertified": false,
+      "priorExposure": "Repository metadata, source/structure prose and current reference qualification; no known ranking/outcome use identified in the bounded audited registry. Not an exhaustive historical absence claim.",
+      "nativeInputAllowed": false,
+      "generationRegime": "Exact deposited canonical protein sequences including tags/fusions and every specified protein context; no native coordinates/templates/contact restraints. Protein-only, without deposited lipids/detergents/glycans as generation inputs.",
+      "input": {
+        "path": "launch-inputs/GPR158_NB20.yaml",
+        "sha256": "7428edef65eb49185c525a180f7140043d3fcd70fa1ef02091795d29f0f009a2",
+        "bytes": 1209
+      },
+      "fasta": {
+        "path": "launch-inputs/GPR158_NB20.fasta",
+        "sha256": "ab558b6cbd7b76867203da0a8a94fffa2a52d5f7609f74040f10e634a8eb6955",
+        "bytes": 2080
+      },
+      "sequenceChains": [
+        {
+          "id": "A",
+          "entityId": "1",
+          "role": "receptor",
+          "length": 781,
+          "sequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc"
+        },
+        {
+          "id": "B",
+          "entityId": "1",
+          "role": "receptor",
+          "length": 781,
+          "sequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc"
+        },
+        {
+          "id": "C",
+          "entityId": "2",
+          "role": "target-nanobody",
+          "length": 150,
+          "sequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc"
+        },
+        {
+          "id": "D",
+          "entityId": "2",
+          "role": "target-nanobody",
+          "length": 150,
+          "sequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc"
+        }
+      ],
+      "residueTokens": 1862,
+      "initialPdbReleaseDate": "2025-12-31T00:00:00.000+00:00",
+      "reportedGlobalResolutionAngstrom": [
+        3.47
+      ],
+      "predictorTrainingExposure": "Entry released after reported Boltz2 experimentalPDB cutoff2023-06-01. This is not proof of receptor/Nb/interface novelty or absence from distilled/related training data.",
+      "reference": {
+        "path": "public-sources/qualification-native-reference/9VOR.cif",
+        "sha256": "ed0928ccbe1c31434519d3f8ac028ee13f05dd25d3b6e389ef334f923bda1a10",
+        "bytes": 1241897
+      },
+      "referenceAssignmentPolicy": "Fixed prediction selectedNb; only prespecified reference symmetry assignments. No prediction-side Nb selection and no outcome-based assignment enrollment.",
+      "referenceViews": [
+        {
+          "id": "GPR158_NB20__R-AB__V-C",
+          "receptorAuthOrder": [
+            "A",
+            "B"
+          ],
+          "selectedNbAuth": "C",
+          "view": {
+            "path": "reference-views/GPR158_NB20__R-AB__V-C.cif",
+            "sha256": "62756df65040284b62a0988e2b7a2e89781c55c3eed4f986331a9dbf7ebb4c55",
+            "bytes": 1102116
+          },
+          "mapping": {
+            "path": "reference-views/GPR158_NB20__R-AB__V-C.mapping.json",
+            "sha256": "60775656b0cdedded36b68929681bd39c972466e6e677d30a00cbe9e560e4649",
+            "bytes": 10857252
+          },
+          "receipt": {
+            "path": "reference-views/GPR158_NB20__R-AB__V-C.receipt.json",
+            "sha256": "c93bc99c9ffb9bf22ba18c2908dabc6b80ac970427996ef791fdd93fe6639473",
+            "bytes": 19579
+          }
+        },
+        {
+          "id": "GPR158_NB20__R-AB__V-E",
+          "receptorAuthOrder": [
+            "A",
+            "B"
+          ],
+          "selectedNbAuth": "E",
+          "view": {
+            "path": "reference-views/GPR158_NB20__R-AB__V-E.cif",
+            "sha256": "6edf0a927f36463dbe7cc5eeadcd7e59aaef799f301d6086c5f69a9619579d69",
+            "bytes": 1102116
+          },
+          "mapping": {
+            "path": "reference-views/GPR158_NB20__R-AB__V-E.mapping.json",
+            "sha256": "4591124d7d5c0a289580baff2d41a34b9ab3b50cd82631baf4a697c88896fb6a",
+            "bytes": 10857254
+          },
+          "receipt": {
+            "path": "reference-views/GPR158_NB20__R-AB__V-E.receipt.json",
+            "sha256": "4884990f59733a2a47ec995b11d18f7400212ebab90f070e29f3ba5064f1fc7f",
+            "bytes": 19579
+          }
+        },
+        {
+          "id": "GPR158_NB20__R-BA__V-C",
+          "receptorAuthOrder": [
+            "B",
+            "A"
+          ],
+          "selectedNbAuth": "C",
+          "view": {
+            "path": "reference-views/GPR158_NB20__R-BA__V-C.cif",
+            "sha256": "a8805682d84a12f57f278d06af2519c02a682b8acabd114c94c5772475fcb3b2",
+            "bytes": 1102116
+          },
+          "mapping": {
+            "path": "reference-views/GPR158_NB20__R-BA__V-C.mapping.json",
+            "sha256": "b7aa6e03ea50364c8647522414f0553cb4e2692a142b072400911ba9911bcd68",
+            "bytes": 10857254
+          },
+          "receipt": {
+            "path": "reference-views/GPR158_NB20__R-BA__V-C.receipt.json",
+            "sha256": "e0298c047c7f7f401eff80f028da64f6daafc8cef8f72cc7d4b0d360a10e10c9",
+            "bytes": 19578
+          }
+        },
+        {
+          "id": "GPR158_NB20__R-BA__V-E",
+          "receptorAuthOrder": [
+            "B",
+            "A"
+          ],
+          "selectedNbAuth": "E",
+          "view": {
+            "path": "reference-views/GPR158_NB20__R-BA__V-E.cif",
+            "sha256": "411677d173955fb2288f0922b841522e7acae7606bc4006f5e25641395b05475",
+            "bytes": 1102116
+          },
+          "mapping": {
+            "path": "reference-views/GPR158_NB20__R-BA__V-E.mapping.json",
+            "sha256": "875dcd68971c5bef5d4eaf50d10dd014f8356a796d38ce51996ea2d4150071c3",
+            "bytes": 10857256
+          },
+          "receipt": {
+            "path": "reference-views/GPR158_NB20__R-BA__V-E.receipt.json",
+            "sha256": "0adfe24a17ce0726bcb2274222523996793c46b6753e279be8c46391c52141f9",
+            "bytes": 19578
+          }
+        }
+      ],
+      "missingResiduePolicy": "Keep full declared sequences in generation. Native missing residues stay absent; no filled-in native atoms, epitope masks or native-derived trims. Evaluation must disclose native resolved coverage."
+    },
+    {
+      "id": "MC4R_PN162",
+      "pdb": "8QJ2",
+      "gene": "MC4R",
+      "nb": "pN162",
+      "receptorChains": [
+        "E"
+      ],
+      "selectedNb": "F",
+      "contextChains": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "context": "receptor-targetNb-Gs-auxiliaryNb35",
+      "analysisStratum": "construct-corrected-discovery-related-new-outcome-context-baseline",
+      "learnerEligibleContext": false,
+      "limitations": [
+        "Retain all six deposited protein chains, includingGs and auxiliaryNb35. TargetpN162 contacts receptor only, but this does not prove the active receptor conformation is helper-independent.",
+        "Whole729aa BRIL/MC4R/mCherry/tag construct retained; no trimming to resolved receptor or canonical332aa segment.",
+        "3.4\u00c5global reference with85/117pN162 residues represented; all3IMGTCDRs represented, substantial framework and receptor-fusion regions unresolved.",
+        "Discovery used beta2AR-grafted/Cb80-stabilized immunogen, while deposited receptor core is exact wild-typeMC4R. Record source relationship without mislabeling the deposited construct."
+      ],
+      "biologicalGroupId": "melanocortin-mc4r-pn162",
+      "eligibilityStatus": "FROZEN_RESERVED_NEW_OUTCOME_CASE",
+      "historicalIndependenceCertified": false,
+      "priorExposure": "Repository metadata, source/structure prose and current reference qualification; no known ranking/outcome use identified in the bounded audited registry. Not an exhaustive historical absence claim.",
+      "nativeInputAllowed": false,
+      "generationRegime": "Exact deposited canonical protein sequences including tags/fusions and every specified protein context; no native coordinates/templates/contact restraints. Protein-only, without deposited lipids/detergents/glycans as generation inputs.",
+      "input": {
+        "path": "launch-inputs/MC4R_PN162.yaml",
+        "sha256": "65b0438ff7222f9915644cac4f2867ebef8faab1ca0b1dccc52e1fcbe9b0ff25",
+        "bytes": 2331
+      },
+      "fasta": {
+        "path": "launch-inputs/MC4R_PN162.fasta",
+        "sha256": "2e7cb012eeb660ff3725919d1ab5b5d67f91a67db1a60a0b4295e9abe016f293",
+        "bytes": 2109
+      },
+      "sequenceChains": [
+        {
+          "id": "A",
+          "entityId": "1",
+          "role": "Galpha-s",
+          "length": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645"
+        },
+        {
+          "id": "B",
+          "entityId": "2",
+          "role": "Gbeta1",
+          "length": 350,
+          "sequenceSha256": "00a1717efa9e429aa27dff2c04f76d18f1fa7cb1fcbf8c68c483a78944d680d9"
+        },
+        {
+          "id": "C",
+          "entityId": "3",
+          "role": "Ggamma2",
+          "length": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213"
+        },
+        {
+          "id": "D",
+          "entityId": "4",
+          "role": "auxiliary-Nb35",
+          "length": 138,
+          "sequenceSha256": "81b29d90d29e027b6c9ee0842045474d8725c71eeb542b79a7edd856f8bf3fe8"
+        },
+        {
+          "id": "E",
+          "entityId": "5",
+          "role": "receptor",
+          "length": 729,
+          "sequenceSha256": "e6772a9f4f5b06a431c85112486e3c44adcfb325809b0982d679c4959db3e362"
+        },
+        {
+          "id": "F",
+          "entityId": "6",
+          "role": "target-nanobody",
+          "length": 117,
+          "sequenceSha256": "7edd75fc42a7419665c28f11ddc5bbc650edc526820ff80e90672145a04c042a"
+        }
+      ],
+      "residueTokens": 1799,
+      "initialPdbReleaseDate": "2024-09-25T00:00:00.000+00:00",
+      "reportedGlobalResolutionAngstrom": [
+        3.4
+      ],
+      "predictorTrainingExposure": "Entry released after reported Boltz2 experimentalPDB cutoff2023-06-01. This is not proof of receptor/Nb/interface novelty or absence from distilled/related training data.",
+      "reference": {
+        "path": "public-sources/qualification-native-reference/8QJ2.cif",
+        "sha256": "120f0db7ddc2928f65730ccb5e51313e679f3e3c62fdd55c1d8fe471784d21b9",
+        "bytes": 920862
+      },
+      "referenceAssignmentPolicy": "Fixed prediction selectedNb; only prespecified reference symmetry assignments. No prediction-side Nb selection and no outcome-based assignment enrollment.",
+      "referenceViews": [
+        {
+          "id": "MC4R_PN162__R-A__V-D",
+          "receptorAuthOrder": [
+            "A"
+          ],
+          "selectedNbAuth": "D",
+          "view": {
+            "path": "reference-views/MC4R_PN162__R-A__V-D.cif",
+            "sha256": "ef3dc94de06e6f3a18518c81be4f517e8322f8591e950fe1500b6e5edd63cffb",
+            "bytes": 722434
+          },
+          "mapping": {
+            "path": "reference-views/MC4R_PN162__R-A__V-D.mapping.json",
+            "sha256": "2fd87a0cc9c859bac9b87ec57ea2534dafa3d7ae2f993b4f3b7bdb89fa537c52",
+            "bytes": 8159183
+          },
+          "receipt": {
+            "path": "reference-views/MC4R_PN162__R-A__V-D.receipt.json",
+            "sha256": "c96750d41c4c5357a6f29e031a0ca84d6bcfdfe154cc327621ceff5377da9049",
+            "bytes": 13443
+          }
+        }
+      ],
+      "missingResiduePolicy": "Keep full declared sequences in generation. Native missing residues stay absent; no filled-in native atoms, epitope masks or native-derived trims. Evaluation must disclose native resolved coverage."
+    }
+  ],
+  "plannedTargetCount": 3,
+  "pairLearnerBiologicalTestGroupCount": 1,
+  "contextBaselineTestGroupCount": 2,
+  "historicalIndependenceCertified": false,
+  "predictorTrainingNoveltyCertified": false,
+  "claimLimit": "Only one biological test group supports the pair learner. No general superiority or production-promotion claim is supported regardless of a favorable result. Full-context cases cannot establish pair-learner improvement.",
+  "labelBoundary": {
+    "newReservedPredictionsGenerated": false,
+    "newReservedPredictionQualityLabelsRead": false,
+    "newReservedRankingPerformed": false,
+    "nativeSelfControlsPerformed": true,
+    "old300DevelopmentNumericalRegressionAuthorizedAndPerformed": true
+  },
+  "runtimeAndAttempts": "Parent execution freeze must set and bind all predictor settings, attempts/seeds and release gates before generation. This ledger does not allocate cloud or initiate prediction.",
+  "nativeSeparation": {
+    "qualificationReferences": "public-sources/qualification-native-reference and reference-views are local reference-only; exclude from every generation upload.",
+    "uploadAllowlist": "Only launch-inputs/*.yaml plus an eventual independently frozen execution plan.",
+    "enrollmentAuthority": "Root must coordinate/freeze exact cases and downstream protocols before execution.",
+    "referenceViewUtility": {
+      "path": "round3-benchmark/scoring-view/canonicalize_view.py",
+      "sha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c"
+    }
+  },
+  "metricAddendum": {
+    "change": "Explicit pinned mmCIF parser dispatch only; exact old numerical/correspondence method retained.",
+    "helper": {
+      "path": "explicit_mmcif_metric.py",
+      "bytes": 4330,
+      "sha256": "7a9116e549a599bcf479676724fb9dc5b9dddc3e8d9eae6c5b46e7f46bbc35e7"
+    },
+    "nativeControls": {
+      "path": "native-self-controls-explicit-mmcif/RECEIPT.json",
+      "bytes": 4497,
+      "sha256": "891e2afc7888b22eee4eacdbe2621593a3abad12f55a3cac1d04d7ac8d6b19bd"
+    },
+    "old300Regression": {
+      "path": "metric-regression/RECEIPT.json",
+      "bytes": 4234,
+      "sha256": "c360692bb170cd953797e40552ac83305a4632ae3db014387505619d3bcd8e4a"
+    },
+    "oldEmptyLoaderFailure": {
+      "path": "native-self-controls/FAILURE.json",
+      "bytes": 878,
+      "sha256": "8940f6e7c920821f6297436cea6c2a5dd19b3570324bb3d473ceab86795ffdaa"
+    },
+    "formatTests": {
+      "path": "metric-dispatch-tests.log",
+      "bytes": 828,
+      "sha256": "7ca549e034d0a94bb8fe8e872159485ed792b2a9a57eff3decf6ec7ca2e9bc53"
+    }
+  },
+  "qualificationBindings": [
+    {
+      "path": "construct-reconciliation-and-corrections.json",
+      "bytes": 4858,
+      "sha256": "85f759ebf19ccd86d82158415883c4412e3b8fe9ffb676a521e385546baae76c"
+    },
+    {
+      "path": "native-context-and-reference-coverage.json",
+      "bytes": 209887,
+      "sha256": "5131f67c8911bb21af855cfe017e4ce22f9e18b5740cc6473c9c320ac0a9a3f4"
+    },
+    {
+      "path": "candidate-nb-sequence-audit.json",
+      "bytes": 558513,
+      "sha256": "94c9bb63c0617ea5680e63cf52554084f46297bf8654388ca3c182bc209c0f90"
+    },
+    {
+      "path": "reference-view-inventory.json",
+      "bytes": 4816,
+      "sha256": "059c34d0d30f3ba9663d2ec7a4502e409ff312aea9c6b1f356ab1f74be254fc0"
+    },
+    {
+      "path": "eligibility-ledger.json",
+      "bytes": 6105,
+      "sha256": "631ebbff3af8fd789d54ff303f34d055a913673f4c99267479fa74c5c2e28223"
+    },
+    {
+      "path": "assembly-identity-validation.json",
+      "bytes": 1081,
+      "sha256": "91de18bc9cd96eb58996e2a5a1417f871ce9271d943a7467b14c921fcba6d85e"
+    }
+  ]
+}

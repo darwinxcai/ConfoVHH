@@ -1,0 +1,62 @@
+{
+  "schema": "confovhh-round4-final-selection-v1",
+  "status": "COMPLETE_EXPLORATORY_SELECTION",
+  "selectedFamily": "source",
+  "selectedModel": null,
+  "pairGenerationArm": "baseline",
+  "otherContextsGenerationArm": "baseline",
+  "reservedPlannedAttempts": 75,
+  "familyAssessments": {
+    "confidence": {
+      "eligible": false,
+      "checks": {
+        "usefulGain": false,
+        "noAcceptableFirstLoss": true,
+        "selectionCoverageUnchanged": true,
+        "fittedRidgeModel": true
+      },
+      "nestedPairFirstDockQGain": 0.016866837470395135,
+      "acceptableLossPools": [],
+      "supportedPlannedPools": 36,
+      "supportedSelectedPools": 36,
+      "finalModelKind": "ridge",
+      "modelBinding": {
+        "path": "round4-ranking/fit-development-1200/confidence-model.json",
+        "bytes": 41491,
+        "sha256": "b8df1db3aa9b34aa23c5af09e5439549ab5770012eb0257851b8110fa09e112c"
+      }
+    },
+    "interface": {
+      "eligible": false,
+      "checks": {
+        "usefulGain": false,
+        "noAcceptableFirstLoss": true,
+        "selectionCoverageUnchanged": true,
+        "fittedRidgeModel": true
+      },
+      "nestedPairFirstDockQGain": 0.006001642267466689,
+      "acceptableLossPools": [],
+      "supportedPlannedPools": 36,
+      "supportedSelectedPools": 36,
+      "finalModelKind": "ridge",
+      "modelBinding": {
+        "path": "round4-ranking/fit-development-1200/interface-model.json",
+        "bytes": 41716,
+        "sha256": "2feaf7f3e8009c3017883f661ef5ae6cbdd8de49ec74bd21eb7a4b03c548e52e"
+      }
+    }
+  },
+  "tiePreference": [
+    "confidence",
+    "interface"
+  ],
+  "selectionEvidence": "verified-combined-1200-nested-and-final-fit",
+  "familyChoiceAfterOuterResultsIsExploratory": true,
+  "productionDefaultChanged": false,
+  "generalSuperiorityClaim": false,
+  "reservedOutcomesUsed": false,
+  "modelsFitByReporter": 0,
+  "finalPolicyAuthorized": false,
+  "generationAuthorized": false,
+  "outcomeOpeningAuthorized": false
+}

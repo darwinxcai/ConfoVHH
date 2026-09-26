@@ -1,0 +1,54 @@
+{
+  "families": {
+    "confidence": {
+      "selectedFinalLambda": null,
+      "finalModelKind": "source",
+      "nestedAllPlanned": {
+        "firstDockQGain": -0.018747422115932888,
+        "acceptableLossPools": [
+          "FZD3_NB9::baseline::seeds00-24"
+        ],
+        "acceptableRescuePools": [],
+        "coverageUnchanged": true,
+        "exploratoryUsefulGainGatePassed": false
+      },
+      "nestedLearnerSupported": {
+        "firstDockQGain": -0.025777705409407714,
+        "acceptableLossPools": [
+          "FZD3_NB9::baseline::seeds00-24"
+        ],
+        "acceptableRescuePools": [],
+        "coverageUnchanged": true,
+        "exploratoryUsefulGainGatePassed": false
+      }
+    },
+    "interface": {
+      "selectedFinalLambda": null,
+      "finalModelKind": "source",
+      "nestedAllPlanned": {
+        "firstDockQGain": -0.019025190832221317,
+        "acceptableLossPools": [
+          "FZD3_NB9::baseline::seeds00-24"
+        ],
+        "acceptableRescuePools": [],
+        "coverageUnchanged": true,
+        "exploratoryUsefulGainGatePassed": false
+      },
+      "nestedLearnerSupported": {
+        "firstDockQGain": -0.02615963739430427,
+        "acceptableLossPools": [
+          "FZD3_NB9::baseline::seeds00-24"
+        ],
+        "acceptableRescuePools": [],
+        "coverageUnchanged": true,
+        "exploratoryUsefulGainGatePassed": false
+      }
+    }
+  },
+  "candidateGate": "Exploratory >=0.02 nested supported first DockQ gain, no acceptable loss, unchanged selection coverage",
+  "familyChoiceAfterOuterResultsIsExploratory": true,
+  "productionDefaultChanged": false,
+  "BoltzWeightsChanged": false,
+  "allTrainingDataDevelopmentExposed": true,
+  "reservedOutcomesRead": false
+}

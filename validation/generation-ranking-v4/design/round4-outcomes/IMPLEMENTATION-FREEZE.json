@@ -1,0 +1,168 @@
+{
+  "schema": "confovhh-round4-outcome-implementation-freeze-v1",
+  "status": "FROZEN_BUILD_AND_INDEPENDENT_REVIEW_PASS",
+  "frozenAtUtc": "2026-09-25T04:48:43.695728+00:00",
+  "implementation": {
+    "adapterSha256": "ecff170ddb66c91c1b4e2d65539721648891743436491b0bc01ab311673bc6b2",
+    "preparation": {
+      "prepareScriptSha256": "014e62316efd8d3342c777fe8d3c9e15e788648ee1fd8011b2bdfe2f27c1ec5a",
+      "round3PreparationSha256": "c921848f7bec359e503b7b4433d66e0a5adf3b1d9abab807691c334b703655e5",
+      "canonicalizerSha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c",
+      "round3ViewAuthenticationSha256": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562"
+    },
+    "metric": {
+      "schema": "confovhh-round4-explicit-mmcif-metric-v1",
+      "change": "Only format dispatch: two load_PDB expressions replaced by explicit pinned DockQ.MMCIFParser; every other numerical-function byte unchanged.",
+      "round3": {
+        "adapterSha256": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562",
+        "methodFreezeSha256": "2914ec4b58f128427e3b6ba5f3d28da3dd6ae71770c1e969b350c5b78f383b29",
+        "canonicalizerSha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c",
+        "contactEvidenceVerifierSha256": "1dd974254308ea2df91405f0a16e7d5c669db7c195f3124472e4791b270da87c",
+        "NodeVerifierVersion": "v24.19.0",
+        "DockQVersion": "2.1.3",
+        "DockQFiles": {
+          "DockQ.py": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "__main__.py": "a2dc944b6fdaeb5c4f3574c452519449505756abbb96e2261179a2b643b57df5",
+          "constants.py": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18",
+          "operations.cpython-312-darwin.so": "1e3871f2f42e32ca87cd3b8f679a576ef5f10e9fe1eb045e86c9cd0338463f27",
+          "operations_nocy.py": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3",
+          "parsers.py": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+        },
+        "BioVersion": "1.88",
+        "numpyVersion": "1.26.4",
+        "alignment": "separate ordered receptor segments and fixed VHH; DockQ 5/0/-4/-0.5 sequence scores; first optimum; concat fixed correspondences; unchanged calc_DockQ",
+        "perViewTimeoutSeconds": 600
+      },
+      "originalDockqApiSourceSha256": "8301560ab81376b532b29d1c5f91e6b198bd2f150b4fadc79a641a054b17327f",
+      "derivedDockqApiSourceSha256": "7395419cb4f5cc1415cf5de5155beab2943f5f142a685f6bd364d0991c8a43d7",
+      "helperSha256": "7a9116e549a599bcf479676724fb9dc5b9dddc3e8d9eae6c5b46e7f46bbc35e7",
+      "inputFormat": "mmCIF only; data_ header required",
+      "selectedChains": [
+        "R",
+        "V"
+      ],
+      "modelIndex": 0,
+      "authChains": true,
+      "parseHetatms": false,
+      "numericalMetricChanged": false,
+      "correspondenceChanged": false,
+      "originalFrozenFilesEdited": false
+    },
+    "perViewTimeoutSeconds": 600
+  },
+  "files": [
+    {
+      "path": "round4-outcomes/prepare_predictions.py",
+      "bytes": 18793,
+      "sha256": "014e62316efd8d3342c777fe8d3c9e15e788648ee1fd8011b2bdfe2f27c1ec5a"
+    },
+    {
+      "path": "round4-outcomes/outcome_adapter.py",
+      "bytes": 28217,
+      "sha256": "ecff170ddb66c91c1b4e2d65539721648891743436491b0bc01ab311673bc6b2"
+    },
+    {
+      "path": "round4-outcomes/test_preparation.py",
+      "bytes": 5216,
+      "sha256": "891e12f9c452745c74c2ce75562889a3445f122e8bc8de0dbbc38cf990fcbe2e"
+    },
+    {
+      "path": "round4-outcomes/test_outcomes.py",
+      "bytes": 14299,
+      "sha256": "8133021f28027516f979cba9c3a8e6803300bbb1928bc058b04418184d3432d4"
+    },
+    {
+      "path": "round4-outcomes/README.md",
+      "bytes": 8017,
+      "sha256": "501f2bcd9641cd8c52aea2012cfab931f5e911d1dabe5503bbed2cc821a0a79c"
+    },
+    {
+      "path": "round4-outcomes/development-cohort.json",
+      "bytes": 31873,
+      "sha256": "a4191a9499ce45848c2a03a4a4920c5d54c4212b7268c46d654d83229f3adc77"
+    },
+    {
+      "path": "round4-outcomes/reference-inventory.json",
+      "bytes": 19217,
+      "sha256": "18a41446d5dcabd2dc8952d49a192e262ce43f03ca9a83d17c6f984051ca2fe6"
+    },
+    {
+      "path": "round4-outcomes/preparation-tests-v2.log",
+      "bytes": 1361,
+      "sha256": "9a39f77dd744d1ab5c29c3aca85e363322e7778d6e9e69b375512ac805015bd0"
+    },
+    {
+      "path": "round4-outcomes/outcome-tests-v6.log",
+      "bytes": 3097,
+      "sha256": "fd61b4c067a339328a14d4ec4c1b26eda635f538cfd20ea94f6c5f9b4a2bcab5"
+    },
+    {
+      "path": "round4-outcomes/SMOKE-SNAPSHOT-REQUEST.json",
+      "bytes": 950,
+      "sha256": "7b96a0d29293c9e514756752db36953830c5512e8fb824d03c4ebad21d552921"
+    },
+    {
+      "path": "round4-outcomes/SMOKE-SNAPSHOT-REFUSAL-V3.json",
+      "bytes": 3355,
+      "sha256": "642cb898b49b5bc56ceea85fe05225f1c6cb066a4ea87c9a6f9ef0af50aa29e2"
+    },
+    {
+      "path": "round4-outcomes/smoke-preparation-five/preparation-receipt.json",
+      "bytes": 1190,
+      "sha256": "ad08d444767a753d4aed54f15390b931360ce3e00648d34a454e1b7dc1107c3b"
+    },
+    {
+      "path": "round4-ranking/FEATURE-ADAPTER-FREEZE.json",
+      "bytes": 5289,
+      "sha256": "b0d59c38d86e5e3ebecc1cefba3b9ca4ad15d49d9c5f68ea8ded2cb9956eb685"
+    },
+    {
+      "path": "round4-ranking/OUTCOME-PREPARATION-REVIEW.json",
+      "bytes": 4392,
+      "sha256": "3ae8dfeb07a0fc64dd05782849554316df5b64413c57b38959e973d3b7093eb3"
+    },
+    {
+      "path": "round4-benchmark/explicit_mmcif_metric.py",
+      "bytes": 4330,
+      "sha256": "7a9116e549a599bcf479676724fb9dc5b9dddc3e8d9eae6c5b46e7f46bbc35e7"
+    },
+    {
+      "path": "round4-benchmark/native-self-controls-explicit-mmcif/RECEIPT.json",
+      "bytes": 4497,
+      "sha256": "891e2afc7888b22eee4eacdbe2621593a3abad12f55a3cac1d04d7ac8d6b19bd"
+    },
+    {
+      "path": "round4-benchmark/metric-regression/RECEIPT.json",
+      "bytes": 4234,
+      "sha256": "c360692bb170cd953797e40552ac83305a4632ae3db014387505619d3bcd8e4a"
+    },
+    {
+      "path": "round3-benchmark/outcome-tools/test_outcome_adapter.py",
+      "bytes": 14004,
+      "sha256": "300560ecfdb3cdcec1c74067867b0dc571b3e3744f65e515a2f9f440154f02df"
+    }
+  ],
+  "independentReview": {
+    "path": "round4-ranking/OUTCOME-PREPARATION-REVIEW.json",
+    "bytes": 4392,
+    "sha256": "3ae8dfeb07a0fc64dd05782849554316df5b64413c57b38959e973d3b7093eb3"
+  },
+  "tests": {
+    "preparation": 10,
+    "outcomes": 23,
+    "independentPassed": 33
+  },
+  "actualInitialPredictionControl": {
+    "canonicalized": 5,
+    "plannedIdsRetained": 900,
+    "sourceRankReplayAndSnapshotRefusal": "PASS"
+  },
+  "referenceTargets": 15,
+  "newDevelopmentOutcomesComputed": false,
+  "newReservedOutcomesComputed": false,
+  "releaseStillRequiredForEveryCohort": true,
+  "reservedModelRoster": "Exact distinct frozen challenger bindings required; source is always mandatory; source-only has both challenger/model lists empty.",
+  "preparationReportingLimitation": "Frozen preparation alone authenticates failure status/coordinate absence but not exact failure text or null integrity placeholder. New outcome preflight independently enforces authenticated producer reason and rawInputIntegrity null before sealing; no numerical change.",
+  "verificationScope": "Saved outcome verification replays authenticated inputs, exact source/challenger rankings, fixed segment correspondences and all-view aggregation; production DockQ itself is not recomputed by verify."
+}

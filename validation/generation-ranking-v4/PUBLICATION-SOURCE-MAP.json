@@ -1,0 +1,839 @@
+{
+  "derivedOrPostArchiveEvidence": [
+    {
+      "operation": "Keep all metrics, pool weights, comparisons, claims and fold membership; omit per-pose ranks and repeated fold selection/model traces. No numerical recomputation.",
+      "publicationPath": "validation/generation-ranking-v4/results/initial300/confidence-nested-summary.json",
+      "source": {
+        "bytes": 10348718,
+        "path": "round4-ranking/fit-development-300/confidence-nested.json",
+        "sha256": "86e0cee02afafa5b642dffc4d607c62fd75b23bb0c15b956e246dee0f66b1e32"
+      }
+    },
+    {
+      "operation": "Keep all metrics, pool weights, comparisons, claims and fold membership; omit per-pose ranks and repeated fold selection/model traces. No numerical recomputation.",
+      "publicationPath": "validation/generation-ranking-v4/results/initial300/interface-nested-summary.json",
+      "source": {
+        "bytes": 10511590,
+        "path": "round4-ranking/fit-development-300/interface-nested.json",
+        "sha256": "111459236ca18f047c78af702a2e160eb6a9a487286d7f9e6d657e272cb083be"
+      }
+    },
+    {
+      "operation": "Keep all metrics, pool weights, comparisons, claims and fold membership; omit per-pose ranks and repeated fold selection/model traces. No numerical recomputation.",
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/fit/confidence-nested-summary.json",
+      "source": {
+        "bytes": 45809048,
+        "path": "round4-ranking/fit-development-1200/confidence-nested.json",
+        "sha256": "67017226bd057f704bc1f7184250e94b0f75874afa9f7c132fe9c382d426725c"
+      }
+    },
+    {
+      "operation": "Keep all metrics, pool weights, comparisons, claims and fold membership; omit per-pose ranks and repeated fold selection/model traces. No numerical recomputation.",
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/fit/interface-nested-summary.json",
+      "source": {
+        "bytes": 45974719,
+        "path": "round4-ranking/fit-development-1200/interface-nested.json",
+        "sha256": "9e42599c13e73054db52c79a78c3dda8b77c46f32f4c16d5a5eeef165866b299"
+      }
+    },
+    {
+      "operation": "Unchanged post-archive completion evidence; not a manifest member because the archive and its verification are created afterward.",
+      "publicationPath": "validation/generation-ranking-v4/evidence/round4-archive-receipt.json",
+      "source": {
+        "bytes": 842,
+        "path": "round4-archive-receipt.json",
+        "sha256": "5bc3bb707c3a05e4cb861b0caa167bc68225b824c7b0652e161f9c2f8cb217ff"
+      }
+    },
+    {
+      "operation": "Unchanged post-archive completion evidence; not a manifest member because the archive and its verification are created afterward.",
+      "publicationPath": "validation/generation-ranking-v4/evidence/round4-archive-verification.json",
+      "source": {
+        "bytes": 3357,
+        "path": "round4-archive-verification.json",
+        "sha256": "c8c85ae543dd2843ce0c5b55aef077d660a96df5b5ed4fea10437c5aa715498d"
+      }
+    }
+  ],
+  "fullArchive": {
+    "bytes": 10399104810,
+    "path": "confovhh-source-first-ranking-v4.zip",
+    "sha256": "201f60ea744152b56564d81518d917e3f0b2ea3cdbbd5844c835517eba21e20f"
+  },
+  "generatedOverview": "validation/generation-ranking-v4/README.md",
+  "numericalDockQRecomputed": false,
+  "proposedBaseHead": "5378ea1e028b6c3fedcbeff70faf793d8f5e1559",
+  "schema": "confovhh-round4-compact-publication-source-map-v1",
+  "scientificInputOrigin": "Fresh verified extraction only; external completion receipts are separately authenticated.",
+  "unchangedArchiveCopies": [
+    {
+      "bytes": 13750,
+      "publicationPath": "validation/generation-ranking-v4/REPORT.md",
+      "sha256": "9137e039c1c666bc56ca6749010a1a74976ffee36e3d6ebd3521686f0cf1cd06",
+      "source": "REPORT-V4.md"
+    },
+    {
+      "bytes": 12311,
+      "publicationPath": "validation/generation-ranking-v4/REPLAY.md",
+      "sha256": "00ee61004e229795811c570ac8bdbdce0b1ed995159de868472b9f82d7f7a37f",
+      "source": "V4_REPLAY.md"
+    },
+    {
+      "bytes": 3732,
+      "publicationPath": "validation/generation-ranking-v4/evidence/ROUND4-FINAL-ARTIFACT-MAP.json",
+      "sha256": "04e6d65d395ff3970ffd22bc26bc1023984696d620ab3101affc210d82200bc6",
+      "source": "ROUND4-FINAL-ARTIFACT-MAP.json"
+    },
+    {
+      "bytes": 9408,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-planning/PLAN.md",
+      "sha256": "b8bfc000c209cc1e47902a3ef1bc86c25806a1133be8071c04f80f02297ecbe5",
+      "source": "round4-planning/PLAN.md"
+    },
+    {
+      "bytes": 6703,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-planning/ANALYSIS-DECISIONS.md",
+      "sha256": "7f76db198e105eb3ba5d5a5667bed499a43bfa2b4b23a34519169edb7ea7e6de",
+      "source": "round4-planning/ANALYSIS-DECISIONS.md"
+    },
+    {
+      "bytes": 847,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-planning/ANALYSIS-DECISIONS-FREEZE.json",
+      "sha256": "cd2b00f7fa2225c1de38cdf272fb710fb399e6569eb69d601722e506545d4d95",
+      "source": "round4-planning/ANALYSIS-DECISIONS-FREEZE.json"
+    },
+    {
+      "bytes": 689,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-planning/FEATURE-OUTCOME-ACCEPTED.json",
+      "sha256": "6035d1040e47e0e3dfe7da1ef8a2585df6dd46840852fa147e24f24c71161b5d",
+      "source": "round4-planning/FEATURE-OUTCOME-ACCEPTED.json"
+    },
+    {
+      "bytes": 763,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-planning/RESERVED-ENROLLMENT-ACCEPTED.json",
+      "sha256": "a269eee305465afdf54a41a0a84c2f24a157716b9bd8503f432062cf77679699",
+      "source": "round4-planning/RESERVED-ENROLLMENT-ACCEPTED.json"
+    },
+    {
+      "bytes": 8591,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/README.md",
+      "sha256": "2987536c0e6044a0734e9ab6c0bdec762a51d1b046c7f0184744f7676d75f570",
+      "source": "round4-benchmark/README.md"
+    },
+    {
+      "bytes": 21572,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/ENROLLMENT.freeze.json",
+      "sha256": "f43d145a873d2ccf6aeae8407fabc4596584bea9a82d8402c29f6d5361f096cb",
+      "source": "round4-benchmark/ENROLLMENT.freeze.json"
+    },
+    {
+      "bytes": 8735,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/development-group-map.json",
+      "sha256": "68e5f1de57b3f6a50193e9b4c10b230388d639ca7cd9ddd68f6a19eb18dab270",
+      "source": "round4-benchmark/development-group-map.json"
+    },
+    {
+      "bytes": 89805,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/QUALIFICATION-RECEIPT.json",
+      "sha256": "a83db25f10304efbda30d95df824a431768a085d241123446cb1956c1a586a53",
+      "source": "round4-benchmark/QUALIFICATION-RECEIPT.json"
+    },
+    {
+      "bytes": 6105,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/eligibility-ledger.json",
+      "sha256": "631ebbff3af8fd789d54ff303f34d055a913673f4c99267479fa74c5c2e28223",
+      "source": "round4-benchmark/eligibility-ledger.json"
+    },
+    {
+      "bytes": 3048,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/eligibility-ledger.csv",
+      "sha256": "873de919c7e9a5fe8e26ab51e79f8c76569575b6037b4a208116c9955db9b299",
+      "source": "round4-benchmark/eligibility-ledger.csv"
+    },
+    {
+      "bytes": 558513,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/candidate-nb-sequence-audit.json",
+      "sha256": "94c9bb63c0617ea5680e63cf52554084f46297bf8654388ca3c182bc209c0f90",
+      "source": "round4-benchmark/candidate-nb-sequence-audit.json"
+    },
+    {
+      "bytes": 407874,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/development-selected-nb-audit.json",
+      "sha256": "c98c1100e38b4b7fe4d89394c41e959d93589a817d794c0f893daa2b81400589",
+      "source": "round4-benchmark/development-selected-nb-audit.json"
+    },
+    {
+      "bytes": 4858,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/construct-reconciliation-and-corrections.json",
+      "sha256": "85f759ebf19ccd86d82158415883c4412e3b8fe9ffb676a521e385546baae76c",
+      "source": "round4-benchmark/construct-reconciliation-and-corrections.json"
+    },
+    {
+      "bytes": 209887,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/native-context-and-reference-coverage.json",
+      "sha256": "5131f67c8911bb21af855cfe017e4ce22f9e18b5740cc6473c9c320ac0a9a3f4",
+      "source": "round4-benchmark/native-context-and-reference-coverage.json"
+    },
+    {
+      "bytes": 1081,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/assembly-identity-validation.json",
+      "sha256": "91de18bc9cd96eb58996e2a5a1417f871ce9271d943a7467b14c921fcba6d85e",
+      "source": "round4-benchmark/assembly-identity-validation.json"
+    },
+    {
+      "bytes": 4816,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-benchmark/reference-view-inventory.json",
+      "sha256": "059c34d0d30f3ba9663d2ec7a4502e409ff312aea9c6b1f356ab1f74be254fc0",
+      "source": "round4-benchmark/reference-view-inventory.json"
+    },
+    {
+      "bytes": 6617,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-generation/PROTOCOL.md",
+      "sha256": "a78c77b5c92accaf49912078c49bb116a992355acf84f9593a8a83638f6d1ce0",
+      "source": "round4-generation/PROTOCOL.md"
+    },
+    {
+      "bytes": 24409,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-generation/bundle/GENERATION-FREEZE.json",
+      "sha256": "3c825b3e403e191cc90927939ff18943e8f1894cab0d08089b54e1230329dae0",
+      "source": "round4-generation/bundle/GENERATION-FREEZE.json"
+    },
+    {
+      "bytes": 253882,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-generation/bundle/batch-plan.json",
+      "sha256": "07de40673368c08f6bc6872489e84b100969a931b0161000411a57a039f05a59",
+      "source": "round4-generation/bundle/batch-plan.json"
+    },
+    {
+      "bytes": 10521,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-generation/INPUT-QUALIFICATION.json",
+      "sha256": "1e883c0840a0f478010d948cb9fbf062e9e5367bb322b90c3b511ee20c9be956",
+      "source": "round4-generation/INPUT-QUALIFICATION.json"
+    },
+    {
+      "bytes": 8898,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-ranking/PROTOCOL-DRAFT.md",
+      "sha256": "66dd0618ba4e404d35b5abea96a6d0c269cabb9d03ae6aaceccf00710f2bffa4",
+      "source": "round4-ranking/PROTOCOL-DRAFT.md"
+    },
+    {
+      "bytes": 4581,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-ranking/IMPLEMENTATION-FREEZE.json",
+      "sha256": "82feb08e412b7f246046d6c2bf165de3e45966ffb433c375bff9ae0e7a6290e2",
+      "source": "round4-ranking/IMPLEMENTATION-FREEZE.json"
+    },
+    {
+      "bytes": 5167,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-ranking/IMPLEMENTATION-FREEZE-V2.json",
+      "sha256": "66b4469aa81e005ee58d885c0408b225de86435f62b71e59c7a72577948dfe41",
+      "source": "round4-ranking/IMPLEMENTATION-FREEZE-V2.json"
+    },
+    {
+      "bytes": 5289,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-ranking/FEATURE-ADAPTER-FREEZE.json",
+      "sha256": "b0d59c38d86e5e3ebecc1cefba3b9ca4ad15d49d9c5f68ea8ded2cb9956eb685",
+      "source": "round4-ranking/FEATURE-ADAPTER-FREEZE.json"
+    },
+    {
+      "bytes": 4714,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-ranking/COMBINED-DEVELOPMENT-TOOLS-FREEZE.json",
+      "sha256": "ecfcb997a6208f053136222f7b41a480461e505314bfd0a9e4383d9f11222da6",
+      "source": "round4-ranking/COMBINED-DEVELOPMENT-TOOLS-FREEZE.json"
+    },
+    {
+      "bytes": 6992,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-analysis/ANALYZER-FREEZE.json",
+      "sha256": "27f819320c6ed67459d68dbad6389aced7daa1e2449c0db35c49015270ffdaa0",
+      "source": "round4-analysis/ANALYZER-FREEZE.json"
+    },
+    {
+      "bytes": 7596,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-outcomes/IMPLEMENTATION-FREEZE.json",
+      "sha256": "190329a887cb579c35f76f0a3c780fc35964d6a330e52e693d3f5bcfd05dde15",
+      "source": "round4-outcomes/IMPLEMENTATION-FREEZE.json"
+    },
+    {
+      "bytes": 19217,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-outcomes/reference-inventory.json",
+      "sha256": "18a41446d5dcabd2dc8952d49a192e262ce43f03ca9a83d17c6f984051ca2fe6",
+      "source": "round4-outcomes/reference-inventory.json"
+    },
+    {
+      "bytes": 2321,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-reporting/REPORTING-FREEZE.json",
+      "sha256": "7d391c58dae4f4275f73b9e381c3b84b4a4d161eff56ffe0e49dd0e0280ee552",
+      "source": "round4-reporting/REPORTING-FREEZE.json"
+    },
+    {
+      "bytes": 2631,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-archive/IMPLEMENTATION-FREEZE.json",
+      "sha256": "5d17525f28fafefd7761884c1f17c6a4008c46c8c6e7a82afd1259d3e5d85100",
+      "source": "round4-archive/IMPLEMENTATION-FREEZE.json"
+    },
+    {
+      "bytes": 4385,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-outcomes/ARCHIVE-INDEPENDENT-REVIEW.json",
+      "sha256": "744e8867cc5dec80c6af7d27034ad424b92a481d92c358ce17c7f9b8b9029674",
+      "source": "round4-outcomes/ARCHIVE-INDEPENDENT-REVIEW.json"
+    },
+    {
+      "bytes": 3651,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-outcomes/REPORTING-INDEPENDENT-REVIEW.json",
+      "sha256": "95c97635a906e06ec5606c260c08d00b5acce470ce076dbca0ba6fb90431f823",
+      "source": "round4-outcomes/REPORTING-INDEPENDENT-REVIEW.json"
+    },
+    {
+      "bytes": 3713,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-outcomes/GENERATION-ANALYSIS-REVIEW.json",
+      "sha256": "1dde9981240f574988f306bf61fd675e4710ae51a7a1fa58dbc185ae9b52397d",
+      "source": "round4-outcomes/GENERATION-ANALYSIS-REVIEW.json"
+    },
+    {
+      "bytes": 2650,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-outcomes/COMBINED-DEVELOPMENT-REVIEW.json",
+      "sha256": "7fb722d8dc8d7a0631adf0acbbc19eba1cc887d5461f54e76a7ab77ed8d912a1",
+      "source": "round4-outcomes/COMBINED-DEVELOPMENT-REVIEW.json"
+    },
+    {
+      "bytes": 4392,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-ranking/OUTCOME-PREPARATION-REVIEW.json",
+      "sha256": "3ae8dfeb07a0fc64dd05782849554316df5b64413c57b38959e973d3b7093eb3",
+      "source": "round4-ranking/OUTCOME-PREPARATION-REVIEW.json"
+    },
+    {
+      "bytes": 4781,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-ranking/GENERATION-REVIEW.json",
+      "sha256": "4c07940089dc3ce303e9ca980b0b0f7174cc5f43bd1e4eea8dfc301ae3e614e5",
+      "source": "round4-ranking/GENERATION-REVIEW.json"
+    },
+    {
+      "bytes": 3351,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-archive/packaging-correction-20260925/ROOT-RELEASE.json",
+      "sha256": "77e753dcab1fd8e8766d53735557f87ce0d7533fac96edf588d347430335ab85",
+      "source": "round4-archive/packaging-correction-20260925/ROOT-RELEASE.json"
+    },
+    {
+      "bytes": 1535,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-archive/packaging-correction-20260925/STRUCTURAL-REVIEW.json",
+      "sha256": "f9ff4719616a7b8827fe9fc534f9b8cb5683417bfab92a370105c7653a626958",
+      "source": "round4-archive/packaging-correction-20260925/STRUCTURAL-REVIEW.json"
+    },
+    {
+      "bytes": 2197,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-archive/packaging-correction-20260925/ORIGINALS.json",
+      "sha256": "86bef2296bb60423a656163300bcb426b70663f79709fd115b69c705e7b4bfaf",
+      "source": "round4-archive/packaging-correction-20260925/ORIGINALS.json"
+    },
+    {
+      "bytes": 480,
+      "publicationPath": "validation/generation-ranking-v4/design/round4-archive/packaging-correction-20260925/round4-archive-scan-diagnostic.json",
+      "sha256": "9fbc8bb1e5fcca97c5bcef0f549d9d9358486d0ab8a0e2f6e2156e275095750e",
+      "source": "round4-archive/packaging-correction-20260925/round4-archive-scan-diagnostic.json"
+    },
+    {
+      "bytes": 19724,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/ranker.py",
+      "sha256": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604",
+      "source": "round4-ranking/ranker.py"
+    },
+    {
+      "bytes": 14528,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/artifacts.py",
+      "sha256": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5",
+      "source": "round4-ranking/artifacts.py"
+    },
+    {
+      "bytes": 7511,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/run.py",
+      "sha256": "a2948242f196d358c46aa723e59c864d1009bb84be5abb13fdb518fca157ae04",
+      "source": "round4-ranking/run.py"
+    },
+    {
+      "bytes": 14952,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/prepare_features.py",
+      "sha256": "8c5efe6a837ff37f9201bdc6f711aeab7f3e2f6e922f0434f616d590e96c20d0",
+      "source": "round4-ranking/prepare_features.py"
+    },
+    {
+      "bytes": 17219,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/combine_development.py",
+      "sha256": "b9b1cadc32768d16738ec8265f052302dbbffd4313dda93393fe0b00ed82cffe",
+      "source": "round4-ranking/combine_development.py"
+    },
+    {
+      "bytes": 21590,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/verify_fit_independent_v2.py",
+      "sha256": "e90c9780970c15ccf69f5e356d8afb1ffc584c6cb4923225cf108c75677dc35b",
+      "source": "round4-ranking/verify_fit_independent_v2.py"
+    },
+    {
+      "bytes": 13135,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/test_ranker.py",
+      "sha256": "b3ae080724fabc4fb77686d5fb889fbaa32d123203089942be1f2eaa21f99bea",
+      "source": "round4-ranking/test_ranker.py"
+    },
+    {
+      "bytes": 5996,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/test_prepare_features.py",
+      "sha256": "c11fc07bd8ec3be20afe5deb0a3b3c9066efc5292be9662fefa6c8e869663655",
+      "source": "round4-ranking/test_prepare_features.py"
+    },
+    {
+      "bytes": 8788,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/test_combine_development.py",
+      "sha256": "b074f46748adc360b564718944562589e4063da86119514eec43645cf2bab83d",
+      "source": "round4-ranking/test_combine_development.py"
+    },
+    {
+      "bytes": 7867,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/test_verify_fit_independent_v2.py",
+      "sha256": "3aeb7e662ea3032600bb2883321d784c6f6d241119b9e90b17750317eddf4a71",
+      "source": "round4-ranking/test_verify_fit_independent_v2.py"
+    },
+    {
+      "bytes": 4303,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-ranking/README.md",
+      "sha256": "e29762d9b8452eb699cbf76229e65809e7a4b7a5b7b227591f88031c8b5b6362",
+      "source": "round4-ranking/README.md"
+    },
+    {
+      "bytes": 18793,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-outcomes/prepare_predictions.py",
+      "sha256": "014e62316efd8d3342c777fe8d3c9e15e788648ee1fd8011b2bdfe2f27c1ec5a",
+      "source": "round4-outcomes/prepare_predictions.py"
+    },
+    {
+      "bytes": 28217,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-outcomes/outcome_adapter.py",
+      "sha256": "ecff170ddb66c91c1b4e2d65539721648891743436491b0bc01ab311673bc6b2",
+      "source": "round4-outcomes/outcome_adapter.py"
+    },
+    {
+      "bytes": 5216,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-outcomes/test_preparation.py",
+      "sha256": "891e12f9c452745c74c2ce75562889a3445f122e8bc8de0dbbc38cf990fcbe2e",
+      "source": "round4-outcomes/test_preparation.py"
+    },
+    {
+      "bytes": 14299,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-outcomes/test_outcomes.py",
+      "sha256": "8133021f28027516f979cba9c3a8e6803300bbb1928bc058b04418184d3432d4",
+      "source": "round4-outcomes/test_outcomes.py"
+    },
+    {
+      "bytes": 8017,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-outcomes/README.md",
+      "sha256": "501f2bcd9641cd8c52aea2012cfab931f5e911d1dabe5503bbed2cc821a0a79c",
+      "source": "round4-outcomes/README.md"
+    },
+    {
+      "bytes": 24835,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-analysis/analyze_generation.py",
+      "sha256": "f9e19da9e080f59e5ce93193d574d3219f9ff1f9563eda4cd4fca8e64c8f736f",
+      "source": "round4-analysis/analyze_generation.py"
+    },
+    {
+      "bytes": 11736,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-analysis/test_analyze_generation.py",
+      "sha256": "8e36fe0bdad9e32aec5d6998fa10e6d1c2cc4481c1d7ba389c8f3747c6b9d56d",
+      "source": "round4-analysis/test_analyze_generation.py"
+    },
+    {
+      "bytes": 5827,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-analysis/README.md",
+      "sha256": "1b9d2ee4956cc3287e110d709deae1e6f587a1d70f2e47dc276a0025ab616c0f",
+      "source": "round4-analysis/README.md"
+    },
+    {
+      "bytes": 11714,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-analysis/figures/plot_results.py",
+      "sha256": "d997bd3ace5a756c7558ea2fb1d478d31f45636ce429445c4de1874ee26c1c4b",
+      "source": "round4-analysis/figures/plot_results.py"
+    },
+    {
+      "bytes": 18045,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-reporting/select_final.py",
+      "sha256": "772eb4a5002c5d8fc91a7382a0a8991450e7f89c7a926f0c476d619048499b54",
+      "source": "round4-reporting/select_final.py"
+    },
+    {
+      "bytes": 25322,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-reporting/summarize_reserved.py",
+      "sha256": "8264c8a8a901af5e96505e7c281685c1f1dd88c0be0d539e1d52293ba41141b8",
+      "source": "round4-reporting/summarize_reserved.py"
+    },
+    {
+      "bytes": 7704,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-reporting/report_common.py",
+      "sha256": "5999ff4ba342f4839037cf6dda8f83719c073acad6434be242c7acd746be32db",
+      "source": "round4-reporting/report_common.py"
+    },
+    {
+      "bytes": 20613,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-reporting/test_reporting.py",
+      "sha256": "a9830abc4b52d2425ec69854d60d42361250c0ae52d78a35ffd1a29b433b8055",
+      "source": "round4-reporting/test_reporting.py"
+    },
+    {
+      "bytes": 9235,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-reporting/README.md",
+      "sha256": "2372196eae737fd45d7a2cae05652f501b93638943d53eefc660e9fc22c4cd6a",
+      "source": "round4-reporting/README.md"
+    },
+    {
+      "bytes": 4330,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-benchmark/explicit_mmcif_metric.py",
+      "sha256": "7a9116e549a599bcf479676724fb9dc5b9dddc3e8d9eae6c5b46e7f46bbc35e7",
+      "source": "round4-benchmark/explicit_mmcif_metric.py"
+    },
+    {
+      "bytes": 1742,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-benchmark/test_explicit_mmcif_metric.py",
+      "sha256": "93a77b3da37cff4c2067d89802bf5f681a96383b3defa880472b8e5f0d7918b5",
+      "source": "round4-benchmark/test_explicit_mmcif_metric.py"
+    },
+    {
+      "bytes": 12667,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round3-benchmark/scoring-view/canonicalize_view.py",
+      "sha256": "bcb509b7b77b058273254c09b7264d2716e0bd5e4d6506a30d41d6b6e1cc357c",
+      "source": "round3-benchmark/scoring-view/canonicalize_view.py"
+    },
+    {
+      "bytes": 32046,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round3-control/prepare_prediction_scoring.py",
+      "sha256": "c921848f7bec359e503b7b4433d66e0a5adf3b1d9abab807691c334b703655e5",
+      "source": "round3-control/prepare_prediction_scoring.py"
+    },
+    {
+      "bytes": 45864,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round3-benchmark/outcome-tools/outcome_adapter.py",
+      "sha256": "0cc2694df73934935f4ffd0d371f90ff5417d0127c306279241e3996c9b55562",
+      "source": "round3-benchmark/outcome-tools/outcome_adapter.py"
+    },
+    {
+      "bytes": 23611,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-archive/archive_common.py",
+      "sha256": "519f22412df1dbe8801dd3ef44686406a4e9c34e0c8f861257c081f9b7dfa279",
+      "source": "round4-archive/archive_common.py"
+    },
+    {
+      "bytes": 6557,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-archive/build_evidence.py",
+      "sha256": "a671cbb2048d56d1093a2be632a260cd94681860215cef18ee5e0c37b152b8b7",
+      "source": "round4-archive/build_evidence.py"
+    },
+    {
+      "bytes": 13583,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-archive/verify_archive.py",
+      "sha256": "e36de8a36feaddf92f2354608528eb312aec1d52b4d5831f55c72a56af529c2e",
+      "source": "round4-archive/verify_archive.py"
+    },
+    {
+      "bytes": 6507,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-archive/replay_science.py",
+      "sha256": "e2bfd1819cba3b10136baea76582dd8f6de6157bd15757dfff0b68c97b51b37d",
+      "source": "round4-archive/replay_science.py"
+    },
+    {
+      "bytes": 24770,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-archive/test_archive.py",
+      "sha256": "dd3ec57a12dacc915eb771018e926bf4cf2591083a2a5e1e8805e01cb6a12664",
+      "source": "round4-archive/test_archive.py"
+    },
+    {
+      "bytes": 8534,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-archive/README.md",
+      "sha256": "48b85463157d75ba32d18fc6bc0d5fbde8ea4b2acca94f94adfc591bd3301141",
+      "source": "round4-archive/README.md"
+    },
+    {
+      "bytes": 33058,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-archive/publication/build_publication.py",
+      "sha256": "3c9145610771a38379b981060c56ed8e12c9a85bb920fa260c8035053d62cbb1",
+      "source": "round4-archive/publication/build_publication.py"
+    },
+    {
+      "bytes": 23606,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-archive/publication/test_publication.py",
+      "sha256": "3da05bf055731d19753b308b453f27ea23d3932bc7a330108d4b51c927714d59",
+      "source": "round4-archive/publication/test_publication.py"
+    },
+    {
+      "bytes": 3498,
+      "publicationPath": "validation/generation-ranking-v4/replay-tools/round4-archive/publication/README.md",
+      "sha256": "ba1129106ae64f7f3db8051f8f72f4f058514378bf6a4292729ef1c3c9927bca",
+      "source": "round4-archive/publication/README.md"
+    },
+    {
+      "bytes": 19724,
+      "publicationPath": "scripts/external-ranking-v4/ranker.py",
+      "sha256": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604",
+      "source": "round4-ranking/ranker.py"
+    },
+    {
+      "bytes": 14528,
+      "publicationPath": "scripts/external-ranking-v4/artifacts.py",
+      "sha256": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5",
+      "source": "round4-ranking/artifacts.py"
+    },
+    {
+      "bytes": 7511,
+      "publicationPath": "scripts/external-ranking-v4/run.py",
+      "sha256": "a2948242f196d358c46aa723e59c864d1009bb84be5abb13fdb518fca157ae04",
+      "source": "round4-ranking/run.py"
+    },
+    {
+      "bytes": 13135,
+      "publicationPath": "scripts/external-ranking-v4/test_ranker.py",
+      "sha256": "b3ae080724fabc4fb77686d5fb889fbaa32d123203089942be1f2eaa21f99bea",
+      "source": "round4-ranking/test_ranker.py"
+    },
+    {
+      "bytes": 4303,
+      "publicationPath": "scripts/external-ranking-v4/README.md",
+      "sha256": "e29762d9b8452eb699cbf76229e65809e7a4b7a5b7b227591f88031c8b5b6362",
+      "source": "round4-ranking/README.md"
+    },
+    {
+      "bytes": 1786,
+      "publicationPath": "validation/generation-ranking-v4/results/selection/receipt.json",
+      "sha256": "76f4d30ed5ad0d872ff3525bdb9844d0390d174424edf5ae8b06b2071714626b",
+      "source": "round4-reporting/final-selection/receipt.json"
+    },
+    {
+      "bytes": 1985,
+      "publicationPath": "validation/generation-ranking-v4/results/selection/selection.json",
+      "sha256": "8ba7a71c8543a48509e17ac84a66fe0de51050e30fd4908d7859c6e1dcab0170",
+      "source": "round4-reporting/final-selection/selection.json"
+    },
+    {
+      "bytes": 980,
+      "publicationPath": "validation/generation-ranking-v4/results/selection/REPORT.md",
+      "sha256": "e3aeec9a0aeb10de1e7779c9e6ff9e2677472ebd49943642b75a014fced0a8d5",
+      "source": "round4-reporting/final-selection/REPORT.md"
+    },
+    {
+      "bytes": 1107,
+      "publicationPath": "validation/generation-ranking-v4/results/selection/release.json",
+      "sha256": "3411f39d5cb1908e24b5d9093e54125e882a7f7ead0e159aa93ebf0e1936a054",
+      "source": "round4-reporting/final-selection-release.json"
+    },
+    {
+      "bytes": 1940,
+      "publicationPath": "validation/generation-ranking-v4/results/generation/receipt.json",
+      "sha256": "ea7e35c95fee281c7656dd88ea5f872e7b593b770cb615f97cc047e1535a4ea0",
+      "source": "round4-analysis/new900-analysis/receipt.json"
+    },
+    {
+      "bytes": 210620,
+      "publicationPath": "validation/generation-ranking-v4/results/generation/comparison.json",
+      "sha256": "82202117a92d11d3f4b3066b1f8c2631689420246ec2210fd28fd7afe1e62f76",
+      "source": "round4-analysis/new900-analysis/comparison.json"
+    },
+    {
+      "bytes": 175878,
+      "publicationPath": "validation/generation-ranking-v4/results/generation/timing-bindings.json",
+      "sha256": "67f87487ca082c7548a451c8124652128bbb564c1e50aa28b1fac6d578f98fd7",
+      "source": "round4-analysis/new900-analysis/timing-bindings.json"
+    },
+    {
+      "bytes": 1718,
+      "publicationPath": "validation/generation-ranking-v4/results/generation/REPORT.md",
+      "sha256": "926c9fe4c2cc3361f91a67f26cd249f8bb223223154369144878e2afa345f0a9",
+      "source": "round4-analysis/new900-analysis/REPORT.md"
+    },
+    {
+      "bytes": 1093,
+      "publicationPath": "validation/generation-ranking-v4/results/generation/release.json",
+      "sha256": "c5f7a48ff92e57c1869cad7ced83725aba625387ba1223b06b14613f5c4d00b0",
+      "source": "round4-analysis/new900-analysis-release.json"
+    },
+    {
+      "bytes": 2161,
+      "publicationPath": "validation/generation-ranking-v4/results/initial300/receipt.json",
+      "sha256": "1c968b91d1ccb6bd98bf16f38dca6e74fcb5ffdd1d37d16eee3f5ace56037872",
+      "source": "round4-ranking/fit-development-300/receipt.json"
+    },
+    {
+      "bytes": 1725,
+      "publicationPath": "validation/generation-ranking-v4/results/initial300/summary.json",
+      "sha256": "4a4303930a6ed7e103086108e8d01f820d1fa28336b83347764f7b2ee62810c3",
+      "source": "round4-ranking/fit-development-300/summary.json"
+    },
+    {
+      "bytes": 7895,
+      "publicationPath": "validation/generation-ranking-v4/results/initial300/confidence-model.json",
+      "sha256": "bbbb6e90c50ef8ec7db5638cca26a6db85fe07bfe9bb81a1daeae6e9b638f922",
+      "source": "round4-ranking/fit-development-300/confidence-model.json"
+    },
+    {
+      "bytes": 7962,
+      "publicationPath": "validation/generation-ranking-v4/results/initial300/interface-model.json",
+      "sha256": "c7faaf5e88fc0ca4a9161ce3f2b53aaad3a455fc87cb81fda23dad8508f8dc2d",
+      "source": "round4-ranking/fit-development-300/interface-model.json"
+    },
+    {
+      "bytes": 1441,
+      "publicationPath": "validation/generation-ranking-v4/results/initial300/independent-verification.json",
+      "sha256": "fbe642ffa62aba8a4d2bf7d7cd358e331e5dceb68b7e84f8ac2c49d7697414f0",
+      "source": "round4-ranking/fit-development-300-independent-verification-v2.json"
+    },
+    {
+      "bytes": 8401,
+      "publicationPath": "validation/generation-ranking-v4/results/initial300/fit-release.json",
+      "sha256": "e9f27baecbceab7ea6b59269690212f15c8390bf2fab33c6568fd95c47b7bc12",
+      "source": "round4-ranking/fit-release-v2.authorized.json"
+    },
+    {
+      "bytes": 1941,
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/join/receipt.json",
+      "sha256": "017b0d9df4568619b748e7d50326544b5ff44c2d93ac4bef454179895478b8a4",
+      "source": "round4-ranking/combined-development1200/receipt.json"
+    },
+    {
+      "bytes": 82772,
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/join/join-status.json",
+      "sha256": "4e27e8efbd929f0b7644a766ca4f6751070bc54f8c504c12e9c7b43017c8d987",
+      "source": "round4-ranking/combined-development1200/join-status.json"
+    },
+    {
+      "bytes": 2184,
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/fit/receipt.json",
+      "sha256": "a43fdd7fcc8b73f37be0aeb034d8715c09954009c49a967d52ff4e17abbdee28",
+      "source": "round4-ranking/fit-development-1200/receipt.json"
+    },
+    {
+      "bytes": 1512,
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/fit/summary.json",
+      "sha256": "3169d1b58802c36028b2c6a209200a30b8518c55b5c5f2d3d30060248657c318",
+      "source": "round4-ranking/fit-development-1200/summary.json"
+    },
+    {
+      "bytes": 41491,
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/fit/confidence-model.json",
+      "sha256": "b8df1db3aa9b34aa23c5af09e5439549ab5770012eb0257851b8110fa09e112c",
+      "source": "round4-ranking/fit-development-1200/confidence-model.json"
+    },
+    {
+      "bytes": 41716,
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/fit/interface-model.json",
+      "sha256": "2feaf7f3e8009c3017883f661ef5ae6cbdd8de49ec74bd21eb7a4b03c548e52e",
+      "source": "round4-ranking/fit-development-1200/interface-model.json"
+    },
+    {
+      "bytes": 1445,
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/fit/independent-verification.json",
+      "sha256": "8e022ca124fb0bf82cbbefebb49e98769e8e2be4803bb9a9a1a61e065c4596f1",
+      "source": "round4-ranking/fit-development-1200-independent-verification.json"
+    },
+    {
+      "bytes": 39373,
+      "publicationPath": "validation/generation-ranking-v4/results/combined1200/fit/fit-release.json",
+      "sha256": "006c306dab80addfebcb65c4c48e01cd02056a2e0c0dec9114a17abdd41585c5",
+      "source": "round4-ranking/combined1200-fit-release.authorized.json"
+    },
+    {
+      "bytes": 3139,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/receipt.json",
+      "sha256": "aa7854f4d3bdb9e022fa6f4552880058066434d030fd4d447027460b7a97124e",
+      "source": "round4-reporting/reserved-summary/receipt.json"
+    },
+    {
+      "bytes": 9469,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/summary.json",
+      "sha256": "13745ca86b406b73d1977d2a767e174fc8a59a01bf97dd8726528aef1f4d3650",
+      "source": "round4-reporting/reserved-summary/summary.json"
+    },
+    {
+      "bytes": 76122,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/attempts.json",
+      "sha256": "591af48251540a3510edcd48abcc22267508d8230ae096ac3405f11514de40ed",
+      "source": "round4-reporting/reserved-summary/attempts.json"
+    },
+    {
+      "bytes": 1149,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/POOLS.csv",
+      "sha256": "e0193214b72f5b236f978c44057d0adf9c081afa011f21804572acbf1effc52a",
+      "source": "round4-reporting/reserved-summary/POOLS.csv"
+    },
+    {
+      "bytes": 3740,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/REPORT.md",
+      "sha256": "1ffa7577bfa8299a37af6956410ac2d141467359781e26baaedafa6ab0c6b2d8",
+      "source": "round4-reporting/reserved-summary/REPORT.md"
+    },
+    {
+      "bytes": 868,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/release.json",
+      "sha256": "dcda049c90ed0efa56887cccedeb08fd3be715921a1e26b791dbced07a68ac05",
+      "source": "round4-reporting/reserved-summary-release.json"
+    },
+    {
+      "bytes": 438,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/final-policy.json",
+      "sha256": "407c57008ec657a88b758a68564328d0265ace829543ed1f72d5addfd5647892",
+      "source": "round4-reporting/FINAL-POLICY.json"
+    },
+    {
+      "bytes": 32454,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/generation-plan.json",
+      "sha256": "f6b823aadd0478ef5ec38dddcaf6d7ae7403727221e5dc92e3994c52a6c22846",
+      "source": "round4-reserved-generation/final-bundle/batch-plan.json"
+    },
+    {
+      "bytes": 3702,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/cohort.json",
+      "sha256": "2b0782d2a8069d13ce6f6b7e6587964af05dd4a0e2a9b594f7dc34ba3e6076d5",
+      "source": "round4-outcomes/reserved-cohort.json"
+    },
+    {
+      "bytes": 2692,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/source-receipt.json",
+      "sha256": "24861ea31aa1c480e3e03494f0466ad2de2401cd767491365ed1a78e0ca9dec0",
+      "source": "round4-ranking/final-features-reserved/source-rank-receipt.json"
+    },
+    {
+      "bytes": 19973,
+      "publicationPath": "validation/generation-ranking-v4/results/reserved/outcome-receipt.json",
+      "sha256": "e0562a0ae851d6c8776f2a49914752c29e394ab17077e5ccbac366f17b34d2ba",
+      "source": "round4-outcomes/final-reserved/receipt.json"
+    },
+    {
+      "bytes": 2710,
+      "publicationPath": "validation/generation-ranking-v4/results/generation/sourceRankingReceipt.json",
+      "sha256": "7528643f2b968de0b0c2aedc8e89f2432dfec5ca64b86fe865ab7e058dabb2f2",
+      "source": "round4-ranking/final-features-development/source-rank-receipt.json"
+    },
+    {
+      "bytes": 195241,
+      "publicationPath": "validation/generation-ranking-v4/results/generation/outcomeReceipt.json",
+      "sha256": "a8bc58e3d3c82312bc2dea6657df408fe185c638488b4f4eaecb416d838f84e5",
+      "source": "round4-outcomes/final-development/receipt.json"
+    },
+    {
+      "bytes": 31873,
+      "publicationPath": "validation/generation-ranking-v4/results/generation/cohort.json",
+      "sha256": "a4191a9499ce45848c2a03a4a4920c5d54c4212b7268c46d654d83229f3adc77",
+      "source": "round4-outcomes/development-cohort.json"
+    },
+    {
+      "bytes": 172505,
+      "publicationPath": "validation/generation-ranking-v4/figures/generation-comparison.svg",
+      "sha256": "257a75a062f4181572fc3ecea830ae166e3c10364e2d13317b112c4f10c0a37e",
+      "source": "round4-analysis/figures/final-results/generation-comparison.svg"
+    },
+    {
+      "bytes": 99069,
+      "publicationPath": "validation/generation-ranking-v4/figures/reserved-results.svg",
+      "sha256": "4bf7cb79aa37b7937c79e18d64d983fd667132592ea15ad697ba3eef0425f4f4",
+      "source": "round4-analysis/figures/final-results/reserved-results.svg"
+    },
+    {
+      "bytes": 2397,
+      "publicationPath": "validation/generation-ranking-v4/figures/receipt.json",
+      "sha256": "29652ecad70ff33cfb09b44963cf4086cc0730f2122e207e243f34cda0462a0f",
+      "source": "round4-analysis/figures/final-results/receipt.json"
+    }
+  ],
+  "verifiedManifestSha256": "86e71d2c1fca5cf86dd4bf78e229a76477001cfb8daabdc7462798bfd15d183c"
+}

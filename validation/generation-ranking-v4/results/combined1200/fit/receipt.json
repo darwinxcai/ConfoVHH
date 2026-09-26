@@ -1,0 +1,53 @@
+{
+  "schema": "confovhh-round4-ranking-execution-receipt-v1",
+  "implementation": {
+    "ranker.py": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604",
+    "artifacts.py": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5",
+    "run.py": "a2948242f196d358c46aa723e59c864d1009bb84be5abb13fdb518fca157ae04"
+  },
+  "files": {
+    "confidence-nested.json": {
+      "path": "round4-ranking/fit-development-1200/confidence-nested.json",
+      "bytes": 45809048,
+      "sha256": "67017226bd057f704bc1f7184250e94b0f75874afa9f7c132fe9c382d426725c"
+    },
+    "confidence-final-selection.json": {
+      "path": "round4-ranking/fit-development-1200/confidence-final-selection.json",
+      "bytes": 4310764,
+      "sha256": "af711dad57c9befbe767e7036617e3717450f5c5857f1f3a95662a650ebce624"
+    },
+    "confidence-model.json": {
+      "path": "round4-ranking/fit-development-1200/confidence-model.json",
+      "bytes": 41491,
+      "sha256": "b8df1db3aa9b34aa23c5af09e5439549ab5770012eb0257851b8110fa09e112c"
+    },
+    "interface-nested.json": {
+      "path": "round4-ranking/fit-development-1200/interface-nested.json",
+      "bytes": 45974719,
+      "sha256": "9e42599c13e73054db52c79a78c3dda8b77c46f32f4c16d5a5eeef165866b299"
+    },
+    "interface-final-selection.json": {
+      "path": "round4-ranking/fit-development-1200/interface-final-selection.json",
+      "bytes": 4324788,
+      "sha256": "73e013e7ce74edd68a68528397c0e640cb32323af4dca5e99c281adf083f9b09"
+    },
+    "interface-model.json": {
+      "path": "round4-ranking/fit-development-1200/interface-model.json",
+      "bytes": 41716,
+      "sha256": "2feaf7f3e8009c3017883f661ef5ae6cbdd8de49ec74bd21eb7a4b03c548e52e"
+    },
+    "summary.json": {
+      "path": "round4-ranking/fit-development-1200/summary.json",
+      "bytes": 1512,
+      "sha256": "3169d1b58802c36028b2c6a209200a30b8518c55b5c5f2d3d30060248657c318"
+    }
+  },
+  "status": "COMPLETE",
+  "release": {
+    "path": "round4-ranking/combined1200-fit-release.authorized.json",
+    "bytes": 39373,
+    "sha256": "006c306dab80addfebcb65c4c48e01cd02056a2e0c0dec9114a17abdd41585c5"
+  },
+  "planned": 1200,
+  "reservedOutcomesRead": false
+}
