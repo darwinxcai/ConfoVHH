@@ -1,0 +1,118 @@
+{
+  "schema": "confovhh-round4-construct-reconciliation-v1",
+  "coordinateDerivedInputTrimming": false,
+  "records": [
+    {
+      "pdbId": "9FTE",
+      "depositedEntity": "1",
+      "exactCanonicalMatch": {
+        "accession": "B8JJE0",
+        "species": "Mus musculus",
+        "canonicalStart1": 5884,
+        "canonicalEnd1": 6298,
+        "entityStart1": 1,
+        "entityEnd1": 415,
+        "suffix": "SGRHHHHHHHH"
+      },
+      "matchesHumanCanonicalAsExactSubstring": false,
+      "knownDiscrepancy": "Preprint describes human ADGRV1; deposition and exact sequence identify mouse. Benchmark is expressly the deposited mouse fragment, not certification of the experimental species or all original assay constructs.",
+      "priorEvidence": "ConfoVHH/validation/hard-decoy-holdout-v3/adgrv1-source-followup-2026-09-04/README.md"
+    },
+    {
+      "pdbId": "9VOR",
+      "depositedEntity": "1",
+      "exactCanonicalMatch": {
+        "accession": "Q5T848",
+        "species": "Homo sapiens",
+        "canonicalStart1": 1,
+        "canonicalEnd1": 775,
+        "entityStart1": 1,
+        "entityEnd1": 775,
+        "suffix": "LEVLFQ"
+      },
+      "knownDiscrepancy": "Complete original cryoEM assay-reagent tag/linker provenance is not resolved; use deposited781aa receptor and150aa Nb including deposited terminal tags. No substitution of the paper131aa free-Nb sequence.",
+      "sameNbSequenceIn9VOS": true,
+      "nb20Star": "Paper Nb20* is a nonbinding mutational derivative; neither9VOR nor9VOS is assigned to that mutant."
+    },
+    {
+      "pdbId": "8QJ2",
+      "depositedEntity": "5",
+      "exactCanonicalMatch": {
+        "accession": "P32245",
+        "species": "Homo sapiens",
+        "canonicalStart1": 1,
+        "canonicalEnd1": 332,
+        "entityStart1": 126,
+        "entityEnd1": 457,
+        "fullCanonicalSequenceExact": true
+      },
+      "oldInventoryBlocker": "BLOCK_ENGINEERED_ADRB2_GRAFT_RELATED_TO_DEVELOPMENT; priorConcern described the receptor as a heavily engineeredMC4R-beta2AR hybrid.",
+      "correction": "The deposited729aa entity contains the entire332aa wild-typeMC4R sequence exactly. Primary Methods separately describe a beta2AR-ICL/Cb80 immunization construct and a wild-typeMC4R cryoEM construct with terminalBRIL/mCherry/tags. The old blocker must not be applied as proof of an internal beta2AR graft in8QJ2.",
+      "remainingExposure": "The discovery immunogen and assay construct used beta2AR/Cb80; this source relationship and current extensive qualification exposure remain explicit. No automatic independent-holdout certification.",
+      "primarySource": "public-sources/MC4R-primary.xml",
+      "primarySection": "Expression of recombinant MC4R and Gs protein; Constructs for nanobody discovery"
+    }
+  ],
+  "bindings": [
+    {
+      "path": "public-sources/uniprot/B8JJE0.json",
+      "sha256": "01ad63018adf124c222312854cff365535f868b0e1e396034342e8d97b9a1f6c",
+      "bytes": 34430
+    },
+    {
+      "path": "public-sources/uniprot/Q8WXG9.json",
+      "sha256": "39034a30d8bab1242770c7f3a1271d113f82fd88c147c97c7f1cd1645feee016",
+      "bytes": 86743
+    },
+    {
+      "path": "public-sources/uniprot/Q5T848.json",
+      "sha256": "ec286ec663b2157e2dec0cf81fe24dea676355d0f79b80137a3655822e5c9ad8",
+      "bytes": 66914
+    },
+    {
+      "path": "public-sources/uniprot/P32245.json",
+      "sha256": "48689810b098712cc662893b24c1d729ab7f6280bc251af79bea41cdb10047a3",
+      "bytes": 109729
+    },
+    {
+      "path": "public-sources/uniprot/P07550.json",
+      "sha256": "b1cce2c4c6c235afb7ed2c4af4c5d004ab7e0052371f5d1d3804c2312dd2f050",
+      "bytes": 160677
+    },
+    {
+      "path": "public-sources/MC4R-primary.xml",
+      "sha256": "52b3c9f5dcebac20a10679fecb92b5edf9658e4445b9469aa3f312319125ac0d",
+      "bytes": 147998
+    },
+    {
+      "path": "public-sources/GPR158-primary.xml",
+      "sha256": "5841cd77f7242c75562f2eb1237edb2ee43720f2cbf71bb70bf1b202f6890776",
+      "bytes": 173132
+    },
+    {
+      "path": "public-sources/rcsb-entity/9FTE-1.json",
+      "sha256": "74a0e7ead4c4ee549abceca121d8bff0c08347a66d99d3b7870048fe971bf001",
+      "bytes": 27280
+    },
+    {
+      "path": "public-sources/rcsb-entity/9VOR-1.json",
+      "sha256": "a1ba6aeec76e05bdac0f56e93bc4887cb63294afb4cdcabbcad8a15910687674",
+      "bytes": 39206
+    },
+    {
+      "path": "public-sources/rcsb-entity/9VOR-2.json",
+      "sha256": "084c864cd26cdf82e63f02772c8a013d0fb8e8122bb9f568c9beee8204496013",
+      "bytes": 13118
+    },
+    {
+      "path": "public-sources/rcsb-entity/9VOS-4.json",
+      "sha256": "c80afbe37cf88653a68219c76be29cc888978bce98f8d0a236386fb27cb291e7",
+      "bytes": 12559
+    },
+    {
+      "path": "public-sources/rcsb-entity/8QJ2-5.json",
+      "sha256": "96fa2b7e06d3157bae184c1f627eb881fc3fcc834f8dbf18de066b6df6c3f407",
+      "bytes": 75582
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "confovhh-round4-archive-independent-review-v1",
+  "status": "PASS_BUILD_AND_SYNTHETIC_CONTROLS",
+  "reviewedAtUtc": "2026-09-25T05:54:54.407060+00:00",
+  "files": [
+    {
+      "path": "round4-archive/archive_common.py",
+      "bytes": 22491,
+      "sha256": "8eb0aeed9979c6bdb7cd03bcb315ded09ffa85a352700d69ea0c1e8c13a11e22"
+    },
+    {
+      "path": "round4-archive/build_evidence.py",
+      "bytes": 6219,
+      "sha256": "9678e5571e6442a51cdad4a2c6dd7e4b54b408fb3f7fb3b7683851c1815e32b1"
+    },
+    {
+      "path": "round4-archive/verify_archive.py",
+      "bytes": 13285,
+      "sha256": "b12e7d4f528e48690c331859165ab269c08426a277c066227a1b2c7a20f6cc2e"
+    },
+    {
+      "path": "round4-archive/replay_science.py",
+      "bytes": 6507,
+      "sha256": "e2bfd1819cba3b10136baea76582dd8f6de6157bd15757dfff0b68c97b51b37d"
+    },
+    {
+      "path": "round4-archive/test_archive.py",
+      "bytes": 22299,
+      "sha256": "4de9a355b78934bf4b0ce779b09798344cde09edf0e97e6d408a7eebbdb00dd9"
+    },
+    {
+      "path": "round4-archive/README.md",
+      "bytes": 8052,
+      "sha256": "9d8baa30a06ed0932620227086530c4b44e0f148e90df90bfdfda54d2273e94d"
+    }
+  ],
+  "controls": [
+    {
+      "path": "round4-outcomes/archive-author-suite-review-final.log",
+      "bytes": 4222,
+      "sha256": "593f2db2885059fffc724d3aa8da1d5693334fb9537796be7b6df54c37efd445"
+    },
+    {
+      "path": "round4-outcomes/review_archive_controls.py",
+      "bytes": 2970,
+      "sha256": "a03dcd0daab92f084974d53ac2d9bc52eb4598876632507ee180a0f0b6fd35e2"
+    },
+    {
+      "path": "round4-outcomes/archive-independent-controls-final.log",
+      "bytes": 722,
+      "sha256": "32f5245da97e75a86f8d7b0343068aff9ea30e7870bab24ac7e471a7761786df"
+    }
+  ],
+  "authorSyntheticControlsIndependentlyRerun": 35,
+  "additionalIndependentControlsPassed": 4,
+  "resolvedFindings": [
+    {
+      "issue": "Guarded Node caller could append an additional --allow-fs-read option and broaden access. Demonstrated only against a temporary synthetic canary.",
+      "resolution": "Wrapper and Python Popen audit validate exact executable shape, direct extracted .mjs script or --version, reject permission/injection options and NODE_OPTIONS/NODE_PATH; actual positive and negative controls pass."
+    },
+    {
+      "issue": "Reporting/capture dependency implementations needed an explicit archive-side version boundary before import.",
+      "resolution": "Exact two-entry dependency freeze roster and fixed SHA pins now reopen declared code plus nested reporting dependencies before scientific helper imports."
+    }
+  ],
+  "reviewScope": [
+    "Safe canonical paths, ancestor/symlink/member restrictions, exact ZIP manifest membership and byte hashes.",
+    "Unchanged full prior member bytes, selected-tree quiescence checks and explicit private/cache/transport exclusions.",
+    "Root final-map and genuine completed/incomplete phase crossbindings; no placeholder acceptance.",
+    "Python original-input/network/child guard and fixed Node permission/argv/environment guard.",
+    "Narrow provenance-bound public MSA sequence exception; identifiers/headers and other files remain generically scanned.",
+    "Reporting and capture API contracts, complete planned membership and outcome verification scope."
+  ],
+  "remainingFindings": [],
+  "newProductionOutcomeLabelsRead": false,
+  "privateDataOrInventoriesOpened": false,
+  "productionArchiveBuiltOrReplayed": false,
+  "nativeQualityMetricsComputed": false,
+  "authorFilesEditedOrFrozenByReviewer": false,
+  "limitations": [
+    "Review is code and synthetic fixtures only; final real artifact assembly and extraction/replay remain required.",
+    "Archive numerical replay authenticates production DockQ values and recomputes fixed correspondence/all-view aggregation; it does not rerun production calc_DockQ.",
+    "Isolation guards accidental scientific-input fallback; it is not a sandbox for hostile native extensions. Credential scanning recognizes specified common patterns and is not exhaustive secret certification."
+  ],
+  "preservedIntermediateChecks": [
+    "archive-author-suite-review.log records an unsupported direct -I test invocation import failure; supported unittest discovery passes.",
+    "archive-author-suite-review-v3.log sampled author dependency changes before updated fixtures; final35-test suite supersedes it."
+  ]
+}

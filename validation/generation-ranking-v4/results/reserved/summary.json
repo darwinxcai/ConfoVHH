@@ -1,0 +1,226 @@
+{
+  "schema": "confovhh-round4-reserved-summary-v1",
+  "status": "COMPLETE_DESCRIPTIVE_SUMMARY",
+  "counts": {
+    "planned": 75,
+    "generated": 75,
+    "failedGeneration": 0,
+    "valid": 75,
+    "evaluated": 75,
+    "generatedOutcomesUnavailable": 0,
+    "allUnavailableIncludingNonproduced": 0
+  },
+  "selectedFamily": "source",
+  "selectedModel": null,
+  "developmentSelectionStatus": "COMPLETE_EXPLORATORY_SELECTION",
+  "pairGenerationArm": "baseline",
+  "policies": [
+    "source"
+  ],
+  "pools": [
+    {
+      "poolId": "ADGRV1_RE02::baseline::seeds-0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+      "setId": "ADGRV1_RE02",
+      "biologicalGroupId": "adhesion-adgrv1-re02",
+      "generationArm": "baseline",
+      "seedBatch": "seeds-0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+      "policy": "source",
+      "scope": "pair-learner-test",
+      "rankingModes": [
+        "source"
+      ],
+      "learnedCandidateCount": 0,
+      "sourceCandidateCount": 25,
+      "plannedCount": 25,
+      "attemptedCount": 25,
+      "generatedCount": 25,
+      "failedCount": 0,
+      "notRunCount": 0,
+      "validCount": 25,
+      "evaluableCount": 25,
+      "unavailableOutcomeCount": 0,
+      "outcomesComplete": true,
+      "knownAcceptableCount": 0,
+      "acceptableAvailable": false,
+      "acceptablePerPlanned": 0.0,
+      "acceptablePerPlannedBounds": [
+        0.0,
+        0.0
+      ],
+      "bestAvailableDockQ": 0.12844497250515394,
+      "bestCompleteDockQ": 0.12844497250515394,
+      "selectionAvailable": true,
+      "firstDockQ": 0.015327313317704724,
+      "firstAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.07340820193206735,
+      "top5ExpectedAcceptableCount": 0.0,
+      "top5SlotCount": 5,
+      "bestCandidateGap": 0.11311765918744922,
+      "availableBestCandidateGap": 0.11311765918744922,
+      "elapsedSecondsKnown": 1084.1942634452134,
+      "elapsedSecondsComplete": 1084.1942634452134,
+      "elapsedAttemptsKnown": 25,
+      "acceptableAmongEvaluated": 0.0
+    },
+    {
+      "poolId": "GPR158_NB20::baseline::seeds-0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+      "setId": "GPR158_NB20",
+      "biologicalGroupId": "orphan-class-c-gpr158-nb20",
+      "generationArm": "baseline",
+      "seedBatch": "seeds-0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+      "policy": "source",
+      "scope": "full-context-source-fallback",
+      "rankingModes": [
+        "source"
+      ],
+      "learnedCandidateCount": 0,
+      "sourceCandidateCount": 25,
+      "plannedCount": 25,
+      "attemptedCount": 25,
+      "generatedCount": 25,
+      "failedCount": 0,
+      "notRunCount": 0,
+      "validCount": 25,
+      "evaluableCount": 25,
+      "unavailableOutcomeCount": 0,
+      "outcomesComplete": true,
+      "knownAcceptableCount": 24,
+      "acceptableAvailable": true,
+      "acceptablePerPlanned": 0.96,
+      "acceptablePerPlannedBounds": [
+        0.96,
+        0.96
+      ],
+      "bestAvailableDockQ": 0.4418844937399305,
+      "bestCompleteDockQ": 0.4418844937399305,
+      "selectionAvailable": true,
+      "firstDockQ": 0.311409232355844,
+      "firstAcceptableProbability": 1.0,
+      "top5MeanDockQ": 0.36488566429598024,
+      "top5ExpectedAcceptableCount": 5.0,
+      "top5SlotCount": 5,
+      "bestCandidateGap": 0.1304752613840865,
+      "availableBestCandidateGap": 0.1304752613840865,
+      "elapsedSecondsKnown": 3404.968751691282,
+      "elapsedSecondsComplete": 3404.968751691282,
+      "elapsedAttemptsKnown": 25,
+      "acceptableAmongEvaluated": 0.96
+    },
+    {
+      "poolId": "MC4R_PN162::baseline::seeds-0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+      "setId": "MC4R_PN162",
+      "biologicalGroupId": "melanocortin-mc4r-pn162",
+      "generationArm": "baseline",
+      "seedBatch": "seeds-0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+      "policy": "source",
+      "scope": "full-context-source-fallback",
+      "rankingModes": [
+        "source"
+      ],
+      "learnedCandidateCount": 0,
+      "sourceCandidateCount": 25,
+      "plannedCount": 25,
+      "attemptedCount": 25,
+      "generatedCount": 25,
+      "failedCount": 0,
+      "notRunCount": 0,
+      "validCount": 25,
+      "evaluableCount": 25,
+      "unavailableOutcomeCount": 0,
+      "outcomesComplete": true,
+      "knownAcceptableCount": 0,
+      "acceptableAvailable": false,
+      "acceptablePerPlanned": 0.0,
+      "acceptablePerPlannedBounds": [
+        0.0,
+        0.0
+      ],
+      "bestAvailableDockQ": 0.008246582486743726,
+      "bestCompleteDockQ": 0.008246582486743726,
+      "selectionAvailable": true,
+      "firstDockQ": 0.006260341303902,
+      "firstAcceptableProbability": 0.0,
+      "top5MeanDockQ": 0.005727354786261625,
+      "top5ExpectedAcceptableCount": 0.0,
+      "top5SlotCount": 5,
+      "bestCandidateGap": 0.001986241182841726,
+      "availableBestCandidateGap": 0.001986241182841726,
+      "elapsedSecondsKnown": 3479.70059402287,
+      "elapsedSecondsComplete": 3479.70059402287,
+      "elapsedAttemptsKnown": 25,
+      "acceptableAmongEvaluated": 0.0
+    }
+  ],
+  "withinPoolPolicyComparisons": [],
+  "ADGRV1GenerationComparisons": [],
+  "generatedOutcomesUnavailable": [],
+  "allPlannedAttemptsRetained": true,
+  "scopes": {
+    "pairLearnerTest": {
+      "setIds": [
+        "ADGRV1_RE02"
+      ],
+      "biologicalGroups": 1
+    },
+    "fullContextFallbackCoverage": {
+      "setIds": [
+        "GPR158_NB20",
+        "MC4R_PN162"
+      ],
+      "biologicalGroups": 2
+    }
+  },
+  "caseQualifications": [
+    {
+      "id": "ADGRV1_RE02",
+      "context": "pair",
+      "biologicalGroupId": "adhesion-adgrv1-re02",
+      "learnerEligibleContext": true,
+      "limitations": [
+        "3.82\u00c5global reference;255/426 receptor and107/147Nb residues represented. All three IMGT CDRs represented, but native coordinates cannot validate missing receptor or terminal regions.",
+        "Mouse deposited construct versus human preprint species discrepancy remains unresolved. Exact deposited-protein construct benchmark only.",
+        "Fresh primary fulltext/pdf retrieval returned429; original preprint metadata/deposition provenance and retained prior source review support a limited deposited-pair claim, not a complete experimental construct provenance audit."
+      ],
+      "historicalIndependenceCertified": false,
+      "predictorTrainingExposure": "Entry released after reported Boltz2 experimentalPDB cutoff2023-06-01. This is not proof of receptor/Nb/interface novelty or absence from distilled/related training data."
+    },
+    {
+      "id": "GPR158_NB20",
+      "context": "two-receptors-two-Nbs",
+      "biologicalGroupId": "orphan-class-c-gpr158-nb20",
+      "learnerEligibleContext": false,
+      "limitations": [
+        "Nanobody contacts both receptor protomers; pair-only reduction is scientifically unsuitable. Keep full2+2 protein context.",
+        "Global deposition resolution3.47\u00c5 does not describe the weak ECD/Nb density. Primary paper reports localECD/Nb refinement4.14\u00c5 and cautions side-chain placement. Exploratory baseline coverage only.",
+        "Use deposited receptor781aa andNb150aa; original assay/reagent construct reconciliation is narrower than full biological validation.",
+        "9VOR is prespecified as the RGS-free structural class;9VOS is an alternate6-protein context of the sameNb lineage, never an independent group."
+      ],
+      "historicalIndependenceCertified": false,
+      "predictorTrainingExposure": "Entry released after reported Boltz2 experimentalPDB cutoff2023-06-01. This is not proof of receptor/Nb/interface novelty or absence from distilled/related training data."
+    },
+    {
+      "id": "MC4R_PN162",
+      "context": "receptor-targetNb-Gs-auxiliaryNb35",
+      "biologicalGroupId": "melanocortin-mc4r-pn162",
+      "learnerEligibleContext": false,
+      "limitations": [
+        "Retain all six deposited protein chains, includingGs and auxiliaryNb35. TargetpN162 contacts receptor only, but this does not prove the active receptor conformation is helper-independent.",
+        "Whole729aa BRIL/MC4R/mCherry/tag construct retained; no trimming to resolved receptor or canonical332aa segment.",
+        "3.4\u00c5global reference with85/117pN162 residues represented; all3IMGTCDRs represented, substantial framework and receptor-fusion regions unresolved.",
+        "Discovery used beta2AR-grafted/Cb80-stabilized immunogen, while deposited receptor core is exact wild-typeMC4R. Record source relationship without mislabeling the deposited construct."
+      ],
+      "historicalIndependenceCertified": false,
+      "predictorTrainingExposure": "Entry released after reported Boltz2 experimentalPDB cutoff2023-06-01. This is not proof of receptor/Nb/interface novelty or absence from distilled/related training data."
+    }
+  ],
+  "populationConfidenceInterval": null,
+  "populationConfidenceIntervalReason": "Only one learner-eligible biological group; poses and arms are not independent groups.",
+  "referenceCoverageLimit": "DockQ covers only frozen corresponding resolved residues; unavailable reference regions are not validated.",
+  "metadataSourceExposureDisclosed": true,
+  "predictorTrainingNoveltyCertified": false,
+  "generalSuperiorityClaim": false,
+  "productionDefaultChanged": false,
+  "modelsFit": 0,
+  "nativeQualityMetricsRecomputed": false,
+  "rulesChanged": false
+}

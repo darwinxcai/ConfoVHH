@@ -1,0 +1,53 @@
+{
+  "schema": "confovhh-round4-source-ranking-receipt-v1",
+  "evaluationRole": "reserved-evaluation",
+  "snapshot": false,
+  "preparationReceipt": {
+    "path": "round4-outcomes/final-preparation-reserved/preparation-receipt.json",
+    "bytes": 1144,
+    "sha256": "0af77830bb11a96fe2df5adebb27a779590b597d5b9f33c24756c45150c882bf"
+  },
+  "predictionTable": {
+    "path": "round4-ranking/final-features-reserved/predictions.json",
+    "bytes": 114688,
+    "sha256": "d73055dd0ed45ca67ed7b66d06d5f3df6cce4a515f8b06168431b43f0b7fc0d1"
+  },
+  "ranks": {
+    "path": "round4-ranking/final-features-reserved/source-ranks.json",
+    "bytes": 24297,
+    "sha256": "5e77b68e6b4de3c3aa2f4b5d4de0287c7f515a86aa01407a439e80a82a3d6125"
+  },
+  "attempts": {
+    "path": "round4-ranking/final-features-reserved/attempts.json",
+    "bytes": 34127,
+    "sha256": "ee52ca54d33023942995b175ae7abe273c65bc51157668e2fc72c07ad89713eb"
+  },
+  "contactRequest": {
+    "path": "round4-ranking/final-features-reserved/contact-request.json",
+    "bytes": 44054,
+    "sha256": "48c676314e689d6843c16c2853e9b1ae4396574bdfbdc606837f3b3917b19d34"
+  },
+  "contactEvidence": {
+    "path": "round4-ranking/final-features-reserved/contact-evidence.json",
+    "bytes": 4859025,
+    "sha256": "ffc3a21adbf8210222f992bb78633799726974f5672f2cfd48e2e1bc419dbf8f"
+  },
+  "plannedCount": 75,
+  "producedCount": 75,
+  "sourceAvailableCount": 75,
+  "allPlannedIdsRetained": true,
+  "outcomeInputs": [],
+  "implementation": {
+    "round4-ranking/prepare_features.py": "8c5efe6a837ff37f9201bdc6f711aeab7f3e2f6e922f0434f616d590e96c20d0",
+    "round4-ranking/contact_features.mjs": "980ab6d0d2f193ab6cb05e598c082e367a5ed2c67671cff19c8c72d7adc48cfa",
+    "round4-ranking/ranker.py": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604",
+    "round4-ranking/artifacts.py": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5",
+    "round4-ranking/IMPLEMENTATION-FREEZE-V2.json": "66b4469aa81e005ee58d885c0408b225de86435f62b71e59c7a72577948dfe41",
+    "round4-outcomes/prepare_predictions.py": "014e62316efd8d3342c777fe8d3c9e15e788648ee1fd8011b2bdfe2f27c1ec5a",
+    "ConfoVHH/scripts/external-ranking-v3/policy.mjs": "8e35a0672b4283e9b8a0d011c0f1a703f48b5a0b62ac1eecc65760a8caf403bc",
+    "ConfoVHH/scripts/external-ranking-v3/contact-only.mjs": "5bf6cdd8765c3eaced1758ffebf9a8c15fe7199062d2e25f43f1fda52da647c3",
+    "ConfoVHH/scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+    "ConfoVHH/validation/prospective-benchmark-v1/engine-lock.json": "0bc8d6d23c3accfbfa1b35c956ea08bfba08b6f69a47d73e2307abacc799f559"
+  },
+  "nodeVersion": "v24.19.0"
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "confovhh-round4-reserved-summary-receipt-v1",
+  "status": "COMPLETE_DESCRIPTIVE_SUMMARY",
+  "release": {
+    "path": "round4-reporting/reserved-summary-release.json",
+    "bytes": 868,
+    "sha256": "dcda049c90ed0efa56887cccedeb08fd3be715921a1e26b791dbced07a68ac05"
+  },
+  "reportingFreeze": {
+    "path": "round4-reporting/REPORTING-FREEZE.json",
+    "bytes": 2321,
+    "sha256": "7d391c58dae4f4275f73b9e381c3b84b4a4d161eff56ffe0e49dd0e0280ee552"
+  },
+  "selectionReceipt": {
+    "path": "round4-reporting/final-selection/receipt.json",
+    "bytes": 1786,
+    "sha256": "76f4d30ed5ad0d872ff3525bdb9844d0390d174424edf5ae8b06b2071714626b"
+  },
+  "finalPolicyFreeze": {
+    "path": "round4-reporting/FINAL-POLICY.json",
+    "bytes": 438,
+    "sha256": "407c57008ec657a88b758a68564328d0265ace829543ed1f72d5addfd5647892"
+  },
+  "outcomeReceipt": {
+    "path": "round4-outcomes/final-reserved/receipt.json",
+    "bytes": 19973,
+    "sha256": "e0562a0ae851d6c8776f2a49914752c29e394ab17077e5ccbac366f17b34d2ba"
+  },
+  "sourceRankingReceipt": {
+    "path": "round4-ranking/final-features-reserved/source-rank-receipt.json",
+    "bytes": 2692,
+    "sha256": "24861ea31aa1c480e3e03494f0466ad2de2401cd767491365ed1a78e0ca9dec0"
+  },
+  "challengerRanks": [],
+  "rankingSeal": {
+    "path": "round4-outcomes/reserved-ranking-seal.json",
+    "bytes": 86296,
+    "sha256": "9e5a045fc0d4860015c10da942ae1e4ee7fc28f5157436518e27f81257c1b59f"
+  },
+  "outcomeRelease": {
+    "path": "round4-outcomes/reserved-outcome-release.json",
+    "bytes": 355,
+    "sha256": "71e5df5b8445c8844256be34254362c136c20c9b78e86b8cc39d6bc3cbe12ade"
+  },
+  "cohort": {
+    "path": "round4-outcomes/reserved-cohort.json",
+    "bytes": 3702,
+    "sha256": "2b0782d2a8069d13ce6f6b7e6587964af05dd4a0e2a9b594f7dc34ba3e6076d5"
+  },
+  "generationPlan": {
+    "path": "round4-reserved-generation/final-bundle/batch-plan.json",
+    "bytes": 32454,
+    "sha256": "f6b823aadd0478ef5ec38dddcaf6d7ae7403727221e5dc92e3994c52a6c22846"
+  },
+  "counts": {
+    "planned": 75,
+    "generated": 75,
+    "failedGeneration": 0,
+    "valid": 75,
+    "evaluated": 75,
+    "generatedOutcomesUnavailable": 0,
+    "allUnavailableIncludingNonproduced": 0
+  },
+  "allPlannedAttemptsRetained": true,
+  "reservedOutcomesRead": true,
+  "nativeQualityMetricsRecomputed": false,
+  "modelsFit": 0,
+  "rulesChanged": false,
+  "productionDefaultChanged": false,
+  "files": [
+    {
+      "path": "round4-reporting/reserved-summary/summary.json",
+      "bytes": 9469,
+      "sha256": "13745ca86b406b73d1977d2a767e174fc8a59a01bf97dd8726528aef1f4d3650"
+    },
+    {
+      "path": "round4-reporting/reserved-summary/attempts.json",
+      "bytes": 76122,
+      "sha256": "591af48251540a3510edcd48abcc22267508d8230ae096ac3405f11514de40ed"
+    },
+    {
+      "path": "round4-reporting/reserved-summary/POOLS.csv",
+      "bytes": 1149,
+      "sha256": "e0193214b72f5b236f978c44057d0adf9c081afa011f21804572acbf1effc52a"
+    },
+    {
+      "path": "round4-reporting/reserved-summary/REPORT.md",
+      "bytes": 3740,
+      "sha256": "1ffa7577bfa8299a37af6956410ac2d141467359781e26baaedafa6ab0c6b2d8"
+    }
+  ]
+}

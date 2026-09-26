@@ -1,0 +1,70 @@
+{
+  "schema": "confovhh-round4-packaging-correction-structure-review-v1",
+  "status": "PASS",
+  "createdUtc": "2026-09-25T17:29:21.178231+00:00",
+  "reviewer": "root local review; no additional independent agent",
+  "changes": [
+    {
+      "file": "archive_common.py",
+      "changedFunctions": [
+        "scan_file"
+      ],
+      "unchangedFunctions": [
+        "all_bindings",
+        "binding",
+        "binding_shape",
+        "bound",
+        "check",
+        "excluded",
+        "load",
+        "module",
+        "packed",
+        "phase_receipts",
+        "public_msa_proofs",
+        "regular",
+        "safe_relative",
+        "selected",
+        "sha",
+        "snapshot",
+        "strict",
+        "unchanged",
+        "validate_dependency_freezes",
+        "validate_final_map"
+      ]
+    },
+    {
+      "file": "build_evidence.py",
+      "changedFunctions": [
+        "build"
+      ],
+      "unchangedFunctions": [
+        "copy_base",
+        "stream_member"
+      ]
+    },
+    {
+      "file": "verify_archive.py",
+      "changedFunctions": [
+        "verify"
+      ],
+      "unchangedFunctions": [
+        "archive_members",
+        "compare_original_base",
+        "extract_verified",
+        "isolated_environment",
+        "node_wrapper"
+      ]
+    },
+    {
+      "file": "replay_science.py",
+      "changedFunctions": [],
+      "unchangedFunctions": [
+        "replay",
+        "replay_capture",
+        "replay_fit"
+      ]
+    }
+  ],
+  "unchangedScientificReplay": true,
+  "newScientificOutcomesRead": false
+}

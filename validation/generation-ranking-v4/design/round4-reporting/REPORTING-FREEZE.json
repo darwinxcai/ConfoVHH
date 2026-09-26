@@ -1,0 +1,70 @@
+{
+  "schema": "confovhh-round4-reporting-freeze-v1",
+  "status": "FROZEN_PENDING_SEPARATE_REPORTING_RELEASES",
+  "files": [
+    {
+      "path": "round4-reporting/report_common.py",
+      "bytes": 7704,
+      "sha256": "5999ff4ba342f4839037cf6dda8f83719c073acad6434be242c7acd746be32db"
+    },
+    {
+      "path": "round4-reporting/select_final.py",
+      "bytes": 18045,
+      "sha256": "772eb4a5002c5d8fc91a7382a0a8991450e7f89c7a926f0c476d619048499b54"
+    },
+    {
+      "path": "round4-reporting/summarize_reserved.py",
+      "bytes": 25322,
+      "sha256": "8264c8a8a901af5e96505e7c281685c1f1dd88c0be0d539e1d52293ba41141b8"
+    },
+    {
+      "path": "round4-reporting/test_reporting.py",
+      "bytes": 20613,
+      "sha256": "a9830abc4b52d2425ec69854d60d42361250c0ae52d78a35ffd1a29b433b8055"
+    },
+    {
+      "path": "round4-reporting/README.md",
+      "bytes": 9235,
+      "sha256": "2372196eae737fd45d7a2cae05652f501b93638943d53eefc660e9fc22c4cd6a"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "round4-planning/ANALYSIS-DECISIONS.md",
+      "bytes": 6703,
+      "sha256": "7f76db198e105eb3ba5d5a5667bed499a43bfa2b4b23a34519169edb7ea7e6de"
+    },
+    {
+      "path": "round4-analysis/ANALYZER-FREEZE.json",
+      "bytes": 6992,
+      "sha256": "27f819320c6ed67459d68dbad6389aced7daa1e2449c0db35c49015270ffdaa0"
+    },
+    {
+      "path": "round4-ranking/COMBINED-DEVELOPMENT-TOOLS-FREEZE.json",
+      "bytes": 4714,
+      "sha256": "ecfcb997a6208f053136222f7b41a480461e505314bfd0a9e4383d9f11222da6"
+    },
+    {
+      "path": "round4-ranking/IMPLEMENTATION-FREEZE-V2.json",
+      "bytes": 5167,
+      "sha256": "66b4469aa81e005ee58d885c0408b225de86435f62b71e59c7a72577948dfe41"
+    },
+    {
+      "path": "round4-ranking/FEATURE-ADAPTER-FREEZE.json",
+      "bytes": 5289,
+      "sha256": "b0d59c38d86e5e3ebecc1cefba3b9ca4ad15d49d9c5f68ea8ded2cb9956eb685"
+    },
+    {
+      "path": "round4-outcomes/IMPLEMENTATION-FREEZE.json",
+      "bytes": 7596,
+      "sha256": "190329a887cb579c35f76f0a3c780fc35964d6a330e52e693d3f5bcfd05dde15"
+    },
+    {
+      "path": "round4-benchmark/ENROLLMENT.freeze.json",
+      "bytes": 21572,
+      "sha256": "f43d145a873d2ccf6aeae8407fabc4596584bea9a82d8402c29f6d5361f096cb"
+    }
+  ],
+  "newDevelopmentOutcomesReadAtFreeze": false,
+  "reservedOutcomesReadAtFreeze": false
+}

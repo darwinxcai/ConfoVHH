@@ -1,0 +1,53 @@
+{
+  "schema": "confovhh-round4-independent-generation-code-review-v1",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "round4-generation/prepare_bundle.py",
+      "bytes": 9902,
+      "sha256": "57605d72d7d12d9792c3f40df6d67c952fd09ff980f80baf753502189e4ac97b"
+    },
+    {
+      "path": "round4-generation/run_batch.py",
+      "bytes": 17782,
+      "sha256": "84d50accd523ffda8eb7d8669b3d8b7a1c6a177d8f7d6d88678856ecbb6b38cf"
+    },
+    {
+      "path": "round4-generation/runtime_probe.py",
+      "bytes": 5762,
+      "sha256": "c3805a74e856c5e18ff8df19fe6ab981eb9b2c62d1db370a3b82da38f22e8971"
+    },
+    {
+      "path": "round4-generation/verify_smoke.py",
+      "bytes": 2695,
+      "sha256": "3e293040f07cf78290b7fd9579fc0b00171ecae947aa5e37ec144cdcab1b04a0"
+    },
+    {
+      "path": "round4-generation/test_runner.py",
+      "bytes": 9080,
+      "sha256": "a9f9ffee3092382ba0b5fe9c741866816f0227b943c3f4d0ade377f1320c4607"
+    }
+  ],
+  "tests": {
+    "count": 21,
+    "failures": 0,
+    "errors": 0,
+    "log": "test_allplanned_status_preserves_pending_and_failure (round4_generation_tests.RunnerTests.test_allplanned_status_preserves_pending_and_failure) ... ok\ntest_arms_change_only_prespecified_factor (round4_generation_tests.RunnerTests.test_arms_change_only_prespecified_factor) ... ok\ntest_changed_input_rejected (round4_generation_tests.RunnerTests.test_changed_input_rejected) ... ok\ntest_complete_900_cartesian_membership (round4_generation_tests.RunnerTests.test_complete_900_cartesian_membership) ... ok\ntest_concurrent_reader_never_sees_partial_final_receipt (round4_generation_tests.RunnerTests.test_concurrent_reader_never_sees_partial_final_receipt) ... ok\ntest_corrupt_output_resume_rejected (round4_generation_tests.RunnerTests.test_corrupt_output_resume_rejected) ... ok\ntest_duplicate_or_missing_job_rejected (round4_generation_tests.RunnerTests.test_duplicate_or_missing_job_rejected) ... ok\ntest_failed_attempt_retained_no_retry_and_scratch_retained (round4_generation_tests.RunnerTests.test_failed_attempt_retained_no_retry_and_scratch_retained) ... ok\ntest_fixed_smokes_are_members_of_scientific_roster (round4_generation_tests.RunnerTests.test_fixed_smokes_are_members_of_scientific_roster) ... ok\ntest_generated_resume_is_nonduplicating_and_scratch_disposable (round4_generation_tests.RunnerTests.test_generated_resume_is_nonduplicating_and_scratch_disposable) ... ok\ntest_initial_attempt_record_authenticated (round4_generation_tests.RunnerTests.test_initial_attempt_record_authenticated) ... ok\ntest_missing_array_and_nonfinite_confidence_fail_closed (round4_generation_tests.RunnerTests.test_missing_array_and_nonfinite_confidence_fail_closed) ... ok\ntest_nested_reserved_names_are_inventoried (round4_generation_tests.RunnerTests.test_nested_reserved_names_are_inventoried) ... ok\ntest_outside_paths_and_symlinks_rejected (round4_generation_tests.RunnerTests.test_outside_paths_and_symlinks_rejected) ... ok\ntest_rehashed_initial_command_still_checked_against_plan (round4_generation_tests.RunnerTests.test_rehashed_initial_command_still_checked_against_plan) ... ok\ntest_running_claim_never_stolen (round4_generation_tests.RunnerTests.test_running_claim_never_stolen) ... ok\ntest_runtime_and_smoke_release_required (round4_generation_tests.RunnerTests.test_runtime_and_smoke_release_required) ... ok\ntest_symlink_output_rejected (round4_generation_tests.RunnerTests.test_symlink_output_rejected) ... ok\ntest_terminal_metadata_cannot_change_planned_seed (round4_generation_tests.RunnerTests.test_terminal_metadata_cannot_change_planned_seed) ... ok\ntest_terminal_receipt_cannot_be_overwritten (round4_generation_tests.RunnerTests.test_terminal_receipt_cannot_be_overwritten) ... ok\ntest_unlisted_output_resume_rejected (round4_generation_tests.RunnerTests.test_unlisted_output_resume_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.539s\n\nOK\n"
+  },
+  "checks": [
+    "Exact planned900 roster and arm definitions",
+    "Five parent-approved seed25 smokes remain included in900",
+    "Complete regular output inventory; nested reserved names included; symlink/special rejection",
+    "Initial and terminal receipt fields/command checked against planned job",
+    "Atomic immutable receipt publication",
+    "No duplicate resume or outcome-driven retry",
+    "Input cache identity checked; no MSA refetch command",
+    "Failed attempts and partial scratch retained",
+    "Optimized Python rejected where assertions guard qualification"
+  ],
+  "scientificPredictionsRun": 0,
+  "outcomesOpened": false,
+  "limitations": [
+    "Local tests mock predictor; real pinned-runtime and five-smoke verification remain required before scientific queue release"
+  ]
+}

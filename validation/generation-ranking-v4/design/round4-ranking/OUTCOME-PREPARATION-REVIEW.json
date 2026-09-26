@@ -1,0 +1,88 @@
+{
+  "schema": "confovhh-round4-independent-outcome-preparation-review-v1",
+  "status": "PASS",
+  "reviewedAtUtc": "2026-09-25T04:47:26.591547+00:00",
+  "scope": "Bounded independent code review and local synthetic controls of canonical prediction preparation, source/challenger seal integration, released metric worker scope, exact four-view dimer aggregation and saved correspondence replay.",
+  "inputBindings": [
+    {
+      "path": "round4-outcomes/outcome_adapter.py",
+      "bytes": 28217,
+      "sha256": "ecff170ddb66c91c1b4e2d65539721648891743436491b0bc01ab311673bc6b2"
+    },
+    {
+      "path": "round4-outcomes/prepare_predictions.py",
+      "bytes": 18793,
+      "sha256": "014e62316efd8d3342c777fe8d3c9e15e788648ee1fd8011b2bdfe2f27c1ec5a"
+    },
+    {
+      "path": "round4-outcomes/test_outcomes.py",
+      "bytes": 14299,
+      "sha256": "8133021f28027516f979cba9c3a8e6803300bbb1928bc058b04418184d3432d4"
+    },
+    {
+      "path": "round4-outcomes/test_preparation.py",
+      "bytes": 5216,
+      "sha256": "891e12f9c452745c74c2ce75562889a3445f122e8bc8de0dbbc38cf990fcbe2e"
+    },
+    {
+      "path": "round4-outcomes/SMOKE-SNAPSHOT-REFUSAL-V3.json",
+      "bytes": 3355,
+      "sha256": "642cb898b49b5bc56ceea85fe05225f1c6cb066a4ea87c9a6f9ef0af50aa29e2"
+    },
+    {
+      "path": "round4-ranking/review_outcome_contract.py",
+      "bytes": 2376,
+      "sha256": "626637b60606e2bb20624b50982c1aac6b2855ccc1981b577b8b781d6a8a8dba"
+    },
+    {
+      "path": "round4-ranking/independent-preparation-tests.log",
+      "bytes": 1571,
+      "sha256": "ee17ea9da1d50be9a25a4604ea3d0b69721aed6ca7231f50edd00a2c5de10656"
+    },
+    {
+      "path": "round4-ranking/independent-outcome-tests.log",
+      "bytes": 3488,
+      "sha256": "d5abaad2e0002c87edfc6f8f66adfda439c0263b869fa1c8d1893b837ff959f4"
+    },
+    {
+      "path": "round4-ranking/FEATURE-ADAPTER-FREEZE.json",
+      "bytes": 5289,
+      "sha256": "b0d59c38d86e5e3ebecc1cefba3b9ca4ad15d49d9c5f68ea8ded2cb9956eb685"
+    }
+  ],
+  "tests": {
+    "preparation": 10,
+    "outcome": 23,
+    "passed": 33,
+    "failed": 0,
+    "temporaryFilesConfinedToRound4Ranking": true
+  },
+  "resolvedFindings": [
+    {
+      "finding": "A subset of the final reserved challenger model roster could be supplied.",
+      "resolution": "Reserved preflight now requires exact distinct frozen model bindings; omission, addition and duplicated supplied models are rejected. Source-only selection keeps both rosters empty."
+    },
+    {
+      "finding": "A rehashed failed/interrupted inventory could alter the failure explanation or include stray geometry-integrity metadata.",
+      "resolution": "Outcome preflight compares the explanation to the authenticated generation receipt and requires absent rawInputIntegrity. Preparation and feature hashes remain unchanged; altered failure metadata cannot reach outcome sealing."
+    }
+  ],
+  "remainingBlockingFindings": [],
+  "checks": [
+    "All planned generated/failed/interrupted attempts remain in preparation and outcome membership.",
+    "Canonicalization binds exact full input sequences, receptor order, fixed selected Nb and context; wrong equivalent-Nb role and rehashed map changes are rejected.",
+    "Source and optional challenger ranks replay from bound prediction-only features/models before any outcome seal.",
+    "Both development and reserved workers require a release bound to the sealed cohort/rankings; snapshots are rejected.",
+    "Reserved final policy precedes generation and authenticates exact accepted enrollment sequences/roles and model roster.",
+    "Dimer metric uses all four fixed native assignments with unchanged prediction Nb; any unavailable view prevents a favorable partial maximum.",
+    "Explicit mmCIF dispatch changes only the two pinned loaders; synthetic independent NumPy checks and residue-segment correspondence replay passed.",
+    "No new production prediction/native comparison was performed in this review."
+  ],
+  "limitations": [
+    "Saved outcome verification replays provenance, correspondences and aggregation; it does not independently recompute DockQ for production poses.",
+    "Preparation alone remains the frozen earlier contract; failure-description authenticity is enforced by the outcome preflight gate."
+  ],
+  "newReservedOutcomesRead": false,
+  "newDevelopmentOutcomesRead": false,
+  "frozenScientificCodeEdited": false
+}

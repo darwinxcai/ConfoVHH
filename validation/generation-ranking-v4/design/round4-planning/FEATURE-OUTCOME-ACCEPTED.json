@@ -1,0 +1,22 @@
+{
+  "schema": "confovhh-round4-parent-feature-outcome-acceptance-v1",
+  "status": "PASS",
+  "verifiedAtUtc": "2026-09-25T04:53:14.851850+00:00",
+  "freezes": [
+    {
+      "path": "round4-outcomes/IMPLEMENTATION-FREEZE.json",
+      "bytes": 7596,
+      "sha256": "190329a887cb579c35f76f0a3c780fc35964d6a330e52e693d3f5bcfd05dde15",
+      "boundFilesVerified": 18
+    },
+    {
+      "path": "round4-ranking/FEATURE-ADAPTER-FREEZE.json",
+      "bytes": 5289,
+      "sha256": "b0d59c38d86e5e3ebecc1cefba3b9ca4ad15d49d9c5f68ea8ded2cb9956eb685",
+      "boundFilesVerified": 11
+    }
+  ],
+  "independentReviewAccepted": true,
+  "newOutcomesOpened": false,
+  "outcomeReleaseStillRequired": true
+}

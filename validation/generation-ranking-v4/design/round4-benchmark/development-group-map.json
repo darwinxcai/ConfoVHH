@@ -1,0 +1,191 @@
+{
+  "schema": "confovhh-round4-development-groups-v1",
+  "evaluationRole": "development",
+  "status": "ACCEPTED_FOR_EXPLORATORY_DEVELOPMENT_GROUPED_ANALYSIS",
+  "sets": [
+    {
+      "setId": "dev_8qot",
+      "biologicalGroupId": "opioid-nbe",
+      "receptorGene": "OPRM1",
+      "selectedNbLineage": "NbE",
+      "context": "pair",
+      "learnerEligibleContext": true,
+      "evaluationRole": "development",
+      "groupingRationale": "Related to historical OPRM1/OPRK1 receptor development; no different current opioid set."
+    },
+    {
+      "setId": "dev_6knm",
+      "biologicalGroupId": "apelin-jn241",
+      "receptorGene": "APLNR",
+      "selectedNbLineage": "JN241",
+      "context": "pair",
+      "learnerEligibleContext": true,
+      "evaluationRole": "development",
+      "groupingRationale": "Engineered receptor with rubredoxin; preserve that construct. No target-receptor graft connecting another current case established."
+    },
+    {
+      "setId": "dev_8th3",
+      "biologicalGroupId": "angiotensin-at118",
+      "receptorGene": "AGTR1",
+      "selectedNbLineage": "AT118",
+      "context": "pair",
+      "learnerEligibleContext": true,
+      "evaluationRole": "development",
+      "groupingRationale": "AT118-H/AT118-L are source-reported related variants; shared AGTR1/BRIL construct family overrides absent VHH threshold signal."
+    },
+    {
+      "setId": "dev_8th4",
+      "biologicalGroupId": "angiotensin-at118",
+      "receptorGene": "AGTR1",
+      "selectedNbLineage": "AT118",
+      "context": "pair",
+      "learnerEligibleContext": true,
+      "evaluationRole": "development",
+      "groupingRationale": "AT118-H/AT118-L are source-reported related variants; shared AGTR1/BRIL construct family overrides absent VHH threshold signal."
+    },
+    {
+      "setId": "RHO_NB2",
+      "biologicalGroupId": "rhodopsin-nb2",
+      "receptorGene": "RHO",
+      "selectedNbLineage": "Nb2",
+      "context": "pair",
+      "learnerEligibleContext": true,
+      "evaluationRole": "development",
+      "groupingRationale": "Same gene and direct target Nb as historical 8FCZ development."
+    },
+    {
+      "setId": "HCRTR2_SB51",
+      "biologicalGroupId": "orexin-sb51",
+      "receptorGene": "HCRTR2",
+      "selectedNbLineage": "Sb51",
+      "context": "pair",
+      "learnerEligibleContext": true,
+      "evaluationRole": "development",
+      "groupingRationale": "Same gene and direct target sybody as historical 7L1V development; auxiliary G protein/scFv do not define target Nb ancestry."
+    },
+    {
+      "setId": "CHRM1_NB1B4",
+      "biologicalGroupId": "muscarinic-nb1b4",
+      "receptorGene": "CHRM1",
+      "selectedNbLineage": "Nb1B4",
+      "context": "receptor-Nb-G11-helix",
+      "learnerEligibleContext": false,
+      "evaluationRole": "development",
+      "groupingRationale": "Related muscarinic receptor family to historical CHRM2; de novo stabilizing fusion and separate G11 helix preserved. This is a source-fallback context."
+    },
+    {
+      "setId": "ADRA1A_NB29",
+      "biologicalGroupId": "adrenergic-nb29",
+      "receptorGene": "ADRA1A",
+      "selectedNbLineage": "Nb29",
+      "context": "pair",
+      "learnerEligibleContext": true,
+      "evaluationRole": "development",
+      "groupingRationale": "Conservative historical adrenergic receptor cluster includes ADRB1/ADRB2/DRD1; construct contains fusion sequence, not a new independent receptor family."
+    },
+    {
+      "setId": "FZD3_NB9",
+      "biologicalGroupId": "frizzled-nb9",
+      "receptorGene": "FZD3",
+      "selectedNbLineage": "Nb9",
+      "context": "pair",
+      "learnerEligibleContext": true,
+      "evaluationRole": "development",
+      "groupingRationale": "Historical class-F receptor cluster includes FZD and SMO; no second current class-F target. Shared auxiliary Nbs elsewhere do not link this selected Nb to NbE."
+    },
+    {
+      "setId": "LGR4_NB21",
+      "biologicalGroupId": "lgr4-nb21",
+      "receptorGene": "LGR4",
+      "selectedNbLineage": "Nb21",
+      "context": "pair",
+      "learnerEligibleContext": true,
+      "evaluationRole": "development",
+      "groupingRationale": "Round3 outcome-exposed. Prior census provisional family incorrectly co-listed 9UOK as an M1 lead; current primary/deposition resolution assigns 9UOK to LGR4, while CHRM1 is 9UCP. This typo is not a biological edge."
+    },
+    {
+      "setId": "GRM5_NB43",
+      "biologicalGroupId": "mglu-nb43",
+      "receptorGene": "GRM5",
+      "selectedNbLineage": "Nb43",
+      "context": "two-receptors-two-Nbs",
+      "learnerEligibleContext": false,
+      "evaluationRole": "development",
+      "groupingRationale": "Conservative metabotropic-glutamate family includes GRM1/GRM2; full homodimer context retained with source fallback."
+    },
+    {
+      "setId": "CASR_NB2D11",
+      "biologicalGroupId": "casr-nb2d11",
+      "receptorGene": "CASR",
+      "selectedNbLineage": "Nb2D11",
+      "context": "two-receptors-two-Nbs",
+      "learnerEligibleContext": false,
+      "evaluationRole": "development",
+      "groupingRationale": "CASR is its own current receptor subfamily; shared class-C architecture alone does not establish common receptor/Nb lineage with GRM5. Homodimer and low-resolution reference retain source fallback."
+    }
+  ],
+  "groupCount": 11,
+  "pairSetCount": 9,
+  "pairGroupCount": 8,
+  "mandatoryCoassignment": [
+    {
+      "members": [
+        "dev_8th3",
+        "dev_8th4"
+      ],
+      "reason": "Same receptor and source-reported parent/variant AT118 lineage regardless of sequence threshold."
+    }
+  ],
+  "foldPolicy": [
+    "Every seed, recycled/sampled variant, generation arm and previous/current pool for a case retains this group.",
+    "All300 round3 and900 same-case round4 predictions are development, never a reserved test.",
+    "Fit pair contexts only; CHRM1 helix and CASR/GRM5 dimers preserve unchanged source fallback.",
+    "These folds test transfer among the selected development groups; they do not establish independence from all historical ConfoVHH development or predictor training."
+  ],
+  "evidence": {
+    "currentSelectedNbComparisons": 66,
+    "historicalSelectedNbComparisons": 216,
+    "additionalCrossCurrentThresholdEdges": 0,
+    "threshold": "IMGT framework >=0.90 AND CDR3 >=0.70 AND absolute CDR3 length difference <=2; exact integer arithmetic using retained repository contract.",
+    "ancestryRule": "Known parent/variant and receptor-family evidence overrides a negative sequence threshold result.",
+    "metadataGraphCaveat": "Whole-entry helper Nb35/NabFab and non-target VHH connections can join unrelated receptors. No global metadata component was silently reinterpreted as selected-target lineage; uncertain shared ancestry remains a limitation."
+  },
+  "limitations": [
+    "No exhaustive historical no-edge certificate. Negative VHH threshold results cannot certify independent ancestry.",
+    "Receptor family/engineered-segment annotations use current retained primary/deposition qualification and repository TM pregraph; no new receptor-wide phylogeny was inferred.",
+    "Known historical receptor relatives remain recorded even when no second related case exists among the12.",
+    "All earlier round3 outcomes are development-exposed by project status; this task read no prediction-quality files or labels."
+  ],
+  "bindings": [
+    {
+      "path": "round3-cloud/launch-bundle/batch-plan.json",
+      "sha256": "f70235e5c08bcac715f1e2639e6bcd5c1f9bf045952a355c5a1cd77b1fd27d09"
+    },
+    {
+      "path": "round4-benchmark/development-selected-nb-audit.json",
+      "sha256": "c98c1100e38b4b7fe4d89394c41e959d93589a817d794c0f893daa2b81400589"
+    },
+    {
+      "path": "ConfoVHH/validation/prospective-benchmark-v1/inventory/prior-exposure-registry.json",
+      "sha256": "d127471f572bc80e59c4ead74b54edaa77700aabf8454897562beef46b4fd7b9"
+    },
+    {
+      "path": "ConfoVHH/validation/prospective-benchmark-v1/inventory/relatedness-links.json",
+      "sha256": "a3ce4d93983ab3b217e35db2bd1141f15e5b28fdf21939d9dc4d79b1b7c84b90"
+    },
+    {
+      "path": "round3-benchmark/native-chain-context-qualification.json",
+      "sha256": "dc4c913c7552cac4047ec99925e6120c35e66a122a969a054908760bdd793ab9"
+    },
+    {
+      "path": "expansion-v2/target-qualification.json",
+      "sha256": "41963615efa75ee8ab084028d9d0f84392a5f8252df79b4ebb977921f7baa7eb"
+    }
+  ],
+  "parentAcceptance": {
+    "recordedUtc": "2026-09-25T03:38:15.132063+00:00",
+    "scope": "Parent accepted11-group/8pair-group assignment with all stated historical/ancestry limitations; no claim of blanket independent holdout.",
+    "proposedSha256": "be662ef71821c67641e23acb175784e508e56c1df36bb77cd4b0de211af7ff3c",
+    "membershipChanged": false
+  }
+}

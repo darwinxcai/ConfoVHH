@@ -1,0 +1,109 @@
+{
+  "schema": "confovhh-round4-combined-development-tools-freeze-v1",
+  "status": "SYNTHETIC_VALIDATION_AND_JOIN_REVIEW_PASS",
+  "frozenAtUtc": "2026-09-25T05:09:42.270463+00:00",
+  "joinImplementation": {
+    "joinAdapterSha256": "b9b1cadc32768d16738ec8265f052302dbbffd4313dda93393fe0b00ed82cffe",
+    "ranker": {
+      "ranker.py": "a84d6f74667df7f5884d4ead539d3452dd9ed25e92121ad31623cc64103c9604",
+      "artifacts.py": "3e8cfe83bed25113b41c1a0a81dcd7144377f7dfc81444cd87d899d24130faa5",
+      "run.py": "a2948242f196d358c46aa723e59c864d1009bb84be5abb13fdb518fca157ae04"
+    },
+    "featureFreezeSha256": "b0d59c38d86e5e3ebecc1cefba3b9ca4ad15d49d9c5f68ea8ded2cb9956eb685",
+    "outcomeFreezeSha256": "190329a887cb579c35f76f0a3c780fc35964d6a330e52e693d3f5bcfd05dde15",
+    "outcomeAdapterSha256": "ecff170ddb66c91c1b4e2d65539721648891743436491b0bc01ab311673bc6b2"
+  },
+  "files": [
+    {
+      "path": "round4-ranking/combine_development.py",
+      "bytes": 17219,
+      "sha256": "b9b1cadc32768d16738ec8265f052302dbbffd4313dda93393fe0b00ed82cffe"
+    },
+    {
+      "path": "round4-ranking/test_combine_development.py",
+      "bytes": 8788,
+      "sha256": "b074f46748adc360b564718944562589e4063da86119514eec43645cf2bab83d"
+    },
+    {
+      "path": "round4-ranking/verify_fit_independent_v2.py",
+      "bytes": 21590,
+      "sha256": "e90c9780970c15ccf69f5e356d8afb1ffc584c6cb4923225cf108c75677dc35b"
+    },
+    {
+      "path": "round4-ranking/test_verify_fit_independent_v2.py",
+      "bytes": 7867,
+      "sha256": "3aeb7e662ea3032600bb2883321d784c6f6d241119b9e90b17750317eddf4a71"
+    },
+    {
+      "path": "round4-ranking/COMBINED-DEVELOPMENT.md",
+      "bytes": 5443,
+      "sha256": "60fa34372fc4ecb7a4e1d04fae50b38182775e00e3dbf5485ede274513790650"
+    },
+    {
+      "path": "round4-ranking/combined-adapter-synthetic-tests-final.log",
+      "bytes": 2175,
+      "sha256": "7d861f9e01c767a24f578e06ce8b95061953deccb1962d0add68eae1b6701fad"
+    },
+    {
+      "path": "round4-ranking/independent-verifier-v2-synthetic-tests-final3.log",
+      "bytes": 2010,
+      "sha256": "05d7fcf90487b2438aeeccaa42545f22e356056be5b044dbe042f08a65f78a7d"
+    }
+  ],
+  "independentJoinReview": {
+    "path": "round4-outcomes/COMBINED-DEVELOPMENT-REVIEW.json",
+    "bytes": 2650,
+    "sha256": "7fb722d8dc8d7a0631adf0acbbc19eba1cc887d5461f54e76a7ab77ed8d912a1"
+  },
+  "preservedOriginalVerifier": {
+    "path": "round4-ranking/verify_fit_independent.py",
+    "bytes": 9495,
+    "sha256": "445744702b2865312afb508f971dadc0e3507f40fbad9810185c89cdef4886ce"
+  },
+  "unchangedRankerFreeze": {
+    "path": "round4-ranking/IMPLEMENTATION-FREEZE-V2.json",
+    "bytes": 5167,
+    "sha256": "66b4469aa81e005ee58d885c0408b225de86435f62b71e59c7a72577948dfe41"
+  },
+  "tests": {
+    "combinedJoinSynthetic": 12,
+    "independentVerifierSynthetic": 11,
+    "independentJoinRerun": 12,
+    "allPassed": true
+  },
+  "plannedStudy": {
+    "oldAttempts": 300,
+    "newAttempts": 900,
+    "combinedAttempts": 1200,
+    "pools": 48,
+    "sets": 12,
+    "biologicalGroups": 11,
+    "learnerEligiblePairGroups": 8
+  },
+  "releasePolicy": {
+    "actualLabelJoinRequiresSeparateParentRelease": true,
+    "eligibleJoinOnlyProposesFit": true,
+    "proposedFitAuthorization": false,
+    "generatedUnavailableOutcomePreventsFitProposal": true,
+    "failedGenerationAttemptsRemain": true
+  },
+  "independentVerifierChanges": [
+    "Separate v2; original verifier bytes and completed evidence preserved.",
+    "No cohort-size constant; membership derives from the bound fit release.",
+    "All planned rows, empty pools, whole-pool source abstention, missing optional features and coverage checked.",
+    "Independent unordered-pair least squares handles singleton and exactly constant pools.",
+    "Exact score ties, including partial top5 boundaries; hierarchical group/target/arm/batch weights; all inner/outer memberships checked.",
+    "Expected computations do not call ranker fitting, ranking, evaluation or selection APIs.",
+    "Nonfinite/Boolean source or hyperparameter values and missing generated training labels rejected."
+  ],
+  "limitations": [
+    "No actual combined1200 join or fit has run; new900 actual outcomes remain unopened by these tools.",
+    "Independent verifier v2 has local synthetic validation; external review receipt covers the join adapter only.",
+    "The unchanged fitter and verifier expect at least one pair-context pool; this fixed study contains eight eligible pair groups."
+  ],
+  "actualNewDevelopmentOutcomesRead": false,
+  "actualReservedOutcomesRead": false,
+  "actualDevelopmentModelFitsPerformed": 0,
+  "syntheticModelFixturesFitForVerifierTests": true,
+  "coreModelFeaturesGridChanged": false
+}

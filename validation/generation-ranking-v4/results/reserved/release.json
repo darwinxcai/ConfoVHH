@@ -1,0 +1,25 @@
+{
+  "schema": "confovhh-round4-reserved-summary-release-v1",
+  "evaluationRole": "reserved",
+  "authorizeReservedSummary": true,
+  "reportingFreeze": {
+    "path": "round4-reporting/REPORTING-FREEZE.json",
+    "bytes": 2321,
+    "sha256": "7d391c58dae4f4275f73b9e381c3b84b4a4d161eff56ffe0e49dd0e0280ee552"
+  },
+  "selectionReceipt": {
+    "path": "round4-reporting/final-selection/receipt.json",
+    "bytes": 1786,
+    "sha256": "76f4d30ed5ad0d872ff3525bdb9844d0390d174424edf5ae8b06b2071714626b"
+  },
+  "finalPolicyFreeze": {
+    "path": "round4-reporting/FINAL-POLICY.json",
+    "bytes": 438,
+    "sha256": "407c57008ec657a88b758a68564328d0265ace829543ed1f72d5addfd5647892"
+  },
+  "outcomeReceipt": {
+    "path": "round4-outcomes/final-reserved/receipt.json",
+    "bytes": 19973,
+    "sha256": "e0562a0ae851d6c8776f2a49914752c29e394ab17077e5ccbac366f17b34d2ba"
+  }
+}
