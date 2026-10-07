@@ -136,7 +136,7 @@ The researcher-facing release is **v0.9.1**. The attested contact, clash, SASA, 
 
 ## Documentation
 
-- [Working manuscript and paper evidence](./paper/README.md) — retrospective application, selection limitations, reproducibility, and remaining experiments
+- [Latest verified manuscript and figures](./paper/README.md) — September 26 draft, completed follow-up results, PDF/Word downloads, and remaining publication items
 - [Software-paper draft](./paper/SOFTWARE_PAPER.md) — application-focused scope, design, related software, and limitations
 - [Reviewer guide](./paper/REVIEWER_GUIDE.md) — offline synthetic example and reproducibility boundaries
 - [Submission readiness](./paper/SUBMISSION_READINESS.md) — concrete evidence and author requirements still open

@@ -1,0 +1,161 @@
+{
+  "schema": "confovhh-manuscript-github-package-v1",
+  "packagedDate": "2026-10-07",
+  "sourceRevision": "abstract-polish",
+  "sourceRevisionCreatedUtc": "2026-09-26T19:27:33.446103+00:00",
+  "status": "REVIEWED_DRAFT_NOT_SUBMITTED",
+  "pages": 18,
+  "abstractWords": 280,
+  "previousGithubManuscript": {
+    "commit": "9aeadb8185a02da4e67967d9fbe12b1503d02e96",
+    "path": "paper/CONFO_VHH_WORKING_MANUSCRIPT.md",
+    "sha256": "1f60a54ce5d4d7d97f50e2d3ef0ac6dab735da6e2366a6735c39fbb195c266e8"
+  },
+  "sourceDeliverablesSha256": "6a05a34a82919c70952c85737c788e57a177a7bfe10a1edf6c6376d7e50f6226",
+  "sourceVerification": {
+    "all13RecordedDeliverablesMatch": true,
+    "all12FigureFormatsMatch": true,
+    "contentReview": {
+      "status": "PASS",
+      "sourceSha256": "fbf7e2b299592adba940b01efae9cdef023b3a4da402aa8356bd0e84d8ed7825"
+    },
+    "claimReview": {
+      "status": "pass",
+      "sourceSha256": "46bfee801618ea4ba8232d642ad9112fbc02fad55bffa4cb723f2062885d3834"
+    },
+    "visualReview": {
+      "status": "PASS",
+      "sourceSha256": "daca42d08953244e95033db1f753fc8628c9ca958592bbe22d43edcc3bd9775d"
+    }
+  },
+  "transformations": [
+    "Replace exactly four absolute Markdown figure URLs with repository-relative URLs.",
+    "Make source-map paths portable and explicitly identify evidence not included in this package."
+  ],
+  "unchanged": [
+    "Scientific manuscript text, including all numbers, qualifications, declarations and supplementary material",
+    "PDF and DOCX bytes",
+    "All four figures in SVG, PNG and PDF formats"
+  ],
+  "completeDatasetIncluded": false,
+  "publicationIssues": [
+    "Public archive DOI pending",
+    "Funding and compute support require author confirmation",
+    "Acknowledgements require author confirmation",
+    "Employer review requirement is unknown"
+  ],
+  "artifacts": [
+    {
+      "path": "CONFO_VHH_WORKING_MANUSCRIPT.md",
+      "bytes": 56301,
+      "sha256": "cb13612e952244b0b1654df6ca661df839eba216f20d10f6d1fb1a17f5d6f62a",
+      "sourcePath": "execution-20260924/preprint-20260926/abstract-polish/MANUSCRIPT.md",
+      "sourceSha256": "79e77d7cb627c3a70a1d0157dfe9e13c8d4f22e5b6ace4349bfcdfcad849d401"
+    },
+    {
+      "path": "ConfoVHH-preprint-revised.docx",
+      "bytes": 1491980,
+      "sha256": "fdc4d1949bd83a5ed4b21d74d8390a3360e0f078b9c2b77951ed260010b11d0d",
+      "sourcePath": "execution-20260924/preprint-20260926/abstract-polish/ConfoVHH-preprint-revised.docx",
+      "sourceSha256": "fdc4d1949bd83a5ed4b21d74d8390a3360e0f078b9c2b77951ed260010b11d0d"
+    },
+    {
+      "path": "ConfoVHH-preprint-revised.pdf",
+      "bytes": 1384260,
+      "sha256": "e2f147f789aaf5eae28ffdff7cad1d9996edd7a1a5a6a1a84e7311bde92a169f",
+      "sourcePath": "execution-20260924/preprint-20260926/abstract-polish/ConfoVHH-preprint-revised.pdf",
+      "sourceSha256": "e2f147f789aaf5eae28ffdff7cad1d9996edd7a1a5a6a1a84e7311bde92a169f"
+    },
+    {
+      "path": "figures/figure-1.pdf",
+      "bytes": 775102,
+      "sha256": "4eade43c49909e83dc9b8dec640e33cd1304705c25f9114fc58bfc00058b86cf",
+      "sourcePath": "execution-20260924/preprint-20260926/clarity-revision/molecular-panel/figure1-final.pdf",
+      "sourceSha256": "4eade43c49909e83dc9b8dec640e33cd1304705c25f9114fc58bfc00058b86cf"
+    },
+    {
+      "path": "figures/figure-1.png",
+      "bytes": 812578,
+      "sha256": "3adf3cd1b9e5e0a602f295764ce6f999dd305a08b257c50eed551cea83424ace",
+      "sourcePath": "execution-20260924/preprint-20260926/clarity-revision/molecular-panel/figure1-final.png",
+      "sourceSha256": "3adf3cd1b9e5e0a602f295764ce6f999dd305a08b257c50eed551cea83424ace"
+    },
+    {
+      "path": "figures/figure-1.svg",
+      "bytes": 1092588,
+      "sha256": "23a296fc04798093be593e762067a7f762419b250f66008e7d5e2757a0d258e5",
+      "sourcePath": "execution-20260924/preprint-20260926/clarity-revision/molecular-panel/figure1-final.svg",
+      "sourceSha256": "23a296fc04798093be593e762067a7f762419b250f66008e7d5e2757a0d258e5"
+    },
+    {
+      "path": "figures/figure-2.pdf",
+      "bytes": 34553,
+      "sha256": "4ce73f2700ca2ada9ec8db22ca95c2718a78540ee3e4a4974712180dd1edcf30",
+      "sourcePath": "execution-20260924/preprint-20260926/readability-revision/figures/final-v2/fresh-ranking-comparison.pdf",
+      "sourceSha256": "4ce73f2700ca2ada9ec8db22ca95c2718a78540ee3e4a4974712180dd1edcf30"
+    },
+    {
+      "path": "figures/figure-2.png",
+      "bytes": 173938,
+      "sha256": "452e4a5e42abb3150540e8776fb836d574925e9b085abc93fb383612ed68fea9",
+      "sourcePath": "execution-20260924/preprint-20260926/readability-revision/figures/final-v2/fresh-ranking-comparison.png",
+      "sourceSha256": "452e4a5e42abb3150540e8776fb836d574925e9b085abc93fb383612ed68fea9"
+    },
+    {
+      "path": "figures/figure-2.svg",
+      "bytes": 122481,
+      "sha256": "bb7439b93d54f3f4acc9823ea985c8046d5d163595012cc325f5651dff5011d3",
+      "sourcePath": "execution-20260924/preprint-20260926/readability-revision/figures/final-v2/fresh-ranking-comparison.svg",
+      "sourceSha256": "bb7439b93d54f3f4acc9823ea985c8046d5d163595012cc325f5651dff5011d3"
+    },
+    {
+      "path": "figures/figure-3.pdf",
+      "bytes": 38803,
+      "sha256": "bd7467ee4ddb31088e2de029c923075935cbd287d8e44c07caf9c8e48c83c8f6",
+      "sourcePath": "execution-20260924/preprint-20260926/readability-revision/figures/final-v2/generation-comparison.pdf",
+      "sourceSha256": "bd7467ee4ddb31088e2de029c923075935cbd287d8e44c07caf9c8e48c83c8f6"
+    },
+    {
+      "path": "figures/figure-3.png",
+      "bytes": 277588,
+      "sha256": "0e224f0586d871fea25534ea952126699ef65f6d1e5685b109c0f26bc7f7434e",
+      "sourcePath": "execution-20260924/preprint-20260926/readability-revision/figures/final-v2/generation-comparison.png",
+      "sourceSha256": "0e224f0586d871fea25534ea952126699ef65f6d1e5685b109c0f26bc7f7434e"
+    },
+    {
+      "path": "figures/figure-3.svg",
+      "bytes": 168317,
+      "sha256": "9d49565e5b60e9ef0138d2689ed4a609594c41e91bbd7f2b7cc01af1e53ea132",
+      "sourcePath": "execution-20260924/preprint-20260926/readability-revision/figures/final-v2/generation-comparison.svg",
+      "sourceSha256": "9d49565e5b60e9ef0138d2689ed4a609594c41e91bbd7f2b7cc01af1e53ea132"
+    },
+    {
+      "path": "figures/figure-4.pdf",
+      "bytes": 47768,
+      "sha256": "4008bbd0789702752b599b85ab1e92e45c30c1f5b9a514f806ce2d721577af0c",
+      "sourcePath": "execution-20260924/preprint-20260926/clarity-revision/figures/followup-v1/followup.pdf",
+      "sourceSha256": "4008bbd0789702752b599b85ab1e92e45c30c1f5b9a514f806ce2d721577af0c"
+    },
+    {
+      "path": "figures/figure-4.png",
+      "bytes": 260658,
+      "sha256": "742d27f56dae35015b2e7cfca250a93d25bd6dd0419bfe855d8245b93187ed68",
+      "sourcePath": "execution-20260924/preprint-20260926/clarity-revision/figures/followup-v1/followup.png",
+      "sourceSha256": "742d27f56dae35015b2e7cfca250a93d25bd6dd0419bfe855d8245b93187ed68"
+    },
+    {
+      "path": "figures/figure-4.svg",
+      "bytes": 56057,
+      "sha256": "5584deba0e26cf066658c7eeada221e7e3457a7fab59e3c50b369acd6fae3722",
+      "sourcePath": "execution-20260924/preprint-20260926/clarity-revision/figures/followup-v1/followup.svg",
+      "sourceSha256": "5584deba0e26cf066658c7eeada221e7e3457a7fab59e3c50b369acd6fae3722"
+    },
+    {
+      "path": "source-map.json",
+      "bytes": 41619,
+      "sha256": "c0bc7d474338fe54c9535f1cd67cb545de2431ab9303a4421a63fe444d341767",
+      "sourcePath": "execution-20260924/preprint-20260926/abstract-polish/source-map.json",
+      "sourceSha256": "8950befa55f30027f54c8a2cc0f92875fa26a618c1c3512d72cc9aabafd77d9e"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import { createHistoricalReplayContext } from "../scripts/hard-decoy-v3/historical-replay-context.mjs";
 import { buildDevelopmentComparison, canonicalReceptorSignals, reproduceDomainCall, verifyDomainDevelopmentReview } from "../scripts/hard-decoy-v3/compare-domain-remainder-development.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -98,10 +99,12 @@ test("source queue retains every containing entity and publications while sensit
   }
 });
 
-test("committed comparison package replays byte-for-byte with networking disabled", async () => {
+test("committed comparison package replays byte-for-byte with networking disabled", async (t) => {
+  const historical = await createHistoricalReplayContext(ROOT);
+  t.after(historical.cleanup);
   const previous = globalThis.fetch; globalThis.fetch = async () => { throw new Error("Network forbidden in this offline review"); };
   try {
-    const result = await verifyDomainDevelopmentReview({ repositoryRoot: ROOT, outputDirectory: OUT });
+    const result = await verifyDomainDevelopmentReview({ repositoryRoot: historical.root, outputDirectory: OUT });
     assert.equal(result.positiveVhhEntityCount, 19); assert.equal(result.positiveReceptorEntryCount, 42);
     assert.equal(result.unresolvedDomainProfileCount, 0); assert.equal(result.containedAlternativeOnlyPositivePairCount, 0);
     assert.equal(result.targetFreezePermitted, false);

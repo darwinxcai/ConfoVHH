@@ -94,6 +94,9 @@ jobs:
           fi
 
           echo "publish_required=true" >> "$GITHUB_OUTPUT"
+      - name: Use npm 11.19 for release verification
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
+        run: npm install --global npm@11.19.0
       - name: Install patched product dependencies
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
         run: npm ci

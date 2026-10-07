@@ -1,0 +1,843 @@
+{
+  "schema": "confovhh-manuscript-source-map-v11-github-portable-v1",
+  "createdDate": "2026-09-26",
+  "createdUtc": "2026-09-26T19:27:33.446103+00:00",
+  "executionRoot": "local-evidence/execution-20260924",
+  "draftPath": "CONFO_VHH_WORKING_MANUSCRIPT.md",
+  "draftSha256": "cb13612e952244b0b1654df6ca661df839eba216f20d10f6d1fb1a17f5d6f62a",
+  "status": "DRAFT_NOT_SUBMITTED",
+  "scope": "Four limited prose changes: three abstract passages and the introductory definition of ConfoVHH. No scientific findings or scope changed.",
+  "previousSourceMap": {
+    "path": "local-evidence/execution-20260924/preprint-20260926/reader-revision/source-map.json",
+    "bytes": 45648,
+    "sha256": "47e939eec609f4f643c7b2b96eaba1c6344a2458af47b80051e6e6288dc9431f"
+  },
+  "sources": [
+    {
+      "id": "E01",
+      "path": "local-evidence/execution-20260924/REPORT-V3.md",
+      "executionRelativePath": "REPORT-V3.md",
+      "sha256": "2ee80f26773a2c5567fe9fc17a26bf4dfeb35e6c5bc566f8680aa3b6161b8b06",
+      "role": "Completed initial300, exposure strata, source/physical comparison, contact recovery, negative membrane result, generation/input/reference methods",
+      "locator": "lines5–46,48–70,87–113,123–127",
+      "bytes": 19007
+    },
+    {
+      "id": "E02",
+      "path": "local-evidence/execution-20260924/REPORT-V4.md",
+      "executionRelativePath": "REPORT-V4.md",
+      "sha256": "9137e039c1c666bc56ca6749010a1a74976ffee36e3d6ebd3521686f0cf1cd06",
+      "role": "Completed round4 design, generation and learned ranking results, initial negative result, reserved source-only results, limitations",
+      "locator": "lines11–22,26–71,75–95,101–107",
+      "bytes": 13750
+    },
+    {
+      "id": "E03",
+      "path": "local-evidence/execution-20260924/round4-generation/PROTOCOL.md",
+      "executionRelativePath": "round4-generation/PROTOCOL.md",
+      "sha256": "a78c77b5c92accaf49912078c49bb116a992355acf84f9593a8a83638f6d1ce0",
+      "role": "Pinned constructs, captured alignments, source/model identities and fixed generation arm definitions",
+      "bytes": 6617
+    },
+    {
+      "id": "E04",
+      "path": "local-evidence/execution-20260924/round4-ranking/PROTOCOL-DRAFT.md",
+      "executionRelativePath": "round4-ranking/PROTOCOL-DRAFT.md",
+      "sha256": "66dd0618ba4e404d35b5abea96a6d0c269cabb9d03ae6aaceccf00710f2bffa4",
+      "role": "Approved prefit method specification despite DRAFT filename: features, within-pool centering, training-only scaling, hierarchical weighting, nested group selection and gate",
+      "locator": "lines7–39",
+      "bytes": 8898
+    },
+    {
+      "id": "E05",
+      "path": "local-evidence/execution-20260924/round4-analysis/new900-analysis/comparison.json",
+      "executionRelativePath": "round4-analysis/new900-analysis/comparison.json",
+      "sha256": "82202117a92d11d3f4b3066b1f8c2631689420246ec2210fd28fd7afe1e62f76",
+      "role": "Official generation results and frozen generation decision",
+      "locator": "pools;scopes;pairGenerationDecision;missingness;methods",
+      "bytes": 210620
+    },
+    {
+      "id": "E06",
+      "path": "local-evidence/execution-20260924/round4-ranking/fit-development-1200/summary.json",
+      "executionRelativePath": "round4-ranking/fit-development-1200/summary.json",
+      "sha256": "3169d1b58802c36028b2c6a209200a30b8518c55b5c5f2d3d30060248657c318",
+      "role": "Official combined ranking gains and gate dispositions",
+      "locator": "families.confidence.nestedLearnerSupported;families.interface.nestedLearnerSupported;candidateGate",
+      "bytes": 1512
+    },
+    {
+      "id": "E07",
+      "path": "local-evidence/execution-20260924/round4-ranking/fit-development-300/summary.json",
+      "executionRelativePath": "round4-ranking/fit-development-300/summary.json",
+      "sha256": "4a4303930a6ed7e103086108e8d01f820d1fa28336b83347764f7b2ee62810c3",
+      "role": "Preserved initial negative learned-ranking result",
+      "locator": "families",
+      "bytes": 1725
+    },
+    {
+      "id": "E08",
+      "path": "local-evidence/execution-20260924/round4-reporting/reserved-summary/summary.json",
+      "executionRelativePath": "round4-reporting/reserved-summary/summary.json",
+      "sha256": "13745ca86b406b73d1977d2a767e174fc8a59a01bf97dd8726528aef1f4d3650",
+      "role": "Official final source-only reserved outcome summary",
+      "locator": "counts;policies;pools;caseQualifications;modelsFit;generalSuperiorityClaim",
+      "bytes": 9469
+    },
+    {
+      "id": "E09",
+      "path": "local-evidence/execution-20260924/direction-review-20260926/development-pool-audit.json",
+      "executionRelativePath": "direction-review-20260926/development-pool-audit.json",
+      "sha256": "596bbb21c289dc7a62b3edab407654b42686e2caa7c93a4cbe924e90bc2a729b",
+      "role": "Post hoc unweighted availability and uniform/source/hindsight counts; not a new experiment or main group-weighted metric",
+      "locator": "summary.combined48;summary.combined_pair36;summary.new36;summary.new_pair27",
+      "bytes": 21268
+    },
+    {
+      "id": "E10",
+      "path": "local-evidence/execution-20260924/direction-review-20260926/reserved-distributions.json",
+      "executionRelativePath": "direction-review-20260926/reserved-distributions.json",
+      "sha256": "94c2e8765de545620734ad146e3ccc142db6976ae8b976cbed56b84fad2c1b56",
+      "role": "Post hoc distributions and source quality ranks from saved outcomes",
+      "locator": "rows;uniform_expected_acceptable_first;hindsight_acceptable_first;source_acceptable_first",
+      "bytes": 4662
+    },
+    {
+      "id": "E11",
+      "path": "local-evidence/execution-20260924/ConfoVHH/validation/gpcr-selection-development-2026-09-05/README.md",
+      "executionRelativePath": "ConfoVHH/validation/gpcr-selection-development-2026-09-05/README.md",
+      "sha256": "286cec51ff137ee53e02cbdcde9c778166b37178bf77e1174014e52bf4b849c2",
+      "role": "Older165-model/33-job contextual audit, separate cohort and missingness",
+      "locator": "lines3–16,24–36,79–109,166–180",
+      "bytes": 9989
+    },
+    {
+      "id": "E12",
+      "path": "local-evidence/execution-20260924/ROUND4-FINAL-ARTIFACT-MAP.json",
+      "executionRelativePath": "ROUND4-FINAL-ARTIFACT-MAP.json",
+      "sha256": "04e6d65d395ff3970ffd22bc26bc1023984696d620ab3101affc210d82200bc6",
+      "role": "Complete bindings to official scientific artifacts",
+      "bytes": 3732
+    },
+    {
+      "id": "E13",
+      "path": "local-evidence/execution-20260924/ROUND4-PUBLICATION-COMPLETE.json",
+      "executionRelativePath": "ROUND4-PUBLICATION-COMPLETE.json",
+      "sha256": "c7bbf168409d33795361a86d8379a4328dce3ded8fec50db7aac45b19b37d0ae",
+      "role": "Saved publication receipt; exact draftPR67 and commit/archive identities; not a fresh remote-status claim",
+      "locator": "pullRequest;fullArchive;remoteVerification",
+      "bytes": 2920
+    },
+    {
+      "id": "E14",
+      "path": "local-evidence/execution-20260924/V4_REPLAY.md",
+      "executionRelativePath": "V4_REPLAY.md",
+      "sha256": "00ee61004e229795811c570ac8bdbdce0b1ed995159de868472b9f82d7f7a37f",
+      "role": "Replay scope and limitation: no fresh numerical DockQ rerun",
+      "bytes": 12311
+    },
+    {
+      "id": "E15",
+      "path": "local-evidence/execution-20260924/round4-benchmark/development-group-map.json",
+      "executionRelativePath": "round4-benchmark/development-group-map.json",
+      "sha256": "68e5f1de57b3f6a50193e9b4c10b230388d639ca7cd9ddd68f6a19eb18dab270",
+      "role": "Qualified biological grouping and pair eligibility",
+      "bytes": 8735
+    },
+    {
+      "id": "E16",
+      "path": "local-evidence/execution-20260924/round4-benchmark/ENROLLMENT.freeze.json",
+      "executionRelativePath": "round4-benchmark/ENROLLMENT.freeze.json",
+      "sha256": "f43d145a873d2ccf6aeae8407fabc4596584bea9a82d8402c29f6d5361f096cb",
+      "role": "Frozen reserved construct/assembly enrollment",
+      "bytes": 21572
+    },
+    {
+      "id": "E17",
+      "path": "local-evidence/execution-20260924/round4-ranking/fit-development-1200-independent-verification.json",
+      "executionRelativePath": "round4-ranking/fit-development-1200-independent-verification.json",
+      "sha256": "8e022ca124fb0bf82cbbefebb49e98769e8e2be4803bb9a9a1a61e065c4596f1",
+      "role": "Independent combined-fit audit",
+      "bytes": 1445
+    },
+    {
+      "id": "E18",
+      "path": "local-evidence/execution-20260924/round4-reporting/independent-results-review/combined1200/metrics.json",
+      "executionRelativePath": "round4-reporting/independent-results-review/combined1200/metrics.json",
+      "sha256": "abae5dbaf219b566c7889347d16b1fb00d1f69eea625a3984329904be7cde896",
+      "role": "Independent1002scalar-check result",
+      "bytes": 15741
+    },
+    {
+      "id": "E19",
+      "path": "local-evidence/execution-20260924/round4-reporting/FINAL-POLICY.json",
+      "executionRelativePath": "round4-reporting/FINAL-POLICY.json",
+      "sha256": "407c57008ec657a88b758a68564328d0265ace829543ed1f72d5addfd5647892",
+      "role": "Final pre-reserved source-only policy",
+      "bytes": 438
+    },
+    {
+      "id": "E20",
+      "path": "local-evidence/execution-20260924/round5-followup/generation/bundle-v2/PROTOCOL.md",
+      "executionRelativePath": "round5-followup/generation/bundle-v2/PROTOCOL.md",
+      "bytes": 5330,
+      "sha256": "88bd2d5765dd520cabe7573f1780d5da39901a898036d1a2a375b5b9ee301da3",
+      "role": "Fixed follow-up generation settings, 100-attempt scope, 24-hour predictor allowance and deadline."
+    },
+    {
+      "id": "E21",
+      "path": "local-evidence/execution-20260924/round5-followup/FOLLOWUP-FREEZE.json",
+      "executionRelativePath": "round5-followup/FOLLOWUP-FREEZE.json",
+      "bytes": 1443,
+      "sha256": "5917366af2d268e220160ca235ebaea808f3416da38e134c3a30359376fbc95b",
+      "role": "Parent study freeze before follow-up inference."
+    },
+    {
+      "id": "E22",
+      "path": "local-evidence/execution-20260924/round5-followup/generation/bundle-v2/GENERATION-FREEZE.json",
+      "executionRelativePath": "round5-followup/generation/bundle-v2/GENERATION-FREEZE.json",
+      "bytes": 7529,
+      "sha256": "64f9f64b8e6bfbfb26d3879402839c8051539d3ba1a86f99526c665014725a2a",
+      "role": "Final generation implementation and inputs freeze."
+    },
+    {
+      "id": "E23",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/PROTOCOL.md",
+      "executionRelativePath": "round5-followup/evaluation/PROTOCOL.md",
+      "bytes": 5903,
+      "sha256": "a04b8252efb53e8afda4136923b6c6bd8381381ee0240c93bba723c2f67bc30b",
+      "role": "Prespecified descriptive endpoints, exact confidence ties, missingness and no new adoption rule."
+    },
+    {
+      "id": "E24",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/METHOD-FREEZE.json",
+      "executionRelativePath": "round5-followup/evaluation/METHOD-FREEZE.json",
+      "bytes": 5001,
+      "sha256": "4468b8a711c387e8d021f2ea217295476fe17915a7aa14c29d7653548a18493a",
+      "role": "Frozen DockQ 2.1.3 evaluator and reference-correspondence method."
+    },
+    {
+      "id": "E25",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/INPUT-CLOSURE.json",
+      "executionRelativePath": "round5-followup/evaluation/INPUT-CLOSURE.json",
+      "bytes": 4231,
+      "sha256": "0d8fbc1eafede1542f63e72f0e4f74835db494fde3710e990afcba062495f8f1",
+      "role": "Closed all100 input membership; no unresolved or not-run attempts."
+    },
+    {
+      "id": "E26",
+      "path": "local-evidence/execution-20260924/round5-followup/recovery/raw/CLOSURE.json",
+      "executionRelativePath": "round5-followup/recovery/raw/CLOSURE.json",
+      "bytes": 48912,
+      "sha256": "20588c22a09321ab2d09f5d32ce3bed8046c4a444e64cdf7f0d00af4a351e18f",
+      "role": "Recovered producer closure: all100 attempts generated without retries."
+    },
+    {
+      "id": "E27",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/RANKING-SEAL.json",
+      "executionRelativePath": "round5-followup/evaluation/RANKING-SEAL.json",
+      "bytes": 107765,
+      "sha256": "f2197f33539736192f5b71886a9d8681a51f50bbe6c565d2fe266fd90db74ea6",
+      "role": "All100 confidence inputs and ranks fixed before experimental-reference evaluation."
+    },
+    {
+      "id": "E28",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/outcomes-100-resumed-v1/receipt.json",
+      "executionRelativePath": "round5-followup/evaluation/outcomes-100-resumed-v1/receipt.json",
+      "bytes": 23815,
+      "sha256": "a9f138cb110f7f07b8f9c55acd6496db6a6e0844fcbdb424d2df49e45c3cd0e1",
+      "role": "Final authenticated100 outcome receipt; binds all per-pose numerical artifacts and outcome map."
+    },
+    {
+      "id": "E29",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/outcomes-100-resumed-v1/outcome-map.json",
+      "executionRelativePath": "round5-followup/evaluation/outcomes-100-resumed-v1/outcome-map.json",
+      "bytes": 35584,
+      "sha256": "e60be3650628c4cd590200b7c7c591d69b4be5f17e0c9408ab7ba7b7d339e414",
+      "role": "All100 new evaluated outcomes and exact identity/coordinate membership."
+    },
+    {
+      "id": "E30",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/final-report-v1/receipt.json",
+      "executionRelativePath": "round5-followup/evaluation/final-report-v1/receipt.json",
+      "bytes": 13721,
+      "sha256": "d9310a07fb3a886face56281e67b684f8bb91a6cfe461073ecd1e0206b4147c7",
+      "role": "Final descriptive report; strict bindings to new100 and earlier50 baseline outcomes/ranks."
+    },
+    {
+      "id": "E31",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/final-report-v1/summary.json",
+      "executionRelativePath": "round5-followup/evaluation/final-report-v1/summary.json",
+      "bytes": 11679,
+      "sha256": "034f6c4921bff4dd8448557bcf897e204118b685efa62203662832ca73bc4a1d",
+      "role": "Six25-attempt pool summaries, exact first/top-five selection expectations and four baseline comparisons."
+    },
+    {
+      "id": "E32",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/final-report-v1/attempts.json",
+      "executionRelativePath": "round5-followup/evaluation/final-report-v1/attempts.json",
+      "bytes": 135844,
+      "sha256": "c030b62ecbf55ea433398b1ab04b2fa12115a9145c3b095be1d87faaba654936",
+      "role": "All150 plotted/reported attempts:100new plus50reused baseline, including original confidence and saved ranks."
+    },
+    {
+      "id": "E33",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/operational-resume-v1/RESUME-MANIFEST.json",
+      "executionRelativePath": "round5-followup/evaluation/operational-resume-v1/RESUME-MANIFEST.json",
+      "bytes": 31742,
+      "sha256": "87a668a9c0504fbc4be309791f2191be0c2a8144f2bc89c9332a2dd73a17fa1a",
+      "role": "Fixed80 reusable artifact and20 missing-artifact membership before serial continuation."
+    },
+    {
+      "id": "E34",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/operational-resume-v1/RESUME-RECEIPT.json",
+      "executionRelativePath": "round5-followup/evaluation/operational-resume-v1/RESUME-RECEIPT.json",
+      "bytes": 5182,
+      "sha256": "dcd1f8068f4f5dcade676048a59f84495d4d18801b14b52d0a3c13e43bf96d2d",
+      "role": "Actual80 reused artifacts and20 original-evaluator calls; unchanged method/seal/release and explicit earlier-unsaved-computation caveat."
+    },
+    {
+      "id": "E35",
+      "path": "local-evidence/execution-20260924/round5-followup/evaluation/operational-resume-v1/VERIFY-REPORT-COMPLETE.json",
+      "executionRelativePath": "round5-followup/evaluation/operational-resume-v1/VERIFY-REPORT-COMPLETE.json",
+      "bytes": 977,
+      "sha256": "065aa8ab772a07e74870ed573545385828b7f86cf68d11735837cc67754e0ad6",
+      "role": "Completed original verifier/report processes with final outcome/report receipt bindings."
+    },
+    {
+      "id": "E36",
+      "path": "local-evidence/execution-20260924/preprint-20260926/clarity-revision/molecular-panel/ALIGNMENT-EVIDENCE.json",
+      "executionRelativePath": "preprint-20260926/clarity-revision/molecular-panel/ALIGNMENT-EVIDENCE.json",
+      "bytes": 9967,
+      "sha256": "748cf9eed7fa35fef721eca6c21ae6b3a35999c1452e24ebd3594dff9a2e280a",
+      "role": "Matched actual GPR158 selected/best coordinates, unique common reference view, receptor-only display transform, saved metrics and omissions."
+    },
+    {
+      "id": "E37",
+      "path": "local-evidence/execution-20260924/preprint-20260926/clarity-revision/molecular-panel/fixed-correspondence.json",
+      "executionRelativePath": "preprint-20260926/clarity-revision/molecular-panel/fixed-correspondence.json",
+      "bytes": 214683,
+      "sha256": "3a528a0875c26858335281a4452160887d8c76cecfdbfff56c98e99ab7bb375d",
+      "role": "Unchanged saved per-protomer receptor and nanobody residue correspondence used for molecular display."
+    },
+    {
+      "id": "E38",
+      "path": "local-evidence/execution-20260924/preprint-20260926/clarity-revision/molecular-panel/display-atom-map.json",
+      "executionRelativePath": "preprint-20260926/clarity-revision/molecular-panel/display-atom-map.json",
+      "bytes": 4219493,
+      "sha256": "d668eb99b936aacf9bcf8e3cc75528380c8b3dfdbc3b7f12a5b6882e130fc5a4",
+      "role": "Original-to-display atom mapping for complete resolved atom roster and shared receptor-derived transformation."
+    },
+    {
+      "id": "E39",
+      "path": "local-evidence/execution-20260924/preprint-20260926/clarity-revision/molecular-panel/FINAL-EXPORT-RECEIPT.json",
+      "executionRelativePath": "preprint-20260926/clarity-revision/molecular-panel/FINAL-EXPORT-RECEIPT.json",
+      "bytes": 4364,
+      "sha256": "f747b83a5631bddf5fa79242be6dd95fa19becdef9ae213234f0fbb73cfd6054",
+      "role": "Final composite and title-only change: all numerical artists and molecular panels preserved."
+    },
+    {
+      "id": "E40",
+      "path": "local-evidence/execution-20260924/preprint-20260926/clarity-revision/figures/followup-v1/FIGURE-RECEIPT.json",
+      "executionRelativePath": "preprint-20260926/clarity-revision/figures/followup-v1/FIGURE-RECEIPT.json",
+      "bytes": 27578,
+      "sha256": "eb86a97b5bff2cde2c519729177c67bea5d8efbdfec889b9449ec5bc9324cfab",
+      "role": "All150 actual plotted follow-up values and six selected/median markers from authenticated report."
+    },
+    {
+      "id": "E41",
+      "path": "local-evidence/execution-20260924/round4-benchmark/public-sources/rcsb-entry/9VOR.json",
+      "executionRelativePath": "round4-benchmark/public-sources/rcsb-entry/9VOR.json",
+      "bytes": 12102,
+      "sha256": "0204b127fd3b615da9c92b4e77358fba10a724f5a84695980f7ce2e9b006637e",
+      "role": "Retained official RCSB9VOR title and initial release date for reference8."
+    },
+    {
+      "id": "E42",
+      "path": "local-evidence/execution-20260924/round5-followup/cloud/CLEANUP-COMPLETE.json",
+      "executionRelativePath": "round5-followup/cloud/CLEANUP-COMPLETE.json",
+      "bytes": 684,
+      "sha256": "84a69419d7eb02a9a65f052193591f9aea8ee38092621590186e29c8ec6ec6f8",
+      "role": "Recorded deletion of the owned GPU after copied output verification; no current cloud-state query."
+    },
+    {
+      "id": "E43",
+      "path": "local-evidence/execution-20260924/round5-followup/recovery/COPIED-VERIFIED.json",
+      "executionRelativePath": "round5-followup/recovery/COPIED-VERIFIED.json",
+      "bytes": 1394,
+      "sha256": "ad6963fa1325fe84af1d7f3d6b89d0d9981e13e8d9dcbcf706aafd7a2181ae83",
+      "role": "Local recovered-output verification preserved before cloud cleanup."
+    }
+  ],
+  "figures": [
+    {
+      "id": "F01",
+      "path": "figures/figure-1.svg",
+      "executionRelativePath": "preprint-20260926/clarity-revision/molecular-panel/figure1-final.svg",
+      "bytes": 1092588,
+      "sha256": "23a296fc04798093be593e762067a7f762419b250f66008e7d5e2757a0d258e5",
+      "role": "Figure1: all75 reserved baseline DockQ values plus actual GPR158 selected/best molecular overlays; same receptor-derived transform applied to Nb, common camera, resolved correspondence only, best selected retrospectively.",
+      "validationReview": {
+        "path": "local-evidence/execution-20260924/preprint-20260926/clarity-revision/molecular-panel/independent-review/INDEPENDENT-REVIEW.json",
+        "executionRelativePath": "preprint-20260926/clarity-revision/molecular-panel/independent-review/INDEPENDENT-REVIEW.json",
+        "bytes": 14260,
+        "sha256": "e507d6adf13ba7003ead3091182d0148f091d39b927000cd786b8b89b5fc997b"
+      },
+      "png": {
+        "path": "figures/figure-1.png",
+        "executionRelativePath": "preprint-20260926/clarity-revision/molecular-panel/figure1-final.png",
+        "bytes": 812578,
+        "sha256": "3adf3cd1b9e5e0a602f295764ce6f999dd305a08b257c50eed551cea83424ace"
+      },
+      "pdf": {
+        "path": "figures/figure-1.pdf",
+        "executionRelativePath": "preprint-20260926/clarity-revision/molecular-panel/figure1-final.pdf",
+        "bytes": 775102,
+        "sha256": "4eade43c49909e83dc9b8dec640e33cd1304705c25f9114fc58bfc00058b86cf"
+      }
+    },
+    {
+      "id": "F02",
+      "path": "figures/figure-2.svg",
+      "executionRelativePath": "preprint-20260926/readability-revision/figures/final-v2/fresh-ranking-comparison.svg",
+      "bytes": 122481,
+      "sha256": "bb7439b93d54f3f4acc9823ea985c8046d5d163595012cc325f5651dff5011d3",
+      "role": "Figure 2: predictor-confidence first-choice circles and frozen source-plus-contact policy first-choice diamonds (identical DockQ values), hindsight-best vertical ticks, and acceptable-candidate counts; first four calibration cases; blue GRM5/LGR4 newly outcome-tested groups. No physical-score or top-five series is plotted.",
+      "originalFigure": {
+        "path": "local-evidence/execution-20260924/round3-ranking/final-figures/fresh-ranking-comparison.svg",
+        "sha256": "453df96ffba38b653cb7520b85f529bf9046f3367777f249bc0a7e522e3fac09"
+      },
+      "validation": "Figure bytes unchanged from the bound prior source map; prior preserved plotting/visual evidence remains applicable to this figure.",
+      "png": {
+        "path": "figures/figure-2.png",
+        "executionRelativePath": "preprint-20260926/readability-revision/figures/final-v2/fresh-ranking-comparison.png",
+        "bytes": 173938,
+        "sha256": "452e4a5e42abb3150540e8776fb836d574925e9b085abc93fb383612ed68fea9"
+      },
+      "pdf": {
+        "path": "figures/figure-2.pdf",
+        "executionRelativePath": "preprint-20260926/readability-revision/figures/final-v2/fresh-ranking-comparison.pdf",
+        "bytes": 34553,
+        "sha256": "4ce73f2700ca2ada9ec8db22ca95c2718a78540ee3e4a4974712180dd1edcf30"
+      }
+    },
+    {
+      "id": "F03",
+      "path": "figures/figure-3.svg",
+      "executionRelativePath": "preprint-20260926/readability-revision/figures/final-v2/generation-comparison.svg",
+      "bytes": 168317,
+      "sha256": "9d49565e5b60e9ef0138d2689ed4a609594c41e91bbd7f2b7cc01af1e53ea132",
+      "role": "Figure 3: per-case baseline/broader/msa1024 source-first DockQ points, hindsight-best ticks, acceptable/evaluated counts; shaded CHRM1/GRM5/CASR assembly contexts outside pair selection. Case-level display, not primary group-weighted estimates.",
+      "originalFigure": {
+        "path": "local-evidence/execution-20260924/round4-analysis/figures/final-results/generation-comparison.svg",
+        "sha256": "257a75a062f4181572fc3ecea830ae166e3c10364e2d13317b112c4f10c0a37e"
+      },
+      "validation": "Figure bytes unchanged from the bound prior source map; prior preserved plotting/visual evidence remains applicable to this figure.",
+      "png": {
+        "path": "figures/figure-3.png",
+        "executionRelativePath": "preprint-20260926/readability-revision/figures/final-v2/generation-comparison.png",
+        "bytes": 277588,
+        "sha256": "0e224f0586d871fea25534ea952126699ef65f6d1e5685b109c0f26bc7f7434e"
+      },
+      "pdf": {
+        "path": "figures/figure-3.pdf",
+        "executionRelativePath": "preprint-20260926/readability-revision/figures/final-v2/generation-comparison.pdf",
+        "bytes": 38803,
+        "sha256": "bd7467ee4ddb31088e2de029c923075935cbd287d8e44c07caf9c8e48c83c8f6"
+      }
+    },
+    {
+      "id": "F04",
+      "path": "figures/figure-4.svg",
+      "executionRelativePath": "preprint-20260926/clarity-revision/figures/followup-v1/followup.svg",
+      "bytes": 56057,
+      "sha256": "5584deba0e26cf066658c7eeada221e7e3457a7fab59e3c50b369acd6fae3722",
+      "role": "Figure4:100new plus50earlier baseline predictions, six pools; all150 dots, medians, confidence-selected models,0.23threshold, acceptable counts. Post hoc follow-up on two failed cases.",
+      "validationReview": {
+        "path": "local-evidence/execution-20260924/round5-followup/evaluation/independent-claims-review/FIGURE-REVIEW.json",
+        "executionRelativePath": "round5-followup/evaluation/independent-claims-review/FIGURE-REVIEW.json",
+        "bytes": 1970,
+        "sha256": "1ebc973d88f3a976d085847796a62dda45c047a4f65cad08dfd0da78ea3f1d1b"
+      },
+      "png": {
+        "path": "figures/figure-4.png",
+        "executionRelativePath": "preprint-20260926/clarity-revision/figures/followup-v1/followup.png",
+        "bytes": 260658,
+        "sha256": "742d27f56dae35015b2e7cfca250a93d25bd6dd0419bfe855d8245b93187ed68"
+      },
+      "pdf": {
+        "path": "figures/figure-4.pdf",
+        "executionRelativePath": "preprint-20260926/clarity-revision/figures/followup-v1/followup.pdf",
+        "bytes": 47768,
+        "sha256": "4008bbd0789702752b599b85ab1e92e45c30c1f5b9a514f806ce2d721577af0c"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "section": "Study design; Table 1",
+      "claim": "300 initial +900 expanded development +75 reserved +100 targeted follow-up =1375 unique generated predictions. Combined development remains1200 rows/48pools/11groups, with nine pair cases/eightgroups. Follow-up analysis150 rows reuses50 of the75 reserved baseline predictions; those50 are not counted twice.",
+      "sources": [
+        "E01",
+        "E02",
+        "E15",
+        "E31",
+        "E32"
+      ]
+    },
+    {
+      "section": "Methods: generation",
+      "claim": "Fixed constructs, assembly, captured alignments, and checkpoint; step scales 1.5 and 1.0; MSA limit 1,024; three recycles, 200 steps, one sample; seeds 25–49.",
+      "sources": [
+        "E03"
+      ]
+    },
+    {
+      "section": "Methods: ranking",
+      "claim": "Four confidence features plus three contact features; centered ridge; penalty grid 0.01, 0.1, 1, 10; nested group folds; training-only scales; hierarchical weights; source fallback; 0.020 gate.",
+      "sources": [
+        "E04",
+        "E15"
+      ]
+    },
+    {
+      "section": "Results: round3",
+      "claim": "Source acceptable first in 6/8 cases; zero contact-policy gain; matched source/physical comparison 5/5 versus 3/5; negative nonzero overrides; 75/200 contact recovery.",
+      "sources": [
+        "E01"
+      ]
+    },
+    {
+      "section": "Table2",
+      "claim": "Group-weighted generation metrics and unweighted acceptable-candidate counts.",
+      "sources": [
+        "E02",
+        "E05"
+      ]
+    },
+    {
+      "section": "Table3",
+      "claim": "Combined nested gain +0.016867 and +0.006002; no acceptable rescues or losses; no promotion; initial 300 negative; procedure fallback counts.",
+      "sources": [
+        "E02",
+        "E06",
+        "E07",
+        "E17",
+        "E18"
+      ]
+    },
+    {
+      "section": "Results: candidate availability; Supplementary Table S1",
+      "claim": "Combined 48 pools: 18 all acceptable, 14 none acceptable, 16 mixed; uniform 25.24, source 30, hindsight 34. Pair 36: 14/10/12, with uniform/source/hindsight 20.92/25/26. New cohorts also reported.",
+      "sources": [
+        "E09"
+      ]
+    },
+    {
+      "section": "Supplementary results: older retrospective analysis",
+      "claim": "Older cohort: 165 models, 33 five-model jobs, 15 conditions, four references, three receptor targets; 16/13/4 availability classes; uniform expectation 18 and hindsight 20; 85 missing coordinates; correlated jobs.",
+      "sources": [
+        "E11"
+      ]
+    },
+    {
+      "section": "Table4",
+      "claim": "Reserved: three pools of 25; source only; acceptable counts 0/24/0; minimum, median, maximum and source quality ranks 25/24/2.",
+      "sources": [
+        "E02",
+        "E08",
+        "E10",
+        "E19"
+      ]
+    },
+    {
+      "section": "Limitations",
+      "claim": "ADGRV1 mouse construct with 255/426 receptor and 107/147 nanobody residues resolved; GPR158 local density limitation; MC4R six-protein context, 729-residue receptor, 85/117 nanobody coverage; training novelty uncertified.",
+      "sources": [
+        "E02",
+        "E08",
+        "E16"
+      ]
+    },
+    {
+      "section": "Data/code availability",
+      "claim": "Draft PR 67, commit 21afb63518a3846bb80612924967489f9fbafe12; full archive hash; replay scope. The earlier archive excludes the subsequent100-prediction follow-up and molecular illustrations; current records remain separately local and a public DOI is pending.",
+      "sources": [
+        "E12",
+        "E13",
+        "E14"
+      ]
+    },
+    {
+      "section": "Abstract",
+      "claim": "Largest group-weighted first-choice DockQ gain among expanded generation and combined learned-ranking comparisons rounds to 0.017; prespecified requirement is 0.020. Initial learned comparison remains explicitly negative.",
+      "sources": [
+        "E04",
+        "E05",
+        "E06",
+        "E07"
+      ]
+    },
+    {
+      "section": "Abstract; targeted follow-up Results; Table5; Figure4",
+      "claim": "All100new and50earlier baseline predictions evaluated. ADGRV1 broader sampling yields1/25acceptable (DockQ0.23368937964899064), confidence rank17; otherthree new pools0/25. No acceptable first or top-five choice in any of the six pools. ADGRV1 medians0.067/0.059/0.057 and MC4R newmaximum0.009 at three-decimal display precision.",
+      "sources": [
+        "E31",
+        "E32"
+      ]
+    },
+    {
+      "section": "Methods; Supplementary targeted follow-up",
+      "claim": "Two previously unsuccessful targets, two fixed alternatives, seeds0–24,100attempt cap,24-hour singleGPU predictor allowance and fixed deadline; no native inputs, new learned ranker, new adoption criterion or production policy change. Post hoc target choice, not independent validation.",
+      "sources": [
+        "E20",
+        "E21",
+        "E23"
+      ]
+    },
+    {
+      "section": "Supplementary scoring recovery",
+      "claim": "An interrupted scoring invocation left80 authenticated reusable artifacts;20missing-artifact models evaluated serially with unchanged numerical method, seal and release. Earlier unsaved calculations may have completed. No additional predictions or outcome-based changes.",
+      "sources": [
+        "E33",
+        "E34",
+        "E35"
+      ]
+    },
+    {
+      "section": "Figure1; Supplementary molecular illustration",
+      "claim": "Actual GPR158 seed14 confidence-selected model and seed04 retrospective best share unique maximizing R-AB/V-E reference. One1081-receptor-CA proper rigid fit, applied unchanged to Nb; no separateNbfit. Display residuals8.256/8.379Å differ from DockQ fitting. Only541+540receptor and121Nb corresponding residues displayed. Saved native-contact recovery12/30 versus11/30; no contact improvement claimed.",
+      "sources": [
+        "E36",
+        "E37",
+        "E38",
+        "E10",
+        "E16"
+      ]
+    },
+    {
+      "section": "Title; Abstract; opening Results; Discussion; Figure 1",
+      "claim": "Confidence can overlook better or sole acceptable candidates. Retrospective acceptable selection conditional on availability does not establish prospective detection of acceptable-candidate availability or a failure-warning rule. Figure 1 C recovers11/30 contacts versus B12/30; higher composite DockQ is not a claim of more native contacts.",
+      "review": {
+        "path": "local-evidence/execution-20260924/preprint-20260926/takeaway-revision/CLAIM-REVIEW.json",
+        "bytes": 3134,
+        "sha256": "994adcd88c190a04a5df08e2de490959d3c623909cb0f1d54ad1993c2677ded9"
+      }
+    },
+    {
+      "section": "Abstract; Introduction; Results; Discussion; Limitations",
+      "claim": "In this benchmark, acceptable-or-unacceptable scoring hid a ranking error: GPR158 had24/25acceptable models but confidence selected the24th-highestDockQmodel, leaving .130DockQrelative to retrospectivebest. This does not establish confidence as a detector of acceptable-candidate existence. All material limitations retained.",
+      "review": {
+        "path": "local-evidence/execution-20260924/preprint-20260926/argument-revision/CLAIM-REVIEW.json",
+        "bytes": 3244,
+        "sha256": "98fb241bbfdf3d8195c50647e6cff20569a073f8692b8ff4498071ff98fd5247"
+      }
+    },
+    {
+      "section": "Abstract; Results section leads",
+      "claim": "All existing quantitative findings and scope preserved while explaining the experiment and outcomes for a structural biologist unfamiliar with predictors.",
+      "review": {
+        "path": "local-evidence/execution-20260924/preprint-20260926/reader-revision/CLAIM-REVIEW.json",
+        "bytes": 4039,
+        "sha256": "8d9c494b11e125190598eba20fb1b4fd8ce618016baa8be57cc240231a90248a"
+      }
+    },
+    {
+      "section": "Abstract; final Introduction paragraph",
+      "claim": "Plain-language wording retains all numerical findings and scope; no superiority or prospective failure-warning claim is added.",
+      "review": {
+        "path": "local-evidence/execution-20260924/preprint-20260926/abstract-polish/CLAIM-REVIEW.json",
+        "bytes": 2097,
+        "sha256": "46bfee801618ea4ba8232d642ad9112fbc02fad55bffa4cb723f2062885d3834"
+      }
+    }
+  ],
+  "references": [
+    {
+      "number": 1,
+      "doi": "10.1038/s41467-024-49000-x",
+      "url": "https://www.nature.com/articles/s41467-024-49000-x",
+      "verified": "Class A focus; Figure 2d: 54 structures and 16 nonredundant structures; 2024, Nature Communications 15:4611."
+    },
+    {
+      "number": 2,
+      "doi": "10.1038/s41586-024-07487-w",
+      "url": "https://www.nature.com/articles/s41586-024-07487-w",
+      "verified": "AF3 all-atom model; 2024, Nature 630:493–500."
+    },
+    {
+      "number": 3,
+      "doi": "10.1101/2025.06.14.659707",
+      "url": "https://www.biorxiv.org/content/10.1101/2025.06.14.659707v1",
+      "verified": "Original Boltz-2 preprint; 2025; Passaro, Corso, Wohlwend et al."
+    },
+    {
+      "number": 4,
+      "doi": "10.1080/19420862.2025.2545601",
+      "url": "https://www.tandfonline.com/doi/10.1080/19420862.2025.2545601",
+      "alternate": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12360200/",
+      "verified": "Published title and authors; antibody/nanobody docking and confidence; 2025, mAbs 17:2545601."
+    },
+    {
+      "number": 5,
+      "doi": "10.1038/s41467-025-67127-3",
+      "url": "https://www.nature.com/articles/s41467-025-67127-3",
+      "verified": "1,522 assemblies and nine tasks; online 2025-12-04; version of record 2026-01-13; Nature Communications 17:442."
+    },
+    {
+      "number": 6,
+      "doi": "10.1038/s41467-026-72093-5",
+      "url": "https://www.nature.com/articles/s41467-026-72093-5",
+      "verified": "Harvey, Smith and Hurley are co-first authors; 32 validated GPCR binder pairs and 127 permuted negative-control pairs; the latter are not all experimentally validated nonbinders. Nature Communications 17:5641 (2026)."
+    },
+    {
+      "number": 7,
+      "doi": "10.1093/bioinformatics/btae586",
+      "url": "https://academic.oup.com/bioinformatics/article/40/10/btae586/7796530",
+      "verified": "DockQ v2 continuous interface quality; 2024, Bioinformatics 40(10):btae586."
+    },
+    {
+      "number": 8,
+      "doi": "10.2210/pdb9VOR/pdb",
+      "url": "https://www.rcsb.org/structure/9VOR",
+      "verified": "Retained official RCSB record: Cryo-EM Structure of Human GPR158 Bound to Nanobody Nb20; initial release31December2025.",
+      "sourceId": "E41"
+    }
+  ],
+  "referenceVerificationScope": "References1–7 retain verification recorded in the bound prior map; reference8 checked against the retained official RCSB record. This packaging step did not repeat external literature searches.",
+  "counts": {
+    "uniqueGeneratedPredictions": 1375,
+    "components": {
+      "initial": 300,
+      "expandedDevelopment": 900,
+      "reservedBaseline": 75,
+      "targetedFollowupNew": 100
+    },
+    "combinedDevelopmentPredictions": 1200,
+    "combinedDevelopmentPools": 48,
+    "followupComparedAttempts": 150,
+    "followupNewAttempts": 100,
+    "followupEarlierBaselineReused": 50,
+    "followupPools": 6,
+    "followupNewPools": 4,
+    "followupTargets": 2,
+    "followupEvaluatedAttempts": 150,
+    "followupMissingOutcomes": 0,
+    "reusedComparatorsIncludedInReserved75": true,
+    "seedsDoNotCreateIndependentTargetGroups": true
+  },
+  "completedFollowup": {
+    "status": "COMPLETED_GENERATION_EVALUATION_AND_REPORT",
+    "targetSelection": "Post hoc after observing baseline failures; not restored reserved status or independent validation.",
+    "targets": [
+      "ADGRV1_RE02",
+      "MC4R_PN162"
+    ],
+    "newArms": [
+      "broader",
+      "msa1024"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "newPredictions": 100,
+    "baselineComparators": 50,
+    "all150OutcomesEvaluated": true,
+    "sourceRanksSealedBeforeNewReferenceEvaluation": true,
+    "generationRecovery": "One marginally acceptable ADGRV1 broader candidate out of25; confidence rank17.",
+    "selectionRecovery": false,
+    "newModelFit": false,
+    "newAdoptionCriterion": false,
+    "productionDefaultChanged": false,
+    "serialRecovery": {
+      "savedResultsReused": 80,
+      "originalEvaluatorInvocationsForMissingArtifacts": 20,
+      "earlierUnsavedCalculationsMayHaveCompleted": true
+    },
+    "sources": [
+      "E30",
+      "E34"
+    ]
+  },
+  "validation": {
+    "status": "PASS",
+    "abstractWords": 280,
+    "pages": 18,
+    "mainTables": 5,
+    "supplementaryTables": 1,
+    "figures": 4,
+    "sourcePreservation": {
+      "path": "local-evidence/execution-20260924/preprint-20260926/abstract-polish/SOURCE-PRESERVATION.json",
+      "bytes": 15991,
+      "sha256": "3039cb1dd51e044618400babf0454fb2849a111e42e883a9bbd628c8365a370a"
+    },
+    "contentReview": {
+      "path": "local-evidence/execution-20260924/preprint-20260926/abstract-polish/CONTENT-REVIEW.json",
+      "bytes": 882,
+      "sha256": "fbf7e2b299592adba940b01efae9cdef023b3a4da402aa8356bd0e84d8ed7825"
+    },
+    "manuscriptClaimReview": {
+      "path": "local-evidence/execution-20260924/preprint-20260926/abstract-polish/CLAIM-REVIEW.json",
+      "bytes": 2097,
+      "sha256": "46bfee801618ea4ba8232d642ad9112fbc02fad55bffa4cb723f2062885d3834"
+    },
+    "visualReview": {
+      "path": "local-evidence/execution-20260924/preprint-20260926/abstract-polish/VISUAL-REVIEW.json",
+      "bytes": 12806,
+      "sha256": "daca42d08953244e95033db1f753fc8628c9ca958592bbe22d43edcc3bd9775d"
+    },
+    "priorScientificReviews": "Preserved and bound in previousSourceMap."
+  },
+  "administrativeStatus": {
+    "authorName": "Dong Wang Darwin Cai",
+    "affiliation": "Independent researcher",
+    "correspondingEmail": "darwinxcai@gmail.com",
+    "funding": "Author confirmation pending",
+    "acknowledgements": "Author confirmation and permissions pending",
+    "publicArchiveDoi": "PENDING DEPOSIT",
+    "publicDepositCoveringThisRevisionClaimed": false,
+    "completedHumanFinalReviewClaimed": false
+  },
+  "revisionChanges": [
+    "Split the initial learned-rule result from later development gains.",
+    "Simplified the conditional25/26 result while retaining pair-only scope, retrospective status and repeated eight-group caveat.",
+    "Replaced supported-default phrasing with the criterion-based reason confidence was retained.",
+    "Defined ConfoVHH as scripts used to run and compare predictions."
+  ],
+  "sourceDraftSha256": "79e77d7cb627c3a70a1d0157dfe9e13c8d4f22e5b6ace4349bfcdfcad849d401",
+  "githubPackaging": {
+    "date": "2026-10-07",
+    "sourceMapSha256": "8950befa55f30027f54c8a2cc0f92875fa26a618c1c3512d72cc9aabafd77d9e",
+    "scope": "Four manuscript figure URLs and source-map path portability only. Scientific text, figures, PDF and DOCX are unchanged from the verified September 26 revision.",
+    "pathBase": "Published artifact paths are relative to paper/.",
+    "localEvidenceReferences": "local-evidence/ identifies retained workspace evidence, not files included in this GitHub package or downloadable links. executionRelativePath fields are identifiers within the original execution archive.",
+    "verificationScope": "Historical validation records refer to the original reviewed draft and evidence. The changed Markdown links and copied artifact hashes were checked again during packaging; no scientific analyses or external literature checks were rerun.",
+    "completeDatasetIncluded": false,
+    "submitted": false,
+    "publicArchiveDoiPending": true
+  }
+}
