@@ -1,19 +1,23 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, realpath, rm, writeFile } from "node:fs/promises";
+import os from "node:os";
 import path from "node:path";
 import test from "node:test";
+import { createHistoricalReplayContext } from "../scripts/hard-decoy-v3/historical-replay-context.mjs";
 
 import {
   EXPECTED_STATE_SHA256,
   STATE_RELATIVE,
   validateBlockedState,
-  verifyIntegrationState,
 } from "../scripts/hard-decoy-v3/verify-integration-state.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 
-test("the authoritative v3 integration state replays every current pre-label evidence layer and stays blocked", async () => {
-  const result = await verifyIntegrationState(ROOT);
+test("the authoritative v3 integration state replays every historical pre-label evidence layer and stays blocked", async (t) => {
+  const historical = await createHistoricalReplayContext(ROOT);
+  t.after(historical.cleanup);
+  const { verifyIntegrationState } = await historical.importModule("scripts/hard-decoy-v3/verify-integration-state.mjs");
+  const result = await verifyIntegrationState(historical.root);
   assert.deepEqual(result, {
     status: "DRAFT",
     targetFreezeGate: "BLOCKED",
@@ -50,6 +54,15 @@ test("the authoritative v3 integration state replays every current pre-label evi
     executionAuthorized: false,
   });
   assert.match(EXPECTED_STATE_SHA256, /^[a-f0-9]{64}$/u);
+});
+
+test("historical replay rejects a changed archived dependency lock before reconstructing evidence", async (t) => {
+  const temporary = await realpath(await mkdtemp(path.join(os.tmpdir(), "confovhh-bad-historical-lock-")));
+  t.after(() => rm(temporary, { recursive: true, force: true }));
+  const archive = path.join(temporary, "validation/historical-dependencies/hard-decoy-v3");
+  await mkdir(archive, { recursive: true });
+  await writeFile(path.join(archive, "package-lock.json"), "{}\n");
+  await assert.rejects(createHistoricalReplayContext(temporary), /Archived historical dependency lock digest drifted/u);
 });
 
 test("the integration-state policy rejects authority, label access, count drift, and threshold relaxation", async () => {

@@ -3,45 +3,18 @@
   "minimumSeverity": "moderate",
   "allowed": [
     {
-      "advisory": "GHSA-c83g-rgw3-j3cx",
-      "package": "browserslist",
+      "advisory": "GHSA-vfj7-8cjw-p6xm",
+      "package": "braces",
       "severity": "high",
       "scope": "development-only",
       "reachableFrom": [
-        "eslint-config-next > eslint-plugin-react-hooks > @babel/core > @babel/helper-compilation-targets",
-        "react-server-dom-webpack > webpack"
+        "eslint-config-next > @next/eslint-plugin-next > fast-glob > micromatch",
+        "vinext > vite-plugin-commonjs > vite-plugin-dynamic-import > fast-glob > micromatch"
       ],
-      "justification": "Unbounded memory growth in browserslist query caching. browserslist runs only while linting and bundling, over queries committed in this repository, and is absent from the production dependency tree, so no ConfoVHH user is exposed. The fix requires bumping the root lockfile, whose SHA-256 is bound into the frozen pre-label numbering contract at validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json. That freeze exists so the analysis environment cannot move before the hard-decoy holdout is labelled and executed.",
-      "resolution": "Apply the dependency bump at the next pre-registration window, together with the artifact regeneration the frozen contract requires.",
-      "recordedOn": "2026-09-02",
-      "reviewBy": "2026-12-01"
-    },
-    {
-      "advisory": "GHSA-73wf-gq98-2v4g",
-      "package": "browserslist",
-      "severity": "high",
-      "scope": "development-only",
-      "reachableFrom": [
-        "eslint-config-next > eslint-plugin-react-hooks > @babel/core > @babel/helper-compilation-targets",
-        "react-server-dom-webpack > webpack"
-      ],
-      "justification": "Crash and prototype write when browserslist parses an untrusted browserslist-stats.json. This repository ships no browserslist-stats.json and never parses one from an external source. As above, browserslist is build-time only and absent from the production dependency tree.",
-      "resolution": "Apply the dependency bump at the next pre-registration window, together with the artifact regeneration the frozen contract requires.",
-      "recordedOn": "2026-09-02",
-      "reviewBy": "2026-12-01"
-    },
-    {
-      "advisory": "GHSA-px8p-9vwx-vf98",
-      "package": "fflate",
-      "severity": "moderate",
-      "scope": "development-only",
-      "reachableFrom": [
-        "vinext > @vercel/og > satori > @shuding/opentype.js"
-      ],
-      "justification": "fflate unzipSync can enter an infinite loop on a malformed ZIP64 archive. ConfoVHH never reaches that code. fflate is pulled in only by vinext's Open Graph image generation, through satori's font parser; vinext is a devDependency that serves the local dev server, the shipped artifact is the static SPA built by vite build --config vite.vercel.config.ts, and `npm ls fflate --omit=dev` is empty. No ConfoVHH source file references fflate or unzipSync, and the product accepts coordinate and PAE files rather than archives, so there is no path by which a user-supplied ZIP reaches this parser. The fix requires bumping the root lockfile, whose SHA-256 (0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54) is bound into the frozen pre-label numbering contract at validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json. That freeze exists so the analysis environment cannot move before the hard-decoy holdout is labelled and executed.",
-      "resolution": "Apply the dependency bump at the next pre-registration window, together with the artifact regeneration the frozen contract requires.",
-      "recordedOn": "2026-09-03",
-      "reviewBy": "2026-12-01"
+      "justification": "No patched braces release is listed as of 2026-10-07. The affected deeply nested glob patterns reach braces through lint/build configuration and repository source/import expressions, not uploaded molecular data; braces and its callers are absent from the production dependency tree. Malicious pull-request source or configuration could still exhaust a CI/build process, so this exception accepts that bounded availability risk, not a claim that the vulnerability is fixed or unreachable. Existing CI timeouts and read-only workflow permissions bound that risk. Production reachability must continue to fail this gate.",
+      "resolution": "Recheck upstream and replace or patch the affected development dependency before reviewBy; do not extend automatically. The original historical dependency lock is preserved separately for scientific-record replay.",
+      "recordedOn": "2026-10-07",
+      "reviewBy": "2026-11-06"
     }
   ]
 }

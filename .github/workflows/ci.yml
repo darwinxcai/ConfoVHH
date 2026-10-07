@@ -42,7 +42,7 @@ jobs:
         run: npm run test:release
       - name: Replay blocked hard-decoy v3 integration state
         run: |
-          node scripts/hard-decoy-v3/verify-integration-state.mjs
+          node scripts/hard-decoy-v3/replay-historical-integration-state.mjs
           node --test validation/hard-decoy-holdout-v3/census-audit-2026-08-29/verify.test.mjs
 
   core-coverage:
