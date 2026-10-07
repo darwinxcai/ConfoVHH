@@ -31,6 +31,9 @@ jobs:
           node-version: ${{ matrix.node }}
           cache: npm
           cache-dependency-path: package-lock.json
+      # npm 10 SBOM rejects the scoped patch overrides; use the verified npm 11 toolchain on both Node versions.
+      - name: Use npm 11.19 for release verification
+        run: npm install --global npm@11.19.0
       - name: Install patched product dependencies
         run: npm ci
       - name: Verify dependency graph and advisories
