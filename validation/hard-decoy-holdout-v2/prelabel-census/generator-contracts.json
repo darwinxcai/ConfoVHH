@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "FROZEN-CONTRACT-BLOCKED-EXECUTION",
+  "nativeRelativePoseForbidden": true,
+  "nativeInterfaceResiduesForbidden": true,
+  "nativeReceptorFaceForbidden": true,
+  "dockqFeedbackForbidden": true,
+  "confovhhFeedbackForbidden": true,
+  "templates": "disabled",
+  "commonMsaPolicy": {
+    "retrieval": "one serial ColabFold/MMseqs2 retrieval per unique frozen chain, then offline reuse",
+    "liveRetrievalDuringFinalGeneration": false,
+    "rawA3mSha256Required": true,
+    "requestAndResponseLedgerRequired": true,
+    "targetSpecificTuning": false
+  },
+  "seedDerivation": {
+    "namespace": "ConfoVHH-H2-generators-v1\\u0000",
+    "formula": "uint31(first_8_bytes(SHA256(namespace || canonicalTargetId)))",
+    "replacementSeedsAllowed": false
+  },
+  "generators": [
+    {
+      "id": "colabfold-1.6.2-afmultimer-v3",
+      "kind": "learned-complex-prediction",
+      "implementation": "ColabFold",
+      "version": "1.6.2",
+      "gitCommit": "c7d1772352cc9619df25c6d36cb0f218c0c6610e",
+      "sourceUrl": "https://github.com/sokrypton/ColabFold/tree/c7d1772352cc9619df25c6d36cb0f218c0c6610e",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/sokrypton/ColabFold/blob/c7d1772352cc9619df25c6d36cb0f218c0c6610e/LICENSE",
+      "alphaFoldCodeLicense": "Apache-2.0",
+      "alphaFoldParameterLicense": "CC-BY-4.0",
+      "container": {
+        "reference": "ghcr.io/sokrypton/colabfold:1.6.2-cuda12",
+        "indexDigest": "sha256:22f1243a8feca427b6942889d4dc3b549a3b75b23df9cf85c5f512a85e4f7f77",
+        "linuxAmd64ManifestDigest": "sha256:fd2eddea1cbc8efb21e6980e76e67e0eccfe1f2f4e833304be10dfd3ca6d180d",
+        "retrievedDateUtc": "2026-08-28"
+      },
+      "modelType": "AlphaFold-Multimer-v3",
+      "attemptsPerTarget": 200,
+      "strata": [
+        {
+          "id": "standard",
+          "seedOffsets": [0, 19],
+          "modelsPerSeed": 5,
+          "dropout": false,
+          "maxSeq": null,
+          "maxExtraSeq": null
+        },
+        {
+          "id": "diversity",
+          "seedOffsets": [100, 119],
+          "modelsPerSeed": 5,
+          "dropout": true,
+          "maxSeq": 128,
+          "maxExtraSeq": 256,
+          "disableClusterProfile": true
+        }
+      ],
+      "fixedOptions": {
+        "numRecycle": 3,
+        "templates": false,
+        "relaxation": false,
+        "earlyStopping": false,
+        "pairMode": "unpaired_paired",
+        "retainEveryModel": true
+      },
+      "producerScore": {
+        "field": "ranking_confidence",
+        "direction": "higher-is-better",
+        "alsoRetain": ["iptm", "ptm", "pae", "plddt"]
+      }
+    },
+    {
+      "id": "boltz-2.2.1",
+      "kind": "learned-diffusion-complex-prediction",
+      "implementation": "Boltz-2",
+      "version": "2.2.1",
+      "gitCommit": "cb04aeccdd480fd4db707f0bbafde538397fa2ac",
+      "sourceUrl": "https://github.com/jwohlwend/boltz/tree/cb04aeccdd480fd4db707f0bbafde538397fa2ac",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/jwohlwend/boltz/blob/cb04aeccdd480fd4db707f0bbafde538397fa2ac/LICENSE",
+      "pythonArtifact": {
+        "filename": "boltz-2.2.1-py3-none-any.whl",
+        "bytes": 268390,
+        "sha256": "b8c62bbdede1922931d9203118f62c858f11aa699bf91fd4c05a5ed6a6d8b4fc",
+        "url": "https://files.pythonhosted.org/packages/98/55/3eb80fdcf250a0d7bcfcccb584cae200d820fcc158dcdf3f2dbfa4662811/boltz-2.2.1-py3-none-any.whl"
+      },
+      "checkpoint": {
+        "filename": "boltz2_conf.ckpt",
+        "bytes": 2286561469,
+        "huggingFaceLfsSha256": "090e82ac8c92f5e943fa1b39e7410a44027bea7243c0bbb3caa67a77fc1428e1",
+        "repositoryCommit": "6fdef46d763fee7fbb83ca5501ccceff43b85607",
+        "url": "https://huggingface.co/boltz-community/boltz-2/resolve/6fdef46d763fee7fbb83ca5501ccceff43b85607/boltz2_conf.ckpt",
+        "fullLocalSha256VerificationRequiredBeforeGeneration": true
+      },
+      "trainingCutoff": "2023-06-01",
+      "attemptsPerTarget": 200,
+      "seedOffsets": [1000, 1007],
+      "samplesPerSeed": 25,
+      "fixedOptions": {
+        "recyclingSteps": 3,
+        "samplingSteps": 200,
+        "diffusionSamples": 25,
+        "maxParallelSamples": 5,
+        "stepScale": 1.5,
+        "usePotentials": true,
+        "writeFullPae": true,
+        "templates": false,
+        "retainEverySample": true
+      },
+      "producerScore": {
+        "field": "confidence_score",
+        "direction": "higher-is-better",
+        "rawScaleComparableAcrossGenerators": false
+      },
+      "environmentImageDigest": null,
+      "environmentImageDigestStatus": "BLOCKER-BEFORE-TARGETS-FROZEN"
+    }
+  ],
+  "attemptLedgerRequiredFields": [
+    "attemptId",
+    "targetId",
+    "generatorId",
+    "generatorVersion",
+    "environmentDigest",
+    "checkpointDigest",
+    "inputSequenceDigests",
+    "msaDigests",
+    "seed",
+    "configurationDigest",
+    "commandDigest",
+    "startedUtc",
+    "finishedUtc",
+    "cpuSeconds",
+    "gpuSeconds",
+    "peakRamBytes",
+    "peakVramBytes",
+    "exitStatus",
+    "stdoutSha256",
+    "stderrSha256",
+    "rawOutputSha256",
+    "canonicalCoordinateSha256",
+    "eligibility",
+    "failureReason"
+  ],
+  "failedAttemptPolicy": "retain-in-denominator-no-replacement",
+  "primaryPopulation": "all-prelabel-eligible-outputs-from-both-required-generators"
+}

@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "METADATA_ONLY_DISPOSITION_SEED_RULE_FROZEN",
+  "snapshotDateUtc": "2026-08-29",
+  "sourceUniverse": {
+    "directory": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29",
+    "identifierListFile": "normalized/rcsb-gpcrdb-intersection.txt",
+    "ledgerFile": "source-universe.jsonl",
+    "identifierCount": 287,
+    "identifierListSha256": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7"
+  },
+  "entryMetadata": {
+    "directory": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29",
+    "entryLedgerFile": "entries.jsonl",
+    "triageLedgerFile": "triage-signals.jsonl",
+    "entryCount": 287,
+    "triageReviewStrataAreNotScientificDispositions": true
+  },
+  "developmentRegistry": {
+    "path": "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json",
+    "expectedStructureCount": 17,
+    "requiredStructureIds": [
+      "3P0G",
+      "4MQS",
+      "4XT1",
+      "5C1M",
+      "5JQH",
+      "6B73",
+      "6DO1",
+      "6IBL",
+      "6KNM",
+      "6O3C",
+      "6RNK",
+      "6VI4",
+      "7L1V",
+      "7YM8",
+      "8FCZ",
+      "8QOT",
+      "8QW4"
+    ],
+    "evidenceCommit": "8d6b27a104811c813b4769f8ec7c3a973d5f2a35",
+    "exactPdbReuseRule": {
+      "ruleId": "EXACT_DEVELOPMENT_PDB_REUSE",
+      "dispositionCode": "EXCLUDE_RECEPTOR_CLUSTER_LEAKAGE",
+      "receptorClusterStatus": "FAIL",
+      "otherTriStateFields": "UNRESOLVED",
+      "automaticResolutionPermitted": true
+    }
+  },
+  "defaultRule": {
+    "ruleId": "NO_AUTOMATIC_SCIENTIFIC_DISPOSITION",
+    "dispositionCode": "PENDING_REQUIRED_METADATA",
+    "allTriStateFields": "UNRESOLVED",
+    "automaticProvisionalTargetAssignmentPermitted": false,
+    "automaticAuxiliaryOrConstructExclusionPermitted": false
+  },
+  "metadataDerivation": {
+    "sourceQueryIds": "copy-sorted-unique-rcsbQueryIds-from-source-universe",
+    "releaseDate": "copy-entry-releaseDate-or-null",
+    "publicationStatus": {
+      "doiOrPmidPresent": "PUBLISHED",
+      "otherwise": "UNKNOWN",
+      "missingIdentifierMustNotImplyUnpublished": true
+    },
+    "receptorEntity": "use-only-when-preferred-auth-chain-maps-to-exactly-one-polymer-entity",
+    "receptorUniProt": "use-only-when-selected-receptor-has-exactly-one-UniProt-reference-accession",
+    "vhhEntity": "use-only-when-metadata-triage-identifies-exactly-one-vhh-like-polymer-entity",
+    "annotationEpitope": null
+  },
+  "serialization": {
+    "pdbIdPattern": "^[0-9][A-Z0-9]{3}$",
+    "rowOrder": "pdbId-bytewise-ascending",
+    "jsonObjectKeys": "recursive-bytewise-ascending",
+    "jsonlTerminalLf": true,
+    "digest": "SHA-256"
+  },
+  "output": {
+    "directoryName": "disposition-seed-2026-08-29",
+    "requiredFiles": [
+      "README.md",
+      "checksums.sha256",
+      "entry-dispositions.jsonl",
+      "manifest.json",
+      "summary.json"
+    ]
+  },
+  "integrity": {
+    "oneRowPerSourceEntry": true,
+    "exactSourceCoverageRequired": true,
+    "nativeCoordinatesForbidden": true,
+    "nativeRelativePoseInspectionForbidden": true,
+    "dockqCapriLabelsForbidden": true,
+    "confovhhHoldoutScoresForbidden": true,
+    "performanceResultsForbidden": true,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false
+  }
+}

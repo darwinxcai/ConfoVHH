@@ -1,0 +1,503 @@
+{
+  "schemaVersion": "1.0.0",
+  "pdbId": "7Y89",
+  "scope": "Species-annotation and deposited receptor sequence follow-up; no formal disposition change",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-priority-review-2026-09-04/source-reviews.json": "b2cc22d3261dfbeb861af09ed1f5e65fe3ba168063ba4deee61e6eca49610f9d"
+  },
+  "replayScriptSha256": "f3fb02d79975b3e15bb16a09f7cfac7e6dddae4a3a3a5be0002a87992d90003a",
+  "captureScriptProvenance": {
+    "script": "provenance/capture-build.py",
+    "sha256": "c6a6589f76d46eda769dcd40eafcb0b3ca29a144601c01b14c74e5091734e5d0",
+    "scope": "Exact script used for the eight source captures and initial derived reports, preserved before replay hardening. Capture times are in individual records; this retrospective source binding does not change their timestamps."
+  },
+  "sourceCaptures": {
+    "human-canonical": [
+      {
+        "url": "https://rest.uniprot.org/uniprotkb/Q13304.json",
+        "finalUrl": "https://rest.uniprot.org/uniprotkb/Q13304.json",
+        "method": "GET",
+        "status": 200,
+        "startedUtc": "2026-09-04T23:36:06.116538+00:00",
+        "completedUtc": "2026-09-04T23:36:15.869480+00:00",
+        "contentType": "application/json",
+        "dateHeader": "Fri, 04 Sep 2026 23:36:15 GMT",
+        "rawFile": "raw/human-canonical-repeat-1.txt",
+        "bytes": 31220,
+        "sha256": "f131c41efe7704b2a893590941e66ca76d0797ca13350a32effd7dad41953724"
+      },
+      {
+        "url": "https://rest.uniprot.org/uniprotkb/Q13304.json",
+        "finalUrl": "https://rest.uniprot.org/uniprotkb/Q13304.json",
+        "method": "GET",
+        "status": 200,
+        "startedUtc": "2026-09-04T23:36:06.117557+00:00",
+        "completedUtc": "2026-09-04T23:36:15.864081+00:00",
+        "contentType": "application/json",
+        "dateHeader": "Fri, 04 Sep 2026 23:36:15 GMT",
+        "rawFile": "raw/human-canonical-repeat-2.txt",
+        "bytes": 31220,
+        "sha256": "f131c41efe7704b2a893590941e66ca76d0797ca13350a32effd7dad41953724"
+      }
+    ],
+    "mouse-canonical": [
+      {
+        "url": "https://rest.uniprot.org/uniprotkb/Q6NS65.json",
+        "finalUrl": "https://rest.uniprot.org/uniprotkb/Q6NS65.json",
+        "method": "GET",
+        "status": 200,
+        "startedUtc": "2026-09-04T23:36:15.864355+00:00",
+        "completedUtc": "2026-09-04T23:36:23.456259+00:00",
+        "contentType": "application/json",
+        "dateHeader": "Fri, 04 Sep 2026 23:36:23 GMT",
+        "rawFile": "raw/mouse-canonical-repeat-1.txt",
+        "bytes": 16636,
+        "sha256": "b678bbc143a3d6b1bfd0ac3d0d7ccaa89a877e29cb4e76a2514a8f23feebb7e3"
+      },
+      {
+        "url": "https://rest.uniprot.org/uniprotkb/Q6NS65.json",
+        "finalUrl": "https://rest.uniprot.org/uniprotkb/Q6NS65.json",
+        "method": "GET",
+        "status": 200,
+        "startedUtc": "2026-09-04T23:36:15.866286+00:00",
+        "completedUtc": "2026-09-04T23:36:23.952705+00:00",
+        "contentType": "application/json",
+        "dateHeader": "Fri, 04 Sep 2026 23:36:23 GMT",
+        "rawFile": "raw/mouse-canonical-repeat-2.txt",
+        "bytes": 16636,
+        "sha256": "b678bbc143a3d6b1bfd0ac3d0d7ccaa89a877e29cb4e76a2514a8f23feebb7e3"
+      }
+    ],
+    "human-isoform-2": [
+      {
+        "url": "https://rest.uniprot.org/uniprotkb/Q13304-2.fasta",
+        "finalUrl": "https://rest.uniprot.org/uniprotkb/Q13304-2.fasta",
+        "method": "GET",
+        "status": 200,
+        "startedUtc": "2026-09-04T23:36:06.118223+00:00",
+        "completedUtc": "2026-09-04T23:36:16.464776+00:00",
+        "contentType": "text/plain;format=fasta",
+        "dateHeader": "Fri, 04 Sep 2026 23:36:15 GMT",
+        "rawFile": "raw/human-isoform-2-repeat-1.txt",
+        "bytes": 465,
+        "sha256": "8b2b5d65f5079ac351b2292eb02f5a70ba25aa52ca12c3b0172baf86d910a0d9"
+      },
+      {
+        "url": "https://rest.uniprot.org/uniprotkb/Q13304-2.fasta",
+        "finalUrl": "https://rest.uniprot.org/uniprotkb/Q13304-2.fasta",
+        "method": "GET",
+        "status": 200,
+        "startedUtc": "2026-09-04T23:36:06.118834+00:00",
+        "completedUtc": "2026-09-04T23:36:15.866150+00:00",
+        "contentType": "text/plain;format=fasta",
+        "dateHeader": "Fri, 04 Sep 2026 23:36:15 GMT",
+        "rawFile": "raw/human-isoform-2-repeat-2.txt",
+        "bytes": 465,
+        "sha256": "8b2b5d65f5079ac351b2292eb02f5a70ba25aa52ca12c3b0172baf86d910a0d9"
+      }
+    ],
+    "primary-paper": [
+      {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9464062/fullTextXML",
+        "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9464062/fullTextXML",
+        "method": "GET",
+        "status": 200,
+        "startedUtc": "2026-09-04T23:36:15.869709+00:00",
+        "completedUtc": "2026-09-04T23:36:26.943189+00:00",
+        "contentType": "application/xml",
+        "dateHeader": "Fri, 04 Sep 2026 23:36:26 GMT",
+        "rawFile": "raw/primary-paper-repeat-1.txt",
+        "bytes": 83755,
+        "sha256": "0868d9d164574e6a4ee1c799b8c344e388d13c73880c19a144a5a390e15a6fb9"
+      },
+      {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9464062/fullTextXML",
+        "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9464062/fullTextXML",
+        "method": "GET",
+        "status": 200,
+        "startedUtc": "2026-09-04T23:36:16.465022+00:00",
+        "completedUtc": "2026-09-04T23:36:26.983874+00:00",
+        "contentType": "application/xml",
+        "dateHeader": "Fri, 04 Sep 2026 23:36:26 GMT",
+        "rawFile": "raw/primary-paper-repeat-2.txt",
+        "bytes": 83755,
+        "sha256": "0868d9d164574e6a4ee1c799b8c344e388d13c73880c19a144a5a390e15a6fb9"
+      }
+    ]
+  },
+  "depositedReceptor": {
+    "entityId": "5",
+    "length": 293,
+    "sequence": "QCGQETPLENMLFASFYLLDFILALVGNTLALWLFIRDHKSGTPANVFLMHLAVADLSCVLVLPTRLVYHFSGNHWPFGEIACRLTGFLFYLNMYASIYFLTCISADRFLAIVHPVKSLKLRRPLYAHLACAFLWVVVAVAMAPLLVSPQTVQTNHTVVCLQLYREKASHHALVSLAVAFTFPFITTVTCYLLIIRSLRQGLRVEKRLKTKAVRMIAIVLAIFLVCFVPYHVNRSVYVLHYRSHGASCATQRILALANRITSCLTSLNGALDPIMYFFVAEKFRHALCNLLCG",
+    "sequenceSha256": "eb63d5107466709a6a5ed731b32451aa3c9250ede909925f4818839ca6c72d17",
+    "sourceOrganisms": [
+      {
+        "scientificName": "Mus musculus",
+        "taxonomyId": "10090"
+      }
+    ],
+    "referenceSequences": [
+      {
+        "databaseAccession": "Q13304",
+        "databaseName": "UniProt",
+        "provenanceSource": "SIFTS"
+      }
+    ]
+  },
+  "allDepositedPolymerEntities": [
+    {
+      "entityId": "1",
+      "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+      "sequenceLength": 351,
+      "sequenceSha256": "5cf4c562852ca89cfbc44042224294521c4e5d46dc02e9dc225334f06a96ffe1",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Homo sapiens",
+          "taxonomyId": "9606"
+        }
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P63096",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ]
+    },
+    {
+      "entityId": "2",
+      "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+      "sequenceLength": 337,
+      "sequenceSha256": "b860ea5baa513a4c6f378d8b9a7f086ccbb907820fcaa094b08da73533a59817",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Homo sapiens",
+          "taxonomyId": "9606"
+        }
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P62873",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ]
+    },
+    {
+      "entityId": "3",
+      "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+      "sequenceLength": 56,
+      "sequenceSha256": "8e6c785902c47e0000772d8e2a87b53de3c50b8b95a3c697f6fa74569432d07c",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Homo sapiens",
+          "taxonomyId": "9606"
+        }
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "P59768",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ]
+    },
+    {
+      "entityId": "4",
+      "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+      "sequenceLength": 248,
+      "sequenceSha256": "3efb1a272319422d9a15654080179e39628535282f291bdbb38bd32cb5d52961",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Homo sapiens",
+          "taxonomyId": "9606"
+        }
+      ],
+      "referenceSequences": []
+    },
+    {
+      "entityId": "5",
+      "description": "Uracil nucleotide/cysteinyl leukotriene receptor",
+      "sequenceLength": 293,
+      "sequenceSha256": "eb63d5107466709a6a5ed731b32451aa3c9250ede909925f4818839ca6c72d17",
+      "sourceOrganisms": [
+        {
+          "scientificName": "Mus musculus",
+          "taxonomyId": "10090"
+        }
+      ],
+      "referenceSequences": [
+        {
+          "databaseAccession": "Q13304",
+          "databaseName": "UniProt",
+          "provenanceSource": "SIFTS"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "accession": "Q13304",
+      "organism": {
+        "scientificName": "Homo sapiens",
+        "commonName": "Human",
+        "taxonId": 9606,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Primates",
+          "Haplorrhini",
+          "Catarrhini",
+          "Hominidae",
+          "Homo"
+        ]
+      },
+      "length": 367,
+      "sequenceSha256": "f93a66452661481ed57014021c29c066900968aeba9e8d79f4d87ed69987d9b7",
+      "sequence": "MSKRSWWAGSRKPPREMLKLSGSDSSQSMNGLEVAPPGLITNFSLATAEQCGQETPLENMLFASFYLLDFILALVGNTLALWLFIRDHKSGTPANVFLMHLAVADLSCVLVLPTRLVYHFSGNHWPFGEIACRLTGFLFYLNMYASIYFLTCISADRFLAIVHPVKSLKLRRPLYAHLACAFLWVVVAVAMAPLLVSPQTVQTNHTVVCLQLYREKASHHALVSLAVAFTFPFITTVTCYLLIIRSLRQGLRVEKRLKTKAVRMIAIVLAIFLVCFVPYHVNRSVYVLHYRSHGASCATQRILALANRITSCLTSLNGALDPIMYFFVAEKFRHALCNLLCGKRLKGPPPSFEGKTNESSLSAKSEL",
+      "comparison": {
+        "method": "Exhaustive equal-length contiguous-window mismatch count; no indels or fitted cutoff",
+        "windowsCompared": 75,
+        "minimumMismatchCount": 0,
+        "exactContiguousMatch": true,
+        "bestWindows": [
+          {
+            "referenceStart1Based": 50,
+            "referenceEnd1Based": 342,
+            "differentPositions": []
+          }
+        ],
+        "limit": "A nonzero mismatch count is not an optimal gapped alignment or proof of species origin."
+      }
+    },
+    {
+      "accession": "Q6NS65",
+      "organism": {
+        "scientificName": "Mus musculus",
+        "commonName": "Mouse",
+        "taxonId": 10090,
+        "lineage": [
+          "Eukaryota",
+          "Metazoa",
+          "Chordata",
+          "Craniata",
+          "Vertebrata",
+          "Euteleostomi",
+          "Mammalia",
+          "Eutheria",
+          "Euarchontoglires",
+          "Glires",
+          "Rodentia",
+          "Myomorpha",
+          "Muroidea",
+          "Muridae",
+          "Murinae",
+          "Mus",
+          "Mus"
+        ]
+      },
+      "length": 339,
+      "sequenceSha256": "2210396996516304f4df73b55f4db6f62a41596b73476c5de054b5df91adc4d2",
+      "sequence": "MNGLEAALPSLTDNSSLAYSEQCGQETPLENMLFACFYLLDFILAFVGNALALWLFIWDHKSGTPANVFLMHLAVADLSCVLVLPTRLVYHFSGNHWPFGEIPCRLTGFLFYLNMYASIYFLTCISADRFLAIVHPVKSLKLRRPLYAHLACAFLWIVVAVAMAPLLVSPQTVQTNHTVVCLQLYREKASHHALASLAVAFTFPFITTVTCYLLIIRSLRQGPRIEKHLKNKAVRMIAMVLAIFLICFVPYHIHRSVYVLHYRGGGTSCAAQRALALGNRITSCLTSLNGALDPVMYFFVAEKFRHALCNLLCSKRLTGPPPSFEGKTNESSLSARSEL",
+      "comparison": {
+        "method": "Exhaustive equal-length contiguous-window mismatch count; no indels or fitted cutoff",
+        "windowsCompared": 47,
+        "minimumMismatchCount": 23,
+        "exactContiguousMatch": false,
+        "bestWindows": [
+          {
+            "referenceStart1Based": 22,
+            "referenceEnd1Based": 314,
+            "differentPositions": [
+              {
+                "depositedPosition1Based": 15,
+                "referencePosition1Based": 36,
+                "depositedResidue": "S",
+                "referenceResidue": "C"
+              },
+              {
+                "depositedPosition1Based": 25,
+                "referencePosition1Based": 46,
+                "depositedResidue": "L",
+                "referenceResidue": "F"
+              },
+              {
+                "depositedPosition1Based": 29,
+                "referencePosition1Based": 50,
+                "depositedResidue": "T",
+                "referenceResidue": "A"
+              },
+              {
+                "depositedPosition1Based": 37,
+                "referencePosition1Based": 58,
+                "depositedResidue": "R",
+                "referenceResidue": "W"
+              },
+              {
+                "depositedPosition1Based": 82,
+                "referencePosition1Based": 103,
+                "depositedResidue": "A",
+                "referenceResidue": "P"
+              },
+              {
+                "depositedPosition1Based": 136,
+                "referencePosition1Based": 157,
+                "depositedResidue": "V",
+                "referenceResidue": "I"
+              },
+              {
+                "depositedPosition1Based": 174,
+                "referencePosition1Based": 195,
+                "depositedResidue": "V",
+                "referenceResidue": "A"
+              },
+              {
+                "depositedPosition1Based": 202,
+                "referencePosition1Based": 223,
+                "depositedResidue": "L",
+                "referenceResidue": "P"
+              },
+              {
+                "depositedPosition1Based": 204,
+                "referencePosition1Based": 225,
+                "depositedResidue": "V",
+                "referenceResidue": "I"
+              },
+              {
+                "depositedPosition1Based": 207,
+                "referencePosition1Based": 228,
+                "depositedResidue": "R",
+                "referenceResidue": "H"
+              },
+              {
+                "depositedPosition1Based": 210,
+                "referencePosition1Based": 231,
+                "depositedResidue": "T",
+                "referenceResidue": "N"
+              },
+              {
+                "depositedPosition1Based": 218,
+                "referencePosition1Based": 239,
+                "depositedResidue": "I",
+                "referenceResidue": "M"
+              },
+              {
+                "depositedPosition1Based": 225,
+                "referencePosition1Based": 246,
+                "depositedResidue": "V",
+                "referenceResidue": "I"
+              },
+              {
+                "depositedPosition1Based": 232,
+                "referencePosition1Based": 253,
+                "depositedResidue": "V",
+                "referenceResidue": "I"
+              },
+              {
+                "depositedPosition1Based": 233,
+                "referencePosition1Based": 254,
+                "depositedResidue": "N",
+                "referenceResidue": "H"
+              },
+              {
+                "depositedPosition1Based": 243,
+                "referencePosition1Based": 264,
+                "depositedResidue": "S",
+                "referenceResidue": "G"
+              },
+              {
+                "depositedPosition1Based": 244,
+                "referencePosition1Based": 265,
+                "depositedResidue": "H",
+                "referenceResidue": "G"
+              },
+              {
+                "depositedPosition1Based": 246,
+                "referencePosition1Based": 267,
+                "depositedResidue": "A",
+                "referenceResidue": "T"
+              },
+              {
+                "depositedPosition1Based": 250,
+                "referencePosition1Based": 271,
+                "depositedResidue": "T",
+                "referenceResidue": "A"
+              },
+              {
+                "depositedPosition1Based": 253,
+                "referencePosition1Based": 274,
+                "depositedResidue": "I",
+                "referenceResidue": "A"
+              },
+              {
+                "depositedPosition1Based": 257,
+                "referencePosition1Based": 278,
+                "depositedResidue": "A",
+                "referenceResidue": "G"
+              },
+              {
+                "depositedPosition1Based": 274,
+                "referencePosition1Based": 295,
+                "depositedResidue": "I",
+                "referenceResidue": "V"
+              },
+              {
+                "depositedPosition1Based": 293,
+                "referencePosition1Based": 314,
+                "depositedResidue": "G",
+                "referenceResidue": "S"
+              }
+            ]
+          }
+        ],
+        "limit": "A nonzero mismatch count is not an optimal gapped alignment or proof of species origin."
+      }
+    },
+    {
+      "accession": "Q13304-2",
+      "organism": {
+        "scientificName": "Homo sapiens",
+        "taxonId": 9606
+      },
+      "length": 339,
+      "sequenceSha256": "85d91c564f7adef6eceb2d461910f8c7b342b5c4bb9d9a6a11e0969b53b0597a",
+      "sequence": "MNGLEVAPPGLITNFSLATAEQCGQETPLENMLFASFYLLDFILALVGNTLALWLFIRDHKSGTPANVFLMHLAVADLSCVLVLPTRLVYHFSGNHWPFGEIACRLTGFLFYLNMYASIYFLTCISADRFLAIVHPVKSLKLRRPLYAHLACAFLWVVVAVAMAPLLVSPQTVQTNHTVVCLQLYREKASHHALVSLAVAFTFPFITTVTCYLLIIRSLRQGLRVEKRLKTKAVRMIAIVLAIFLVCFVPYHVNRSVYVLHYRSHGASCATQRILALANRITSCLTSLNGALDPIMYFFVAEKFRHALCNLLCGKRLKGPPPSFEGKTNESSLSAKSEL",
+      "comparison": {
+        "method": "Exhaustive equal-length contiguous-window mismatch count; no indels or fitted cutoff",
+        "windowsCompared": 47,
+        "minimumMismatchCount": 0,
+        "exactContiguousMatch": true,
+        "bestWindows": [
+          {
+            "referenceStart1Based": 22,
+            "referenceEnd1Based": 314,
+            "differentPositions": []
+          }
+        ],
+        "limit": "A nonzero mismatch count is not an optimal gapped alignment or proof of species origin."
+      }
+    }
+  ],
+  "primarySourceExtractSha256": "33271838812984b7ae25bf31a7002d20dc7a877f3baf70a1354df48803a72682",
+  "priorEntryDisposition": "PENDING_REQUIRED_METADATA",
+  "entryDisposition": "PENDING_REQUIRED_METADATA",
+  "formalProtocolStatus": "DRAFT",
+  "targetFreezeGate": "BLOCKED",
+  "formalComponentCertificationComplete": false,
+  "independentComponentsAdded": 0,
+  "wholeCensusComponentUpperBound": null,
+  "accessFlagScope": "This follow-up only; these flags do not certify historical reviews or exposure status.",
+  "nativeCoordinatesAccessed": false,
+  "structuralResultsInspected": false,
+  "nativeFiguresInspected": false,
+  "labelsAccessed": false,
+  "performanceOutputsAccessed": false
+}

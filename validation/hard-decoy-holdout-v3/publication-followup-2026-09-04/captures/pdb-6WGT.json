@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-6WGT",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "6WGT"
+    ],
+    "query": "\"6WGT\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226WGT%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:48:57.929962+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-6WGT.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226WGT%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "21e767e7258128e31d743dc1753ff382551a5f0c669a809cb3486fda6f9fa9d2",
+  "bytes": 30129,
+  "reportedHitCount": 32,
+  "retrievedRecordCount": 32,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:08.818992+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "doi-13",
+    "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+    "pdbIds": [
+      "8IU2"
+    ],
+    "query": "DOI:\"10.1126/science.adz8141\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.adz8141%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:59.843540+00:00",
+  "status": 200,
+  "rawFile": "raw/doi-13.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.adz8141%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "5e379c105e71bfb851dce3614a0eb3499874a7a3e9be3c9c55ca72bba73f13f7",
+  "bytes": 1041,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:11.704242+00:00"
+}

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.0.0",
+  "softwareVersion": "0.5.0",
+  "benchmarkId": "confovhh-mmcif-and-assembly-regression-v1",
+  "kind": "structural-regression-panel",
+  "status": "executed",
+  "nativeSerializationParity": {
+    "structures": 17,
+    "exactDiscreteMatches": 17,
+    "deltaSasaParityToleranceAngstrom2": 1e-9,
+    "frozenDeltaSasaToleranceAngstrom2": 0.000001,
+    "results": [
+      {
+        "pdb": "3P0G",
+        "pdbSourceBytes": 319626,
+        "pdbSourceSha256": "de53e603dcc306af411374d208f340a8685f5072a2a77bc64175d067cb73fbc9",
+        "mmcifSourceBytes": 396018,
+        "mmcifSourceSha256": "ed2be78e33a2d3ba709ecfffa5a084b27407141900663290d3ba849ae033ac88",
+        "pdbPair": "A:B",
+        "mmcifPair": "A:B",
+        "mmcifLabelAuth": [
+          "A/A",
+          "B/B"
+        ],
+        "contacts": 46,
+        "proteinAtoms": 3211,
+        "proteinResidues": 405,
+        "deltaSasaAngstrom2": 1729.261866528669,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "4MQS",
+        "pdbSourceBytes": 290952,
+        "pdbSourceSha256": "ec46471ca53e1131d70f0977e528e94658fd48a22a96f2ade5f578820b763267",
+        "mmcifSourceBytes": 367528,
+        "mmcifSourceSha256": "ffa02f41badf80f86e1e961933835269ac1d88989faf8922105ddf8ee649fa6d",
+        "pdbPair": "A:B",
+        "mmcifPair": "A:B",
+        "mmcifLabelAuth": [
+          "A/A",
+          "B/B"
+        ],
+        "contacts": 31,
+        "proteinAtoms": 3020,
+        "proteinResidues": 398,
+        "deltaSasaAngstrom2": 1541.1052746884989,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "4XT1",
+        "pdbSourceBytes": 709560,
+        "pdbSourceSha256": "407e117755da2023081acac9c66d5a566139c4ee9ffee4aa47992fd1bd6d37aa",
+        "mmcifSourceBytes": 802247,
+        "mmcifSourceSha256": "dee05b6977c04cb921049724f8c6425305b365df0740ec1c8abcc40bcb680390",
+        "pdbPair": "A:C",
+        "mmcifPair": "A:C",
+        "mmcifLabelAuth": [
+          "A/A",
+          "C/C"
+        ],
+        "contacts": 59,
+        "proteinAtoms": 3692,
+        "proteinResidues": 474,
+        "deltaSasaAngstrom2": 2225.620775800652,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "6DO1",
+        "pdbSourceBytes": 740826,
+        "pdbSourceSha256": "b2f0718a135f054cb5e5eca342c62dd07fccaa313beb6d4f99dd08864e08431b",
+        "mmcifSourceBytes": 911349,
+        "mmcifSourceSha256": "502ef802cbda59cb043e7a5822308dd4a03a801a78b79fb430c9225dc28c4e82",
+        "pdbPair": "A:C",
+        "mmcifPair": "A:C",
+        "mmcifLabelAuth": [
+          "A/A",
+          "C/C"
+        ],
+        "contacts": 60,
+        "proteinAtoms": 7734,
+        "proteinResidues": 1006,
+        "deltaSasaAngstrom2": 2247.0168687662162,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "6B73",
+        "pdbSourceBytes": 1077057,
+        "pdbSourceSha256": "b2c8e3a8c01b44cc9292ed8f0be433f14c428eaaf0e94c6ddd80c818c27ef3f4",
+        "mmcifSourceBytes": 1223811,
+        "mmcifSourceSha256": "91067fbc73dad614d074b4a399be8ff4e633775b9115e0c3631e1462b9574727",
+        "pdbPair": "B:C",
+        "mmcifPair": "B:C",
+        "mmcifLabelAuth": [
+          "B/B",
+          "C/C"
+        ],
+        "contacts": 56,
+        "proteinAtoms": 6006,
+        "proteinResidues": 798,
+        "deltaSasaAngstrom2": 2074.5516146239825,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "6RNK",
+        "pdbSourceBytes": 694899,
+        "pdbSourceSha256": "767f648c80f82d8b3446cdd219a590c11b6b2c130f692ed1adc89c92fd4368f8",
+        "mmcifSourceBytes": 793799,
+        "mmcifSourceSha256": "89127969dbc7a5eaf773d0e35283782764045eb0fe813146e24db891ed2e4156",
+        "pdbPair": "A:B",
+        "mmcifPair": "A:B",
+        "mmcifLabelAuth": [
+          "A/A",
+          "B/B"
+        ],
+        "contacts": 44,
+        "proteinAtoms": 3281,
+        "proteinResidues": 414,
+        "deltaSasaAngstrom2": 1525.084226841689,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "6KNM",
+        "pdbSourceBytes": 654966,
+        "pdbSourceSha256": "b8e39f48e174f3bf2f0ef367256c68d12e791eae9ae793a14d21f5ac8de1d412",
+        "mmcifSourceBytes": 789359,
+        "mmcifSourceSha256": "cf399d3788edce06e31d42771e385e8d6f0b5c7dcca689d63a2bffe95715cab1",
+        "pdbPair": "B:A",
+        "mmcifPair": "A:B",
+        "mmcifLabelAuth": [
+          "A/B",
+          "B/A"
+        ],
+        "contacts": 91,
+        "proteinAtoms": 3746,
+        "proteinResidues": 480,
+        "deltaSasaAngstrom2": 3238.24771522023,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "7YM8",
+        "pdbSourceBytes": 406134,
+        "pdbSourceSha256": "076ff66110b4e990be29ff85eecd1cc729fd8e1737d5e59b35d1ab8fa1c6f7c2",
+        "mmcifSourceBytes": 508498,
+        "mmcifSourceSha256": "3d566b37bd7b05ecb8735ef79c13b7b42b0d676de742edb07d36bb2134584052",
+        "pdbPair": "A:D",
+        "mmcifPair": "B:C",
+        "mmcifLabelAuth": [
+          "B/A",
+          "C/D"
+        ],
+        "contacts": 57,
+        "proteinAtoms": 4233,
+        "proteinResidues": 556,
+        "deltaSasaAngstrom2": 1754.5491139019764,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "8QOT",
+        "pdbSourceBytes": 680238,
+        "pdbSourceSha256": "6d1e9b5365e77a768433141952bfa82f15a6e015920d70544e0694b281da6ee1",
+        "mmcifSourceBytes": 892637,
+        "mmcifSourceSha256": "698408564ac02831d217dceb9b9406dce6d322e58edf360994a495f4f2275c16",
+        "pdbPair": "A:B",
+        "mmcifPair": "A:B",
+        "mmcifLabelAuth": [
+          "A/A",
+          "B/B"
+        ],
+        "contacts": 49,
+        "proteinAtoms": 7482,
+        "proteinResidues": 968,
+        "deltaSasaAngstrom2": 2136.926740337899,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "8FCZ",
+        "pdbSourceBytes": 628722,
+        "pdbSourceSha256": "5d25f2b91a9e2eb60a8536973e22287065b33090483b8c97c4ba133a185d9663",
+        "mmcifSourceBytes": 754801,
+        "mmcifSourceSha256": "a2f63c277566d750d76d403f3f07066781fd85505d7597c9edb35a7eac274799",
+        "pdbPair": "A:C",
+        "mmcifPair": "A:C",
+        "mmcifLabelAuth": [
+          "A/A",
+          "C/C"
+        ],
+        "contacts": 20,
+        "proteinAtoms": 6627,
+        "proteinResidues": 845,
+        "deltaSasaAngstrom2": 1022.3537985310952,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "7L1V",
+        "pdbSourceBytes": 845559,
+        "pdbSourceSha256": "7a0c3a547860fa8c34f01c0a38889e2b7199832c46cd5c41035b4c0a3404e31a",
+        "mmcifSourceBytes": 1127762,
+        "mmcifSourceSha256": "88a726e52d07675072c714402d35c304e3d60f402416e2d9cef454b12b6b81ee",
+        "pdbPair": "R:S",
+        "mmcifPair": "E:F",
+        "mmcifLabelAuth": [
+          "E/R",
+          "F/S"
+        ],
+        "contacts": 55,
+        "proteinAtoms": 9561,
+        "proteinResidues": 1253,
+        "deltaSasaAngstrom2": 2027.838328362045,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "6O3C",
+        "pdbSourceBytes": 468342,
+        "pdbSourceSha256": "437a1d6c9a222d1f0e24a42a0dd0bda5e9846f1fc61f6b4f19dae96d0cd85148",
+        "mmcifSourceBytes": 642120,
+        "mmcifSourceSha256": "80ac4900170684ef46465d1a60178c1f79e561676b94f9c7b96cb9de9167a03e",
+        "pdbPair": "A:B",
+        "mmcifPair": "A:B",
+        "mmcifLabelAuth": [
+          "A/A",
+          "B/B"
+        ],
+        "contacts": 66,
+        "proteinAtoms": 4648,
+        "proteinResidues": 606,
+        "deltaSasaAngstrom2": 2329.473121480585,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "8QW4",
+        "pdbSourceBytes": 326025,
+        "pdbSourceSha256": "e667daf2ebf20dab4238a3296b4a35a37f824d9eb303fc9c3461ae1266937ffb",
+        "mmcifSourceBytes": 405051,
+        "mmcifSourceSha256": "417b6f9149f61cd7174eeec8d0b252c444b1cba223aebbc5cfa1c9ba6118c53f",
+        "pdbPair": "A:B",
+        "mmcifPair": "A:B",
+        "mmcifLabelAuth": [
+          "A/A",
+          "B/B"
+        ],
+        "contacts": 36,
+        "proteinAtoms": 3479,
+        "proteinResidues": 434,
+        "deltaSasaAngstrom2": 1826.2680744418967,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "5JQH",
+        "pdbSourceBytes": 1356993,
+        "pdbSourceSha256": "dad8940292b0d39b91f7c90034f0fbf3e594d11e28a8bdfdff49710e7d4ce9dd",
+        "mmcifSourceBytes": 1543593,
+        "mmcifSourceSha256": "03d10f9ec14312645651bc0accd550f758a6b67f4d805efbb2098aab78a011e2",
+        "pdbPair": "A:C",
+        "mmcifPair": "A:D",
+        "mmcifLabelAuth": [
+          "A/A",
+          "D/C"
+        ],
+        "contacts": 64,
+        "proteinAtoms": 7601,
+        "proteinResidues": 1030,
+        "deltaSasaAngstrom2": 1615.892686369043,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "6VI4",
+        "pdbSourceBytes": 551367,
+        "pdbSourceSha256": "672b175aca382ae0d3eb6a52e8d10dfa98dac9acaad0c945d4154c07c75285bc",
+        "mmcifSourceBytes": 685503,
+        "mmcifSourceSha256": "88bc3a01fc1d3c72d0d71d001d5dcf6dd349825c1b141d3ff6be26edcb942cca",
+        "pdbPair": "B:C",
+        "mmcifPair": "B:C",
+        "mmcifLabelAuth": [
+          "B/B",
+          "C/C"
+        ],
+        "contacts": 29,
+        "proteinAtoms": 5951,
+        "proteinResidues": 794,
+        "deltaSasaAngstrom2": 1172.682241536811,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "5C1M",
+        "pdbSourceBytes": 619164,
+        "pdbSourceSha256": "fb1d52c41203f0d376a7f8571d59cac8e8e01172cfe49b3e1033a4aaed0a0d95",
+        "mmcifSourceBytes": 783145,
+        "mmcifSourceSha256": "e561b0670e874a32fc07620e6fb44444d7b0102aff84b9826882eaa69c787096",
+        "pdbPair": "A:B",
+        "mmcifPair": "A:B",
+        "mmcifLabelAuth": [
+          "A/A",
+          "B/B"
+        ],
+        "contacts": 57,
+        "proteinAtoms": 3249,
+        "proteinResidues": 413,
+        "deltaSasaAngstrom2": 2380.942514602757,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      },
+      {
+        "pdb": "6IBL",
+        "pdbSourceBytes": 759861,
+        "pdbSourceSha256": "b33f9e640d000c783944e501d7d09cbc58b345cf474a15e1bc9eafcf310f7a2e",
+        "mmcifSourceBytes": 920165,
+        "mmcifSourceSha256": "6fe3e4c9e524f652e25207ab6b238868cae1f72cf1c51ede6b5649dc29a9e8b7",
+        "pdbPair": "A:C",
+        "mmcifPair": "A:B",
+        "mmcifLabelAuth": [
+          "A/A",
+          "B/C"
+        ],
+        "contacts": 72,
+        "proteinAtoms": 7984,
+        "proteinResidues": 1027,
+        "deltaSasaAngstrom2": 2367.561337899803,
+        "exactDiscreteSerializationParity": true,
+        "deltaSasaAbsoluteDifferenceAngstrom2": 0
+      }
+    ]
+  },
+  "depositedAssemblyOracle": {
+    "structures": 5,
+    "exactCountMatches": 5,
+    "coordinateToleranceAngstrom": 0.0011,
+    "results": [
+      {
+        "pdb": "6VI4",
+        "assemblyId": "1",
+        "sourceBytes": 685503,
+        "sourceSha256": "88bc3a01fc1d3c72d0d71d001d5dcf6dd349825c1b141d3ff6be26edcb942cca",
+        "officialAssemblyBytes": 703076,
+        "officialAssemblySha256": "dd64f380821bd13cc29aabb540bdf12b8e339628e306706bb96fbd879dd660e5",
+        "proteinAtoms": 5951,
+        "proteinChains": 4,
+        "proteinResidues": 794,
+        "officialChainsMatched": 4,
+        "maximumCoordinateErrorAngstrom": 2.4613922385709617e-14
+      },
+      {
+        "pdb": "1TRZ",
+        "assemblyId": "3",
+        "sourceBytes": 166990,
+        "sourceSha256": "c09212b60ec05abc195ded6a30f630877eb00ee186b797133543c2d34aef3b45",
+        "officialAssemblyBytes": 326036,
+        "officialAssemblySha256": "00f62a269e15798f1f17c178f929484f9cd7df80eafb025785b6dbb13b4b0411",
+        "proteinAtoms": 2373,
+        "proteinChains": 12,
+        "proteinResidues": 306,
+        "officialChainsMatched": 12,
+        "maximumCoordinateErrorAngstrom": 0.0006986196966158106
+      },
+      {
+        "pdb": "3C70",
+        "assemblyId": "1",
+        "sourceBytes": 817668,
+        "sourceSha256": "a3e5e2bc4997710ba916b6f8b6fd01acd85d9e6912fd063b2ac79b4d581fbb88",
+        "officialAssemblyBytes": 1799364,
+        "officialAssemblySha256": "a11b363a056512faa79ac74931350684d34f8a3dcf5d1d21e6ce9fd7e2c6610e",
+        "proteinAtoms": 4114,
+        "proteinChains": 2,
+        "proteinResidues": 512,
+        "officialChainsMatched": 2,
+        "maximumCoordinateErrorAngstrom": 1.4210854715202004e-14
+      },
+      {
+        "pdb": "1OUT",
+        "assemblyId": "1",
+        "sourceBytes": 302215,
+        "sourceSha256": "422d5c5ef73a43eb8f5f794bcaeea0d18452d6e45379ef9a6138686862d3dcc5",
+        "officialAssemblyBytes": 549125,
+        "officialAssemblySha256": "a66310f2709af10b19596e17dad7f5050d16b5e7f2914c9f6d6733515d418fc4",
+        "proteinAtoms": 4368,
+        "proteinChains": 4,
+        "proteinResidues": 576,
+        "officialChainsMatched": 4,
+        "maximumCoordinateErrorAngstrom": 0.0007702376719889841
+      },
+      {
+        "pdb": "4IP9",
+        "assemblyId": "1",
+        "sourceBytes": 369030,
+        "sourceSha256": "7f99acfd7243721913448a240fc84efd7ba47b4e1c8565d8b7330bbae46ef4e4",
+        "officialAssemblyBytes": 1081256,
+        "officialAssemblySha256": "30e5c6d45e919d3e5087b2e05be85dd9a60b214ff28a6122cf7aa07338baee06",
+        "proteinAtoms": 4974,
+        "proteinChains": 6,
+        "proteinResidues": 624,
+        "officialChainsMatched": 6,
+        "maximumCoordinateErrorAngstrom": 0.0006996962087080971
+      }
+    ]
+  },
+  "limitations": [
+    "Native interfaces verify parsing and metric regression; they are not docking decoys or biological non-binders.",
+    "Deposited assemblies reproduce depositor/PDB-supplied operators and do not establish physiological oligomerization.",
+    "No near-native ranking claim is evaluated by this regression panel."
+  ]
+}

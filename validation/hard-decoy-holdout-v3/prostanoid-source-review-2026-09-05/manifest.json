@@ -1,0 +1,110 @@
+{
+  "authority": {
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "freezeStatus": "BLOCKED",
+    "newFormallyClearedIndependentComponents": 0,
+    "studyStatus": "DRAFT",
+    "targetFreezePermitted": false,
+    "wholeCensusUpperBound": null
+  },
+  "inputBindings": {
+    "HARD_DECOY_PROTOCOL_V3.md": {
+      "bytes": 17193,
+      "sha256": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376"
+    },
+    "node_modules/immunum/immunum.js": {
+      "bytes": 10138,
+      "sha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00"
+    },
+    "node_modules/immunum/immunum_bg.wasm": {
+      "bytes": 698218,
+      "sha256": "68804983b37b3746f65d84c9c6c0e703361ea9191fe3edc3d0748cddad2c646b"
+    },
+    "scripts/hard-decoy-v3/compare-domain-remainder-development.mjs": {
+      "bytes": 30911,
+      "sha256": "60a9448f4f42c21f87ff1d998eb0ee773570a9eeec9b065c9f9659e8b3cfd990"
+    },
+    "scripts/hard-decoy/v3-receptor-tm-pregraph.mjs": {
+      "bytes": 71123,
+      "sha256": "4316347ee87f6c945f3cb3ed8b3128bb3b2468ec5dfdb158d4e297119821fa6b"
+    },
+    "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs": {
+      "bytes": 67510,
+      "sha256": "5e46e17d7f14315bd9f87da60dffb7db7ce7a328c6db96e1e8f9fe8c9662ffeb"
+    },
+    "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/entries.jsonl": {
+      "bytes": 3281334,
+      "sha256": "6aa103cf88f5fb69874842da11ce5306a23429f7590a77210f892a40ef046017"
+    },
+    "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/manifest.json": {
+      "bytes": 4425,
+      "sha256": "bce2e583f05100962f3a451952ae1e6ec7e478adc96cf0a46ae2b28a28cab9e7"
+    },
+    "validation/hard-decoy-holdout-v3/domain-remainder-screen-2026-09-04/entity-screens.jsonl": {
+      "bytes": 5224205,
+      "sha256": "9e1acb6a7fe2dd2ddc76d43f1dc18a08577aa0b376ae4a4c23f900467f454fec"
+    },
+    "validation/hard-decoy-holdout-v3/domain-remainder-screen-2026-09-04/sequence-screens.jsonl": {
+      "bytes": 722131,
+      "sha256": "3a2db9aed20155ad2a944625fc4ca020c59d1d4b205ab9c521f8fd1682328499"
+    },
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entities.jsonl": {
+      "bytes": 1293114,
+      "sha256": "a7572b82b7d3609527f34012f74b215872e31ab8bb54ce5c2b38d4e65b3c8c2d"
+    },
+    "validation/hard-decoy-holdout-v3/global-text-discovery-2026-09-04/entries.jsonl": {
+      "bytes": 22693263,
+      "sha256": "fde2a0de338d34ea0e2baf56924b20bbc2de113b821a30af9c976b064d3a92d0"
+    },
+    "validation/hard-decoy-holdout-v3/global-text-discovery-2026-09-04/manifest.json": {
+      "bytes": 301112,
+      "sha256": "13d95b84e164969c273bc7dd28d880437bbb9d3f17dff614b97acb3a05f37c99"
+    },
+    "validation/hard-decoy-holdout-v3/global-text-screen-2026-09-04/entity-screens.jsonl": {
+      "bytes": 42079134,
+      "sha256": "ddf6eef4bbd5f16bac633f5049e52ec5541d3f3a0ccbc9d8cf27020a28b2a267"
+    },
+    "validation/hard-decoy-holdout-v3/global-text-screen-2026-09-04/sequence-screens.jsonl": {
+      "bytes": 2027494,
+      "sha256": "473d3dcb13fe00a247c9f4be116537f14af797dfb091fa253a0840581d48d875"
+    },
+    "validation/hard-decoy-holdout-v3/receptor-tm-contract-2026-08-30.json": {
+      "bytes": 9905,
+      "sha256": "abd88bbae2d35fda28dc9339f80d91c65d95c4b9f844d74ddff7249090eea412"
+    },
+    "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/candidate-receptor-profiles.jsonl": {
+      "bytes": 1320798,
+      "sha256": "ac6d733ec4658b17349b8ca63cc9a4fbf18ce9c761b7c9ed38fcd4854e8b15f3"
+    },
+    "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/development-receptor-profiles.jsonl": {
+      "bytes": 84780,
+      "sha256": "0a120c9ac73ce5acbb33cb638d2fe396942cf6dff302d3a81e74a789af797b65"
+    },
+    "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json": {
+      "bytes": 8474,
+      "sha256": "bc31adf14cf1222ebade348337facefb209c286c631f0da0bf640bd778b0688f"
+    },
+    "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/development-vhh-profiles.jsonl": {
+      "bytes": 26055,
+      "sha256": "1c791d337d628a1de397eb33cfe5685d76953e169bfbf1077798365fa9fa8730"
+    }
+  },
+  "outputBindings": {
+    "allowed-sections.json": {
+      "bytes": 31797,
+      "sha256": "e2efb6bf9e0a724b939faf9b6e40d036820294f627aacfee4c98b19da9b258cb"
+    },
+    "development-review.json": {
+      "bytes": 610430,
+      "sha256": "3558bf29be20a65a5824a4afca50962d7eb1fe5b012755c04c7d5ae802dea4cb"
+    },
+    "source-review.json": {
+      "bytes": 112725,
+      "sha256": "a3711c5ec52a423a5af1aa8175b29614542985cfd506cfee0c907d4b00e21e5a"
+    }
+  },
+  "schemaVersion": "1.0"
+}

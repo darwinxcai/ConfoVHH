@@ -1,0 +1,92 @@
+[
+  {
+    "rawFile": "raw/supporting-confovhh-c5-secondary-c3a-e7query.json",
+    "sha256": "81fb42c7be72a38054eac9c0b00290d3ef5825a5db405d139195a79cde8d3f7d",
+    "requestEcho": {
+      "queryString": "\"E7\" AND (TITLE:C3aR OR TITLE:C3a OR TITLE:anaphylatoxin OR TITLE:complement)",
+      "resultType": "lite",
+      "cursorMark": "*",
+      "pageSize": 25,
+      "sort": "",
+      "synonym": false
+    },
+    "reportedHitCount": 47,
+    "retrievedRecordCount": 25,
+    "provenanceLimitation": "Supporting reviewer capture; exact response bytes and echoed query retained, HTTP capture timestamp/headers unavailable. Not included in planned-query completion totals."
+  },
+  {
+    "rawFile": "raw/supporting-confovhh-c5-secondary-c3aquery.json",
+    "sha256": "15d69f292e1f956e914d2188f1a978e743fa69fbf1c1dcf6441657db8a8026fd",
+    "requestEcho": {
+      "queryString": "TITLE:\"C3a receptor\" AND FIRST_PDATE:[2022-01-01 TO 2026-09-04]",
+      "resultType": "lite",
+      "cursorMark": "*",
+      "pageSize": 25,
+      "sort": "",
+      "synonym": false
+    },
+    "reportedHitCount": 18,
+    "retrievedRecordCount": 18,
+    "provenanceLimitation": "Supporting reviewer capture; exact response bytes and echoed query retained, HTTP capture timestamp/headers unavailable. Not included in planned-query completion totals."
+  },
+  {
+    "rawFile": "raw/supporting-confovhh-c5-secondary-query-0.json",
+    "sha256": "2f4f64476aec8cb681e694f3ede1c1be8e1b9958952c7c662898294026ed73c1",
+    "requestEcho": {
+      "queryString": "TITLE:\"histamine H4\" AND (TITLE:structure OR TITLE:structural)",
+      "resultType": "lite",
+      "cursorMark": "*",
+      "pageSize": 30,
+      "sort": "",
+      "synonym": false
+    },
+    "reportedHitCount": 8,
+    "retrievedRecordCount": 8,
+    "provenanceLimitation": "Supporting reviewer capture; exact response bytes and echoed query retained, HTTP capture timestamp/headers unavailable. Not included in planned-query completion totals."
+  },
+  {
+    "rawFile": "raw/supporting-confovhh-c5-secondary-query-1.json",
+    "sha256": "f7e5928d1d5bf953acb05c8542cdb26a78a86e26802bcb1d4f70a964a97dc485",
+    "requestEcho": {
+      "queryString": "TITLE:C3aR AND (TITLE:structure OR TITLE:structural)",
+      "resultType": "lite",
+      "cursorMark": "*",
+      "pageSize": 30,
+      "sort": "",
+      "synonym": false
+    },
+    "reportedHitCount": 3,
+    "retrievedRecordCount": 3,
+    "provenanceLimitation": "Supporting reviewer capture; exact response bytes and echoed query retained, HTTP capture timestamp/headers unavailable. Not included in planned-query completion totals."
+  },
+  {
+    "rawFile": "raw/supporting-confovhh-c5-secondary-query-2.json",
+    "sha256": "39d76f1b66e73fe9bdbb12b4332a047f6367e222e2738d672c869fdfacc20263",
+    "requestEcho": {
+      "queryString": "TITLE:GPR34 AND (TITLE:structure OR TITLE:structural)",
+      "resultType": "lite",
+      "cursorMark": "*",
+      "pageSize": 30,
+      "sort": "",
+      "synonym": false
+    },
+    "reportedHitCount": 6,
+    "retrievedRecordCount": 6,
+    "provenanceLimitation": "Supporting reviewer capture; exact response bytes and echoed query retained, HTTP capture timestamp/headers unavailable. Not included in planned-query completion totals."
+  },
+  {
+    "rawFile": "raw/supporting-confovhh-c5-secondary-c3afocused.json",
+    "sha256": "b974a2bbedd990ddc21d44e9a236c07a879011001a1060a319cde1d7e922fc8c",
+    "requestEcho": {
+      "queryString": "(TITLE:complement OR TITLE:C3aR OR TITLE:C3a) AND (TITLE:structural OR TITLE:structure) AND FIRST_PDATE:[2022-01-01 TO 2026-09-04]",
+      "resultType": "lite",
+      "cursorMark": "*",
+      "pageSize": 50,
+      "sort": "",
+      "synonym": false
+    },
+    "reportedHitCount": 59,
+    "retrievedRecordCount": 50,
+    "provenanceLimitation": "Supporting reviewer capture; exact response bytes and echoed query retained, HTTP capture timestamp/headers unavailable. Not included in planned-query completion totals."
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "abstracts": [
+    "SignificanceWe present a universal strategy to stabilize G protein–coupled receptors (GPCRs) in defined conformational states, overcoming challenges posed by their intrinsic dynamics. Through de novo design of fusion proteins to lock the M1 muscarinic receptor in its active conformation and screening synthetic nanobody libraries against distinct states, we identified conformation-specific binders. This platform enables precise targeting of GPCR functional states and accelerates discovery of selective therapeutics, offering transformative potential for GPCR drug development.",
+    "G protein–coupled receptors (GPCRs) are prominent drug targets that have attracted intensive efforts in drug screening. Binding-based screening methods for GPCR ligands often require conformationally stable, purified receptors. However, obtaining large quantities of GPCRs in stable states, particularly with unoccupied extracellular ligand-binding pockets and especially in their active conformations, remains challenging due to the inherent dynamic nature of these receptors. To address this challenge, we propose a universal approach for stabilizing GPCRs in specific conformations. Using the M1 muscarinic acetylcholine receptor (M1R) as a model, we successfully stabilized M1R in its active conformation through de novo design of a fusion protein, and further demonstrated the generalizability of this strategy by applying it to other GPCRs. We screened a synthetic yeast display library of nanobodies against both the stabilized active-state and previously reported inactive-state M1R, identifying several nanobodies that specifically recognize each conformation. This method not only facilitates the stabilization of GPCRs in desired states but also provides valuable tools for developing more selective therapeutic agents, enhancing drug discovery efficiency and specificity."
+  ],
+  "dataAvailability": {
+    "id": "s26",
+    "paragraphs": [
+      "Structure map and model data have been deposited in Protein Data Bank (9UCP (59), 9UAP (60), and 9UAZ (61))."
+    ]
+  },
+  "extractionPolicy": {
+    "computationalDesignSectionsRendered": false,
+    "dataProcessingOrModelRefinementSectionsRendered": false,
+    "exactMethodSectionIds": [
+      "s14",
+      "s15",
+      "s20",
+      "s21",
+      "s22"
+    ],
+    "exactReferenceIds": [
+      "r6",
+      "r9",
+      "r11",
+      "r56",
+      "r59",
+      "r60",
+      "r61"
+    ],
+    "figureCaptionsRendered": false,
+    "rawFullArticleXmlArchivedWithoutRenderingExcludedSections": true,
+    "resultsOrDiscussionRendered": false,
+    "tablesRendered": false
+  },
+  "license": "Copyright © 2025 the Author(s). Published by PNAS.2025https://creativecommons.org/licenses/by-nc-nd/4.0/This article is distributed under Creative Commons Attribution-NonCommercial-NoDerivatives License 4.0 (CC BY-NC-ND).",
+  "methods": [
+    {
+      "id": "s14",
+      "paragraphs": [
+        "The M1R constructs (M1R, M1R-∆ICL3, M1R-G11CT, M1R-G11CTb, and M1R-Clip1) were cloned into pFastBac vector for expression via the Bac-to-Bac Baculovirus system (Invitrogen). Sf9 cells were infected at a density of approximately 4.0 × 106 cells/mL and harvested 48 h postinfection. M1R-ΔICL3 expression was enhanced by supplementing 10 μM atropine during infection. Receptor purification was performed using Ni-NTA, Flag affinity chromatography, and SEC as described previously (6). Briefly, cell pellets were lysed in lysis buffer (10 mM HEPES, pH 7.5, 1 mM EDTA, 160 μg/mL benzamidine, 100 μg/mL leupeptin) for 30 min at room temperature. Following complete lysis, cell membranes were collected by centrifugation and solubilized using solubilization buffer (20 mM HEPES, pH 7.5, 750 mM NaCl, 1% dodecyl maltoside (DDM), 0.2% Na Cholate, 0.03% cholesterol hemisuccinate (CHS), 30% glycerol, 5 mM imidazole, 2 mM MgCl2, 160 μg/mL benzamidine, 100 μg/mL leupeptin, 2 mg/mL iodoacetamide and benzonase), with continuous stirring at 4 °C for 2 h. After high-speed centrifugation, the supernatant was incubated with Ni-NTA resin for 2 h at 4 °C. The Ni-NTA resin, bound with receptor, was washed and then eluted with elution buffer (20 mM HEPES pH 7.5, 750 mM NaCl, 0.1% DDM, 0.02% Na Cholate, 0.03% CHS, 200 mM imidazole). Next, the elution from Ni-NTA resin was incubated with M1-Flag affinity resin with addition of 2 mM CaCl2 and the detergent was gradually exchanged from DDM to 0.01% lauryl maltose neopentyl glycol (MNG). The receptor was eluted with 0.2 mg/mL Flag peptide and 5 mM EDTA, followed by further purification on a Sephadex 200 Increase 10/300 GL column (Cytiva) with a running buffer (20 mM HEPES pH 7.5, 0.01% MNG, 0.001% CHS, 100 mM NaCl). Finally, the purified receptor was concentrated using 50 kDa molecular weight cutoff Amicon centrifugal filters (Millipore)."
+      ],
+      "title": "Expression and Purification of the Receptors."
+    },
+    {
+      "id": "s15",
+      "paragraphs": [
+        "Purified M1R-G11CT (4 μL) was deposited onto glow-discharged nickel-titanium grids (Ni-Ti R1.2/1.3, 300 mesh), while purified M1R–nanobody complexes (4 μL) were deposited onto glow-discharged Au Quantifoil grids (Au R1.2/1.3, 200 mesh). The grids were then gently blotted with Whatman No. 1 qualitative filter paper in a Vitrobot Mark IV (Thermo Fisher) chamber, which was maintained at 8 °C and 100% humidity. Blotting parameters were set to a blot time of 4 s and a blot force of four. Immediately after blotting, the grids were rapidly vitrified by plunging into liquid ethane."
+      ],
+      "title": "Cryo-EM Grid Preparation."
+    },
+    {
+      "id": "s20",
+      "paragraphs": [
+        "The synthetic nanobody library displayed on the yeast surface was generously provided by Drs. A. C. Kruse (Harvard University) and A. Manglik (University of California San Francisco) (9). Yeast cells were cultured in tryptophan dropout (-Trp) medium supplemented with 2% (w/w) glucose at 30 °C. Nanobody expression was induced by transferring the cells to -Trp medium containing 2% (w/w) galactose, followed by culturing for 2 d at 25 °C. Nanobody expression levels were assessed by staining with Alexa Fluor-488-conjugated anti-HA antibody (Cell Signaling Technology) and analyzed via flow cytometry using an Accuri C6 (BD Biosciences).",
+        "Nanobody clones targeting the different purified FLAG-tagged M1R constructs were enriched through two rounds of MACS and two or three rounds of FACS using FACSAria II (BD Biosciences) in selection buffer (20 mM HEPES pH 7.5, 100 mM NaCl, 0.05% MNG, 0.005% CHS, 2 mM CaCl2, 0.1% (w/v) bovine serum albumin and 0.2% maltose), as previously reported (Fig. 3 B and C) (56). For the first and second rounds of MACS, 5 × 109 and 2 × 108 induced yeast cells were used as input, respectively. The yeast cells were washed and precleared by incubating with Alexa Fluor-FITC-conjugated anti-FLAG antibody and anti-Alexa Fluor-FITC microbeads (Miltenyi) (or Alexa Fluor-647-conjugated anti-FLAG antibody and anti-Alexa Fluor-647 microbeads), followed by passage through an LD column (Miltenyi) to remove yeast displaying nonspecific nanobodies. The flow-through yeast cells were washed with selection buffer, and then incubated with FLAG-tagged M1R construct bound to ligand (atropine for inactive-state selective nanobody screening, iperoxo for active-state selective nanobody screening), Alexa Fluor-FITC-conjugated anti-FLAG antibody and anti-Alexa Fluor-FITC microbeads (or Alexa Fluor-647-conjugated anti-FLAG antibody and anti-Alexa Fluor-647 microbeads). After incubation at 4 °C for 30 min, the yeast cells were loaded onto an LS column, washed with selection buffer and eluted by plunger.",
+        "Subsequently, several rounds of FACS were performed using FACSAria II (BD Biosciences) (SI Appendix, Fig. S7). For each round, 2 × 107 yeast cells were stained with Alexa Fluor-488-conjugated anti-HA antibody (Cell Signaling Tech), Alexa Fluor-647-conjugated anti-FLAG antibody and FLAG-tagged M1R construct bound with ligand (atropine for inactive-state selective nanobody screening, iperoxo for active-state selective nanobody screening) in the selection buffer. After screening, the sorted yeast cells were diluted and plated on -Trp agar plates, and single colonies were picked and cultured as clonal populations in deep 96-well plates for nanobody binder screening. For yeast surface staining, the nanobody displayed yeast cells were stained with the Alexa Fluor-488-conjugated anti-HA antibody (Cell Signaling Tech), purified FLAG-tagged M1R and Alexa Fluor-647-conjugated anti-FLAG antibody in the selection buffer, and analyzed by Accuri C6 (BD Biosciences). The double-positive staining yeast cells among the anti-HA positive population were selected for sequencing analysis."
+      ],
+      "title": "Conformationally Selective Nanobody Screening."
+    },
+    {
+      "id": "s21",
+      "paragraphs": [
+        "On-yeast titration assay was performed according to previously published protocols with minor modifications (11). Nb11 was cloned to pYDS649 plasmid and transformed into TBY100 (9). Briefly, expression induced yeast cells were washed twice with cold selection buffer and incubated with FLAG-tagged M1R preincubated with 10 μM atropine or 10 μM iperoxo at each concentration for 30 min on ice. Following incubation, the cells were washed twice with cold selection buffer to remove unbound receptors. Subsequently, the yeast cells were incubated with Alexa Fluor-647-conjugated anti-FLAG antibody for 15 min on ice and then washed twice with cold selection buffer. Finally, the cells were resuspended in cold selection buffer with Alexa Fluor-488-conjugated anti-HA antibody and the fluorescence signals were acquired using Accuri C6 (BD Biosciences). The receptor-bound fraction was determined by calculating the ratio of double-positive cells and was normalized by setting the highest observed binding fraction within each experiment to 100%."
+      ],
+      "title": "On-Yeast Titration Assay."
+    },
+    {
+      "id": "s22",
+      "paragraphs": [
+        "Selected yeast clones were sequenced and the corresponding nanobody sequences were subcloned into the pET26b periplasmic expression vector featuring an N-terminal pelB signal peptode and a C-terminal histidine tag, and then transformed into BL21(DE3) Escherichia coli. Cells were grown in Terrific Broth (TB) medium supplemented with 2 mM MgCl2, 0.1% glucose, and 50 µg/mL kanamycin at 37 °C until reaching an OD600 of 1.0. Protein production was induced with 1 mM IPTG, and the culture was incubated at 20 °C for 20 h with shaking. Periplasmic extraction was performed via osmotic shock, cells were resuspended in cold hypertonic buffer (0.2 M Tris-HCl, pH 8.0, 0.5 mM EDTA, 0.5 M sucrose) for 1 h at 4 °C, then diluted fourfold with ice-cold water for additional hypotonic treatment. After high-speed centrifugation, the supernatant was purified using Ni-NTA resin followed by SEC with running buffer (20 mM HEPES, pH7.5, 100 mM NaCl). In addition to the E. coli expression system, some nanobodies such as NbF3, NbF7, NbA12, and Nb1B4 were expressed in the HEK293F transient expression system. These nanobodies were subcloned into pcDNA3.4 vector with an N-terminal Mouse Ig Heavy chain signal peptide and a C-terminal histidine tag, cells were transfected with Polyethylenimine (PEI) at a density of 2.0 × 106 cells/mL and cultured at 37 °C for 3 to 4 d. The culture supernatants were harvested for nanobody purification using Ni-NTA resin and SEC. Finally, the purified nanobodies were concentrated to 10 to 40 mg/mL using 10 kDa molecular weight cutoff Amicon centrifugal filters (Millipore)."
+      ],
+      "title": "Expression and Purification of Nanobodies."
+    }
+  ],
+  "references": [
+    {
+      "id": "r6",
+      "text": "6S. Maeda , Structures of the M1 and M2 muscarinic acetylcholine receptor/G-protein complexes. Science 364, 552–557 (2019).31073061 10.1126/science.aaw5188PMC7034192"
+    },
+    {
+      "id": "r9",
+      "text": "9C. McMahon , Yeast surface display platform for rapid discovery of conformationally selective nanobodies. Nat. Struct. Mol. Biol. 25, 289–296 (2018).29434346 10.1038/s41594-018-0028-6PMC5839991"
+    },
+    {
+      "id": "r11",
+      "text": "11S. Maeda , Structure and selectivity engineering of the M(1) muscarinic receptor toxin complex. Science 369, 161–167 (2020).32646996 10.1126/science.aax2517PMC7954660"
+    },
+    {
+      "id": "r56",
+      "text": "56Y. Toyoda , Structural basis of α1A-adrenergic receptor activation and recognition by an extracellular nanobody. Nat. Commun. 14, 3655 (2023).37339967 10.1038/s41467-023-39310-xPMC10282093"
+    },
+    {
+      "id": "r59",
+      "text": "59X. Zhang, K. Gao, X. Liu, cryo-EM structure of M1 muscarinic acetylcholine receptor-alpha5 helix of G11 protein complex bound to iperoxo and nanobody Nb1B4. Protein Data Bank. https://www.rcsb.org/structure/9UCP. Deposited 7 April 2025."
+    },
+    {
+      "id": "r60",
+      "text": "60X. Zhang, K. Gao, X. Liu, cryo-EM structure of ligand-free active-state M1 muscarinic acetylcholine receptor with alpha5 helix of G11 protein complex. Protein Data Bank. https://www.rcsb.org/structure/9UAP. Deposited 3 April 2025."
+    },
+    {
+      "id": "r61",
+      "text": "61X. Zhang, K. Gao, X. Liu, cryo-EM structure of the M1 muscarinic acetylcholine receptor bound to atropine and nanobody NbA12. Protein Data Bank. https://www.rcsb.org/structure/9UAZ. Deposited 3 April 2025."
+    }
+  ]
+}

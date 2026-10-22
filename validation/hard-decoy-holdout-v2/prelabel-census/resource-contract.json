@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PLANNING-ENVELOPE-REQUIRES-APPROVAL",
+  "calibration": {
+    "allowedInputs": "synthetic-or-development-only",
+    "holdoutTargetCalibrationForbidden": true,
+    "requiredBeforeFinalResourceFreeze": true
+  },
+  "globalCaps": {
+    "minimumTargets": 10,
+    "attemptsPerTargetPerGenerator": 200,
+    "requiredGenerators": 2,
+    "maximumAggregateAttemptsAtTenTargets": 4000,
+    "storageBytes": 250000000000,
+    "automaticCapExtension": false
+  },
+  "perTargetPerGeneratorCaps": {
+    "gpuWallSeconds": 28800,
+    "outputBytes": 25000000000,
+    "retries": 0
+  },
+  "planningGpuHours": {
+    "colabfoldLower": 10,
+    "colabfoldUpper": 30,
+    "boltzLower": 10,
+    "boltzUpper": 50,
+    "measured": false
+  },
+  "failedAttemptPolicy": {
+    "timeout": "retain-failed-ledger-row",
+    "outOfMemory": "retain-failed-ledger-row",
+    "nonfinite": "retain-failed-ledger-row",
+    "malformed": "retain-failed-ledger-row",
+    "resourceKill": "retain-failed-ledger-row",
+    "replacementSeed": false,
+    "silentRetry": false
+  },
+  "approvalRequired": true
+}

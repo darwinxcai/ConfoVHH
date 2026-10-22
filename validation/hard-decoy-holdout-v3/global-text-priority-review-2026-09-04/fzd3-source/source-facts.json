@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "1.0.0",
+  "doi": "10.1038/s41467-024-51451-1",
+  "pmcid": "PMC11341715",
+  "primaryUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11341715/",
+  "sourceFile": "allowed-sections.json",
+  "sourceSha256": "81357bf78b99409cd7e0db4eba131020db4e3d3f7892ecc9fb5ae704ddc3c0a7",
+  "facts": [
+    {
+      "claim": "The study explicitly deposits its FZD3 CRD–Nb8 crystal complex as 8Q7O. It separately deposits FZD3–Nb9 as 8QW4/EMD-18680.",
+      "section": "Data availability",
+      "paragraph": 1
+    },
+    {
+      "claim": "Wild-type full-length human FZD3 is Q9NPG1 residues 1–666; this full-length construct was used for functional assays.",
+      "section": "Protein expression",
+      "paragraph": 1
+    },
+    {
+      "claim": "Multidomain production uses FZD3 residues 26–517 with C-terminal Rhinovirus 3C cleavage site, monoVenus, and Twin-Strep tag. CRD production uses residues 26–138 and the same tagging scheme.",
+      "section": "Protein expression",
+      "paragraph": 1
+    },
+    {
+      "claim": "Crystallization production coexpresses tagged FZD3 CRD and untagged Nb8 through lentiviral transduction in HEK293S GnTI- suspension cells.",
+      "section": "Protein expression",
+      "paragraph": 1
+    },
+    {
+      "claim": "CRD–Nb8 complex purification from conditioned medium uses Strep-Tactin; on-column 3C protease and endoglycosidase F1 treatment precede size-exclusion chromatography.",
+      "section": "Discovery of the nanobodies",
+      "paragraph": 2
+    },
+    {
+      "claim": "Nanobody discovery starts with one immunized llama; sequence analysis places Nb8 in enriched family 2.",
+      "section": "Discovery of the nanobodies",
+      "paragraph": 1
+    }
+  ],
+  "unresolved": [
+    "The selected primary sections call the 8Q7O binder Nb8, not 14478; deposited alias and exact sequence must be reconciled independently.",
+    "Methods define the CRD residue range and precursor tags, but do not state the complete post-cleavage deposited polymer string; exact sequence and residual-tag reconciliation remain for the parent metadata audit."
+  ],
+  "exposure": {
+    "rawPrimaryXmlArchived": true,
+    "rawPrimaryXmlRenderedToModel": false,
+    "visiblePrimaryText": [
+      "Discovery of the nanobodies",
+      "Protein expression",
+      "Data availability"
+    ],
+    "visibleNavigation": "Direct child headings under Methods only; exact Data availability title, element type, and child tag names.",
+    "newResultsOrCaptionsExposed": false,
+    "nativeCoordinateFilesPoseImagesContactTablesDockqCapriLabelsPredictionOutputsAccessed": false,
+    "preexistingCaveatsUnchanged": true
+  },
+  "authority": {
+    "formalEligibility": false,
+    "formalExclusion": false,
+    "formalLeakageGraph": false,
+    "independentComponentIncrement": 0,
+    "wholeCensusUpperBound": "unknown"
+  }
+}

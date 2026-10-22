@@ -1,0 +1,187 @@
+{
+  "api_cli_crosschecks": 5,
+  "argv": [
+    "ConfoVHH/scripts/paper/score-cognate-interfaces.py",
+    "--root",
+    "recovered-gpcr/extracted/VERIFY",
+    "--manifest",
+    "recovered-gpcr/extracted/GPCR_next_steps_package/official_dockq/scoring_manifest.csv",
+    "--source",
+    "ConfoVHH/validation/gpcr-paper-development-2026-09-04/source",
+    "--mapping-review",
+    "recovered-gpcr/extracted/retained_mapping_review.json",
+    "--out",
+    "ConfoVHH/validation/gpcr-paper-development-2026-09-04/official-dockq"
+  ],
+  "cache_clear_functions": [
+    "align_chains",
+    "get_aligned_residues",
+    "get_residue_distances",
+    "list_atoms_per_residue",
+    "subset_atoms",
+    "run_on_chains"
+  ],
+  "completed_at_unix": 1788567182.19141,
+  "completed_models": 165,
+  "developmental_retrospective_only": true,
+  "failed_models": 0,
+  "independent_mapping_review": {
+    "path": "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/retained_mapping_review.json",
+    "sha256": "813ea92dfda6208b3f7e4d478d52f56be8b52ffcd124aa6b2f133daa2def05fe",
+    "sourceS5Sha256": "6bc9b0003d73ddd7ea90ac3fc24ddc0435cbd34b4d0fc0c3a7109c423562d8b7"
+  },
+  "interpretation": "Native interface recovery for four retrospective cognate reference complexes; not biological affinity, selectivity, independent generalization, or model superiority.",
+  "known_parser_limitation": "Unmodified official protein parser excludes HETATM YCM57 from native 5C1M receptor (295 recognized residues vs 296 when YCM is interpreted as C for independent sequence review). Original coordinates and default official scoring remain unchanged.",
+  "manifest_sha256": "8fe08b09d4d647024b3b4a978da164d60b000af6a695d787b408212f6dd39c48",
+  "official_DockQ_csv_sha256": "2ede7a1acf10750da31244c40c0cc221df2e3198fbbeaa2d69e84933e3b85108",
+  "parameters": {
+    "capri_peptide": false,
+    "explicit_native_to_model_mapping": true,
+    "no_align": false,
+    "optimize_chain_mapping": false,
+    "original_coordinates": true
+  },
+  "preflight_completed": 165,
+  "preflight_failures": 0,
+  "raw_root": "/workspace/scratch/b080e573db3d/recovered-gpcr/extracted/VERIFY",
+  "runtime": {
+    "DockQ_module_sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+    "DockQ_version": "2.1.3",
+    "all_installed_distributions": [
+      {
+        "name": "biopython",
+        "version": "1.88"
+      },
+      {
+        "name": "colorama",
+        "version": "0.4.6"
+      },
+      {
+        "name": "dockq",
+        "version": "2.1.3"
+      },
+      {
+        "name": "networkx",
+        "version": "3.6.1"
+      },
+      {
+        "name": "numpy",
+        "version": "1.26.4"
+      },
+      {
+        "name": "parallelbar",
+        "version": "2.5"
+      },
+      {
+        "name": "pip",
+        "version": "25.0.1"
+      },
+      {
+        "name": "tqdm",
+        "version": "4.70.0"
+      }
+    ],
+    "dependencies": {
+      "biopython": "1.88",
+      "colorama": "0.4.6",
+      "dockq": "2.1.3",
+      "networkx": "3.6.1",
+      "numpy": "1.26.4",
+      "parallelbar": "2.5",
+      "tqdm": "4.70.0"
+    },
+    "distribution_files": [
+      {
+        "path": "../../../bin/DockQ",
+        "sha256": "cd94e40d16f9fac6c47c94e5c4225f67918bd484f8796982d607b5fd9fb07fc0"
+      },
+      {
+        "path": "DockQ/DockQ.py",
+        "sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887"
+      },
+      {
+        "path": "DockQ/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "DockQ/__main__.py",
+        "sha256": "a2dc944b6fdaeb5c4f3574c452519449505756abbb96e2261179a2b643b57df5"
+      },
+      {
+        "path": "DockQ/constants.py",
+        "sha256": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18"
+      },
+      {
+        "path": "DockQ/operations.c",
+        "sha256": "60d29f670f646963a58fa97b87828e208b51ea5adf7c609e128ca949e9f2c585"
+      },
+      {
+        "path": "DockQ/operations.cpython-312-x86_64-linux-gnu.so",
+        "sha256": "ace4fe159ea04740775bb0d89efef40390587b8b202a4c20e30e281287e8ff1f"
+      },
+      {
+        "path": "DockQ/operations.pyx",
+        "sha256": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512"
+      },
+      {
+        "path": "DockQ/operations_nocy.py",
+        "sha256": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3"
+      },
+      {
+        "path": "DockQ/parsers.py",
+        "sha256": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/INSTALLER",
+        "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/METADATA",
+        "sha256": "f8241586d348b2740360f4e2a186925883f02578b5a82a241780313017f3117e"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/RECORD",
+        "sha256": "f88c03700d825eaf47da22d5796c648ab34a90ce1375882e40d67b5dcdd800b8"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/REQUESTED",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/WHEEL",
+        "sha256": "50a33ada4b03e2377733a93969c1406b0f021e741fa63b68fca9634576f2a4fd"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/entry_points.txt",
+        "sha256": "41d30d6b08732681ff6fb00a39616cc3826a870fcada04068f9ae76dc81ca968"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/licenses/LICENSE",
+        "sha256": "1ac62f778ff853b0b7215565aa86a2b6fde946508552cb41b75a74e5e0c3df79"
+      },
+      {
+        "path": "dockq-2.1.3.dist-info/top_level.txt",
+        "sha256": "3115f3aabad257c4325edcaea708b6d6bab29712838e70964536c70e16ca7a17"
+      }
+    ],
+    "distribution_fingerprint_sha256": "b59d821a2725fd9d176ac22dc4c69ef72a475deef56a941a331a5ba03a3d4b35",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+    "python": "3.12.13 (main, Aug  7 2026, 02:25:39) [Clang 22.1.3 ]",
+    "python_executable": "/workspace/scratch/b080e573db3d/ConfoVHH/.bench-venv/bin/python",
+    "supporting_source_pin_origin": "validation/dockq-development-pilot-v1/summary.json software.installedDockqDistribution.files; historical artifact read only",
+    "supporting_source_sha256": {
+      "constants.py": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18",
+      "operations.pyx": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512",
+      "operations_nocy.py": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3",
+      "parsers.py": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+    }
+  },
+  "script_sha256": "a41b569d307d428a65f63b0f9559e25d4e68f9a37a6651ca009ce9497c8f3c76",
+  "source_files_sha256": {
+    "S1_job_manifest.csv": "6704457d4b4db158ebcb16f70c97a222e05f28168195dfe11c8bb4a050ce6278",
+    "S2_per_model_metrics.csv": "8a53fdab4034f551a63bdeb3fcb6685f5e5829b790f05a1dd2a149c5ae7137ca"
+  },
+  "source_reference_controls": 4,
+  "started_at_unix": 1788567117.2813904,
+  "status": "COMPLETE"
+}

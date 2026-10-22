@@ -1,0 +1,466 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-04",
+  "scope": "Two additional annotation-discovery priorities:9FTE ADGRV1/RE02 and9NYX rhodopsin/Mb7. Metadata, sequence and primary construct/deposition prose only.",
+  "evidenceBoundary": {
+    "formalExclusionAuthority": false,
+    "formalLeakageGraphAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "targetFreezePermitted": false,
+    "nativeCoordinatesInspected": false,
+    "structuralFiguresInspected": false,
+    "contactTablesInspected": false,
+    "coordinateDerivedContactResiduesInspected": false,
+    "nativePoseOrOrientationTextInspected": false,
+    "dockqLabelsAccessed": false,
+    "performanceResultsAccessed": false,
+    "incidentalProseOutsideRequestedSectionsAccessed": true,
+    "incidentalProseExposureFile": "incidental-prose-exposure.json"
+  },
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json": "d4cda5ecfa060dc2dc0d5147114946f8d059dce983d9fe4ac10a0c5509ad9778",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/manifest.json": "6b50d7e79f17c7570b227cbbb0739e15e263fc64bf3704b6f62929fbebb5ea62",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl": "ab4ebb4597948b973af33ae55763c0f8a65fcbfe66db3748d24478ec33a429df",
+    "validation/hard-decoy-holdout-v3/annotation-screen-2026-09-04/manifest.json": "691c881a872c441246c4fd65c002bacb3cef51332bf60e9610bb93eb1ec53bbb",
+    "validation/hard-decoy-holdout-v3/annotation-screen-2026-09-04/entity-screens.jsonl": "5f583d2f7c4f8f2990f0a1f4281b597365fe53f6f3d334740529469052f0c1d1",
+    "validation/hard-decoy-holdout-v3/annotation-screen-2026-09-04/sequence-screens.jsonl": "f7767c377cb6c9e74bdedc87c9133ec17adcf0bc3d552231148edd43cc8b6557",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl": "8e2219f94d91bb3a8822e56a1e43f20cc652a86bc9458a9af76013f96e3c5be7",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/raw/new-entry-metadata-batch-003-repeat-1.json": "14295106d1106df8cd5e581146e7f937a17dbae22098de7dd866211e042efc2f",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/raw/new-entry-metadata-batch-003-repeat-2.json": "d41f3eae647dfb196d4c23fdb85c866a94e9995ba9eed6796a141d3bdcac536d",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/raw/new-entry-metadata-batch-005-repeat-1.json": "e8c6b93aa09737ca01618b8bb6861e7f38b79609988e5efbb723cd47c66d9a60",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/raw/new-entry-metadata-batch-005-repeat-2.json": "fc9162cc71a01784e40e365dc58f476dff7ff65e4f846d78c94cae891917aacc"
+  },
+  "sourceCaptureRecordsFile": "source-capture-records.json",
+  "sources": [
+    {
+      "sourceId": "ADGRV1_RE02_PREPRINT_CANDIDATE",
+      "doi": "10.64898/2026.03.05.709805",
+      "title": "Structural insights into the inactive state of the adhesion GPCR ADGRV1",
+      "primaryUrl": "https://www.biorxiv.org/content/10.64898/2026.03.05.709805v1",
+      "metadataFile": "sources/9fte-preprint-api.json",
+      "metadataSha256": "3b9addeba98376c44822abedb085d5d91e7619124d7715113f0b3f61be126219",
+      "readScope": "Main reviewer: pre-existing first-party API metadata, abstract and significance statement, including qualitative domain/loop narrative. Citation child: targeted primary-index deposition phrase plus incidental wider prose detailed in incidental-prose-exposure.json. No coordinate-derived contact assignments or native orientation were reported.",
+      "fullTextReviewComplete": false,
+      "exactDepositionLinkVerified": false,
+      "primaryConstructMethodsReviewed": false,
+      "sourceFact": "The first-party API identifies the candidate ADGRV1/RE02 preprint. This target/binder association alone does not establish its exact PDB deposition.",
+      "retrievalLimitations": "Direct primary HTML, JATS and PDF retrievals returned 429. A primary PDF search-index phrase links the candidate paper to 9FTE, but retrieved primary Methods and deposition verification remain unavailable; an unrelated exact-token EuropePMC query does not establish linkage.",
+      "indexEvidenceFile": "sources/9fte-primary-index-evidence.json",
+      "primaryIndexedExactDepositionSignal": true
+    },
+    {
+      "sourceId": "RCSB_9FTE_CURRENT",
+      "url": "https://data.rcsb.org/rest/v1/core/entry/9FTE",
+      "file": "sources/9fte-current-entry.json",
+      "sha256": "08fb628416ea3c46c7ef5e85bd56e4d57242eac1034d1eea501b621c172fc98b",
+      "readScope": "Core entry metadata; no coordinates, contact tables, structural images or poses.",
+      "sourceFact": "Current primary citation has no DOI or PMID and is marked To Be Published. Complex metadata identifies ADGRV1 beta-subunit with RE02."
+    },
+    {
+      "sourceId": "RHO_MB7_2026",
+      "doi": "10.1073/pnas.2532336123",
+      "pmid": "41650224",
+      "pmcid": "PMC12891041",
+      "title": "Structural analysis of rhodopsin states in megabody complexes.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12891041/",
+      "retrievedPrimaryTextSha256": "2a803539bda59697327e861bd1adcee4d7f74ff44d2986cc56d5d5e0b698022c",
+      "fullTextReviewComplete": false,
+      "primaryConstructMethodsReviewed": true,
+      "exactDepositionLinkVerified": true,
+      "readScope": "Section headings; Materials and Methods subsections for Mb7 design/production, bovine rhodopsin purification, three sample preparations; Data, Materials, and Software Availability. Structural Results, figures, captions, tables, coordinate downloads and orientation/contact prose were excluded.",
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Data, Materials, and Software Availability",
+        "pdbIdsExplicitlyNamed": [
+          "9NYX",
+          "9NOZ",
+          "9NNZ"
+        ]
+      },
+      "sourceFacts": [
+        {
+          "section": "Mb7 Design, Production, and Purification",
+          "fact": "Mb7 uses parental Nb7 residues17\u2013117 grafted into the pMESD22c7 scaffold and is approximately55kDa."
+        },
+        {
+          "section": "bRho Purification; Preparation of bRho/Mb7 Complex",
+          "fact": "Purified native bovine retinal rhodopsin and separately produced Mb7 were mixed and purified as a complex for cryo-EM."
+        }
+      ],
+      "limitations": "Full experimental Mb7 sequence and unknown deposited residues remain unresolved. No interface pose or contact geometry was inspected."
+    }
+  ],
+  "reviews": [
+    {
+      "formalExclusionAuthority": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "coordinateDerivedContactResiduesInspected": false,
+      "nativePoseOrOrientationTextInspected": false,
+      "dockqLabelsAccessed": false,
+      "performanceResultsAccessed": false,
+      "pdbId": "9FTE",
+      "title": "Cryo-EM structure of the adhesion GPCR ADGRV1 in complex with a nanobody",
+      "releaseDate": "2026-01-14T00:00:00Z",
+      "experimentalMethods": [
+        "ELECTRON MICROSCOPY",
+        "EM"
+      ],
+      "frozenPrimaryCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of the adhesion GPCR ADGRV1 in complex with a nanobody"
+      },
+      "metadataSource": "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl",
+      "polymerEntityCountReported": 2,
+      "polymerInventoryComplete": true,
+      "polymerInventory": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "description": "Adhesion G protein-coupled receptor V1",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9FTE_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "B8JJE0",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "SVYAVYAQTDNSSSYNEAFFSAGLICISGLCLAVVSHMFCARHSMFAAKLLTHMMVASLGTQILFLASAYASPHLSEESCSAVAAVAHYLYLCQFSWMLIQSVNFWYVLVVSDEHTERRCLLFCLLSWGLPSFVVILLILILRGIYHRSMPQIYGLIHGDLCFIPNIYAALFTAALVPLMCLVVVFVVFIHAYQLKPQWKGYDDVFRGRTNAAEIPLILYLFALISMTWLWGGLHMAYRHFWMLVLFVIFNSLQGLYVFVVYFILHNQTCCPMKASYTVEMNGHPGPSTAFFTPGSGIPPAGEINKSTQNLINAMEEVPSDWERSSFQQTSQASPDLKTSPQNGASFPSSGGYGPGSLIADEESQEFDDLIFALKTGAGLSVSDNESGQGSQEGGTLTDSQIVELRRIPIADTHLSGRHHHHHHHH",
+          "sequenceLength": 426,
+          "sequenceSha256": "ce080fdef9db00df7e4e58c13baee148c006f5edd21206c6a6c124a37b149a85",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ],
+          "noncanonicalResidueCount": 0,
+          "reviewedAs": "candidate_receptor"
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "description": "Nanobody RE02",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": true,
+            "constructRiskLexical": false,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9FTE_2",
+          "referenceSequences": [],
+          "sequence": "MAEVQLVESGGGLVQPGGSLRLSCAASGSSFSINAMGWYRQAPGKQRELVAAISRGGSTNYASSVKGRFTISRDNGKNTVYLQMNSPKPEDTAVYYCNVGSRSTLPIWYDYWGQGTQVTVSSAAAEQKLISEEDLNGAAHHHHHHGS",
+          "sequenceLength": 147,
+          "sequenceSha256": "8407e46fdb9a6ad459e90f1998375028aabd73347e30613422edfba9e4be7c6b",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Vicugna pacos",
+              "taxonomyId": "30538"
+            }
+          ],
+          "noncanonicalResidueCount": 0,
+          "reviewedAs": "candidate_antibody_construct"
+        }
+      ],
+      "candidateReceptorEntityId": "1",
+      "candidateBinderEntityId": "2",
+      "binderSequenceScreen": {
+        "absenceOfVhhEstablished": false,
+        "attemptedIntervalCount": 3,
+        "canonicalResidueCount": 147,
+        "heavyChainDomains": [
+          {
+            "cdr3Length": 14,
+            "cdr3SequenceSha256": "c778f3e2246b7d4362ea24d7cc8d6198c89c3ca7da7dcad2f94fc6b60c71df47",
+            "completeImgtRegionCoverage": true,
+            "confidence": 0.7033352851867676,
+            "end": 122,
+            "frameworkLength": 91,
+            "frameworkSequenceSha256": "2e6d11126e26ae4c14e0f8ef0cc084c8e5345a2685893e73c48c848c026ac2a1",
+            "numberingSegmentationAgreement": true,
+            "sequenceLength": 120,
+            "sequenceSha256": "2e4401afbd1492abba67b700ff8105fd19bdc9384b77afdefee79f33a8a1fd30",
+            "start": 2
+          }
+        ],
+        "noncanonicalResidueCount": 0,
+        "numberingFailureCounts": {
+          "NO_CONFIDENT_HEAVY_CHAIN_V_DOMAIN": 2
+        },
+        "overlappingDomainCalls": false,
+        "referenceMatches": [],
+        "sequenceLength": 147,
+        "sequenceSha256": "8407e46fdb9a6ad459e90f1998375028aabd73347e30613422edfba9e4be7c6b",
+        "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED"
+      },
+      "developmentComparisonFile": "development-reference-comparisons.json",
+      "reviewStatus": "PENDING_EXACT_PRIMARY_DEPOSITION_AND_CONSTRUCT_RECONCILIATION",
+      "sourceIds": [
+        "ADGRV1_RE02_PREPRINT_CANDIDATE",
+        "RCSB_9FTE_CURRENT"
+      ],
+      "publicationLinkStatus": "PRIMARY_INDEX_EXACT_DEPOSITION_SIGNAL_FULLTEXT_VERIFICATION_PENDING",
+      "binderFormatAssessment": {
+        "status": "VHH_CANDIDATE_SUPPORTED_BY_METADATA_AND_HEAVY_DOMAIN_SEQUENCE_NOT_FINAL_CONSTRUCT_AUTHORITY",
+        "fact": "Two deposited protein entities are inventoried: receptor426aa and RE02 147aa. RE02 has one numbered120aa heavy-variable domain, no noncanonical residues, and terminal sequence outside the numbered domain. No receptor-binder same-chain fusion occurs in the deposited inventory.",
+        "primaryConstructMethodsReviewed": false,
+        "experimentalConstructSequenceComplete": null
+      },
+      "experimentalReferenceAssessment": {
+        "status": "EXPERIMENTAL_DEPOSITION_METADATA_PRESENT_PUBLICATION_MAPPING_PENDING",
+        "fact": "RCSB identifies an experimental ADGRV1/RE02 deposition with an unpublished primary citation. First-party preprint metadata and a targeted primary-PDF index phrase identify a candidate paper and exact-accession signal. Primary Methods and deposition text remain unretrieved. Deposited Mus musculus/B8JJE0 versus abstract human ADGRV1 still requires construct/species reconciliation.",
+        "directNativeInterfaceEvidenceResolved": false
+      },
+      "developmentAssessment": {
+        "status": "NO_EXACT_ACCESSION_OR_FULL_SEQUENCE_MATCH_IN17_REFERENCE_NODES_NOT_NO_EDGE_PROOF",
+        "exactReceptorAccessionMatches": [],
+        "exactEntitySequenceMatches": [],
+        "independentComponentEstablished": false
+      },
+      "pendingRequirements": [
+        "Recover exact deposition paragraph from primary manuscript and match9FTE.",
+        "Read primary construct/sample Methods and reconcile species, full receptor and RE02 constructs.",
+        "Adjudicate direct native-receptor recognition from permissible source evidence.",
+        "Apply frozen receptor, VHH, publication, parent and development leakage criteria before any target decision."
+      ],
+      "incidentalProseExposureFile": "incidental-prose-exposure.json",
+      "incidentalProseOutsideRequestedSectionsAccessed": true
+    },
+    {
+      "formalExclusionAuthority": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "contactTablesInspected": false,
+      "coordinateDerivedContactResiduesInspected": false,
+      "nativePoseOrOrientationTextInspected": false,
+      "dockqLabelsAccessed": false,
+      "performanceResultsAccessed": false,
+      "pdbId": "9NYX",
+      "title": "Structure of Native Bovine Rhodopsin in Complex with Mb7 in the Dark State",
+      "releaseDate": "2026-02-04T00:00:00Z",
+      "experimentalMethods": [
+        "ELECTRON MICROSCOPY",
+        "EM"
+      ],
+      "frozenPrimaryCitation": {
+        "doi": "10.1073/pnas.2532336123",
+        "pmid": "41650224",
+        "title": "Structural analysis of rhodopsin states in megabody complexes."
+      },
+      "metadataSource": "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl",
+      "polymerEntityCountReported": 2,
+      "polymerInventoryComplete": true,
+      "polymerInventory": [
+        {
+          "authAsymIds": [
+            "A",
+            "C"
+          ],
+          "description": "Megabody 7",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A",
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": true,
+            "constructRiskLexical": true,
+            "vhhDescription": true,
+            "vhhLength": true,
+            "vhhLikeCandidate": true
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9NYX_1",
+          "referenceSequences": [],
+          "sequence": "VQLVESGGGLVXXXXXXXXXXXSLRLSCAASGFTFSRYVMNWVRQAPGKGLEWVSGISRDGSYTDYADSVKGRFTISRDNAKDTLYLQMNSLKPEDTAVYYCSKYNSVVTTPPGQGTQVTVS",
+          "sequenceLength": 122,
+          "sequenceSha256": "f29abb3f25a6a8b1e075d643cec24ca80a34bc197ff36b7dda178e9d5865af0a",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ],
+          "noncanonicalResidueCount": 11,
+          "reviewedAs": "candidate_antibody_construct"
+        },
+        {
+          "authAsymIds": [
+            "B",
+            "D"
+          ],
+          "description": "Rhodopsin",
+          "entityId": "2",
+          "labelAsymIds": [
+            "C",
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9NYX_2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P02699",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "XMNGTEGPNFYVPFSNKTGVVRSPFEAPQYYLAEPWQFSMLAAYMFLLIMLGFPINFLTLYVTVQHKKLRTPLNYILLNLAVADLFMVFGGFTTTLYTSLHGYFVFGPTGCNLEGFFATLGGEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLVGWSRYIPEGMQCSCGIDYYTPHEETNNESFVIYMFVVHFIIPLIVIFFCYGQLVFTVKEAAAQQQESATTQKAEKEVTRMVIIMVIAFLICWLPYAGVAFYIFTHQGSDFGPIFMTIPAFFAKTSAVYNPVIYIMMNKQFRNCMVTTLC",
+          "sequenceLength": 323,
+          "sequenceSha256": "8eb65cd03a1dcc0264bdad7f455adae3449427e0ee1666e9639371e09d10d13e",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Bos taurus",
+              "taxonomyId": "9913"
+            }
+          ],
+          "noncanonicalResidueCount": 1,
+          "reviewedAs": "candidate_receptor"
+        }
+      ],
+      "candidateReceptorEntityId": "2",
+      "candidateBinderEntityId": "1",
+      "binderSequenceScreen": {
+        "absenceOfVhhEstablished": false,
+        "attemptedIntervalCount": 2,
+        "canonicalResidueCount": 111,
+        "heavyChainDomains": [
+          {
+            "cdr3Length": 10,
+            "cdr3SequenceSha256": "9ccf014a39e37c8dbb11d44eb6ccb3ad3020ccd96db8ceee735d1c9da1327dca",
+            "completeImgtRegionCoverage": true,
+            "confidence": 0.7738134860992432,
+            "end": 122,
+            "frameworkLength": 74,
+            "frameworkSequenceSha256": "9c8a08b422f80e4938a07b008ca33de4236f40f432aa3a0ea77647fc070ced89",
+            "numberingSegmentationAgreement": true,
+            "sequenceLength": 100,
+            "sequenceSha256": "76bfdb2c255755fcf2973cd78b98402f3e095f9551d58f10d5908fd13ff893c4",
+            "start": 22
+          }
+        ],
+        "noncanonicalResidueCount": 11,
+        "numberingFailureCounts": {
+          "NO_CONFIDENT_HEAVY_CHAIN_V_DOMAIN": 1
+        },
+        "overlappingDomainCalls": false,
+        "referenceMatches": [],
+        "sequenceLength": 122,
+        "sequenceSha256": "f29abb3f25a6a8b1e075d643cec24ca80a34bc197ff36b7dda178e9d5865af0a",
+        "status": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED"
+      },
+      "developmentComparisonFile": "development-reference-comparisons.json",
+      "reviewStatus": "DEVELOPMENT_RECEPTOR_OVERLAP_SUPPORTED_CONSTRUCT_INCOMPLETE",
+      "sourceIds": [
+        "RHO_MB7_2026"
+      ],
+      "publicationLinkStatus": "EXACT_PRIMARY_DEPOSITION_TEXT_REVIEWED",
+      "binderFormatAssessment": {
+        "status": "MEGABODY_PARENT_NB_GRAFT_NOT_COMPLETE_ISOLATED_VHH_CONSTRUCT",
+        "fact": "Methods identify Mb7 as a roughly55kDa scaffold containing parental Nb7 residues17\u2013117. Deposited entity1 is only122 residues with11 unknown X residues. A positive heavy-domain call does not recover the complete experimental megabody or repair unknown residues.",
+        "primaryConstructMethodsReviewed": true,
+        "experimentalConstructSequenceComplete": false,
+        "fullerSamePublicationConstructMetadata": "Repeated closure captures9NNZ/9NOZ provide identical514aa Mb7 sequences. Their canonical segment relationship to partial9NYX is recorded without repairing the latter."
+      },
+      "experimentalReferenceAssessment": {
+        "status": "PRIMARY_SAMPLE_AND_EXACT_DEPOSITION_SUPPORTED",
+        "fact": "Primary Methods prepare separately purified native bovine rhodopsin with Mb7 for cryo-EM; Data Availability explicitly assigns9NYX to that sample. This establishes a deposited experimental complex, without inspecting its pose or determining benchmark eligibility.",
+        "directNativeInterfaceEvidenceResolved": false
+      },
+      "developmentAssessment": {
+        "status": "EXACT_RECEPTOR_ACCESSION_OVERLAP",
+        "developmentPdbId": "8FCZ",
+        "registryReceptor": "RHO",
+        "candidateEntityId": "2",
+        "developmentEntityId": "1",
+        "sharedUniprotAccession": "P02699",
+        "candidateReceptorSequenceSha256": "8eb65cd03a1dcc0264bdad7f455adae3449427e0ee1666e9639371e09d10d13e",
+        "developmentReceptorSequenceSha256": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+        "exactReceptorFullSequenceMatch": false,
+        "binderFullSequenceMatches": [],
+        "fact": "Both receptor entities map to bovine rhodopsinP02699, supporting development receptor overlap despite unequal deposited sequences. Development8FCZ uses Nb2; the present construct is Mb7. No binder identity is inferred from shared names or scaffold format.",
+        "independentComponentEstablished": false
+      },
+      "relatedPublicationAccessions": [
+        {
+          "pdbId": "9NOZ",
+          "status": "METADATA_CAPTURED_TWICE_REPEAT_CONFIRMED",
+          "metadataFile": "publication-closure/entries.jsonl"
+        },
+        {
+          "pdbId": "9NNZ",
+          "status": "METADATA_CAPTURED_TWICE_REPEAT_CONFIRMED",
+          "metadataFile": "publication-closure/entries.jsonl"
+        }
+      ],
+      "pendingRequirements": [
+        "Integrate the development receptor-overlap evidence through the frozen formal adjudication workflow.",
+        "Reconcile full experimental Mb7 sequence, omitted scaffold and unknown deposited residues.",
+        "Apply formal graph/construct adjudication to the newly captured9NOZ and9NNZ; both match development8FCZ receptor sequence exactly."
+      ]
+    }
+  ],
+  "summary": {
+    "reviewedEntries": 2,
+    "inventoriedPolymerEntities": 4,
+    "exactPrimaryDepositionLinksReviewed": 1,
+    "developmentReceptorOverlapSupported": 1,
+    "candidatePrimaryPaperPendingExactDeposition": 1,
+    "formalExclusionsMade": 0,
+    "newIndependentComponentsEstablished": 0,
+    "additionalPublicationAccessionsCaptured": 3,
+    "additionalPublicationPolymerEntitiesInventoried": 7,
+    "additionalAccessionsMetadataRepeatAgreement": true
+  },
+  "broaderDiscoveryComplete": false,
+  "wholeCensusComponentUpperBound": null,
+  "targetFreezePermitted": false,
+  "publicationClosureAssessmentFile": "publication-closure/assessments.json",
+  "publicationClosureMetadataFile": "publication-closure/entries.jsonl"
+}

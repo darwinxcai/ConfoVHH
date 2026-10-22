@@ -1,0 +1,269 @@
+{
+  "verified": true,
+  "schemaFields": {
+    "releaseDate": {
+      "type": "string",
+      "format": "date",
+      "examples": [
+        "2020-01-10",
+        "2018-01-23"
+      ],
+      "description": "The entry initial release date.",
+      "rcsb_search_context": [
+        "default-match"
+      ],
+      "rcsb_description": [
+        {
+          "text": "The entry initial release date.",
+          "context": "dictionary"
+        },
+        {
+          "text": "Release Date",
+          "context": "brief"
+        }
+      ],
+      "rcsb_search_group": [
+        {
+          "group_name": "Structure Details",
+          "priority_order": 25
+        }
+      ],
+      "rcsb_current_maximum_value": 1788307200000,
+      "rcsb_current_minimum_value": 201312000000
+    },
+    "annotationId": {
+      "type": "string",
+      "description": "An identifier for the annotation.",
+      "rcsb_search_context": [
+        "exact-match"
+      ],
+      "rcsb_full_text_priority": 10,
+      "rcsb_description": [
+        {
+          "text": "An identifier for the annotation.",
+          "context": "dictionary"
+        },
+        {
+          "text": "Identifier",
+          "context": "brief"
+        }
+      ],
+      "rcsb_search_group": [
+        {
+          "group_name": "Polymer Molecular Features",
+          "priority_order": 120
+        }
+      ]
+    },
+    "annotationType": {
+      "type": "string",
+      "enum": [
+        "CARD",
+        "GO",
+        "GlyCosmos",
+        "GlyGen",
+        "InterPro",
+        "MemProtMD",
+        "OPM",
+        "PDBTM",
+        "Pfam",
+        "mpstruc"
+      ],
+      "examples": [
+        "GO",
+        "Pfam"
+      ],
+      "description": "A type or category of the annotation.",
+      "rcsb_search_context": [
+        "exact-match"
+      ],
+      "rcsb_full_text_priority": 10,
+      "rcsb_enum_annotated": [
+        {
+          "value": "CARD",
+          "detail": "Comprehensive Antibiotic Resistance Database",
+          "name": "CARD"
+        },
+        {
+          "value": "GO",
+          "detail": "Gene Ontology",
+          "name": "Gene Ontology"
+        },
+        {
+          "value": "GlyCosmos",
+          "detail": "Web portal integrating glycosciences with the life sciences",
+          "name": "Web portal integrating glycosciences with the life sciences"
+        },
+        {
+          "value": "GlyGen",
+          "detail": "Computational and Informatics Resources for Glycoscience",
+          "name": "Computational and Informatics Resources for Glycoscience"
+        },
+        {
+          "value": "InterPro",
+          "detail": "InterPro Protein Family",
+          "name": "InterPro Protein Family"
+        },
+        {
+          "value": "MemProtMD",
+          "detail": "A Database of Membrane Proteins Embedded in Lipid Bilayers",
+          "name": "A Database of Membrane Proteins Embedded in Lipid Bilayers"
+        },
+        {
+          "value": "OPM",
+          "detail": "Orientations of Proteins in Membranes (OPM) Database",
+          "name": "Orientations of Proteins in Membranes (OPM) Database"
+        },
+        {
+          "value": "PDBTM",
+          "detail": "Protein Data Bank of Transmembrane Proteins",
+          "name": "Protein Data Bank of Transmembrane Proteins"
+        },
+        {
+          "value": "Pfam",
+          "detail": "Pfam Protein Family",
+          "name": "Pfam Protein Family"
+        },
+        {
+          "value": "mpstruc",
+          "detail": "Membrane Proteins of Known 3D Structure",
+          "name": "Membrane Proteins of Known 3D Structure"
+        }
+      ],
+      "rcsb_description": [
+        {
+          "text": "A type or category of the annotation.",
+          "context": "dictionary"
+        },
+        {
+          "text": "Annotation Type",
+          "context": "brief"
+        }
+      ]
+    },
+    "nestedIndexing": true,
+    "nestedContext": [
+      {
+        "category_name": "annotation_type",
+        "category_path": "rcsb_polymer_entity_annotation.type",
+        "context_attributes": [
+          {
+            "context_value": "Pfam",
+            "attributes": [
+              {
+                "examples": [
+                  "PF00049",
+                  "PF00441"
+                ],
+                "path": "rcsb_polymer_entity_annotation.annotation_id"
+              },
+              {
+                "examples": [
+                  "Insulin/IGF/Relaxin family (Insulin)",
+                  "Acyl-CoA dehydrogenase, C-terminal domain (Acyl-CoA_dh_1)"
+                ],
+                "path": "rcsb_polymer_entity_annotation.name"
+              }
+            ]
+          },
+          {
+            "context_value": "CARD",
+            "attributes": [
+              {
+                "examples": [
+                  "ARO:3001059",
+                  "ARO:3000015"
+                ],
+                "path": "rcsb_polymer_entity_annotation.annotation_lineage.id"
+              },
+              {
+                "examples": [
+                  "SHV-1",
+                  "SHV beta-lactamase"
+                ],
+                "path": "rcsb_polymer_entity_annotation.annotation_lineage.name"
+              }
+            ]
+          },
+          {
+            "context_value": "mpstruc",
+            "attributes": [
+              {
+                "examples": [
+                  "MONOTOPIC MEMBRANE PROTEINS.Oxidases.Monoamine Oxidase A"
+                ],
+                "path": "rcsb_polymer_entity_annotation.annotation_lineage.id"
+              },
+              {
+                "examples": [
+                  "Monoamine Oxidase A"
+                ],
+                "path": "rcsb_polymer_entity_annotation.annotation_lineage.name"
+              }
+            ]
+          },
+          {
+            "context_value": "OPM",
+            "attributes": [
+              {
+                "examples": [
+                  "Transmembrane.Bitopic proteins.Bitopic proteins with NAD(P)-binding Rossmann-fold domains.Flavin containing amine oxidoreductase"
+                ],
+                "path": "rcsb_polymer_entity_annotation.annotation_lineage.id"
+              },
+              {
+                "examples": [
+                  "Flavin containing amine oxidoreductase"
+                ],
+                "path": "rcsb_polymer_entity_annotation.annotation_lineage.name"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "domains": [
+    {
+      "accession": "PF00001",
+      "shortName": "7tm_1",
+      "description": "rhodopsin-family membrane domain",
+      "controlPdbId": "3SN6",
+      "verified": true,
+      "authorityUrl": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00001/",
+      "observedName": "7 transmembrane receptor (rhodopsin family)",
+      "observedType": "domain"
+    },
+    {
+      "accession": "PF00002",
+      "shortName": "7tm_2",
+      "description": "secretin-family membrane domain, also found in adhesion GPCRs",
+      "controlPdbId": "7VVN",
+      "verified": true,
+      "authorityUrl": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00002/",
+      "observedName": "7 transmembrane receptor (Secretin family)",
+      "observedType": "domain"
+    },
+    {
+      "accession": "PF00003",
+      "shortName": "7tm_3",
+      "description": "family-3 membrane domain",
+      "controlPdbId": "4OR2",
+      "verified": true,
+      "authorityUrl": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00003/",
+      "observedName": "7 transmembrane sweet-taste receptor of 3 GCPR",
+      "observedType": "domain"
+    },
+    {
+      "accession": "PF01534",
+      "shortName": "Frizzled",
+      "description": "Frizzled/Smoothened membrane region",
+      "controlPdbId": "4JKV",
+      "verified": true,
+      "authorityUrl": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF01534/",
+      "observedName": "Frizzled/Smoothened family membrane region",
+      "observedType": "family"
+    }
+  ],
+  "errors": []
+}

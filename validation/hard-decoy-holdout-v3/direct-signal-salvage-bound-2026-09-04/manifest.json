@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "DIRECT_SIGNAL_SALVAGE_ADDS_ZERO_PRIORITIZED_FRONTIER_AT_MOST_EIGHT",
+  "generatorScript": "scripts/hard-decoy-v3/build-direct-signal-salvage-bound.mjs",
+  "generatorScriptSha256": "263f20f84c05429c7e3d7cf9b050a6f690d78f25283daa27632a61662e7673df",
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v3/prelabel-census-draft/disposition-contract.json": "805136877bd727ca22aae0c13284cfd4fd8aca5e8b2f868fe619d320e0c1f039",
+    "validation/hard-decoy-holdout-v2/prelabel-census/target-census.jsonl": "1a6703a6e8d4ccba711ec160d0eb5586e6ad3e127253d4ccd0cd081007155480",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/other-strata-salvage-review-2026-09-04/salvage-review-queue.jsonl": "1f4c5bf98e0b742a07220aea0b4f06242dcfd5dd4eb30f16b06d40f6c41a8385",
+    "validation/hard-decoy-holdout-v3/other-strata-salvage-review-2026-09-04/summary.json": "e51a47e8fffc5cba340d28979c6e794efcd0bef648a26ed67837446348d79107",
+    "validation/hard-decoy-holdout-v3/no-direct-signal-role-audit-2026-09-04/summary.json": "bf2e1a001c408661ed92ad97ace04e670a2443de21a56bc7a45d80e681e32640",
+    "validation/hard-decoy-holdout-v3/direct-stratum-bound-2026-09-04/summary.json": "729f3bf9744f469223690c5dc5b618b93f79cd0b51311bd6c14d8693b8c552c5",
+    "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/receptor-pair-matrix.jsonl": "be97357b63a2837f46da47e8f0c9470cd3d63126925ae900c83075ee2e00ae8f",
+    "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/development-receptor-profiles.jsonl": "0a120c9ac73ce5acbb33cb638d2fe396942cf6dff302d3a81e74a789af797b65"
+  },
+  "evidenceBoundary": "Frozen public metadata and sequence pregraphs plus public primary-paper role statements only; no coordinate-derived interface inference.",
+  "outputDigests": {
+    "component-upper-bound-accounting.jsonl": "ea07b2d6b8f8508cbba6cce450013368ce61fb31db106843ed014314f41c33c2",
+    "supplemental-us28-tm-mappings.jsonl": "4170d0841e5cbb0c4d91018838e859d5e4d77e736009aa018ca8cc981f9ddc75",
+    "source-backed-exclusions.jsonl": "612330ba1c81ac8baf2e8aeeeef0de4c691030372e359fbde70718df73fbedd9",
+    "provisional-census-impact.jsonl": "2f07d82601b5e8fd0a076b32e8cedd0ff0fe6649a44d7e7ff7d68044d122c6f8",
+    "summary.json": "b3985b15051c8962635a6d227147b0da0aa18dc9465e00a88cda1f396bfe7557"
+  },
+  "partialAuditOnly": true,
+  "formalLeakageGraphRewritten": false,
+  "masterDispositionLedgerRewritten": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false
+}

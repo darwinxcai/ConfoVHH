@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "discoveryRoute": "C.3_PUBLICATION_FIRST_EUROPE_PMC_PHRASE_QUERIES",
+  "querySummaries": [
+    {
+      "queryId": 1,
+      "phrase": "GPCR nanobody",
+      "resultCount": 13,
+      "pages": 1,
+      "retrievedAllReportedResults": true
+    },
+    {
+      "queryId": 2,
+      "phrase": "GPCR VHH",
+      "resultCount": 0,
+      "pages": 1,
+      "retrievedAllReportedResults": true
+    },
+    {
+      "queryId": 3,
+      "phrase": "G protein-coupled receptor nanobody",
+      "resultCount": 1,
+      "pages": 1,
+      "retrievedAllReportedResults": true
+    },
+    {
+      "queryId": 4,
+      "phrase": "extracellular GPCR nanobody",
+      "resultCount": 0,
+      "pages": 1,
+      "retrievedAllReportedResults": true
+    },
+    {
+      "queryId": 5,
+      "phrase": "conformation-selective nanobody",
+      "resultCount": 10,
+      "pages": 1,
+      "retrievedAllReportedResults": true
+    }
+  ],
+  "uniquePublicationCount": 24,
+  "recordsWithPdbTextMiningSignal": 13,
+  "selectedSourceQueryPaginationComplete": true,
+  "primarySourceAccessionExtractionComplete": false,
+  "broaderDiscoveryComplete": false,
+  "formalProtocolStatus": "DRAFT",
+  "targetFreezeGate": "BLOCKED",
+  "targetFreezePermitted": false,
+  "nativeCoordinatesInspected": false,
+  "labelsAccessed": false,
+  "interpretation": "All reported Europe PMC results for the five prespecified quoted phrases were retrieved. This is a dated bibliography, not an exhaustive literature census, an entry disposition ledger, or evidence of new independent components. Index coverage, phrase terminology, source duplication, reviews, and off-topic records require assessment. Exact PDB accession extraction and entry-specific role review remain pending."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "epmc-doi",
+  "requestedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1038/s41467-024-51451-1&format=json&resultType=core",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1038/s41467-024-51451-1&format=json&resultType=core",
+  "startedAtUtc": "2026-09-04T23:49:13.636853+00:00",
+  "completedAtUtc": "2026-09-04T23:49:24.573128+00:00",
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Strict-Transport-Security": "max-age=0",
+    "Date": "Fri, 04 Sep 2026 23:49:24 GMT",
+    "Access-Control-Max-Age": "3600",
+    "Transfer-Encoding": "chunked",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=B1EA57C33E98DDE9898B162B525BFA32; Path=/europepmc/webservices/; HttpOnly",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+  },
+  "bodyFile": "epmc-doi.body",
+  "bytes": 11142,
+  "sha256": "78f2a57eac72f45ad7c200a05f32b70d6f21fb0f85e7aa7956d8ddcfea5dc2a3",
+  "bodyRenderedToModel": false
+}

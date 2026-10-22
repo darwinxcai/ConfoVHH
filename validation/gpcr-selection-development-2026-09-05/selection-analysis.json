@@ -1,0 +1,2878 @@
+{
+  "per_job": [
+    {
+      "job": "3P0G_cutoff_2011_01_18_complex_seed1",
+      "condition": "3P0G_cutoff_2011_01_18_complex",
+      "reference": "3P0G",
+      "acceptable_models": 3,
+      "classification": "mixed",
+      "confovhh": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "c1b8331850e98d6999f6c7a5bdec5ecc51e0860bba50def66b727e6c3a257555"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.40266753464674415,
+        "DockQ_max": 0.40266753464674415,
+        "DockQ_expected": 0.40266753464674415
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "c1b8331850e98d6999f6c7a5bdec5ecc51e0860bba50def66b727e6c3a257555"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.40266753464674415,
+        "DockQ_max": 0.40266753464674415,
+        "DockQ_expected": 0.40266753464674415
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "c1b8331850e98d6999f6c7a5bdec5ecc51e0860bba50def66b727e6c3a257555",
+          "6fb25f2a208d15a49477edadaf3e7c2a7c056acebed09f617d4968e3ac01c2f8",
+          "ce8c8bce28536e90918cfc7401dde9da96c93106a91461a046381f752114eb6b",
+          "09888b93387ca32f2e4ead705031357a079c2f7d180877d85c16dc2bc629796d",
+          "357db58cdff23d26bbe2288b90d5367185fbc31264b26c1b4c1fba030d2ff819"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 0.6,
+        "DockQ_min": 0.18062602118673352,
+        "DockQ_max": 0.40266753464674415,
+        "DockQ_expected": 0.26828504116609136
+      },
+      "best_available": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "c1b8331850e98d6999f6c7a5bdec5ecc51e0860bba50def66b727e6c3a257555"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.40266753464674415,
+        "DockQ_max": 0.40266753464674415,
+        "DockQ_expected": 0.40266753464674415
+      }
+    },
+    {
+      "job": "3P0G_default_complex_seed1",
+      "condition": "3P0G_default_complex",
+      "reference": "3P0G",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          3
+        ],
+        "model_sha256": [
+          "c97ab868d8f2c9eb694a81eb8be2fd949fa9a91d87fcf3b4db5548595ee6342f"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7584706300603538,
+        "DockQ_max": 0.7584706300603538,
+        "DockQ_expected": 0.7584706300603538
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2
+        ],
+        "model_sha256": [
+          "dad3035f565e1a28460631aba6f11259e7d7081d30bc9028027be77ed0a49515",
+          "3abf9d680f56e544c79d06e7a4f9d0c7db8e05fbde2e56dcd3db98b290c59d66",
+          "483f632e548da9ae75b3db80b286a074c0c82636a34a48fb7327365d5585f9b3"
+        ],
+        "count": 3,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7519144243263757,
+        "DockQ_max": 0.7549515429029935,
+        "DockQ_expected": 0.7531197259761986
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "dad3035f565e1a28460631aba6f11259e7d7081d30bc9028027be77ed0a49515",
+          "3abf9d680f56e544c79d06e7a4f9d0c7db8e05fbde2e56dcd3db98b290c59d66",
+          "483f632e548da9ae75b3db80b286a074c0c82636a34a48fb7327365d5585f9b3",
+          "c97ab868d8f2c9eb694a81eb8be2fd949fa9a91d87fcf3b4db5548595ee6342f",
+          "fca5f8c63a231853a5229038bc3add37cef8bdd9fa7843772655e60e630186e4"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7519144243263757,
+        "DockQ_max": 0.7584706300603538,
+        "DockQ_expected": 0.754209664033858
+      },
+      "best_available": {
+        "models": [
+          3
+        ],
+        "model_sha256": [
+          "c97ab868d8f2c9eb694a81eb8be2fd949fa9a91d87fcf3b4db5548595ee6342f"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7584706300603538,
+        "DockQ_max": 0.7584706300603538,
+        "DockQ_expected": 0.7584706300603538
+      }
+    },
+    {
+      "job": "3P0G_no_templates_complex_seed1",
+      "condition": "3P0G_no_templates_complex",
+      "reference": "3P0G",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "9ed27b66fc90e76e8b36cb388db3a275b76f2cb8ab7f668fc962d58e7ba2c56a"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.28489465629328475,
+        "DockQ_max": 0.28489465629328475,
+        "DockQ_expected": 0.28489465629328475
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "781fb5411bfe7cf9332cea438fdbcee18e48017a8e9d97b6240f52b581af9e07"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.36166567752583423,
+        "DockQ_max": 0.36166567752583423,
+        "DockQ_expected": 0.36166567752583423
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "781fb5411bfe7cf9332cea438fdbcee18e48017a8e9d97b6240f52b581af9e07",
+          "7624535f226735c713581feba73918caa126ae98314b14a912e030fb2b00ea1f",
+          "9ed27b66fc90e76e8b36cb388db3a275b76f2cb8ab7f668fc962d58e7ba2c56a",
+          "157b98c63ecab9af333d4d256fcb4ad8b3dc6aa059c9d7e544fb3af6d50f8d89",
+          "66fe106df24132553cca6d1b1b22ae7a71c49836cbdc79ff4e98141ba7aecfdc"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.2493372078454039,
+        "DockQ_max": 0.36166567752583423,
+        "DockQ_expected": 0.30187148841138356
+      },
+      "best_available": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "781fb5411bfe7cf9332cea438fdbcee18e48017a8e9d97b6240f52b581af9e07"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.36166567752583423,
+        "DockQ_max": 0.36166567752583423,
+        "DockQ_expected": 0.36166567752583423
+      }
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed1",
+      "condition": "3P0G_recOFF_nbON_complex",
+      "reference": "3P0G",
+      "acceptable_models": 3,
+      "classification": "mixed",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "983e20e7a1c2d65cc536e5a4ab66c636ed06f4dde161328e9eecc93d189196c6"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.3803241004276569,
+        "DockQ_max": 0.3803241004276569,
+        "DockQ_expected": 0.3803241004276569
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "3722e2e1c9a2f5d9c2b7103821876357cf292c47654f524e659ac33fef56e3e7",
+          "983e20e7a1c2d65cc536e5a4ab66c636ed06f4dde161328e9eecc93d189196c6"
+        ],
+        "count": 2,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.3803241004276569,
+        "DockQ_max": 0.3858917229208017,
+        "DockQ_expected": 0.3831079116742293
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "3722e2e1c9a2f5d9c2b7103821876357cf292c47654f524e659ac33fef56e3e7",
+          "983e20e7a1c2d65cc536e5a4ab66c636ed06f4dde161328e9eecc93d189196c6",
+          "a29091f65298c4e32dda1ad21cd703eea4f976cb640adc7166f6954c7d7d4cdb",
+          "14eb7d870fe240cbb8a742338862acc6ce5bf8b76259fd9d8ff2fd09f2d1fe5e",
+          "8065d59f6cc3281ad233978ce643565f27a4dcbd64508887288577a23bb8e6c6"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 0.6,
+        "DockQ_min": 0.05964404697206501,
+        "DockQ_max": 0.3858917229208017,
+        "DockQ_expected": 0.26231276149833327
+      },
+      "best_available": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "3722e2e1c9a2f5d9c2b7103821876357cf292c47654f524e659ac33fef56e3e7"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.3858917229208017,
+        "DockQ_max": 0.3858917229208017,
+        "DockQ_expected": 0.3858917229208017
+      }
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed2",
+      "condition": "3P0G_recOFF_nbON_complex",
+      "reference": "3P0G",
+      "acceptable_models": 2,
+      "classification": "mixed",
+      "confovhh": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "6ce3781358bef5c444dc84e54fab089af8a735b5aa87dcf5e71e7d4dee793742"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.018423793799367424,
+        "DockQ_max": 0.018423793799367424,
+        "DockQ_expected": 0.018423793799367424
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "eecc1336573d2e527073adeae06bd7a4286ca0175e84914591c270ccb2272659",
+          "f7b4b3e0ece7787f8e68ee83b7a33a0e32ab2fbfe7f9342b4e486b76bab23fd2"
+        ],
+        "count": 2,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.24501741612781494,
+        "DockQ_max": 0.25241065557951364,
+        "DockQ_expected": 0.2487140358536643
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "eecc1336573d2e527073adeae06bd7a4286ca0175e84914591c270ccb2272659",
+          "f7b4b3e0ece7787f8e68ee83b7a33a0e32ab2fbfe7f9342b4e486b76bab23fd2",
+          "3c4d2ea58063164027b2c1cad9040d1f8d56e67b18835607dea96a6948a09c2b",
+          "3aabece185bd422aa0c5bb63177c5eb0802b306a11bc55e3f403566cfd30fef0",
+          "6ce3781358bef5c444dc84e54fab089af8a735b5aa87dcf5e71e7d4dee793742"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 0.4,
+        "DockQ_min": 0.018423793799367424,
+        "DockQ_max": 0.25241065557951364,
+        "DockQ_expected": 0.1250416448859789
+      },
+      "best_available": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "eecc1336573d2e527073adeae06bd7a4286ca0175e84914591c270ccb2272659"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.25241065557951364,
+        "DockQ_max": 0.25241065557951364,
+        "DockQ_expected": 0.25241065557951364
+      }
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed3",
+      "condition": "3P0G_recOFF_nbON_complex",
+      "reference": "3P0G",
+      "acceptable_models": 2,
+      "classification": "mixed",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "397eadb28cd4d16781246b6419b855fadf446a457f88c97a56d0172da81e74eb"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.026969179456243105,
+        "DockQ_max": 0.026969179456243105,
+        "DockQ_expected": 0.026969179456243105
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "a106273f4f5739bd86a977a7984892bb772ca096901227e1b86d775be0c3d051"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.02719798385903005,
+        "DockQ_max": 0.02719798385903005,
+        "DockQ_expected": 0.02719798385903005
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "a106273f4f5739bd86a977a7984892bb772ca096901227e1b86d775be0c3d051",
+          "0ce7202d4bc32fda17f79322c0b872e29c5518efaae2b86780c055ad5635d6db",
+          "397eadb28cd4d16781246b6419b855fadf446a457f88c97a56d0172da81e74eb",
+          "f32dd87fcde87575603e13e8c4217a6b2d985532a0750f7d97994e8bd5b27d92",
+          "7ddb6911f6879c80be1735eb93f46699433ed9a2cfbe8d7d139478943095b708"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 0.4,
+        "DockQ_min": 0.026969179456243105,
+        "DockQ_max": 0.3612634066899946,
+        "DockQ_expected": 0.1632761205681043
+      },
+      "best_available": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "0ce7202d4bc32fda17f79322c0b872e29c5518efaae2b86780c055ad5635d6db"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.3612634066899946,
+        "DockQ_max": 0.3612634066899946,
+        "DockQ_expected": 0.3612634066899946
+      }
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed1",
+      "condition": "3P0G_recON_nbOFF_complex",
+      "reference": "3P0G",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          3
+        ],
+        "model_sha256": [
+          "42784924797784e73b7643e534f89984b362971ec972a25f4e566754f5a4d778"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7600005331209796,
+        "DockQ_max": 0.7600005331209796,
+        "DockQ_expected": 0.7600005331209796
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model_sha256": [
+          "33bc11547a4c9535c24feac1926f2c28ab2d245ce4bd60e1f4a31b56da760d18",
+          "0e66fc2f16472513b6b0adbb882046930f05131c12f14904ea01f8566abbe49b",
+          "2546672dc42273cb0fc1bf7af382f8e6758636dc1f0f09255cf55f0f1a683e8c",
+          "42784924797784e73b7643e534f89984b362971ec972a25f4e566754f5a4d778"
+        ],
+        "count": 4,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7580982891269686,
+        "DockQ_max": 0.7600005331209796,
+        "DockQ_expected": 0.7591457288340319
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "33bc11547a4c9535c24feac1926f2c28ab2d245ce4bd60e1f4a31b56da760d18",
+          "0e66fc2f16472513b6b0adbb882046930f05131c12f14904ea01f8566abbe49b",
+          "2546672dc42273cb0fc1bf7af382f8e6758636dc1f0f09255cf55f0f1a683e8c",
+          "42784924797784e73b7643e534f89984b362971ec972a25f4e566754f5a4d778",
+          "2b5767bcd0b89e79f62c297fbc8e5fe13a4346c620b302bc0274314e03442da2"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7580982891269686,
+        "DockQ_max": 0.7600005331209796,
+        "DockQ_expected": 0.7590787697129265
+      },
+      "best_available": {
+        "models": [
+          3
+        ],
+        "model_sha256": [
+          "42784924797784e73b7643e534f89984b362971ec972a25f4e566754f5a4d778"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7600005331209796,
+        "DockQ_max": 0.7600005331209796,
+        "DockQ_expected": 0.7600005331209796
+      }
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed2",
+      "condition": "3P0G_recON_nbOFF_complex",
+      "reference": "3P0G",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          3
+        ],
+        "model_sha256": [
+          "526843c71806cb17df396905807706889e228f78b594d7eb2956fd0f0ad824d8"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7763963427043468,
+        "DockQ_max": 0.7763963427043468,
+        "DockQ_expected": 0.7763963427043468
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model_sha256": [
+          "4000e691e472b6e6be4efc3b7a39ddab70e69b03a2b877a3d485c9769b3d5910",
+          "22ec13fb8469a15902d6c0cae8cf46c23f6710ed0a9fe477f7b62871c151152e",
+          "35aef014428c3d288fed40e3513b65d71c712a0542b224ca89cb46fb1b96ab5d",
+          "526843c71806cb17df396905807706889e228f78b594d7eb2956fd0f0ad824d8"
+        ],
+        "count": 4,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7647741045885169,
+        "DockQ_max": 0.7763963427043468,
+        "DockQ_expected": 0.7684156999107961
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "4000e691e472b6e6be4efc3b7a39ddab70e69b03a2b877a3d485c9769b3d5910",
+          "22ec13fb8469a15902d6c0cae8cf46c23f6710ed0a9fe477f7b62871c151152e",
+          "35aef014428c3d288fed40e3513b65d71c712a0542b224ca89cb46fb1b96ab5d",
+          "526843c71806cb17df396905807706889e228f78b594d7eb2956fd0f0ad824d8",
+          "446b31c5eb423a643e74ed6edb44d7bff9d43479810aa07a7c01476133361c95"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7647741045885169,
+        "DockQ_max": 0.9103548380238161,
+        "DockQ_expected": 0.7968035275334001
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "446b31c5eb423a643e74ed6edb44d7bff9d43479810aa07a7c01476133361c95"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.9103548380238161,
+        "DockQ_max": 0.9103548380238161,
+        "DockQ_expected": 0.9103548380238161
+      }
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed3",
+      "condition": "3P0G_recON_nbOFF_complex",
+      "reference": "3P0G",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "a94719da2f4b04b417012fb5d2d39f253e3bb0be7c8b043126ba6d0ec6f16351"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7592326425687386,
+        "DockQ_max": 0.7592326425687386,
+        "DockQ_expected": 0.7592326425687386
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model_sha256": [
+          "9c876df57e8e662a743cdd403539737cbb4561aaa25ccebc9bb3b40c056f3329",
+          "a94719da2f4b04b417012fb5d2d39f253e3bb0be7c8b043126ba6d0ec6f16351",
+          "a5e119cb09a1922c086ec80439776f2c61ea8a31208638b4f08d15e918c8cc8c",
+          "0924d6f2b110291abbd18a46405bcfcffc0043779d0e4bd52ff3506f5673f11c"
+        ],
+        "count": 4,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7459544294856117,
+        "DockQ_max": 0.7646118982123417,
+        "DockQ_expected": 0.7542901951406329
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "9c876df57e8e662a743cdd403539737cbb4561aaa25ccebc9bb3b40c056f3329",
+          "a94719da2f4b04b417012fb5d2d39f253e3bb0be7c8b043126ba6d0ec6f16351",
+          "a5e119cb09a1922c086ec80439776f2c61ea8a31208638b4f08d15e918c8cc8c",
+          "0924d6f2b110291abbd18a46405bcfcffc0043779d0e4bd52ff3506f5673f11c",
+          "43988473275047603c56a8b4c43675e0030ec4af296d9af3bfda85dce5e07822"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7459544294856117,
+        "DockQ_max": 0.7707879305334054,
+        "DockQ_expected": 0.7575897422191874
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "43988473275047603c56a8b4c43675e0030ec4af296d9af3bfda85dce5e07822"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7707879305334054,
+        "DockQ_max": 0.7707879305334054,
+        "DockQ_expected": 0.7707879305334054
+      }
+    },
+    {
+      "job": "4MQS_default_complex_seed1",
+      "condition": "4MQS_default_complex",
+      "reference": "4MQS",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "51179133e69488cbb7d9247ffde161cb4b499222f5d9336e2c44aaa9d62fd847"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.733734952155228,
+        "DockQ_max": 0.733734952155228,
+        "DockQ_expected": 0.733734952155228
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "7ba3a31fd3fc2e305f02177edb136c4395226df1c69a2c5e31914fc9a709b4c7",
+          "51179133e69488cbb7d9247ffde161cb4b499222f5d9336e2c44aaa9d62fd847"
+        ],
+        "count": 2,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.733734952155228,
+        "DockQ_max": 0.781202213389955,
+        "DockQ_expected": 0.7574685827725915
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "7ba3a31fd3fc2e305f02177edb136c4395226df1c69a2c5e31914fc9a709b4c7",
+          "51179133e69488cbb7d9247ffde161cb4b499222f5d9336e2c44aaa9d62fd847",
+          "a1ccb38e3535a5da7c84b75b06c7e55c0cf3533ab87c60c57fdb3f17d030f525",
+          "cf91bcb333358e52862964359989fc043265dda46a50c3768820bf89128afcc3",
+          "2e3a0cf2bb33aaacf2ef4eeb2a9d59335dd9c74797f831427361307d5ab8a092"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.730091326876224,
+        "DockQ_max": 0.781202213389955,
+        "DockQ_expected": 0.7523454689690783
+      },
+      "best_available": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "7ba3a31fd3fc2e305f02177edb136c4395226df1c69a2c5e31914fc9a709b4c7"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.781202213389955,
+        "DockQ_max": 0.781202213389955,
+        "DockQ_expected": 0.781202213389955
+      }
+    },
+    {
+      "job": "4MQS_default_complex_seed2",
+      "condition": "4MQS_default_complex",
+      "reference": "4MQS",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "2860ac3d31ec2d933bfdcd706fdd8e77a25ad81be8d434e90c1d0a574139fa6b"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7769997446310916,
+        "DockQ_max": 0.7769997446310916,
+        "DockQ_expected": 0.7769997446310916
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "b2c8d84a2fd922043e1ad0c43d75a75c21979d70b70980ef2114d01b3120451c"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7724071798095623,
+        "DockQ_max": 0.7724071798095623,
+        "DockQ_expected": 0.7724071798095623
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "b2c8d84a2fd922043e1ad0c43d75a75c21979d70b70980ef2114d01b3120451c",
+          "600a30b038c2ebd342807c9c42dbc823802e153b7de7e4427bc0adfa73bf2c7b",
+          "2860ac3d31ec2d933bfdcd706fdd8e77a25ad81be8d434e90c1d0a574139fa6b",
+          "c50790bfb0afcd19536a927a9f3ec1c8e6ad30ba7390b2a3ff81f30899141a1e",
+          "d7d3da9eb2ef21ecd6508ff5f85c9bab753e26553b73b0d092ae79ac1e5c6613"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7382869314387207,
+        "DockQ_max": 0.8071197408293823,
+        "DockQ_expected": 0.76681116415875
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "d7d3da9eb2ef21ecd6508ff5f85c9bab753e26553b73b0d092ae79ac1e5c6613"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.8071197408293823,
+        "DockQ_max": 0.8071197408293823,
+        "DockQ_expected": 0.8071197408293823
+      }
+    },
+    {
+      "job": "4MQS_default_complex_seed3",
+      "condition": "4MQS_default_complex",
+      "reference": "4MQS",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "0617f6a9b537d0412d58191b52ddc2b9855d9ebfd5a1612b228adc15d8786425"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7386501799889501,
+        "DockQ_max": 0.7386501799889501,
+        "DockQ_expected": 0.7386501799889501
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model_sha256": [
+          "0617f6a9b537d0412d58191b52ddc2b9855d9ebfd5a1612b228adc15d8786425",
+          "3cb4e400bff568d869de1e402068e142a2d0da4a0de97574b15578cb4a40ea87",
+          "9cec22a84ae9f8e25349407e7bdf4e8f79cb18485d20bd017c72f651be979178",
+          "927de7189ad1c0d4e2e2820d56f45798bcbe75d2ba2aed8a93c60c3d20f07386"
+        ],
+        "count": 4,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7006532559382709,
+        "DockQ_max": 0.8095565265859842,
+        "DockQ_expected": 0.7546011441680858
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "0617f6a9b537d0412d58191b52ddc2b9855d9ebfd5a1612b228adc15d8786425",
+          "3cb4e400bff568d869de1e402068e142a2d0da4a0de97574b15578cb4a40ea87",
+          "9cec22a84ae9f8e25349407e7bdf4e8f79cb18485d20bd017c72f651be979178",
+          "927de7189ad1c0d4e2e2820d56f45798bcbe75d2ba2aed8a93c60c3d20f07386",
+          "5dbbc63598fc70aeb449a0f7a2f99a0069e1c88a7bf1b400e4e92c67d9b71e87"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7006532559382709,
+        "DockQ_max": 0.8095565265859842,
+        "DockQ_expected": 0.7604802096043012
+      },
+      "best_available": {
+        "models": [
+          3
+        ],
+        "model_sha256": [
+          "927de7189ad1c0d4e2e2820d56f45798bcbe75d2ba2aed8a93c60c3d20f07386"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.8095565265859842,
+        "DockQ_max": 0.8095565265859842,
+        "DockQ_expected": 0.8095565265859842
+      }
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed1",
+      "condition": "4MQS_recOFF_nbON_complex",
+      "reference": "4MQS",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "6e4d861c5874d9b8c2ad4e09dd013055da4197a88a5f0d5f8928e238ad3639ab"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.780653378240741,
+        "DockQ_max": 0.780653378240741,
+        "DockQ_expected": 0.780653378240741
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "bd30e1b5517ac46111431bf922164be1b2b69c4d8794ca79419a4ee1e483c671",
+          "6e4d861c5874d9b8c2ad4e09dd013055da4197a88a5f0d5f8928e238ad3639ab"
+        ],
+        "count": 2,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7136215583154089,
+        "DockQ_max": 0.780653378240741,
+        "DockQ_expected": 0.7471374682780749
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "bd30e1b5517ac46111431bf922164be1b2b69c4d8794ca79419a4ee1e483c671",
+          "6e4d861c5874d9b8c2ad4e09dd013055da4197a88a5f0d5f8928e238ad3639ab",
+          "cfbffdb84e184cb9671ccafc7d7b59e6de04cb060c37dbcc9b1ce1161fd5476f",
+          "bf1cfe9972ad301f419f2955588795f451c850226effc8784aa55036e4433e86",
+          "c71c4603c850148377b51a6d66ef9faccdc50e3b3bb14b29366b3dbe729a9ac2"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7136215583154089,
+        "DockQ_max": 0.780653378240741,
+        "DockQ_expected": 0.7401520997922353
+      },
+      "best_available": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "6e4d861c5874d9b8c2ad4e09dd013055da4197a88a5f0d5f8928e238ad3639ab"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.780653378240741,
+        "DockQ_max": 0.780653378240741,
+        "DockQ_expected": 0.780653378240741
+      }
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "condition": "4MQS_recOFF_nbON_complex",
+      "reference": "4MQS",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          3
+        ],
+        "model_sha256": [
+          "e57bd0a1544b918a488bd2284675426a11eb63960c2be5d3f0b1ecb94dbfe027"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7544839591143329,
+        "DockQ_max": 0.7544839591143329,
+        "DockQ_expected": 0.7544839591143329
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "30ba8462f2b81a4c5fad64ce3e084c3f08eb82fbb0234c36130565222b6a6d76",
+          "a66a33037d9e51189cb570b49754349795a97d31b9fb0d872fccd76d95b0ba01",
+          "d71c15a1ac6168f87f299d36f48709be7920c4a69cc304cbed06cfd1eb06e82c",
+          "e57bd0a1544b918a488bd2284675426a11eb63960c2be5d3f0b1ecb94dbfe027",
+          "7d552c49f83a9107e87e8cc47acbfcc1f47b7bac648bdbe41c297f5075a5bf5c"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7544839591143329,
+        "DockQ_max": 0.8074818167589592,
+        "DockQ_expected": 0.7733642869386853
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "30ba8462f2b81a4c5fad64ce3e084c3f08eb82fbb0234c36130565222b6a6d76",
+          "a66a33037d9e51189cb570b49754349795a97d31b9fb0d872fccd76d95b0ba01",
+          "d71c15a1ac6168f87f299d36f48709be7920c4a69cc304cbed06cfd1eb06e82c",
+          "e57bd0a1544b918a488bd2284675426a11eb63960c2be5d3f0b1ecb94dbfe027",
+          "7d552c49f83a9107e87e8cc47acbfcc1f47b7bac648bdbe41c297f5075a5bf5c"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7544839591143329,
+        "DockQ_max": 0.8074818167589592,
+        "DockQ_expected": 0.7733642869386853
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "7d552c49f83a9107e87e8cc47acbfcc1f47b7bac648bdbe41c297f5075a5bf5c"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.8074818167589592,
+        "DockQ_max": 0.8074818167589592,
+        "DockQ_expected": 0.8074818167589592
+      }
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed3",
+      "condition": "4MQS_recOFF_nbON_complex",
+      "reference": "4MQS",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "849e8134ddd31a892d68515026d4054188eca8cf51ef0cf31c977beab88b5cee"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.8087869868387743,
+        "DockQ_max": 0.8087869868387743,
+        "DockQ_expected": 0.8087869868387743
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "bdca5bcabce1a99f98aefdb984c39ccfe12f362abbcdfebcb231f084251c829c"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7457438132926514,
+        "DockQ_max": 0.7457438132926514,
+        "DockQ_expected": 0.7457438132926514
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "bdca5bcabce1a99f98aefdb984c39ccfe12f362abbcdfebcb231f084251c829c",
+          "0ffbc1c4047c18d3ae8066c17910e51e55c75aff9c5f3bd128e0fa92cfd0501e",
+          "849e8134ddd31a892d68515026d4054188eca8cf51ef0cf31c977beab88b5cee",
+          "c204fc790457b272a7ffc8ea3882cd3ed158fb06d907a835aa597be0f7b9e39f",
+          "48b21d480219eb7b9baf300838a622df4f47b9565b8b5ee5ae42632cde5d2e34"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7457438132926514,
+        "DockQ_max": 0.8087869868387743,
+        "DockQ_expected": 0.7747677112416234
+      },
+      "best_available": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "849e8134ddd31a892d68515026d4054188eca8cf51ef0cf31c977beab88b5cee"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.8087869868387743,
+        "DockQ_max": 0.8087869868387743,
+        "DockQ_expected": 0.8087869868387743
+      }
+    },
+    {
+      "job": "5C1M_default_complex_seed1",
+      "condition": "5C1M_default_complex",
+      "reference": "5C1M",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "6322ffdc51cfd890be6bdf2b70e90e66c90ae36687c033da3d5e2e068053395f"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7211714285365213,
+        "DockQ_max": 0.7211714285365213,
+        "DockQ_expected": 0.7211714285365213
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model_sha256": [
+          "d90dbf2dc6eb1adb1b69421b1755021b82f88759f9550a119458e69410c707db",
+          "6322ffdc51cfd890be6bdf2b70e90e66c90ae36687c033da3d5e2e068053395f",
+          "494149ff2f71d5f346fd1090834020b1416b0eee52278e1338079b51ec3ba6ee",
+          "abf3e436b74fbb30d5382136cf167a17cb14bd28660af26cc5e7be33367ed20c"
+        ],
+        "count": 4,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7079073207867147,
+        "DockQ_max": 0.7211714285365213,
+        "DockQ_expected": 0.7135418173027128
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "d90dbf2dc6eb1adb1b69421b1755021b82f88759f9550a119458e69410c707db",
+          "6322ffdc51cfd890be6bdf2b70e90e66c90ae36687c033da3d5e2e068053395f",
+          "494149ff2f71d5f346fd1090834020b1416b0eee52278e1338079b51ec3ba6ee",
+          "abf3e436b74fbb30d5382136cf167a17cb14bd28660af26cc5e7be33367ed20c",
+          "cc507120b47574047fefbfed04afb5b45c423c1a1bc9864eea1e193e0b9c8cb5"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7079073207867147,
+        "DockQ_max": 0.7211714285365213,
+        "DockQ_expected": 0.7146094405301641
+      },
+      "best_available": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "6322ffdc51cfd890be6bdf2b70e90e66c90ae36687c033da3d5e2e068053395f"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7211714285365213,
+        "DockQ_max": 0.7211714285365213,
+        "DockQ_expected": 0.7211714285365213
+      }
+    },
+    {
+      "job": "5C1M_default_complex_seed2",
+      "condition": "5C1M_default_complex",
+      "reference": "5C1M",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "0b8023fdc22408645d8dedbddcff964b0ba3b5e7a62b013d90e7745bcf87e6f4"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7152759112380777,
+        "DockQ_max": 0.7152759112380777,
+        "DockQ_expected": 0.7152759112380777
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2
+        ],
+        "model_sha256": [
+          "0b8023fdc22408645d8dedbddcff964b0ba3b5e7a62b013d90e7745bcf87e6f4",
+          "731840e59c466e30bd4f237c8be889033bc9ff30b83f2b9ae94fb5161b44b0c9",
+          "2979745682373efe4a1bc5c15f4268692f33f7b95b218618c0c69db24c257413"
+        ],
+        "count": 3,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7079143318969866,
+        "DockQ_max": 0.7168849825710008,
+        "DockQ_expected": 0.7133584085686884
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "0b8023fdc22408645d8dedbddcff964b0ba3b5e7a62b013d90e7745bcf87e6f4",
+          "731840e59c466e30bd4f237c8be889033bc9ff30b83f2b9ae94fb5161b44b0c9",
+          "2979745682373efe4a1bc5c15f4268692f33f7b95b218618c0c69db24c257413",
+          "a7767d6e4a217e5b4910b33beeb1cce36a9cfd5b1e5dccbfd74a5f738e212919",
+          "bca2d4965b7a919b50eb1e6b8fbd7b6a016f330725d495a75db87a522a1a57bb"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.6932696637606771,
+        "DockQ_max": 0.7168849825710008,
+        "DockQ_expected": 0.7088796971350338
+      },
+      "best_available": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "2979745682373efe4a1bc5c15f4268692f33f7b95b218618c0c69db24c257413"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7168849825710008,
+        "DockQ_max": 0.7168849825710008,
+        "DockQ_expected": 0.7168849825710008
+      }
+    },
+    {
+      "job": "5C1M_default_complex_seed3",
+      "condition": "5C1M_default_complex",
+      "reference": "5C1M",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "5f07b0a319018875b2518936a658f46c6f01295816310f858f941e0af20eb253"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.724013852018457,
+        "DockQ_max": 0.724013852018457,
+        "DockQ_expected": 0.724013852018457
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "model_sha256": [
+          "9e2607aa3cba90d4be7ee60c6a394b03202a26642c8250e526fdc86d9f8f9e6a",
+          "cd919e21b0870bf914e11f4c47bc291d749683955a63dfa5465aa4eb7908c582",
+          "5f07b0a319018875b2518936a658f46c6f01295816310f858f941e0af20eb253",
+          "2acda9385466fbc1a61cd9436f94247b4233ff127d65a81be0f36390dcfbeebb"
+        ],
+        "count": 4,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.71001131994124,
+        "DockQ_max": 0.724013852018457,
+        "DockQ_expected": 0.7159789365049651
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "9e2607aa3cba90d4be7ee60c6a394b03202a26642c8250e526fdc86d9f8f9e6a",
+          "cd919e21b0870bf914e11f4c47bc291d749683955a63dfa5465aa4eb7908c582",
+          "5f07b0a319018875b2518936a658f46c6f01295816310f858f941e0af20eb253",
+          "2acda9385466fbc1a61cd9436f94247b4233ff127d65a81be0f36390dcfbeebb",
+          "2c592c208678f96033a9fee6ae90c470135000b84810900840a6bf78fb5b89a7"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.71001131994124,
+        "DockQ_max": 0.724013852018457,
+        "DockQ_expected": 0.7156277625018524
+      },
+      "best_available": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "5f07b0a319018875b2518936a658f46c6f01295816310f858f941e0af20eb253"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.724013852018457,
+        "DockQ_max": 0.724013852018457,
+        "DockQ_expected": 0.724013852018457
+      }
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed1",
+      "condition": "5C1M_recOFF_nbON_complex",
+      "reference": "5C1M",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "57ec67f22a72b3cd96bf4bcc1d2465459bfdcaf2534302a0c7b97e6be11eb062"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.707850903296016,
+        "DockQ_max": 0.707850903296016,
+        "DockQ_expected": 0.707850903296016
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "f6410baff9fe4f0e376774971bc252d69000410068c918708b6a33b8a5f2d1c5",
+          "57ec67f22a72b3cd96bf4bcc1d2465459bfdcaf2534302a0c7b97e6be11eb062"
+        ],
+        "count": 2,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.707850903296016,
+        "DockQ_max": 0.7141091446634827,
+        "DockQ_expected": 0.7109800239797494
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "f6410baff9fe4f0e376774971bc252d69000410068c918708b6a33b8a5f2d1c5",
+          "57ec67f22a72b3cd96bf4bcc1d2465459bfdcaf2534302a0c7b97e6be11eb062",
+          "1f2d46768ea872b26ae691e706af4883d05e698ea264e61452495ed4c123b101",
+          "3fbb0c374e253d147273e4595d99006cf22ce18b4dc76d53380ce790d5b8e47e",
+          "73ca889a5b41fbf017d9496db5258deb6c6966e638645f998346c2b4b065fe09"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7027783190451862,
+        "DockQ_max": 0.7141091446634827,
+        "DockQ_expected": 0.7095917039710106
+      },
+      "best_available": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "f6410baff9fe4f0e376774971bc252d69000410068c918708b6a33b8a5f2d1c5"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7141091446634827,
+        "DockQ_max": 0.7141091446634827,
+        "DockQ_expected": 0.7141091446634827
+      }
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed2",
+      "condition": "5C1M_recOFF_nbON_complex",
+      "reference": "5C1M",
+      "acceptable_models": 5,
+      "classification": "all_acceptable",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "8fd0a2d37cc56954104a1b3cc5fb79adaf5ed49f26a94bc2b45faa31957a566b"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7224792471109729,
+        "DockQ_max": 0.7224792471109729,
+        "DockQ_expected": 0.7224792471109729
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "893e4caf38674eda97581597793a27e22c0a4f004cd108c0cfcf2154b58be099",
+          "8fd0a2d37cc56954104a1b3cc5fb79adaf5ed49f26a94bc2b45faa31957a566b"
+        ],
+        "count": 2,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7189951083984253,
+        "DockQ_max": 0.7224792471109729,
+        "DockQ_expected": 0.7207371777546991
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "893e4caf38674eda97581597793a27e22c0a4f004cd108c0cfcf2154b58be099",
+          "8fd0a2d37cc56954104a1b3cc5fb79adaf5ed49f26a94bc2b45faa31957a566b",
+          "4ab94ed6c98876b115e8529fe52f084fbe091eb110edd6862b38e9a83e704984",
+          "a7377837c572b445e6ed9c3004d062014a75a370df79bda9bbf901923b41534d",
+          "79be4c38ec4c091649426900b028b6a7e033c86f2c152c1c0f996896b2194a77"
+        ],
+        "count": 5,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.6985997998861389,
+        "DockQ_max": 0.7233696834457222,
+        "DockQ_expected": 0.7146287950697922
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "79be4c38ec4c091649426900b028b6a7e033c86f2c152c1c0f996896b2194a77"
+        ],
+        "count": 1,
+        "acceptable_min": 1.0,
+        "acceptable_max": 1.0,
+        "acceptable_expected": 1.0,
+        "DockQ_min": 0.7233696834457222,
+        "DockQ_max": 0.7233696834457222,
+        "DockQ_expected": 0.7233696834457222
+      }
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed3",
+      "condition": "5C1M_recOFF_nbON_complex",
+      "reference": "5C1M",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "b5ad28d9a5b8cbbba5e7424c1a0028c53a82ca3ff50d2528aacb01b50ceb0df1"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.061798244312672224,
+        "DockQ_max": 0.061798244312672224,
+        "DockQ_expected": 0.061798244312672224
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "5584251cec97da4903f779346df5612457faefa1b74e2563e4494a274ceb70e9",
+          "b5ad28d9a5b8cbbba5e7424c1a0028c53a82ca3ff50d2528aacb01b50ceb0df1"
+        ],
+        "count": 2,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.061798244312672224,
+        "DockQ_max": 0.06961471006399929,
+        "DockQ_expected": 0.06570647718833575
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "5584251cec97da4903f779346df5612457faefa1b74e2563e4494a274ceb70e9",
+          "b5ad28d9a5b8cbbba5e7424c1a0028c53a82ca3ff50d2528aacb01b50ceb0df1",
+          "19508841bfbae5c67ce7d5abe24930e218fc5b8112bcc8fb4c620a860210c3ef",
+          "65dbe6161763e47c5c6210b283259944344c434bb48c9d1c7ce1ec8aa8608347",
+          "5928d8b116c4212f31aeeb4efc07c1ee7e383e1ec36e1c511cfcb92dbc07e2a5"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.043099941569278384,
+        "DockQ_max": 0.08561541151502905,
+        "DockQ_expected": 0.06547099900825203
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "5928d8b116c4212f31aeeb4efc07c1ee7e383e1ec36e1c511cfcb92dbc07e2a5"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08561541151502905,
+        "DockQ_max": 0.08561541151502905,
+        "DockQ_expected": 0.08561541151502905
+      }
+    },
+    {
+      "job": "5JQH_cutoff_2016_07_12_complex_seed1",
+      "condition": "5JQH_cutoff_2016_07_12_complex",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "2256c161ecdaada87adf1fec7653e2b085f3355e75485da091ae8afb7c7b2ac4"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0868921274402714,
+        "DockQ_max": 0.0868921274402714,
+        "DockQ_expected": 0.0868921274402714
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "b3b9ad73a473d077912ad1193a28cb5eea567d9c537e1daa1836afb7fe45f4bf",
+          "5917c676e4c4927448e90161b7e46a204078e27c38fa0b0c2ef10a41538d9f80"
+        ],
+        "count": 2,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0810039440552299,
+        "DockQ_max": 0.0871591059369582,
+        "DockQ_expected": 0.08408152499609406
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "b3b9ad73a473d077912ad1193a28cb5eea567d9c537e1daa1836afb7fe45f4bf",
+          "5917c676e4c4927448e90161b7e46a204078e27c38fa0b0c2ef10a41538d9f80",
+          "2256c161ecdaada87adf1fec7653e2b085f3355e75485da091ae8afb7c7b2ac4",
+          "68fa75b8bca0abcac061b1aa11f5c9c1ebc466fa877f9f46d55f934aaaadc150",
+          "8e8f26b11caea8d19a9cacdc7c2b3ac07209c2172bf5a0274b2378417e752269"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.002715793848343097,
+        "DockQ_max": 0.10040869274205196,
+        "DockQ_expected": 0.07163593280457091
+      },
+      "best_available": {
+        "models": [
+          3
+        ],
+        "model_sha256": [
+          "68fa75b8bca0abcac061b1aa11f5c9c1ebc466fa877f9f46d55f934aaaadc150"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.10040869274205196,
+        "DockQ_max": 0.10040869274205196,
+        "DockQ_expected": 0.10040869274205196
+      }
+    },
+    {
+      "job": "5JQH_default_complex_seed1",
+      "condition": "5JQH_default_complex",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "a8b87ab20afe84f34b6e857644864184b1a16b0fb2a2ee2bdc60cee8182dc836"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07800461009928854,
+        "DockQ_max": 0.07800461009928854,
+        "DockQ_expected": 0.07800461009928854
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2
+        ],
+        "model_sha256": [
+          "9deb62f819a3008178680d43dd0220dcb0b5963b3653631f40c1f7df54d465ac",
+          "1ecf4b32af9c251c36e837efaa86dec6e372aa929ce3d70e6cba3007c132d24a",
+          "a8b87ab20afe84f34b6e857644864184b1a16b0fb2a2ee2bdc60cee8182dc836"
+        ],
+        "count": 3,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07800461009928854,
+        "DockQ_max": 0.08808052172553447,
+        "DockQ_expected": 0.0828952588454589
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "9deb62f819a3008178680d43dd0220dcb0b5963b3653631f40c1f7df54d465ac",
+          "1ecf4b32af9c251c36e837efaa86dec6e372aa929ce3d70e6cba3007c132d24a",
+          "a8b87ab20afe84f34b6e857644864184b1a16b0fb2a2ee2bdc60cee8182dc836",
+          "29df0a795a5ab0a9d477d8c3152bce6306e6035b4f76f556adaba7c2fbff4c8d",
+          "8d953024d224d480b35a0d84fda061ae750ef6deebec26e69045b5fdd1c3c10b"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07800461009928854,
+        "DockQ_max": 0.09313927909999153,
+        "DockQ_expected": 0.08506037484751221
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "8d953024d224d480b35a0d84fda061ae750ef6deebec26e69045b5fdd1c3c10b"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.09313927909999153,
+        "DockQ_max": 0.09313927909999153,
+        "DockQ_expected": 0.09313927909999153
+      }
+    },
+    {
+      "job": "5JQH_no_templates_complex_seed1",
+      "condition": "5JQH_no_templates_complex",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "4eaf552289717e919d90b6795c98e6fda9e310a42c428f7929ae58cda13778f1"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08856895394953325,
+        "DockQ_max": 0.08856895394953325,
+        "DockQ_expected": 0.08856895394953325
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "9ed11a6c80462b0612c551412587293d522793b8ed1a23ab65df8610533f573b"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08190482112912306,
+        "DockQ_max": 0.08190482112912306,
+        "DockQ_expected": 0.08190482112912306
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "9ed11a6c80462b0612c551412587293d522793b8ed1a23ab65df8610533f573b",
+          "21613b5fa61c232a6f4a9a6ef8095d9f3c8b28ac2b92d63aab2d6c556990408c",
+          "4eaf552289717e919d90b6795c98e6fda9e310a42c428f7929ae58cda13778f1",
+          "f0624f8b1f9ac4181e5742c1b3f6c905994d5d0e6c1b7189ce614f8ee67abfc3",
+          "8974655cc09beb08b9f6c912d247ece6c9dce0bf512a063eda6f466a647db1ad"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0028859903185674677,
+        "DockQ_max": 0.09165210594040551,
+        "DockQ_expected": 0.06951351030993995
+      },
+      "best_available": {
+        "models": [
+          3
+        ],
+        "model_sha256": [
+          "f0624f8b1f9ac4181e5742c1b3f6c905994d5d0e6c1b7189ce614f8ee67abfc3"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.09165210594040551,
+        "DockQ_max": 0.09165210594040551,
+        "DockQ_expected": 0.09165210594040551
+      }
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed1",
+      "condition": "5JQH_recOFF_nbON_complex",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "af558677abf4f91561e2bed6510632e0b858c214f49f357da5a91bbae8fb93cb"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07508822774121499,
+        "DockQ_max": 0.07508822774121499,
+        "DockQ_expected": 0.07508822774121499
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1,
+          2
+        ],
+        "model_sha256": [
+          "0f471f43524ab38ce6a8eb4451cd5506cca533d48e7a378ef3c08ad329012a86",
+          "af558677abf4f91561e2bed6510632e0b858c214f49f357da5a91bbae8fb93cb",
+          "dbf53b378fc6a34fd2f78532c46c213f5d2b7b56cd9541a44ee749073ad1c1ae"
+        ],
+        "count": 3,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07142919479329927,
+        "DockQ_max": 0.07508822774121499,
+        "DockQ_expected": 0.07365533645018978
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "0f471f43524ab38ce6a8eb4451cd5506cca533d48e7a378ef3c08ad329012a86",
+          "af558677abf4f91561e2bed6510632e0b858c214f49f357da5a91bbae8fb93cb",
+          "dbf53b378fc6a34fd2f78532c46c213f5d2b7b56cd9541a44ee749073ad1c1ae",
+          "30fb5c609fc29a259591a78227d589b5b2d5a09c74870ea61e9fe34fc9a14b15",
+          "1a937845ec9eb574444029ef9fbecad37b4283b3474a49abaa02f6e04ef4fe0d"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07142919479329927,
+        "DockQ_max": 0.08644784822437206,
+        "DockQ_expected": 0.07752951655162846
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "1a937845ec9eb574444029ef9fbecad37b4283b3474a49abaa02f6e04ef4fe0d"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08644784822437206,
+        "DockQ_max": 0.08644784822437206,
+        "DockQ_expected": 0.08644784822437206
+      }
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed2",
+      "condition": "5JQH_recOFF_nbON_complex",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "517efa9e609adb6e975be8d7471f43998ec1fe7733fc10be19533492d6f02712"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07808708775706169,
+        "DockQ_max": 0.07808708775706169,
+        "DockQ_expected": 0.07808708775706169
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "95dae3920738b2561249016226cc8365034c245880918d366fbeb42e59cdf3b3",
+          "f4f9a7e8cc39e0d8632a3e29e8c1b7a6b56269730b600ec3308b051bd5f097c0"
+        ],
+        "count": 2,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07739507961883935,
+        "DockQ_max": 0.0788207974973202,
+        "DockQ_expected": 0.07810793855807976
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "95dae3920738b2561249016226cc8365034c245880918d366fbeb42e59cdf3b3",
+          "f4f9a7e8cc39e0d8632a3e29e8c1b7a6b56269730b600ec3308b051bd5f097c0",
+          "c39104d3555042314b0692cad57b1a2456980016d6cb315e26b47e74ab0119ec",
+          "460ad5b9911efdb46250c00ce832682b521bf545e668dfc3f462e63d0b08ef88",
+          "517efa9e609adb6e975be8d7471f43998ec1fe7733fc10be19533492d6f02712"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07117476581112975,
+        "DockQ_max": 0.0788207974973202,
+        "DockQ_expected": 0.07604453492317957
+      },
+      "best_available": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "f4f9a7e8cc39e0d8632a3e29e8c1b7a6b56269730b600ec3308b051bd5f097c0"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0788207974973202,
+        "DockQ_max": 0.0788207974973202,
+        "DockQ_expected": 0.0788207974973202
+      }
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed3",
+      "condition": "5JQH_recOFF_nbON_complex",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "68a54e4f066a3025e332dc79e3458c46b2d486d80b02c24cff6e61ed7e66e7f0"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.06963664714912478,
+        "DockQ_max": 0.06963664714912478,
+        "DockQ_expected": 0.06963664714912478
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "58b9a7d5fe059e21b180b4941ebb96f98beb7bbabea3db6601a66daa8c2a26c3"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07113007937834821,
+        "DockQ_max": 0.07113007937834821,
+        "DockQ_expected": 0.07113007937834821
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "58b9a7d5fe059e21b180b4941ebb96f98beb7bbabea3db6601a66daa8c2a26c3",
+          "68a54e4f066a3025e332dc79e3458c46b2d486d80b02c24cff6e61ed7e66e7f0",
+          "b398db1a9c01c57d84e905d3a569f8fbea360fc583dcba953ef3259b26071533",
+          "ee68585ad9f3d8e037b4b132d31a0242e27a3f3382c84334953e3a53904c4f68",
+          "a6804c506b85d09607c69d706ef6d0f7cb0394c1f0b7ce5cbc879b53c0b6e2d7"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.06963664714912478,
+        "DockQ_max": 0.07422778861565885,
+        "DockQ_expected": 0.0717331935428876
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "a6804c506b85d09607c69d706ef6d0f7cb0394c1f0b7ce5cbc879b53c0b6e2d7"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07422778861565885,
+        "DockQ_max": 0.07422778861565885,
+        "DockQ_expected": 0.07422778861565885
+      }
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed1",
+      "condition": "5JQH_recON_nbOFF_complex",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "c2fff7c0ec6e54a7ebce320ebc9107ba2428fea9d4157131328f789e99e5b4ff"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08969358669874876,
+        "DockQ_max": 0.08969358669874876,
+        "DockQ_expected": 0.08969358669874876
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "2128bef499ecfd4d5787587bf52cf2cc3d8b7bf64ae9ad2ef13426ef6666a881",
+          "c2fff7c0ec6e54a7ebce320ebc9107ba2428fea9d4157131328f789e99e5b4ff"
+        ],
+        "count": 2,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08969358669874876,
+        "DockQ_max": 0.0958077689139315,
+        "DockQ_expected": 0.09275067780634014
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "2128bef499ecfd4d5787587bf52cf2cc3d8b7bf64ae9ad2ef13426ef6666a881",
+          "c2fff7c0ec6e54a7ebce320ebc9107ba2428fea9d4157131328f789e99e5b4ff",
+          "80f6702fe8d2e6e21fed34038f1141269d9750f411f8b9c58950e058e15d315a",
+          "56524604cf67fb4f0385df70f3d6779f2752a3a7589082110932319415109009",
+          "e2439cedad73d2001eb0923d040770a8a8310f728ea47875d16a7d467bdda898"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0033299270953723904,
+        "DockQ_max": 0.0958077689139315,
+        "DockQ_expected": 0.07431581273280283
+      },
+      "best_available": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "2128bef499ecfd4d5787587bf52cf2cc3d8b7bf64ae9ad2ef13426ef6666a881"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0958077689139315,
+        "DockQ_max": 0.0958077689139315,
+        "DockQ_expected": 0.0958077689139315
+      }
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed2",
+      "condition": "5JQH_recON_nbOFF_complex",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "f8a9cb3a839abf13f81319c9f627398ccf9eb44c1057d2f051c1535accc034e3"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07761419255912715,
+        "DockQ_max": 0.07761419255912715,
+        "DockQ_expected": 0.07761419255912715
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "437b0d3a312580c3e8f20c5060914b5ff42f641e35b86def97a254641a7537a7"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0626106276841506,
+        "DockQ_max": 0.0626106276841506,
+        "DockQ_expected": 0.0626106276841506
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "437b0d3a312580c3e8f20c5060914b5ff42f641e35b86def97a254641a7537a7",
+          "a30858fafc42a705cfff4e5d2251611be6e6353da9de4093eb768c94dc557b5c",
+          "f8a9cb3a839abf13f81319c9f627398ccf9eb44c1057d2f051c1535accc034e3",
+          "a2fa6f4c39d97424eec88402a9f68395bfe780ca49b5fd3f3176e8696b31b26b",
+          "95c18ff6876f455e31e8d4c454711c40441089bea68869606dbc513a99746843"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0626106276841506,
+        "DockQ_max": 0.08998990364433408,
+        "DockQ_expected": 0.07712792489261586
+      },
+      "best_available": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "a30858fafc42a705cfff4e5d2251611be6e6353da9de4093eb768c94dc557b5c"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08998990364433408,
+        "DockQ_max": 0.08998990364433408,
+        "DockQ_expected": 0.08998990364433408
+      }
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed3",
+      "condition": "5JQH_recON_nbOFF_complex",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "9bdf51a8610a4cf6bad0001b74ce9d28d151fa5f42bddcd03fb74e49a253ab7f"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07447998325199619,
+        "DockQ_max": 0.07447998325199619,
+        "DockQ_expected": 0.07447998325199619
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "9bdf51a8610a4cf6bad0001b74ce9d28d151fa5f42bddcd03fb74e49a253ab7f"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.07447998325199619,
+        "DockQ_max": 0.07447998325199619,
+        "DockQ_expected": 0.07447998325199619
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "9bdf51a8610a4cf6bad0001b74ce9d28d151fa5f42bddcd03fb74e49a253ab7f",
+          "26b70a44f6d2123978733573a979a653ea1826af33a31eb7746ed89c1075da8e",
+          "8bd7bdd924db8b09473a1ee6a5fd65b91fd2aa2e8030c97d3245b8e159441b0c",
+          "3525f5575a1ffb244a5d20ada284a286d8af88f2c614f80c7e5fd2ea531414d5",
+          "692b8259c87b8dba1e8213400d0ae0a70892e10a175b7b682af199171eb96fc9"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0034344208387752273,
+        "DockQ_max": 0.0937200873143537,
+        "DockQ_expected": 0.06654946837466591
+      },
+      "best_available": {
+        "models": [
+          4
+        ],
+        "model_sha256": [
+          "692b8259c87b8dba1e8213400d0ae0a70892e10a175b7b682af199171eb96fc9"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0937200873143537,
+        "DockQ_max": 0.0937200873143537,
+        "DockQ_expected": 0.0937200873143537
+      }
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed1",
+      "condition": "RESCUE_5JQH_complex_cutoff_2011_01_01",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "5d6beee90160d5dfb18de4c741119b72a8d56ccd602be228db1f191af61ac3c5"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0881664365080473,
+        "DockQ_max": 0.0881664365080473,
+        "DockQ_expected": 0.0881664365080473
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "434b3920ef387f8ddef305b05646ab1e098648f2a951e292b5c2c55b1a5dc470"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.09234191554181358,
+        "DockQ_max": 0.09234191554181358,
+        "DockQ_expected": 0.09234191554181358
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "434b3920ef387f8ddef305b05646ab1e098648f2a951e292b5c2c55b1a5dc470",
+          "5d6beee90160d5dfb18de4c741119b72a8d56ccd602be228db1f191af61ac3c5",
+          "c025639618f4e464b189a49069ce13aff30e63d01fce8ee855ce1c21b6339eee",
+          "e24e760ac2b1fb5c15354cd7bf3867342f68f0717b0ffdf9899589a964f25984",
+          "f4024896630427bb06f157c5f6086401f10eff394b674cacd19e370eb21624db"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08145713283401741,
+        "DockQ_max": 0.09234191554181358,
+        "DockQ_expected": 0.08706351117838595
+      },
+      "best_available": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "434b3920ef387f8ddef305b05646ab1e098648f2a951e292b5c2c55b1a5dc470"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.09234191554181358,
+        "DockQ_max": 0.09234191554181358,
+        "DockQ_expected": 0.09234191554181358
+      }
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed2",
+      "condition": "RESCUE_5JQH_complex_cutoff_2011_01_01",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "563c93d45cf3f03a60bf900c9707343d620f2d064c248457edf902ccb276ff46"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08387079101839817,
+        "DockQ_max": 0.08387079101839817,
+        "DockQ_expected": 0.08387079101839817
+      },
+      "exported_score": {
+        "models": [
+          0,
+          1
+        ],
+        "model_sha256": [
+          "6caf5ee2d65dcd04ff62b7bf89b60a9b0de3c09a0977c796d2298c0928e3439e",
+          "a9660700d331ad7f5e2c894883e45d15857c237241009c0ac73dfd2ad661f595"
+        ],
+        "count": 2,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08117326981280848,
+        "DockQ_max": 0.08763650701309689,
+        "DockQ_expected": 0.08440488841295268
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "6caf5ee2d65dcd04ff62b7bf89b60a9b0de3c09a0977c796d2298c0928e3439e",
+          "a9660700d331ad7f5e2c894883e45d15857c237241009c0ac73dfd2ad661f595",
+          "563c93d45cf3f03a60bf900c9707343d620f2d064c248457edf902ccb276ff46",
+          "d312acc5413bd5bb44d79f5f512cedab04dae330f9fed81e88038d232a845632",
+          "9c3d8b1c440578cd71956a8411f90fb0a08033fb2138406967c7042c1daeac5f"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0032851714620046797,
+        "DockQ_max": 0.08763650701309689,
+        "DockQ_expected": 0.0520484602555358
+      },
+      "best_available": {
+        "models": [
+          1
+        ],
+        "model_sha256": [
+          "a9660700d331ad7f5e2c894883e45d15857c237241009c0ac73dfd2ad661f595"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08763650701309689,
+        "DockQ_max": 0.08763650701309689,
+        "DockQ_expected": 0.08763650701309689
+      }
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed3",
+      "condition": "RESCUE_5JQH_complex_cutoff_2011_01_01",
+      "reference": "5JQH",
+      "acceptable_models": 0,
+      "classification": "all_below_threshold",
+      "confovhh": {
+        "models": [
+          2
+        ],
+        "model_sha256": [
+          "0ece9270000ad431a9df9ce0c47b2dd9b1ddc5729e24603c3da4dd8d7e877b30"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08204888465678617,
+        "DockQ_max": 0.08204888465678617,
+        "DockQ_expected": 0.08204888465678617
+      },
+      "exported_score": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "504bc003af3c187eaa30821c9d591d4899f51fac97991eecadfa30a9895074b2"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08209940299251056,
+        "DockQ_max": 0.08209940299251056,
+        "DockQ_expected": 0.08209940299251056
+      },
+      "uniform": {
+        "models": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "model_sha256": [
+          "504bc003af3c187eaa30821c9d591d4899f51fac97991eecadfa30a9895074b2",
+          "e33b295b7b18d232190bd9d4d8df5dce982b7389da2c8018464d2486d6970a5a",
+          "0ece9270000ad431a9df9ce0c47b2dd9b1ddc5729e24603c3da4dd8d7e877b30",
+          "b3a5b1fcfbd1fc3c1b7a19261252ff8e0ebcaf2199ec35f353227a2f247fca75",
+          "ac321b636aaa36d1117a5e2b9f7a6832a7f0681b45552aff465bfc29729d879d"
+        ],
+        "count": 5,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.0694049571525166,
+        "DockQ_max": 0.08209940299251056,
+        "DockQ_expected": 0.07669053637564345
+      },
+      "best_available": {
+        "models": [
+          0
+        ],
+        "model_sha256": [
+          "504bc003af3c187eaa30821c9d591d4899f51fac97991eecadfa30a9895074b2"
+        ],
+        "count": 1,
+        "acceptable_min": 0.0,
+        "acceptable_max": 0.0,
+        "acceptable_expected": 0.0,
+        "DockQ_min": 0.08209940299251056,
+        "DockQ_max": 0.08209940299251056,
+        "DockQ_expected": 0.08209940299251056
+      }
+    }
+  ],
+  "summary": {
+    "jobs": 33,
+    "models": 165,
+    "conditions": 15,
+    "references": [
+      "3P0G",
+      "4MQS",
+      "5C1M",
+      "5JQH"
+    ],
+    "all_acceptable_jobs": 16,
+    "all_below_threshold_jobs": 13,
+    "mixed_jobs": 4,
+    "confovhh": {
+      "acceptable_count_min": 18.0,
+      "acceptable_count_max": 18.0,
+      "acceptable_count_expected": 18.0,
+      "equal_job_mean_DockQ": 0.40561908270876207,
+      "equal_job_mean_DockQ_min": 0.40561908270876207,
+      "equal_job_mean_DockQ_max": 0.40561908270876207
+    },
+    "exported_score": {
+      "acceptable_count_min": 19.0,
+      "acceptable_count_max": 19.0,
+      "acceptable_count_expected": 19.0,
+      "equal_job_mean_DockQ": 0.4124185534856673,
+      "equal_job_mean_DockQ_min": 0.40654552795237026,
+      "equal_job_mean_DockQ_max": 0.41903854373699606
+    },
+    "uniform": {
+      "acceptable_count_min": 16.0,
+      "acceptable_count_max": 20.0,
+      "acceptable_count_expected": 18.0,
+      "equal_job_mean_DockQ": 0.40213669320422457,
+      "equal_job_mean_DockQ_min": 0.36405024078299153,
+      "equal_job_mean_DockQ_max": 0.4396900058192513
+    },
+    "best_available": {
+      "acceptable_count_min": 20.0,
+      "acceptable_count_max": 20.0,
+      "acceptable_count_expected": 20.0,
+      "equal_job_mean_DockQ": 0.4396900058192513,
+      "equal_job_mean_DockQ_min": 0.4396900058192513,
+      "equal_job_mean_DockQ_max": 0.4396900058192513
+    },
+    "exported_score_top_tied_jobs": 22,
+    "confovhh_top_tied_jobs": 0,
+    "confovhh_vs_exported_score_binary_outcomes": {
+      "wins": 0,
+      "ties": 32,
+      "losses": 1,
+      "ambiguous_due_to_ties": 0
+    },
+    "equal_job_mean_DockQ_difference_confovhh_minus_exported_score_uniform_ties": -0.006799470776905229
+  },
+  "mixed_job_summary": {
+    "jobs": 4,
+    "models": 20,
+    "conditions": 2,
+    "references": [
+      "3P0G"
+    ],
+    "all_acceptable_jobs": 0,
+    "all_below_threshold_jobs": 0,
+    "mixed_jobs": 4,
+    "confovhh": {
+      "acceptable_count_min": 2.0,
+      "acceptable_count_max": 2.0,
+      "acceptable_count_expected": 2.0,
+      "equal_job_mean_DockQ": 0.2070961520825029,
+      "equal_job_mean_DockQ_min": 0.2070961520825029,
+      "equal_job_mean_DockQ_max": 0.2070961520825029
+    },
+    "exported_score": {
+      "acceptable_count_min": 3.0,
+      "acceptable_count_max": 3.0,
+      "acceptable_count_expected": 3.0,
+      "equal_job_mean_DockQ": 0.2654218665084169,
+      "equal_job_mean_DockQ_min": 0.26380175876531153,
+      "equal_job_mean_DockQ_max": 0.2670419742515224
+    },
+    "uniform": {
+      "acceptable_count_min": 0.0,
+      "acceptable_count_max": 4.0,
+      "acceptable_count_expected": 2.0,
+      "equal_job_mean_DockQ": 0.20472889202962696,
+      "equal_job_mean_DockQ_min": 0.07141576035360227,
+      "equal_job_mean_DockQ_max": 0.3505583299592635
+    },
+    "best_available": {
+      "acceptable_count_min": 4.0,
+      "acceptable_count_max": 4.0,
+      "acceptable_count_expected": 4.0,
+      "equal_job_mean_DockQ": 0.3505583299592635,
+      "equal_job_mean_DockQ_min": 0.3505583299592635,
+      "equal_job_mean_DockQ_max": 0.3505583299592635
+    },
+    "exported_score_top_tied_jobs": 2,
+    "confovhh_top_tied_jobs": 0,
+    "confovhh_vs_exported_score_binary_outcomes": {
+      "wins": 0,
+      "ties": 3,
+      "losses": 1,
+      "ambiguous_due_to_ties": 0
+    },
+    "equal_job_mean_DockQ_difference_confovhh_minus_exported_score_uniform_ties": -0.058325714425914055
+  },
+  "by_reference": {
+    "3P0G": {
+      "jobs": 9,
+      "models": 45,
+      "conditions": 5,
+      "references": [
+        "3P0G"
+      ],
+      "all_acceptable_jobs": 5,
+      "all_below_threshold_jobs": 0,
+      "mixed_jobs": 4,
+      "confovhh": {
+        "acceptable_count_min": 7.0,
+        "acceptable_count_max": 7.0,
+        "acceptable_count_expected": 7.0,
+        "equal_job_mean_DockQ": 0.463042157008635,
+        "equal_job_mean_DockQ_min": 0.463042157008635,
+        "equal_job_mean_DockQ_max": 0.463042157008635
+      },
+      "exported_score": {
+        "acceptable_count_min": 8.0,
+        "acceptable_count_max": 8.0,
+        "acceptable_count_expected": 8.0,
+        "equal_job_mean_DockQ": 0.4953693881579068,
+        "equal_job_mean_DockQ_min": 0.4930682177905059,
+        "equal_job_mean_DockQ_max": 0.49842154349695394
+      },
+      "uniform": {
+        "acceptable_count_min": 5.0,
+        "acceptable_count_max": 9.0,
+        "acceptable_count_expected": 7.0,
+        "equal_job_mean_DockQ": 0.46538541778102926,
+        "equal_job_mean_DockQ_min": 0.3950823885319207,
+        "equal_job_mean_DockQ_max": 0.551501436566827
+      },
+      "best_available": {
+        "acceptable_count_min": 9.0,
+        "acceptable_count_max": 9.0,
+        "acceptable_count_expected": 9.0,
+        "equal_job_mean_DockQ": 0.551501436566827,
+        "equal_job_mean_DockQ_min": 0.551501436566827,
+        "equal_job_mean_DockQ_max": 0.551501436566827
+      },
+      "exported_score_top_tied_jobs": 6,
+      "confovhh_top_tied_jobs": 0,
+      "confovhh_vs_exported_score_binary_outcomes": {
+        "wins": 0,
+        "ties": 8,
+        "losses": 1,
+        "ambiguous_due_to_ties": 0
+      },
+      "equal_job_mean_DockQ_difference_confovhh_minus_exported_score_uniform_ties": -0.03232723114927182
+    },
+    "4MQS": {
+      "jobs": 6,
+      "models": 30,
+      "conditions": 2,
+      "references": [
+        "4MQS"
+      ],
+      "all_acceptable_jobs": 6,
+      "all_below_threshold_jobs": 0,
+      "mixed_jobs": 0,
+      "confovhh": {
+        "acceptable_count_min": 6.0,
+        "acceptable_count_max": 6.0,
+        "acceptable_count_expected": 6.0,
+        "equal_job_mean_DockQ": 0.7655515334948529,
+        "equal_job_mean_DockQ_min": 0.7655515334948529,
+        "equal_job_mean_DockQ_max": 0.7655515334948529
+      },
+      "exported_score": {
+        "acceptable_count_min": 6.0,
+        "acceptable_count_max": 6.0,
+        "acceptable_count_expected": 6.0,
+        "equal_job_mean_DockQ": 0.7584537458766085,
+        "equal_job_mean_DockQ_min": 0.736774119770909,
+        "equal_job_mean_DockQ_max": 0.7828408213463088
+      },
+      "uniform": {
+        "acceptable_count_min": 6.0,
+        "acceptable_count_max": 6.0,
+        "acceptable_count_expected": 6.0,
+        "equal_job_mean_DockQ": 0.7613201567841122,
+        "equal_job_mean_DockQ_min": 0.7304801408292682,
+        "equal_job_mean_DockQ_max": 0.799133443773966
+      },
+      "best_available": {
+        "acceptable_count_min": 6.0,
+        "acceptable_count_max": 6.0,
+        "acceptable_count_expected": 6.0,
+        "equal_job_mean_DockQ": 0.799133443773966,
+        "equal_job_mean_DockQ_min": 0.799133443773966,
+        "equal_job_mean_DockQ_max": 0.799133443773966
+      },
+      "exported_score_top_tied_jobs": 4,
+      "confovhh_top_tied_jobs": 0,
+      "confovhh_vs_exported_score_binary_outcomes": {
+        "wins": 0,
+        "ties": 6,
+        "losses": 0,
+        "ambiguous_due_to_ties": 0
+      },
+      "equal_job_mean_DockQ_difference_confovhh_minus_exported_score_uniform_ties": 0.007097787618244422
+    },
+    "5C1M": {
+      "jobs": 6,
+      "models": 30,
+      "conditions": 2,
+      "references": [
+        "5C1M"
+      ],
+      "all_acceptable_jobs": 5,
+      "all_below_threshold_jobs": 1,
+      "mixed_jobs": 0,
+      "confovhh": {
+        "acceptable_count_min": 5.0,
+        "acceptable_count_max": 5.0,
+        "acceptable_count_expected": 5.0,
+        "equal_job_mean_DockQ": 0.6087649310854528,
+        "equal_job_mean_DockQ_min": 0.6087649310854528,
+        "equal_job_mean_DockQ_max": 0.6087649310854528
+      },
+      "exported_score": {
+        "acceptable_count_min": 5.0,
+        "acceptable_count_max": 5.0,
+        "acceptable_count_expected": 5.0,
+        "equal_job_mean_DockQ": 0.6067171402165251,
+        "equal_job_mean_DockQ_min": 0.6024128714386758,
+        "equal_job_mean_DockQ_max": 0.611378894160739
+      },
+      "uniform": {
+        "acceptable_count_min": 5.0,
+        "acceptable_count_max": 5.0,
+        "acceptable_count_expected": 5.0,
+        "equal_job_mean_DockQ": 0.6048013997026842,
+        "equal_job_mean_DockQ_min": 0.5926110608315392,
+        "equal_job_mean_DockQ_max": 0.6141940837917022
+      },
+      "best_available": {
+        "acceptable_count_min": 5.0,
+        "acceptable_count_max": 5.0,
+        "acceptable_count_expected": 5.0,
+        "equal_job_mean_DockQ": 0.6141940837917022,
+        "equal_job_mean_DockQ_min": 0.6141940837917022,
+        "equal_job_mean_DockQ_max": 0.6141940837917022
+      },
+      "exported_score_top_tied_jobs": 6,
+      "confovhh_top_tied_jobs": 0,
+      "confovhh_vs_exported_score_binary_outcomes": {
+        "wins": 0,
+        "ties": 6,
+        "losses": 0,
+        "ambiguous_due_to_ties": 0
+      },
+      "equal_job_mean_DockQ_difference_confovhh_minus_exported_score_uniform_ties": 0.002047790868927743
+    },
+    "5JQH": {
+      "jobs": 12,
+      "models": 60,
+      "conditions": 6,
+      "references": [
+        "5JQH"
+      ],
+      "all_acceptable_jobs": 0,
+      "all_below_threshold_jobs": 12,
+      "mixed_jobs": 0,
+      "confovhh": {
+        "acceptable_count_min": 0.0,
+        "acceptable_count_max": 0.0,
+        "acceptable_count_expected": 0.0,
+        "equal_job_mean_DockQ": 0.08101262740246654,
+        "equal_job_mean_DockQ_min": 0.08101262740246654,
+        "equal_job_mean_DockQ_max": 0.08101262740246654
+      },
+      "exported_score": {
+        "acceptable_count_min": 0.0,
+        "acceptable_count_max": 0.0,
+        "acceptable_count_expected": 0.0,
+        "equal_job_mean_DockQ": 0.08003853792058813,
+        "equal_job_mean_DockQ_min": 0.07860554292134637,
+        "equal_job_mean_DockQ_max": 0.08142997990049987
+      },
+      "uniform": {
+        "acceptable_count_min": 0.0,
+        "acceptable_count_max": 0.0,
+        "acceptable_count_expected": 0.0,
+        "equal_job_mean_DockQ": 0.07377606473244737,
+        "equal_job_mean_DockQ_min": 0.04328076992388248,
+        "equal_job_mean_DockQ_max": 0.0888576747949867
+      },
+      "best_available": {
+        "acceptable_count_min": 0.0,
+        "acceptable_count_max": 0.0,
+        "acceptable_count_expected": 0.0,
+        "equal_job_mean_DockQ": 0.0888576747949867,
+        "equal_job_mean_DockQ_min": 0.0888576747949867,
+        "equal_job_mean_DockQ_max": 0.0888576747949867
+      },
+      "exported_score_top_tied_jobs": 6,
+      "confovhh_top_tied_jobs": 0,
+      "confovhh_vs_exported_score_binary_outcomes": {
+        "wins": 0,
+        "ties": 12,
+        "losses": 0,
+        "ambiguous_due_to_ties": 0
+      },
+      "equal_job_mean_DockQ_difference_confovhh_minus_exported_score_uniform_ties": 0.0009740894818784049
+    }
+  }
+}

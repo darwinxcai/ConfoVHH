@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "task": "9FTE preprint citation follow-up",
+  "createdAt": "2026-09-04T22:58:49.663Z",
+  "candidateDoi": "10.64898/2026.03.05.709805",
+  "candidateTitle": "Structural insights into the inactive state of the adhesion GPCR ADGRV1",
+  "queries": [
+    {
+      "query": "site:biorxiv.org \"2026.03.05.709805\" \"accession codes 50743 and 9FTE\"",
+      "tool": "web.run.search_query",
+      "responseStoredAs": "primary-index-query-response.json"
+    },
+    {
+      "query": "site:biorxiv.org/content/10.64898/2026.03.05.709805v1.full.pdf \"Data availability\"",
+      "tool": "web.run.search_query",
+      "selectedEvidence": "Primary PDF indexed with Data availability heading and a statement describing deposition of the ADGRV1/RE02 complex; this search index evidence is not retrieved primary fulltext."
+    }
+  ],
+  "primaryIndexEvidence": {
+    "url": "https://www.biorxiv.org/content/10.64898/2026.03.05.709805.full.pdf",
+    "snippet": "accession codes 50743 and 9FTE",
+    "evidenceType": "search-index snippet pointing to primary bioRxiv PDF",
+    "interpretation": "Candidate exact deposition linkage; formal primary-text verification remains pending."
+  },
+  "retrievalAttempt": {
+    "record": "pdf-capture.json",
+    "outcome": "HTTP 429; primary PDF was not retrieved",
+    "retries": 0
+  },
+  "scope": "Primary-index exact-deposition phrase is candidate linkage only. A child reviewer also incidentally received qualitative receptor/loop-state narrative, caption fragments naming simulation observables without numerical results, receptor residue-range identifiers, simulation procedures, and generic contact-definition thresholds. The child reported no residue-pair contact assignments, measured native contact geometry, binder orientation, epitope/CDR contacts, coordinates, maps, images, or contact tables. A targeted secondary-site find returned surrounding Methods; it was not merely a passive mention. That secondary material was not retained or used for linkage evidence.",
+  "remaining": [
+    "Retrieve primary preprint Methods and Data availability prose through an available authorized public source.",
+    "Resolve deposited Mus musculus receptor versus abstract reference to human ADGRV1 from exact construct Methods.",
+    "No formal deposition clearance, eligibility decision, or independent-component count is supported by this follow-up."
+  ]
+}

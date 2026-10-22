@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-21",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "8YIC"
+    ],
+    "query": "TITLE:\"SAR247799-bound S1PR1 in complex with Gi heterotrimer\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22SAR247799-bound+S1PR1+in+complex+with+Gi+heterotrimer%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:18.993898+00:00",
+  "status": 200,
+  "rawFile": "raw/title-21.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22SAR247799-bound+S1PR1+in+complex+with+Gi+heterotrimer%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "900c170def509f260b405beda92d65cbad1a5bc3986df58c5b2df11e0dc3b264",
+  "bytes": 230,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:27.933399+00:00"
+}

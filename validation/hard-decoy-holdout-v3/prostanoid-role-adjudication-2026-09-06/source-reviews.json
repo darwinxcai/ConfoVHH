@@ -1,0 +1,1471 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-06",
+  "scope": "Bounded source-and-inventory disposition review of the twelve retained prostanoid entries; not a whole-census bound or master-ledger rewrite.",
+  "evidenceBoundary": "Preparation Methods, exact deposition statements, complete retained polymer inventories, canonical/reference sequence evidence and prior source-reviewed auxiliary-role authorities only. No coordinates, poses, contacts, structural Results, labels or predictions.",
+  "authority": {
+    "boundedEntryDispositionAuthority": true,
+    "formalEligibilityAuthority": false,
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "masterDispositionLedgerRewritten": false,
+    "wholeCensusDecisionMade": false,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  "retainedOverlapSignals": {
+    "sameDp1EntryPairCount": 28,
+    "crossPaperSameDp1EntryPairCount": 15,
+    "primaryCrossReceptorAccessions": [
+      "P43116"
+    ],
+    "sensitivityCrossReceptorAccessions": [
+      "P43116",
+      "P35408"
+    ],
+    "graphAuthority": false,
+    "note": "Excluded entries add no eligible component; these receptor signals remain available for later global graph accounting and are not manually converted into edges here."
+  },
+  "unresolvedConstructItems": [
+    "Reconcile deposited GFP-like EP2/EP4 sequence with Methods that do not explicitly describe that fusion.",
+    "Resolve EP4 deposited canonical residues 347-366 despite the stated deletion of residues 347-488.",
+    "Resolve Nature DP1 inactive deposited ten-His terminus versus the reported eight-His tag.",
+    "Adjudicate deposited versus expressed boundaries, cleavage products and terminal tags in all construct classes.",
+    "Resolve 9UWD single-polymer coverage versus the primary FabBRIL/NbFab preparation without guessing absent chains or fusion topology.",
+    "Formally adjudicate development connections, binder lineage and prior exposure before eligibility or exclusion.",
+    "No new whole-census coverage or independent-component upper bound follows from this 12-entry review."
+  ],
+  "reviews": [
+    {
+      "pdbId": "8ZVZ",
+      "paper": "dp1-pnas",
+      "primaryDoi": "10.1073/pnas.2501902122",
+      "primaryPmid": "40440061",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 5,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "8ZVZ_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8ZVZ_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 345,
+          "sequenceSha256": "d053bff6096067864fc38540457be3b7929e6590c9adf2c8c05406764799ce47",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8ZVZ_3",
+          "entityId": "3",
+          "description": "Soluble cytochrome b562,Prostaglandin D2 receptor",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "D"
+          ],
+          "sequenceLength": 468,
+          "sequenceSha256": "c0eccde035de856ee2fe3b43e61163b121ca947a9143e808470d39672d1b99c6",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8ZVZ_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8ZVZ_5",
+          "entityId": "5",
+          "description": "nanobody Nb35",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 156,
+          "sequenceSha256": "70985c1620a6cd48b1ed69e361feba9f26a15099f613acbd9b5f18d7f25c54ba",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbId": "8ZVZ_5",
+        "entityId": "5",
+        "description": "nanobody Nb35",
+        "labelAsymIds": [
+          "E"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 156,
+        "sequenceSha256": "70985c1620a6cd48b1ed69e361feba9f26a15099f613acbd9b5f18d7f25c54ba",
+        "referenceSequences": []
+      },
+      "roleClass": "NB35_G_PROTEIN_STABILIZER",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "s12",
+        "methodsSectionTitle": "Complex Purification.",
+        "assessment": "The entry-linked preparation is DP1/Gs/Nb35; the exact sequence segment maps the deposited entity to independently source-reviewed Nb35 auxiliary-role authority.",
+        "sequenceRelationship": {
+          "classification": "EXACT_126_RESIDUE_SEGMENT_TO_SOURCE_REVIEWED_NB35",
+          "referenceEntity": "7FIM_1",
+          "candidateEntity": "8ZVZ_5",
+          "referenceStart1": 3,
+          "referenceEnd1": 128,
+          "candidateStart1": 23,
+          "candidateEnd1": 148,
+          "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The deposited VHH is a source-supported Fab- or G-protein-complex auxiliary reagent, not the direct receptor–VHH docking target required by v3.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1073/pnas.2501902122",
+        "https://www.rcsb.org/structure/8ZVZ"
+      ]
+    },
+    {
+      "pdbId": "8ZW0",
+      "paper": "dp1-pnas",
+      "primaryDoi": "10.1073/pnas.2501902122",
+      "primaryPmid": "40440061",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 5,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "8ZW0_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8ZW0_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 345,
+          "sequenceSha256": "d053bff6096067864fc38540457be3b7929e6590c9adf2c8c05406764799ce47",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8ZW0_3",
+          "entityId": "3",
+          "description": "Soluble cytochrome b562,Prostaglandin D2 receptor",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "D"
+          ],
+          "sequenceLength": 468,
+          "sequenceSha256": "c0eccde035de856ee2fe3b43e61163b121ca947a9143e808470d39672d1b99c6",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8ZW0_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "8ZW0_5",
+          "entityId": "5",
+          "description": "nanobody Nb35",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 156,
+          "sequenceSha256": "70985c1620a6cd48b1ed69e361feba9f26a15099f613acbd9b5f18d7f25c54ba",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbId": "8ZW0_5",
+        "entityId": "5",
+        "description": "nanobody Nb35",
+        "labelAsymIds": [
+          "E"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 156,
+        "sequenceSha256": "70985c1620a6cd48b1ed69e361feba9f26a15099f613acbd9b5f18d7f25c54ba",
+        "referenceSequences": []
+      },
+      "roleClass": "NB35_G_PROTEIN_STABILIZER",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "s12",
+        "methodsSectionTitle": "Complex Purification.",
+        "assessment": "The entry-linked preparation is DP1/Gs/Nb35; the exact sequence segment maps the deposited entity to independently source-reviewed Nb35 auxiliary-role authority.",
+        "sequenceRelationship": {
+          "classification": "EXACT_126_RESIDUE_SEGMENT_TO_SOURCE_REVIEWED_NB35",
+          "referenceEntity": "7FIM_1",
+          "candidateEntity": "8ZW0_5",
+          "referenceStart1": 3,
+          "referenceEnd1": 128,
+          "candidateStart1": 23,
+          "candidateEnd1": 148,
+          "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The deposited VHH is a source-supported Fab- or G-protein-complex auxiliary reagent, not the direct receptor–VHH docking target required by v3.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1073/pnas.2501902122",
+        "https://www.rcsb.org/structure/8ZW0"
+      ]
+    },
+    {
+      "pdbId": "9AU0",
+      "paper": "dp1-nature",
+      "primaryDoi": "10.1038/s41467-025-64002-z",
+      "primaryPmid": "41062467",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 5,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9AU0_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "9f36d2e88f9078e6f8f276f104ea17e4ecb9be027264f21822b9b18c69cd6f57",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9AU0_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 345,
+          "sequenceSha256": "d566c0285df820f343aa4aa2a02959642e32cef88268901e8419e465edfe4e10",
+          "referenceSequences": [
+            {
+              "databaseAccession": "A0A8D2K0M5",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9AU0_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9AU0_4",
+          "entityId": "4",
+          "description": "Nanobody-35",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 139,
+          "sequenceSha256": "07f7efc124c4d4941ca70fed18074927cee3a259dff91c5107b4bed509554de6",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9AU0_5",
+          "entityId": "5",
+          "description": "Prostaglandin D2 receptor",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 385,
+          "sequenceSha256": "cb3c2b05d0d7049f658670724daaff10fc4babcd3614a13d982060f012237922",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbId": "9AU0_4",
+        "entityId": "4",
+        "description": "Nanobody-35",
+        "labelAsymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 139,
+        "sequenceSha256": "07f7efc124c4d4941ca70fed18074927cee3a259dff91c5107b4bed509554de6",
+        "referenceSequences": []
+      },
+      "roleClass": "NB35_G_PROTEIN_STABILIZER",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "Sec17",
+        "methodsSectionTitle": "Expression and purification of the human DP1-G s -Nb35 complex",
+        "assessment": "The entry-linked preparation is DP1/Gs/Nb35; the exact sequence segment maps the deposited entity to independently source-reviewed Nb35 auxiliary-role authority.",
+        "sequenceRelationship": {
+          "classification": "EXACT_126_RESIDUE_SEGMENT_TO_SOURCE_REVIEWED_NB35",
+          "referenceEntity": "7FIM_1",
+          "candidateEntity": "9AU0_4",
+          "referenceStart1": 3,
+          "referenceEnd1": 128,
+          "candidateStart1": 2,
+          "candidateEnd1": 127,
+          "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The deposited VHH is a source-supported Fab- or G-protein-complex auxiliary reagent, not the direct receptor–VHH docking target required by v3.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s41467-025-64002-z",
+        "https://www.rcsb.org/structure/9AU0"
+      ]
+    },
+    {
+      "pdbId": "9E9S",
+      "paper": "dp1-nature",
+      "primaryDoi": "10.1038/s41467-025-64002-z",
+      "primaryPmid": "41062467",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 5,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9E9S_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(s) subunit alpha isoforms short",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 394,
+          "sequenceSha256": "9f36d2e88f9078e6f8f276f104ea17e4ecb9be027264f21822b9b18c69cd6f57",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9E9S_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 345,
+          "sequenceSha256": "d566c0285df820f343aa4aa2a02959642e32cef88268901e8419e465edfe4e10",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9E9S_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9E9S_4",
+          "entityId": "4",
+          "description": "Prostaglandin D2 receptor",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "D"
+          ],
+          "sequenceLength": 385,
+          "sequenceSha256": "cb3c2b05d0d7049f658670724daaff10fc4babcd3614a13d982060f012237922",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9E9S_5",
+          "entityId": "5",
+          "description": "Nanobody35|Lama glama",
+          "labelAsymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 139,
+          "sequenceSha256": "07f7efc124c4d4941ca70fed18074927cee3a259dff91c5107b4bed509554de6",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbId": "9E9S_5",
+        "entityId": "5",
+        "description": "Nanobody35|Lama glama",
+        "labelAsymIds": [
+          "E"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 139,
+        "sequenceSha256": "07f7efc124c4d4941ca70fed18074927cee3a259dff91c5107b4bed509554de6",
+        "referenceSequences": []
+      },
+      "roleClass": "NB35_G_PROTEIN_STABILIZER",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "Sec17",
+        "methodsSectionTitle": "Expression and purification of the human DP1-G s -Nb35 complex",
+        "assessment": "The entry-linked preparation is DP1/Gs/Nb35; the exact sequence segment maps the deposited entity to independently source-reviewed Nb35 auxiliary-role authority.",
+        "sequenceRelationship": {
+          "classification": "EXACT_126_RESIDUE_SEGMENT_TO_SOURCE_REVIEWED_NB35",
+          "referenceEntity": "7FIM_1",
+          "candidateEntity": "9E9S_5",
+          "referenceStart1": 3,
+          "referenceEnd1": 128,
+          "candidateStart1": 2,
+          "candidateEnd1": 127,
+          "segmentSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The deposited VHH is a source-supported Fab- or G-protein-complex auxiliary reagent, not the direct receptor–VHH docking target required by v3.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s41467-025-64002-z",
+        "https://www.rcsb.org/structure/9E9S"
+      ]
+    },
+    {
+      "pdbId": "9EE5",
+      "paper": "dp1-nature",
+      "primaryDoi": "10.1038/s41467-025-64002-z",
+      "primaryPmid": "41062467",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 4,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9EE5_1",
+          "entityId": "1",
+          "description": "anti-BRIL Fab Heavy Chain",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 229,
+          "sequenceSha256": "67ddc585198e84dcceaf6b3917560c8c9321221942e6512a7461303f7f12f0cc",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9EE5_2",
+          "entityId": "2",
+          "description": "anti-Fab Nanobody synthetic construct",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "K"
+          ],
+          "sequenceLength": 123,
+          "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9EE5_3",
+          "entityId": "3",
+          "description": "anti-BRIL Fab Light Chain",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 214,
+          "sequenceSha256": "2f8a5df133fc6434f4a968720b7efc87730d9905589e892199dc69ce36e22877",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9EE5_4",
+          "entityId": "4",
+          "description": "Prostaglandin D2 receptor,Soluble cytochrome b562",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 495,
+          "sequenceSha256": "85081d97d75102884eee79a8042afec628ea765118eec4147236331cb2764333",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbId": "9EE5_2",
+        "entityId": "2",
+        "description": "anti-Fab Nanobody synthetic construct",
+        "labelAsymIds": [
+          "B"
+        ],
+        "authAsymIds": [
+          "K"
+        ],
+        "sequenceLength": 123,
+        "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+        "referenceSequences": []
+      },
+      "roleClass": "ANTI_FAB_FIDUCIAL_NANOBODY",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "Sec16",
+        "methodsSectionTitle": "Expression and purification of DP1 ICL3 bRIL-BAG2-Nb complex",
+        "assessment": "The entry-linked preparation identifies this entity's reagent class as an anti-Fab nanobody used with a Fab fiducial.",
+        "sequenceRelationship": {
+          "classification": "EXACT_FULL_SEQUENCE_TO_SOURCE_REVIEWED_ANTI_FAB",
+          "referenceEntity": "6WW2_2",
+          "candidateEntity": "9EE5_2",
+          "length": 123,
+          "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+          "sharedSegmentLength": 121,
+          "sharedSegmentSha256": "494e4559fdc158a302540a71292f126e74024e664f073059b53b5fb234429884",
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The deposited VHH is a source-supported Fab- or G-protein-complex auxiliary reagent, not the direct receptor–VHH docking target required by v3.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s41467-025-64002-z",
+        "https://www.rcsb.org/structure/9EE5"
+      ]
+    },
+    {
+      "pdbId": "9EI5",
+      "paper": "dp1-nature",
+      "primaryDoi": "10.1038/s41467-025-64002-z",
+      "primaryPmid": "41062467",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 4,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9EI5_1",
+          "entityId": "1",
+          "description": "Prostaglandin D2 receptor,Soluble cytochrome b562",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 495,
+          "sequenceSha256": "85081d97d75102884eee79a8042afec628ea765118eec4147236331cb2764333",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9EI5_2",
+          "entityId": "2",
+          "description": "anti-BRIL Fab Heavy Chain",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 229,
+          "sequenceSha256": "67ddc585198e84dcceaf6b3917560c8c9321221942e6512a7461303f7f12f0cc",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9EI5_3",
+          "entityId": "3",
+          "description": "anti-Fab Nanobody synthetic construct",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "K"
+          ],
+          "sequenceLength": 123,
+          "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9EI5_4",
+          "entityId": "4",
+          "description": "anti-BRIL Fab Light Chain",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 214,
+          "sequenceSha256": "2f8a5df133fc6434f4a968720b7efc87730d9905589e892199dc69ce36e22877",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbId": "9EI5_3",
+        "entityId": "3",
+        "description": "anti-Fab Nanobody synthetic construct",
+        "labelAsymIds": [
+          "C"
+        ],
+        "authAsymIds": [
+          "K"
+        ],
+        "sequenceLength": 123,
+        "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+        "referenceSequences": []
+      },
+      "roleClass": "ANTI_FAB_FIDUCIAL_NANOBODY",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "Sec16",
+        "methodsSectionTitle": "Expression and purification of DP1 ICL3 bRIL-BAG2-Nb complex",
+        "assessment": "The entry-linked preparation identifies this entity's reagent class as an anti-Fab nanobody used with a Fab fiducial.",
+        "sequenceRelationship": {
+          "classification": "EXACT_FULL_SEQUENCE_TO_SOURCE_REVIEWED_ANTI_FAB",
+          "referenceEntity": "6WW2_2",
+          "candidateEntity": "9EI5_3",
+          "length": 123,
+          "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+          "sharedSegmentLength": 121,
+          "sharedSegmentSha256": "494e4559fdc158a302540a71292f126e74024e664f073059b53b5fb234429884",
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The deposited VHH is a source-supported Fab- or G-protein-complex auxiliary reagent, not the direct receptor–VHH docking target required by v3.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s41467-025-64002-z",
+        "https://www.rcsb.org/structure/9EI5"
+      ]
+    },
+    {
+      "pdbId": "9EKH",
+      "paper": "dp1-nature",
+      "primaryDoi": "10.1038/s41467-025-64002-z",
+      "primaryPmid": "41062467",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 4,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9EKH_1",
+          "entityId": "1",
+          "description": "Prostaglandin D2 receptor,Soluble cytochrome b562",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 495,
+          "sequenceSha256": "85081d97d75102884eee79a8042afec628ea765118eec4147236331cb2764333",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9EKH_2",
+          "entityId": "2",
+          "description": "anti-BRIL Fab Heavy Chain",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 229,
+          "sequenceSha256": "67ddc585198e84dcceaf6b3917560c8c9321221942e6512a7461303f7f12f0cc",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9EKH_3",
+          "entityId": "3",
+          "description": "anti-Fab Nanobody",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "K"
+          ],
+          "sequenceLength": 123,
+          "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9EKH_4",
+          "entityId": "4",
+          "description": "anti-BRIL Fab Light Chain",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 214,
+          "sequenceSha256": "2f8a5df133fc6434f4a968720b7efc87730d9905589e892199dc69ce36e22877",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbId": "9EKH_3",
+        "entityId": "3",
+        "description": "anti-Fab Nanobody",
+        "labelAsymIds": [
+          "C"
+        ],
+        "authAsymIds": [
+          "K"
+        ],
+        "sequenceLength": 123,
+        "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+        "referenceSequences": []
+      },
+      "roleClass": "ANTI_FAB_FIDUCIAL_NANOBODY",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "Sec16",
+        "methodsSectionTitle": "Expression and purification of DP1 ICL3 bRIL-BAG2-Nb complex",
+        "assessment": "The entry-linked preparation identifies this entity's reagent class as an anti-Fab nanobody used with a Fab fiducial.",
+        "sequenceRelationship": {
+          "classification": "EXACT_FULL_SEQUENCE_TO_SOURCE_REVIEWED_ANTI_FAB",
+          "referenceEntity": "6WW2_2",
+          "candidateEntity": "9EKH_3",
+          "length": 123,
+          "sequenceSha256": "a7445bc3e6a6a5183eb2fdb00c731c93a43be10f2b08180f7daab7f11753b6a0",
+          "sharedSegmentLength": 121,
+          "sharedSegmentSha256": "494e4559fdc158a302540a71292f126e74024e664f073059b53b5fb234429884",
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The deposited VHH is a source-supported Fab- or G-protein-complex auxiliary reagent, not the direct receptor–VHH docking target required by v3.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s41467-025-64002-z",
+        "https://www.rcsb.org/structure/9EKH"
+      ]
+    },
+    {
+      "pdbId": "9JQY",
+      "paper": "ep2-ep4",
+      "primaryDoi": "10.1038/s44318-025-00611-0",
+      "primaryPmid": "41162752",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 3,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9JQY_1",
+          "entityId": "1",
+          "description": "Heavy chain of Fab fragment",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 253,
+          "sequenceSha256": "912c0829931ea88c3a45052d7bbc4b0312ee677b72e4d50189ab3b382489548c",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9JQY_2",
+          "entityId": "2",
+          "description": "Light chain of Fab fragment",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 255,
+          "sequenceSha256": "efbb8faf6f5071014f562a12b61a5be696ae558e94d9046432767fcb038cca27",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9JQY_3",
+          "entityId": "3",
+          "description": "GFP-like fluorescent chromoprotein,Prostaglandin E2 receptor EP4 subtype",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 549,
+          "sequenceSha256": "9c9fe2c5dfdccd840d6fe8170453465e9a612876f138f18c788e7eefa1c62f13",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P35408",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": null,
+      "roleClass": "CONVENTIONAL_FAB_NO_DEPOSITED_VHH_TARGET",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "Sec12",
+        "methodsSectionTitle": "Construction, expression, and purification of EP4-Fab001 complexes",
+        "assessment": "The entry-linked preparation names conventional Fab001, and the complete retained inventory contains its heavy and light chains plus receptor, with no deposited single-domain target pair.",
+        "sequenceRelationship": null
+      },
+      "entryDisposition": "EXCLUDE_NO_DIRECT_RECEPTOR_VHH_INTERFACE",
+      "dispositionReason": "The exact linked deposition provides no deposited direct receptor–VHH target pair; experimental antibody absence outside the retained entity inventory is not claimed.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s44318-025-00611-0",
+        "https://www.rcsb.org/structure/9JQY"
+      ]
+    },
+    {
+      "pdbId": "9JQZ",
+      "paper": "ep2-ep4",
+      "primaryDoi": "10.1038/s44318-025-00611-0",
+      "primaryPmid": "41162752",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 3,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9JQZ_1",
+          "entityId": "1",
+          "description": "Heavy chain of Fab fragment",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 253,
+          "sequenceSha256": "912c0829931ea88c3a45052d7bbc4b0312ee677b72e4d50189ab3b382489548c",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9JQZ_2",
+          "entityId": "2",
+          "description": "GFP-like fluorescent chromoprotein,Prostaglandin E2 receptor EP4 subtype",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 549,
+          "sequenceSha256": "9c9fe2c5dfdccd840d6fe8170453465e9a612876f138f18c788e7eefa1c62f13",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P35408",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9JQZ_3",
+          "entityId": "3",
+          "description": "Light chain of Fab fragment",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 255,
+          "sequenceSha256": "efbb8faf6f5071014f562a12b61a5be696ae558e94d9046432767fcb038cca27",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": null,
+      "roleClass": "CONVENTIONAL_FAB_NO_DEPOSITED_VHH_TARGET",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "Sec12",
+        "methodsSectionTitle": "Construction, expression, and purification of EP4-Fab001 complexes",
+        "assessment": "The entry-linked preparation names conventional Fab001, and the complete retained inventory contains its heavy and light chains plus receptor, with no deposited single-domain target pair.",
+        "sequenceRelationship": null
+      },
+      "entryDisposition": "EXCLUDE_NO_DIRECT_RECEPTOR_VHH_INTERFACE",
+      "dispositionReason": "The exact linked deposition provides no deposited direct receptor–VHH target pair; experimental antibody absence outside the retained entity inventory is not claimed.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s44318-025-00611-0",
+        "https://www.rcsb.org/structure/9JQZ"
+      ]
+    },
+    {
+      "pdbId": "9JRO",
+      "paper": "ep2-ep4",
+      "primaryDoi": "10.1038/s44318-025-00611-0",
+      "primaryPmid": "41162752",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 4,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9JRO_1",
+          "entityId": "1",
+          "description": "Heavy chain of Fab fragment",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 227,
+          "sequenceSha256": "d78fa81fab1b2520ee4ad56de07f4b188daf6f43bb602142970680e8ac518bb6",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9JRO_2",
+          "entityId": "2",
+          "description": "Light chain of Fab fragment",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 214,
+          "sequenceSha256": "2124586ca9ac263c02ef4a09db650f72dd4919d31f8ad515689764abfe6692c2",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9JRO_3",
+          "entityId": "3",
+          "description": "Nb",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 122,
+          "sequenceSha256": "0a583304264309bd03288f32d700633e9bfb1d6596cd9dc3e13dc8ed9bf6d72a",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9JRO_4",
+          "entityId": "4",
+          "description": "GFP-like fluorescent chromoprotein,Prostaglandin E2 receptor EP2 subtype,Soluble cytochrome b562,Prostaglandin E2 receptor EP2 subtype,Soluble cytochrome b562",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 684,
+          "sequenceSha256": "6492a148e4b226070a6f683bfb6938eda1fb573654849486e7fda1d76f35f15d",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P0ABE7",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P43116",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbId": "9JRO_3",
+        "entityId": "3",
+        "description": "Nb",
+        "labelAsymIds": [
+          "C"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 122,
+        "sequenceSha256": "0a583304264309bd03288f32d700633e9bfb1d6596cd9dc3e13dc8ed9bf6d72a",
+        "referenceSequences": []
+      },
+      "roleClass": "ANTI_FAB_FIDUCIAL_NANOBODY",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "Sec11",
+        "methodsSectionTitle": "Construction, expression, and purification of EP2-BRIL-FabBRIL-NbFab complexes",
+        "assessment": "The entry-linked preparation identifies this entity's reagent class as an anti-Fab nanobody used with a Fab fiducial.",
+        "sequenceRelationship": {
+          "classification": "EXACT_FULL_SEQUENCE_CONTEXT_ONLY",
+          "referenceEntity": "8TB7_3",
+          "candidateEntity": "9JRO_3",
+          "length": 122,
+          "sequenceSha256": "0a583304264309bd03288f32d700633e9bfb1d6596cd9dc3e13dc8ed9bf6d72a",
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The deposited VHH is a source-supported Fab- or G-protein-complex auxiliary reagent, not the direct receptor–VHH docking target required by v3.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s44318-025-00611-0",
+        "https://www.rcsb.org/structure/9JRO"
+      ]
+    },
+    {
+      "pdbId": "9JRT",
+      "paper": "ep2-ep4",
+      "primaryDoi": "10.1038/s44318-025-00611-0",
+      "primaryPmid": "41162752",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 4,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9JRT_1",
+          "entityId": "1",
+          "description": "GFP-like fluorescent chromoprotein,Prostaglandin E2 receptor EP2 subtype,Soluble cytochrome b562,Prostaglandin E2 receptor EP2 subtype,Soluble cytochrome b562",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 684,
+          "sequenceSha256": "6492a148e4b226070a6f683bfb6938eda1fb573654849486e7fda1d76f35f15d",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P0ABE7",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P43116",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        },
+        {
+          "rcsbId": "9JRT_2",
+          "entityId": "2",
+          "description": "Heavy chain of Fab fragment",
+          "labelAsymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 227,
+          "sequenceSha256": "d78fa81fab1b2520ee4ad56de07f4b188daf6f43bb602142970680e8ac518bb6",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9JRT_3",
+          "entityId": "3",
+          "description": "Nb",
+          "labelAsymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 122,
+          "sequenceSha256": "0a583304264309bd03288f32d700633e9bfb1d6596cd9dc3e13dc8ed9bf6d72a",
+          "referenceSequences": []
+        },
+        {
+          "rcsbId": "9JRT_4",
+          "entityId": "4",
+          "description": "Light chain of Fab fragment",
+          "labelAsymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "L"
+          ],
+          "sequenceLength": 214,
+          "sequenceSha256": "2124586ca9ac263c02ef4a09db650f72dd4919d31f8ad515689764abfe6692c2",
+          "referenceSequences": []
+        }
+      ],
+      "candidateEntity": {
+        "rcsbId": "9JRT_3",
+        "entityId": "3",
+        "description": "Nb",
+        "labelAsymIds": [
+          "C"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 122,
+        "sequenceSha256": "0a583304264309bd03288f32d700633e9bfb1d6596cd9dc3e13dc8ed9bf6d72a",
+        "referenceSequences": []
+      },
+      "roleClass": "ANTI_FAB_FIDUCIAL_NANOBODY",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "Sec11",
+        "methodsSectionTitle": "Construction, expression, and purification of EP2-BRIL-FabBRIL-NbFab complexes",
+        "assessment": "The entry-linked preparation identifies this entity's reagent class as an anti-Fab nanobody used with a Fab fiducial.",
+        "sequenceRelationship": {
+          "classification": "EXACT_FULL_SEQUENCE_CONTEXT_ONLY",
+          "referenceEntity": "8TB7_3",
+          "candidateEntity": "9JRT_3",
+          "length": 122,
+          "sequenceSha256": "0a583304264309bd03288f32d700633e9bfb1d6596cd9dc3e13dc8ed9bf6d72a",
+          "roleProofBySequenceAlone": false
+        }
+      },
+      "entryDisposition": "EXCLUDE_AUXILIARY_BINDER",
+      "dispositionReason": "The deposited VHH is a source-supported Fab- or G-protein-complex auxiliary reagent, not the direct receptor–VHH docking target required by v3.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s44318-025-00611-0",
+        "https://www.rcsb.org/structure/9JRT"
+      ]
+    },
+    {
+      "pdbId": "9UWD",
+      "paper": "dp1-pnas",
+      "primaryDoi": "10.1073/pnas.2501902122",
+      "primaryPmid": "40440061",
+      "primaryDepositionLinkVerified": true,
+      "polymerEntityCount": 1,
+      "allPolymerEntities": [
+        {
+          "rcsbId": "9UWD_1",
+          "entityId": "1",
+          "description": "Prostaglandin D2 receptor,Soluble cytochrome b562",
+          "labelAsymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 428,
+          "sequenceSha256": "f3f662a0d1ae915ae967e58f8bc93069de8e684fe7db9cf72c48061fab17b4fd",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13258",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": null,
+      "roleClass": "NO_DEPOSITED_VHH_TARGET_IN_COMPLETE_ENTITY_INVENTORY",
+      "roleEvidence": {
+        "classification": "SOURCE_REPORTED_PREPARATION_FACT_PLUS_COMPLETE_DEPOSITION_INVENTORY",
+        "methodsSectionId": "s13",
+        "methodsSectionTitle": "Inactive DP1 Receptor Complex Purification.",
+        "assessment": "The source reports FabBRIL/NbFab in sample preparation, while the exact linked deposition's complete retained inventory has only the receptor polymer and therefore supplies no deposited receptor–VHH target pair.",
+        "sequenceRelationship": null
+      },
+      "entryDisposition": "EXCLUDE_NO_DIRECT_RECEPTOR_VHH_INTERFACE",
+      "dispositionReason": "The exact linked deposition provides no deposited direct receptor–VHH target pair; experimental antibody absence outside the retained entity inventory is not claimed.",
+      "componentEffect": "NO_NEW_ELIGIBLE_COMPONENT",
+      "constructDiscrepanciesPreserved": true,
+      "masterDispositionLedgerRewritten": false,
+      "nativeCoordinatesInspected": false,
+      "nativeRelativePoseInspected": false,
+      "structuralContactTablesInspected": false,
+      "structuralResultsInspected": false,
+      "labelsAccessed": false,
+      "predictionOutputsAccessed": false,
+      "evidenceUrls": [
+        "https://doi.org/10.1073/pnas.2501902122",
+        "https://www.rcsb.org/structure/9UWD"
+      ]
+    }
+  ],
+  "summary": {
+    "reviewedEntryCount": 12,
+    "reviewedPolymerCount": 47,
+    "entryAuxiliaryExclusionCount": 9,
+    "entryNoDirectTargetExclusionCount": 3,
+    "boundedEntryExclusionCount": 12,
+    "entryDispositionPendingCount": 0,
+    "sourceGroupIndependentComponentIncrement": 0,
+    "newFormallyClearedIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  }
+}

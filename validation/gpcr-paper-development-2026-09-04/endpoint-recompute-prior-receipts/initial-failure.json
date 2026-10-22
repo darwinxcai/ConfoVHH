@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_BEFORE_OUTPUT_SERIALIZATION",
+  "scriptSha256": "17f9b64af29ae17a0a4f1453060e2afee29aaaa8b7a35a679181efdc496d0494",
+  "raw355ModelsPassedPublishedPrecisionAssertionsBeforeFailure": true,
+  "reason": "Native5C1M residue label187 has alternate CA conformers outside the selected measurement endpoints. Initial parser rejected every alternate CA globally. Corrected parser will retain all alternatives then require uniqueness only at the two measured endpoints; no arbitrary alternate will be selected."
+}

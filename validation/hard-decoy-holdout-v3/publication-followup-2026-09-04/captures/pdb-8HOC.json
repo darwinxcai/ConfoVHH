@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-8HOC",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "8HOC"
+    ],
+    "query": "\"8HOC\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228HOC%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:48:18.836765+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-8HOC.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228HOC%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "62bc0665f69c627ddf92f2dece87712d5cd82ae505e4ac131f7bd068ce7f69f9",
+  "bytes": 979,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:48:29.452876+00:00"
+}

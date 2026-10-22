@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-03",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "8GAG"
+    ],
+    "query": "TITLE:\"Cannabinoid receptor 1-Gi complex with novel ligand\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Cannabinoid+receptor+1-Gi+complex+with+novel+ligand%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:06.655541+00:00",
+  "status": 200,
+  "rawFile": "raw/title-03.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Cannabinoid+receptor+1-Gi+complex+with+novel+ligand%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "cc2bed1688b0ee5e09678523d5aabe4e0ed3e8b0e2c6186b89b74e366ae83d5c",
+  "bytes": 228,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:19.442322+00:00"
+}

@@ -1,0 +1,631 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-04",
+  "scope": "Bounded GPR151/NB6 question for9W3K and9W3L; no additional literature or accession expansion.",
+  "evidenceBoundary": {
+    "nativeCoordinatesInspected": false,
+    "structuralResultsInspected": false,
+    "structuralFiguresInspected": false,
+    "figureCaptionsInspected": false,
+    "contactResiduesOrOrientationsInspected": false,
+    "holdoutLabelsAccessed": false,
+    "formalExclusionAuthority": false,
+    "formalLeakageGraphAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "targetFreezePermitted": false
+  },
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json": "d4cda5ecfa060dc2dc0d5147114946f8d059dce983d9fe4ac10a0c5509ad9778",
+    "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/entries.jsonl": "6aa103cf88f5fb69874842da11ce5306a23429f7590a77210f892a40ef046017",
+    "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/manifest.json": "bce2e583f05100962f3a451952ae1e6ec7e478adc96cf0a46ae2b28a28cab9e7",
+    "validation/hard-decoy-holdout-v3/domain-remainder-screen-2026-09-04/manifest.json": "b7a183e5b77e2cd866b82dc6ca07b0ad84876423b68b934e04a35ff3ef6060d8",
+    "validation/hard-decoy-holdout-v3/domain-remainder-screen-2026-09-04/entity-screens.jsonl": "9e1acb6a7fe2dd2ddc76d43f1dc18a08577aa0b376ae4a4c23f900467f454fec",
+    "validation/hard-decoy-holdout-v3/domain-remainder-screen-2026-09-04/sequence-screens.jsonl": "3a2db9aed20155ad2a944625fc4ca020c59d1d4b205ab9c521f8fd1682328499",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl": "8e2219f94d91bb3a8822e56a1e43f20cc652a86bc9458a9af76013f96e3c5be7",
+    "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json": "bc31adf14cf1222ebade348337facefb209c286c631f0da0bf640bd778b0688f",
+    "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/development-vhh-profiles.jsonl": "1c791d337d628a1de397eb33cfe5685d76953e169bfbf1077798365fa9fa8730"
+  },
+  "sources": [
+    {
+      "sourceId": "PNAS_GPR151_2026_ABSTRACT",
+      "doi": "10.1073/pnas.2534234123",
+      "pmid": "42085164",
+      "title": "Decoding the structure of GPR151 via NELiS.",
+      "publisherUrl": "https://www.pnas.org/doi/10.1073/pnas.2534234123",
+      "readScope": "Author abstract and bibliographic metadata returned by Europe PMC. The abstract includes qualitative receptor/domain mechanistic narrative; no structural Results, figure captions, residue-contact assignments or native orientations were read.",
+      "abstractFile": "sources/doi-core.json",
+      "abstractFileSha256": "20f0c0c3d1d92b175b2aef192fa82967a4ad5a73dbc8096bcb204503e6e43c5a",
+      "fullTextReviewComplete": false,
+      "primaryMethodsReviewed": false,
+      "primaryExactDepositionStatementReviewed": false,
+      "sourceReportedFacts": [
+        {
+          "classification": "AUTHOR_ABSTRACT_FACT",
+          "fact": "The abstract describes Nb6-Enabled Ligand-Free Stabilization Platform (NELiS), reports four stabilizing mutations for GPR151, and subsequently reports identification of a GPR151-specific nanobody."
+        }
+      ],
+      "interpretationLimits": [
+        "The abstract does not assign its later GPR151-specific nanobody to NB6 in these two deposits.",
+        "Four abstract-reported stabilizing mutations are not assumed to explain the entire 33-position sequence difference.",
+        "Publisher HTML and a conventional unverified supplementary-file URL both returned HTTP 403. No Methods or supplementary content was obtained.",
+        "Current RCSB citation association is not a retrieved primary exact-deposition paragraph."
+      ]
+    },
+    {
+      "sourceId": "UNIPROT_Q8TDV0",
+      "url": "https://rest.uniprot.org/uniprotkb/Q8TDV0.json",
+      "evidence": "Two byte-identical canonical sequence metadata captures, entry version158 and sequence version1.",
+      "captureFiles": [
+        "sequence-evidence/uniprot-Q8TDV0.json",
+        "sequence-evidence/uniprot-Q8TDV0-repeat-2.json"
+      ],
+      "requestProvenanceFiles": [
+        "sequence-evidence/uniprot-request.json",
+        "sequence-evidence/uniprot-request-repeat-2.json"
+      ],
+      "canonicalSequenceSha256": "282524994e3a26cd32f354e2f7f0e7d62e32229e0a2cff708ddc9a3c446ab4bb",
+      "readScope": "Canonical sequence, version and sequence-based topology metadata only. Topology is annotation, not coordinate-derived inspection."
+    },
+    {
+      "sourceId": "DEVELOPMENT_6VI4",
+      "evidenceType": "FROZEN_DEVELOPMENT_METADATA_AND_SEQUENCE",
+      "metadata": {
+        "annotationEpitopeAuthority": false,
+        "constructEvidence": "UNRESOLVED",
+        "developmentRoles": [
+          "public-native-panel",
+          "state-context-inventory"
+        ],
+        "directReceptorVhhEvidence": "UNRESOLVED",
+        "experimentalMethods": [
+          "X-RAY DIFFRACTION",
+          "X-ray"
+        ],
+        "formalLeakageCertificationComplete": false,
+        "gpcrdb": {
+          "activationDistance": null,
+          "class": "Class A (Rhodopsin)",
+          "experimentalType": "X-ray diffraction",
+          "family": "001_002_022_002",
+          "preferredChain": "B",
+          "protein": "oprk_human",
+          "publication": "https://dx.doi.org/10.1038/S41467-020-14889-7",
+          "publicationDate": "2020-03-18",
+          "resolution": 3.3,
+          "signallingProtein": null,
+          "species": "Homo sapiens",
+          "state": "Inactive"
+        },
+        "knownParentEvidence": "UNRESOLVED",
+        "metadataSource": "REUSED_FROZEN_REPEATED_ENTRY_METADATA",
+        "nativeCoordinatesInspected": false,
+        "pdbId": "6VI4",
+        "publication": {
+          "doi": "10.1038/s41467-020-14889-7",
+          "pmid": "32123179",
+          "status": "PUBLISHED",
+          "title": "Nanobody-enabled monitoring of kappa opioid receptor states."
+        },
+        "receptor": {
+          "authAsymIds": [
+            "A",
+            "B"
+          ],
+          "description": "Kappa opioid receptor",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A",
+            "B"
+          ],
+          "preferredAuthChain": "B",
+          "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+          "sequenceLength": 307,
+          "sequenceSha256": "ed300255dfd37c2e1250ca86a22e4bd96bd06686533669fe0f208b2379cd2ebd",
+          "uniprotAccessions": [
+            "P41145"
+          ]
+        },
+        "registryReceptor": "OPRK1",
+        "registryVhh": null,
+        "releaseDate": "2020-03-18T00:00:00Z",
+        "resolutionAngstrom": [
+          3.3
+        ],
+        "targetFreezeAuthority": false,
+        "vhhMetadataCandidateStatus": "UNIQUE_METADATA_CANDIDATE_NOT_DIRECT_INTERFACE_EVIDENCE",
+        "vhhMetadataCandidates": [
+          {
+            "authAsymIds": [
+              "C",
+              "D"
+            ],
+            "description": "Nanobody 6",
+            "entityId": "2",
+            "labelAsymIds": [
+              "C",
+              "D"
+            ],
+            "sequenceLength": 133,
+            "sequenceSha256": "a7b413fe44dba2a72187b519f26b7312d90ac964e408f0ae607e915e1830a2ab",
+            "sourceOrganisms": [
+              {
+                "scientificName": "Lama glama",
+                "taxonomyId": "9844"
+              }
+            ]
+          }
+        ]
+      },
+      "receptorEntityId": "1",
+      "binderEntityId": "2",
+      "primaryPaperNewlyRead": false,
+      "evidenceFiles": [
+        "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl",
+        "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/development-vhh-profiles.jsonl"
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "nativeCoordinatesInspected": false,
+      "structuralResultsInspected": false,
+      "structuralFiguresInspected": false,
+      "figureCaptionsInspected": false,
+      "contactResiduesOrOrientationsInspected": false,
+      "holdoutLabelsAccessed": false,
+      "formalExclusionAuthority": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "targetFreezePermitted": false,
+      "pdbId": "9W3K",
+      "reviewStatus": "ENGINEERED_SEQUENCE_AND_DEVELOPMENT_VHH_THRESHOLD_SUPPORTED_PRIMARY_ROLE_PENDING",
+      "title": "GPR151-Legobody complex",
+      "releaseDate": "2026-05-06T00:00:00Z",
+      "primaryCitation": {
+        "doi": "10.1073/pnas.2534234123",
+        "pmid": "42085164",
+        "title": "Decoding the structure of GPR151 via NELiS."
+      },
+      "experimentalMethods": [
+        "ELECTRON MICROSCOPY",
+        "EM"
+      ],
+      "polymerEntityCountReported": 5,
+      "polymerInventoryComplete": true,
+      "polymerInventory": [
+        {
+          "authAsymIds": [
+            "C"
+          ],
+          "description": "Maltose/maltodextrin-binding periplasmic protein,Immunoglobulin G-binding protein A,Immunoglobulin G-binding protein G",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9W3K_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P02976",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P06654",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P0AEX9",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MGSSHHHHHHSSGLVPRGSHMKIEEGKLVIWINGDKGYNGLAEVGKKFEKDTGIKVTVEHPDKLEEKFPQVAATGDGPDIIFWAHDRFGGYAQSGLLAEITPDKAFQDKLYPFTWDAVRYNGKLIAYPIAVEALSLIYNKDLLPNPPKTWEEIPALDKELKAKGKSALMFNLQEPYFTWPLIAADGGYAFKYENGKYDIKDVGVDNAGAKAGLTFLVDLIKNKHMNADTDYSIAEAAFNKGETAMTINGPWAWSNIDTSKVNYGVTVLPTFKGQPSKPFVGVLSAGINAASPNKELAKEFLENYLLTDEGLEAVNKDKPLGAVALKSYEEELAKDPRIAATMENAQKGEIMPNIPQMSAFWYAVRTAVINAASGRQTVDQALAFAQILIMPNLTEEQRNGFIQSLKDDPSVSKEILAEAKKLNEHQAPKGGSGGAGSGDQQSAFYEILNMPNLNEAQRNGFIQSLKDDPSQSTNVLGEAKKLNESQAGGGSGGGSGGSAVTTYKLVINGKTLKGETTTKAVDAETAEKAFKQYANDNGVDGVWTYDDATKTFTVTEGSG",
+          "sequenceLength": 559,
+          "sequenceSha256": "60b20b88f6ec4c1c2246b8bf903221b595030a1a0b70733f90a2f19c90fd51d2",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia coli O157:H7",
+              "taxonomyId": "83334"
+            },
+            {
+              "scientificName": "Staphylococcus aureus subsp. aureus Mu50",
+              "taxonomyId": "158878"
+            },
+            {
+              "scientificName": "Staphylococcus aureus",
+              "taxonomyId": "1280"
+            },
+            {
+              "scientificName": "Streptococcus sp. 'group G",
+              "taxonomyId": "1320"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "H"
+          ],
+          "description": "Fab-8D3-2-H-His",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9W3K_2",
+          "referenceSequences": [],
+          "sequence": "MDWTWRVFCLLAVAPGAHSDVQLVESGGGLVQPGKSLRLSCAASGFTFSNFGMHWVRQAPEMGLEWVAYISSGSTTKYYGDTVKGRFTISRDNPKNTLYLQMNSLRSEDTAMYYCARRPLYDGDYGYPMDYWGQGTSVTVSSASTKGPSVFPLAPSSKSTSGGTAALGCLVKDYFPEPVTVSWNSGALTSGVHTFPAVLQSSGLYSLSSVVTVPSSSLGTQTYICNVNHKPSNTKVDKKVEPKSCGSHHHHHH",
+          "sequenceLength": 253,
+          "sequenceSha256": "434aeafcecc4a0dfa7f5ece5dfb12369bb20f7b08b846a52b1aec1a83fabb088",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "L"
+          ],
+          "description": "Fab_8D3_L",
+          "entityId": "3",
+          "labelAsymIds": [
+            "C"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9W3K_3",
+          "referenceSequences": [],
+          "sequence": "MVLQTQVFISLLLWISGAYGNIMLTQSPSSLAVSAGERVTMSCKSTQSILYNSNQKTYLAWYQQKPGQSPKLLIYWASTRASGVPDRFTGSGSGTDFTLTINSVQPEDLAVYYCHQYLSAWTFGGGTKLEIKRTVAAPSVFIFPPSDEQLKSGTASVVCLLNNFYPREAKVQWKVDNALQSGNSQESVTEQDSKDSTYSLSSTLTLSKADYEKHKVYACEVTHQGLSSPVTKSFNRGEC",
+          "sequenceLength": 239,
+          "sequenceSha256": "b8e0689b4005da635fc7ae3681dd248f3c6ae46ba50c426b9e4aed7d0df76479",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "description": "G-protein coupled receptor 151",
+          "entityId": "4",
+          "labelAsymIds": [
+            "D"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9W3K_4",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q8TDV0",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MLAAAFADSNSSSMNVSFAHLHFAGGYLPSDSQDWRTIIPALLVAVCLVGFVGNLCVIGILLHNAWKGKPSMIHSLILNLSLADLLLLLFSAPIRATAYSKSVWDLGWFVCKSSDWFIHTCMAAKSWTIVVVAKVCFMYASDPAKQVSIHNYTIWSVLVAIWTVASLLPLPEWFFSTIRHHEGVEMCLVDVPAVAEEFMAMFGKLYPLLAFGLPLFFASFYYTLMILRLKSVRLLSGSREKDRNLRRITRLVLSIAIISALLWLPEWVAWLWVWHLKAAGPAPPQGFIALSQVLMFSISAANPLIFLVMSEEFREGLKGVWKWMITKKPPTVSESQETPAGNSEGLPDKVPSPESPASIPEKEKPSSPSSGKGKTEKAEIPILPDVEQFWHERDTVPSVQDNDPIPWEHEDQETGEGVK",
+          "sequenceLength": 419,
+          "sequenceSha256": "f8905ab49c5a6ac712c0146edb4d72e9bbbdd020355fa8ee3284037dfab8e018",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "description": "NB6",
+          "entityId": "5",
+          "labelAsymIds": [
+            "E"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9W3K_5",
+          "referenceSequences": [],
+          "sequence": "MQVQLQESGGGLVQAGESLRLSCAASGTIFRLYDMGWYRRAPGKQRELVASITSGGSTKYGDSVKGRFTISRDNAKNTVYLQMSSLKPEDTAVYYCNAEYRTGIWEELLDGWGQGTQVTVSSLEHHH",
+          "sequenceLength": 127,
+          "sequenceSha256": "5f867337653ed65137392ad7fb5a69400c7fc6ec3feee464dbd84198385ced1d",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Spodoptera frugiperda",
+              "taxonomyId": "7108"
+            }
+          ]
+        }
+      ],
+      "receptorEntityId": "4",
+      "binderEntityId": "5",
+      "candidateBinderSourceOrganismCaveat": "Deposited NB6 source metadata says Spodoptera frugiperda. This annotation is retained; it does not establish antibody biological origin or VHH identity.",
+      "experimentalConstructCompleteness": "PENDING_PRIMARY_METHODS: deposited sequence inventory is complete, but expression tags, processing and construct provenance are not cleared.",
+      "primaryExactDepositionLinkReviewed": false,
+      "directNativeReceptorBinderEstablished": false,
+      "engineeredKORRecruitmentMechanismSourceConfirmed": false,
+      "sourceIds": [
+        "PNAS_GPR151_2026_ABSTRACT",
+        "UNIPROT_Q8TDV0",
+        "DEVELOPMENT_6VI4"
+      ],
+      "sequenceEvidence": {
+        "depositedReceptorsIdenticalAcrossEntries": true,
+        "depositedBindersIdenticalAcrossEntries": true,
+        "receptorDiffersFromCanonicalAtPositions": 33,
+        "receptorCanonicalLength": 419,
+        "receptorDepositedLength": 419,
+        "changedBlock": {
+          "depositedStart1Based": 222,
+          "depositedEnd1Based": 252,
+          "depositedSequence": "YTLMILRLKSVRLLSGSREKDRNLRRITRLV",
+          "depositedBlockSha256": "27487792991a111ac50270455b13a6648e7051bb965c7436274c138311b214d9",
+          "canonicalSequenceAtSamePositions": "FWRAYDQCKKRGTKTQNLRNQIRSKQVTVML",
+          "canonicalBlockSha256": "aa97b9f2227ae6b0d35ffa2b2806216c8acfc6d0ef2ae170315c6073cfec6bb5",
+          "differentPositionsCount": 29,
+          "length": 31,
+          "developmentStart1Based": 195,
+          "developmentEnd1Based": 225,
+          "developmentExactMatch": true,
+          "interpretation": "An exact sequence segment match to an exposed development receptor. It supports an engineered KOR-segment interpretation, but sequence comparison alone does not establish construct design, donor provenance, binding mechanism, or a formal leakage edge."
+        },
+        "longestSharedDevelopmentReceptorSegment": {
+          "depositedStart1Based": 222,
+          "depositedEnd1Based": 253,
+          "developmentStart1Based": 195,
+          "developmentEnd1Based": 226,
+          "sequence": "YTLMILRLKSVRLLSGSREKDRNLRRITRLVL",
+          "length": 32
+        },
+        "binderDevelopmentReference": "6VI4_2",
+        "binderFrameworkIdentityNumerator": 88,
+        "binderFrameworkIdentityDenominator": 91,
+        "binderCdr3IdentityNumerator": 15,
+        "binderCdr3IdentityDenominator": 15,
+        "binderCdr3LengthDifference": 0,
+        "allThreeCdrsExactMatch": true,
+        "completeImgtCoverage": true,
+        "frozenVhhSequenceCriterionSatisfied": true,
+        "comparisonFile": "sequence-evidence/nb6-local-comparison.json",
+        "receptorComparisonFile": "sequence-evidence/gpr151-receptor-comparison.json"
+      },
+      "entrySpecificInventoryInterpretation": "The deposited inventory includes receptor, NB6, Fab heavy/light chains and a protein scaffold. The Legobody title alone does not resolve individual binding roles.",
+      "adjudication": {
+        "sequenceFacts": "The deposited receptor sequence is altered relative to canonical GPR151. Its changed block matches a segment in exposed development KOR, and its NB6 passes the frozen VHH sequence criterion against development Nb6.",
+        "inference": "The combined sequence evidence supports an engineered KOR-segment/Nb6 recruitment interpretation. It is not a primary-source confirmation of donor provenance, the design procedure, or binding mechanism.",
+        "decision": "Do not promote these entries as independent native-GPR151 VHH targets. Retain the positive development-sequence signal and pending source-role/construct adjudication; no formal exclusion is assigned here."
+      },
+      "pendingRequirements": [
+        "Review primary construct/sample Methods and exact deposition paragraph through an available authorized source.",
+        "Resolve whether the matching KOR segment was deliberately grafted to recruit NB6, and reconcile all construct/tag provenance.",
+        "Integrate the positive frozen VHH sequence criterion into formal leakage adjudication under the sealed protocol."
+      ]
+    },
+    {
+      "nativeCoordinatesInspected": false,
+      "structuralResultsInspected": false,
+      "structuralFiguresInspected": false,
+      "figureCaptionsInspected": false,
+      "contactResiduesOrOrientationsInspected": false,
+      "holdoutLabelsAccessed": false,
+      "formalExclusionAuthority": false,
+      "formalLeakageGraphAuthority": false,
+      "formalNoEdgeAuthority": false,
+      "targetFreezePermitted": false,
+      "pdbId": "9W3L",
+      "reviewStatus": "ENGINEERED_SEQUENCE_AND_DEVELOPMENT_VHH_THRESHOLD_SUPPORTED_PRIMARY_ROLE_PENDING",
+      "title": "Cryo-EM structure of GPR151-Nb6 complex",
+      "releaseDate": "2026-05-06T00:00:00Z",
+      "primaryCitation": {
+        "doi": "10.1073/pnas.2534234123",
+        "pmid": "42085164",
+        "title": "Decoding the structure of GPR151 via NELiS."
+      },
+      "experimentalMethods": [
+        "ELECTRON MICROSCOPY",
+        "EM"
+      ],
+      "polymerEntityCountReported": 2,
+      "polymerInventoryComplete": true,
+      "polymerInventory": [
+        {
+          "authAsymIds": [
+            "A"
+          ],
+          "description": "G-protein coupled receptor 151",
+          "entityId": "1",
+          "labelAsymIds": [
+            "A"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": false,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9W3L_1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q8TDV0",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sequence": "MLAAAFADSNSSSMNVSFAHLHFAGGYLPSDSQDWRTIIPALLVAVCLVGFVGNLCVIGILLHNAWKGKPSMIHSLILNLSLADLLLLLFSAPIRATAYSKSVWDLGWFVCKSSDWFIHTCMAAKSWTIVVVAKVCFMYASDPAKQVSIHNYTIWSVLVAIWTVASLLPLPEWFFSTIRHHEGVEMCLVDVPAVAEEFMAMFGKLYPLLAFGLPLFFASFYYTLMILRLKSVRLLSGSREKDRNLRRITRLVLSIAIISALLWLPEWVAWLWVWHLKAAGPAPPQGFIALSQVLMFSISAANPLIFLVMSEEFREGLKGVWKWMITKKPPTVSESQETPAGNSEGLPDKVPSPESPASIPEKEKPSSPSSGKGKTEKAEIPILPDVEQFWHERDTVPSVQDNDPIPWEHEDQETGEGVK",
+          "sequenceLength": 419,
+          "sequenceSha256": "f8905ab49c5a6ac712c0146edb4d72e9bbbdd020355fa8ee3284037dfab8e018",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "authAsymIds": [
+            "B"
+          ],
+          "description": "NB6",
+          "entityId": "2",
+          "labelAsymIds": [
+            "B"
+          ],
+          "metadataSignals": {
+            "auxiliaryLexical": false,
+            "camelidSource": false,
+            "constructRiskLexical": false,
+            "vhhDescription": false,
+            "vhhLength": true,
+            "vhhLikeCandidate": false
+          },
+          "polymerType": "Protein",
+          "polymerTypeDetail": "polypeptide(L)",
+          "rcsbId": "9W3L_2",
+          "referenceSequences": [],
+          "sequence": "MQVQLQESGGGLVQAGESLRLSCAASGTIFRLYDMGWYRRAPGKQRELVASITSGGSTKYGDSVKGRFTISRDNAKNTVYLQMSSLKPEDTAVYYCNAEYRTGIWEELLDGWGQGTQVTVSSLEHHH",
+          "sequenceLength": 127,
+          "sequenceSha256": "5f867337653ed65137392ad7fb5a69400c7fc6ec3feee464dbd84198385ced1d",
+          "sourceOrganisms": [
+            {
+              "scientificName": "Spodoptera frugiperda",
+              "taxonomyId": "7108"
+            }
+          ]
+        }
+      ],
+      "receptorEntityId": "1",
+      "binderEntityId": "2",
+      "candidateBinderSourceOrganismCaveat": "Deposited NB6 source metadata says Spodoptera frugiperda. This annotation is retained; it does not establish antibody biological origin or VHH identity.",
+      "experimentalConstructCompleteness": "PENDING_PRIMARY_METHODS: deposited sequence inventory is complete, but expression tags, processing and construct provenance are not cleared.",
+      "primaryExactDepositionLinkReviewed": false,
+      "directNativeReceptorBinderEstablished": false,
+      "engineeredKORRecruitmentMechanismSourceConfirmed": false,
+      "sourceIds": [
+        "PNAS_GPR151_2026_ABSTRACT",
+        "UNIPROT_Q8TDV0",
+        "DEVELOPMENT_6VI4"
+      ],
+      "sequenceEvidence": {
+        "depositedReceptorsIdenticalAcrossEntries": true,
+        "depositedBindersIdenticalAcrossEntries": true,
+        "receptorDiffersFromCanonicalAtPositions": 33,
+        "receptorCanonicalLength": 419,
+        "receptorDepositedLength": 419,
+        "changedBlock": {
+          "depositedStart1Based": 222,
+          "depositedEnd1Based": 252,
+          "depositedSequence": "YTLMILRLKSVRLLSGSREKDRNLRRITRLV",
+          "depositedBlockSha256": "27487792991a111ac50270455b13a6648e7051bb965c7436274c138311b214d9",
+          "canonicalSequenceAtSamePositions": "FWRAYDQCKKRGTKTQNLRNQIRSKQVTVML",
+          "canonicalBlockSha256": "aa97b9f2227ae6b0d35ffa2b2806216c8acfc6d0ef2ae170315c6073cfec6bb5",
+          "differentPositionsCount": 29,
+          "length": 31,
+          "developmentStart1Based": 195,
+          "developmentEnd1Based": 225,
+          "developmentExactMatch": true,
+          "interpretation": "An exact sequence segment match to an exposed development receptor. It supports an engineered KOR-segment interpretation, but sequence comparison alone does not establish construct design, donor provenance, binding mechanism, or a formal leakage edge."
+        },
+        "longestSharedDevelopmentReceptorSegment": {
+          "depositedStart1Based": 222,
+          "depositedEnd1Based": 253,
+          "developmentStart1Based": 195,
+          "developmentEnd1Based": 226,
+          "sequence": "YTLMILRLKSVRLLSGSREKDRNLRRITRLVL",
+          "length": 32
+        },
+        "binderDevelopmentReference": "6VI4_2",
+        "binderFrameworkIdentityNumerator": 88,
+        "binderFrameworkIdentityDenominator": 91,
+        "binderCdr3IdentityNumerator": 15,
+        "binderCdr3IdentityDenominator": 15,
+        "binderCdr3LengthDifference": 0,
+        "allThreeCdrsExactMatch": true,
+        "completeImgtCoverage": true,
+        "frozenVhhSequenceCriterionSatisfied": true,
+        "comparisonFile": "sequence-evidence/nb6-local-comparison.json",
+        "receptorComparisonFile": "sequence-evidence/gpr151-receptor-comparison.json"
+      },
+      "entrySpecificInventoryInterpretation": "The deposited inventory contains only receptor and NB6 as separate polymer entities. A two-entity inventory does not establish recognition of unmodified native GPR151.",
+      "adjudication": {
+        "sequenceFacts": "The deposited receptor sequence is altered relative to canonical GPR151. Its changed block matches a segment in exposed development KOR, and its NB6 passes the frozen VHH sequence criterion against development Nb6.",
+        "inference": "The combined sequence evidence supports an engineered KOR-segment/Nb6 recruitment interpretation. It is not a primary-source confirmation of donor provenance, the design procedure, or binding mechanism.",
+        "decision": "Do not promote these entries as independent native-GPR151 VHH targets. Retain the positive development-sequence signal and pending source-role/construct adjudication; no formal exclusion is assigned here."
+      },
+      "pendingRequirements": [
+        "Review primary construct/sample Methods and exact deposition paragraph through an available authorized source.",
+        "Resolve whether the matching KOR segment was deliberately grafted to recruit NB6, and reconcile all construct/tag provenance.",
+        "Integrate the positive frozen VHH sequence criterion into formal leakage adjudication under the sealed protocol."
+      ]
+    }
+  ],
+  "summary": {
+    "reviewedEntries": 2,
+    "inventoriedPolymerEntities": 7,
+    "primaryMethodsAccessible": false,
+    "receptorSequenceDifferencesFromCanonical": 33,
+    "exactChangedBlockDevelopmentMatchLength": 31,
+    "longestExactDevelopmentReceptorSegmentLength": 32,
+    "developmentVhhReferenceProfilesCompared": 18,
+    "positiveFrozenVhhSequenceReferenceCount": 1,
+    "positiveDevelopmentVhhReference": "6VI4_2",
+    "formalExclusionsMade": 0,
+    "newIndependentComponentsEstablished": 0
+  },
+  "nativeBinderVersusEngineeredRecruitmentAnswer": "Sequence evidence strongly supports an engineered KOR-segment/NB6 construct with a positive development VHH threshold match. Native-GPR151 binding is not established. The engineering mechanism remains an inference pending primary Methods.",
+  "wholeCensusComponentUpperBound": null,
+  "broaderDiscoveryComplete": false,
+  "targetFreezePermitted": false
+}

@@ -1,0 +1,2750 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-04",
+  "scope": "Entry-specific primary-text review of eight direct-looking complement records and three ambiguous antibody-sequence records. No whole-census conclusion.",
+  "evidenceBoundary": "Primary prose and construct/sample/deposition information; complete frozen polymer inventories and canonical sequences. Native coordinates, structural figures, predictor results and holdout labels are excluded.",
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json": "d4cda5ecfa060dc2dc0d5147114946f8d059dce983d9fe4ac10a0c5509ad9778",
+    "validation/hard-decoy-holdout-v3/auxiliary-remainder-source-review-2026-09-04/source-reviews.json": "17e89335abe2b1539b515b3171c15efd4f532801db2e4c1a36f4515e7e6c4a5a",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl": "8e2219f94d91bb3a8822e56a1e43f20cc652a86bc9458a9af76013f96e3c5be7",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-013-repeat-1.json": "529da3ed978c81cc5504c748c73e836f6f1d8f41bce30436a725910f51d4fdef",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-014-repeat-1.json": "21c2e96e47cb46ffea0e97d7994c30c8b42db7abbd84638eb9b57795e494e93f",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-033-repeat-1.json": "d17a90d7a81e8579f309f3eb19bb92efc4e8cfe8e268b2be0731639417479c51",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-040-repeat-1.json": "4eb31d1792bc742f9a246ee15f129bffadf29ccb6c9eb866535be8ea8121dba9",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-044-repeat-1.json": "05e13cea351da0025554609091dea7af0f24c3c60e418b1f6fb2b1a555274bb6",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-046-repeat-1.json": "59477ca97e9cec3aae96c4e9f12f855b3d21bd9371c4a184d58c6a9bfa231b87",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-048-repeat-1.json": "1eb8b615afe484e46e69900c16c85ecbe94ea808051e1612a2d6f36890a1237b",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-050-repeat-1.json": "ba5e4ddc53cd97c2fb065c7f11850fe9470072361020838b4a4f1d3bd4c34888",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-screen-2026-09-04/manifest.json": "7b3006abede3185b950a69ced6dae91dacfce23d88bd32dd737648fdf2f27cf0"
+  },
+  "sources": [
+    {
+      "sourceId": "APJ_JN241_2020",
+      "doi": "10.1126/sciadv.aax7379",
+      "pmcid": "PMC6962038",
+      "title": "Structure-guided discovery of a single-domain antibody agonist against human apelin receptor",
+      "reviewMethod": "Primary publication prose, reagent/construct methods and deposition text; no figure or coordinate file opened.",
+      "fullTextReviewComplete": true,
+      "roleAndConstructEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Generation of a potent sdAb antagonist JN241 against human APJ; APJ-JN241 complex formation and crystallization; Data and materials availability",
+        "fact": "JN241 was isolated as an APJ-binding camel single-domain antibody and characterized as an antagonist. Soluble JN241 was mixed with purified engineered APJ for crystallization. The deposition is JN241, rather than the subsequently engineered agonist JN241-9."
+      },
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Data availability",
+        "pdbIdsExplicitlyNamed": [
+          "6KNM"
+        ]
+      },
+      "evidenceUrls": [
+        "https://doi.org/10.1126/sciadv.aax7379",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6962038/fullTextXML"
+      ],
+      "retrievedPrimaryTextSha256": "21f0531b66f584285636552bf0e3cf2d44b67cf0e910f983dd4a5ff4ad216546"
+    },
+    {
+      "sourceId": "SMO_NBSMO8_2019",
+      "doi": "10.1038/s41586-019-1355-4",
+      "pmcid": "PMC6709672",
+      "title": "Smoothened stimulation by membrane sterols drives Hedgehog pathway activity.",
+      "reviewMethod": "Primary publication prose, reagent/construct methods and deposition text; no figure or coordinate file opened.",
+      "fullTextReviewComplete": true,
+      "roleAndConstructEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Main text, nanobody selection and crystallization preparation; Methods / Expression and purification of SMO; Data availability",
+        "fact": "NbSmo8 was selected for binding active SMO. The crystallization sample combines truncated mouse SMO with SAG21k and separately expressed NbSmo8. The authors describe this receptor as lacking fusion insertions and thermostabilizing or deglycosylation mutations."
+      },
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Data availability",
+        "pdbIdsExplicitlyNamed": [
+          "6O3C"
+        ]
+      },
+      "evidenceUrls": [
+        "https://www.nature.com/articles/s41586-019-1355-4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6709672/?pdf=render"
+      ],
+      "retrievedPrimaryTextSha256": "2d124b7014145305ea8514f7430c1686b3f80572fd1e82f64302dc9d01c09550"
+    },
+    {
+      "sourceId": "ADTX1_ADRA1A_2025",
+      "doi": "10.1038/s42003-025-08405-0",
+      "pmcid": "PMC12267694",
+      "title": "Molecular mechanism of human \u03b11A-adrenoceptor inhibition by Mamba snake toxin AdTx1",
+      "reviewMethod": "Primary publication prose, reagent/construct methods and deposition text; no figure or coordinate file opened.",
+      "fullTextReviewComplete": true,
+      "roleAndConstructEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Results / Complex formation and structure determination of the AdTx1-alpha1AAR-Nb6; Methods / alpha1AAR construct design; Data availability",
+        "fact": "The alpha1AAR construct carries a KOR ICL3 segment, V256 to R270, replacing alpha1AAR positions 5.68 to 6.31 to create Nb6 recognition. AdTx1, the engineered receptor and Nb6 were prepared together. The paper explicitly deposits 8HN1, resolving the absent citation in frozen metadata."
+      },
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Data availability",
+        "pdbIdsExplicitlyNamed": [
+          "8HN1"
+        ]
+      },
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s42003-025-08405-0",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12267694/fullTextXML"
+      ],
+      "retrievedPrimaryTextSha256": "9b1f661352aeb14c71f5bc3d4a6a63d00441945a3c7a7f52594a419d156b8d41"
+    },
+    {
+      "sourceId": "CXCR3_SCH546738_2024",
+      "doi": "10.1038/s41594-023-01175-5",
+      "pmcid": "PMC11026165",
+      "title": "Structural insights into the activation and inhibition of CXC chemokine receptor 3.",
+      "reviewMethod": "Primary publication prose, reagent/construct methods and deposition text; no figure or coordinate file opened.",
+      "fullTextReviewComplete": true,
+      "roleAndConstructEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Results / Overall structures of CXCR3 complexes; Methods / Design and expression of constructs; Data availability",
+        "fact": "CXCR3 residues 241 to 254 are replaced by KOR residues 252 to 273. Nb6 recognizes the transplanted KOR ICL3 and serves in the SCH546738 complex preparation. The receptor additionally has N-terminal BRIL. The deposition statement specifically assigns 8HNN to this construct."
+      },
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Data availability",
+        "pdbIdsExplicitlyNamed": [
+          "8HNN"
+        ]
+      },
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s41594-023-01175-5",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11026165/fullTextXML"
+      ],
+      "retrievedPrimaryTextSha256": "36e889e1ff4be433af020ba0fa1cf265000fed78eea345221bc6edd6ad3cdaa3"
+    },
+    {
+      "sourceId": "CXCR3_AMG487_2023",
+      "doi": "10.1038/s41421-023-00617-0",
+      "pmcid": "PMC10682378",
+      "title": "Structure basis for the modulation of CXC chemokine receptor 3 by antagonist AMG487.",
+      "reviewMethod": "Primary publication prose, reagent/construct methods and deposition text; no figure or coordinate file opened.",
+      "fullTextReviewComplete": true,
+      "roleAndConstructEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Main text, receptor preparation paragraph; Data availability",
+        "fact": "The authors replace CXCR3 ICL3 with KOR ICL3 and couple the resulting receptor to Nb6 in AMG487. The corresponding deposition is 8K2W. This engineered-recognition strategy parallels the separately reviewed SCH546738 preparation."
+      },
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Data availability",
+        "pdbIdsExplicitlyNamed": [
+          "8K2W"
+        ]
+      },
+      "evidenceUrls": [
+        "https://doi.org/10.1038/s41421-023-00617-0",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10682378/fullTextXML"
+      ],
+      "retrievedPrimaryTextSha256": "aad5e4f059d935f4077afeb250b2c280b556f0625dbfa09a6a6c1e3c959c57fd"
+    },
+    {
+      "sourceId": "MGLU5_NB43_2024",
+      "doi": "10.1038/s41586-024-07327-x",
+      "pmcid": "PMC11960862",
+      "title": "Stepwise activation of a metabotropic glutamate receptor.",
+      "reviewMethod": "Primary publication prose, reagent/construct methods and deposition text; no figure or coordinate file opened.",
+      "fullTextReviewComplete": true,
+      "roleAndConstructEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Introduction; Methods / Purification of Nb43; Cryo-EM sample preparation and data acquisition; Data availability",
+        "fact": "Nb43 is an allosteric mGlu5 nanobody purified separately; its SUMO tag is removed before final purification. Nanodisc mGlu5 was prepared with Quis and Nb43, or Quis/CDPPB and Nb43. The deposition statement lists 8T7H, 8T8M, 8TAO and 8T6J; individual labels below use frozen entry metadata."
+      },
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "section": "Data availability",
+        "pdbIdsExplicitlyNamed": [
+          "8T7H",
+          "8T8M",
+          "8TAO",
+          "8T6J"
+        ]
+      },
+      "evidenceUrls": [
+        "https://www.nature.com/articles/s41586-024-07327-x",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11960862/?pdf=render"
+      ],
+      "retrievedPrimaryTextSha256": "09db66141de225f598237ec264e74874ad57e4ab5d19ebdc6d8d6dcdd57f80d2",
+      "correctionReview": {
+        "doi": "10.1038/s41586-024-07470-5",
+        "url": "https://www.nature.com/articles/s41586-024-07470-5",
+        "scope": "The correction adds an omitted NIH acknowledgement; it does not amend the reagent or deposition statements used here."
+      }
+    },
+    {
+      "sourceId": "ADRB2_BITOPIC_2024",
+      "doi": "10.1021/acs.jmedchem.4c00578",
+      "pmcid": null,
+      "title": "Bitopic Ligands Support the Presence of a Metastable Binding Site at the beta2 Adrenergic Receptor.",
+      "reviewMethod": "Primary citation identified; article methods and exact deposition statement were not accessible. No binder-role claim is supplied by this source.",
+      "fullTextReviewComplete": false,
+      "roleAndConstructEvidence": {
+        "classification": "PENDING_REQUIRED_PRIMARY_TEXT",
+        "section": null,
+        "fact": null
+      },
+      "depositionEvidence": {
+        "classification": "PENDING_PRIMARY_DEPOSITION_TEXT",
+        "section": null,
+        "pdbIdsExplicitlyNamed": []
+      },
+      "evidenceUrls": [
+        "https://pubs.acs.org/doi/10.1021/acs.jmedchem.4c00578",
+        "https://pubmed.ncbi.nlm.nih.gov/38952152/"
+      ]
+    },
+    {
+      "sourceId": "GPR17_2022",
+      "doi": "10.1002/mco2.159",
+      "pmid": "36105372",
+      "pmcid": "PMC9464062",
+      "title": "Cryo-EM structure of G-protein-coupled receptor GPR17 in complex with inhibitory G protein.",
+      "fullTextReviewComplete": true,
+      "reviewMethod": "Primary methods and deposition prose; no structural images or coordinates.",
+      "roleAndConstructEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "facts": [
+          {
+            "section": "Cloning and purification of GPR17-Gi complex",
+            "fact": "The methods specify a full-length human GPR17 construct, dominant-negative G-alpha-i1, and G-beta1/gamma2. Purified receptor/G-protein material was incubated with antibody fragment scFv16 at a 1:1.5 molar ratio before final size-exclusion purification."
+          },
+          {
+            "section": "DATA AVAILABILITY STATEMENT",
+            "fact": "The GPR17/Gi sample is linked explicitly to PDB 7Y89 and EMDB EMD-33682."
+          }
+        ]
+      },
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "links": [
+          {
+            "pdbId": "7Y89",
+            "emdbId": "EMD-33682",
+            "sample": "GPR17-Gi complex"
+          }
+        ]
+      },
+      "evidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9464062/",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9464062/fullTextXML"
+      ],
+      "retrievedPrimaryTextArtifacts": [
+        {
+          "fetchedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9464062/fullTextXML",
+          "sha256": "0868d9d164574e6a4ee1c799b8c344e388d13c73880c19a144a5a390e15a6fb9",
+          "format": "XML",
+          "onlyRelevantTextInspected": true
+        }
+      ],
+      "limitations": []
+    },
+    {
+      "sourceId": "FFAR23_2024",
+      "doi": "10.1038/s41422-023-00914-z",
+      "pmid": "38191689",
+      "pmcid": "PMC10978569",
+      "title": "Molecular recognition and activation mechanism of short-chain fatty acid receptors FFAR2/3.",
+      "fullTextReviewComplete": false,
+      "reviewMethod": "Primary correspondence preparation and exact deposition prose reviewed; supplementary construct methods remain unreviewed. No structural images or coordinates inspected.",
+      "roleAndConstructEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "facts": [
+          {
+            "section": "Main correspondence text; paragraph introducing complex preparation",
+            "fact": "The authors report stabilization of the FFAR2C/FFAR3C receptor-Gi complexes using NanoBiT and a single-chain antibody designated scFv16."
+          },
+          {
+            "section": "Data availability",
+            "fact": "The paper assigns 8J24/EMD-35944 to the acetic-acid FFAR2C sample, 8J22/EMD-35942 to TUG-1375 FFAR2C, 8J21/EMD-35941 to butyric-acid FFAR3C, and 8J20/EMD-35940 to the valeric-acid/AR420626 FFAR3C sample."
+          }
+        ]
+      },
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "links": [
+          {
+            "pdbId": "8J24",
+            "emdbId": "EMD-35944",
+            "sample": "AA-FFAR2C complex"
+          }
+        ]
+      },
+      "evidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10978569/",
+        "https://www.nature.com/articles/s41422-023-00914-z"
+      ],
+      "retrievedPrimaryTextArtifacts": [
+        {
+          "fetchedUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10978569/",
+          "sha256": "f6f1581bfc5dc036e90b3ebd075df750f188e52cccabaae1051c38f326ecbc20",
+          "format": "HTML",
+          "onlyRelevantTextInspected": true
+        },
+        {
+          "fetchedUrl": "https://www.nature.com/articles/s41422-023-00914-z",
+          "sha256": "dd0780af413be2acdaf883f830da7c9a33c9319fe4efdbf4eab6772af6d172c7",
+          "format": "HTML",
+          "onlyRelevantTextInspected": true
+        }
+      ],
+      "limitations": [
+        "Supplementary construct-design methods have not been inspected. NanoBiT use is established, but exact mapping of engineered terminal residues is not established in this review."
+      ],
+      "relevantPrimaryBodyTextReviewed": true,
+      "supplementaryConstructMethodsReviewed": false
+    },
+    {
+      "sourceId": "HCAR2_2023_PARTIAL",
+      "doi": "10.1016/j.celrep.2023.113406",
+      "pmid": "37952153",
+      "pmcid": null,
+      "title": "Molecular recognition of niacin and lipid-lowering drugs by the human hydroxycarboxylic acid receptor 2.",
+      "fullTextReviewComplete": false,
+      "reviewMethod": "Primary-publisher text visible in search results; incomplete primary-source review",
+      "roleAndConstructEvidence": {
+        "classification": "PARTIAL_PUBLISHER_INDEX_TEXT_NOT_FORMAL_AUTHORITY",
+        "facts": [
+          {
+            "section": "Publisher-indexed preparation text; exact full-text section unverified",
+            "fact": "A publisher-indexed excerpt names scFv16 as a single-chain antibody fragment added to stabilize nucleotide-free HCAR2-Gi samples."
+          },
+          {
+            "section": "Publisher-indexed data-availability text; exact full-text section unverified",
+            "fact": "A publisher-indexed deposition excerpt lists PDB 8J6L, 8J6I and 8J6J and associates 8J6L with the niacin sample. Frozen metadata independently provides the same primary DOI for each."
+          }
+        ]
+      },
+      "depositionEvidence": {
+        "classification": "PARTIAL_PUBLISHER_INDEX_TEXT_NOT_FORMAL_AUTHORITY",
+        "links": [
+          {
+            "pdbId": "8J6L",
+            "emdbId": null,
+            "sample": "Niacin-HCAR2-Gi complex",
+            "evidenceStatus": "Publisher-indexed text plus frozen metadata"
+          }
+        ]
+      },
+      "evidenceUrls": [
+        "https://www.sciencedirect.com/science/article/pii/S2211124723014183"
+      ],
+      "retrievedPrimaryTextArtifacts": [],
+      "limitations": [
+        "Full text could not be retrieved: publisher web access returned 403 and direct HTTP requests timed out; Europe PMC records no PMCID/full text.",
+        "No article-body hash is available.",
+        "Exact receptor construct and fusion composition remains unverified."
+      ]
+    },
+    {
+      "sourceId": "SCFV16_ORIGIN_2018",
+      "doi": "10.1038/s41467-018-06002-w",
+      "pmid": "30213947",
+      "pmcid": "PMC6137068",
+      "title": "Development of an antibody fragment that stabilizes GPCR/G-protein complexes",
+      "fullTextReviewComplete": true,
+      "reviewMethod": "Primary methods and deposition prose; no structural images or coordinates.",
+      "roleAndConstructEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "facts": [
+          {
+            "section": "Methods: Monoclonal antibody production and characterization",
+            "fact": "The authors distinguish the monoclonal-antibody heavy and light chains and describe scFv16 as a single-chain variable fragment derived from mAb16."
+          },
+          {
+            "section": "Discussion",
+            "fact": "The mAb16-derived fragment is reported to stabilize GPCR/G-protein complexes."
+          }
+        ]
+      },
+      "depositionEvidence": {
+        "classification": "SOURCE_REPORTED_FACT",
+        "links": []
+      },
+      "evidenceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6137068/",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6137068/fullTextXML"
+      ],
+      "retrievedPrimaryTextArtifacts": [
+        {
+          "fetchedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6137068/fullTextXML",
+          "sha256": "06fb1e3c7e7ddb2a147c9d256881e020bd45f1eb0711352f2d093cbdbbe18bb5",
+          "format": "XML",
+          "onlyRelevantTextInspected": true
+        }
+      ],
+      "limitations": [
+        "This is reagent-format evidence; it does not independently establish identity or exclusion of a newly examined deposited polymer. No claim of full-length identity to the 2018 construct is made."
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "pdbId": "6KNM",
+      "sourceId": "APJ_JN241_2020",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED",
+      "candidateRoleClass": "DIRECT_RECEPTOR_VHH_SOURCE_REPORTED",
+      "candidateEntityDisposition": "SOURCE_REPORTED_DIRECT_BINDER",
+      "entryDisposition": "EXCLUDE_DEVELOPMENT_CONNECTED",
+      "entrySourceReviewComplete": true,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-013-repeat-1.json",
+      "frozenMetadataFileSha256": "529da3ed978c81cc5504c748c73e836f6f1d8f41bce30436a725910f51d4fdef",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1126/sciadv.aax7379",
+        "pdbx_database_id_PubMed": 31998837,
+        "title": "Structure-guided discovery of a single-domain antibody agonist against human apelin receptor."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1126/sciadv.aax7379",
+        "pmcid": "PMC6962038",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "frozenEntryTitle": "Apelin receptor in complex with single domain antibody",
+      "frozenPolymerEntityCount": 2,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "6KNM_1",
+          "entityId": "1",
+          "description": "Apelin receptor,Rubredoxin,Apelin receptor",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 407,
+          "sequenceSha256": "aa9fa4385a05f99c7d7c156b7840775f33956fe1de31475a56228561e854ce9a",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P00268",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P35414",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Clostridium pasteurianum",
+              "taxonomyId": "1501"
+            },
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "6KNM_2",
+          "entityId": "2",
+          "description": "Single domain antibody JN241",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 129,
+          "sequenceSha256": "052f7f66ca72d392be7eef46795d7425955ab881645dafd9346229e0aa7c3f3c",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Camelus bactrianus",
+              "taxonomyId": "9837"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "6KNM_2",
+        "entityId": "2",
+        "description": "Single domain antibody JN241",
+        "asymIds": [
+          "B"
+        ],
+        "authAsymIds": [
+          "A"
+        ],
+        "sequenceLength": 129,
+        "sequenceSha256": "052f7f66ca72d392be7eef46795d7425955ab881645dafd9346229e0aa7c3f3c",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Camelus bactrianus",
+            "taxonomyId": "9837"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "6KNM_1",
+        "entityId": "1",
+        "description": "Apelin receptor,Rubredoxin,Apelin receptor",
+        "asymIds": [
+          "A"
+        ],
+        "authAsymIds": [
+          "B"
+        ],
+        "sequenceLength": 407,
+        "sequenceSha256": "aa9fa4385a05f99c7d7c156b7840775f33956fe1de31475a56228561e854ce9a",
+        "referenceSequences": [
+          {
+            "databaseAccession": "P00268",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          },
+          {
+            "databaseAccession": "P35414",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Clostridium pasteurianum",
+            "taxonomyId": "1501"
+          },
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "6KNM_1",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        },
+        {
+          "rcsbEntityId": "6KNM_2",
+          "accountedComponent": "DIRECT_RECEPTOR_VHH_SOURCE_REPORTED",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "APJ_JN241_2020",
+        "pdbIdExplicitlyNamed": true,
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "knownMetadataConnections": [
+        {
+          "classification": "EXACT_EXISTING_DEVELOPMENT_PDB_ID",
+          "targetPdbId": "6KNM",
+          "developmentNode": true,
+          "evidencePath": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl",
+          "developmentRoles": [
+            "public-native-panel"
+          ]
+        }
+      ],
+      "entryAssessment": {
+        "classification": "AUDIT_INFERENCE_FROM_SOURCE_METADATA_AND_PROTOCOL",
+        "reason": "The exact entry already belongs to the frozen development registry; newly recovering it through another discovery route does not create a holdout.",
+        "unresolvedOrCorrectedDiscrepancies": [],
+        "notes": []
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": true
+    },
+    {
+      "pdbId": "6O3C",
+      "sourceId": "SMO_NBSMO8_2019",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED",
+      "candidateRoleClass": "DIRECT_RECEPTOR_VHH_SOURCE_REPORTED",
+      "candidateEntityDisposition": "SOURCE_REPORTED_DIRECT_BINDER",
+      "entryDisposition": "EXCLUDE_DEVELOPMENT_CONNECTED",
+      "entrySourceReviewComplete": true,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-014-repeat-1.json",
+      "frozenMetadataFileSha256": "21c2e96e47cb46ffea0e97d7994c30c8b42db7abbd84638eb9b57795e494e93f",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41586-019-1355-4",
+        "pdbx_database_id_PubMed": 31263273,
+        "title": "Smoothened stimulation by membrane sterols drives Hedgehog pathway activity."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41586-019-1355-4",
+        "pmcid": "PMC6709672",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "frozenEntryTitle": "Crystal structure of active Smoothened bound to SAG21k, cholesterol, and NbSmo8",
+      "frozenPolymerEntityCount": 2,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "6O3C_1",
+          "entityId": "1",
+          "description": "Smoothened homolog",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 525,
+          "sequenceSha256": "306c8850a3df566c275c0e26de794f49f3ed4702de01f05f1d113ddb829555b1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P56726",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "6O3C_2",
+          "entityId": "2",
+          "description": "NbSmo8",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 128,
+          "sequenceSha256": "2c228dcc0294a8be7a4036a6788c2aee1a736c3aa8efe56caffdf0c4fd0d9c50",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "6O3C_2",
+        "entityId": "2",
+        "description": "NbSmo8",
+        "asymIds": [
+          "B"
+        ],
+        "authAsymIds": [
+          "B"
+        ],
+        "sequenceLength": 128,
+        "sequenceSha256": "2c228dcc0294a8be7a4036a6788c2aee1a736c3aa8efe56caffdf0c4fd0d9c50",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Lama glama",
+            "taxonomyId": "9844"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "6O3C_1",
+        "entityId": "1",
+        "description": "Smoothened homolog",
+        "asymIds": [
+          "A"
+        ],
+        "authAsymIds": [
+          "A"
+        ],
+        "sequenceLength": 525,
+        "sequenceSha256": "306c8850a3df566c275c0e26de794f49f3ed4702de01f05f1d113ddb829555b1",
+        "referenceSequences": [
+          {
+            "databaseAccession": "P56726",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Mus musculus",
+            "taxonomyId": "10090"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "6O3C_1",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        },
+        {
+          "rcsbEntityId": "6O3C_2",
+          "accountedComponent": "DIRECT_RECEPTOR_VHH_SOURCE_REPORTED",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "SMO_NBSMO8_2019",
+        "pdbIdExplicitlyNamed": true,
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "knownMetadataConnections": [
+        {
+          "classification": "EXACT_EXISTING_DEVELOPMENT_PDB_ID",
+          "targetPdbId": "6O3C",
+          "developmentNode": true,
+          "evidencePath": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl",
+          "developmentRoles": [
+            "dockq-development-pilot",
+            "public-native-panel"
+          ]
+        }
+      ],
+      "entryAssessment": {
+        "classification": "AUDIT_INFERENCE_FROM_SOURCE_METADATA_AND_PROTOCOL",
+        "reason": "The exact entry already belongs to the frozen development registry; newly recovering it through another discovery route does not create a holdout.",
+        "unresolvedOrCorrectedDiscrepancies": [],
+        "notes": []
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": true
+    },
+    {
+      "pdbId": "7Y89",
+      "sourceId": "GPR17_2022",
+      "reviewStatus": "CANDIDATE_FORMAT_SUPPORTED_ENTRY_RECONCILIATION_PENDING",
+      "candidateRoleClass": "SCFV16_SINGLE_CHAIN_VARIABLE_FRAGMENT_NOT_VHH",
+      "candidateEntityDisposition": "NON_VHH_FORMAT_SUPPORTED",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": true,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-033-repeat-1.json",
+      "frozenMetadataFileSha256": "d17a90d7a81e8579f309f3eb19bb92efc4e8cfe8e268b2be0731639417479c51",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1002/mco2.159",
+        "pdbx_database_id_PubMed": 36105372,
+        "title": "Cryo-EM structure of G-protein-coupled receptor GPR17 in complex with inhibitory G protein."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1002/mco2.159",
+        "pmid": "36105372",
+        "title": "Cryo-EM structure of G-protein-coupled receptor GPR17 in complex with inhibitory G protein."
+      },
+      "frozenEntryTitle": "Structure of the GPR17-Gi complex",
+      "frozenPolymerEntityCount": 5,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "7Y89_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequenceLength": 351,
+          "sequenceSha256": "5cf4c562852ca89cfbc44042224294521c4e5d46dc02e9dc225334f06a96ffe1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63096",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7Y89_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 337,
+          "sequenceSha256": "b860ea5baa513a4c6f378d8b9a7f086ccbb907820fcaa094b08da73533a59817",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7Y89_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 56,
+          "sequenceSha256": "8e6c785902c47e0000772d8e2a87b53de3c50b8b95a3c697f6fa74569432d07c",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7Y89_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "S"
+          ],
+          "sequenceLength": 248,
+          "sequenceSha256": "3efb1a272319422d9a15654080179e39628535282f291bdbb38bd32cb5d52961",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "7Y89_5",
+          "entityId": "5",
+          "description": "Uracil nucleotide/cysteinyl leukotriene receptor",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 293,
+          "sequenceSha256": "eb63d5107466709a6a5ed731b32451aa3c9250ede909925f4818839ca6c72d17",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q13304",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Mus musculus",
+              "taxonomyId": "10090"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "7Y89_4",
+        "entityId": "4",
+        "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "S"
+        ],
+        "sequenceLength": 248,
+        "sequenceSha256": "3efb1a272319422d9a15654080179e39628535282f291bdbb38bd32cb5d52961",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "7Y89_5",
+        "entityId": "5",
+        "description": "Uracil nucleotide/cysteinyl leukotriene receptor",
+        "asymIds": [
+          "E"
+        ],
+        "authAsymIds": [
+          "A"
+        ],
+        "sequenceLength": 293,
+        "sequenceSha256": "eb63d5107466709a6a5ed731b32451aa3c9250ede909925f4818839ca6c72d17",
+        "referenceSequences": [
+          {
+            "databaseAccession": "Q13304",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Mus musculus",
+            "taxonomyId": "10090"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "7Y89_1",
+          "accountedComponent": "G_ALPHA",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        },
+        {
+          "rcsbEntityId": "7Y89_2",
+          "accountedComponent": "G_BETA",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        },
+        {
+          "rcsbEntityId": "7Y89_3",
+          "accountedComponent": "G_GAMMA_DESCRIPTOR_CORRECTED",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        },
+        {
+          "rcsbEntityId": "7Y89_4",
+          "accountedComponent": "SCFV16_FORMAT",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        },
+        {
+          "rcsbEntityId": "7Y89_5",
+          "accountedComponent": "GPR17_SPECIES_UNRESOLVED",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "GPR17_2022",
+        "pdbIdExplicitlyNamed": true,
+        "entryLinkEvidenceStatus": "ENTRY_PRIMARY_TEXT_PLUS_SEQUENCE_SUPPORTED",
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "candidateFormatEvidence": {
+        "classification": "ENTRY_PRIMARY_TEXT_PLUS_SEQUENCE_SUPPORTED",
+        "referenceFormatSourceId": "SCFV16_ORIGIN_2018",
+        "sequenceEvidence": {
+          "exactSamePaperSiblingMatches": [],
+          "comparisonWithSourceReviewedHistorical8JBFEntity3": {
+            "referenceSequenceSha256": "2745d56c0420310e2806bc4336eff46f3e470cee362d0f4bd526759831ae43a1",
+            "referenceSequenceLength": 304,
+            "fullSequenceIdentical": false,
+            "exactMatchingBlocks": [
+              {
+                "candidateStart1Based": 2,
+                "reviewed8JBFEntity3Start1Based": 39,
+                "length": 119
+              },
+              {
+                "candidateStart1Based": 122,
+                "reviewed8JBFEntity3Start1Based": 159,
+                "length": 127
+              }
+            ],
+            "limitation": "Matching blocks are literal substring comparisons, not IMGT domain assignment or independent validation of the 2018 reagent sequence."
+          }
+        },
+        "limitation": "A supported scFv interpretation for this entity does not automatically exclude the complete entry when construct or species reconciliation remains open."
+      },
+      "knownMetadataConnections": [],
+      "entryAssessment": {
+        "classification": "CANDIDATE_FORMAT_INFERENCE_WITH_UNRESOLVED_WHOLE_ENTRY",
+        "reason": "The source/sequence evidence resolves or prioritizes the antibody format, while the recorded source, species or construct limitations keep the whole entry pending.",
+        "unresolvedOrCorrectedDiscrepancies": [
+          {
+            "entityId": "3",
+            "status": "DESCRIPTOR_INCONSISTENCY_IDENTIFIED",
+            "finding": "Deposited description says G-beta1, but this is a 56-residue auth-chain-G polymer with G-gamma2 accession P59768. Methods separately identify the beta1/gamma2 pair; entity2 is the 337-residue beta1 sequence."
+          },
+          {
+            "entityId": "4",
+            "status": "DESCRIPTOR_CORRECTION_SUPPORTED",
+            "finding": "Deposited description says G-gamma2, but the sequence is a 248-residue linked antibody fragment; methods identify the added scFv16. Positive whole-inventory mapping assigns the actual gamma subunit to entity3."
+          },
+          {
+            "entityId": "5",
+            "status": "UNRESOLVED_SPECIES_CONFLICT",
+            "finding": "The article and GPCRdb identify human GPR17, whereas deposited sourceOrganisms says Mus musculus. Its UniProt mapping is Q13304. This review does not settle the species or full receptor construct sequence."
+          }
+        ],
+        "notes": []
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": true
+    },
+    {
+      "pdbId": "8HN1",
+      "sourceId": "ADTX1_ADRA1A_2025",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED",
+      "candidateRoleClass": "ENGINEERED_KOR_ICL3_FIDUCIAL",
+      "candidateEntityDisposition": "EXCLUDE_ENGINEERED_BINDING_SITE",
+      "entryDisposition": "EXCLUDE_FUSION_DOMINATED_INTERFACE",
+      "entrySourceReviewComplete": true,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-040-repeat-1.json",
+      "frozenMetadataFileSha256": "4eb31d1792bc742f9a246ee15f129bffadf29ccb6c9eb866535be8ea8121dba9",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": null,
+        "pdbx_database_id_PubMed": null,
+        "title": "Cryo-EM structure of AdTx1-alpha1AAR-Nb6"
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s42003-025-08405-0",
+        "pmcid": "PMC12267694",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "frozenEntryTitle": "Cryo-EM structure of AdTx1-alpha1AAR-Nb6",
+      "frozenPolymerEntityCount": 3,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "8HN1_1",
+          "entityId": "1",
+          "description": "Toxin AdTx1",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "1f75a0e514e004eb533c2d698328a8ce36c57ec0279f82980ef68a95fb555d81",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P85092",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Dendroaspis angusticeps",
+              "taxonomyId": "8618"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8HN1_2",
+          "entityId": "2",
+          "description": "Alpha-1A adrenergic receptor",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 346,
+          "sequenceSha256": "f84f403f809c1f6ac64dd32b6ef33252044a298adfa0b71f16b8e5f41ac2efd6",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P35348",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8HN1_3",
+          "entityId": "3",
+          "description": "Nb6",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "D"
+          ],
+          "sequenceLength": 133,
+          "sequenceSha256": "a7b413fe44dba2a72187b519f26b7312d90ac964e408f0ae607e915e1830a2ab",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "8HN1_3",
+        "entityId": "3",
+        "description": "Nb6",
+        "asymIds": [
+          "C"
+        ],
+        "authAsymIds": [
+          "D"
+        ],
+        "sequenceLength": 133,
+        "sequenceSha256": "a7b413fe44dba2a72187b519f26b7312d90ac964e408f0ae607e915e1830a2ab",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Lama glama",
+            "taxonomyId": "9844"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "8HN1_2",
+        "entityId": "2",
+        "description": "Alpha-1A adrenergic receptor",
+        "asymIds": [
+          "B"
+        ],
+        "authAsymIds": [
+          "A"
+        ],
+        "sequenceLength": 346,
+        "sequenceSha256": "f84f403f809c1f6ac64dd32b6ef33252044a298adfa0b71f16b8e5f41ac2efd6",
+        "referenceSequences": [
+          {
+            "databaseAccession": "P35348",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "8HN1_1",
+          "accountedComponent": "ADTX1_TOXIN_LIGAND",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        },
+        {
+          "rcsbEntityId": "8HN1_2",
+          "accountedComponent": "TARGET_RECEPTOR_WITH_ENGINEERED_KOR_ICL3",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        },
+        {
+          "rcsbEntityId": "8HN1_3",
+          "accountedComponent": "ENGINEERED_KOR_ICL3_FIDUCIAL",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "ADTX1_ADRA1A_2025",
+        "pdbIdExplicitlyNamed": true,
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "knownMetadataConnections": [],
+      "entryAssessment": {
+        "classification": "AUDIT_INFERENCE_FROM_SOURCE_METADATA_AND_PROTOCOL",
+        "reason": "The primary article establishes an engineered KOR-loop recognition site for Nb6 on the target construct. This is incompatible with the protocol requirement for a direct non-fusion target interface; no coordinate-based incidental-contact claim is made.",
+        "unresolvedOrCorrectedDiscrepancies": [
+          "FROZEN_METADATA_OMITS_RESOLVED_PRIMARY_CITATION",
+          "FROZEN_RECEPTOR_SOURCE_MAPPING_OMITS_KOR_GRAFT",
+          "NB6_METHODS_DESCRIBE_8X_HIS_BUT_FROZEN_SEQUENCE_HAS_6X_HIS_PLUS_EPEA"
+        ],
+        "notes": [
+          "These source-resolved annotations are recorded as an overlay; the frozen input is unchanged.",
+          "This terminal-tag discrepancy remains unresolved. The explicit transplanted KOR recognition site establishes construct unsuitability independently; no exact expression-construct equivalence is claimed."
+        ]
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": true
+    },
+    {
+      "pdbId": "8HNN",
+      "sourceId": "CXCR3_SCH546738_2024",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED",
+      "candidateRoleClass": "ENGINEERED_KOR_ICL3_FIDUCIAL",
+      "candidateEntityDisposition": "EXCLUDE_ENGINEERED_BINDING_SITE",
+      "entryDisposition": "EXCLUDE_FUSION_DOMINATED_INTERFACE",
+      "entrySourceReviewComplete": true,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-040-repeat-1.json",
+      "frozenMetadataFileSha256": "4eb31d1792bc742f9a246ee15f129bffadf29ccb6c9eb866535be8ea8121dba9",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41594-023-01175-5",
+        "pdbx_database_id_PubMed": 38177682,
+        "title": "Structural insights into the activation and inhibition of CXC chemokine receptor 3."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41594-023-01175-5",
+        "pmcid": "PMC11026165",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "frozenEntryTitle": "Structure of CXCR3 complexed with antagonist SCH546738",
+      "frozenPolymerEntityCount": 2,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "8HNN_1",
+          "entityId": "1",
+          "description": "Nb6",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 169,
+          "sequenceSha256": "3068bfafc422f554535b6ecb54eb49667313759f833a361a8457ca6b16a8f8bb",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8HNN_2",
+          "entityId": "2",
+          "description": "Soluble cytochrome b562,C-X-C chemokine receptor type 3,Kappa-type opioid receptor",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 507,
+          "sequenceSha256": "b287ff2ed65b6f2302cc8117c03e5341ae242832d918445bff1048a4d21329f3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P0ABE7",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P41145",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P49682",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia coli",
+              "taxonomyId": "562"
+            },
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "8HNN_1",
+        "entityId": "1",
+        "description": "Nb6",
+        "asymIds": [
+          "A"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 169,
+        "sequenceSha256": "3068bfafc422f554535b6ecb54eb49667313759f833a361a8457ca6b16a8f8bb",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Lama glama",
+            "taxonomyId": "9844"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "8HNN_2",
+        "entityId": "2",
+        "description": "Soluble cytochrome b562,C-X-C chemokine receptor type 3,Kappa-type opioid receptor",
+        "asymIds": [
+          "B"
+        ],
+        "authAsymIds": [
+          "R"
+        ],
+        "sequenceLength": 507,
+        "sequenceSha256": "b287ff2ed65b6f2302cc8117c03e5341ae242832d918445bff1048a4d21329f3",
+        "referenceSequences": [
+          {
+            "databaseAccession": "P0ABE7",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          },
+          {
+            "databaseAccession": "P41145",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          },
+          {
+            "databaseAccession": "P49682",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Escherichia coli",
+            "taxonomyId": "562"
+          },
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "8HNN_1",
+          "accountedComponent": "ENGINEERED_KOR_ICL3_FIDUCIAL",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        },
+        {
+          "rcsbEntityId": "8HNN_2",
+          "accountedComponent": "TARGET_RECEPTOR_WITH_ENGINEERED_KOR_ICL3",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "CXCR3_SCH546738_2024",
+        "pdbIdExplicitlyNamed": true,
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "knownMetadataConnections": [],
+      "entryAssessment": {
+        "classification": "AUDIT_INFERENCE_FROM_SOURCE_METADATA_AND_PROTOCOL",
+        "reason": "The primary article establishes an engineered KOR-loop recognition site for Nb6 on the target construct. This is incompatible with the protocol requirement for a direct non-fusion target interface; no coordinate-based incidental-contact claim is made.",
+        "unresolvedOrCorrectedDiscrepancies": [],
+        "notes": [
+          "Target receptor is CXCR3/P49682; KOR/P41145 is a graft donor and BRIL/P0ABE7 is a fusion component. Reference accession presence alone must not relabel the target receptor."
+        ]
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": true
+    },
+    {
+      "pdbId": "8J24",
+      "sourceId": "FFAR23_2024",
+      "reviewStatus": "CANDIDATE_FORMAT_SUPPORTED_ENTRY_RECONCILIATION_PENDING",
+      "candidateRoleClass": "SCFV16_SINGLE_CHAIN_VARIABLE_FRAGMENT_NOT_VHH",
+      "candidateEntityDisposition": "NON_VHH_FORMAT_SUPPORTED",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-044-repeat-1.json",
+      "frozenMetadataFileSha256": "05e13cea351da0025554609091dea7af0f24c3c60e418b1f6fb2b1a555274bb6",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41422-023-00914-z",
+        "pdbx_database_id_PubMed": 38191689,
+        "title": "Molecular recognition and activation mechanism of short-chain fatty acid receptors FFAR2/3."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41422-023-00914-z",
+        "pmid": "38191689",
+        "title": "Molecular recognition and activation mechanism of short-chain fatty acid receptors FFAR2/3."
+      },
+      "frozenEntryTitle": "Cryo-EM structure of FFAR2 complex bound with acetic acid",
+      "frozenPolymerEntityCount": 5,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "8J24_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 377,
+          "sequenceSha256": "b4fd284489df034753cbbe82158cb665e2a54eb925e2d346475ea13c445b573e",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8J24_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "C"
+          ],
+          "sequenceLength": 354,
+          "sequenceSha256": "57f8013fce15aa580c1c618f1fb4f45d76af5361d9190eb56bbbebf5997999d1",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63096",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8J24_3",
+          "entityId": "3",
+          "description": "Free fatty acid receptor 2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "D"
+          ],
+          "sequenceLength": 311,
+          "sequenceSha256": "fae9944fd301748992a41f85edbe0121960eac3ffacc6357620d9d45fe93b052",
+          "referenceSequences": [
+            {
+              "databaseAccession": "O15552",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8J24_4",
+          "entityId": "4",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "F"
+          ],
+          "sequenceLength": 71,
+          "sequenceSha256": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8J24_5",
+          "entityId": "5",
+          "description": "scGV16",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 297,
+          "sequenceSha256": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "8J24_5",
+        "entityId": "5",
+        "description": "scGV16",
+        "asymIds": [
+          "E"
+        ],
+        "authAsymIds": [
+          "G"
+        ],
+        "sequenceLength": 297,
+        "sequenceSha256": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "8J24_3",
+        "entityId": "3",
+        "description": "Free fatty acid receptor 2",
+        "asymIds": [
+          "C"
+        ],
+        "authAsymIds": [
+          "D"
+        ],
+        "sequenceLength": 311,
+        "sequenceSha256": "fae9944fd301748992a41f85edbe0121960eac3ffacc6357620d9d45fe93b052",
+        "referenceSequences": [
+          {
+            "databaseAccession": "O15552",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "8J24_1",
+          "accountedComponent": "G_BETA_ENGINEERED_EXTENSION_UNMAPPED",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        },
+        {
+          "rcsbEntityId": "8J24_2",
+          "accountedComponent": "G_ALPHA",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        },
+        {
+          "rcsbEntityId": "8J24_3",
+          "accountedComponent": "FFAR2_CONSTRUCT_MAPPING_PENDING",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        },
+        {
+          "rcsbEntityId": "8J24_4",
+          "accountedComponent": "G_GAMMA",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        },
+        {
+          "rcsbEntityId": "8J24_5",
+          "accountedComponent": "SCFV16_FORMAT",
+          "classification": "PRIMARY_TEXT_AND_SEQUENCE_INFERENCE"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "FFAR23_2024",
+        "pdbIdExplicitlyNamed": true,
+        "entryLinkEvidenceStatus": "ENTRY_PRIMARY_TEXT_PLUS_SEQUENCE_SUPPORTED",
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "candidateFormatEvidence": {
+        "classification": "ENTRY_PRIMARY_TEXT_PLUS_SEQUENCE_SUPPORTED",
+        "referenceFormatSourceId": "SCFV16_ORIGIN_2018",
+        "sequenceEvidence": {
+          "exactSamePaperSiblingMatches": [
+            {
+              "pdbId": "8J20",
+              "entityId": "2",
+              "description": "scFV16",
+              "sequenceSha256": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1"
+            },
+            {
+              "pdbId": "8J21",
+              "entityId": "2",
+              "description": "scFV16",
+              "sequenceSha256": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1"
+            },
+            {
+              "pdbId": "8J22",
+              "entityId": "5",
+              "description": "scFV16",
+              "sequenceSha256": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1"
+            }
+          ],
+          "comparisonWithSourceReviewedHistorical8JBFEntity3": {
+            "referenceSequenceSha256": "2745d56c0420310e2806bc4336eff46f3e470cee362d0f4bd526759831ae43a1",
+            "referenceSequenceLength": 304,
+            "fullSequenceIdentical": false,
+            "exactMatchingBlocks": [
+              {
+                "candidateStart1Based": 1,
+                "reviewed8JBFEntity3Start1Based": 1,
+                "length": 38
+              },
+              {
+                "candidateStart1Based": 40,
+                "reviewed8JBFEntity3Start1Based": 39,
+                "length": 119
+              },
+              {
+                "candidateStart1Based": 160,
+                "reviewed8JBFEntity3Start1Based": 159,
+                "length": 14
+              },
+              {
+                "candidateStart1Based": 174,
+                "reviewed8JBFEntity3Start1Based": 174,
+                "length": 112
+              },
+              {
+                "candidateStart1Based": 287,
+                "reviewed8JBFEntity3Start1Based": 295,
+                "length": 1
+              },
+              {
+                "candidateStart1Based": 290,
+                "reviewed8JBFEntity3Start1Based": 297,
+                "length": 8
+              }
+            ],
+            "limitation": "Matching blocks are literal substring comparisons, not IMGT domain assignment or independent validation of the 2018 reagent sequence."
+          }
+        },
+        "limitation": "A supported scFv interpretation for this entity does not automatically exclude the complete entry when construct or species reconciliation remains open."
+      },
+      "knownMetadataConnections": [],
+      "entryAssessment": {
+        "classification": "CANDIDATE_FORMAT_INFERENCE_WITH_UNRESOLVED_WHOLE_ENTRY",
+        "reason": "The source/sequence evidence resolves or prioritizes the antibody format, while the recorded source, species or construct limitations keep the whole entry pending.",
+        "unresolvedOrCorrectedDiscrepancies": [
+          {
+            "entityId": "5",
+            "status": "DESCRIPTOR_CORRECTION_SUPPORTED",
+            "finding": "scGV16 is inconsistent with the primary-paper scFv16 designation and is an exact full-sequence match to scFV16 entities in the three same-paper sister entries."
+          },
+          {
+            "entityId": "1,3",
+            "status": "CONSTRUCT_MAPPING_REMAINS_OPEN",
+            "finding": "Main text states NanoBiT stabilization, but supplementary construct methods and exact engineered sequence mapping were not reviewed. Preserve whole-entry pending until this mapping is completed."
+          }
+        ],
+        "notes": [
+          "Candidate-format and deposition claims were verified in primary text; full entry-specific construct review is incomplete because supplementary construct methods were not reviewed."
+        ]
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": true
+    },
+    {
+      "pdbId": "8J6L",
+      "sourceId": "HCAR2_2023_PARTIAL",
+      "reviewStatus": "PENDING_FULL_PRIMARY_TEXT_AND_CONSTRUCT_RECONCILIATION",
+      "candidateRoleClass": "SCFV16_LIKE_FORMAT_PRIMARY_REVIEW_PENDING",
+      "candidateEntityDisposition": "PENDING_FULL_PRIMARY_SOURCE_REVIEW",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-044-repeat-1.json",
+      "frozenMetadataFileSha256": "05e13cea351da0025554609091dea7af0f24c3c60e418b1f6fb2b1a555274bb6",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1016/j.celrep.2023.113406",
+        "pdbx_database_id_PubMed": 37952153,
+        "title": "Molecular recognition of niacin and lipid-lowering drugs by the human hydroxycarboxylic acid receptor 2."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1016/j.celrep.2023.113406",
+        "pmid": "37952153",
+        "title": "Molecular recognition of niacin and lipid-lowering drugs by the human hydroxycarboxylic acid receptor 2."
+      },
+      "frozenEntryTitle": "Cryo-EM structure of thehydroxycarboxylic acid receptor 2-Gi protein complex bound niacin",
+      "frozenPolymerEntityCount": 5,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "8J6L_1",
+          "entityId": "1",
+          "description": "Guanine nucleotide-binding protein G(i) subunit alpha-1",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "A"
+          ],
+          "sequenceLength": 354,
+          "sequenceSha256": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P63096",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8J6L_2",
+          "entityId": "2",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit beta-1",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "B"
+          ],
+          "sequenceLength": 370,
+          "sequenceSha256": "729676fbdce5cab4eaba5c3e97f8bf303445c773c4a847dabb18de5e39d4d7b7",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P62873",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8J6L_3",
+          "entityId": "3",
+          "description": "Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-2",
+          "asymIds": [
+            "C"
+          ],
+          "authAsymIds": [
+            "G"
+          ],
+          "sequenceLength": 70,
+          "sequenceSha256": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P59768",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8J6L_4",
+          "entityId": "4",
+          "description": "SVF16",
+          "asymIds": [
+            "D"
+          ],
+          "authAsymIds": [
+            "H"
+          ],
+          "sequenceLength": 247,
+          "sequenceSha256": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8J6L_5",
+          "entityId": "5",
+          "description": "Hydroxycarboxylic acid receptor 2,hydroxycarboxylic acid receptor 2",
+          "asymIds": [
+            "E"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 488,
+          "sequenceSha256": "ce395e9c89a43bb197a600bfc60033e85ad9f6a0b7c12f280c6fe8caf0262719",
+          "referenceSequences": [
+            {
+              "databaseAccession": "Q8TDS4",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "8J6L_4",
+        "entityId": "4",
+        "description": "SVF16",
+        "asymIds": [
+          "D"
+        ],
+        "authAsymIds": [
+          "H"
+        ],
+        "sequenceLength": 247,
+        "sequenceSha256": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "8J6L_5",
+        "entityId": "5",
+        "description": "Hydroxycarboxylic acid receptor 2,hydroxycarboxylic acid receptor 2",
+        "asymIds": [
+          "E"
+        ],
+        "authAsymIds": [
+          "R"
+        ],
+        "sequenceLength": 488,
+        "sequenceSha256": "ce395e9c89a43bb197a600bfc60033e85ad9f6a0b7c12f280c6fe8caf0262719",
+        "referenceSequences": [
+          {
+            "databaseAccession": "Q8TDS4",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "8J6L_1",
+          "accountedComponent": "G_ALPHA",
+          "classification": "PARTIAL_SOURCE_AND_SEQUENCE_TRIAGE"
+        },
+        {
+          "rcsbEntityId": "8J6L_2",
+          "accountedComponent": "G_BETA_ENGINEERED_EXTENSION_UNMAPPED",
+          "classification": "PARTIAL_SOURCE_AND_SEQUENCE_TRIAGE"
+        },
+        {
+          "rcsbEntityId": "8J6L_3",
+          "accountedComponent": "G_GAMMA",
+          "classification": "PARTIAL_SOURCE_AND_SEQUENCE_TRIAGE"
+        },
+        {
+          "rcsbEntityId": "8J6L_4",
+          "accountedComponent": "SCFV16_LIKE_REQUIRES_FULL_PRIMARY_TEXT",
+          "classification": "PARTIAL_SOURCE_AND_SEQUENCE_TRIAGE"
+        },
+        {
+          "rcsbEntityId": "8J6L_5",
+          "accountedComponent": "HCAR2_LONG_CONSTRUCT_UNMAPPED",
+          "classification": "PARTIAL_SOURCE_AND_SEQUENCE_TRIAGE"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "HCAR2_2023_PARTIAL",
+        "pdbIdExplicitlyNamed": false,
+        "entryLinkEvidenceStatus": "PARTIAL_PRIMARY_INDEX_TEXT_PLUS_EXACT_SAME_PAPER_SEQUENCE",
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "candidateFormatEvidence": {
+        "classification": "PARTIAL_PRIMARY_INDEX_TEXT_PLUS_EXACT_SAME_PAPER_SEQUENCE",
+        "referenceFormatSourceId": "SCFV16_ORIGIN_2018",
+        "sequenceEvidence": {
+          "exactSamePaperSiblingMatches": [
+            {
+              "pdbId": "8J6I",
+              "entityId": "5",
+              "description": "Scfv16",
+              "sequenceSha256": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf"
+            },
+            {
+              "pdbId": "8J6J",
+              "entityId": "4",
+              "description": "Scfv16",
+              "sequenceSha256": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf"
+            }
+          ],
+          "comparisonWithSourceReviewedHistorical8JBFEntity3": {
+            "referenceSequenceSha256": "2745d56c0420310e2806bc4336eff46f3e470cee362d0f4bd526759831ae43a1",
+            "referenceSequenceLength": 304,
+            "fullSequenceIdentical": false,
+            "exactMatchingBlocks": [
+              {
+                "candidateStart1Based": 1,
+                "reviewed8JBFEntity3Start1Based": 39,
+                "length": 135
+              },
+              {
+                "candidateStart1Based": 137,
+                "reviewed8JBFEntity3Start1Based": 175,
+                "length": 111
+              }
+            ],
+            "limitation": "Matching blocks are literal substring comparisons, not IMGT domain assignment or independent validation of the 2018 reagent sequence."
+          }
+        },
+        "limitation": "A supported scFv interpretation for this entity does not automatically exclude the complete entry when construct or species reconciliation remains open."
+      },
+      "knownMetadataConnections": [],
+      "entryAssessment": {
+        "classification": "CANDIDATE_FORMAT_INFERENCE_WITH_UNRESOLVED_WHOLE_ENTRY",
+        "reason": "The source/sequence evidence resolves or prioritizes the antibody format, while the recorded source, species or construct limitations keep the whole entry pending.",
+        "unresolvedOrCorrectedDiscrepancies": [
+          {
+            "entityId": "4",
+            "status": "DESCRIPTOR_CORRECTION_STRONGLY_SUPPORTED_BUT_PRIMARY_REVIEW_PARTIAL",
+            "finding": "SVF16 is a 247-residue exact sequence match to Scfv16 in same-paper 8J6I and 8J6J. Publisher-indexed text names scFv16, but full-text preparation review remains incomplete."
+          },
+          {
+            "entityId": "5",
+            "status": "UNRESOLVED_RECEPTOR_FUSION",
+            "finding": "The 488-residue polymer carries a repeated HCAR2 description. The terminal additional region is not independently assigned here. Do not treat receptor accession Q8TDS4 or absent VHH keywords as full construct accounting."
+          }
+        ],
+        "notes": []
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": false
+    },
+    {
+      "pdbId": "8K2W",
+      "sourceId": "CXCR3_AMG487_2023",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED",
+      "candidateRoleClass": "ENGINEERED_KOR_ICL3_FIDUCIAL",
+      "candidateEntityDisposition": "EXCLUDE_ENGINEERED_BINDING_SITE",
+      "entryDisposition": "EXCLUDE_FUSION_DOMINATED_INTERFACE",
+      "entrySourceReviewComplete": true,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-046-repeat-1.json",
+      "frozenMetadataFileSha256": "59477ca97e9cec3aae96c4e9f12f855b3d21bd9371c4a184d58c6a9bfa231b87",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41421-023-00617-0",
+        "pdbx_database_id_PubMed": 38012179,
+        "title": "Structure basis for the modulation of CXC chemokine receptor 3 by antagonist AMG487."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41421-023-00617-0",
+        "pmcid": "PMC10682378",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "frozenEntryTitle": "Structure of CXCR3 complexed with antagonist AMG487",
+      "frozenPolymerEntityCount": 2,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "8K2W_1",
+          "entityId": "1",
+          "description": "Nb6",
+          "asymIds": [
+            "A"
+          ],
+          "authAsymIds": [
+            "N"
+          ],
+          "sequenceLength": 169,
+          "sequenceSha256": "3068bfafc422f554535b6ecb54eb49667313759f833a361a8457ca6b16a8f8bb",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8K2W_2",
+          "entityId": "2",
+          "description": "Soluble cytochrome b562,C-X-C chemokine receptor type 3,Kappa-type opioid receptor",
+          "asymIds": [
+            "B"
+          ],
+          "authAsymIds": [
+            "R"
+          ],
+          "sequenceLength": 507,
+          "sequenceSha256": "b287ff2ed65b6f2302cc8117c03e5341ae242832d918445bff1048a4d21329f3",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P0ABE7",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P41145",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P49682",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Escherichia coli",
+              "taxonomyId": "562"
+            },
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "8K2W_1",
+        "entityId": "1",
+        "description": "Nb6",
+        "asymIds": [
+          "A"
+        ],
+        "authAsymIds": [
+          "N"
+        ],
+        "sequenceLength": 169,
+        "sequenceSha256": "3068bfafc422f554535b6ecb54eb49667313759f833a361a8457ca6b16a8f8bb",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Lama glama",
+            "taxonomyId": "9844"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "8K2W_2",
+        "entityId": "2",
+        "description": "Soluble cytochrome b562,C-X-C chemokine receptor type 3,Kappa-type opioid receptor",
+        "asymIds": [
+          "B"
+        ],
+        "authAsymIds": [
+          "R"
+        ],
+        "sequenceLength": 507,
+        "sequenceSha256": "b287ff2ed65b6f2302cc8117c03e5341ae242832d918445bff1048a4d21329f3",
+        "referenceSequences": [
+          {
+            "databaseAccession": "P0ABE7",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          },
+          {
+            "databaseAccession": "P41145",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          },
+          {
+            "databaseAccession": "P49682",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Escherichia coli",
+            "taxonomyId": "562"
+          },
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "8K2W_1",
+          "accountedComponent": "ENGINEERED_KOR_ICL3_FIDUCIAL",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        },
+        {
+          "rcsbEntityId": "8K2W_2",
+          "accountedComponent": "TARGET_RECEPTOR_WITH_ENGINEERED_KOR_ICL3",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "CXCR3_AMG487_2023",
+        "pdbIdExplicitlyNamed": true,
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "knownMetadataConnections": [],
+      "entryAssessment": {
+        "classification": "AUDIT_INFERENCE_FROM_SOURCE_METADATA_AND_PROTOCOL",
+        "reason": "The primary article establishes an engineered KOR-loop recognition site for Nb6 on the target construct. This is incompatible with the protocol requirement for a direct non-fusion target interface; no coordinate-based incidental-contact claim is made.",
+        "unresolvedOrCorrectedDiscrepancies": [],
+        "notes": [
+          "Target receptor is CXCR3/P49682; KOR/P41145 is a graft donor and BRIL/P0ABE7 is a fusion component. Reference accession presence alone must not relabel the target receptor."
+        ]
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": true
+    },
+    {
+      "pdbId": "8T8M",
+      "sourceId": "MGLU5_NB43_2024",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED",
+      "candidateRoleClass": "DIRECT_RECEPTOR_VHH_SOURCE_REPORTED",
+      "candidateEntityDisposition": "SOURCE_REPORTED_DIRECT_BINDER",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": true,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-048-repeat-1.json",
+      "frozenMetadataFileSha256": "1eb8b615afe484e46e69900c16c85ecbe94ea808051e1612a2d6f36890a1237b",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41586-024-07327-x",
+        "pdbx_database_id_PubMed": 38632403,
+        "title": "Stepwise activation of a metabotropic glutamate receptor."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41586-024-07327-x",
+        "pmcid": "PMC11960862",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "frozenEntryTitle": "Quis-bound intermediate mGlu5",
+      "frozenPolymerEntityCount": 2,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "8T8M_1",
+          "entityId": "1",
+          "description": "Metabotropic glutamate receptor 5",
+          "asymIds": [
+            "A",
+            "B"
+          ],
+          "authAsymIds": [
+            "A",
+            "B"
+          ],
+          "sequenceLength": 881,
+          "sequenceSha256": "50a36419a8befd8fc45c62f063478bc3beaa7470e1c63c9437c54baf452d90dd",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P41594",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8T8M_2",
+          "entityId": "2",
+          "description": "Nb43",
+          "asymIds": [
+            "C",
+            "D"
+          ],
+          "authAsymIds": [
+            "C",
+            "D"
+          ],
+          "sequenceLength": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "8T8M_2",
+        "entityId": "2",
+        "description": "Nb43",
+        "asymIds": [
+          "C",
+          "D"
+        ],
+        "authAsymIds": [
+          "C",
+          "D"
+        ],
+        "sequenceLength": 123,
+        "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Lama glama",
+            "taxonomyId": "9844"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "8T8M_1",
+        "entityId": "1",
+        "description": "Metabotropic glutamate receptor 5",
+        "asymIds": [
+          "A",
+          "B"
+        ],
+        "authAsymIds": [
+          "A",
+          "B"
+        ],
+        "sequenceLength": 881,
+        "sequenceSha256": "50a36419a8befd8fc45c62f063478bc3beaa7470e1c63c9437c54baf452d90dd",
+        "referenceSequences": [
+          {
+            "databaseAccession": "P41594",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "8T8M_1",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        },
+        {
+          "rcsbEntityId": "8T8M_2",
+          "accountedComponent": "DIRECT_RECEPTOR_VHH_SOURCE_REPORTED",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "MGLU5_NB43_2024",
+        "pdbIdExplicitlyNamed": true,
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "knownMetadataConnections": [
+        {
+          "classification": "SAME_TARGET_RECEPTOR_UNIPROT",
+          "targetPdbId": "8T7H",
+          "developmentNode": false,
+          "accession": "P41594",
+          "protocolRule": "1",
+          "evidencePath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
+        },
+        {
+          "classification": "SAME_PRIMARY_DOI_AND_PMID",
+          "targetPdbId": "8T7H",
+          "developmentNode": false,
+          "doi": "10.1038/s41586-024-07327-x",
+          "pmid": "38632403",
+          "protocolRule": "3",
+          "evidencePath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
+        },
+        {
+          "classification": "EXACT_RECEPTOR_AND_VHH_SEQUENCES",
+          "targetPdbId": "8T7H",
+          "developmentNode": false,
+          "receptorSequenceSha256": "50a36419a8befd8fc45c62f063478bc3beaa7470e1c63c9437c54baf452d90dd",
+          "vhhSequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276",
+          "evidencePath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
+        }
+      ],
+      "entryAssessment": {
+        "classification": "AUDIT_INFERENCE_FROM_SOURCE_METADATA_AND_PROTOCOL",
+        "reason": "Primary text supports the receptor-binding reagent; exact receptor, VHH and publication relationships connect it to historical 8T7H. Formal component integration and full eligibility remain separate.",
+        "unresolvedOrCorrectedDiscrepancies": [
+          "CURRENT_COMPONENT_GRAPH_INTEGRATION_AND_REMAINING_ELIGIBILITY_REQUIRED"
+        ],
+        "notes": [
+          "Receptor and Nb43 each occur twice as chain copies; this is two polymer entities, not four independent targets.",
+          "The preparation mentions GqiN for one sample; the frozen entry contains receptor and Nb43 only. A sample additive is not assumed to be a deposited polymer."
+        ]
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": true
+    },
+    {
+      "pdbId": "8TAO",
+      "sourceId": "MGLU5_NB43_2024",
+      "reviewStatus": "SOURCE_AND_INVENTORY_REVIEWED",
+      "candidateRoleClass": "DIRECT_RECEPTOR_VHH_SOURCE_REPORTED",
+      "candidateEntityDisposition": "SOURCE_REPORTED_DIRECT_BINDER",
+      "entryDisposition": "PENDING_REQUIRED_METADATA",
+      "entrySourceReviewComplete": true,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-048-repeat-1.json",
+      "frozenMetadataFileSha256": "1eb8b615afe484e46e69900c16c85ecbe94ea808051e1612a2d6f36890a1237b",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1038/s41586-024-07327-x",
+        "pdbx_database_id_PubMed": 38632403,
+        "title": "Stepwise activation of a metabotropic glutamate receptor."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1038/s41586-024-07327-x",
+        "pmcid": "PMC11960862",
+        "resolutionBasis": "EXACT_PRIMARY_DEPOSITION_STATEMENT"
+      },
+      "frozenEntryTitle": "Quis and CDPPB bound active mGlu5",
+      "frozenPolymerEntityCount": 2,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "8TAO_1",
+          "entityId": "1",
+          "description": "Metabotropic glutamate receptor 5",
+          "asymIds": [
+            "A",
+            "B"
+          ],
+          "authAsymIds": [
+            "A",
+            "B"
+          ],
+          "sequenceLength": 881,
+          "sequenceSha256": "50a36419a8befd8fc45c62f063478bc3beaa7470e1c63c9437c54baf452d90dd",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P41594",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8TAO_2",
+          "entityId": "2",
+          "description": "Nb43",
+          "asymIds": [
+            "C",
+            "D"
+          ],
+          "authAsymIds": [
+            "C",
+            "D"
+          ],
+          "sequenceLength": 123,
+          "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "8TAO_2",
+        "entityId": "2",
+        "description": "Nb43",
+        "asymIds": [
+          "C",
+          "D"
+        ],
+        "authAsymIds": [
+          "C",
+          "D"
+        ],
+        "sequenceLength": 123,
+        "sequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Lama glama",
+            "taxonomyId": "9844"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "8TAO_1",
+        "entityId": "1",
+        "description": "Metabotropic glutamate receptor 5",
+        "asymIds": [
+          "A",
+          "B"
+        ],
+        "authAsymIds": [
+          "A",
+          "B"
+        ],
+        "sequenceLength": 881,
+        "sequenceSha256": "50a36419a8befd8fc45c62f063478bc3beaa7470e1c63c9437c54baf452d90dd",
+        "referenceSequences": [
+          {
+            "databaseAccession": "P41594",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "8TAO_1",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        },
+        {
+          "rcsbEntityId": "8TAO_2",
+          "accountedComponent": "DIRECT_RECEPTOR_VHH_SOURCE_REPORTED",
+          "classification": "PRIMARY_SOURCE_AND_FROZEN_METADATA"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "MGLU5_NB43_2024",
+        "pdbIdExplicitlyNamed": true,
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "knownMetadataConnections": [
+        {
+          "classification": "SAME_TARGET_RECEPTOR_UNIPROT",
+          "targetPdbId": "8T7H",
+          "developmentNode": false,
+          "accession": "P41594",
+          "protocolRule": "1",
+          "evidencePath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
+        },
+        {
+          "classification": "SAME_PRIMARY_DOI_AND_PMID",
+          "targetPdbId": "8T7H",
+          "developmentNode": false,
+          "doi": "10.1038/s41586-024-07327-x",
+          "pmid": "38632403",
+          "protocolRule": "3",
+          "evidencePath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
+        },
+        {
+          "classification": "EXACT_RECEPTOR_AND_VHH_SEQUENCES",
+          "targetPdbId": "8T7H",
+          "developmentNode": false,
+          "receptorSequenceSha256": "50a36419a8befd8fc45c62f063478bc3beaa7470e1c63c9437c54baf452d90dd",
+          "vhhSequenceSha256": "c3cf008ab350ad1a3a789536eb0ab6eedc45254deb16d2854215fe584b812276",
+          "evidencePath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl"
+        }
+      ],
+      "entryAssessment": {
+        "classification": "AUDIT_INFERENCE_FROM_SOURCE_METADATA_AND_PROTOCOL",
+        "reason": "Primary text supports the receptor-binding reagent; exact receptor, VHH and publication relationships connect it to historical 8T7H. Formal component integration and full eligibility remain separate.",
+        "unresolvedOrCorrectedDiscrepancies": [
+          "CURRENT_COMPONENT_GRAPH_INTEGRATION_AND_REMAINING_ELIGIBILITY_REQUIRED"
+        ],
+        "notes": [
+          "Receptor and Nb43 each occur twice as chain copies; this is two polymer entities, not four independent targets.",
+          "The preparation mentions GqiN for one sample; the frozen entry contains receptor and Nb43 only. A sample additive is not assumed to be a deposited polymer."
+        ]
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": true
+    },
+    {
+      "pdbId": "8W1V",
+      "sourceId": "ADRB2_BITOPIC_2024",
+      "reviewStatus": "DEVELOPMENT_CONNECTION_CONFIRMED_SOURCE_REVIEW_INCOMPLETE",
+      "candidateRoleClass": "PENDING_PRIMARY_REAGENT_REVIEW",
+      "candidateEntityDisposition": "PENDING_REQUIRED_METADATA",
+      "entryDisposition": "EXCLUDE_DEVELOPMENT_CONNECTED",
+      "entrySourceReviewComplete": false,
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/raw/batch-050-repeat-1.json",
+      "frozenMetadataFileSha256": "ba5e4ddc53cd97c2fb065c7f11850fe9470072361020838b4a4f1d3bd4c34888",
+      "frozenPrimaryCitation": {
+        "pdbx_database_id_DOI": "10.1021/acs.jmedchem.4c00578",
+        "pdbx_database_id_PubMed": 38952152,
+        "title": "Bitopic Ligands Support the Presence of a Metastable Binding Site at the beta 2 Adrenergic Receptor."
+      },
+      "resolvedPrimaryCitation": {
+        "doi": "10.1021/acs.jmedchem.4c00578",
+        "pmcid": null,
+        "resolutionBasis": "FROZEN_CITATION_AND_PUBMED_RECORD"
+      },
+      "frozenEntryTitle": "The beta2 adrenergic receptor bound to a bitopic ligand",
+      "frozenPolymerEntityCount": 2,
+      "allFrozenPolymerEntities": [
+        {
+          "rcsbEntityId": "8W1V_1",
+          "entityId": "1",
+          "description": "Beta-2 adrenergic receptor,Endolysin",
+          "asymIds": [
+            "A",
+            "B"
+          ],
+          "authAsymIds": [
+            "A",
+            "B"
+          ],
+          "sequenceLength": 549,
+          "sequenceSha256": "de348ad44a3462d5df03e5755f33c6a69c0389203602d8d640dd61a87ec05c73",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P00720",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            },
+            {
+              "databaseAccession": "P07550",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Homo sapiens",
+              "taxonomyId": "9606"
+            }
+          ]
+        },
+        {
+          "rcsbEntityId": "8W1V_2",
+          "entityId": "2",
+          "description": "Nanobody60",
+          "asymIds": [
+            "C",
+            "D"
+          ],
+          "authAsymIds": [
+            "D",
+            "F"
+          ],
+          "sequenceLength": 125,
+          "sequenceSha256": "1406ad7ea26451149ea73339e2282ef0f77f52d693c680cbf790db7af767db62",
+          "referenceSequences": [],
+          "sourceOrganisms": [
+            {
+              "scientificName": "Lama glama",
+              "taxonomyId": "9844"
+            }
+          ]
+        }
+      ],
+      "candidateEntity": {
+        "rcsbEntityId": "8W1V_2",
+        "entityId": "2",
+        "description": "Nanobody60",
+        "asymIds": [
+          "C",
+          "D"
+        ],
+        "authAsymIds": [
+          "D",
+          "F"
+        ],
+        "sequenceLength": 125,
+        "sequenceSha256": "1406ad7ea26451149ea73339e2282ef0f77f52d693c680cbf790db7af767db62",
+        "referenceSequences": [],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Lama glama",
+            "taxonomyId": "9844"
+          }
+        ]
+      },
+      "receptorEntity": {
+        "rcsbEntityId": "8W1V_1",
+        "entityId": "1",
+        "description": "Beta-2 adrenergic receptor,Endolysin",
+        "asymIds": [
+          "A",
+          "B"
+        ],
+        "authAsymIds": [
+          "A",
+          "B"
+        ],
+        "sequenceLength": 549,
+        "sequenceSha256": "de348ad44a3462d5df03e5755f33c6a69c0389203602d8d640dd61a87ec05c73",
+        "referenceSequences": [
+          {
+            "databaseAccession": "P00720",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          },
+          {
+            "databaseAccession": "P07550",
+            "databaseName": "UniProt",
+            "provenanceSource": "SIFTS"
+          }
+        ],
+        "sourceOrganisms": [
+          {
+            "scientificName": "Homo sapiens",
+            "taxonomyId": "9606"
+          }
+        ]
+      },
+      "allPolymerInventoryAccounting": [
+        {
+          "rcsbEntityId": "8W1V_1",
+          "accountedComponent": "RECEPTOR_OR_RECEPTOR_CONSTRUCT",
+          "classification": "FROZEN_METADATA_ONLY"
+        },
+        {
+          "rcsbEntityId": "8W1V_2",
+          "accountedComponent": "PENDING_PRIMARY_REAGENT_REVIEW",
+          "classification": "FROZEN_METADATA_ONLY"
+        }
+      ],
+      "depositionLinkage": {
+        "sourceId": "ADRB2_BITOPIC_2024",
+        "pdbIdExplicitlyNamed": false,
+        "entityNumberSource": "Frozen RCSB metadata; entity numbering is not assigned by the article."
+      },
+      "knownMetadataConnections": [
+        {
+          "classification": "SAME_TARGET_RECEPTOR_UNIPROT",
+          "targetPdbId": "5JQH",
+          "developmentNode": true,
+          "accession": "P07550",
+          "protocolRule": "1",
+          "evidencePath": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl"
+        },
+        {
+          "classification": "EXACT_FULL_VHH_SEQUENCE",
+          "targetPdbId": "5JQH",
+          "targetEntityId": "2",
+          "sequenceSha256": "1406ad7ea26451149ea73339e2282ef0f77f52d693c680cbf790db7af767db62",
+          "developmentNode": true,
+          "evidencePath": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl",
+          "formalImgtThresholdCalculationPerformed": false
+        }
+      ],
+      "entryAssessment": {
+        "classification": "AUDIT_INFERENCE_FROM_SOURCE_METADATA_AND_PROTOCOL",
+        "reason": "The target receptor matches development ADRB2 (P07550), independently sufficient for development exclusion. Binder-role review remains incomplete.",
+        "unresolvedOrCorrectedDiscrepancies": [
+          "PRIMARY_METHODS_AND_DEPOSITION_TEXT_NOT_RETRIEVED"
+        ],
+        "notes": []
+      },
+      "formalComponentCertificationComplete": false,
+      "independentComponentCountIncrement": null,
+      "targetFreezePermitted": false,
+      "nativeCoordinatesInspected": false,
+      "structuralFiguresInspected": false,
+      "labelsAccessed": false,
+      "candidatePrimaryTextEvidenceVerified": false
+    }
+  ],
+  "broaderDiscoveryComplete": false,
+  "wholeCensusComponentUpperBound": null,
+  "targetFreezePermitted": false,
+  "summary": {
+    "reviewedEntryCount": 11,
+    "entryPrimaryTextReviewCompleteCount": 8,
+    "developmentConnectedExclusionCount": 3,
+    "engineeredBindingSiteExclusionCount": 3,
+    "wholeEntryPendingCount": 5,
+    "pendingPdbIds": [
+      "7Y89",
+      "8J24",
+      "8J6L",
+      "8T8M",
+      "8TAO"
+    ],
+    "sourceSupportedDirectVhhRecordCount": 4,
+    "sourceSupportedScfvFormatCount": 2,
+    "primaryCitationRecoveredFromExactDepositionCount": 1,
+    "formalComponentCertificationComplete": false,
+    "independentComponentsEstablishedByThisReview": null,
+    "wholeCensusComponentUpperBound": null,
+    "targetFreezePermitted": false,
+    "candidatePrimaryTextEvidenceVerifiedCount": 9
+  }
+}

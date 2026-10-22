@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-04",
+  "scope": "Bounded two-entry construct follow-up; no automated retry loop or challenge-solving attempted.",
+  "errorBodiesArchived": false,
+  "requests": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12834959/fullTextXML",
+      "httpStatus": 200,
+      "responseBytes": 173132,
+      "responseSha256": "5841cd77f7242c75562f2eb1237edb2ee43720f2cbf71bb70bf1b202f6890776",
+      "use": "2026 cryo-EM Methods citation lookup and supplementary attachment metadata only; XML body matches the earlier pinned source.",
+      "fullTextArchived": false
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8926151/fullTextXML",
+      "httpStatus": 404,
+      "responseBytes": null,
+      "responseSha256": null,
+      "use": "Reference-26 full-text retrieval unavailable; error response body not retained."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8926151/",
+      "httpStatus": 200,
+      "responseBytes": 163998,
+      "responseSha256": "8a313051969077401f67dab5605fd1258af41577e4cfdcc8724a5b930cd46d03",
+      "use": "Locate official supplementary Methods attachment from HTML link metadata.",
+      "fullTextArchived": false,
+      "navigationExceptionPath": "navigation-exposure-caveat.json"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/8926151/bin/NIHMS1769982-supplement-cryoEM_Supplement.docx",
+      "httpStatus": 200,
+      "responseBytes": 1817,
+      "responseSha256": "f956ba745b07cba351a9871c515dfd22b2ef0cc74a16af8e0233ddbf62c5e632",
+      "contentType": "text/html; charset=utf-8",
+      "validRequestedDocument": false,
+      "classification": "DOWNLOAD_CHALLENGE_HTML_NOT_DOCX",
+      "use": "Supplementary Methods retrieval unavailable. No document bytes, embedded images or Methods prose were received."
+    },
+    {
+      "url": "https://www.science.org/doi/suppl/10.1126/science.abl4732/suppl_file/science.abl4732_sm.pdf",
+      "httpStatus": 403,
+      "responseBytes": 6204,
+      "responseSha256": "00ff8497f2ade0b852afa1e58aa58b1d361786d789c2bf7f6381f937cf7cbc1d",
+      "validRequestedDocument": false,
+      "use": "Conventional publisher supplementary endpoint attempted once; no PDF received. Endpoint naming does not establish attachment identity."
+    },
+    {
+      "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41467-026-68339-x/MediaObjects/41467_2026_68339_MOESM1_ESM.pdf",
+      "httpStatus": 502,
+      "responseBytes": 150,
+      "responseSha256": "81074a9c8dfb24290e8fc4af14d20f67f5304618d27ac713628b1126e41dbd8e",
+      "validRequestedDocument": false,
+      "use": "2026 Supplementary Information unavailable."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12834959/bin/41467_2026_68339_MOESM1_ESM.pdf",
+      "httpStatus": 200,
+      "responseBytes": 1817,
+      "responseSha256": "e32489e4751868eb34795560db6c560c808af4b2dab5967f675524d9046be10d",
+      "contentType": "text/html",
+      "validRequestedDocument": false,
+      "use": "2026 Supplementary Information endpoint returned HTML, not PDF."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12834959/bin/41467_2026_68339_MOESM1_ESM.pdf",
+      "httpStatus": 404,
+      "responseBytes": 48716,
+      "responseSha256": "2dff8c5c1f506d286fe9474f50d50983ae73e448e9ab66af2a8c3250ce8995af",
+      "validRequestedDocument": false,
+      "use": "Final canonical 2026 attachment check unavailable."
+    }
+  ],
+  "limitation": "These are attempt-level observations, not a claim that publisher Methods are generally inaccessible. Failed retrievals do not prove absence of construct details."
+}

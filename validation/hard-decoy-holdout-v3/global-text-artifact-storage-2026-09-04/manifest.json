@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "purpose": "LOSSLESS_STORAGE_OF_TWO_REPRODUCIBLE_GLOBAL_TEXT_DERIVED_ARTIFACTS",
+  "compression": "gzip",
+  "maximumCompressedBytes": 8388608,
+  "maximumUncompressedBytes": 67108864,
+  "files": [
+    {
+      "path": "validation/hard-decoy-holdout-v3/global-text-discovery-2026-09-04/entries.jsonl",
+      "archive": "entries.jsonl.gz",
+      "compressedBytes": 4562608,
+      "compressedSha256": "de06750f701a432f8059395485c7f94cfb46ed1211bc4ee3fea66a3a97136d07",
+      "uncompressedBytes": 22693263,
+      "uncompressedSha256": "fde2a0de338d34ea0e2baf56924b20bbc2de113b821a30af9c976b064d3a92d0"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/global-text-screen-2026-09-04/entity-screens.jsonl",
+      "archive": "entity-screens.jsonl.gz",
+      "compressedBytes": 1695359,
+      "compressedSha256": "279329a139aff13841e35882cc501fe38ad5b6398aa1a5abe52044c5df03f765",
+      "uncompressedBytes": 42079134,
+      "uncompressedSha256": "ddf6eef4bbd5f16bac633f5049e52ec5541d3f3a0ccbc9d8cf27020a28b2a267"
+    }
+  ]
+}

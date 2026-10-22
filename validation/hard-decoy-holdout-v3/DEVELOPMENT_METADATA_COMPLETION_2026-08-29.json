@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "DEVELOPMENT_METADATA_COMPLETED_BLOCKED_PENDING_SCIENTIFIC_LEAKAGE_AUDIT",
+  "recordedAtUtc": "2026-08-29T13:48:00Z",
+  "correctedAtUtc": "2026-08-29T14:00:00Z",
+  "correctionReason": "The prior human-readable attestation contained an incorrectly calculated SHA-256 for the already verified checksums.sha256 file. Snapshot bytes and individual payload checksums were unchanged.",
+  "sourceBranchCommit": "5beceb0ad483c720b28ebcfa4f7c85245304f421",
+  "snapshotDirectory": "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29",
+  "snapshotChecksumsSha256": "add32255432d635d55657f200636d61134e726e5bf2071130df1dcf94b546758",
+  "developmentNodeCount": 17,
+  "reusedRepeatedMetadataNodeCount": 15,
+  "newlyCompletedRepeatedMetadataNodeCount": 2,
+  "newlyCompletedPdbIds": [
+    "6KNM",
+    "6O3C"
+  ],
+  "uniquePreferredReceptorEntityCount": 17,
+  "receptorNodesWithExactlyOneUniProtAccession": 10,
+  "uniqueVhhMetadataCandidateCount": 16,
+  "multipleVhhMetadataCandidateCount": 1,
+  "multipleVhhMetadataCandidatePdbIds": [
+    "8QOT"
+  ],
+  "directInterfaceEvidenceResolvedCount": 0,
+  "formalLeakageCertificationComplete": false,
+  "dispositionLedgerComplete": false,
+  "leakageGraphComplete": false,
+  "formallyClearedGroupCount": 0,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "nextMilestone": "Build a deterministic exact-identity and publication evidence layer across all 287 source entries and all 17 development nodes without treating ambiguous metadata entities as formal leakage edges."
+}

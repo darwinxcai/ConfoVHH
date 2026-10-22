@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "DIRECT_LOOKING_STRATUM_INSUFFICIENT_OTHER_STRATA_REQUIRED",
+  "recordedAtUtc": "2026-09-04T20:39:00Z",
+  "directLookingNondevelopmentEntryCount": 29,
+  "directLookingEntryIncrementUpperBound": 2,
+  "existingProvisionalComponentCount": 7,
+  "existingPlusDirectLookingUpperBound": 9,
+  "requiredIndependentComponentCount": 10,
+  "directLookingStratumAloneCanMeetMinimum": false,
+  "otherPendingNondevelopmentRowCount": 243,
+  "otherPendingRowsAlreadyNamedInExistingCensus": [
+    "7E6U",
+    "8JXS",
+    "8QJ2"
+  ],
+  "otherPendingRowsNotNamedInExistingCensusCount": 240,
+  "minimumAdditionalComponentsRequiredFromOtherPendingRows": 1,
+  "interpretation": "Even granting the unresolved transitive rows their most favorable conservative count, the prioritized direct-looking stratum can raise seven existing provisional components to at most nine. Three of the other 243 pending rows are already named representatives of those seven components, so at least one additional component must be found among the other 240 rows not named in the existing census; more are required if any existing provisional component fails later gates.",
+  "wholeCensusTerminalDecisionReached": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "stage": "V3_METADATA_PREPARATION",
+  "status": "EXACT_METADATA_EVIDENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_FORMAL_LEAKAGE_AUDIT",
+  "snapshotDateUtc": "2026-08-29",
+  "contractPath": "validation/hard-decoy-holdout-v3/exact-evidence-contract-2026-08-29.json",
+  "generatorScript": "scripts/hard-decoy/v3-exact-evidence-pregraph.mjs",
+  "inputDigests": {
+    "contract": "06cd7544b3f61d8d4c768723656ae3e9a807d9a9090f59392ef2f015a78c6ced",
+    "selectedProtocol": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "candidateEntryMetadata": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "candidateDispositionLedger": "1687775f2495447475dbffccdc27b8ded042d7c235669635672b6d3afe61e894",
+    "developmentSnapshotChecksums": "add32255432d635d55657f200636d61134e726e5bf2071130df1dcf94b546758",
+    "developmentNodeLedger": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e",
+    "generatorScript": "79bf92c0288fb115542d95c9930baaa3789207630c4e1e232b703caaf0e97df7"
+  },
+  "normalizedOutputs": {
+    "README.md": {
+      "bytes": 1444,
+      "sha256": "ea0febd379141c9ae459f2bcac73024f3eca356039b58493e25b2c6266e5c113"
+    },
+    "candidate-candidate-evidence.jsonl": {
+      "bytes": 2401000,
+      "sha256": "37f1db3a1dc43494b9bd0b87b564e931e9172f9f20a797feaa5d318d8e90990e"
+    },
+    "candidate-development-evidence.jsonl": {
+      "bytes": 116381,
+      "sha256": "700e6b4b4aed2218a301bfb2eac8ed0504002422dccef0a22e04c24a1a278f0c"
+    },
+    "candidate-nodes.jsonl": {
+      "bytes": 331233,
+      "sha256": "1442fe120454a9242c54b37e7b95233c36646ca33c0dd8812fedd251eccf897f"
+    },
+    "definite-evidence-components.jsonl": {
+      "bytes": 38408,
+      "sha256": "de8c517a7dbad21319524048dbed87af2f1f2eb7cad4df264b9067588865e44f"
+    },
+    "development-development-evidence.jsonl": {
+      "bytes": 3153,
+      "sha256": "64285cc52a4cf713c84ef27b0540811f7a910ce4ea0ce616638088704207b175"
+    },
+    "development-nodes.jsonl": {
+      "bytes": 19285,
+      "sha256": "9b0f1b42b34e20206ccb7de4cd98df7b8be57c9d5cf30c0e050668224715a3ad"
+    },
+    "inclusive-evidence-components.jsonl": {
+      "bytes": 11450,
+      "sha256": "3435d09f70bf010a62612ae2a1628eee639f52ba9d37fafd2941bd9fb6402a71"
+    },
+    "pair-space-commitments.json": {
+      "bytes": 771,
+      "sha256": "9d2c35307b7d517361f74306255d97e4f907ff1c147012610c46e15c676a8ff1"
+    },
+    "summary.json": {
+      "bytes": 1770,
+      "sha256": "c25c483c4c498c3f6d74d09b007799364727cc5cb73b137f09fda6225bdc7704"
+    }
+  },
+  "pairSpaceCommitments": {
+    "schemaVersion": "1.0.0",
+    "serialization": "bytewise-sorted-canonical-nodeA-pipe-nodeB-with-terminal-LF",
+    "candidateCandidate": {
+      "count": 41041,
+      "sha256": "ec2e215a53fac20301bee4f2f379cac37a1f9f29e60d0cac473dd9199f50cb36"
+    },
+    "candidateDevelopment": {
+      "count": 4879,
+      "sha256": "122b6c97930119fe1b4969f1793f8b7a084bdbd2c5431249932c4169c255e6e8"
+    },
+    "developmentDevelopment": {
+      "count": 136,
+      "sha256": "f6a39f95fe538bdc3167ee0bf64f6f4899a40aa50eaa0e0bdb4373f3c0b55cd5"
+    },
+    "allUnorderedPairs": {
+      "count": 46056,
+      "sha256": "9e3d2a298ac5b2f5bb1449002ec47958fb76dea543e38d05fd03ada1beaee070"
+    },
+    "positivePairRowsStoredOnly": true,
+    "absenceOfStoredPairIsNotNoEdgeEvidence": true,
+    "formalLeakageGraphAuthority": false
+  },
+  "summary": {
+    "schemaVersion": "1.0.0",
+    "studyId": "confovhh-hard-decoy-holdout-v3",
+    "status": "EXACT_METADATA_EVIDENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_FORMAL_LEAKAGE_AUDIT",
+    "candidateNodeCount": 287,
+    "developmentNodeCount": 17,
+    "totalNodeCount": 304,
+    "pairSpace": {
+      "candidateCandidate": 41041,
+      "candidateDevelopment": 4879,
+      "developmentDevelopment": 136,
+      "allUnorderedPairs": 46056
+    },
+    "positiveEvidencePairCounts": {
+      "candidateCandidate": 2869,
+      "candidateDevelopment": 140,
+      "developmentDevelopment": 4,
+      "all": 3013
+    },
+    "evidenceTypePairCounts": {
+      "EXACT_PDB_ID_REUSE": 15,
+      "EXACT_RECEPTOR_ENTITY_SEQUENCE": 345,
+      "EXACT_SINGLETON_RECEPTOR_UNIPROT": 690,
+      "EXACT_PRIMARY_DOI": 274,
+      "EXACT_PRIMARY_PMID": 273,
+      "EXACT_UNIQUE_VHH_METADATA_SEQUENCE": 1987,
+      "SHARED_RECEPTOR_UNIPROT_WITH_MULTIACCESSION_AMBIGUITY": 694,
+      "SHARED_VHH_METADATA_SEQUENCE_WITH_ROLE_AMBIGUITY": 36
+    },
+    "evidenceClassificationPairCounts": {
+      "AMBIGUOUS_ENTITY_EVIDENCE": 639,
+      "DEFINITE_METADATA_IDENTITY_EVIDENCE": 823,
+      "EXACT_VHH_SEQUENCE_EVIDENCE_ROLE_UNRESOLVED": 1551
+    },
+    "exactPdbExclusionReconciliationCount": 15,
+    "definiteEvidenceComponentCount": 100,
+    "inclusiveEvidenceComponentCount": 18,
+    "candidateNodesConnectedToDevelopmentByDefiniteEvidence": 33,
+    "candidateNodesConnectedToDevelopmentByInclusiveEvidence": 262,
+    "formalLeakageGraphComplete": false,
+    "dispositionLedgerComplete": false,
+    "formallyClearedGroupCount": 0,
+    "exactFrozenTargetSetExists": false,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false,
+    "nativeHoldoutCoordinatesAccessed": false,
+    "nativeRelativePosesInspected": false,
+    "dockqLabelsAccessed": false,
+    "performanceResultsAccessed": false
+  },
+  "evidencePregraphOnly": true,
+  "formalLeakageGraphComplete": false,
+  "dispositionLedgerComplete": false,
+  "formallyClearedGroupCount": 0,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}

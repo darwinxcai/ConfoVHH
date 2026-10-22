@@ -1,0 +1,24 @@
+<!doctype html>
+<!--
+  Static single-page shell for the Vercel deployment. ConfoVHH renders entirely
+  in the browser, so this file replaces the framework-rendered document that the
+  Cloudflare Worker path produces from app/layout.tsx. Keep the <html>/<body>
+  classes and the document metadata in sync with that layout.
+-->
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ConfoVHH | GPCR–VHH Structural Interface Review</title>
+    <meta
+      name="description"
+      content="Review GPCR–VHH structural interfaces locally using coordinate geometry, IMGT CDR mapping, directional PAE, pose recurrence, explicit provenance, and conservative interpretation."
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+  </head>
+  <body class="antialiased">
+    <div id="confovhh-root"></div>
+    <script type="module" src="/build/static-spa-entry.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "recordType": "INCIDENTAL_PRIMARY_PROSE_EXPOSURE",
+  "date": "2026-09-04",
+  "affectedPdbIds": [
+    "8XT9",
+    "8XUM",
+    "9S37",
+    "9S38",
+    "9KGK",
+    "9KHH",
+    "9UOK"
+  ],
+  "nativeContactOrOrientationProseVisible": true,
+  "contactOrOrientationDetailsReproduced": false,
+  "usedToAdjudicateInterfacesOrConstructEligibility": false,
+  "nativeCoordinatesRequestedOrInspected": false,
+  "structureImagesRequestedOrInspected": false,
+  "contactTablesRequestedOrInspected": false,
+  "poseFilesRequestedOrInspected": false,
+  "dockqLabelsAccessed": false,
+  "events": [
+    {
+      "sourceUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12462478/fullTextXML",
+      "retrievedUtc": "2026-09-04T22:57:10.498205+00:00",
+      "responseSha256": "772ab81dfa455a8d97d1b5a0a2f8a6335c677c1f451e289bf51f8056535222f8",
+      "section": "Development of a nanobody blocking the LGR4-RSPO1/2 complex",
+      "paragraphsEmitted": 3,
+      "primaryAffectedEntry": "9S37",
+      "relatedAffectedEntries": [
+        "8XT9",
+        "8XUM"
+      ],
+      "sequenceLinkedCaveatEntry": "9S38"
+    },
+    {
+      "sourceUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12234955/fullTextXML",
+      "retrievedUtc": "2026-09-04T22:57:17.421243+00:00",
+      "responseSha256": "03ffb15fcd3c5ce71ba7093b203b5122826ddb51b38b3b38986135cf31c2e61d",
+      "section": "Development and structural characterization of an LGR4 inhibitory nanobody",
+      "paragraphsEmitted": 5,
+      "primaryAffectedEntry": "9KGK",
+      "relatedAffectedEntries": [
+        "9KHH",
+        "9UOK"
+      ]
+    }
+  ],
+  "cause": "An overly broad section-title filter intended to identify nanobody role emitted complete structural Results subsections.",
+  "mitigation": "Subsequent prose review was restricted to construct, reagent production, sample and data-availability sections. No contact or orientation details were propagated into evidence or decisions.",
+  "impact": "The six LGR4 review entries and related lead 9UOK are exposure-blocked pending formal adjudication; do not describe them as wholly unexposed holdouts. This record does not silently alter the frozen protocol or master ledger.",
+  "formalExposureClearanceComplete": false,
+  "targetFreezePermitted": false
+}

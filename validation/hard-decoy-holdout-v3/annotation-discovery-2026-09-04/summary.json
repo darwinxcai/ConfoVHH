@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "route": "C1_GLOBAL_DOMAIN_AND_SOURCE_TAXONOMY_DISCOVERY",
+  "status": "SPECIFIED_ANNOTATION_QUERIES_CAPTURED_SCIENTIFIC_REVIEW_PENDING",
+  "releaseDateRestriction": null,
+  "repeatedQueryCount": 8,
+  "gpcrDomainEntryCount": 2477,
+  "immunoglobulinDomainEntryCount": 1227,
+  "camelidSourceEntryCount": 1997,
+  "gpcrImmunoglobulinIntersectionCount": 8,
+  "gpcrCamelidIntersectionCount": 378,
+  "combinedIntersectionCount": 386,
+  "intersectionAbsentFromFrozenGpcrdbCount": 142,
+  "intersectionAbsentFromHistorical287Count": 230,
+  "metadataAlreadyCapturedCount": 244,
+  "newlyRequestedMetadataEntryCount": 142,
+  "newlyCapturedMetadataEntryCount": 142,
+  "unresolvedNewMetadataEntryCount": 0,
+  "positiveControl": {
+    "pdbId": "3P0G",
+    "inGpcrSet": true,
+    "inImmunoglobulinSet": false,
+    "inCamelidSet": true,
+    "inFinalIntersection": true
+  },
+  "domainControls": [
+    {
+      "accession": "PF00001",
+      "pdbId": "3SN6",
+      "found": true
+    },
+    {
+      "accession": "PF00002",
+      "pdbId": "7VVN",
+      "found": true
+    },
+    {
+      "accession": "PF00003",
+      "pdbId": "4OR2",
+      "found": true
+    },
+    {
+      "accession": "PF01534",
+      "pdbId": "4JKV",
+      "found": true
+    }
+  ],
+  "immunoglobulinControls": [
+    {
+      "accession": "PF07686",
+      "pdbId": "1A14",
+      "found": true
+    },
+    {
+      "accession": "PF00047",
+      "pdbId": "1B6U",
+      "found": true
+    }
+  ],
+  "vhhAnnotationSensitivity": [
+    {
+      "pdbId": "3P0G",
+      "inGpcrDomainSet": true,
+      "inImmunoglobulinDomainSet": false,
+      "inCamelidSourceSet": true,
+      "inCombinedIntersection": true,
+      "interpretation": "Known GPCR–VHH controls can lack the selected immunoglobulin Pfam annotations; annotation absence cannot establish VHH absence."
+    },
+    {
+      "pdbId": "3SN6",
+      "inGpcrDomainSet": true,
+      "inImmunoglobulinDomainSet": false,
+      "inCamelidSourceSet": true,
+      "inCombinedIntersection": true,
+      "interpretation": "Known GPCR–VHH controls can lack the selected immunoglobulin Pfam annotations; annotation absence cannot establish VHH absence."
+    }
+  ],
+  "taxonomyIdNameAgreement": true,
+  "specifiedQueriesComplete": true,
+  "exhaustiveGpcrDomainCoverage": false,
+  "exhaustiveImmunoglobulinCoverage": false,
+  "taxonomyCompletenessAssumed": false,
+  "broaderDiscoveryComplete": false,
+  "formalProtocolStatus": "DRAFT",
+  "targetFreezeGate": "BLOCKED",
+  "independentComponentsAdded": 0,
+  "wholeCensusComponentUpperBound": null,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}

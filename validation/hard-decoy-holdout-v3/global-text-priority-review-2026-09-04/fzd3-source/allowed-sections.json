@@ -1,0 +1,51 @@
+{
+  "doi": "10.1038/s41467-024-51451-1",
+  "pmcid": "PMC11341715",
+  "primaryXmlSha256": "44c74805f0a9319398bf132a4737099d3613c69260f63f5b131d1cdae64a7b49",
+  "filter": {
+    "exactTopLevelMethodsTitle": "Methods",
+    "exactAllowedDirectChildTitles": [
+      "Discovery of the nanobodies",
+      "Protein expression"
+    ],
+    "paragraphSelection": "Direct p children only. No nested figure/table/caption text is rendered.",
+    "dataAvailabilitySelection": "Direct p children of exact Data availability titled sec or notes element.",
+    "excluded": [
+      "Results",
+      "figure captions",
+      "tables",
+      "structural determination/analysis Methods",
+      "coordinates",
+      "native contact/orientation interpretations",
+      "DockQ/CAPRI labels"
+    ],
+    "abstractExtracted": false
+  },
+  "sections": [
+    {
+      "scope": "sample/construct preparation Methods",
+      "sectionId": "Sec14",
+      "title": "Discovery of the nanobodies",
+      "paragraphs": [
+        "One llama (Lama glama) was immunized with purified recombinant FZD3 in 10 mM HEPES pH 7.5, 150 mM NaCl, 1% glycerol, 0.03% DDM, 0.006% CHS. All selections were done in the same buffer. Panning was performed on 1 µg of FZD3 or 1 µg of FZD3 TMD coated on maxisorb wells or on neutravidin-captured biotinylated FZD3 (400 nM). FZD3 specific phages were recovered by incubating the coated wells with Trypsin (250 µg/ml) for 30 min. Trypsin was neutralized by adding AEBSF and phages were added to freshly grown TG1 cells. After 2 rounds of selection, individual colonies from all selection conditions were screened for the expression of FZD3 specific nanobodies in an ELISA. For the detection of the presence of specific Nanobodies, the “EPEA”-tag at the end of the Nanobody was used (LifeTechnologies #7103252100) in combination with Streptavidin Alkaline Phosphatase (Promega #V5591). Positives were detected by using 4-nitrophenyl phosphate disodium salt hexahydrate (2 mg/ml). The absorption at 405 nm was measured for 60 min after adding the enzyme substrate p-nitrophenyl phosphate. 171 clones were sequence analysed to reveal enriched families. Family 1 (Nb1, 3-6) was identified 74 times, family 2 (Nb8) 39 times and family 3 (Nb9) 5 times. Family 3 was identified as a binder to the TMD.",
+        "Nb8 for binding experiments was produced in mammalian cells. For purifying Twin-Strep tagged FZD3 CRD-Nb8 complexes, the conditioned media were passed through a Strep-Tactin XT Superflow 5 ml high capacity cartridge (IBA). Following a wash step with the washing buffer (25 mM Tris pH 8.0, 150 mM NaCl, 1 mM EDTA), the resin was then incubated overnight at 4˚C with 1 column volume of wash buffer containing Rhinovirus 3C protease (~1 mg/ml) at a dilution of 1:2500 (v/v) and endoglycosidase F1 (~1 mg/ml) at a dilution of 1:1000 (v/v) to liberate the FZD3 CRD-Nb complexes for elution and to deglycosylate the sample. Size exclusion chromatography (SEC) was then performed using a Superdex 75 10/300 GL column (GE Healthcare) equilibrated with 10 mM HEPES pH 7.5, 50 mM NaCl. The Nb9 megabody was produced in bacteria (WK6 strain) with the pMESP23E2 vector using a previously published procedure42. Briefly, the nanobody was PCR amplified with the primers: TU89 and EP230 (see Supplementary Data 1 for oligo sequence). The PCR product was digested with SapI and ligated with SapI/SalI double cut pMESP23E2 vector. Transformed WK6 bacteria were used for megabody production after a sequencing check. The resulting expressed protein contains (from the N-terminus) the first β-strand of the nanobody (AA 1-13, an universal sequence for all nanobodies embedded in the vector), YgjK (AA24-783, with a flexible linker in the middle), and ended with the nanobody sequence starting SLRLSC (i.e. omitting the first β-sheet), as previously described64."
+      ]
+    },
+    {
+      "scope": "sample/construct preparation Methods",
+      "sectionId": "Sec15",
+      "title": "Protein expression",
+      "paragraphs": [
+        "Wild type full length human FZD3 (UniProt ID Q9NPG1, amino acid residues 1-666) was used for functional assays. The C-terminally truncated (residues 26-517) FZD3 construct tagged at the C-terminus with a Rhinovirus 3C cleavage site, monoVenus fluorescent protein, and a Twin-Strep tag, was used for multidomain protein production. For FZD3 CRD production, the construct contained residues 26-138 and was tagged in the same manner. All constructs were cloned into a lentiviral vector, and lentiviral transduction of HEK293S GnTI-cells was performed as described previously65, or directly used for transient transfection without a lentiviral step. For producing biotinylated proteins for BLI experiments, a HEK293T cell line was created constitutively expressing ER-localised biotin ligase66. The transfected plasmids (for either FZD3/6 C-terminal truncated transmembrane or just CRDs) with C-terminal Avi3 and 6×His-tag67 were used for in vivo biotinylation, in which the culture media was supplemented with 100 µM biotin. For crystallization experiments, tagged FZD3 CRD and untagged Nb8 were co-expressed using lentiviral transduction in HEK293S GnTI- cells adapted to suspension culture. For cryo EM membrane protein production, HEK293F cells in suspension culture were used. For purifying FZD3, the lentivirally transduced HEK293F cells were grown in suspension. Harvested cell pellets were solubilised in a buffer comprising 100 mM Tris-HCl, pH 8.0, 150 mM NaCl, 1% LMNG (Lauryl Maltose Neopentyl Glycol, Anatrace), 0.05% cholesteryl hemisuccinate (CHS, Sigma), and protease inhibitor mixture (Roche), for 2 hours at 4 °C with rotation. After a centrifugation step (35,000 × g for 30 min), the supernatant was passed through a Strep-Tactin XT cartridge. After washing, the cartridge was incubated with a buffer exchange solution (10 mM HEPES pH 7.4, 150 mM NaCl, 0.5% GDN (glyco-diosgenin), 0.02% CHS and protease inhibitor mix) for 2 hours at 4 °C and finally eluted in the same buffer supplemented with a 1/10 volume of 10× elution buffer (IBA). The proteins were further purified by SEC using a Superose 6 Increase 10/300 column (GE Healthcare), equilibrated with 10 mM HEPES pH 7.4, 150 mM NaCl, 0.05% GDN, 0.002% CHS, and protease inhibitor mix."
+      ]
+    },
+    {
+      "scope": "deposition statement",
+      "sectionId": null,
+      "title": "Data availability",
+      "paragraphs": [
+        "The FZD3 CRD -Nb8 complex crystal data generated in this study have been deposited in the Protein Data Bank (PDB) under accession code 8Q7O. The cryo-EM maps for the FZD3-Nb9 complex have been deposited in the Electron Microscopy Data Bank (EMDB) under accession code EMD-18680 and the PDB under accession code and 8QW4. The source data underlying all Figures and Supplementary Figs. are provided as Source Data file. Source data are provided with this paper."
+      ]
+    }
+  ]
+}

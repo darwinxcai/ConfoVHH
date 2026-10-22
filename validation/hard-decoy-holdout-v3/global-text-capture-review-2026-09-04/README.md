@@ -1,0 +1,13 @@
+# Global text capture provenance review
+
+The collector preserved an initial and a corrected source epoch. All 164 repeated search responses and eight metadata responses (batches 1, 2, 3 and 5, each twice) completed under the original source. Three later initial attempts failed because primary-citation titles contained escaped newlines. The narrow adapter then permitted escaped HT/LF/CR only in citation-title values, with both text digests recorded. Sequences, identifiers and every other field keep the original strict control policy. Neither the frozen strict parser nor metadata normalizer changed.
+
+After all captures completed, a finalization-only correction raised the local aggregate-file read cap from 16 to 64 MiB to accommodate the 22.7 MB normalized entry inventory. Individual HTTP responses and parser limits remain capped at 16 MiB. Both capturing sources are retained, and the finalizer has its own source hash without reattributing captured responses. Finalization succeeded with network access disabled by a throwing fetch function.
+
+The original source, discovery plan, successful records and failed bytes remain retained. A separate continuation plan binds the corrected source. This note enumerates the successful and failed response epochs with capture-record and raw-response hashes. The execution chronology is an agent attestation. Hashes establish file identity; they do not independently establish execution history. Offline capture verification separately reconstructs all query sets, input bindings and normalized metadata.
+
+Scope was selected after preliminary count probes and before full repeated query-set capture. Metadata covers the three nonphrase queries, GPCR, Frizzled and Smoothened, minus seven earlier metadata inventories. Every new ID found only by the two quoted phrases remains explicitly uncollected and pending. This is not a preregistration before any search result was seen, a completed whole census or an eligibility decision.
+
+[RCSB's documented basic search](https://search.rcsb.org/#basic-search) uses unstructured text searches across searchable fields. Quoted input has defined query semantics, but a returned entry is not proof of biological specificity. The retained counts do not by themselves establish which tokenizer behavior or indexed field caused each match.
+
+Reconstruct this separate note with `python3 -B validation/hard-decoy-holdout-v3/global-text-capture-review-2026-09-04/build.py verify`. No source capture is modified. The protocol remains DRAFT and target freeze remains BLOCKED; the whole-census component upper bound remains unknown.

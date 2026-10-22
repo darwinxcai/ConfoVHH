@@ -1,0 +1,1107 @@
+{
+  "schemaVersion": "1.0.0",
+  "referenceNodeCount": 17,
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json": "d4cda5ecfa060dc2dc0d5147114946f8d059dce983d9fe4ac10a0c5509ad9778",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/manifest.json": "6b50d7e79f17c7570b227cbbb0739e15e263fc64bf3704b6f62929fbebb5ea62",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl": "ab4ebb4597948b973af33ae55763c0f8a65fcbfe66db3748d24478ec33a429df",
+    "validation/hard-decoy-holdout-v3/annotation-screen-2026-09-04/manifest.json": "691c881a872c441246c4fd65c002bacb3cef51332bf60e9610bb93eb1ec53bbb",
+    "validation/hard-decoy-holdout-v3/annotation-screen-2026-09-04/entity-screens.jsonl": "5f583d2f7c4f8f2990f0a1f4281b597365fe53f6f3d334740529469052f0c1d1",
+    "validation/hard-decoy-holdout-v3/annotation-screen-2026-09-04/sequence-screens.jsonl": "f7767c377cb6c9e74bdedc87c9133ec17adcf0bc3d552231148edd43cc8b6557",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/entities.jsonl": "8e2219f94d91bb3a8822e56a1e43f20cc652a86bc9458a9af76013f96e3c5be7",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/raw/new-entry-metadata-batch-003-repeat-1.json": "14295106d1106df8cd5e581146e7f937a17dbae22098de7dd866211e042efc2f",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/raw/new-entry-metadata-batch-003-repeat-2.json": "d41f3eae647dfb196d4c23fdb85c866a94e9995ba9eed6796a141d3bdcac536d",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/raw/new-entry-metadata-batch-005-repeat-1.json": "e8c6b93aa09737ca01618b8bb6861e7f38b79609988e5efbb723cd47c66d9a60",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/raw/new-entry-metadata-batch-005-repeat-2.json": "fc9162cc71a01784e40e365dc58f476dff7ff65e4f846d78c94cae891917aacc"
+  },
+  "reviews": [
+    {
+      "pdbId": "9FTE",
+      "candidateReceptorEntityId": "1",
+      "candidateReceptorUniprotAccessions": [
+        "B8JJE0"
+      ],
+      "candidateReceptorSequenceSha256": "ce080fdef9db00df7e4e58c13baee148c006f5edd21206c6a6c124a37b149a85",
+      "scope": "Exact deposited sequence hashes and exact accession labels only. No alignment, TM-family test, CDR similarity threshold, parent or publication graph certification is performed. Shared fusion-protein accessions do not establish receptor identity.",
+      "comparisons": [
+        {
+          "developmentPdbId": "3P0G",
+          "registryReceptor": "ADRB2",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Beta-2 adrenergic receptor, Lysozyme",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 501,
+            "sequenceSha256": "e9052379ba6dca45a6a4148a53cc1d6ad790f05e4b4f0a9237afe2fcc8638926",
+            "uniprotAccessions": [
+              "P00720",
+              "P07550"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/nature09648",
+            "pmid": "21228869",
+            "status": "PUBLISHED",
+            "title": "Structure of a nanobody-stabilized active state of the b2 adrenoceptor"
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "4MQS",
+          "registryReceptor": "CHRM2",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Muscarinic acetylcholine receptor M2",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 351,
+            "sequenceSha256": "9ae4a838d39c4bfa7d611b3a9bd803815638736b14b9e65fa7b70119ec05f981",
+            "uniprotAccessions": [
+              "P08172"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/nature12735",
+            "pmid": "24256733",
+            "status": "PUBLISHED",
+            "title": "Activation and allosteric modulation of a muscarinic acetylcholine receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "4XT1",
+          "registryReceptor": "US28",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "G-protein coupled receptor homolog US28",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 362,
+            "sequenceSha256": "4cc8f30af7e60f343a76e9e8e37baa8e0f5b6fde9026eb06daf39133c8407be0",
+            "uniprotAccessions": [
+              "P69332"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1126/science.aaa5026",
+            "pmid": "25745166",
+            "status": "PUBLISHED",
+            "title": "Structural biology. Structural basis for chemokine recognition and activation of a viral G protein-coupled receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "5C1M",
+          "registryReceptor": "OPRM1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Mu-type opioid receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 296,
+            "sequenceSha256": "f5a81a1e9e8d58b9e61e8d724d9ccd8b9d209c2302000131161cf6f0bca7ffe0",
+            "uniprotAccessions": [
+              "P42866"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/nature14886",
+            "pmid": "26245379",
+            "status": "PUBLISHED",
+            "title": "Structural insights into mu-opioid receptor activation."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "5JQH",
+          "registryReceptor": "ADRB2",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Endolysin,Beta-2 adrenergic receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 471,
+            "sequenceSha256": "a75c94a1f62e10ac15b6f98bc141b8e9ca968455db6003201060e0f940f3361c",
+            "uniprotAccessions": [
+              "P00720",
+              "P07550"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/nature18636",
+            "pmid": "27409812",
+            "status": "PUBLISHED",
+            "title": "Allosteric nanobodies reveal the dynamic range and diverse mechanisms of G-protein-coupled receptor activation."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6B73",
+          "registryReceptor": "OPRK1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Soluble cytochrome b562, kappa-type opioid receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 418,
+            "sequenceSha256": "cafffce701e5cdd762c5bb68e07900a99f1c4f7a6c3a8659d6272fe006bf4fb2",
+            "uniprotAccessions": [
+              "P0ABE7",
+              "P41145"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1016/j.cell.2017.12.011",
+            "pmid": "29307491",
+            "status": "PUBLISHED",
+            "title": "Structure of the Nanobody-Stabilized Active State of the Kappa Opioid Receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6DO1",
+          "registryReceptor": "AGTR1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Type-1 angiotensin II receptor,Soluble cytochrome b562 BRIL fusion protein",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 425,
+            "sequenceSha256": "d2718b6feb4272444110a34cd46426e0a780b20da886c4559bbe90baca621a22",
+            "uniprotAccessions": [
+              "P0ABE7",
+              "P30556"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1016/j.cell.2018.12.006",
+            "pmid": "30639100",
+            "status": "PUBLISHED",
+            "title": "Distinctive Activation Mechanism for Angiotensin Receptor Revealed by a Synthetic Nanobody."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6IBL",
+          "registryReceptor": "ADRB1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Thioredoxin 1,Beta-1 adrenergic receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "C"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 416,
+            "sequenceSha256": "2f2904b4cd7af00ae6d1f8fb62ffa9d8f0ed9c8a61c8dc3f4aaa85cbf185b2ef",
+            "uniprotAccessions": [
+              "P07700",
+              "P0AA25"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41586-020-2419-1",
+            "pmid": "32555462",
+            "status": "PUBLISHED",
+            "title": "Molecular basis of beta-arrestin coupling to formoterol-bound beta1-adrenoceptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6KNM",
+          "registryReceptor": "APLNR",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "B"
+            ],
+            "description": "Apelin receptor,Rubredoxin,Apelin receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "B",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 407,
+            "sequenceSha256": "aa9fa4385a05f99c7d7c156b7840775f33956fe1de31475a56228561e854ce9a",
+            "uniprotAccessions": [
+              "P00268",
+              "P35414"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1126/sciadv.aax7379",
+            "pmid": "31998837",
+            "status": "PUBLISHED",
+            "title": "Structure-guided discovery of a single-domain antibody agonist against human apelin receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6O3C",
+          "registryReceptor": "SMO",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Smoothened homolog",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 525,
+            "sequenceSha256": "306c8850a3df566c275c0e26de794f49f3ed4702de01f05f1d113ddb829555b1",
+            "uniprotAccessions": [
+              "P56726"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41586-019-1355-4",
+            "pmid": "31263273",
+            "status": "PUBLISHED",
+            "title": "Smoothened stimulation by membrane sterols drives Hedgehog pathway activity."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6RNK",
+          "registryReceptor": "SUCNR1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Succinate receptor 1",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 342,
+            "sequenceSha256": "32c6a7f3c3516116e0c6b5a1752cae5aad473f73cb2a32cc71a70257f56423bd",
+            "uniprotAccessions": [
+              "Q6IYF9"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41586-019-1663-8",
+            "pmid": "31645725",
+            "status": "PUBLISHED",
+            "title": "Structural basis of species-selective antagonist binding to the succinate receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6VI4",
+          "registryReceptor": "OPRK1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Kappa opioid receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "B",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 307,
+            "sequenceSha256": "ed300255dfd37c2e1250ca86a22e4bd96bd06686533669fe0f208b2379cd2ebd",
+            "uniprotAccessions": [
+              "P41145"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-020-14889-7",
+            "pmid": "32123179",
+            "status": "PUBLISHED",
+            "title": "Nanobody-enabled monitoring of kappa opioid receptor states."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "7L1V",
+          "registryReceptor": "HCRTR2",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "R"
+            ],
+            "description": "Hypocretin receptor type 2",
+            "entityId": "5",
+            "labelAsymIds": [
+              "E"
+            ],
+            "preferredAuthChain": "R",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 374,
+            "sequenceSha256": "54f209c63b9a9561e4606196683937273b2a8eee45451aed80bd35ba9b0d234f",
+            "uniprotAccessions": [
+              "O43614"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-021-21087-6",
+            "pmid": "33547286",
+            "status": "PUBLISHED",
+            "title": "Structures of active-state orexin receptor 2 rationalize peptide and small-molecule agonist recognition and receptor activation."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "7YM8",
+          "registryReceptor": "ADRA1A",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "alpha1A adrenergic receptor",
+            "entityId": "2",
+            "labelAsymIds": [
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 480,
+            "sequenceSha256": "310f22f3f0d78baf30ca91ffd5a7d85f914986f8562ec92688d0874eebb839f5",
+            "uniprotAccessions": [
+              "D9IEF7",
+              "P35348"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-023-39310-x",
+            "pmid": "37339967",
+            "status": "PUBLISHED",
+            "title": "Structural basis of alpha 1A -adrenergic receptor activation and recognition by an extracellular nanobody."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "8FCZ",
+          "registryReceptor": "RHO",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Rhodopsin",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 348,
+            "sequenceSha256": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+            "uniprotAccessions": [
+              "P02699"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-023-40911-9",
+            "pmid": "37626045",
+            "status": "PUBLISHED",
+            "title": "Structural basis for the allosteric modulation of rhodopsin by nanobody binding to its extracellular domain."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "8QOT",
+          "registryReceptor": "OPRM1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Mu-type opioid receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 482,
+            "sequenceSha256": "10d848c73673fc743810212300de2e538e29e27dac6028fe2d24a3b67bcec07d",
+            "uniprotAccessions": [
+              "P42866"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-024-52947-6",
+            "pmid": "39384768",
+            "status": "PUBLISHED",
+            "title": "Structural basis of mu-opioid receptor targeting by a nanobody antagonist."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "8QW4",
+          "registryReceptor": "FZD3",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Frizzled-3",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 525,
+            "sequenceSha256": "4184832d6cfc24d53eade11de42d5059d3439cbdfdd8781a1ee3cc7debf49fba",
+            "uniprotAccessions": [
+              "Q9NPG1"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-024-51451-1",
+            "pmid": "39174501",
+            "status": "PUBLISHED",
+            "title": "Structural insights into Frizzled3 through nanobody modulators."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        }
+      ],
+      "formalNoEdgeAuthority": false,
+      "formalLeakageGraphAuthority": false
+    },
+    {
+      "pdbId": "9NYX",
+      "candidateReceptorEntityId": "2",
+      "candidateReceptorUniprotAccessions": [
+        "P02699"
+      ],
+      "candidateReceptorSequenceSha256": "8eb65cd03a1dcc0264bdad7f455adae3449427e0ee1666e9639371e09d10d13e",
+      "scope": "Exact deposited sequence hashes and exact accession labels only. No alignment, TM-family test, CDR similarity threshold, parent or publication graph certification is performed. Shared fusion-protein accessions do not establish receptor identity.",
+      "comparisons": [
+        {
+          "developmentPdbId": "3P0G",
+          "registryReceptor": "ADRB2",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Beta-2 adrenergic receptor, Lysozyme",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 501,
+            "sequenceSha256": "e9052379ba6dca45a6a4148a53cc1d6ad790f05e4b4f0a9237afe2fcc8638926",
+            "uniprotAccessions": [
+              "P00720",
+              "P07550"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/nature09648",
+            "pmid": "21228869",
+            "status": "PUBLISHED",
+            "title": "Structure of a nanobody-stabilized active state of the b2 adrenoceptor"
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "4MQS",
+          "registryReceptor": "CHRM2",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Muscarinic acetylcholine receptor M2",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 351,
+            "sequenceSha256": "9ae4a838d39c4bfa7d611b3a9bd803815638736b14b9e65fa7b70119ec05f981",
+            "uniprotAccessions": [
+              "P08172"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/nature12735",
+            "pmid": "24256733",
+            "status": "PUBLISHED",
+            "title": "Activation and allosteric modulation of a muscarinic acetylcholine receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "4XT1",
+          "registryReceptor": "US28",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "G-protein coupled receptor homolog US28",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 362,
+            "sequenceSha256": "4cc8f30af7e60f343a76e9e8e37baa8e0f5b6fde9026eb06daf39133c8407be0",
+            "uniprotAccessions": [
+              "P69332"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1126/science.aaa5026",
+            "pmid": "25745166",
+            "status": "PUBLISHED",
+            "title": "Structural biology. Structural basis for chemokine recognition and activation of a viral G protein-coupled receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "5C1M",
+          "registryReceptor": "OPRM1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Mu-type opioid receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 296,
+            "sequenceSha256": "f5a81a1e9e8d58b9e61e8d724d9ccd8b9d209c2302000131161cf6f0bca7ffe0",
+            "uniprotAccessions": [
+              "P42866"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/nature14886",
+            "pmid": "26245379",
+            "status": "PUBLISHED",
+            "title": "Structural insights into mu-opioid receptor activation."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "5JQH",
+          "registryReceptor": "ADRB2",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Endolysin,Beta-2 adrenergic receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 471,
+            "sequenceSha256": "a75c94a1f62e10ac15b6f98bc141b8e9ca968455db6003201060e0f940f3361c",
+            "uniprotAccessions": [
+              "P00720",
+              "P07550"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/nature18636",
+            "pmid": "27409812",
+            "status": "PUBLISHED",
+            "title": "Allosteric nanobodies reveal the dynamic range and diverse mechanisms of G-protein-coupled receptor activation."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6B73",
+          "registryReceptor": "OPRK1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Soluble cytochrome b562, kappa-type opioid receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 418,
+            "sequenceSha256": "cafffce701e5cdd762c5bb68e07900a99f1c4f7a6c3a8659d6272fe006bf4fb2",
+            "uniprotAccessions": [
+              "P0ABE7",
+              "P41145"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1016/j.cell.2017.12.011",
+            "pmid": "29307491",
+            "status": "PUBLISHED",
+            "title": "Structure of the Nanobody-Stabilized Active State of the Kappa Opioid Receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6DO1",
+          "registryReceptor": "AGTR1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Type-1 angiotensin II receptor,Soluble cytochrome b562 BRIL fusion protein",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 425,
+            "sequenceSha256": "d2718b6feb4272444110a34cd46426e0a780b20da886c4559bbe90baca621a22",
+            "uniprotAccessions": [
+              "P0ABE7",
+              "P30556"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1016/j.cell.2018.12.006",
+            "pmid": "30639100",
+            "status": "PUBLISHED",
+            "title": "Distinctive Activation Mechanism for Angiotensin Receptor Revealed by a Synthetic Nanobody."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6IBL",
+          "registryReceptor": "ADRB1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Thioredoxin 1,Beta-1 adrenergic receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "C"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 416,
+            "sequenceSha256": "2f2904b4cd7af00ae6d1f8fb62ffa9d8f0ed9c8a61c8dc3f4aaa85cbf185b2ef",
+            "uniprotAccessions": [
+              "P07700",
+              "P0AA25"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41586-020-2419-1",
+            "pmid": "32555462",
+            "status": "PUBLISHED",
+            "title": "Molecular basis of beta-arrestin coupling to formoterol-bound beta1-adrenoceptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6KNM",
+          "registryReceptor": "APLNR",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "B"
+            ],
+            "description": "Apelin receptor,Rubredoxin,Apelin receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "B",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 407,
+            "sequenceSha256": "aa9fa4385a05f99c7d7c156b7840775f33956fe1de31475a56228561e854ce9a",
+            "uniprotAccessions": [
+              "P00268",
+              "P35414"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1126/sciadv.aax7379",
+            "pmid": "31998837",
+            "status": "PUBLISHED",
+            "title": "Structure-guided discovery of a single-domain antibody agonist against human apelin receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6O3C",
+          "registryReceptor": "SMO",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Smoothened homolog",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 525,
+            "sequenceSha256": "306c8850a3df566c275c0e26de794f49f3ed4702de01f05f1d113ddb829555b1",
+            "uniprotAccessions": [
+              "P56726"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41586-019-1355-4",
+            "pmid": "31263273",
+            "status": "PUBLISHED",
+            "title": "Smoothened stimulation by membrane sterols drives Hedgehog pathway activity."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6RNK",
+          "registryReceptor": "SUCNR1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Succinate receptor 1",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 342,
+            "sequenceSha256": "32c6a7f3c3516116e0c6b5a1752cae5aad473f73cb2a32cc71a70257f56423bd",
+            "uniprotAccessions": [
+              "Q6IYF9"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41586-019-1663-8",
+            "pmid": "31645725",
+            "status": "PUBLISHED",
+            "title": "Structural basis of species-selective antagonist binding to the succinate receptor."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "6VI4",
+          "registryReceptor": "OPRK1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Kappa opioid receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "B",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 307,
+            "sequenceSha256": "ed300255dfd37c2e1250ca86a22e4bd96bd06686533669fe0f208b2379cd2ebd",
+            "uniprotAccessions": [
+              "P41145"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-020-14889-7",
+            "pmid": "32123179",
+            "status": "PUBLISHED",
+            "title": "Nanobody-enabled monitoring of kappa opioid receptor states."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "7L1V",
+          "registryReceptor": "HCRTR2",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "R"
+            ],
+            "description": "Hypocretin receptor type 2",
+            "entityId": "5",
+            "labelAsymIds": [
+              "E"
+            ],
+            "preferredAuthChain": "R",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 374,
+            "sequenceSha256": "54f209c63b9a9561e4606196683937273b2a8eee45451aed80bd35ba9b0d234f",
+            "uniprotAccessions": [
+              "O43614"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-021-21087-6",
+            "pmid": "33547286",
+            "status": "PUBLISHED",
+            "title": "Structures of active-state orexin receptor 2 rationalize peptide and small-molecule agonist recognition and receptor activation."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "7YM8",
+          "registryReceptor": "ADRA1A",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "alpha1A adrenergic receptor",
+            "entityId": "2",
+            "labelAsymIds": [
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 480,
+            "sequenceSha256": "310f22f3f0d78baf30ca91ffd5a7d85f914986f8562ec92688d0874eebb839f5",
+            "uniprotAccessions": [
+              "D9IEF7",
+              "P35348"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-023-39310-x",
+            "pmid": "37339967",
+            "status": "PUBLISHED",
+            "title": "Structural basis of alpha 1A -adrenergic receptor activation and recognition by an extracellular nanobody."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "8FCZ",
+          "registryReceptor": "RHO",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A",
+              "B"
+            ],
+            "description": "Rhodopsin",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A",
+              "B"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 348,
+            "sequenceSha256": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+            "uniprotAccessions": [
+              "P02699"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-023-40911-9",
+            "pmid": "37626045",
+            "status": "PUBLISHED",
+            "title": "Structural basis for the allosteric modulation of rhodopsin by nanobody binding to its extracellular domain."
+          },
+          "exactSharedUniprotAccessions": [
+            "P02699"
+          ],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "8QOT",
+          "registryReceptor": "OPRM1",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Mu-type opioid receptor",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 482,
+            "sequenceSha256": "10d848c73673fc743810212300de2e538e29e27dac6028fe2d24a3b67bcec07d",
+            "uniprotAccessions": [
+              "P42866"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-024-52947-6",
+            "pmid": "39384768",
+            "status": "PUBLISHED",
+            "title": "Structural basis of mu-opioid receptor targeting by a nanobody antagonist."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        },
+        {
+          "developmentPdbId": "8QW4",
+          "registryReceptor": "FZD3",
+          "developmentReceptor": {
+            "authAsymIds": [
+              "A"
+            ],
+            "description": "Frizzled-3",
+            "entityId": "1",
+            "labelAsymIds": [
+              "A"
+            ],
+            "preferredAuthChain": "A",
+            "selectionStatus": "UNIQUE_PREFERRED_AUTH_CHAIN_ENTITY",
+            "sequenceLength": 525,
+            "sequenceSha256": "4184832d6cfc24d53eade11de42d5059d3439cbdfdd8781a1ee3cc7debf49fba",
+            "uniprotAccessions": [
+              "Q9NPG1"
+            ]
+          },
+          "developmentPublication": {
+            "doi": "10.1038/s41467-024-51451-1",
+            "pmid": "39174501",
+            "status": "PUBLISHED",
+            "title": "Structural insights into Frizzled3 through nanobody modulators."
+          },
+          "exactSharedUniprotAccessions": [],
+          "exactReceptorFullSequenceMatch": false,
+          "candidateToDevelopmentEntityExactSequenceMatches": []
+        }
+      ],
+      "formalNoEdgeAuthority": false,
+      "formalLeakageGraphAuthority": false
+    }
+  ]
+}

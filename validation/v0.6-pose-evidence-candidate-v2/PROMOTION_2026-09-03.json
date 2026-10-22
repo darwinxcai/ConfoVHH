@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-v0.6-pose-evidence-candidate-v2",
+  "recordDateUtc": "2026-09-03",
+  "status": "CANDIDATE_PROMOTED_TO_PRODUCTION",
+  "recordKind": "additive-promotion-record",
+  "note": [
+    "This record is additive. design-record.json, development-replay.json, public-panel.json, checksums.sha256 and public-panel.sha256 are unmodified, and lib/pose-evidence-v06.ts remains byte-identical to the file the development replay executed, so that study stays replayable against the code production now runs.",
+    "lib/pose-evidence-v06.ts therefore still declares POSE_EVIDENCE_V06_POLICY.status as 'development-candidate-not-integrated'. That object is embedded verbatim in the frozen development-replay.json, so editing it would invalidate a checksummed artifact to change a label. The production status of the policy is declared in lib/pose-ranking.ts instead, and tests/pose-ranking.test.mjs asserts that the two policy objects agree on every field that changes behaviour."
+  ],
+  "promotion": {
+    "component": "Pose ranking",
+    "from": "No ranking. Every pose was measured and then presented in upload order; the decision shortlist carried an evidence level per pose but no ordering.",
+    "to": "lib/pose-ranking.ts, a production adapter over the frozen candidate implementation, ordering poses by (shipped evidence tier, then half-delta-SASA interface burial).",
+    "candidateImplementationModified": false,
+    "candidateImplementationSha256": "83bbc4c48c22eadfdf2a8a288a9a46e05315feccba80279915e74b5c469742bc",
+    "productionIntegrated": true,
+    "pinnedScientificCoreFilesChanged": [],
+    "implementationAttestationMoved": false,
+    "attestationNote": "No file in either v0.6 implementation attestation changed. Ranking is additive: it consumes audit outputs that already existed and modifies no measurement. validation/v0.6-engine-implementation-snapshot-v1 and validation/v0.5-engine-implementation-snapshot-v1 are both untouched and both still verify.",
+    "filesAdded": ["lib/pose-ranking.ts", "tests/pose-ranking.test.mjs"],
+    "filesChanged": ["lib/candidate-shortlist.ts", "lib/prediction-run-jobs.ts"]
+  },
+  "primaryFinding": {
+    "code": "MEASURED_EVIDENCE_WAS_NOT_USED_TO_ORDER_POSES",
+    "description": "The product computed interface burial, clash burden and an evidence verdict for every pose, and then discarded all of it when presenting them. A researcher opening a shortlist of 60 poses had no ordering to work from, which is the one question a coordinate ensemble is uploaded to answer.",
+    "userVisible": true,
+    "correctedTo": "Decision shortlist rows are emitted in rank order; the pose-summary evidence table carries rank and burial as sortable columns without reordering."
+  },
+  "rankKey": {
+    "primary": "shipped v0.5 evidence tier, carried unchanged",
+    "secondary": "half-delta-SASA interface burial, carried unchanged",
+    "tieBreak": "pose identifier, so the order is total and reproducible",
+    "scope": "within-target-only",
+    "fittedCoefficients": 0,
+    "newThresholdsIntroduced": 0,
+    "reordersAcrossShippedTiers": false,
+    "safetyProperty": "Burial can only break ties inside a shipped tier. It can never promote a pose past the tier the audit assigned it, which is what keeps interpenetrating poses out of rank 1 — burial keeps rising as chains pass through one another, so on its own it ranks an impossible pose first."
+  },
+  "measuredDevelopmentPerformance": {
+    "artifact": "validation/v0.6-pose-evidence-candidate-v2/development-replay.json",
+    "dataRole": "development",
+    "sourceArtifact": "validation/dockq-development-pilot-v1",
+    "targets": 5,
+    "poses": 360,
+    "dockqPositiveCutoff": 0.23,
+    "arms": {
+      "shippedOrdinalBeforePromotion": {
+        "auroc": 0.574180187644,
+        "averagePrecision": 0.687853610626,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank5": 0.94,
+        "meanTopScoreGroupSize": 2.4
+      },
+      "promotedRankKey": {
+        "auroc": 0.77239697102,
+        "averagePrecision": 0.835253100377,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank5": 1,
+        "meanTopScoreGroupSize": 1
+      },
+      "burialAloneRejectedCandidate1": {
+        "auroc": 0.754144372319,
+        "averagePrecision": 0.772742639817,
+        "expectedPrecisionAtRank1": 0.2,
+        "expectedRank1Dockq": 0.13320054675,
+        "note": "Higher AUROC than the shipped ordinal and far worse where it matters. Recorded here because the AUROC comparison alone would have selected it."
+      },
+      "randomAllTiedControl": {
+        "auroc": 0.5,
+        "averagePrecision": 0.636111111111,
+        "expectedPrecisionAtRank1": 0.636111111111,
+        "note": "Expected precision under uniform random tie-breaking, which is the prevalence. Burial alone ranks below this control at rank 1."
+      }
+    },
+    "developmentSetCaveat": "These are development numbers on the set the policy was selected against. The choice between candidate.1 and candidate.2 was made by looking at these results, which is what a development set is for and which is recorded in design-record.json. They are not an estimate of prospective performance."
+  },
+  "structuralBehaviourOnPublishedCoordinates": {
+    "artifact": "validation/v0.6-pose-evidence-candidate-v2/public-panel.json",
+    "structures": 17,
+    "tierChangesAgainstShippedOrdinal": 0,
+    "structuresWithAuditDrift": 0,
+    "interpenetrationCautions": 0,
+    "nativeMaximumOverlapAngstrom": { "minimum": 0.049964984421, "median": 0.462213158541, "maximum": 0.892336114089 },
+    "cautionBoundaryAngstrom": 1.5,
+    "summary": "On published crystal structures the interpenetration caution fires 0 times in 17, with the largest native overlap 0.89 Å against a 1.5 Å boundary. The same caution fires on 290 of 360 development poses. The boundary discriminates rather than always firing."
+  },
+  "regressionsAdded": [
+    "the shipped policy carries every behavioural field from the studied candidate",
+    "burial never promotes a pose past the shipped tier the audit assigned it",
+    "burial orders poses inside a tier and a missing measurement sinks without leaving the tier",
+    "scoring fails closed on incomplete or unrecognised audit input",
+    "cautions report interpenetration at the shipped overlap boundary and mark what moves the rank",
+    "the shipped module reproduces the frozen development-pilot accounting",
+    "the shipped rank key puts an acceptable pose first in every development target",
+    "the decision shortlist is emitted in rank order and binds the policy that produced it"
+  ],
+  "reproductionGuarantee": "tests/pose-ranking.test.mjs replays the 360-pose development ledger through the production entry point and asserts that the tier counts, caution counts and assessability counts equal the numbers development-replay.json recorded. If the shipped module ever stops scoring the way the study measured, that test fails.",
+  "integrationSurfaces": {
+    "decisionShortlist": {
+      "file": "lib/candidate-shortlist.ts",
+      "schemaVersion": "1.2.0",
+      "supersedes": "1.1.0",
+      "change": "Rows are emitted in rank order and carry evidenceRank, evidenceTier, interfaceBurialAngstrom2, rankingAssessability and rankingCautions. source.ranking binds the policy version, both rank keys, the scope and the claim boundary. The CSV gains ranking_policy_version, evidence_rank, evidence_tier, interface_burial_angstrom2, ranking_assessability and ranking_cautions.",
+      "evidenceBindingsUnchanged": true
+    },
+    "poseSummaryCsv": {
+      "file": "lib/prediction-run-jobs.ts",
+      "change": "Gains ranking_policy_version, evidence_rank and interface_burial_angstrom2 as columns. Row order is deliberately left as audited so this stays a stable evidence table.",
+      "rowOrderChanged": false
+    }
+  },
+  "accessBoundary": {
+    "usesNativeHoldoutCoordinates": false,
+    "usesNativeHoldoutRelativePoses": false,
+    "usesNativeHoldoutEpitopes": false,
+    "usesDockqLabelsForTuning": false,
+    "hardDecoyProtocolModified": false,
+    "hardDecoyTargetFreezePermitted": false,
+    "hardDecoyExecutionAuthorized": false
+  },
+  "claimFlags": {
+    "improvesBindingPrediction": false,
+    "improvesAffinityPrediction": false,
+    "improvesPoseCorrectnessPrediction": false,
+    "improvesCandidateRankingOnDevelopmentData": true,
+    "establishesGeneralization": false,
+    "constitutesIndependentHoldoutEvidence": false,
+    "establishesExperimentalBinding": false
+  },
+  "prospectiveEvaluationStatus": {
+    "protocol": "validation/hard-decoy-holdout-v3",
+    "executed": false,
+    "executionAuthorized": false,
+    "targetFreezePermitted": false,
+    "note": "The holdout is single-use, and its protocol lock binds the scientific engine version it will be run against. Freezing the ranker before that protocol is unsealed is a precondition, not an afterthought: running it against a ranker that is about to change would spend the one available shot on a version that no longer ships. This promotion is that freeze for the ranking component."
+  },
+  "interpretationBoundary": "This promotion makes the product order poses by evidence it already measured, under a policy with no fitted coefficients and no new thresholds. Rank position is an ordering of uploaded coordinates, not a probability, a score, or a statement that the top-ranked pose is correct. The reported ordering performance is development evidence on the five-target pilot the policy was selected against. It establishes nothing about binding, affinity, specificity, state selectivity, or generalization to unseen targets."
+}

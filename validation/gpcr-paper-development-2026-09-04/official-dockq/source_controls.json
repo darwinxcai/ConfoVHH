@@ -1,0 +1,193 @@
+{
+  "controls": [
+    {
+      "binder_translated_100A": {
+        "DockQ": 0.002910911590801852,
+        "F1": 0.0,
+        "LRMSD": 100.00000000000001,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "clashes": 0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 37.95344160922043,
+        "interface": "AB",
+        "model_total": 0,
+        "nat_correct": 0,
+        "nat_total": 51,
+        "nonnat_count": 0
+      },
+      "native_sha256": "25cfe2f425f962fe27c82cdc4f107598a2563d8a6c968e669ffe4e1d5611ae63",
+      "native_to_model": {
+        "A": "A",
+        "B": "B"
+      },
+      "negative_coordinate_sha256": "9bf68ff1630ce8b6c8a9205305b7e8fcb4f519131f4d809ab737cc35962f3f15",
+      "negative_serialization": "Temporary PDB from official protein parser; binder +100 Angstrom x translation; PDB coordinates rounded to 0.001 Angstrom. Only this synthetic sanity control is serialized; genuine predictions and natives remain original CIF bytes.",
+      "ok": true,
+      "reference": "3P0G",
+      "self": {
+        "DockQ": 0.99999999999936,
+        "F1": 1.0,
+        "LRMSD": 3.558463079540601e-06,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "clashes": 0,
+        "fnat": 1.0,
+        "fnonnat": 0.0,
+        "iRMSD": 1.981319549128338e-06,
+        "interface": "AB",
+        "model_total": 51,
+        "nat_correct": 51,
+        "nat_total": 51,
+        "nonnat_count": 0
+      }
+    },
+    {
+      "binder_translated_100A": {
+        "DockQ": 0.002767947810950487,
+        "F1": 0.0,
+        "LRMSD": 100.00000000000001,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "clashes": 0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 44.58386735502193,
+        "interface": "AB",
+        "model_total": 0,
+        "nat_correct": 0,
+        "nat_total": 46,
+        "nonnat_count": 0
+      },
+      "native_sha256": "ffa02f41badf80f86e1e961933835269ac1d88989faf8922105ddf8ee649fa6d",
+      "native_to_model": {
+        "A": "A",
+        "B": "B"
+      },
+      "negative_coordinate_sha256": "d9abed132214d92ba33da8c9aa7ee21d16d37fffc8723ace4ef2f4d9628058ca",
+      "negative_serialization": "Temporary PDB from official protein parser; binder +100 Angstrom x translation; PDB coordinates rounded to 0.001 Angstrom. Only this synthetic sanity control is serialized; genuine predictions and natives remain original CIF bytes.",
+      "ok": true,
+      "reference": "4MQS",
+      "self": {
+        "DockQ": 0.9999999999993271,
+        "F1": 1.0,
+        "LRMSD": 7.201542236041694e-07,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "clashes": 0,
+        "fnat": 1.0,
+        "fnonnat": 0.0,
+        "iRMSD": 2.1274418212212295e-06,
+        "interface": "AB",
+        "model_total": 46,
+        "nat_correct": 46,
+        "nat_total": 46,
+        "nonnat_count": 0
+      }
+    },
+    {
+      "binder_translated_100A": {
+        "DockQ": 0.002743215824192276,
+        "F1": 0.0,
+        "LRMSD": 100.00000000000001,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "clashes": 0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 46.12457653302494,
+        "interface": "AB",
+        "model_total": 0,
+        "nat_correct": 0,
+        "nat_total": 76,
+        "nonnat_count": 0
+      },
+      "native_sha256": "e561b0670e874a32fc07620e6fb44444d7b0102aff84b9826882eaa69c787096",
+      "native_to_model": {
+        "A": "A",
+        "B": "B"
+      },
+      "negative_coordinate_sha256": "d7b55006c416b80d2b76aec75c129c70042ebdd48c24a33292c2a95d207bc239",
+      "negative_serialization": "Temporary PDB from official protein parser; binder +100 Angstrom x translation; PDB coordinates rounded to 0.001 Angstrom. Only this synthetic sanity control is serialized; genuine predictions and natives remain original CIF bytes.",
+      "ok": true,
+      "reference": "5C1M",
+      "self": {
+        "DockQ": 0.9999999999998345,
+        "F1": 1.0,
+        "LRMSD": 7.443390652042814e-07,
+        "chain_map": {
+          "A": "A",
+          "B": "B"
+        },
+        "clashes": 0,
+        "fnat": 1.0,
+        "fnonnat": 0.0,
+        "iRMSD": 1.0483092025464552e-06,
+        "interface": "AB",
+        "model_total": 76,
+        "nat_correct": 76,
+        "nat_total": 76,
+        "nonnat_count": 0
+      }
+    },
+    {
+      "binder_translated_100A": {
+        "DockQ": 0.002799492034149403,
+        "F1": 0.0,
+        "LRMSD": 100.00000000000009,
+        "chain_map": {
+          "A": "A",
+          "C": "C"
+        },
+        "clashes": 0,
+        "fnat": 0.0,
+        "fnonnat": 0.0,
+        "iRMSD": 42.825594795662475,
+        "interface": "AC",
+        "model_total": 0,
+        "nat_correct": 0,
+        "nat_total": 73,
+        "nonnat_count": 0
+      },
+      "native_sha256": "4e3c8351601f421c9a073046438f81ceaedd1df6de4ab409eca79e40fdd32fe7",
+      "native_to_model": {
+        "A": "A",
+        "C": "C"
+      },
+      "negative_coordinate_sha256": "029c16649179de412f62eed66c65b1f25dfddb026059362e5353417ea3170cc9",
+      "negative_serialization": "Temporary PDB from official protein parser; binder +100 Angstrom x translation; PDB coordinates rounded to 0.001 Angstrom. Only this synthetic sanity control is serialized; genuine predictions and natives remain original CIF bytes.",
+      "ok": true,
+      "reference": "5JQH",
+      "self": {
+        "DockQ": 0.9999999999988668,
+        "F1": 1.0,
+        "LRMSD": 3.696376381065622e-06,
+        "chain_map": {
+          "A": "A",
+          "C": "C"
+        },
+        "clashes": 0,
+        "fnat": 1.0,
+        "fnonnat": 0.0,
+        "iRMSD": 2.6875980754255805e-06,
+        "interface": "AC",
+        "model_total": 73,
+        "nat_correct": 73,
+        "nat_total": 73,
+        "nonnat_count": 0
+      }
+    }
+  ],
+  "limitation": "Sanity checks of sign, scale and mapping; do not independently validate metric definition or biology."
+}

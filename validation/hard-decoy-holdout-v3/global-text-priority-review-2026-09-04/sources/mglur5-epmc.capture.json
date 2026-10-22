@@ -1,0 +1,24 @@
+{
+  "id": "mglur5-epmc",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41586-019-0881-4&format=json&resultType=core",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs41586-019-0881-4&format=json&resultType=core",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:48:14.113190+00:00",
+  "finishedAt": "2026-09-04T23:48:22.730336+00:00",
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Strict-Transport-Security": "max-age=0",
+    "Date": "Fri, 04 Sep 2026 23:48:22 GMT",
+    "Access-Control-Max-Age": "3600",
+    "Transfer-Encoding": "chunked",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=615770175B169AB8B49D63CC6BA6CD6B; Path=/europepmc/webservices/; HttpOnly",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+  },
+  "file": "sources/mglur5-epmc.body",
+  "bytes": 12320,
+  "sha256": "8ad36af3dcc32b031f7d75231150b3f088313eaa4230407a92ede063962c919b"
+}

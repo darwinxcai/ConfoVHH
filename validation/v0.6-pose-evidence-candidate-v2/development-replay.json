@@ -1,0 +1,731 @@
+{
+  "schemaVersion": "1.1.0",
+  "candidateId": "confovhh-v0.6-pose-evidence-candidate-v2",
+  "supersedes": "confovhh-v0.6-pose-evidence-candidate-v1",
+  "recordedDate": "2026-09-02",
+  "status": "DEVELOPMENT_REPLAY_ONLY_NOT_INTEGRATED",
+  "dataRole": "development",
+  "sourceArtifact": "validation/dockq-development-pilot-v1",
+  "dockqPositiveCutoff": 0.23,
+  "metricDefinitions": "Tie-aware grouped average precision and tie-aware AUROC, transcribed from scripts/run-dockq-development-pilot.mjs; target-macro aggregation. Rank-k correctness uses the same total order as rankPosesWithinTargetV06, with ties broken on pose identifier rather than credited to their best member.",
+  "candidatePolicy": {
+    "version": "0.6.0-candidate.2",
+    "status": "development-candidate-not-integrated",
+    "supersedes": "0.6.0-candidate.1",
+    "primaryRankingKey": "shipped v0.5 evidence tier, carried unchanged",
+    "secondaryRankingKey": "half-delta-SASA interface burial, carried unchanged",
+    "rankingScope": "within-target-only",
+    "fittedCoefficients": 0,
+    "newThresholdsIntroduced": 0,
+    "reordersAcrossShippedTiers": false,
+    "clashBurdenGatesRanking": true,
+    "minimumContactPairs": 1,
+    "minimumInterfaceResiduesPerChain": 3
+  },
+  "poseAccounting": {
+    "retainedPoses": 360,
+    "targets": 5,
+    "candidateAssessable": 339,
+    "candidateNotAssessable": 21,
+    "shippedTierCounts": {
+      "mixed": 38,
+      "supported": 4,
+      "limited": 309,
+      "not-assessable": 9
+    },
+    "cautionCounts": {
+      "interpenetration-suspected": 290,
+      "sparse-interface": 10
+    }
+  },
+  "macro": {
+    "confovhh_evidence_v0_4": {
+      "averagePrecision": 0.687853610626,
+      "averagePrecisionLift": 1.081281677441,
+      "auroc": 0.574180187644,
+      "eligibleTargets": 5,
+      "expectedPrecisionAtRank1": 1,
+      "expectedPrecisionAtRank3": 0.95,
+      "expectedPrecisionAtRank5": 0.94,
+      "expectedPrecisionAtRank10": 0.875930555556,
+      "meanTopScoreGroupSize": 2.4,
+      "expectedRank1Dockq": 0.928204448669
+    },
+    "pose_evidence_v0_6": {
+      "averagePrecision": 0.835253100377,
+      "averagePrecisionLift": 1.313145226828,
+      "auroc": 0.77239697102,
+      "eligibleTargets": 5,
+      "expectedPrecisionAtRank1": 1,
+      "expectedPrecisionAtRank3": 1,
+      "expectedPrecisionAtRank5": 1,
+      "expectedPrecisionAtRank10": 0.86,
+      "meanTopScoreGroupSize": 1,
+      "expectedRank1Dockq": 0.963385658839
+    },
+    "pose_evidence_v0_6_candidate_1": {
+      "averagePrecision": 0.772742639817,
+      "averagePrecisionLift": 1.214965805109,
+      "auroc": 0.754144372319,
+      "eligibleTargets": 5,
+      "expectedPrecisionAtRank1": 0.2,
+      "expectedPrecisionAtRank3": 0.6,
+      "expectedPrecisionAtRank5": 0.6,
+      "expectedPrecisionAtRank10": 0.64,
+      "meanTopScoreGroupSize": 1,
+      "expectedRank1Dockq": 0.13320054675
+    },
+    "delta_sasa": {
+      "averagePrecision": 0.772742639817,
+      "averagePrecisionLift": 1.214965805109,
+      "auroc": 0.754144372319,
+      "eligibleTargets": 5,
+      "expectedPrecisionAtRank1": 0.2,
+      "expectedPrecisionAtRank3": 0.6,
+      "expectedPrecisionAtRank5": 0.6,
+      "expectedPrecisionAtRank10": 0.64,
+      "meanTopScoreGroupSize": 1,
+      "expectedRank1Dockq": 0.13320054675
+    },
+    "random_all_tied": {
+      "averagePrecision": 0.636111111111,
+      "averagePrecisionLift": 1,
+      "auroc": 0.5,
+      "eligibleTargets": 5,
+      "expectedPrecisionAtRank1": 0.636111111111,
+      "expectedPrecisionAtRank3": 0.636111111111,
+      "expectedPrecisionAtRank5": 0.636111111111,
+      "expectedPrecisionAtRank10": 0.636111111111,
+      "meanTopScoreGroupSize": 72,
+      "expectedRank1Dockq": 0.40845092101
+    }
+  },
+  "perTarget": {
+    "confovhh_evidence_v0_4": {
+      "3P0G-A-B": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.6938405797101449,
+        "averagePrecisionLift": 1.0860113421550095,
+        "auroc": 0.5760869565217391,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 1,
+        "expectedPrecisionAtRank5": 1,
+        "expectedPrecisionAtRank10": 0.8800000000000001,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.952733298573713
+      },
+      "4XT1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.6847826086956521,
+        "averagePrecisionLift": 1.0718336483931947,
+        "auroc": 0.5681438127090301,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 0.9166666666666666,
+        "expectedPrecisionAtRank5": 0.9,
+        "expectedPrecisionAtRank10": 0.8603174603174603,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.9615430629357364
+      },
+      "6DO1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 47,
+        "prevalence": 0.6527777777777778,
+        "averagePrecision": 0.7118794326241135,
+        "averagePrecisionLift": 1.0905387052965143,
+        "auroc": 0.5851063829787234,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 1,
+        "expectedPrecisionAtRank5": 1,
+        "expectedPrecisionAtRank10": 0.921875,
+        "topScoreGroupSize": 8,
+        "expectedRank1Dockq": 0.8042930454225634
+      },
+      "6O3C-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.6743827160493827,
+        "averagePrecisionLift": 1.0790123456790124,
+        "auroc": 0.5707818930041152,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 0.9166666666666666,
+        "expectedPrecisionAtRank5": 0.9,
+        "expectedPrecisionAtRank10": 0.8587301587301587,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.9393074627991749
+      },
+      "8QW4-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.6743827160493827,
+        "averagePrecisionLift": 1.0790123456790124,
+        "auroc": 0.5707818930041152,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 0.9166666666666666,
+        "expectedPrecisionAtRank5": 0.9,
+        "expectedPrecisionAtRank10": 0.8587301587301587,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.9831453736158485
+      }
+    },
+    "pose_evidence_v0_6": {
+      "3P0G-A-B": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.8432092969440246,
+        "averagePrecisionLift": 1.3198058560862995,
+        "auroc": 0.7867892976588629,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 1,
+        "expectedPrecisionAtRank5": 1,
+        "expectedPrecisionAtRank10": 0.9,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.952733298573713
+      },
+      "4XT1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.8868213342130701,
+        "averagePrecisionLift": 1.3880681752900228,
+        "auroc": 0.8269230769230769,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 1,
+        "expectedPrecisionAtRank5": 1,
+        "expectedPrecisionAtRank10": 0.9,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.9615430629357364
+      },
+      "6DO1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 47,
+        "prevalence": 0.6527777777777778,
+        "averagePrecision": 0.8243167027068712,
+        "averagePrecisionLift": 1.2627830339339303,
+        "auroc": 0.7412765957446809,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 1,
+        "expectedPrecisionAtRank5": 1,
+        "expectedPrecisionAtRank10": 0.9,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.9801990962712989
+      },
+      "6O3C-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.7959844502584412,
+        "averagePrecisionLift": 1.273575120413506,
+        "auroc": 0.7292181069958847,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 1,
+        "expectedPrecisionAtRank5": 1,
+        "expectedPrecisionAtRank10": 0.8,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.9393074627991749
+      },
+      "8QW4-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.8259337177604228,
+        "averagePrecisionLift": 1.3214939484166766,
+        "auroc": 0.7777777777777778,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 1,
+        "expectedPrecisionAtRank5": 1,
+        "expectedPrecisionAtRank10": 0.8,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.9831453736158485
+      }
+    },
+    "pose_evidence_v0_6_candidate_1": {
+      "3P0G-A-B": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.767460515667918,
+        "averagePrecisionLift": 1.2012425462628282,
+        "auroc": 0.754180602006689,
+        "expectedPrecisionAtRank1": 0,
+        "expectedPrecisionAtRank3": 0.6666666666666666,
+        "expectedPrecisionAtRank5": 0.8,
+        "expectedPrecisionAtRank10": 0.6,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.10580816600849302
+      },
+      "4XT1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.9076415321547249,
+        "averagePrecisionLift": 1.4206563111986998,
+        "auroc": 0.8528428093645485,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 1,
+        "expectedPrecisionAtRank5": 1,
+        "expectedPrecisionAtRank10": 0.9,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.2309665430810611
+      },
+      "6DO1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 47,
+        "prevalence": 0.6527777777777778,
+        "averagePrecision": 0.7174502109944491,
+        "averagePrecisionLift": 1.0990726636510708,
+        "auroc": 0.6723404255319149,
+        "expectedPrecisionAtRank1": 0,
+        "expectedPrecisionAtRank3": 0.6666666666666666,
+        "expectedPrecisionAtRank5": 0.4,
+        "expectedPrecisionAtRank10": 0.6,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.11764587369592683
+      },
+      "6O3C-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.7118690318889586,
+        "averagePrecisionLift": 1.1389904510223336,
+        "auroc": 0.7160493827160493,
+        "expectedPrecisionAtRank1": 0,
+        "expectedPrecisionAtRank3": 0.3333333333333333,
+        "expectedPrecisionAtRank5": 0.4,
+        "expectedPrecisionAtRank10": 0.5,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.0969381463742749
+      },
+      "8QW4-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.7592919083802963,
+        "averagePrecisionLift": 1.214867053408474,
+        "auroc": 0.7753086419753087,
+        "expectedPrecisionAtRank1": 0,
+        "expectedPrecisionAtRank3": 0.3333333333333333,
+        "expectedPrecisionAtRank5": 0.4,
+        "expectedPrecisionAtRank10": 0.6,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.11464400458969766
+      }
+    },
+    "delta_sasa": {
+      "3P0G-A-B": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.767460515667918,
+        "averagePrecisionLift": 1.2012425462628282,
+        "auroc": 0.754180602006689,
+        "expectedPrecisionAtRank1": 0,
+        "expectedPrecisionAtRank3": 0.6666666666666666,
+        "expectedPrecisionAtRank5": 0.8,
+        "expectedPrecisionAtRank10": 0.6,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.10580816600849302
+      },
+      "4XT1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.9076415321547249,
+        "averagePrecisionLift": 1.4206563111986998,
+        "auroc": 0.8528428093645485,
+        "expectedPrecisionAtRank1": 1,
+        "expectedPrecisionAtRank3": 1,
+        "expectedPrecisionAtRank5": 1,
+        "expectedPrecisionAtRank10": 0.9,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.2309665430810611
+      },
+      "6DO1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 47,
+        "prevalence": 0.6527777777777778,
+        "averagePrecision": 0.7174502109944491,
+        "averagePrecisionLift": 1.0990726636510708,
+        "auroc": 0.6723404255319149,
+        "expectedPrecisionAtRank1": 0,
+        "expectedPrecisionAtRank3": 0.6666666666666666,
+        "expectedPrecisionAtRank5": 0.4,
+        "expectedPrecisionAtRank10": 0.6,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.11764587369592683
+      },
+      "6O3C-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.7118690318889586,
+        "averagePrecisionLift": 1.1389904510223336,
+        "auroc": 0.7160493827160493,
+        "expectedPrecisionAtRank1": 0,
+        "expectedPrecisionAtRank3": 0.3333333333333333,
+        "expectedPrecisionAtRank5": 0.4,
+        "expectedPrecisionAtRank10": 0.5,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.0969381463742749
+      },
+      "8QW4-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.7592919083802963,
+        "averagePrecisionLift": 1.214867053408474,
+        "auroc": 0.7753086419753087,
+        "expectedPrecisionAtRank1": 0,
+        "expectedPrecisionAtRank3": 0.3333333333333333,
+        "expectedPrecisionAtRank5": 0.4,
+        "expectedPrecisionAtRank10": 0.6,
+        "topScoreGroupSize": 1,
+        "expectedRank1Dockq": 0.11464400458969766
+      }
+    },
+    "random_all_tied": {
+      "3P0G-A-B": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.6388888888888888,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5,
+        "expectedPrecisionAtRank1": 0.6388888888888888,
+        "expectedPrecisionAtRank3": 0.6388888888888888,
+        "expectedPrecisionAtRank5": 0.638888888888889,
+        "expectedPrecisionAtRank10": 0.638888888888889,
+        "topScoreGroupSize": 72,
+        "expectedRank1Dockq": 0.4078501209036831
+      },
+      "4XT1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 46,
+        "prevalence": 0.6388888888888888,
+        "averagePrecision": 0.6388888888888888,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5,
+        "expectedPrecisionAtRank1": 0.6388888888888888,
+        "expectedPrecisionAtRank3": 0.6388888888888888,
+        "expectedPrecisionAtRank5": 0.638888888888889,
+        "expectedPrecisionAtRank10": 0.638888888888889,
+        "topScoreGroupSize": 72,
+        "expectedRank1Dockq": 0.3934910659235676
+      },
+      "6DO1-A-C": {
+        "poseCount": 72,
+        "positiveCount": 47,
+        "prevalence": 0.6527777777777778,
+        "averagePrecision": 0.6527777777777778,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5,
+        "expectedPrecisionAtRank1": 0.6527777777777778,
+        "expectedPrecisionAtRank3": 0.6527777777777778,
+        "expectedPrecisionAtRank5": 0.6527777777777778,
+        "expectedPrecisionAtRank10": 0.6527777777777778,
+        "topScoreGroupSize": 72,
+        "expectedRank1Dockq": 0.4112279464200136
+      },
+      "6O3C-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.625,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5,
+        "expectedPrecisionAtRank1": 0.625,
+        "expectedPrecisionAtRank3": 0.625,
+        "expectedPrecisionAtRank5": 0.625,
+        "expectedPrecisionAtRank10": 0.625,
+        "topScoreGroupSize": 72,
+        "expectedRank1Dockq": 0.4206145032508146
+      },
+      "8QW4-A-B": {
+        "poseCount": 72,
+        "positiveCount": 45,
+        "prevalence": 0.625,
+        "averagePrecision": 0.625,
+        "averagePrecisionLift": 1,
+        "auroc": 0.5,
+        "expectedPrecisionAtRank1": 0.625,
+        "expectedPrecisionAtRank3": 0.625,
+        "expectedPrecisionAtRank5": 0.625,
+        "expectedPrecisionAtRank10": 0.625,
+        "topScoreGroupSize": 72,
+        "expectedRank1Dockq": 0.4090709685494708
+      }
+    }
+  },
+  "shippedTopTierPrecision": {
+    "perTarget": {
+      "3P0G-A-B": {
+        "tier": 2,
+        "occupants": 1,
+        "dockqPositive": 1
+      },
+      "4XT1-A-C": {
+        "tier": 2,
+        "occupants": 1,
+        "dockqPositive": 1
+      },
+      "6DO1-A-C": {
+        "tier": 1,
+        "occupants": 8,
+        "dockqPositive": 8
+      },
+      "6O3C-A-B": {
+        "tier": 2,
+        "occupants": 1,
+        "dockqPositive": 1
+      },
+      "8QW4-A-B": {
+        "tier": 2,
+        "occupants": 1,
+        "dockqPositive": 1
+      }
+    },
+    "occupants": 12,
+    "dockqPositive": 12
+  },
+  "secondaryKeyWithinLimitedTier": {
+    "perTarget": {
+      "3P0G-A-B": {
+        "poseCount": 63,
+        "positiveCount": 39,
+        "auroc": 0.727564102564
+      },
+      "4XT1-A-C": {
+        "poseCount": 62,
+        "positiveCount": 38,
+        "auroc": 0.814692982456
+      },
+      "6DO1-A-C": {
+        "poseCount": 62,
+        "positiveCount": 39,
+        "auroc": 0.661092530658
+      },
+      "6O3C-A-B": {
+        "poseCount": 60,
+        "positiveCount": 37,
+        "auroc": 0.65687426557
+      },
+      "8QW4-A-B": {
+        "poseCount": 62,
+        "positiveCount": 37,
+        "auroc": 0.748108108108
+      }
+    },
+    "targetMacroAuroc": 0.721666397871,
+    "note": "Burial's separation inside the shipped 'limited' block, where the ordinal expresses no preference at all. This is the resolution the secondary key contributes."
+  },
+  "burialOvershoot": {
+    "burialDeciles": [
+      {
+        "decile": 1,
+        "poseCount": 36,
+        "meanBurial": 108.374175431175,
+        "meanDockq": 0.095519089909,
+        "meanSevereOverlaps": 1.083333333333,
+        "positiveRate": 0.055555555556
+      },
+      {
+        "decile": 2,
+        "poseCount": 36,
+        "meanBurial": 350.348798444217,
+        "meanDockq": 0.181250295709,
+        "meanSevereOverlaps": 5.888888888889,
+        "positiveRate": 0.333333333333
+      },
+      {
+        "decile": 3,
+        "poseCount": 36,
+        "meanBurial": 529.234782365042,
+        "meanDockq": 0.266726441298,
+        "meanSevereOverlaps": 11.444444444444,
+        "positiveRate": 0.583333333333
+      },
+      {
+        "decile": 4,
+        "poseCount": 36,
+        "meanBurial": 666.65883351314,
+        "meanDockq": 0.322880750796,
+        "meanSevereOverlaps": 15.694444444444,
+        "positiveRate": 0.5
+      },
+      {
+        "decile": 5,
+        "poseCount": 36,
+        "meanBurial": 782.794688022693,
+        "meanDockq": 0.488236183894,
+        "meanSevereOverlaps": 18.861111111111,
+        "positiveRate": 0.861111111111
+      },
+      {
+        "decile": 6,
+        "poseCount": 36,
+        "meanBurial": 864.353058903224,
+        "meanDockq": 0.550205046407,
+        "meanSevereOverlaps": 16.861111111111,
+        "positiveRate": 0.805555555556
+      },
+      {
+        "decile": 7,
+        "poseCount": 36,
+        "meanBurial": 963.753098350286,
+        "meanDockq": 0.564600326725,
+        "meanSevereOverlaps": 20.416666666667,
+        "positiveRate": 0.861111111111
+      },
+      {
+        "decile": 8,
+        "poseCount": 36,
+        "meanBurial": 1096.685101209294,
+        "meanDockq": 0.64749078353,
+        "meanSevereOverlaps": 20.805555555556,
+        "positiveRate": 0.888888888889
+      },
+      {
+        "decile": 9,
+        "poseCount": 36,
+        "meanBurial": 1191.703694772789,
+        "meanDockq": 0.627292953673,
+        "meanSevereOverlaps": 27.611111111111,
+        "positiveRate": 0.833333333333
+      },
+      {
+        "decile": 10,
+        "poseCount": 36,
+        "meanBurial": 1525.843907124016,
+        "meanDockq": 0.340307338154,
+        "meanSevereOverlaps": 70.333333333333,
+        "positiveRate": 0.638888888889
+      }
+    ],
+    "perTarget": {
+      "3P0G-A-B": {
+        "mostBuried": {
+          "poseId": "3P0G-A-B-rot0020-trans0160-rep2",
+          "burialAngstrom2": 2439.918325800786,
+          "severeOverlapCount": 153,
+          "maximumOverlapAngstrom": 3.186781801902,
+          "contactPairCount": 370,
+          "shippedEvidenceLevel": "limited",
+          "dockq": 0.105808166008
+        },
+        "nearNative": {
+          "poseId": "3P0G-A-B-rot0020-trans0005-rep2",
+          "burialAngstrom2": 844.440465749435,
+          "severeOverlapCount": 1,
+          "maximumOverlapAngstrom": 0.621489272679,
+          "contactPairCount": 48,
+          "shippedEvidenceLevel": "mixed",
+          "dockq": 0.978889332846
+        }
+      },
+      "4XT1-A-C": {
+        "mostBuried": {
+          "poseId": "4XT1-A-C-rot0400-trans0080-rep2",
+          "burialAngstrom2": 1627.718791070828,
+          "severeOverlapCount": 86,
+          "maximumOverlapAngstrom": 2.782472460704,
+          "contactPairCount": 215,
+          "shippedEvidenceLevel": "limited",
+          "dockq": 0.230966543081
+        },
+        "nearNative": {
+          "poseId": "4XT1-A-C-rot0020-trans0005-rep2",
+          "burialAngstrom2": 1151.914414742109,
+          "severeOverlapCount": 2,
+          "maximumOverlapAngstrom": 0.871223976845,
+          "contactPairCount": 61,
+          "shippedEvidenceLevel": "mixed",
+          "dockq": 0.984808142472
+        }
+      },
+      "6DO1-A-C": {
+        "mostBuried": {
+          "poseId": "6DO1-A-C-rot0020-trans0160-rep2",
+          "burialAngstrom2": 2047.188586738976,
+          "severeOverlapCount": 162,
+          "maximumOverlapAngstrom": 3.212444674829,
+          "contactPairCount": 376,
+          "shippedEvidenceLevel": "limited",
+          "dockq": 0.117645873696
+        },
+        "nearNative": {
+          "poseId": "6DO1-A-C-rot0020-trans0005-rep1",
+          "burialAngstrom2": 1124.269667808498,
+          "severeOverlapCount": 1,
+          "maximumOverlapAngstrom": 1.18519046055,
+          "contactPairCount": 59,
+          "shippedEvidenceLevel": "mixed",
+          "dockq": 0.989342790222
+        }
+      },
+      "6O3C-A-B": {
+        "mostBuried": {
+          "poseId": "6O3C-A-B-rot0050-trans0160-rep2",
+          "burialAngstrom2": 1900.393154614952,
+          "severeOverlapCount": 71,
+          "maximumOverlapAngstrom": 3.159970835105,
+          "contactPairCount": 207,
+          "shippedEvidenceLevel": "limited",
+          "dockq": 0.096938146374
+        },
+        "nearNative": {
+          "poseId": "6O3C-A-B-rot0020-trans0005-rep2",
+          "burialAngstrom2": 1199.207952512682,
+          "severeOverlapCount": 1,
+          "maximumOverlapAngstrom": 0.735374072421,
+          "contactPairCount": 67,
+          "shippedEvidenceLevel": "mixed",
+          "dockq": 0.975496045326
+        }
+      },
+      "8QW4-A-B": {
+        "mostBuried": {
+          "poseId": "8QW4-A-B-rot0050-trans0160-rep1",
+          "burialAngstrom2": 2306.849418460738,
+          "severeOverlapCount": 117,
+          "maximumOverlapAngstrom": 3.040447500356,
+          "contactPairCount": 306,
+          "shippedEvidenceLevel": "limited",
+          "dockq": 0.11464400459
+        },
+        "nearNative": {
+          "poseId": "8QW4-A-B-rot0020-trans0005-rep2",
+          "burialAngstrom2": 946.511887714506,
+          "severeOverlapCount": 0,
+          "maximumOverlapAngstrom": 0.503624289609,
+          "contactPairCount": 37,
+          "shippedEvidenceLevel": "supported",
+          "dockq": 0.983145373616
+        }
+      }
+    },
+    "targetsWhereMostBuriedPoseIsDockqNegative": 4,
+    "targets": 5
+  },
+  "claimFlags": {
+    "improvesBindingPrediction": false,
+    "improvesAffinityPrediction": false,
+    "improvesPoseCorrectnessPrediction": false,
+    "establishesGeneralization": false,
+    "constitutesIndependentHoldoutEvidence": false,
+    "establishesExperimentalBinding": false,
+    "tunedAgainstDockqLabels": false,
+    "hardDecoyHoldoutAccessed": false
+  },
+  "developmentSetSelection": {
+    "armsCompared": 5,
+    "candidateRevisionsCompared": 2,
+    "note": "The choice between candidate.1 (burial alone) and candidate.2 (shipped tier refined by burial) was made by reading development results, which is what a development set is for. No coefficient was fitted and no threshold was introduced, but the reported development figures carry the optimism of that selection and are expected to fall on a holdout."
+  },
+  "interpretationBoundary": "Development-set association only, on a native-derived local rigid-body perturbation grid across five previously used complexes. It does not test blind docking, wrong-patch decoys, flexible conformational change, non-binders, unseen receptor families, or experimental binding. The prospectively specified hard-decoy protocol remains unexecuted."
+}

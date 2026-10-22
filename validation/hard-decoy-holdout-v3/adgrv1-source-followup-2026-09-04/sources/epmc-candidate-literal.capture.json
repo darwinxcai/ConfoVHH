@@ -1,0 +1,24 @@
+{
+  "id": "epmc-candidate-literal",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:2026.03.05.709805%20OR%20DOI:10.64898/2026.03.05.709805&format=json&resultType=core",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:2026.03.05.709805%20OR%20DOI:10.64898/2026.03.05.709805&format=json&resultType=core",
+  "method": "GET",
+  "startedAt": "2026-09-04T23:36:23.555538+00:00",
+  "finishedAt": "2026-09-04T23:36:31.487271+00:00",
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json;charset=UTF-8",
+    "Strict-Transport-Security": "max-age=0",
+    "Date": "Fri, 04 Sep 2026 23:36:31 GMT",
+    "Access-Control-Max-Age": "3600",
+    "Transfer-Encoding": "chunked",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=E9E9D9F9ACA148EADE3789EB6E5D2354; Path=/europepmc/webservices/; HttpOnly",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+  },
+  "file": "sources/epmc-candidate-literal.body",
+  "bytes": 5165,
+  "sha256": "030000097d1c959242655ac8f3c10851b81d57817ef8f5fc9bf7c40082fd80f9"
+}

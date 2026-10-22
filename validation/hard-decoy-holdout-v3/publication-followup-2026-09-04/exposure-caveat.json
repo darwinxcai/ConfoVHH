@@ -1,0 +1,60 @@
+{
+  "recordType": "INCIDENTAL_SEARCH_RESULT_EXPOSURE",
+  "date": "2026-09-04",
+  "query": "\"8IA8\" receptor",
+  "returnedUrl": "https://gpcrdb.org/structure/8IA8",
+  "returnedContentType": "text/html as reported by search tool",
+  "accessMode": "Unopened search-result snippet returned automatically by a broad exact-PDB bibliography query.",
+  "affectedPdbIds": [
+    "8IA8"
+  ],
+  "targetOrInterfaceResidueIdentitiesVisible": true,
+  "contactClassificationsVisible": true,
+  "contactPairsReproducedInPackage": false,
+  "pageOpened": false,
+  "nativeCoordinatesRequestedOrInspected": false,
+  "structureImagesRequestedOrInspected": false,
+  "usedAsEvidenceForCitationOrEligibility": false,
+  "otherIncidentalResult": {
+    "query": "\"7TRK\" \"7TRP\" muscarinic",
+    "returnedUrl": "https://elifesciences.org/articles/83477/figures",
+    "returnedContentType": "text/html search-result snippet",
+    "affectedPdbIds": [
+      "7TRK",
+      "7TRP",
+      "7TRQ",
+      "7TRS"
+    ],
+    "visibleContentCategory": "Data-collection/refinement table fragment; no image opened.",
+    "pageOpened": false
+  },
+  "response": "Subsequent web searches restricted to primary-publication domains, structural results skipped. Citation collection uses citation-only RCSB GraphQL and Europe PMC bibliography APIs.",
+  "formalExposureClearanceComplete": false,
+  "targetFreezePermitted": false,
+  "secondaryReviewerIncidentalCaptionExposure": {
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12570966/",
+    "retrievedHtmlPath": "/tmp/confovhh-c5-secondary-PMC12570966.html",
+    "retrievedHtmlSha256": "4566803bdd372d2beaa12a989c47cd71535ac54b8e1a9cff07370e69e588b511",
+    "retrievalMethod": "Direct urllib HTTP GET; standard-library HTMLParser collected all p elements without an ancestor-based figcaption exclusion.",
+    "extractionCriterion": "Each collected paragraph was split at sentence-ending punctuation followed by whitespace; sentences matching case-insensitive regular expression 8J23 were printed. Because all p elements were eligible, one caption sentence was printed alongside two duplicate Data availability sentences.",
+    "captionSentenceCount": 1,
+    "captionExposureContentCategories": [
+      "Named existing receptor/G-protein comparison models and visual color descriptors",
+      "Qualitative receptor-loop stabilization statement"
+    ],
+    "nativeInterfaceResidueIdentitiesExposed": false,
+    "nativeResidueNumbersExposed": false,
+    "specificNativeContactPairsExposed": false,
+    "nativeSpatialCoordinatesDistancesOrAnglesExposed": false,
+    "qualitativeConformationalRelationshipExposed": true,
+    "qualitativeConformationalRelationshipScope": "A qualitative comparison concerning stabilization of a named intracellular loop across pre-existing receptor/G-protein samples; no receptor-antibody interface residues or geometric contacts were given in the returned sentence.",
+    "structuralFigureViewed": false,
+    "coordinateFileRetrieved": false,
+    "impactAssessment": "This is an incidental exposure to structural prose. It was excluded from bibliographic evidence and should remain recorded for the parent to assess against the study blinding boundary; this agent makes no claim that all structure-related text remained unseen.",
+    "usedForCandidateSelectionOrDisposition": false,
+    "followupMitigation": "Subsequent XML extraction explicitly excluded fig and caption ancestors and restricted output to Data availability or equivalent notes.",
+    "affectedPdbIds": [
+      "8J23"
+    ]
+  }
+}

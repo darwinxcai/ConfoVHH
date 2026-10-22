@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "scope": "Exact primary-publication accessions followed immediately by repeated allowlisted polymer metadata capture.",
+  "reviews": [
+    {
+      "pdbId": "9NNZ",
+      "sourceId": "RHO_MB7_2026",
+      "primaryExactDepositionParagraphReviewed": true,
+      "sourceDoi": "10.1073/pnas.2532336123",
+      "sourcePrimaryBodySha256": "2a803539bda59697327e861bd1adcee4d7f74ff44d2986cc56d5d5e0b698022c",
+      "metadataRepeatAgreement": true,
+      "polymerInventoryFile": "entries.jsonl",
+      "polymerEntityCount": 2,
+      "binderEntityId": "1",
+      "binderDescription": "Megabody 7",
+      "binderSequenceLength": 514,
+      "binderSequenceSha256": "c927b335308c5780c7cbfc6e800f0a302b996e9da606cdc2bc10168d5ba53d46",
+      "receptorEntityId": "2",
+      "receptorSequenceSha256": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+      "developmentOverlap": {
+        "developmentPdbId": "8FCZ",
+        "developmentReceptorEntityId": "1",
+        "sharedUniprotAccession": "P02699",
+        "developmentReceptorSequenceSha256": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+        "exactFullReceptorSequenceMatch": true
+      },
+      "status": "PUBLICATION_ACCESSION_METADATA_CAPTURE_COMPLETE_DEVELOPMENT_RECEPTOR_OVERLAP_SUPPORTED",
+      "independentComponentEstablished": false,
+      "formalExclusionAuthority": false,
+      "targetFreezePermitted": false
+    },
+    {
+      "pdbId": "9NOZ",
+      "sourceId": "RHO_MB7_2026",
+      "primaryExactDepositionParagraphReviewed": true,
+      "sourceDoi": "10.1073/pnas.2532336123",
+      "sourcePrimaryBodySha256": "2a803539bda59697327e861bd1adcee4d7f74ff44d2986cc56d5d5e0b698022c",
+      "metadataRepeatAgreement": true,
+      "polymerInventoryFile": "entries.jsonl",
+      "polymerEntityCount": 2,
+      "binderEntityId": "1",
+      "binderDescription": "Megabody 7 (Mb7)",
+      "binderSequenceLength": 514,
+      "binderSequenceSha256": "c927b335308c5780c7cbfc6e800f0a302b996e9da606cdc2bc10168d5ba53d46",
+      "receptorEntityId": "2",
+      "receptorSequenceSha256": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+      "developmentOverlap": {
+        "developmentPdbId": "8FCZ",
+        "developmentReceptorEntityId": "1",
+        "sharedUniprotAccession": "P02699",
+        "developmentReceptorSequenceSha256": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+        "exactFullReceptorSequenceMatch": true
+      },
+      "status": "PUBLICATION_ACCESSION_METADATA_CAPTURE_COMPLETE_DEVELOPMENT_RECEPTOR_OVERLAP_SUPPORTED",
+      "independentComponentEstablished": false,
+      "formalExclusionAuthority": false,
+      "targetFreezePermitted": false
+    },
+    {
+      "pdbId": "9UOK",
+      "sourceId": "LGR4_SIBLING_PRIMARY_REVIEW",
+      "sourceDoi": "10.1038/s41467-025-61545-z",
+      "primarySourceUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12234955/fullTextXML",
+      "sourcePrimaryBodySha256": "03ffb15fcd3c5ce71ba7093b203b5122826ddb51b38b3b38986135cf31c2e61d",
+      "sourceDataAvailabilityParagraphSha256": "a5042b00e5fc72ab39eb568df9d9ebf5a3ad6142d550f6676bcda561c9688a15",
+      "sourceRetrievedAt": "2026-09-04T22:58:11.483140+00:00",
+      "evidenceSourceReview": "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/source-reviews.json",
+      "evidenceSourceProvenance": "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/lgr4-additional-prose-provenance.json",
+      "primaryExactDepositionParagraphReviewedBy": "sibling source reviewer; not reread here",
+      "metadataRepeatAgreement": true,
+      "polymerInventoryFile": "entries.jsonl",
+      "polymerEntityCount": 3,
+      "status": "PUBLICATION_ACCESSION_METADATA_CAPTURE_COMPLETE_CONSTRUCT_AND_EXPOSURE_REVIEW_PENDING",
+      "exposureAssessment": "Carry sibling LGR4 exposure caveat to9UOK conservatively. This metadata closure provides no eligibility clearance.",
+      "independentComponentEstablished": false,
+      "formalExclusionAuthority": false,
+      "targetFreezePermitted": false
+    }
+  ],
+  "partialMb7SequenceComparison": {
+    "candidatePdbId": "9NYX",
+    "candidateEntityId": "1",
+    "candidateSequenceSha256": "f29abb3f25a6a8b1e075d643cec24ca80a34bc197ff36b7dda178e9d5865af0a",
+    "comparisonPdbIds": [
+      "9NNZ",
+      "9NOZ"
+    ],
+    "comparisonEntityId": "1",
+    "comparisonSequenceLength": 514,
+    "comparisonSequenceSha256": "c927b335308c5780c7cbfc6e800f0a302b996e9da606cdc2bc10168d5ba53d46",
+    "sameFullBinderSequenceAcrossComparisonEntries": true,
+    "exactCanonicalSegments": [
+      {
+        "candidateStartZeroBased": 0,
+        "length": 11,
+        "comparisonStartPositionsZeroBased": [
+          1
+        ]
+      },
+      {
+        "candidateStartZeroBased": 22,
+        "length": 100,
+        "comparisonStartPositionsZeroBased": [
+          403
+        ]
+      }
+    ],
+    "inference": "The canonical prefix and suffix of partial9NYX Mb7 match separated segments of the514aa same-publication Mb7 construct. Eleven Xs in9NYX are not treated as a literal replacement for the intervening long scaffold; no sequence is silently repaired or converted into a complete experimental input.",
+    "fullConstructReconciledFor9NYX": false
+  },
+  "targetFreezePermitted": false,
+  "formalLeakageGraphAuthority": false
+}

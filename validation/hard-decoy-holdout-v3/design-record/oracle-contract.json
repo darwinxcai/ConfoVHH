@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0.0",
+  "protocolId": "confovhh-hard-decoy-v3",
+  "requestMode": "one-nonadaptive-whole-batch",
+  "nativeContactPolicy": {
+    "atoms": "protein-heavy-atoms-only",
+    "hydrogenAndDeuteriumExcluded": true,
+    "distanceAngstrom": 5,
+    "boundary": "inclusive",
+    "minimumUniqueResiduePairsForDirectInterface": 8,
+    "missingOrAmbiguousMapping": "FAIL_CLOSED"
+  },
+  "overlapPolicy": {
+    "publicTokensForbidden": true,
+    "jaccardEdgeIntegerRule": "5*intersection>=2*union",
+    "containmentEdgeIntegerRule": "5*intersection>=3*minSize",
+    "thresholdEqualityCreatesEdge": true,
+    "emptyOrFailedTarget": "FAIL_CLOSED"
+  },
+  "publicDecisionValues": [
+    "EDGE",
+    "NO_EDGE",
+    "FAIL_CLOSED"
+  ],
+  "publicOutputPolicy": {
+    "exactPairCoverage": "every-precommitted-candidate-development-and-candidate-candidate-pair",
+    "allowedScientificDisclosure": "boolean-pair-decision-only",
+    "hiddenRecordCommitments": "sha256-domain-separated-with-256-bit-precommitted-secret-derived-nonce",
+    "signature": "Ed25519-deterministic",
+    "canonicalJson": "RFC8785-restricted-ASCII-key-profile",
+    "merkleTree": "domain-separated-sha256-ordered-targets-then-pairs",
+    "sequenceNumber": 1,
+    "certificateBindings": [
+      "request-id-and-externally-pinned-request-package-root",
+      "request-freeze-authorization-receipt",
+      "protocol-code-container-mapping-and-ontology-digests",
+      "signing-recipient-and-precommitted-ephemeral-public-key-digests",
+      "commitment-and-padding-entropy-commitments",
+      "precommitted-transparency-service-challenge"
+    ]
+  },
+  "forbiddenPrelabelOutput": [
+    "native-coordinate-bytes",
+    "native-coordinate-paths",
+    "epitope-tokens-or-token-hashes",
+    "residue-identifiers-or-generic-positions",
+    "contact-counts-or-distances",
+    "topology-side",
+    "jaccard-or-containment-numerators-denominators-or-values",
+    "per-target-timing",
+    "detailed-target-errors",
+    "dockq-capri-fnat-irmsd-lrmsd",
+    "confoVHH-output-or-performance-results"
+  ],
+  "encryptedEvidence": {
+    "format": "confovhh-x25519-hkdf-sha256-aes-256-gcm-fixed-v1",
+    "plaintextBytes": 4194304,
+    "ciphertextEnvelopeBytes": 4194406,
+    "recipient": "precommitted-X25519-public-key",
+    "ephemeralKey": "generated-and-public-key-frozen-before-native-access",
+    "keyAndNonce": "deterministic-X25519-HKDF-SHA256-over-frozen-request-context",
+    "padding": "deterministic-from-precommitted-secret-seed",
+    "opening": "after-OPENED-only",
+    "postOpeningReconciliation": "recompute-every-target-and-pair-commitment-decision-merkle-root-and-entropy-precommitment"
+  },
+  "subliminalChannelControls": {
+    "oracleChosenTimestampForbidden": true,
+    "oracleChosenRandomnessAfterNativeAccessForbidden": true,
+    "variableOutputSizeForbidden": true,
+    "freeFormErrorForbidden": true,
+    "allCommitmentAndEncryptionEntropyCommittedBeforeNativeAccess": true
+  }
+}

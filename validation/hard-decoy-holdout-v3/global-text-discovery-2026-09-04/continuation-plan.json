@@ -1,0 +1,107 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "route": "C6_ALL_RELEASE_DATE_RECEPTOR_TEXT_COMPLEMENT",
+  "externalCitationTitleWhitespacePolicy": "REPLACE_ESCAPED_HT_LF_CR_WITH_SPACES_ONLY_IN_PRIMARY_CITATION_TITLE_AND_RECORD_SOURCE_DIGESTS",
+  "queryDefinitions": [
+    {
+      "id": "text-1",
+      "value": "GPCR"
+    },
+    {
+      "id": "text-2",
+      "value": "\"G protein coupled receptor\""
+    },
+    {
+      "id": "text-3",
+      "value": "\"G-protein-coupled receptor\""
+    },
+    {
+      "id": "text-4",
+      "value": "Frizzled"
+    },
+    {
+      "id": "text-5",
+      "value": "Smoothened"
+    }
+  ],
+  "metadataQueryIds": [
+    "text-1",
+    "text-4",
+    "text-5"
+  ],
+  "metadataScope": "UNION_OF_GPCR_FRIZZLED_SMOOTHENED_MINUS_SEVEN_KNOWN_METADATA_SOURCES",
+  "phraseOnlyRemainderStatus": "NOT_CAPTURED_PENDING",
+  "endpoint": "https://search.rcsb.org/rcsbsearch/v2/query",
+  "pageSize": 500,
+  "maximumPagesPerRepeat": 40,
+  "repeatCount": 2,
+  "rationale": "The five receptor-specific text terms from the prior recent-release route are rerun across all release dates to complement the selected Pfam panel. Generic receptor is omitted because it does not specifically target GPCR discovery. Preliminary count probes showed the two quoted phrases each returned 16,530 entries. Before capturing complete query sets, metadata collection is limited to the union of the three nonphrase queries. Every phrase-only new ID remains explicitly uncollected and pending. No additional aliases are introduced after seeing results.",
+  "documentation": "https://search.rcsb.org/",
+  "releaseDateRestriction": null,
+  "domainFilterApplied": false,
+  "antibodyOrTaxonomyFilterApplied": false,
+  "knownMetadataSources": [
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "sha256": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+      "entryCount": 287
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "sha256": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+      "entryCount": 1426
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-replacements-2026-09-04/entries.jsonl",
+      "sha256": "b0b26eb7776fa1eb53182cf7c23213417209b47a67afbc05621680bfe79457cd",
+      "entryCount": 3
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/entries.jsonl",
+      "sha256": "4ae69b0921f20b2874783b84322f32c3213d842c10e8ed98e65b6c14f0a2e99f",
+      "entryCount": 112
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl",
+      "sha256": "ab4ebb4597948b973af33ae55763c0f8a65fcbfe66db3748d24478ec33a429df",
+      "entryCount": 142
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/publication-closure/entries.jsonl",
+      "sha256": "2797e0201296be05b4e0673beffaaf5f94a5787713565c952ca075773487f4e2",
+      "entryCount": 3
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/entries.jsonl",
+      "sha256": "6aa103cf88f5fb69874842da11ce5306a23429f7590a77210f892a40ef046017",
+      "entryCount": 692
+    }
+  ],
+  "knownMetadataUnionEntryCount": 2663,
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-replacements-2026-09-04/entries.jsonl": "b0b26eb7776fa1eb53182cf7c23213417209b47a67afbc05621680bfe79457cd",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/entries.jsonl": "4ae69b0921f20b2874783b84322f32c3213d842c10e8ed98e65b6c14f0a2e99f",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl": "ab4ebb4597948b973af33ae55763c0f8a65fcbfe66db3748d24478ec33a429df",
+    "validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/publication-closure/entries.jsonl": "2797e0201296be05b4e0673beffaaf5f94a5787713565c952ca075773487f4e2",
+    "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/entries.jsonl": "6aa103cf88f5fb69874842da11ce5306a23429f7590a77210f892a40ef046017",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json": "bbf10ef8ebf057dde42969fbd166bcbd2bd437902a76064d7ad8fcea9faa16b7",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "scripts/hard-decoy/v3-entry-metadata.mjs": "77afbf8b485976fd902de4f8377dcf9f02e90d93328a1da06546c8d7aae7c562",
+    "scripts/hard-decoy/oracle/canonical-json.mjs": "6d60625e181d68671d98ec59258660f27799c83261ddaa197ae0a2e449730f5f",
+    "scripts/hard-decoy-v3/capture-global-text-discovery.mjs": "8ec2dee77f63c846b36aaa26085193851bf2b51285ba89674c3f0886ea45250a"
+  },
+  "formalProtocolStatus": "DRAFT",
+  "targetFreezeGate": "BLOCKED",
+  "broaderDiscoveryComplete": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "formalDispositionAssigned": false,
+  "wholeCensusComponentUpperBound": null
+}

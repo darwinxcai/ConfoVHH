@@ -1,0 +1,29 @@
+{
+  "request": {
+    "requestId": "title-20",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "6NWE",
+      "6PEL",
+      "6PGS",
+      "6PH7"
+    ],
+    "query": "TITLE:\"Odorant-binding site in visual opsin\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Odorant-binding+site+in+visual+opsin%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:10.585979+00:00",
+  "status": 200,
+  "rawFile": "raw/title-20.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Odorant-binding+site+in+visual+opsin%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "1f0e44bad88204642e0f602dec8fc65853e9f7ddb215a749103749d7d2c25b1c",
+  "bytes": 213,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:19.002775+00:00"
+}

@@ -1,0 +1,30 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      coupled-runtime-build:
+        patterns:
+          - "@cloudflare/*"
+          - "@vitejs/*"
+          - "eslint-config-next"
+          - "next"
+          - "react"
+          - "react-dom"
+          - "react-server-dom-webpack"
+          - "vinext"
+          - "vite"
+          - "wrangler"
+  - package-ecosystem: npm
+    directory: /qa
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3

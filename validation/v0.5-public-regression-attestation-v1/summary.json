@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "attestationId": "confovhh-v0.5-public-structural-regressions-v1",
+  "status": "executed-current-release-regression",
+  "dataRole": "regression",
+  "runStartedAt": "2026-08-27T19:56:19.079Z",
+  "runCompletedAt": "2026-08-27T19:57:15.069Z",
+  "sourceAttestation": {
+    "gitCommit": "5cb57617b54baa314513486885c402449f643406",
+    "workingTreeDirtyAtStart": false,
+    "nodeVersion": "24.19.0",
+    "minimumNodeVersion": "22.18.0",
+    "implementation": {
+      "combinedSha256": "7d98f49b97499c0cefb460c6b06673d2639c9aeef2adfdb2d1198e965766d5f7",
+      "files": {
+        "lib/confovhh.ts": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+        "lib/geometry-constants.ts": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+        "lib/geometry-fit.ts": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+        "lib/mmcif.ts": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+        "lib/vhh-numbering.ts": "221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+        "package.json": "6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+        "package-lock.json": "db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+        "scripts/benchmark-mmcif-assemblies.mjs": "1412c0db6fa055c75615b481dcebaa6dc3661884b412aa2d2381e1714c1ba42e",
+        "scripts/benchmark-public-pdbs.mjs": "ff3b296028330ebb0280921229cfaedd81664bebdab778260992e2169dcca37c",
+        "scripts/public-coordinate-download.mjs": "7134c92b5513e506c67eb8f416cdf83efe1b1579addb1b085e6280fde88f5488",
+        "scripts/run-v05-public-regression-attestation.mjs": "50b2d56cfdd792438e77c5f593f46033fb9c5fc1c2a89d71965e62bc92958808",
+        "validation/mmcif-regression-manifest.v1.json": "5622c72b90f420462054f2f80fbe37924a4d6bfbcbf367a328f0b2fe356219e5"
+      }
+    },
+    "executedDependencies": {
+      "immunum": {
+        "name": "immunum",
+        "version": "1.2.0",
+        "fileCount": 6,
+        "combinedSha256": "b0c5c0214fad3b74a09c5e73e257c421afe40854b61789eb894ad0ea8ae53d97",
+        "files": [
+          {
+            "path": "LICENSE",
+            "bytes": 1064,
+            "sha256": "12bbf05564e72739e874538f016e07c942b8e1095a695a3f118db61f2b130430"
+          },
+          {
+            "path": "README.md",
+            "bytes": 11962,
+            "sha256": "d5ab21cf91508752b32e150cd32ace7cc5de12dd6c2885778b648dc6267bcfc8"
+          },
+          {
+            "path": "immunum.d.ts",
+            "bytes": 3343,
+            "sha256": "0b00b87cc306d42306a9853f50d47e037f06640995cd5ae41c1be1b75084c8f2"
+          },
+          {
+            "path": "immunum.js",
+            "bytes": 10138,
+            "sha256": "a53007322b0a006421fd65d816a6e4f4c4cd2f5b4092e824bb9367bad1f92f00"
+          },
+          {
+            "path": "immunum_bg.wasm",
+            "bytes": 698520,
+            "sha256": "d7d37ac79611f00c694a5e712fc3a395ef4b8216c58c9805f1bfbd5093e59e32"
+          },
+          {
+            "path": "package.json",
+            "bytes": 564,
+            "sha256": "d4ed5f38d8e94a9f3d746ef9d391f7f1675ace313c572b946862647e8c31c559"
+          }
+        ]
+      }
+    }
+  },
+  "accounting": {
+    "pdbMmcifSerializationPairs": 17,
+    "depositedAssemblyOracles": 5,
+    "nativeInterfaces": 17,
+    "wholeComplexTranslationChecks": 17,
+    "farTranslationControls": 102
+  },
+  "claimFlags": {
+    "bindingValidated": false,
+    "affinityValidated": false,
+    "specificityValidated": false,
+    "functionalStateValidated": false,
+    "stateSelectivityValidated": false,
+    "membraneCompatibilityValidated": false,
+    "formalHoldoutEvaluated": false,
+    "nearNativeRankingValidated": false
+  },
+  "limitations": [
+    "These are coordinate/parser regression exercises, not binding or nonbinding experiments.",
+    "The far translations are obvious geometry controls, not realistic docking negatives.",
+    "Native interfaces do not validate near-native ranking or conformational-state selectivity.",
+    "Deposited assembly agreement does not establish physiological oligomerization."
+  ]
+}

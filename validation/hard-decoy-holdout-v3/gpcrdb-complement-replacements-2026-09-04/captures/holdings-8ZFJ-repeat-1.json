@@ -1,0 +1,20 @@
+{
+  "request": {
+    "kind": "holdings",
+    "originalId": "8ZFJ",
+    "repeat": 1,
+    "method": "GET",
+    "url": "https://data.rcsb.org/rest/v1/holdings/status/8ZFJ",
+    "rawFile": "raw/holdings-8ZFJ-repeat-1.json",
+    "captureFile": "captures/holdings-8ZFJ-repeat-1.json"
+  },
+  "finalUrl": "https://data.rcsb.org/rest/v1/holdings/status/8ZFJ",
+  "httpStatus": 200,
+  "contentType": "application/json",
+  "startedUtc": "2026-09-04T22:36:29.468Z",
+  "completedUtc": "2026-09-04T22:36:29.986Z",
+  "responseBytes": 254,
+  "rawSha256": "0af73e5ac922c49b8e4dbe62bf58c75d9d649147e8f63394b2d768449d67a137",
+  "etag": null,
+  "normalizedSha256": "b5bbef63e7d1e92763dcf99f6ba2f5ed5b7678a360be18392f5424e19a9fbfd9"
+}

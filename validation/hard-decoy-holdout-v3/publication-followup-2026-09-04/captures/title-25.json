@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-25",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "8IZ4"
+    ],
+    "query": "TITLE:\"Structural mechanisms of ligand binding and signaling in lysophosphatidylserine receptors\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Structural+mechanisms+of+ligand+binding+and+signaling+in+lysophosphatidylserine+receptors%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:27.933568+00:00",
+  "status": 200,
+  "rawFile": "raw/title-25.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Structural+mechanisms+of+ligand+binding+and+signaling+in+lysophosphatidylserine+receptors%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "dc03da17caf80b7942431a25c2f8e912dd2758c9e61eeb0546edab96b6392893",
+  "bytes": 266,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:36.873781+00:00"
+}

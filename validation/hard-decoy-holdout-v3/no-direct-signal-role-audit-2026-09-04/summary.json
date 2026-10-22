@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "NO_DIRECT_SIGNAL_PRIORITY_SET_ADDS_ZERO_COMPONENTS_OTHER_ROWS_REMAIN",
+  "recordedAtUtc": "2026-09-04T20:39:00Z",
+  "reviewedNoDirectSignalEntryCount": 7,
+  "sourceBackedExcludedEntryCount": 5,
+  "sourceBackedAuxiliaryBinderExclusionCount": 4,
+  "sourceBackedNoDirectInterfaceExclusionCount": 1,
+  "existingProvisionalRepresentativeCount": 2,
+  "independentComponentCountIncrementUpperBoundFromReviewedSet": 0,
+  "otherStrataRowsStillPendingAfterBoundedAudit": 238,
+  "stillPendingRowsAlreadyNamedInExistingCensus": [
+    "7E6U",
+    "8JXS",
+    "8QJ2"
+  ],
+  "stillPendingRowsNotNamedInExistingCensusCount": 235,
+  "masterDispositionLedgerRewritten": false,
+  "wholeCensusTerminalDecisionReached": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "interpretation": "The seven rows without a direct development-pregraph signal cannot supply a new independent component: five are source-backed exclusions and two are already the named representatives of existing provisional components. This closes the highest-priority component-search subset only. After the five exclusions, 238 other-strata rows remain pending; three are named representatives of existing provisional components and 235 are not."
+}

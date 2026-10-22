@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "stage": "V3_CENSUS_IN_PROGRESS",
+  "input": {
+    "sourceSnapshotDirectory": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29",
+    "sourceAttestation": "validation/hard-decoy-holdout-v3/SOURCE_SNAPSHOT_ATTESTATION_2026-08-29.json",
+    "sourceIdentifierListFile": "normalized/rcsb-gpcrdb-intersection.txt",
+    "sourceIdentifierCount": 287,
+    "sourceIdentifierListSha256": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7",
+    "sourceUniverseFile": "source-universe.jsonl",
+    "sourceUniverseJsonlSha256": "f2bdfe58cb591a007f21685008eb3bea676f6c87b196fad63a223bed8e478879",
+    "sourceManifestSha256": "c0b24e5a153bdf240afc2da436321ad2abbdf93800f4b9791d82ae15c9b7b0db",
+    "sourceChecksumsSha256": "796aa0734da86791f8ccdef92c7de03da22bdafd7818a5c5e95d73b6b5d35ebc",
+    "gpcrdbRawFile": "raw/gpcrdb-api-1.json"
+  },
+  "blindBoundary": {
+    "allowedDataClasses": [
+      "public-entry-metadata",
+      "public-polymer-entity-metadata",
+      "polymer-sequences",
+      "chain-identifiers",
+      "publication-metadata",
+      "frozen-gpcrdb-metadata"
+    ],
+    "forbiddenDataClasses": [
+      "holdout-coordinates",
+      "coordinate-derived-native-interfaces",
+      "native-relative-receptor-vhh-poses",
+      "DockQ-or-CAPRI-labels",
+      "ConfoVHH-holdout-scores",
+      "holdout-performance-results"
+    ],
+    "forbiddenUrlFragments": [
+      "files.rcsb.org",
+      "/download/",
+      "/coordinate/",
+      "native-vault",
+      "label-vault",
+      "candidate-vault"
+    ]
+  },
+  "rcsb": {
+    "endpoint": "https://data.rcsb.org/graphql",
+    "method": "POST",
+    "queryFile": "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql",
+    "querySha256": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "batchSize": 25,
+    "expectedBatchCount": 12,
+    "repeatCount": 2,
+    "timeoutMilliseconds": 90000,
+    "maximumResponseBytes": 16777216,
+    "minimumDelayMilliseconds": 100,
+    "userAgent": "ConfoVHH-hard-decoy-entry-metadata-v3/1.0 (+https://github.com/darwinxcai/ConfoVHH)"
+  },
+  "normalization": {
+    "pdbIdentifierPattern": "^[0-9][A-Z0-9]{3}$",
+    "sequenceWhitespaceRemoval": true,
+    "sequenceUppercase": true,
+    "entryOrder": "PDB-ID-bytewise-ascending",
+    "entityOrder": "numeric-entity-id-then-rcsb-id",
+    "setOrder": "canonical-JSON-bytewise-ascending",
+    "jsonl": "canonical-JSON-one-object-per-line-with-terminal-LF",
+    "digest": "SHA-256"
+  },
+  "triage": {
+    "status": "NON_DISPOSITIVE_METADATA_SIGNALS_ONLY",
+    "vhhDescriptionPattern": "(?:\\bnanobody\\b|\\bVHH\\b|single[- ]domain antibody|camelid antibody|heavy[- ]chain[- ]only antibody|variable domain of (?:a )?heavy[- ]chain[- ]only antibody|megabody)",
+    "camelidOrganismPattern": "(?:Lama|Vicugna|Camelus|alpaca|llama|camelid)",
+    "vhhLengthMinimum": 80,
+    "vhhLengthMaximum": 250,
+    "auxiliaryPattern": "(?:\\bNb\\s*35\\b|nanobody[- ]?35|\\bscFv16\\b|anti[- ]?(?:G[- ]?protein|Fab|BRIL)|G[- ]?protein[- ]?stabilizing nanobody)",
+    "constructRiskPattern": "(?:lysozyme|\\bT4L\\b|BRIL|apocytochrome b562|fusion|chimera|chimeric|graft|megabody)",
+    "allDirectInterfaceEvidenceStatus": "UNRESOLVED",
+    "allDispositionStatus": "PENDING_DISPOSITION",
+    "allowedReviewStrata": [
+      "DIRECT_TARGET_CANDIDATE_REVIEW",
+      "AUXILIARY_OR_CONSTRUCT_REVIEW",
+      "METADATA_RESOLUTION_REQUIRED"
+    ]
+  },
+  "snapshot": {
+    "staticFiles": [
+      "batch-plan.json",
+      "checksums.sha256",
+      "entities.jsonl",
+      "entries.jsonl",
+      "manifest.json",
+      "requests.jsonl",
+      "summary.json",
+      "summary.md",
+      "triage-signals.jsonl"
+    ],
+    "rawFilePattern": "raw/rcsb-entry-metadata-batch-NNN-repeat-R.json",
+    "rawResponseCount": 24,
+    "targetFreezePermittedBySnapshotAlone": false,
+    "dispositionLedgerComplete": false,
+    "leakageGraphComplete": false,
+    "executionAuthorized": false
+  }
+}

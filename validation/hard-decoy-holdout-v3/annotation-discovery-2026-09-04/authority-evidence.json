@@ -1,0 +1,28 @@
+{
+  "immunoglobulinDomains": [
+    {
+      "accession": "PF07686",
+      "observedName": "Immunoglobulin V-set domain",
+      "observedShortName": "V-set",
+      "integratedInterProId": "IPR013106",
+      "url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF07686/",
+      "rawSha256": "a8123c85c02b976e8a7aa25f379b51520ef0c96d9acce040929bbbf6d97bdd78"
+    },
+    {
+      "accession": "PF00047",
+      "observedName": "Immunoglobulin domain",
+      "observedShortName": "ig",
+      "integratedInterProId": "IPR013151",
+      "url": "https://www.ebi.ac.uk/interpro/api/entry/pfam/PF00047/",
+      "rawSha256": "4c5df80cd1ee8d55c87051dfac3de5e1c4082c48c908af87a3d8dc13544f9d07"
+    }
+  ],
+  "camelidTaxonomy": {
+    "id": "9835",
+    "name": "Camelidae",
+    "rank": "family",
+    "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9835&mode=Info",
+    "rawSha256": "1d76f8ba8aaba71b6063ada81be4fe8e97fbe552552de60ce1cfcbd98cbaaaa2"
+  },
+  "taxonomyIsSourceOrganismNotExpressionHost": true
+}

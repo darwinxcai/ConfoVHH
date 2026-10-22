@@ -1,0 +1,87 @@
+{
+  "inputBindings": {
+    "HARD_DECOY_PROTOCOL_V3.md": {
+      "bytes": 17193,
+      "sha256": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376"
+    },
+    "scripts/hard-decoy-v3/review-dp1-receptor.mjs": {
+      "bytes": 17479,
+      "sha256": "c22b25610b8d70b558d762bb3fa3ed069d33190f817aacfe8d67529895dd6fa2"
+    },
+    "scripts/hard-decoy/v3-receptor-tm-pregraph.mjs": {
+      "bytes": 71123,
+      "sha256": "4316347ee87f6c945f3cb3ed8b3128bb3b2468ec5dfdb158d4e297119821fa6b"
+    },
+    "validation/hard-decoy-holdout-v3/prostanoid-source-review-2026-09-05/source-review.json": {
+      "bytes": 112725,
+      "sha256": "a3711c5ec52a423a5af1aa8175b29614542985cfd506cfee0c907d4b00e21e5a"
+    },
+    "validation/hard-decoy-holdout-v3/prostanoid-source-review-2026-09-05/sources/uniprot-Q13258.body": {
+      "bytes": 38987,
+      "sha256": "13a12f1fcff64d5453d7ee072289be39c1b6b807ad3629a0897dbd9b631075f5"
+    },
+    "validation/hard-decoy-holdout-v3/prostanoid-source-review-2026-09-05/sources/uniprot-P43116.body": {
+      "bytes": 31334,
+      "sha256": "3342366b865a8613e3f74d2c184af5acc2f4e74ab6e0379f6da580744aae92b0"
+    },
+    "validation/hard-decoy-holdout-v3/prostanoid-source-review-2026-09-05/sources/uniprot-P35408.body": {
+      "bytes": 40429,
+      "sha256": "203a9c59a4e9cb0dd6676293bbb55c7b96c1e02f1e4d239381e405df135b55d1"
+    },
+    "validation/hard-decoy-holdout-v3/receptor-tm-contract-2026-08-30.json": {
+      "bytes": 9905,
+      "sha256": "abd88bbae2d35fda28dc9339f80d91c65d95c4b9f844d74ddff7249090eea412"
+    },
+    "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/development-receptor-profiles.jsonl": {
+      "bytes": 84780,
+      "sha256": "0a120c9ac73ce5acbb33cb638d2fe396942cf6dff302d3a81e74a789af797b65"
+    },
+    "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/candidate-receptor-profiles.jsonl": {
+      "bytes": 1320798,
+      "sha256": "ac6d733ec4658b17349b8ca63cc9a4fbf18ce9c761b7c9ed38fcd4854e8b15f3"
+    }
+  },
+  "outputs": {
+    "profile.json": {
+      "bytes": 8096,
+      "sha256": "596563e70f8832022beae02c0fc4bf19ed98956f2a38c315cb3484887ff01ad1"
+    },
+    "development-pairs.json": {
+      "bytes": 28775,
+      "sha256": "520e5355b0f1f915676bcfd27777893006bd6e3e3343896f444532fcdc49ee1d"
+    },
+    "entry-development-pairs.json": {
+      "bytes": 102003,
+      "sha256": "c55c58aa244e2a076eee7d0b2ac25ab39f7790075ebd36ef0f85b05842f945d3"
+    },
+    "cross-receptor-pairs.json": {
+      "bytes": 3573,
+      "sha256": "1c2dd422df1f9e640e432fb9e26f4af1a16a8929a162ce3d7484ed3c08fdb39f"
+    },
+    "same-receptor-pairs.json": {
+      "bytes": 13934,
+      "sha256": "3258d3f7abdae3eb80373b200bceabe6677bc35fb0bb77f9a7059e506ee93a57"
+    },
+    "entry-accounting.json": {
+      "bytes": 3901,
+      "sha256": "c5ddf78a647ce1d3eb54631cec5d2992b746064265ca8b984ebb79c6219fdf30"
+    },
+    "summary.json": {
+      "bytes": 1133,
+      "sha256": "426534ee487411ad126b2fe465ba0697ba3354e8d2d2b7e52b4cea05abca53b7"
+    },
+    "README.md": {
+      "bytes": 3928,
+      "sha256": "7099867d09b3550b633d4ef840f4de032ce120c7c5a6c26a7c45a4aba28727cd"
+    }
+  },
+  "authority": {
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  }
+}

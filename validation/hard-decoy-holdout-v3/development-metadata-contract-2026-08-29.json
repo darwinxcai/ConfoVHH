@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "DEVELOPMENT_METADATA_COMPLETION_RULE_FROZEN",
+  "snapshotDateUtc": "2026-08-29",
+  "selectedProtocol": {
+    "path": "HARD_DECOY_PROTOCOL_V3.md",
+    "sha256": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "metadataPreparationStageOnly": true
+  },
+  "developmentRegistry": {
+    "path": "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json",
+    "sha256": "d4cda5ecfa060dc2dc0d5147114946f8d059dce983d9fe4ac10a0c5509ad9778",
+    "expectedStructureCount": 17,
+    "requiredStructureIds": [
+      "3P0G",
+      "4MQS",
+      "4XT1",
+      "5C1M",
+      "5JQH",
+      "6B73",
+      "6DO1",
+      "6IBL",
+      "6KNM",
+      "6O3C",
+      "6RNK",
+      "6VI4",
+      "7L1V",
+      "7YM8",
+      "8FCZ",
+      "8QOT",
+      "8QW4"
+    ]
+  },
+  "reusedEntryMetadata": {
+    "directory": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29",
+    "entryLedgerFile": "entries.jsonl",
+    "entryLedgerSha256": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "expectedReusedStructureCount": 15,
+    "reusedStructureIds": [
+      "3P0G",
+      "4MQS",
+      "4XT1",
+      "5C1M",
+      "5JQH",
+      "6B73",
+      "6DO1",
+      "6IBL",
+      "6RNK",
+      "6VI4",
+      "7L1V",
+      "7YM8",
+      "8FCZ",
+      "8QOT",
+      "8QW4"
+    ],
+    "sourceCaptureWasRepeated": true,
+    "formalEligibilityAuthority": false
+  },
+  "missingEntryMetadata": {
+    "requiredStructureIds": [
+      "6KNM",
+      "6O3C"
+    ],
+    "endpoint": "https://data.rcsb.org/graphql",
+    "method": "POST",
+    "queryPath": "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql",
+    "querySha256": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "repeatCount": 2,
+    "timeoutMilliseconds": 90000,
+    "maximumResponseBytes": 4194304,
+    "minimumDelayMilliseconds": 100,
+    "redirectPolicy": "error",
+    "userAgent": "ConfoVHH-hard-decoy-development-metadata-v3/1.0 (+https://github.com/darwinxcai/ConfoVHH)"
+  },
+  "gpcrdbMetadata": {
+    "path": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json",
+    "sha256": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "expectedInventoryCount": 1716,
+    "pdbCodeField": "pdb_code"
+  },
+  "sourceLicenses": {
+    "path": "validation/hard-decoy-holdout-v3/source-licenses-2026-08-29.json",
+    "sha256": "35474077e829f0246c05537074cac226f4cb777dc3abec73cc8753263ed1e614",
+    "requiredMappings": {
+      "gpcrdb-structure-api-and-table-data": "CC-BY-4.0",
+      "rcsb-pdb-search-and-data-apis": "CC0-1.0"
+    }
+  },
+  "metadataSelection": {
+    "receptorEntity": "use-only-when-the-frozen-GPCRdb-preferred-auth-chain-maps-to-exactly-one-polymer-entity",
+    "receptorUniProt": "retain-the-complete-bytewise-sorted-set-of-UniProt-reference-accessions-on-the-selected-receptor-entity",
+    "vhhCandidates": "retain-every-polymer-entity-matching-the-frozen-vhh-description-or-camelid-source-plus-length-signal",
+    "uniqueVhhMetadataCandidateIsNotDirectInterfaceEvidence": true,
+    "directInterfaceEvidence": "UNRESOLVED",
+    "constructEvidence": "UNRESOLVED",
+    "knownParentEvidence": "UNRESOLVED",
+    "annotationEpitopeAuthority": false
+  },
+  "vhhMetadataSignal": {
+    "descriptionPattern": "(?:\\bnanobody\\b|\\bVHH\\b|single[- ]domain antibody|camelid antibody|heavy[- ]chain[- ]only antibody|variable domain of (?:a )?heavy[- ]chain[- ]only antibody|megabody)",
+    "camelidOrganismPattern": "(?:Lama|Vicugna|Camelus|alpaca|llama|camelid)",
+    "minimumSequenceLength": 80,
+    "maximumSequenceLength": 250
+  },
+  "serialization": {
+    "pdbIdPattern": "^[0-9][A-Z0-9]{3}$",
+    "rowOrder": "pdbId-bytewise-ascending",
+    "setOrder": "canonical-JSON-bytewise-ascending",
+    "jsonObjectKeys": "recursive-bytewise-ascending",
+    "jsonlTerminalLf": true,
+    "digest": "SHA-256"
+  },
+  "output": {
+    "directoryName": "development-metadata-snapshot-2026-08-29",
+    "requiredFiles": [
+      "README.md",
+      "checksums.sha256",
+      "development-nodes.jsonl",
+      "entities.jsonl",
+      "manifest.json",
+      "missing-entries.jsonl",
+      "raw/rcsb-development-metadata-repeat-1.json",
+      "raw/rcsb-development-metadata-repeat-2.json",
+      "requests.jsonl",
+      "summary.json"
+    ]
+  },
+  "integrity": {
+    "exactDevelopmentCoverageRequired": true,
+    "missingSetDerivedByRegistryMinusReusedMetadata": true,
+    "normalizedRepeatEqualityRequired": true,
+    "metadataSignalsCannotPromoteTargets": true,
+    "nativeCoordinatesForbidden": true,
+    "nativeRelativePoseInspectionForbidden": true,
+    "dockqCapriLabelsForbidden": true,
+    "confovhhHoldoutScoresForbidden": true,
+    "performanceResultsForbidden": true,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false
+  }
+}

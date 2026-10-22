@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "benchmarkId": "confovhh-dockq-local-se3-development-pilot-v1",
+  "title": "ConfoVHH local-SE(3) DockQ development pilot",
+  "dataRole": "development",
+  "statusAtFreeze": "prospectively-specified-before-dockq-labeling",
+  "protocolRelationship": "local-SE3-subset-not-formal-hard-decoy-execution",
+  "frozenAt": "2026-08-27T03:15:42.000Z",
+  "purpose": "Validate deterministic perturbation generation, DockQ labeling, ConfoVHH audit extraction, tie-aware aggregation, provenance, and artifact-integrity plumbing on previously used public complexes.",
+  "claimBoundary": "DockQ measures geometric similarity to each source complex, not binding. This development pilot is not a locked holdout, blind docking benchmark, or validation of near-native ranking.",
+  "targets": [
+    { "targetId": "3P0G-A-B", "pdb": "3P0G", "receptorChain": "A", "vhhChain": "B", "receptorFamilyCluster": "ADRB2", "developmentReuse": true },
+    { "targetId": "4XT1-A-C", "pdb": "4XT1", "receptorChain": "A", "vhhChain": "C", "receptorFamilyCluster": "US28", "developmentReuse": true },
+    { "targetId": "6DO1-A-C", "pdb": "6DO1", "receptorChain": "A", "vhhChain": "C", "receptorFamilyCluster": "AGTR1", "developmentReuse": true },
+    { "targetId": "6O3C-A-B", "pdb": "6O3C", "receptorChain": "A", "vhhChain": "B", "receptorFamilyCluster": "SMO", "developmentReuse": true },
+    { "targetId": "8QW4-A-B", "pdb": "8QW4", "receptorChain": "A", "vhhChain": "B", "receptorFamilyCluster": "FZD3", "developmentReuse": true }
+  ],
+  "sourcePolicy": {
+    "coordinateUrlTemplate": "https://files.rcsb.org/download/{PDB}.pdb",
+    "coordinateFormat": "legacy PDB",
+    "coordinateScope": "as-supplied",
+    "selectedModelPolicy": "first actual model identifier",
+    "chainNormalizationForDockQ": "canonical two-chain PDB; A=receptor and B=VHH",
+    "sourceIntegrity": "record raw byte count and SHA-256 for every target"
+  },
+  "generator": {
+    "kind": "native-derived-local-rigid-body",
+    "receptorCoordinates": "fixed",
+    "vhhInternalGeometry": "fixed",
+    "pivot": "VHH C-alpha centroid",
+    "rotationAnglesDegrees": [2, 5, 10, 20, 40, 80],
+    "translationMagnitudesAngstrom": [0.5, 1, 2, 4, 8, 16],
+    "replicatesPerGridCell": 2,
+    "posesPerTargetBeforeDeduplication": 72,
+    "totalPosesBeforeDeduplication": 360,
+    "axisAndDirection": "independent deterministic unit vectors derived from SHA-256",
+    "seedDerivation": "SHA-256 of benchmark ID, target ID, rotation angle, translation magnitude, and replicate",
+    "transformConvention": "active Cartesian transform x' = R(x-pivot) + pivot + translation; row-major 4x4 affine matrix; coordinates in angstrom",
+    "rotationConvention": "right-handed Rodrigues rotation",
+    "deduplication": {
+      "metric": "VHH C-alpha RMSD without realignment",
+      "cutoffAngstrom": 0.5,
+      "keeper": "lexicographically first pose ID",
+      "labelBlind": true
+    },
+    "eligibility": "retain every finite, nonduplicate generated pose without consulting DockQ or ConfoVHH",
+    "controlsOutsideRankingPool": ["native self", "VHH translated +1000 angstrom along x"]
+  },
+  "auditPolicy": {
+    "softwareVersion": "0.4.0",
+    "confidenceMode": "none",
+    "pae": "absent",
+    "experimentalBFactorAsPlddt": false,
+    "ensembleConsensus": "not used for primary single-pose arms",
+    "poseIdTieBreakAffectsMetrics": false
+  },
+  "dockqPolicy": {
+    "package": "DockQ",
+    "version": "2.1.3",
+    "pypiSourceSha256": "50c4e2b4bced3bf865b12061ec0b56e23de1383dc70b445441848224f6c72c0d",
+    "mapping": "AB:AB",
+    "classification": {
+      "incorrect": "0 <= DockQ < 0.23",
+      "acceptable": "0.23 <= DockQ < 0.49",
+      "medium": "0.49 <= DockQ < 0.80",
+      "high": "DockQ >= 0.80"
+    },
+    "primaryBinaryLabel": "DockQ >= 0.23",
+    "interpretation": "reference-complex geometric similarity only"
+  },
+  "scoreArms": [
+    { "id": "confovhh_evidence_v0_4", "direction": "descending", "definition": "supported=2, mixed=1, limited/not-assessable=0" },
+    { "id": "contact_count", "direction": "descending", "definition": "receptor-VHH contacting residue-pair count" },
+    { "id": "delta_sasa", "direction": "descending", "definition": "protein-heavy-atom delta SASA in square angstrom" },
+    { "id": "clash_burden", "direction": "descending", "definition": "negative severe-clash residue-pair count" },
+    { "id": "cdr_contact_share", "direction": "descending", "definition": "IMGT CDR contact share; target unavailable when numbering is unavailable for every pose" },
+    { "id": "random_all_tied", "direction": "descending", "definition": "constant zero; prevalence baseline" }
+  ],
+  "tiePolicy": {
+    "averagePrecision": "threshold-grouped non-interpolated AP; each complete tie block enters together",
+    "auroc": "Mann-Whitney formulation with 0.5 credit for positive-negative ties",
+    "kendall": "Kendall tau-b preserving score and DockQ ties",
+    "precisionAtK": "expected positive fraction when a boundary tie block crosses k",
+    "successAtK": "hypergeometric expected success when a boundary tie block crosses k",
+    "poseId": "display-only; never breaks metric ties"
+  },
+  "endpoints": {
+    "primary": ["target-macro average precision for DockQ >= 0.23", "target-macro AP lift over each target's prevalence"],
+    "secondary": ["target-macro AUROC", "expected success and precision at 1, 5, and 10", "EF at 1% and 5%", "target-macro Kendall tau-b", "positive rate by evidence band", "supported-versus-other odds ratio"],
+    "aggregation": "calculate per target first, then equal-weight target macro mean; retain eligible-target denominator",
+    "sensitivityDockQCutoffs": [0.21, 0.23, 0.25],
+    "boundaryExclusion": "repeat after excluding 0.21 <= DockQ <= 0.25"
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 90420260827,
+    "scheme": "paired hierarchical cluster bootstrap: sample receptor-family clusters with replacement, then targets within sampled clusters; never resample poses",
+    "interval": "2.5th and 97.5th percentiles",
+    "interpretation": "development-target bootstrap dispersion interval, not external-generalization evidence"
+  },
+  "requiredControls": {
+    "nativeSelf": "DockQ equals 1 within numerical tolerance and ConfoVHH reproduces the source audit",
+    "farTranslation": "DockQ below 0.01, zero contacts, and zero delta SASA",
+    "cliCrossCheck": "at least two generated poses per target agree with the primary DockQ execution path within 1e-6"
+  },
+  "releaseFlags": {
+    "formalHoldoutEvaluated": false,
+    "hardDecoyProtocolCompleted": false,
+    "nearNativeRankingValidated": false,
+    "preliminaryNearNativeClaimAllowed": false
+  }
+}

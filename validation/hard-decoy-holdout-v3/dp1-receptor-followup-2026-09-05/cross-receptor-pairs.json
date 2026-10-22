@@ -1,0 +1,114 @@
+[
+  {
+    "pairId": "Q13258|P43116",
+    "referenceAccession": "P43116",
+    "referenceNodes": [
+      "candidate:7CX2",
+      "candidate:7CX3",
+      "candidate:7CX4"
+    ],
+    "referenceProfileEpoch": "2026-08-30",
+    "dp1ProfileEpoch": "2026-09-05",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 532,
+      "identicalResidueColumns": 114,
+      "alignedResiduePairColumns": 218,
+      "alignmentColumns": 237,
+      "gapColumns": 19,
+      "sequenceLengthA": 237,
+      "sequenceLengthB": 218,
+      "identity": 0.481012658228,
+      "coverageA": 0.919831223629,
+      "coverageB": 1
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "35d3a13bc434227d7f7be6451358e45a09509a5d8b3970687098c6c5d0e106de",
+      "leftAlignmentSide": "A",
+      "leftCoverage": 0.919831223629,
+      "rightCoverage": 1
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": true,
+      "sensitivityIdentitySatisfied": true,
+      "primaryThresholdSatisfied": true,
+      "sensitivityThresholdSatisfied": true
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  },
+  {
+    "pairId": "Q13258|P35408",
+    "referenceAccession": "P35408",
+    "referenceNodes": [
+      "candidate:7D7M"
+    ],
+    "referenceProfileEpoch": "2026-08-30",
+    "dp1ProfileEpoch": "2026-09-05",
+    "alignment": {
+      "algorithm": "global-Needleman-Wunsch-three-state-affine-gap",
+      "substitutionMatrix": "BLOSUM62",
+      "gapOpen": -10,
+      "gapExtension": -1,
+      "terminalGapsPenalized": true,
+      "stateTiePrecedence": [
+        "M",
+        "X",
+        "Y"
+      ],
+      "sequencePairCanonicalizedBytewise": true,
+      "alignmentScore": 382,
+      "identicalResidueColumns": 90,
+      "alignedResiduePairColumns": 221,
+      "alignmentColumns": 243,
+      "gapColumns": 22,
+      "sequenceLengthA": 227,
+      "sequenceLengthB": 237,
+      "identity": 0.37037037037,
+      "coverageA": 0.973568281938,
+      "coverageB": 0.932489451477
+    },
+    "namedCoverage": {
+      "leftSequenceSha256": "32b9daad6621bf903fdc57dbbeba246957d7b6240e2ca6b15f415c86da316bb1",
+      "rightSequenceSha256": "f0cbac35e0ce310d36c1b968fd0b61a5e9c1f42b2b3d7b88c1a86d5c926d610a",
+      "leftAlignmentSide": "B",
+      "leftCoverage": 0.932489451477,
+      "rightCoverage": 0.973568281938
+    },
+    "criterion": {
+      "coverageASatisfied": true,
+      "coverageBSatisfied": true,
+      "bothCoverageSatisfied": true,
+      "primaryIdentitySatisfied": false,
+      "sensitivityIdentitySatisfied": true,
+      "primaryThresholdSatisfied": false,
+      "sensitivityThresholdSatisfied": true
+    },
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalEligibilityAuthority": false,
+    "formalExclusionAuthority": false,
+    "newIndependentComponents": 0,
+    "wholeCensusUpperBound": null,
+    "targetFreezePermitted": false
+  }
+]

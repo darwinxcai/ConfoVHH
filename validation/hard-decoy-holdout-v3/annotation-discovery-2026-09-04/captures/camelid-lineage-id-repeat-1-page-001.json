@@ -1,0 +1,19 @@
+{
+  "specification": {
+    "name": "camelid-lineage-id-repeat-1-page-001",
+    "url": "https://search.rcsb.org/rcsbsearch/v2/query?json=%7B%22query%22%3A%7B%22type%22%3A%22terminal%22%2C%22service%22%3A%22text%22%2C%22parameters%22%3A%7B%22attribute%22%3A%22rcsb_entity_source_organism.taxonomy_lineage.id%22%2C%22operator%22%3A%22exact_match%22%2C%22value%22%3A%229835%22%7D%7D%2C%22return_type%22%3A%22entry%22%2C%22request_options%22%3A%7B%22paginate%22%3A%7B%22start%22%3A0%2C%22rows%22%3A1000%7D%2C%22results_content_type%22%3A%5B%22experimental%22%5D%2C%22sort%22%3A%5B%7B%22sort_by%22%3A%22rcsb_id%22%2C%22direction%22%3A%22asc%22%7D%5D%7D%7D",
+    "method": "GET",
+    "requestFile": "requests/camelid-lineage-id-repeat-1-page-001.json",
+    "requestSha256": "256e1327624a8cbb3ea5cc9679299775d417992d3c617efe367ffdbafa40172a",
+    "rawFile": "raw/camelid-lineage-id-repeat-1-page-001.json",
+    "captureFile": "captures/camelid-lineage-id-repeat-1-page-001.json"
+  },
+  "startedUtc": "2026-09-04T22:48:02.250Z",
+  "completedUtc": "2026-09-04T22:48:02.737Z",
+  "status": 200,
+  "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query?json=%7B%22query%22%3A%7B%22type%22%3A%22terminal%22%2C%22service%22%3A%22text%22%2C%22parameters%22%3A%7B%22attribute%22%3A%22rcsb_entity_source_organism.taxonomy_lineage.id%22%2C%22operator%22%3A%22exact_match%22%2C%22value%22%3A%229835%22%7D%7D%2C%22return_type%22%3A%22entry%22%2C%22request_options%22%3A%7B%22paginate%22%3A%7B%22start%22%3A0%2C%22rows%22%3A1000%7D%2C%22results_content_type%22%3A%5B%22experimental%22%5D%2C%22sort%22%3A%5B%7B%22sort_by%22%3A%22rcsb_id%22%2C%22direction%22%3A%22asc%22%7D%5D%7D%7D",
+  "contentType": "application/json",
+  "dateHeader": "Fri, 04 Sep 2026 22:48:01 GMT",
+  "sha256": "e4131f554852218df327d875f869e4e3334c5abeb51951593b4d9b5063bd9fdd",
+  "bytes": 52129
+}

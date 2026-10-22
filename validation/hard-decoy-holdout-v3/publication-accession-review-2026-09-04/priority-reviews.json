@@ -1,0 +1,466 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-04",
+  "status": "PRIMARY_PUBLICATION_ACCESSION_REVIEW_COMPLETE_SCIENTIFIC_DISPOSITION_PENDING",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/publication-first-discovery-2026-09-04/publications.jsonl": "e8fd1e6010c16f95eece769f83ed24daed7afa31977ff3e817a562be3ee8e186",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/gpcrdb-api.txt": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/normalized/rcsb-gpcrdb-intersection.txt": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e"
+  },
+  "reviewedPaperCount": 5,
+  "reviews": [
+    {
+      "bibliographyRowIndexZeroBased": 11,
+      "doi": "10.1038/s41467-024-49000-x",
+      "pmid": "38816420",
+      "title": "Structural basis for selectivity and antagonism in extracellular GPCR-nanobodies.",
+      "reviewDate": "2026-09-04",
+      "targetReceptor": "ACKR3 (human; UniProt P25106)",
+      "binderFormat": "VUN701 single-domain nanobody",
+      "sourcesReviewed": [
+        {
+          "url": "https://www.nature.com/articles/s41467-024-49000-x",
+          "sections": [
+            "Data availability",
+            "ACKR3 molecular modeling",
+            "Expression and purification of VUN701"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11139983/fullTextXML",
+          "sections": [
+            "Data availability",
+            "Expression and purification of VUN701"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        },
+        {
+          "url": "https://data.rcsb.org/graphql",
+          "sections": [
+            "Entry/polymer metadata crosscheck via pinned GraphQL query"
+          ],
+          "sourceType": "PRIMARY_DEPOSITION_METADATA",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        }
+      ],
+      "establishedFacts": [
+        "8UEK is deposited as the NMR structure of VUN701 alone; BMRB accession 31108 is also named.",
+        "The ACKR3–VUN701 complex is modeled with AlphaFold/ColabFold and molecular dynamics.",
+        "7SK5 is reused prior structural material, not a new deposition of this paper."
+      ],
+      "depositedPdbIdsNamedByThisPaper": [
+        "8UEK"
+      ],
+      "constructScope": "Isolated binder NMR; no newly deposited experimental receptor–VUN701 complex identified.",
+      "reviewOutcome": "NO_EXPERIMENTAL_RECEPTOR_VHH_REFERENCE_POSE_ESTABLISHED",
+      "inference": "8UEK is outside the frozen inventory and contains the binder alone. A new accession here does not add a GPCR–VHH benchmark component.",
+      "unresolvedEvidence": [
+        "Any experimental receptor-bound VUN701 deposition beyond the stated data availability remains unestablished."
+      ],
+      "formalDisposition": "PENDING_REQUIRED_METADATA",
+      "formalRoleAssignment": false,
+      "independentComponentIncrementEstablished": false,
+      "independentComponentIncrement": null,
+      "accessionReconciliation": [
+        {
+          "pdbId": "8UEK",
+          "inFrozenGpcrdb1716": false,
+          "inHistoricalKeywordIntersection287": false,
+          "developmentPdbMatch": false
+        }
+      ],
+      "publicationReconciliation": {
+        "frozenGpcrdbDoiMatches": [],
+        "historicalEntryDoiMatches": [],
+        "developmentDoiMatches": [],
+        "developmentSameReceptorUniProtMatches": [],
+        "absenceOfExactPdbOrDoiMatchProvesIndependence": false,
+        "sequenceAndParentLeakageReviewComplete": false
+      },
+      "reusedPdbIdsExplicitlyDistinguishedFromNewDepositions": [
+        {
+          "pdbId": "7SK5",
+          "inFrozenGpcrdb1716": true,
+          "inHistoricalKeywordIntersection287": true,
+          "historicalPrimaryDoi": "10.1126/sciadv.abn8063"
+        }
+      ]
+    },
+    {
+      "bibliographyRowIndexZeroBased": 13,
+      "doi": "10.1038/s41467-024-50827-7",
+      "pmid": "39353917",
+      "title": "Structure elucidation of a human melanocortin-4 receptor specific orthosteric nanobody agonist.",
+      "reviewDate": "2026-09-04",
+      "targetReceptor": "MC4R (human; UniProt P32245)",
+      "binderFormat": "pN162 nanobody; separate auxiliary Cb35/Nb35 reagent",
+      "sourcesReviewed": [
+        {
+          "url": "https://www.nature.com/articles/s41467-024-50827-7",
+          "sections": [
+            "Data availability",
+            "Constructs for nanobody discovery",
+            "Expression of recombinant MC4R and Gs protein"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11445563/fullTextXML",
+          "sections": [
+            "Constructs for nanobody discovery",
+            "Expression of recombinant MC4R and Gs protein",
+            "Data availability"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        }
+      ],
+      "establishedFacts": [
+        "The deposited MC4R–pN162 structure is 8QJ2.",
+        "Discovery used an MC4R/β2AR chimera linked to Cb80.",
+        "The cryo-EM expression construct instead begins with full-length wild-type human MC4R, with terminal BRIL and mCherry/tag additions.",
+        "Historical entity 6 is pN162 (117 aa); receptor-containing entity 5 is 729 aa."
+      ],
+      "depositedPdbIdsNamedByThisPaper": [
+        "8QJ2"
+      ],
+      "constructScope": "Discovery immunogen and cryo-EM construct differ. The cryo-EM receptor sequence requires terminal-fusion processing; pN162 is a separate polymer.",
+      "reviewOutcome": "EXISTING_HISTORICAL_ENTRY_REQUIRES_EXISTING_FRONTIER_INTEGRATION",
+      "inference": "This source reinforces an already inventoried candidate and cannot increase the discovered-entry count. Independence still requires the full leakage graph.",
+      "unresolvedEvidence": [
+        "Confirm permitted receptor-chain processing and paper-to-entity binder identity within the existing disposition workflow."
+      ],
+      "formalDisposition": "PENDING_REQUIRED_METADATA",
+      "formalRoleAssignment": false,
+      "independentComponentIncrementEstablished": false,
+      "independentComponentIncrement": null,
+      "accessionReconciliation": [
+        {
+          "pdbId": "8QJ2",
+          "inFrozenGpcrdb1716": true,
+          "inHistoricalKeywordIntersection287": true,
+          "developmentPdbMatch": false
+        }
+      ],
+      "publicationReconciliation": {
+        "frozenGpcrdbDoiMatches": [],
+        "historicalEntryDoiMatches": [
+          "8QJ2"
+        ],
+        "developmentDoiMatches": [],
+        "developmentSameReceptorUniProtMatches": [],
+        "absenceOfExactPdbOrDoiMatchProvesIndependence": false,
+        "sequenceAndParentLeakageReviewComplete": false
+      }
+    },
+    {
+      "bibliographyRowIndexZeroBased": 14,
+      "doi": "10.1073/pnas.2423931122",
+      "pmid": "40067891",
+      "title": "Epitope-directed selection of GPCR nanobody ligands with evolvable function.",
+      "reviewDate": "2026-09-04",
+      "targetReceptor": "AT1R / AGTR1 (human; UniProt P30556)",
+      "binderFormat": "AT209 or AT206 nanobody fused to receptor N terminus",
+      "sourcesReviewed": [
+        {
+          "url": "https://www.pnas.org/doi/10.1073/pnas.2423931122",
+          "sections": [
+            "Receptor Expression and Purification",
+            "Data, Materials, and Software Availability"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11929449/fullTextXML",
+          "sections": [
+            "Receptor Expression and Purification",
+            "Data, Materials, and Software Availability"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        },
+        {
+          "url": "https://data.rcsb.org/graphql",
+          "sections": [
+            "Pinned metadata query:9EAH,9EAI,9EAJ"
+          ],
+          "sourceType": "PRIMARY_DEPOSITION_METADATA",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        }
+      ],
+      "establishedFacts": [
+        "The paper deposits 9EAH (AT209/olmesartan), 9EAI (AT206/losartan), and 9EAJ (AT206).",
+        "Methods explicitly fuse AT206/AT209 to the AT1R N terminus for cryo-EM.",
+        "BRIL replaces receptor residues 227–233 in these constructs.",
+        "Deposition entity 1 contains nanobody, receptor and cytochrome in each entry; AT1R maps to P30556."
+      ],
+      "depositedPdbIdsNamedByThisPaper": [
+        "9EAH",
+        "9EAI",
+        "9EAJ"
+      ],
+      "constructScope": "Same-polymer nanobody–receptor fusions with internal BRIL. These constructs differ from a freely docked receptor/VHH pair.",
+      "reviewOutcome": "NEW_ACCESSIONS_WITH_EXPLICIT_FUSION_AND_DEVELOPMENT_RECEPTOR_LINK",
+      "inference": "The accessions extend discovery coverage, but same-chain fusion conflicts with the current benchmark. Independently, receptor P30556 matches development 6DO1; three structures cannot be counted as three independent components.",
+      "unresolvedEvidence": [
+        "Integrate source-backed fusion evidence and the exact receptor linkage into the census ledger; no formal ledger disposition is changed here."
+      ],
+      "formalDisposition": "PENDING_REQUIRED_METADATA",
+      "formalRoleAssignment": false,
+      "independentComponentIncrementEstablished": false,
+      "independentComponentIncrement": null,
+      "accessionReconciliation": [
+        {
+          "pdbId": "9EAH",
+          "inFrozenGpcrdb1716": false,
+          "inHistoricalKeywordIntersection287": false,
+          "developmentPdbMatch": false
+        },
+        {
+          "pdbId": "9EAI",
+          "inFrozenGpcrdb1716": false,
+          "inHistoricalKeywordIntersection287": false,
+          "developmentPdbMatch": false
+        },
+        {
+          "pdbId": "9EAJ",
+          "inFrozenGpcrdb1716": false,
+          "inHistoricalKeywordIntersection287": false,
+          "developmentPdbMatch": false
+        }
+      ],
+      "publicationReconciliation": {
+        "frozenGpcrdbDoiMatches": [],
+        "historicalEntryDoiMatches": [],
+        "developmentDoiMatches": [],
+        "developmentSameReceptorUniProtMatches": [
+          "6DO1"
+        ],
+        "absenceOfExactPdbOrDoiMatchProvesIndependence": false,
+        "sequenceAndParentLeakageReviewComplete": false
+      }
+    },
+    {
+      "bibliographyRowIndexZeroBased": 15,
+      "doi": "10.1038/s41589-025-01896-2",
+      "pmid": "40374856",
+      "title": "Development of an allosteric adhesion GPCR nanobody with therapeutic potential.",
+      "reviewDate": "2026-09-04",
+      "targetReceptor": "ADGRG2; deposition receptor UniProt Q8CJ12 (mouse)",
+      "binderFormat": "Nb23-bi nanobody derivative; detailed valency/linker architecture not verified",
+      "sourcesReviewed": [
+        {
+          "url": "https://www.nature.com/articles/s41589-025-01896-2",
+          "sections": [
+            "Abstract",
+            "Data availability"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        },
+        {
+          "url": "https://www.researchgate.net/publication/391776407_Development_of_an_allosteric_adhesion_GPCR_nanobody_with_therapeutic_potential",
+          "sections": [
+            "Publisher-provided text caption, model completeness statement only; no figure image requested"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_PUBLISHER_PREVIEW_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        },
+        {
+          "url": "https://data.rcsb.org/graphql",
+          "sections": [
+            "Pinned metadata query:8YKD"
+          ],
+          "sourceType": "PRIMARY_DEPOSITION_METADATA",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        }
+      ],
+      "establishedFacts": [
+        "Data availability deposits 8YKD and EMD-39365.",
+        "The publisher-provided model-scope text says Nb23-bi–ADGRG2 NTF density was not retained in refinement; that region relies on simulation and biochemical evidence.",
+        "The deposition lists a 903 aa receptor and five companion polymers: Gα, Gβ, Gγ, Nb35 and scFv16. No separate Nb23-bi polymer is listed."
+      ],
+      "depositedPdbIdsNamedByThisPaper": [
+        "8YKD"
+      ],
+      "constructScope": "Full receptor-containing cryo-EM preparation, but the experimentally resolved Nb23-bi–NTF reference pose is not established. This is not simply an isolated ectodomain deposition.",
+      "reviewOutcome": "NEW_ACCESSION_WITH_UNRESOLVED_EXPERIMENTAL_BINDER_POSE",
+      "inference": "The accession broadens the search and the binder is an experimental follow-up lead. A simulation-supported NTF model cannot supply experimental pose ground truth for the present benchmark.",
+      "unresolvedEvidence": [
+        "Publisher full Methods remain subscription restricted.",
+        "Verify Nb23-bi architecture and precise model completeness from authorized primary methods or deposition annotation before final census disposition."
+      ],
+      "formalDisposition": "PENDING_REQUIRED_METADATA",
+      "formalRoleAssignment": false,
+      "independentComponentIncrementEstablished": false,
+      "independentComponentIncrement": null,
+      "accessionReconciliation": [
+        {
+          "pdbId": "8YKD",
+          "inFrozenGpcrdb1716": false,
+          "inHistoricalKeywordIntersection287": false,
+          "developmentPdbMatch": false
+        }
+      ],
+      "publicationReconciliation": {
+        "frozenGpcrdbDoiMatches": [],
+        "historicalEntryDoiMatches": [],
+        "developmentDoiMatches": [],
+        "developmentSameReceptorUniProtMatches": [],
+        "absenceOfExactPdbOrDoiMatchProvesIndependence": false,
+        "sequenceAndParentLeakageReviewComplete": false
+      }
+    },
+    {
+      "bibliographyRowIndexZeroBased": 21,
+      "doi": "10.1038/s41467-026-72093-5",
+      "pmid": "42026072",
+      "title": "In silico discovery of nanobody binders to a G-protein coupled receptor using AlphaFold-Multimer.",
+      "reviewDate": "2026-09-04",
+      "targetReceptor": "MRGPRX2",
+      "binderFormat": "Nanobodies tested as IgG1-Fc fusions and monomeric constructs",
+      "sourcesReviewed": [
+        {
+          "url": "https://www.nature.com/articles/s41467-026-72093-5",
+          "sections": [
+            "Abstract",
+            "Data availability",
+            "Code availability"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13315262/fullTextXML",
+          "sections": [
+            "Abstract",
+            "Recombinant nanobody-Fc fusion expression and purification",
+            "Recombinant monomeric nanobody expression and purification",
+            "Back-matter data/code availability"
+          ],
+          "sourceType": "PRIMARY_ARTICLE_TEXT",
+          "accessDate": "2026-09-04",
+          "structuralImagesAccessed": false
+        }
+      ],
+      "establishedFacts": [
+        "The study reports prospective AlphaFold-Multimer discovery of MRGPRX2 binders with experimental binding and cellular functional assays.",
+        "The consulted data-availability statement names source data and author-request access, without a newly deposited PDB accession.",
+        "The paper provides the analysis repository https://github.com/kruselab/MRGPRX2-AF-M-screen."
+      ],
+      "depositedPdbIdsNamedByThisPaper": [],
+      "constructScope": "Experimental binding/function validation of computationally selected binders; a new experimental receptor–nanobody structure was not identified in the consulted deposition statement.",
+      "reviewOutcome": "EXPERIMENTAL_BINDER_AND_METHODS_LEAD_WITHOUT_NEW_REFERENCE_POSE",
+      "inference": "Useful as a distinct experimental-design and methodological lead. Binding evidence cannot itself establish a native receptor–VHH pose or an additional benchmark component.",
+      "unresolvedEvidence": [
+        "Exact clones/sequences and provenance must be reviewed before any experimental brief.",
+        "No new experimental GPCR–VHH deposition is established here; this does not prove none exists outside the consulted statement."
+      ],
+      "formalDisposition": "PENDING_REQUIRED_METADATA",
+      "formalRoleAssignment": false,
+      "independentComponentIncrementEstablished": false,
+      "independentComponentIncrement": null,
+      "accessionReconciliation": [],
+      "publicationReconciliation": {
+        "frozenGpcrdbDoiMatches": [],
+        "historicalEntryDoiMatches": [],
+        "developmentDoiMatches": [],
+        "developmentSameReceptorUniProtMatches": [],
+        "absenceOfExactPdbOrDoiMatchProvesIndependence": false,
+        "sequenceAndParentLeakageReviewComplete": false
+      }
+    }
+  ],
+  "liveMetadataCrosscheck": {
+    "requestedUrl": "https://data.rcsb.org/graphql",
+    "method": "GET",
+    "queryFile": "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql",
+    "querySha256": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "requestedPdbIds": [
+      "8UEK",
+      "9EAH",
+      "9EAI",
+      "9EAJ",
+      "8YKD"
+    ],
+    "httpStatus": 200,
+    "responseSha256": "8f25ae00f2129660d8ea100e1386a5a7ff8e4de3e68f100df718990a034a02fd",
+    "captureDate": "2026-09-04",
+    "fullRawResponseArchivedInThisReview": false,
+    "use": "Manual accession/construct corroboration only; not a replacement for a repeated immutable metadata snapshot.",
+    "entityFacts": [
+      {
+        "pdbId": "8UEK",
+        "entityId": "1",
+        "description": "ACKR3-targeting nanobody VUN701",
+        "sequenceLength": 124,
+        "sequenceSha256": "504bbefdc8f38870672fdba7879549db9f025b09b52f1a168c88ca85403ce2be"
+      },
+      {
+        "pdbId": "9EAH",
+        "entityId": "1",
+        "description": "Nanobody AT209,Type-1 angiotensin II receptor,Soluble cytochrome b562",
+        "sequenceLength": 580,
+        "sequenceSha256": "cbd81b7d459a1232a74af86ab63993adcf8f1cff6be0b9d99b511578d0672e9d",
+        "receptorUniProt": "P30556"
+      },
+      {
+        "pdbId": "9EAI",
+        "entityId": "1",
+        "description": "Nanobody AT206,Type-1 angiotensin II receptor,Soluble cytochrome b562",
+        "sequenceLength": 583,
+        "sequenceSha256": "fea3b0deca060ccd9a861d40791f7d6eefb7f095cdc937c5317d8b71a583dce6",
+        "receptorUniProt": "P30556"
+      },
+      {
+        "pdbId": "9EAJ",
+        "entityId": "1",
+        "description": "Nanobody AT206,Type-1 angiotensin II receptor,Soluble cytochrome b562",
+        "sequenceLength": 583,
+        "sequenceSha256": "fea3b0deca060ccd9a861d40791f7d6eefb7f095cdc937c5317d8b71a583dce6",
+        "receptorUniProt": "P30556"
+      },
+      {
+        "pdbId": "8YKD",
+        "entityId": "5",
+        "description": "Adhesion G-protein coupled receptor G2",
+        "sequenceLength": 903,
+        "sequenceSha256": "9d8dc6dbb788984b1322885fa60619df64f3a0d6ae29d0ae23d66ac21d064e31",
+        "receptorUniProt": "Q8CJ12"
+      }
+    ]
+  },
+  "interpretation": "Five priority articles were reviewed. No new independent benchmark component is established by this review. New accession discovery, experimental binding evidence, reference-pose availability, and leakage independence are separate claims.",
+  "formalProtocolStatus": "DRAFT",
+  "targetFreezeGate": "BLOCKED",
+  "broaderDiscoveryComplete": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "structuralFigureImagesAccessed": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "paperModelScopeCaptionTextConsulted": true
+}

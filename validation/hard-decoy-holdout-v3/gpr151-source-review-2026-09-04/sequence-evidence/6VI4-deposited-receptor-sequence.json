@@ -1,0 +1,39 @@
+{
+  "authAsymIds": [
+    "A",
+    "B"
+  ],
+  "description": "Kappa opioid receptor",
+  "entityId": "1",
+  "labelAsymIds": [
+    "A",
+    "B"
+  ],
+  "metadataSignals": {
+    "auxiliaryLexical": false,
+    "camelidSource": false,
+    "constructRiskLexical": false,
+    "vhhDescription": false,
+    "vhhLength": false,
+    "vhhLikeCandidate": false
+  },
+  "polymerType": "Protein",
+  "polymerTypeDetail": "polypeptide(L)",
+  "rcsbId": "6VI4_1",
+  "referenceSequences": [
+    {
+      "databaseAccession": "P41145",
+      "databaseName": "UniProt",
+      "provenanceSource": "SIFTS"
+    }
+  ],
+  "sequence": "GSISPAIPVIITAVYSVVFVVGLVGNSLVMFVIIRYTKMKTATNIYIFNLALADALVTTTMPFQSTVYLMNSWPFGDVLCKIVLSIDYYNMFTSIFTLTMMSVDRYIAVCHPVKALDFRTPLKAKIINICIWLLSSSVGISAIVLGGTKVREDVDVIECSLQFPDDDYSWWDLFMKICVFIFAFVIPVLIIIVCYTLMILRLKSVRLLSGSREKDRNLRRITRLVLVVVAVFVVCWTPIHIFILVEALGSTSHSTAALSSYYFCIALGYTNSSLNPILYAFLDENFKRCFRDFCFPLKMRMERQSTS",
+  "sequenceLength": 307,
+  "sequenceSha256": "ed300255dfd37c2e1250ca86a22e4bd96bd06686533669fe0f208b2379cd2ebd",
+  "sourceOrganisms": [
+    {
+      "scientificName": "Homo sapiens",
+      "taxonomyId": "9606"
+    }
+  ]
+}

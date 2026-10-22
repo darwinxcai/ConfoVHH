@@ -1,0 +1,17 @@
+# The deployed artifact is a static bundle built from the application source.
+# Everything below is irrelevant to `npm run build:static` and only inflates the
+# upload and the Tailwind content scan, which walks the working directory.
+
+# Frozen scientific evidence packages. Large, and never imported by the app.
+validation/
+
+# Test, QA, and CI tooling.
+tests/
+qa/
+.github/
+
+# Build outputs.
+dist/
+dist-static/
+.sites-runtime/
+.wrangler/

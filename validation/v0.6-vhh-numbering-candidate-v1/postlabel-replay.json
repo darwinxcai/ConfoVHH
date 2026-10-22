@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-v0.6-vhh-numbering-postlabel-replay-v1",
+  "status": "EXECUTED_POSTLABEL_DEVELOPMENT_REPLAY_NOT_HOLDOUT",
+  "candidateVersion": "0.6.0-candidate.1",
+  "sourceIntegrity": {
+    "checksumManifest": {
+      "path": "validation/dockq-development-pilot-v1/checksums.sha256",
+      "sha256": "d68cde133ae39f1b142e5ecccfde3b8ffc2a17a94c6999c7d21d3e3d81d18e3c"
+    },
+    "targets": {
+      "path": "validation/dockq-development-pilot-v1/targets.jsonl",
+      "sha256": "38c32bbcadf4a7dbcd9a3c58b6e89c0a3bda0194fda4f13234c20a3ba3edc5d5"
+    },
+    "poses": {
+      "path": "validation/dockq-development-pilot-v1/poses.jsonl",
+      "sha256": "3a9dc8f3e9348441e183d348354dd880d744aae6acef6291b709899dd3d852ef"
+    },
+    "summary": {
+      "path": "validation/dockq-development-pilot-v1/summary.json",
+      "sha256": "57e6d08e82f3b450bc4ceb682af2a1376af3a370fce717c8d6666ebb2638c0f9"
+    },
+    "publicDifferential": {
+      "path": "validation/v0.6-vhh-numbering-candidate-v1/public-panel-differential.json",
+      "sha256": "92f5a84048366fc19cb86a0a35da3cbfa906e000dae4422104139d8646664fe4"
+    },
+    "replayPlan": {
+      "path": "validation/v0.6-vhh-numbering-candidate-v1/postlabel-replay-plan.json",
+      "sha256": "f3ab37c8765b2984f0e3bf5f4151af63513d46ba1fde1ed0543d11356579bb01"
+    },
+    "candidateImplementation": {
+      "path": "lib/vhh-numbering-v06.ts",
+      "sha256": "0d81880db9d9fa308150d7df64a0f1d05e3e9d8d3c552b4b736b842c789c3270"
+    },
+    "allFrozenDevelopmentChecksumsVerified": true
+  },
+  "inferenceBasis": {
+    "allDevelopmentTargetsMatchedToPublicDifferential": true,
+    "allVhhSequenceSha256ValuesMatched": true,
+    "allTargetNumberingStatusesUnchanged": true,
+    "allTargetQueryBoundsUnchanged": true,
+    "allTargetCdrLengthsUnchanged": true,
+    "allTargetRegionAssignmentsUnchanged": true,
+    "poseGenerationIsRigidBodyOnly": true,
+    "residueIdentityAndOrderAreInvariantUnderPoseGeneration": true,
+    "dockqAndCapriLabelsReadOnlyAfterEqualityInference": true
+  },
+  "accounting": {
+    "targets": 5,
+    "poses": 360,
+    "targetNumberingStatusChanges": 0,
+    "targetRegionAssignmentChanges": 0,
+    "poseNumberingStatusChanges": 0,
+    "poseEngineProvenanceChanges": 360,
+    "cdrContactShareChanges": 0,
+    "cdr3ContactShareChanges": 0,
+    "evidenceBandChanges": 0,
+    "cdrDependentRankingInputChanges": 0
+  },
+  "byCapriClass": {
+    "acceptable": {
+      "poses": 98,
+      "numberingStatusChanges": 0,
+      "engineProvenanceChanges": 98,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    },
+    "high": {
+      "poses": 55,
+      "numberingStatusChanges": 0,
+      "engineProvenanceChanges": 55,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    },
+    "incorrect": {
+      "poses": 131,
+      "numberingStatusChanges": 0,
+      "engineProvenanceChanges": 131,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    },
+    "medium": {
+      "poses": 76,
+      "numberingStatusChanges": 0,
+      "engineProvenanceChanges": 76,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    }
+  },
+  "byTarget": {
+    "3P0G-A-B": {
+      "poses": 72,
+      "high": 10,
+      "medium": 16,
+      "acceptable": 20,
+      "incorrect": 26,
+      "numberingStatusChanges": 0,
+      "engineProvenanceChanges": 72,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    },
+    "4XT1-A-C": {
+      "poses": 72,
+      "high": 10,
+      "medium": 15,
+      "acceptable": 21,
+      "incorrect": 26,
+      "numberingStatusChanges": 0,
+      "engineProvenanceChanges": 72,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    },
+    "6DO1-A-C": {
+      "poses": 72,
+      "high": 11,
+      "medium": 13,
+      "acceptable": 23,
+      "incorrect": 25,
+      "numberingStatusChanges": 0,
+      "engineProvenanceChanges": 72,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    },
+    "6O3C-A-B": {
+      "poses": 72,
+      "high": 13,
+      "medium": 15,
+      "acceptable": 17,
+      "incorrect": 27,
+      "numberingStatusChanges": 0,
+      "engineProvenanceChanges": 72,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    },
+    "8QW4-A-B": {
+      "poses": 72,
+      "high": 11,
+      "medium": 17,
+      "acceptable": 17,
+      "incorrect": 27,
+      "numberingStatusChanges": 0,
+      "engineProvenanceChanges": 72,
+      "cdrContactShareChanges": 0,
+      "cdr3ContactShareChanges": 0,
+      "evidenceBandChanges": 0,
+      "cdrDependentRankingInputChanges": 0
+    }
+  },
+  "targetInvariants": [
+    {
+      "targetId": "3P0G-A-B",
+      "pdb": "3P0G",
+      "pair": "A:B",
+      "vhhSequenceSha256": "818d90c4f7ed61b50d4f1754b369de6939a807a59ae417a688f86225e6837ee3",
+      "legacyEngine": "immunum 1.2.0",
+      "candidateEngine": "immunum 1.3.0",
+      "statusChanged": false,
+      "queryBoundsChanged": false,
+      "cdrLengthsChanged": false,
+      "regionAssignmentsChanged": false
+    },
+    {
+      "targetId": "4XT1-A-C",
+      "pdb": "4XT1",
+      "pair": "A:C",
+      "vhhSequenceSha256": "939fc36aaa1f5444f9eeba6f8ad4d59864ec0b857608a6d559910c3948d0bb15",
+      "legacyEngine": "immunum 1.2.0",
+      "candidateEngine": "immunum 1.3.0",
+      "statusChanged": false,
+      "queryBoundsChanged": false,
+      "cdrLengthsChanged": false,
+      "regionAssignmentsChanged": false
+    },
+    {
+      "targetId": "6DO1-A-C",
+      "pdb": "6DO1",
+      "pair": "A:C",
+      "vhhSequenceSha256": "30941b5f0773f4223c12611bbf9d755b7ff574da19ba1f2186967b97660b62a3",
+      "legacyEngine": "immunum 1.2.0",
+      "candidateEngine": "immunum 1.3.0",
+      "statusChanged": false,
+      "queryBoundsChanged": false,
+      "cdrLengthsChanged": false,
+      "regionAssignmentsChanged": false
+    },
+    {
+      "targetId": "6O3C-A-B",
+      "pdb": "6O3C",
+      "pair": "A:B",
+      "vhhSequenceSha256": "97f566ad585194134eb6d1b3cac78639512654a7503deb163b21241409be05de",
+      "legacyEngine": "immunum 1.2.0",
+      "candidateEngine": "immunum 1.3.0",
+      "statusChanged": false,
+      "queryBoundsChanged": false,
+      "cdrLengthsChanged": false,
+      "regionAssignmentsChanged": false
+    },
+    {
+      "targetId": "8QW4-A-B",
+      "pdb": "8QW4",
+      "pair": "A:B",
+      "vhhSequenceSha256": "c03feb8a50a476de21e8ac8d63daaa75d5f2b50450cdd1e2e1a5505649a6e768",
+      "legacyEngine": "immunum 1.2.0",
+      "candidateEngine": "immunum 1.3.0",
+      "statusChanged": false,
+      "queryBoundsChanged": false,
+      "cdrLengthsChanged": false,
+      "regionAssignmentsChanged": false
+    }
+  ],
+  "integrity": {
+    "dataRole": "previously-observed-development-ledger",
+    "candidateFrozenBeforeReplay": true,
+    "candidateModifiedAfterDockqLabels": false,
+    "historicalArtifactsModified": false,
+    "usesPreviouslyObservedDockqLabels": true,
+    "usesDockqLabelsForTuning": false,
+    "usesNativeHoldoutCoordinates": false,
+    "usesNativeHoldoutRelativePoses": false,
+    "usesNativeHoldoutEpitopes": false,
+    "constitutesIndependentHoldoutEvidence": false,
+    "productionIntegrated": false
+  },
+  "claimFlags": {
+    "improvesBindingPrediction": false,
+    "improvesAffinityPrediction": false,
+    "improvesPoseCorrectnessPrediction": false,
+    "improvesCandidateRanking": false,
+    "establishesGeneralization": false,
+    "establishesExperimentalBinding": false
+  }
+}

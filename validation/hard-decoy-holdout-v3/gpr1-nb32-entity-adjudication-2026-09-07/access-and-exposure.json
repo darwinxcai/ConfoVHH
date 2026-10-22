@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0.0",
+  "reviewDate": "2026-09-07",
+  "sourceAccessUpdate": {
+    "targetDoi": "10.1126/science.adt8794",
+    "primaryArticleUrl": "https://www.science.org/doi/10.1126/science.adt8794",
+    "primaryArticleDirectFetchOutcome": "HTTP_403_FORBIDDEN",
+    "indexedPrimaryPageObserved": true,
+    "indexedPrimaryPageFactsUsedForAdjudication": false,
+    "directSupplementRecovered": false,
+    "newPrimaryMethodsEvidenceRecovered": false,
+    "blockerChanged": false
+  },
+  "incident": {
+    "classification": "INCIDENTAL_SECONDARY_STRUCTURAL_PROSE_IN_SEARCH_OUTPUT",
+    "trigger": "A targeted public-source query returned secondary-review snippets containing structural material beyond the requested preparation and deposition facts.",
+    "affectedPdbIds": [
+      "9UYH",
+      "9UYI",
+      "9UYJ",
+      "9UYL",
+      "9UYM",
+      "9UYN"
+    ],
+    "exposedCategories": [
+      "GPR1 construct and mutation narrative",
+      "engineered crosslink residue-pair narrative",
+      "qualitative native-complex and ligand-contact narrative",
+      "structural figure-caption prose"
+    ],
+    "exactRestrictedProseCopiedIntoRecord": false,
+    "actualNativeReceptorVhhResidueContactAssignmentsRead": false,
+    "nativeCoordinatesAccessed": false,
+    "nativeRelativeReceptorVhhPoseInspected": false,
+    "structuralImagesRendered": false,
+    "structuralContactTablesAccessed": false,
+    "dockqCapriLabelsAccessed": false,
+    "predictionOutputsAccessed": false,
+    "benchmarkPerformanceResultsAccessed": false
+  },
+  "effect": {
+    "cleanBlindClaimPermitted": false,
+    "formalExposureClearanceGranted": false,
+    "scientificDispositionChangedByIncident": false,
+    "usedForCandidateEntityAdjudication": false,
+    "usedForEligibility": false,
+    "usedForGraphDecision": false,
+    "independentEligibleComponentCountChanged": false,
+    "targetFreezePermitted": false
+  }
+}

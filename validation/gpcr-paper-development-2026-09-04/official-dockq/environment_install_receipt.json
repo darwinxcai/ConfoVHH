@@ -1,0 +1,44 @@
+{
+  "source_archive_sha256": "50c4e2b4bced3bf865b12061ec0b56e23de1383dc70b445441848224f6c72c0d",
+  "historical_source_pin": "50c4e2b4bced3bf865b12061ec0b56e23de1383dc70b445441848224f6c72c0d",
+  "source_archive_verified_against_historical_pin": true,
+  "source_archive_bytes": 175472,
+  "source_archive_origin": "pip HTTP cache, named dockq-2.1.3.tar.gz in installation log",
+  "installed_source_comparisons": [
+    {
+      "member": "dockq-2.1.3/src/DockQ/DockQ.py",
+      "source_sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+      "installed_sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887",
+      "match": true
+    },
+    {
+      "member": "dockq-2.1.3/src/DockQ/parsers.py",
+      "source_sha256": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0",
+      "installed_sha256": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0",
+      "match": true
+    },
+    {
+      "member": "dockq-2.1.3/src/DockQ/constants.py",
+      "source_sha256": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18",
+      "installed_sha256": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18",
+      "match": true
+    },
+    {
+      "member": "dockq-2.1.3/src/DockQ/operations.pyx",
+      "source_sha256": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512",
+      "installed_sha256": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512",
+      "match": true
+    },
+    {
+      "member": "dockq-2.1.3/src/DockQ/operations_nocy.py",
+      "source_sha256": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3",
+      "installed_sha256": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3",
+      "match": true
+    }
+  ],
+  "compiled_wheel_sha256_from_installation_log": "7b661d45b86cb617700f41bc5f3cb54607a10237f3ed903040b854962d7b7925",
+  "build_command": "CC=gcc CXX=g++ .bench-venv/bin/python -m pip install -r requirements-exact.txt",
+  "installation_log_sha256": "bef1c700ef0f988ace2428fa42d060455fe4e50d5473f3b61f320aa02c18b248",
+  "requirements_sha256": "c5afce859e9895a9f97f45a1abebafc18dea80a80dd2d7b0cea95f6e95731d33",
+  "note": "The initial clang build attempt failed; the retained successful installation log records the gcc/g++ retry. The rebuilt platform-specific binary is inventoried in run_provenance, not assumed byte-identical to the earlier platform build."
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "date": "2026-09-04",
+  "scope": "Construct/tag provenance addendum for 9VOR and 9VOS only. Original annotation-priority review remains immutable.",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/source-reviews.json": "67765a9c985b84f73fe7fa36e16dd0068457cb56a10a2d20bcecff24f09e9c20",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/mglyr-prose-provenance.json": "9da3350e7c6df119a24140cff445652b7ca4ed2c47c5adb4de8a988f602f7726",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/uniprot-source.json": "393c0e7eac9bc4b4763d472c2f5a593b24add3f2fb17e295bb85225fb80fc4df",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/raw/uniprot-q5t848.fasta": "9f6979be266a61608d1e9064f4eb305028a2eaebbb339249395d66dae437c52e",
+    "validation/hard-decoy-holdout-v3/annotation-priority-review-2026-09-04/raw/uniprot-q5t848-transmembrane.json": "d2012c113c366811fc7169234944b611ff2537909833bdc4bc438c1d07cf7e1f",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl": "ab4ebb4597948b973af33ae55763c0f8a65fcbfe66db3748d24478ec33a429df",
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/raw/reference-26-bibliography.json": "d6ee5ac26711c6bac7dab2f20861957219df8b2a2b47c8d9e7e921b1f31cb96a",
+    "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/bibliography-provenance.json": "d45b28a4e805e95c40ed06af7a0ae66418f8d9985b7b53051407a59c8c7d7870",
+    "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/retrieval-attempts.json": "3802051f69635c10777f3d32da6d9ef9c7068cfa9c33885946060bfe437f1308",
+    "validation/hard-decoy-holdout-v3/mglyr-construct-followup-2026-09-04/navigation-exposure-caveat.json": "a65c5fc5e73ad7aacaaa24f4272601d74d610ab425418eb7ebab7b3154b8fe3a"
+  },
+  "sourceCitationChain": {
+    "originDoi": "10.1038/s41467-026-68339-x",
+    "originPmcid": "PMC12834959",
+    "originSection": "Cryo-EM sample preparation and data acquisition",
+    "originParagraphTextSha256": "166b96a56c62672a74be0184c0becfdf88b2fd353234708cf97eca64673d9baf",
+    "paragraphHashNormalization": "sha256(UTF8(' '.join(''.join(p.itertext()).split())))",
+    "referenceId": "CR26",
+    "referencedDoi": "10.1126/science.abl4732",
+    "referencedPmcid": "PMC8926151",
+    "referencedPmid": "34793198",
+    "referencedTitle": "Cryo-EM structure of human GPR158 receptor coupled to the RGS7-G\u03b25 signaling complex.",
+    "bibliographicJournalYear": "2022",
+    "classification": "EXPLICIT_PRIMARY_METHODS_CITATION_PLUS_BIBLIOGRAPHIC_RESOLUTION",
+    "limits": "A citation to a prior preparation is not an explicit match to the deposited receptor truncation or new Nb20 tags."
+  },
+  "safePrimaryMethodsFacts": [
+    {
+      "classification": "SOURCE_REPORTED_FACT",
+      "sourceDoi": "10.1038/s41467-026-68339-x",
+      "sections": [
+        "cDNA constructs",
+        "Protein production and purification"
+      ],
+      "fact": "The article describes ectodomain-Fc assay material and nanobody production with C-terminal myc/His tags."
+    },
+    {
+      "classification": "SOURCE_REPORTED_FACT",
+      "sourceDoi": "10.1038/s41467-026-68339-x",
+      "section": "Cryo-EM sample preparation and data acquisition",
+      "fact": "The cryo-EM paragraph names a purified Nb20-mGlyR-RGS7-Gbeta5 sample and cites reference 26 for prior preparation."
+    },
+    {
+      "classification": "AUDIT_INTERPRETATION",
+      "fact": "The deposited N-terminal Nb20 prefix and truncated receptor sequence cannot be reconciled simply by assigning assay tags to the cryo-EM sample. Supplementary Methods would need to establish that link."
+    }
+  ],
+  "supplementaryMethodsOutcome": {
+    "reference2022MethodsRead": false,
+    "article2026SupplementaryMethodsRead": false,
+    "validSupplementaryDocumentsReceived": 0,
+    "article2026AttachmentName": "41467_2026_68339_MOESM1_ESM.pdf",
+    "article2026AttachmentDeclaredBytes": 4489295,
+    "status": "PENDING_DOCUMENT_ACCESS",
+    "negativeEvidenceAuthority": false,
+    "attemptProvenancePath": "retrieval-attempts.json"
+  },
+  "reviews": [
+    {
+      "pdbId": "9VOR",
+      "receptorEntityId": "1",
+      "receptorSequenceLength": 781,
+      "receptorSequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc",
+      "receptorExactSequenceDescription": "Canonical Q5T848 residues 1-775 followed by LEVLFQ.",
+      "nb20EntityId": "2",
+      "nb20SequenceLength": 150,
+      "nb20SequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc",
+      "nb20ExactSequenceDescription": "MGSSHHHHHHHHLEVLFQGP followed by the published Nb20 sequence without its initial methionine.",
+      "metadataSequenceComparisonVerified": true,
+      "primaryCryoEmReceptorConstructExactMatchEstablished": false,
+      "primaryCryoEmNb20TagExactMatchEstablished": false,
+      "entryDisposition": "PENDING_PRIMARY_CRYOEM_CONSTRUCT_PROVENANCE",
+      "priorDispositionUnchanged": true,
+      "reason": "The referenced preparation Methods could not be obtained, and assay-tag descriptions do not establish the exact cryo-EM sample construct.",
+      "nativeCoordinatesInspected": false,
+      "targetFreezePermitted": false,
+      "formalEligibilityAuthority": false,
+      "formalNoEdgeAuthority": false
+    },
+    {
+      "pdbId": "9VOS",
+      "receptorEntityId": "1",
+      "receptorSequenceLength": 781,
+      "receptorSequenceSha256": "7e1521e2982fe75b788ab0615822157e456b21e2deeb152e5dcdb31aad4574dc",
+      "receptorExactSequenceDescription": "Canonical Q5T848 residues 1-775 followed by LEVLFQ.",
+      "nb20EntityId": "4",
+      "nb20SequenceLength": 150,
+      "nb20SequenceSha256": "4d18b2d2954bc60334d58cb9ef20a8bc36c3de841fdaa85074c4a0876775abbc",
+      "nb20ExactSequenceDescription": "MGSSHHHHHHHHLEVLFQGP followed by the published Nb20 sequence without its initial methionine.",
+      "metadataSequenceComparisonVerified": true,
+      "primaryCryoEmReceptorConstructExactMatchEstablished": false,
+      "primaryCryoEmNb20TagExactMatchEstablished": false,
+      "entryDisposition": "PENDING_PRIMARY_CRYOEM_CONSTRUCT_PROVENANCE",
+      "priorDispositionUnchanged": true,
+      "reason": "The referenced preparation Methods could not be obtained, and assay-tag descriptions do not establish the exact cryo-EM sample construct.",
+      "nativeCoordinatesInspected": false,
+      "targetFreezePermitted": false,
+      "formalEligibilityAuthority": false,
+      "formalNoEdgeAuthority": false
+    }
+  ],
+  "nextEvidenceRequired": [
+    "A primary preparation Methods statement specifying the receptor used in the 2026 cryo-EM sample and its truncation/cleavage tags.",
+    "A primary construct or sample preparation statement linking the deposited Nb20 N-terminal prefix to the cryo-EM reagent, distinct from assay production tags."
+  ],
+  "summary": {
+    "entriesReviewed": 2,
+    "exactCryoEmConstructsReconciled": 0,
+    "newFormalEligibleEntries": 0,
+    "newFormalIndependentComponents": 0,
+    "priorDispositionsChanged": 0,
+    "formalGraphAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "targetFreezePermitted": false,
+    "result": "Exact Methods citation chain recovered; sample construct/tag identity remains unresolved because both relevant supplements were unavailable in this bounded retrieval."
+  },
+  "exposureCaveatPath": "navigation-exposure-caveat.json"
+}

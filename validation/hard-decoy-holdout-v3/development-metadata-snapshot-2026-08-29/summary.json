@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "DEVELOPMENT_METADATA_COMPLETED_BLOCKED_PENDING_SCIENTIFIC_LEAKAGE_AUDIT",
+  "developmentNodeCount": 17,
+  "reusedMetadataNodeCount": 15,
+  "newlyCompletedMetadataNodeCount": 2,
+  "newlyCompletedPdbIds": [
+    "6KNM",
+    "6O3C"
+  ],
+  "uniquePreferredReceptorEntityCount": 17,
+  "receptorNodesWithExactlyOneUniProtAccession": 10,
+  "vhhMetadataCandidateCounts": {
+    "unique": 16,
+    "multiple": 1,
+    "none": 0
+  },
+  "nodesWithPrimaryCitationIdentifier": 17,
+  "directInterfaceEvidenceResolvedCount": 0,
+  "formalLeakageCertificationComplete": false,
+  "dispositionLedgerComplete": false,
+  "leakageGraphComplete": false,
+  "formallyClearedGroupCount": 0,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}

@@ -1,0 +1,472 @@
+{
+  "schemaVersion": "1.0.0",
+  "replayId": "confovhh-dockq-v0.5-post-label-regression-replay-v1",
+  "title": "ConfoVHH v0.5 post-label DockQ regression replay",
+  "status": "executed-post-label-regression-only",
+  "dataRole": "regression",
+  "runStartedAt": "2026-08-27T20:05:49.153Z",
+  "runCompletedAt": "2026-08-27T20:06:37.955Z",
+  "relationshipToHistoricalStudy": {
+    "baselineArtifact": "validation/dockq-development-pilot-v1",
+    "baselineStatus": "executed-development-only",
+    "labelsPreviouslyObserved": true,
+    "independentValidation": false,
+    "formalHoldoutEvaluation": false,
+    "interpretation": "Exact coordinate, non-SASA audit, DockQ, and CAPRI replay plus explicitly tolerance-bounded SASA replay detects unintended software regression on an already labeled development ledger; it contributes no new performance estimate."
+  },
+  "sourceAttestation": {
+    "gitCommit": "278ae1a74da133778fba5b17bc296a8e37f02e76",
+    "workingTreeDirtyAtStart": false,
+    "nodeVersion": "24.19.0",
+    "minimumNodeVersion": "22.18.0",
+    "implementation": {
+      "combinedSha256": "8926de3d4f9db9343a40659d8393d00db2f612572404c1b4bb8a7e41de3260d3",
+      "files": {
+        "lib/audit-export.ts": "5215a292d4f59cb0b0423f2eae725c8d3db6ca326e6cfe7ea34ad27d35e2e7db",
+        "lib/audit-jobs.ts": "79ee1bacb078f276e004ddd4ff32088950927d5a8c84841fae87dbe47f654ca1",
+        "lib/audit-worker-protocol.ts": "2547a30816a359b987c81dff651d3618bb6a4426ab500169c3764bff86d4d080",
+        "lib/audit-worker.ts": "9481d00c7d5764885fd879b181da8c24c5f0a0da334538569f9c5c5a22bb7211",
+        "lib/confovhh.ts": "15f25a465e0c357a7a59c0e0d57b4e50aad76f16647dc02ab835613c33a51edf",
+        "lib/coordinate-parser.ts": "0eb05d32755353d4d590f763ef46ca9955a2b794fdf4dc68cdb938219b419b8d",
+        "lib/geometry-constants.ts": "43b34e9d000aabb8656d1c431ea358834f83a4d03d11ef902be12f6fb3b2b081",
+        "lib/geometry-fit.ts": "647a0ec42f4b36079599877cd27dba22ad7b2abcf09fc7383dc943e8c742b8d8",
+        "lib/mmcif.ts": "1041a90929ee3a98ef250859c91ca0c1b43edea6b759c8a6a344af46d805f264",
+        "lib/pose-ensemble.ts": "c00dc56c1e8e040ccdfa21d54901dbcfc23763a84fd480bb7deb5361d36ed86a",
+        "lib/state-pair.ts": "d7fb65420e405833792163deac538909fab40316098edc6b4ff3ff340b12b625",
+        "lib/vhh-numbering.ts": "221bda513b3dde2a2d736cc5dc22c81da245bbdd41f7220044afe2bb196fa56e",
+        "package.json": "6e7c0814725b86eaa002a3c3f73782cfbe05f1531ff7a8ffbc1a0190f157a3d2",
+        "package-lock.json": "db0745c4e082d041054a8735ae5926a302fab313fba487316ed56559c9335f81",
+        "scripts/dockq-batch.py": "53a8981abea8c25724afa34b082d872dec52661fb234897f3c7c5939f85608e2",
+        "scripts/dockq-replay-comparison.mjs": "1f782eb097ffcf700e759d68c1cdcffc7d8a2511b2a2100e39c176d56358bfe8",
+        "scripts/run-dockq-development-pilot.mjs": "a67af203faa4b6fd6ebe365c6b47ebba66d8199c9db6651fb2ea532f65d2170d",
+        "scripts/run-dockq-v05-regression-replay.mjs": "ee73137ef5343088e4a39a8571ce3408499cddc9b2f35f20b192b8a8c00bf37b",
+        "validation/dockq-development-pilot-v1/pilot-spec.json": "110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc",
+        "validation/dockq-development-pilot-v1/source-manifest.json": "d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176"
+      }
+    }
+  },
+  "historicalArtifact": {
+    "checksumFileSha256": "d68cde133ae39f1b142e5ecccfde3b8ffc2a17a94c6999c7d21d3e3d81d18e3c",
+    "files": {
+      "pilot-spec.json": "110a8b93e00f668bcf8a25918f03a8b08b94533a019fa9814f9e517c9a1f89dc",
+      "poses.jsonl": "3a9dc8f3e9348441e183d348354dd880d744aae6acef6291b709899dd3d852ef",
+      "source-manifest.json": "d8f270e544901980782c37d8fee45c845abc24e414e136878167587f1d9b2176",
+      "summary.json": "57e6d08e82f3b450bc4ceb682af2a1376af3a370fce717c8d6666ebb2638c0f9",
+      "summary.md": "2843d3a101bf4aec6b93c544e6d828a81c0753b9ed177c0c1d01517c667e5a0d",
+      "targets.jsonl": "38c32bbcadf4a7dbcd9a3c58b6e89c0a3bda0194fda4f13234c20a3ba3edc5d5"
+    }
+  },
+  "replayAccounting": {
+    "targets": 5,
+    "poses": 360,
+    "exactCoordinateMatches": 360,
+    "exactNonSasaAuditMatches": 360,
+    "sasaToleranceMatches": 360,
+    "exactFullAuditMatches": 21,
+    "sasaTolerancesAngstrom2": {
+      "deltaSasaAngstrom2": 1e-9,
+      "halfDeltaSasaInterfaceAreaAngstrom2": 5e-10
+    },
+    "maximumDeltaSasaAbsoluteDifferenceAngstrom2": 1.0277290130034089e-10,
+    "maximumHalfDeltaSasaAbsoluteDifferenceAngstrom2": 5.1386450650170445e-11,
+    "exactDockqMatches": 360,
+    "exactCapriClassMatches": 360,
+    "aggregateComparisonsPassed": true
+  },
+  "controls": {
+    "nativeSelfPassed": 5,
+    "farTranslationPassed": 5,
+    "cliCrossChecksRun": 10,
+    "cliCrossChecksPassed": 10,
+    "controlsAndCrossChecks": 20,
+    "controlsAndCrossChecksPassed": 20,
+    "targetControls": [
+      {
+        "targetId": "3P0G-A-B",
+        "nativeSelfPassed": true,
+        "farTranslationPassed": true,
+        "nativeAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": false,
+          "deltaSasaAngstrom2": {
+            "expected": 1729.261866528693,
+            "observed": 1729.261866528669,
+            "absoluteDifference": 2.3874235921539366e-11,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": false
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 864.6309332643465,
+            "observed": 864.6309332643345,
+            "absoluteDifference": 1.1937117960769683e-11,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": false
+          }
+        },
+        "farTranslationAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": true,
+          "deltaSasaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": true
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": true
+          }
+        }
+      },
+      {
+        "targetId": "4XT1-A-C",
+        "nativeSelfPassed": true,
+        "farTranslationPassed": true,
+        "nativeAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": false,
+          "deltaSasaAngstrom2": {
+            "expected": 2225.6207758006494,
+            "observed": 2225.620775800652,
+            "absoluteDifference": 2.7284841053187847e-12,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": false
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 1112.8103879003247,
+            "observed": 1112.810387900326,
+            "absoluteDifference": 1.3642420526593924e-12,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": false
+          }
+        },
+        "farTranslationAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": true,
+          "deltaSasaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": true
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": true
+          }
+        }
+      },
+      {
+        "targetId": "6DO1-A-C",
+        "nativeSelfPassed": true,
+        "farTranslationPassed": true,
+        "nativeAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": false,
+          "deltaSasaAngstrom2": {
+            "expected": 2247.016868766189,
+            "observed": 2247.0168687662162,
+            "absoluteDifference": 2.7284841053187847e-11,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": false
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 1123.5084343830945,
+            "observed": 1123.5084343831081,
+            "absoluteDifference": 1.3642420526593924e-11,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": false
+          }
+        },
+        "farTranslationAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": true,
+          "deltaSasaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": true
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": true
+          }
+        }
+      },
+      {
+        "targetId": "6O3C-A-B",
+        "nativeSelfPassed": true,
+        "farTranslationPassed": true,
+        "nativeAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": false,
+          "deltaSasaAngstrom2": {
+            "expected": 2329.473121480619,
+            "observed": 2329.473121480585,
+            "absoluteDifference": 3.3651303965598345e-11,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": false
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 1164.7365607403094,
+            "observed": 1164.7365607402926,
+            "absoluteDifference": 1.6825651982799172e-11,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": false
+          }
+        },
+        "farTranslationAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": true,
+          "deltaSasaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": true
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": true
+          }
+        }
+      },
+      {
+        "targetId": "8QW4-A-B",
+        "nativeSelfPassed": true,
+        "farTranslationPassed": true,
+        "nativeAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": false,
+          "deltaSasaAngstrom2": {
+            "expected": 1826.2680744418972,
+            "observed": 1826.2680744418967,
+            "absoluteDifference": 4.547473508864641e-13,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": false
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 913.1340372209486,
+            "observed": 913.1340372209484,
+            "absoluteDifference": 2.2737367544323206e-13,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": false
+          }
+        },
+        "farTranslationAudit": {
+          "exactNonSasaMatch": true,
+          "sasaWithinTolerance": true,
+          "exactFullMatch": true,
+          "deltaSasaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 1e-9,
+            "withinTolerance": true,
+            "exactMatch": true
+          },
+          "halfDeltaSasaInterfaceAreaAngstrom2": {
+            "expected": 0,
+            "observed": 0,
+            "absoluteDifference": 0,
+            "tolerance": 5e-10,
+            "withinTolerance": true,
+            "exactMatch": true
+          }
+        }
+      }
+    ],
+    "maximumNativeDeltaSasaAbsoluteDifferenceAngstrom2": 3.3651303965598345e-11,
+    "maximumNativeHalfDeltaSasaAbsoluteDifferenceAngstrom2": 1.6825651982799172e-11,
+    "maximumFarTranslationDeltaSasaAbsoluteDifferenceAngstrom2": 0,
+    "maximumFarTranslationHalfDeltaSasaAbsoluteDifferenceAngstrom2": 0
+  },
+  "dockqEnvironment": {
+    "version": "2.1.3",
+    "installedDistribution": {
+      "name": "dockq",
+      "version": "2.1.3",
+      "fileCount": 18,
+      "combinedSha256": "803983856f6e3da346c1226d70e3328ae8c9ff412f9291ba6115227d36804b0a",
+      "files": [
+        {
+          "path": "../../../bin/DockQ",
+          "bytes": 246,
+          "sha256": "f7efc99c4d656f97e6c569dd976a49b45a4f10f138c9638754596cdd7a536a6d"
+        },
+        {
+          "path": "DockQ/DockQ.py",
+          "bytes": 36670,
+          "sha256": "7b9d112c9abd18711de43f1f56145301944460dc59b8bc52853b464cf6d7a887"
+        },
+        {
+          "path": "DockQ/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "DockQ/__main__.py",
+          "bytes": 63,
+          "sha256": "a2dc944b6fdaeb5c4f3574c452519449505756abbb96e2261179a2b643b57df5"
+        },
+        {
+          "path": "DockQ/constants.py",
+          "bytes": 2509,
+          "sha256": "431767db749faa74e2cb876f768cee6e43cfbb30da263725d47d6574fed3ec18"
+        },
+        {
+          "path": "DockQ/operations.c",
+          "bytes": 1215851,
+          "sha256": "2554a2e4a18cc376afb6fe5f9831e1588199b62518400ec35d378befd5eba629"
+        },
+        {
+          "path": "DockQ/operations.cpython-312-x86_64-linux-gnu.so",
+          "bytes": 1212928,
+          "sha256": "f57c1eea13aa4585f0e31b64b48d53bb8f9ee2846e387cdb021495bc6d0fb803"
+        },
+        {
+          "path": "DockQ/operations.pyx",
+          "bytes": 2744,
+          "sha256": "30f8d89f273796189b10983cb6d9c9b0bee6603472cef7fe4823ca1825910512"
+        },
+        {
+          "path": "DockQ/operations_nocy.py",
+          "bytes": 1643,
+          "sha256": "e76216611fd5d901ced99efb38c98c2d53f332091272edde737109f95da5d0d3"
+        },
+        {
+          "path": "DockQ/parsers.py",
+          "bytes": 22129,
+          "sha256": "878921b9b4d6f2e92cd39920dd1abc83142511c06956afb4c5e4c22dcb1f76e0"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/INSTALLER",
+          "bytes": 4,
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/METADATA",
+          "bytes": 11413,
+          "sha256": "f8241586d348b2740360f4e2a186925883f02578b5a82a241780313017f3117e"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/RECORD",
+          "bytes": 1729,
+          "sha256": "92c54cbf02e66ab0323352bd5d87f54cc0702765b2f559fb188950814e8b1d5c"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/REQUESTED",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/WHEEL",
+          "bytes": 104,
+          "sha256": "50a33ada4b03e2377733a93969c1406b0f021e741fa63b68fca9634576f2a4fd"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/entry_points.txt",
+          "bytes": 46,
+          "sha256": "41d30d6b08732681ff6fb00a39616cc3826a870fcada04068f9ae76dc81ca968"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/licenses/LICENSE",
+          "bytes": 1069,
+          "sha256": "1ac62f778ff853b0b7215565aa86a2b6fde946508552cb41b75a74e5e0c3df79"
+        },
+        {
+          "path": "dockq-2.1.3.dist-info/top_level.txt",
+          "bytes": 6,
+          "sha256": "3115f3aabad257c4325edcaea708b6d6bab29712838e70964536c70e16ca7a17"
+        }
+      ]
+    },
+    "pythonVersion": "Python 3.12.13",
+    "pythonEnvironment": {
+      "command": "python -m pip freeze --all",
+      "packageCount": 8,
+      "packages": [
+        "biopython==1.88",
+        "colorama==0.4.6",
+        "dockq==2.1.3",
+        "networkx==3.6.1",
+        "numpy==1.26.4",
+        "parallelbar==2.5",
+        "pip==25.0.1",
+        "tqdm==4.70.0"
+      ],
+      "sha256": "c5afce859e9895a9f97f45a1abebafc18dea80a80dd2d7b0cea95f6e95731d33"
+    }
+  },
+  "holdoutStatus": {
+    "datasetExists": false,
+    "assembled": false,
+    "labeled": false,
+    "frozen": false,
+    "opened": false,
+    "evaluated": false,
+    "statement": "No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated."
+  },
+  "claimFlags": {
+    "bindingValidated": false,
+    "affinityValidated": false,
+    "specificityValidated": false,
+    "functionalStateValidated": false,
+    "stateSelectivityValidated": false,
+    "sameVhhCrossContextValidated": false,
+    "membraneCompatibilityValidated": false,
+    "formalHoldoutEvaluated": false,
+    "hardDecoyProtocolCompleted": false,
+    "nearNativeRankingValidated": false,
+    "preliminaryNearNativeClaimAllowed": false
+  },
+  "limitations": [
+    "All DockQ labels and aggregate results were observed in the earlier development-only study before v0.5 was implemented.",
+    "The replay requires exact coordinates, normalized non-SASA audit fields, DockQ records, and CAPRI classes; ΔSASA and half-ΔSASA are accepted only within their explicit 1e-9 Å² and 5e-10 Å² floating tolerances.",
+    "This bounded replay is a software-regression result, not a second experiment or an independent validation set.",
+    "The five native-derived targets do not cover realistic wrong-patch docking, flexible decoys, nonbinders, unseen receptor families, or unseen VHH lineages.",
+    "DockQ similarity to a deposited complex does not establish binding, affinity, specificity, function, state selectivity, membrane compatibility, or physiological validity.",
+    "No independent family-clustered hard-decoy holdout dataset exists for this release; none has been assembled, labeled, frozen, opened, or evaluated."
+  ]
+}

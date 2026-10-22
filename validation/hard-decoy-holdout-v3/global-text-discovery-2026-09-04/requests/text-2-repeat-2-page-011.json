@@ -1,0 +1,25 @@
+{
+  "query": {
+    "type": "terminal",
+    "service": "full_text",
+    "parameters": {
+      "value": "\"G protein coupled receptor\""
+    }
+  },
+  "return_type": "entry",
+  "request_options": {
+    "paginate": {
+      "start": 5000,
+      "rows": 500
+    },
+    "results_content_type": [
+      "experimental"
+    ],
+    "sort": [
+      {
+        "sort_by": "rcsb_id",
+        "direction": "asc"
+      }
+    ]
+  }
+}

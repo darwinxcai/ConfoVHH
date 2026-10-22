@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-v0.6-vhh-numbering-postlabel-replay-v1",
+  "recordedDate": "2026-09-01",
+  "status": "PREREGISTERED_AFTER_CANDIDATE_FREEZE_BEFORE_REPLAY_EXECUTION",
+  "candidate": {
+    "version": "0.6.0-candidate.1",
+    "sourcePath": "lib/vhh-numbering-v06.ts",
+    "productionIntegrated": false,
+    "candidateRulesMayChangeAfterReplay": false
+  },
+  "dataRole": "previously observed development ledger",
+  "sourceArtifacts": {
+    "directory": "validation/dockq-development-pilot-v1",
+    "checksumManifest": "validation/dockq-development-pilot-v1/checksums.sha256",
+    "targets": "validation/dockq-development-pilot-v1/targets.jsonl",
+    "poses": "validation/dockq-development-pilot-v1/poses.jsonl",
+    "publicNumberingDifferential": "validation/v0.6-vhh-numbering-candidate-v1/public-panel-differential.json"
+  },
+  "analysisPlan": [
+    "Verify the frozen SHA-256 checksums for the development targets and pose ledger before analysis.",
+    "Join each development target to the SHA-pinned public numbering differential by PDB identifier, receptor:VHH chain pair, and VHH sequence SHA-256.",
+    "Require identical legacy-versus-candidate numbering status, query bounds, CDR lengths, and complete seven-region assignments for every development target.",
+    "Use the fact that each development pose is produced only by a rigid-body coordinate transform: sequence identity, residue order, and IMGT assignment are invariant under the transform.",
+    "Infer pose-level CDR-contact-share and CDR3-contact-share equality only after the complete per-target region-assignment equality checks pass.",
+    "Read the already-observed DockQ/CAPRI labels only after the equality inference, and use them solely to report stratified counts rather than to define or tune the candidate."
+  ],
+  "prespecifiedOutputs": [
+    "numbering status changes",
+    "engine provenance changes",
+    "CDR contact-share changes",
+    "CDR3 contact-share changes",
+    "evidence-band changes",
+    "counts stratified by CAPRI class and target"
+  ],
+  "thresholdsOrTuning": {
+    "newThresholds": false,
+    "parameterSearch": false,
+    "featureSelection": false,
+    "candidateSelectionFromDockq": false,
+    "candidateModificationAfterDockq": false
+  },
+  "integrity": {
+    "historicalArtifactsModified": false,
+    "usesPreviouslyObservedDockqLabels": true,
+    "usesDockqLabelsForTuning": false,
+    "usesNativeHoldoutCoordinates": false,
+    "usesNativeHoldoutRelativePoses": false,
+    "usesNativeHoldoutEpitopes": false,
+    "constitutesIndependentHoldoutEvidence": false
+  },
+  "claimFlags": {
+    "improvesPoseCorrectnessPrediction": false,
+    "improvesCandidateRanking": false,
+    "establishesGeneralization": false,
+    "establishesExperimentalBinding": false
+  }
+}

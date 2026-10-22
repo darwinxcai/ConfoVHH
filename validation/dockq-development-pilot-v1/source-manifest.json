@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "purpose": "Fail-closed network-drift gate for the public PDB coordinate bytes used by the development pilot. This integrity manifest is not an analytic specification and was recorded from the first completed pilot artifacts.",
+  "recordedAt": "2026-08-27T03:24:00.000Z",
+  "targets": [
+    {
+      "targetId": "3P0G-A-B",
+      "pdb": "3P0G",
+      "sourceUrl": "https://files.rcsb.org/download/3P0G.pdb",
+      "sourceBytes": 319626,
+      "sourceSha256": "de53e603dcc306af411374d208f340a8685f5072a2a77bc64175d067cb73fbc9"
+    },
+    {
+      "targetId": "4XT1-A-C",
+      "pdb": "4XT1",
+      "sourceUrl": "https://files.rcsb.org/download/4XT1.pdb",
+      "sourceBytes": 709560,
+      "sourceSha256": "407e117755da2023081acac9c66d5a566139c4ee9ffee4aa47992fd1bd6d37aa"
+    },
+    {
+      "targetId": "6DO1-A-C",
+      "pdb": "6DO1",
+      "sourceUrl": "https://files.rcsb.org/download/6DO1.pdb",
+      "sourceBytes": 740826,
+      "sourceSha256": "b2f0718a135f054cb5e5eca342c62dd07fccaa313beb6d4f99dd08864e08431b"
+    },
+    {
+      "targetId": "6O3C-A-B",
+      "pdb": "6O3C",
+      "sourceUrl": "https://files.rcsb.org/download/6O3C.pdb",
+      "sourceBytes": 468342,
+      "sourceSha256": "437a1d6c9a222d1f0e24a42a0dd0bda5e9846f1fc61f6b4f19dae96d0cd85148"
+    },
+    {
+      "targetId": "8QW4-A-B",
+      "pdb": "8QW4",
+      "sourceUrl": "https://files.rcsb.org/download/8QW4.pdb",
+      "sourceBytes": 326025,
+      "sourceSha256": "e667daf2ebf20dab4238a3296b4a35a37f824d9eb303fc9c3461ae1266937ffb"
+    }
+  ]
+}

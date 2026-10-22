@@ -1,0 +1,24 @@
+{
+  "id": "epmc-primary",
+  "requestedUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11341715/fullTextXML",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11341715/fullTextXML",
+  "startedAtUtc": "2026-09-04T23:49:24.573820+00:00",
+  "completedAtUtc": "2026-09-04T23:49:37.031424+00:00",
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/xml",
+    "Strict-Transport-Security": "max-age=0",
+    "Date": "Fri, 04 Sep 2026 23:49:36 GMT",
+    "Access-Control-Max-Age": "3600",
+    "Transfer-Encoding": "chunked",
+    "Access-Control-Allow-Origin": "*",
+    "Connection": "close",
+    "Set-Cookie": "JSESSIONID=5B9A4AAE972A42A8EEA3174D49A6EF2B; Path=/europepmc/webservices/; HttpOnly",
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers"
+  },
+  "bodyFile": "epmc-primary.body",
+  "bytes": 169723,
+  "sha256": "44c74805f0a9319398bf132a4737099d3613c69260f63f5b131d1cdae64a7b49",
+  "bodyRenderedToModel": false
+}

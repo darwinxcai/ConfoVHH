@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-16",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "6KUY"
+    ],
+    "query": "TITLE:\"Crystal structures of the alpha2A adrenergic receptor in complex with a partial agonist\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Crystal+structures+of+the+alpha2A+adrenergic+receptor+in+complex+with+a+partial+agonist%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:03.121234+00:00",
+  "status": 200,
+  "rawFile": "raw/title-16.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Crystal+structures+of+the+alpha2A+adrenergic+receptor+in+complex+with+a+partial+agonist%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "5d7bf1823fec88b5ba6b987ce67f6ad07c3559d4ef32d7521021792a3d40792f",
+  "bytes": 264,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:10.387736+00:00"
+}

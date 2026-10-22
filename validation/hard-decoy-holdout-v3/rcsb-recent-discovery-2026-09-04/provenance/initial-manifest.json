@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0.0",
+  "createdAt": "2026-09-04T22:33:33.597Z",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/entry-metadata-contract.json": "bbf10ef8ebf057dde42969fbd166bcbd2bd437902a76064d7ad8fcea9faa16b7",
+    "validation/hard-decoy-holdout-v3/entry-metadata-draft/rcsb-entry-metadata.graphql": "9dd4489ebd50216f506fd9147778d89e4a250abc2c688d459af817efa6e2fde0",
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/raw/gpcrdb-api-1.json": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91"
+  },
+  "generatorScript": "scripts/hard-decoy-v3/capture-recent-rcsb-discovery.mjs",
+  "generatorScriptSha256": "9714091388410517f519646cd5d737f1aec90ce35d0a45eeedbe6731e9dba1e7",
+  "responseRecordCount": 45,
+  "searchDocumentation": "https://search.rcsb.org/#querying-nested-attributes",
+  "requestWindow": {
+    "lowerInclusive": "2026-08-30T00:00:00Z",
+    "upperExclusive": "2026-09-05T00:00:00Z"
+  },
+  "collectionTimeDoesNotEstablishFutureCoverage": true
+}

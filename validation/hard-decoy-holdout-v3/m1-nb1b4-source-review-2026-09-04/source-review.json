@@ -1,0 +1,215 @@
+{
+  "authority": {
+    "contactTablesAccessed": false,
+    "formalExclusionAuthority": false,
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalTargetEligibilityAuthority": false,
+    "formallyClearedIndependentComponentCount": 0,
+    "labelsAccessed": false,
+    "nativeCoordinatesAccessed": false,
+    "nativePoseImagesAccessed": false,
+    "performanceOutputsAccessed": false,
+    "targetFreezePermitted": false,
+    "wholeCensusAuthority": false
+  },
+  "boundedAccess": {
+    "captionsInspected": false,
+    "computationalDesignOrModelRefinementSectionsInspected": false,
+    "noRepeatedAccessRetriesAfter403": true,
+    "publisherSupplementHttpStatus": 403,
+    "rawArticleDownloadedButExcludedSectionsNotRendered": true,
+    "resultsInspected": false,
+    "supplementContentsInspected": false
+  },
+  "boundedInterpretations": [
+    "The primary deposition citation and nanobody-expression Methods support that Nb1B4 is an intended nanobody partner in the M1 construct study. Exact receptor-directed role, binding specificity and construct relevance remain subject to formal review; native contact evidence is not consulted.",
+    "The library provenance is context, not proof that Nb1B4 shares a known individual VHH parent with development references.",
+    "The experimental expression construct includes a histidine tag whereas the deposited 122-aa sequence has no terminal polyhistidine tract. Tag omission, cleavage or unresolved residues cannot be assigned from the reviewed evidence.",
+    "The new canonical human M1 reference is independently supported by UniProt/GPCRdb name, species and sequence. Comparisons to it remain conditional because the deposited receptor has no accession annotation and the engineered construct is not fully adjudicated."
+  ],
+  "coverageDiscrepancy": {
+    "absenceOfVhhEstablished": false,
+    "binderFusionEstablished": false,
+    "entry": "9UAZ",
+    "primaryDepositionCitationNamesNbA12": true,
+    "retainedHeavyDomainCallCount": 0,
+    "retainedProteinEntityCount": 1,
+    "reviewRequired": "Reconcile primary citation and deposited polymer metadata without treating a negative screen or missing separate binder entity as absence evidence."
+  },
+  "doi": "10.1073/pnas.2508879122",
+  "metadataFacts": {
+    "g11Alpha5Entity": "2",
+    "g11Alpha5Length": 27,
+    "g11Alpha5RetainedAccession": "P29992",
+    "mainEntry": "9UCP",
+    "nb1b4DepositedLength": 122,
+    "nb1b4DepositedSequenceHasTerminalSixHistidines": false,
+    "nb1b4Entity": "3",
+    "receptorContainingEntity": "1",
+    "receptorContainingEntityLength": 435,
+    "receptorDepositedSequenceEndsWithSixHistidines": true,
+    "receptorDepositedUniprotMappingPresent": false
+  },
+  "openItems": [
+    "Exact 9UCP receptor-fusion sequence, de novo design component, mutation and cloning-boundary provenance.",
+    "Nb1B4 expression-tag versus deposited-sequence reconciliation.",
+    "Exact binder specificity/role and state-selectivity provenance independent of native structural contacts.",
+    "9UAZ/NbA12 deposition-metadata discrepancy.",
+    "Formal canonical receptor assignment, family/parent/publication leakage adjudication and prior exposure review."
+  ],
+  "pmcid": "PMC12625997",
+  "pmid": "41187083",
+  "primarySource": "https://www.pnas.org/doi/10.1073/pnas.2508879122",
+  "relatedPublicationMetadata": [
+    {
+      "entities": [
+        {
+          "description": "M1 muscarinic acetylcholine receptor, de novo design protein",
+          "entityId": "1",
+          "referenceSequences": [],
+          "retainedHeavyDomainCallCount": 0,
+          "screenStatus": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+          "sequenceLength": 372,
+          "sequenceSha256": "c763a3454cbc83554cd48298447e1373687bdf0209e7e0ac00ce538e1edba1db"
+        },
+        {
+          "description": "Guanine nucleotide-binding protein subunit alpha-11",
+          "entityId": "2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P29992",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "retainedHeavyDomainCallCount": 0,
+          "screenStatus": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+          "sequenceLength": 27,
+          "sequenceSha256": "67998092f6c791453e34ebfa72bf0e7d5b83d8dd52c068cd4091a49fefc5307e"
+        }
+      ],
+      "pdbId": "9UAP",
+      "primaryCitation": {
+        "doi": "10.1073/pnas.2508879122",
+        "pmid": "41187083",
+        "title": "Extracellular nanobody screening using conformationally stable GPCR variants."
+      }
+    },
+    {
+      "entities": [
+        {
+          "description": "M1 muscarinic acetylcholine receptor, de novo design protein",
+          "entityId": "1",
+          "referenceSequences": [],
+          "retainedHeavyDomainCallCount": 0,
+          "screenStatus": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+          "sequenceLength": 487,
+          "sequenceSha256": "19a203f10d4c782b06eb4f08e9526c53f2e2e0c4b38c0a6b32e890246fad9b10"
+        }
+      ],
+      "pdbId": "9UAZ",
+      "primaryCitation": {
+        "doi": "10.1073/pnas.2508879122",
+        "pmid": "41187083",
+        "title": "Extracellular nanobody screening using conformationally stable GPCR variants."
+      }
+    },
+    {
+      "entities": [
+        {
+          "description": "M1 muscarinic acetylcholine receptor, de novo design protein",
+          "entityId": "1",
+          "referenceSequences": [],
+          "retainedHeavyDomainCallCount": 0,
+          "screenStatus": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+          "sequenceLength": 435,
+          "sequenceSha256": "5e6d7c228c6ea8f074fa43f8ca95b810b32b3d5508314dee81aabaccdfb59e75"
+        },
+        {
+          "description": "Guanine nucleotide-binding protein subunit alpha-11",
+          "entityId": "2",
+          "referenceSequences": [
+            {
+              "databaseAccession": "P29992",
+              "databaseName": "UniProt",
+              "provenanceSource": "SIFTS"
+            }
+          ],
+          "retainedHeavyDomainCallCount": 0,
+          "screenStatus": "NO_CONFIDENT_COMPLETE_HEAVY_DOMAIN_DETECTED_NOT_ABSENCE_EVIDENCE",
+          "sequenceLength": 27,
+          "sequenceSha256": "67998092f6c791453e34ebfa72bf0e7d5b83d8dd52c068cd4091a49fefc5307e"
+        },
+        {
+          "description": "Nanobody Nb1B4",
+          "entityId": "3",
+          "referenceSequences": [],
+          "retainedHeavyDomainCallCount": 1,
+          "screenStatus": "HEAVY_CHAIN_V_DOMAIN_DETECTED_IDENTITY_AND_ROLE_UNRESOLVED",
+          "sequenceLength": 122,
+          "sequenceSha256": "4b631740764387ad2b8b82e9e41b3d4dc290b5afe8fd36023056e95c8ebafd3b"
+        }
+      ],
+      "pdbId": "9UCP",
+      "primaryCitation": {
+        "doi": "10.1073/pnas.2508879122",
+        "pmid": "41187083",
+        "title": "Extracellular nanobody screening using conformationally stable GPCR variants."
+      }
+    }
+  ],
+  "retainedPrimarySourceXml": "source-capture/primary-article.xml",
+  "schemaVersion": "1.0.0",
+  "sequenceFindings": {
+    "conditionalCanonicalReceptorComparisons": 17,
+    "conditionalPrimaryReceptorSignal": {
+      "assignedCanonicalAccessionToDepositedConstruct": false,
+      "canonicalTmAlignmentColumns": 238,
+      "coverageEachSequence": 1,
+      "developmentNode": "development:4MQS",
+      "developmentReference": "P08172 / M2",
+      "formalLeakageEdgeAuthority": false,
+      "gapColumns": 0,
+      "identicalCanonicalTmResidues": 153,
+      "proposedReference": "P11229 / human M1"
+    },
+    "conditionalSensitivityReceptorNodeCount": 6,
+    "developmentVhhProfilesCompared": 18,
+    "evidenceDirectory": "sequence-evidence/",
+    "noLeakageEstablished": false,
+    "positiveVhhThresholdMatchCount": 0
+  },
+  "sourceFacts": [
+    {
+      "fact": "The primary abstract describes an engineered M1 receptor fusion and selection of conformation-sensitive nanobodies from a synthetic yeast-display library.",
+      "source": "front abstracts"
+    },
+    {
+      "fact": "The synthetic library was supplied by the Kruse and Manglik laboratories, with the platform source explicitly cited as reference 9 (DOI 10.1038/s41594-018-0028-6). The screen used purified FLAG-tagged M1 constructs and MACS/FACS enrichment.",
+      "source": "Methods s20"
+    },
+    {
+      "fact": "Nb1B4 is explicitly among selected nanobodies produced in HEK293F using pcDNA3.4, an N-terminal mouse immunoglobulin heavy-chain signal peptide and a C-terminal histidine tag.",
+      "source": "Methods s22"
+    },
+    {
+      "fact": "The M1 constructs were expressed in Sf9 cells and purified through nickel, FLAG and size-exclusion steps. Exact de novo fusion sequence boundaries and the specific 9UCP construct designation are not established by these reviewed preparation paragraphs alone.",
+      "source": "Methods s14"
+    },
+    {
+      "fact": "The authors describe preparation of purified M1 receptor–nanobody complexes for cryo-EM; no images or resulting poses are reviewed.",
+      "source": "Methods s15"
+    },
+    {
+      "fact": "The on-yeast titration paragraph names Nb11. It is not used as evidence for Nb1B4 affinity, state specificity or direct binding.",
+      "source": "Methods s21"
+    },
+    {
+      "fact": "The primary publication links 9UCP to M1/G11-alpha5/iperoxo/Nb1B4, 9UAP to ligand-free M1/G11-alpha5, and 9UAZ to M1/atropine/NbA12.",
+      "source": "back data availability and refs r59–r61"
+    }
+  ],
+  "status": "SOURCE_AND_SEQUENCE_REVIEW_REMAINS_BLOCKED_FOR_FORMAL_ADJUDICATION",
+  "title": "Extracellular nanobody screening using conformationally stable GPCR variants."
+}

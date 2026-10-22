@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0.0",
+  "ontologyId": "confovhh-annotation-epitope-v1",
+  "claim": "annotation-epitope-disjoint",
+  "assignmentSourcePolicy": "primary-publication-or-depositor-annotation-only",
+  "matchingRules": {
+    "exactTokenMatchCreatesEdge": true,
+    "ancestorDescendantMatchCreatesEdge": true,
+    "sharedAncestorAloneCreatesEdge": false,
+    "namedDomainMatchRequiresEqualNormalizedQualifier": true,
+    "unknownOrAmbiguousFailsClosed": true
+  },
+  "tokens": [
+    {
+      "id": "RECEPTOR_SURFACE",
+      "parent": null,
+      "assignable": false,
+      "failsClosed": false,
+      "qualifierPolicy": "FORBIDDEN",
+      "definition": "Nonassignable root for receptor-facing epitope categories."
+    },
+    {
+      "id": "INTRACELLULAR_RECEPTOR_SURFACE",
+      "parent": "RECEPTOR_SURFACE",
+      "assignable": true,
+      "failsClosed": false,
+      "qualifierPolicy": "OPTIONAL_SOURCE_TERM",
+      "definition": "Intracellular receptor face, including the cytoplasmic cavity and intracellular loops."
+    },
+    {
+      "id": "EXTRACELLULAR_ORTHOSTERIC_OR_LOOP_SURFACE",
+      "parent": "RECEPTOR_SURFACE",
+      "assignable": true,
+      "failsClosed": false,
+      "qualifierPolicy": "OPTIONAL_SOURCE_TERM",
+      "definition": "Extracellular 7TM, orthosteric-pocket, or extracellular-loop-facing surface."
+    },
+    {
+      "id": "N_TERMINAL_OR_SMALL_ECD_SURFACE",
+      "parent": "RECEPTOR_SURFACE",
+      "assignable": true,
+      "failsClosed": false,
+      "qualifierPolicy": "OPTIONAL_SOURCE_TERM",
+      "definition": "Receptor N terminus or a small extracellular domain explicitly distinguished from a large modular ECD."
+    },
+    {
+      "id": "LARGE_EXTRACELLULAR_DOMAIN_SURFACE",
+      "parent": "RECEPTOR_SURFACE",
+      "assignable": true,
+      "failsClosed": false,
+      "qualifierPolicy": "OPTIONAL_SOURCE_TERM",
+      "definition": "Large extracellular receptor domain, including class C venus-flytrap and adhesion-GPCR extracellular regions."
+    },
+    {
+      "id": "SEVEN_TM_CORE_SURFACE_OTHER",
+      "parent": "RECEPTOR_SURFACE",
+      "assignable": true,
+      "failsClosed": false,
+      "qualifierPolicy": "OPTIONAL_SOURCE_TERM",
+      "definition": "A source-described 7TM/core-facing surface not adequately classified as intracellular or extracellular orthosteric/loop."
+    },
+    {
+      "id": "NAMED_RECEPTOR_DOMAIN_SURFACE",
+      "parent": "RECEPTOR_SURFACE",
+      "assignable": true,
+      "failsClosed": false,
+      "qualifierPolicy": "REQUIRED_NORMALIZED_DOMAIN_NAME",
+      "definition": "A source-named receptor domain whose identity must be retained as a normalized qualifier."
+    },
+    {
+      "id": "UNKNOWN_OR_AMBIGUOUS",
+      "parent": null,
+      "assignable": true,
+      "failsClosed": true,
+      "qualifierPolicy": "REQUIRED_REASON",
+      "definition": "The public annotation is missing, contradictory, or too vague to establish epitope independence."
+    }
+  ]
+}

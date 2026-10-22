@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-08",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "8K4N"
+    ],
+    "query": "TITLE:\"Cryo-EM structure of GPR34-Gi complex\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Cryo-EM+structure+of+GPR34-Gi+complex%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:19.442550+00:00",
+  "status": 200,
+  "rawFile": "raw/title-08.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Cryo-EM+structure+of+GPR34-Gi+complex%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "0d9dd268e477ccd826d7c086a00ba178a61b4420d4b1159a126dd8a96deb774e",
+  "bytes": 214,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:47.848206+00:00"
+}

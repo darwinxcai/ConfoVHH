@@ -1,0 +1,422 @@
+{
+  "schemaVersion": 1,
+  "scope": "Sequence and deposited metadata only; primary-paper Methods, coordinates, contacts and images not inspected.",
+  "sourceInputs": [
+    {
+      "path": "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/entries.jsonl",
+      "sha256": "6aa103cf88f5fb69874842da11ce5306a23429f7590a77210f892a40ef046017"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "sha256": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c"
+    },
+    {
+      "path": "/tmp/confovhh-gpr151-sequence/uniprot-Q8TDV0.json",
+      "sha256": "472d2924204d80c5535d4e17ee8c5090a78571000f582ffa6ef95472baf415a2"
+    },
+    {
+      "path": "/tmp/confovhh-gpr151-sequence/uniprot-Q8TDV0-repeat-2.json",
+      "sha256": "472d2924204d80c5535d4e17ee8c5090a78571000f582ffa6ef95472baf415a2"
+    },
+    {
+      "path": "/tmp/confovhh-gpr151-sequence/uniprot-request.json",
+      "sha256": "f562e9752331d8c304ea898aafc11fa93150de07c5cbc248e72304786e79174b"
+    },
+    {
+      "path": "/tmp/confovhh-gpr151-sequence/uniprot-request-repeat-2.json",
+      "sha256": "432e14dea2b2c189e9a2244686bfa549c1a1bd9913a4d93872476a6d15cb7f21"
+    }
+  ],
+  "canonicalMetadata": {
+    "accession": "Q8TDV0",
+    "entryType": "UniProtKB reviewed (Swiss-Prot)",
+    "entryAudit": {
+      "firstPublicDate": "2004-06-07",
+      "lastAnnotationUpdateDate": "2026-09-02",
+      "lastSequenceUpdateDate": "2002-06-01",
+      "entryVersion": 158,
+      "sequenceVersion": 1
+    },
+    "organism": {
+      "scientificName": "Homo sapiens",
+      "commonName": "Human",
+      "taxonId": 9606,
+      "lineage": [
+        "Eukaryota",
+        "Metazoa",
+        "Chordata",
+        "Craniata",
+        "Vertebrata",
+        "Euteleostomi",
+        "Mammalia",
+        "Eutheria",
+        "Euarchontoglires",
+        "Primates",
+        "Haplorrhini",
+        "Catarrhini",
+        "Hominidae",
+        "Homo"
+      ]
+    },
+    "url": "https://rest.uniprot.org/uniprotkb/Q8TDV0.json"
+  },
+  "canonical": {
+    "id": "UniProt:Q8TDV0",
+    "sequence": "MLAAAFADSNSSSMNVSFAHLHFAGGYLPSDSQDWRTIIPALLVAVCLVGFVGNLCVIGILLHNAWKGKPSMIHSLILNLSLADLSLLLFSAPIRATAYSKSVWDLGWFVCKSSDWFIHTCMAAKSLTIVVVAKVCFMYASDPAKQVSIHNYTIWSVLVAIWTVASLLPLPEWFFSTIRHHEGVEMCLVDVPAVAEEFMSMFGKLYPLLAFGLPLFFASFYFWRAYDQCKKRGTKTQNLRNQIRSKQVTVMLLSIAIISALLWLPEWVAWLWVWHLKAAGPAPPQGFIALSQVLMFSISSANPLIFLVMSEEFREGLKGVWKWMITKKPPTVSESQETPAGNSEGLPDKVPSPESPASIPEKEKPSSPSSGKGKTEKAEIPILPDVEQFWHERDTVPSVQDNDPIPWEHEDQETGEGVK",
+    "length": 419,
+    "sequenceSha256": "282524994e3a26cd32f354e2f7f0e7d62e32229e0a2cff708ddc9a3c446ab4bb"
+  },
+  "depositedReceptors": [
+    {
+      "id": "9W3K_4",
+      "sequence": "MLAAAFADSNSSSMNVSFAHLHFAGGYLPSDSQDWRTIIPALLVAVCLVGFVGNLCVIGILLHNAWKGKPSMIHSLILNLSLADLLLLLFSAPIRATAYSKSVWDLGWFVCKSSDWFIHTCMAAKSWTIVVVAKVCFMYASDPAKQVSIHNYTIWSVLVAIWTVASLLPLPEWFFSTIRHHEGVEMCLVDVPAVAEEFMAMFGKLYPLLAFGLPLFFASFYYTLMILRLKSVRLLSGSREKDRNLRRITRLVLSIAIISALLWLPEWVAWLWVWHLKAAGPAPPQGFIALSQVLMFSISAANPLIFLVMSEEFREGLKGVWKWMITKKPPTVSESQETPAGNSEGLPDKVPSPESPASIPEKEKPSSPSSGKGKTEKAEIPILPDVEQFWHERDTVPSVQDNDPIPWEHEDQETGEGVK",
+      "length": 419,
+      "sequenceSha256": "f8905ab49c5a6ac712c0146edb4d72e9bbbdd020355fa8ee3284037dfab8e018"
+    },
+    {
+      "id": "9W3L_1",
+      "sequence": "MLAAAFADSNSSSMNVSFAHLHFAGGYLPSDSQDWRTIIPALLVAVCLVGFVGNLCVIGILLHNAWKGKPSMIHSLILNLSLADLLLLLFSAPIRATAYSKSVWDLGWFVCKSSDWFIHTCMAAKSWTIVVVAKVCFMYASDPAKQVSIHNYTIWSVLVAIWTVASLLPLPEWFFSTIRHHEGVEMCLVDVPAVAEEFMAMFGKLYPLLAFGLPLFFASFYYTLMILRLKSVRLLSGSREKDRNLRRITRLVLSIAIISALLWLPEWVAWLWVWHLKAAGPAPPQGFIALSQVLMFSISAANPLIFLVMSEEFREGLKGVWKWMITKKPPTVSESQETPAGNSEGLPDKVPSPESPASIPEKEKPSSPSSGKGKTEKAEIPILPDVEQFWHERDTVPSVQDNDPIPWEHEDQETGEGVK",
+      "length": 419,
+      "sequenceSha256": "f8905ab49c5a6ac712c0146edb4d72e9bbbdd020355fa8ee3284037dfab8e018"
+    }
+  ],
+  "depositedReceptorSequencesIdentical": true,
+  "canonicalAlignment": {
+    "method": "global Needleman-Wunsch",
+    "matchScore": 1,
+    "mismatchScore": -1,
+    "linearGapScore": -4,
+    "tieBreak": [
+      "diagonal",
+      "gap in deposited",
+      "gap in canonical"
+    ],
+    "score": 353,
+    "canonicalAligned": "MLAAAFADSNSSSMNVSFAHLHFAGGYLPSDSQDWRTIIPALLVAVCLVGFVGNLCVIGILLHNAWKGKPSMIHSLILNLSLADLSLLLFSAPIRATAYSKSVWDLGWFVCKSSDWFIHTCMAAKSLTIVVVAKVCFMYASDPAKQVSIHNYTIWSVLVAIWTVASLLPLPEWFFSTIRHHEGVEMCLVDVPAVAEEFMSMFGKLYPLLAFGLPLFFASFYFWRAYDQCKKRGTKTQNLRNQIRSKQVTVMLLSIAIISALLWLPEWVAWLWVWHLKAAGPAPPQGFIALSQVLMFSISSANPLIFLVMSEEFREGLKGVWKWMITKKPPTVSESQETPAGNSEGLPDKVPSPESPASIPEKEKPSSPSSGKGKTEKAEIPILPDVEQFWHERDTVPSVQDNDPIPWEHEDQETGEGVK",
+    "depositedAligned": "MLAAAFADSNSSSMNVSFAHLHFAGGYLPSDSQDWRTIIPALLVAVCLVGFVGNLCVIGILLHNAWKGKPSMIHSLILNLSLADLLLLLFSAPIRATAYSKSVWDLGWFVCKSSDWFIHTCMAAKSWTIVVVAKVCFMYASDPAKQVSIHNYTIWSVLVAIWTVASLLPLPEWFFSTIRHHEGVEMCLVDVPAVAEEFMAMFGKLYPLLAFGLPLFFASFYYTLMILRLKSVRLLSGSREKDRNLRRITRLVLSIAIISALLWLPEWVAWLWVWHLKAAGPAPPQGFIALSQVLMFSISAANPLIFLVMSEEFREGLKGVWKWMITKKPPTVSESQETPAGNSEGLPDKVPSPESPASIPEKEKPSSPSSGKGKTEKAEIPILPDVEQFWHERDTVPSVQDNDPIPWEHEDQETGEGVK"
+  },
+  "differenceCount": 33,
+  "identityCount": 386,
+  "identityDenominator": 419,
+  "differences": [
+    {
+      "position1Based": 86,
+      "canonical": "S",
+      "deposited": "L",
+      "change": "S86L"
+    },
+    {
+      "position1Based": 127,
+      "canonical": "L",
+      "deposited": "W",
+      "change": "L127W"
+    },
+    {
+      "position1Based": 200,
+      "canonical": "S",
+      "deposited": "A",
+      "change": "S200A"
+    },
+    {
+      "position1Based": 222,
+      "canonical": "F",
+      "deposited": "Y",
+      "change": "F222Y"
+    },
+    {
+      "position1Based": 223,
+      "canonical": "W",
+      "deposited": "T",
+      "change": "W223T"
+    },
+    {
+      "position1Based": 224,
+      "canonical": "R",
+      "deposited": "L",
+      "change": "R224L"
+    },
+    {
+      "position1Based": 225,
+      "canonical": "A",
+      "deposited": "M",
+      "change": "A225M"
+    },
+    {
+      "position1Based": 226,
+      "canonical": "Y",
+      "deposited": "I",
+      "change": "Y226I"
+    },
+    {
+      "position1Based": 227,
+      "canonical": "D",
+      "deposited": "L",
+      "change": "D227L"
+    },
+    {
+      "position1Based": 228,
+      "canonical": "Q",
+      "deposited": "R",
+      "change": "Q228R"
+    },
+    {
+      "position1Based": 229,
+      "canonical": "C",
+      "deposited": "L",
+      "change": "C229L"
+    },
+    {
+      "position1Based": 231,
+      "canonical": "K",
+      "deposited": "S",
+      "change": "K231S"
+    },
+    {
+      "position1Based": 232,
+      "canonical": "R",
+      "deposited": "V",
+      "change": "R232V"
+    },
+    {
+      "position1Based": 233,
+      "canonical": "G",
+      "deposited": "R",
+      "change": "G233R"
+    },
+    {
+      "position1Based": 234,
+      "canonical": "T",
+      "deposited": "L",
+      "change": "T234L"
+    },
+    {
+      "position1Based": 235,
+      "canonical": "K",
+      "deposited": "L",
+      "change": "K235L"
+    },
+    {
+      "position1Based": 236,
+      "canonical": "T",
+      "deposited": "S",
+      "change": "T236S"
+    },
+    {
+      "position1Based": 237,
+      "canonical": "Q",
+      "deposited": "G",
+      "change": "Q237G"
+    },
+    {
+      "position1Based": 238,
+      "canonical": "N",
+      "deposited": "S",
+      "change": "N238S"
+    },
+    {
+      "position1Based": 239,
+      "canonical": "L",
+      "deposited": "R",
+      "change": "L239R"
+    },
+    {
+      "position1Based": 240,
+      "canonical": "R",
+      "deposited": "E",
+      "change": "R240E"
+    },
+    {
+      "position1Based": 241,
+      "canonical": "N",
+      "deposited": "K",
+      "change": "N241K"
+    },
+    {
+      "position1Based": 242,
+      "canonical": "Q",
+      "deposited": "D",
+      "change": "Q242D"
+    },
+    {
+      "position1Based": 243,
+      "canonical": "I",
+      "deposited": "R",
+      "change": "I243R"
+    },
+    {
+      "position1Based": 244,
+      "canonical": "R",
+      "deposited": "N",
+      "change": "R244N"
+    },
+    {
+      "position1Based": 245,
+      "canonical": "S",
+      "deposited": "L",
+      "change": "S245L"
+    },
+    {
+      "position1Based": 246,
+      "canonical": "K",
+      "deposited": "R",
+      "change": "K246R"
+    },
+    {
+      "position1Based": 247,
+      "canonical": "Q",
+      "deposited": "R",
+      "change": "Q247R"
+    },
+    {
+      "position1Based": 248,
+      "canonical": "V",
+      "deposited": "I",
+      "change": "V248I"
+    },
+    {
+      "position1Based": 250,
+      "canonical": "V",
+      "deposited": "R",
+      "change": "V250R"
+    },
+    {
+      "position1Based": 251,
+      "canonical": "M",
+      "deposited": "L",
+      "change": "M251L"
+    },
+    {
+      "position1Based": 252,
+      "canonical": "L",
+      "deposited": "V",
+      "change": "L252V"
+    },
+    {
+      "position1Based": 300,
+      "canonical": "S",
+      "deposited": "A",
+      "change": "S300A"
+    }
+  ],
+  "terminalAdditionsOrDeletionsRelativeToCanonical": [],
+  "terminalInterpretationLimit": "No deposited sequence additions/deletions in this comparison does not establish absence of expression or purification tags in the experimental construct.",
+  "developmentReference": {
+    "id": "6VI4_1",
+    "sequence": "GSISPAIPVIITAVYSVVFVVGLVGNSLVMFVIIRYTKMKTATNIYIFNLALADALVTTTMPFQSTVYLMNSWPFGDVLCKIVLSIDYYNMFTSIFTLTMMSVDRYIAVCHPVKALDFRTPLKAKIINICIWLLSSSVGISAIVLGGTKVREDVDVIECSLQFPDDDYSWWDLFMKICVFIFAFVIPVLIIIVCYTLMILRLKSVRLLSGSREKDRNLRRITRLVLVVVAVFVVCWTPIHIFILVEALGSTSHSTAALSSYYFCIALGYTNSSLNPILYAFLDENFKRCFRDFCFPLKMRMERQSTS",
+    "length": 307,
+    "sequenceSha256": "ed300255dfd37c2e1250ca86a22e4bd96bd06686533669fe0f208b2379cd2ebd"
+  },
+  "changedBlockDevelopmentMatch": {
+    "depositedStart1Based": 222,
+    "depositedEnd1Based": 252,
+    "depositedSequence": "YTLMILRLKSVRLLSGSREKDRNLRRITRLV",
+    "depositedBlockSha256": "27487792991a111ac50270455b13a6648e7051bb965c7436274c138311b214d9",
+    "canonicalSequenceAtSamePositions": "FWRAYDQCKKRGTKTQNLRNQIRSKQVTVML",
+    "canonicalBlockSha256": "aa97b9f2227ae6b0d35ffa2b2806216c8acfc6d0ef2ae170315c6073cfec6bb5",
+    "differentPositionsCount": 29,
+    "length": 31,
+    "developmentStart1Based": 195,
+    "developmentEnd1Based": 225,
+    "developmentExactMatch": true,
+    "interpretation": "An exact sequence segment match to an exposed development receptor. It supports an engineered KOR-segment interpretation, but sequence comparison alone does not establish construct design, donor provenance, binding mechanism, or a formal leakage edge."
+  },
+  "longestExactSharedSubstringWithDevelopmentReceptor": {
+    "depositedStart1Based": 222,
+    "depositedEnd1Based": 253,
+    "developmentStart1Based": 195,
+    "developmentEnd1Based": 226,
+    "sequence": "YTLMILRLKSVRLLSGSREKDRNLRRITRLVL",
+    "length": 32
+  },
+  "isolatedChangesOutsideBlock": [
+    {
+      "position1Based": 86,
+      "canonical": "S",
+      "deposited": "L",
+      "change": "S86L"
+    },
+    {
+      "position1Based": 127,
+      "canonical": "L",
+      "deposited": "W",
+      "change": "L127W"
+    },
+    {
+      "position1Based": 200,
+      "canonical": "S",
+      "deposited": "A",
+      "change": "S200A"
+    },
+    {
+      "position1Based": 300,
+      "canonical": "S",
+      "deposited": "A",
+      "change": "S300A"
+    }
+  ],
+  "canonicalTopologyAnnotation": [
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 202,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 222,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical; Name=5",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 223,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 252,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Cytoplasmic",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 253,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 273,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical; Name=6",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    }
+  ],
+  "canonicalTopologyInterpretationLimit": "UniProt sequence-based topology annotations (ECO:0000255), not inspection of either deposited structure.",
+  "nativeCoordinatesInspected": false,
+  "publicationMethodsInspected": false,
+  "formalEligibilityAuthority": false,
+  "formalLeakageEdgeAuthority": false,
+  "formalIndependentComponentGainAuthority": false
+}

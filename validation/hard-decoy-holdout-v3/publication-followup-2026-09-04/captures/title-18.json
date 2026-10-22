@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-18",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "6H7N"
+    ],
+    "query": "TITLE:\"Molecular basis for high affinity agonist binding in GPCRs\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Molecular+basis+for+high+affinity+agonist+binding+in+GPCRs%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:10.034498+00:00",
+  "status": 200,
+  "rawFile": "raw/title-18.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Molecular+basis+for+high+affinity+agonist+binding+in+GPCRs%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "7242e364414a5f85419ff0d45e39e044613e173bff63c7001ad6c57304e63e16",
+  "bytes": 1719,
+  "reportedHitCount": 2,
+  "retrievedRecordCount": 2,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:19.058201+00:00"
+}

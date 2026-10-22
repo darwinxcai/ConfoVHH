@@ -1,0 +1,91 @@
+[
+  {
+    "sourceFile": "sources/gpc2-primary-xml.body",
+    "sourceSha256": "5e399be1e5edcd65e1bbf134d44623eca5e426024e4c34f77ed01f51e1bfceb9",
+    "scope": "Direct paragraphs of exact allowlisted construct/sample Methods and Data availability sections only; figures/tables rejected; no recursive article text.",
+    "selectedSectionTitles": [
+      "Data and code availability",
+      "Isolation of anti-GPC2 mouse mAbs",
+      "Negative stain EM preparation of GPC2-CT3 Fab complex and data collection"
+    ],
+    "paragraphs": [
+      {
+        "sectionId": "sec4.2.3",
+        "sectionTitle": "Data and code availability",
+        "paragraphText": "The RNaseq data of orthotopic PDXs of pediatric solid tumors are available: https://ega-archive.org/ega/datasets/EGAD00001003433",
+        "fullSourceParagraphSha256": "675f6d2d6d4cb1565d42385d49de4194c7823bec755e04a2beec432a68a8dc1f",
+        "paragraphTextSha256": "675f6d2d6d4cb1565d42385d49de4194c7823bec755e04a2beec432a68a8dc1f"
+      },
+      {
+        "sectionId": "sec4.2.3",
+        "sectionTitle": "Data and code availability",
+        "paragraphText": "The CT3 Fab/GPC2 complex EM maps generated during this study are available at wwPDB with Deposition ID (D_1000256119): https://deposit-2.wwpdb.org/deposition/",
+        "fullSourceParagraphSha256": "cb7009d2a2130bc1b931c2a25984df0eb3cfec029a258edc7f05de4dccbdc0dc",
+        "paragraphTextSha256": "cb7009d2a2130bc1b931c2a25984df0eb3cfec029a258edc7f05de4dccbdc0dc"
+      },
+      {
+        "sectionId": "sec4.4.1",
+        "sectionTitle": "Isolation of anti-GPC2 mouse mAbs",
+        "paragraphText": "The isolation of mouse mAbs against glypican was described previously.45 Briefly, the process includes peptide synthesis, immunization, spleen cell fusion, hybridoma selection and expansion. The C-terminal peptide consisting of 50 residues was synthesized by GenScript. Hybridoma cells were screened via ELISA, flow cytometry and immunohistochemistry. The CT3 clone, which displayed the highest affinity and most specific binding, was chosen for purification and further characterization.",
+        "fullSourceParagraphSha256": "c21197a8cb30ad960fecb96c0056c13809107bb7e6c5095fb7bfcde09bcefced",
+        "paragraphTextSha256": "c21197a8cb30ad960fecb96c0056c13809107bb7e6c5095fb7bfcde09bcefced"
+      },
+      {
+        "sectionId": "sec4.4.7",
+        "sectionTitle": "Negative stain EM preparation of GPC2-CT3 Fab complex and data collection",
+        "paragraphText": "The CT3 antigen-binding fragment (Fab) was prepared using a Fab preparation kit (Thermo Scientific). GPC2 protein was mixed with CT3 Fab at 1:1 molar ratio in PBS. A 3 \u03bcl aliquot containing \u223c0.01 mg/ml of the sample was applied for 20 s onto a carbon-coated 200 Cu mesh grid (Electron Microscopy Sciences, Protochips, Inc.) that had been glow discharged at 30 mA for 30 s (Pelco easiGlow, Ted Pella, Inc.), then negatively stained with 0.7% (w/v) uranyl formate for 40 s.",
+        "fullSourceParagraphSha256": "fe974284fbd2bb1e074fe1f5754ff99f1872bdacead1b805e4730d2de59e07e4",
+        "paragraphTextSha256": "8a37acf382989b0633349570f55e47371ec5008697210272d6774381667918dd"
+      }
+    ]
+  },
+  {
+    "sourceFile": "sources/mglur5-primary-xml.body",
+    "sourceSha256": "69361ac36bca6e4324ca9e1185ec09768c8c95f5d99f7e1e86c06f075c560f7a",
+    "scope": "Direct paragraphs of exact allowlisted construct/sample Methods and Data availability sections only; figures/tables rejected; no recursive article text.",
+    "selectedSectionTitles": [
+      "Purification of mGlu5 ECD",
+      "Purification of Nb43 for signaling studies and crystallography",
+      "Crystallization of the Apo ECD+Nb43 Complex and Data Collection",
+      "Crystallization of the ECD in complex with Quisqualate and Nb43",
+      "Data availability (FN5)"
+    ],
+    "paragraphs": [
+      {
+        "sectionId": "S9",
+        "sectionTitle": "Purification of mGlu5 ECD",
+        "paragraphText": "A construct encoding residues 21\u2013569 of wild-type human mGlu5 followed by a hexahistidine tag was cloned into the insect cell secretion vector pACGP67 and used to generate Baculovirus using the BestBac method (Expression Systems). Hi-Five (Trichoplusia ni) cells were infected with baculovirus at a density of 3.5\u00d7106 cells/mL for 72 hours at 27\u02daC. Cells were removed from media by centrifugation at 4000rpm, at which point the media was quenched of chelating agents by addition of 1mM NiCl2 and 5mM CaCl2 with rapid stirring at 25C for one hour. Precipitates were removed from media by centrifugation at 4000 rpm. Media pH was balanced by addition of Tris pH 8.0 to 50mM final before loading over 5mL of Ni-NTA resin. Resin was washed in 500mM NaCl, 20mM HEPES pH 7.5 and 20 mM Imidazole, then in 100mM NaCl, 20mM HEPES pH 7.5 and 20mM Imidazole. Protein was eluted in 100mM NaCl, 20mM Hepes pH 7.5 and 250 mM Imidazole, fractions containing ECD were pooled, and the His tag was removed by addition of carboxypeptidase A and B during overnight dialysis into 100mM NaCl, 20 mM Hepes pH 7.5 at 4\u02daC. Contaminants and uncleaved protein were separated by flowing over Ni-NTA resin and flow-through was collected. Protein was finally purified by size exclusion chromatography on a Superdex 200 10/30 column in 100mM NaCl with 20mM Hepes pH 7.5. Monomeric fractions were pooled and concentrated to 30 mg/mL and flash frozen in liquid nitrogen.",
+        "fullSourceParagraphSha256": "9cb6eae4d1e7d449c1aa231de49451a9213cf59bbc7072304a0152fda01e023e",
+        "paragraphTextSha256": "9cb6eae4d1e7d449c1aa231de49451a9213cf59bbc7072304a0152fda01e023e"
+      },
+      {
+        "sectionId": "S10",
+        "sectionTitle": "Purification of Nb43 for signaling studies and crystallography",
+        "paragraphText": "Nb43 was cloned into a modified pE-SUMO vector containing a PelB leader sequence and AAA linker in front of the SUMO fusion tag. Transformed BL21 E. coli were grown to OD600 of ~0.6 at 37\u02daC and induced with 1mM IPTG and transferred to 25C shakers where induction was allowed to run overnight. Bacteria were harvested by centrifugation and frozen. Nb43 was purified from the periplasm using established protocols. Briefly, cells were thawed in two volumes SET buffer (0.5M Sucrose, 0.5mM EDTA, 0.2M Tris pH 8.0) and stirred until homogenized before addition of 3 volumes 25 C Milli-Q water with rapid stirring for 45 minutes to release periplasmic contents. Cell debris was removed by centrifugation at 15000 rpm for 20 minutes. Prior to loading over Ni-NTA resin, 100mM NaCl and 10mM MgCl2 were added to provide ionic strength and to quench EDTA, respectively. After loading quenched sample, resin was washed in 500mM NaCl, 20mM HEPES pH 7.5, and 20 mM Imidazole, then in 100mM NaCl, 20mM HEPES pH 7.5 and 20mM Imidazole. Protein was eluted in 100mM NaCl, 20mM Hepes pH 7.5, and 250 mM Imidazole, and fractions containing SUMO-Nb43 were pooled, and His-Sumo tag were removed by addition of ULP1. Imidazole was removed by overnight dialysis into 100mM NaCl, 20 mM Hepes pH 7.5 at 4\u02daC. Contaminants and uncleaved protein were separated by flowing over Ni-NTA resin and flow-through was collected. Nb43 was finally purified by size exclusion chromatography on a Superdex 200 10/30 column in 100mM NaCl with 20mM Hepes pH 7.5. Monomeric fractions were pooled and concentrated to 98 mg/mL (~3mM) and flash frozen in liquid nitrogen. Nb43 purified in this manner was used for both structural and pharmacological studies.",
+        "fullSourceParagraphSha256": "1f1cfcf950c9dafd37d3a0ffd0cd6c8cc139df6aa46844d1d19359cb6957a9a1",
+        "paragraphTextSha256": "1f1cfcf950c9dafd37d3a0ffd0cd6c8cc139df6aa46844d1d19359cb6957a9a1"
+      },
+      {
+        "sectionId": "S11",
+        "sectionTitle": "Crystallization of the Apo ECD+Nb43 Complex and Data Collection",
+        "paragraphText": "mGlu5 ECD was incubated with 1.2 molar excess Nb43 for 30 minutes at 25\u02daC and excess Nb43 was removed by size exclusion chromatography on a Superdex 200 10/30 column in 100mM NaCl with 20mM Hepes pH 7.5. Fractions containing complex were pooled and concentrated to 20 mg/mL and flash frozen in liquid nitrogen.",
+        "fullSourceParagraphSha256": "f189e820f7868d0901325c013b5e4a397c31b950176103ad3a94e5622893305a",
+        "paragraphTextSha256": "f189e820f7868d0901325c013b5e4a397c31b950176103ad3a94e5622893305a"
+      },
+      {
+        "sectionId": "S12",
+        "sectionTitle": "Crystallization of the ECD in complex with Quisqualate and Nb43",
+        "paragraphText": "mGlu5 ECD +Nb43 complex (described above) was incubated with a 10-fold molar excess of L-quisqualic acid (Tocris) for 30 minutes at 25\u02daC and initial crystallization hits were identified using commercial screens. Crystals reproducibly emerged in 100mM NaCl with 20% PEG species at a range of pH values. Final crystals were grown in 100mM NaCl, 50mM ADA pH 7.0 and 20% PEG 4000. Crystals were cryo-protected in reservoir solution plus 25% glycerol and frozen in liquid nitrogen.",
+        "fullSourceParagraphSha256": "1404b0259dd85928a1edf7232a715c40db827d3ca30841508a176cf8b525a540",
+        "paragraphTextSha256": "1404b0259dd85928a1edf7232a715c40db827d3ca30841508a176cf8b525a540"
+      },
+      {
+        "sectionId": "FN5",
+        "sectionTitle": "Data availability",
+        "paragraphText": "All data generated or analyzed during this study are included in this published article and its Supplementary Information. The X-ray crystal structures and structure factors of the apo mGlu5 ECD, of the apo-mGlu5 ECD with Nb43, and of the mGlu5 ECD bound to Nb43 and L-quisqualate have been deposited in the Protein Data Bank under accession codes 6N4X, 6N4Y, and 6N50 respectively. Cryo-EM Maps of apo mGlu5 in nanodiscs, apo mGlu5 bound to Nb43 and active mGlu5 bound to Nb43 and L-quisqualate in GDN have been deposited in the Electron Microscopy Data Bank under accession codes 0346, 0347, and 0345 respectively. The atomic coordinates of apo mGlu5 and active mGlu5 bound to Nb43 and L-quisqualate have been deposited in the Protein Data Bank under accession codes 6N52 and 6N51 respectively.",
+        "fullSourceParagraphSha256": "03bf975bb21827ec24a7cb34edd3e358c9ecb32fe1fc466f1edfac442a2724b6",
+        "paragraphTextSha256": "03bf975bb21827ec24a7cb34edd3e358c9ecb32fe1fc466f1edfac442a2724b6"
+      }
+    ]
+  }
+]

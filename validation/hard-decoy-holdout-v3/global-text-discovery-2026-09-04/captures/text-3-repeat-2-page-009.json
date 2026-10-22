@@ -1,0 +1,23 @@
+{
+  "kind": "search",
+  "queryId": "text-3",
+  "repeat": 2,
+  "start": 4000,
+  "stem": "text-3-repeat-2-page-009",
+  "endpoint": "https://search.rcsb.org/rcsbsearch/v2/query",
+  "method": "POST",
+  "requestFile": "requests/text-3-repeat-2-page-009.json",
+  "requestBodySha256": "71fceb4bae1927cef8302715a4c2cd80270b053c624caa2f953a9a80c3ddff02",
+  "rawFile": "raw/text-3-repeat-2-page-009.json",
+  "captureFile": "captures/text-3-repeat-2-page-009.json",
+  "startedAt": "2026-09-04T23:39:44.731Z",
+  "completedAt": "2026-09-04T23:39:45.602Z",
+  "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+  "redirected": false,
+  "status": 200,
+  "contentType": "application/json",
+  "responseSha256": "b0445cdf48fd15b294e81ad4a23cd91e6d467c9621d49e864a677fbac07cc54b",
+  "responseByteCount": 33724,
+  "error": null,
+  "parsedResultSha256": "31d5081228b0aee0fbc7b558de3ce4b4d9b40c43be3a39f65b5755d114633323"
+}

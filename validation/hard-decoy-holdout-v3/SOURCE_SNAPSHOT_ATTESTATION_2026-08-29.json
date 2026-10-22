@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "SOURCE_UNIVERSE_ARCHIVED_BLOCKED_PENDING_DISPOSITIONS",
+  "sourceRepositoryCommit": "07781f50c51e58dc11376d4168c57d18968e2dd2",
+  "archiveWorkflowCommit": "cd3e59148e51f1cc0739a8730b415f5afe6dc0cb",
+  "workflowRunId": 33235661638,
+  "workflowRunAttempt": 1,
+  "workflowRunUrl": "https://github.com/darwinxcai/ConfoVHH/actions/runs/33235661638",
+  "archivedAtUtc": "2026-08-29T05:13:50.740Z",
+  "snapshotDirectory": "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29",
+  "snapshotManifestSha256": "c0b24e5a153bdf240afc2da436321ad2abbdf93800f4b9791d82ae15c9b7b0db",
+  "snapshotChecksumsSha256": "796aa0734da86791f8ccdef92c7de03da22bdafd7818a5c5e95d73b6b5d35ebc",
+  "sourceContractSha256": "1a480345f9910470d4474e134bedc1cab550ba04c0254c2e09184c1c7fddb825",
+  "normalized": {
+    "rcsbQueries": {
+      "nanobody": {
+        "count": 1760,
+        "sha256": "a66f26fce4498ba07dc2eb46bd5ba1c5440f671209775e9496ce7b82bd194795"
+      },
+      "vhh": {
+        "count": 475,
+        "sha256": "0ad358494867265303e46afe24f7122508d98a6717c6d5ae26059b5e4adef614"
+      },
+      "camelid": {
+        "count": 188,
+        "sha256": "43fbe51adbd46533cc7855e8f5ce5f3e85752d45790e97b057a68b253a21b41c"
+      },
+      "megabody": {
+        "count": 59,
+        "sha256": "c63071f001fb61779eafddfed99b5b41826f2f8c04f798ad4cd833fb6cf37d91"
+      }
+    },
+    "rcsbUnion": {
+      "count": 2065,
+      "sha256": "c154b8a9780f0d7a898a9fed77bbc54f2b18572830840d55ead625ede647f0ca"
+    },
+    "gpcrdbApi": {
+      "count": 1716,
+      "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+    },
+    "gpcrdbHtml": {
+      "count": 1716,
+      "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+    },
+    "intersection": {
+      "count": 287,
+      "sha256": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7"
+    }
+  },
+  "gpcrdbCrossCheck": {
+    "pass": true,
+    "policy": "record-differences-and-block-target-freeze-until-resolved",
+    "onlyInApi": [],
+    "onlyInApiSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "onlyInHtml": [],
+    "onlyInHtmlSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "pendingDispositionRows": 287,
+  "dispositionLedgerComplete": false,
+  "leakageGraphComplete": false,
+  "formallyClearedGroupCount": 0,
+  "targetFreezePermitted": false,
+  "prelabelSealCreated": false,
+  "userApproved": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}

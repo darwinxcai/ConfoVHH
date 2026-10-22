@@ -1,0 +1,579 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "reviewDate": "2026-09-04",
+  "scope": "Exact metadata accession and sequence comparisons for nine selected entries; no new primary-literature review or structural access.",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/annotation-additional-priority-review-2026-09-04/publication-closure/entries.jsonl": "2797e0201296be05b4e0673beffaaf5f94a5787713565c952ca075773487f4e2",
+    "validation/hard-decoy-holdout-v3/annotation-discovery-2026-09-04/entries.jsonl": "ab4ebb4597948b973af33ae55763c0f8a65fcbfe66db3748d24478ec33a429df",
+    "validation/hard-decoy-holdout-v3/development-metadata-snapshot-2026-08-29/development-nodes.jsonl": "6845c4e570c4c7c2b6ea71c5b2118b158a87e7d8618bf32bbf4d6755e0192d2e",
+    "validation/hard-decoy-holdout-v3/domain-remainder-2026-09-04/entries.jsonl": "6aa103cf88f5fb69874842da11ce5306a23429f7590a77210f892a40ef046017",
+    "validation/hard-decoy-holdout-v3/domain-remainder-screen-2026-09-04/sequence-screens.jsonl": "3a2db9aed20155ad2a944625fc4ca020c59d1d4b205ab9c521f8fd1682328499",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-replacements-2026-09-04/entries.jsonl": "b0b26eb7776fa1eb53182cf7c23213417209b47a67afbc05621680bfe79457cd",
+    "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/entries.jsonl": "4ae69b0921f20b2874783b84322f32c3213d842c10e8ed98e65b6c14f0a2e99f",
+    "validation/hard-decoy-holdout-v3/receptor-tm-pregraph-2026-08-30/development-receptor-profiles.jsonl": "0a120c9ac73ce5acbb33cb638d2fe396942cf6dff302d3a81e74a789af797b65",
+    "validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29/development-vhh-profiles.jsonl": "1c791d337d628a1de397eb33cfe5685d76953e169bfbf1077798365fa9fa8730"
+  },
+  "developmentReceptorNodesCompared": 17,
+  "developmentVhhProfilesCompared": 18,
+  "comparisons": [
+    {
+      "groupId": "APJ_JN2419",
+      "groupMeaning": "Selected metadata records sharing an exact deposited candidate-containing entity sequence; not a formal leakage component.",
+      "candidateReceptorAccessionForReview": "P35414",
+      "candidateAndReceptorInSameDepositedEntity": false,
+      "exactFullEntityOccurrencesAcrossBoundMetadata": [
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "8Z74",
+          "entityId": "1"
+        },
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "8Z7J",
+          "entityId": "6"
+        },
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "9LQU",
+          "entityId": "1"
+        },
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "9LQW",
+          "entityId": "2"
+        },
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "9LQX",
+          "entityId": "2"
+        },
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "9LR1",
+          "entityId": "5"
+        },
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "9LR2",
+          "entityId": "3"
+        }
+      ],
+      "entries": [
+        {
+          "pdbId": "9LQU",
+          "candidateEntityId": "1",
+          "candidateDescription": "JN241-9",
+          "candidateContainingEntitySequenceLength": 130,
+          "candidateContainingEntitySequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623",
+          "standaloneCandidateSequenceDeposited": true,
+          "fullVhhSequenceBoundaryEstablished": false,
+          "receptorContainingEntityId": "2",
+          "receptorContainingEntityDescription": "Apelin receptor",
+          "receptorContainingEntitySequenceLength": 380,
+          "receptorContainingEntitySequenceSha256": "7c44a5c602ed3747f888e66d3e0d1e9f5f7ad40194536c4cf2fd76611124e520",
+          "receptorSourceUniProtAccessions": [
+            "P35414"
+          ],
+          "candidateReceptorAccessionForReview": "P35414",
+          "primaryCitation": {
+            "doi": null,
+            "pmid": null,
+            "title": "Cryo-EM structure of the JN241-9-bound state 1a of APLNR homodimer"
+          },
+          "exactDevelopmentFullCandidateEntityMatches": [],
+          "exactDevelopmentNumberedDomainMatches": [],
+          "developmentCanonicalReceptorAccessionMatches": [
+            {
+              "pdbId": "6KNM",
+              "registryReceptor": "APLNR",
+              "canonicalAccession": "P35414",
+              "canonicalMappingStatus": "RESOLVED_UNIQUE_CANONICAL_GPCRDB_TM1_TM7",
+              "depositedReceptorEntitySequenceSha256": "aa9fa4385a05f99c7d7c156b7840775f33956fe1de31475a56228561e854ce9a",
+              "exactDepositedReceptorContainingEntitySequenceMatch": false,
+              "candidateVhhSequences": [
+                {
+                  "entityId": "2",
+                  "description": "Single domain antibody JN241",
+                  "sequenceLength": 129,
+                  "sequenceSha256": "052f7f66ca72d392be7eef46795d7425955ab881645dafd9346229e0aa7c3f3c",
+                  "exactFullEntityMatch": false
+                }
+              ]
+            }
+          ],
+          "numberedDomainCalls": [
+            {
+              "start": 0,
+              "end": 130,
+              "sequenceLength": 130,
+              "sequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623"
+            }
+          ],
+          "depositedPolymerEntityCount": 2
+        },
+        {
+          "pdbId": "9LQW",
+          "candidateEntityId": "2",
+          "candidateDescription": "JN241-9",
+          "candidateContainingEntitySequenceLength": 130,
+          "candidateContainingEntitySequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623",
+          "standaloneCandidateSequenceDeposited": true,
+          "fullVhhSequenceBoundaryEstablished": false,
+          "receptorContainingEntityId": "1",
+          "receptorContainingEntityDescription": "Apelin receptor",
+          "receptorContainingEntitySequenceLength": 380,
+          "receptorContainingEntitySequenceSha256": "7c44a5c602ed3747f888e66d3e0d1e9f5f7ad40194536c4cf2fd76611124e520",
+          "receptorSourceUniProtAccessions": [
+            "P35414"
+          ],
+          "candidateReceptorAccessionForReview": "P35414",
+          "primaryCitation": {
+            "doi": null,
+            "pmid": null,
+            "title": "Cryo-EM structure of the JN241-9-bound state 1b of APLNR homodimer"
+          },
+          "exactDevelopmentFullCandidateEntityMatches": [],
+          "exactDevelopmentNumberedDomainMatches": [],
+          "developmentCanonicalReceptorAccessionMatches": [
+            {
+              "pdbId": "6KNM",
+              "registryReceptor": "APLNR",
+              "canonicalAccession": "P35414",
+              "canonicalMappingStatus": "RESOLVED_UNIQUE_CANONICAL_GPCRDB_TM1_TM7",
+              "depositedReceptorEntitySequenceSha256": "aa9fa4385a05f99c7d7c156b7840775f33956fe1de31475a56228561e854ce9a",
+              "exactDepositedReceptorContainingEntitySequenceMatch": false,
+              "candidateVhhSequences": [
+                {
+                  "entityId": "2",
+                  "description": "Single domain antibody JN241",
+                  "sequenceLength": 129,
+                  "sequenceSha256": "052f7f66ca72d392be7eef46795d7425955ab881645dafd9346229e0aa7c3f3c",
+                  "exactFullEntityMatch": false
+                }
+              ]
+            }
+          ],
+          "numberedDomainCalls": [
+            {
+              "start": 0,
+              "end": 130,
+              "sequenceLength": 130,
+              "sequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623"
+            }
+          ],
+          "depositedPolymerEntityCount": 2
+        },
+        {
+          "pdbId": "9LQX",
+          "candidateEntityId": "2",
+          "candidateDescription": "JN241-9",
+          "candidateContainingEntitySequenceLength": 130,
+          "candidateContainingEntitySequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623",
+          "standaloneCandidateSequenceDeposited": true,
+          "fullVhhSequenceBoundaryEstablished": false,
+          "receptorContainingEntityId": "1",
+          "receptorContainingEntityDescription": "Apelin receptor",
+          "receptorContainingEntitySequenceLength": 380,
+          "receptorContainingEntitySequenceSha256": "7c44a5c602ed3747f888e66d3e0d1e9f5f7ad40194536c4cf2fd76611124e520",
+          "receptorSourceUniProtAccessions": [
+            "P35414"
+          ],
+          "candidateReceptorAccessionForReview": "P35414",
+          "primaryCitation": {
+            "doi": null,
+            "pmid": null,
+            "title": "Cryo-EM structure of the JN241-9-bound state 1c of APLNR homodimer"
+          },
+          "exactDevelopmentFullCandidateEntityMatches": [],
+          "exactDevelopmentNumberedDomainMatches": [],
+          "developmentCanonicalReceptorAccessionMatches": [
+            {
+              "pdbId": "6KNM",
+              "registryReceptor": "APLNR",
+              "canonicalAccession": "P35414",
+              "canonicalMappingStatus": "RESOLVED_UNIQUE_CANONICAL_GPCRDB_TM1_TM7",
+              "depositedReceptorEntitySequenceSha256": "aa9fa4385a05f99c7d7c156b7840775f33956fe1de31475a56228561e854ce9a",
+              "exactDepositedReceptorContainingEntitySequenceMatch": false,
+              "candidateVhhSequences": [
+                {
+                  "entityId": "2",
+                  "description": "Single domain antibody JN241",
+                  "sequenceLength": 129,
+                  "sequenceSha256": "052f7f66ca72d392be7eef46795d7425955ab881645dafd9346229e0aa7c3f3c",
+                  "exactFullEntityMatch": false
+                }
+              ]
+            }
+          ],
+          "numberedDomainCalls": [
+            {
+              "start": 0,
+              "end": 130,
+              "sequenceLength": 130,
+              "sequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623"
+            }
+          ],
+          "depositedPolymerEntityCount": 2
+        },
+        {
+          "pdbId": "9LR1",
+          "candidateEntityId": "5",
+          "candidateDescription": "JN241-9",
+          "candidateContainingEntitySequenceLength": 130,
+          "candidateContainingEntitySequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623",
+          "standaloneCandidateSequenceDeposited": true,
+          "fullVhhSequenceBoundaryEstablished": false,
+          "receptorContainingEntityId": "6",
+          "receptorContainingEntityDescription": "Apelin receptor",
+          "receptorContainingEntitySequenceLength": 380,
+          "receptorContainingEntitySequenceSha256": "7c44a5c602ed3747f888e66d3e0d1e9f5f7ad40194536c4cf2fd76611124e520",
+          "receptorSourceUniProtAccessions": [
+            "P35414"
+          ],
+          "candidateReceptorAccessionForReview": "P35414",
+          "primaryCitation": {
+            "doi": null,
+            "pmid": null,
+            "title": "JN241-9-bound APLNR monomer-Gi complex"
+          },
+          "exactDevelopmentFullCandidateEntityMatches": [],
+          "exactDevelopmentNumberedDomainMatches": [],
+          "developmentCanonicalReceptorAccessionMatches": [
+            {
+              "pdbId": "6KNM",
+              "registryReceptor": "APLNR",
+              "canonicalAccession": "P35414",
+              "canonicalMappingStatus": "RESOLVED_UNIQUE_CANONICAL_GPCRDB_TM1_TM7",
+              "depositedReceptorEntitySequenceSha256": "aa9fa4385a05f99c7d7c156b7840775f33956fe1de31475a56228561e854ce9a",
+              "exactDepositedReceptorContainingEntitySequenceMatch": false,
+              "candidateVhhSequences": [
+                {
+                  "entityId": "2",
+                  "description": "Single domain antibody JN241",
+                  "sequenceLength": 129,
+                  "sequenceSha256": "052f7f66ca72d392be7eef46795d7425955ab881645dafd9346229e0aa7c3f3c",
+                  "exactFullEntityMatch": false
+                }
+              ]
+            }
+          ],
+          "numberedDomainCalls": [
+            {
+              "start": 0,
+              "end": 130,
+              "sequenceLength": 130,
+              "sequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623"
+            }
+          ],
+          "depositedPolymerEntityCount": 6
+        },
+        {
+          "pdbId": "9LR2",
+          "candidateEntityId": "3",
+          "candidateDescription": "JN241-9",
+          "candidateContainingEntitySequenceLength": 130,
+          "candidateContainingEntitySequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623",
+          "standaloneCandidateSequenceDeposited": true,
+          "fullVhhSequenceBoundaryEstablished": false,
+          "receptorContainingEntityId": "2",
+          "receptorContainingEntityDescription": "Apelin receptor",
+          "receptorContainingEntitySequenceLength": 380,
+          "receptorContainingEntitySequenceSha256": "7c44a5c602ed3747f888e66d3e0d1e9f5f7ad40194536c4cf2fd76611124e520",
+          "receptorSourceUniProtAccessions": [
+            "P35414"
+          ],
+          "candidateReceptorAccessionForReview": "P35414",
+          "primaryCitation": {
+            "doi": null,
+            "pmid": null,
+            "title": "Cryo-EM structure of the JN241-9-bound APLNR dimer-Gi complex"
+          },
+          "exactDevelopmentFullCandidateEntityMatches": [],
+          "exactDevelopmentNumberedDomainMatches": [],
+          "developmentCanonicalReceptorAccessionMatches": [
+            {
+              "pdbId": "6KNM",
+              "registryReceptor": "APLNR",
+              "canonicalAccession": "P35414",
+              "canonicalMappingStatus": "RESOLVED_UNIQUE_CANONICAL_GPCRDB_TM1_TM7",
+              "depositedReceptorEntitySequenceSha256": "aa9fa4385a05f99c7d7c156b7840775f33956fe1de31475a56228561e854ce9a",
+              "exactDepositedReceptorContainingEntitySequenceMatch": false,
+              "candidateVhhSequences": [
+                {
+                  "entityId": "2",
+                  "description": "Single domain antibody JN241",
+                  "sequenceLength": 129,
+                  "sequenceSha256": "052f7f66ca72d392be7eef46795d7425955ab881645dafd9346229e0aa7c3f3c",
+                  "exactFullEntityMatch": false
+                }
+              ]
+            }
+          ],
+          "numberedDomainCalls": [
+            {
+              "start": 0,
+              "end": 130,
+              "sequenceLength": 130,
+              "sequenceSha256": "536259edd3296917af1e0e66cb14f46810c0c8c767cb8c10b3fcda0930029623"
+            }
+          ],
+          "depositedPolymerEntityCount": 6
+        }
+      ],
+      "formatReviewComplete": false,
+      "constructReviewComplete": false,
+      "directBindingRoleEstablished": false,
+      "parentVariantReviewComplete": false,
+      "developmentAdjudicationComplete": false,
+      "formalIndependenceEstablished": false
+    },
+    {
+      "groupId": "GPR151_NB6",
+      "groupMeaning": "Selected metadata records sharing an exact deposited candidate-containing entity sequence; not a formal leakage component.",
+      "candidateReceptorAccessionForReview": "Q8TDV0",
+      "candidateAndReceptorInSameDepositedEntity": false,
+      "exactFullEntityOccurrencesAcrossBoundMetadata": [
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "9W3K",
+          "entityId": "5"
+        },
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "9W3L",
+          "entityId": "2"
+        }
+      ],
+      "entries": [
+        {
+          "pdbId": "9W3K",
+          "candidateEntityId": "5",
+          "candidateDescription": "NB6",
+          "candidateContainingEntitySequenceLength": 127,
+          "candidateContainingEntitySequenceSha256": "5f867337653ed65137392ad7fb5a69400c7fc6ec3feee464dbd84198385ced1d",
+          "standaloneCandidateSequenceDeposited": true,
+          "fullVhhSequenceBoundaryEstablished": false,
+          "receptorContainingEntityId": "4",
+          "receptorContainingEntityDescription": "G-protein coupled receptor 151",
+          "receptorContainingEntitySequenceLength": 419,
+          "receptorContainingEntitySequenceSha256": "f8905ab49c5a6ac712c0146edb4d72e9bbbdd020355fa8ee3284037dfab8e018",
+          "receptorSourceUniProtAccessions": [
+            "Q8TDV0"
+          ],
+          "candidateReceptorAccessionForReview": "Q8TDV0",
+          "primaryCitation": {
+            "doi": "10.1073/pnas.2534234123",
+            "pmid": "42085164",
+            "title": "Decoding the structure of GPR151 via NELiS."
+          },
+          "exactDevelopmentFullCandidateEntityMatches": [],
+          "exactDevelopmentNumberedDomainMatches": [],
+          "developmentCanonicalReceptorAccessionMatches": [],
+          "numberedDomainCalls": [
+            {
+              "start": 1,
+              "end": 122,
+              "sequenceLength": 121,
+              "sequenceSha256": "bf3f904d7f282e5b5ed5ecc6841fb00399cd35b15ed7a15f80859187b4e9a4b9"
+            }
+          ],
+          "depositedPolymerEntityCount": 5
+        },
+        {
+          "pdbId": "9W3L",
+          "candidateEntityId": "2",
+          "candidateDescription": "NB6",
+          "candidateContainingEntitySequenceLength": 127,
+          "candidateContainingEntitySequenceSha256": "5f867337653ed65137392ad7fb5a69400c7fc6ec3feee464dbd84198385ced1d",
+          "standaloneCandidateSequenceDeposited": true,
+          "fullVhhSequenceBoundaryEstablished": false,
+          "receptorContainingEntityId": "1",
+          "receptorContainingEntityDescription": "G-protein coupled receptor 151",
+          "receptorContainingEntitySequenceLength": 419,
+          "receptorContainingEntitySequenceSha256": "f8905ab49c5a6ac712c0146edb4d72e9bbbdd020355fa8ee3284037dfab8e018",
+          "receptorSourceUniProtAccessions": [
+            "Q8TDV0"
+          ],
+          "candidateReceptorAccessionForReview": "Q8TDV0",
+          "primaryCitation": {
+            "doi": "10.1073/pnas.2534234123",
+            "pmid": "42085164",
+            "title": "Decoding the structure of GPR151 via NELiS."
+          },
+          "exactDevelopmentFullCandidateEntityMatches": [],
+          "exactDevelopmentNumberedDomainMatches": [],
+          "developmentCanonicalReceptorAccessionMatches": [],
+          "numberedDomainCalls": [
+            {
+              "start": 1,
+              "end": 122,
+              "sequenceLength": 121,
+              "sequenceSha256": "bf3f904d7f282e5b5ed5ecc6841fb00399cd35b15ed7a15f80859187b4e9a4b9"
+            }
+          ],
+          "depositedPolymerEntityCount": 2
+        }
+      ],
+      "formatReviewComplete": false,
+      "constructReviewComplete": false,
+      "directBindingRoleEstablished": false,
+      "parentVariantReviewComplete": false,
+      "developmentAdjudicationComplete": false,
+      "formalIndependenceEstablished": false
+    },
+    {
+      "groupId": "AT1R_AT118R_FUSION",
+      "groupMeaning": "Selected metadata records sharing an exact deposited candidate-containing entity sequence; not a formal leakage component.",
+      "candidateReceptorAccessionForReview": "P30556",
+      "candidateAndReceptorInSameDepositedEntity": true,
+      "exactFullEntityOccurrencesAcrossBoundMetadata": [
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "9ZXC",
+          "entityId": "1"
+        },
+        {
+          "source": "domain-remainder-2026-09-04",
+          "pdbId": "9ZXD",
+          "entityId": "1"
+        }
+      ],
+      "entries": [
+        {
+          "pdbId": "9ZXC",
+          "candidateEntityId": "1",
+          "candidateDescription": "Nanobody AT118-R,Type-1 angiotensin II receptor with Soluble cytochrome b562 insertion",
+          "candidateContainingEntitySequenceLength": 582,
+          "candidateContainingEntitySequenceSha256": "136ac865a8a73e1d4e9413911e09223d5191e2ccc504d8ef1c62c72c49929600",
+          "standaloneCandidateSequenceDeposited": false,
+          "fullVhhSequenceBoundaryEstablished": false,
+          "receptorContainingEntityId": "1",
+          "receptorContainingEntityDescription": "Nanobody AT118-R,Type-1 angiotensin II receptor with Soluble cytochrome b562 insertion",
+          "receptorContainingEntitySequenceLength": 582,
+          "receptorContainingEntitySequenceSha256": "136ac865a8a73e1d4e9413911e09223d5191e2ccc504d8ef1c62c72c49929600",
+          "receptorSourceUniProtAccessions": [
+            "P0ABE7",
+            "P30556"
+          ],
+          "candidateReceptorAccessionForReview": "P30556",
+          "primaryCitation": {
+            "doi": "10.1073/pnas.2602538123",
+            "pmid": "42550893",
+            "title": "Activation of the angiotensin II type I receptor by a nonpeptide agonist."
+          },
+          "exactDevelopmentFullCandidateEntityMatches": [],
+          "exactDevelopmentNumberedDomainMatches": [],
+          "developmentCanonicalReceptorAccessionMatches": [
+            {
+              "pdbId": "6DO1",
+              "registryReceptor": "AGTR1",
+              "canonicalAccession": "P30556",
+              "canonicalMappingStatus": "RESOLVED_UNIQUE_CANONICAL_GPCRDB_TM1_TM7",
+              "depositedReceptorEntitySequenceSha256": "d2718b6feb4272444110a34cd46426e0a780b20da886c4559bbe90baca621a22",
+              "exactDepositedReceptorContainingEntitySequenceMatch": false,
+              "candidateVhhSequences": [
+                {
+                  "entityId": "2",
+                  "description": "Nanobody Nb.AT110i1",
+                  "sequenceLength": 126,
+                  "sequenceSha256": "17ad3cf713c4ffa4efba8967db8d021ccf54761550f530e73769b1bb74e20ac9",
+                  "exactFullEntityMatch": false
+                }
+              ]
+            }
+          ],
+          "numberedDomainCalls": [
+            {
+              "start": 0,
+              "end": 118,
+              "sequenceLength": 118,
+              "sequenceSha256": "8f773702c27fad1619c3183e9d88e15a407c47e433716aca42c6fca979c7e438"
+            }
+          ],
+          "depositedPolymerEntityCount": 3
+        },
+        {
+          "pdbId": "9ZXD",
+          "candidateEntityId": "1",
+          "candidateDescription": "AT118-R nanobody,Type-1 angiotensin II receptor with Soluble cytochrome b562 insertion",
+          "candidateContainingEntitySequenceLength": 582,
+          "candidateContainingEntitySequenceSha256": "136ac865a8a73e1d4e9413911e09223d5191e2ccc504d8ef1c62c72c49929600",
+          "standaloneCandidateSequenceDeposited": false,
+          "fullVhhSequenceBoundaryEstablished": false,
+          "receptorContainingEntityId": "1",
+          "receptorContainingEntityDescription": "AT118-R nanobody,Type-1 angiotensin II receptor with Soluble cytochrome b562 insertion",
+          "receptorContainingEntitySequenceLength": 582,
+          "receptorContainingEntitySequenceSha256": "136ac865a8a73e1d4e9413911e09223d5191e2ccc504d8ef1c62c72c49929600",
+          "receptorSourceUniProtAccessions": [
+            "P30556"
+          ],
+          "candidateReceptorAccessionForReview": "P30556",
+          "primaryCitation": {
+            "doi": "10.1073/pnas.2602538123",
+            "pmid": "42550893",
+            "title": "Activation of the angiotensin II type I receptor by a nonpeptide agonist."
+          },
+          "exactDevelopmentFullCandidateEntityMatches": [],
+          "exactDevelopmentNumberedDomainMatches": [],
+          "developmentCanonicalReceptorAccessionMatches": [
+            {
+              "pdbId": "6DO1",
+              "registryReceptor": "AGTR1",
+              "canonicalAccession": "P30556",
+              "canonicalMappingStatus": "RESOLVED_UNIQUE_CANONICAL_GPCRDB_TM1_TM7",
+              "depositedReceptorEntitySequenceSha256": "d2718b6feb4272444110a34cd46426e0a780b20da886c4559bbe90baca621a22",
+              "exactDepositedReceptorContainingEntitySequenceMatch": false,
+              "candidateVhhSequences": [
+                {
+                  "entityId": "2",
+                  "description": "Nanobody Nb.AT110i1",
+                  "sequenceLength": 126,
+                  "sequenceSha256": "17ad3cf713c4ffa4efba8967db8d021ccf54761550f530e73769b1bb74e20ac9",
+                  "exactFullEntityMatch": false
+                }
+              ]
+            }
+          ],
+          "numberedDomainCalls": [
+            {
+              "start": 0,
+              "end": 118,
+              "sequenceLength": 118,
+              "sequenceSha256": "8f773702c27fad1619c3183e9d88e15a407c47e433716aca42c6fca979c7e438"
+            }
+          ],
+          "depositedPolymerEntityCount": 3
+        }
+      ],
+      "formatReviewComplete": false,
+      "constructReviewComplete": false,
+      "directBindingRoleEstablished": false,
+      "parentVariantReviewComplete": false,
+      "developmentAdjudicationComplete": false,
+      "formalIndependenceEstablished": false
+    }
+  ],
+  "developmentReferenceCorrection": {
+    "pdbId": "6O3C",
+    "canonicalReceptorAccession": "P56726",
+    "receptor": "Smoothened",
+    "isApjDevelopmentReference": false
+  },
+  "limitations": [
+    "A same canonical receptor accession signals a development relationship requiring formal adjudication; deposited constructs may differ.",
+    "No exact full-sequence or accession match does not establish absence of a development, family, parent-variant, or other leakage relationship.",
+    "Full fused-entity identity is not full VHH identity; numbering intervals are sequence-screen calls, not source-confirmed construct boundaries.",
+    "Binder names, short sequence length, and co-deposition do not establish VHH format, direct receptor binding, native construct eligibility, or independence."
+  ],
+  "formalLeakageGraphAuthority": false,
+  "entryDispositionsChanged": 0,
+  "newIndependentComponentCount": null,
+  "nativeCoordinatesInspected": false,
+  "structureImagesInspected": false,
+  "holdoutLabelsAccessed": false,
+  "targetFreezePermitted": false,
+  "broaderDiscoveryComplete": false
+}

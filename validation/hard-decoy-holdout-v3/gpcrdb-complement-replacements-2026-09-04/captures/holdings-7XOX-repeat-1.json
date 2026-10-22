@@ -1,0 +1,20 @@
+{
+  "request": {
+    "kind": "holdings",
+    "originalId": "7XOX",
+    "repeat": 1,
+    "method": "GET",
+    "url": "https://data.rcsb.org/rest/v1/holdings/status/7XOX",
+    "rawFile": "raw/holdings-7XOX-repeat-1.json",
+    "captureFile": "captures/holdings-7XOX-repeat-1.json"
+  },
+  "finalUrl": "https://data.rcsb.org/rest/v1/holdings/status/7XOX",
+  "httpStatus": 200,
+  "contentType": "application/json",
+  "startedUtc": "2026-09-04T22:36:28.513Z",
+  "completedUtc": "2026-09-04T22:36:28.986Z",
+  "responseBytes": 254,
+  "rawSha256": "f9b36a4696ed69b4f8db34c137bff90a9f699837a9fe2dbf3c99503408a368d4",
+  "etag": null,
+  "normalizedSha256": "bdde703d1386f5ab5a2c6c1797c1321ecfa75bd7a8c6cbb8752379032ed3c403"
+}

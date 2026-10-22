@@ -1,0 +1,57 @@
+{
+  "query": {
+    "type": "group",
+    "logical_operator": "and",
+    "nodes": [
+      {
+        "type": "terminal",
+        "service": "text",
+        "parameters": {
+          "attribute": "rcsb_id",
+          "operator": "exact_match",
+          "value": "3SN6"
+        }
+      },
+      {
+        "type": "group",
+        "logical_operator": "and",
+        "nodes": [
+          {
+            "type": "terminal",
+            "service": "text",
+            "parameters": {
+              "attribute": "rcsb_polymer_entity_annotation.type",
+              "operator": "exact_match",
+              "value": "Pfam"
+            }
+          },
+          {
+            "type": "terminal",
+            "service": "text",
+            "parameters": {
+              "attribute": "rcsb_polymer_entity_annotation.annotation_id",
+              "operator": "exact_match",
+              "value": "PF00001"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "return_type": "entry",
+  "request_options": {
+    "paginate": {
+      "start": 0,
+      "rows": 100
+    },
+    "results_content_type": [
+      "experimental"
+    ],
+    "sort": [
+      {
+        "sort_by": "rcsb_id",
+        "direction": "asc"
+      }
+    ]
+  }
+}

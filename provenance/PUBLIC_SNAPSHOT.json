@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "kind": "administrative_public_derivative",
+  "source_revision": "a61ec1cff249aa6c81f9a860034a813c2e9b2885",
+  "source_tree": "975f88e79e134832b04890ee3b4718f6ab0d225f",
+  "redaction": {
+    "file": "validation/hard-decoy-holdout-v2/prelabel-census/benchmark-spec.json",
+    "field": "publicProductPreservation.siteUrl",
+    "public_value": null,
+    "reason": "Obsolete deployment hosting metadata omitted from the public source snapshot."
+  },
+  "preservation": "Exact original records, full historical branches and releases are preserved in private archives and verified local backups. No scientific measurements, thresholds, sequences, target membership, protocol text, historical dates, or decision flags were changed.",
+  "checksum_scope": "The hashes and dependent verification constants listed here verify this public derivative, not the original historical package. No original private archive was modified.",
+  "historical_links": "Earlier commit identifiers and REVISION_MAP targets are archival references; historical branches and releases are no longer anonymously accessible in this snapshot repository.",
+  "files": [
+    {
+      "path": "scripts/hard-decoy-v3/verify-design-record.mjs",
+      "original_sha256": "eb7c4f2e3cfd910371ac9ba8955055a7a749283e6cbcfac726b5d1ef5a057c88",
+      "public_sha256": "21b796772aee05a26254142b5a436637ff86e4d8dd75d0601815b3b6d1167fe3"
+    },
+    {
+      "path": "scripts/hard-decoy-v3/verify-integration-state.mjs",
+      "original_sha256": "ef650db9abbfa00a7860ff3e96c9ccecf9ad0beeff4ce2c003f34e7882222483",
+      "public_sha256": "d0f13331dafc22bd1c24c12b6f80533a7b59678c27311629657fa878301b61d5"
+    },
+    {
+      "path": "scripts/hard-decoy-v3/verify-oracle-request.mjs",
+      "original_sha256": "b2cc8b45bd8214cb8f800938a0ac0cb94b42734104f202e550b73c309c9fe4d1",
+      "public_sha256": "53a239e9dd2c41fc6b6b890aebe509772620d8158e9737f545cfa521a3a71bf7"
+    },
+    {
+      "path": "scripts/hard-decoy/verify-census.mjs",
+      "original_sha256": "33c20bc06c93db3fbd63f1337f55421c644f5ab0efc6bcbbee008ecc2fb89d78",
+      "public_sha256": "79619bfde82cc1eec38cdbfb58884c38fecb47e4c3de41294e53d3b2b6348f73"
+    },
+    {
+      "path": "tests/fixtures/hard-decoy-v3-request-fixture.mjs",
+      "original_sha256": "edd1953aee0d448eb691d661289d6e4cc245b4853b7d9601668dfe5be43b7989",
+      "public_sha256": "157ba3cf8a3d28eba3ef80c11e5dee60d6619dbd811d1d991c50e18e9e9d43b1"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v2/prelabel-census/benchmark-spec.json",
+      "original_sha256": "38f693162b8101971f3893ac129a385065491e6ed40eaff516af14dfa08e1b61",
+      "public_sha256": "fd3d64146625d36a363474b414b172aece32c240305cb47b7674c2c10108bd7f"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v2/prelabel-census/checksums.sha256",
+      "original_sha256": "e2020cf5863246058d3c89d974b49da0d5d41803904b899670712f1509609502",
+      "public_sha256": "20b664d8a5fa97bfc4055f6b0367c0c4f2ae1a929fbb3cbaaaaacc8fe5c042ef"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/INTEGRATION_STATE_2026-08-29.json",
+      "original_sha256": "e06e92945c8591d1ca64a12f8f352ecd682de36ffc9083e248ea2c3c52c64ec1",
+      "public_sha256": "42e74ebebc373a852a50b472adf0db7666135eee07b68934f05835ca1987dba7"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/design-record/checksums.sha256",
+      "original_sha256": "dbc489509f38deb467016fa96a2f45a6d63c14a5804865569b222fa2bf1e97fd",
+      "public_sha256": "0cfc84f54acff6c0fad9a15727fd62988ec16d4ebb8b59d630e4fff2fb8dc0ca"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/design-record/protocol-lock.json",
+      "original_sha256": "0e036d5633ae69221343ef69ecb93207ee24e29bd51765a3a24c157f7c75d4b3",
+      "public_sha256": "e3f487a6935e0937616bc50d6c0f11d4d8afab2f8c53443ae021b6271c242879"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/generator-readiness-2026-09-04/checksums.sha256",
+      "original_sha256": "dda359bd58630f3c9181ca7543f6c2ec75b953afb45d0abdd991c16f61acfabe",
+      "public_sha256": "cc04a2f1f854aa6a406f1c296de9151b7875a1c38517bcdcebfa93ef21689ce9"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/generator-readiness-2026-09-04/readiness.json",
+      "original_sha256": "0617704c65f8b81d324d45fcf7d4e8e6b70560afb4c30122fa6306e13e3b3087",
+      "public_sha256": "fa8c2d3d3e04224ffef6c28aaf18203ccdbf0d510375680378daf1f899d18763"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "protocolId": "confovhh-hard-decoy-v3",
+  "status": "DRAFT",
+  "selectedDesign": "sealed-one-way-native-epitope-boolean-oracle",
+  "requiredIndependentGroups": 10,
+  "screenedProvisionalGroupsInheritedFromV2": 7,
+  "formallyClearedGroups": 0,
+  "candidateDiscoveryExhaustive": false,
+  "oracleRequestFrozen": false,
+  "oracleExecuted": false,
+  "leakageGraphFrozen": false,
+  "targetManifestFrozen": false,
+  "candidateManifestFrozen": false,
+  "auditManifestFrozen": false,
+  "prelabelManifestFrozen": false,
+  "userApprovedPrelabelManifest": false,
+  "executionAuthorized": false,
+  "nativeCoordinatesAccessedByOracle": false,
+  "nativeCoordinatesObservedByBenchmarkTeam": false,
+  "nativeInterfaceDeclassifiedPrelabel": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "substantialGpuWorkAuthorized": false,
+  "currentBlockers": [
+    "fewer-than-ten-metadata-complete-provisional-components",
+    "candidate-universe-not-exhaustively-archived",
+    "canonical-TM1-TM7-and-VHH-matrices-not-frozen",
+    "independent-oracle-parser-and-container-not-pinned",
+    "signing-encryption-and-transparency-key-ceremony-not-completed",
+    "generator-environment-images-and-resource-envelope-not-approved"
+  ]
+}

@@ -1,0 +1,1327 @@
+{
+  "status": "VERIFIED_AGAINST_ORIGINAL_EXPORTED_JSON",
+  "verified_models": 165,
+  "files": [
+    {
+      "job": "3P0G_cutoff_2011_01_18_complex_seed1",
+      "model": 0,
+      "path": "runs/3P0G_cutoff_2011_01_18_complex_seed1/fold_3p0g_cutoff_2011_01_18_complex_seed1_summary_confidences_0.json",
+      "sha256": "affafd7234ca2b612a413157335bbf36defabb09cde7b1aa99b2e9395b6b5598",
+      "bytes": 332,
+      "ranking_score": 0.31
+    },
+    {
+      "job": "3P0G_cutoff_2011_01_18_complex_seed1",
+      "model": 1,
+      "path": "runs/3P0G_cutoff_2011_01_18_complex_seed1/fold_3p0g_cutoff_2011_01_18_complex_seed1_summary_confidences_1.json",
+      "sha256": "0e9050a363c396e8dc15cfbec8cd1285d835e48591939c684f5dc1b124df2890",
+      "bytes": 332,
+      "ranking_score": 0.29
+    },
+    {
+      "job": "3P0G_cutoff_2011_01_18_complex_seed1",
+      "model": 2,
+      "path": "runs/3P0G_cutoff_2011_01_18_complex_seed1/fold_3p0g_cutoff_2011_01_18_complex_seed1_summary_confidences_2.json",
+      "sha256": "e27a47dc8466a6b089bfd1bcb83154e3ec34ca69d83213553da2f79d447dfe5d",
+      "bytes": 333,
+      "ranking_score": 0.28
+    },
+    {
+      "job": "3P0G_cutoff_2011_01_18_complex_seed1",
+      "model": 3,
+      "path": "runs/3P0G_cutoff_2011_01_18_complex_seed1/fold_3p0g_cutoff_2011_01_18_complex_seed1_summary_confidences_3.json",
+      "sha256": "c8ad2549390d86ba235b3137f7d36ad5edc56965757ca429b4e6286ffef08e72",
+      "bytes": 334,
+      "ranking_score": 0.27
+    },
+    {
+      "job": "3P0G_cutoff_2011_01_18_complex_seed1",
+      "model": 4,
+      "path": "runs/3P0G_cutoff_2011_01_18_complex_seed1/fold_3p0g_cutoff_2011_01_18_complex_seed1_summary_confidences_4.json",
+      "sha256": "f95e13f28ba8edee8ee6787329f6fcb5a1330213f20c201585c520e0e3352e6d",
+      "bytes": 332,
+      "ranking_score": 0.27
+    },
+    {
+      "job": "3P0G_default_complex_seed1",
+      "model": 0,
+      "path": "runs/3P0G_default_complex_seed1/fold_3p0g_default_complex_seed1_summary_confidences_0.json",
+      "sha256": "06c72d335a23bd3844812dba83890367fc6b51c36573f55d02b24955e28dcafa",
+      "bytes": 330,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_default_complex_seed1",
+      "model": 1,
+      "path": "runs/3P0G_default_complex_seed1/fold_3p0g_default_complex_seed1_summary_confidences_1.json",
+      "sha256": "89fd54ad1776c6900524f4309e66719b0026a7d58228c7d419bce46a5cda6fa5",
+      "bytes": 329,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_default_complex_seed1",
+      "model": 2,
+      "path": "runs/3P0G_default_complex_seed1/fold_3p0g_default_complex_seed1_summary_confidences_2.json",
+      "sha256": "e87a8a2e6ac667bc7b697a96e93cc37b6e008ce77a6146bde63df06b23e47e9f",
+      "bytes": 330,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_default_complex_seed1",
+      "model": 3,
+      "path": "runs/3P0G_default_complex_seed1/fold_3p0g_default_complex_seed1_summary_confidences_3.json",
+      "sha256": "820c33d3e4c60e32e852343083b0705e9bac282fe5ed410c0f933c3046cdfc3f",
+      "bytes": 330,
+      "ranking_score": 0.88
+    },
+    {
+      "job": "3P0G_default_complex_seed1",
+      "model": 4,
+      "path": "runs/3P0G_default_complex_seed1/fold_3p0g_default_complex_seed1_summary_confidences_4.json",
+      "sha256": "65235887010702944db2c21b0459bb0ee0537633f55d6281d8a648f4724e22a3",
+      "bytes": 330,
+      "ranking_score": 0.88
+    },
+    {
+      "job": "3P0G_no_templates_complex_seed1",
+      "model": 0,
+      "path": "runs/3P0G_no_templates_complex_seed1/fold_3p0g_no_templates_complex_seed1_summary_confidences_0.json",
+      "sha256": "a95d804869e415b28f600b3ac5c39440b8ce427eb7cf6b48493d4fe7d6819e12",
+      "bytes": 331,
+      "ranking_score": 0.38
+    },
+    {
+      "job": "3P0G_no_templates_complex_seed1",
+      "model": 1,
+      "path": "runs/3P0G_no_templates_complex_seed1/fold_3p0g_no_templates_complex_seed1_summary_confidences_1.json",
+      "sha256": "8589ead377181714ffffedd7a47501aed32fdd6e58351f6d71891d4a3288d984",
+      "bytes": 332,
+      "ranking_score": 0.35
+    },
+    {
+      "job": "3P0G_no_templates_complex_seed1",
+      "model": 2,
+      "path": "runs/3P0G_no_templates_complex_seed1/fold_3p0g_no_templates_complex_seed1_summary_confidences_2.json",
+      "sha256": "26be0dc7c449e657dd9bab5a35d25fefdd8ef1816d5904359afc6be002e9a801",
+      "bytes": 332,
+      "ranking_score": 0.34
+    },
+    {
+      "job": "3P0G_no_templates_complex_seed1",
+      "model": 3,
+      "path": "runs/3P0G_no_templates_complex_seed1/fold_3p0g_no_templates_complex_seed1_summary_confidences_3.json",
+      "sha256": "42e32be4e193b9dd75245ae0fe5bce1cd335df6d116787965d0997579391c57a",
+      "bytes": 332,
+      "ranking_score": 0.34
+    },
+    {
+      "job": "3P0G_no_templates_complex_seed1",
+      "model": 4,
+      "path": "runs/3P0G_no_templates_complex_seed1/fold_3p0g_no_templates_complex_seed1_summary_confidences_4.json",
+      "sha256": "3e4266be67ec2c6e55f89624696a3319bedff90f223d4e18c838aaf930a18ad6",
+      "bytes": 332,
+      "ranking_score": 0.34
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed1",
+      "model": 0,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed1/fold_3p0g_recoff_nbon_complex_seed1_summary_confidences_0.json",
+      "sha256": "118c8c0d22d3200774a2cc9ae6a834992ed0ac23562b12fb11828c85051606ff",
+      "bytes": 4737,
+      "ranking_score": 0.31
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed1",
+      "model": 1,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed1/fold_3p0g_recoff_nbon_complex_seed1_summary_confidences_1.json",
+      "sha256": "4b677ae73105498e81aca0aed01b79db61940b136337688c6c1b4bcbafd4b18b",
+      "bytes": 4742,
+      "ranking_score": 0.31
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed1",
+      "model": 2,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed1/fold_3p0g_recoff_nbon_complex_seed1_summary_confidences_2.json",
+      "sha256": "d29fca3e6fb77788e861476adb213568f9a9f432d5564525a1828f1c61e093a8",
+      "bytes": 4741,
+      "ranking_score": 0.3
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed1",
+      "model": 3,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed1/fold_3p0g_recoff_nbon_complex_seed1_summary_confidences_3.json",
+      "sha256": "38f3f281a6533be2e148f4d7159652811b0076b15219e7686957f4a50b4eab4c",
+      "bytes": 4742,
+      "ranking_score": 0.28
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed1",
+      "model": 4,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed1/fold_3p0g_recoff_nbon_complex_seed1_summary_confidences_4.json",
+      "sha256": "2dc38675bf0dad9d1cffca6de3d24fd19ae6bdabec6026b80eb1e53d5976f78e",
+      "bytes": 4741,
+      "ranking_score": 0.27
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed2",
+      "model": 0,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed2/fold_3p0g_recoff_nbon_complex_seed2_summary_confidences_0.json",
+      "sha256": "c3861352d9ec72b94fd27ba34128543bde6d04173e6112a9f9166a03909e8757",
+      "bytes": 4742,
+      "ranking_score": 0.31
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed2",
+      "model": 1,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed2/fold_3p0g_recoff_nbon_complex_seed2_summary_confidences_1.json",
+      "sha256": "10141ad1716efe6054a5656b767c7ab955fa6f6b455fbbe91ab761e7b63b9074",
+      "bytes": 4742,
+      "ranking_score": 0.31
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed2",
+      "model": 2,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed2/fold_3p0g_recoff_nbon_complex_seed2_summary_confidences_2.json",
+      "sha256": "a27880d90f8ab72f0b2a8940ba9dc831b0e3b3d93a5eb8ba913ea703444cc158",
+      "bytes": 4741,
+      "ranking_score": 0.3
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed2",
+      "model": 3,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed2/fold_3p0g_recoff_nbon_complex_seed2_summary_confidences_3.json",
+      "sha256": "7bf9c9dbbfc19ad11ef7e1b99f1559dd7c8afcba9b252f6cbe4692e6d23051f3",
+      "bytes": 4740,
+      "ranking_score": 0.26
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed2",
+      "model": 4,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed2/fold_3p0g_recoff_nbon_complex_seed2_summary_confidences_4.json",
+      "sha256": "13b8a627b74a25036ec8af8a8adf2b4b9118cc31fea210cf0b9776adc0571205",
+      "bytes": 4740,
+      "ranking_score": 0.26
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed3",
+      "model": 0,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed3/fold_3p0g_recoff_nbon_complex_seed3_summary_confidences_0.json",
+      "sha256": "01e07335830be94d539e61f1d97ff54b27543bc1683a367c95ed6b48130e729d",
+      "bytes": 4741,
+      "ranking_score": 0.31
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed3",
+      "model": 1,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed3/fold_3p0g_recoff_nbon_complex_seed3_summary_confidences_1.json",
+      "sha256": "b7ee3c097e5f2f656f4c1facb6b4ecbf28fbb6001633a03aa4268b56a8a5655c",
+      "bytes": 4739,
+      "ranking_score": 0.3
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed3",
+      "model": 2,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed3/fold_3p0g_recoff_nbon_complex_seed3_summary_confidences_2.json",
+      "sha256": "77de18fa5bbcae1bed4a36ffcb65485190007261c943618f4b73ba2b7a949d51",
+      "bytes": 4742,
+      "ranking_score": 0.29
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed3",
+      "model": 3,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed3/fold_3p0g_recoff_nbon_complex_seed3_summary_confidences_3.json",
+      "sha256": "c9466fa72333e0675dbc0a3784eb85b612f63f73eed0a31e1ccc7793f0a9d45a",
+      "bytes": 4740,
+      "ranking_score": 0.29
+    },
+    {
+      "job": "3P0G_recOFF_nbON_complex_seed3",
+      "model": 4,
+      "path": "runs/3P0G_recOFF_nbON_complex_seed3/fold_3p0g_recoff_nbon_complex_seed3_summary_confidences_4.json",
+      "sha256": "11c3e5ef2b90031bff95b84bf9c5560b01e8a415b318298ba4e5d3744ad3a795",
+      "bytes": 4741,
+      "ranking_score": 0.29
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed1",
+      "model": 0,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed1/fold_3p0g_recon_nboff_complex_seed1_summary_confidences_0.json",
+      "sha256": "caa8f81a014ee6c5b0e46bd24393da68eef715b4310c3bff6a7301699bdecb9e",
+      "bytes": 4738,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed1",
+      "model": 1,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed1/fold_3p0g_recon_nboff_complex_seed1_summary_confidences_1.json",
+      "sha256": "d66bc46133d9ade2f2bec42cd6c8e95b8a278e4483b26cc983bb40f82e41be6a",
+      "bytes": 4738,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed1",
+      "model": 2,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed1/fold_3p0g_recon_nboff_complex_seed1_summary_confidences_2.json",
+      "sha256": "613906a4cf78476bfd14055299e4d6d45f146fa18b350a9422720a041f2f427c",
+      "bytes": 4737,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed1",
+      "model": 3,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed1/fold_3p0g_recon_nboff_complex_seed1_summary_confidences_3.json",
+      "sha256": "fa1c6effe9cd5c2bd289116ac5ca5fb694f030675a56e7411e08e3eaf0fb71b3",
+      "bytes": 4738,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed1",
+      "model": 4,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed1/fold_3p0g_recon_nboff_complex_seed1_summary_confidences_4.json",
+      "sha256": "decb2ee36f1d5fdba959173d535352c9753f3427311bba0d81ff1617b04f2a89",
+      "bytes": 4738,
+      "ranking_score": 0.88
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed2",
+      "model": 0,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed2/fold_3p0g_recon_nboff_complex_seed2_summary_confidences_0.json",
+      "sha256": "65215cddf20693f0274ded54cab44fe3c9cb12f926d57441fceb761b073495e4",
+      "bytes": 4740,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed2",
+      "model": 1,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed2/fold_3p0g_recon_nboff_complex_seed2_summary_confidences_1.json",
+      "sha256": "e95cd63f46ab43ef56c667122ecec26ad680c428eb341ea17ea2bd065a2bd0a6",
+      "bytes": 4737,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed2",
+      "model": 2,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed2/fold_3p0g_recon_nboff_complex_seed2_summary_confidences_2.json",
+      "sha256": "7cff717e219dfb86f864259b64c2464d69e84c405a9323e0d9740a085b3004da",
+      "bytes": 4740,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed2",
+      "model": 3,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed2/fold_3p0g_recon_nboff_complex_seed2_summary_confidences_3.json",
+      "sha256": "2947bd94983a350bb940eb8054b0c21ae09307a1c5a4e4ab9fd1fd226f37d22b",
+      "bytes": 4739,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed2",
+      "model": 4,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed2/fold_3p0g_recon_nboff_complex_seed2_summary_confidences_4.json",
+      "sha256": "875072304d234226259e66726a341afad4a55c33a30eb0afd0e5efe4e7702393",
+      "bytes": 4740,
+      "ranking_score": 0.88
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed3",
+      "model": 0,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed3/fold_3p0g_recon_nboff_complex_seed3_summary_confidences_0.json",
+      "sha256": "45015b0e139a41f8943149966c36b04872bbc782b4a7d3c6fc2cc06dd1022c57",
+      "bytes": 4738,
+      "ranking_score": 0.9
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed3",
+      "model": 1,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed3/fold_3p0g_recon_nboff_complex_seed3_summary_confidences_1.json",
+      "sha256": "b70ed09041ff5987b73b44a0f655919182c21aaed1c5a9798eefb09d4fa7e249",
+      "bytes": 4738,
+      "ranking_score": 0.9
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed3",
+      "model": 2,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed3/fold_3p0g_recon_nboff_complex_seed3_summary_confidences_2.json",
+      "sha256": "863c9144274fc73ac0aee1e6eeeffa655e198a4015cbbf862aa5ad125443f87d",
+      "bytes": 4736,
+      "ranking_score": 0.9
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed3",
+      "model": 3,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed3/fold_3p0g_recon_nboff_complex_seed3_summary_confidences_3.json",
+      "sha256": "121db55300f035ef5d518b397a2e64612f9faa0fc153571204c174939c5b8ae2",
+      "bytes": 4736,
+      "ranking_score": 0.9
+    },
+    {
+      "job": "3P0G_recON_nbOFF_complex_seed3",
+      "model": 4,
+      "path": "runs/3P0G_recON_nbOFF_complex_seed3/fold_3p0g_recon_nboff_complex_seed3_summary_confidences_4.json",
+      "sha256": "e7e4e5fb88dc4ffa5ea87945cd0ca59cf5ef9aa9039a4b49f9fdd8fb89bb7100",
+      "bytes": 4737,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "4MQS_default_complex_seed1",
+      "model": 0,
+      "path": "runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_0.json",
+      "sha256": "4b135e98f0744c48a131098596cf6f4661328ce0f94915161af72eac8e4ffee9",
+      "bytes": 3683,
+      "ranking_score": 0.91
+    },
+    {
+      "job": "4MQS_default_complex_seed1",
+      "model": 1,
+      "path": "runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_1.json",
+      "sha256": "f6fae6796bc18a01c8c91ba9742b898c9e986ad2604a09ff063f7757ef2e7801",
+      "bytes": 3681,
+      "ranking_score": 0.91
+    },
+    {
+      "job": "4MQS_default_complex_seed1",
+      "model": 2,
+      "path": "runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_2.json",
+      "sha256": "ee74c63318a07c2ecf6c8746701a626112b73ae5723a5adf4af53e8727e445f1",
+      "bytes": 3680,
+      "ranking_score": 0.9
+    },
+    {
+      "job": "4MQS_default_complex_seed1",
+      "model": 3,
+      "path": "runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_3.json",
+      "sha256": "9171ad3386032ef62a18ca0c53f3ae4e91553ebd64aace88030e7ba85539509e",
+      "bytes": 3680,
+      "ranking_score": 0.9
+    },
+    {
+      "job": "4MQS_default_complex_seed1",
+      "model": 4,
+      "path": "runs/4MQS_default_complex_seed1/fold_4mqs_default_complex_seed1_summary_confidences_4.json",
+      "sha256": "6c306269fa57b6112d737e81e4179dd1359c41d2cc216f0dea2e49c8ea2d394f",
+      "bytes": 3681,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "4MQS_default_complex_seed2",
+      "model": 0,
+      "path": "runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_0.json",
+      "sha256": "827dbc40a6be6f2b7e40c02b0528fcff7fa16c41eb7258ff86e3c29f5aa5b01d",
+      "bytes": 3683,
+      "ranking_score": 0.91
+    },
+    {
+      "job": "4MQS_default_complex_seed2",
+      "model": 1,
+      "path": "runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_1.json",
+      "sha256": "f86d3eb06dd4411e252dbe864695c1aa230479d4fba47ba4a6d7c33e9337f2f7",
+      "bytes": 3679,
+      "ranking_score": 0.9
+    },
+    {
+      "job": "4MQS_default_complex_seed2",
+      "model": 2,
+      "path": "runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_2.json",
+      "sha256": "b58deca279a3d47ec5ce449c9fc8c153e342cf81e39ea8352114363ed7eff781",
+      "bytes": 3681,
+      "ranking_score": 0.9
+    },
+    {
+      "job": "4MQS_default_complex_seed2",
+      "model": 3,
+      "path": "runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_3.json",
+      "sha256": "6ec98c3687cf82da2efb825929b2a0cd4f887855b509b36c8363e1b8811aed44",
+      "bytes": 3680,
+      "ranking_score": 0.9
+    },
+    {
+      "job": "4MQS_default_complex_seed2",
+      "model": 4,
+      "path": "runs/4MQS_default_complex_seed2/fold_4mqs_default_complex_seed2_summary_confidences_4.json",
+      "sha256": "147a0632bdfd8227b72b0b2bd7f0ee3309b8d12cef685713528bc98756b8b890",
+      "bytes": 3681,
+      "ranking_score": 0.89
+    },
+    {
+      "job": "4MQS_default_complex_seed3",
+      "model": 0,
+      "path": "runs/4MQS_default_complex_seed3/fold_4mqs_default_complex_seed3_summary_confidences_0.json",
+      "sha256": "a0ffe3631196ea6eb3dfa9c09c10f1ea8bb053b4eff180426d4ba26bd28e70e9",
+      "bytes": 3682,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_default_complex_seed3",
+      "model": 1,
+      "path": "runs/4MQS_default_complex_seed3/fold_4mqs_default_complex_seed3_summary_confidences_1.json",
+      "sha256": "0d4a6548c1c50892aa3e0d66daddb913fece7d0678b3d4d7ab3564e0cee602d5",
+      "bytes": 3683,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_default_complex_seed3",
+      "model": 2,
+      "path": "runs/4MQS_default_complex_seed3/fold_4mqs_default_complex_seed3_summary_confidences_2.json",
+      "sha256": "9a61502f4026115d57558f0ba431e72f4426e0e7a5b7f10d1384844d5caaf07b",
+      "bytes": 3681,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_default_complex_seed3",
+      "model": 3,
+      "path": "runs/4MQS_default_complex_seed3/fold_4mqs_default_complex_seed3_summary_confidences_3.json",
+      "sha256": "2634d95b3820e4ee047ef634329e9948ee2bc0bfbe5a64e250c3b7f8dbf5cc28",
+      "bytes": 3682,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_default_complex_seed3",
+      "model": 4,
+      "path": "runs/4MQS_default_complex_seed3/fold_4mqs_default_complex_seed3_summary_confidences_4.json",
+      "sha256": "2c18b2ffb43890b17bc9ccf0a8a23accc3d014b4f8bf09bf962c692794ba830b",
+      "bytes": 3681,
+      "ranking_score": 0.92
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed1",
+      "model": 0,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed1/fold_4mqs_recoff_nbon_complex_seed1_summary_confidences_0.json",
+      "sha256": "9d705d10f481a03b0f42b905b99292062d943145c5427501c5a33ffc80c6c323",
+      "bytes": 3679,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed1",
+      "model": 1,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed1/fold_4mqs_recoff_nbon_complex_seed1_summary_confidences_1.json",
+      "sha256": "c040f539d5b60f2be5a2acacf5cdb924b942f98dd7e68293435fd7d066bc2b7c",
+      "bytes": 3682,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed1",
+      "model": 2,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed1/fold_4mqs_recoff_nbon_complex_seed1_summary_confidences_2.json",
+      "sha256": "9c48b7ea671ba6734db2e90c4b40237edd7ae170b0ed145bf39199a6bb4fe759",
+      "bytes": 3683,
+      "ranking_score": 0.92
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed1",
+      "model": 3,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed1/fold_4mqs_recoff_nbon_complex_seed1_summary_confidences_3.json",
+      "sha256": "5777a3cb4d2c31da622dddac588d1146eb84fba64eebcccd517ea289f91cc8e7",
+      "bytes": 3679,
+      "ranking_score": 0.92
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed1",
+      "model": 4,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed1/fold_4mqs_recoff_nbon_complex_seed1_summary_confidences_4.json",
+      "sha256": "1796db56d79fc0cbfbb194ac869c64f75ded5c5b546f805523018624ab1c09dc",
+      "bytes": 3683,
+      "ranking_score": 0.92
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "model": 0,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed2/fold_4mqs_recoff_nbon_complex_seed2_summary_confidences_0.json",
+      "sha256": "153b8d57e09b84face69ad576e956e7609af5efa9ba5a88a847ccbc1c9e20a84",
+      "bytes": 3682,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "model": 1,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed2/fold_4mqs_recoff_nbon_complex_seed2_summary_confidences_1.json",
+      "sha256": "83d0eacb4ad94a63e6c8c3503664af6ee5e93e23dd063686851dba475b79323a",
+      "bytes": 3682,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "model": 2,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed2/fold_4mqs_recoff_nbon_complex_seed2_summary_confidences_2.json",
+      "sha256": "b4c526fc2f3a22a3b7c05dffada959d12b24afd06b85ecd1080ea181e312391f",
+      "bytes": 3681,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "model": 3,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed2/fold_4mqs_recoff_nbon_complex_seed2_summary_confidences_3.json",
+      "sha256": "494b1b643e03a08fd575249d7504e33446609d93df504214b522bafe2a50c239",
+      "bytes": 3682,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed2",
+      "model": 4,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed2/fold_4mqs_recoff_nbon_complex_seed2_summary_confidences_4.json",
+      "sha256": "4054b9101307ae2020f64273c051c7f7bda92c4c64ecb4490138d5a7f04b44ea",
+      "bytes": 3682,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed3",
+      "model": 0,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed3/fold_4mqs_recoff_nbon_complex_seed3_summary_confidences_0.json",
+      "sha256": "d938a59cad317fc0039527262319d9d31c0ad1e58114755bb5b70497eeb76964",
+      "bytes": 3682,
+      "ranking_score": 0.94
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed3",
+      "model": 1,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed3/fold_4mqs_recoff_nbon_complex_seed3_summary_confidences_1.json",
+      "sha256": "c679deb62c52f85c306eb9dd541a6adbb7952fcdbad6a5206af7dc7dde132275",
+      "bytes": 3681,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed3",
+      "model": 2,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed3/fold_4mqs_recoff_nbon_complex_seed3_summary_confidences_2.json",
+      "sha256": "ad71eb4e29e65b782e1e659a94a739eccf847358ea4ab89ce4bda19f65d00f27",
+      "bytes": 3683,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed3",
+      "model": 3,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed3/fold_4mqs_recoff_nbon_complex_seed3_summary_confidences_3.json",
+      "sha256": "252db08a3ce09479028a6f33f03f406bdb151465218613be6faabc476c4dcbce",
+      "bytes": 3681,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "4MQS_recOFF_nbON_complex_seed3",
+      "model": 4,
+      "path": "runs/4MQS_recOFF_nbON_complex_seed3/fold_4mqs_recoff_nbon_complex_seed3_summary_confidences_4.json",
+      "sha256": "9a61502f4026115d57558f0ba431e72f4426e0e7a5b7f10d1384844d5caaf07b",
+      "bytes": 3681,
+      "ranking_score": 0.93
+    },
+    {
+      "job": "5C1M_default_complex_seed1",
+      "model": 0,
+      "path": "runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_0.json",
+      "sha256": "34b67fb68638944cc1f728a9db14a3b2014c79a9a9151632953c4d5981f0dcbf",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed1",
+      "model": 1,
+      "path": "runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_1.json",
+      "sha256": "d7e83bc17a4e3dea36e28fe513c13faa9b597e82e0cda9b510da37fc47ce73dd",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed1",
+      "model": 2,
+      "path": "runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_2.json",
+      "sha256": "96e29de3d61188f4645a688c16ba9f87b5733a938a39004184cd042939080968",
+      "bytes": 3297,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed1",
+      "model": 3,
+      "path": "runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_3.json",
+      "sha256": "5b40ab7c766c15992531996e70fde1e85c332cc106a4b198e328a4ff4aafc444",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed1",
+      "model": 4,
+      "path": "runs/5C1M_default_complex_seed1/fold_5c1m_default_complex_seed1_summary_confidences_4.json",
+      "sha256": "53ca576f6b111b193b6093d36a29132b763ce60d714ae60257edb0941aaff17a",
+      "bytes": 3297,
+      "ranking_score": 0.85
+    },
+    {
+      "job": "5C1M_default_complex_seed2",
+      "model": 0,
+      "path": "runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_0.json",
+      "sha256": "873a111b93c39786aab69da4198a02c543cc6b57c3e5d1d8bcf3f78f988d4b4a",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed2",
+      "model": 1,
+      "path": "runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_1.json",
+      "sha256": "7db659181ea61614c4e0d99e38fc60e7b5f1fc2202994b7667420eaa05fdf555",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed2",
+      "model": 2,
+      "path": "runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_2.json",
+      "sha256": "4f792c679d8db12d1d345c62c123a311eea31f786a0b2abcfd9f7dacec1a537d",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed2",
+      "model": 3,
+      "path": "runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_3.json",
+      "sha256": "af6a6b712fd12164ec1c3c8756f7899981292e10c99ebfab9fbd4b0219e0f40e",
+      "bytes": 3296,
+      "ranking_score": 0.86
+    },
+    {
+      "job": "5C1M_default_complex_seed2",
+      "model": 4,
+      "path": "runs/5C1M_default_complex_seed2/fold_5c1m_default_complex_seed2_summary_confidences_4.json",
+      "sha256": "99e2679a2122ca86bb13b2fc5a50ba81d63a4cd2bf4ba1a1d4aa3dd02e8fc7db",
+      "bytes": 3297,
+      "ranking_score": 0.86
+    },
+    {
+      "job": "5C1M_default_complex_seed3",
+      "model": 0,
+      "path": "runs/5C1M_default_complex_seed3/fold_5c1m_default_complex_seed3_summary_confidences_0.json",
+      "sha256": "9f7464fab8c38269d4991ac12764329401177635dcb258c82788f1d56b12761a",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed3",
+      "model": 1,
+      "path": "runs/5C1M_default_complex_seed3/fold_5c1m_default_complex_seed3_summary_confidences_1.json",
+      "sha256": "5c6036c2fe83fe158f8bf348438302e94312e508b31ed2da333b920de229e7af",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed3",
+      "model": 2,
+      "path": "runs/5C1M_default_complex_seed3/fold_5c1m_default_complex_seed3_summary_confidences_2.json",
+      "sha256": "4adacd40e3834c3f86cbb4c7abde571defc88b023a5b12dfb4f77061e5707ed2",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed3",
+      "model": 3,
+      "path": "runs/5C1M_default_complex_seed3/fold_5c1m_default_complex_seed3_summary_confidences_3.json",
+      "sha256": "dbdee3abcd3b381f162481db280b0f2146898e7e61f2b3551ba8867d4335db15",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_default_complex_seed3",
+      "model": 4,
+      "path": "runs/5C1M_default_complex_seed3/fold_5c1m_default_complex_seed3_summary_confidences_4.json",
+      "sha256": "302fde1e578c46ed4104e43ad6e1ae71ec669a51784a1ad69df69ab12a0485e0",
+      "bytes": 3296,
+      "ranking_score": 0.85
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed1",
+      "model": 0,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed1/fold_5c1m_recoff_nbon_complex_seed1_summary_confidences_0.json",
+      "sha256": "c843f0a4485cdc330a564e23aeb62a351ff3b863d42057c392f9a580181c007b",
+      "bytes": 3297,
+      "ranking_score": 0.88
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed1",
+      "model": 1,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed1/fold_5c1m_recoff_nbon_complex_seed1_summary_confidences_1.json",
+      "sha256": "72ee4af5603c6f0a41425193c15714d9094dbec5138165316dbe33a07c9ba9b6",
+      "bytes": 3298,
+      "ranking_score": 0.88
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed1",
+      "model": 2,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed1/fold_5c1m_recoff_nbon_complex_seed1_summary_confidences_2.json",
+      "sha256": "70fdfbb6b938df93279bbb5f6dcd23fd01d2f10c7f27f27bad8c400d878f2c8a",
+      "bytes": 3297,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed1",
+      "model": 3,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed1/fold_5c1m_recoff_nbon_complex_seed1_summary_confidences_3.json",
+      "sha256": "83a29652f88d9876bafefece3aff51839f6f44ac3d715e7a39b7d875f6088ce8",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed1",
+      "model": 4,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed1/fold_5c1m_recoff_nbon_complex_seed1_summary_confidences_4.json",
+      "sha256": "0e7f7d42ef1ad15e998cdf686129194e10c802d7a579ce6f3e8fa787f4e2900d",
+      "bytes": 3298,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed2",
+      "model": 0,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed2/fold_5c1m_recoff_nbon_complex_seed2_summary_confidences_0.json",
+      "sha256": "5978662846497bb0bf57fd489b92b527ebdb2bc7b62d666414496476ef4ad7cf",
+      "bytes": 3298,
+      "ranking_score": 0.88
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed2",
+      "model": 1,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed2/fold_5c1m_recoff_nbon_complex_seed2_summary_confidences_1.json",
+      "sha256": "7a33574d3aa968396524f83c97238f05fe38529c1112e7c1682fed2e2f4a6366",
+      "bytes": 3298,
+      "ranking_score": 0.88
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed2",
+      "model": 2,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed2/fold_5c1m_recoff_nbon_complex_seed2_summary_confidences_2.json",
+      "sha256": "50195b913b2ad7f30294826a7e4d18bd74b6da6fc8e41079e202f9bbe635793c",
+      "bytes": 3296,
+      "ranking_score": 0.87
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed2",
+      "model": 3,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed2/fold_5c1m_recoff_nbon_complex_seed2_summary_confidences_3.json",
+      "sha256": "6627214bb88484fbcce7435a872606840123c16fb87a5cca80b0f8fbee63a69a",
+      "bytes": 3297,
+      "ranking_score": 0.86
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed2",
+      "model": 4,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed2/fold_5c1m_recoff_nbon_complex_seed2_summary_confidences_4.json",
+      "sha256": "8d1b7034419c6772801ef327d5784238d47ef90761b90f8d175845994dfd40c1",
+      "bytes": 3297,
+      "ranking_score": 0.86
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed3",
+      "model": 0,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed3/fold_5c1m_recoff_nbon_complex_seed3_summary_confidences_0.json",
+      "sha256": "8d9df8c1417d37698a3da1422738b0a9f914093df2884a39afeabab464076c99",
+      "bytes": 3295,
+      "ranking_score": 0.22
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed3",
+      "model": 1,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed3/fold_5c1m_recoff_nbon_complex_seed3_summary_confidences_1.json",
+      "sha256": "6da78c889ab0acf56e463050273f247519c7e4a5a3cf373e7f481a6e86ea9a39",
+      "bytes": 3300,
+      "ranking_score": 0.22
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed3",
+      "model": 2,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed3/fold_5c1m_recoff_nbon_complex_seed3_summary_confidences_2.json",
+      "sha256": "f7a363c4aaa8c82fa6c96c3f9a0030ed1de6e90a7cfcacdf684c7e0379b2884e",
+      "bytes": 3295,
+      "ranking_score": 0.21
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed3",
+      "model": 3,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed3/fold_5c1m_recoff_nbon_complex_seed3_summary_confidences_3.json",
+      "sha256": "faa5d8dc8fc589ed43419e85247aaf0db9dd8dc5b289959d5318eb74dd49abda",
+      "bytes": 3295,
+      "ranking_score": 0.21
+    },
+    {
+      "job": "5C1M_recOFF_nbON_complex_seed3",
+      "model": 4,
+      "path": "runs/5C1M_recOFF_nbON_complex_seed3/fold_5c1m_recoff_nbon_complex_seed3_summary_confidences_4.json",
+      "sha256": "3c3f5a0390a24f658a45ba69011afd1bcb70fb722733b3611b68b176916a5f0d",
+      "bytes": 3293,
+      "ranking_score": 0.2
+    },
+    {
+      "job": "5JQH_cutoff_2016_07_12_complex_seed1",
+      "model": 0,
+      "path": "runs/5JQH_cutoff_2016_07_12_complex_seed1/fold_5jqh_cutoff_2016_07_12_complex_seed1_summary_confidences_0.json",
+      "sha256": "5f926d741aef4d70be012b77302b2434aec8049e40ef3c65745cd493ff5690d4",
+      "bytes": 356,
+      "ranking_score": 0.35
+    },
+    {
+      "job": "5JQH_cutoff_2016_07_12_complex_seed1",
+      "model": 1,
+      "path": "runs/5JQH_cutoff_2016_07_12_complex_seed1/fold_5jqh_cutoff_2016_07_12_complex_seed1_summary_confidences_1.json",
+      "sha256": "843141b5a2f3d8d1268979a17ebc2cdd300f7a4e18a921be4d58366004e2f72f",
+      "bytes": 355,
+      "ranking_score": 0.35
+    },
+    {
+      "job": "5JQH_cutoff_2016_07_12_complex_seed1",
+      "model": 2,
+      "path": "runs/5JQH_cutoff_2016_07_12_complex_seed1/fold_5jqh_cutoff_2016_07_12_complex_seed1_summary_confidences_2.json",
+      "sha256": "37de1c0bdb096a81633563f31f200a60e51b49a549bbe64b0b330bcaebf62a01",
+      "bytes": 357,
+      "ranking_score": 0.34
+    },
+    {
+      "job": "5JQH_cutoff_2016_07_12_complex_seed1",
+      "model": 3,
+      "path": "runs/5JQH_cutoff_2016_07_12_complex_seed1/fold_5jqh_cutoff_2016_07_12_complex_seed1_summary_confidences_3.json",
+      "sha256": "3c3ae65df48649fdac37fb06906cdb3eabe6d1f3d5a232c23e3853d9b74f8272",
+      "bytes": 350,
+      "ranking_score": 0.3
+    },
+    {
+      "job": "5JQH_cutoff_2016_07_12_complex_seed1",
+      "model": 4,
+      "path": "runs/5JQH_cutoff_2016_07_12_complex_seed1/fold_5jqh_cutoff_2016_07_12_complex_seed1_summary_confidences_4.json",
+      "sha256": "be8d0d104ec16fc3f7d2efa82639cc741d9075ad83fb1a2256503e63492e9701",
+      "bytes": 356,
+      "ranking_score": 0.2
+    },
+    {
+      "job": "5JQH_default_complex_seed1",
+      "model": 0,
+      "path": "runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_0.json",
+      "sha256": "80fd7afb2c60a92375779d1e7c7af913230e860d6461df761fd3294d310ba306",
+      "bytes": 334,
+      "ranking_score": 0.38
+    },
+    {
+      "job": "5JQH_default_complex_seed1",
+      "model": 1,
+      "path": "runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_1.json",
+      "sha256": "4ff46c7d195aead5dcda1212f6a4225c5cb1ede1081f4705cf741f88c200e190",
+      "bytes": 327,
+      "ranking_score": 0.38
+    },
+    {
+      "job": "5JQH_default_complex_seed1",
+      "model": 2,
+      "path": "runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_2.json",
+      "sha256": "b934fdcfafa4120b9e57e109d11144a93f68d3ef4110281763bf9323e4232241",
+      "bytes": 332,
+      "ranking_score": 0.38
+    },
+    {
+      "job": "5JQH_default_complex_seed1",
+      "model": 3,
+      "path": "runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_3.json",
+      "sha256": "2cdacc90756871bd76f1718bbbe64c1d70916ed57b3fbd58802fcd24a7689708",
+      "bytes": 329,
+      "ranking_score": 0.37
+    },
+    {
+      "job": "5JQH_default_complex_seed1",
+      "model": 4,
+      "path": "runs/5JQH_default_complex_seed1/fold_5jqh_default_complex_seed1_summary_confidences_4.json",
+      "sha256": "bbad1b6e6a8e19fcfa96e822aae8640dd7d060ac0974dc02073d030243c7385f",
+      "bytes": 327,
+      "ranking_score": 0.29
+    },
+    {
+      "job": "5JQH_no_templates_complex_seed1",
+      "model": 0,
+      "path": "runs/5JQH_no_templates_complex_seed1/fold_5jqh_no_templates_complex_seed1_summary_confidences_0.json",
+      "sha256": "bb5b36ded56d57c512538e65dd188c52982d591267af769a4fd9540636691610",
+      "bytes": 331,
+      "ranking_score": 0.44
+    },
+    {
+      "job": "5JQH_no_templates_complex_seed1",
+      "model": 1,
+      "path": "runs/5JQH_no_templates_complex_seed1/fold_5jqh_no_templates_complex_seed1_summary_confidences_1.json",
+      "sha256": "2b6d002e56dfe02cff988290796547f21ec0b1a2aafc22f2fca0f17634fcf5ba",
+      "bytes": 331,
+      "ranking_score": 0.43
+    },
+    {
+      "job": "5JQH_no_templates_complex_seed1",
+      "model": 2,
+      "path": "runs/5JQH_no_templates_complex_seed1/fold_5jqh_no_templates_complex_seed1_summary_confidences_2.json",
+      "sha256": "d0dbc9ed4ffd455968797004f507080582ab6296aad65dd1da8f8b057b42c058",
+      "bytes": 330,
+      "ranking_score": 0.43
+    },
+    {
+      "job": "5JQH_no_templates_complex_seed1",
+      "model": 3,
+      "path": "runs/5JQH_no_templates_complex_seed1/fold_5jqh_no_templates_complex_seed1_summary_confidences_3.json",
+      "sha256": "517a6a0edfd231d11bbeef22d95efd1ad1c9ceac55a514929a81bf15e67b5ad8",
+      "bytes": 328,
+      "ranking_score": 0.43
+    },
+    {
+      "job": "5JQH_no_templates_complex_seed1",
+      "model": 4,
+      "path": "runs/5JQH_no_templates_complex_seed1/fold_5jqh_no_templates_complex_seed1_summary_confidences_4.json",
+      "sha256": "4e05910e67e70b9ac99c9bc309d7f0c52a4f319a42a7e3cef16fc5da9e1922df",
+      "bytes": 332,
+      "ranking_score": 0.21
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed1",
+      "model": 0,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed1/fold_5jqh_recoff_nbon_complex_seed1_summary_confidences_0.json",
+      "sha256": "2a2ab2bb551ed2f773d782a47bf51a4462fa0db808932508789bd02db6eca5a2",
+      "bytes": 4522,
+      "ranking_score": 0.59
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed1",
+      "model": 1,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed1/fold_5jqh_recoff_nbon_complex_seed1_summary_confidences_1.json",
+      "sha256": "7f99253e28dcae4d3c78e48ff7c804a76cde1627d836c2282838aa53294664d4",
+      "bytes": 4522,
+      "ranking_score": 0.59
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed1",
+      "model": 2,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed1/fold_5jqh_recoff_nbon_complex_seed1_summary_confidences_2.json",
+      "sha256": "6c4a46ab6d706421522b9e8fd4be5becd53de9e4008924706cdd398880bac763",
+      "bytes": 4522,
+      "ranking_score": 0.59
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed1",
+      "model": 3,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed1/fold_5jqh_recoff_nbon_complex_seed1_summary_confidences_3.json",
+      "sha256": "84128b7b3c929ba4def11f42bab9f1a04dc006f4ba48f1b0fe0b25eb424e1839",
+      "bytes": 4521,
+      "ranking_score": 0.58
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed1",
+      "model": 4,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed1/fold_5jqh_recoff_nbon_complex_seed1_summary_confidences_4.json",
+      "sha256": "ccf671cf2530f987b9012baf55b1f414e06c3ef1e7d696e9348779ba62a03b4b",
+      "bytes": 4521,
+      "ranking_score": 0.56
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed2",
+      "model": 0,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed2/fold_5jqh_recoff_nbon_complex_seed2_summary_confidences_0.json",
+      "sha256": "bb7b97796a2beb7f2ac82f138a95f6f91d431c9e05030c8e1cdcd352c62d14e0",
+      "bytes": 4521,
+      "ranking_score": 0.57
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed2",
+      "model": 1,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed2/fold_5jqh_recoff_nbon_complex_seed2_summary_confidences_1.json",
+      "sha256": "b1f6e5e6b0c92941a8ac60bc5b1be84633c9cd28e48dead8adabf31bd4462f62",
+      "bytes": 4521,
+      "ranking_score": 0.57
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed2",
+      "model": 2,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed2/fold_5jqh_recoff_nbon_complex_seed2_summary_confidences_2.json",
+      "sha256": "f699f664fb2ff4b909670a9faafbf4e22e25fbec12ecc1e76a00dbc4a89e9421",
+      "bytes": 4519,
+      "ranking_score": 0.56
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed2",
+      "model": 3,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed2/fold_5jqh_recoff_nbon_complex_seed2_summary_confidences_3.json",
+      "sha256": "1158b629035f9132cb7b1a05de4ae3e147cd8511539b253e19d2cd47afd02699",
+      "bytes": 4521,
+      "ranking_score": 0.56
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed2",
+      "model": 4,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed2/fold_5jqh_recoff_nbon_complex_seed2_summary_confidences_4.json",
+      "sha256": "74d060b82d5dadf1242d7db6180b2fe003b440b3ffa2287b02a78b7c0a5baf1f",
+      "bytes": 4518,
+      "ranking_score": 0.54
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed3",
+      "model": 0,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed3/fold_5jqh_recoff_nbon_complex_seed3_summary_confidences_0.json",
+      "sha256": "87fea2b6cbb63185620182e9c78c54faa85c4cedc4f419d309a55398815953f8",
+      "bytes": 4520,
+      "ranking_score": 0.6
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed3",
+      "model": 1,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed3/fold_5jqh_recoff_nbon_complex_seed3_summary_confidences_1.json",
+      "sha256": "f58899813384e72b088f64adf16e89152e234ea76ff7ad2e45a853ace09a7309",
+      "bytes": 4520,
+      "ranking_score": 0.59
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed3",
+      "model": 2,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed3/fold_5jqh_recoff_nbon_complex_seed3_summary_confidences_2.json",
+      "sha256": "e6538d8228bb07ca075b133d680d5a79a1224b807de5c21133daca84641dfe15",
+      "bytes": 4520,
+      "ranking_score": 0.58
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed3",
+      "model": 3,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed3/fold_5jqh_recoff_nbon_complex_seed3_summary_confidences_3.json",
+      "sha256": "fcdb060afadc0ae80b6b2d51a6ed640ef61aa52f5c2eadccb10fab6408f35f88",
+      "bytes": 4520,
+      "ranking_score": 0.57
+    },
+    {
+      "job": "5JQH_recOFF_nbON_complex_seed3",
+      "model": 4,
+      "path": "runs/5JQH_recOFF_nbON_complex_seed3/fold_5jqh_recoff_nbon_complex_seed3_summary_confidences_4.json",
+      "sha256": "135b6202d3338d23fe2c7c14e04e2f644c2195a9fac42fc29e00b2df3ac44787",
+      "bytes": 4521,
+      "ranking_score": 0.57
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed1",
+      "model": 0,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed1/fold_5jqh_recon_nboff_complex_seed1_summary_confidences_0.json",
+      "sha256": "4f6e6a491d362c811779e3273b57cb62d5461fae30ccaa14bec7e193216c4969",
+      "bytes": 4525,
+      "ranking_score": 0.33
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed1",
+      "model": 1,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed1/fold_5jqh_recon_nboff_complex_seed1_summary_confidences_1.json",
+      "sha256": "0540bead2246b091279ba0027f86adcf9399c433b759ce0dfeecc1876a67507d",
+      "bytes": 4525,
+      "ranking_score": 0.33
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed1",
+      "model": 2,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed1/fold_5jqh_recon_nboff_complex_seed1_summary_confidences_2.json",
+      "sha256": "d7e12f99025527403588b86c28e02503375f8159a170a83d4d35efb7e2fc64bf",
+      "bytes": 4524,
+      "ranking_score": 0.32
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed1",
+      "model": 3,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed1/fold_5jqh_recon_nboff_complex_seed1_summary_confidences_3.json",
+      "sha256": "77e1d8626a392d604729e586e8ba4033e49ceb0beca9a0cf16168efb8abb2ed6",
+      "bytes": 4523,
+      "ranking_score": 0.28
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed1",
+      "model": 4,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed1/fold_5jqh_recon_nboff_complex_seed1_summary_confidences_4.json",
+      "sha256": "925765235eceadb2cf9b9c17aa10869941964f17a435e726e65b5949b7c8f235",
+      "bytes": 4522,
+      "ranking_score": 0.26
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed2",
+      "model": 0,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed2/fold_5jqh_recon_nboff_complex_seed2_summary_confidences_0.json",
+      "sha256": "5a6b1b2629f96a8f151b41a92a89d86a4b8211a8e92d02b7d2a3452963db324c",
+      "bytes": 4524,
+      "ranking_score": 0.44
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed2",
+      "model": 1,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed2/fold_5jqh_recon_nboff_complex_seed2_summary_confidences_1.json",
+      "sha256": "81a67b8a07c64d558f8028032f55012cc68e45d8d7636bd106952f2f2c4f7de5",
+      "bytes": 4525,
+      "ranking_score": 0.42
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed2",
+      "model": 2,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed2/fold_5jqh_recon_nboff_complex_seed2_summary_confidences_2.json",
+      "sha256": "8251974b787d413ee9117339df983d0b6f110333b4eaf6fcce402e23706f5ce2",
+      "bytes": 4524,
+      "ranking_score": 0.41
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed2",
+      "model": 3,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed2/fold_5jqh_recon_nboff_complex_seed2_summary_confidences_3.json",
+      "sha256": "e827c979d7b8e405bac93fba9327283d81eb2aca64a4a1f2c83ced949f819f19",
+      "bytes": 4522,
+      "ranking_score": 0.4
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed2",
+      "model": 4,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed2/fold_5jqh_recon_nboff_complex_seed2_summary_confidences_4.json",
+      "sha256": "bf4794c4d1715588c912822dcedc43955cf556924e622f27fbd60400427b348c",
+      "bytes": 4524,
+      "ranking_score": 0.4
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed3",
+      "model": 0,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed3/fold_5jqh_recon_nboff_complex_seed3_summary_confidences_0.json",
+      "sha256": "737668d3c04bf3fb9b21ce5a7484ffe48d47510f212ca88edf2d44c18e5e234f",
+      "bytes": 4522,
+      "ranking_score": 0.32
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed3",
+      "model": 1,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed3/fold_5jqh_recon_nboff_complex_seed3_summary_confidences_1.json",
+      "sha256": "fc1aeae17e9ef3406782723cde74bc6770e49bae58819e1638f124b1a2044ad5",
+      "bytes": 4524,
+      "ranking_score": 0.31
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed3",
+      "model": 2,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed3/fold_5jqh_recon_nboff_complex_seed3_summary_confidences_2.json",
+      "sha256": "e0461356b743450cdfd4f9506a0ccab7e52efb3976497fc254eeef24652b1655",
+      "bytes": 4515,
+      "ranking_score": 0.29
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed3",
+      "model": 3,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed3/fold_5jqh_recon_nboff_complex_seed3_summary_confidences_3.json",
+      "sha256": "5434a3b4cdb070d6608da93bd24769cdb10a0b5b8ca1b0c1265dc725e438944a",
+      "bytes": 4525,
+      "ranking_score": 0.28
+    },
+    {
+      "job": "5JQH_recON_nbOFF_complex_seed3",
+      "model": 4,
+      "path": "runs/5JQH_recON_nbOFF_complex_seed3/fold_5jqh_recon_nboff_complex_seed3_summary_confidences_4.json",
+      "sha256": "0a7ccbc607ec7f5bfeaebfab96de9bb5c958ebe71034cec4b8616ffd334121f9",
+      "bytes": 4522,
+      "ranking_score": 0.25
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed1",
+      "model": 0,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed1/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed1_summary_confidences_0.json",
+      "sha256": "2fc525d289ca8be7407933aa1cc9237401adf65a60b0a4174acc7112e5831045",
+      "bytes": 4524,
+      "ranking_score": 0.44
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed1",
+      "model": 1,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed1/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed1_summary_confidences_1.json",
+      "sha256": "099c085b575404b3e628b586f975b6aa825db292f31c4a5a8b705efa248b6e1e",
+      "bytes": 4522,
+      "ranking_score": 0.42
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed1",
+      "model": 2,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed1/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed1_summary_confidences_2.json",
+      "sha256": "a6e5cc2b2de99420d6f456b1e46362236cc315efeae6524efff5be88813264b6",
+      "bytes": 4520,
+      "ranking_score": 0.42
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed1",
+      "model": 3,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed1/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed1_summary_confidences_3.json",
+      "sha256": "1debea64acff634a4f4f4502778767f4395d3cf4904cadf28e399b863a3c249e",
+      "bytes": 4522,
+      "ranking_score": 0.42
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed1",
+      "model": 4,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed1/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed1_summary_confidences_4.json",
+      "sha256": "e05a517bddff5109ce60e44ed701f7efb54341bd24aa15e8ac626653d34a8e1d",
+      "bytes": 4521,
+      "ranking_score": 0.42
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed2",
+      "model": 0,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed2/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed2_summary_confidences_0.json",
+      "sha256": "ac12db4f4d3afb355547121707f5a54395a3ed7e7bf7f15f2fc0f83b124cac1c",
+      "bytes": 4521,
+      "ranking_score": 0.43
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed2",
+      "model": 1,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed2/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed2_summary_confidences_1.json",
+      "sha256": "bfd60a72788979990cf3a5c47995668d10a34d9e1b1ea50f4f717c1ccc47743a",
+      "bytes": 4523,
+      "ranking_score": 0.43
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed2",
+      "model": 2,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed2/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed2_summary_confidences_2.json",
+      "sha256": "efd1ec812c78c0d7db140c5900496aae6b97a92c415da267e15f2d379565fff1",
+      "bytes": 4523,
+      "ranking_score": 0.42
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed2",
+      "model": 3,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed2/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed2_summary_confidences_3.json",
+      "sha256": "2075d367a17c4896eb9afd6e12160aace9a0f0e95df00fbdafa0c8300a27b6d4",
+      "bytes": 4522,
+      "ranking_score": 0.23
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed2",
+      "model": 4,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed2/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed2_summary_confidences_4.json",
+      "sha256": "c9ee03b2185e9d84ffa9514da3d6e5612cdab7e31a49e4a7e981d331433c9bf3",
+      "bytes": 4521,
+      "ranking_score": 0.21
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed3",
+      "model": 0,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed3/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed3_summary_confidences_0.json",
+      "sha256": "f2e6026160bb2f0eb5c017588b5cff965a318481a71c9d77a99ed2392e8b4595",
+      "bytes": 4515,
+      "ranking_score": 0.55
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed3",
+      "model": 1,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed3/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed3_summary_confidences_1.json",
+      "sha256": "6159a640a90d4e732e92a9ad144ca6b21e87530ab4f9cf930eea4d0b64b39105",
+      "bytes": 4516,
+      "ranking_score": 0.54
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed3",
+      "model": 2,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed3/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed3_summary_confidences_2.json",
+      "sha256": "201f4a2efb1cf1ca3190b986402b42d01a284adce192342fdbf7632b4c8f1136",
+      "bytes": 4516,
+      "ranking_score": 0.54
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed3",
+      "model": 3,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed3/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed3_summary_confidences_3.json",
+      "sha256": "2acef7e8ccbc6430fa5c26e085065caa897cf7c7a9b44264341fd42ed51d235f",
+      "bytes": 4516,
+      "ranking_score": 0.54
+    },
+    {
+      "job": "RESCUE_5JQH_complex_cutoff_2011_01_01_seed3",
+      "model": 4,
+      "path": "runs/RESCUE_5JQH_complex_cutoff_2011_01_01_seed3/fold_rescue_5jqh_complex_cutoff_2011_01_01_seed3_summary_confidences_4.json",
+      "sha256": "c648bd2a01b1eb3b7bb687727e691e217454bfb63a7a3394e90bd0a48f3307fd",
+      "bytes": 4521,
+      "ranking_score": 0.53
+    }
+  ],
+  "limit": "Verifies exported values, not unrounded internal scores or the predictor's original tie-breaking policy."
+}

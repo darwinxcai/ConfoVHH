@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "1.0.0",
+  "candidateId": "confovhh-v0.6-pose-evidence-candidate-v1",
+  "recordedDate": "2026-09-02",
+  "status": "DEVELOPMENT_CANDIDATE_NOT_INTEGRATED",
+  "baseScientificLineage": "0.5.0",
+  "candidateScientificLineage": "0.6.0-candidate.1",
+  "scope": {
+    "component": "Coordinate-pose evidence ranking",
+    "changesContactGeometry": false,
+    "changesClashGeometry": false,
+    "changesSasa": false,
+    "changesPaeMapping": false,
+    "changesPoseRecurrence": false,
+    "changesImgtNumbering": false,
+    "changesCandidateRanking": true,
+    "productionIntegrated": false
+  },
+  "problemStatement": [
+    "Measured on the executed DockQ development pilot, the attested v0.5 evidence ordinal ranks near-native poses at target-macro AUROC 0.574180187644, against 0.5 for an all-tied baseline.",
+    "A single measurement the ordinal does not consult, interface burial, reaches 0.754144372319 on the same poses under the same tie-aware metric.",
+    "The ordinal is nearly constant on this distribution: 309 of 360 retained poses are 'limited' and 4 are 'supported', leaving almost no ranking resolution.",
+    "Interface burial is absent from the ordinal's inputs. Within the 'limited' bucket alone, half-delta-SASA spans 38 to 4880 square angstroms.",
+    "The 'supported' tier requires severeClashCount === 0, treating overlap burden as monotonic in pose error. It is not: poses with zero severe overlaps are DockQ-positive 23.1% of the time while poses with four or more are positive 67.4% of the time, because near-native packing trips the 0.6 angstrom overlap threshold while a pose rotated off the interface stops contacting the receptor at all.",
+    "96.9% of CAPRI high or medium development poses carry at least one severe overlap and are therefore barred from the 'supported' tier irrespective of their geometry."
+  ],
+  "candidatePolicy": {
+    "rankingSignal": "half-delta-SASA interface burial, carried unchanged",
+    "rankingScope": "within-target-only",
+    "fittedCoefficients": 0,
+    "clashBurdenGatesRanking": false,
+    "clashBurdenReportedSeparately": true,
+    "assessabilityFailsClosed": true,
+    "minimumContactPairs": 1,
+    "minimumInterfaceResiduesPerChain": 3
+  },
+  "designRationale": [
+    "Ranking is continuous rather than bucketed, removing the resolution loss that caps the ordinal near chance.",
+    "The ranking signal is one physically meaningful quantity passed through unchanged, so the candidate carries no coefficient that five correlated development targets could overfit.",
+    "Overlap burden and numbering availability are reported beside the ranking as non-gating cautions, because neither is monotonic in pose error on this distribution.",
+    "Assessability fails closed: an interface below the structural minimums, or whose burial could not be computed, sorts to the bottom rather than receiving an optimistic default.",
+    "Combining burial with contact count or an overlap penalty was explored on the development pilot and rejected. Neither variant moved target-macro AUROC by more than the spread expected across five correlated targets, and both would have introduced fitted terms."
+  ],
+  "developmentEvidence": {
+    "sourceArtifact": "validation/dockq-development-pilot-v1",
+    "replayArtifact": "validation/v0.6-pose-evidence-candidate-v1/development-replay.json",
+    "dockqPositiveCutoff": 0.23,
+    "targets": 5,
+    "retainedPoses": 360,
+    "targetMacroAuroc": {
+      "shippedEvidenceOrdinal": 0.574180187644,
+      "candidate": 0.754144372319,
+      "allTiedBaseline": 0.5
+    },
+    "targetMacroAveragePrecision": {
+      "shippedEvidenceOrdinal": 0.687853610626,
+      "candidate": 0.772742639817,
+      "allTiedBaseline": 0.636111111111
+    },
+    "baselineReproduced": "The replay harness reproduces the recorded v0.5 evidence-ordinal and delta-SASA arms to twelve decimal places, so the comparison is like-for-like.",
+    "rankingIdenticalToRecordedDeltaSasaArm": true,
+    "sourcePaths": [
+      "lib/confovhh.ts",
+      "lib/pose-evidence-v06.ts",
+      "scripts/run-dockq-development-pilot.mjs",
+      "scripts/run-v06-pose-evidence-development-replay.mjs",
+      "validation/dockq-development-pilot-v1/poses.jsonl"
+    ],
+    "usesPreviouslyObservedDockqLabels": true,
+    "labelsUsedForMeasurementOnly": true,
+    "labelsUsedForFitting": false,
+    "usesNativeHoldoutCoordinates": false,
+    "usesNativeHoldoutRelativePoses": false,
+    "usesNativeHoldoutEpitopes": false
+  },
+  "frozenIntegrity": {
+    "historicalV05ArtifactsModified": false,
+    "historicalDockqDevelopmentArtifactsModified": false,
+    "hardDecoyProtocolModified": false,
+    "hardDecoyTargetFreezePermitted": false,
+    "hardDecoyExecutionAuthorized": false,
+    "attestedV05ScientificCoreModified": false
+  },
+  "requiredPromotionGates": [
+    "Pass candidate-specific assessability, fail-closed, passthrough, non-gating-caution, and deterministic-ordering regressions.",
+    "Reproduce the recorded v0.5 evidence-ordinal and delta-SASA development arms exactly, so any future change to the candidate is measured against an unchanged baseline.",
+    "Run the public 17-structure coordinate panel and account for every ranking change against the v0.5 ordinal.",
+    "Specify, in advance and in writing, the ranking arm and cutoff to be reported from the hard-decoy holdout, before that holdout is executed.",
+    "Execute the hard-decoy holdout exactly once and report the result irrespective of outcome.",
+    "Create a new v0.6 implementation attestation and preserve all v0.5 attestations byte-for-byte.",
+    "Route production ranking to the candidate only after the preceding gates pass."
+  ],
+  "knownLimitations": [
+    "The development pilot is a native-derived local rigid-body perturbation grid with 63.6% positives. It is an easier distribution than the prospectively specified hard-decoy protocol, and candidate performance is expected to fall on harder decoys.",
+    "Five targets provide far less independent information than 360 poses suggests, because poses drawn from one complex are strongly correlated.",
+    "Target-macro AUROC of 0.754 is a weak ranking prior, not a reliable filter. It does not justify presenting the ranking as a verdict.",
+    "The candidate's ordering is identical to the delta-SASA arm already recorded in the development pilot. Its contribution is adopting that signal as the product ranking with explicit assessability and non-gating cautions, not the discovery of a new signal.",
+    "Burial scales with interface size, so scores are not comparable between different complexes."
+  ],
+  "claimFlags": {
+    "improvesBindingPrediction": false,
+    "improvesAffinityPrediction": false,
+    "improvesPoseCorrectnessPrediction": false,
+    "validatesCandidateRanking": false,
+    "establishesGeneralization": false,
+    "constitutesIndependentHoldoutEvidence": false,
+    "establishesExperimentalBinding": false
+  }
+}

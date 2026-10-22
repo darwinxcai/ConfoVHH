@@ -1,0 +1,116 @@
+{
+  "queryType": "EXACT_PRIMARY_CITATION_DOI",
+  "queriedDoiCount": 9,
+  "queriedDois": [
+    "10.1073/pnas.1800756115",
+    "10.1073/pnas.2117054119",
+    "10.1021/acsomega.3c02737",
+    "10.1038/s41589-023-01390-7",
+    "10.1038/s41467-024-49000-x",
+    "10.1038/s41467-024-50827-7",
+    "10.1073/pnas.2423931122",
+    "10.1038/s41589-025-01896-2",
+    "10.1038/s41467-026-72093-5"
+  ],
+  "requestFile": "deposition-index-request.json",
+  "repeatAgreement": true,
+  "responseTotalCounts": [
+    7,
+    7
+  ],
+  "returnedPdbIds": [
+    "7XTQ",
+    "8QJ2",
+    "8UEK",
+    "8YKD",
+    "9EAH",
+    "9EAI",
+    "9EAJ"
+  ],
+  "newAccessionsBeyondPriorPriorityReviewsAndHistoricalMetadata": [],
+  "nextMetadataCaptureIdsEstablished": [],
+  "perPublication": [
+    {
+      "doi": "10.1073/pnas.1800756115",
+      "indexedPdbIds": [],
+      "associationEvidence": "NO_MATCH_IN_CAPTURED_EXACT_DOI_INDEX",
+      "absenceOfIndexedAccessionProvesNoDeposition": false
+    },
+    {
+      "doi": "10.1073/pnas.2117054119",
+      "indexedPdbIds": [
+        "7XTQ"
+      ],
+      "associationEvidence": "historical-entry-metadata",
+      "absenceOfIndexedAccessionProvesNoDeposition": false
+    },
+    {
+      "doi": "10.1021/acsomega.3c02737",
+      "indexedPdbIds": [],
+      "associationEvidence": "NO_MATCH_IN_CAPTURED_EXACT_DOI_INDEX",
+      "absenceOfIndexedAccessionProvesNoDeposition": false
+    },
+    {
+      "doi": "10.1038/s41589-023-01390-7",
+      "indexedPdbIds": [],
+      "associationEvidence": "NO_MATCH_IN_CAPTURED_EXACT_DOI_INDEX",
+      "absenceOfIndexedAccessionProvesNoDeposition": false
+    },
+    {
+      "doi": "10.1038/s41467-024-49000-x",
+      "indexedPdbIds": [
+        "8UEK"
+      ],
+      "associationEvidence": "prior-priority-review",
+      "absenceOfIndexedAccessionProvesNoDeposition": false
+    },
+    {
+      "doi": "10.1038/s41467-024-50827-7",
+      "indexedPdbIds": [
+        "8QJ2"
+      ],
+      "associationEvidence": "prior-priority-review",
+      "absenceOfIndexedAccessionProvesNoDeposition": false
+    },
+    {
+      "doi": "10.1073/pnas.2423931122",
+      "indexedPdbIds": [
+        "9EAH",
+        "9EAI",
+        "9EAJ"
+      ],
+      "associationEvidence": "prior-priority-review",
+      "absenceOfIndexedAccessionProvesNoDeposition": false
+    },
+    {
+      "doi": "10.1038/s41589-025-01896-2",
+      "indexedPdbIds": [
+        "8YKD"
+      ],
+      "associationEvidence": "prior-priority-review",
+      "absenceOfIndexedAccessionProvesNoDeposition": false
+    },
+    {
+      "doi": "10.1038/s41467-026-72093-5",
+      "indexedPdbIds": [],
+      "associationEvidence": "prior-priority-review",
+      "absenceOfIndexedAccessionProvesNoDeposition": false
+    }
+  ],
+  "gpbarContext": {
+    "pdbId": "7XTQ",
+    "historicalKeywordIntersectionMember": true,
+    "antibodyLikeEntity": {
+      "entityId": "4",
+      "description": "Nanobody-35",
+      "sequenceLength": 128,
+      "sequenceSha256": "0eb0ca5ebeb1d3fffff8fe1b2233351585922e107dbf28b098f43d9a11e2acfa"
+    },
+    "formalBinderRoleAssigned": false
+  },
+  "limitations": [
+    "Only the nine GPCR-relevant original-study DOIs were queried; review reference lists were not mined by this operation.",
+    "Missing or delayed citation indexing, another paper's primary citation, and supplemental/unregistered resources can defeat an exact-DOI search.",
+    "Existing indexed accessions include isolated binders and engineered fusions; accession retrieval is not experimental reference-pose or independent-component validation."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "artifactId": "census-audit-2026-08-29",
+  "status": "V3_CENSUS_IN_PROGRESS",
+  "auditScope": "bounded-metadata-only-spot-census",
+  "requiredIndependentComponents": 10,
+  "existingProvisionalComponents": [
+    {
+      "id": "GPR158_NB20",
+      "pdbIds": [
+        "9VOR"
+      ]
+    },
+    {
+      "id": "LGR4_NB21",
+      "pdbIds": [
+        "9S37"
+      ]
+    },
+    {
+      "id": "CASR_NB2D11",
+      "pdbIds": [
+        "7E6U"
+      ]
+    },
+    {
+      "id": "MGLU_DN13_NB43",
+      "pdbIds": [
+        "7E9G",
+        "8TAO"
+      ]
+    },
+    {
+      "id": "ADGRV1_RE02",
+      "pdbIds": [
+        "9FTE"
+      ]
+    },
+    {
+      "id": "DRD1_NBA3",
+      "pdbIds": [
+        "8JXS"
+      ]
+    },
+    {
+      "id": "MC4R_PN162",
+      "pdbIds": [
+        "8QJ2"
+      ]
+    }
+  ],
+  "existingProvisionalComponentCount": 7,
+  "newIndependentComponentCount": 0,
+  "formallyClearedComponentCount": 0,
+  "minimumDeficit": 3,
+  "reviewedLedgerRecordCount": 13,
+  "reviewedPdbEntryCount": 20,
+  "sourceUniverseFrozen": false,
+  "dispositionLedgerComplete": false,
+  "leakageGraphComplete": false,
+  "targetManifestFrozen": false,
+  "targetFreezeReady": false,
+  "conclusion": "No new independent component was identified. Seven components remain provisional, zero are cleared, and the minimum of ten is not met.",
+  "freezeBlockers": [
+    "raw-response source snapshot absent for this bounded audit",
+    "full historical 287-entry disposition ledger incomplete",
+    "broader discovery routes incomplete",
+    "development registry and leakage matrices incomplete",
+    "mechanical connected-component graph incomplete",
+    "minimum ten independent components not met"
+  ]
+}

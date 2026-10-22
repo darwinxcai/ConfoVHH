@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "recordedAtUtc": "2026-08-29T05:45:00Z",
+  "retrievalRecords": [
+    "validation/hard-decoy-holdout-v3/source-snapshot-2026-08-29/manifest.json",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/manifest.json"
+  ],
+  "sources": [
+    {
+      "sourceId": "rcsb-pdb-search-and-data-apis",
+      "endpoints": [
+        "https://search.rcsb.org/rcsbsearch/v2/query",
+        "https://data.rcsb.org/graphql"
+      ],
+      "licenseSpdx": "CC0-1.0",
+      "licenseName": "CC0 1.0 Universal",
+      "licenseEvidenceUrl": "https://www.rcsb.org/pages/usage-policy",
+      "retrievedDateUtc": "2026-08-29",
+      "attribution": "RCSB Protein Data Bank and the original PDB depositors are identified as the data sources; original structure authors should be cited where possible.",
+      "changes": "Raw API responses are archived unchanged; normalized identifier, entry, entity, and triage ledgers are derived and checksummed.",
+      "externalResourceCaveat": "RCSB-integrated external-resource annotations remain subject to the original provider's terms and are not relicensed by this record."
+    },
+    {
+      "sourceId": "gpcrdb-structure-api-and-table-data",
+      "endpoints": [
+        "https://gpcrdb.org/services/structure/",
+        "https://gpcrdb.org/structure"
+      ],
+      "licenseSpdx": "CC-BY-4.0",
+      "licenseName": "Creative Commons Attribution 4.0 International",
+      "licenseEvidenceUrl": "https://docs.gpcrdb.org/legal_notice.html",
+      "retrievedDateUtc": "2026-08-29",
+      "attribution": "We acknowledge the use of the GPCRdb database (https://gpcrdb.org).",
+      "changes": "Raw API and HTML responses are archived unchanged; PDB identifiers and selected metadata fields are normalized for exact cross-checking."
+    }
+  ],
+  "publicationMetadataPolicy": "Only public identifiers and depositor/citation metadata needed for source-backed review are retained. Linked publication text is not redistributed and remains under its publisher's terms."
+}

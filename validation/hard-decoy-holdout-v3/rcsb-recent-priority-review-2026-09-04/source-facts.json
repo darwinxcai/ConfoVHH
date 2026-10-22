@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "id": "archived-entry-metadata",
+      "path": "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/entries.jsonl",
+      "evidenceType": "repeated-public-deposition-metadata",
+      "fact": "Exact entry titles, polymer descriptions, sequences, chain identifiers and primary-citation records are retained. These establish complex context, not independently verified direct receptor-VHH interfaces."
+    },
+    {
+      "id": "gaba-primary-paper",
+      "doi": "10.1038/s41467-026-76879-5",
+      "url": "https://www.nature.com/articles/s41467-026-76879-5",
+      "captureFile": "sources/gaba-primary-paper.html",
+      "license": "CC BY 4.0",
+      "evidenceType": "primary-publisher-article-metadata-and-abstract",
+      "observedSubjects": [
+        "Cryoelectron microscopy",
+        "Ligand-gated ion channels",
+        "Molecular neuroscience",
+        "Permeation and transport"
+      ],
+      "fact": "The primary publisher classifies this GABAA receptor paper under ligand-gated ion channels. Its DOI is the primary citation of 9SL1, 9SLD and 9SLM.",
+      "fullMethodsOrDetailedBinderRoleReviewed": false,
+      "limitation": "The retrieved publisher page exposes abstract and metadata but no Introduction, Methods or main Results sections. No detailed Nb24/Mb30 interface-role claim is taken from inaccessible full text."
+    },
+    {
+      "id": "gabra4-uniprot",
+      "accession": "P48169",
+      "url": "https://rest.uniprot.org/uniprotkb/P48169.json",
+      "captureFile": "sources/gabra4-uniprot.json",
+      "evidenceType": "curated-protein-functional-annotation",
+      "fact": "GABRA4 is annotated as a subunit of a heteropentameric GABA-gated chloride channel, independently supporting the ion-channel classification.",
+      "underlyingEvidence": "The function annotation cites PubMed 35355020 and separately marks some statements as by-similarity evidence; no interface geometry is used here."
+    },
+    {
+      "id": "gaba-publication-metadata",
+      "url": "https://api.crossref.org/works/10.1038%2Fs41467-026-76879-5",
+      "captureFile": "sources/gaba-crossref.json",
+      "evidenceType": "publisher-deposited-bibliographic-record",
+      "fact": "Crossref identifies the GABAA receptor paper and DOI. Bibliographic identity does not substitute for a detailed binder-role review."
+    }
+  ],
+  "scientificInterpretation": "The reviewed alpha4/beta3/delta GABAA channels belong outside the GPCR target population. GABAA channels must not be confused with GABAB GPCRs. Their positive channel identity supports the scope decision; a negative sequence screen is not needed for that distinction.",
+  "figuresInspected": false,
+  "nativeCoordinatesAccessed": false,
+  "nativeRelativeBinderPosesInspected": false
+}

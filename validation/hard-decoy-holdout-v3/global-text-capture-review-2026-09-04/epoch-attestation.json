@@ -1,0 +1,3245 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "EXECUTION_HISTORY_ATTESTATION_WITH_REPLAYABLE_FILE_BINDINGS",
+  "method": "The executing agent recorded that all 164 search responses and metadata batches 1, 2, 3, 5 in both repeats completed before the citation-title adapter was introduced. Three initial failed captures are named explicitly. Remaining responses were captured by the continuation. The chronology is an execution-history attestation; cryptographic file integrity and normalized replay are independently verifiable, while hashes alone do not prove which process executed a request.",
+  "scopeChronology": "Preliminary count probes preceded scope selection. The three nonphrase-term metadata scope was set after those counts and before complete repeated ID-set capture. It is not a prospective preregistration before any query result was seen.",
+  "searchDocumentation": "https://search.rcsb.org/#basic-search",
+  "searchInterpretation": "RCSB documents full_text as an unstructured search across searchable text attributes. Quoting has documented query semantics but does not establish biological specificity. Broad counts are retained as observations, without inferring which particular tokenization behavior caused each hit.",
+  "originalScriptSha256": "c46a87cb17f3ac3e19a7151c66076d659dbbcbeb83a5c1be4a92a479e8c6c961",
+  "continuationScriptSha256": "8ec2dee77f63c846b36aaa26085193851bf2b51285ba89674c3f0886ea45250a",
+  "finalizerScriptSha256": "f130e02a21fb8a91f6785bf20ccd3a8cfbec5e72ea5d6274c3228ad18369b491",
+  "finalizerNetworkAccess": false,
+  "finalizerVerification": "All successful captures existed before finalization. Finalization completed with fetchImpl replaced by a function that throws on every network request. Its sole operational fix raises local aggregate-file reads to 64 MiB; per-response HTTP and parser limits remain 16 MiB.",
+  "inputDigests": {
+    "manifest.json": "13d95b84e164969c273bc7dd28d880437bbb9d3f17dff614b97acb3a05f37c99",
+    "summary.json": "dfdfd32c283ffe228ff583415eba1a07d3709458a074ae2b1e08efebea3bdae0",
+    "discovery-plan.json": "23c9a293021e3d453df8112e09ee06757e5dfc8c337e589219227facf711b1e6",
+    "continuation-plan.json": "cd2206b22ccb7a43932435d7b8ef2b0f35a4d46abd9ee7f7f510441821eedfea",
+    "provenance/adapter-correction.json": "aead68f9ce45c6b20c99b1126674879f446e14f4f42c16c2d6f46383adca4714",
+    "provenance/capture-generator-original.mjs": "c46a87cb17f3ac3e19a7151c66076d659dbbcbeb83a5c1be4a92a479e8c6c961",
+    "provenance/capture-generator-corrected.mjs": "8ec2dee77f63c846b36aaa26085193851bf2b51285ba89674c3f0886ea45250a",
+    "provenance/finalization-code.json": "dea66ea3680375c3a1ed33e6ee97fe4945381a45a9c630056a9157d8ff5dcc5c"
+  },
+  "responses": [
+    {
+      "captureFile": "captures/metadata-001-repeat-1.json",
+      "captureRecordSha256": "4f05d8ce6e53c3d114d1c56a2f4e8d7980cd016173208ef50d388f51a5f5349e",
+      "rawFile": "raw/metadata-001-repeat-1.json",
+      "rawSha256": "3a5b255835c5c0dec922cf72e47b45e94d2961f8c1d859d415ca9f482e7e0187",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/metadata-001-repeat-2.json",
+      "captureRecordSha256": "179f3ddf3bf6ccb98335b471a09d87fbec129025ff4c2c5d1df67ad62c311def",
+      "rawFile": "raw/metadata-001-repeat-2.json",
+      "rawSha256": "20cafa3d40c4b3fa8282029f1a2eaae12f55fe05a9e233da21c64f07c0d8e4d9",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/metadata-002-repeat-1.json",
+      "captureRecordSha256": "231cc27b760c1f226be8b8ea09dd5ab88f371834a9d16acedbf3fe2a847bc239",
+      "rawFile": "raw/metadata-002-repeat-1.json",
+      "rawSha256": "5439c2aba36360419cda370533696555d4011e4e47990f6992683539eec647ce",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/metadata-002-repeat-2.json",
+      "captureRecordSha256": "944788e434a4bc9b6142fb34abeb7e9e409229c013e2be41ac5645539e547581",
+      "rawFile": "raw/metadata-002-repeat-2.json",
+      "rawSha256": "ca41c4426a5ee615624212604ee55b9b7d1f761512e8b131f8c4d3544b59a31c",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/metadata-003-repeat-1.json",
+      "captureRecordSha256": "00443313e5bada75c3a7c50e4621c49ed0b9fba12682934ce6732303704c6ddf",
+      "rawFile": "raw/metadata-003-repeat-1.json",
+      "rawSha256": "cf89a75209439b2471052f8db5eb0bfd1fed97db5726e620ba953d672d72d9a6",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/metadata-003-repeat-2.json",
+      "captureRecordSha256": "18cb61372e5a4f23501d533847bb3b5d9f9a61076f28c0df156d4a922c63806e",
+      "rawFile": "raw/metadata-003-repeat-2.json",
+      "rawSha256": "b8654a1dc903f6e0d921cb90cc44b948a31dda61e4b459dc0fe5fde9880cc9bd",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/metadata-004-repeat-1.json",
+      "captureRecordSha256": "49b9d2e35bd6d3974af299d04dad75ef7605ae0b949af3775fb814dec4dec0ef",
+      "rawFile": "raw/metadata-004-repeat-1.json",
+      "rawSha256": "d8aac6d9b235e078b885e3c045d0213b08e2a76192dd70884e7c55bcfc0268cc",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-004-repeat-2.json",
+      "captureRecordSha256": "7c8504d101442def7504de899c806598aa4ef3ebd2a032a0971ece8ef20a80fc",
+      "rawFile": "raw/metadata-004-repeat-2.json",
+      "rawSha256": "e8c1ba18a7bad2969d93b1759721bef23ca8e9e8dacae54f59a134dbc045dc96",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-005-repeat-1.json",
+      "captureRecordSha256": "ec9f250292cc5aac4048dcf4211c0c79cbfc6ac6f04f5a727c7c4eb2bc711d24",
+      "rawFile": "raw/metadata-005-repeat-1.json",
+      "rawSha256": "4496ae784a1fc895c740542cd4efb97e5a10a6fd04fa665500acc58cd28fb7f3",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/metadata-005-repeat-2.json",
+      "captureRecordSha256": "0156af7a2ae6b63c8deb14d29358bcdd940407bf9cee93b6ddfb5c7fc2abeeef",
+      "rawFile": "raw/metadata-005-repeat-2.json",
+      "rawSha256": "d0bbb4566d5044006403c0ef907f0cb30ce8ec9d48bc4ab76c09ce7f283b35b9",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/metadata-006-repeat-1.json",
+      "captureRecordSha256": "27c1c4fe2ebf8d3f5cdd855fb7dffb09fc7843d697ea7c7e347f426fba7ba974",
+      "rawFile": "raw/metadata-006-repeat-1.json",
+      "rawSha256": "8794d79c2fecca535703f318e71e7107a0e38dfe3160d7307c7fb0b5ba5fedea",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-006-repeat-2.json",
+      "captureRecordSha256": "bb0913c7ed6f1af9f2a80d33f597de725a4a7788031f42935ca6227ca5e70b02",
+      "rawFile": "raw/metadata-006-repeat-2.json",
+      "rawSha256": "5ea94e82d0691f57d444a37c16ad896cccfcd494b630d1ce0a27007897e11cbe",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-007-repeat-1.json",
+      "captureRecordSha256": "53b8bb99f4106f4e1ad5933a5542a64f943f1a9dea40eefb60785ea8e0381c96",
+      "rawFile": "raw/metadata-007-repeat-1.json",
+      "rawSha256": "3f189b8f9ed46365576795bcde3e0272382b688d8b0936360b0242a72967435e",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-007-repeat-2.json",
+      "captureRecordSha256": "d6f09bed2b2624900e0bd6026e481a9927dce7b70b64deff5f0d28f7e9b8ec24",
+      "rawFile": "raw/metadata-007-repeat-2.json",
+      "rawSha256": "da2ef36504f0cf3bcda261926502a1b747ecb60fdb9d5329fd45036431d13db6",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-008-repeat-1.json",
+      "captureRecordSha256": "f54cab8d483cf618c6dab9ca41810fbe3029e46752f9c4bebea31b95d7558c5e",
+      "rawFile": "raw/metadata-008-repeat-1.json",
+      "rawSha256": "be6c45427bd817c8770b59907bc3bb44eb0cf7dfb326aa4471cae54c503c1a9a",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-008-repeat-2.json",
+      "captureRecordSha256": "17fd81cb707fc9fcf45da01c76288973cc2650b864c4abf9a27adadd06452c05",
+      "rawFile": "raw/metadata-008-repeat-2.json",
+      "rawSha256": "bfff6c1b8333f7911abf4caf60e6fa0a4d22dabc81da40c9c0e164027c9416c1",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-009-repeat-1.json",
+      "captureRecordSha256": "80819d66492da2fe11ddb6971b5ccf5f8741901dbc572473b677e81971a1ec42",
+      "rawFile": "raw/metadata-009-repeat-1.json",
+      "rawSha256": "d69a0682e0dedd085c521db1c72a9c5288833310263530e70898d20c1d4a19f1",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-009-repeat-2.json",
+      "captureRecordSha256": "a5a1863e17908ea4e5673b4b4ee18d4e1f367bab84ecfe07ccc2806cfca255ef",
+      "rawFile": "raw/metadata-009-repeat-2.json",
+      "rawSha256": "7901483207b8c062b96b04523a7101f5720179082ce3b1381470700b95c84cae",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-010-repeat-1.json",
+      "captureRecordSha256": "772e2944244866f22a2fcc3e767ebf75b1014b4dc515a2b0928a048f5916d2c5",
+      "rawFile": "raw/metadata-010-repeat-1.json",
+      "rawSha256": "664048677dd1bf72dd639d7b3f1a3139b08707fa7ee19c75bb885409ae244144",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-010-repeat-2.json",
+      "captureRecordSha256": "13faacc10c11a2a65008c1438e080db24542e5b571bc7c6c0573cb6fdee74f30",
+      "rawFile": "raw/metadata-010-repeat-2.json",
+      "rawSha256": "b8456e7a03a1a7d7e3f2ceb2340a47c6db9c5c13aeffcfe4468df658f473d0cf",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-011-repeat-1.json",
+      "captureRecordSha256": "39c60203df736b3bccb7e999da27a044fd3ea17d02a00f525d73f059943dafdb",
+      "rawFile": "raw/metadata-011-repeat-1.json",
+      "rawSha256": "3510b56d98b4c1065de5706eb5aff385f3ca6d3575fae87515be73953a9efcc8",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-011-repeat-2.json",
+      "captureRecordSha256": "8dd3c61a7f2f7461f98cee5d683d65f18ee1ed23676a783ef97108347532892c",
+      "rawFile": "raw/metadata-011-repeat-2.json",
+      "rawSha256": "f5ee52a63ac9ba10d46488ba804b6bb6e6cee6818ae8330b04bc1645168d8b05",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-012-repeat-1.json",
+      "captureRecordSha256": "d5c5cddfe5a702de7d0f544597f0abc7b120335f595926b9aa18cf2ac20ea612",
+      "rawFile": "raw/metadata-012-repeat-1.json",
+      "rawSha256": "e20c5f900d3e616469ca570d1b721686168a69b6c73193c9bfdedfd9432b54c6",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-012-repeat-2.json",
+      "captureRecordSha256": "248762508c5b739887b287cce77a9b24507d32699ae11fd3be4f17865954f685",
+      "rawFile": "raw/metadata-012-repeat-2.json",
+      "rawSha256": "583045c90aa443437883323ff056c3c7c71a1171a97c4de5974cd8cdd5f2e461",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-013-repeat-1.json",
+      "captureRecordSha256": "2a82bac89a2f5169d4b54fd6ec1cde7c57f6c7e538671e0e59b14fd9edf4ae66",
+      "rawFile": "raw/metadata-013-repeat-1.json",
+      "rawSha256": "1c8078fb2b70378845030b3d87e10d325f1ba76e5416a9c53919524b04b77f86",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-013-repeat-2.json",
+      "captureRecordSha256": "e6f8961242bf7ad2e2b4d6c1b6c303df0fe351e781d2129e22f8bc00426b51f7",
+      "rawFile": "raw/metadata-013-repeat-2.json",
+      "rawSha256": "b7bdcb9e343da10080f8656b6813e6a5629ef7a40591ced36cd090f066d86a5a",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-014-repeat-1.json",
+      "captureRecordSha256": "ca1686cb25a8e108ac17b015683c4aededc5772777e30ebd36db9a45f0581854",
+      "rawFile": "raw/metadata-014-repeat-1.json",
+      "rawSha256": "4177039998252179f30463898283016c97353f410f52913ccac5d665d2f157a5",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-014-repeat-2.json",
+      "captureRecordSha256": "1b503362cdb386739133405b4031b053c72271b4fcdcd32a2a8201a6a25b05cb",
+      "rawFile": "raw/metadata-014-repeat-2.json",
+      "rawSha256": "b3b940ab268a4dc18d948e8d614700f727cefbfec649c2561c811081c10dff73",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-015-repeat-1.json",
+      "captureRecordSha256": "487189871a193c3fc5041ca641c08106cefa9e2a8b606b4008148da7865b85a3",
+      "rawFile": "raw/metadata-015-repeat-1.json",
+      "rawSha256": "c525b0f76943fda9566a99f755988254e5773d3f74a1ba3f3406d1ee47903b33",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-015-repeat-2.json",
+      "captureRecordSha256": "ae09ede8f27a9cd1479f647c06cbe4d447d4d2722db8e5947fa77f5512facf3b",
+      "rawFile": "raw/metadata-015-repeat-2.json",
+      "rawSha256": "f2854eb82da2def382cb8f5e199764d2c424d8b17f9fb053209d96fc316342b0",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-016-repeat-1.json",
+      "captureRecordSha256": "9a7290d27d60abd94e9942d7c65134d983537c77505926ed251251e61c64d431",
+      "rawFile": "raw/metadata-016-repeat-1.json",
+      "rawSha256": "9786a489add1457708f75ffbfd6007643dd2cd34d9748e515e53580566b964f6",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-016-repeat-2.json",
+      "captureRecordSha256": "799a499c470624589c0d2b520be0ac8a9ae208a8d254ffb164b0b0c9ee5cd952",
+      "rawFile": "raw/metadata-016-repeat-2.json",
+      "rawSha256": "8237db0b45e3bf1b65d45445f25fa42136d000e5c208cf70ad11690e99c9450b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-017-repeat-1.json",
+      "captureRecordSha256": "508fdb00455139c05f16039500d2a174dc5ac5149cc3bbb3f0e580e413b2ad75",
+      "rawFile": "raw/metadata-017-repeat-1.json",
+      "rawSha256": "78f23ba1d99f1a77bef5610df9f643585d43936833c95078cf5499d1f7df3b9c",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-017-repeat-2.json",
+      "captureRecordSha256": "3b15e9ff334a8062984dbd5404855b0733d89c90df4ef242ebb5e36d3e35d59a",
+      "rawFile": "raw/metadata-017-repeat-2.json",
+      "rawSha256": "67d5664210a5edc32200a4909a7eac38afff87d9cb45f673c6a8f9549ff48333",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-018-repeat-1.json",
+      "captureRecordSha256": "0f9fadd08c3fe41ba1be54045828e91e6b15f5f4c5809b960b24c7d4e9d40b21",
+      "rawFile": "raw/metadata-018-repeat-1.json",
+      "rawSha256": "3f9ad515b701576972769bf872707eca7573d37ced53a7ab8ffbda26eb1b8b22",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-018-repeat-2.json",
+      "captureRecordSha256": "be18756f6c0a8f0cd1a588a0b1775319b844e15b05ac5c58eb0cbf8935f7dca4",
+      "rawFile": "raw/metadata-018-repeat-2.json",
+      "rawSha256": "ad099ffb1f64a592027e6bc53881f1a09fba0ead97276d9fbe3926e5bd5b82db",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-019-repeat-1.json",
+      "captureRecordSha256": "6807f81cc608342efe67fa2b01bf82b3927197d1cf9d502a617f28867906da35",
+      "rawFile": "raw/metadata-019-repeat-1.json",
+      "rawSha256": "f2bb4813ebf7aaa5d08fe468f31ea7a5e38637a0db49122436402d79103f3bd4",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-019-repeat-2.json",
+      "captureRecordSha256": "66546f0444011a5410fb1f2d8d10001442f45471c5ef4248066140e6a46fe0a7",
+      "rawFile": "raw/metadata-019-repeat-2.json",
+      "rawSha256": "3645799caa73820e292c6d9fc2c1c72625572842a52316d93c8c59185ce3fd32",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-020-repeat-1.json",
+      "captureRecordSha256": "e5ce29a3a2202c38b3f7a455e77e3c07aa8f6c7fe2a0cd14101754b3dd740240",
+      "rawFile": "raw/metadata-020-repeat-1.json",
+      "rawSha256": "28a8c4744c706e8ef687e845b9dbfc7dec3b9eaeb9213ced23767e5c7a9496c3",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-020-repeat-2.json",
+      "captureRecordSha256": "1674e7b69b7d6738eb3497978dca02eba03ea5d174b38e6c33b099c90840def4",
+      "rawFile": "raw/metadata-020-repeat-2.json",
+      "rawSha256": "6d0d59beeb2dcd8f8227decffebe4cc49d2424a4695fbe347c00e6499f500ced",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-021-repeat-1.json",
+      "captureRecordSha256": "2a3dc5aed238dbf2e0a6dacc9436bd8b42966c73ed135f7e313140648f6218d1",
+      "rawFile": "raw/metadata-021-repeat-1.json",
+      "rawSha256": "b0a4b169d20c11d778029e74e78c886a1a4c2cdd3feafd1ce972084052f2a761",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-021-repeat-2.json",
+      "captureRecordSha256": "17d7b508bd0f880d97c149c8d5760a9dacaa4f55c91fa71c25088902022eff2a",
+      "rawFile": "raw/metadata-021-repeat-2.json",
+      "rawSha256": "fa90d7a6b652a38d711dbc723f599f97661cdb2ab17ae9c9a39ed2f4d2e02a1f",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-022-repeat-1.json",
+      "captureRecordSha256": "b9c840adeac9a6780c0bf1b3b9e6a587a93c0d06fd6e0166834618c801485390",
+      "rawFile": "raw/metadata-022-repeat-1.json",
+      "rawSha256": "ffdd99d05aa5faa264a7afc5f88ed57d294f7ccdf453157626e8bb380cf4e3ae",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-022-repeat-2.json",
+      "captureRecordSha256": "316248b6d7000f20c429cae69f5b4af0866d069882095750e8f0046dec62f35b",
+      "rawFile": "raw/metadata-022-repeat-2.json",
+      "rawSha256": "152df3c537a0382e483ea01cf566b2fba6a0f72c076c0278cd6fc2b2b868d879",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-023-repeat-1.json",
+      "captureRecordSha256": "7c112c29c280259ae2a33a49eac57038ba18e0b12fe4be1581bc80da2a3c8e30",
+      "rawFile": "raw/metadata-023-repeat-1.json",
+      "rawSha256": "1a9a7627bc65d374200c3713c2e65b3248d2bb1b33afa715d409c435cb9c876f",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-023-repeat-2.json",
+      "captureRecordSha256": "4137670cf0ce017bbef3df2b0fe350f11fdfde6e7bce4166e3fc6b54b133bb3a",
+      "rawFile": "raw/metadata-023-repeat-2.json",
+      "rawSha256": "ebaae6bee22d58dcc82d3810618786f576bf5062aff600847acf4521577e8082",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-024-repeat-1.json",
+      "captureRecordSha256": "bef5a2647dcd63f2f96dcedd4e454bb562b8f9103475f3adfa0574861fd40749",
+      "rawFile": "raw/metadata-024-repeat-1.json",
+      "rawSha256": "01914f29df27acd6c3cc6e0e584025d3296ad904d2de98aa51bef39d95d0d8cc",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-024-repeat-2.json",
+      "captureRecordSha256": "6506b4f075b67d889b911fbc029d76cac2de3f20e633bcbbdb3a959843707762",
+      "rawFile": "raw/metadata-024-repeat-2.json",
+      "rawSha256": "77efc23d3ee2de4387a35b83ee63ccedcf8e99de46b56ff33b9a742e5da991ae",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-025-repeat-1.json",
+      "captureRecordSha256": "ccc5b3bf4c59a67e561ecbb97ad5478a5004d1aad116c5ca610f8d32fb185300",
+      "rawFile": "raw/metadata-025-repeat-1.json",
+      "rawSha256": "7b0dc68ef36870b97882aec84e021e2400df3f6e939a8d3e272b0f78632f89fd",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-025-repeat-2.json",
+      "captureRecordSha256": "463a27417f81143e18fd5fb520190e208589c9629a422d7a4bc409f5f889bbdb",
+      "rawFile": "raw/metadata-025-repeat-2.json",
+      "rawSha256": "64e1ff237b67d5069f8db87cbd61a4fa3d14699fea3d342fb6f7cb61bac0ed56",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-026-repeat-1.json",
+      "captureRecordSha256": "8b01f332bfae36d634c5d95e749187ab78c2f4ebf4450333942e9b62ab87bb5e",
+      "rawFile": "raw/metadata-026-repeat-1.json",
+      "rawSha256": "4f1fa3f8864b18d7069ed97944f61b6725f5f7ba826943aeea7660d19a705cbf",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-026-repeat-2.json",
+      "captureRecordSha256": "f5c7bc03a0bc64b2829c3b18b876c803391c92ec8cbd54b4f4a4b2acaf0ada34",
+      "rawFile": "raw/metadata-026-repeat-2.json",
+      "rawSha256": "949b3c79a6d9f3fd9d6fe5fd4e0e327e2d8c92f5385e7ef48d633faa940d43fd",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-027-repeat-1.json",
+      "captureRecordSha256": "fe397e2adfa6b4cf3dc4502747f3135284e8cb500403292e1a91464c27410115",
+      "rawFile": "raw/metadata-027-repeat-1.json",
+      "rawSha256": "8018f1d2b417d03d81c3dec69b06e22bd8d7b3171c67c3e266e1cbeb8d37d50b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-027-repeat-2.json",
+      "captureRecordSha256": "37b2f41dc262c456cda3185444fcac16ba3c2624626dd6a15dc4516af2e9fc88",
+      "rawFile": "raw/metadata-027-repeat-2.json",
+      "rawSha256": "d4f9df20e23fdc0bdcaa46edd4fb62685e661a70d29a2ca7a7a4536213548c4a",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-028-repeat-1.json",
+      "captureRecordSha256": "d14dedd3a48f0ee397b8d2d71c2211ceb32453fbe7f538c6787475e5b001819d",
+      "rawFile": "raw/metadata-028-repeat-1.json",
+      "rawSha256": "c773ae75deee88fc10ed618b67561d21f4852a3dfdeb19103ba01eef35b34e74",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-028-repeat-2.json",
+      "captureRecordSha256": "ea9d552c6fe45ed2ee2c4523e2c9721d4cc8b759b63dc9e0bd490f69bc6017f0",
+      "rawFile": "raw/metadata-028-repeat-2.json",
+      "rawSha256": "247bc850e1209445e70e3528c8a4339177b0ad7f796c2afc3deef538556bd007",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-029-repeat-1.json",
+      "captureRecordSha256": "1143a3b14dcf12e915e1ea787abc877456aa99f69f134378ccc95b3d73121ffc",
+      "rawFile": "raw/metadata-029-repeat-1.json",
+      "rawSha256": "3f0bd6afe804340ca0dd04be6bfb9a09499c175e02c442e8ee28e0851814d124",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-029-repeat-2.json",
+      "captureRecordSha256": "46112c299a0a592c53db2435ecd52cda6d4bf5f61967566300fb01c555ef67ba",
+      "rawFile": "raw/metadata-029-repeat-2.json",
+      "rawSha256": "53b6d20e553b2bf84ab9e2430eb95c012dfcc15809280320a3f75864bcca0a4d",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-030-repeat-1.json",
+      "captureRecordSha256": "b1c6a67bacb1436109d8a60d54d6fc86f0a81bffb56a4e35f245bd9476c626b5",
+      "rawFile": "raw/metadata-030-repeat-1.json",
+      "rawSha256": "cd38dfb4d5113131f6316153c08f847dc7efd8ec0f77d3f642f55ffa0592a325",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-030-repeat-2.json",
+      "captureRecordSha256": "920dd0ec603c419fae9a1fde805fe421910f5397be8b9a98205504ea479862a9",
+      "rawFile": "raw/metadata-030-repeat-2.json",
+      "rawSha256": "ddbd7b71772ecac652c057bfd86c2d86da61349a7ffa839d52c5356a7de0ce6a",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-031-repeat-1.json",
+      "captureRecordSha256": "d76e90fe1eb380fcfdea5cec486df8eb63247487a6f883491fb91e936d2e74b8",
+      "rawFile": "raw/metadata-031-repeat-1.json",
+      "rawSha256": "5f1511c4338f6bdb1d5bda5666a2b6fee4b55ca3fbd8ebfaed08861b88daf718",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-031-repeat-2.json",
+      "captureRecordSha256": "67ac54ee26531a4f6f79bf98234d1fc71f53e5e8000652bb6bbdf8d53eb0157d",
+      "rawFile": "raw/metadata-031-repeat-2.json",
+      "rawSha256": "cd56ba4393c21f9cca9bbb72addf8951fe018b4224a37ec6a8d8a71a91917220",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-032-repeat-1.json",
+      "captureRecordSha256": "aa55eb322d05a9c5d0fee63fc813d9ca88d00bd297f519f7b9707d72f69dadfc",
+      "rawFile": "raw/metadata-032-repeat-1.json",
+      "rawSha256": "3acdf9c66e053c1c8e2c8b099319468eef60fd1507d9d014589dd73a9a15a447",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-032-repeat-2.json",
+      "captureRecordSha256": "ae4e13cce5c90093bf891354797b4948bce79924ca52c33e7bae2c2c23d2f885",
+      "rawFile": "raw/metadata-032-repeat-2.json",
+      "rawSha256": "b89acd50aa9bb324d1b44bcb5b4457b9cc759c2d22f68184dbe5604bee594187",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-033-repeat-1.json",
+      "captureRecordSha256": "d54dce1214226afca1172c001d3dfb9664fe9ef24cc3d3c86414b7f9b3d4cd97",
+      "rawFile": "raw/metadata-033-repeat-1.json",
+      "rawSha256": "47448e7153aa4da77ef1fcc0dbbe850290983702f96138f2b3a12dbadb3667f3",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-033-repeat-2.json",
+      "captureRecordSha256": "d7691dd72e079d0e97dc5b4d9d605a055c04fd7f15d52d745a941dc7f5d69a49",
+      "rawFile": "raw/metadata-033-repeat-2.json",
+      "rawSha256": "ee1cd5b25a68ed6522cb576197d7ce488a775c9eb70de8baad14dbd1a0b767fe",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-034-repeat-1.json",
+      "captureRecordSha256": "c636b8ca1a76d4ace7055eacb20c2604713545e9bdc9eb55fb14448186db2c41",
+      "rawFile": "raw/metadata-034-repeat-1.json",
+      "rawSha256": "6c44bc3f9a0535ca0a10c48de7a30c48cfe96b9e37c020253397bdc02c3b315c",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-034-repeat-2.json",
+      "captureRecordSha256": "b734472e0df16f2959e4ad4f6a8c10a69474da61fb360f42ba465298bc2658a2",
+      "rawFile": "raw/metadata-034-repeat-2.json",
+      "rawSha256": "6006e3c22b878b025521a41156d8b6d289569e11917da6ad8685484fa818f192",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-035-repeat-1.json",
+      "captureRecordSha256": "7970f1ae916899bd2a3d07bee83424b7246400a2c8ad100deb0243ad1c12b628",
+      "rawFile": "raw/metadata-035-repeat-1.json",
+      "rawSha256": "2ef84de03133668ec2b040e122bee0d244fff88d1393009e39a353db0f8a1627",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-035-repeat-2.json",
+      "captureRecordSha256": "f6609c296786a98524cce527d1bac7d01fe55a857cde0e8cc2f75843c5b40d7b",
+      "rawFile": "raw/metadata-035-repeat-2.json",
+      "rawSha256": "20ccf60f6d62f43f0c3f6f9634e7555de592a830658f94a031859d54c56e4c53",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-036-repeat-1.json",
+      "captureRecordSha256": "9a2b06346dfa0a05b5a4d28225c5589817ba05a0c5d41bb3f20e34b18abcac3c",
+      "rawFile": "raw/metadata-036-repeat-1.json",
+      "rawSha256": "7821dde8fddf48474e78d98efb91ceb247d9cb535d1c7922a070d297390f0728",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-036-repeat-2.json",
+      "captureRecordSha256": "d5f701f6f544d9876e241f6a68a1b7c628f4c45f0930294d6bb63a86fc21ff30",
+      "rawFile": "raw/metadata-036-repeat-2.json",
+      "rawSha256": "f927047b7eb62c6b62f0a13a2769296762872b58d1f6386fbcb8ec8138d6810f",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-037-repeat-1.json",
+      "captureRecordSha256": "566b0d3f68567044091a76cb6906df54e1463938d8a179ae8292a7a8f9fa729a",
+      "rawFile": "raw/metadata-037-repeat-1.json",
+      "rawSha256": "49f7450208f072774c04479eb471cbee16d9f308b79f46b05141a85d365a8a63",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-037-repeat-2.json",
+      "captureRecordSha256": "d494551f51afb6a2431c2b83f4a305ed489dd44fb7e216b606d2d50dc30619a9",
+      "rawFile": "raw/metadata-037-repeat-2.json",
+      "rawSha256": "54bdc5455c82d53528457c0f099f60bc73002392f146cfe64fd4ba081cc0f2f8",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-038-repeat-1.json",
+      "captureRecordSha256": "dad1a3a95ce3f3cc3d2c342b02ddfe9a54de7f69f3bb303b20a1a82c847be8bd",
+      "rawFile": "raw/metadata-038-repeat-1.json",
+      "rawSha256": "2b958f76abadab85a8c89f2ab9e83da5c146e45383158479bf7d7c71cf822e16",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-038-repeat-2.json",
+      "captureRecordSha256": "f2a550077e3671006f3517e7e351b3f471b2441c7eb37b804a3f50ad80406913",
+      "rawFile": "raw/metadata-038-repeat-2.json",
+      "rawSha256": "618d5bdc4ddd9802df30804bb9bb5ae79da8a6625cf1baa34b711019b6742103",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-039-repeat-1.json",
+      "captureRecordSha256": "ee6c08c1e093b501e4f4026e2f804c9c1955ff91e95969c04796c41db5cb1a4c",
+      "rawFile": "raw/metadata-039-repeat-1.json",
+      "rawSha256": "18f99806ace13815dbe9df569ad3e701d630f837ac21cefd42734a3d5f4c4497",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-039-repeat-2.json",
+      "captureRecordSha256": "006204b5f4aedc5afe007df206e43a055a10329a58af7d95a47e27b645b7150b",
+      "rawFile": "raw/metadata-039-repeat-2.json",
+      "rawSha256": "efc54d2c9052059eb6ac24ac654f0c5c5292af4e448be07d7181bd8229447355",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-040-repeat-1.json",
+      "captureRecordSha256": "9214a2c5640a22fe7429576cec509ad81044869d7e1f0675e45422a31ecffd23",
+      "rawFile": "raw/metadata-040-repeat-1.json",
+      "rawSha256": "b38cb5871a0cc4fbc5b0d8ebceb6290e99c9699a0207d8d67d692b9670901302",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-040-repeat-2.json",
+      "captureRecordSha256": "46b25c6b760077eb34d6a5b6cbc7a27e1367b0cdcb8de1b298ea7f0a56a2a290",
+      "rawFile": "raw/metadata-040-repeat-2.json",
+      "rawSha256": "37902f57f0c403f5b9238de587c2cc140307849dbbcebb3045d5652eea3bb6a1",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-041-repeat-1.json",
+      "captureRecordSha256": "6f636cf634adee58a0568bf5ca00cf5894ed95a634d8606281b9d54b4d8466d3",
+      "rawFile": "raw/metadata-041-repeat-1.json",
+      "rawSha256": "44cf4f9c55401839f7d388c239a99735bb6d80f513b0de70d19215f427246b01",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-041-repeat-2.json",
+      "captureRecordSha256": "084ebaadaa457080b73b483f7984ad84603afbd8f8934aee090caa5d38961ab8",
+      "rawFile": "raw/metadata-041-repeat-2.json",
+      "rawSha256": "0935b9c4de1542600c5a59373c305e20f76021485e0696f77447be3b8aafacee",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-042-repeat-1.json",
+      "captureRecordSha256": "d86050034e57c92844bbf4765f19031b44668405cc6e1f874024f50841fe9f07",
+      "rawFile": "raw/metadata-042-repeat-1.json",
+      "rawSha256": "24a9546c56bb868d5285ea4b3288714fbcc465ffb542942ca628f9f8708f01e5",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-042-repeat-2.json",
+      "captureRecordSha256": "b64479f30dbdffaf5b16e3282deb18569940576f3853ca43683878dbc653215c",
+      "rawFile": "raw/metadata-042-repeat-2.json",
+      "rawSha256": "71b706d5918349e05cd4941a06806bed081b1f6bdc6afa0cc3481ac8c67f4127",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-043-repeat-1.json",
+      "captureRecordSha256": "4f2423c7b4ba61fe9d3ab3d1f144648483d37bb154da3576d739460f15203aed",
+      "rawFile": "raw/metadata-043-repeat-1.json",
+      "rawSha256": "753312c3f5d63a58cc70ba636905d057a818d82c26bb395aa23b5a53ec8e8c20",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-043-repeat-2.json",
+      "captureRecordSha256": "bcad786f839563466a30f2703942d51f468731d8ead4162d5335b7fd1ddce4c5",
+      "rawFile": "raw/metadata-043-repeat-2.json",
+      "rawSha256": "b9e2ea1c0804b01aefb63ad5c07ce8382e40269050081004d6887d90f99bbb9e",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-044-repeat-1.json",
+      "captureRecordSha256": "a1a532d5847bf4e65dd70f5cd7401d9e12ed984173e835c3fe12b30f5c38ed8b",
+      "rawFile": "raw/metadata-044-repeat-1.json",
+      "rawSha256": "88a5fb73023c63844e017e1fd384c33a0c886c56e20fb7682eaeaedbd32faf28",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-044-repeat-2.json",
+      "captureRecordSha256": "696c1c064ff35973a4e15dfcb61eac22f1d6265e9ea9a8b200287f0ed6417def",
+      "rawFile": "raw/metadata-044-repeat-2.json",
+      "rawSha256": "fac5f763056056a5690703b2d94adbeb9af5d77e7034522d79e2241ec36eaa3f",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-045-repeat-1.json",
+      "captureRecordSha256": "2d46c4982f9f17efdb916344ea74a5479665785e09df2055f4c12ae833178462",
+      "rawFile": "raw/metadata-045-repeat-1.json",
+      "rawSha256": "f447cc5de0b0a91912a7e8fe32878b0fc5a661fcb23b8dadedf5ff497a15eca5",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-045-repeat-2.json",
+      "captureRecordSha256": "e919d314df548a6afc0f0eed098690f73d8e186305bdc34f43cc8117abdce14d",
+      "rawFile": "raw/metadata-045-repeat-2.json",
+      "rawSha256": "d9551d1be13c1fc7f0cd39245bb61035160b7f66da2cbdef766d26caa078aa9e",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-046-repeat-1.json",
+      "captureRecordSha256": "6ad41024ca3aff63453b480528c8e2319b0013f7b8b48948b3c19ca01308a013",
+      "rawFile": "raw/metadata-046-repeat-1.json",
+      "rawSha256": "a4109a07ae1af5fb56a278f3b0e2181230815750717ea91b5a6cec4ddb70bb80",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-046-repeat-2.json",
+      "captureRecordSha256": "f09822ac2d54300bece5aad5ed7c7d6b3e0c359066daa83c96453fd67e5b8929",
+      "rawFile": "raw/metadata-046-repeat-2.json",
+      "rawSha256": "f5f9da75593da489eea50c8925b3423e788019168a3676b4b7d25d37ca277702",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-047-repeat-1.json",
+      "captureRecordSha256": "4527c098c498abe86656ee4ef547cd6d74d9be4b1215307198279d6214d1734c",
+      "rawFile": "raw/metadata-047-repeat-1.json",
+      "rawSha256": "c95a50e18e69a011fdcc201fb282bcbf83a4d1279474d8ef1f267580d66d9cd1",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-047-repeat-2.json",
+      "captureRecordSha256": "98914e465c77e7523030486f27e266b6e09ccc043babbf19abd08fda704bf269",
+      "rawFile": "raw/metadata-047-repeat-2.json",
+      "rawSha256": "6d556632c00ce5997ea17bfb302482d0c2a3ddd83663afeaca844a36e6880805",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-048-repeat-1.json",
+      "captureRecordSha256": "da093dbec3341b5f930f5bdf7882851b746a75ddc9962d90ee4c9545ae73b701",
+      "rawFile": "raw/metadata-048-repeat-1.json",
+      "rawSha256": "d3b72683f54f954c1eada22332322c18b4e21609579a0556ec9bec8ddc8906bf",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-048-repeat-2.json",
+      "captureRecordSha256": "23d91cad3dbdeee4b0248370956b2b0a619daf129270b30fd19e6c0bc8dd6a60",
+      "rawFile": "raw/metadata-048-repeat-2.json",
+      "rawSha256": "ca8a03b8e6dd27287eef366389c9148a1892e974ba8cfd76163a80b8b2f8bf18",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-049-repeat-1.json",
+      "captureRecordSha256": "ebffdb5ea1a59689f5b7e9612b0a8e996a2e729e7d153bd6dd44676f463eb9e8",
+      "rawFile": "raw/metadata-049-repeat-1.json",
+      "rawSha256": "c4d36589cc871d4256ce453f8a118b3ff3b5cb0c6019b6a2c6733c41da3c6372",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-049-repeat-2.json",
+      "captureRecordSha256": "adff53d2ea7fc3a1e88f97a1f9ab16173dd294658c656f3a6e14faf624bac6b5",
+      "rawFile": "raw/metadata-049-repeat-2.json",
+      "rawSha256": "167fea3d586550c3bebfb104f5a680b9d84b51c7f0525fa87c0cfcad9bb65976",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-050-repeat-1.json",
+      "captureRecordSha256": "eabac94a9b7d76296972e1d739b2f5db13901a75bc86543087f2fc60edd73226",
+      "rawFile": "raw/metadata-050-repeat-1.json",
+      "rawSha256": "719de647ded4db828ec1bc7d553494cbb610f8bf045b053d6418512ed989f22d",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-050-repeat-2.json",
+      "captureRecordSha256": "ba6ebadf233ba7a8981b303e6cc9ced2bd388e4e86edb636e5101039085f0759",
+      "rawFile": "raw/metadata-050-repeat-2.json",
+      "rawSha256": "e325cc05b3c7ae80495e2abc5758a77040f4487f8330baa61b0f25b9d294a70a",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-051-repeat-1.json",
+      "captureRecordSha256": "aca169cb92e44f90ae3ac829098c3d445fd55a253a887354b2865abd9e7b3eb8",
+      "rawFile": "raw/metadata-051-repeat-1.json",
+      "rawSha256": "204499d93c53d7d3bab73c671b53671c7bacbc9717cc9ede14547ba0b28b1a08",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-051-repeat-2.json",
+      "captureRecordSha256": "4c8ca77eaf5130f9b081f86693df60d03da4a69ce072cb7a45acc4d7b8a69153",
+      "rawFile": "raw/metadata-051-repeat-2.json",
+      "rawSha256": "4aa083507b3512ad0068e1081bd036f7af02dadf465d6335e2bcec2a56f540f6",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-052-repeat-1.json",
+      "captureRecordSha256": "f191fe27d101f05b33f5325c8f016813d30722c70f5830a8555d260b5c76afaf",
+      "rawFile": "raw/metadata-052-repeat-1.json",
+      "rawSha256": "2609d088721572e951561d36f81a3343aa7410c3392a8c9462bc2808be5af7ee",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-052-repeat-2.json",
+      "captureRecordSha256": "235608091a213365a2b6f3c167632559b195bf62896dbf9e778bd53bb65ad144",
+      "rawFile": "raw/metadata-052-repeat-2.json",
+      "rawSha256": "8a7a7e90d3af695deb05b556785aa3c5e86711d65b16ef353813fc8e0a729b41",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-053-repeat-1.json",
+      "captureRecordSha256": "70a22a8ef9618ba241357c47794467d5d2ab384d4c636c58c1dd3a16cc228e48",
+      "rawFile": "raw/metadata-053-repeat-1.json",
+      "rawSha256": "96d1fb2b25c4bf563c05cb333ca77ab480eb92807791736628961dfd9446f5f7",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-053-repeat-2.json",
+      "captureRecordSha256": "a4b234942194d7c43ed2398a7a7970f98ddd39513f16c2f6f95d4a0246fdb1ce",
+      "rawFile": "raw/metadata-053-repeat-2.json",
+      "rawSha256": "7c34ac4b02c4276e5f8e3d721567f2f6fc636e77c9e6a951aa8c0dfbb952449c",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-054-repeat-1.json",
+      "captureRecordSha256": "0d05f183fb735f5f7d6055713e5e19a7be5d5336698dd0613bd61590249a1746",
+      "rawFile": "raw/metadata-054-repeat-1.json",
+      "rawSha256": "831ae55bd258f84dd8e4771104e04bb25d869d071ee2ca729446b33b49dde7fb",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-054-repeat-2.json",
+      "captureRecordSha256": "4cee4297a390c64e5b450b6a1e4715f37085c80f586675013bc28286069bb1b5",
+      "rawFile": "raw/metadata-054-repeat-2.json",
+      "rawSha256": "9e12af50208fcad7867281e2320d40ba6869b7688fe854c13873b28859e7a592",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-055-repeat-1.json",
+      "captureRecordSha256": "2e4fbba5364f784a6633451e430880e4efad73c7f668920a78f6cfe743a3e801",
+      "rawFile": "raw/metadata-055-repeat-1.json",
+      "rawSha256": "4f2625436ccd373a3eef2a440076fa9235f52628e8f773dc429da92f4cddc67c",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-055-repeat-2.json",
+      "captureRecordSha256": "e7f0c5b7cc654c205cba317ca542d9238dd1143c9b3ee50efc662717ca31294e",
+      "rawFile": "raw/metadata-055-repeat-2.json",
+      "rawSha256": "e95c53e6f4b6742476fd3255f83912d238a8f9a06a244ad1e98ad65d628106ff",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-056-repeat-1.json",
+      "captureRecordSha256": "956f73a45208bd0a5c72417952ca739e9fd4598ee1990eb465aab75d05a415e8",
+      "rawFile": "raw/metadata-056-repeat-1.json",
+      "rawSha256": "bc19de5df2c0922883a12bd8017924125ea37dd2881221ba8545fb3868c769ba",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-056-repeat-2.json",
+      "captureRecordSha256": "7b5a8cb342f9c8529e7f488af3fcc99145167b526749e25a33ac00ecabc1d0f2",
+      "rawFile": "raw/metadata-056-repeat-2.json",
+      "rawSha256": "db510b8592c28e22095fbaeaaaecf6f83a48638519c5edda7fe796cb09160a1b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-057-repeat-1.json",
+      "captureRecordSha256": "05e40682fccce72eb5e655eedf6cc245578fe9f9bbbdd084ad6c2da0c3d30908",
+      "rawFile": "raw/metadata-057-repeat-1.json",
+      "rawSha256": "cba7e8b3e7aa90cdb20685ea2b8fe51edfa62eafa5ee256e026839d10f40b20b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-057-repeat-2.json",
+      "captureRecordSha256": "c79106faf48ccb1e4cc99d2eec5379b06dd6a5b16a571d10dba323fac044e2fe",
+      "rawFile": "raw/metadata-057-repeat-2.json",
+      "rawSha256": "41a48f932d35efe08bd639b0b8d35a4ed82408c45a0bdff2dfe2fbfff71e9908",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-058-repeat-1.json",
+      "captureRecordSha256": "4f4bc37dbb350026bfb3dfc5c6861b76f374d5bb5db1d45b156469f12621c57a",
+      "rawFile": "raw/metadata-058-repeat-1.json",
+      "rawSha256": "8a4ac486e83e885ad95f1ecd877111c25085139049ed9b3f5870cb7843cb89fa",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-058-repeat-2.json",
+      "captureRecordSha256": "adda7b9e4b719b13432038cd49800573226c56cbfea881ace517fd6d8c2063e8",
+      "rawFile": "raw/metadata-058-repeat-2.json",
+      "rawSha256": "155ed16969f0d31d26256977e759c795c52e0ce46b8361f3ab93f503f55918e4",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-059-repeat-1.json",
+      "captureRecordSha256": "c513fa2eec7c842f2a4ad29056808c0c729f9ed2b1531e20c2be45212a69b435",
+      "rawFile": "raw/metadata-059-repeat-1.json",
+      "rawSha256": "a9f5374e52ab6a6983e3664dedc28f54bec6ba7f8182dd6a62989a83cffdaf9a",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-059-repeat-2.json",
+      "captureRecordSha256": "4e631c1e961fda3beef294ab407e52ac2071473840444f38b27dd9af8ce1eafa",
+      "rawFile": "raw/metadata-059-repeat-2.json",
+      "rawSha256": "346a89751c926fb0b1ce4e0329f918bfd76fe2c24d99d0e9c086c85e22459b95",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-060-repeat-1.json",
+      "captureRecordSha256": "09471acf0c35f9f11fbffac2341b42dbb756dd522de951049f17081d7358680e",
+      "rawFile": "raw/metadata-060-repeat-1.json",
+      "rawSha256": "e3a9ee50516c3e83136bfe34a6bef71f1f2129608c32850acc9ba652b4a60ce0",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-060-repeat-2.json",
+      "captureRecordSha256": "39b7a73a77ca6ae630830d68d95e03e264cf6927f30ea1f945bca42647f11482",
+      "rawFile": "raw/metadata-060-repeat-2.json",
+      "rawSha256": "6bbcfcb811b20f913b273d4bbda5c16547bb39906a3e96e002cfa553a8296969",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-061-repeat-1.json",
+      "captureRecordSha256": "03635129595b6a5ba5f9a6f938d06c49bebf9e33f577e5f5df5c4ded10ef83ed",
+      "rawFile": "raw/metadata-061-repeat-1.json",
+      "rawSha256": "72a6e2816244763f9dccd78fa5d01ad6a7660835572d1b878c48272a2349545e",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-061-repeat-2.json",
+      "captureRecordSha256": "58c9e2198f580a7679e5333e8b7616b640e05272010570093dc29d2c9b40a2f0",
+      "rawFile": "raw/metadata-061-repeat-2.json",
+      "rawSha256": "05cb89613e05ff08b0f2e56c568dd98ec31227585e629ba9dfe47bfc3d59a193",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-062-repeat-1.json",
+      "captureRecordSha256": "572f61e9b651f637e8236255ee32994b70f39b5507269248a78d63652057f6c2",
+      "rawFile": "raw/metadata-062-repeat-1.json",
+      "rawSha256": "a3e3ccc64e3bc9c015f5f903716fc5af69d808e7bef8fcaa45754bdf04295df5",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-062-repeat-2.json",
+      "captureRecordSha256": "17274abf1aac82bd28dbd4a190d0176006710aac595554ddb3842a8d7bc45728",
+      "rawFile": "raw/metadata-062-repeat-2.json",
+      "rawSha256": "5ad7c90290fe1e30d5ae5b10ff4c21dc51584567b96137da07b0b166f88dfda6",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-063-repeat-1.json",
+      "captureRecordSha256": "8dce4a6f42a140ca2f204c6aad58114257ee101705b2cf0aa86ce4de3c6d38a8",
+      "rawFile": "raw/metadata-063-repeat-1.json",
+      "rawSha256": "2f073327f8df4ed5bf5534b1820803a237ade122145be7c5f19ac9c30c3b364c",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-063-repeat-2.json",
+      "captureRecordSha256": "d812445f053831e186a99b5524f6b854b3e0a2bf9b532470e182aa7d8ccd0e1f",
+      "rawFile": "raw/metadata-063-repeat-2.json",
+      "rawSha256": "725a76cc3084f462e203baf1a5be098651af98d3d728ac7922f5049a2490a4eb",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-064-repeat-1.json",
+      "captureRecordSha256": "5d72bc99e6d98e5f2d8a08f78f4707c0b6450847e47aa0ade21c48064aabb8ff",
+      "rawFile": "raw/metadata-064-repeat-1.json",
+      "rawSha256": "59345a88e6d89a3d0b170d84eb78b0444ae4b1643c095d4533c8c22a1a6edfed",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-064-repeat-2.json",
+      "captureRecordSha256": "758b48df0a40c048d5c403adf925b91eb7ea2ecd99d217d7ec54227e2ead1bfa",
+      "rawFile": "raw/metadata-064-repeat-2.json",
+      "rawSha256": "c032934a5921e8d9103a67548fdd2750aadd3ac04e851ecd7f45b489f7128567",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-065-repeat-1.json",
+      "captureRecordSha256": "96425f7bd9d453622d6d20c6440042a5e05a518946ed7a9af924bbbe1d2a275f",
+      "rawFile": "raw/metadata-065-repeat-1.json",
+      "rawSha256": "bfdee368cd9c0a63f38f72079719286a73c4262b6e8f6812949daae98a3549dd",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-065-repeat-2.json",
+      "captureRecordSha256": "33253571fdea03d96b6636c59583cb03f9c6904c0964baa09313d3105e718487",
+      "rawFile": "raw/metadata-065-repeat-2.json",
+      "rawSha256": "16ac7014538901284ebe6f1c56723ce7daefe5a6e93b37449fd738ff1232f310",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-066-repeat-1.json",
+      "captureRecordSha256": "08f901a893ee088b5279277acc51b1324615578f96afde2df8d3f8ee2ae4ebc8",
+      "rawFile": "raw/metadata-066-repeat-1.json",
+      "rawSha256": "8195057f5429f979749d1a86226bc5d3b489ea629991858b86895c40afaac867",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-066-repeat-2.json",
+      "captureRecordSha256": "99a51a4b8928833da1ae13545fd08087084d16af4754e54e40bc4b99b977a055",
+      "rawFile": "raw/metadata-066-repeat-2.json",
+      "rawSha256": "97da09a61e15303b8870b95cd1c0534158baeb34d310c3b8e027f120394df7f1",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-067-repeat-1.json",
+      "captureRecordSha256": "6ae0195f1da8327c8ec031882a8bfb093636e9ae4411a7351fbf12e008c16683",
+      "rawFile": "raw/metadata-067-repeat-1.json",
+      "rawSha256": "6745b5a8a632655eba6296f8eb1c3a975afbc1e366666822151ede35951a9cf0",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-067-repeat-2.json",
+      "captureRecordSha256": "77f51e5b6e706ec273a7bbc3c9619bde0edaebed33a2ef18e1b6bb5839fb0430",
+      "rawFile": "raw/metadata-067-repeat-2.json",
+      "rawSha256": "5a052bdcfbefabf6d55ad85725b9e7e5a7cb05814fe74b7375038556b0ec65db",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-068-repeat-1.json",
+      "captureRecordSha256": "6e50c0b1084a9b0833fee0863e12f00a8ea46f75eb245609523283f0445571af",
+      "rawFile": "raw/metadata-068-repeat-1.json",
+      "rawSha256": "7ebc3931570de114f8344165e8fa607ac3947aa4500b1d5d0e659174a229ebcb",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-068-repeat-2.json",
+      "captureRecordSha256": "4a2bce4b50006960951d06599cdb70a6d331e2b4aa2d2ac32ab880613003e8e1",
+      "rawFile": "raw/metadata-068-repeat-2.json",
+      "rawSha256": "afe9ebbc16f93a9c535ba4c79e43f8af8ceae0db6aa2a7018167286b106d9d37",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-069-repeat-1.json",
+      "captureRecordSha256": "d3ddf4d28c267b551e60124f16e22214478f4972b4d436667bf682b59616671f",
+      "rawFile": "raw/metadata-069-repeat-1.json",
+      "rawSha256": "2d93739e5aef043afd1f0988033cfc5a131c97cb6bd8cb1b1388a27defc6b18b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-069-repeat-2.json",
+      "captureRecordSha256": "a0ee95eedb3f5f89b351b7e941bd93e5cb7a3998d4126537315f3217f380972e",
+      "rawFile": "raw/metadata-069-repeat-2.json",
+      "rawSha256": "2f5e255c7c61ab862502dfb90f963c679bf5e59bdf57129d9b70b14a8248e14b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-070-repeat-1.json",
+      "captureRecordSha256": "d6454c492c2d93626609c9b88cbe1f03554f344f96bc56316aa5de2c46446f78",
+      "rawFile": "raw/metadata-070-repeat-1.json",
+      "rawSha256": "26e8b2af50e47507f991240389c56f57653aa2c5a36f4c224430578138d0f00e",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-070-repeat-2.json",
+      "captureRecordSha256": "e4784e21c6519e251875e552b5ecd2a3c45f7243e59394d84787cdfcc0aca333",
+      "rawFile": "raw/metadata-070-repeat-2.json",
+      "rawSha256": "b2f35fce9564442a2b012f8748507284c94cda0c6a7813ccd019bbef3ab2bd3c",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-071-repeat-1.json",
+      "captureRecordSha256": "b7bb677cc6729f7045e59bc29e1ec559cd924f07f50a48b20a4c55b7d55c5e78",
+      "rawFile": "raw/metadata-071-repeat-1.json",
+      "rawSha256": "94719c2d8e4ab497b3877fbb49d2046dae9b92969ab4049bc558f009813d28ce",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-071-repeat-2.json",
+      "captureRecordSha256": "a413795f53189be1d7d935c2546d0e0ab019491d00fb8a8de4717e4db5eb3e0f",
+      "rawFile": "raw/metadata-071-repeat-2.json",
+      "rawSha256": "c0218e6bc1ffb2663c4246f7eed3a9fbf52e817ca1016205977f875d2dae72b7",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-072-repeat-1.json",
+      "captureRecordSha256": "35e63b9f277c212e7fd613743405b1540e113163b5cd4310e760636aea7b7428",
+      "rawFile": "raw/metadata-072-repeat-1.json",
+      "rawSha256": "3c611859824a0b2cac291dbfb0985290d2290e76ce785bfd92c2bd065bb3d058",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-072-repeat-2.json",
+      "captureRecordSha256": "83036d4e3f61fde228634ea3daf0877393c7c2ee62f97ec72b72240eaf431926",
+      "rawFile": "raw/metadata-072-repeat-2.json",
+      "rawSha256": "cb3d9755d1b2aa6cb97c067e4811b4b819b3d5af4043106b025ebcb99754ffee",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-073-repeat-1.json",
+      "captureRecordSha256": "f8214484517d6912bf1a8de714a78c08f4cac48dfd763be26d1005fd74805ab7",
+      "rawFile": "raw/metadata-073-repeat-1.json",
+      "rawSha256": "517799962d299313ef0eabd90b2ffe7e97336632c9b486d77f5fc369714528b4",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-073-repeat-2.json",
+      "captureRecordSha256": "f719e296f8115377fa2060505efab58cf1d5a0a23e6821d8d031be9092517213",
+      "rawFile": "raw/metadata-073-repeat-2.json",
+      "rawSha256": "4343232ac17f5f745a86e54476ef5390814bbf1cc4f30292c31c7b86e7438809",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-074-repeat-1.json",
+      "captureRecordSha256": "93c85af6c73dea1c1cd4276820da46a72f3f501024cbdee0d73d643b1eb6217c",
+      "rawFile": "raw/metadata-074-repeat-1.json",
+      "rawSha256": "5af9fd6196d139feb5bfdfd43482ac5933789068c8d7e91e408b2eb95c47d8b2",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-074-repeat-2.json",
+      "captureRecordSha256": "7507fa73a5317f9b3a91732c6a36627a1facc901a84f1875190a2c823be12104",
+      "rawFile": "raw/metadata-074-repeat-2.json",
+      "rawSha256": "7f41bd357e1170b5a8da8068fb63457df4dfb57c098bf8b27842e11d37ebc8b5",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-075-repeat-1.json",
+      "captureRecordSha256": "8f96f54a95bd98e5f43ddf9ca446e0a823d48cee52eaa3aeb4a25971236765de",
+      "rawFile": "raw/metadata-075-repeat-1.json",
+      "rawSha256": "34988ea5109758e35343a46338139589ffd241e8cd7da7110eec877c672bcd39",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-075-repeat-2.json",
+      "captureRecordSha256": "8659dcc9059bb64c50500057ac65d40210b3ff7f0fb0d93debcf1a552ebe1e8f",
+      "rawFile": "raw/metadata-075-repeat-2.json",
+      "rawSha256": "fffaa2484c5664b3742e5fe8531e08379544924c36570afa3694d85fa34c40d6",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-076-repeat-1.json",
+      "captureRecordSha256": "bafce5f6f50c1150aa5c4e1087494704dbe55bf2d9005f3946c24f5a5d873442",
+      "rawFile": "raw/metadata-076-repeat-1.json",
+      "rawSha256": "f11cef0f2a0e34e5f9b245092639568104105075025a083fafe8449f5c244af4",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-076-repeat-2.json",
+      "captureRecordSha256": "09dc4890ca7373022370138d40ad0cc8aca0686ca235a606b73f5e780fc4de9e",
+      "rawFile": "raw/metadata-076-repeat-2.json",
+      "rawSha256": "1f13b6ae69531d5444d4566b52f88368f95ec90bd8666d6b01c1d83921afd9c9",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-077-repeat-1.json",
+      "captureRecordSha256": "87c3c9eb00429f0265068bbedc4ca5410194ef18256d1bc34bff4fea80b052b9",
+      "rawFile": "raw/metadata-077-repeat-1.json",
+      "rawSha256": "85905689235e2e4a18156fc50190a8167f434f48871411b23a25ae45bad9581b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-077-repeat-2.json",
+      "captureRecordSha256": "13b3a6f4b30546d1431afceac9d38319d3ea0ed7a863e66f2cd8357e0f8a9157",
+      "rawFile": "raw/metadata-077-repeat-2.json",
+      "rawSha256": "1bfd05c9aed26425ecc1ad4be42045e55bf46673bb2cfc917f26a405faa3fd58",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-078-repeat-1.json",
+      "captureRecordSha256": "ffb2782e6073c6a831c83e9fbadb1892df23fb33620dfad3cad38c85cee946c3",
+      "rawFile": "raw/metadata-078-repeat-1.json",
+      "rawSha256": "05b5f77412aaa01f69d048f0efe4bc33201a7366ec55ce5e46f8452fa95428cb",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-078-repeat-2.json",
+      "captureRecordSha256": "ad7be2646dd89fa88341574c805ca0001537fe413e67a0af446db4fbb2af0fae",
+      "rawFile": "raw/metadata-078-repeat-2.json",
+      "rawSha256": "5a78c7f5d262c086e73bcb2a3c01e9d56a752205fc3e29338461bcf4adeb5179",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-079-repeat-1.json",
+      "captureRecordSha256": "84deac1ad569f76fa991966cbc3200c1004c3442e24eca557a987039b3a6fe09",
+      "rawFile": "raw/metadata-079-repeat-1.json",
+      "rawSha256": "6d0af769d593f536ca576660bf213e9f9d1b84a292c4cbb5d6855356ede7f3b4",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-079-repeat-2.json",
+      "captureRecordSha256": "f7e368deef724e1ceb16abaa2a41465278f1c8f6a19e4db97eae872fa12022c8",
+      "rawFile": "raw/metadata-079-repeat-2.json",
+      "rawSha256": "6d0af769d593f536ca576660bf213e9f9d1b84a292c4cbb5d6855356ede7f3b4",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-080-repeat-1.json",
+      "captureRecordSha256": "e4f494edd28ba0142ab7cab682d7808fc125e044817f9d24fb658d8f0f9700a6",
+      "rawFile": "raw/metadata-080-repeat-1.json",
+      "rawSha256": "b6737f0a000e16f81e0a56d2814f19261bca67d2cf86476e75ae8011e70ee608",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-080-repeat-2.json",
+      "captureRecordSha256": "26f5bddc2a009fde442da34cb241cb04a54eed27c18db6f26d0f33e84c4166b0",
+      "rawFile": "raw/metadata-080-repeat-2.json",
+      "rawSha256": "3a70458b135c91a703a08d838bcd34572d8d9a5e5046ad79c90fbf3b16645903",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-081-repeat-1.json",
+      "captureRecordSha256": "9723b49689838db91db16ed6ac208fd7b445c363e0b2667da85154d108a19dfe",
+      "rawFile": "raw/metadata-081-repeat-1.json",
+      "rawSha256": "4b7ddf7a20cfd65089aeef4f19b0f68ed50bed4773018be4b0e9ee1a06d666dd",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-081-repeat-2.json",
+      "captureRecordSha256": "afe96019729e8c7bef94913c9be8792ccd32f0fb632146230e393d016cd35d67",
+      "rawFile": "raw/metadata-081-repeat-2.json",
+      "rawSha256": "4183081ae9ac6b2417c3c2fb56d54fb9057db2fc28e97772310d089f1a46970c",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-082-repeat-1.json",
+      "captureRecordSha256": "8393f4e2a4b59cec0f9e2a9dae25e1dabc6ca24d091fa27c3e3ea485304b5dda",
+      "rawFile": "raw/metadata-082-repeat-1.json",
+      "rawSha256": "a406051253a119024c9dd90d4eeecf9f625104a881eb10d8c7f5205f3b851fb7",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-082-repeat-2.json",
+      "captureRecordSha256": "5e4a625d1e08635d388a8c9f9e302220937cd68f340f9656998bff0df80e7bed",
+      "rawFile": "raw/metadata-082-repeat-2.json",
+      "rawSha256": "4df5499bfd5339fa00185294dadeefb606f1c25e25408e4bd10667e9847b64a2",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-083-repeat-1.json",
+      "captureRecordSha256": "3ae563734a2a0bc39802abf4454f0623e9cc6681a83501bcc7beb922b41c49ab",
+      "rawFile": "raw/metadata-083-repeat-1.json",
+      "rawSha256": "47511fa71a497605de3eed665aabd1d9f1a0eeac70973c7e154783bdb49235a7",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-083-repeat-2.json",
+      "captureRecordSha256": "a91af01f407e6df14805587d7ec828596917988674d5c2cb3b0ba968ed0f37b3",
+      "rawFile": "raw/metadata-083-repeat-2.json",
+      "rawSha256": "db84e87e417b732c5f5b7d369a50f73b50d9c1fbfa2f1b27a3bafe5e0944248b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-084-repeat-1.json",
+      "captureRecordSha256": "89f9e264e71e2a289b3e56e36b521d62704727eaae58769009a8e038f2169698",
+      "rawFile": "raw/metadata-084-repeat-1.json",
+      "rawSha256": "cd5f45b7bb58f4c191634ab2cbd71136bdbc52dea2604c209dd037002582be3e",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-084-repeat-2.json",
+      "captureRecordSha256": "b5168d019c76d71b59ad8155cec4f0650e988260b5103a333467c790a1eeb429",
+      "rawFile": "raw/metadata-084-repeat-2.json",
+      "rawSha256": "ef0842567a51bd797a2d4490b02d2a5ff4efbb801e4d368a057a2bd032bb1acd",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-085-repeat-1.json",
+      "captureRecordSha256": "18c5313783d5d29742dc52af36e9956b7286d6406e8dd272343cfbc2e9d1ebee",
+      "rawFile": "raw/metadata-085-repeat-1.json",
+      "rawSha256": "60c34c268ad21c6ad8949415a4d9ec9c557c6dbe7fc39738229679fdf6fb9ae6",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-085-repeat-2.json",
+      "captureRecordSha256": "2802cf625fab62f091611e94fe1d760f05404f274aaf706af2f2c38fd9b10c52",
+      "rawFile": "raw/metadata-085-repeat-2.json",
+      "rawSha256": "12eadb28da1000bdcce761e4be5726779e070c53e1609fb1dff3bb96957bf94c",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-086-repeat-1.json",
+      "captureRecordSha256": "a8671651098ea511fe06e702af1c8f416308015c8c07b63c2de53c42085f3d63",
+      "rawFile": "raw/metadata-086-repeat-1.json",
+      "rawSha256": "9c0ae3ab22f62c7fdc2254110cd8d0adc6b1f06fe3b51ce1c5fe8e77f55b5c48",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-086-repeat-2.json",
+      "captureRecordSha256": "353db807a1040e4b7d0f95a429203ef07cb40f59513efc37732e4dacc7d38f52",
+      "rawFile": "raw/metadata-086-repeat-2.json",
+      "rawSha256": "71e6e7503be12d4e45f788e168bac7a027ba0a54be1a2f7039c3ec3dbb180a5d",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-087-repeat-1.json",
+      "captureRecordSha256": "08a95c2e564d710058b2a0f507aa17fb08a96bb083ec43a923979240149e13c3",
+      "rawFile": "raw/metadata-087-repeat-1.json",
+      "rawSha256": "7d8cc0aae836290d02d88b61731ddc4980a83de8a036aee22cfdf9e1c1854a8f",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-087-repeat-2.json",
+      "captureRecordSha256": "6efd8702fcb5b68a86883c1c6187717a1a56202fe5ed0835c4fca0e8d011e2a9",
+      "rawFile": "raw/metadata-087-repeat-2.json",
+      "rawSha256": "0842b98d901bb5532a9a9d34b5eefe4cc19db70f5b84c1fd99dba11037daf42b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-088-repeat-1.json",
+      "captureRecordSha256": "90e5b55eff21b0a6c9ddb4fb248bc93fb7e97df9e6a17bf262b026acf9aaa9b5",
+      "rawFile": "raw/metadata-088-repeat-1.json",
+      "rawSha256": "3d6da7759b5275a0d3b2c0f6c8ec01b925c1933db2ff0d95643414803bbc37b9",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-088-repeat-2.json",
+      "captureRecordSha256": "53a7024dc64a4e8dd4df0db569ed241fde56740210e88cfe89a76bf72c94692f",
+      "rawFile": "raw/metadata-088-repeat-2.json",
+      "rawSha256": "ae973af324e9e8eefcdf5074913848b4dd43f4d85b26ee7241b2ed806ad1148b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-089-repeat-1.json",
+      "captureRecordSha256": "6eb705338c26634772822b13eb647232d55b9c0ff11dd0ea9bd19a9323061f3e",
+      "rawFile": "raw/metadata-089-repeat-1.json",
+      "rawSha256": "7a7dfce8cd527dddc71d2a58e01760c345c8e70f169e283de4a21d5fd39277b4",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-089-repeat-2.json",
+      "captureRecordSha256": "9e877f04a23e1654260467a36181ccebc6ace5313d002a8cb331465a77e15975",
+      "rawFile": "raw/metadata-089-repeat-2.json",
+      "rawSha256": "694e91ae916541547a8b38780817b448b7145c0a804c230beae1312625e152f2",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-090-repeat-1.json",
+      "captureRecordSha256": "5215a49cdabd40503e38161b3a5dc73f8fd03768e65a24026510c1c2f2b8afc9",
+      "rawFile": "raw/metadata-090-repeat-1.json",
+      "rawSha256": "9e53d93e61bb85941b2a36af618363bdf65b406550653315ca334fc6b350f5f4",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-090-repeat-2.json",
+      "captureRecordSha256": "c304e90113e2667d8cddb99b4f90d580e49c8e34838d8fa5b1b009c581ac3b71",
+      "rawFile": "raw/metadata-090-repeat-2.json",
+      "rawSha256": "110279501fb4f1431400457cfea3fe74bf82c226c77056ef162b76b288602a71",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-091-repeat-1.json",
+      "captureRecordSha256": "dadd200792b72edb59d46d50705d9b5343e30cdc2bfc71effb3f2bf50997f639",
+      "rawFile": "raw/metadata-091-repeat-1.json",
+      "rawSha256": "9229f57dfe037148f5a271ab2b843183b8c77f7c38b402c509b872d68ec590d7",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-091-repeat-2.json",
+      "captureRecordSha256": "f168608433f04ce80cd3c290ca7038cea103ebe63afd953b232c920571a8ebfb",
+      "rawFile": "raw/metadata-091-repeat-2.json",
+      "rawSha256": "18b4dd9870ec26784c58cc0e5776a5be3e7f231344ca5bc73ff6c921f0881b96",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-092-repeat-1.json",
+      "captureRecordSha256": "bc922816f4e9a09a335f6cb6f4ee5dd224399f102d039fe2270027682c9d7584",
+      "rawFile": "raw/metadata-092-repeat-1.json",
+      "rawSha256": "8257e30f5dc01c4360f0e75815ff39e69c133dc177042b8fe8d9d2ffdfbd7b11",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-092-repeat-2.json",
+      "captureRecordSha256": "83d21954b828750291df26e0f2099fda1a1aec0e3f8e2e12463bb99893422cc5",
+      "rawFile": "raw/metadata-092-repeat-2.json",
+      "rawSha256": "679d021aba0fdf347c048aaca670dbd98140b8fbe79ec24271c430034c611dbe",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-093-repeat-1.json",
+      "captureRecordSha256": "674e3e77a18429079aec51d9904845eec8cae8ea92e36212ada5c9d5e5a4cd74",
+      "rawFile": "raw/metadata-093-repeat-1.json",
+      "rawSha256": "596dff12ec70c69170da6fdc9b8d9281bd0af44d46f9b7a64d87f5b20d1ab682",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-093-repeat-2.json",
+      "captureRecordSha256": "fd935ac716a27ffbf9cbb38f5259c9bb84515d9f25afb1b06d5f53a41d88a47a",
+      "rawFile": "raw/metadata-093-repeat-2.json",
+      "rawSha256": "7f3ea82148c4a03f30e846584315b1d139ad6313775235475d2bbba2dba554d2",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-094-repeat-1.json",
+      "captureRecordSha256": "6425f152f0340fbe8b1c6e673b913bd28f1c43f71e66b6cc0bc913e5a61547e8",
+      "rawFile": "raw/metadata-094-repeat-1.json",
+      "rawSha256": "66d9a55a33a981f7e39039a9d3eb0bd25d142b8089f301d23fc0732a4950f822",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-094-repeat-2.json",
+      "captureRecordSha256": "846550a136b549f5556fd723e92e17954b06601f3672b668b80ebf139cb52e83",
+      "rawFile": "raw/metadata-094-repeat-2.json",
+      "rawSha256": "25fb922613484d40aa58a59166b3cb102cfb52f92b3cc7fc995a0bb76b4879b0",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-095-repeat-1.json",
+      "captureRecordSha256": "525aca97dac741d671478357425e52668f1090fb4714d2cfe03c449687ac20cb",
+      "rawFile": "raw/metadata-095-repeat-1.json",
+      "rawSha256": "aad58a2c41dc64b609c76acfdeb8510ad61647aaeb34d1d068e1b6f9d742a035",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-095-repeat-2.json",
+      "captureRecordSha256": "1df7301278276ab30bf84e0c4421b80f261a3cc9785bb009563939c0008ec535",
+      "rawFile": "raw/metadata-095-repeat-2.json",
+      "rawSha256": "a888b3c907aeb2ed069724af2aaaff35ba412275e3a25418ef9fb81207de3a48",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-096-repeat-1.json",
+      "captureRecordSha256": "431ea73612085a6f13f8f6a3355159ca014d550812e0ca4cd8c6aab8f8a6946f",
+      "rawFile": "raw/metadata-096-repeat-1.json",
+      "rawSha256": "94ca988f0a92200663bbf2875558b4a9e96968f8a099d526c7d4c0d791901c96",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-096-repeat-2.json",
+      "captureRecordSha256": "766a34eb2763f1bf4028530b744450c0075de15d7967ab3c09cb672337e30d64",
+      "rawFile": "raw/metadata-096-repeat-2.json",
+      "rawSha256": "151b96fcf72ad95a06e933e7a196db6582cad3ac7059ef46f4910de995216014",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-097-repeat-1.json",
+      "captureRecordSha256": "6459a9f262e524d715374265e3e58658d67500d1d8494867c74ae38ed1220f12",
+      "rawFile": "raw/metadata-097-repeat-1.json",
+      "rawSha256": "2a01511063a3f3a9d954d6f007e00d79ed355d6572ad4b4618d04e8630e30df7",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-097-repeat-2.json",
+      "captureRecordSha256": "5e964cba5e9536e286db33c206536b454ec1ef9006923081d327f79cf1da1dc5",
+      "rawFile": "raw/metadata-097-repeat-2.json",
+      "rawSha256": "3d18a6da5942a95f11d17851edfc03bf76c17c320b52ed724757ad6384453403",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-098-repeat-1.json",
+      "captureRecordSha256": "25efa3df0f811f6078084f8d6bc0ae36209d240226df68b473090bf1325397e5",
+      "rawFile": "raw/metadata-098-repeat-1.json",
+      "rawSha256": "13280e0ef4c41f2888b3597c649a4fabd1b1b83ee97908ea7a4930e9b4b5443d",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-098-repeat-2.json",
+      "captureRecordSha256": "09ce559ead370589a2fb08e8eedefdd5006ddcefda9c18ecb7ff531463044eda",
+      "rawFile": "raw/metadata-098-repeat-2.json",
+      "rawSha256": "f494e625f92dc8a9cf8507082dce9aafd4556b25546d9d6b6fe63292ed6b107b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-099-repeat-1.json",
+      "captureRecordSha256": "818b162f5d7c58e9ba7a3978dfd07d841dcfadb5968054f99ddc1ba184b10bc1",
+      "rawFile": "raw/metadata-099-repeat-1.json",
+      "rawSha256": "26d2e40ab7135c3f5d2b4a8986976027e6627d36897023cf49a8c4a95688cb04",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-099-repeat-2.json",
+      "captureRecordSha256": "062932e2aeb9bc96132a335a2274e43ddf526f4ca3c1313f4fe19e305de75fae",
+      "rawFile": "raw/metadata-099-repeat-2.json",
+      "rawSha256": "b53972b9273e31cb4bbd4c777e714f96dea51d58467aeeaa952eecaee158d192",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-100-repeat-1.json",
+      "captureRecordSha256": "9e86b18923e2590b40cda4a5f6e321dd156e0819f23e4d511c3f92e8f74a3dac",
+      "rawFile": "raw/metadata-100-repeat-1.json",
+      "rawSha256": "6178747676122f8a5bf032a71bdd106328e49cfb3d1cb7d51176a6ed2886574f",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-100-repeat-2.json",
+      "captureRecordSha256": "f5dd5c7ad797590d7d77c2259f15f1f28424a6c2e52a462dd84716213e662345",
+      "rawFile": "raw/metadata-100-repeat-2.json",
+      "rawSha256": "898027abb84c523f3f645595215a00bb30976fdda11ca29022c50b4963fee2a6",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-101-repeat-1.json",
+      "captureRecordSha256": "2cc7c69e2e6cd6b89009889563d8d9fbfe8ef3fe42aa1873cb8b5cf8da68881c",
+      "rawFile": "raw/metadata-101-repeat-1.json",
+      "rawSha256": "8c48a8033f85e4335d9838283d75049466a599f7fff252ca1712c36d4608f398",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-101-repeat-2.json",
+      "captureRecordSha256": "912744bde9e0cb3516ee55458ba636d65dd6ea5607b61f1e09fdd096dddd06c9",
+      "rawFile": "raw/metadata-101-repeat-2.json",
+      "rawSha256": "51a0329b9e2b83100fb67e55d0df23e59e7bf16461a05598666c0f5bc079fe13",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-102-repeat-1.json",
+      "captureRecordSha256": "62ad189996987130f8c8840542fb9c3f076068870a7e060bbc4e15aaa6aa1439",
+      "rawFile": "raw/metadata-102-repeat-1.json",
+      "rawSha256": "0c9a9fb32c30e18e34fc960b1a7685cdf6ea3cb56006dd5d9f7fc9d528c35fe1",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-102-repeat-2.json",
+      "captureRecordSha256": "1f6b85e9c7db12caf05da1b5b6cc8d415fdac7aff0a5bf7a927851b538477749",
+      "rawFile": "raw/metadata-102-repeat-2.json",
+      "rawSha256": "733a1bfd6cfe03a4f4563128b0355c0f2e26968969334c950868d2a9daf0248c",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-103-repeat-1.json",
+      "captureRecordSha256": "d8d3765ae4f980c8ac8ff2f014d61b990b952173cf8bcf72e027d83dadb04c8d",
+      "rawFile": "raw/metadata-103-repeat-1.json",
+      "rawSha256": "e6c8c9a4bc7d5b2fd85d5193ccf3aed66a07ee184290bcdd1733c32cd885bb13",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-103-repeat-2.json",
+      "captureRecordSha256": "eb073b46b853ad48ddc1c4934a8226d93b81ada0a09701a4f90a267a60c61530",
+      "rawFile": "raw/metadata-103-repeat-2.json",
+      "rawSha256": "d4aa5ca147f9c9430f7959deeb0621669b372c2ff9aca68b21327a36401a9a82",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-104-repeat-1.json",
+      "captureRecordSha256": "2a87f5949ab688ddc761c162c1dc890fcc2f2d8d68a98811545aebfb2dea8cba",
+      "rawFile": "raw/metadata-104-repeat-1.json",
+      "rawSha256": "2bb4299a5adc6327bf34093375b4700f314a26a26126ed53d009c68a660fc7de",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-104-repeat-2.json",
+      "captureRecordSha256": "ede38b97abd14d7b082226622dbb007d5273913d18c1b36a80edfdd0eaa27681",
+      "rawFile": "raw/metadata-104-repeat-2.json",
+      "rawSha256": "1a4db1cda785d430d30c0d0ea34b04c2c83fbf2ad1402c6e5db520d8d75eb031",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-105-repeat-1.json",
+      "captureRecordSha256": "626efe54d6a04c62d1792f562850ba824cbaf9e565ab1ac4a4955aec99a4e82f",
+      "rawFile": "raw/metadata-105-repeat-1.json",
+      "rawSha256": "cb67880017a1b8b0129c606202fbbac144b668c9334dc6a429e856f59f71ab26",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-105-repeat-2.json",
+      "captureRecordSha256": "7ad1754edd5f3b3869fbd3ac4ae9b35ad4bc5022d61df90f3b22484317904b57",
+      "rawFile": "raw/metadata-105-repeat-2.json",
+      "rawSha256": "62491c7f3cb9686912dbf07c9f23571dd50afe3a3dfc716e71c6d722afa0e94b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-106-repeat-1.json",
+      "captureRecordSha256": "7638103dbe0594d934d74e6c25c5111e2d9bd951422673103ce7832e2cb84ff1",
+      "rawFile": "raw/metadata-106-repeat-1.json",
+      "rawSha256": "b2406f872c2476187c82ecbe15052c569efeb3ba6bdfb246d8b696d7c310ba65",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-106-repeat-2.json",
+      "captureRecordSha256": "4ab4784ff1d89c9f927793fe43fb196dd4c41b8324ed2c2b82466b2ff7dbe218",
+      "rawFile": "raw/metadata-106-repeat-2.json",
+      "rawSha256": "0c633891ddf99d1a40f38e41893f1ecc9c6c93e99f4df28417c02bef93ff3f1f",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-107-repeat-1.json",
+      "captureRecordSha256": "cd9ec5ac648344791d726e362666ad85fd3e1d0cee1badfed32a958e88db4bce",
+      "rawFile": "raw/metadata-107-repeat-1.json",
+      "rawSha256": "0aae888391ce319d9f36a93964e5f70b6227e3649b392c9b9a24f512cf9784bf",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-107-repeat-2.json",
+      "captureRecordSha256": "8473b1b8e148d10aadfd9c1a3ff577a3d5c3b3cc1d3f9f4cd3dcb5d91f7494d2",
+      "rawFile": "raw/metadata-107-repeat-2.json",
+      "rawSha256": "8e128341658dcc87e5695ff1adfe66fd6e6081ae5c8ba4ce66cf7c97e62958f8",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-108-repeat-1.json",
+      "captureRecordSha256": "5c08b2d32ccc842ad08feecb60f9b3cb8f8d94f1e8faac6c3b93d4174e8b2285",
+      "rawFile": "raw/metadata-108-repeat-1.json",
+      "rawSha256": "1836526c5a5b94cfa80a512b9b4847913a56c5f2b50f0b1c664b8035b517a30e",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-108-repeat-2.json",
+      "captureRecordSha256": "d896cbd6fcbd840eb2993e7a3eafd2442a45de1aef9a51b1f744836f9a3f1689",
+      "rawFile": "raw/metadata-108-repeat-2.json",
+      "rawSha256": "9306dcf42e1dc113218d751aec6850148a751766bff18cb91ed359802087c34f",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-109-repeat-1.json",
+      "captureRecordSha256": "905bc1a6d6c6b72899c14f5bb8132cd9beb033ba9ef0a0fdcde0c27e18baeae7",
+      "rawFile": "raw/metadata-109-repeat-1.json",
+      "rawSha256": "fc81344d46ad0da4e074e9c759287299d37e71e26df9db968cd5e6efadc68ec6",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-109-repeat-2.json",
+      "captureRecordSha256": "a3fdce6ffe0d41ca7c1de142f37c5b4af870b75a685aba9ceef71f1e9e1b4334",
+      "rawFile": "raw/metadata-109-repeat-2.json",
+      "rawSha256": "810fb10fa44c9c160305e0f296ae5917df07d3fc0bf606a708dd86569cd37184",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-110-repeat-1.json",
+      "captureRecordSha256": "c899d1e67a224aaeb6fb1a2474cc5413b8dc7a6548086262e8544d0e89d37513",
+      "rawFile": "raw/metadata-110-repeat-1.json",
+      "rawSha256": "9b7de78b3bc2ad65869637d44103382c2450d227a427bfbd7451ed55df6a42da",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-110-repeat-2.json",
+      "captureRecordSha256": "f731635ff2b61701d1c710a0356859c96dd1468f8219d951fc9d1eaaa159b845",
+      "rawFile": "raw/metadata-110-repeat-2.json",
+      "rawSha256": "46ad6895c3ddedbe926917b3714218074ff9dab80693b35671606a747499ef45",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-111-repeat-1.json",
+      "captureRecordSha256": "ef3ead4f6ee6ca33459b0ff646b1502713fc906ad436d05a3e417a85baede130",
+      "rawFile": "raw/metadata-111-repeat-1.json",
+      "rawSha256": "b19e0e9e8b3e17af5d3fff4711416cff6c52e062b3fec3c5f581e91110ec3a85",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-111-repeat-2.json",
+      "captureRecordSha256": "09acac7021b7e2d86fd2adeeef81502340533b3d2baa494c5299f2f38ca0d4d0",
+      "rawFile": "raw/metadata-111-repeat-2.json",
+      "rawSha256": "5f7188fa45e49daaa74eb96ebdee4e7f0aeded7417f828fb6f0f2489e32f6bd0",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-112-repeat-1.json",
+      "captureRecordSha256": "61476aa6b990332f6e34b4dac90c06cfa746ce486d108604975a54435c3c5931",
+      "rawFile": "raw/metadata-112-repeat-1.json",
+      "rawSha256": "2cbbadbd97b1b94bfca2fda3c54391ff262acc007f17d9efeb40006f8a1d534a",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-112-repeat-2.json",
+      "captureRecordSha256": "984ef0118480c392c4ba8fc9405a084f798a174420c2245a79c5abdc240b452c",
+      "rawFile": "raw/metadata-112-repeat-2.json",
+      "rawSha256": "7bba74f606e7334813f032a37731dcf43220278e047d24cf13d91e1abd253177",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-113-repeat-1.json",
+      "captureRecordSha256": "10e2f90060044d52edf036d7da0afe40f41e1b3e254d5a29e04ecc97979fd66d",
+      "rawFile": "raw/metadata-113-repeat-1.json",
+      "rawSha256": "ac511320991c7234670120f8b0e37aab59f993478281489a6d366559cf715ca5",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-113-repeat-2.json",
+      "captureRecordSha256": "13abf70c0a8a6a7c0a13c9d40ed0351da3d7cc5a0d2fb0af506325df7c821a78",
+      "rawFile": "raw/metadata-113-repeat-2.json",
+      "rawSha256": "d65d7f66c2f97234294c5824f69ca014645a1ea21fb10eaca1b40e1ad0991fb8",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-114-repeat-1.json",
+      "captureRecordSha256": "5c76efebb0f089cfcd00b44475222c9c7d014bd21f4b1ca078cbf79ecd2a30dd",
+      "rawFile": "raw/metadata-114-repeat-1.json",
+      "rawSha256": "2c36ba67b46db6a0abd6cf91d76a59ed60614465c9420683b8f88a05c336307a",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-114-repeat-2.json",
+      "captureRecordSha256": "b92978394ba83573ea30ba12f7127c366698af187af290426fa72ec47f2398b5",
+      "rawFile": "raw/metadata-114-repeat-2.json",
+      "rawSha256": "a145c5bde1c41e60743432ae3db6e0f10f0d8fdca7eeafd454356d8da498ca3b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-115-repeat-1.json",
+      "captureRecordSha256": "76a16914e9f78e895917b08025f4abebdbcacf8d6cf93232689ba551008f78cf",
+      "rawFile": "raw/metadata-115-repeat-1.json",
+      "rawSha256": "07449832588ce3cfc5a2bd6110d456a7614cce8d7c77b6fcfe8a60ce2b9b4d0b",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-115-repeat-2.json",
+      "captureRecordSha256": "7da095235a1ee6962fbbb6ef8fad6256aa0e6620938cd92df65d785860dfb329",
+      "rawFile": "raw/metadata-115-repeat-2.json",
+      "rawSha256": "50b1750e8006569c442fa0f695b735b1cc1b439414913d46336006083b561109",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-116-repeat-1.json",
+      "captureRecordSha256": "c2828b1f8f19a45e34d5c16e4cc4d52db90114faca489c9b595ff7b36d4fe384",
+      "rawFile": "raw/metadata-116-repeat-1.json",
+      "rawSha256": "2f2d0f15f1ffc93a13f5d5fd1d03ff63a166146ed0e30e439eb55cb3f46bd6ec",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-116-repeat-2.json",
+      "captureRecordSha256": "ee47fa914881e2896dde50ea2534b74529e59f4568efd6c3706d09dff5fb1ce1",
+      "rawFile": "raw/metadata-116-repeat-2.json",
+      "rawSha256": "6c7bf39120ad8fc490c71ab21013a5189fb2261eada7ddbee9a0e21eb4ac028e",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-117-repeat-1.json",
+      "captureRecordSha256": "3c1a3504286c318cf954d4e21486544d0e87225c778a72ec5e62e257b967b0d2",
+      "rawFile": "raw/metadata-117-repeat-1.json",
+      "rawSha256": "bc298e40ad06c79b833b295479e96594337778a2dbeaf185f71829c6e8f7fbca",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/metadata-117-repeat-2.json",
+      "captureRecordSha256": "0ca7b83409d1a7f75501eb3b03348baf2d811012ffd6d6d63b9df8ad1191bdc5",
+      "rawFile": "raw/metadata-117-repeat-2.json",
+      "rawSha256": "56c09bce524d8ba793950e47d74355ca7b5366d1f7ce52e853da98f07c8ff3ac",
+      "success": true,
+      "epoch": "CONTINUATION"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-1-page-001.json",
+      "captureRecordSha256": "7beb91af3e89c4ef5dac3675686a0c02972ca3f8e8f1698271e24b2e0db352e4",
+      "rawFile": "raw/text-1-repeat-1-page-001.json",
+      "rawSha256": "4823ea3410e3fc8fc2a629a729928ad15d3f38b42a08b4e3e109e1cc5ff491c2",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-1-page-002.json",
+      "captureRecordSha256": "0dd02dbed90649ef010babd3b6a39390dbbb8afaa7869bf3b9ba42db8e55c0a7",
+      "rawFile": "raw/text-1-repeat-1-page-002.json",
+      "rawSha256": "8ca486d46737317aeab22ba0933467114f40f4732c4190bf1ee12541af81949d",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-1-page-003.json",
+      "captureRecordSha256": "e19555778ce3a0492967bb4f6a4810b3fedd9762cb47371811f7ce9c28ebcd61",
+      "rawFile": "raw/text-1-repeat-1-page-003.json",
+      "rawSha256": "3d72e3d6e67c8aac3c32fc32029708d236bc4add32d07ea855f1c27dd6b0ce50",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-1-page-004.json",
+      "captureRecordSha256": "fdb66b063e5e7e5d60981fa45576772f6b1a80fb3d5d4ce43328dc77af189787",
+      "rawFile": "raw/text-1-repeat-1-page-004.json",
+      "rawSha256": "9edbfb048317846b1ce9adb3f4472605b6be6ea3f7d1bf76eaeec977de0ba718",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-1-page-005.json",
+      "captureRecordSha256": "a078b2a25cedcc708d7737c4f934a30232a3b6202139a5047ce574a087e7a56f",
+      "rawFile": "raw/text-1-repeat-1-page-005.json",
+      "rawSha256": "cc63b41a3783c166336c25fa54499cf96c3b4847c555dec9e6042c582b2bf047",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-1-page-006.json",
+      "captureRecordSha256": "d0e0518b86d6d598d37cd9e8e6a10673978fea0995436e72469d78080136d4fe",
+      "rawFile": "raw/text-1-repeat-1-page-006.json",
+      "rawSha256": "840c743f748c1a94a686404885b62dee1f860d361959d0f10007334eef0e6f22",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-1-page-007.json",
+      "captureRecordSha256": "e4d271a6ff244b11213b686675e635738ae34e5b418f6a8e00f66a788b275b86",
+      "rawFile": "raw/text-1-repeat-1-page-007.json",
+      "rawSha256": "a4f472982e9669c3077b7fed84bce0f21eec679b2f3a8809001c670360448318",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-1-page-008.json",
+      "captureRecordSha256": "49ab16fb5992f4a7671421875f5acad85ef061a8f77f1950357f8dbba09c1b3d",
+      "rawFile": "raw/text-1-repeat-1-page-008.json",
+      "rawSha256": "5c6576339daf23bbe6e2bcee1034a2495360a98cc9a59f29337036454f98a5b6",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-2-page-001.json",
+      "captureRecordSha256": "dad48a2159e20868cbf72e03a5ad33fad88f1eef46af8a18a0bd912afb0cfe9f",
+      "rawFile": "raw/text-1-repeat-2-page-001.json",
+      "rawSha256": "072a267feae26d0e7cca4b0f8878f174fe02af5504e518c7c827658f6299d228",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-2-page-002.json",
+      "captureRecordSha256": "4a9ff593a38978792a5e7873f536d018e2fc9aaf2911357c2b4a55faba1b7bb1",
+      "rawFile": "raw/text-1-repeat-2-page-002.json",
+      "rawSha256": "b990ab651ef4b5bc96ca3567614959fd8cb24d005ec1eb874994c59be8994140",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-2-page-003.json",
+      "captureRecordSha256": "d54a1e04f017560dece149091bacb8628d361fa8faf117509466958dcbb9a48c",
+      "rawFile": "raw/text-1-repeat-2-page-003.json",
+      "rawSha256": "db140528f4d4c4581b3940fa66ea2516220d4648cdac0c4dc84d86376d03d94f",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-2-page-004.json",
+      "captureRecordSha256": "16e01902e8759a6056b06ae6e743a89e2cee3877dce13ff17c8f28998ad6a06c",
+      "rawFile": "raw/text-1-repeat-2-page-004.json",
+      "rawSha256": "9b619b6d43bdd216bd56717f040df31f5b52aeb7bd4ad39a32ddd319e45a352d",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-2-page-005.json",
+      "captureRecordSha256": "fb1235492e4f74d4f5886c0e323734bf6aceaf4ecbd94b46602f59e6b50ac6d9",
+      "rawFile": "raw/text-1-repeat-2-page-005.json",
+      "rawSha256": "f2863c5d6a53ab57762a367b97d937fac8e249c0f5f6e1809bbda5f5a0116736",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-2-page-006.json",
+      "captureRecordSha256": "995c6d7c7fa5ee1fe89ed4976977fc353c8dc6edfd0215aae11486cfab798366",
+      "rawFile": "raw/text-1-repeat-2-page-006.json",
+      "rawSha256": "929f204e4d28dedab2e98d1c5b6bf9a9af3786119814cfb8245682df41d159ee",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-2-page-007.json",
+      "captureRecordSha256": "e4d6163dde16f3df80845368338d50c621ab44bad163eb1d429f88873befcb3f",
+      "rawFile": "raw/text-1-repeat-2-page-007.json",
+      "rawSha256": "c719b97aecf32d3a0394c62de77ae6d7633148a22b66df704eafdfb915fdc8d8",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-1-repeat-2-page-008.json",
+      "captureRecordSha256": "aa363f3a402762bc04ecee8e7add8c1491dbadfc0033530a922707e346e03fc0",
+      "rawFile": "raw/text-1-repeat-2-page-008.json",
+      "rawSha256": "87c80eb77c6083388bfb7dbc6b94fa1bbe5f307e19692ccbd225a7535978051b",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-001.json",
+      "captureRecordSha256": "299a50e88a601dbcf2b36cbc7097702653be4c0a9f6eb2377a9b3231257b68d7",
+      "rawFile": "raw/text-2-repeat-1-page-001.json",
+      "rawSha256": "216dc2199585e2180543700b347c83ac7dcf3f7192d8d6ed13f555efafc529a2",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-002.json",
+      "captureRecordSha256": "8bfca950bcad7dc0d189cf9e89b3f4d7ef8b8bebd370bbde7864947aed2a94e5",
+      "rawFile": "raw/text-2-repeat-1-page-002.json",
+      "rawSha256": "c900a0bce4ee5387eb4b6e6a16166450da73a6b9101eaf8f018702ee4c696807",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-003.json",
+      "captureRecordSha256": "a436b42bbc9671319e047e61f9d3c3dfcac0f0150d3dccf943a1104c06cbe496",
+      "rawFile": "raw/text-2-repeat-1-page-003.json",
+      "rawSha256": "74b8d453b8f20d960098651b63caed4f5263b157172cdc7b0a301258c414ecd4",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-004.json",
+      "captureRecordSha256": "685c6a08dddc0884a2d785809d93c0fa5c5521f1b67d09cbea904f3fa7b001dd",
+      "rawFile": "raw/text-2-repeat-1-page-004.json",
+      "rawSha256": "6505f3c6ba58155742f10878cf841623c56ea016b495e07396e83b53ff2c88bd",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-005.json",
+      "captureRecordSha256": "69e91848aaaafeeaae72cb7e8851379b239caa2c13747ce48500e99d10e1c5e8",
+      "rawFile": "raw/text-2-repeat-1-page-005.json",
+      "rawSha256": "7ea6f4a824f92fc90f6e284c2d0cd8153cac88b700b7302e44f6eed741b0b720",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-006.json",
+      "captureRecordSha256": "9f662df40f301bff3281b6c6bb824e7958d076edd9c705ad3a3acfa8ae69f69d",
+      "rawFile": "raw/text-2-repeat-1-page-006.json",
+      "rawSha256": "433b28a4aa58254543d9f9b9f5d5467bb9ce8d3ec9242d0d69de88ccaf5b0cde",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-007.json",
+      "captureRecordSha256": "4cf53e873e2ec5a9f2d8112f3d0a2128451531824c5793570c7bbf64944dd213",
+      "rawFile": "raw/text-2-repeat-1-page-007.json",
+      "rawSha256": "748c65eea5c66d0efabd5213753e336aeb2c419f8e00fa9feb990d361949a083",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-008.json",
+      "captureRecordSha256": "3686025fceb61cbc6092048eb18c26ba7571f742b81dff1714e5c842590d6c94",
+      "rawFile": "raw/text-2-repeat-1-page-008.json",
+      "rawSha256": "9e548df8d0077820d3e8a2a32c5f134380b0aebbbd3d3af1a3ef5ea545f7f283",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-009.json",
+      "captureRecordSha256": "c769f364452cf1ee80e7f95fe08d1e394939ef4177f541147083c872637b6dc6",
+      "rawFile": "raw/text-2-repeat-1-page-009.json",
+      "rawSha256": "eff6322fe24951d25b226ba0d687038f739c46505dc5206f70b9314a18e6537b",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-010.json",
+      "captureRecordSha256": "3bfe05d2488fd1c3aa397020d436df8b0b2039cbb860c441db7e156244a343a5",
+      "rawFile": "raw/text-2-repeat-1-page-010.json",
+      "rawSha256": "22940dc070e21012672f634d124f8c7b20a64056a2f00bdda839a989aaf34cd4",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-011.json",
+      "captureRecordSha256": "9a36e72d3912b96e2de65c1aa865da6d15a775d09ffdcbdc582d2dc7e24f6a4b",
+      "rawFile": "raw/text-2-repeat-1-page-011.json",
+      "rawSha256": "0ff79a3e2a099c78fb9693bd109e8089b6323b62f42205a135d65915662e304a",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-012.json",
+      "captureRecordSha256": "4dcd078c42b9666876ffe90b10a7a2db331e70e366e381162592cda351de9675",
+      "rawFile": "raw/text-2-repeat-1-page-012.json",
+      "rawSha256": "1c63c3076f2ea399fea8b60adf0272d23570b6612b0f046ea8e7bdb2cdfb3d38",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-013.json",
+      "captureRecordSha256": "7a6f9a6aeedad4bdcfdedc3aecb7a12f8c715cfa4902c8bf357cc9784986f56b",
+      "rawFile": "raw/text-2-repeat-1-page-013.json",
+      "rawSha256": "702c59a1b170ea5ff26d9b9289e6046e609d90eeedc10edf72a38ee307357ad7",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-014.json",
+      "captureRecordSha256": "83d6462c85b80f5875fe2b841f567026a15727be8e8ca5e0de84360976a1a6a8",
+      "rawFile": "raw/text-2-repeat-1-page-014.json",
+      "rawSha256": "2e192aa8cb62c1f96e22c77c823e076dc51b0b1f182604e94c26c453143d958e",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-015.json",
+      "captureRecordSha256": "d475a5353e186e941d0486eacfcbd1aa5ac8fdc4185b0c3eb6f4e13e53dca24d",
+      "rawFile": "raw/text-2-repeat-1-page-015.json",
+      "rawSha256": "714c0d1d83328be638478453eb62693f249dbff550104c288b8d1adb16bb68bc",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-016.json",
+      "captureRecordSha256": "e5bb57ef81a5d800edc423d875650d87d1b77f86489ce459b02a04b6b9146c87",
+      "rawFile": "raw/text-2-repeat-1-page-016.json",
+      "rawSha256": "c8e8e581f1ab7029e543a7b15d03427b1f6b6e41365c21659d211e1db6032cd2",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-017.json",
+      "captureRecordSha256": "10be51a07fd28b70575d5c910a24e84928e3bb3c4f6bb70fa4288fd80a4743a9",
+      "rawFile": "raw/text-2-repeat-1-page-017.json",
+      "rawSha256": "32b05c053dbe501218367bad793456f4d124ae91991ef72e3dae4201b0656baf",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-018.json",
+      "captureRecordSha256": "0096c4ca61143d4b8be63264888da4614e9f6cda47dc3bd0816600e52da06b02",
+      "rawFile": "raw/text-2-repeat-1-page-018.json",
+      "rawSha256": "ca119ea688fe5e30885296d2bafa062289285fb0b0bb671747d5f538cda6aaf7",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-019.json",
+      "captureRecordSha256": "a1c1345f47999ae4290998a4aa1175c00605cacda67dfb73beca457ef8bda508",
+      "rawFile": "raw/text-2-repeat-1-page-019.json",
+      "rawSha256": "ed87c7d572ccd79a2f552a34a76319093f4a6f89d3bb9070432adca3a42b4963",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-020.json",
+      "captureRecordSha256": "b75dce047ffe1daf1efe71c06773348cc2e82d42926de04dedee6cca27379801",
+      "rawFile": "raw/text-2-repeat-1-page-020.json",
+      "rawSha256": "98a2baf7bb9d647c38834e42c6c41b1f13695578040067fa809f131187cc9ba3",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-021.json",
+      "captureRecordSha256": "a5c487f5caac9647fc79f79a53d21cdba8e4be9b4412afe40360fc72c4136b4f",
+      "rawFile": "raw/text-2-repeat-1-page-021.json",
+      "rawSha256": "1739d50a8ecb4f10403679bf31f2e403b22a7be402189f63c33a50147a852d23",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-022.json",
+      "captureRecordSha256": "0994573e4e0d82a6ac1bdf6d5b7910e8e35ad6a2e11e9b07ff37f4bb8888f900",
+      "rawFile": "raw/text-2-repeat-1-page-022.json",
+      "rawSha256": "ba3cbfc4671acd94795fe6308cb478f3c18c68ddc6ff22fccdc9ecf37b648be1",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-023.json",
+      "captureRecordSha256": "2b3f14f555ba3d33807b5847e24a3be24f1b878824f4bcf5c003a8262a365c84",
+      "rawFile": "raw/text-2-repeat-1-page-023.json",
+      "rawSha256": "b3701dc665ea7496b9b47e3824adc9c374fb8b61b694b403ee07601c66a6e788",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-024.json",
+      "captureRecordSha256": "b5afa98e57da0a9ec3a7573e1419ed1e76b485eb4ea65dafd0f807def815703d",
+      "rawFile": "raw/text-2-repeat-1-page-024.json",
+      "rawSha256": "f478f6349919beb0dbea7c11aab969d8bbd6bb9df41bd511385b20a50f790f4f",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-025.json",
+      "captureRecordSha256": "dfd28fd71b784919a7951196807c0949797d9117f674a7c90551a5f5cfc88d7c",
+      "rawFile": "raw/text-2-repeat-1-page-025.json",
+      "rawSha256": "2d5abb6747fd0462aa480f023ea73d86606b35f12e8bd3f75890f94f1bba8031",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-026.json",
+      "captureRecordSha256": "a93200fa83b02601e2749a4d052fc02543a583bda95b79e4c1f8df103347a038",
+      "rawFile": "raw/text-2-repeat-1-page-026.json",
+      "rawSha256": "8f34a68e516c81e3e8e322b7469209e90fd26edc637e507a15f3eb0d3220e5c5",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-027.json",
+      "captureRecordSha256": "2245a93197716eac0780f78dc578dd864e7a8410c88a6061fe211e3e1c7950c4",
+      "rawFile": "raw/text-2-repeat-1-page-027.json",
+      "rawSha256": "adac1a36c526ce53d16e77dd0f4419aafd5720fced3034588b8d1c7f970621ad",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-028.json",
+      "captureRecordSha256": "2fab0867ea0815a04e21b0b5fdba49fed841f7aa30a789bb8208a664f9dc1277",
+      "rawFile": "raw/text-2-repeat-1-page-028.json",
+      "rawSha256": "8356715e4aabba172409f2bb278060e398e13db3e497a99a0b32920505fa5bed",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-029.json",
+      "captureRecordSha256": "c5936f731eb61444ba43cb5f62f5078df7f08c9f3c14e4496159758587d41647",
+      "rawFile": "raw/text-2-repeat-1-page-029.json",
+      "rawSha256": "d2fc47e556948dc92b59cd995f15ee60f9b05c702f83e7133712a3e2052eb0ab",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-030.json",
+      "captureRecordSha256": "0c3b559115275a5e78f6c100038222ea0dec425d7e1641ef9db5ecd80a2ab82f",
+      "rawFile": "raw/text-2-repeat-1-page-030.json",
+      "rawSha256": "470e9a59600bfbb770bea9698d3ab7822fdc2c7b3580fa259d886a949a8884d5",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-031.json",
+      "captureRecordSha256": "83d54302118b8d3150382583b23f18420e4fee7aa7eb221004ed35b8fee9aa3c",
+      "rawFile": "raw/text-2-repeat-1-page-031.json",
+      "rawSha256": "edf26fec282fa92a7962bf36355fcd4a2afd68d612e735c8e00d6bf86a36e7f8",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-032.json",
+      "captureRecordSha256": "318cbc0957bea4118d3d4daf1f4be15b017678a5bbc2df47c96eefeedd7dd0b8",
+      "rawFile": "raw/text-2-repeat-1-page-032.json",
+      "rawSha256": "8e24a5c258fdcfacf3f5e36557ec7d5dec48342c6d9ff49b8ef28413657f4c18",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-033.json",
+      "captureRecordSha256": "3befada881febe65c1b8a0e89f4a6c07d283fa6f28c510665ae51f2afdf7d826",
+      "rawFile": "raw/text-2-repeat-1-page-033.json",
+      "rawSha256": "b81b016ea4aafb5e19b737f77039bb0674e39fb25d5a47fd78cc54cec7c44fc6",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-1-page-034.json",
+      "captureRecordSha256": "20886080dbffcd41ace0e28f4d8f701eb99a8f5b5c2b7b84244ff062ebec4b61",
+      "rawFile": "raw/text-2-repeat-1-page-034.json",
+      "rawSha256": "34561c7dce326c51a1a8bc10a598edfa9f0b514c28c38bbd62d2aef8ca6cd54c",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-001.json",
+      "captureRecordSha256": "e3e536da8d883df67ebe4e23d1e5d11e5e83a2aaf81c1672cc75d6a1cdfd8970",
+      "rawFile": "raw/text-2-repeat-2-page-001.json",
+      "rawSha256": "b6f91c8ac05661dbdb60090e2add37f3f4f7de3a08b8f7fafbd5e1a34cd1e8c6",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-002.json",
+      "captureRecordSha256": "8f52e688b3053f62f865864b07b5a2be64d80ff35dae216de9189a6577e76f55",
+      "rawFile": "raw/text-2-repeat-2-page-002.json",
+      "rawSha256": "681c9f344f77fa2fd7124b54231f42180ede3f1fc1833fe5c439572981d0f0d7",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-003.json",
+      "captureRecordSha256": "0de2ec69215915ce1ff99e45e09487fcb809d165a2916443bf5ccfb6e49d1526",
+      "rawFile": "raw/text-2-repeat-2-page-003.json",
+      "rawSha256": "e62c78ed0c9e5a5a192a9a4920122fd81db5aca5987ffcec6de50d9bfb40aa40",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-004.json",
+      "captureRecordSha256": "b864627f803cd92a8056534a78049e9d8255ec7a8ae6266011e127f289d1fedd",
+      "rawFile": "raw/text-2-repeat-2-page-004.json",
+      "rawSha256": "785a9011555afb3f7f4b4c270fddeae6a6410044c26beefbe19f5aba37c8badb",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-005.json",
+      "captureRecordSha256": "1ca11888968a8c6fcaddc4e93a53e91741ee30364c547fc8bf85ae9d94cbdc0e",
+      "rawFile": "raw/text-2-repeat-2-page-005.json",
+      "rawSha256": "cbbbc7ca5fc8aa45cdf7aade838141b2718891906b41c2fd5af6b686e2e3a659",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-006.json",
+      "captureRecordSha256": "a3adc821a3ece836545c5cdda1c36734f096fd867e75952f80ee6fb804156a47",
+      "rawFile": "raw/text-2-repeat-2-page-006.json",
+      "rawSha256": "67d66dfc7f61477d32c31f804b6162e75acbcd74553c74e7ec354ada2316e7cb",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-007.json",
+      "captureRecordSha256": "d900ab7fb35c074b5c85eb9bec33dade39b70341cb823bed13fab3c53fc95f79",
+      "rawFile": "raw/text-2-repeat-2-page-007.json",
+      "rawSha256": "f785e4afa61c92a2ad1d793c11b98c25a6516decce907ad4aa340434949ee9e5",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-008.json",
+      "captureRecordSha256": "e11aad68b5eae605c3472dcca7a416046ad117300e3ad82b7333f00a6c26a1fe",
+      "rawFile": "raw/text-2-repeat-2-page-008.json",
+      "rawSha256": "f1b04c5bd8e2f5948b93c84c2bcce1a48e2d22283692af4887d4e6331bbe0b90",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-009.json",
+      "captureRecordSha256": "d32e6aa84aaef79b3b1bffbb617da607965a55e113910635f49526a434402c74",
+      "rawFile": "raw/text-2-repeat-2-page-009.json",
+      "rawSha256": "2d302a9e64d16b493d6702b03eef4ac50e7943ea3ea9147fe76ec5c780c3c148",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-010.json",
+      "captureRecordSha256": "8f0bb6ea66b2c69d82fb35a9482387802d1fcf3b6b9733397cb6864ff724fcab",
+      "rawFile": "raw/text-2-repeat-2-page-010.json",
+      "rawSha256": "5bed71661f796b63d2b344afb0e2d2f53fb7e972445ec4f7d1dfc62255317308",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-011.json",
+      "captureRecordSha256": "39697146f4f727694a2220695b2348acd22cf33ee27fbdb4c92a13f38f6a1163",
+      "rawFile": "raw/text-2-repeat-2-page-011.json",
+      "rawSha256": "5b383c2b1e4aedbd84d96cce2bb55a822fa366a2d159d48eb7e50d36fa8549fe",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-012.json",
+      "captureRecordSha256": "28be7a81ceb7fbd67af913d033aff66cfa19ece45908b75f22100aa753253a64",
+      "rawFile": "raw/text-2-repeat-2-page-012.json",
+      "rawSha256": "4d6b73536c05755824e997e514a16eda92a9b4fa072268f28577b178dac13f12",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-013.json",
+      "captureRecordSha256": "3fbcd35538f55fbc52cc1f1f8f18a48c65c5022b3afcfab77411cd8c01d3a937",
+      "rawFile": "raw/text-2-repeat-2-page-013.json",
+      "rawSha256": "c4d48deeaaced9ca0ee3d6bbdc0a2b4b85608a9ea7a2f607ad94d08573f23605",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-014.json",
+      "captureRecordSha256": "b96aea470781221db667f35fbf2c11b483d744adf0e1d1faaae034323522bcae",
+      "rawFile": "raw/text-2-repeat-2-page-014.json",
+      "rawSha256": "469ca8f13a7b4afb4e86bad526906338d5fb7f39d8ad74459b19c78449a223df",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-015.json",
+      "captureRecordSha256": "36939d4b665823dfcef8bcee2e06c0d3498c88661cf22d410299fd482409c61c",
+      "rawFile": "raw/text-2-repeat-2-page-015.json",
+      "rawSha256": "31f9a775a67e1d4e892a88d15c7dc78e46defc30f8c5bebd989506d7ff762531",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-016.json",
+      "captureRecordSha256": "192646f4ffc6d0d8f631ddb786b97828b4777cbd05160d13d676a9e72ef9c03e",
+      "rawFile": "raw/text-2-repeat-2-page-016.json",
+      "rawSha256": "8b071ff8a7aef3401296538facc2764c8df423fd80e4fce8e6b2200d33203df9",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-017.json",
+      "captureRecordSha256": "0034be272a6191a82960d0894032439cb67c1e5b3f79b3d31c721bd652333f22",
+      "rawFile": "raw/text-2-repeat-2-page-017.json",
+      "rawSha256": "46b34291df759e40a8a6e18a6251484a20a3e1bb948c773c7684607839717df9",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-018.json",
+      "captureRecordSha256": "e647c15cbb7dd1ed9eb1eb8934adc10f83a19aff3441538e1478b54a6020a670",
+      "rawFile": "raw/text-2-repeat-2-page-018.json",
+      "rawSha256": "a5aaa44fbf2c63701781cc954514bb6bf7b802c3c24d8cd02c7dab5228ce245c",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-019.json",
+      "captureRecordSha256": "936949837550076737e14d7a6841fccc7158174c70d0eb709272efd029396d9a",
+      "rawFile": "raw/text-2-repeat-2-page-019.json",
+      "rawSha256": "1f7d8e6c4b3e306540e60885c3326ca07bff0636a29e41b29e458be1575dfbb3",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-020.json",
+      "captureRecordSha256": "276191e797172519b0c9911b5a8a132b0faee86d187cc07e50e3683d3cf65697",
+      "rawFile": "raw/text-2-repeat-2-page-020.json",
+      "rawSha256": "27f3b35dcb0fbcf2c21c2f33bbe423f92cc9eb00e093ed03c6874a53cee1dcb7",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-021.json",
+      "captureRecordSha256": "8b3310138bfe1c83dca1c3ce87ece81b03d00caca80bc4c3a48a6560477707f5",
+      "rawFile": "raw/text-2-repeat-2-page-021.json",
+      "rawSha256": "af11d982ac01136f5f2292f8642a4f769af08b31aab6f4a90554ae359398e342",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-022.json",
+      "captureRecordSha256": "664f5fbf1671e1df0e769a1410f44a534f246866084db0170da62826a1a94ec1",
+      "rawFile": "raw/text-2-repeat-2-page-022.json",
+      "rawSha256": "3c3ad77fd3a481408848ba03167b1de5dae32579ce5cb70562a9353e1929bfc5",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-023.json",
+      "captureRecordSha256": "83060830c446074aaea756affc3b629a7ac086e8432d07dd488ce93c9eb6b449",
+      "rawFile": "raw/text-2-repeat-2-page-023.json",
+      "rawSha256": "95d69220adc416dbbe3a08ec20c1ba178fe57653bc7923e7f1f79bfe6390c577",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-024.json",
+      "captureRecordSha256": "5269b4f12c7b996ffcffa7049e54a3239afc1b37baece7a515ccb0cbb8901e34",
+      "rawFile": "raw/text-2-repeat-2-page-024.json",
+      "rawSha256": "8551b162e2433e9179bd29435ff2e9a88390a4f50e49c0345a1f010badd8c572",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-025.json",
+      "captureRecordSha256": "61e9256780fd074b4d43acf4c5a1f0599984cf36a667e30926b27df114a9c2a4",
+      "rawFile": "raw/text-2-repeat-2-page-025.json",
+      "rawSha256": "5d5fcf2f8eb20468d26c76516918e3a7fe37f5184d2bac4c17d3e0792346dcbe",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-026.json",
+      "captureRecordSha256": "1519e3f291fe252bc9d5021882c4e9be5a7b3f9c03864ccaffb260cb0509f51b",
+      "rawFile": "raw/text-2-repeat-2-page-026.json",
+      "rawSha256": "1ee1a2a7378876c4ea4f39914efaae18d576b3dc9614f9953f321f5593c1525f",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-027.json",
+      "captureRecordSha256": "76521a4e6a1174554402b2d0972c3dbcfd9fe9b98c6210d1c501b06914bf4633",
+      "rawFile": "raw/text-2-repeat-2-page-027.json",
+      "rawSha256": "0883e1268396394f8acbc1fd7de14058a78a7695af49ff37beced5d260bcde1c",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-028.json",
+      "captureRecordSha256": "e3e19724fbf3012b696c48456000b9f3237e4ae41a781d98eac57585e573e703",
+      "rawFile": "raw/text-2-repeat-2-page-028.json",
+      "rawSha256": "dfa8111646d0800955a6882037dcccb35ee22f007fba3f89f6495ff8d534bd87",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-029.json",
+      "captureRecordSha256": "5e7ff0574258083ec7a615d62ce78f9a522cc4d08f53851d7ed36571ccbd7e63",
+      "rawFile": "raw/text-2-repeat-2-page-029.json",
+      "rawSha256": "b6359d9998a5764a8fb9de6dd98c64e1ab768acfc6e8fed1b5026235c1653270",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-030.json",
+      "captureRecordSha256": "456669aaa4a9ec4153fdc49f85d9b9c1492b8049d03df7f8c690ce0a7b718fcd",
+      "rawFile": "raw/text-2-repeat-2-page-030.json",
+      "rawSha256": "eef7a5f03901f9caef0e10f0eb70b2301734022dc424b82be8d94d936ee56094",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-031.json",
+      "captureRecordSha256": "77f7fc7d6458d592c1d55f16098c8645fc011df8caa6bf32c803f25823ad5137",
+      "rawFile": "raw/text-2-repeat-2-page-031.json",
+      "rawSha256": "b104b8cb94df5881befe51b503574f4d46c4e1c0c9f389f7700a891aef9635a5",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-032.json",
+      "captureRecordSha256": "030195421ae839743e3d62d8c8781463ba7ece5618ed0b99c2babecaceda2e62",
+      "rawFile": "raw/text-2-repeat-2-page-032.json",
+      "rawSha256": "d4bea93671378cf6142c7eee18386667be11145d8aa16222fae2c9facf2310e6",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-033.json",
+      "captureRecordSha256": "1836442ae81296c77a513725a5f63bc0a4ef931a86023e8a285eefc079f446e7",
+      "rawFile": "raw/text-2-repeat-2-page-033.json",
+      "rawSha256": "9d632a7979f241f92ed50521e38b3856022274be18b39260cfb04f6c14d9dcec",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-2-repeat-2-page-034.json",
+      "captureRecordSha256": "4b64cfe316e8dbcb54b08363d758dfb52ead739deac9286276b08d1c4cabe765",
+      "rawFile": "raw/text-2-repeat-2-page-034.json",
+      "rawSha256": "3ef9d9c32a70f429a6b2b2cdcebe0681ced4610406a1bd2724e93e9a249f3e09",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-001.json",
+      "captureRecordSha256": "5a1f49832c9a46b4df498b0732f30f65a3ca9e6e104f85ce3ae52b92b5c3a1ff",
+      "rawFile": "raw/text-3-repeat-1-page-001.json",
+      "rawSha256": "244fe28dfccc9ee29de04ca35f3b56f43d95810d24d101185768f26f993fe866",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-002.json",
+      "captureRecordSha256": "15225665214df83333c1afae675d0cb761043223c922c90a67663b4cb934e9fc",
+      "rawFile": "raw/text-3-repeat-1-page-002.json",
+      "rawSha256": "f02804da0c845f0717a0f4f389765653fc54bf2e86afba0f483c68b85ddf24d6",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-003.json",
+      "captureRecordSha256": "92ac49c33d63ebb863a81ad92e201c03083542bce72cb7e724efa706ac7a98ce",
+      "rawFile": "raw/text-3-repeat-1-page-003.json",
+      "rawSha256": "bd9a36ec0d060b32efb14c480fa01c17e4e98d3431868d1aed32bfbabcc3344b",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-004.json",
+      "captureRecordSha256": "8f77b7ecc10d479bab6d6f9e20073eb3ce205715ef324795296800f1de9be075",
+      "rawFile": "raw/text-3-repeat-1-page-004.json",
+      "rawSha256": "a931c918f0455fbe9d9ead9aed3550a485ef601d8fc15ea667b5a35a662cc8eb",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-005.json",
+      "captureRecordSha256": "35a6a82418d32226f6a1931d0c65fb92672ec7a0a05d28c21ec1b8bce6f88dfa",
+      "rawFile": "raw/text-3-repeat-1-page-005.json",
+      "rawSha256": "8258b0c44fcd7f133540578124c7c675eaf902d39093b043527dd1530ab94050",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-006.json",
+      "captureRecordSha256": "bcb3b300072662b9286982da7fc208c51e984f6ce5135290c9ee9303312a2530",
+      "rawFile": "raw/text-3-repeat-1-page-006.json",
+      "rawSha256": "8e06f2f3f82a9b901cb9f103b69d81f1b3bd25c20e12dff36957a3706ca165b1",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-007.json",
+      "captureRecordSha256": "76e920f04dc70f36bb860496c56eed34cad2cbddf9b961f3242db099dad3b03e",
+      "rawFile": "raw/text-3-repeat-1-page-007.json",
+      "rawSha256": "ccdf501144dcfd63e5b66b6d4d3883db324709ab0c7adc71f1c5cdd65eda34bb",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-008.json",
+      "captureRecordSha256": "5cde09abc9dc42b389cbe951f4078023234c1aaed2c41e4ee524c7f83c0f43d3",
+      "rawFile": "raw/text-3-repeat-1-page-008.json",
+      "rawSha256": "73418d94405e51e7d44ca70436bda2c5cedc1b9fdffaa90dfef57e8dbbd09493",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-009.json",
+      "captureRecordSha256": "8a9a560fa53d4c1b965bb7644574f4b448dd427a6384038422f59362a9c1058b",
+      "rawFile": "raw/text-3-repeat-1-page-009.json",
+      "rawSha256": "2b13d37f801f10739f00ac262e0ddc69f5e970a4e66fd692aca7b832d2f77296",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-010.json",
+      "captureRecordSha256": "32513cb0ec9bbd1ac2a59bd89bbdcb90035f58049273ae3732fa04ce815c1d94",
+      "rawFile": "raw/text-3-repeat-1-page-010.json",
+      "rawSha256": "4ca6e66fdec05945dad935454f6212dcd7c6bea84c498d206906a564580c4dfd",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-011.json",
+      "captureRecordSha256": "053c33cdf3a2f50660819ccd9340056ba6a1d551eec4ca191b86cb926d09b6cb",
+      "rawFile": "raw/text-3-repeat-1-page-011.json",
+      "rawSha256": "f0d2e69494c480d7095ca6d9cb43e6506566da6072075f423f2348133ca7fc3e",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-012.json",
+      "captureRecordSha256": "a22f5eec1acca375a56e323cbf473edf86a9699697e6081ab8c81768d6ca41af",
+      "rawFile": "raw/text-3-repeat-1-page-012.json",
+      "rawSha256": "79f2b2eb7b1d50ca9f1a7aea3388cf26f6e1d111367b4d2210a4a1b828f5ef7f",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-013.json",
+      "captureRecordSha256": "373c799fb1a63e3af109473adfd79d872b5fa1e6b9ffd84a7f9336f7540c0182",
+      "rawFile": "raw/text-3-repeat-1-page-013.json",
+      "rawSha256": "d45d25f960d2b0d69f8a1ee9e1df7b3e5c358ec535824293cb1ea36613e14e67",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-014.json",
+      "captureRecordSha256": "51959b5f7282569c41afc7e57f756b68853017fc091410bddc040ce3a39137b0",
+      "rawFile": "raw/text-3-repeat-1-page-014.json",
+      "rawSha256": "6a62f8ca2e22aca3138b0b160702050a219b8840ea63d8394cb2f2ef5a8ab6ba",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-015.json",
+      "captureRecordSha256": "a736abe8b547aa02238bf70b1747acf9d93f3949d1d472a3728711472dabe4f7",
+      "rawFile": "raw/text-3-repeat-1-page-015.json",
+      "rawSha256": "0c131440d72ea61b2b2fee9202e5289c2f2f73b3f9eb0732cc4844b8d503024f",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-016.json",
+      "captureRecordSha256": "d0ce5a12fe185fc29f7875228e3c0507610917d2e5bff5bfbc774abbbe0222f0",
+      "rawFile": "raw/text-3-repeat-1-page-016.json",
+      "rawSha256": "bc4ff1033217df5b6645d8b4d7bea7c7868b1711c8fdde1bbb9315cc8473fce3",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-017.json",
+      "captureRecordSha256": "fb8fd763c4dc8e7042a24b383a7ed7a4b9c56d8aeaa65a4762f82c68ca38918a",
+      "rawFile": "raw/text-3-repeat-1-page-017.json",
+      "rawSha256": "31e1d7b383860a389dfddde696b517a9289d32c604093320768c5659dbbe15d6",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-018.json",
+      "captureRecordSha256": "05920d84fe6674c3d540abc5347d051cd7c7485e309bf1b4a387e5b56af25909",
+      "rawFile": "raw/text-3-repeat-1-page-018.json",
+      "rawSha256": "f7338ec101ff25e65aeeeefd344c33fecd74e32805c9964ec233d874e37562f2",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-019.json",
+      "captureRecordSha256": "231d64b9b5720df72bc30a822e270e18d5d04c69d961045d2ae7cd67261c20f9",
+      "rawFile": "raw/text-3-repeat-1-page-019.json",
+      "rawSha256": "da683b302594d4c94c9d0d42cbac2641834ac5404524cac855128e97b993b66f",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-020.json",
+      "captureRecordSha256": "4d37df4d25f6ec9d8331dc9198311a623ffcdad5c707e221d4dd10e90243125c",
+      "rawFile": "raw/text-3-repeat-1-page-020.json",
+      "rawSha256": "35fc0f8ce58e528b384dad3eab02020f6ec4b54f420494928fa1e02170926421",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-021.json",
+      "captureRecordSha256": "372d0f4e384f8f4a87484613d859c2e847176c6f805a675c5f95b2344645bfd2",
+      "rawFile": "raw/text-3-repeat-1-page-021.json",
+      "rawSha256": "d038fafad299d176d9abc7daf2ec75ff11a5adce504f34fb0bcc8c4039dd303b",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-022.json",
+      "captureRecordSha256": "70d3f9792e93e35294c9689ccc56aeb899d638ce4308d6df0e6b0c8293a038c6",
+      "rawFile": "raw/text-3-repeat-1-page-022.json",
+      "rawSha256": "50dfa3a9859893cff02e0ad7e6134ea3b842bbb98f97591568d80f0947038ba1",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-023.json",
+      "captureRecordSha256": "66f944c93779badbb5488ba591c46c521a4419221e60658a1bcb51f37a06976b",
+      "rawFile": "raw/text-3-repeat-1-page-023.json",
+      "rawSha256": "61d08ef1f01946536b410ce1002375a3f6afddf043864858dc5ae9c3842d54d3",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-024.json",
+      "captureRecordSha256": "758bc3c74e91d33161775c7cedd531b9b636fd3f5937affcbfa45a009a2908cf",
+      "rawFile": "raw/text-3-repeat-1-page-024.json",
+      "rawSha256": "dbc07b203eff8b0aa89d477f3e07b6990ddf0bf116af29c082719afe14b681f5",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-025.json",
+      "captureRecordSha256": "5ed2ace30395485c035af12828bce1eea5d20960b9e838f51964e6a272c9ea8d",
+      "rawFile": "raw/text-3-repeat-1-page-025.json",
+      "rawSha256": "47dc198749ae6e8474bcb07f36bc8e21ba0f971f1444d95edabc5d67a64c0870",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-026.json",
+      "captureRecordSha256": "4fa691932c70b5bd769bacbd6d5da07b9d47409caecafff47507e98585c6b28b",
+      "rawFile": "raw/text-3-repeat-1-page-026.json",
+      "rawSha256": "ecd7a681391c444b77f337ff9df9d37147ae7a1a077ef082454885f188c81c3c",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-027.json",
+      "captureRecordSha256": "50f0bc73aca58de8c8a97dc6a6a4b064f450ffe3325b3e318ce8f40b2bdb75da",
+      "rawFile": "raw/text-3-repeat-1-page-027.json",
+      "rawSha256": "dc9f9ac95c24be30133863a85e1e0b572b34c1459da3b8ff255be108c50a3c4a",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-028.json",
+      "captureRecordSha256": "c3932f4363403ad02114471ac66985bacdcf886878c362a1ab8b1a25e7bd47b5",
+      "rawFile": "raw/text-3-repeat-1-page-028.json",
+      "rawSha256": "1629f5343f73a5b690590813c8b18a0c501ec1aaae9fb37f726d536e9c0f7de8",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-029.json",
+      "captureRecordSha256": "24e8bcc06cc635349bd65b0289697c72e20d1fcd67c0c83ee6ad6d03f40be9f2",
+      "rawFile": "raw/text-3-repeat-1-page-029.json",
+      "rawSha256": "043a235151a5c7884e3446f142d22366ecc446e8668d3edcb4e073d97b66f4e0",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-030.json",
+      "captureRecordSha256": "4d5853b885424307ec6c384d103bba9bf2152a55f9e25392c2f1bed3adbb7aa2",
+      "rawFile": "raw/text-3-repeat-1-page-030.json",
+      "rawSha256": "0a0eb87135fa972359962e332ec4e3a1cae3324eb7886cf0e64a5e65fb0d6d30",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-031.json",
+      "captureRecordSha256": "6063b99e8a33be3856b40756cb51a47cc51fb4833b41228b50b73d166ded24f5",
+      "rawFile": "raw/text-3-repeat-1-page-031.json",
+      "rawSha256": "f97473078b5c954d24849921f96e92aff5fe210fe83285e7ef9ee3b02e6d359f",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-032.json",
+      "captureRecordSha256": "a4c823b975eb73ec33f58a47bab77d5b1fbd43cfb7cc053796e5a4da3aba5848",
+      "rawFile": "raw/text-3-repeat-1-page-032.json",
+      "rawSha256": "a8ca46604a279b01f84e05175ccfc4cfdf89a7096aef1bc15e8230b5c9fd7e06",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-033.json",
+      "captureRecordSha256": "a65fb7354b9ee5c73794a89459b5a79c8e7b684099c9f2b47270ecb08ea92e39",
+      "rawFile": "raw/text-3-repeat-1-page-033.json",
+      "rawSha256": "616562ae66af8c9a26fe00e0fe64b58ebde372c0b73f9bc4a0d998f57d766279",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-1-page-034.json",
+      "captureRecordSha256": "9e038f6f94ab35d1598b7c1a1c9f395a4bc651aff1060ee306db6f605f5a1aa9",
+      "rawFile": "raw/text-3-repeat-1-page-034.json",
+      "rawSha256": "4288e259c0a6c1d66f7fb6683a17ee6cae96bd28018e9d9764ae31c5762875c6",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-001.json",
+      "captureRecordSha256": "78a1f1e29d6e3f7d5fd5afb5d2495d9c40931c599469208e6ef6148157b22f27",
+      "rawFile": "raw/text-3-repeat-2-page-001.json",
+      "rawSha256": "1fd441fbde384a67e6e12d1f554a9628a5b85ffc41fd8e34467dfd4757d71435",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-002.json",
+      "captureRecordSha256": "3520f1f77696838c7b0faabd9243dfde7d9a5be4a4189f6cde929517c70f1982",
+      "rawFile": "raw/text-3-repeat-2-page-002.json",
+      "rawSha256": "5e12a4bfbe1abf14c4a3aaf5335800d60dbe997d98571920c2bb6a4d1defd09d",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-003.json",
+      "captureRecordSha256": "c03ea9486cda02dc5af4edd7df9fe7a89ad4935d60cf54b5fbdc832d1a53c3b9",
+      "rawFile": "raw/text-3-repeat-2-page-003.json",
+      "rawSha256": "f28fd48877fcd8e3b2e918e50431e313648ffd5470260df6b8fbd1c3c222fdc9",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-004.json",
+      "captureRecordSha256": "339c0e3e8182b044a2a902bcd3a0278f72ab67ba88820ab1fee7b798987c7615",
+      "rawFile": "raw/text-3-repeat-2-page-004.json",
+      "rawSha256": "96faa64e7f1d24434169e1d790b0b3eb9a852dbe2efa0d5670acad82438d5c1c",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-005.json",
+      "captureRecordSha256": "edf38d20e73729abe78312a428cd02701cef81bb5f9a86e61068b6ae1ef7ba72",
+      "rawFile": "raw/text-3-repeat-2-page-005.json",
+      "rawSha256": "db74ca1bb4dfb3227f75b2f7a158933b2e0ba9dab3b7981365d8366971518b5a",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-006.json",
+      "captureRecordSha256": "2de6cab3789a022879c33e60c431de4b8eb2703dd73d906ce4300ae90dc38b78",
+      "rawFile": "raw/text-3-repeat-2-page-006.json",
+      "rawSha256": "4c29a8b06cd9a01c9505f3f588d1597c1b4c110a95fcf821fa400d581d8d92c8",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-007.json",
+      "captureRecordSha256": "1fc0480f85ce21ea54a0a653c304eea5b3eb98b80d99b1af37780ae3e6e8a8d3",
+      "rawFile": "raw/text-3-repeat-2-page-007.json",
+      "rawSha256": "7394202d545cd6a9c0794c57d5396c5d36a41563607df523e06a67c2b642c562",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-008.json",
+      "captureRecordSha256": "5a2219c8c7dc661c57cbcfef67df3e868f2c11109c6480713ddab8cebb1d62c9",
+      "rawFile": "raw/text-3-repeat-2-page-008.json",
+      "rawSha256": "e1ad3771814780f542a9d628e8b2265df592ae6e2a33d70a3a5359a0a9acb262",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-009.json",
+      "captureRecordSha256": "c22c92092974028ac4751885a51c8ea888ba8f30f5fb87452d37aa85b8d1d9be",
+      "rawFile": "raw/text-3-repeat-2-page-009.json",
+      "rawSha256": "b0445cdf48fd15b294e81ad4a23cd91e6d467c9621d49e864a677fbac07cc54b",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-010.json",
+      "captureRecordSha256": "d3d5086a01eeb6b58d87be2871493704c5d337052fb73e09c45f4e2241e75ec7",
+      "rawFile": "raw/text-3-repeat-2-page-010.json",
+      "rawSha256": "de512dae35dc7da8d420e280ff4b04a97565627fef288fcdd85dc1532b1ed488",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-011.json",
+      "captureRecordSha256": "62102ce970562ce97ded0b5fb40ea32b6a9e2882533e56ea9ad047e2d666f55a",
+      "rawFile": "raw/text-3-repeat-2-page-011.json",
+      "rawSha256": "a852d9af22867f0c7229acce0f48cffe81c1fc0c1e31e9b80c1869456ed5b454",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-012.json",
+      "captureRecordSha256": "f28b897231cda14524d9a4c2ffeea5d05476f373eb64a1c0cd8e9ab85b3417b5",
+      "rawFile": "raw/text-3-repeat-2-page-012.json",
+      "rawSha256": "407018e0fe8a56438b50ccc161832902a228806cc1295846c1297c6bd4911e23",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-013.json",
+      "captureRecordSha256": "241e43532efa0d1e9488aced08634f3f29e90e100ba3aa6f366c1f1bd5c587bf",
+      "rawFile": "raw/text-3-repeat-2-page-013.json",
+      "rawSha256": "0d2a4a71254b5f8af2851c2c7a5a702c413470312ef937390cda7508618b7fcd",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-014.json",
+      "captureRecordSha256": "b356cbc72f39e44f31dbd4f219753bdf93a69c1ea9696620be3b61ae0f7b9201",
+      "rawFile": "raw/text-3-repeat-2-page-014.json",
+      "rawSha256": "466aa9ba85c0ea05a0150ebf31a20091e6d8a7f13247de88939485cb9a13d9c9",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-015.json",
+      "captureRecordSha256": "b1a3735774624e21585d72c96f8976c457ed0878400a03205f3cc51ed64f43d7",
+      "rawFile": "raw/text-3-repeat-2-page-015.json",
+      "rawSha256": "e11a73e64e7ec2ff25dd2254a72fc782631822ba485cee0110b0a0719711b115",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-016.json",
+      "captureRecordSha256": "6150f0a39d06a0f4adf39d516aec37191a9557c1c53db8d45aa7a87ec1867758",
+      "rawFile": "raw/text-3-repeat-2-page-016.json",
+      "rawSha256": "9b988c3ced64176327d4bbf286587904d7447f1ac6cd1db819b2d9f21c1a6366",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-017.json",
+      "captureRecordSha256": "85daf19e9fb99442a9bfcd583df7410a35b23bf8877f24075fc0dd0c4717d96e",
+      "rawFile": "raw/text-3-repeat-2-page-017.json",
+      "rawSha256": "8b9eb65e7b248a51da54c4982bed31a59f493bd7e0c14db89ba5c6d643a20847",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-018.json",
+      "captureRecordSha256": "009378f6fd5dbebbf48743c7b14488f2710ac5214330ce03399b7195cf3eedb4",
+      "rawFile": "raw/text-3-repeat-2-page-018.json",
+      "rawSha256": "2f0ffaf50a3c4f32223a8a5dc675db0a1c016e0a727605df1a6d2ed3a85f1a93",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-019.json",
+      "captureRecordSha256": "234bd2d3695191e24fc2461b4c049ed31e6b0e3bd1332e91913261605b7dc116",
+      "rawFile": "raw/text-3-repeat-2-page-019.json",
+      "rawSha256": "abbc44d5c53e8af488ca9eedf05766edcd6af37fea889b8fe0c297f94ea80468",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-020.json",
+      "captureRecordSha256": "6886d1b5015beae162ad55832a90c971e614852a552ba65cda2c80866dc2fbb1",
+      "rawFile": "raw/text-3-repeat-2-page-020.json",
+      "rawSha256": "0737c755210ed8e2ea473f0c5eee3cae70fde41da99389bdde09abf57fd05695",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-021.json",
+      "captureRecordSha256": "17e95966af7c279fb47949acc758f68fb70b1e53bb01e779c00552f20d6312b5",
+      "rawFile": "raw/text-3-repeat-2-page-021.json",
+      "rawSha256": "ffff185f19bb5306c4a0421b09c514b5194bef26053af536c04574dc721c5d3d",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-022.json",
+      "captureRecordSha256": "bcb8bb93a9233ac8a70ab16207031401b173c232ab6099d7891638c18fdd1abb",
+      "rawFile": "raw/text-3-repeat-2-page-022.json",
+      "rawSha256": "20281fb87e5d7608d6d1d0cf0fd03fdc1048a0576893a1f695ec5caeaa0bc926",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-023.json",
+      "captureRecordSha256": "f84a47006a05dade2125b5821594ef0bfcc3c1e43b6ef3550fd1b4ac7540183b",
+      "rawFile": "raw/text-3-repeat-2-page-023.json",
+      "rawSha256": "b7f734a890624f7675aaaf3a4146250e9077b59ff73648d64711265e60902578",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-024.json",
+      "captureRecordSha256": "ed332909449f753726bd868b5c6177bab39f2a74447b1029e349d4348bfd6a9c",
+      "rawFile": "raw/text-3-repeat-2-page-024.json",
+      "rawSha256": "8768af03b7740d3c87ea35542299c4f13ba78f05af3683a2b0af05625870b648",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-025.json",
+      "captureRecordSha256": "e9bd2dd1a2b01233cc04463ac3d14f73b33a9f3719fb2f549a94068a8fed1194",
+      "rawFile": "raw/text-3-repeat-2-page-025.json",
+      "rawSha256": "77fb08d7373b87b0086c91519c335e096a1434af07ea82dc02f81b4023c5bcbf",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-026.json",
+      "captureRecordSha256": "d8428bb5b209c2dd931331e5d42dbda6ca67163e6180bc92b280fb2e283b0728",
+      "rawFile": "raw/text-3-repeat-2-page-026.json",
+      "rawSha256": "c2a10af8885ea6f2f3e1c4e8ef503370ae49f73924b52048b719c05d8d31387b",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-027.json",
+      "captureRecordSha256": "75e5a5e559063251d58fd3ec2be2561425c53c2faa159ecc7e42c61e2e484828",
+      "rawFile": "raw/text-3-repeat-2-page-027.json",
+      "rawSha256": "792206a570eaf556c131d4a53cc41326f5c4942180b559cbff6012136978e25f",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-028.json",
+      "captureRecordSha256": "468cc0ff34df3528cbe75f6cafd87ce55d5739febca266de169ea536a1c83014",
+      "rawFile": "raw/text-3-repeat-2-page-028.json",
+      "rawSha256": "57204d28e7d8be0be1c986788f0bc3b488d635bd4b5b966f0777b9b615705074",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-029.json",
+      "captureRecordSha256": "a62e12a963b04daa2b5a77abe9878a7bd62ce603f90c32e5e015ebac07bb884b",
+      "rawFile": "raw/text-3-repeat-2-page-029.json",
+      "rawSha256": "136f3ff046d6bee1d3f0fb071b90e599eba13fcb3677d7b629d180969a166604",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-030.json",
+      "captureRecordSha256": "889f1c1023c9ee8e8fe717950a669f7b05125015e65936463a0bdd091283cce3",
+      "rawFile": "raw/text-3-repeat-2-page-030.json",
+      "rawSha256": "77a63ea22c3f454a9e973ff7de51760f0ceeca8952ebe5d0a0c94e2ac7ca850b",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-031.json",
+      "captureRecordSha256": "b072b3315fbfed0c58278e320f2672d1c7741a8be9ca5ad4680c88995da6a1a4",
+      "rawFile": "raw/text-3-repeat-2-page-031.json",
+      "rawSha256": "3af6213251f55746bc947fb2ccee77de43006fbdd969542ae704ac3ba958d2f7",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-032.json",
+      "captureRecordSha256": "3e1058d35cef311f7cd0c3e5a78086558681f6455b05fed153b373f4a5f52219",
+      "rawFile": "raw/text-3-repeat-2-page-032.json",
+      "rawSha256": "43937b382a3401bf084bfc29d0a21e72c2fd884b7dd8498d0050638d536f87db",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-033.json",
+      "captureRecordSha256": "cb975cafd70b2d376c90a1e9e8c607ff4d2a3d9c74d03fb7af9b4b5792648955",
+      "rawFile": "raw/text-3-repeat-2-page-033.json",
+      "rawSha256": "f0b957f708849c2ee46e07efac8df1c43724b8cd178e2bf84529721e37f923c5",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-3-repeat-2-page-034.json",
+      "captureRecordSha256": "f90379eab7c19ec121f96267032be4c55f78299ee9d4bf1245cfb70f3d98fd8d",
+      "rawFile": "raw/text-3-repeat-2-page-034.json",
+      "rawSha256": "baec1894306722f2da8794e8303573da22336466ff4a667f60decf958e8a49f1",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-4-repeat-1-page-001.json",
+      "captureRecordSha256": "2ea49bddcc6758c60d079a9ca414457f330ea9dc331c78aa198bc9fd87acd881",
+      "rawFile": "raw/text-4-repeat-1-page-001.json",
+      "rawSha256": "a1487803b13106d46327634c8d37a0612f1292ab9ac758ff24d9ffe39847e7fe",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-4-repeat-1-page-002.json",
+      "captureRecordSha256": "82c8f42713fd58c9c1343080fba9b883e5e949d656124d71a84ac21ff6787ce1",
+      "rawFile": "raw/text-4-repeat-1-page-002.json",
+      "rawSha256": "c6b27702688d8613c4b3439f117321071a68bd6b20ab31549838d91ab54d9918",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-4-repeat-2-page-001.json",
+      "captureRecordSha256": "18b5c58e44724dd3e9e09ddf9a64992a647027e6fdab797559ef6d266e1b9c3d",
+      "rawFile": "raw/text-4-repeat-2-page-001.json",
+      "rawSha256": "709b3a29bfedeaea4b353d853a9e0a6db18e2d647c210aaf4d1fc005b280d86b",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-4-repeat-2-page-002.json",
+      "captureRecordSha256": "55819e71c14e0b6ae7a900bae67a67d033ac81bc9614bc635c9124609aa43288",
+      "rawFile": "raw/text-4-repeat-2-page-002.json",
+      "rawSha256": "70d4620f8152807ecfd9249674a9a129bd9a4cbc4c92e2ec6f6a2eebc5c74ba3",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-5-repeat-1-page-001.json",
+      "captureRecordSha256": "167e341f1e11e3b52e516a9d03c56b805e10bffda26f5b7551b2ac73c0419107",
+      "rawFile": "raw/text-5-repeat-1-page-001.json",
+      "rawSha256": "b2e34e28900d66eb23c6d810a7119858f99effe9364975eaa9963bdea00af8c4",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-5-repeat-1-page-002.json",
+      "captureRecordSha256": "7106d87c7e6bd1d953e1b73d6db8f8b273f222fa3af140986cfdf178c7333f02",
+      "rawFile": "raw/text-5-repeat-1-page-002.json",
+      "rawSha256": "9855aa077a4ba6cac77b6884b9b0854bbbff4631e4c5c9c671a7680eba8c7811",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-5-repeat-1-page-003.json",
+      "captureRecordSha256": "7c8b0355a82da28a434ba4ea69c37bed3f67dbaa23a795ec1ed386bb57c40fd4",
+      "rawFile": "raw/text-5-repeat-1-page-003.json",
+      "rawSha256": "a03d91ce56c6616bc000419fe32ef9ca1fc936870f8d12944122bd34e12ac94d",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-5-repeat-1-page-004.json",
+      "captureRecordSha256": "8e9feeb3397bbe44d438d26649ead7229d6babd55a4fd1f3cee2384bb966a9d4",
+      "rawFile": "raw/text-5-repeat-1-page-004.json",
+      "rawSha256": "3a49ebe09f5c47d5dad0189bc2d5dc273c30e0edbe0dcdc0b57bb4e89478305b",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-5-repeat-2-page-001.json",
+      "captureRecordSha256": "de32c4ce1cabb18c07c63b6cc5a89a6e1f9354f1eff819019e9e78a2b8a7bcc6",
+      "rawFile": "raw/text-5-repeat-2-page-001.json",
+      "rawSha256": "92c20f5f286873c254e42f22bad37c342f8cde5d72f54ee0ac2df4d0f84238ca",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-5-repeat-2-page-002.json",
+      "captureRecordSha256": "717c7af3104dfe66701db42b92e27ecd635864064b319468c2c39d692385c63f",
+      "rawFile": "raw/text-5-repeat-2-page-002.json",
+      "rawSha256": "724c159dedb2e38efa8cc49da469001f833f2035b70cc1cf239969046b144ea0",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-5-repeat-2-page-003.json",
+      "captureRecordSha256": "49acf0ac94fc870a2f13a7222ffad4e33788bbbf19e1c263b36dc670135366dc",
+      "rawFile": "raw/text-5-repeat-2-page-003.json",
+      "rawSha256": "040e4fbbd702a05f9fbd08bc68e8c830e7a4701e70f0d694fe0a606a39628ee1",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "captures/text-5-repeat-2-page-004.json",
+      "captureRecordSha256": "2045475364c7a9e320020dedf0baaa45a59ae158c82b7c2638131c838e862417",
+      "rawFile": "raw/text-5-repeat-2-page-004.json",
+      "rawSha256": "c77f90e729596a2bc005751b48bfbe9a9c89c00eea4a94003b93137fc415f977",
+      "success": true,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "failures/metadata-004-repeat-1-attempt-1-capture.json",
+      "captureRecordSha256": "f271349b83f8ad556612b209428dd3d3a945f2552c7b23d97790b3c08ae5f282",
+      "rawFile": "failures/metadata-004-repeat-1-attempt-1-body.json",
+      "rawSha256": "58c188404ab3de68e7fd2aa985567a802d1f7ea01cb091942d396febb211e1c7",
+      "success": false,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "failures/metadata-004-repeat-2-attempt-1-capture.json",
+      "captureRecordSha256": "cb7a7f6a36fc2e2754a7d8961cfdc5273f854b945ce12c4b8f6741ce77d08897",
+      "rawFile": "failures/metadata-004-repeat-2-attempt-1-body.json",
+      "rawSha256": "8d5a9d73004b1e66db04a820b601457d9dc87f4ac628ce538a44a0d6ce12f45e",
+      "success": false,
+      "epoch": "ORIGINAL"
+    },
+    {
+      "captureFile": "failures/metadata-006-repeat-1-attempt-1-capture.json",
+      "captureRecordSha256": "8272b4b65b13b8bad2b1319d7a181af645c1886df5d212e09f243539b863bac2",
+      "rawFile": "failures/metadata-006-repeat-1-attempt-1-body.json",
+      "rawSha256": "8af1cf36e1ef1222ece0c0aee8fa9cb07aa8b639c53710cdd8622fb3d0c91951",
+      "success": false,
+      "epoch": "ORIGINAL"
+    }
+  ],
+  "successfulOriginalResponseCount": 172,
+  "successfulContinuationResponseCount": 226,
+  "initialFailedResponseCount": 3,
+  "continuationFailedResponseCount": 0,
+  "selectedMetadataEntryCount": 2911,
+  "phraseOnlyNewEntriesPendingCount": 12262,
+  "sourceCaptureReplayRequiredSeparately": true,
+  "broaderDiscoveryComplete": false,
+  "formalDispositionAssigned": false,
+  "formalProtocolStatus": "DRAFT",
+  "targetFreezeGate": "BLOCKED",
+  "wholeCensusComponentUpperBound": null
+}

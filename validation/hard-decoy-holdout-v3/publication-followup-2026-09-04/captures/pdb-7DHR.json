@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-7DHR",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "7DHR"
+    ],
+    "query": "\"7DHR\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227DHR%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:47:40.504029+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-7DHR.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227DHR%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "4e1939cb2d96cc0540960336896d9469ff073bab2415c19ecce570711e6a2194",
+  "bytes": 7647,
+  "reportedHitCount": 8,
+  "retrievedRecordCount": 8,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:47:50.168335+00:00"
+}

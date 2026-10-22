@@ -1,0 +1,2265 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-v0.6-vhh-numbering-public-panel-differential-v1",
+  "status": "EXECUTED_PUBLIC_DEVELOPMENT_DIFFERENTIAL_NOT_PRODUCTION_VALIDATION",
+  "candidateVersion": "0.6.0-candidate.1",
+  "sourcePanel": {
+    "path": "validation/v0.5-public-regression-attestation-v1/native-interfaces.json",
+    "softwareVersion": "0.5.0",
+    "structures": 17,
+    "allSourceBytesAndSha256Reverified": true
+  },
+  "accounting": {
+    "structures": 17,
+    "legacyNumbered": 17,
+    "candidateNumbered": 17,
+    "statusChanges": 0,
+    "queryBoundChanges": 0,
+    "cdrLengthChanges": 0,
+    "regionAssignmentChanges": 0,
+    "paratopeShareChanges": 0,
+    "cdr3ShareChanges": 0,
+    "changedContactPairs": 0,
+    "coordinateGeometryRegressions": 0
+  },
+  "integrity": {
+    "historicalArtifactsModified": false,
+    "candidateIntegratedIntoProduction": false,
+    "usesNativeHoldoutCoordinates": false,
+    "usesNativeHoldoutRelativePoses": false,
+    "usesNativeHoldoutEpitopes": false,
+    "usesDockqLabels": false,
+    "establishesBindingPredictionAccuracy": false,
+    "establishesRankingValidity": false,
+    "constitutesIndependentHoldoutEvidence": false
+  },
+  "records": [
+    {
+      "pdb": "3P0G",
+      "receptor": "ADRB2",
+      "pair": "A:B",
+      "sourceBytes": 319626,
+      "sourceSha256": "de53e603dcc306af411374d208f340a8685f5072a2a77bc64175d067cb73fbc9",
+      "vhhSequenceLength": 121,
+      "vhhSequenceSha256": "818d90c4f7ed61b50d4f1754b369de6939a807a59ae417a688f86225e6837ee3",
+      "geometryControl": {
+        "contactPairCount": 46,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 1729.3
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.6937947869300842,
+        "queryStart": 0,
+        "queryEnd": 118,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 14
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "9a96720a78fe70ef56f6968b510d502ea69bdf83aea016619f078bdd5abbcb27",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "cc4a75fd5c8033b460b6be1f6f2f5bc49f87cc63b1607926c59e1dc9d9bb2f39",
+            "sequence": "GSIFSINT"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "d5de48c01fe97847372fac8295d800af44a075089ebcefceb0b8368904507d18",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "fc7a11e4d3fffdc67b4a656b4534e15793c33a9ea42b8d2e9596c7b3595e6af9",
+            "sequence": "IHSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b74bf844f8bfd93ed69592d4b0d1350752db4c096fc458b18dc603d462225298",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 14,
+            "sha256": "21146b36fcb5355ef5ef88c8933b6d683dd3b3687676a37c5d9b3a0dafa861d0",
+            "sequence": "NVKDYGAVLYEYDY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.95652173913,
+        "cdr3ProxyShare": 0.521739130435,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.6937947869300842,
+        "queryStart": 0,
+        "queryEnd": 118,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 14
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "9a96720a78fe70ef56f6968b510d502ea69bdf83aea016619f078bdd5abbcb27",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "cc4a75fd5c8033b460b6be1f6f2f5bc49f87cc63b1607926c59e1dc9d9bb2f39",
+            "sequence": "GSIFSINT"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "d5de48c01fe97847372fac8295d800af44a075089ebcefceb0b8368904507d18",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "fc7a11e4d3fffdc67b4a656b4534e15793c33a9ea42b8d2e9596c7b3595e6af9",
+            "sequence": "IHSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b74bf844f8bfd93ed69592d4b0d1350752db4c096fc458b18dc603d462225298",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 14,
+            "sha256": "21146b36fcb5355ef5ef88c8933b6d683dd3b3687676a37c5d9b3a0dafa861d0",
+            "sequence": "NVKDYGAVLYEYDY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.95652173913,
+        "cdr3ProxyShare": 0.521739130435,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "4MQS",
+      "receptor": "CHRM2",
+      "pair": "A:B",
+      "sourceBytes": 290952,
+      "sourceSha256": "ec46471ca53e1131d70f0977e528e94658fd48a22a96f2ade5f578820b763267",
+      "vhhSequenceLength": 121,
+      "vhhSequenceSha256": "5e842b5db5fb31095e39cbab43cbdabd488603bc88026f94bbb6d0b11040b224",
+      "geometryControl": {
+        "contactPairCount": 31,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 1541.1
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.7168616652488708,
+        "queryStart": 0,
+        "queryEnd": 120,
+        "cdrLengths": {
+          "cdr1": 11,
+          "cdr2": 8,
+          "cdr3": 11
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "990c6b6529512d8fd2a6aff882c9ca8d938694f191a42ad95b2d1517053323c3",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 11,
+            "sha256": "d5f55c7127671843e753734fa6dea90f3fc392456c8c6bfe6c0e98a75a8a2f49",
+            "sequence": "GFDFDNFDDYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "aadbf8ece56be537737a8cd69882f4cafee52220102da250746b2818bf29f110",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "fcdbfac9ee9067b621cae796abbd0b3ab952f505822228a2c17e97b04eaab30f",
+            "sequence": "IDPSDGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b76d8210d6fdae04964982f8be8078efd013b3ca212255b4fd3baea11eb16a0b",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 11,
+            "sha256": "b9895c02656961a305f1556f2c96883a6b89db6135fcfbfb5adbeda45ed86cc9",
+            "sequence": "SAWTLFHSDEY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.677419354839,
+        "cdr3ProxyShare": 0.612903225806,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.7168616652488708,
+        "queryStart": 0,
+        "queryEnd": 120,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 11,
+          "cdr2": 8,
+          "cdr3": 11
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "990c6b6529512d8fd2a6aff882c9ca8d938694f191a42ad95b2d1517053323c3",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 11,
+            "sha256": "d5f55c7127671843e753734fa6dea90f3fc392456c8c6bfe6c0e98a75a8a2f49",
+            "sequence": "GFDFDNFDDYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "aadbf8ece56be537737a8cd69882f4cafee52220102da250746b2818bf29f110",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "fcdbfac9ee9067b621cae796abbd0b3ab952f505822228a2c17e97b04eaab30f",
+            "sequence": "IDPSDGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b76d8210d6fdae04964982f8be8078efd013b3ca212255b4fd3baea11eb16a0b",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 11,
+            "sha256": "b9895c02656961a305f1556f2c96883a6b89db6135fcfbfb5adbeda45ed86cc9",
+            "sequence": "SAWTLFHSDEY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.677419354839,
+        "cdr3ProxyShare": 0.612903225806,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "4XT1",
+      "receptor": "US28",
+      "pair": "A:C",
+      "sourceBytes": 709560,
+      "sourceSha256": "407e117755da2023081acac9c66d5a566139c4ee9ffee4aa47992fd1bd6d37aa",
+      "vhhSequenceLength": 116,
+      "vhhSequenceSha256": "939fc36aaa1f5444f9eeba6f8ad4d59864ec0b857608a6d559910c3948d0bb15",
+      "geometryControl": {
+        "contactPairCount": 59,
+        "severeClashCount": 1,
+        "deltaSasaAngstrom2": 2225.6
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.7447622418403625,
+        "queryStart": 0,
+        "queryEnd": 115,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 12
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "938ffbdd2ede13c27c06ad52dbaf9aadb35fe771bc0597454e23df8d290cf1de",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "cd7a2c619fc5feadb5fbfd43e4f498f4dba2da0f539962556804c9a848405378",
+            "sequence": "GSIFTIYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "dc0f4f13795c01eba7c94b1d5da167c7874b9d9e84813818fadf22b7286ce6f0",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "0bb20d440bc9659faeb566cd02910ca9bbcc187f0c5c18634b4bc96f4ec64520",
+            "sequence": "ITFGGDT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "03fe272b3c6ff2017edaf01047e7877e68f31857b8f83888994a49fe0aa86fe3",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 12,
+            "sha256": "2b7a942ebc8f7622b6812d83f6d327c708fbc6e04ef1fa7f66b4aaf093b83b9a",
+            "sequence": "NAEETIVEEADY"
+          },
+          "FR4-IMGT": {
+            "length": 9,
+            "sha256": "730de64d297c7e9b04c0fa5d39659acc92eeedb07f5054fafe21a3fdfa7228b4",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.898305084746,
+        "cdr3ProxyShare": 0.525423728814,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.7447622418403625,
+        "queryStart": 0,
+        "queryEnd": 115,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 12
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "938ffbdd2ede13c27c06ad52dbaf9aadb35fe771bc0597454e23df8d290cf1de",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "cd7a2c619fc5feadb5fbfd43e4f498f4dba2da0f539962556804c9a848405378",
+            "sequence": "GSIFTIYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "dc0f4f13795c01eba7c94b1d5da167c7874b9d9e84813818fadf22b7286ce6f0",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "0bb20d440bc9659faeb566cd02910ca9bbcc187f0c5c18634b4bc96f4ec64520",
+            "sequence": "ITFGGDT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "03fe272b3c6ff2017edaf01047e7877e68f31857b8f83888994a49fe0aa86fe3",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 12,
+            "sha256": "2b7a942ebc8f7622b6812d83f6d327c708fbc6e04ef1fa7f66b4aaf093b83b9a",
+            "sequence": "NAEETIVEEADY"
+          },
+          "FR4-IMGT": {
+            "length": 9,
+            "sha256": "730de64d297c7e9b04c0fa5d39659acc92eeedb07f5054fafe21a3fdfa7228b4",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.898305084746,
+        "cdr3ProxyShare": 0.525423728814,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "6DO1",
+      "receptor": "AGTR1",
+      "pair": "A:C",
+      "sourceBytes": 740826,
+      "sourceSha256": "b2f0718a135f054cb5e5eca342c62dd07fccaa313beb6d4f99dd08864e08431b",
+      "vhhSequenceLength": 125,
+      "vhhSequenceSha256": "30941b5f0773f4223c12611bbf9d755b7ff574da19ba1f2186967b97660b62a3",
+      "geometryControl": {
+        "contactPairCount": 60,
+        "severeClashCount": 1,
+        "deltaSasaAngstrom2": 2247
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.6893892884254456,
+        "queryStart": 0,
+        "queryEnd": 124,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 20
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "636e3c302ec6b798125711af155bcde042a7bd003dca1d4a55b538acb06d781a",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "c22e90a7636638cf37143c5348807bbb5e048d441304a9b84f15ed4e56378fb2",
+            "sequence": "GNIFDVDI"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "f6ba53be9d489bb391fb1fb30b5462c4becfacbdf448aa63f0f1400f0b7f187b",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "5b3ee73ed802f0f66b6ab7e2c6c2ff480bcd26e6d68ccdddfee4a0a5a3778538",
+            "sequence": "ITDGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "94f2d01cf68ecbbaecc2780d7ac9d5ee2785f904f4c5439f573122db4874c6ac",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 20,
+            "sha256": "a5916e6d3e9f09125e2d3324b62dfcaca2be9783653a106bd06a84ad1afe250a",
+            "sequence": "AAVAYPDIPTYFDYDSDNFY"
+          },
+          "FR4-IMGT": {
+            "length": 10,
+            "sha256": "507a0924b121a29a71e93e05542737b01551c3b2d216f34c796e557e527f8b76",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.783333333333,
+        "cdr3ProxyShare": 0.766666666667,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.6893892884254456,
+        "queryStart": 0,
+        "queryEnd": 124,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 20
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "636e3c302ec6b798125711af155bcde042a7bd003dca1d4a55b538acb06d781a",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "c22e90a7636638cf37143c5348807bbb5e048d441304a9b84f15ed4e56378fb2",
+            "sequence": "GNIFDVDI"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "f6ba53be9d489bb391fb1fb30b5462c4becfacbdf448aa63f0f1400f0b7f187b",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "5b3ee73ed802f0f66b6ab7e2c6c2ff480bcd26e6d68ccdddfee4a0a5a3778538",
+            "sequence": "ITDGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "94f2d01cf68ecbbaecc2780d7ac9d5ee2785f904f4c5439f573122db4874c6ac",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 20,
+            "sha256": "a5916e6d3e9f09125e2d3324b62dfcaca2be9783653a106bd06a84ad1afe250a",
+            "sequence": "AAVAYPDIPTYFDYDSDNFY"
+          },
+          "FR4-IMGT": {
+            "length": 10,
+            "sha256": "507a0924b121a29a71e93e05542737b01551c3b2d216f34c796e557e527f8b76",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.783333333333,
+        "cdr3ProxyShare": 0.766666666667,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "6B73",
+      "receptor": "OPRK1",
+      "pair": "B:C",
+      "sourceBytes": 1077057,
+      "sourceSha256": "b2c8e3a8c01b44cc9292ed8f0be433f14c428eaaf0e94c6ddd80c818c27ef3f4",
+      "vhhSequenceLength": 126,
+      "vhhSequenceSha256": "874d38b0012e11e3e9110367d7843fa94f961e2115e833d07540ffdaac7ea31a",
+      "geometryControl": {
+        "contactPairCount": 56,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 2074.6
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.6304531693458557,
+        "queryStart": 0,
+        "queryEnd": 120,
+        "cdrLengths": {
+          "cdr1": 6,
+          "cdr2": 8,
+          "cdr3": 17
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "0fa11df358898efd4505756bbc9271d34af018dae5addfac17211bfb8a2ca84b",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 6,
+            "sha256": "0e80f51a5ff3d9704acdbf9d0f9ee37f3e5f672873e71a6e77c09f898b455564",
+            "sequence": "ERTSYP"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "17d19b8e3e645c9c7cd9ff8dd19c02c17efcabe3ab16aff86b8da9360b5dc98f",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "96947397974a6c43f21f3ac7bfe6029aff9ddf57b946b172ee925493fa639c7a",
+            "sequence": "ITWSGIDP"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b5ae59099d041fdbae0e87fb0a97752b69f7f4ffadd9ace04d1b695a034f4b8f",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 17,
+            "sha256": "5a91c8fed981cd35565aa9d0601009fe8da3ee9759364fdbc273de0211ad03a7",
+            "sequence": "AARAPVGQSSSPYDYDY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.464285714286,
+        "cdr3ProxyShare": 0.053571428571,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.6304531693458557,
+        "queryStart": 0,
+        "queryEnd": 120,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 6,
+          "cdr2": 8,
+          "cdr3": 17
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "0fa11df358898efd4505756bbc9271d34af018dae5addfac17211bfb8a2ca84b",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 6,
+            "sha256": "0e80f51a5ff3d9704acdbf9d0f9ee37f3e5f672873e71a6e77c09f898b455564",
+            "sequence": "ERTSYP"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "17d19b8e3e645c9c7cd9ff8dd19c02c17efcabe3ab16aff86b8da9360b5dc98f",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "96947397974a6c43f21f3ac7bfe6029aff9ddf57b946b172ee925493fa639c7a",
+            "sequence": "ITWSGIDP"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b5ae59099d041fdbae0e87fb0a97752b69f7f4ffadd9ace04d1b695a034f4b8f",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 17,
+            "sha256": "5a91c8fed981cd35565aa9d0601009fe8da3ee9759364fdbc273de0211ad03a7",
+            "sequence": "AARAPVGQSSSPYDYDY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.464285714286,
+        "cdr3ProxyShare": 0.053571428571,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "6RNK",
+      "receptor": "SUCNR1",
+      "pair": "A:B",
+      "sourceBytes": 694899,
+      "sourceSha256": "767f648c80f82d8b3446cdd219a590c11b6b2c130f692ed1adc89c92fd4368f8",
+      "vhhSequenceLength": 129,
+      "vhhSequenceSha256": "082244e052c268060edf103b225a0118d4e16c9f25b10f3fd81460f006f03495",
+      "geometryControl": {
+        "contactPairCount": 44,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 1525.1
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.7261534929275513,
+        "queryStart": 0,
+        "queryEnd": 128,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 22
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "9eb92d7093d10a8bb7a2aac724e21c9ff7d3bed66a22e3837981a7e9678ecbc0",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "585d2ced1ac9ca1641620ce1f92f8de7071c7353e5b7bd95823a041fea2e839a",
+            "sequence": "GYTLANYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "367cc36634ea13b0e3f0b776c55b67e40c819ff0cd0ea7173b34e8f0879b932e",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "9bd82de3a9a33f81405e2d690b4b472c03e2c0625d7ea807dde9597176fc7215",
+            "sequence": "ISSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "61e66c08f848d82db1c91158b053f684adfbe3ba725071cd48d124355d74d2d5",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 22,
+            "sha256": "43bddf57156a02273f3555068d8c5388cca64df68049039002027f7208cdecee",
+            "sequence": "AADPFGERLCIDPNTFAGYLET"
+          },
+          "FR4-IMGT": {
+            "length": 12,
+            "sha256": "64458e7e3012f2a4cb2290d4aa0a4fd038f56b6a4ff3606cffd0504bdce212db",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.75,
+        "cdr3ProxyShare": 0.75,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.7261534929275513,
+        "queryStart": 0,
+        "queryEnd": 128,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 22
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "9eb92d7093d10a8bb7a2aac724e21c9ff7d3bed66a22e3837981a7e9678ecbc0",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "585d2ced1ac9ca1641620ce1f92f8de7071c7353e5b7bd95823a041fea2e839a",
+            "sequence": "GYTLANYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "367cc36634ea13b0e3f0b776c55b67e40c819ff0cd0ea7173b34e8f0879b932e",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "9bd82de3a9a33f81405e2d690b4b472c03e2c0625d7ea807dde9597176fc7215",
+            "sequence": "ISSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "61e66c08f848d82db1c91158b053f684adfbe3ba725071cd48d124355d74d2d5",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 22,
+            "sha256": "43bddf57156a02273f3555068d8c5388cca64df68049039002027f7208cdecee",
+            "sequence": "AADPFGERLCIDPNTFAGYLET"
+          },
+          "FR4-IMGT": {
+            "length": 12,
+            "sha256": "64458e7e3012f2a4cb2290d4aa0a4fd038f56b6a4ff3606cffd0504bdce212db",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.75,
+        "cdr3ProxyShare": 0.75,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "6KNM",
+      "receptor": "APLNR",
+      "pair": "B:A",
+      "sourceBytes": 654966,
+      "sourceSha256": "b8e39f48e174f3bf2f0ef367256c68d12e791eae9ae793a14d21f5ac8de1d412",
+      "vhhSequenceLength": 129,
+      "vhhSequenceSha256": "052f7f66ca72d392be7eef46795d7425955ab881645dafd9346229e0aa7c3f3c",
+      "geometryControl": {
+        "contactPairCount": 91,
+        "severeClashCount": 1,
+        "deltaSasaAngstrom2": 3238.2
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.6663181185722351,
+        "queryStart": 0,
+        "queryEnd": 128,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 23
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "97522f24080c1b8a01e35684223bd42da130c5eacd6094c07b79837153248c5d",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "6e8ee5a3bac4d962fe7133146fd43cf32d54286a82229b86f4fd2463810bd22f",
+            "sequence": "GSTYSSHC"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "f0daa9816d4c43447f88a5f6df6ff2285b180f5da68dd9113ed4bde2ba32bcf0",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "37ecc12c0baa5c19297d34446e9adcb4553019faeab5a813816aeb3c78e99bd0",
+            "sequence": "MTRSRGT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "4abcc4f9eb75df6beb8ed060239fa15ca1973df594f7a52baf2befa91a65cfed",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 23,
+            "sha256": "d0a291a3c845556d7be97c58c67e63c13ad1ffdff102287e59dad6eafde44ce3",
+            "sequence": "AAVPRAGIESGAYCKWNMKDSGS"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.868131868132,
+        "cdr3ProxyShare": 0.483516483516,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.6663181185722351,
+        "queryStart": 0,
+        "queryEnd": 128,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 23
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "97522f24080c1b8a01e35684223bd42da130c5eacd6094c07b79837153248c5d",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "6e8ee5a3bac4d962fe7133146fd43cf32d54286a82229b86f4fd2463810bd22f",
+            "sequence": "GSTYSSHC"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "f0daa9816d4c43447f88a5f6df6ff2285b180f5da68dd9113ed4bde2ba32bcf0",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "37ecc12c0baa5c19297d34446e9adcb4553019faeab5a813816aeb3c78e99bd0",
+            "sequence": "MTRSRGT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "4abcc4f9eb75df6beb8ed060239fa15ca1973df594f7a52baf2befa91a65cfed",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 23,
+            "sha256": "d0a291a3c845556d7be97c58c67e63c13ad1ffdff102287e59dad6eafde44ce3",
+            "sequence": "AAVPRAGIESGAYCKWNMKDSGS"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.868131868132,
+        "cdr3ProxyShare": 0.483516483516,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "7YM8",
+      "receptor": "ADRA1A",
+      "pair": "A:D",
+      "sourceBytes": 406134,
+      "sourceSha256": "076ff66110b4e990be29ff85eecd1cc729fd8e1737d5e59b35d1ab8fa1c6f7c2",
+      "vhhSequenceLength": 116,
+      "vhhSequenceSha256": "f1311a290ab76a50419f8932c9310b6d7d0cd6ce86f61c8a0a95a86497fb234b",
+      "geometryControl": {
+        "contactPairCount": 57,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 1754.5
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.7109829187393188,
+        "queryStart": 0,
+        "queryEnd": 115,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 6,
+          "cdr3": 11
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "636e3c302ec6b798125711af155bcde042a7bd003dca1d4a55b538acb06d781a",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "a611c15deb43bd65b476c22f086078109ee35c7978114ac551b78cf157ac3746",
+            "sequence": "GNISAHWK"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "bb32c4d8f281711814a51b9156cd7a2220fde9b64729cb8f777e28a6157be858",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 6,
+            "sha256": "68c0fd0d40bbb22e75c59d4d8b1d9bb97665ef54cbaf4dfe028db5dfa5f8425a",
+            "sequence": "IGYANT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "e44af47c214cc0e439747a346b7e835d7a1d278809efecb51a938ca573ce4c96",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 11,
+            "sha256": "1188f595646aa401d92219e9742419c382021bcb54ebd704fe4abc45dff9f71c",
+            "sequence": "AAYSYYRDHSY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.80701754386,
+        "cdr3ProxyShare": 0.649122807018,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.7109829187393188,
+        "queryStart": 0,
+        "queryEnd": 115,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 6,
+          "cdr3": 11
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "636e3c302ec6b798125711af155bcde042a7bd003dca1d4a55b538acb06d781a",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "a611c15deb43bd65b476c22f086078109ee35c7978114ac551b78cf157ac3746",
+            "sequence": "GNISAHWK"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "bb32c4d8f281711814a51b9156cd7a2220fde9b64729cb8f777e28a6157be858",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 6,
+            "sha256": "68c0fd0d40bbb22e75c59d4d8b1d9bb97665ef54cbaf4dfe028db5dfa5f8425a",
+            "sequence": "IGYANT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "e44af47c214cc0e439747a346b7e835d7a1d278809efecb51a938ca573ce4c96",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 11,
+            "sha256": "1188f595646aa401d92219e9742419c382021bcb54ebd704fe4abc45dff9f71c",
+            "sequence": "AAYSYYRDHSY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.80701754386,
+        "cdr3ProxyShare": 0.649122807018,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "8QOT",
+      "receptor": "OPRM1",
+      "pair": "A:B",
+      "sourceBytes": 680238,
+      "sourceSha256": "6d1e9b5365e77a768433141952bfa82f15a6e015920d70544e0694b281da6ee1",
+      "vhhSequenceLength": 125,
+      "vhhSequenceSha256": "9fdc19b826b7b9ba7afff56106252be2b5fe38f3e6edeb361d4a9bbb64e10237",
+      "geometryControl": {
+        "contactPairCount": 49,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 2136.9
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.6950028538703918,
+        "queryStart": 1,
+        "queryEnd": 124,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 17
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "1bdbce5d5fc14ebdd6d89f1fbf1167178d141db47f6673416c34b3cee05c2513",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "b27d47fa391a3d4c88ff4ed6a454947b1f935665e4884e3d17780e053f20bd60",
+            "sequence": "GSISSIST"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "e64f8929610b1f36febad949d641603de1a54a4aecbf212c8dbe9b5e7bcae39d",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "ef9f6aa38c40eb81ccd7e8b20095d20de89bb6634c1184e8e2a15af5c9c1b06a",
+            "sequence": "ITSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "e44af47c214cc0e439747a346b7e835d7a1d278809efecb51a938ca573ce4c96",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 17,
+            "sha256": "296229e8cb5866210cbb2ac4033d697165b2f39b1395fedf911759112125b343",
+            "sequence": "NFKYYSGSYFYKSEYDY"
+          },
+          "FR4-IMGT": {
+            "length": 12,
+            "sha256": "b12cb6e6b663ccbc04c9626411600bfe75ed990561d91f7b0e6680df93f18cdc",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 1,
+        "cdr3ProxyShare": 0.857142857143,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.6950028538703918,
+        "queryStart": 1,
+        "queryEnd": 124,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 17
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "1bdbce5d5fc14ebdd6d89f1fbf1167178d141db47f6673416c34b3cee05c2513",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "b27d47fa391a3d4c88ff4ed6a454947b1f935665e4884e3d17780e053f20bd60",
+            "sequence": "GSISSIST"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "e64f8929610b1f36febad949d641603de1a54a4aecbf212c8dbe9b5e7bcae39d",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "ef9f6aa38c40eb81ccd7e8b20095d20de89bb6634c1184e8e2a15af5c9c1b06a",
+            "sequence": "ITSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "e44af47c214cc0e439747a346b7e835d7a1d278809efecb51a938ca573ce4c96",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 17,
+            "sha256": "296229e8cb5866210cbb2ac4033d697165b2f39b1395fedf911759112125b343",
+            "sequence": "NFKYYSGSYFYKSEYDY"
+          },
+          "FR4-IMGT": {
+            "length": 12,
+            "sha256": "b12cb6e6b663ccbc04c9626411600bfe75ed990561d91f7b0e6680df93f18cdc",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 1,
+        "cdr3ProxyShare": 0.857142857143,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "8FCZ",
+      "receptor": "RHO",
+      "pair": "A:C",
+      "sourceBytes": 628722,
+      "sourceSha256": "5d25f2b91a9e2eb60a8536973e22287065b33090483b8c97c4ba133a185d9663",
+      "vhhSequenceLength": 114,
+      "vhhSequenceSha256": "7a1f7322817bdf312d731ab178f1881e4db03dd662d59ff07068b1f99437149a",
+      "geometryControl": {
+        "contactPairCount": 20,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 1022.4
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.7726035118103027,
+        "queryStart": 0,
+        "queryEnd": 113,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 8,
+          "cdr3": 9
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "52eb877c313fcfa2b244ffc1fc8f4ab8885fe811a86538ca2dbb2707620e4571",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "0aece581e7e31722390356de49f83ed8f1fce679bcce65666b75c7d8fead24d1",
+            "sequence": "GFTFSKYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "449e2c6c12a8994696bf75ea24884d72a12b525062c7fccfaa75b02592cfa46c",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "4f380a9d871b676788a8be92dd2b6fe06fdec9a06d77a0a7a2ccfd02854132ac",
+            "sequence": "IRPSGDNP"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "c9de331263c1c5f60853ba12369554383f89622e678abe7b7c13982efc47ae2e",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 9,
+            "sha256": "eda98b2cb21c7f1348eae575978f01f94c7b89e7dae352df7c444aa1ff7ed6bc",
+            "sequence": "TRGYGTMTI"
+          },
+          "FR4-IMGT": {
+            "length": 9,
+            "sha256": "4b1b55c6bc772f12f75b7bc7cffcc9eb9da0160425a6cdd3d30afc43a70d9dd8",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.8,
+        "cdr3ProxyShare": 0.5,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.7726035118103027,
+        "queryStart": 0,
+        "queryEnd": 113,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 8,
+          "cdr3": 9
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "52eb877c313fcfa2b244ffc1fc8f4ab8885fe811a86538ca2dbb2707620e4571",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "0aece581e7e31722390356de49f83ed8f1fce679bcce65666b75c7d8fead24d1",
+            "sequence": "GFTFSKYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "449e2c6c12a8994696bf75ea24884d72a12b525062c7fccfaa75b02592cfa46c",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "4f380a9d871b676788a8be92dd2b6fe06fdec9a06d77a0a7a2ccfd02854132ac",
+            "sequence": "IRPSGDNP"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "c9de331263c1c5f60853ba12369554383f89622e678abe7b7c13982efc47ae2e",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 9,
+            "sha256": "eda98b2cb21c7f1348eae575978f01f94c7b89e7dae352df7c444aa1ff7ed6bc",
+            "sequence": "TRGYGTMTI"
+          },
+          "FR4-IMGT": {
+            "length": 9,
+            "sha256": "4b1b55c6bc772f12f75b7bc7cffcc9eb9da0160425a6cdd3d30afc43a70d9dd8",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.8,
+        "cdr3ProxyShare": 0.5,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "7L1V",
+      "receptor": "HCRTR2",
+      "pair": "R:S",
+      "sourceBytes": 845559,
+      "sourceSha256": "7a0c3a547860fa8c34f01c0a38889e2b7199832c46cd5c41035b4c0a3404e31a",
+      "vhhSequenceLength": 111,
+      "vhhSequenceSha256": "e0dce480c81054086f6d084fb6831ed2ca18e68601753b38a4ad976ab68f3998",
+      "geometryControl": {
+        "contactPairCount": 55,
+        "severeClashCount": 2,
+        "deltaSasaAngstrom2": 2027.8
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.684036374092102,
+        "queryStart": 0,
+        "queryEnd": 110,
+        "cdrLengths": {
+          "cdr1": 7,
+          "cdr2": 8,
+          "cdr3": 8
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "4a9ed8576fd9d1769807e64c11e82609b608d24a4033da495dac02763d2d12a7",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 7,
+            "sha256": "8b59a7e90cd4bda8c9b314728bb380144b7ecf63843a42e2df758a767f3c62f7",
+            "sequence": "GFPVGRV"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "fc57d8b8abba01f3949628f8e93dd3d19a1411f48d6b09a941c78a44041f3c18",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "3c28e346d552283fbe0f94a76fc2bd630b1f604ffa5ec24caccb973273728186",
+            "sequence": "ISSHGDMT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "f78f62cbd76ccef17d984f8594d911a4af0924c9f1ec212b16756a7766b8bada",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 8,
+            "sha256": "3c3ddcd1fefe161970db089a312ae7f1bfb2ce412653ed67e5b7d766d9fa012d",
+            "sequence": "EVYVGYFY"
+          },
+          "FR4-IMGT": {
+            "length": 9,
+            "sha256": "24aac3c35afaf38db6451faab4a0e9b19a96ab354d01fe6026421141e8128e78",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.672727272727,
+        "cdr3ProxyShare": 0.472727272727,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.684036374092102,
+        "queryStart": 0,
+        "queryEnd": 110,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 7,
+          "cdr2": 8,
+          "cdr3": 8
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "4a9ed8576fd9d1769807e64c11e82609b608d24a4033da495dac02763d2d12a7",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 7,
+            "sha256": "8b59a7e90cd4bda8c9b314728bb380144b7ecf63843a42e2df758a767f3c62f7",
+            "sequence": "GFPVGRV"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "fc57d8b8abba01f3949628f8e93dd3d19a1411f48d6b09a941c78a44041f3c18",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "3c28e346d552283fbe0f94a76fc2bd630b1f604ffa5ec24caccb973273728186",
+            "sequence": "ISSHGDMT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "f78f62cbd76ccef17d984f8594d911a4af0924c9f1ec212b16756a7766b8bada",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 8,
+            "sha256": "3c3ddcd1fefe161970db089a312ae7f1bfb2ce412653ed67e5b7d766d9fa012d",
+            "sequence": "EVYVGYFY"
+          },
+          "FR4-IMGT": {
+            "length": 9,
+            "sha256": "24aac3c35afaf38db6451faab4a0e9b19a96ab354d01fe6026421141e8128e78",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.672727272727,
+        "cdr3ProxyShare": 0.472727272727,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "6O3C",
+      "receptor": "SMO",
+      "pair": "A:B",
+      "sourceBytes": 468342,
+      "sourceSha256": "437a1d6c9a222d1f0e24a42a0dd0bda5e9846f1fc61f6b4f19dae96d0cd85148",
+      "vhhSequenceLength": 122,
+      "vhhSequenceSha256": "97f566ad585194134eb6d1b3cac78639512654a7503deb163b21241409be05de",
+      "geometryControl": {
+        "contactPairCount": 66,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 2329.5
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.756756603717804,
+        "queryStart": 0,
+        "queryEnd": 121,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 16
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "636e3c302ec6b798125711af155bcde042a7bd003dca1d4a55b538acb06d781a",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "e9e62f86cb10931715d216695dc577575ebc0767db6b22337310f3ff19d29cce",
+            "sequence": "GYIFSSYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "07b66d2d0b61097c1972de2ea5a1f8c9347a943c57c84bb01e6846628ca59ad1",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "38ffc0eaabfa436ec79823b9191ec41f696dff537b2ad8911a8bee548cd0f8e3",
+            "sequence": "IGWGTIT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "af326e802d3a6d1a82d944e19dbd04ded0b3ee86653fbe6135141d277ec832c9",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 16,
+            "sha256": "0d236a4da02f022e4e53ecbe876fbcc408c033f52a5852a67329f12de6dca34d",
+            "sequence": "AAQDLLYYSFPGDHAY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.818181818182,
+        "cdr3ProxyShare": 0.560606060606,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.756756603717804,
+        "queryStart": 0,
+        "queryEnd": 121,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 16
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "636e3c302ec6b798125711af155bcde042a7bd003dca1d4a55b538acb06d781a",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "e9e62f86cb10931715d216695dc577575ebc0767db6b22337310f3ff19d29cce",
+            "sequence": "GYIFSSYA"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "07b66d2d0b61097c1972de2ea5a1f8c9347a943c57c84bb01e6846628ca59ad1",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "38ffc0eaabfa436ec79823b9191ec41f696dff537b2ad8911a8bee548cd0f8e3",
+            "sequence": "IGWGTIT"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "af326e802d3a6d1a82d944e19dbd04ded0b3ee86653fbe6135141d277ec832c9",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 16,
+            "sha256": "0d236a4da02f022e4e53ecbe876fbcc408c033f52a5852a67329f12de6dca34d",
+            "sequence": "AAQDLLYYSFPGDHAY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.818181818182,
+        "cdr3ProxyShare": 0.560606060606,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "8QW4",
+      "receptor": "FZD3",
+      "pair": "A:B",
+      "sourceBytes": 326025,
+      "sourceSha256": "e667daf2ebf20dab4238a3296b4a35a37f824d9eb303fc9c3461ae1266937ffb",
+      "vhhSequenceLength": 114,
+      "vhhSequenceSha256": "c03feb8a50a476de21e8ac8d63daaa75d5f2b50450cdd1e2e1a5505649a6e768",
+      "geometryControl": {
+        "contactPairCount": 36,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 1826.3
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.6320488452911377,
+        "queryStart": 0,
+        "queryEnd": 113,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 11
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "f9c26facaad93fc3a47348b450a367fad19980a09258cbc211e25e2be3b4e7f8",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "67453303dc015af441185016ac3d8e3863dde720c21a923bb9e6aa9100ed2cb1",
+            "sequence": "GRIFNLDV"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "b198c9accb45d6fc8ca5496fcb064a494c3c643e09049187ff11d49882e782d4",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "6ce9bb037d7c761f135325aae079ea24e7ca4ee89a6a67fe5175af60db256e16",
+            "sequence": "ITSGGKI"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "6cbb007342bbe3c5aa739390ae671bd4a28e14ed1d3ae7c9784a1887f3faf516",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 11,
+            "sha256": "e300768bf20ff5010c68dea6f11b00a4bebb122a7cc787df801c670239b9c9fe",
+            "sequence": "NAEVEWLDMDY"
+          },
+          "FR4-IMGT": {
+            "length": 9,
+            "sha256": "097a7b593d30064e5761645c4e8b17f913b5ad45276a20c3e9da088204356e36",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.972222222222,
+        "cdr3ProxyShare": 0.472222222222,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.6320488452911377,
+        "queryStart": 0,
+        "queryEnd": 113,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 11
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "f9c26facaad93fc3a47348b450a367fad19980a09258cbc211e25e2be3b4e7f8",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "67453303dc015af441185016ac3d8e3863dde720c21a923bb9e6aa9100ed2cb1",
+            "sequence": "GRIFNLDV"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "b198c9accb45d6fc8ca5496fcb064a494c3c643e09049187ff11d49882e782d4",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "6ce9bb037d7c761f135325aae079ea24e7ca4ee89a6a67fe5175af60db256e16",
+            "sequence": "ITSGGKI"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "6cbb007342bbe3c5aa739390ae671bd4a28e14ed1d3ae7c9784a1887f3faf516",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 11,
+            "sha256": "e300768bf20ff5010c68dea6f11b00a4bebb122a7cc787df801c670239b9c9fe",
+            "sequence": "NAEVEWLDMDY"
+          },
+          "FR4-IMGT": {
+            "length": 9,
+            "sha256": "097a7b593d30064e5761645c4e8b17f913b5ad45276a20c3e9da088204356e36",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.972222222222,
+        "cdr3ProxyShare": 0.472222222222,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "5JQH",
+      "receptor": "ADRB2 inactive",
+      "pair": "A:C",
+      "sourceBytes": 1356993,
+      "sourceSha256": "dad8940292b0d39b91f7c90034f0fbf3e594d11e28a8bdfdff49710e7d4ce9dd",
+      "vhhSequenceLength": 120,
+      "vhhSequenceSha256": "168c8395478fc620465626d2cbf32605fc51f9d1c34333d4d33e8119523ec6e9",
+      "geometryControl": {
+        "contactPairCount": 64,
+        "severeClashCount": 1,
+        "deltaSasaAngstrom2": 1615.9
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.707322895526886,
+        "queryStart": 0,
+        "queryEnd": 119,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 13
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "636e3c302ec6b798125711af155bcde042a7bd003dca1d4a55b538acb06d781a",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "685c536ec98e4d74dbf4abfe02df153924b02069aded12a3e17a5f8855520e96",
+            "sequence": "GSIFSLND"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "b51201e392e39fd0d74dd7e41cc9f3747038401034185b40631a48eb974d62c6",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "ef9f6aa38c40eb81ccd7e8b20095d20de89bb6634c1184e8e2a15af5c9c1b06a",
+            "sequence": "ITSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "8306c1fd1644563418711085e2da36075e7f8b437d429992c21eff6b84ba3693",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 13,
+            "sha256": "a66392da255464e27cb54cc14abbbccfb45c87e63eff87815dcd5b0b449abbbb",
+            "sequence": "NAKVAGTFSIYDY"
+          },
+          "FR4-IMGT": {
+            "length": 12,
+            "sha256": "e2572302755896251a5fd52b7c9c3953422a8e387911acb8e31cb8e3e5066364",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.984375,
+        "cdr3ProxyShare": 0.75,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.707322895526886,
+        "queryStart": 0,
+        "queryEnd": 119,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 13
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "636e3c302ec6b798125711af155bcde042a7bd003dca1d4a55b538acb06d781a",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "685c536ec98e4d74dbf4abfe02df153924b02069aded12a3e17a5f8855520e96",
+            "sequence": "GSIFSLND"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "b51201e392e39fd0d74dd7e41cc9f3747038401034185b40631a48eb974d62c6",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "ef9f6aa38c40eb81ccd7e8b20095d20de89bb6634c1184e8e2a15af5c9c1b06a",
+            "sequence": "ITSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "8306c1fd1644563418711085e2da36075e7f8b437d429992c21eff6b84ba3693",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 13,
+            "sha256": "a66392da255464e27cb54cc14abbbccfb45c87e63eff87815dcd5b0b449abbbb",
+            "sequence": "NAKVAGTFSIYDY"
+          },
+          "FR4-IMGT": {
+            "length": 12,
+            "sha256": "e2572302755896251a5fd52b7c9c3953422a8e387911acb8e31cb8e3e5066364",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.984375,
+        "cdr3ProxyShare": 0.75,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "6VI4",
+      "receptor": "OPRK1 inactive",
+      "pair": "B:C",
+      "sourceBytes": 551367,
+      "sourceSha256": "672b175aca382ae0d3eb6a52e8d10dfa98dac9acaad0c945d4154c07c75285bc",
+      "vhhSequenceLength": 118,
+      "vhhSequenceSha256": "e85b89f770f3bce2f48f751c52d55b813627fae78fdae3475ecccc6c00e4a7e0",
+      "geometryControl": {
+        "contactPairCount": 29,
+        "severeClashCount": 1,
+        "deltaSasaAngstrom2": 1172.7
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.570041298866272,
+        "queryStart": 0,
+        "queryEnd": 117,
+        "cdrLengths": {
+          "cdr1": 5,
+          "cdr2": 7,
+          "cdr3": 15
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "94e22cce2389961ff70305cf1724714665df9ac34202c8a4e3e413c7a5b6573c",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 5,
+            "sha256": "f3a96bb1e8ec6eb58488680bc46a61be801b287fec871c57971cd246c0aeb5e6",
+            "sequence": "GTIFR"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "96ad5e1089f9b1049bfcdd0bfb9138f45ec511722a4c9050bae02047661b6799",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "ef9f6aa38c40eb81ccd7e8b20095d20de89bb6634c1184e8e2a15af5c9c1b06a",
+            "sequence": "ITSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "a533587bef4a3dc9b2b4b1d53415deaf604e47d3437bc0251e4051a985551374",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 15,
+            "sha256": "f305f7167779810dfd19bbf4dff35c95638c2fdab579bdace74f4a30d3685134",
+            "sequence": "NAEYRTGIWEELLDG"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.896551724138,
+        "cdr3ProxyShare": 0.827586206897,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.570041298866272,
+        "queryStart": 0,
+        "queryEnd": 117,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 5,
+          "cdr2": 7,
+          "cdr3": 15
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "94e22cce2389961ff70305cf1724714665df9ac34202c8a4e3e413c7a5b6573c",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 5,
+            "sha256": "f3a96bb1e8ec6eb58488680bc46a61be801b287fec871c57971cd246c0aeb5e6",
+            "sequence": "GTIFR"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "96ad5e1089f9b1049bfcdd0bfb9138f45ec511722a4c9050bae02047661b6799",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "ef9f6aa38c40eb81ccd7e8b20095d20de89bb6634c1184e8e2a15af5c9c1b06a",
+            "sequence": "ITSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "a533587bef4a3dc9b2b4b1d53415deaf604e47d3437bc0251e4051a985551374",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 15,
+            "sha256": "f305f7167779810dfd19bbf4dff35c95638c2fdab579bdace74f4a30d3685134",
+            "sequence": "NAEYRTGIWEELLDG"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.896551724138,
+        "cdr3ProxyShare": 0.827586206897,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "5C1M",
+      "receptor": "OPRM1/Nb39",
+      "pair": "A:B",
+      "sourceBytes": 619164,
+      "sourceSha256": "fb1d52c41203f0d376a7f8571d59cac8e8e01172cfe49b3e1033a4aaed0a0d95",
+      "vhhSequenceLength": 118,
+      "vhhSequenceSha256": "a89007e3847c2fa72f0af04f7c01bb7412f4576f59f9bccc56817c4809c1206c",
+      "geometryControl": {
+        "contactPairCount": 57,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 2380.9
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.6335938572883606,
+        "queryStart": 0,
+        "queryEnd": 114,
+        "cdrLengths": {
+          "cdr1": 6,
+          "cdr2": 8,
+          "cdr3": 10
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "be06e77efd041d38ab35c05e88463310215c376b5605f51dea19de81d6e795dd",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 6,
+            "sha256": "0e80f51a5ff3d9704acdbf9d0f9ee37f3e5f672873e71a6e77c09f898b455564",
+            "sequence": "ERTSYP"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "17d19b8e3e645c9c7cd9ff8dd19c02c17efcabe3ab16aff86b8da9360b5dc98f",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "96947397974a6c43f21f3ac7bfe6029aff9ddf57b946b172ee925493fa639c7a",
+            "sequence": "ITWSGIDP"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b5ae59099d041fdbae0e87fb0a97752b69f7f4ffadd9ace04d1b695a034f4b8f",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 10,
+            "sha256": "b1a2a4a498cd0a055bb2a3e39ed36918f0a85352832fbef82f36344bdba51f19",
+            "sequence": "AARAPVDYDY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.508771929825,
+        "cdr3ProxyShare": 0.052631578947,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.6335938572883606,
+        "queryStart": 0,
+        "queryEnd": 114,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 6,
+          "cdr2": 8,
+          "cdr3": 10
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 25,
+            "sha256": "be06e77efd041d38ab35c05e88463310215c376b5605f51dea19de81d6e795dd",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 6,
+            "sha256": "0e80f51a5ff3d9704acdbf9d0f9ee37f3e5f672873e71a6e77c09f898b455564",
+            "sequence": "ERTSYP"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "17d19b8e3e645c9c7cd9ff8dd19c02c17efcabe3ab16aff86b8da9360b5dc98f",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 8,
+            "sha256": "96947397974a6c43f21f3ac7bfe6029aff9ddf57b946b172ee925493fa639c7a",
+            "sequence": "ITWSGIDP"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b5ae59099d041fdbae0e87fb0a97752b69f7f4ffadd9ace04d1b695a034f4b8f",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 10,
+            "sha256": "b1a2a4a498cd0a055bb2a3e39ed36918f0a85352832fbef82f36344bdba51f19",
+            "sequence": "AARAPVDYDY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.508771929825,
+        "cdr3ProxyShare": 0.052631578947,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    },
+    {
+      "pdb": "6IBL",
+      "receptor": "ADRB1/Nb80",
+      "pair": "A:C",
+      "sourceBytes": 759861,
+      "sourceSha256": "b33f9e640d000c783944e501d7d09cbc58b345cf474a15e1bc9eafcf310f7a2e",
+      "vhhSequenceLength": 119,
+      "vhhSequenceSha256": "5f5d40c2d5c989a79f478708cf3d339c5ec97909655b73a73f07a5267e9f930d",
+      "geometryControl": {
+        "contactPairCount": 72,
+        "severeClashCount": 0,
+        "deltaSasaAngstrom2": 2367.6
+      },
+      "legacy": {
+        "status": "numbered",
+        "engine": "immunum 1.2.0",
+        "confidence": 0.6937947869300842,
+        "queryStart": 0,
+        "queryEnd": 118,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 14
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "9a96720a78fe70ef56f6968b510d502ea69bdf83aea016619f078bdd5abbcb27",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "cc4a75fd5c8033b460b6be1f6f2f5bc49f87cc63b1607926c59e1dc9d9bb2f39",
+            "sequence": "GSIFSINT"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "d5de48c01fe97847372fac8295d800af44a075089ebcefceb0b8368904507d18",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "fc7a11e4d3fffdc67b4a656b4534e15793c33a9ea42b8d2e9596c7b3595e6af9",
+            "sequence": "IHSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b74bf844f8bfd93ed69592d4b0d1350752db4c096fc458b18dc603d462225298",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 14,
+            "sha256": "21146b36fcb5355ef5ef88c8933b6d683dd3b3687676a37c5d9b3a0dafa861d0",
+            "sequence": "NVKDYGAVLYEYDY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.861111111111,
+        "cdr3ProxyShare": 0.416666666667,
+        "error": null
+      },
+      "candidate": {
+        "status": "numbered",
+        "policyVersion": "0.6.0-candidate.1",
+        "engine": "immunum 1.3.0",
+        "confidence": 0.6937947869300842,
+        "queryStart": 0,
+        "queryEnd": 118,
+        "completeImgtRegionCoverage": true,
+        "numberingSegmentationAgreement": true,
+        "cdrLengths": {
+          "cdr1": 8,
+          "cdr2": 7,
+          "cdr3": 14
+        },
+        "regions": {
+          "FR1-IMGT": {
+            "length": 24,
+            "sha256": "9a96720a78fe70ef56f6968b510d502ea69bdf83aea016619f078bdd5abbcb27",
+            "sequence": null
+          },
+          "CDR1-IMGT": {
+            "length": 8,
+            "sha256": "cc4a75fd5c8033b460b6be1f6f2f5bc49f87cc63b1607926c59e1dc9d9bb2f39",
+            "sequence": "GSIFSINT"
+          },
+          "FR2-IMGT": {
+            "length": 17,
+            "sha256": "d5de48c01fe97847372fac8295d800af44a075089ebcefceb0b8368904507d18",
+            "sequence": null
+          },
+          "CDR2-IMGT": {
+            "length": 7,
+            "sha256": "fc7a11e4d3fffdc67b4a656b4534e15793c33a9ea42b8d2e9596c7b3595e6af9",
+            "sequence": "IHSGGST"
+          },
+          "FR3-IMGT": {
+            "length": 38,
+            "sha256": "b74bf844f8bfd93ed69592d4b0d1350752db4c096fc458b18dc603d462225298",
+            "sequence": null
+          },
+          "CDR3-IMGT": {
+            "length": 14,
+            "sha256": "21146b36fcb5355ef5ef88c8933b6d683dd3b3687676a37c5d9b3a0dafa861d0",
+            "sequence": "NVKDYGAVLYEYDY"
+          },
+          "FR4-IMGT": {
+            "length": 11,
+            "sha256": "d85ba68a40597b29388773058de7c4c007db4fe081200ab02ccab2ce77a69dcd",
+            "sequence": null
+          }
+        },
+        "paratopeProxyShare": 0.861111111111,
+        "cdr3ProxyShare": 0.416666666667,
+        "error": null
+      },
+      "differences": {
+        "statusChanged": false,
+        "queryBoundsChanged": false,
+        "cdrLengthsChanged": false,
+        "regionAssignmentsChanged": false,
+        "paratopeProxyShareChanged": false,
+        "cdr3ProxyShareChanged": false,
+        "changedContactPairCount": 0,
+        "changedContactPairs": []
+      }
+    }
+  ]
+}

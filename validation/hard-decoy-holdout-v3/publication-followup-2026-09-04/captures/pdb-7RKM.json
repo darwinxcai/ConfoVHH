@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "pdb-7RKM",
+    "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+    "pdbIds": [
+      "7RKM"
+    ],
+    "query": "\"7RKM\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227RKM%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:47:50.387328+00:00",
+  "status": 200,
+  "rawFile": "raw/pdb-7RKM.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227RKM%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "28b23cb71f0ff8f37096cba98b8b264e75867c13562a81329e6d9d71f927f8de",
+  "bytes": 3936,
+  "reportedHitCount": 4,
+  "retrievedRecordCount": 4,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:47:59.930881+00:00"
+}

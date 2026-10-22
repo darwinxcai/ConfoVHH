@@ -1,0 +1,27 @@
+{
+  "request": {
+    "requestId": "doi-08",
+    "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+    "pdbIds": [
+      "7DHI",
+      "7DHR"
+    ],
+    "query": "DOI:\"10.1093/nsr/nwaa284\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1093%2Fnsr%2Fnwaa284%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:47.843445+00:00",
+  "status": 200,
+  "rawFile": "raw/doi-08.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1093%2Fnsr%2Fnwaa284%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "e796b267553ce211c16ce96c25d39a3b0c415b65a3dfeaf2280babebf26467af",
+  "bytes": 1157,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:59.843215+00:00"
+}

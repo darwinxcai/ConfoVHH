@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "NO_DIRECT_SIGNAL_PRIORITY_SET_ADDS_ZERO_COMPONENTS_OTHER_ROWS_REMAIN",
+  "generatorScript": "scripts/hard-decoy-v3/build-no-direct-signal-role-audit.mjs",
+  "generatorScriptSha256": "33415dec202d38c31aa43f0eed8ebe43b43f72013d43b34bc1f1869de50a2306",
+  "inputDigests": {
+    "HARD_DECOY_PROTOCOL_V3.md": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "validation/hard-decoy-holdout-v3/prelabel-census-draft/disposition-contract.json": "805136877bd727ca22aae0c13284cfd4fd8aca5e8b2f868fe619d320e0c1f039",
+    "validation/hard-decoy-holdout-v2/prelabel-census/target-census.jsonl": "1a6703a6e8d4ccba711ec160d0eb5586e6ad3e127253d4ccd0cd081007155480",
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/other-strata-salvage-review-2026-09-04/salvage-review-queue.jsonl": "1f4c5bf98e0b742a07220aea0b4f06242dcfd5dd4eb30f16b06d40f6c41a8385",
+    "validation/hard-decoy-holdout-v3/other-strata-salvage-review-2026-09-04/summary.json": "e51a47e8fffc5cba340d28979c6e794efcd0bef648a26ed67837446348d79107"
+  },
+  "evidenceBoundary": "Public primary-paper text and frozen public metadata only; no coordinate-derived interface inference.",
+  "outputDigests": {
+    "source-backed-exclusions.jsonl": "6454d97cd8faa49108979b3ae1b64c8460f40e17d51cf41093c0aca59dc15848",
+    "existing-representative-accounting.jsonl": "48d24ce804d542d09743944e1d2a2384e4627828d971fcb1fd6da1499993055e",
+    "summary.json": "bf2e1a001c408661ed92ad97ace04e670a2443de21a56bc7a45d80e681e32640"
+  },
+  "partialAuditOnly": true,
+  "masterDispositionLedgerRewritten": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false
+}

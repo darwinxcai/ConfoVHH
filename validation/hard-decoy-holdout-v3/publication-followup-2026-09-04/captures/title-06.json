@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-06",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "8IA8"
+    ],
+    "query": "TITLE:\"Cryo-EM structure of C3aR-Gi-scFv16 bound with E7 peptide\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Cryo-EM+structure+of+C3aR-Gi-scFv16+bound+with+E7+peptide%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:49:18.321127+00:00",
+  "status": 200,
+  "rawFile": "raw/title-06.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Cryo-EM+structure+of+C3aR-Gi-scFv16+bound+with+E7+peptide%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "216e5f60f1f0c144e90daaf7d136b8602d4686b3fafbedd589e0fa0ec92f0085",
+  "bytes": 234,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:49:46.985058+00:00"
+}

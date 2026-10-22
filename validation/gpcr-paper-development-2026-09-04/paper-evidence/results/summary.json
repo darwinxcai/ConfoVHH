@@ -1,0 +1,84 @@
+{
+  "schema": "confovhh.gpcr-paired-development-summary.v1",
+  "status": "COMPLETE",
+  "models": 165,
+  "jobs": 33,
+  "conditions": 15,
+  "reference_complexes": 4,
+  "receptor_targets": 3,
+  "scope": "Retrospective descriptive development analysis; models, jobs and conditions are nested within four reference complexes from three receptor targets. No independent efficacy estimate or hypothesis test.",
+  "ranking_policy": "Unchanged production ConfoVHH policy; rank only within each five-model job. All equal source ranking-score maxima retained; no favorable tie breaking.",
+  "pae": "No full residue PAE supplied for any of these 165 models; summary confidence values are source-reported context only.",
+  "threshold": {
+    "official_DockQ_at_least_acceptable": 0.23,
+    "applies_to_legacy": false
+  },
+  "source_reported_metrics": [
+    "tm3_tm6_A",
+    "iptm",
+    "ranking_score"
+  ],
+  "source_sha256": {
+    "official": "2ede7a1acf10750da31244c40c0cc221df2e3198fbbeaa2d69e84933e3b85108",
+    "audits": "fb9c11da5143d6f6d65f97af1477d8e7d1b77beb839048b26f183acbe4f9939d",
+    "source": "8a53fdab4034f551a63bdeb3fcb6685f5e5829b790f05a1dd2a149c5ae7137ca",
+    "endpoints": "b5fb7a7bc0b5fd723903c436c15134a5acbe5ac133b53b1d06253bf2b6fff878"
+  },
+  "script_sha256": "7e1640ab57aadd3febf7a3107ea370ac72a89fc5254ccc9a98886e9a4c950d13",
+  "outputs_sha256": {
+    "paired-model-metrics.csv": "94a0182d5e960e75641f5f891a2a8fefc8ac1fc942134cff253e83a1b5d3bc2c",
+    "per-condition-summary.csv": "6d8037bcfa39eccda91b1cf33dbf80f72b4c951ee010b0ab10d6ca3fead8dcee",
+    "per-job-summary.csv": "e059c5988dc5f53373a1a28e0a3db88cecbbdbbd623dd25be3ff02a58e16d3f5",
+    "per-reference-summary.csv": "0ea10a2ba7f087a3a431e32d7443c6ec3ae72a7d118d3a8f71b152b1bc1acafb"
+  },
+  "by_reference": [
+    {
+      "reference": "3P0G",
+      "models": 45,
+      "jobs": 9,
+      "conditions": 5,
+      "official_at_least_acceptable_models": 35,
+      "official_DockQ_median": 0.3803241004276569,
+      "median_absolute_score_correction": 0.008665677525834248,
+      "maximum_absolute_score_correction": 0.03961189821234168,
+      "confovhh_supported_models": 1,
+      "confovhh_supported_below_DockQ_023": 1
+    },
+    {
+      "reference": "4MQS",
+      "models": 30,
+      "jobs": 6,
+      "conditions": 2,
+      "official_at_least_acceptable_models": 30,
+      "official_DockQ_median": 0.7678986185644323,
+      "median_absolute_score_correction": 0.059034660372335235,
+      "maximum_absolute_score_correction": 0.08200025536890843,
+      "confovhh_supported_models": 7,
+      "confovhh_supported_below_DockQ_023": 0
+    },
+    {
+      "reference": "5C1M",
+      "models": 30,
+      "jobs": 6,
+      "conditions": 2,
+      "official_at_least_acceptable_models": 25,
+      "official_DockQ_median": 0.7112465782611919,
+      "median_absolute_score_correction": 0.03393483550204196,
+      "maximum_absolute_score_correction": 0.04372408876192235,
+      "confovhh_supported_models": 0,
+      "confovhh_supported_below_DockQ_023": 0
+    },
+    {
+      "reference": "5JQH",
+      "models": 60,
+      "jobs": 12,
+      "conditions": 6,
+      "official_at_least_acceptable_models": 0,
+      "official_DockQ_median": 0.08061883461921537,
+      "median_absolute_score_correction": 0.004561109195322821,
+      "maximum_absolute_score_correction": 0.006658084458186428,
+      "confovhh_supported_models": 7,
+      "confovhh_supported_below_DockQ_023": 7
+    }
+  ]
+}

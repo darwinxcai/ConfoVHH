@@ -1,0 +1,2 @@
+# PDB sequence records require their fixed-column padding for Gemmi 0.6.5.
+*.pdb -text whitespace=-blank-at-eol

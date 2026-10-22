@@ -1,0 +1,47 @@
+[
+  {
+    "id": "gaba-primary-paper",
+    "url": "https://www.nature.com/articles/s41467-026-76879-5",
+    "file": "sources/gaba-primary-paper.html",
+    "startedAt": "2026-09-04T22:39:58.617Z",
+    "finishedAt": "2026-09-04T22:40:29.453Z",
+    "status": 200,
+    "finalUrl": "https://www.nature.com/articles/s41467-026-76879-5?error=cookies_not_supported&code=04100765-3cc7-47df-bf26-ec313d49bb1a",
+    "contentType": "text/html; charset=utf-8",
+    "httpDate": "Fri, 04 Sep 2026 22:40:29 GMT",
+    "sha256": "8ea3c9022e6a8962220fc012d5a0b7c45691e77fa6977df110e36de769134472",
+    "byteCount": 250545,
+    "figuresFetched": false,
+    "error": null
+  },
+  {
+    "id": "gabra4-authority",
+    "url": "https://rest.uniprot.org/uniprotkb/P48169.json",
+    "file": "sources/gabra4-uniprot.json",
+    "startedAt": "2026-09-04T22:40:29.456Z",
+    "finishedAt": "2026-09-04T22:40:36.801Z",
+    "status": 200,
+    "finalUrl": "https://rest.uniprot.org/uniprotkb/P48169.json",
+    "contentType": "application/json",
+    "httpDate": "Fri, 04 Sep 2026 22:39:48 GMT",
+    "sha256": "270ba828b430b787a8b5517512721fa36a5ae50a41e9fb775f0e2e66f8f2a8f4",
+    "byteCount": 55513,
+    "figuresFetched": false,
+    "error": null
+  },
+  {
+    "id": "gaba-publication-metadata",
+    "url": "https://api.crossref.org/works/10.1038%2Fs41467-026-76879-5",
+    "file": "sources/gaba-crossref.json",
+    "startedAt": "2026-09-04T22:40:36.802Z",
+    "finishedAt": "2026-09-04T22:40:44.436Z",
+    "status": 200,
+    "finalUrl": "https://api.crossref.org/works/10.1038%2Fs41467-026-76879-5",
+    "contentType": "application/json",
+    "httpDate": "Fri, 04 Sep 2026 22:40:44 GMT",
+    "sha256": "9433d062b1f779b4dbca2cf57891db5a68776e1063829d721e9059dc8d64634c",
+    "byteCount": 7648,
+    "figuresFetched": false,
+    "error": null
+  }
+]

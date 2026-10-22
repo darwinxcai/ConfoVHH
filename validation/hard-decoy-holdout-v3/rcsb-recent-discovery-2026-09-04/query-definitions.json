@@ -1,0 +1,83 @@
+[
+  {
+    "id": "pfam-pf00001",
+    "kind": "recent-domain",
+    "domain": "PF00001"
+  },
+  {
+    "id": "pfam-pf00002",
+    "kind": "recent-domain",
+    "domain": "PF00002"
+  },
+  {
+    "id": "pfam-pf00003",
+    "kind": "recent-domain",
+    "domain": "PF00003"
+  },
+  {
+    "id": "pfam-pf01534",
+    "kind": "recent-domain",
+    "domain": "PF01534"
+  },
+  {
+    "id": "text-01",
+    "kind": "recent-full-text",
+    "value": "GPCR"
+  },
+  {
+    "id": "text-02",
+    "kind": "recent-full-text",
+    "value": "\"G protein coupled receptor\""
+  },
+  {
+    "id": "text-03",
+    "kind": "recent-full-text",
+    "value": "\"G-protein-coupled receptor\""
+  },
+  {
+    "id": "text-04",
+    "kind": "recent-full-text",
+    "value": "Frizzled"
+  },
+  {
+    "id": "text-05",
+    "kind": "recent-full-text",
+    "value": "Smoothened"
+  },
+  {
+    "id": "text-06",
+    "kind": "recent-full-text",
+    "value": "receptor"
+  },
+  {
+    "id": "control-pf00001-corrected",
+    "kind": "domain-positive-control",
+    "domain": "PF00001",
+    "pdbId": "3SN6"
+  },
+  {
+    "id": "control-pf00002",
+    "kind": "domain-positive-control",
+    "domain": "PF00002",
+    "pdbId": "7VVN"
+  },
+  {
+    "id": "control-pf00003",
+    "kind": "domain-positive-control",
+    "domain": "PF00003",
+    "pdbId": "4OR2"
+  },
+  {
+    "id": "control-pf01534",
+    "kind": "domain-positive-control",
+    "domain": "PF01534",
+    "pdbId": "4JKV"
+  },
+  {
+    "id": "control-pf00001",
+    "kind": "domain-class-mismatch-check",
+    "domain": "PF00001",
+    "pdbId": "5UZ7",
+    "explanation": "Initial class-A control choice was incorrect: archived GPCRdb identifies 5UZ7 as calcitonin receptor, class B1. Preserve its attempted query; 3SN6 beta2AR is the corrected class-A control."
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "status": "OTHER_STRATA_SALVAGE_REVIEW_QUEUED_NO_DISPOSITIONS_ASSIGNED",
+  "recordedAtUtc": "2026-09-04T20:39:00Z",
+  "sourceOtherPendingEntryCount": 243,
+  "selectedForSalvageReviewCount": 31,
+  "unselectedStillPendingCount": 212,
+  "selectionCounts": {
+    "NO_AUXILIARY_LEXICAL_ENTITY_VHH_PRESENT_CONSTRUCT_SIGNAL_ABSENT": 7,
+    "EXTRA_UNFLAGGED_VHH_LIKE_ENTITY_BEYOND_AUXILIARY_SIGNAL": 4,
+    "NO_AUXILIARY_LEXICAL_ENTITY_VHH_PRESENT_CONSTRUCT_SIGNAL_PRESENT": 15,
+    "NO_VHH_LIKE_POLYMER_ENTITY_SIGNAL": 5
+  },
+  "directDevelopmentPregraphSignalCount": 24,
+  "noDirectDevelopmentPregraphSignalCount": 7,
+  "noDirectDevelopmentPregraphSignalIds": [
+    "8JRU",
+    "8JRV",
+    "8XGR",
+    "9AXF",
+    "7E6T",
+    "8QJ2",
+    "7E6U"
+  ],
+  "selectedExistingProvisionalCensusRepresentatives": [
+    "7E6U",
+    "8JXS",
+    "8QJ2"
+  ],
+  "selectionIsEligibilityDecision": false,
+  "lexicalSignalsAreFormalExclusionAuthority": false,
+  "pregraphSignalsAreFormalLeakageAuthority": false,
+  "formalDispositionsAssigned": false,
+  "wholeCensusTerminalDecisionReached": false,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false,
+  "interpretation": "Thirty-one rows are the most conservative first-pass review set outside the direct-looking queue: frozen metadata either leaves at least one apparent VHH-like entity without an auxiliary lexical signal or identifies no VHH-like entity. Twenty-four already have a one-hop review-only pregraph signal to development; seven do not. The other 212 rows remain pending because lexical auxiliary signals alone cannot assign scientific dispositions."
+}

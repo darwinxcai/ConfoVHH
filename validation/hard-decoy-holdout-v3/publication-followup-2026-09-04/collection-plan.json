@@ -1,0 +1,3111 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "discoveryRoute": "C.5_MISSING_PRIMARY_CITATION_FOLLOWUP",
+  "reviewDate": "2026-09-04",
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl": "70c7c8a05533d2cae4841307ccc4083a7ddf136adf29e0137b97df548740630c",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-screen-2026-09-04/entity-screens.jsonl": "935ebc97a799c7313b46922b1e956d88131bf95973b14d9df61b2776869c89ff",
+    "validation/hard-decoy-holdout-v3/gpcrdb-complement-priority-review-2026-09-04/source-reviews.json": "b2cc22d3261dfbeb861af09ed1f5e65fe3ba168063ba4deee61e6eca49610f9d"
+  },
+  "historicalEntriesInspected": 287,
+  "complementEntriesInspected": 1426,
+  "citationGapDefinition": "At least one of frozen primaryCitation.doi or primaryCitation.pmid is absent.",
+  "citationGaps": [
+    {
+      "pdbId": "6H7N",
+      "route": "HISTORICAL",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1101/436212",
+        "pmid": null,
+        "title": "Molecular basis for high affinity agonist binding in GPCRs"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "3",
+          "rcsbId": "6H7N_3",
+          "description": "Camelid antibody fragment Nb6B9",
+          "sequenceSha256": "7de93fe6174f7701ca762f38aecad6753ab5062a06f5d74cdf8889d34623888b",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "ANTIBODY_DESCRIPTOR_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "ACTIVATED TURKEY BETA1 ADRENOCEPTOR WITH BOUND PARTIAL AGONIST XAMOTEROL AND NANOBODY Nb6B9",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1101/436212",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+        "pdbId": "6H7N",
+        "polymerEntityCount": 3,
+        "polymerSequenceHashes": {
+          "6H7N_1": "76b864103ef74c8b0f60e62f1dd385b1fab48e21a1413475f7be0c6bb129def0",
+          "6H7N_2": "e510c8881e4cebb5c8c7b36a816011a4433b2357858e19b92f5456c10a190eb7",
+          "6H7N_3": "7de93fe6174f7701ca762f38aecad6753ab5062a06f5d74cdf8889d34623888b"
+        }
+      }
+    },
+    {
+      "pdbId": "6WHA",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1016/j.cell.2020.08.024",
+        "pmid": null,
+        "title": "Structure of a Hallucinogen-Activated Gq-Coupled 5-HT2A Serotonin Receptor"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "6WHA_5",
+          "description": "single Fab chain (svFv16)",
+          "sequenceSha256": "ac57dc7253cc0e36ac7be5c166da3929a5586dc0dd93b9324fb3664182c5b02c",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "HTR2A bound to 25-CN-NBOH in complex with a mini-Galpha-q protein, beta/gamma subunits and an active-state stabilizing single-chain variable fragment (scFv16) obtained by cryo-electron microscopy (cryoEM)",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1016/J.CELL.2020.08.024",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6WHA",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "6WHA_1": "51cfe0d3a86f3f742d599c8a6e62dc2f3db00282f9880a4c6f011d1f58bb2e1c",
+          "6WHA_2": "3300c39f094299b333ff907bf07eff425ae8085fc1b344325ebfb38e2f9bc4ce",
+          "6WHA_3": "db7aa21144beaf5d4d4e85fb533cf61a7ee708ef71e213a8e203cd89cd56018c",
+          "6WHA_4": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "6WHA_5": "ac57dc7253cc0e36ac7be5c166da3929a5586dc0dd93b9324fb3664182c5b02c"
+        }
+      }
+    },
+    {
+      "pdbId": "7DHI",
+      "route": "HISTORICAL",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1093/nsr/nwaa284",
+        "pmid": null,
+        "title": "Different Conformational Responses of the beta2-Adrenergic Receptor-Gs Complex upon Binding of the Partial Agonist Salbutamol or the Full Agonist Isoprenaline"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7DHI_4",
+          "description": "Nb35 nanobody",
+          "sequenceSha256": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "ANTIBODY_DESCRIPTOR_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of the partial agonist salbutamol-bound beta2 adrenergic receptor-Gs protein complex.",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1093/NSR/NWAA284",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+        "pdbId": "7DHI",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7DHI_1": "b0269219263cfb8bd7763628b84a5f041626832ad0974591b3f3276a967c6d94",
+          "7DHI_2": "731c013dfd2af08e5208366adc05c924fee47f2a726a6903d130383a4ff1b10c",
+          "7DHI_3": "2de5041201cfb09348c0af588d0716d241a2bd4f3a8904510156a8efa2fa636a",
+          "7DHI_4": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "7DHI_5": "3571812332820ed460d469f0f2d5f2a28d93a5799598189a9241a89bccfbda72"
+        }
+      }
+    },
+    {
+      "pdbId": "7DHR",
+      "route": "HISTORICAL",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1093/nsr/nwaa284",
+        "pmid": null,
+        "title": "Different Conformational Responses of the beta2-Adrenergic Receptor-Gs Complex upon Binding of the Partial Agonist Salbutamol or the Full Agonist Isoprenaline"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7DHR_4",
+          "description": "Nb35 nanobody",
+          "sequenceSha256": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "ANTIBODY_DESCRIPTOR_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of the full agonist isoprenaline-bound beta2 adrenergic receptor-Gs protein complex.",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+        "pdbId": "7DHR",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7DHR_1": "6dedace6845efaa21a29f1b95f01b291bbbc27a72e2d8835a9ae15b3909c91bb",
+          "7DHR_2": "731c013dfd2af08e5208366adc05c924fee47f2a726a6903d130383a4ff1b10c",
+          "7DHR_3": "2de5041201cfb09348c0af588d0716d241a2bd4f3a8904510156a8efa2fa636a",
+          "7DHR_4": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "7DHR_5": "3571812332820ed460d469f0f2d5f2a28d93a5799598189a9241a89bccfbda72"
+        }
+      }
+    },
+    {
+      "pdbId": "7EZH",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41589-021-00841-3",
+        "pmid": null,
+        "title": "Ligand recognition and G-protein coupling selectivity of cholecystokinin A receptor"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "7EZH_5",
+          "description": "scFv16",
+          "sequenceSha256": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of an activated Cholecystokinin A receptor (CCKAR)-Gi complex",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41589-021-00841-3",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7EZH",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7EZH_1": "ec0c423e43df0b36b3182d2d03f8cbe6d18c2c35b6ce189b3caa7ac262d96d8d",
+          "7EZH_2": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "7EZH_3": "db51d7d7e7d75f30f42489829f22d751b64154d93bce190aaf7ae6f239a55695",
+          "7EZH_4": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "7EZH_5": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "7EZH_6": "90f205021dfa81014646af196c098ccbb47b16bc477994a284d5e9d093db423e"
+        }
+      }
+    },
+    {
+      "pdbId": "7EZM",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41589-021-00841-3",
+        "pmid": null,
+        "title": "Ligand recognition and G-protein coupling selectivity of cholecystokinin A receptor"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "7EZM_5",
+          "description": "scFv16",
+          "sequenceSha256": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of an activated Cholecystokinin A receptor (CCKAR)-Gq complex",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41589-021-00841-3",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7EZM",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7EZM_1": "59e4bc3f4d7eeaa4511926044974ba2dd237991a79f901c3321b28cf616001ae",
+          "7EZM_2": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "7EZM_3": "db51d7d7e7d75f30f42489829f22d751b64154d93bce190aaf7ae6f239a55695",
+          "7EZM_4": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "7EZM_5": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "7EZM_6": "90f205021dfa81014646af196c098ccbb47b16bc477994a284d5e9d093db423e"
+        }
+      }
+    },
+    {
+      "pdbId": "7NA7",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41467-021-26735-5",
+        "pmid": null,
+        "title": "Structural basis of human ghrelin receptor signaling by ghrelin and the synthetic agonist ibutamoren"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7NA7_4",
+          "description": "Antibody fragment",
+          "sequenceSha256": "2c43173d1a9cc34359f97108c271181b6370ce0c40d26244b1d2971c38edf132",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Structures of human ghrelin receptor-Gi complexes with ghrelin and a synthetic agonist",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41467-021-26735-5",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7NA7",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7NA7_1": "f8df2334bbaf7a57f63dfb01f7bc0d010091cbc50c7c87c76eb200fd163bcec5",
+          "7NA7_2": "70083b3108a1d7546d0d792dbcebaf3885beaef6b6cec5dd4599a4f61b7716b2",
+          "7NA7_3": "83e08f6973f94800f44f7e58e41c3bd367a33cf299f1f0d03d4eff3aa7af0a71",
+          "7NA7_4": "2c43173d1a9cc34359f97108c271181b6370ce0c40d26244b1d2971c38edf132",
+          "7NA7_5": "00de1991d52261f860d06a660f1fb4b3451136722705e77c0546452dac268fac",
+          "7NA7_6": "f65588055d0b25c7e046ffe406a626b360ad9478f976c673cc06de9ddc1ae3ab"
+        }
+      }
+    },
+    {
+      "pdbId": "7NA8",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41467-021-26735-5",
+        "pmid": null,
+        "title": "Structural basis of human ghrelin receptor signaling by ghrelin and the synthetic agonist ibutamoren"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7NA8_4",
+          "description": "Antibody fragment",
+          "sequenceSha256": "2c43173d1a9cc34359f97108c271181b6370ce0c40d26244b1d2971c38edf132",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Structures of human ghrelin receptor-Gi complexes with ghrelin and a synthetic agonist",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41467-021-26735-5",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7NA8",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7NA8_1": "f8df2334bbaf7a57f63dfb01f7bc0d010091cbc50c7c87c76eb200fd163bcec5",
+          "7NA8_2": "70083b3108a1d7546d0d792dbcebaf3885beaef6b6cec5dd4599a4f61b7716b2",
+          "7NA8_3": "83e08f6973f94800f44f7e58e41c3bd367a33cf299f1f0d03d4eff3aa7af0a71",
+          "7NA8_4": "2c43173d1a9cc34359f97108c271181b6370ce0c40d26244b1d2971c38edf132",
+          "7NA8_5": "efde79db2a35af3b2280b979adbec4a7f43a8ee1900700113f8e7910138cb38b"
+        }
+      }
+    },
+    {
+      "pdbId": "7RKF",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1126/sciadv.abl5442",
+        "pmid": null,
+        "title": "Atypical structural snapshots of human cytomegalovirus GPCR interactions with host G proteins"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7RKF_4",
+          "description": "Antibody fragment scFv16",
+          "sequenceSha256": "0f2cd53d9b89257fd1bb448b9a94e36b36c44dcefa540fe1a0c5832348bfacef",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Structure of CX3CL1-US28-G11iN18-scFv16 in TL-state",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1126/SCIADV.ABL5442",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7RKF",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7RKF_1": "7bbb719a153922f2fd96e8b39572e8e41de8b056cecf0c4c373d2af4479ec7d8",
+          "7RKF_2": "1905fc323fec941be4126dd4051d098aa968b8a08ce15abe2c1b4616a98c24b8",
+          "7RKF_3": "b50bc4bba739d7832e86d124a572d7a2a7920c36a011524ce46b5b12b62a1d22",
+          "7RKF_4": "0f2cd53d9b89257fd1bb448b9a94e36b36c44dcefa540fe1a0c5832348bfacef",
+          "7RKF_5": "bc6c31f9754b355c40636057f7d38379ad31830456a9423d8bb3dbaa037245dc",
+          "7RKF_6": "4cc8f30af7e60f343a76e9e8e37baa8e0f5b6fde9026eb06daf39133c8407be0"
+        }
+      }
+    },
+    {
+      "pdbId": "7RKM",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1126/sciadv.abl5442",
+        "pmid": null,
+        "title": "Atypical structural snapshots of human cytomegalovirus GPCR interactions with host G proteins"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7RKM_4",
+          "description": "Antibody fragment scFv16",
+          "sequenceSha256": "0f2cd53d9b89257fd1bb448b9a94e36b36c44dcefa540fe1a0c5832348bfacef",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Structure of CX3CL1-US28-Gi-scFv16 in C-state",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1126/SCIADV.ABL5442",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7RKM",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7RKM_1": "fa98e7b3881de94e77897c12670e16e5fee046657708f1b55d3f97096d4dd2e1",
+          "7RKM_2": "1905fc323fec941be4126dd4051d098aa968b8a08ce15abe2c1b4616a98c24b8",
+          "7RKM_3": "b50bc4bba739d7832e86d124a572d7a2a7920c36a011524ce46b5b12b62a1d22",
+          "7RKM_4": "0f2cd53d9b89257fd1bb448b9a94e36b36c44dcefa540fe1a0c5832348bfacef",
+          "7RKM_5": "bc6c31f9754b355c40636057f7d38379ad31830456a9423d8bb3dbaa037245dc",
+          "7RKM_6": "4cc8f30af7e60f343a76e9e8e37baa8e0f5b6fde9026eb06daf39133c8407be0"
+        }
+      }
+    },
+    {
+      "pdbId": "7RKN",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1126/sciadv.abl5442",
+        "pmid": null,
+        "title": "Atypical structural snapshots of human cytomegalovirus GPCR interactions with host G proteins"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7RKN_4",
+          "description": "Antibody fragment scFv16",
+          "sequenceSha256": "0f2cd53d9b89257fd1bb448b9a94e36b36c44dcefa540fe1a0c5832348bfacef",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Structure of CX3CL1-US28-Gi-scFv16 in OC-state",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1126/SCIADV.ABL5442",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7RKN",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7RKN_1": "fa98e7b3881de94e77897c12670e16e5fee046657708f1b55d3f97096d4dd2e1",
+          "7RKN_2": "1905fc323fec941be4126dd4051d098aa968b8a08ce15abe2c1b4616a98c24b8",
+          "7RKN_3": "b50bc4bba739d7832e86d124a572d7a2a7920c36a011524ce46b5b12b62a1d22",
+          "7RKN_4": "0f2cd53d9b89257fd1bb448b9a94e36b36c44dcefa540fe1a0c5832348bfacef",
+          "7RKN_5": "bc6c31f9754b355c40636057f7d38379ad31830456a9423d8bb3dbaa037245dc",
+          "7RKN_6": "4cc8f30af7e60f343a76e9e8e37baa8e0f5b6fde9026eb06daf39133c8407be0"
+        }
+      }
+    },
+    {
+      "pdbId": "7TRK",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structural and dynamic mechanisms of allostery at the M4 muscarinic acetylcholine receptor"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7TRK_4",
+          "description": "Antibody fragment scFv16",
+          "sequenceSha256": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Human M4 muscarinic acetylcholine receptor complex with Gi1 and the agonist iperoxo",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7TRK",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7TRK_1": "8e23e4e0c594186b35fa8f1589d64ef942beb050604352a3fbb14a3f63594f9d",
+          "7TRK_2": "1796efe26dc847109b06a8387852e0b4e8f6beb40718ffce284367f331695324",
+          "7TRK_3": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0",
+          "7TRK_4": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe",
+          "7TRK_5": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40"
+        }
+      }
+    },
+    {
+      "pdbId": "7TRP",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structural and dynamic mechanisms of allostery at the M4 muscarinic acetylcholine receptor"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7TRP_4",
+          "description": "Antibody fragment scFv16",
+          "sequenceSha256": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Human M4 muscarinic acetylcholine receptor complex with Gi1 and the agonist iperoxo and positive allosteric modulator LY2033298",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7TRP",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7TRP_1": "8e23e4e0c594186b35fa8f1589d64ef942beb050604352a3fbb14a3f63594f9d",
+          "7TRP_2": "1796efe26dc847109b06a8387852e0b4e8f6beb40718ffce284367f331695324",
+          "7TRP_3": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0",
+          "7TRP_4": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe",
+          "7TRP_5": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40"
+        }
+      }
+    },
+    {
+      "pdbId": "7TRQ",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structural and dynamic mechanisms of allostery at the M4 muscarinic acetylcholine receptor"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7TRQ_4",
+          "description": "Antibody fragment scFv16",
+          "sequenceSha256": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Human M4 muscarinic acetylcholine receptor complex with Gi1 and the agonist iperoxo and positive allosteric modulator VU0467154",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7TRQ",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7TRQ_1": "8e23e4e0c594186b35fa8f1589d64ef942beb050604352a3fbb14a3f63594f9d",
+          "7TRQ_2": "1796efe26dc847109b06a8387852e0b4e8f6beb40718ffce284367f331695324",
+          "7TRQ_3": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0",
+          "7TRQ_4": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe",
+          "7TRQ_5": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40"
+        }
+      }
+    },
+    {
+      "pdbId": "7TRS",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structural and dynamic mechanisms of allostery at the M4 muscarinic acetylcholine receptor"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "3",
+          "rcsbId": "7TRS_3",
+          "description": "Antibody fragment scFv16",
+          "sequenceSha256": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Human M4 muscarinic acetylcholine receptor complex with Gi1 and the endogenous agonist acetylcholine",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7TRS",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7TRS_1": "1796efe26dc847109b06a8387852e0b4e8f6beb40718ffce284367f331695324",
+          "7TRS_2": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0",
+          "7TRS_3": "ef9dca04b03c9603d713db6953480890baf13e88831077fbcfb8fdc866fdd6fe",
+          "7TRS_4": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40",
+          "7TRS_5": "8e23e4e0c594186b35fa8f1589d64ef942beb050604352a3fbb14a3f63594f9d"
+        }
+      }
+    },
+    {
+      "pdbId": "7VGX",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41467-022-28510-6",
+        "pmid": null,
+        "title": "Structural basis of neuropeptide Y signaling through Y1 receptor"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "6",
+          "rcsbId": "7VGX_6",
+          "description": "single-chain antibody Fv fragment (scFv16)",
+          "sequenceSha256": "a5b902b8819a3d64a32684fd71e390f59cbf66ab815de4d6e984a6b727056964",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Neuropeptide Y Y1 Receptor (NPY1R) in Complex with G Protein and its endogeneous Peptide-Agonist Neuropeptide Y (NPY)",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41467-022-28510-6",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7VGX",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7VGX_1": "e460d275c66cf4bfaae602fb8f817ffdc6dd36e8774d4da2463b6be4ca5db379",
+          "7VGX_2": "4b1cf2f7d576389ce0cf8f3f5f25ece42c9765bb0b5951d15b52577fe223bf54",
+          "7VGX_3": "aa6814db2ea004e6e532ece206d663d39e29e11a0cf8b45ca0b5140406fbf0df",
+          "7VGX_4": "1905fc323fec941be4126dd4051d098aa968b8a08ce15abe2c1b4616a98c24b8",
+          "7VGX_5": "bb5274ad0cdb9a05ae99ad6549e02111132ee9c29300afc889eb0147e210af9e",
+          "7VGX_6": "a5b902b8819a3d64a32684fd71e390f59cbf66ab815de4d6e984a6b727056964"
+        }
+      }
+    },
+    {
+      "pdbId": "7WQ3",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41467-022-29072-3",
+        "pmid": null,
+        "title": "Molecular basis for allosteric agonism and G protein subtype selectivity of galanin receptors"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "7WQ3_5",
+          "description": "ScFv16",
+          "sequenceSha256": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Galanin-bound galanin receptor 1 in complex with Gi",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41467-022-29072-3",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7WQ3",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7WQ3_1": "bc481b507d238cc91e7aa3d326fc02224ca34eec26c0dd162efe81af5e050aa4",
+          "7WQ3_2": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40",
+          "7WQ3_3": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "7WQ3_4": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "7WQ3_5": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "7WQ3_6": "c382283c71b5a07c3a944c23f15fafaf870c281bc58f58d06223449d09bde059"
+        }
+      }
+    },
+    {
+      "pdbId": "7WQ4",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41467-022-29072-3",
+        "pmid": null,
+        "title": "Molecular basis for allosteric agonism and G protein subtype selectivity of galanin receptors"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "7WQ4_5",
+          "description": "Nb35",
+          "sequenceSha256": "58b90824c180ce19cdc33cb7b69f34616a616efda2136e5db342e96757d92d81",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL",
+            "ANTIBODY_REFERENCE_SEQUENCE_MATCH_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Galanin-bound galanin receptor 2 in complex with Gq",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41467-022-29072-3",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7WQ4",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7WQ4_1": "f400e03ee734d3c7b2b584065ed69b90fc0464d0120dbfe7cfdb2b0c2980f93e",
+          "7WQ4_2": "c382283c71b5a07c3a944c23f15fafaf870c281bc58f58d06223449d09bde059",
+          "7WQ4_3": "bd171acf29fb194152324f5f0299bb3460c9c3a521a30e96d61a15387bbd1baf",
+          "7WQ4_4": "731c013dfd2af08e5208366adc05c924fee47f2a726a6903d130383a4ff1b10c",
+          "7WQ4_5": "58b90824c180ce19cdc33cb7b69f34616a616efda2136e5db342e96757d92d81",
+          "7WQ4_6": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213"
+        }
+      }
+    },
+    {
+      "pdbId": "7Y35",
+      "route": "HISTORICAL",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of the Abaloparatide-bound human PTH1R-Gs complex"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "6",
+          "rcsbId": "7Y35_6",
+          "description": "NanoBody 35",
+          "sequenceSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "ANTIBODY_DESCRIPTOR_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of the Abaloparatide-bound human PTH1R-Gs complex",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+        "pdbId": "7Y35",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7Y35_1": "f5ee8273e6ee797dab900dcf9dcf9ca670ea39c67eba62ccb0cd904fafa117b4",
+          "7Y35_2": "e4fd2cf289b0ee37977ec2691a82bb0e717cf08317dbeb3c727539f54ff200c0",
+          "7Y35_3": "18b1163c27f9ffe1bec1680cb7d7c4507750b6552d10d1c356c066ec61997ee1",
+          "7Y35_4": "1f0d3a409ec4a82006a344d7920b5406a086030d541a25deeadee977f15039fb",
+          "7Y35_5": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0",
+          "7Y35_6": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3"
+        }
+      }
+    },
+    {
+      "pdbId": "7Y36",
+      "route": "HISTORICAL",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of the Teriparatide-bound human PTH1R-Gs complex"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "6",
+          "rcsbId": "7Y36_6",
+          "description": "NanoBody 35",
+          "sequenceSha256": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "ANTIBODY_DESCRIPTOR_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of the Teriparatide-bound human PTH1R-Gs complex",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+        "pdbId": "7Y36",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "7Y36_1": "f5ee8273e6ee797dab900dcf9dcf9ca670ea39c67eba62ccb0cd904fafa117b4",
+          "7Y36_2": "cb4679b9603a1f7e013fd567393fb174cd1c789a15dd70b3c64e96504a328d8b",
+          "7Y36_3": "18b1163c27f9ffe1bec1680cb7d7c4507750b6552d10d1c356c066ec61997ee1",
+          "7Y36_4": "1f0d3a409ec4a82006a344d7920b5406a086030d541a25deeadee977f15039fb",
+          "7Y36_5": "7a81148e8bdde6913be23aa379643b000afc7422585bc9c7a6753d47d6eb76d0",
+          "7Y36_6": "fda5877b3a8dbedb01bb918cdb207cc90f3de83a7437151e00fd682d1c2438f3"
+        }
+      }
+    },
+    {
+      "pdbId": "7YDJ",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo EM structure of CD97/miniG12 complex"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "3",
+          "rcsbId": "7YDJ_3",
+          "description": "scFv16",
+          "sequenceSha256": "b0b109cc7ed2a741e33cb27dd4e1d54eadfab06edbc2d267d745c2cea103918a",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo EM structure of CD97/miniG12 complex",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7YDJ",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7YDJ_1": "4a30d96f54c9f33fc0d2f938641eb655326a1f4b87902446dd758be430e34efe",
+          "7YDJ_2": "d053bff6096067864fc38540457be3b7929e6590c9adf2c8c05406764799ce47",
+          "7YDJ_3": "b0b109cc7ed2a741e33cb27dd4e1d54eadfab06edbc2d267d745c2cea103918a",
+          "7YDJ_4": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "7YDJ_5": "0f97607135941c2607f0658faa313aa11cb57b8fe676435bda15ee6c08242c85"
+        }
+      }
+    },
+    {
+      "pdbId": "7YP7",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "apo-ADGRG2 coupled to Gs"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "7YP7_4",
+          "description": "Nano-body 35",
+          "sequenceSha256": "ac71b1512450b76ddc5623cb87231ac80ed562c6d90df0f1bed5278930c54874",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL",
+            "ANTIBODY_REFERENCE_SEQUENCE_MATCH_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "apo-ADGRG2 coupled to Gs",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7YP7",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7YP7_1": "9f36d2e88f9078e6f8f276f104ea17e4ecb9be027264f21822b9b18c69cd6f57",
+          "7YP7_2": "acb77ec176d54e7257315b03e3c0abf700f4bb6172716cca0fff6da166ef0465",
+          "7YP7_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "7YP7_4": "ac71b1512450b76ddc5623cb87231ac80ed562c6d90df0f1bed5278930c54874",
+          "7YP7_5": "9d8dc6dbb788984b1322885fa60619df64f3a0d6ae29d0ae23d66ac21d064e31"
+        }
+      }
+    },
+    {
+      "pdbId": "8GAG",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cannabinoid receptor 1-Gi complex with novel ligand"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "8GAG_5",
+          "description": "scFv16",
+          "sequenceSha256": "a5b902b8819a3d64a32684fd71e390f59cbf66ab815de4d6e984a6b727056964",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cannabinoid receptor 1-Gi complex with novel ligand",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8GAG",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8GAG_1": "57f8013fce15aa580c1c618f1fb4f45d76af5361d9190eb56bbbebf5997999d1",
+          "8GAG_2": "35a63a4dfc421ff5f27785e464d097c4e1919f961759a5cca7b6021bd22674c6",
+          "8GAG_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8GAG_4": "abd5ad9e5f8e6056c2b8b7892dad0888fcf976dff30a901dbc470b537e24b55d",
+          "8GAG_5": "a5b902b8819a3d64a32684fd71e390f59cbf66ab815de4d6e984a6b727056964"
+        }
+      }
+    },
+    {
+      "pdbId": "8H0P",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41422-022-00743-6",
+        "pmid": null,
+        "title": "Molecular recognition of itch-associated neuropeptides by bombesin receptors"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "8H0P_5",
+          "description": "scFv16",
+          "sequenceSha256": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Structure of the NMB30-NMBR and Gq complex",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41422-022-00743-6",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8H0P",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "8H0P_1": "9f43f268b8419ca9c4bfc894ebc68410bdeb51b0e301f99d959f4959d507966a",
+          "8H0P_2": "c5a260f606666309affc9015996a0f9a44da357e8b13935d326015c1eb5f7747",
+          "8H0P_3": "94f5900674aabff943867c1a3174aafd4cef7085a54c21f6139ba75bd92292f0",
+          "8H0P_4": "91a7813d257e4a79c11463a8a0d22909db88f6a4ac973e19a4f8a7c551be7d81",
+          "8H0P_5": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "8H0P_6": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213"
+        }
+      }
+    },
+    {
+      "pdbId": "8H0Q",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41422-022-00743-6",
+        "pmid": null,
+        "title": "Molecular recognition of itch-associated neuropeptides by bombesin receptors"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "8H0Q_5",
+          "description": "scFv16",
+          "sequenceSha256": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Structure of the GRP14-27-GRPR-Gq complex",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41422-022-00743-6",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8H0Q",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "8H0Q_1": "d612c2e7b46def3cb2a0a7f5525d3b7615f7cd170ef697025a877ae0f7be8938",
+          "8H0Q_2": "df7923892de470b0dd5d6591ad85649ae8a1796f5f1fc2fe1b1d50378f423193",
+          "8H0Q_3": "94f5900674aabff943867c1a3174aafd4cef7085a54c21f6139ba75bd92292f0",
+          "8H0Q_4": "91a7813d257e4a79c11463a8a0d22909db88f6a4ac973e19a4f8a7c551be7d81",
+          "8H0Q_5": "b38abf7f3a2ef5829e81e9b02a1197545cea0efeec5577d9eb8e396e353dffbf",
+          "8H0Q_6": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213"
+        }
+      }
+    },
+    {
+      "pdbId": "8H2G",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41467-023-42764-8",
+        "pmid": null,
+        "title": "Structural basis for ligand recognition and signaling of hydroxy-carboxylic acid receptor 2"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "8H2G_5",
+          "description": "scFv16",
+          "sequenceSha256": "6c8a1567f9cc9e7ae8b41491b2c623119d0363216eb221f1712a9a634cfe22f6",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of niacin bound human hydroxy-carboxylic acid receptor 2 in complex with Gi heterotrimer",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8H2G",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8H2G_1": "6597aabfcd887b539ea87e310586e8111391674d8e0f42dea1a8fdb17c49f4a5",
+          "8H2G_2": "57f8013fce15aa580c1c618f1fb4f45d76af5361d9190eb56bbbebf5997999d1",
+          "8H2G_3": "1905fc323fec941be4126dd4051d098aa968b8a08ce15abe2c1b4616a98c24b8",
+          "8H2G_4": "7102b238d3b00ae169ffd375d4fffecb3b842105918b821d22eddbd00b0fa1fe",
+          "8H2G_5": "6c8a1567f9cc9e7ae8b41491b2c623119d0363216eb221f1712a9a634cfe22f6"
+        }
+      }
+    },
+    {
+      "pdbId": "8HN1",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of AdTx1-alpha1AAR-Nb6"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "3",
+          "rcsbId": "8HN1_3",
+          "description": "Nb6",
+          "sequenceSha256": "a7b413fe44dba2a72187b519f26b7312d90ac964e408f0ae607e915e1830a2ab",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL",
+            "ANTIBODY_REFERENCE_SEQUENCE_MATCH_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of AdTx1-alpha1AAR-Nb6",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8HN1",
+        "polymerEntityCount": 3,
+        "polymerSequenceHashes": {
+          "8HN1_1": "1f75a0e514e004eb533c2d698328a8ce36c57ec0279f82980ef68a95fb555d81",
+          "8HN1_2": "f84f403f809c1f6ac64dd32b6ef33252044a298adfa0b71f16b8e5f41ac2efd6",
+          "8HN1_3": "a7b413fe44dba2a72187b519f26b7312d90ac964e408f0ae607e915e1830a2ab"
+        }
+      }
+    },
+    {
+      "pdbId": "8HN8",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structure insights into Histamine H4 receptor activation by an endogenous ligand histamine and agonist imetit"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "8HN8_5",
+          "description": "Single-chain variable fragment scFv16",
+          "sequenceSha256": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of ligand histamine-bound Histamine H4 receptor Gi complex",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8HN8",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8HN8_1": "57f8013fce15aa580c1c618f1fb4f45d76af5361d9190eb56bbbebf5997999d1",
+          "8HN8_2": "731c013dfd2af08e5208366adc05c924fee47f2a726a6903d130383a4ff1b10c",
+          "8HN8_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8HN8_4": "0d1eda73e93aeb7e17f47a8bd70ef8b01c6b1e741bc32e683eeea637ba380671",
+          "8HN8_5": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1"
+        }
+      }
+    },
+    {
+      "pdbId": "8HOC",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structure insights into Histamine H4 receptor activation by an endogenous ligand histamine and agonist imetit"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "8HOC_5",
+          "description": "Single-chain variable fragment scFv16",
+          "sequenceSha256": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of ligand histamine-bound Histamine H4 receptor Gi complex",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8HOC",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8HOC_1": "57f8013fce15aa580c1c618f1fb4f45d76af5361d9190eb56bbbebf5997999d1",
+          "8HOC_2": "731c013dfd2af08e5208366adc05c924fee47f2a726a6903d130383a4ff1b10c",
+          "8HOC_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8HOC_4": "0d1eda73e93aeb7e17f47a8bd70ef8b01c6b1e741bc32e683eeea637ba380671",
+          "8HOC_5": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1"
+        }
+      }
+    },
+    {
+      "pdbId": "8IA8",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of C3aR-Gi-scFv16 bound with E7 peptide"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "6",
+          "rcsbId": "8IA8_6",
+          "description": "scFv16",
+          "sequenceSha256": "302f4bccac03ce8295badeb8d435cab8cb7d0139e3acf8903474d79ff7e9184a",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of C3aR-Gi-scFv16 bound with E7 peptide",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8IA8",
+        "polymerEntityCount": 6,
+        "polymerSequenceHashes": {
+          "8IA8_1": "a5022cd23dd04d6a0bb4d7eeba169af7fdb86779cf16db09603f294406785cbc",
+          "8IA8_2": "18970708361ef54ea67db455c8ae03a58dab07b4da84715aecded61cc0f8743d",
+          "8IA8_3": "5cf4c562852ca89cfbc44042224294521c4e5d46dc02e9dc225334f06a96ffe1",
+          "8IA8_4": "731c013dfd2af08e5208366adc05c924fee47f2a726a6903d130383a4ff1b10c",
+          "8IA8_5": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8IA8_6": "302f4bccac03ce8295badeb8d435cab8cb7d0139e3acf8903474d79ff7e9184a"
+        }
+      }
+    },
+    {
+      "pdbId": "8IU2",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1126/science.adz8141",
+        "pmid": null,
+        "title": "Cryo-electron microscopy structures of human cone visual pigments"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "8IU2_5",
+          "description": "scFv Recombinant Human Monoclonal Antibody (scFv16)",
+          "sequenceSha256": "d50eb81df462852686d16f79265b597e807f4df4b27ddd9438a0de47d56f8684",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of Long-wave-sensitive opsin 1",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8IU2",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8IU2_1": "67f87d0aed52253fa276edf7ad9d10d42f5bec96e8eadc45c9912cb6a15281ac",
+          "8IU2_2": "6255c1e4a4ddea343f0e01477415cd5c2fb1266cc14b676a4cb55693ed812b8e",
+          "8IU2_3": "731c013dfd2af08e5208366adc05c924fee47f2a726a6903d130383a4ff1b10c",
+          "8IU2_4": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8IU2_5": "d50eb81df462852686d16f79265b597e807f4df4b27ddd9438a0de47d56f8684"
+        }
+      }
+    },
+    {
+      "pdbId": "8IZ4",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structural mechanisms of ligand binding and signaling in lysophosphatidylserine receptors"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "8IZ4_4",
+          "description": "Antibody fragment scFv16",
+          "sequenceSha256": "cb7b46d17ab7fba3519fb209e1c40ddc0e0b020d3d4acb922e03bb62768e713a",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Lysophosphatidylserine receptor GPR34-Gi complex",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8IZ4",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8IZ4_1": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40",
+          "8IZ4_2": "0b0e9a2056d90ce304bbdef1fc2f4730ece6acd69881d9229064364135b5b072",
+          "8IZ4_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8IZ4_4": "cb7b46d17ab7fba3519fb209e1c40ddc0e0b020d3d4acb922e03bb62768e713a",
+          "8IZ4_5": "daef9588477e8564dec2162f8240d5c99fda93c82708ca75817f5f3f603c324f"
+        }
+      }
+    },
+    {
+      "pdbId": "8J23",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Molecular recognition and activation mechanism of short chain fatty acid receptors FFAR2 and FFAR3"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "5",
+          "rcsbId": "8J23_5",
+          "description": "scFV16",
+          "sequenceSha256": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of FFAR2 complex in apo state",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8J23",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8J23_1": "fae9944fd301748992a41f85edbe0121960eac3ffacc6357620d9d45fe93b052",
+          "8J23_2": "57f8013fce15aa580c1c618f1fb4f45d76af5361d9190eb56bbbebf5997999d1",
+          "8J23_3": "b4fd284489df034753cbbe82158cb665e2a54eb925e2d346475ea13c445b573e",
+          "8J23_4": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8J23_5": "a3fc96f6256cc8dcf4c85cafc30327e8d178b5cb0e0f5b26163c410c2a5b3db1"
+        }
+      }
+    },
+    {
+      "pdbId": "8K4N",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of GPR34-Gi complex"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "8K4N_4",
+          "description": "scFv16",
+          "sequenceSha256": "ef5d1580a563d399503c6d2ad563ffe6147aef857c4a1987e7c2b50697acfefc",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Structure of GPR34-Gi complex",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8K4N",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8K4N_1": "ec0c423e43df0b36b3182d2d03f8cbe6d18c2c35b6ce189b3caa7ac262d96d8d",
+          "8K4N_2": "59b2c349289f553f63d3c6a1c3816722967d9937b3e62a7f6c05b875c7ea575b",
+          "8K4N_3": "e9a30ade62206aa924c7342eecbaa8dff123f6f72778fe73fb5450d3b360ecce",
+          "8K4N_4": "ef5d1580a563d399503c6d2ad563ffe6147aef857c4a1987e7c2b50697acfefc",
+          "8K4N_5": "7550a4583cd53feaa0b9b54e355cef7cedb4394d67164a7aa6d679e8fe274463"
+        }
+      }
+    },
+    {
+      "pdbId": "8WJX",
+      "route": "HISTORICAL",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "ADP-bound purinergic receptor 1 in complex with miniGs/q"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "8WJX_4",
+          "description": "Nanobody 35",
+          "sequenceSha256": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "ANTIBODY_DESCRIPTOR_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "ADP-bound purinergic receptor 1 in complex with miniGs/q",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+        "pdbId": "8WJX",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8WJX_1": "4e14f7f62192e9a98815f470e43256e9b0a30f5d1b31b18d265391131b729281",
+          "8WJX_2": "b4fd284489df034753cbbe82158cb665e2a54eb925e2d346475ea13c445b573e",
+          "8WJX_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8WJX_4": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "8WJX_5": "17cddc50ce7e78eefeb6ea0f137e49309a0d6b91175fcea33ea31830dfe4bf2f"
+        }
+      }
+    },
+    {
+      "pdbId": "8WWH",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structural insights into ligand recognition and activation of melanin-concentrating hormone receptor MCHR1"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "8WWH_4",
+          "description": "Antibody fragment ScFv16",
+          "sequenceSha256": "cb7b46d17ab7fba3519fb209e1c40ddc0e0b020d3d4acb922e03bb62768e713a",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "MCHR1-Gi complex,S1 state",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8WWH",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8WWH_1": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40",
+          "8WWH_2": "0b0e9a2056d90ce304bbdef1fc2f4730ece6acd69881d9229064364135b5b072",
+          "8WWH_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8WWH_4": "cb7b46d17ab7fba3519fb209e1c40ddc0e0b020d3d4acb922e03bb62768e713a",
+          "8WWH_5": "bf09f609f2ac6fe64e0c1509b160111e245435d8616764e1c792482d213b9cc4"
+        }
+      }
+    },
+    {
+      "pdbId": "8WWI",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structural insights into ligand recognition and activation of melanin-concentrating hormone receptor MCHR1"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "8WWI_4",
+          "description": "Antibody fragment ScFv16",
+          "sequenceSha256": "cb7b46d17ab7fba3519fb209e1c40ddc0e0b020d3d4acb922e03bb62768e713a",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "MCHR1-Gi complex,S3 state",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8WWI",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8WWI_1": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40",
+          "8WWI_2": "0b0e9a2056d90ce304bbdef1fc2f4730ece6acd69881d9229064364135b5b072",
+          "8WWI_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8WWI_4": "cb7b46d17ab7fba3519fb209e1c40ddc0e0b020d3d4acb922e03bb62768e713a",
+          "8WWI_5": "bf09f609f2ac6fe64e0c1509b160111e245435d8616764e1c792482d213b9cc4"
+        }
+      }
+    },
+    {
+      "pdbId": "8WWJ",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Structural insights into ligand recognition and activation of melanin-concentrating hormone receptor MCHR1"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "8WWJ_4",
+          "description": "Antibody fragment ScFv16",
+          "sequenceSha256": "cb7b46d17ab7fba3519fb209e1c40ddc0e0b020d3d4acb922e03bb62768e713a",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "MCHR1-Gi complex,S2 state",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8WWJ",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8WWJ_1": "dda3f53045f886fd3d6f789d1190a12e685cf8248e15edf004e92b0c792a2c40",
+          "8WWJ_2": "0b0e9a2056d90ce304bbdef1fc2f4730ece6acd69881d9229064364135b5b072",
+          "8WWJ_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8WWJ_4": "cb7b46d17ab7fba3519fb209e1c40ddc0e0b020d3d4acb922e03bb62768e713a",
+          "8WWJ_5": "bf09f609f2ac6fe64e0c1509b160111e245435d8616764e1c792482d213b9cc4"
+        }
+      }
+    },
+    {
+      "pdbId": "8ZR5",
+      "route": "HISTORICAL",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of GPR119-Gs complex"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "8ZR5_4",
+          "description": "Nanobody 35",
+          "sequenceSha256": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "signalReasons": [
+            "FROZEN_VHH_LIKE_METADATA_SIGNAL",
+            "ANTIBODY_DESCRIPTOR_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM Structure of GPR119-Gs-Firuglipel complex",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/entry-metadata-snapshot-2026-08-29/entries.jsonl",
+        "pdbId": "8ZR5",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8ZR5_1": "9f36d2e88f9078e6f8f276f104ea17e4ecb9be027264f21822b9b18c69cd6f57",
+          "8ZR5_2": "f530367bf35a1cbe424631a53706229aa82c1e685823fa7e68ffe1e7cc917726",
+          "8ZR5_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8ZR5_4": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "8ZR5_5": "21f9e9dcdd9719e997e79daaf9f36caa46e83f3b64ce1e61e189b46f59c07f73"
+        }
+      }
+    },
+    {
+      "pdbId": "8ZRK",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of GPR119-Gs complex"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": true,
+      "candidateEntitySignals": [
+        {
+          "entityId": "4",
+          "rcsbId": "8ZRK_4",
+          "description": "nanobody35",
+          "sequenceSha256": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "signalReasons": [
+            "ANTIBODY_DESCRIPTOR_SIGNAL",
+            "NUMBERED_HEAVY_DOMAIN_SIGNAL",
+            "ANTIBODY_REFERENCE_SEQUENCE_MATCH_SIGNAL"
+          ]
+        }
+      ],
+      "frozenTitle": "Cryo-EM structure of GPR119-Gs Complex with small molecule agonist GSK-1292263",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8ZRK",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "8ZRK_1": "6d43eb6050bba2cb83b098b0cf7609cc092f7d3db46a988909f515124c080645",
+          "8ZRK_2": "d0a899213b499426b6c06f7e57d18cdbfa43d45d5f98d8ec467b7892787550f7",
+          "8ZRK_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8ZRK_4": "93cc2355711ae64d8ab975cb1428cb54b7f6356cb76ab87869317d39d0ac1ce6",
+          "8ZRK_5": "448971a85b8587b1ca1d1c0f9bceb52838606a934c7b960fe2e45dcc477548bf"
+        }
+      }
+    },
+    {
+      "pdbId": "5V54",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "A common antagonistic mechanism for class A GPCRs revealed by the structure of the human 5-HT1B serotonin receptor bound to an antagonist"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structure of 5-HT1B receptor in complex with methiothepin",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "5V54",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "5V54_1": "1db2f8e1689d85c071b57800f84fdd2ceb554bf67af046b97650fda0f079508a"
+        }
+      }
+    },
+    {
+      "pdbId": "6GT3",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Small molecule AZD4635 inhibitor of A2AR signaling rescues immune cell function including CD103+ dendritic cells enhancing anti-tumor immunity"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal Structure of the A2A-StaR2-bRIL562 in complex with AZD4635 at 2.0A resolution",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6GT3",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "6GT3_1": "732ffdcdd683f7163293f383abd59621d56307de8807823dc9eded6d6fb4276a"
+        }
+      }
+    },
+    {
+      "pdbId": "6KP6",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1107/s2052252520000597",
+        "pmid": null,
+        "title": "The structural study of mutation-induced inactivation of human muscarinic receptor M4"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "The structural study of mutation induced inactivation of Human muscarinic receptor M4",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1107/S2052252520000597",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6KP6",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "6KP6_1": "fbeccb34cd84fee2e1bbfc9d71458b999618564f2a3186f1812f11b3f5a06921"
+        }
+      }
+    },
+    {
+      "pdbId": "6KUW",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Crystal structure of human alpha2C adrenergic G protein-coupled receptor."
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structure of human alpha2C adrenergic G protein-coupled receptor.",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6KUW",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "6KUW_1": "0fa13d8d7152ba16bf0a614d724b260f74300f14d957394b0b552701b2ec4aaf"
+        }
+      }
+    },
+    {
+      "pdbId": "6KUX",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Crystal structures of the alpha2A adrenergic receptor in complex with an antagonist RSC."
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structures of the alpha2A adrenergic receptor in complex with an antagonist RSC.",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6KUX",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "6KUX_1": "f42aaee9080190dc248a8d409e9640b44da21a4208f195a5339646a451f69316"
+        }
+      }
+    },
+    {
+      "pdbId": "6KUY",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Crystal structures of the alpha2A adrenergic receptor in complex with a partial agonist"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structure of the alpha2A adrenergic receptor in complex with a partial agonist",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6KUY",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "6KUY_1": "a4612eb84f8d65546cd3787c0ed72bb8f232520b46085bba193dea75667050c2"
+        }
+      }
+    },
+    {
+      "pdbId": "6NWE",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Odorant-binding site in visual opsin"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structure of bovine opsin with beta octyl glucoside bound",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6NWE",
+        "polymerEntityCount": 2,
+        "polymerSequenceHashes": {
+          "6NWE_1": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+          "6NWE_2": "6f326cf691cb64c53bdcc53b88a019ae6908df9da9e026a16aeb2a78f5b5e3c6"
+        }
+      }
+    },
+    {
+      "pdbId": "6PEL",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Odorant-binding site in visual opsin"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structure of bovine opsin with citronellol bound",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6PEL",
+        "polymerEntityCount": 2,
+        "polymerSequenceHashes": {
+          "6PEL_1": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+          "6PEL_2": "6f326cf691cb64c53bdcc53b88a019ae6908df9da9e026a16aeb2a78f5b5e3c6"
+        }
+      }
+    },
+    {
+      "pdbId": "6PGS",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Odorant-binding site in visual opsin"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structure of bovine opsin with geraniol bound",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6PGS",
+        "polymerEntityCount": 2,
+        "polymerSequenceHashes": {
+          "6PGS_1": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+          "6PGS_2": "6f326cf691cb64c53bdcc53b88a019ae6908df9da9e026a16aeb2a78f5b5e3c6"
+        }
+      }
+    },
+    {
+      "pdbId": "6PH7",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Odorant-binding site in visual opsin"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structure of bovine opsin with nerol bound",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6PH7",
+        "polymerEntityCount": 2,
+        "polymerSequenceHashes": {
+          "6PH7_1": "20e8fc797c8f2615a0ce29e265bc6a5e5adc929a1f25bbfa5c52fdbfd8ea9536",
+          "6PH7_2": "6f326cf691cb64c53bdcc53b88a019ae6908df9da9e026a16aeb2a78f5b5e3c6"
+        }
+      }
+    },
+    {
+      "pdbId": "6WGT",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1016/j.cell.2020.08.024",
+        "pmid": null,
+        "title": "Structure of a Hallucinogen-Activated Gq-Coupled 5-HT 2A Serotonin Receptor"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structure of HTR2A with hallucinogenic agonist",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1016/J.CELL.2020.08.024",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6WGT",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "6WGT_1": "94db7d4c4c81fa0e8bf79e6bd6f8a22058e87a68138a8bde86b48d99c9a0b73b"
+        }
+      }
+    },
+    {
+      "pdbId": "6WH4",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1016/j.cell.2020.08.024",
+        "pmid": null,
+        "title": "Structure of a Hallucinogen-Activated Gq-Coupled 5-HT 2A Serotonin Receptor"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Crystal structure of HTR2A with inverse agonist",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1016/J.CELL.2020.08.024",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6WH4",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "6WH4_1": "94db7d4c4c81fa0e8bf79e6bd6f8a22058e87a68138a8bde86b48d99c9a0b73b"
+        }
+      }
+    },
+    {
+      "pdbId": "6WQA",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1107/s2052252520012701",
+        "pmid": null,
+        "title": "Harnessing the power of an X-ray laser for serial crystallography of membrane proteins crystallized in lipidic cubic phase"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "2.0A angstrom A2a adenosine receptor structure using XFEL data collected in helium atmosphere.",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1107/S2052252520012701",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "6WQA",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "6WQA_1": "ff83a861abce99ad45ab98dcfd2780d046d3c238314b8dfb3ffdc3cd348abe78"
+        }
+      }
+    },
+    {
+      "pdbId": "7EZK",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": "10.1038/s41589-021-00841-3",
+        "pmid": null,
+        "title": "Ligand recognition and G-protein coupling selectivity of cholecystokinin A receptor"
+      },
+      "missingFields": [
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Cryo-EM structure of an activated Cholecystokinin A receptor (CCKAR)-Gs complex",
+      "frozenGpcrdbPublication": "https://dx.doi.org/10.1038/S41589-021-00841-3",
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "7EZK",
+        "polymerEntityCount": 5,
+        "polymerSequenceHashes": {
+          "7EZK_1": "861a0270f69d21ab48165278f652227b778fb460299892bfde1a9fa15321f405",
+          "7EZK_2": "2a206d867cde7ae5d7939e193d590ad3e7e5d34e66329e360386fbb5c932fd6e",
+          "7EZK_3": "db51d7d7e7d75f30f42489829f22d751b64154d93bce190aaf7ae6f239a55695",
+          "7EZK_4": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "7EZK_5": "90f205021dfa81014646af196c098ccbb47b16bc477994a284d5e9d093db423e"
+        }
+      }
+    },
+    {
+      "pdbId": "8WVU",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of LGR4 in complex with Rspo1 and RNF43"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Cryo-EM structure of LGR4 in complex with Rspo1 and RNF43",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8WVU",
+        "polymerEntityCount": 3,
+        "polymerSequenceHashes": {
+          "8WVU_1": "5db563951526ef372d57f71600e0f2988a9f6b03ae7fc328e889f21b9921ae87",
+          "8WVU_2": "48f2651631794ec93906fae4e6be7cf093f1168193357e2ee0fb67fbd4476276",
+          "8WVU_3": "c637cc30491b3c09bb27fe3f2f57ecce2af2e73b17de7ce58068723220e9d09f"
+        }
+      }
+    },
+    {
+      "pdbId": "8WVV",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of LGR4 in state I"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Cryo-EM structure of LGR4 in state I",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8WVV",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "8WVV_1": "5db563951526ef372d57f71600e0f2988a9f6b03ae7fc328e889f21b9921ae87"
+        }
+      }
+    },
+    {
+      "pdbId": "8WVW",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of LGR4 in state I"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Cryo-EM structure of LGR4 in state II",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8WVW",
+        "polymerEntityCount": 1,
+        "polymerSequenceHashes": {
+          "8WVW_1": "5db563951526ef372d57f71600e0f2988a9f6b03ae7fc328e889f21b9921ae87"
+        }
+      }
+    },
+    {
+      "pdbId": "8WVX",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of LGR4 in complex with Norrin (dimer)"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Cryo-EM structure of LGR4 in complex with Norrin(dimer)",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8WVX",
+        "polymerEntityCount": 2,
+        "polymerSequenceHashes": {
+          "8WVX_1": "5db563951526ef372d57f71600e0f2988a9f6b03ae7fc328e889f21b9921ae87",
+          "8WVX_2": "d57ca8e4db0711f4e41f279474a07e0d26ca8666f8fa3cd6d3440a941f9f12a2"
+        }
+      }
+    },
+    {
+      "pdbId": "8WVY",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "Cryo-EM structure of LGR4 in complex with Norrin"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "Cryo-EM structure of LGR4 in complex with Norrin",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8WVY",
+        "polymerEntityCount": 2,
+        "polymerSequenceHashes": {
+          "8WVY_1": "5db563951526ef372d57f71600e0f2988a9f6b03ae7fc328e889f21b9921ae87",
+          "8WVY_2": "d57ca8e4db0711f4e41f279474a07e0d26ca8666f8fa3cd6d3440a941f9f12a2"
+        }
+      }
+    },
+    {
+      "pdbId": "8YIC",
+      "route": "COMPLEMENT",
+      "frozenMetadataPath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+      "frozenCitation": {
+        "doi": null,
+        "pmid": null,
+        "title": "SAR247799-bound S1PR1 in complex with Gi heterotrimer"
+      },
+      "missingFields": [
+        "doi",
+        "pmid"
+      ],
+      "antibodyEvidencePriority": false,
+      "candidateEntitySignals": [],
+      "frozenTitle": "SAR247799-bound S1PR1-Gi protein complex",
+      "frozenGpcrdbPublication": null,
+      "fullFrozenPolymerInventoryRef": {
+        "path": "validation/hard-decoy-holdout-v3/gpcrdb-complement-metadata-2026-09-04/entries.jsonl",
+        "pdbId": "8YIC",
+        "polymerEntityCount": 4,
+        "polymerSequenceHashes": {
+          "8YIC_1": "cf190e716b94b3b4dc34abd5fd587babe4532f5419145eb7198cc7e04bbde5c9",
+          "8YIC_2": "48e6d5acf63fa41f73ede8efe0e4759a004223759d0d0c3ed98d71ee3da76ddb",
+          "8YIC_3": "32ec703375c0e76182908a4d97397b4a5376a5f32c207247b2d35674e741b213",
+          "8YIC_4": "51bef445b4cbfe96cc7bb7d095e6f7c3b0f525c8180ff32fc859581044eb564d"
+        }
+      }
+    }
+  ],
+  "requests": [
+    {
+      "requestId": "rcsb-01-repeat-1",
+      "kind": "RCSB_PRIMARY_CITATION_ONLY",
+      "pdbIds": [
+        "5V54",
+        "6GT3",
+        "6H7N",
+        "6KP6",
+        "6KUW",
+        "6KUX",
+        "6KUY",
+        "6NWE",
+        "6PEL",
+        "6PGS",
+        "6PH7",
+        "6WGT",
+        "6WH4",
+        "6WHA",
+        "6WQA",
+        "7DHI",
+        "7DHR",
+        "7EZH",
+        "7EZK",
+        "7EZM"
+      ],
+      "repeat": 1,
+      "method": "GET",
+      "url": "https://data.rcsb.org/graphql?query=query+%7B+entries%28entry_ids%3A+%5B%225V54%22%2C+%226GT3%22%2C+%226H7N%22%2C+%226KP6%22%2C+%226KUW%22%2C+%226KUX%22%2C+%226KUY%22%2C+%226NWE%22%2C+%226PEL%22%2C+%226PGS%22%2C+%226PH7%22%2C+%226WGT%22%2C+%226WH4%22%2C+%226WHA%22%2C+%226WQA%22%2C+%227DHI%22%2C+%227DHR%22%2C+%227EZH%22%2C+%227EZK%22%2C+%227EZM%22%5D%29+%7B+rcsb_id+rcsb_primary_citation+%7B+title+pdbx_database_id_DOI+pdbx_database_id_PubMed+year+journal_abbrev+journal_volume+page_first+page_last+rcsb_authors+%7D+%7D+%7D"
+    },
+    {
+      "requestId": "rcsb-01-repeat-2",
+      "kind": "RCSB_PRIMARY_CITATION_ONLY",
+      "pdbIds": [
+        "5V54",
+        "6GT3",
+        "6H7N",
+        "6KP6",
+        "6KUW",
+        "6KUX",
+        "6KUY",
+        "6NWE",
+        "6PEL",
+        "6PGS",
+        "6PH7",
+        "6WGT",
+        "6WH4",
+        "6WHA",
+        "6WQA",
+        "7DHI",
+        "7DHR",
+        "7EZH",
+        "7EZK",
+        "7EZM"
+      ],
+      "repeat": 2,
+      "method": "GET",
+      "url": "https://data.rcsb.org/graphql?query=query+%7B+entries%28entry_ids%3A+%5B%225V54%22%2C+%226GT3%22%2C+%226H7N%22%2C+%226KP6%22%2C+%226KUW%22%2C+%226KUX%22%2C+%226KUY%22%2C+%226NWE%22%2C+%226PEL%22%2C+%226PGS%22%2C+%226PH7%22%2C+%226WGT%22%2C+%226WH4%22%2C+%226WHA%22%2C+%226WQA%22%2C+%227DHI%22%2C+%227DHR%22%2C+%227EZH%22%2C+%227EZK%22%2C+%227EZM%22%5D%29+%7B+rcsb_id+rcsb_primary_citation+%7B+title+pdbx_database_id_DOI+pdbx_database_id_PubMed+year+journal_abbrev+journal_volume+page_first+page_last+rcsb_authors+%7D+%7D+%7D"
+    },
+    {
+      "requestId": "rcsb-02-repeat-1",
+      "kind": "RCSB_PRIMARY_CITATION_ONLY",
+      "pdbIds": [
+        "7NA7",
+        "7NA8",
+        "7RKF",
+        "7RKM",
+        "7RKN",
+        "7TRK",
+        "7TRP",
+        "7TRQ",
+        "7TRS",
+        "7VGX",
+        "7WQ3",
+        "7WQ4",
+        "7Y35",
+        "7Y36",
+        "7YDJ",
+        "7YP7",
+        "8GAG",
+        "8H0P",
+        "8H0Q",
+        "8H2G"
+      ],
+      "repeat": 1,
+      "method": "GET",
+      "url": "https://data.rcsb.org/graphql?query=query+%7B+entries%28entry_ids%3A+%5B%227NA7%22%2C+%227NA8%22%2C+%227RKF%22%2C+%227RKM%22%2C+%227RKN%22%2C+%227TRK%22%2C+%227TRP%22%2C+%227TRQ%22%2C+%227TRS%22%2C+%227VGX%22%2C+%227WQ3%22%2C+%227WQ4%22%2C+%227Y35%22%2C+%227Y36%22%2C+%227YDJ%22%2C+%227YP7%22%2C+%228GAG%22%2C+%228H0P%22%2C+%228H0Q%22%2C+%228H2G%22%5D%29+%7B+rcsb_id+rcsb_primary_citation+%7B+title+pdbx_database_id_DOI+pdbx_database_id_PubMed+year+journal_abbrev+journal_volume+page_first+page_last+rcsb_authors+%7D+%7D+%7D"
+    },
+    {
+      "requestId": "rcsb-02-repeat-2",
+      "kind": "RCSB_PRIMARY_CITATION_ONLY",
+      "pdbIds": [
+        "7NA7",
+        "7NA8",
+        "7RKF",
+        "7RKM",
+        "7RKN",
+        "7TRK",
+        "7TRP",
+        "7TRQ",
+        "7TRS",
+        "7VGX",
+        "7WQ3",
+        "7WQ4",
+        "7Y35",
+        "7Y36",
+        "7YDJ",
+        "7YP7",
+        "8GAG",
+        "8H0P",
+        "8H0Q",
+        "8H2G"
+      ],
+      "repeat": 2,
+      "method": "GET",
+      "url": "https://data.rcsb.org/graphql?query=query+%7B+entries%28entry_ids%3A+%5B%227NA7%22%2C+%227NA8%22%2C+%227RKF%22%2C+%227RKM%22%2C+%227RKN%22%2C+%227TRK%22%2C+%227TRP%22%2C+%227TRQ%22%2C+%227TRS%22%2C+%227VGX%22%2C+%227WQ3%22%2C+%227WQ4%22%2C+%227Y35%22%2C+%227Y36%22%2C+%227YDJ%22%2C+%227YP7%22%2C+%228GAG%22%2C+%228H0P%22%2C+%228H0Q%22%2C+%228H2G%22%5D%29+%7B+rcsb_id+rcsb_primary_citation+%7B+title+pdbx_database_id_DOI+pdbx_database_id_PubMed+year+journal_abbrev+journal_volume+page_first+page_last+rcsb_authors+%7D+%7D+%7D"
+    },
+    {
+      "requestId": "rcsb-03-repeat-1",
+      "kind": "RCSB_PRIMARY_CITATION_ONLY",
+      "pdbIds": [
+        "8HN1",
+        "8HN8",
+        "8HOC",
+        "8IA8",
+        "8IU2",
+        "8IZ4",
+        "8J23",
+        "8K4N",
+        "8WJX",
+        "8WVU",
+        "8WVV",
+        "8WVW",
+        "8WVX",
+        "8WVY",
+        "8WWH",
+        "8WWI",
+        "8WWJ",
+        "8YIC",
+        "8ZR5",
+        "8ZRK"
+      ],
+      "repeat": 1,
+      "method": "GET",
+      "url": "https://data.rcsb.org/graphql?query=query+%7B+entries%28entry_ids%3A+%5B%228HN1%22%2C+%228HN8%22%2C+%228HOC%22%2C+%228IA8%22%2C+%228IU2%22%2C+%228IZ4%22%2C+%228J23%22%2C+%228K4N%22%2C+%228WJX%22%2C+%228WVU%22%2C+%228WVV%22%2C+%228WVW%22%2C+%228WVX%22%2C+%228WVY%22%2C+%228WWH%22%2C+%228WWI%22%2C+%228WWJ%22%2C+%228YIC%22%2C+%228ZR5%22%2C+%228ZRK%22%5D%29+%7B+rcsb_id+rcsb_primary_citation+%7B+title+pdbx_database_id_DOI+pdbx_database_id_PubMed+year+journal_abbrev+journal_volume+page_first+page_last+rcsb_authors+%7D+%7D+%7D"
+    },
+    {
+      "requestId": "rcsb-03-repeat-2",
+      "kind": "RCSB_PRIMARY_CITATION_ONLY",
+      "pdbIds": [
+        "8HN1",
+        "8HN8",
+        "8HOC",
+        "8IA8",
+        "8IU2",
+        "8IZ4",
+        "8J23",
+        "8K4N",
+        "8WJX",
+        "8WVU",
+        "8WVV",
+        "8WVW",
+        "8WVX",
+        "8WVY",
+        "8WWH",
+        "8WWI",
+        "8WWJ",
+        "8YIC",
+        "8ZR5",
+        "8ZRK"
+      ],
+      "repeat": 2,
+      "method": "GET",
+      "url": "https://data.rcsb.org/graphql?query=query+%7B+entries%28entry_ids%3A+%5B%228HN1%22%2C+%228HN8%22%2C+%228HOC%22%2C+%228IA8%22%2C+%228IU2%22%2C+%228IZ4%22%2C+%228J23%22%2C+%228K4N%22%2C+%228WJX%22%2C+%228WVU%22%2C+%228WVV%22%2C+%228WVW%22%2C+%228WVX%22%2C+%228WVY%22%2C+%228WWH%22%2C+%228WWI%22%2C+%228WWJ%22%2C+%228YIC%22%2C+%228ZR5%22%2C+%228ZRK%22%5D%29+%7B+rcsb_id+rcsb_primary_citation+%7B+title+pdbx_database_id_DOI+pdbx_database_id_PubMed+year+journal_abbrev+journal_volume+page_first+page_last+rcsb_authors+%7D+%7D+%7D"
+    },
+    {
+      "requestId": "pdb-6H7N",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6H7N"
+      ],
+      "query": "\"6H7N\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226H7N%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6WHA",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6WHA"
+      ],
+      "query": "\"6WHA\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226WHA%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7DHI",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7DHI"
+      ],
+      "query": "\"7DHI\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227DHI%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7DHR",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7DHR"
+      ],
+      "query": "\"7DHR\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227DHR%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7EZH",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7EZH"
+      ],
+      "query": "\"7EZH\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227EZH%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7EZM",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7EZM"
+      ],
+      "query": "\"7EZM\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227EZM%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7NA7",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7NA7"
+      ],
+      "query": "\"7NA7\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227NA7%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7NA8",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7NA8"
+      ],
+      "query": "\"7NA8\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227NA8%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7RKF",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7RKF"
+      ],
+      "query": "\"7RKF\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227RKF%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7RKM",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7RKM"
+      ],
+      "query": "\"7RKM\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227RKM%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7RKN",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7RKN"
+      ],
+      "query": "\"7RKN\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227RKN%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7TRK",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7TRK"
+      ],
+      "query": "\"7TRK\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227TRK%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7TRP",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7TRP"
+      ],
+      "query": "\"7TRP\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227TRP%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7TRQ",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7TRQ"
+      ],
+      "query": "\"7TRQ\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227TRQ%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7TRS",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7TRS"
+      ],
+      "query": "\"7TRS\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227TRS%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7VGX",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7VGX"
+      ],
+      "query": "\"7VGX\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227VGX%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7WQ3",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7WQ3"
+      ],
+      "query": "\"7WQ3\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227WQ3%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7WQ4",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7WQ4"
+      ],
+      "query": "\"7WQ4\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227WQ4%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7Y35",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7Y35"
+      ],
+      "query": "\"7Y35\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227Y35%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7Y36",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7Y36"
+      ],
+      "query": "\"7Y36\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227Y36%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7YDJ",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7YDJ"
+      ],
+      "query": "\"7YDJ\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227YDJ%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7YP7",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7YP7"
+      ],
+      "query": "\"7YP7\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227YP7%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8GAG",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8GAG"
+      ],
+      "query": "\"8GAG\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228GAG%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8H0P",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8H0P"
+      ],
+      "query": "\"8H0P\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228H0P%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8H0Q",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8H0Q"
+      ],
+      "query": "\"8H0Q\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228H0Q%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8H2G",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8H2G"
+      ],
+      "query": "\"8H2G\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228H2G%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8HN1",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8HN1"
+      ],
+      "query": "\"8HN1\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228HN1%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8HN8",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8HN8"
+      ],
+      "query": "\"8HN8\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228HN8%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8HOC",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8HOC"
+      ],
+      "query": "\"8HOC\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228HOC%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8IA8",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8IA8"
+      ],
+      "query": "\"8IA8\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228IA8%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8IU2",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8IU2"
+      ],
+      "query": "\"8IU2\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228IU2%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8IZ4",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8IZ4"
+      ],
+      "query": "\"8IZ4\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228IZ4%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8J23",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8J23"
+      ],
+      "query": "\"8J23\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228J23%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8K4N",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8K4N"
+      ],
+      "query": "\"8K4N\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228K4N%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8WJX",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8WJX"
+      ],
+      "query": "\"8WJX\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228WJX%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8WWH",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8WWH"
+      ],
+      "query": "\"8WWH\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228WWH%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8WWI",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8WWI"
+      ],
+      "query": "\"8WWI\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228WWI%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8WWJ",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8WWJ"
+      ],
+      "query": "\"8WWJ\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228WWJ%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8ZR5",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8ZR5"
+      ],
+      "query": "\"8ZR5\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228ZR5%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8ZRK",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8ZRK"
+      ],
+      "query": "\"8ZRK\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228ZRK%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-5V54",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "5V54"
+      ],
+      "query": "\"5V54\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%225V54%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6GT3",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6GT3"
+      ],
+      "query": "\"6GT3\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226GT3%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6KP6",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6KP6"
+      ],
+      "query": "\"6KP6\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226KP6%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6KUW",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6KUW"
+      ],
+      "query": "\"6KUW\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226KUW%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6KUX",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6KUX"
+      ],
+      "query": "\"6KUX\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226KUX%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6KUY",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6KUY"
+      ],
+      "query": "\"6KUY\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226KUY%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6NWE",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6NWE"
+      ],
+      "query": "\"6NWE\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226NWE%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6PEL",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6PEL"
+      ],
+      "query": "\"6PEL\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226PEL%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6PGS",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6PGS"
+      ],
+      "query": "\"6PGS\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226PGS%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6PH7",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6PH7"
+      ],
+      "query": "\"6PH7\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226PH7%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6WGT",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6WGT"
+      ],
+      "query": "\"6WGT\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226WGT%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6WH4",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6WH4"
+      ],
+      "query": "\"6WH4\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226WH4%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-6WQA",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "6WQA"
+      ],
+      "query": "\"6WQA\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%226WQA%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-7EZK",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "7EZK"
+      ],
+      "query": "\"7EZK\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%227EZK%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8WVU",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8WVU"
+      ],
+      "query": "\"8WVU\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228WVU%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8WVV",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8WVV"
+      ],
+      "query": "\"8WVV\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228WVV%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8WVW",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8WVW"
+      ],
+      "query": "\"8WVW\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228WVW%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8WVX",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8WVX"
+      ],
+      "query": "\"8WVX\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228WVX%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8WVY",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8WVY"
+      ],
+      "query": "\"8WVY\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228WVY%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "pdb-8YIC",
+      "kind": "EUROPE_PMC_EXACT_QUOTED_PDB_QUERY",
+      "pdbIds": [
+        "8YIC"
+      ],
+      "query": "\"8YIC\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%228YIC%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-01",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "6WGT",
+        "6WH4",
+        "6WHA"
+      ],
+      "query": "DOI:\"10.1016/j.cell.2020.08.024\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.cell.2020.08.024%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-02",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "8H0P",
+        "8H0Q"
+      ],
+      "query": "DOI:\"10.1038/s41422-022-00743-6\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41422-022-00743-6%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-03",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "7NA7",
+        "7NA8"
+      ],
+      "query": "DOI:\"10.1038/s41467-021-26735-5\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-021-26735-5%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-04",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "7VGX"
+      ],
+      "query": "DOI:\"10.1038/s41467-022-28510-6\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-022-28510-6%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-05",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "7WQ3",
+        "7WQ4"
+      ],
+      "query": "DOI:\"10.1038/s41467-022-29072-3\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-022-29072-3%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-06",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "8H2G"
+      ],
+      "query": "DOI:\"10.1038/s41467-023-42764-8\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-023-42764-8%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-07",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "7EZH",
+        "7EZK",
+        "7EZM"
+      ],
+      "query": "DOI:\"10.1038/s41589-021-00841-3\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41589-021-00841-3%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-08",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "7DHI",
+        "7DHR"
+      ],
+      "query": "DOI:\"10.1093/nsr/nwaa284\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1093%2Fnsr%2Fnwaa284%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-09",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "6H7N"
+      ],
+      "query": "DOI:\"10.1101/436212\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1101%2F436212%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-10",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "6KP6"
+      ],
+      "query": "DOI:\"10.1107/s2052252520000597\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1107%2Fs2052252520000597%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-11",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "6WQA"
+      ],
+      "query": "DOI:\"10.1107/s2052252520012701\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1107%2Fs2052252520012701%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-12",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "7RKF",
+        "7RKM",
+        "7RKN"
+      ],
+      "query": "DOI:\"10.1126/sciadv.abl5442\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fsciadv.abl5442%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    },
+    {
+      "requestId": "doi-13",
+      "kind": "EUROPE_PMC_EXISTING_DOI_QUERY",
+      "pdbIds": [
+        "8IU2"
+      ],
+      "query": "DOI:\"10.1126/science.adz8141\"",
+      "method": "GET",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1126%2Fscience.adz8141%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+    }
+  ],
+  "knownPositiveControl": {
+    "pdbId": "8HN1",
+    "doi": "10.1038/s42003-025-08405-0",
+    "evidencePath": "validation/hard-decoy-holdout-v3/gpcrdb-complement-priority-review-2026-09-04/source-reviews.json",
+    "interpretation": "Previously source-linked exact accession; not a new source adjudication in this route."
+  },
+  "antibodySignalCaveat": "Signals set query priority; absence of a signal is not antibody absence evidence.",
+  "metadataOnlyMatchesAreSourceAdjudications": false,
+  "broaderDiscoveryComplete": false,
+  "targetFreezePermitted": false
+}

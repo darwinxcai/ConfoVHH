@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "purpose": "Fail-closed registry of every structure, receptor, VHH, publication, and fixture exposed during ConfoVHH development before holdout v2 curation.",
+  "developmentGpcrVhhStructures": [
+    {"pdbId":"3P0G","receptor":"ADRB2","roles":["public-native-panel","product-demo","dockq-development-pilot","independent-delta-sasa-subset"]},
+    {"pdbId":"4MQS","receptor":"CHRM2","roles":["public-native-panel"]},
+    {"pdbId":"4XT1","receptor":"US28","roles":["public-native-panel","dockq-development-pilot","independent-delta-sasa-subset"]},
+    {"pdbId":"6DO1","receptor":"AGTR1","roles":["public-native-panel","dockq-development-pilot","independent-delta-sasa-subset"]},
+    {"pdbId":"6B73","receptor":"OPRK1","roles":["public-native-panel","state-context-inventory"]},
+    {"pdbId":"6RNK","receptor":"SUCNR1","roles":["public-native-panel"]},
+    {"pdbId":"6KNM","receptor":"APLNR","roles":["public-native-panel"]},
+    {"pdbId":"7YM8","receptor":"ADRA1A","roles":["public-native-panel"]},
+    {"pdbId":"8QOT","receptor":"OPRM1","roles":["public-native-panel","state-context-inventory"]},
+    {"pdbId":"8FCZ","receptor":"RHO","roles":["public-native-panel"]},
+    {"pdbId":"7L1V","receptor":"HCRTR2","roles":["public-native-panel"]},
+    {"pdbId":"6O3C","receptor":"SMO","roles":["public-native-panel","dockq-development-pilot"]},
+    {"pdbId":"8QW4","receptor":"FZD3","roles":["public-native-panel","dockq-development-pilot"]},
+    {"pdbId":"5JQH","receptor":"ADRB2","roles":["public-native-panel"]},
+    {"pdbId":"6VI4","receptor":"OPRK1","roles":["public-native-panel","state-context-inventory"]},
+    {"pdbId":"5C1M","receptor":"OPRM1","vhh":"Nb39","roles":["public-native-panel","state-context-inventory","independent-delta-sasa-subset"]},
+    {"pdbId":"6IBL","receptor":"ADRB1","vhh":"Nb80","roles":["public-native-panel","independent-delta-sasa-subset"]}
+  ],
+  "assemblyOnlyParserOracles": ["1TRZ","3C70","1OUT","4IP9"],
+  "conservativeReceptorClusters": [
+    {"id":"BETA-ADRENERGIC","members":["ADRB1","ADRB2"]},
+    {"id":"OPIOID","members":["OPRM1","OPRK1"]},
+    {"id":"ADRENERGIC-UNRESOLVED","members":["ADRA1A"],"rule":"Keep conservatively related until the pinned 7TM matrix proves otherwise."},
+    {"id":"SINGLETONS-PENDING-PINNED-MATRIX","members":["CHRM2","US28","AGTR1","SUCNR1","APLNR","RHO","HCRTR2","SMO","FZD3"]}
+  ],
+  "knownDevelopmentVhhLineages": [
+    {"id":"NB80","pdbIds":["3P0G","6IBL"]},
+    {"id":"NB39-OPIOID-ACTIVE","pdbIds":["5C1M","6B73"],"rule":"Conservatively group until exact sequences disprove lineage."},
+    {"id":"NB6","pdbIds":["6VI4"],"imgtCdr3":"NAEYRTGIWEELLDG"},
+    {"id":"NBE","pdbIds":["8QOT"]}
+  ],
+  "dockqPilotSequenceDigests": [
+    {"pdbId":"3P0G","receptorSha256":"6d482521511f448ec7fc96970ebba8a1dab27801b1904d08701fc010572319e6","vhhSha256":"818d90c4f7ed61b50d4f1754b369de6939a807a59ae417a688f86225e6837ee3"},
+    {"pdbId":"4XT1","receptorSha256":"c182088e20f25592dab0733ca2fdc16c440d149569a9a205ef72ddca024972df","vhhSha256":"939fc36aaa1f5444f9eeba6f8ad4d59864ec0b857608a6d559910c3948d0bb15"},
+    {"pdbId":"6DO1","receptorSha256":"dee07cb3ca4ff355b6324ef2dde8d0275e01c99cd12bf53a746092d094da7b49","vhhSha256":"30941b5f0773f4223c12611bbf9d755b7ff574da19ba1f2186967b97660b62a3"},
+    {"pdbId":"6O3C","receptorSha256":"b40a437fc8cc73f29ca768db8eb4ebf8e58230f495cc6c751f17c2495fd2da73","vhhSha256":"97f566ad585194134eb6d1b3cac78639512654a7503deb163b21241409be05de"},
+    {"pdbId":"8QW4","receptorSha256":"63f6045484b192b5cb6689d3673e6893b691383baee4cbdc9f6e139a022ad6d7","vhhSha256":"c03feb8a50a476de21e8ac8d63daaa75d5f2b50450cdd1e2e1a5505649a6e768"}
+  ],
+  "publicVhhNumberingFixtureExclusions": [
+    {"id":"immunum-documentation-vhh","sequenceSha256Prefix":"59aa84","cdr1":"GGSFSTYA","cdr2":"VIPLLTIT","cdr3":"AREGTTGKPIGAFAH"},
+    {"id":"anarci-issue-14-vhh","sequenceSha256Prefix":"be6bcb","cdr1":"GIILDYYP","cdr2":"ITNSDDSTIYT","cdr3":"SSKASFLIGKDDQGIDAGEYDY"}
+  ],
+  "freezeRule": "A complete future leakage report must replace every abbreviated or missing sequence digest with exact receptor construct, canonical 7TM, VHH, IMGT framework/CDR, epitope, construct, and publication records before TARGETS_FROZEN.",
+  "completeForFormalLeakageCertification": false
+}

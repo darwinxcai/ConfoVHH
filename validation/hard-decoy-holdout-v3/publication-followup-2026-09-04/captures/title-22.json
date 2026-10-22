@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-22",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "6GT3"
+    ],
+    "query": "TITLE:\"Small molecule AZD4635 inhibitor of A2AR signaling rescues immune cell function including CD103+ dendritic cells enhancing anti-tumor immunity\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Small+molecule+AZD4635+inhibitor+of+A2AR+signaling+rescues+immune+cell+function+including+CD103%2B+dendritic+cells+enhancing+anti-tumor+immunity%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:19.003206+00:00",
+  "status": 200,
+  "rawFile": "raw/title-22.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Small+molecule+AZD4635+inhibitor+of+A2AR+signaling+rescues+immune+cell+function+including+CD103%2B+dendritic+cells+enhancing+anti-tumor+immunity%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "ab778c0a32761ed13124ce67caba9f4ba2b2973b4deb4555705d78a0d006bc42",
+  "bytes": 1480,
+  "reportedHitCount": 1,
+  "retrievedRecordCount": 1,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:27.940514+00:00"
+}

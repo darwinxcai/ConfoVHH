@@ -1,0 +1,111 @@
+{
+  "authority": {
+    "contactTablesAccessed": false,
+    "formalExclusionAuthority": false,
+    "formalLeakageEdgeAuthority": false,
+    "formalNoEdgeAuthority": false,
+    "formalTargetEligibilityAuthority": false,
+    "formallyClearedIndependentComponentCount": 0,
+    "labelsAccessed": false,
+    "nativeCoordinatesAccessed": false,
+    "nativePoseImagesAccessed": false,
+    "performanceOutputsAccessed": false,
+    "targetFreezePermitted": false,
+    "wholeCensusAuthority": false
+  },
+  "inputDigests": {
+    "validation/hard-decoy-holdout-v3/global-text-discovery-2026-09-04/entries.jsonl": {
+      "bytes": 22693263,
+      "sha256": "fde2a0de338d34ea0e2baf56924b20bbc2de113b821a30af9c976b064d3a92d0"
+    },
+    "validation/hard-decoy-holdout-v3/global-text-screen-2026-09-04/entity-screens.jsonl": {
+      "bytes": 42079134,
+      "sha256": "ddf6eef4bbd5f16bac633f5049e52ec5541d3f3a0ccbc9d8cf27020a28b2a267"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/build.py": {
+      "bytes": 17297,
+      "sha256": "8068a3cf153704b14ec155e330aa856a5bdd18a1b2d99a1c39ed17518be6a297"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/sequence-evidence/conditional-development-receptor-comparison.jsonl": {
+      "bytes": 31160,
+      "sha256": "3fe27f62ba9c1301db178abe32d72886351939ec715091ac2fca9e7bd65702f5"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/sequence-evidence/summary.json": {
+      "bytes": 1506,
+      "sha256": "6f92f02d540294f8bf9ce2c92ce0eb6d821cd7b79614587092225795556447f1"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/epmc-doi-query.json": {
+      "bytes": 8887,
+      "sha256": "f62b1283b28231d64fe2510fb47ae1e8a36441675a08f208f13456e337a2758b"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/epmc-doi-query.json.meta.json": {
+      "bytes": 388,
+      "sha256": "08233fbbfdaa6bb696d6febd5dd916598b2d52a3dc9050620e751e9b0599c89f"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/gpcrdb-P11229-repeat-1.json": {
+      "bytes": 684,
+      "sha256": "51686ddbfe9cfc21e4ec938ad94d383e5985597970b75bc27c812932da79c9f3"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/gpcrdb-P11229-repeat-1.json.meta.json": {
+      "bytes": 576,
+      "sha256": "e86515ff9ed59e6b8d540d285027f38e4b9182a7bca2602a38ecfcfac1d6e745"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/gpcrdb-P11229-repeat-2.json": {
+      "bytes": 684,
+      "sha256": "51686ddbfe9cfc21e4ec938ad94d383e5985597970b75bc27c812932da79c9f3"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/gpcrdb-P11229-repeat-2.json.meta.json": {
+      "bytes": 576,
+      "sha256": "e80b80de05b20bc64d790bc014053de7a0254871492de7a96655d1de1dc6d3eb"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/gpcrdb-acm1-residues-repeat-1.json": {
+      "bytes": 45253,
+      "sha256": "b1d3cb63be7947bd8261e6c4b9dbb46011dabd02889d2ea58461209dce40432e"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/gpcrdb-acm1-residues-repeat-1.json.meta.json": {
+      "bytes": 582,
+      "sha256": "77d4c31b3e0a1fe169486da1df0c1cbd8c14ede078455b03f1ba2daf0fefa0ba"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/gpcrdb-acm1-residues-repeat-2.json": {
+      "bytes": 45253,
+      "sha256": "b1d3cb63be7947bd8261e6c4b9dbb46011dabd02889d2ea58461209dce40432e"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/gpcrdb-acm1-residues-repeat-2.json.meta.json": {
+      "bytes": 582,
+      "sha256": "138804a5c78728507bbe013da0a686cbea64d482f00a21ecbe6cf918870dd4de"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/primary-article.meta.json": {
+      "bytes": 952,
+      "sha256": "75dde8be8519c8584db674798e252febd583e02ce303722685d575e1de67468b"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/primary-article.xml": {
+      "bytes": 141770,
+      "sha256": "503f0a22ad359331689046d116048a997afe5652b28043c26f87f0f227b98f17"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/supplement-attempt.body": {
+      "bytes": 6186,
+      "sha256": "7e604bb1db6a9fba44aa92609024201b11a942796bf1f4eb4f4acb30d9dd5712"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/supplement-attempt.body.meta.json": {
+      "bytes": 2402,
+      "sha256": "7e58b7b296911d15cf647261333818f97fb6c7203db61895084a9b0d66aa9443"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/uniprot-P11229-repeat-1.json": {
+      "bytes": 57792,
+      "sha256": "58ca178b55a9579fce440e61ee4c0dc0108f3f5c16e990983f9fec701dad8f2b"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/uniprot-P11229-repeat-1.json.meta.json": {
+      "bytes": 1295,
+      "sha256": "cf5e2d06ff014ee2d1f67db48cfdce3196ad6252284e0fa874f02720bdcbd800"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/uniprot-P11229-repeat-2.json": {
+      "bytes": 57792,
+      "sha256": "58ca178b55a9579fce440e61ee4c0dc0108f3f5c16e990983f9fec701dad8f2b"
+    },
+    "validation/hard-decoy-holdout-v3/m1-nb1b4-source-review-2026-09-04/source-capture/uniprot-P11229-repeat-2.json.meta.json": {
+      "bytes": 1295,
+      "sha256": "471b8921b4241a39281fb815d6fa608124941212d71a9ad817f19a26d0dd5c6a"
+    }
+  },
+  "schemaVersion": "1.0.0"
+}

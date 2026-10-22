@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "intendedScope": "Primary construct/sample preparation Methods and deposition statements; metadata and sequences for all polymers in four prioritized entries.",
+  "restrictedSourceFiles": ["primary-excerpts.json", "fzd3-source/allowed-sections.json"],
+  "rawArticleBodiesArchivedWithoutWholesaleRendering": true,
+  "incidentalProseExposure": true,
+  "incident": {
+    "doi": "10.1038/s41586-019-0881-4",
+    "scope": "Initial section discovery printed the top-level mGlu5 article headings, including qualitative compaction/reorientation topics. Initial allowlisted crystallization Methods extraction also printed general structure-determination/model-building procedures and stereochemistry summaries beyond the intended sample-preparation scope.",
+    "newResultsBodyParagraphsRead": false,
+    "qualitativeStructuralSectionHeadingsRead": true,
+    "modelBuildingProceduresAndStereochemistrySummaryRead": true,
+    "figureCaptionsRead": false,
+    "actualResidueContactAssignmentsRead": false,
+    "nativePoseCoordinatesOrOrientationDetailsRead": false,
+    "mglu5SourceFamilyEntriesRequiringExposureAdjudication": ["6N4X", "6N4Y", "6N50", "6N51", "6N52"],
+    "effect": "No clean-blind claim or formal eligibility/exposure decision. The sequence/construct findings do not erase this incident."
+  },
+  "extractionCorrection": {
+    "scope": "Exact titled preparation sections must be beneath Methods/STAR Methods. Direct paragraphs only; embedded figure/table/caption/graphic elements fail closed. Both crystallization sections now expose only their first sample-preparation paragraph; GPC2 sample text ends before acquisition procedures. mGlu5 Data availability is selected by exact FN5 footnote and verified heading; no broad full-article text extraction is used.",
+    "historicalFilesChanged": false
+  },
+  "fzd3Reviewer": {
+    "scopeFile": "fzd3-source/source-facts.json",
+    "newResultsOrCaptionProseRead": false,
+    "visibleSections": ["Discovery of the nanobodies", "Protein expression", "Data availability"]
+  },
+  "nativeCoordinateFilesAccessed": false,
+  "structuralImagesAccessed": false,
+  "contactTablesAccessed": false,
+  "predictionOutputsAccessed": false,
+  "dockqCapriLabelsAccessed": false,
+  "benchmarkPerformanceResultsAccessed": false,
+  "formalExposureClearanceGranted": false
+}

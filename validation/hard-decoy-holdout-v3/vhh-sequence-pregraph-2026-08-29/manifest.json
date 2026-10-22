@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "stage": "V3_METADATA_PREPARATION",
+  "status": "VHH_SEQUENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_DIRECT_ROLE_AND_PARENT_ADJUDICATION",
+  "snapshotDateUtc": "2026-08-29",
+  "contractPath": "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json",
+  "generatorScript": "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs",
+  "inputDigests": {
+    "contract": "bc31adf14cf1222ebade348337facefb209c286c631f0da0bf640bd778b0688f",
+    "dependencyPackageLock": "0dc4d6b441b0faf3c4ab3783115469cfc720fb8fc7cae36d225bc001ba174f54",
+    "numberingCorrectionRecord": "414c333525977126e84915fd9154af7403ad9cddc3552349f34b7c83cef0e461",
+    "selectedProtocol": "1b7b869fbc777ed794a4397a418fbf92dc4fe58392f75405b5304d5de455b376",
+    "exactPregraphChecksums": "d0a4e22b0b4f879dd59b551dffbef4e2860fffebbf6bb458eb6280c850a08553",
+    "candidateNodeLedger": "1442fe120454a9242c54b37e7b95233c36646ca33c0dd8812fedd251eccf897f",
+    "developmentNodeLedger": "9b0f1b42b34e20206ccb7de4cd98df7b8be57c9d5cf30c0e050668224715a3ad",
+    "candidateEntryMetadata": "bb34bdf41e129997591516283b7cddbdee03014d6828b1531461ba0b68e6c19c",
+    "developmentEntityMetadata": "8e2219f94d91bb3a8822e56a1e43f20cc652a86bc9458a9af76013f96e3c5be7",
+    "candidateCandidateEvidence": "37f1db3a1dc43494b9bd0b87b564e931e9172f9f20a797feaa5d318d8e90990e",
+    "candidateDevelopmentEvidence": "700e6b4b4aed2218a301bfb2eac8ed0504002422dccef0a22e04c24a1a278f0c",
+    "developmentDevelopmentEvidence": "64285cc52a4cf713c84ef27b0540811f7a910ce4ea0ce616638088704207b175",
+    "generatorScript": "5e46e17d7f14315bd9f87da60dffb7db7ce7a328c6db96e1e8f9fe8c9662ffeb"
+  },
+  "normalizedOutputs": {
+    "README.md": {
+      "bytes": 1545,
+      "sha256": "e7b32f3620c324b0836f06cd46faa0efc8dd06f063f089ffdcc52c7f6c7fb833"
+    },
+    "candidate-candidate-vhh-matrix.jsonl": {
+      "bytes": 75079219,
+      "sha256": "cbf604066904a1fc60e762e12b300d4c774734b0f4735def1dd70302dd95fb34"
+    },
+    "candidate-development-vhh-matrix.jsonl": {
+      "bytes": 9323842,
+      "sha256": "198503d754a1242e8b73373c146d18a7451f0a1712114a04d28f17f352d07823"
+    },
+    "candidate-vhh-profiles.jsonl": {
+      "bytes": 415683,
+      "sha256": "58d435ce89bd45c997aa89f0816340c273d24f5474e2d38c2bd2c85fce3cc39d"
+    },
+    "development-development-vhh-matrix.jsonl": {
+      "bytes": 269602,
+      "sha256": "db0383fcc0057010bdeaa80dbb98444af7dbd98bdf3e037482332965caf68e81"
+    },
+    "development-vhh-profiles.jsonl": {
+      "bytes": 26055,
+      "sha256": "1c791d337d628a1de397eb33cfe5685d76953e169bfbf1077798365fa9fa8730"
+    },
+    "pair-space-commitments.json": {
+      "bytes": 775,
+      "sha256": "d5fd4c403c2ed28f89e76e210f196ea166187fb189834b673107922c6e8f97ac"
+    },
+    "summary.json": {
+      "bytes": 2044,
+      "sha256": "b33af7abd4638ba82cc9e206607fb748af04d28a0f58435e4669f37b575b3985"
+    },
+    "threshold-pregraph-components.jsonl": {
+      "bytes": 20233,
+      "sha256": "e519ed741013ea4c2b039020404dcd7922a4aaff139709bc07f1926b4fb20af2"
+    }
+  },
+  "pairSpaceCommitments": {
+    "schemaVersion": "1.0.0",
+    "serialization": "bytewise-sorted-canonical-nodeA-pipe-nodeB-with-terminal-LF",
+    "candidateCandidate": {
+      "count": 41041,
+      "sha256": "ec2e215a53fac20301bee4f2f379cac37a1f9f29e60d0cac473dd9199f50cb36"
+    },
+    "candidateDevelopment": {
+      "count": 4879,
+      "sha256": "122b6c97930119fe1b4969f1793f8b7a084bdbd2c5431249932c4169c255e6e8"
+    },
+    "developmentDevelopment": {
+      "count": 136,
+      "sha256": "f6a39f95fe538bdc3167ee0bf64f6f4899a40aa50eaa0e0bdb4373f3c0b55cd5"
+    },
+    "allUnorderedPairs": {
+      "count": 46056,
+      "sha256": "9e3d2a298ac5b2f5bb1449002ec47958fb76dea543e38d05fd03ada1beaee070"
+    },
+    "completeNodePairRowsStored": true,
+    "absenceOfThresholdMatchIsNotNoEdgeEvidence": true,
+    "formalLeakageGraphAuthority": false
+  },
+  "summary": {
+    "schemaVersion": "1.0.0",
+    "studyId": "confovhh-hard-decoy-holdout-v3",
+    "status": "VHH_SEQUENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_DIRECT_ROLE_AND_PARENT_ADJUDICATION",
+    "candidateNodeCount": 287,
+    "developmentNodeCount": 17,
+    "totalNodeCount": 304,
+    "candidateMetadataProfileCount": 285,
+    "developmentMetadataProfileCount": 18,
+    "totalMetadataProfileCount": 303,
+    "numberedProfileCount": 302,
+    "unavailableProfileCount": 1,
+    "numberingFailureCodeCounts": {
+      "NONCANONICAL_OR_EMPTY_SEQUENCE": 1
+    },
+    "candidateNodesWithNoMetadataProfile": 5,
+    "developmentNodesWithNoMetadataProfile": 0,
+    "candidateNodesWithAllProfilesNumbered": 281,
+    "developmentNodesWithAllProfilesNumbered": 17,
+    "pairSpace": {
+      "candidateCandidate": 41041,
+      "candidateDevelopment": 4879,
+      "developmentDevelopment": 136,
+      "allUnorderedPairs": 46056
+    },
+    "matrixStatusCounts": {
+      "FAIL_CLOSED_MISSING_OR_UNNUMBERABLE_METADATA_PROFILE": 1803,
+      "NO_THRESHOLD_MATCH_NO_FORMAL_NO_EDGE_AUTHORITY": 23394,
+      "POSSIBLE_METADATA_SEQUENCE_LEAKAGE_EDGE_ROLE_UNRESOLVED": 20859
+    },
+    "possibleMetadataSequenceEdgePairCounts": {
+      "candidateCandidate": 20780,
+      "candidateDevelopment": 77,
+      "developmentDevelopment": 2,
+      "all": 20859
+    },
+    "exactFullSequenceEvidencePairCount": 2023,
+    "exactEvidencePregraphReconciled": true,
+    "frameworkAlignmentCacheEntryCount": 618,
+    "cdr3AlignmentCacheEntryCount": 520,
+    "thresholdPregraphComponentCount": 34,
+    "candidateNodesConnectedToDevelopmentByPossibleMetadataSequenceEdge": 57,
+    "directBinderRolesResolved": false,
+    "knownParentVariantEvidenceComplete": false,
+    "formalLeakageGraphComplete": false,
+    "dispositionLedgerComplete": false,
+    "formallyClearedGroupCount": 0,
+    "exactFrozenTargetSetExists": false,
+    "targetFreezePermitted": false,
+    "executionAuthorized": false,
+    "nativeHoldoutCoordinatesAccessed": false,
+    "nativeRelativePosesInspected": false,
+    "dockqLabelsAccessed": false,
+    "confovhhHoldoutScoresAccessed": false,
+    "performanceResultsAccessed": false
+  },
+  "sequenceEvidencePregraphOnly": true,
+  "directBinderRolesResolved": false,
+  "knownParentVariantEvidenceComplete": false,
+  "formalLeakageGraphComplete": false,
+  "dispositionLedgerComplete": false,
+  "formallyClearedGroupCount": 0,
+  "targetFreezePermitted": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "confovhhHoldoutScoresAccessed": false,
+  "performanceResultsAccessed": false
+}

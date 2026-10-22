@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-15",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "6KUW"
+    ],
+    "query": "TITLE:\"Crystal structure of human alpha2C adrenergic G protein-coupled receptor.\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Crystal+structure+of+human+alpha2C+adrenergic+G+protein-coupled+receptor.%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:03.007325+00:00",
+  "status": 200,
+  "rawFile": "raw/title-15.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Crystal+structure+of+human+alpha2C+adrenergic+G+protein-coupled+receptor.%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "6399a37476f9291add5e04c6eb3f6794ad08168527a4d36e37d431ce17233cce",
+  "bytes": 250,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:10.585786+00:00"
+}

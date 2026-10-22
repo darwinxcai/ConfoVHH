@@ -1,0 +1,26 @@
+{
+  "request": {
+    "requestId": "title-27",
+    "kind": "EUROPE_PMC_FROZEN_TITLE_QUERY",
+    "pdbIds": [
+      "7YP7"
+    ],
+    "query": "TITLE:\"apo-ADGRG2 coupled to Gs\"",
+    "method": "GET",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22apo-ADGRG2+coupled+to+Gs%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A"
+  },
+  "startedUtc": "2026-09-04T22:50:28.601616+00:00",
+  "status": 200,
+  "rawFile": "raw/title-27.json",
+  "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22apo-ADGRG2+coupled+to+Gs%22&format=json&resultType=lite&pageSize=1000&cursorMark=%2A",
+  "contentType": "application/json;charset=UTF-8",
+  "etag": null,
+  "lastModified": null,
+  "sha256": "5144a7421c98786712b5bf956d08b20aa23de9382d7552000776bc9f0d823037",
+  "bytes": 201,
+  "reportedHitCount": 0,
+  "retrievedRecordCount": 0,
+  "returnedQueryPaginationComplete": true,
+  "validated": true,
+  "completedUtc": "2026-09-04T22:50:37.235353+00:00"
+}

@@ -1,0 +1,364 @@
+{
+  "schemaVersion": "1.0.0",
+  "studyId": "confovhh-hard-decoy-holdout-v3",
+  "stage": "V3_CENSUS_IN_PROGRESS",
+  "status": "SOURCE_UNIVERSE_CAPTURED_BLOCKED_PENDING_DISPOSITIONS",
+  "sourceContract": "validation/hard-decoy-holdout-v3/prelabel-census-draft/source-query-contract.json",
+  "sourceContractSha256": "1a480345f9910470d4474e134bedc1cab550ba04c0254c2e09184c1c7fddb825",
+  "collectionStartedUtc": "2026-08-29T05:13:44.917Z",
+  "collectionCompletedUtc": "2026-08-29T05:13:48.970Z",
+  "sourceRecords": [
+    {
+      "sourceId": "rcsb-nanobody",
+      "queryId": "nanobody",
+      "term": "nanobody",
+      "repeat": 1,
+      "rawFile": "raw/rcsb-nanobody-1.json",
+      "requestBodySha256": "c50e8c4210d7af9324617304783bca08a40f1c6b009a1b9f8f0a38755ea38a8f",
+      "requestedUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "method": "POST",
+      "startedUtc": "2026-08-29T05:13:44.918Z",
+      "completedUtc": "2026-08-29T05:13:45.166Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 118214,
+      "sha256": "50ad35bd5fd585367f461243f1884417a181ad56a6358516bb8911a0d1d2219a",
+      "normalized": {
+        "count": 1760,
+        "sha256": "a66f26fce4498ba07dc2eb46bd5ba1c5440f671209775e9496ce7b82bd194795"
+      }
+    },
+    {
+      "sourceId": "rcsb-nanobody",
+      "queryId": "nanobody",
+      "term": "nanobody",
+      "repeat": 2,
+      "rawFile": "raw/rcsb-nanobody-2.json",
+      "requestBodySha256": "c50e8c4210d7af9324617304783bca08a40f1c6b009a1b9f8f0a38755ea38a8f",
+      "requestedUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "method": "POST",
+      "startedUtc": "2026-08-29T05:13:45.188Z",
+      "completedUtc": "2026-08-29T05:13:45.219Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 118214,
+      "sha256": "f2b15f79aa2b810b1c6cb55b421de8f0613cfa01a459cbc6ef847d713a0a28fc",
+      "normalized": {
+        "count": 1760,
+        "sha256": "a66f26fce4498ba07dc2eb46bd5ba1c5440f671209775e9496ce7b82bd194795"
+      }
+    },
+    {
+      "sourceId": "rcsb-vhh",
+      "queryId": "vhh",
+      "term": "VHH",
+      "repeat": 1,
+      "rawFile": "raw/rcsb-vhh-1.json",
+      "requestBodySha256": "3f9de204e2b417b6e5b2bab087d4b4d646f6d386dbd739e90085d502df74d860",
+      "requestedUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "method": "POST",
+      "startedUtc": "2026-08-29T05:13:45.240Z",
+      "completedUtc": "2026-08-29T05:13:45.271Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 31956,
+      "sha256": "7c157851bdc9edd59780e6e2c602ed175a1091fd2cb1d12c9c66243cb7ed4bf2",
+      "normalized": {
+        "count": 475,
+        "sha256": "0ad358494867265303e46afe24f7122508d98a6717c6d5ae26059b5e4adef614"
+      }
+    },
+    {
+      "sourceId": "rcsb-vhh",
+      "queryId": "vhh",
+      "term": "VHH",
+      "repeat": 2,
+      "rawFile": "raw/rcsb-vhh-2.json",
+      "requestBodySha256": "3f9de204e2b417b6e5b2bab087d4b4d646f6d386dbd739e90085d502df74d860",
+      "requestedUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "method": "POST",
+      "startedUtc": "2026-08-29T05:13:45.277Z",
+      "completedUtc": "2026-08-29T05:13:45.299Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 31956,
+      "sha256": "a92983120541d7a2e62b8fc55d60028301752f6c1263ba3ba0b83a2362e79f2f",
+      "normalized": {
+        "count": 475,
+        "sha256": "0ad358494867265303e46afe24f7122508d98a6717c6d5ae26059b5e4adef614"
+      }
+    },
+    {
+      "sourceId": "rcsb-camelid",
+      "queryId": "camelid",
+      "term": "camelid",
+      "repeat": 1,
+      "rawFile": "raw/rcsb-camelid-1.json",
+      "requestBodySha256": "f9b7fed83d3b201eafd9250ac36ccac00c9fbfec80461001705b6aaf51362e59",
+      "requestedUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "method": "POST",
+      "startedUtc": "2026-08-29T05:13:45.306Z",
+      "completedUtc": "2026-08-29T05:13:45.327Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 12720,
+      "sha256": "948321f9af6561c79059e2d34bb4e3040aa7aeed67297249c9a733cd784e448f",
+      "normalized": {
+        "count": 188,
+        "sha256": "43fbe51adbd46533cc7855e8f5ce5f3e85752d45790e97b057a68b253a21b41c"
+      }
+    },
+    {
+      "sourceId": "rcsb-camelid",
+      "queryId": "camelid",
+      "term": "camelid",
+      "repeat": 2,
+      "rawFile": "raw/rcsb-camelid-2.json",
+      "requestBodySha256": "f9b7fed83d3b201eafd9250ac36ccac00c9fbfec80461001705b6aaf51362e59",
+      "requestedUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "method": "POST",
+      "startedUtc": "2026-08-29T05:13:45.329Z",
+      "completedUtc": "2026-08-29T05:13:45.352Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 12720,
+      "sha256": "da74547aa2fd3d8a676026d5435f49f9778d2e1d71f31b60534d5c6888fadd69",
+      "normalized": {
+        "count": 188,
+        "sha256": "43fbe51adbd46533cc7855e8f5ce5f3e85752d45790e97b057a68b253a21b41c"
+      }
+    },
+    {
+      "sourceId": "rcsb-megabody",
+      "queryId": "megabody",
+      "term": "megabody",
+      "repeat": 1,
+      "rawFile": "raw/rcsb-megabody-1.json",
+      "requestBodySha256": "c3f431b1d094703672b9b8eeaeb20c63ada44bac5f646ccabd559399c4d23a6c",
+      "requestedUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "method": "POST",
+      "startedUtc": "2026-08-29T05:13:45.356Z",
+      "completedUtc": "2026-08-29T05:13:45.385Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 4067,
+      "sha256": "accc0c86b8524180fcb2f0a5a5ed1b61123720a95476f896fb1b3d110fc58231",
+      "normalized": {
+        "count": 59,
+        "sha256": "c63071f001fb61779eafddfed99b5b41826f2f8c04f798ad4cd833fb6cf37d91"
+      }
+    },
+    {
+      "sourceId": "rcsb-megabody",
+      "queryId": "megabody",
+      "term": "megabody",
+      "repeat": 2,
+      "rawFile": "raw/rcsb-megabody-2.json",
+      "requestBodySha256": "c3f431b1d094703672b9b8eeaeb20c63ada44bac5f646ccabd559399c4d23a6c",
+      "requestedUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "finalUrl": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "method": "POST",
+      "startedUtc": "2026-08-29T05:13:45.386Z",
+      "completedUtc": "2026-08-29T05:13:45.408Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 4067,
+      "sha256": "c055163ae1eb15c394daf0606a67a7dc358ae441780f58b37dc37775691a22e1",
+      "normalized": {
+        "count": 59,
+        "sha256": "c63071f001fb61779eafddfed99b5b41826f2f8c04f798ad4cd833fb6cf37d91"
+      }
+    },
+    {
+      "sourceId": "gpcrdb-api",
+      "repeat": 1,
+      "rawFile": "raw/gpcrdb-api-1.json",
+      "requestedUrl": "https://gpcrdb.org/services/structure/",
+      "finalUrl": "https://gpcrdb.org/services/structure/",
+      "method": "GET",
+      "startedUtc": "2026-08-29T05:13:45.410Z",
+      "completedUtc": "2026-08-29T05:13:46.264Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 1014984,
+      "sha256": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+      "normalized": {
+        "count": 1716,
+        "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+      }
+    },
+    {
+      "sourceId": "gpcrdb-api",
+      "repeat": 2,
+      "rawFile": "raw/gpcrdb-api-2.json",
+      "requestedUrl": "https://gpcrdb.org/services/structure/",
+      "finalUrl": "https://gpcrdb.org/services/structure/",
+      "method": "GET",
+      "startedUtc": "2026-08-29T05:13:46.304Z",
+      "completedUtc": "2026-08-29T05:13:46.506Z",
+      "status": 200,
+      "contentType": "application/json",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 1014984,
+      "sha256": "77e0b0778593c6c75c119297f5db4c2cc92d360818b14fc4aa92f1da50a87a91",
+      "normalized": {
+        "count": 1716,
+        "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+      }
+    },
+    {
+      "sourceId": "gpcrdb-html",
+      "repeat": 1,
+      "rawFile": "raw/gpcrdb-html-1.html",
+      "requestedUrl": "https://gpcrdb.org/structure",
+      "finalUrl": "https://gpcrdb.org/structure/",
+      "method": "GET",
+      "startedUtc": "2026-08-29T05:13:46.549Z",
+      "completedUtc": "2026-08-29T05:13:47.781Z",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 7918869,
+      "sha256": "e12185d20153e7e3844319f5ca1d24eb31ec05d2181442320dd6b40ac2be1f3c",
+      "normalized": {
+        "count": 1716,
+        "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+      }
+    },
+    {
+      "sourceId": "gpcrdb-html",
+      "repeat": 2,
+      "rawFile": "raw/gpcrdb-html-2.html",
+      "requestedUrl": "https://gpcrdb.org/structure",
+      "finalUrl": "https://gpcrdb.org/structure/",
+      "method": "GET",
+      "startedUtc": "2026-08-29T05:13:48.149Z",
+      "completedUtc": "2026-08-29T05:13:48.574Z",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "etag": null,
+      "lastModified": null,
+      "bytes": 7918869,
+      "sha256": "e12185d20153e7e3844319f5ca1d24eb31ec05d2181442320dd6b40ac2be1f3c",
+      "normalized": {
+        "count": 1716,
+        "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+      }
+    }
+  ],
+  "normalized": {
+    "rcsbQueries": {
+      "nanobody": {
+        "count": 1760,
+        "sha256": "a66f26fce4498ba07dc2eb46bd5ba1c5440f671209775e9496ce7b82bd194795"
+      },
+      "vhh": {
+        "count": 475,
+        "sha256": "0ad358494867265303e46afe24f7122508d98a6717c6d5ae26059b5e4adef614"
+      },
+      "camelid": {
+        "count": 188,
+        "sha256": "43fbe51adbd46533cc7855e8f5ce5f3e85752d45790e97b057a68b253a21b41c"
+      },
+      "megabody": {
+        "count": 59,
+        "sha256": "c63071f001fb61779eafddfed99b5b41826f2f8c04f798ad4cd833fb6cf37d91"
+      }
+    },
+    "rcsbUnion": {
+      "count": 2065,
+      "sha256": "c154b8a9780f0d7a898a9fed77bbc54f2b18572830840d55ead625ede647f0ca"
+    },
+    "gpcrdbApi": {
+      "count": 1716,
+      "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+    },
+    "gpcrdbHtml": {
+      "count": 1716,
+      "sha256": "4a0e3a35472703207a8d9615071f78a5d397e7281698dc5047b2c38bfc77e861"
+    },
+    "intersection": {
+      "count": 287,
+      "sha256": "fa51175683d9f4f02ded64c6e7ce82fd64ee339dae7be8dbd32c3e9af546dba7"
+    }
+  },
+  "gpcrdbCrossCheck": {
+    "pass": true,
+    "policy": "record-differences-and-block-target-freeze-until-resolved",
+    "onlyInApi": [],
+    "onlyInApiSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "onlyInHtml": [],
+    "onlyInHtmlSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "historicalReferenceComparison": {
+    "rcsbQueries": {
+      "nanobody": {
+        "countMatches": true,
+        "digestMatches": true
+      },
+      "vhh": {
+        "countMatches": true,
+        "digestMatches": true
+      },
+      "camelid": {
+        "countMatches": true,
+        "digestMatches": true
+      },
+      "megabody": {
+        "countMatches": true,
+        "digestMatches": true
+      }
+    },
+    "rcsbUnion": {
+      "countMatches": true,
+      "digestMatches": true
+    },
+    "gpcrdbApi": {
+      "countMatches": true,
+      "digestMatches": true
+    },
+    "intersection": {
+      "countMatches": true,
+      "digestMatches": true
+    }
+  },
+  "dispositionLedgerComplete": false,
+  "leakageGraphComplete": false,
+  "formallyClearedGroupCount": 0,
+  "exactFrozenTargetSetExists": false,
+  "targetFreezePermitted": false,
+  "prelabelSealCreated": false,
+  "userApproved": false,
+  "executionAuthorized": false,
+  "nativeHoldoutCoordinatesAccessed": false,
+  "nativeRelativePosesInspected": false,
+  "dockqLabelsAccessed": false,
+  "performanceResultsAccessed": false
+}
