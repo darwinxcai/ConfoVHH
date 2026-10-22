@@ -92,3 +92,16 @@ test("staged-source tampering is rejected before original code executes, and tem
   }), /verify-integration-state.mjs: replay byte count mismatch/);
   await assert.rejects(lstat(staged), { code: "ENOENT" });
 });
+
+test("optional discovery replay rejects changed frozen inputs before running the screen", async () => {
+  let staged;
+  await assert.rejects(withHistoricalV3Replay(async (replay) => {
+    staged = replay.repositoryRoot;
+    const filename = path.join(staged, "validation/hard-decoy-holdout-v3/rcsb-recent-discovery-2026-09-04/entries.jsonl");
+    const bytes = await readFile(filename);
+    bytes[0] ^= 1;
+    await writeFile(filename, bytes);
+    await replay.verifyGpcrdbComplementScreen();
+  }, { profile: "screen-recent" }), /entries.jsonl: replay digest mismatch/);
+  await assert.rejects(lstat(staged), { code: "ENOENT" });
+});

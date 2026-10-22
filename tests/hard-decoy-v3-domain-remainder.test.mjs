@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { prepareDomainRemainderMetadata, collectDomainRemainderMetadata, verifyDomainRemainderMetadata } from "../scripts/hard-decoy-v3/capture-domain-remainder.mjs";
-import { verifyGpcrdbComplementScreen } from "../scripts/hard-decoy-v3/screen-gpcrdb-complement.mjs";
+import { withHistoricalV3Replay } from "../scripts/replay-historical-v3.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const BASE = "validation/hard-decoy-holdout-v3";
@@ -213,7 +213,7 @@ test("actual remainder capture and screen replay offline for all 692 entries and
   assert.equal(capture.targetFreezeGate, "BLOCKED");
   assert.equal(capture.formallyClearedGroups, 0);
   assert.equal(capture.wholeCensusComponentUpperBound, null);
-  const screen = await verifyGpcrdbComplementScreen({ repositoryRoot: ROOT, inputDirectory, outputDirectory });
+  const screen = await withHistoricalV3Replay((replay) => replay.verifyGpcrdbComplementScreen(), { profile: "screen-domain" });
   assert.equal(screen.inputEntryCount, 692);
   assert.equal(screen.polymerEntityCount, 2424);
   assert.equal(screen.proteinOrUnknownTypeEntityCount, 2424);

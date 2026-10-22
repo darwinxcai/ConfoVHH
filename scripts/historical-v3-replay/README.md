@@ -22,6 +22,24 @@ node scripts/replay-historical-v3.mjs vhh
 node scripts/replay-historical-v3.mjs idempotence
 ```
 
+Separate optional profiles replay the five later frozen sequence screens and the
+domain-development comparison with the same original lock. They add only the
+specific saved inputs and outputs needed for that check; synthetic tests of the
+current implementation still run in the current product environment.
+
+```sh
+node scripts/replay-historical-v3.mjs screen-complement
+node scripts/replay-historical-v3.mjs screen-recent
+node scripts/replay-historical-v3.mjs screen-annotation
+node scripts/replay-historical-v3.mjs screen-domain
+node scripts/replay-historical-v3.mjs screen-global
+node scripts/replay-historical-v3.mjs domain-development
+```
+
+The global-screen profile uses the original global-text files restored by the
+existing offline artifact-restoration step before its test. No online capture is
+performed by any replay profile.
+
 The idempotence check runs the original integration script in the temporary copy
 and requires all staged bytes and the complete staged file inventory to remain
 unchanged. These checks remain regression checks of the original incomplete v3

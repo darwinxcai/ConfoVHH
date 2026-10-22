@@ -11,7 +11,7 @@ import { promisify } from "node:util";
 const HERE = fileURLToPath(import.meta.url);
 const ROOT = path.resolve(path.dirname(HERE), "..");
 const MANIFEST_PATH = "scripts/historical-v3-replay/manifest.json";
-const MANIFEST_SHA256 = "36c4841813d7e4961309312eb3f14e8f6bd0942c866fd278ba3e430cfa6eecdc";
+const MANIFEST_SHA256 = "04c192f17efff79781eb6f7c81010c61e84243128e32665f2862ffd8f79c29ba";
 const runFile = promisify(execFile);
 const sha256 = (bytes) => createHash("sha256").update(bytes).digest("hex");
 
@@ -85,18 +85,21 @@ async function installedImmunum(root, manifest) {
  * against the archived lock. Original generators retain their original paths and
  * bytes, so every existing provenance and scientific assertion still executes.
  */
-export async function withHistoricalV3Replay(callback, { repositoryRoot = ROOT } = {}) {
+export async function withHistoricalV3Replay(callback, { repositoryRoot = ROOT, profile = "core" } = {}) {
   const source = path.resolve(repositoryRoot);
   requireValue(await realpath(source) === source, "Replay source root cannot contain symlinked ancestors");
   const manifest = await readManifest(source);
+  requireValue(profile === "core" || Object.hasOwn(manifest.profiles, profile), `Unknown historical replay profile: ${profile}`);
+  const selected = profile === "core" ? null : manifest.profiles[profile];
+  const files = { ...manifest.files, ...selected?.files };
   // Check the small archived objects and scientific engine before copying data.
-  for (const [relative, record] of Object.entries(manifest.files)) {
+  for (const [relative, record] of Object.entries(files)) {
     if (record.source !== relative) await exactBytes(source, record.source, record);
   }
   const engine = await installedImmunum(source, manifest);
   const parent = await realpath(os.tmpdir());
   const staged = await mkdtemp(path.join(parent, "confovhh-historical-v3-"));
-  const expected = new Map(Object.entries(manifest.files).map(([relative, record]) => [relative, record]));
+  const expected = new Map(Object.entries(files).map(([relative, record]) => [relative, record]));
   for (const [relative, record] of Object.entries(manifest.immunum.files)) expected.set(`node_modules/immunum/${relative}`, record);
   async function verifyIntegrity() {
     requireValue(JSON.stringify(await inventory(staged)) === JSON.stringify([...expected.keys()].sort()), "Historical replay inventory changed");
@@ -107,7 +110,7 @@ export async function withHistoricalV3Replay(callback, { repositoryRoot = ROOT }
     return import(pathToFileURL(within(staged, relative)).href);
   }
   try {
-    for (const [relative, record] of Object.entries(manifest.files)) {
+    for (const [relative, record] of Object.entries(files)) {
       const bytes = await exactBytes(source, record.source, record);
       const destination = within(staged, relative);
       await mkdir(path.dirname(destination), { recursive: true });
@@ -146,6 +149,17 @@ export async function withHistoricalV3Replay(callback, { repositoryRoot = ROOT }
         await verifyIntegrity();
         return JSON.parse(stdout);
       },
+      async verifyGpcrdbComplementScreen() {
+        requireValue(selected?.kind === "sequence-screen", "Select a sequence-screen historical replay profile");
+        const original = await load("scripts/hard-decoy-v3/screen-gpcrdb-complement.mjs");
+        return original.verifyGpcrdbComplementScreen({ repositoryRoot: staged,
+          inputDirectory: within(staged, selected.inputDirectory), outputDirectory: within(staged, selected.outputDirectory) });
+      },
+      async verifyDomainDevelopmentReview() {
+        requireValue(selected?.kind === "development-review", "Select the domain-development historical replay profile");
+        const original = await load("scripts/hard-decoy-v3/compare-domain-remainder-development.mjs");
+        return original.verifyDomainDevelopmentReview({ repositoryRoot: staged, outputDirectory: within(staged, selected.outputDirectory) });
+      },
     };
     const result = await callback(replay);
     await verifyIntegrity();
@@ -158,9 +172,13 @@ export async function withHistoricalV3Replay(callback, { repositoryRoot = ROOT }
 if (process.argv[1] && path.resolve(process.argv[1]) === HERE) {
   try {
     const command = process.argv[2] ?? "integration";
-    const methods = { integration: "verifyIntegrationState", vhh: "verifyVhhSequencePregraph", idempotence: "verifyIntegrationIdempotence" };
-    requireValue(Object.hasOwn(methods, command), "Usage: node scripts/replay-historical-v3.mjs [integration|vhh|idempotence]");
-    console.log(JSON.stringify(await withHistoricalV3Replay((replay) => replay[methods[command]]()), null, 2));
+    const methods = { integration: "verifyIntegrationState", vhh: "verifyVhhSequencePregraph", idempotence: "verifyIntegrationIdempotence",
+      "screen-complement": "verifyGpcrdbComplementScreen", "screen-recent": "verifyGpcrdbComplementScreen",
+      "screen-annotation": "verifyGpcrdbComplementScreen", "screen-domain": "verifyGpcrdbComplementScreen",
+      "screen-global": "verifyGpcrdbComplementScreen", "domain-development": "verifyDomainDevelopmentReview" };
+    requireValue(Object.hasOwn(methods, command), "Usage: node scripts/replay-historical-v3.mjs <integration|vhh|idempotence|screen-complement|screen-recent|screen-annotation|screen-domain|screen-global|domain-development>");
+    const profile = command.startsWith("screen-") || command === "domain-development" ? command : "core";
+    console.log(JSON.stringify(await withHistoricalV3Replay((replay) => replay[methods[command]](), { profile }), null, 2));
   } catch (error) {
     console.error(error instanceof Error ? error.message : String(error));
     process.exitCode = 1;
