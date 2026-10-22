@@ -6,6 +6,9 @@ on:
       - "work/hard-decoy-v3-vhh-sequence-*"
     paths:
       - ".github/workflows/v3-vhh-sequence-pregraph.yml"
+      - "scripts/replay-historical-v3.mjs"
+      - "scripts/historical-v3-replay/**"
+      - "tests/historical-v3-replay.test.mjs"
       - "scripts/hard-decoy-v3/integrate-vhh-sequence-state.mjs"
       - "scripts/hard-decoy-v3/verify-integration-state.mjs"
       - "scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs"
@@ -47,7 +50,7 @@ jobs:
           node-version: 22.18.0
           cache: npm
           cache-dependency-path: package-lock.json
-      - name: Install the frozen dependency closure
+      - name: Install patched product dependencies and unchanged scientific engine
         run: npm ci
       - name: Prove deterministic state integration is idempotent
         run: |
@@ -55,17 +58,17 @@ jobs:
           script="scripts/hard-decoy-v3/integrate-vhh-sequence-state.mjs"
           test "$(sha256sum "$script" | cut -d' ' -f1)" = "2402d56b42462ea761ba06915aafba717b35216eaeb13ce8ebc7bef107b2981a"
           node --check "$script"
-          node "$script"
+          node scripts/replay-historical-v3.mjs idempotence
           git diff --check
           test -z "$(git status --porcelain --untracked-files=all)"
       - name: Replay the authoritative DRAFT state and exact node universe
         run: |
-          node scripts/hard-decoy-v3/verify-integration-state.mjs
+          node scripts/replay-historical-v3.mjs integration
           node --test tests/hard-decoy-v3-integration-state.test.mjs
           node scripts/hard-decoy/v3-exact-evidence-pregraph.mjs verify validation/hard-decoy-holdout-v3/exact-evidence-pregraph-2026-08-29
       - name: Replay corrected numbering and the complete VHH matrix
         run: |
-          node scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs verify validation/hard-decoy-holdout-v3/vhh-sequence-pregraph-2026-08-29
+          node scripts/replay-historical-v3.mjs vhh
           node --test tests/vhh-numbering.test.mjs
           node --test --test-concurrency=1 tests/hard-decoy-v3-vhh-sequence-pregraph*.test.mjs
       - name: Confirm conservative authority and access boundary

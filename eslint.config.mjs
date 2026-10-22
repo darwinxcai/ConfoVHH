@@ -17,6 +17,8 @@ const eslintConfig = defineConfig([
     "qa/playwright-report/**",
     "qa/test-results/**",
     "next-env.d.ts",
+    // Preserve upstream CommonJS syntax; dedicated security tests cover this patch.
+    "vendor/braces-depth-guard/**",
   ]),
   {
     files: ["components/ui/**/*.{ts,tsx}", "hooks/use-mobile.ts"],

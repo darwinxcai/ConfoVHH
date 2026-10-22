@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { setTimeout as wait } from "node:timers/promises";
 
 const TRANSIENT_HTTP_STATUSES = new Set([429, 502, 503, 504]);
@@ -25,6 +27,47 @@ function retryAfterMilliseconds(value, now) {
   return Number.isFinite(instant) ? Math.max(0, instant - now) : null;
 }
 
+function validateExactFileRecord(file) {
+  assert.ok(typeof file?.filename === "string" && file.filename.length > 0, "filename required");
+  assert.ok(Number.isSafeInteger(file.bytes) && file.bytes >= 0, "exact byte count required");
+  assert.match(file.sha256, /^[a-f0-9]{64}$/u, "exact SHA-256 required");
+}
+
+function verifyExactBytes(file, bytes) {
+  assert.equal(bytes.byteLength, file.bytes, `${file.filename}: byte count changed`);
+  assert.equal(createHash("sha256").update(bytes).digest("hex"), file.sha256, `${file.filename}: SHA-256 changed`);
+  const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
+  return { path: file.filename, bytes: bytes.byteLength, sha256: file.sha256, text };
+}
+
+/** Read an explicitly supplied copy of the same immutable producer input.
+ * Missing or changed files fail; this function never downloads a replacement.
+ */
+export async function readExactPublicFile(file, directory) {
+  validateExactFileRecord(file);
+  assert.ok(typeof directory === "string" && directory.length > 0, "input directory required");
+  assert.ok(!/[\\/]/u.test(file.filename) && ![".", ".."].includes(file.filename), "plain input filename required");
+  const bytes = await readFile(path.join(directory, file.filename));
+  return verifyExactBytes(file, bytes);
+}
+
+/** Limit upstream load without retrying access denials or changing the source.
+ * The next file starts only after the preceding file succeeds and the gap ends.
+ */
+export async function fetchExactPublicFilesSequentially(files, {
+  fetchFile = fetchExactPublicFile,
+  sleepImplementation = wait,
+  gapMilliseconds = 1_000,
+} = {}) {
+  assert.ok(Number.isSafeInteger(gapMilliseconds) && gapMilliseconds >= 0 && gapMilliseconds <= 60_000);
+  const output = [];
+  for (const file of files) {
+    if (output.length > 0) await sleepImplementation(gapMilliseconds);
+    output.push(await fetchFile(file));
+  }
+  return output;
+}
+
 /** Retry transport failures only. Exact content checks run once, after download.
  *
  * Every attempt uses the same URL. No fallback source, weakened hash, partial
@@ -40,9 +83,7 @@ export async function fetchExactPublicFile(file, {
   initialDelayMilliseconds = 1_000,
   maximumDelayMilliseconds = 30_000,
 } = {}) {
-  assert.ok(typeof file?.filename === "string" && file.filename.length > 0, "filename required");
-  assert.ok(Number.isSafeInteger(file.bytes) && file.bytes >= 0, "exact byte count required");
-  assert.match(file.sha256, /^[a-f0-9]{64}$/u, "exact SHA-256 required");
+  validateExactFileRecord(file);
   assert.ok(["http:", "https:"].includes(new URL(file.url).protocol), "HTTP(S) URL required");
   assert.ok(Number.isSafeInteger(maximumAttempts) && maximumAttempts >= 1 && maximumAttempts <= 5);
   assert.ok(Number.isSafeInteger(timeoutMilliseconds) && timeoutMilliseconds > 0 && timeoutMilliseconds <= 120_000);
@@ -71,6 +112,9 @@ export async function fetchExactPublicFile(file, {
       // failure must not replace the HTTP status that explains the retry.
       try { await response.body?.cancel(); } catch { /* Already closed/aborted. */ }
       failure = new Error(`${file.filename}: HTTP ${response.status}`);
+      if (response.status === 403) {
+        throw new Error(`${failure.message}; the source denied access and was not retried. Restore permitted source access or supply exact original files with --input-dir (see validation/real-prediction-run-inputs.md).`, { cause: failure });
+      }
       if (!TRANSIENT_HTTP_STATUSES.has(response.status)) throw failure;
     }
     if (attempt === maximumAttempts) {
@@ -90,8 +134,5 @@ export async function fetchExactPublicFile(file, {
 
   // A completed HTTP response with changed content is a provenance failure,
   // not a transient download: never retry it or accept a later matching body.
-  assert.equal(bytes.byteLength, file.bytes, `${file.filename}: byte count changed`);
-  assert.equal(createHash("sha256").update(bytes).digest("hex"), file.sha256, `${file.filename}: SHA-256 changed`);
-  const text = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
-  return { path: file.filename, bytes: bytes.byteLength, sha256: file.sha256, text };
+  return verifyExactBytes(file, bytes);
 }

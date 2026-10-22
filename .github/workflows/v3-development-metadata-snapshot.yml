@@ -6,6 +6,8 @@ on:
       - "work/hard-decoy-v3-development-metadata-*"
     paths:
       - ".github/workflows/v3-development-metadata-snapshot.yml"
+      - "scripts/replay-historical-v3.mjs"
+      - "scripts/historical-v3-replay/**"
       - "scripts/hard-decoy/v3-development-metadata.mjs"
       - "tests/hard-decoy-v3-development-metadata*.test.mjs"
       - "validation/hard-decoy-holdout-v2/prelabel-census/development-registry.json"
@@ -38,8 +40,10 @@ jobs:
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: 22.18.0
+      - name: Install patched product dependencies and unchanged scientific engine
+        run: npm ci
       - name: Verify authoritative v3 integration boundary
-        run: node scripts/hard-decoy-v3/verify-integration-state.mjs
+        run: node scripts/replay-historical-v3.mjs integration
       - name: Verify merged 287-row disposition seed
         run: node scripts/hard-decoy/v3-disposition-seed.mjs verify validation/hard-decoy-holdout-v3/disposition-seed-2026-08-29
       - name: Run development metadata integrity tests

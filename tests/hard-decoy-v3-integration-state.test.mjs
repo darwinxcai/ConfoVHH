@@ -7,13 +7,13 @@ import {
   EXPECTED_STATE_SHA256,
   STATE_RELATIVE,
   validateBlockedState,
-  verifyIntegrationState,
 } from "../scripts/hard-decoy-v3/verify-integration-state.mjs";
+import { withHistoricalV3Replay } from "../scripts/replay-historical-v3.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 
 test("the authoritative v3 integration state replays every current pre-label evidence layer and stays blocked", async () => {
-  const result = await verifyIntegrationState(ROOT);
+  const result = await withHistoricalV3Replay((replay) => replay.verifyIntegrationState());
   assert.deepEqual(result, {
     status: "DRAFT",
     targetFreezeGate: "BLOCKED",

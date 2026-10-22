@@ -1,5 +1,26 @@
 # Product 0.9.1 dependency-security record
 
+## Current maintenance review, 2026-10-22
+
+The current application and QA dependency locks have been patched. The historical review below describes the earlier environment, not the current audit result. The frozen scientific contracts, their original lockfile hash and all recorded research results remain unchanged; historical replay uses [`scripts/replay-historical-v3.mjs`](./scripts/replay-historical-v3.mjs) and the checksummed archive in [`scripts/historical-v3-replay/`](./scripts/historical-v3-replay/), rather than rebinding it to this maintenance lockfile. The replay helper does not install the obsolete dependency tree.
+
+| Gate | Current result |
+|---|---:|
+| Clean root and QA `npm ci` | pass |
+| Root and QA `npm ls --all` | exit 0 |
+| Full root `npm audit --audit-level=moderate` | 0 vulnerabilities |
+| `node scripts/audit-advisories.mjs` | pass, 0 exceptions |
+| Production `npm audit --omit=dev --audit-level=moderate` | 0 vulnerabilities |
+| QA `npm audit --prefix qa --audit-level=moderate` | 0 vulnerabilities |
+
+Next.js and its ESLint configuration move from 16.3.3 to 16.4.1, the first available version outside the current affected range; Vite moves from 8.2.2 to 8.2.4. Miniflare's exact vulnerable transitive pins are overridden with compatible patch versions, Sharp 0.35.5 and Undici 7.29.1. The Cloudflare plugin, Wrangler, Miniflare, React, Vinext and `immunum 1.3.0` versions are unchanged. Other affected transitive packages are updated within their existing major versions: `baseline-browser-mapping`, `brace-expansion` (including QA), `browserslist`, `fast-uri`, `fflate` and `source-map-js`. The three earlier advisory exceptions have been removed because their dependencies are fixed.
+
+The remaining upstream `braces` advisory, [GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm), has no published fixed version as of this review. A small, explicitly identified local derivative supplies parser and AST depth guards instead of suppressing the advisory. See [`vendor/braces-depth-guard/README.md`](./vendor/braces-depth-guard/README.md) for the original license, exact provenance, modified files and limitations. It preserves normal brace expansion, limits structural nesting to 100 levels and rejects cyclic child ASTs before recursive processing. Six committed regression tests cover the exploit, alternative input routes, the boundary and normal behavior; 121 unchanged upstream assertions from six test files also passed against the patched library. The bash-dependent upstream suites were not included in that compatibility check.
+
+The public advisory database cannot assess a local derivative. A zero audit count therefore does not replace review and regression testing of this patch. No advisory is allowlisted, the severity threshold is unchanged, and this record makes no claim of general safety for arbitrary hostile glob expressions. All application release and browser checks remain required; dependency audits alone do not establish application or scientific correctness.
+
+## Historical review, 2026-08-29 and amendments (superseded by the current review)
+
 Review date: 2026-08-29
 
 Product 0.9.1 uses a security-patched dependency/build environment that is intentionally distinct from the historical v0.5 execution lockfile. The unchanged v0.5 evidence summaries retain their original hashes; exact historical implementation and `immunum 1.2.0` bytes are preserved in the checksummed `validation/v0.5-engine-implementation-snapshot-v1/` package.
@@ -17,7 +38,7 @@ Two advisories are allowlisted, both against `browserslist` and both development
 
 On the reviewed Linux host, npm 11.9.0 also prints three `extraneous` annotations after a pristine install: lockfile-pinned optional `@img/sharp-wasm32` 0.35.2 and 0.35.4 packages plus their `@emnapi/runtime` 1.11.3 dependency. Repeating `npm prune` leaves the same optional-platform annotations. Every named package has a registry URL and integrity digest in `package-lock.json`; `npm ls --all` exits 0, reports no invalid or missing dependency, and the production audit remains at zero vulnerabilities. This npm optional-dependency accounting is recorded for transparency and is not treated as a dirty source tree or a failed installation. A changed package set, nonzero graph exit, invalid dependency, or audit finding remains release-blocking.
 
-## Amendment, 2026-09-02: allowlisted development-only advisories
+## Historical amendment, 2026-09-02: former development-only exceptions
 
 A `browserslist` advisory pair (GHSA-c83g-rgw3-j3cx, GHSA-73wf-gq98-2v4g, both high) began failing the
 full-tree gate. Both are build-time only: `browserslist` reaches the graph through `eslint-config-next`
@@ -44,11 +65,11 @@ Structural note for the next advisory: the contract pins the entire root lockfil
 patch anywhere in the tree collides with a numbering attestation it has no relationship to. Narrowing
 that binding to the dependencies the numbering engine actually uses would remove the collision.
 
-## Patched cohort
+## Historical patched cohort
 
 The reviewed update moves the coupled runtime/tooling families together:
 
-| Family | Current version |
+| Family | Version at the historical review |
 |---|---:|
 | Next.js / ESLint config | 16.3.3 |
 | React / ReactDOM / React Server DOM | 19.2.8 |
