@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "recordedDate": "2026-10-22",
+  "baseCommit": "85fa5007e894d227f08e183f82cb926468221fd2",
+  "scope": "Documentation maintenance of the public derivative. Remove unavailable companion-document references, reword two documentation tasks, and update dependent checksums. This is not a new experiment or a change to scientific conclusions.",
+  "changedFiles": [
+    {
+      "path": "PUBLIC_SNAPSHOT.md",
+      "beforeSha256": "503b27707afc6d0a39d504e0a23af999560b07a0e18cea47e79da6f3481d7148",
+      "afterSha256": "a9ad5098d29bb13c8c870f08f305ed2f15e3ded49644a35820cb2ae0fdaaa09c"
+    },
+    {
+      "path": "scripts/hard-decoy-v3/build-prelabel-viability-review.mjs",
+      "beforeSha256": "2702f03f0be6503b803a4f9e7dd40d8da7b893e31fd262423afbc5e8e996de2b",
+      "afterSha256": "1bf0f0acb5b8187cafc03d90442d0e36b3e5f6285b62b71f7f0502d8d8fc4693"
+    },
+    {
+      "path": "validation/gpcr-paper-development-2026-09-04/README.md",
+      "beforeSha256": "6820d24fed5041705ffb991d1a6988900509867a50c7c410fc5e49a588f65f21",
+      "afterSha256": "920b2911d55aa5f1d3fa3f6f8db5eed459770c879d10ec24690ca479a0791124"
+    },
+    {
+      "path": "validation/gpcr-paper-development-2026-09-04/checksums.sha256",
+      "beforeSha256": "ddeadb182b7f34bf2e9ea8c83aa73ecaae006df87bd5ef1dfb7c386e94f15108",
+      "afterSha256": "6ae9647e09ebacf39192e2c58c3cd7acefaa27e8a70f4160d98e065c6c153d1f"
+    },
+    {
+      "path": "validation/gpcr-selection-development-2026-09-05/README.md",
+      "beforeSha256": "286cec51ff137ee53e02cbdcde9c778166b37178bf77e1174014e52bf4b849c2",
+      "afterSha256": "8a05ca6e5ab7f7b7371b2cefd8ce9935ca3343492e56412fead0a7a77a6c029e"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prelabel-viability-review-2026-09-04/checksums.sha256",
+      "beforeSha256": "6212f4f8a668c6f098f6c967fb7a45961cef4d33ab562fab0b7dd3d960e08ed5",
+      "afterSha256": "c576eae7f0bd961973f33a61c8a4aca3f0f87219a9f980204a5e383b5e49da1c"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prelabel-viability-review-2026-09-04/decision-record.json",
+      "beforeSha256": "ed38d6a61e07c69d432f4e593044f7bea3adf03c183ad87765414c2683421347",
+      "afterSha256": "47830f335ea4426024554151264534051c3fd1dc0f5a62a9bbfea0778ee8e267"
+    },
+    {
+      "path": "validation/hard-decoy-holdout-v3/prelabel-viability-review-2026-09-04/manifest.json",
+      "beforeSha256": "fe380906f20a5a00a6aaf0947d43ce1ea3a35ac4119f419dde6a7f8d6741a1a0",
+      "afterSha256": "4cb19f75f63f9535ea6e07ef71b115066451fabef742b26145f1cbadebbcebf4"
+    }
+  ],
+  "preservation": {
+    "allExistingTrackedPathsRetained": true,
+    "scientificMeasurementsAndThresholdsUnchanged": true,
+    "reviewQueueAndSummaryByteIdentical": true,
+    "figuresUnchanged": true,
+    "applicationCodeUnchanged": true,
+    "originalRecords": "Preserved in prior commits and verified private backups"
+  },
+  "checksumScope": "Updated checksums verify the current public derivative, not the original historical records."
+}

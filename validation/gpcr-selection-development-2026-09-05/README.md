@@ -151,9 +151,8 @@ original exported summaries, which are not embedded in the repository.
   records all 165 original summary file paths, hashes, sizes, and scores.
 - [provenance.json](provenance.json) records the script hash, paired-input
   hash, prior confidence-inventory hash, output hashes, and interpretation.
-- [MANUSCRIPT_ADDENDUM.md](MANUSCRIPT_ADDENDUM.md) provides methods, results,
-  and limitations for use alongside the
-  [prior manuscript sections](../gpcr-paper-development-2026-09-04/MANUSCRIPT_SECTIONS.md).
+- The [earlier development analysis](../gpcr-paper-development-2026-09-04/README.md)
+  documents the underlying model audit and its limitations.
 
 The paired input SHA-256 is
 `94a0182d5e960e75641f5f891a2a8fefc8ac1fc942134cff253e83a1b5d3bc2c`.

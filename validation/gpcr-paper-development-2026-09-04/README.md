@@ -44,7 +44,6 @@ separately named and must not be used as standard DockQ.
 
 ## Read these files
 
-- `MANUSCRIPT_SECTIONS.md`: usable methods, results, figure caption, and claim limits.
 - `paper-evidence/results/paired-model-metrics.csv`: all 165 joined models, with hashes.
 - `paper-evidence/results/per-job-summary.csv`: all 33 five-model jobs; source ranking-score ties are retained.
 - `paper-evidence/results/per-condition-summary.csv`: observed seed rosters and means.
@@ -97,7 +96,7 @@ generation and plotting finish successfully. Require exit status zero and the
 final marker. Earlier passing lines cannot certify later steps. Plotting reads
 the hash-verified CSV, includes all 165 rows, and inserts no schematic points.
 
-## What remains before a paper can claim more
+## Limits of this development analysis
 
 1. Recover and officially rescore the 85 missing cognate predictions. This
    includes 3P0G pre-2011 seeds 2 and 3: the highlighted legacy means 0.776 and
@@ -113,11 +112,8 @@ the hash-verified CSV, includes all 165 rows, and inserts no schematic points.
    scaling the prepared 92-job arm. Cached MSAs, model/checkpoint hashes, and
    actual template mapping evidence are unresolved. Matching template
    accessions and seed integers alone do not establish cross-model parity.
-5. Replace the supplied draft's unsupported claim that ConfoVHH had already
-   triaged all 460 models. The actual completed application is now 165 models.
-   A software paper can describe that application, with the limitations above.
-   Public development history and outside-use evidence still need to mature
-   before a JOSS submission; no venue acceptance or timetable is established.
+5. The completed ConfoVHH audit covers 165 models, not all 460 handoff records.
+   Claims based on this analysis must retain that scope and the limitations above.
 
 ## Provenance and preservation
 
