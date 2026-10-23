@@ -107,6 +107,29 @@ test("CI and release workflows use full-SHA official actions and separated assur
   ]) {
     assert.match(releaseGate, command);
   }
+  for (const [label, job] of [
+    ["CI producer regression", workflowJob(ci, "public-producer-regression")],
+    ["Product release", releaseGate],
+  ]) {
+    const verifyArchive = "sha256sum --check --strict tests/fixtures/real-prediction-inputs-v1/checksums.sha256";
+    const createDirectory = 'mkdir -p "$RUNNER_TEMP/real-prediction-inputs"';
+    const extractArchive = 'tar -xzf tests/fixtures/real-prediction-inputs-v1/inputs.tar.gz -C "$RUNNER_TEMP/real-prediction-inputs"';
+    const verifyProducer = 'run: node scripts/validate-real-prediction-runs.mjs --input-dir="$RUNNER_TEMP/real-prediction-inputs" --verify=validation/real-prediction-run-regression-v1.json --quiet';
+    let previousIndex = -1;
+    for (const command of [verifyArchive, createDirectory, extractArchive, verifyProducer]) {
+      const index = job.indexOf(command);
+      assert.ok(index > previousIndex, `${label}: missing or out-of-order exact-input step: ${command}`);
+      assert.equal(job.indexOf(command, index + command.length), -1, `${label}: duplicate exact-input step`);
+      previousIndex = index;
+    }
+    assert.equal([...job.matchAll(/node scripts\/validate-real-prediction-runs\.mjs/gmu)].length, 1);
+    assert.doesNotMatch(job, /continue-on-error:\s*true/u);
+  }
+  for (const step of ["Verify and extract retained original producer inputs", "Re-run exact public producer-output regression"]) {
+    assert.ok(releaseGate.includes(
+      `- name: ${step}\n        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'\n`,
+    ), `${step}: preserve the existing current-main and publication-required conditions`);
+  }
   for (const workflow of [metadata, entryMetadata]) {
     assert.doesNotMatch(workflow, /actions\/checkout|verify-integration-state\.mjs|verify-design-record\.mjs/);
     assert.match(workflow, /stage-v3-metadata-inputs\.mjs/);
