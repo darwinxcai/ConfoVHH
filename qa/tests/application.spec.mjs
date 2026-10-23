@@ -104,7 +104,7 @@ test("local coordinate audit runs in the browser and exports a bound report", as
   const downloadPromise = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download the single-pose audit as JSON" }).click();
   const download = await downloadPromise;
-  expect(download.suggestedFilename()).toMatch(/confovhh-product-0\.9\.1_single-pose-audit\.json$/);
+  expect(download.suggestedFilename()).toMatch(/confovhh-product-0\.9\.2_single-pose-audit\.json$/);
   const stream = await download.createReadStream();
   const chunks = [];
   for await (const chunk of stream) chunks.push(chunk);
@@ -154,7 +154,7 @@ test("release-pinned public 3P0G data runs end to end with exact scientific outp
   const downloadPromise = page.waitForEvent("download");
   await page.getByRole("button", { name: "Download the single-pose audit as JSON" }).click();
   const download = await downloadPromise;
-  expect(download.suggestedFilename()).toBe("3P0G_beta2AR_Nb80_confovhh-product-0.9.1_single-pose-audit.json");
+  expect(download.suggestedFilename()).toBe("3P0G_beta2AR_Nb80_confovhh-product-0.9.2_single-pose-audit.json");
   const stream = await download.createReadStream();
   const chunks = [];
   for await (const chunk of stream) chunks.push(chunk);
