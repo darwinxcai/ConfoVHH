@@ -6,7 +6,7 @@ import path from "node:path";
 import test from "node:test";
 import { buildGlobalTextQuery, collectGlobalTextDiscovery, verifyGlobalTextDiscovery, TEXT_QUERIES, parseGlobalTextPage, parseExternalMetadata } from "../scripts/hard-decoy-v3/capture-global-text-discovery.mjs";
 import { restoreGlobalTextArtifacts } from "../scripts/hard-decoy-v3/restore-global-text-artifacts.mjs";
-import { verifyGpcrdbComplementScreen } from "../scripts/hard-decoy-v3/screen-gpcrdb-complement.mjs";
+import { withHistoricalV3Replay } from "../scripts/replay-historical-v3.mjs";
 const ROOT = path.resolve(import.meta.dirname, "..");
 const temporary = () => mkdtemp(path.join(os.tmpdir(), "confovhh-global-text-"));
 const read = async (directory, name) => JSON.parse(await readFile(path.join(directory, name), "utf8"));
@@ -105,7 +105,7 @@ test("actual all-date metadata and complete polymer screen replay offline with s
   const manifest = await read(inputDirectory, "manifest.json"); const sha = (bytes) => createHash("sha256").update(bytes).digest("hex");
   assert.equal(manifest.discoveryPlanSha256, sha(await readFile(path.join(inputDirectory, "discovery-plan.json")))); assert.equal(manifest.continuationPlanSha256, sha(await readFile(path.join(inputDirectory, "continuation-plan.json")))); assert.notEqual(manifest.discoveryPlanSha256, manifest.continuationPlanSha256);
   const finalizer = await read(inputDirectory, "provenance/finalization-code.json"); assert.equal(finalizer.adaptedCaptureScriptSha256, sha(await readFile(path.join(inputDirectory, "provenance/capture-generator-corrected.mjs")))); assert.equal(finalizer.finalizerScriptSha256, sha(await readFile(path.join(ROOT, "scripts/hard-decoy-v3/capture-global-text-discovery.mjs"))));
-  const screen = await verifyGpcrdbComplementScreen({ repositoryRoot: ROOT, inputDirectory, outputDirectory });
+  const screen = await withHistoricalV3Replay((replay) => replay.verifyGpcrdbComplementScreen(), { profile: "screen-global" });
   assert.equal(screen.inputEntryCount, 2911); assert.equal(screen.polymerEntityCount, 20398); assert.equal(screen.proteinOrUnknownTypeEntityCount, 19365); assert.equal(screen.nonProteinEntityCount, 1033); assert.equal(screen.distinctPresentSequencesScreened, 3787); assert.equal(screen.entitiesWithNumberedHeavyDomain, 170); assert.equal(screen.entriesWithNumberedHeavyDomain, 155); assert.equal(screen.sequenceScreenCoversEveryPresentProteinOrUnknownTypeEntity, true); assert.equal(screen.eligibleDirectVhhCount, null); assert.equal(screen.independentLeakageComponentCount, null);
   for (const result of [summary, screen]) for (const key of ["broaderDiscoveryComplete", "targetFreezePermitted", "executionAuthorized", "dockqLabelsAccessed", "performanceResultsAccessed"]) assert.equal(result[key], false);
   const entries = (await readFile(path.join(inputDirectory, "entries.jsonl"), "utf8")).trimEnd().split("\n").map(JSON.parse); const screened = (await readFile(path.join(outputDirectory, "entity-screens.jsonl"), "utf8")).trimEnd().split("\n").map(JSON.parse); assert.deepEqual(new Set(screened.map((row) => `${row.pdbId}_${row.entityId}`)), new Set(entries.flatMap((row) => row.polymerEntities.map((entity) => entity.rcsbId))));

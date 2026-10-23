@@ -1,17 +1,16 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdtemp, readFile, realpath, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
 import {
   alignGlobalAffine,
-  collectVhhSequencePregraph,
   evaluateFrozenVhhThreshold,
   numberVhhForLeakage,
-  verifyVhhSequencePregraph,
 } from "../scripts/hard-decoy/v3-vhh-sequence-pregraph.mjs";
+import { withHistoricalV3Replay } from "../scripts/replay-historical-v3.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const CONTRACT_PATH = path.join(ROOT, "validation/hard-decoy-holdout-v3/vhh-sequence-contract-2026-08-29.json");
@@ -152,11 +151,11 @@ test("the corrected pinned IMGT engine preserves the complete Nb35 long CDR3 bef
   assert.ok(numbered.queryEnd < NB35_SEQUENCE.length - 1);
 });
 
-test("the complete VHH sequence pregraph regenerates, reconciles exact evidence, and fails closed under mutation", { timeout: 600_000 }, async () => {
-  const temporary = await mkdtemp(path.join(os.tmpdir(), "confovhh-vhh-sequence-pregraph-"));
+test("the complete VHH sequence pregraph regenerates, reconciles exact evidence, and fails closed under mutation", { timeout: 600_000 }, async () => withHistoricalV3Replay(async (replay) => {
+  const temporary = await realpath(await mkdtemp(path.join(os.tmpdir(), "confovhh-vhh-sequence-pregraph-")));
   const snapshot = path.join(temporary, "snapshot");
   try {
-    const collected = await collectVhhSequencePregraph({ repositoryRoot: ROOT, outputDirectory: snapshot });
+    const collected = await replay.collectVhhSequencePregraph({ outputDirectory: snapshot });
     assert.equal(collected.status, "VHH_SEQUENCE_PREGRAPH_COMPLETED_BLOCKED_PENDING_DIRECT_ROLE_AND_PARENT_ADJUDICATION");
     assert.equal(collected.candidateNodeCount, 287);
     assert.equal(collected.developmentNodeCount, 17);
@@ -169,7 +168,7 @@ test("the complete VHH sequence pregraph regenerates, reconciles exact evidence,
     assert.equal(collected.nativeHoldoutCoordinatesAccessed, false);
     assert.equal(collected.dockqLabelsAccessed, false);
 
-    const verified = await verifyVhhSequencePregraph({ repositoryRoot: ROOT, snapshotDirectory: snapshot });
+    const verified = await replay.verifyVhhSequencePregraph({ snapshotDirectory: snapshot });
     const collectedSummary = { ...collected };
     delete collectedSummary.outputDirectory;
     assert.deepEqual(verified, collectedSummary);
@@ -180,10 +179,10 @@ test("the complete VHH sequence pregraph regenerates, reconciles exact evidence,
     await writeFile(summaryPath, `${JSON.stringify(summary, null, 2)}\n`);
     await rewriteChecksum(snapshot, "summary.json");
     await assert.rejects(
-      verifyVhhSequencePregraph({ repositoryRoot: ROOT, snapshotDirectory: snapshot }),
+      replay.verifyVhhSequencePregraph({ snapshotDirectory: snapshot }),
       /Observed holdout-label assignment|Forbidden result field/u,
     );
   } finally {
     await rm(temporary, { recursive: true, force: true });
   }
-});
+}));

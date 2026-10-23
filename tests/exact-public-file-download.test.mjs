@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { fetchExactPublicFile } from "../scripts/fetch-exact-public-file.mjs";
+import { fetchExactPublicFile, fetchExactPublicFilesSequentially } from "../scripts/fetch-exact-public-file.mjs";
 
 // All bodies are synthetic text. No real coordinates, confidence or labels.
 const BODY = Buffer.from("synthetic immutable public artifact\n");
@@ -72,6 +72,46 @@ test("permanent 404, 403 and ordinary HTTP 500 are not retried", async () => {
     assert.equal(run.requests.length, 1);
     assert.deepEqual(run.delays, []);
   }
+});
+
+test("HTTP 403 explains permitted recovery without changing source or retrying", async () => {
+  const run = harness([new Response("Access restricted", { status: 403 }), new Response(BODY)]);
+  await assert.rejects(run.run(), /HTTP 403; the source denied access and was not retried.*--input-dir/u);
+  assert.deepEqual(run.requests.map((request) => request.url), [FILE.url]);
+  assert.deepEqual(run.delays, []);
+});
+
+test("courteous archive scheduling completes each file and gap before the next", async () => {
+  const events = [];
+  const files = ["first", "second", "third"];
+  const outputs = await fetchExactPublicFilesSequentially(files, {
+    fetchFile: async (file) => {
+      events.push(`start:${file}`);
+      await Promise.resolve();
+      events.push(`end:${file}`);
+      return file;
+    },
+    sleepImplementation: async (delay) => { events.push(`gap:${delay}`); },
+  });
+  assert.deepEqual(outputs, files);
+  assert.deepEqual(events, [
+    "start:first", "end:first", "gap:1000", "start:second", "end:second",
+    "gap:1000", "start:third", "end:third",
+  ]);
+});
+
+test("courteous archive scheduling stops immediately on a terminal access denial", async () => {
+  const events = [];
+  const failure = new Error("HTTP 403");
+  await assert.rejects(fetchExactPublicFilesSequentially(["first", "denied", "never"], {
+    fetchFile: async (file) => {
+      events.push(file);
+      if (file === "denied") throw failure;
+      return file;
+    },
+    sleepImplementation: async (delay) => { events.push(delay); },
+  }), (actual) => actual === failure);
+  assert.deepEqual(events, ["first", 1000, "denied"]);
 });
 
 test("transient connection failure and interrupted response body can recover", async () => {

@@ -4,7 +4,7 @@ import path from "node:path";
 import test from "node:test";
 
 import { verifyGpcrdbComplementMetadata } from "../scripts/hard-decoy-v3/gpcrdb-complement-metadata.mjs";
-import { verifyGpcrdbComplementScreen } from "../scripts/hard-decoy-v3/screen-gpcrdb-complement.mjs";
+import { withHistoricalV3Replay } from "../scripts/replay-historical-v3.mjs";
 import { verifyRecentGpcrdbDelta } from "../scripts/hard-decoy-v3/capture-recent-gpcrdb-delta.mjs";
 import { verifyRecentRcsbDiscovery } from "../scripts/hard-decoy-v3/capture-recent-rcsb-discovery.mjs";
 import { verifyReplacementReconciliation } from "../scripts/hard-decoy-v3/reconcile-replaced-census-entries.mjs";
@@ -45,13 +45,13 @@ test("the actual 1,429-entry complement capture replays offline with three missi
 
 test("all actual sequence-screen packages reconstruct every saved entity and retain non-authority", { timeout: 120_000 }, async (t) => {
   offline(t);
-  const complement = await verifyGpcrdbComplementScreen({ repositoryRoot: ROOT, inputDirectory: snapshot("gpcrdb-complement-metadata"), outputDirectory: snapshot("gpcrdb-complement-screen") });
+  const complement = await withHistoricalV3Replay((replay) => replay.verifyGpcrdbComplementScreen(), { profile: "screen-complement" });
   assert.equal(complement.inputEntryCount, 1426);
   assert.equal(complement.polymerEntityCount, 4826);
   assert.equal(complement.distinctPresentSequencesScreened, 1375);
   assert.equal(complement.entitiesWithNumberedHeavyDomain, 663);
   assert.equal(complement.untaggedUnexposedSequencePositiveEntities, 3);
-  const recent = await verifyGpcrdbComplementScreen({ repositoryRoot: ROOT, inputDirectory: snapshot("rcsb-recent-discovery"), outputDirectory: snapshot("rcsb-recent-screen") });
+  const recent = await withHistoricalV3Replay((replay) => replay.verifyGpcrdbComplementScreen(), { profile: "screen-recent" });
   assert.equal(recent.inputEntryCount, 112);
   assert.equal(recent.polymerEntityCount, 744);
   assert.equal(recent.proteinOrUnknownTypeEntityCount, 705);
@@ -59,7 +59,7 @@ test("all actual sequence-screen packages reconstruct every saved entity and ret
   assert.equal(recent.distinctPresentSequencesScreened, 279);
   assert.equal(recent.entitiesWithNumberedHeavyDomain, 11);
   assert.equal(recent.entriesWithNumberedHeavyDomain, 8);
-  const annotation = await verifyGpcrdbComplementScreen({ repositoryRoot: ROOT, inputDirectory: snapshot("annotation-discovery"), outputDirectory: snapshot("annotation-screen") });
+  const annotation = await withHistoricalV3Replay((replay) => replay.verifyGpcrdbComplementScreen(), { profile: "screen-annotation" });
   assert.equal(annotation.inputEntryCount, 142);
   assert.equal(annotation.polymerEntityCount, 719);
   assert.equal(annotation.distinctPresentSequencesScreened, 240);

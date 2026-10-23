@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
+import path from "node:path";
 import process from "node:process";
 
 import {
@@ -7,7 +8,7 @@ import {
   predictionRunFileById,
 } from "../lib/prediction-run.ts";
 import { executePredictionRunAuditJob } from "../lib/prediction-run-jobs.ts";
-import { fetchExactPublicFile } from "./fetch-exact-public-file.mjs";
+import { fetchExactPublicFile, fetchExactPublicFilesSequentially, readExactPublicFile } from "./fetch-exact-public-file.mjs";
 
 const ZENODO_BASE = "https://zenodo.org/api/records/17063524/files";
 const AF3_COMMIT = "a7458d1d26a35154cbfc3e24ec197352079970df";
@@ -114,8 +115,14 @@ function auditSource(file) {
   };
 }
 
-async function runDataset(dataset) {
-  const downloaded = await mapConcurrent(dataset.files, 4, fetchExact);
+async function runDataset(dataset, inputDirectory) {
+  const downloaded = inputDirectory
+    ? await mapConcurrent(dataset.files, 4, (file) => readExactPublicFile(file, path.join(inputDirectory, dataset.id)))
+    : new URL(dataset.sourceUrl).hostname === "zenodo.org"
+      // Avoid bursts at the public archive. A denial stops the dataset; it is
+      // never retried, sent through another route, or replaced with a cache.
+      ? await fetchExactPublicFilesSequentially(dataset.files, { fetchFile: fetchExact })
+      : await mapConcurrent(dataset.files, 4, fetchExact);
   const rawFiles = downloaded.map((file) => ({ ...file, path: `${dataset.id}/${file.path}` }));
   const manifest = createPredictionRunManifest(rawFiles);
   assert.equal(manifest.totals.fileCount, dataset.expected.files);
@@ -200,13 +207,20 @@ async function runDataset(dataset) {
 }
 
 const verificationArgument = process.argv.find((argument) => argument.startsWith("--verify="));
+const inputArguments = process.argv.filter((argument) => argument.startsWith("--input-dir="));
+assert.ok(inputArguments.length <= 1, "Only one --input-dir may be supplied");
+const inputDirectory = inputArguments[0]?.slice("--input-dir=".length);
+assert.ok(inputDirectory !== "", "--input-dir requires a directory");
+if (inputDirectory) {
+  process.stderr.write("Verifying explicitly supplied producer inputs; every file must match the original byte count and SHA-256. No downloads or fallback sources will be used.\n");
+}
 const quiet = process.argv.includes("--quiet");
 const record = {
   schemaVersion: "real-prediction-run-regression-1.0.0",
   claimBoundary: "These checks establish deterministic compatibility with the exact public producer outputs listed here. They do not establish binding, affinity, specificity, GPCR membrane compatibility, VHH developability, state selectivity, or pose-ranking accuracy.",
   datasets: [],
 };
-for (const dataset of DATASETS) record.datasets.push(await runDataset(dataset));
+for (const dataset of DATASETS) record.datasets.push(await runDataset(dataset, inputDirectory));
 if (verificationArgument) {
   const expected = JSON.parse(await readFile(verificationArgument.slice("--verify=".length), "utf8"));
   assert.deepEqual(record, expected, "Real-run regression drifted from its checked-in evidence record");
