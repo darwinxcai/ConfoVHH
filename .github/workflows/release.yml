@@ -106,9 +106,15 @@ jobs:
       - name: Re-run the complete offline release gate
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
         run: npm run test:release
+      - name: Verify and extract retained original producer inputs
+        if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
+        run: |
+          sha256sum --check --strict tests/fixtures/real-prediction-inputs-v1/checksums.sha256
+          mkdir -p "$RUNNER_TEMP/real-prediction-inputs"
+          tar -xzf tests/fixtures/real-prediction-inputs-v1/inputs.tar.gz -C "$RUNNER_TEMP/real-prediction-inputs"
       - name: Re-run exact public producer-output regression
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
-        run: node scripts/validate-real-prediction-runs.mjs --verify=validation/real-prediction-run-regression-v1.json --quiet
+        run: node scripts/validate-real-prediction-runs.mjs --input-dir="$RUNNER_TEMP/real-prediction-inputs" --verify=validation/real-prediction-run-regression-v1.json --quiet
       - name: Generate source archive, production manifest, SBOM, receipt, and checksums
         if: steps.freshness.outputs.current == 'true' && steps.release.outputs.publish_required == 'true'
         env:
