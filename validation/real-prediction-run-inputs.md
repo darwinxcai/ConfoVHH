@@ -38,6 +38,13 @@ checks. A missing or changed file fails. It never fetches a replacement, changes
 the expected record, or skips a dataset. It verifies the retained source bytes;
 it does not demonstrate that the upstream service is currently reachable.
 
-Retain source attribution and applicable licenses with any redistributed input
-copies. The source locations, versions and license notes remain in the existing
-regression record. No producer data are bundled with this documentation.
+CI uses the exact retained originals in
+[`tests/fixtures/real-prediction-inputs-v1`](../tests/fixtures/real-prediction-inputs-v1/README.md).
+It checks the archive SHA-256 before extracting the 26 files into a temporary
+directory, then runs the command above with that explicit directory. Every
+original file hash and every expected audit result are still checked. The
+default network command remains available separately; CI's retained-input check
+does not assert that Zenodo is reachable.
+
+Source attribution and licenses accompany the archive. Source locations,
+versions and license notes also remain in the unchanged regression record.
