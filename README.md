@@ -3,9 +3,11 @@
 **A local-first workspace for comparing modeled GPCR–nanobody complexes before experimental follow-up.**
 
 [![CI](https://github.com/darwinxcai/ConfoVHH/actions/workflows/ci.yml/badge.svg)](https://github.com/darwinxcai/ConfoVHH/actions/workflows/ci.yml)
-![Product](https://img.shields.io/badge/product-v0.9.1-42d3a5)
+![Product](https://img.shields.io/badge/product-v0.9.2-42d3a5)
 ![Node](https://img.shields.io/badge/Node-%E2%89%A522.18-5fa04e)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+
+[Open the live app](https://confo-vhh.vercel.app/) · [Latest software release](https://github.com/darwinxcai/ConfoVHH/releases/latest)
 
 **Repository snapshot:** this public copy omits obsolete deployment metadata. Scientific data and results are unchanged; [the snapshot note](./PUBLIC_SNAPSHOT.md) explains the derivative checksums and privately preserved history.
 
@@ -134,7 +136,7 @@ Input files remain in the browser session. Exported reports may contain selected
 
 ## Versioning
 
-The researcher-facing release is **v0.9.1**. The attested contact, clash, SASA, PAE, and comparison lineage remains **v0.5**, while the current VHH-numbering and pose-ranking policies are versioned **v0.6**. Historical and current implementation snapshots are retained separately so that validation records are not rewritten when a component is promoted.
+The researcher-facing release is **v0.9.2**. The attested contact, clash, SASA, PAE, and comparison lineage remains **v0.5**, while the current VHH-numbering and pose-ranking policies are versioned **v0.6**. Historical and current implementation snapshots are retained separately so that validation records are not rewritten when a component is promoted.
 
 ## Documentation
 
@@ -150,3 +152,7 @@ The researcher-facing release is **v0.9.1**. The attested contact, clash, SASA, 
 Created and maintained by [Darwin Cai](https://github.com/darwinxcai) as an independent open-source project at the intersection of GPCR structural biology and computational protein design.
 
 ConfoVHH is released under the [MIT License](./LICENSE). Third-party software, public structural metadata, and source-specific licenses are summarized in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+
+## Manuscript and dataset availability
+
+The accompanying GPCR–nanobody ranking manuscript and its reproducibility dataset are being prepared for public deposition. They are not yet available through a verified public manuscript or dataset link. This repository and its product releases are software resources, not a publication of that study. Links to the manuscript and archived study code will be added after the deposits are publicly accessible.
