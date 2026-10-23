@@ -23,18 +23,20 @@ import {
   type IntendedFootprintSummary,
 } from "./user-footprint.ts";
 
-export const CONFOVHH_PRODUCT_RELEASE = "0.9.1" as const;
+export const CONFOVHH_PRODUCT_RELEASE = "0.9.2" as const;
 export type SupportedConfoVhhProductRelease =
   | "0.6.0"
   | "0.7.0"
   | "0.8.0"
   | "0.9.0"
+  | "0.9.1"
   | typeof CONFOVHH_PRODUCT_RELEASE;
 const SUPPORTED_PRODUCT_RELEASES = new Set<SupportedConfoVhhProductRelease>([
   "0.6.0",
   "0.7.0",
   "0.8.0",
   "0.9.0",
+  "0.9.1",
   CONFOVHH_PRODUCT_RELEASE,
 ]);
 export const RESEARCH_WORKSPACE_BUNDLE_SCHEMA_VERSION = "1.0.0" as const;
@@ -747,7 +749,7 @@ function deriveCoordinateTriageBriefForRelease(
   workflow: WorkflowCoverage,
   productRelease: SupportedConfoVhhProductRelease,
 ): CoordinateTriageBrief {
-  return productRelease === "0.9.0" || productRelease === CONFOVHH_PRODUCT_RELEASE
+  return productRelease === "0.9.0" || productRelease === "0.9.1" || productRelease === CONFOVHH_PRODUCT_RELEASE
     ? deriveCoordinateTriageBrief(audit, workflow)
     : deriveLegacyCoordinateTriageBrief(audit, workflow);
 }

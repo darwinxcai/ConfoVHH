@@ -20,7 +20,7 @@ body:
     attributes:
       label: Product version and commit
       description: Copy the product version from the app header and, for a local run, the full Git commit.
-      placeholder: product 0.9.1; commit 40-hex SHA
+      placeholder: product 0.9.2; commit 40-hex SHA
     validations:
       required: true
   - type: dropdown

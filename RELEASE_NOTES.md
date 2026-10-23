@@ -1,3 +1,15 @@
+# ConfoVHH product 0.9.2
+
+Product 0.9.2 corrects public documentation and third-party attribution. It does not change the scientific engine, recorded research results, figures, or decision thresholds.
+
+- Corrects the license and redistribution notices for the 26 original regression-input files retained in the repository.
+- Uses neutral historical-source wording while preserving original identifiers and the limits on their public availability.
+- Makes the live app and current software release easier to find, and distinguishes software availability from the pending manuscript and dataset deposits.
+- Continues to import existing product 0.9.1 notebook records and workspace dossiers, with unchanged scientific payloads.
+- Preserves all earlier release assets and checksum-bound research records. A fresh verified build is required for deployment; published build manifests contain file hashes rather than server-bundle credentials.
+
+---
+
 # ConfoVHH product 0.9.1
 
 Product 0.9.1 strengthens the public scientific boundary around the still-unexecuted hard-decoy benchmark while preserving the attested v0.5.0 scientific-core source, executed `immunum 1.2.0` bytes, and every frozen historical artifact. Its dependency/build environment is separately security-patched and is not represented as the historical v0.5 lockfile.
@@ -48,6 +60,6 @@ Product 0.9.0 improves research usability, evidence integrity, and release trace
 
 - Adds full-SHA-pinned GitHub Actions, exact producer-output regression as a distinct check, and a CI-gated product-release workflow.
 - At the product 0.9.0 release, assets included normalized source and exact-built-production archives, a CycloneDX SBOM, provenance receipt, and `SHA256SUMS`. Product 0.9.1 no longer publishes the credential-bearing production archive; it publishes a deterministic exact-output hash manifest instead. Neither release claims independently recompiled Vinext bundles are byte-identical because the framework injects fresh build credentials.
-- Documents that legacy attestation commits resolve as ancestors in the Sites source history but are absent from the current public GitHub repository, while their recorded digests remain verifiable and are bound to the reachable product tag.
+- Documents that legacy attestation commits resolve as ancestors in the archived source history but are absent from the current public GitHub repository, while their recorded digests remain verifiable and are bound to the reachable product tag.
 
 No binding, affinity, specificity, functional-state, membrane-compatibility, candidate-selection, near-native-ranking, or hard-decoy holdout claim is added.

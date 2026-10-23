@@ -5,11 +5,11 @@ ConfoVHH is distributed under the MIT License. It incorporates and depends on th
 ## Immunum
 
 - Project: [ENPICOM/immunum](https://github.com/ENPICOM/immunum)
-- Version: 1.2.0 (pinned by the lockfile)
+- Current version: 1.3.0 (pinned by the lockfile); the frozen v0.5 implementation snapshots retain the original 1.2.0 distribution under the same MIT notice.
 - License: MIT
 - Copyright: © 2026 ENPICOM
 
-ConfoVHH embeds immunum's WebAssembly module into the dedicated browser audit worker for antibody-domain numbering. The installed package's MIT license is reproduced below:
+ConfoVHH embeds immunum's WebAssembly module into the dedicated browser audit worker for antibody-domain numbering. The current package and preserved historical distribution retain the MIT license reproduced below:
 
 > MIT License
 >
@@ -49,5 +49,9 @@ These metadata archives are redistributed under their source terms and are not r
 
 ## Public prediction-output compatibility data
 
-- The real ColabFold-multimer regression uses exact remote bytes from [Zenodo record 17063524](https://zenodo.org/records/17063524), “AlphaFold2 Multimer Structural Models for CtBP-Prospero Protein Interaction,” by Bohdana Rovenko, Mykhailo Girych, and Ville Hietakangas, under CC-BY-4.0. ConfoVHH records hashes and derived audit summaries; it does not redistribute the raw files.
-- The real AlphaFold Server regression uses the commit-pinned [`AF3_MiniPAE` example](https://github.com/martinovein/AF3_MiniPAE/tree/a7458d1d26a35154cbfc3e24ec197352079970df/data/example/p06730_o60516), distributed by that repository under MIT. ConfoVHH records hashes and derived audit summaries; it does not redistribute the raw files.
+The repository redistributes 26 unchanged original prediction-output files in [`tests/fixtures/real-prediction-inputs-v1/inputs.tar.gz`](./tests/fixtures/real-prediction-inputs-v1/inputs.tar.gz), alongside their source attribution and licenses:
+
+- **Ten ColabFold-multimer files:** Bohdana Rovenko, Mykhailo Girych, and Ville Hietakangas, *AlphaFold2 Multimer Structural Models for CtBP-Prospero Protein Interaction*, version v1, September 5, 2025, [Zenodo DOI 10.5281/zenodo.17063524](https://doi.org/10.5281/zenodo.17063524). These exact, unmodified files are redistributed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). Attribution does not imply endorsement.
+- **Sixteen AlphaFold Server example files:** the [`AF3_MiniPAE` example](https://github.com/martinovein/AF3_MiniPAE/tree/a7458d1d26a35154cbfc3e24ec197352079970df/data/example/p06730_o60516), pinned to revision `a7458d1d26a35154cbfc3e24ec197352079970df`, is redistributed under the upstream MIT license, copyright © 2025 martinovein. The complete original notice is retained in [`AF3_MiniPAE-LICENSE.txt`](./tests/fixtures/real-prediction-inputs-v1/AF3_MiniPAE-LICENSE.txt).
+
+Original source URLs, file sizes, SHA-256 hashes, and derived audit outputs remain in [`validation/real-prediction-run-regression-v1.json`](./validation/real-prediction-run-regression-v1.json). The [archive README](./tests/fixtures/real-prediction-inputs-v1/README.md) explains the retained files and checksum verification. These files test software compatibility; they are not GPCR–nanobody ranking evidence. Their source terms remain in effect and are not replaced by ConfoVHH's MIT license.

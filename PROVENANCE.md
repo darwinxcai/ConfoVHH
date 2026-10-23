@@ -2,7 +2,7 @@
 
 ConfoVHH uses separately versioned layers:
 
-- the researcher-facing product release, currently 0.9.1;
+- the researcher-facing product release, currently 0.9.2;
 - the canonical audit and geometry lineage, which remains version 0.5.0 for compatibility with the frozen v0.5 studies;
 - promoted VHH-numbering and pose-ranking policies, both versioned 0.6.0 with additive promotion and validation records.
 
@@ -10,7 +10,7 @@ A component promotion does not rewrite or relabel frozen historical evidence. Th
 
 ## Historical evidence boundary
 
-The Sites source history used for this product contains the referenced historical commits as ancestors, including scientific-engine commit `04c6bda2289157dd294c290609f6052aa0ef9195`, public-regression commit `5cb57617b54baa314513486885c402449f643406`, replay commit `278ae1a74da133778fba5b17bc296a8e37f02e76`, and census-start commit `a4dffa87913b364eb5fc7c220ac2b75011ad0c0a`. They are therefore resolvable in that source history. A fresh clone of the current public GitHub repository does not contain these objects, however, and GitHub's commit API does not resolve them. They must not be described as independently reachable from public GitHub.
+The archived source history used for this product contains the referenced historical commits as ancestors, including scientific-engine commit `04c6bda2289157dd294c290609f6052aa0ef9195`, public-regression commit `5cb57617b54baa314513486885c402449f643406`, replay commit `278ae1a74da133778fba5b17bc296a8e37f02e76`, and census-start commit `a4dffa87913b364eb5fc7c220ac2b75011ad0c0a`. They are therefore resolvable in that source history. A fresh clone of the current public GitHub repository does not contain these objects, however, and GitHub's commit API does not resolve them. They must not be described as independently reachable from public GitHub.
 
 The underlying evidence remains digest-verifiable. Across the preserved packages, all applicable implementation, raw-source, dependency, result, and package files are checksummed; design-only packages do not claim executed dependencies or results. Release receipts verify every listed checksum row, bind the current v3 source snapshot, both independently timed entry-metadata captures, the original public entry attestation, integration state, licenses, and import receipt, and then bind those digests to a publicly reachable `product-vX.Y.Z` tag and Git tree. The two entry captures retain distinct raw response bytes and timestamps but replay to identical normalized entry, entity, and triage ledgers. Semantic package replay remains a separate CI gate. This forward binding improves public traceability; it neither publishes missing historical commit objects nor adds scientific evidence.
 
